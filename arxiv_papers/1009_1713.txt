@@ -1,0 +1,788 @@
+
+Transmission coefficient through a saddle-point electrostatic potential for graphene in
+
+the quantum Hall regime
+
+Martina Floser and Serge Florens
+
+Institut N´eel, CNRS and Universit´e Joseph Fourier, B.P. 166,
+
+25 Avenue des Martyrs, 38042 Grenoble Cedex 9, France
+
+Thierry Champel
+
+Laboratoire de Physique et Mod´elisation des Milieux Condens´es,
+
+CNRS and Universit´e Joseph Fourier, B.P. 166,
+
+25 Avenue des Martyrs, 38042 Grenoble Cedex 9, France
+
+(Dated: October 30, 2018)
+
+From the scattering of semicoherent-state wave packets at high magnetic field, we derive analyt-
+ically the transmission coefficient of electrons in graphene in the quantum Hall regime through a
+smooth constriction described by a quadratic saddle-point electrostatic potential. We find anoma-
+lous half-quantized conductance steps that are rounded by a backscattering amplitude related to
+the curvature of the potential. Furthermore, the conductance in graphene breaks particle-hole sym-
+metry in cases where the saddle-point potential is itself asymmetric in space. These results have
+implications both for the interpretation of split-gate transport experiments, and for the derivation
+of quantum percolation models for graphene.
+
+PACS numbers: 73.43.Jn, 73.43.Cd, 71.70.Di, 73.22.Pr
+
+The quantum point-contact geometry formed by
+metallic split gates in the quantum Hall regime is a
+cornerstone of many experiments in two-dimensional
+electron gases (2DEGs) based on semiconducting het-
+erostructures. For example, in recent interferometry ex-
+periments made with electrons, the quantum point con-
+tact plays the role of an electronic beam splitter.1 At the
+theoretical side, the consideration of a smooth constric-
+tion represents a simple toy model of elaborated quan-
+tum transport theories. For instance, the transmission
+coefficient through a saddle-point potential2 is a central
+piece of the percolation network models,3,4 which have
+been introduced to describe the inter-plateaus dissipa-
+tive transport in the quantum Hall effect.
+
+Smooth constrictions are usually modeled by the local
+
+potential profile at the bottleneck of the constriction
+
+V (r) = by2 − ax2,
+
+(1)
+
+where a and b are real positive coefficients characterizing
+the potential (for convenience, we chose the electrostatic
+potential value at the saddle as the origin for the en-
+ergies).
+Important insights on the tunneling processes
+determining the transport properties through quantum
+point contacts can be gained from the quantum me-
+chanical motion of the electron in such a simple po-
+tential as given by Eq.
+In the standard 2DEGs
+usually described by Schrodinger's equation, the energy
+dependence of the transmission coefficient through the
+quadratic potential in Eq. (1) is well-known and given
+under high magnetic fields (i.e., neglecting Landau-level
+mixing while keeping the magnetic length lB finite) by
+the expression5
+
+(1).
+
+Tn(E) ="1 + exp −π
+
+E − {n + 1/2}(ωc + ζ)
+
+√ab
+
+l2
+B
+
+!#−1
+
+(2)
+
+for the nth Landau level, where lB = pc/(eB) is the
+magnetic length, ωc is the Landau-level spacing in the
+2DEG, and ζ = l2
+B(b − a). Tunneling processes give rise
+to a nonzero probability for the electron at energy E < 0
+to be transmitted on the other side of the constriction
+while an electron at E > 0 goes weakly backscattered
+through the available channels.
+
+With monolayer graphene consisting of carbon atoms
+packed in a two-dimensional honeycomb lattice appears
+a new host material,6 where electrons are confined to
+two dimensions, yet with some exotic properties. The
+observation of an anomalous quantum Hall effect in
+graphene7,8 understood in terms of a relativisticlike spec-
+low-energy electrons9 has been followed by
+trum of
+numerous experimental and theoretical contributions10
+aiming at exhibiting specific signatures of the 2D mass-
+less Dirac fermions in a non-uniform potential. The stud-
+ies of simple analytical problems, such as the quantum-
+mechanical motion of massless particles in the quadratic
+saddle-point potential [(1)], are of valuable interest for
+identifying such unusual properties. However, it turns
+out that quadratic potentials, which are exactly solvable
+in ordinary 2DEGs at any magnetic field, become gener-
+ally not analytically solvable within the Dirac equation.
+Here, we consider the regime of large magnetic fields,
+in which the Landau level spacing in graphene is large
+enough so that one can work in the single Landau-level
+limit. We have recently shown11 using a semicoherent-
+state Green's-function formalism that quadratic prob-
+lems then become soluble in this regime.
+
+The determination of the transmission coefficient
+through a smooth constriction for graphene in the high
+magnetic field limit [i.e., the counterpart of Eq. (2)] is the
+main result of this Rapid Communication, that we start
+by discussing in relation to conductance quantization in
+
+graphene, with a detailed derivation using semicoherent-
+state Green's functions making the rest of the Rapid
+Communication. The exact transmission coefficient for
+graphene in the absence of Landau-level mixing reads in
+the nth Landau level (with n ≥ 1)
+Tn,ǫ(E) ="1 + exp −ǫπ
+
+√ab !#−1
+E − En,ǫ
+l2
+B
+
+(3)
+
+,
+
+where ǫ = ±1 is a band index characterizing the electron
+and hole-like contributions, and
+
+En,ǫ = nζ + ǫqn (Ωc)2 + ζ2/4
+
+(4)
+with Ωc = √2vF /lB (vF is the graphene Fermi velocity).
+The transmission probability for the lowest Landau level
+(n = 0) is given by T0(E) = 1/2.
+
+The zero-temperature conductance at chemical poten-
+tial µ is given in terms of the transmission probabilities
+by the Landauer-Buttiker formula
+
+G(µ) =
+
+4e2
+
+h "T0(µ) +
+
++∞
+
+Xn=1Xǫ=±
+
+Tn,ǫ(µ)# ,
+
+(5)
+
+where we have accounted for the spin and valley degen-
+eracies in graphene with the overall prefactor 4.
+
+Then, as found in Ref. 12 for the 2DEG case, the
+conductance quantization in the graphene case shown in
+Fig. 1 directly follows from the transmission probabil-
+ities. The first obvious observation is the half-integer
+quantization of the conductance in terms of the con-
+ductance quantum (here 4e2/h) with plateaus at values
+(n + 1/2)4e2/h, reminiscent of the half-integer quantiza-
+tion of the Hall conductance. Two different configura-
+tions, symmetric and asymmetric with respect to π/2 ro-
+tation of the saddle-point potential in Eq. (1), have been
+considered, which yield to two different curves. A sym-
+metric saddle-point potential is characterized by a = b,
+thus ζ = 0, and the conductance shows clear particle-hole
+symmetry with respect to change in the energy sign. In
+the case of an asymmetric saddle-point potential (a 6= b),
+ζ becomes non-zero, signaling a breaking of particle-hole
+symmetry in the energy levels Eq.
+(4), and resulting
+in a non-uniform shift of the conductance steps, which
+is more pronounced for the highest Landau levels.
+It
+is worth noting that the asymmetry of the potential in
+Eq. (1) has a different consequence in the case of the
+standard 2DEG, where it just leads to a redefinition of
+the Landau-level spacing, see Eq. (2), and such a small
+quantitative modification appears difficult to perceive in
+an experiment. In graphene, the effect of the potential
+asymmetry should be more easily seen in experiments,
+since it yields an asymmetry between the positive- and
+negative- energy dependences of the conductance.
+
+Now, we focus on the derivation of Eq. (3). We con-
+sider a single-particle Hamiltonian model for an electron
+of charge e = −e and of Fermi velocity vF confined to
+
+2
+
+asymmetric saddle point
+symmetric saddle point
+
+i
+i
+2 h
+2 h
+e
+e
+h
+h
+
+G
+G
+
+14
+
+10
+
+6
+
+2
+
+0
+
+−2
+
+−1
+
+0
+
+µ [¯hΩc]
+µ [¯hΩc]
+
+1
+
+2
+
+FIG. 1: (Color online) Zero-temperature conductance for a
+saddle-point electrostatic potential with l2
+B b = 0.05Ωc
+(symmetric case) and l2
+B b = 0.1Ωc (asymmetric case).
+Asymmetries of the electrostatic saddle-point potential reflect
+in asymmetries between the electron and hole sectors for the
+conductance.
+
+B a = 4l2
+
+B a = l2
+
+a two-dimensional graphene sheet in the plane (x, y) in
+the presence of both a perpendicular uniform magnetic
+field B = Bz and an electrostatic (scalar) potential term
+V (r) [given by Eq. (1)]
+
+H = vF (cid:18)
+
+0
+
+Πx + iΠy
+
+Πx − iΠy
+
+0
+
+(cid:19) + V (r)1
+
+(6)
+
+with Π = −i∇r−eA(r)/c, where A(r) is the vector po-
+tential defined by the equation ∇r × A(r) = B. Here 1
+corresponds to the unity matrix in the pseudo-spin space
+(representing electron and hole degrees of freedom) and
+c is the speed of light. For convenience, we will omit
+both physical spin and valley indices, thus assuming that
+the two valleys of graphene remain completely decoupled
+form each other and can be studied separately. In addi-
+tion, we shall not consider the effects of ripples or a mass
+potential but these could be studied following Ref. 11.
+
+To describe the electron dynamics at high magnetic
+field, it is useful11 to introduce the graphene vortex states
+
+Ψn,R,λ(r) =
+
+Ψn,R(r) =
+
+1
+
+iΨn,R(r) (cid:19) ,
+p1 + λ(cid:18) λΨn−1,R(r)
+
+e−(z2+Z2−2Zz∗)/(4l2
+B )
+
+(7)
+
+(8)
+
+√2lB(cid:19)n
+(cid:18) z − Z
+
+Bn!
+
+p2πl2
+
+with z = x + iy and Z = X + iY . Here R = (X, Y ) is
+a doubly continuous quantum number corresponding to
+the guiding center position in the plane, n is a positive
+integer, λ is a band index (defined for a given n), which is
+equal to ±1 if n ≥ 1, and 0 for n = 0. States in Eq. (7),
+which can be written as Ψn,R,λ(r) = hrn, R, λi within
+the Dirac bracket notation, are eigenstates of Hamilto-
+nian (6) in absence of the electrostatic potential (V = 0)
+with the energy quantization En,λ = λ√nΩc. De-
+spite being nonorthogonal with respect to the degeneracy
+quantum number R
+
+hn1, R1, λ1n2, R2, λ2i = δn1,n2hR1R2iδλ1,λ2,
+
+hR1R2i = exp(cid:20)−
+
+(R1 − R2)2 − 2iz · (R1 × R2)
+
+4l2
+B
+
+(9)
+
+(cid:21)(10)
+
+the set of quantum numbers n, R, λi obeys a complete-
+ness relation
+
+Z d2R
+
+2πl2
+B
+
++∞
+
+Xn=0Xλ
+
+n, R, λihn, R, λ = 1.
+
+(11)
+
+In fact, the states in Eq. (7) form an overcomplete basis
+of states, which have the coherent states character with
+respect to the quantum number R.
+
+the
+
+to project
+
+the vortex Green's
+
+Relation (11) allows one
+
+elec-
+tron dynamics onto the vortex representation. We
+can then introduce
+function
+G(n1, R1, λ1, t1; n2, R2, λ2, t2), which gives the probabil-
+ity amplitude for a vortex with circulation (or Landau-
+level index) n1 and band index λ1 that is initially at
+position R1 at time t1 to be at point R2 at time t2 with
+a new circulation n2 and a band index λ2.
+In the fol-
+lowing, we consider the dynamics projected onto a single
+Landau level, meaning that the vortex circulation is con-
+served (n1 = n2 = n). Formally, this corresponds to
+taking the limit vF → +∞. Within a single Landau level
+n, the retarded Green's function takes the form11
+Gn;λ1;λ2 (R1, R2) = hR1R2ie(l2
+
+B /4)∆R12 [gn;λ1;λ2 (R12)] ,(12)
+
+R12 =
+
+[R1 + R2 + i(R2 − R1) × z] ,
+
+(13)
+
+1
+2
+
+where ∆R is the Laplacian operator.
+In the absence
+of Landau-level mixing and for a quadratic saddle-point
+electrostatic potential with the spatial dependence given
+by Eq. (1), the function g can be calculated exactly11
+with the result in the energy representation (i.e., after
+Fourier transformation with respect to the time differ-
+ence t1 − t2 = t)
+gn;λ1;λ2 (R) =Z +∞
+where τ (t) = (1/pγ) tanh(pγt). Here E is the energy
+
+and 0+ an infinitesimal positive quantity. The parame-
+ters γ and ζ are geometric coefficients characterizing V (r)
+
+dt −ie−iτ (t)V (R)
+cosh(cid:16)pγt(cid:17)
+
+hn;λ1;λ2 (t) eit(E+i0+),(14)
+
+0
+
+l2
+B
+2
+
+∆rV (r).(15)
+
+l4
+B
+
+γ =
+
+4 h(cid:0)∂2
+
+xV(cid:1)(cid:0)∂2
+
+yV(cid:1) − (∂x∂yV )2i , ζ =
+
+The coefficient γ is directly proportional to the Gaus-
+sian curvature of the electrostatic potential, which turns
+out to be negative for a saddle-shaped (or hyper-
+bolic) quadratic function V (r). Finally, the functions
+hn;λ1;λ2 (t), which contain the full dependences on the
+Landau-level index n and on the band indices λ1 and λ2
+read for n ≥ 1
+hn;λ1;λ2(t) = Xǫ=±
+
+[(1 + ǫλ1αn) δλ1,λ2 + ǫβnδ−λ1,λ2 ]
+
+2
+
+e−itEn,ǫ
+
+,
+
+where En,ǫ is defined in Eq. (4),
+
+αn =
+
+,
+
+βn =
+
+√nΩc
+
+qn (Ωc)2 + ζ2/4
+
+ζ
+
+qn (Ωc)2 + ζ2/4
+
+(16)
+
+,(17)
+
+3
+
+and h0;0;0(t) = e−itζ/2 for the lowest Landau level n = 0.
+It is worth stressing that the previous expressions are
+valid for Landau-level indices n not too high, for which
+
+on the function g(R) in Eq. (12) is evaluated as13
+
+the inequality ζ,pγ ≪ (√n + 1 − √n)Ωc holds.
+The action of the differential operator exp(cid:2)(l2
+B/4)∆R(cid:3)
+gn;λ1;λ2 (u) e− (u−R12)2
+Gn;λ1;λ2 (R1, R2) = hR1R2iZ d2u
+
+πl2
+B
+
+l2
+B
+
+.
+
+(18)
+
+Then, inserting Eq. (14) into Eq. (18), we can perform
+the Gaussian integrals over u to get
+
+hn;λ1;λ2 (t)
+
+.
+
+0
+
+12
+
+(19)
+
+γf (t)τ 2(t)
+
+R2
+l2
+B ,
+
+dt −ieit(E+i0+)
+cosh(cid:16)pγt(cid:17)
+
+Gn;λ1;λ2(R1, R2) = hR1R2iZ +∞
+×pf (t) e−if (t)τ (t)V (R12) e
+with f (t) =(cid:0)1 + iζτ (t) − γτ 2(t)(cid:1)−1
+We note from Eq. (16) that for n ≥ 1 and ζ 6= 0 the
+function hn;λ1;λ2 (t) is not diagonal in the λ space, indicat-
+ing that λ is generically no more a good quantum number
+in the presence of asymmetric saddle-point potentials. A
+straightforward diagonalization shows that ǫ = ± ap-
+pears instead as a good number, with hn;ǫ(t) = e−itEn,ǫ.
+According to the above formula (4) for En,ǫ, the quantum
+number ǫ clearly labels the electron-like and hole-like en-
+ergy bands. We shall henceforth represent the Green's
+function in this ǫ representation, where the latter takes
+a diagonal form.
+
+In order to determine the transmission coefficient with
+a given energy channel (i.e., at Landau-level index n
+and band index ǫ fixed), we only need the Green's func-
+tion Gn;ǫ(R1, R2) when the states at vortex positions R1
+and R2 correspond to the same energy and are asymp-
+totically far from the saddle point located at the ori-
+gin. For a saddle-point potential of the form (1), this
+means taking the limits X1 → ∞ and X2 → ∞,
+while V (X1, Y1) = V (X2, Y2) = const. Making the
+change in variable s = d(cid:2)1 − γτ 2(t)(cid:3) /(cid:2)1 + γτ 2(t)(cid:3),
+where d = X1Y2 − X2Y1/l2
+B, we can easily take the
+limit d → +∞ in the integral in Eq. (19), and obtain the
+expression
+
+(√aX1−√bY1)(√bX1 +√aY1)+(√aX2 +√bY2)(√bX2−√aY2)
+
+4(cid:18) E−En,ǫ√γ
+
++i(cid:19)
+
+E − En,ǫ
+
+2pγ ! e−σ π
+
+(a+b)
+
+2l2
+B
+
+2 − i
+
+i
+
+G∞n;ǫ(R1, R2) = Γ  1
+×(−i)e
+d−1/2+i(E−En,ǫ)/(2√γ)
+×
+q4γ + 2iζpγ
+
+(√aX1−√bY1)2+(√aX2+√bY2)2
+
+2l2
+B
+
+(a+b)
+
+e−
+
+,
+
+(20)
+
+where σ = sgn(X1X2) and Γ(z) is the Gamma func-
+tion. At infinity the vortex is close to the asymptotes
+
+refl
+refl
+
+refl
+refl
+
+YY
+
+in
+in
+
+in
+in
+
+4
+
+In the valence band the vortices carry a positive charge.
+Therefore, the correspondence between the transmission
+(or reflection) process of a negative charge carrier and
+the sign of σ is now reversed, so that we have
+
+trans
+trans
+
+trans
+trans
+
+XX
+
+rn,−
+tn,−
+
+= i exp" π
+
+2
+
+E − En,−
+
+pγ # .
+
+(22)
+
+FIG. 2: (Color online) Schematic to identify the Green's func-
+tions for reflection and transmission. Semiclassically the tra-
+jectories of vortex states lie on contours of constant potential.
+Solid (dashed) lines correspond to an equipotential line V > 0
+(V < 0) and therefore for E > 0 to a vortex in the conduction
+(valence) band, respectively. Dotted lines denote the asymp-
+totes of the potential in Eq. (1).
+
+of the saddle-point potential V (R), i.e., Y1 ∼ X1pa/b
+and Y2 ∼ −X2pa/b. The two modes ǫ = ± circulate in
+
+the same direction, and are not mixed since they are well
+separated in energy.
+
+Within the present saddle-point geometry, the trans-
+mission coefficient can be extracted from the asymptotic
+form of the retarded vortex Green's function, thus per-
+forming scattering theory in terms of coherent-state wave
+packets instead of the more standard plane waves. In the
+conduction band (ǫ = +), the transmission of a vortex
+from the left half-plane to the right half-plane is described
+by Green's function expression [Eq. (20)] with the sign
+function σ = − while the vortex reflection, where the
+vortex remains in the left half-plane, is characterized by
+σ = + (see Fig. 2). Therefore, the ratio of the trans-
+mission amplitude to the reflection amplitude for a given
+Landau level n in the conduction band is given by the
+ratio of these two Green's functions:
+
+tn,+
+rn,+
+
+= i exp" π
+
+2
+
+E − En,+
+
+pγ # .
+
+(21)
+
+The relations between the transmission probabilities Tn,ǫ
+and the transmission and reflection amplitudes,
+i.e.,
+tn,ǫ2 = 1 − rn,ǫ2 = Tn,ǫ, finally provide the result in
+Eq. (3).
+For the peculiar case of the lowest Landau level,
+contributions both from the original conduction and
+valence bands arise. We get for the electron-like excita-
+tions T +
+for
+and
+
+0 (E) = h1 + exp(cid:16)−π(E − ζ/2)/pγ(cid:17)i−1
+
+excitations
+
+h1 + exp(cid:16)π(E − ζ/2)/pγ(cid:17)i−1
+
+Summing up these
+two contributions and considering the equipartition of
+the current between the two types of excitations yielding
+a 1/2 prefactor, we finally get the already quoted lowest
+Landau-level contribution
+
+T −0 (E)
+
+hole-like
+
+,
+
+=
+
+the
+
+.
+
+T0(E) =
+
+1
+
+2(cid:2)T +
+
+0 (E) + T −0 (E)(cid:3) =
+
+1
+2
+
+.
+
+(23)
+
+In conclusion, we have calculated the transmission co-
+efficient for a quadratic saddle-point electrostatic po-
+tential in graphene, and found that shape asymmetries
+generic to quantum point contacts break particle-hole
+symmetry in the conductance. Our results should be
+relevant for future split gate experiments in graphene as
+well as for the formulation of quantum network models.
+Theoretically, we have also presented an alternative way
+of deriving transmission coefficients from the scattering
+of coherent-state wave packets.
+
+1 I. Neder, N. Ofek, Y. Chung, M. Heiblum, D. Mahalu, and
+
+(2007).
+
+V. Umansky, Nature 448, 333 (2007).
+
+2 H. A. Fertig and B. I. Halperin, Phys. Rev. B 36, 7969
+
+7 K. S. Novoselov et al., Nature (London) 438, 197 (2005).
+8 Y. Zhang, Y. W. Tan, H. L. Stormer, and P. Kim, Nature
+
+(1987).
+
+(London) 438, 201 (2005).
+
+3 J. T. Chalker and P. D. Coddington, J. Phys. C 21, 2665
+
+9 V. P. Gusynin and S. G. Sharapov, Phys. Rev. Lett. 95,
+
+(1988).
+
+4 B. Kramer, T. Ohtsuki, and S. Kettemann, Phys. Rep.
+
+417, 211 (2005).
+
+5 This result for the 2DEG can be derived from Eqs. (1.2)-
+(1.6) of Ref. 2 in the limit ωc → ∞ by neglecting the
+Landau-level mixing correction to the curvature energy E1.
+Such corrections lead to additional yet small contributions
+to the energy dependence of the transmission coefficient in
+the large cyclotron frequency limit, without affecting its
+qualitative behavior.
+
+6 A. K. Geim and K. S. Novoselov, Nature Materials 6, 183
+
+146801 (2005).
+
+10 A. H. Castro Neto, F. Guinea, N. M. R. Peres, K. S.
+Novoselov, and A. K. Geim, Rev. Mod. Phys. 81, 109
+(2009).
+
+11 T. Champel and S. Florens, Phys. Rev. B 82, 045421
+
+(2010).
+
+12 M. Buttiker, Phys. Rev. B 41, 7906 (1990).
+13 T. Champel and S. Florens, Phys. Rev. B 80, 125322
+
+(2009); ibid 80, 161311(R) (2009).
+
+

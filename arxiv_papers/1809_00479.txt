@@ -1,0 +1,813 @@
+Fermionic analogue of black hole radiation with a super high 
+
+Hawking temperature 
+
+Hang Liu,1,5 Jia-Tao Sun,1,2,5,* Huaqing Huang,3 Feng Liu,3,4,† and Sheng Meng1,4,5,‡ 
+
+1 Beijing National Laboratory for Condensed Matter Physics and Institute of Physics, Chinese Academy of 
+
+Sciences, Beijing 100190, People's Republic of China 
+
+2 School of Information and Electronics, Beijing Institute of Technology, Beijing 100081, P. R. China 
+
+3 Department of Materials Science and Engineering, University of Utah, Salt Lake City, Utah 84112, USA 
+
+4 Collaborative Innovation Center of Quantum Matter, Beijing 100084, People's Republic of China 
+
+5 University of Chinese Academy of Sciences, Beijing 100049, People's Republic of China 
+
+ 
+
+Abstract: Measurement of gravitational Hawking radiation of black hole (BH) is prohibitive 
+
+because  of  an  extremely  low  Hawking  temperature  (TH).  Here  we  demonstrate  a  fermionic 
+
+analog of BH with a super high TH ~ 3 K, which is several orders of magnitude  higher than 
+
+previous  works.  We  propose  that  Floquet-Dirac  states,  formed  in  a  periodically  laser  driven 
+
+two-dimensional  black  phosphorous  thin  film,  can  be  designed  with  a  spatial  gradient  to 
+
+mimic  the  "gravity"  felt  by  fermionic  quasiparticles  as  that  for  a  Schwarzschild  BH  (SBH). 
+
+Quantum tunneling of electrons from a type-II Dirac cone (inside BH) to a type-I Dirac cone 
+
+(outside) emits a SBH-like Hawking radiation spectrum.  
+
+ 
+
+ 
+
+ 
+
+ 1 / 14 
+
+Gravitational black hole (BH) is a curved spacetime absorbing everything inside its event 
+
+horizon  because  of  an  extremely  large  mass/radius  ratio,  as  characterized  by  overtilted  light 
+
+cones according to general relativity theory. This notion of nothing escapes from a BH is no 
+
+longer  valid  if  quantum  effects  are  considered.  According  to  Hawking  [1-3],  quantum 
+
+fluctuations  at  the  event  horizon  generate  particles  and  antiparticles  to  propagate  out  of  and 
+
+into the BH, respectively. Consequently, a BH evaporates thermally like a black body, known 
+
+as  Hawking  radiation,  as  shown  in  the  upper  panel  of  Fig.  1.  The  intensity  of  this  quantum 
+
+radiation  is  quantified  by  Hawking  temperature  (TH  =  κ/2π  with  the  gravity  κ  at  the  event 
+
+horizon),  which  is  however  extremely  low,  ~10−8  K  for  a  BH  with  one  solar  mass  [1].  This 
+
+prohibitively  weak  intensity  presents  a  significant  challenge  to  directly  observe  Hawking 
+
+radiation.  Previously,  artificial  analogs  have  been  proposed  including  sonic  BHs  [4,  5]  in 
+
+Bose-Einstein  condensates  [6-9],  ion  rings  [10],  and  Fermi-degenerate  liquids  [11]. 
+
+Unfortunately,  TH  for  most  artificial  BHs  is  still  very  low,  e.g.  ~  10-9  K  in  Bose-Einstein 
+
+condensates  [7].  Furthermore,  the  observation  from  some  optical  BH  analogs  remains 
+
+controversial [12-21]. Therefore, new  BH  analogs inherent  with  quantum  effect and  a much 
+
+higher TH are highly desirable.  
+
+Recently, type-II Weyl/Dirac fermions in solids have been proposed as a new platform to 
+
+realize artificial BHs [22-27]. In the regions where type-II and type-I fermions are separated 
+
+by a boundary with type-III fermions (i.e. the "event horizon"), two worlds inside and outside 
+
+a BH are analogously formed (lower panel of Fig. 1). Quantum mechanics enables Hawking 
+
+radiation of quasiparticles at the event horizon, which can simulate fermions radiation from a 
+
+real  BH  [28-30].  Thanks  to  the  fact  that  electrostatic  interactions  in  solids  are  orders-of-
+
+magnitude  stronger  than  gravitational  forces,  an  unprecedented  high  TH  is  expected.  Our 
+
+previous  work  shows  that  laser-driven  black  phosphorus  (BP)  can  host  type-I,  -II  and  -III 
+
+fermions [25], manifesting a potential fermionic analogue of BH. In order to materialize this 
+
+idea two requirements are necessary:  (i) a spatial  distribution of band structure to  produce  a 
+
+"steep" analogous gravity field, and (ii) a working mechanism to induce fermionic Hawking 
+
+radiation. 
+
+In this article, we theoretically propose a fermionic analogue of BH in two-dimensional 
+
+ 
+
+ 2 / 14 
+
+(2D) BP thin film under laser illumination, which is designed to be experimentally accessible. 
+
+Combining  first-principles  and  quantum  tunneling  calculations,  a  spatially  inhomogeneous 
+
+system  with  successively  distributed  type-II,  -III  and  -I  Dirac  fermions  is  illustrated,  which 
+
+acts like an Schwarzschild BH (SBH) metric to induce electron emission from type-II to type-
+
+I region. An effective gravity field corresponding to a striking high temperature TH ~ 3 K is 
+
+achieved.  
+
+Dirac  fermions  are  classified  into  different  types,  and  successive  transitions  between 
+
+them in 2D can be described by the Hamiltonian 
+
+H(k) = cxkxσx + cykyσy + vkyσ0 ,                                                (1) 
+
+where 
+
+ , 
+
+, and σ0 is the identity matrix. Dispersions in ky direction are 
+
+ε1 = (v + cy)ky and ε2 = (v − cy)ky, whose crossing forms Dirac cone with Fermi velocities vF1 = 
+
+v  +  cy  and  vF2  =  v  −  cy,  respectively.  The  nodal  point  of  the  cone  is  known  as  Dirac  point, 
+
+whose energy is marked as εD. vF1 and vF2 can be tuned by changing v and cy, leading to three 
+
+types of cones with distinct band dispersions and Fermi surfaces. For an upright type-I Dirac 
+
+cone, cy >> v, vF1 = −vF2. When the upright cone tilts, cy and v decreases, and we elaborate 
+
+here on a  clockwise tilt having  cy > 0 and  v < 0  [see Fig. 2(a)]. The cone remains as type-I 
+
+when cy decreases from +∞ to −v (cy > −v). At the critical point (cy = −v), the cone has a flat 
+
+band of ε1 (vF1 = 0, vF2 < 0), which is dubbed type-III with a line-like Fermi surface [24, 25]. 
+
+Beyond  the  critical  point,  an  overtilted  cone  is  named  type-II  having  cy  <  −v,  whose  two 
+
+Fermi  velocities  have  the  same  sign  (vF1,  vF2  <  0)  and  Fermi  surface  encompasses  both 
+
+electron and hole pockets. 
+
+We  next  transform  the  Dirac  fermions  in  crystals  to  the  particles  in  gravity  field.  In 
+
+Einstein's notation, Eq. (1) can be rewritten as H(k) = ej
+
+iσ jki + e0
+
+iσ0ki .  i, j = 1, 2 (or x, y) and 
+
+the matrix ej
+
+i and vector e0
+
+i are equivalent to components of a tetrad field eα
+
+μ (α, μ = 0, 1, 2 in 
+
+2  +  1  dimensions)  in  general  relativity.  Then,  an  effective  relativistic  covariant  metric  gμν  = 
+
+(ηαβeα
+
+μeβ
+
+ν)−1 with ηαβ = diag(−1,1,1) governs Dirac fermions. The corresponding line element 
+
+(ds2 = gμνdxμdxν) is  
+
+ 
+
+ 3 / 14 
+
+0110x1001y,                                         (2) 
+
+which  shows  the  behavior  of  Dirac  quasiparticles  in  an  effective  2  +  1  dimensional  (t,  x,  y) 
+
+spacetime.  For  v  =  0,  ds2  =  −cy
+
+2dt2  +  dy2  in  (t,  y)  spacetime,  representing  a  flat  spacetime 
+
+where  electronic  wave  propagates  at  the  velocity  of  cy  along  ±y  directions.  Hence,  cy 
+
+corresponds  to  light  velocity  (c)  in  the  gravitational  spacetime,  so  that  Dirac  wave 
+
+propagating in a crystal field is formally equivalent to light propagating in a gravity field. In 
+
+contrast  to  a  constant  c,  however,  the  "light  velocity"  (cy)  in  a  crystal  can  be  changed  by 
+
+interactions. 
+
+Effective  spacetime  for  a  given  type  of  Dirac  fermion  can  be  designed  by  the  relative 
+
+magnitude of cy and v. The Dirac cone manifests in its "spacetime" as an artificial light cone 
+
+(ds2 = 0) with 
+
+ and 
+
+, as shown in Fig. 2(b). For type-I, t1' = 1/(v + cy) > 0 and 
+
+t2'  =  1/(v  −  cy)  <  0  having  the  opposite  sign,  quasiparticles  propagate  along  both  +y  and   -- y 
+
+directions.  For  type-III,  t1  →  ∞,  one  branch  of  quasiparticles  stays  at  a  fixed  location  (the 
+
+event horizon) permanently while the other propagates along  -- y direction (t2' < 0). For type-II, 
+
+both  t1'  and  t2'  are  negative,  all  quasiparticles  propagate  along   -- y  direction  resembling  the 
+
+unidirectional behavior of particles inside a SBH. 
+
+To produce a desired gravity field for Dirac fermions, an appropriate spatial distribution 
+
+of effective geometry is designed. Matching the effective and Schwarzschild metrics [31], the 
+
+effective potential energy of quasiparticles is 
+
+. Φ(y) is inversely proportional to 
+
+the  distance: 
+
+,  where  yh  is  the  location  of  event  horizon.  Consequently,  the 
+
+effective light velocity cy distributes along the y direction as 
+
+ 
+
+ 
+
+ 
+
+ 
+
+. 
+
+ 
+
+ 
+
+              
+
+ 
+
+(3)  
+
+This  guarantees  that  type-II  fermions  are  inside  the  BH  (0  <  y  <  yh),  type-III  at  the  event 
+
+horizon (y = yh) and type-I outside the BH (y > yh) [Fig. 2(c)]. The motion of quasiparticles is 
+
+described  by  kinematic  equations  of 
+
+ and 
+
+.  As  shown  in  Fig. 
+
+ 
+
+ 4 / 14 
+
+2222222221121yxyyvvdsdtdxdydtdycccc1yytvc2yytvc221()()2()yvyycy1()2hyyy()yhycyvy11(1)yhkyvy22(1)yhkyvy2(d),  ky1  and  ky2  represent  two  ingoing  waves  inside  the  BH,  and  one  ingoing  and  one 
+
+outgoing wave outside the BH. At the event horizon, there is such a high potential barrier that 
+
+quasiparticles  occupying  on  the  ε1  band  are  impossible  to  go  through  classically,  but  can 
+
+tunnel through via quantum fluctuation to produce Hawking radiation.  
+
+Next,  using  quantum  tunneling  method  [29,  32],  we  analyze  the  analogous  Hawking 
+
+radiation at the effective BH event horizon with the curved geometry of Eq. (3). As illustrated 
+
+in Fig. 2(c), the ε1 states above the Dirac point (ε1 > εD) are occupied inside the BH, but empty 
+
+outside.  This  leads  to  emission  of  the  excited  electrons  from  inside  to  outside  the  BH. 
+
+Adopting  Wentzel-Kramers-Brillouin  approximation,  the  tunneling  probability  is  P  = 
+
+1/(1+exp(2S))  with  a  classical  action  S  =  Im∫ky(y)dy.  Assuming 
+
+ for 
+
+the ky1 branch around the event horizon, P produces a spectrum with the energy intensity I(ε) 
+
+= ne
+
+rad(ε)·ε. The number of radiated electrons follows  
+
+,                                                        (4) 
+
+where  kB  is  the  Boltzmann  constant,  and 
+
+is  the  Hawking  temperature. 
+
+ 
+
+The  energy  spectrum  I(ε)  =  ne
+
+rad(ε)·ε  of  radiated  massless  Dirac  electrons  conforms  to  the 
+
+thermal radiation  of massless Dirac particles from  a 2D gravitational  BH (see  Supplemental 
+
+Material  [33]).  The  "radiated"  electrons  and  holes  created  by  quantum  fluctuation  are 
+
+entangled  (lower  panel  in  Fig.  1).  It  will  also  be  very  interesting  to  study  the  correlation 
+
+effects between  a Hawking pair (electron-hole pair) using our proposed fermionic analog of 
+
+BH,  such  as  by  detecting  and  analyzing  the  distributions  of  both  electrons  (in  the  type-II 
+
+region) and holes (type-I region) simultaneously resulted from quantum tunneling. 
+
+The radiated Hawking spectrum I(ε) can be measured from the local electron distribution 
+
+n(ε)  in  the  region  y  >  yh,  using  scanning  tunneling  spectroscopy  or  angle  resolved 
+
+photoemission spectroscopy (ARPES). As shown in Fig. 2(e), the energy of ε = 0 is set as the 
+
+Fermi  level  (εF),  at  which  Dirac  point  and  chemical  potential  locate  (εD  =  εF  =  0).  The 
+
+spectrum ne
+
+rad(ε) with ε > εD has a peak at εp = 0.3 meV for TH = 3 K, which is distinct from 
+
+ 
+
+ 5 / 14 
+
+()hyyhydckyydyeradexp1BHnkT12hHyBydTcvkdythe  Fermi-Dirac  distribution;  and  nh
+
+rad(ε)  for  radiated  holes  below  εD  due  to  quantum 
+
+tunneling  is  similar.  The  Hawking  spectrum  (in  2D)  derived  here  is  the  same  as  that  of 
+
+massless fermions  emitted from  a 2D BH, providing a key signature  for  Hawking radiation. 
+
+TH  can  be  tuned  by  controlling  the  effective  gravity  field  to  facilitate  the  experimental 
+
+detection of ne
+
+rad(ε) and nh
+
+rad(ε). The relation between εp and TH follows 
+
+, 
+
+leading  to  a  linear  dependence  εp  =  1.28·kBTH  [Fig.  2(f)].  An  unprecedentedly  high  TH  is 
+
+achieved  because  interactions  in  crystals  are  orders-of-magnitude  stronger  than  those  in 
+
+gravity field and Bose-Einstein condensate. 
+
+Next, we theoretically design a solid-state system to realize such a fermionic analogue of 
+
+BH.  By  applying  a  gate  with  the  vertical  electric  field  Eext  or  compressive  strain  δ  along 
+
+armchair (x) direction, the direct band gap of 2D BP thin film decreases [25, 34-40], leading 
+
+to an inversion Δε of valence (ε1) and conduction (ε2) bands. Symmetry-protected type-I Dirac 
+
+cone emerges, which was confirmed by ARPES [37, 38]. For a bilayer BP, this Dirac state is 
+
+shown in Fig. 3(c), where Δε = 14 meV at Γ point is induced by Eext = 0.18 V/Å or δ = 7.6 % 
+
+(see Fig. S1 for details [33]).  
+
+To form the three types  of Dirac states by laser-driving, we study coherent  interactions 
+
+between  the  bilayer  BP  and  a  linearly  polarized  laser  (LPL)  with  a  time-dependent  vector 
+
+potential A(t) = A0sin(ωt, 0, 0) [Fig. 3(a)]. The photon energy of the time-periodic and space-
+
+homogeneous  LPL  is  chosen  as  ℏω  =  0.03  eV,  which  is  larger  than  Δε  =  14  meV  to  avoid 
+
+crossing  nearby  Dirac  point  between  the  original  (n  =  0)  and  photon-dressed  (n  ≠  0)  bands. 
+
+When the LPL is applied, the type-I Dirac cone tilts due to the hybridization between n = 0 
+
+and n ≠ 0 bands. At the critical laser amplitude A0 = 16 V/c (corresponding to 0.24 mV/Å or 
+
+7.65 × 105 W/cm2, here c is light velocity), ε1 band along ΓY path becomes flat, forming type-
+
+III Dirac cone [Fig. 3(d)]. As the laser amplitude increases to A0 = 20 V/c, the Dirac cone tilts 
+
+further  to  become  type-II  [Fig.  3(e)].  Then  the  slope  of  ε1  and  ε2  dispersions  has  the  same 
+
+sign,  and  the  states  of  the  ε1  band  above  Fermi  level  (ε1  >  0  eV)  becomes  occupied. 
+
+Consequently, type-I, II and -III Dirac fermions are created in a single material of 2D BP by a 
+
+varying laser intensity. In addition, laser frequency plays also a crucial role in determining the 
+
+ 
+
+ 6 / 14 
+
+1expppBHBHkTkTtype of cones, which is shown in the phase diagram of Fig. 3(b). 
+
+To mimic the spacetime geometry of Eq. (2), we map the photoinduced Dirac states from 
+
+ab initio calculations to model parameters in Eq. (1). As shown in Fig. 3(f), the parameter v = 
+
+−0.1 eV·Å is constant, while cy decreases gradually with increasing A0, showing the transition 
+
+from type-I (cy > −v) to type-II (cy < −v). In the regime of strong (weak) laser intensity, cy and 
+
+A0 exhibit a linear (nonlinear) relation, which is a typical characteristics of optical Stark effect 
+
+(see details in Fig. S3 [33]). Neglecting the small nonlinearity, one can fit cy and A0 as 
+
+cy[eV·Å] = 0.314  --  0.013A0[V/c],                                              (5) 
+
+which is the base to explore Hawking radiation in the laser-driven bilayer BP thin film.  
+
+Substituting cy in Eq. (3) with Eq. (5), the amplitude of space-inhomogeneous laser field 
+
+is
+
+,  leading  to 
+
+.  Similar  to 
+
+ for  a 
+
+gravitational BH, the TH of the proposed artificial BH is inversely proportional to the size (yh) 
+
+of a BH. In the cases of gravitational BH, rh is determined by the mass of BH, rh=2GM, which 
+
+is  large  producing  extremely  low  TH.  Here  we  could  intentionally  control  the  focus  area  of 
+
+light with suitable intensity to achieve a small rh and thus a high TH. To achieve TH = 3 K, the 
+
+BH size is set at yh = 30.2 Å, which requires the laser field to decrease from 0.37 to 0 mV/Å 
+
+in  a  range  of  260  Å  along  the  zigzag  (y)  direction  of  BP  [Fig.  4(a)].  This  gradient  of  laser 
+
+intensity can be readily realized in experiments [46-48]. This temperature is realizable based 
+
+on typical  conditions of the laser  experiment, as  well as the validity of lattice periodicity  as 
+
+required  by  Bloch  band  theory.  The  radiation  can  be  detected  by  measuring  electron 
+
+distribution n(ε) = n0 (ε) + ne
+
+rad(ε)  nh
+
+rad(ε) in the region y > yh, where ne
+
+rad(ε) and nh
+
+rad(ε) are 
+
+the radiated spectrum of electrons and holes in Fig. 2(e), respectively, and n0 (ε) is the electron 
+
+distribution  before  radiation.  As  shown  in  Fig.  4(b),  the  peak  position  εp  of  the  calculated 
+
+distribution n(ε) is 0.3 meV above the Fermi level. Decreasing the BH size, εp increases in a 
+
+wide range of TH [Fig. 4(c)]. Also, we note that there are a pair of Dirac cones along  -- YY path 
+
+resembling  black  and  white  holes  respectively,  but  their  coexistence  does  not  influence  the 
+
+Hawking radiation (see details in Fig. S4 [33]).  
+
+In conclusion, type-I, -II and -III Dirac fermions are predicted to form in 2D BP thin film 
+
+ 
+
+ 7 / 14 
+
+0[]()[/]8.15424.1538[]hyAyVcy4HBhvTkyHhcTrunder LPL, resulting in a fermionic analogue of BH Hawking radiation. Hawking temperature 
+
+is  theoretically  estimated  to  reach  3  K,  with  the  emitted  electrons  exhibiting  a  spectrum 
+
+peaked  at  0.3  meV  above  the  Fermi  level,  which  should  be  experimentally  observable.  Our 
+
+finding  opens  a  path  to  engineering  the  table-top  fermionic  condensed-matter  platform  for 
+
+simulating exotic phenomena in astrophysics and general relativity. 
+
+We thank financial support from the National Key Research and Development Program 
+
+of  China  (Grants  No.  2016YFA0300902  and  No.  2016YFA0202300),  National  Basic 
+
+Research  Program  of  China  (Grant  No.  2015CB921001),  NSF  of  China  (Grants  No. 
+
+11774396 and No. 11474328), and "Strategic Priority Research Program (B)" of CAS (Grants 
+
+No. XDB30000000 and  No. XDB07030100). H. H. and F. L. were supported by U.S. DOE-
+
+BES (Grant No. DE-FG02-04ER46148). 
+
+ 
+
+* jtsun@iphy.ac.cn 
+
+† fliu@eng.utah.edu 
+
+‡ smeng@iphy.ac.cn 
+
+[1]  S. W. Hawking, Black hole explosions? Nature 248, 30 (1974). 
+
+[2]  J. B. Hartle, S. W. Hawking, Path-integral derivation of black-hole radiance. Phys. Rev. D 13, 2188 (1976). 
+
+[3]  J. M. Bardeen, Black Holes Do Evaporate Thermally. Phys. Rev. Lett. 46, 382 (1981). 
+
+[4]  W. G. Unruh, Experimental Black-Hole Evaporation? Phys. Rev. Lett. 46, 1351 (1981). 
+
+[5]  W. G. Unruh, Sonic analogue of black holes and the effects of high frequencies on black hole evaporation. 
+
+Phys. Rev. D 51, 2827 (1995). 
+
+[6]  L. J. Garay, J. R. Anglin, J. I. Cirac, P. Zoller, Sonic analog of gravitational black holes in Bose-Einstein 
+
+condensates. Phys. Rev. Lett. 85, 4643 (2000). 
+
+[7]  O. Lahav, A. Itah, A. Blumkin, C. Gordon, S. Rinott, A. Zayats, J. Steinhauer, Realization of a sonic black 
+
+hole analog in a Bose-Einstein condensate. Phys. Rev. Lett. 105, 240401 (2010). 
+
+[8]  L. J. Garay, J. R. Anglin, J. I. Cirac, P. Zoller, Sonic black holes in dilute Bose-Einstein condensates. Phys. 
+
+Rev. A 63, 023611 (2001). 
+
+[9]  J. Steinhauer, Observation of quantum Hawking radiation and its entanglement in an analogue black hole. 
+
+Nat. Phys. 12, 959 (2016). 
+
+[10] B. Horstmann, B. Reznik, S. Fagnocchi, J. I. Cirac, Hawking radiation from an acoustic black hole on an 
+
+ion ring. Phys. Rev. Lett. 104, 250403 (2010). 
+
+[11] S. Giovanazzi, Hawking radiation in sonic black holes. Phys. Rev. Lett. 94, 061302 (2005). 
+
+[12] U. Leonhardt, P. Piwnicki, Relativistic effects of light in moving media with extremely low group velocity. 
+
+Phys. Rev. Lett. 84, 822 (2000). 
+
+[13] U. Leonhardt, A laboratory analogue of the event horizon using slow light in an atomic medium. Nature 
+
+415, 406 (2002). 
+
+[14] R. Schutzhold, W. G. Unruh, Hawking radiation in an electromagnetic waveguide? Phys. Rev. Lett. 95, 
+
+031301 (2005). 
+
+ 
+
+ 8 / 14 
+
+[15] T. G. Philbin, C. Kuklewicz, S. Robertson, S. Hill, F. Konig, U. Leonhardt, Fiber-optical analog of the event 
+
+horizon. Science 319, 1367 (2008). 
+
+[16] F. Belgiorno, S. L. Cacciatori, M. Clerici, V. Gorini, G. Ortenzi, L. Rizzi, E. Rubino, V. G. Sala, D. Faccio, 
+
+Hawking radiation from ultrashort laser pulse filaments. Phys. Rev. Lett. 105, 203901 (2010). 
+
+[17] R. Schutzhold, W. G. Unruh, Comment on "Hawking radiation from ultrashort laser pulse filaments". Phys. 
+
+Rev. Lett. 107, 149401 (2011). 
+
+[18] M. Elazar, V. Fleurov, S. Bar-Ad, All-optical event horizon in an optical analog of a Laval nozzle. Phys. 
+
+Rev. A 86,  (2012). 
+
+[19] S. Liberati, A. Prain, M. Visser, Quantum vacuum radiation in optical glass. Phys. Rev. D 85, 084014 
+
+(2012). 
+
+[20] W. G. Unruh, R. Schützhold, On slow light as a black hole analogue. Phys. Rev. D 68, 024008 (2003). 
+
+[21] W. G. Unruh, R. Schützhold, Hawking radiation from "phase horizons" in laser filaments? Phys. Rev. D 86, 
+
+064006 (2012). 
+
+[22] G. E. Volovik, K. Zhang, Lifshitz Transitions, Type-II Dirac and Weyl Fermions, Event Horizon and All 
+
+That. J. Low Temp. Phys. 189, 276 (2017). 
+
+[23] S. Guan, Z.-M. Yu, Y. Liu, G.-B. Liu, L. Dong, Y. Lu, Y. Yao, S. A. Yang, Artificial gravity field, 
+
+astrophysical analogues, and topological phase transitions in strained topological semimetals. npj Quantum 
+
+Materials 2, 23 (2017). 
+
+[24] H. Huang, K.-H. Jin, F. Liu, Black hole horizon in the Dirac  semimetal Zn2In2S5. Phys. Rev. B 98, 
+
+121110(R) (2018). 
+
+[25] H. Liu, J.-T. Sun, C. Cheng, F. Liu, S. Meng, Photoinduced Nonequilibrium Topological States in Strained 
+
+Black Phosphorus. Phys. Rev. Lett. 120, 237403 (2018). 
+
+[26] A. Westström, T. Ojanen, Designer Curved-Space Geometry for Relativistic Fermions in Weyl 
+
+Metamaterials. Phys. Rev. X 7, 041026 (2017). 
+
+[27] A. A. Soluyanov, D. Gresch, Z. Wang, Q. Wu, M. Troyer, X. Dai, B. A. Bernevig, Type-II Weyl semimetals. 
+
+Nature 527, 495 (2015). 
+
+[28] T. Han, G. D. Kribs, B. McElrath, Black hole evaporation with separated fermions. Phys Rev Lett 90, 
+
+031601 (2003). 
+
+[29] C. Corda, Precise model of Hawking radiation from the tunnelling mechanism. Classical and Quantum 
+
+Gravity 32, 195007 (2015). 
+
+[30] R. Kerner, R. B. Mann, Fermions tunnelling from black holes. Classical and Quantum Gravity 25, 095014 
+
+(2008). 
+
+[31] G. E. Volovik, The universe in a helium droplet (Oxford, 2003). 
+
+[32] M. K. Parikh, Hawking Radiation As Tunneling. Phys. Rev. Lett. 85, 5042 (2000). 
+
+[33] See Supplemental Material at  http://link.aps.org/supplemental/xxx, for the engineering of bands in 
+
+equilibrium, choice of laser polarization, coexisting analogous black and white holes in 2D BP, and the 
+
+Hawking spectrum derivation, which includes Refs. [41-45]. 
+
+[34] X. Ling, H. Wang, S. X. Huang, F. N. Xia, M. S. Dresselhaus, The renaissance of black phosphorus. Proc. 
+
+Natl. Acad. Sci. U. S. A. 112, 4523 (2015). 
+
+[35] A. S. Rodin, A. Carvalho, A. H. Castro Neto, Strain-Induced Gap Modification in Black Phosphorus. Phys. 
+
+Rev. Lett. 112, 176801 (2014). 
+
+[36] B. Deng, V. Tran, Y. Xie, H. Jiang, C. Li, Q. Guo, X. Wang, H. Tian, S. J. Koester, H. Wang, J. J. Cha, Q. 
+
+Xia, L. Yang, F. Xia, Efficient electrical control of thin-film black phosphorus bandgap. Nat. Commun. 8, 
+
+14474 (2017). 
+
+ 
+
+ 9 / 14 
+
+[37] J. Kim, S. S. Baik, S. H. Ryu, Y. Sohn, S. Park, B. G. Park, J. Denlinger, Y. Yi, H. J. Choi, K. S. Kim, 
+
+Observation of tunable band gap and anisotropic Dirac semimetal state in black phosphorus. Science 349, 
+
+723 (2015). 
+
+[38] J. Kim, S. S. Baik, S. W. Jung, Y. Sohn, S. H. Ryu, H. J. Choi, B.-J. Yang, K. S. Kim, Two-Dimensional 
+
+Dirac Fermions Protected by Space-Time Inversion Symmetry in Black Phosphorus. Phys. Rev. Lett. 119, 
+
+226801 (2017). 
+
+[39] J. Zhao, R. Yu, H. Weng, Z. Fang, Topological node-line semimetal in compressed black phosphorus. Phys. 
+
+Rev. B 94, 195104 (2016). 
+
+[40] L. Li, Y. Yu, G. J. Ye, Q. Ge, X. Ou, H. Wu, D. Feng, X. H. Chen, Y. Zhang, Black phosphorus field-effect 
+
+transistors. Nat. Nanotech. 9, 372 (2014). 
+
+[41] G. Kresse, J. Furthmuller, Efficient iterative schemes for ab initio total-energy calculations using a plane-
+
+wave basis set. Phys. Rev. B 54, 11169 (1996). 
+
+[42] J. P. Perdew, K. Burke, M. Ernzerhof, Generalized Gradient Approximation Made Simple. Phys. Rev. Lett. 
+
+77, 3865 (1996). 
+
+[43] A. A. Mostofi, J. R. Yates, Y. S. Lee, I. Souza, D. Vanderbilt, N. Marzari, wannier90: A tool for obtaining 
+
+maximally-localised Wannier functions. Comput. Phys. Commun. 178, 685 (2008). 
+
+[44] A. A. Mostofi, J. R. Yates, G. Pizzi, Y.-S. Lee, I. Souza, D. Vanderbilt, N. Marzari, An updated version of 
+
+wannier90: A tool for obtaining maximally-localised Wannier functions. Comput. Phys. Commun. 185, 
+
+2309 (2014). 
+
+[45] N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, D. Vanderbilt, Maximally localized Wannier functions: 
+
+Theory and applications. Rev. Mod. Phys. 84, 1419 (2012). 
+
+[46] A. Roberts, D. Cormode, C. Reynolds, T. Newhouse-Illige, B. J. LeRoy, A. S. Sandhu, Response of 
+
+graphene to femtosecond high-intensity laser irradiation. Appl. Phy. Lett. 99, 051912 (2011). 
+
+[47] Y. H. Wang, H. Steinberg, P. Jarillo-Herrero, N. Gedik, Observation of Floquet-Bloch states on the surface 
+
+of a topological insulator. Science 342, 453 (2013). 
+
+[48] F. Mahmood, C.-K. Chan, Z. Alpichshev, D. Gardner, Y. Lee, P. A. Lee, N. Gedik, Selective scattering 
+
+between Floquet -- Bloch and Volkov states in a topological insulator. Nat. Phys. 12, 306 (2016). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 10 / 14 
+
+Figures 
+
+ 
+
+FIG. 1. Schematic illustration of gravitational Hawking radiation and fermionic analog. Upper panel: 
+
+Light  cones  in  real  space  indicate  that  particles  cannot  escape  from  gravitational  BH  classically 
+
+(arrowed  straight  line),  but  particles  and  antiparticles  can  emit  from  event  horizon  due  to  quantum 
+
+fluctuation  (arrowed  wavy  line).  Lower  panel:  Dirac  cones  in  momentum  space  show  that  electrons 
+
+cannot escape from the type-II region (arrowed straight line) of the artificial BH in crystals, quantum 
+
+tunneling  enables  emission  of  electrons  and  holes  from  the  event  horizon  (type-III  region)  to  type-I 
+
+and -II regions respectively (arrowed wavy line). 
+
+ 
+
+ 
+
+ 
+
+ 11 / 14 
+
+ 
+
+FIG. 2. Schematic illustration of fermionic analogue of a BH and consequent Hawking radiation. (a) 
+
+Fermi velocity vF of Dirac cone varies with cy, resulting in the transition from type-I (green), type-III 
+
+(red) to type-II (blue) Dirac cone successively. (b) Three types of artificial light cone (green, red, and 
+
+blue)  formed  via  counterclockwise  rotation,  corresponding  to  type-  I,  -III,  and  -II  Dirac  fermions 
+
+respectively. (c) The distribution of cy of type-I, -III, and -II Dirac fermions appears successively along 
+
++y  direction,  producing  the  same  "gravity  field"  felt  by  electrons  as  that  of  particles  in  a  SBH.  (d) 
+
+Kinematic equation shows a high potential barrier at yh to prevent electrons from escaping from type-II 
+
+to  type-I  region,  but  this  process  takes  place  by  quantum  tunneling  indicated  by  the  arrowed  red 
+
+dashed line in (c) and (d). (e) The spectrum of electrons (left) and holes (right) produced by Hawking 
+
+radiation with TH = 3 K. (f) The relation between the peak position εp in (e) and TH. 
+
+ 
+
+ 
+
+ 12 / 14 
+
+ 
+
+ 
+
+FIG. 3. First-principles calculated photoinduced type-I,  -II  and  -III Dirac fermions in bilayer BP. (a) 
+
+Laser field A(t) = A0(sin(ωt),0,0) is polarized along armchair (x) direction. (b) Dirac states induced by 
+
+laser  with  different  amplitude  A0  and  frequency  ω.  (c)  Band  structure  of  bilayer  BP  under  vertical 
+
+static electric field of 0.17 V/Å (or 7.6% compressive strain). Floquet-Bloch band structure of bilayer 
+
+BP driven by laser with A0 = 16 V/c (d) and A0 = 20 V/c (e), and photon energy ℏω = 0.03 eV. (f) With 
+
+increasing laser intensity, type-I Dirac fermion is transitioned to be type- III, and -II successively. The 
+
+gray dashed line shows linear fitting of cy vs. A0.  
+
+ 
+
+ 
+
+ 
+
+ 13 / 14 
+
+FIG.  4.  The  theoretically  designed  Hawking  radiation  in  a  bilayer  BP  thin  film.  (a)  Required  laser 
+
+intensity  distribution  along  zigzag  (y)  direction  to  realize  a  SBH  with  TH  =  3  K.  (b)  The  electron 
+
+distribution  n(ε)  at  y  >  yh  after  Hawking  radiation  with  TH  =  3  K.  The  n0(ε)  before  Hawking 
+
+radiation  is  shown  by  the  gray-dashed  line.  (c) The  calculated  dependence  of  TH  on  the  location  of 
+
+event horizon. The red dot corresponds to TH = 3 K and εp = 0.33 meV. 
+
+ 
+
+ 
+
+ 
+
+ 14 / 14 
+
+

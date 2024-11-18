@@ -1,0 +1,706 @@
+a
+
+Scattering of electromagnetic waves from a cone with conformal mapping: application
+
+to scanning near-field optical microscope
+
+S. T. Chui,1 Mengkun Liu and Xinzhong Chen,2 and Zhifang Lin and Jian Zi3
+
+1 Bartol Research Institute and Dept. of Physics and Astronomy,
+
+University of Delaware, Newark, DE 19716, USA
+
+2 Dept. of Physics and Astronomy, Stony Brook University, Stony Brook, N.Y. 11794, USA
+
+3 Dept. of Physics, Fudan Univ., Shanghai, China
+
+We study the response of a conical metallic surface to an external electromagnetic (EM) field by
+representing the fields in basis functions containing integrable singularities at the tip of the cone. A
+fast analytical solution is obtained by the conformal mapping between the cone and a round disk.
+We apply our calculation to the scattering- based scanning near-field optical microscope (s-SNOM)
+and successfully quantify the elastic light scattering from a vibrating metallic tip over a uniform
+sample. We find that the field-induced charge distribution consists of localized terms at the tip
+and the base and an extended bulk term along the body of the cone far away from the tip.
+In
+recent s-SNOM experiments at the visible-IR range (600nm - 1µm) the fundamental is found to be
+much larger than the higher harmonics whereas at THz range (100µm − 3mm) the fundamental
+becomes comparable to the higher harmonics. We find that the localized tip charge dominates the
+contribution to the higher harmonics and becomes bigger for the THz experiments, thus providing
+an intuitive understanding of the origin of the near-field signals. We demonstrate the application
+of our method by extracting a two-dimensional effective dielectric constant map from the s-SNOM
+image of a finite metallic disk, where the variation comes from the charge density induced by the
+EM field.
+
+Scattering-type near-field optical microscope
+
+(s-
+SNOM) has made great advances over the past decade
+by combining the well-developed atomic force micro-
+scope (AFM) techniques with a wide range of tunable
+and broadband light sources. By gathering the scat-
+tered light from an AFM tip (see Fig. 1a), s-SNOM
+effectively probes the near-field interactions between the
+nanometer-sized tip apex and the sample surface, pro-
+viding a spatial resolution of 10 nm, far beyond the
+diffraction limit of traditional optics[1, 2]. It has shown
+to be extremely useful in probing phase inhomogeneities
+in strongly correlated electron materials[3 -- 8], polari-
+tonic waves in 2D materials[9 -- 11], charge concentra-
+tions in semiconductor nanostructures[12 -- 14] and molec-
+ular nano-fingerprints in organic and soft materials[15 -- 
+17]. The central task of quantitatively understanding
+the near-field signals comes down to solving a non-
+trivial scattering problem, of which light of frequency
+ω elastically scatters from a cone-shaped AFM tip os-
+cillating vertically on the sample surface at the me-
+chanical resonance frequency Ω << ω of the can-
+tilever. Approaches from simple models such as the point
+dipole[18] and rp models[19] to state-of-the-art finite ele-
+ment calculations[20] have been applied to this problem.
+Because of the singularity at the tip, current approaches
+have not been able to consistently predict the phase of
+the signal accurately (See Fig. 3 below). We find that
+the inverse extraction of the physical properties of the
+sample from the scattering data with current numerical
+approaches does not always produce unique results.
+It
+is also extremely time consuming to solve the problem
+without simplifying approximation and this has limited
+the reliable real time interpretation of the experimental
+data.
+
+Here we overcame the difficulty of the singularity at
+the apex by using our recently developed technique[25 -- 
+27] of representing the fields in basis functions containing
+integrable singularities at the tip obtained by conformal
+mapping between the cone and a round disk and suc-
+cessfully quantify the elastic light scattering from a vi-
+brating metallic tip. We found the field-induced charge
+distribution to consist of a bulk term along the body of
+the cone far away from the tip and localized terms at the
+tip apex and the base. The scattering at the fundamen-
+tal frequency ω + Ω comes from both the bulk and the
+localized charges. The near field higher harmonics at fre-
+quencies ω +nΩ experimentally observed is dominated by
+contributions from the localized charge at the tip. In re-
+cent s-SNOM experiments at the optical to mid infrared
+range[2] and in the THz range (> 1mm) the fundamental
+is much larger than and comparable to the higher har-
+monics respectively. Our calculation is in agreement with
+the empirical measurements where we found that the tip
+charge at THz frequencies is much larger than that at
+IR frequencies. To mimic the conical AFM tip, there
+have been work with different less singular tip geome-
+tries such as the spherical[18], the spheroidal[21 -- 23] and
+the pear-shaped[24]. These calculations implied differ-
+ent induced charge distributions. Our approach provides
+a more systematic way to calculate the charge distribu-
+tions for different experimental conditions.
+
+Our calculation is also orders of magnitude faster than
+current approaches and makes this study suitable for ef-
+ficiently calculating the near-field signals and tip-sample
+interactions over a wide range of frequencies all the way
+from visible to terahertz with a fast and effective theoret-
+ical treatment. We demonstrate the back-extraction of a
+two-dimensional map from the s-SNOM image of a finite
+
+metallic disk which effectively quantify the charge den-
+sity of a finite metallic surface induced by an EM field.
+We now described our results in detail.
+
+FIG. 1: (a) Schematic representation of the scattering near-
+field setup. (b) Schematics of the conformal mapping of the
+cone shaped tip to a round disk.
+
+We are interested in the current flow on a finite film
+caused by an external electromagnetic (EM) wave. We
+assume that the film is thin enough that there is no cur-
+rent in the direction perpendicular to it. The current
+density j in the presence of an external electric field Eext
+is governed by the equation
+
+ρj + Eem = Eext.
+
+(1)
+
+where ρ is the resistivity, Eem is the electromagnetic field
+generated by the current.We impose the boundary con-
+dition of no current flow perpendicular to the boundary
+of the film with a large boundary resistivity ρs which we
+take to approach infinity[25 -- 27]. The total resistivity ρ
+is a sum of this boundary term and a metal resistivity
+ρ0.
+
+Because of the singularity at the tip, it is difficult to
+treat the problem. Here we represent the currents and
+the fields not in terms of finite elements on a mesh but
+in terms of a complete set of orthonormal basis functions
+with the integrable singularity of the system built in.
+This rigorous approach was shown to be very efficient[25 -- 
+27]. For the simple case of an annnulus of radii R1, R2,
+the basis functions are the well known vector cylindrical
+functions[26, 27] Mm Nmof angular momentum m and
+with components Xr and XΦ (X=M, N) in the radial
+and the angular directions. Here we are interested in a
+conical film of height h, base radius a with the cone angle
+θ = tan−1 a/h, thickness t and a small flat tip of radius b.
+This geometry is closest to the experimental setup among
+all the theoretical models. A point on the conical surface
+and a point inside the annulus are characterized by the
+cylindrical coordinates r and φ and R and Φ respectively.
+As is illustrated in Fig. 1b, these can be mapped into
+each other via a conformal harmonic map[28]
+
+2
+
+function of a circular annulus as
+
+cX(r) = α {Xr[R(r)]e1 + XΦe2}
+
+(2)
+
+where X = M, N , α = 1/J 1/2 = R/r. The tangent vec-
+tors on the surface of the cone are in the cylindrical basis
+(r, φ, z): e1 = 1/(1 + h2)1/2er − h/(1 + h2)1/2ez, e2 = eφ
+With this choice, the new basis functions are orthonormal
+with the corresponding measure: R d2r(cXn)∗ · cYm =
+R d2RJα2Xn · Ym = δX,Y .
+
+The electromagnetic field Eem can be represented as
+Eem = Z0j where the "impedance" matrix Z0 is just the
+representation of the Green's function in this basis[25 -- 
+27]. Just as in our previous studies, when the basis func-
+tions are orthonormal, the off-diagonal elements of the
+impedance matrix is much less than the diagonal ele-
+ments. Furthermore the magnitude of the impedance in-
+creases rapidly. These greatly facilitate the convergence
+of the solution and provide for a much better understand-
+ing of the physics.
+
+In this notation, the circuit equation becomes
+
+Zj = Eext + Es
+
+(3)
+
+where Z = Z 0 + ρ0. The boundary electric field Es is
+the product of the normal component of the current at
+the boundary js and ρs, i.e. Es = jsρs . They behave
+like Lagrange multipliers. Their values are determined
+from the condition that the normal boundary currents
+become zero. Physically, as the external field is applied,
+the current is stopped at the boundary and charges of
+surface density σs are getting accumulated. A boundary
+field is generated until it reaches a value to oppose further
+current arriving there.
+
+In the experiment, there is an additional sample sur-
+face of dielectric constant ǫ underneath the cone. The
+EM field induced charges of density n on the surafce. In
+the presence of the plane at a distance d = d0(1−cos Ωt)+
+dm from the tip, there will be image charges of density
+ni(r − 2dez) = −βn(r), β = (ǫ − 1)/(ǫ + 1). Because d
+is much less than the wavelength the method of images
+is a good approximation. The total EM field now has
+additional contributions from the image charges. The ef-
+fective impedance Z is modified. We have calculated the
+additional image circuit parameters and included them
+in the circuit equations.
+
+Because of the image charge, the tip surface field Es2 =
+Esa+Esb is now a sum of a field Esa from a surface charge
+of density σs at the tip and a field Esb from the image
+charge density −βσs at a distance −d below the surface.
+From Gauss's law Esa = σs/2ǫ0, Esb ≈ −βσs/ǫ0I(2d)
+where I(x) =< Ecz > is the z Coulomb electric field
+from the image charge density on the tip averaged over
+the tip. From these equations, we get
+
+R = r1/ sin θ, Φ = φ.
+
+σs = 2ǫ0Es2/[1 − 2βI(2d)].
+
+(4)
+
+The Jacobian of the transformation is J = R2 sin θ−2. We
+construct the basis function for this surface from the basis
+
+We have calculated I(x) numerically and tabulated it for
+a mesh of 4000 points in the region 0 < x/d0 < 2.
+
+Recent experiments have been carried out at IR fre-
+quency with λ = 10µm, h = 20µm, a = 5µm, b = 10nm,
+d0 = 60nm, t = 20nm, dm = 0.6nm and at THz fre-
+quency with λ centered at 300µm, h = 70µm, a = 20µm,
+b = 50nm,, d0 = 150nm, dm = 0.6nm. In the latter case,
+the tip is solid; the effective thickness of the film is thus
+the skin depth ξ. For this case t/a ≈ 0.01 whereas for
+the IR case, t/a = 4 × 10−3. We have carried out calcu-
+lations for these parameters. The incoming field is at an
+angle of 60 degrees with respect to the surface normal.
+This field is nearly uniform across the tip. The coupling
+is thus dominated by the m=0 mode which we focus on.
+We have calculated the circuit parameters Z for the
+m=0 modes with the basis functions cXm=0(kir) for up
+to 16 wave vectors ki. As usual, the magnitude of Z
+increases as ki is increased. This makes the problem
+rapidly convergent in our approach. The expansion co-
+efficients for the current density in the basis cN0(kir)
+are shown in Fig. (2) (right panel) where the nature of
+convergence of our expansion is illustrated. The current
+density j = jcju is in units of ju = Eext/ρu where the re-
+sistivity unit is ρu = Z0ωat/c, Z0 is the resistance of the
+vaccum. The IR experiments were carried out at a higher
+normalized wave vector and thus have more intermediate
+components. The magnitude of the current densities as a
+function of the normalized position on the cone for both
+the IR and the THz experiments are shown in Fig. 2 (left
+panel). The charge density contains a bulk contribution
+
+FIG. 2: The magnitude of the expansion coefficient for the
+bulk current density jc (right panel) in terms of the normal
+modes wave vectors index i and (left panel) as a function of
+its normalized distance from the tip for parameters for two
+sets of experiments in the IR and THz regime. (right panel)
+The magnitude of the expansion coefficient for the external
+field Ei,ext in terms of i.
+
+from currents inside the cone given by n = −i∇ · j/ω.
+Because the current density is nearly zero around the
+tip at z/h ≈ 0, its spatial derivative and hence this bulk
+charge density is only nonzero away from the tip at a dis-
+tance much larger than d since d/h << 1. Thus this bulk
+charge will not contribute to near field results. The total
+"bulk" charges in units of Qu = ǫ0Eexta2 for the THz
+case [ (-0.07+0.04i) ] and the IR case [ (-0.16+0.007i) ]
+are comparable in magnitude.
+
+There are additional contributions to the charge from
+the surface charge densities localized at the tip (σs2) and
+
+3
+
+the base (σs1). σsi = Esiσu where σu = 2ǫ0Eext, For
+the IR vase, Es1/Eext = 0.163 − 0.0168i, Es2/Eext =
+4.374+6.23i. For the THz case Es1/Eext = 0.142+0.188i,
+Es2/Eext = −28.52 − 14.70i. The magnitude of the sur-
+face charge at the tip in the THZ case is five times bigger
+than that for the IR experiments. This comes about be-
+cause the wavelength of the external field is much closer
+to the size of the cone for the THZ experiments, Ei,ext is
+dominated by the component with i=1, as is illustrated
+in Fig. 2.
+
+We next look at the scattered field Sn at the modulated
+frequencies ω + nΩ from the moving bulk and surface
+charges. The scattered fields at a distance r from the
+tip are proportional to the vector potential given by[29]
+A(r) = iωµ0eikr R dr′j(r′)/r. The total current density
+of the vibrating tip is a sum of a current induced by
+the incoming field and a current jd = n∂td from the
+induced charge n and the vibration of the tip ∂td. n
+contains both bulk and boundary charge contributions.
+The "bulk" charges contribute mainly to the fundamental
+with n=1. The contributions to the higher harmonics
+with n > 1 is dominated by near field contributions when
+the tip is close to the surface and comes mainly from the
+localized charge at the tip. The radiation electric field
+Sn is proportional to the Fourier transform at frequency
+ω + nΩ of the contributions jdl to jd from the localized
+charges at the tip. From Eq. (4) we get
+
+E ∝ eiωt(1 + β) cos(Ωt)/[1 − 2βI(d)].
+
+(5)
+
+As a test, we have calculated the amplitude S2 and its
+phase as a function of frequency using as input dielectric
+constants corresponding to a uniform surface of SiO2.
+The experimental result together with ours are shown
+in the left panel Fig.
+(3). The overall magnitude of
+the amplitudes and the baseline for the phase depend
+on the experimental geometry and thus are the two ad-
+justable parameters. The agreement is very good. For
+comparison, results obtained with commonly used simple
+tip modelling as well as CST simulation with a similar tip
+geometry are shown in the right panel. The agreement
+with the experimental phase is not as accurate.
+
+The fundamental is comparable and much larger than
+the higher harmonics respectively in recent experiments
+carried out at the THz and the IR frequencies. The local-
+ized tip charge dominates the contribution to the higher
+harmonics and becomes much bigger for the THz experi-
+ments, providing an intuitive understanding of the origin
+of the near-field signals.
+
+We close with an example of the inverse problem of
+extracting the physical properties from the measured[30]
+higher harmonics response for a gold disk of diameter
+approximately 1.3 µm and thickness ≈ 50nm. We calcu-
+lated a table of S3 and φ3 as functions of −0.1 < Re[β] <
+1.4, −0.5 < Im[β] < 0.5 from eq. (5) for a mesh of 6400
+grid points .This takes 2.7 sec with a conventional Intel
+processor. For a pixel at position r, we go through the
+entries in our table and identify β(r) as the one such that
+S3(β(r)) − Sexpt
+(r) is minimized.
+
+(r) + φ3(β(r)) − φexpt
+
+3
+
+3
+
+Theoretical
+
+Theoretical
+
+4
+
+EM field are shown in Fig. 5. The experimental am-
+plitude and phase of the third harmonics (top panels)
+are well reproduced. This substantiates the calculation
+reported in this paper. The extracted β are shown in
+the bottom panels. We found that Re[β] ≈ 1.2 (0),
+Im[β] ≈ 0.07 (0) inside (outside) the disk. This tech-
+nique may also be a new tool for mapping of the changes
+induced by external fields. The detailed analysis of this
+will be discussed in a separate paper.
+
+FIG. 3: Left Panel: Our theoretical and experimental results
+for the amplitude S2 and the phase φ2 of uniform SiO2 as
+a function of frequency. Right Panel: S2 and φ2 calculated
+with the Rp model, the point-dipole model, and with the CST
+numerical solver, together with the experimental result.
+
+This calculation takes 0.77 s for a data set of 128 × 128
+pixels.
+
+1.5
+
+1.0
+
+0.5
+
+0.0
+
+-0.5
+
+-1.0
+
+1.5
+
+1.0
+
+0.5
+
+0.0
+
+-0.5
+
+-1.0
+
+)
+
+m
+
+(
+ 
+y
+
+)
+
+m
+
+(
+ 
+y
+
+S3 (Expt)
+
+3 (expt)
+
+12
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+1.2
+
+0.8
+
+0.4
+
+0.0
+
+Re[
+
+]
+
+-1.0
+
+-0.5
+
+0.0
+
+x ( m)
+
+0.5
+
+1.0
+
+1.5
+
+-1.0
+
+-0.5
+
+0.0
+
+x ( m)
+
+0.5
+
+1.0
+
+1.5
+
+Im[
+
+]
+
+1
+
+-1
+
+-3
+
+0.1
+
+-0.1
+
+-0.3
+
+-0.5
+
+FIG. 4: Top Panels: The experimental amplitude and phase
+of the third harmonics as a function of position on the disk.
+Bottom Panels: The extracted values of β.
+
+Two dimensional plots of β, S3 and φ3 are shown in
+Fig. 4. Even though the material exhibits the same in-
+trinsic ǫ independent of position, there is a variation in
+the extracted β from the average value. We believe that
+is due to charge densities on the disk induced by the EM
+field . More precisely, β is determined from the condition
+that the change of the perpendicular component of the
+displacement field D⊥ at the disk-air interface is equal
+to the surface charge denisty σdisk: ∆D⊥ = σdisk. Our
+study of the EM scattering on disks[26] suggests that
+there is an edge electric field and its associated charge at
+the perimeter of the disk. The variation of the physical
+quantities is indeed dominated by changes at the perime-
+ter, in agreement with our expectation.
+
+To get a more quantitative picture of our results, we
+plot the physical quantities as a function of the position
+across a diameter of the disk along the direction of the
+
+FIG. 5: Top Panels: The experimental amplitude and phase
+of the third harmonics together with the theoretical result
+for a metallic disk.Bottom Panels: The extracted values of β.
+These are as a function of position across a diameter of the
+disk.
+
+In conclusion, we study the elastic scattering of an EM
+wave by a conical metallic surface via representing the
+fields on the surface in basis functions containing the in-
+tegrable singularities at the tip. We apply our calculation
+to s-SNOM and found good agreement with experimen-
+tal results from a vibrating metallic tip over a uniform
+sample. We found the field-induced charge distribution
+consists of a bulk term along the body of the cone and
+localized terms at the tip apex and the base. The bulk
+charge is far away from the tip and contributes little to
+the near-eld higher harmonics in the scattered field. The
+localized boundary charges at the tip apex contribute to
+the near-field signal and correspond to the charge accu-
+mulation effects previously discussed in pn junctions and
+on the surface of capacitor plates in AC experiments[31 -- 
+33].
+In these treatments, the additional physics of the
+diffusion of the electrons are included and a finite width
+in the localized charge distribution of the order of the
+screening length is found. This localized boundary charge
+provides new insight into the physics of the scattering
+problem, which can be related to the distinct S1/S2 ra-
+tio found in recent experiments at IR and THz frequen-
+cies.
+In addition, we also demonstrate the application
+of our technique by extracting a two-dimensional effec-
+tive dielectric constant map of a finite plasmonic metallic
+disk from experimental data, which is non-uniform due
+to the induced charge density distribution under the illu-
+mination of EM field. Our calculations of the scattering
+
+signal and the back-extraction process are more realistic
+and much faster compared to the prevailing analytical
+and numerical approaches. Future studies will include
+
+the calculation of near-field scattering signal of nonuni-
+form samples.
+
+5
+
+[1] Novotny, L. Prog. Opt. 2008, 50, 137184.
+[2] Liu, M.; Sternbach, A. J.; Basov, D. N. Reports Prog.
+
+Phys. 2017, 80, 14501.
+
+[3] M. M. Qazilbash, M. Brehm, B.-G. Chae, P.-C. Ho, G.
+O. Andreev, B.-J. Kim, S. J. Yun, A. V Balatsky, M.
+B. Maple, F. Keilmann, H.-T. Kim, and D. N. Basov,
+Science 318, 1750 (2007)
+
+[4] S. A. Dnges, O. Khatib, B. T. OCallahan, J. M. Atkin,
+J. H. Park, D. Cobden, and M. B. Raschke, Nano Lett.
+16, 3029 (2016).
+
+[5] M. A. Huber, M. Plankl, M. Eisele, R. E. Marvel, F.
+Sandner, T. Korn, C. Schller, R. F. Haglund, R. Huber,
+and T. L. Cocker, Nano Lett. 16, 1421 (2016).
+
+[6] M. K. Liu, M. Wagner, E. Abreu, S. Kittiwatanakul, A.
+McLeod, Z. Fei, M. Goldflam, S. Dai, M. M. Fogler, J.
+Lu, S. A. Wolf, R. D. Averitt, and D. N. Basov, Phys.
+Rev. Lett. 111, 96602 (2013).
+
+[7] M. Liu, A. J. Sternbach, and D. N. Basov, Reports Prog.
+
+Phys. 80, 14501 (2017).
+
+[8] A. S. McLeod, E. van Heumen, J. G. Ramirez, S. Wang,
+T. Saerbeck, S. Guenon, M. Goldflam, L. Anderegg, P.
+Kelly, A. Mueller, M. K. Liu, I. K. Schuller, and D. N.
+Basov, Nat. Phys. 13, 80 (2017).
+
+[9] Z. Fei, A. S. Rodin, G. O. Andreev, W. Bao, A.
+S. McLeod, M. Wagner, L. M. Zhang, Z. Zhao, M.
+Thiemens, G. Dominguez, M. M. Fogler, A. H. Castro
+Neto, C. N. Lau, F. Keilmann, and D. N. Basov, Nature
+487, 82 (2012).
+
+[10] J. Chen, M. Badioli, P. Alonso-Gonzlez, S. Thongrat-
+tanasiri, F. Huth, J. Osmond, M. Spasenovi, A. Centeno,
+A. Pesquera, P. Godignon, A. Zurutuza Elorza, N. Ca-
+mara, F. J. G. de Abajo, R. Hillenbrand, and F. H. L.
+Koppens, Nature 487, 77 (2012).
+
+[11] S. Dai, Q. Ma, M. K. Liu, T. Andersen, Z. Fei, M. D.
+Goldflam, M. Wagner, K. Watanabe, T. Taniguchi, M.
+Thiemens, F. Keilmann, G. C. a. M. Janssen, S.-E. Zhu,
+P. Jarillo-Herrero, M. M. Fogler, and D. N. Basov, Nat.
+Nanotechnol. 1 (2015).
+
+[12] F. Buersgens, R. Kersting, and H. T. Chen, Appl. Phys.
+
+Lett. 88, 88 (2006).
+
+[13] K. Moon, H. Park, J. Kim, Y. Do, S. Lee, G. Lee, H.
+
+Kang, and H. Han, Nano Lett. 15, 549 (2015).
+
+(2017).
+
+[17] N. Qin, S. Zhang, J. Jiang, S. G. Corder, Z. Qian, Z.
+Zhou, W. Lee, K. Liu, X. Wang, X. Li, Z. Shi, Y. Mao,
+H. A. Bechtel, M. C. Martin, X. Xia, B. Marelli, D. L.
+Kaplan, F. G. Omenetto, M. Liu, and T. H. Tao, Nat.
+Commun. 7, 13079 (2016).
+
+[18] F. Keilmann and R. Hillenbrand, Philos. Trans. A. Math.
+
+Phys. Eng. Sci. 362, 787 (2004).
+
+[19] S. Dai, Z. Fei, Q. Ma, A. S. Rodin, M. Wagner, A. S.
+McLeod, M. K. Liu, W. Gannett, W. Regan, K. Watan-
+abe, T. Taniguchi, M. Thiemens, G. Dominguez, A. H.
+C. Neto, A. Zettl, F. Keilmann, P. Jarillo-Herrero, M.
+M. Fogler, and D. N. Basov, Science (80-. ). 343, 1125
+(2014).
+
+[20] Numerical calculations with the commerical software
+"COMSOL" was reported by many authors but we could
+not find any published result for the phase. We have car-
+ried out calculations with a comparable commerical oft-
+ware "CST Studio" and the amplitude and the phase is
+reported below.
+
+[21] A. Cvitkovic, N. Ocelic, and R. Hillenbrand, Opt. Ex-
+
+press 15, 8550 (2007).
+
+[22] A. S. McLeod, P. Kelly, M. D. Goldflam, Z. Gainsforth,
+A. J. Westphal, G. Dominguez, M. H. Thiemens, M. M.
+Fogler, and D. N. Basov, Phys. Rev. B - Condens. Matter
+Mater. Phys. 90, 085136 (2014).
+
+[23] B. Hauer, A. P. Engelhardt, and T. Taubner, Opt. Ex-
+
+press 20, 13173 (2012).
+
+[24] B.-Y. Jiang, L. M. Zhang, A. H. Castro Neto, D. N. Basov
+and M. M. Fogler JOURNAL OF APPLIED PHYSICS
+119, 054305 (2016).
+
+[25] S. T. Chui and Lei Zhou, " Electromagnetic behaviour of
+
+metallic wire structures", Springer, (2013).
+
+[26] S. T. Chui, J. J. Du and S. T. Yau, Phys. Rev. E 90,
+
+053202 (2014).
+
+[27] Chui, S. T.; Wang, Shubo; Chan, C. T. PHYSICAL RE-
+
+VIEW E93, 033302 (2016).
+
+[28] Lambert, Johann Heinrich (1772) "Notes and Comments
+on the Composition of Terrestrial and Celestial Maps"
+(Translated and Introduced by W. R. Tobler, 1972. ESRI
+Press. ISBN 978-1-58948-281-4); S.T. Chui, unpublished.
+[29] J. D. Jackson, Eq. 9.13 in "Classical Electrodynamics",
+
+[14] A. J. Huber, F. Keilmann, J. Wittborn, J. Aizpurua, and
+
+Wiley.
+
+R. Hillenbrand, Nano Lett. 8, 3766 (2008).
+
+[15] H. A. Bechtel, E. A. Muller, R. L. Olmon, M. C. Martin,
+and M. B. Raschke, Proc. Natl. Acad. Sci. U. S. A. 111,
+7191 (2014).
+
+[16] I. Amenabar, S. Poly, M. Goikoetxea, W. Nuansing,
+P. Lasch, and R. Hillenbrand, Nat. Commun. 8, 14402
+
+[30] X. Chen and M. Liu, unpublished.
+[31] C. KIttel, Chap. 8, "Introduction to Solid State Physics"
+[32] S. T. Chui and L. Hu, Appl. Phys. Lett. 80, 273 (2002).
+[33] A. F. Hebard, S. A. Ajuria, and R. H. Eick, Appl. Phys.
+
+Lett. 51, 1349 (1987).
+
+

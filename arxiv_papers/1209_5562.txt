@@ -1,0 +1,664 @@
+Advantages of using YBCO-Nanowire-YBCO heterostructures in the search for
+
+Majorana Fermions
+
+P. Lucignano1,2, A. Mezzacapo3, F.Tafuri4,5, and A. Tagliacozzo2,5
+
+1 CNR-ISC, via Fosso del Cavaliere 100, I-00133 Roma, Italy
+
+2 Dipartimento di Scienze Fisiche, Universit`a di Napoli "Federico II", Monte S.Angelo, I-80126 Napoli, Italy
+
+3Departamento de Qu´ımica F´ısica Universidad del Pa´ıs Vasco - Euskal Herriko Unibertsitatea, Apdo. 644, 48080 Bilbao, Spain
+
+4 Dipartimento Ingegneria dell'Informazione, Seconda Universit`a di Napoli, I-81031Aversa (CE), Italy and
+
+5 CNR-SPIN, Monte S.Angelo  --  via Cinthia, I-80126 Napoli, Italy
+
+(Dated: October 27, 2018)
+
+We propose an alternative platform to observe Majorana bound states in solid state systems. High
+critical temperature cuprate superconductors can induce superconductivity, by proximity effect, in
+quasi one dimensional nanowires with strong spin orbit coupling. They favor a wider and more
+robust range of conditions to stabilize Majorana fermions due to the large gap values, and offer
+novel functionalities in the design of the experiments determined by different dispersion for Andreev
+bound states as a function of the phase difference.
+
+Recently there is an increasing interest in topological
+quantum computation based on Majorana Bound States
+(MBS's) [1, 2]. Majorana Fermions have been predicted
+in a wide class of low-dimensional solid state devices.
+Many of these proposals make use of quasi one dimen-
+sional superconductors in contact with topological insu-
+lators [3] or quasi one-dimensional materials with strong
+spin orbit interactions [4 -- 7]. Also helical magnets [8]
+and other materials [9 -- 13] are considered.
+In this pa-
+per we propose a quite distinctive heterostructure to ob-
+serve topologically protected MBS's in a solid state de-
+vice. Our work rests on the physics of S/R/S hybrid
+structures in which "R" is a quasi one dimensional semi-
+conductor nanowire (NW) with strong Rashba spin orbit
+coupling (e.g. InAs or InSb) electrically connected to two
+conventional low Tc superconductor leads ( "S" ) [4, 5].
+Superconductivity is induced in the spin-orbit coupled
+semiconductor by proximity effect due to the supercon-
+ducting electrodes. The coexistence of superconductivity
+and spin-orbit coupling is a key ingredient for the exis-
+tence of MBS's at the interfaces between the R region
+and the superconducting S regions.
+
+However, despite the considerable theoretical and ex-
+perimental [14] efforts, some challenges still remain be-
+fore a real device allowing isolation and manipulation of
+MBS's in such geometry can be realized. In particular
+the difficulties of tuning the chemical potential of the
+semiconductor region µ, controlling the disorder on the
+bulk gap as well as optimizing the coupling between the
+different materials [15 -- 17] make the realization of such
+devices extremely difficult.
+
+All schemes proposed up to now to generate MBS's
+substantially use conventional s-wave superconductors
+to induce superconductivity and a gap ∆ in the R
+nanowire[1]. The role of superconducting pairing is to re-
+lax number conservation, thus allowing for the mixing of
+particle and hole degrees of freedom. Zeeman spin split-
+ting is required to halve the number of degrees of freedom
+at low energies, thus generating the elusive neutral (Ma-
+
+jorana) excitation. A simple criterion to induce MBS's at
+S/R interfaces is given in terms of the applied magnetic
+field Bx oriented along the wire, µ and ∆. The inequality
+to be satisfied can be stated as: B 2
+x > µ2 + ∆2[4]. Low
+critical magnetic fields (Hc) and low gap values charac-
+teristic of conventional low Tc superconductors substan-
+tially define the limits of the nominal range of dynami-
+cal parameters required to observe MBS's. Not only do
+Hc and ∆ enter into the criteria to stabilize MBS's, but
+they also endanger the feasibility of the experiment in
+case high magnetic fields are required. High critical tem-
+perature superconductors (HTS) may favor a completely
+different approach to experiments on MBS's, since HTS
+plaquettes/contacts (even a few micron square) sustain
+superconductivity up to a few tenths of Tesla and induce
+robust superconductivity in a wide range of barrier ma-
+terials. When conventional low-Tc superconductors (e.g.
+Nb) are considered, the large difference in the g-factors
+for Nb (gN b ∼ 1) and InAs (gInAs ∼ 35) implies that
+the in-plane magnetic field B ∼ 0.1T can open a sizable
+Zeeman gap in InAs (Vx ≤ 1K) without substantially
+suppressing the superconductivity in Nb. However these
+conditions holds even more firmly in YBCO contacts be-
+cause the YBCO gap is very stable w.r.t. magnetic fields,
+despite a doubling of the g−factor (gY BCO ∼ 2).
+
+The induced gap in the NW can be considered of the
+order of the bare gap of the superconductor, projected
+along the wire direction, provided that the radius of the
+wire is negligibly small with respect to the coherence
+length ξ of the superconducting material and that no
+sizeable barriers are present at the interfaces. As re-
+cently pointed out in Ref.
+[15], the interface tunnelling
+between different materials renormalizes the induced gap
+to ∆i = (1 − Z)∆i where Z ∼ (1 + πρ0Vhop2/∆i)−1is
+the quasiparticle weight, Vhop mimicks the electron hop-
+ping between the superconductor and the NW and ρ0 is
+the density of states of the superconductor at the Fermi
+energy. The better is the coupling with a larger Vhop,
+the smaller becomes Z and the larger is the induced
+
+2
+1
+0
+2
+
+ 
+
+p
+e
+S
+5
+2
+
+ 
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+1
+v
+2
+6
+5
+5
+
+.
+
+9
+0
+2
+1
+:
+v
+i
+X
+r
+a
+
+2
+
+gap. Z also renormalizes the whole NW Hamiltonian
+HN W → HN W = ZHN W which means that, by the same
+token, all the NW Hamiltonian parameters are effectively
+reduced when Vhop increases. When taking the renormal-
+ization into account in the model that we discuss below,
+the criterion for the appearance of the topologically non
+trivial phase given by Eq.5 becomes
+
+Z 2(B 2 − µ2) > (1 − Z)2 × max(∆L2, ∆R2) .
+
+(1)
+
+This renormalization effect requires caution in the nanos-
+trucure design and, interestingly enough, it can be fruit-
+fully exploited in the case of HTS proximity. A conve-
+nient tradeoff can be found by accepting a rather poor
+intermaterial coupling Vhop , due to the very large bare
+superconducting gap along the lobe direction, which is al-
+most one order of magnitude larger than in conventional
+low Tc superconductors. The InAs nanowire mostly rules
+the scaling of the proximity effect [18, 20] once good in-
+terface conditions are guaranteed between the HTS ma-
+terial and the InAs nanowire[21]. The magnetic field can
+be very high with negligible effects both on the super-
+conducting properties of the HTS electrode and on the
+interface transparency.
+
+Here we focus on other functionalities of HTS hybrid
+
+devices which are offered by an anisotropic d-wave or-
+der parameter symmetry[19].
+In d-wave systems lobes
+in the excitation gap of amplitude 20 meV coexist with
+nodes, while in conventional s-wave superconductors the
+gap value is about or less than 1 meV and uniform in
+all directions. In HTS contacts, the crystal axes' orien-
+tations with respect to the nanowire can be chosen in
+order to maximize the proximity induced ∆. Different
+crystal orientations can be currently achieved by bicrys-
+tal or biepitaxial techniques [20].
+
+For sake of simplicity, we model the system as an ef-
+fective one-dimensional device composed by the NW of
+length LN and two superconducting regions (see Fig.1b),
+whose effective gaps differ not only in phase but also
+in their modulus, depending on the relative crystal ori-
+entation (see Fig.2). Effective Hamiltonian parameters,
+including the interface renormalization, will be disre-
+garded, for the moment, and reintroduced in a second
+step.
+
+In the superconducting regions of the nanowire, spin-
+orbit interaction and superconductivity coexist. We as-
+sume that LN << ξ << LT OT to have penetration of
+superconductivity in the whole nanowire.
+
+A Bogoliubov-De Gennes mean field Hamiltonian fully accounts for superconductivity induced in the normal ma-
+
+terial by proximity effect:
+
+HS = (H0 − µ N ) +Z ∞
+
+−∞
+
+dx(cid:16)∆(x)ψ†
+
+↑(x)ψ†
+
+↓(x) + h.c.(cid:17) ,
+
+H0 − µ N = Z ∞
+
+−∞
+
+dx ψ†
+
+α(x)(cid:18)(cid:18)−
+
+∂ 2
+x
+
+2m∗ − µ(cid:19) I2 + iη σy∂x + Bxσx(cid:19)αβ
+
+ψβ(x)
+
+(2)
+
+where x is the coordinate along the wire and α, β =↑, ↓ denote the two components of the electronic fermionic fields.
+m∗ and η are the effective mass and the Rashba spin orbit coupling strength, respectively. Bx = gµBB/2 is the
+effective Zeeman spin splitting energy. It is assumed that the magnetic field, chosen in the direction of the wire, does
+not induce any undesired orbital effect . The dx2−y2 superconductivity pairing is modeled as[28]:
+
+∆(x) = 
+
+
+∆L = ∆0 cos(2(ϑ − αL))
+0
+∆R = ∆0 e−iφ cos(2(ϑ − αR))
+
+f or x < −LN /2 ,
+f or − LN /2 ≤ x ≤ LN /2 ,
+f or x > LN /2 ,
+
+(3)
+
+Angles αR,L, ϑ are defined in Fig.2. φ is an U (1) phase
+difference across the junction. Let us choose ϑ zero. De-
+pending on the relative orientation of the order param-
+eters in the L,R regions with respect to the nanowire,
+a wealth of possibilities occur. For an effectively one-
+dimensional wire we can set αL = 0 with no loss of gener-
+ality. By rotating αR from 0 to π/2 we can continuously
+explore all the configurations from lobe-lobe (+/+) to
+lobe-antilobe(+/-). Nodal configurations are not inter-
+esting here, as we need large superconducting gaps. As
+
+we are searching for MBS's, we will choose only a few
+angle configurations to demonstrate the main concepts.
+re-
+ψ(x) =
+
+The Hamiltonian operator
+
+in the basis
+
+form,
+
+in HS
+
+can be
+
+in the compact
+
+cast
+[ψ↑(x), ψ↓(x), ψ↓
+
+†(x), −ψ↑
+
+†(x)]:
+
+HS/η = (cid:20)(cid:18)−
+
+1
+2
+
+∂ 2
+
+x − µ(cid:19) σ0 + i∂xσy(cid:21) τz+Bxσxτ0+∆(x)τx.
+
+(4)
+It is a tensor product of matrices τi × σj with {i, j} ∈
+{0, 1, 2, 3}, where τi and σi are the usual Pauli matrices
+
+3
+
+FIG. 1: a) Side view of the Superconductor-InAs nanowire-
+Superconductor heterostructure. b) Scheme of the structure
+used for the effective one-dimensional model.
+
+for i 6= 0 and the I2 identity matrix for i = 0. They refer
+to the Nambu and spin degrees of freedom, respectively.
+A new space scale x → η m∗ x has been introduced, as
+well as energy scale: µ, Bx, ∆ → µ, Bx, ∆ /(m∗ η2).
+
+The Hamiltonian of Eq.4 has a topologically non-trivial
+phase whose boundary states are Majorana Fermions [4,
+5], provided
+
+B 2
+
+x − µ2 > max(∆L2, ∆R2) ,
+
+(5)
+
+where the hamiltonian parameters used here, effectively
+include the quasiparticle renormalization weight Z. The
+topologically trivial phase, is adiabatically deformable to
+the usual Andreev physics [22]. We calculate numerically
+the low lying part of the energy spectrum by matching
+the eigenfunctions. In order to simplify calculations, we
+take the limit LN ∼ 0 by matching the wavefunction and
+its derivative at x = 0. As shown in [4], this assumption
+does not alter the generality of our results as interaction
+terms among Majorana end states are neglected in our
+approach. The effects of a finite size wire are shown for
+example in Ref.[23].
+
+In Fig. 3 the dispersion relation of MBS's is shown
+as a function of the phase difference, φ, between the su-
+perconducting pads. For αR < π/4 the Andreev levels
+show a single crossing at φ = π. The odd number of
+crossings in the Andreev spectrum is the characteristic
+signature of the topological non trivial phase, consistent
+with that found with conventional s-wave superconduc-
+tivity. However, the Andreev spectrum shows an unex-
+pected behavior when αR > π/4 i.e. when the effective
+induced gaps have opposite signs. In this case, the cross-
+ing, which features the zero energy MBS, is still present,
+but located at φ = 0. This is specific of the d-wave or-
+der parameter. When αR < π/4 the gaps ∆L and ∆R
+have the same sign. Therefore, a phase difference of π
+between the two order parameters is required, in order
+to have an inversion of the sign of the gap between the
+two regions S1 and S2. Provided that the appropriate
+
+FIG. 2: The top view sketch for different geometries. Config-
+urations of the order parameter are determined by a suitable
+orientation of the electrodes and of the nanowire.
+
+condition for the parameters is met, the sign inversion,
+irrespective of the relative strength of the two gaps (and
+of the actual value of αR), enforces the crossing to be
+localized at φ = 0, and the Majorana excitation with
+it. Together with this change, the shape of the disper-
+sion relation changes by changing αR, with an increase
+of the current I(φ) = ∂E(φ)/∂φ up to a maximum, when
+the gaps reach their maximum at αR = 0 or π/2. The
+crossing only appears at φ = 0, π, because only at these
+points the Hamiltonian is real. Moreover, depending on
+the crystal relative arrangements we can have a differ-
+ent dispersion for Andreev Bound states as a function of
+the phase difference φ.
+In both cases a single crossing
+at zero energy appears, which reveals the presence of the
+MBS, at φ = 0 or π depending on the sign of the product
+∆L∆R.
+
+At present, the race to detect signatures of the elusive
+Majorana Fermions in an S/NW/S structure is quite ex-
+citing [24 -- 27]. A system exploiting d-wave electrodes,
+as the one proposed in this work, can inspire hallmark
+experiments in the search for Majorana excitations.
+
+Despite the fact that the magnetic field should domi-
+nate over the superconductivity, still, a sizable supercon-
+ducting gap is needed, as the smaller energy between Vz
+and ∆ sets the minimum energy sufficient to wash out
+the topological protection of the Majorana excitation. In
+this respect, HTS's appear to offer more chances in sta-
+bilizing MBS's. Question arises whether nodal quasipar-
+ticles in the d-wave [28] topologically trivial supercon-
+ductor could affect their stability. As the MBS's imply
+strong non local correlations, one is inclined to conclude
+
+that local nodal quasiparticle should be inefficient in pro-
+ducing a decay of the Majorana zero energy excitation.
+Besides, nodal quasiparticles are strictly at zero energy
+if travelling along given directions in an uniform system
+d-wave ordering. The presence of the Josephson bar-
+rier, inhomogeinity or confined geometry, should move
+those states to finite energy.
+In the different context
+of YBCO grain boundary Josephson Junctions[29, 30],
+we have experienced a long lasting quantum coherence
+of antinodal quasiparticles, while an efficient relaxation
+mechanism could have been the production of nodal
+quasiparticles[30, 31]. This is a conforting piece of ev-
+idence, but, of course, not a proof, though.
+
+A d-wave induced superconductivity encompasses a
+wider range of opportunities to discriminate the presence
+of the MBS. Andreev states induced by d-wave pairing
+are strongly sensitive to the geometry of the device. The
+characteristic increase of the Ic at the lower tempera-
+tures, used as a benchmark for the existence of the An-
+dreev midgap state in HTS junctions[19], is strongly sup-
+pressed when the width of the junction is reduced toward
+a quasi 1D device. However, in our devices, an anoma-
+lous increase of Ic at low temperatures would persist in
+the one-dimensional limit and would be even sharper, the
+lower the barrier transparency is. This would unambigu-
+ously signals feature that can be only correlated to the
+presence of Majorana fermions [32 -- 34]. Prototype struc-
+tures using HTS electrodes are being already tested [21].
+
+Moreover, it is a distinctive property of ring struc-
+tures with appropriate multi crystal arrangements to en-
+tail frustrated d-wave pairing ordering with trapped frac-
+tional fluxes in the ground state [28]. The possibility
+highlighted in this work, to have MBS localized at 0−
+and π− junctions, depending on the phase configuration,
+can be exploited in the design of quantum coherent, topo-
+logically protected devices, which go beyond the simple
+experimental confirmation of this amazing new physics,
+to enter the field of applications.
+
+We envisage the possibility of engineering quasi-
+degenerate odd fermionic parity states, using a meso-
+scopic, charge isolated island, formed by a d-wave tricrys-
+tal [32] topologically protected with respect to the exci-
+tations.
+
+We acknowledge
+
+important discussions with D.
+Bercioux, P. Brouwer, M. Cuoco, P. Gentile, D. Ur-
+ban, F. von Oppen.
+P.L. acknowledges F. Dalton
+for a critical proofreading of the manuscript. Finan-
+cial support from FP7/2007-2013 under the grant N.
+264098 - MAMA (Multifunctioned Advanced Materials
+and Nanoscale Phenomena), MIUR-Italy by Prin-project
+2009 "Nanowire high critical temperature superconduc-
+tor field-effect devices" , and European "SOLID" Project
+are gratefully acknowledged.
+
+4
+
+∆
+L 
+
+∆
+R>0
+
+R = 0
+
+π/6π/5π/4.1
+
+∆
+L 
+
+∆
+R<0
+
+α
+
+R=π/2
+
+π/2−π/6
+π/2−π/5
+π/2−π/4.1
+
+0
+
+φ
+
+π
+
+2π
+
+0.5
+
+α
+
+∆
+E
+
+/
+
+0
+
+-0.5
+
+0.5
+
+∆
+E
+
+/
+
+0
+
+-0.5
+-π
+
+FIG. 3: Energy spectrum of zero energy Majorana bound
+states in the case of equal (opposite) sign gaps (in top and
+bottom panel respectively).
+
+[1] J. Alicea, Rep. Prog. Phys. 75, 076501 (2012).
+[2] A. Y. Kitaev, Annals of Physics (N.Y.) p. 303 (2003).
+[3] J. Teo and C. Kane, Physical Review B 82, 115120
+
+(2010).
+
+[4] R. M. Lutchyn, J. D. Sau, and S. Das Sarma, Physical
+
+Review Letters 105, 077001 (2010).
+
+[5] Y. Oreg, G. Refael, and F. von Oppen, Physical Review
+
+Letters 105, (2010).
+
+[6] M. Duckheim and P. W. Brouwer, Physical Review B 83,
+
+054513 (2011).
+
+[7] H. Weng, G. Xu, H. Zhang, S.-C. Zhang, X. Dai, and
+
+Z. Fang, Physical Review B 84, 060408 (2011).
+
+[8] M. Kjaergaard, K. Wolms, and K. Flensberg, arxiv p.
+
+1111.2129v1 (2011).
+
+[9] J. Alicea, Physical Review B 81, 125318 (2010).
+
+[10] L. Fu, C.L. Kane, Physical Review Letters 102, 216403
+
+(2009).
+
+[11] A.R. Akhmerov, J. Nilsson, C.W.J. Beenakker, Physical
+
+Review Letters 102, 216404 (2009).
+
+[12] Y. Tanaka, T. Yokoyama, N. Nagaosa, Physical Review
+
+Letters 103, 107002 (2009).
+
+[13] J. Linder, Y. Tanaka, T. Yokoyama, A. Sudbø, N. Na-
+
+gaosa, Physical Review Letters 104, 067001 (2010).
+
+[14] E. S. Reich, Nature News (Feb 28, 2012).
+[15] A. Potter and P. Lee, Physical Review B 83, 144522
+
+(2011).
+
+[16] R. M. Lutchyn, T. D. Stanescu, and S. Das Sarma, Phys-
+
+ical Review Letters 106, 127001 (2011).
+
+[17] P. W. Brouwer, M. Duckheim, F. Romito, and F. von
+
+Oppen, Physical Review Letters 107, 196804 (2011).
+
+[18] J. R. Kirtley, C. C. Tsuei, Ariando, J. C. M. Verwijs,
+S. Harkema, and H. Hilgenkamp, Nature Physics 190, 2
+(2006).
+
+[19] Y. Tanaka and S. Kashiwaya, Physical Review Letters
+74, 3451 (1995), S. Kashiwaya and Y. Tanaka Report on
+Progress in Physics 63, 1641 (2000) .
+
+[20] F. Tafuri and J. R. Kirtley, Report Progress in Physics
+
+5
+
+68, 2573 (2005).
+
+72, 969 (2000).
+
+[21] D. Montemurro and et. al priv. comm.
+[22] G. E. Blonder, M. Tinkham, and T. M. Klapwijk, Phys.
+
+Rev. B 25, 4515 (1982).
+
+[23] D. Pikulin and Y. Nazarov, JETP Letters 9, 639 (2011).
+[24] J. R. Williams, A. J. Bestwick, P. Gallagher, S. S. Hong,
+Y. Cui, A. S. Bleich, J. G. Analytis, I. R. Fisher, and
+D. Goldhaber Gordon, arxiv:1202.2323v2 (2012).
+
+[29] A. Tagliacozzo et al., Physical Review B 79, 024501
+
+(2009).
+
+[30] P. Lucignano, D. Stornaiuolo, F. Tafuri, B.L. Altshuler
+and A. Tagliacozzo, Physical Review Letters 107, 196804
+(2011).
+
+[31] N. Gedik, J. Orenstein, R. Liang, D. A. Bonn, and W.
+
+N. Hardy, Science 300, 1410 (2003).
+
+[25] V. Mourik, K. Zuo, S. Frolov, S. Plissard, E. Bakkers,
+
+[32] P. Lucignano, A. Mezzacapo, F. Tafuri, and A. Taglia-
+
+and L. Kouwenhoven, Science 336, 1003 (2012).
+
+cozzo, submitted
+
+[26] L.P. Rokhinson, X. Liu and J.K. Furdyna Nat. Phys.
+
+[33] A. Zazunov and R. Egger, Physical Review B 85, 104514
+
+doi:10.1038/nphys2429 (2012).
+
+(2012).
+
+[27] A. Das, Y. Ronen, Y. Most, Y. Oreg, M. Heiblum, and
+
+[34] P. A. Ioselevich and M.V. Feigel'man, Physical Review
+
+H. Shtrikman, arxiv:1205.7073 (2012).
+
+Letters 106, 077003 (2011).
+
+[28] C. C. Tsuei and J. R. Kirtley, Review of Modern Physics
+
+

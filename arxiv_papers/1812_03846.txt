@@ -1,0 +1,1192 @@
+
+Simulating dynamically assisted production of Dirac pairs
+
+in gapped graphene monolayers
+
+I. Akal,1 R. Egger,2 C. Muller,2 and S. Villalba-Ch´avez2, ∗
+
+1II. Institute for Theoretical Physics, University Hamburg,
+
+Luruper Chaussee 149, 22761 Hamburg, Germany
+
+2Institut fur Theoretische Physik, Heinrich-Heine-Universitat Dusseldorf,
+
+Universitatsstr. 1, 40225 Dusseldorf, Germany
+
+(Dated: March 28, 2021)
+
+In a vicinity of the Fermi surface, graphene layers with bandgaps allow for closely simulating the
+vacuum of quantum electrodynamics and, thus, its yet unverified strong-field phenomenology with
+accessible field strengths. This striking feature is exploited to investigate a plausible materialization
+of dynamically assisted pair production through the analog production of light but massive pairs
+of Dirac quasiparticles. The process is considered in a field configuration combining a weak high-
+frequency electric mode and a strong low-frequency electric field oscillating in time. Its theoretical
+study is carried out from a quantum kinetic approach, similar to the one governing the spontaneous
+production of pairs in QED. We show that the presence of the weak assisting mode can strongly
+increase the number of produced massive Dirac pairs as compared with a setup driven by the strong
+field only. The efficiency of the process is contrasted, moreover, with the case of gapless graphene
+to highlight the role played by the quasiparticle mass.
+
+PACS numbers: 11.10.Kk, 11.25Mj, 12.20.Ds,
+
+I.
+
+INTRODUCTION
+
+Perceiving the vacuum as a region in which quan-
+tum fluctuations of all realizable fields in nature occur
+has always been accompanied by the intriguing possi-
+bility of their materialization into real particles at the
+expense of the vacuum instability. Among field theo-
+ries describing the fundamental interactions, quantum
+electrodynamics (QED) provides the most accessible sce-
+nario in which this phenomenon could be realized. There,
+the spontaneous production of fermions is predicted to
+occur in form of electron-positron pairs if an electric-
+like background [E2 − B2 > 0] polarizes the quantum
+vacuum.1 The simplest configuration allowing for the
+pair production (PP) process  --  commonly known as the
+Schwinger mechanism  --  requires just a constant electric
+field [B = 0, E = const].
+In such a situation, the as-
+sociated PP rate R ∼ exp[−πm2c3/(eE)] manifests an
+essential singularity in the coupling strength e indicating
+the nonperturbative nature of this striking strong field
+phenomenon [1 -- 3]. That the Schwinger mechanism has
+so far eluded any detection agrees with the exponential
+suppression that R undergoes, because  --  by now  --  it is
+impossible to generate macroscopically extended electric
+fields with amplitude E comparable to the critical scale
+in QED, Ecr = m2c3/(e) ∼ 1016 V/cm.
+
+Due to continuous progress toward high-power lasers
+facilities, the possibility of observing the (dynamical)
+
+Schwinger mechanism in tightly focused pulses is cur-
+rently receiving considerable attention. Envisaged multi-
+petawatt facilities such as the Extreme Light Infrastruc-
+ture (ELI) [4] and the Exawatt Center for Extreme Light
+Studies (XCELS) [5] are expected to achieve peak field
+strengths of the order of ∼ 10−2Ecr, which will bring the
+PP process closer to experimental accessibility. Moti-
+vated by these prospects, theoreticians have studied spe-
+cial configurations of laser fields that might help to at-
+tain a detectable PP signal (see Refs. [6, 7] and references
+therein). In particular, various proposals have been put
+forward to mitigate the exponential suppression of the
+Schwinger pair creation rate [8 -- 17]. Indeed, compelling
+theoretical evidences indicate a significant enhancement
+of the PP rate R ∼ exp[−κEcr/E] with 0 < κ (cid:28) 1,
+when the strong field configuration is assisted by a fast-
+oscillating laser beam of weaker intensity.2 In a physi-
+cally intuitive picture, this enhancement in R is caused
+by the absorption of a photon from the fast-oscillating
+field, this way reducing effectively the width of the barrier
+that an electron has to tunnel from negative to positive
+Dirac continuum.
+
+Although promising, this so-called dynamically as-
+sisted Schwinger mechanism still awaits a proof-of-
+principle test, and even with the envisaged fields in opera-
+tion, it is likely that its experimental verification remains
+a very challenging task. A complementary route for prob-
+ing the vacuum instability assisted by an additional fast-
+oscillating wave is to look for a QED-like vacuum in
+
+∗Electronic address: selym@tp1.uni-duesseldorf.de
+1 Here and henceforth the speed of light in vacuum and the abso-
+lute charge of an electron will be denoted by c and e, respectively.
+Besides,  identifies the Planck constant.
+
+2 Similar enhancement has been predicted to occur in production
+channels other than the one described so far, provided the assist-
+ing high-frequency laser wave is present [18 -- 20].
+
+which the mentioned process becomes manifest at much
+lower energies and field strengths. In this sense, graphene
+monolayers designed with a bandgap ∆ε (cid:46) 0.3 eV [21 -- 
+24] constitute an ideal scenario. Indeed, recent measure-
+ments of optical radiation emitted from regular graphene
+layers [∆ε = 0] irradiated by ultrashort terahertz pulses,
+provide strong evidence about the interband transition
+of electrons in the field of the THz pulse. The radiation
+is presumably caused by the recombinations of electron-
+hole pairs created via the Schwinger mechanism [25]. See
+also Refs. [26, 27].
+
+The suitability of bandgapped  --  or semiconductor  -- 
+graphene layers can be understood as a direct conse-
+f ) (cid:46)
+quence of the quasiparticle mass m = ∆ε/(2v 2
+10 keV/c2 [with vf ≈ c/300 the Fermi velocity] and
+the relativistic-like dispersion relation wppp = (ppp2v 2
+f +
+m 2v 4
+f )1/2 that Dirac fermions exhibit when their ener-
+gies are nearby the Fermi surface, i.e. close to any of
+the two inequivalent Dirac points KKK± in the recipro-
+cal lattice [28].
+Indeed, within the nearest-neighbours
+tight-binding model these two properties allow us to
+closely simulate the matter sector of QED, and thus,
+its quantum vacuum. Likewise, the electron-positron
+PP process finds an analogous phenomenon: the field-
+induced creation of quasiparticle-hole pairs from valence
+to conduction band. Recently, the similarity has been
+stressed further by noticing that the associated PP rate
+in the vicinity of KKK± closely resembles the exponen-
+tial dependence Rg ∼ exp[−πm 2v 3
+f /(eE)] found for the
+Schwinger mechanism [29]. The feasibility for materializ-
+ing relativistic-like tunneling in semiconductors has also
+been investigated in Ref. [30]. As in QED, critical field
+strengths can be associated with these materials. For
+instance, in graphene varieties with band gaps this one
+f /(e) (cid:46) 105 V/cm is set by the exponent of
+Eg = m 2v 3
+Rg . However, in contrast to Ecr, the latter can be eas-
+ily overpassed with present-day laser technology, without
+damaging the material. This feature offers a genuine op-
+portunity for a well-controllable materialization of both
+the Schwinger mechanism and its dynamically assisted
+version through the described solid-state analog.
+
+Here, we investigate the production of quasiparticle-
+hole pairs in an external field configuration involving
+a fast-oscillating electric mode of weak intensity super-
+posed on a strong, low-frequency electric field oscillating
+in time. Our study is carried out from a quantum ki-
+netic approach, similar to the one governing the spon-
+taneous PP process in QED. Our outcomes reveal that
+the number of created massive quasiparticles in this as-
+sisted setup can be strongly enhanced by the presence
+of the high-frequency mode.
+In particular, by exploit-
+ing the laser repetition rate in our bifrequent setup, the
+number of pairs can become comparable to the single-
+shot outcome resulting from a scenario in which the high-
+frequency wave is not present and the Dirac fermions are
+massless instead. The mentioned aspects are exposed in
+two sections.
+In Sec. II, we set the theoretical frame-
+work on which our study relies. Likewise, some impor-
+
+2
+
+tant features of the production of electron-hole pairs in
+bandgapped graphene are analyzed in connection with
+transport theory. The numerical results are presented in
+Sec. III, where in parallel, the role of the resonant effects
+arising in the single-particle distribution function is dis-
+cussed. Also the density of pairs yielded in the assisted
+field configuration is shown in this section. Further com-
+ments and remarks are given in the conclusions.
+
+II. QUANTUM KINETIC APPROACH
+
+Let us briefly precise some general features linked
+to the spontaneous production of electron-hole pairs in
+graphene layers. Previous studies on this phenomenon
+have been carried out [31 -- 35] in connection with the
+absence of a gap ∆ε = 0 that the regular synthesiza-
+tion of graphene manifests [36 -- 38]. Such a characteristic
+constitutes, however, a drawback when thinking of ma-
+terializing the dynamically-assisted PP process via the
+graphene analogue because the exponential suppression
+of the corresponding rate is removed fully. As this be-
+havior is essential for judging both the plausible PP en-
+hancement as well as the nonperturbative character of
+this phenomenon, we will suppose that the charge carri-
+ers can acquire a tiny mass m = ∆ε/2v 2
+f corresponding
+to a gap ∆ε ∼ 0.1 eV [λ = 2π/(mvf ) ∼ 0.1 nm], which
+can originate from the epitaxial growth of graphene on
+SiC substrate [21, 22], for instance. We emphasize that,
+in addition to this techniques, there exist a variety of
+well-known forms to induce gaps in the band structure
+of graphene. They include elastic strain [23] or Rashba
+spin splittings on magnetic substrates [24].
+From now on the external electric field EEE(t) =
+−∂AAA(t)/(c∂t) [A0(t) = 0] is supposed spatially homo-
+geneous but time dependent with
+
+(cid:21)
+
+sin(ηφ)
+
+nnn.
+
+(1)
+
+(cid:20) cEs
+
+Ω
+
+AAA(t) = − F (φ)
+
+sin(φ) +
+
+cEw
+
+ω
+
+Here Ω and Es are the respective frequency and the elec-
+tric field amplitude of the strong field, whereas ω and
+Ew correspond to the frequency and the field strength of
+the perturbative fast-oscillating wave. The parameters
+contained within the trigonometric functions are φ = Ωt
+and η = ω/Ω. Besides, nnnT = (0, 1, 0) defines the polar-
+ization direction of the field which we assume  --  hereafter
+ --  embedded in the plane defined by the graphene sheet,
+i.e. at z = 0. In Eq. (1) the envelope function is chosen
+with sin2-ramping and de-ramping intervals, whereas a
+plateau region of constant field intensity is taken in be-
+tween:
+
+F (φ) = sin2 (φ/2) [Θ(π − φ)Θ(φ) + Θ(2πN − φ)
+× Θ(φ − 2πK )] + Θ(φ − π)Θ(2πK − φ),
+
+(2)
+
+where N = Nplateau + 1, K = N − 1
+2 and Θ(x) denotes
+the unit step function: Θ(x) = 1 at x (cid:62) 0, Θ(x) = 0
+at x < 0. Here Nplateau counts for the number of cycles
+
+within the region where F (φ) = 1. Observe that Eq. (1)
+and (2) guarantee the starting of the oscillating electric
+field with zero-amplitude at t = 0.
+
+There exist various ways of generating a field of this
+nature. A first option could be a head-on collision of
+two pairs of linearly polarized laser pulses sharing two
+frequencies, the same polarization directions and which
+propagate perpendicularly to the graphene sheet. A sec-
+ond option can be envisaged by combining the field gener-
+ated by a capacitor with ac voltage and the one generated
+by the collision of two counterpropagating monochro-
+matic laser waves which, as in the previous setup, im-
+pinge perpendicularly to the layer. Observe that, to
+fit with our theoretical treatment, the field directions of
+both time dependent electric components have to coin-
+cide. The described scenarios do not provide a homoge-
+neous electric field; those resulting from the wave colli-
+sions depend on their direction of propagation. However,
+because of the chosen geometry, no essential effect due
+to the spatial inhomogeneity along the direction of prop-
+agation is expected. Clearly, the field generated by the
+laser waves also has a transverse finite extension char-
+acterized by the waist size w0, and so it is inhomoge-
+neous in the (x, y)−plane. We remark that no impact
+due to this transverse focusing is expected either as long
+as w0 turns out to be much larger than the length of
+the graphene layer, which we take here of the order
+of (cid:96) ∼ O(10) µm. Clearly, the counterpropagation of
+the electric-field-generating plane-waves could take place
+along the graphene sheet rather than perpendicular to it.
+If this is the case, the homogeneous electric field approx-
+imation requires the involved laser wavelengths λs,w to
+exceed significantly the typical formation length of the
+PP process lpair ∼ δ/eEs with δ = ∆ε − ω [18, 19].
+
+From the theory prospect, quantum kinetic theory con-
+stitutes an appropriate approach for investigating the
+production of electron-hole pairs in graphene. In contrast
+to perturbative processes in unstable vacuum -- described
+by Feynman diagrams [39, 40] -- the dynamical informa-
+tion of the pure PP process can be comprised in the
+single-particle distribution function Wg (ppp, t) of electrons
+and holes to which the degrees of freedom in the ex-
+ternal field are relaxed at asymptotically large times
+[t → ±∞], i.e., when the electric field is switched off
+EEE(±∞) → 0. Whenever the momentum of the massive
+quasiparticles ppp, relative to KKK± satisfies the condition
+ppp (cid:28) KKK± = 4π
+√
+with a0 = 0.142 nm [23], the time
+3
+evolution of this quantity is dictated by a quantum ki-
+netic equation [29]:3
+
+3a0
+
+(cid:90) t
+(cid:20)
+(cid:90) t
+
+−∞
+
+t
+
+Wg (ppp, t) = Q(ppp, t)
+
+dt Q(ppp, t)
+
+× cos
+
+2
+
+dt(cid:48) wppp(t(cid:48))
+
+.
+
+(3)
+
+(cid:21)
+− Wg (ppp, t)
+
+(cid:20) 1
+(cid:21)
+
+2
+
+3 In the following we set the Planck constant equal to unity,  = 1.
+
+(cid:113)
+
+3
+Here, the vacuum initial condition Wg (ppp,−∞) = 0 is as-
+sumed. This formula is characterized by the function
+Q(ppp, t) ≡ eE(t)vf ⊥/w 2
+ppp (t), which depends on the trans-
+m 2v 4
+xv 2
+verse energy of the Dirac fermions ⊥ =
+f
+and their respective total energy squared w 2
+ppp (t) = 2⊥ +
+[py − eA(t)/c]2v 2
+f of a Dirac quasiparticle. As no depen-
+dence on temperature is manifested in Eq. (3), any pre-
+diction resulting from it must be understood within the
+zero temperature limit. We remark that, at asymptoti-
+cally earlier times t → −∞ for which both A(t), E(t) →
+0, the system is assumed to meet equilibrium conditions.
+In this limit the total energy of a Dirac quasiparticle
+f has to be understood relative to
+
+wppp(t) →(cid:113)
+
+f + m 2v 2
+
+f + p 2
+
+ppp2v 2
+the Fermi-level:
+
+(cid:115)
+
+ .
+
+εF = mv 2
+f
+
++ 1 − 1
+
+N in
+N 0
+
+(4)
+
+Here N in denotes the initial density of Dirac fermions,4
+whereas the constant value N 0 = gsgvm 2v 2
+f /(4π) de-
+pends on the respective "spin" (gs = 2) and valley (gv =
+2) degeneracy factors. For m = 11.7 keV/c2, correspond-
+ing to a bandgap ∆ε = 0.26 eV, N 0 ≈ 1.26× 1012 cm−2.
+Observe that, in the limit Nin (cid:29) N 0, the Fermi energy
+reduces to the expression known for gapless graphene
+monolayers: εF ≈ (πv 2
+
+f N in)1/2.
+
+Despite its compactness, the consequences embedded
+in Eq. (3) are often facilitated via equivalent systems of
+ordinary differential equations. Here we utilize one com-
+bining two equations in which the Bogoliubov coefficients
+f (ppp, t) and g(ppp, t) appear explicitly [12, 29]:5
+
+i f (ppp, t) = appp(t)f (ppp, t) + bppp(t)g(ppp, t),
+ppp (t)f (ppp, t) − appp(t)g(ppp, t).
+i g(ppp, t) = b∗
+
+(5)
+
+In this context the distribution function is given by
+Wg (ppp, t) = f (ppp, t)2 and the initial conditions are chosen
+so that f (ppp,−∞) = 0 and g(ppp,−∞) = 1. The remaining
+parameters contained in these formulas are given by
+
+appp(t) = wppp(t) +
+
+eE(t)pxv 2
+f
+
+2wppp(t)(wppp(t) + mv 2
+f )
+
+,
+
+(cid:34)
+
+(cid:32)
+
+bppp(t) =
+
+1
+2
+
+eE(t)⊥
+w 2
+ppp (t)
+
+exp
+
+−i tan−1
+
+pxq(cid:107)v 2
+f
+2⊥ + mv 2
+
+f wppp(t)
+
+(cid:33)(cid:35)
+
+(6)
+
+,
+
+where the kinetic momentum along the external field di-
+rection is q(cid:107) = py − eA(t)/c.
+
+4 As occurs in standard gate-tunable setups, N in can be varied,
+
+and so the Fermi level for the Dirac fermions.
+
+5 Another representation involving three coupled ordinary differ-
+ential equations can be found in the literature as well. See for
+instance Refs. [13, 14, 44].
+
+Further aspects deserve to be mentioned. It is worth
+remarking that Eq. (3)  --  or alternatively Eq. (5)  -- 
+strongly relies on the electron-hole symmetry. Hence,
+its outcomes should provide good estimates within the
+nearest-neighbours tight-binding model. However, if the
+next-to-nearest-neighbours interactions are taken into ac-
+count this invariance does not hold anymore [28] and cor-
+rections due to this fact have to be included. We note
+besides that the treatment based on these formulae ig-
+nores the effect caused by both the collisions between
+the created Dirac-quasiparticles and their inherent radi-
+ation fields. Similar to QED [41 -- 43], both phenomena
+are expected to become relevant as the field strength
+is stronger than the critical field scale in bandgapped
+f /e ∼ 105 V/cm. How-
+graphene E (cid:38) Eg with Eg = m 2v 3
+ever, for assessing the plausible materialization of the as-
+sisted Schwinger mechanism in band-gapped graphene,
+field strengths Es,w < Eg will be utilized.
+
+Noteworthy, as the production of electron-hole pairs in
+graphene is governed by a transport equation [see Eq. (3)]
+which resembles the one in QED, various existing insights
+linked to WQED(ppp, t) can be extrapolated to elucidate
+the behavior of Wg (ppp, t). Thus, we expect that Wg (ppp, t)
+mimics the resonances spectrum [12 -- 14] associated with
+the absorption of quanta from the field [see Eq. (1)]. This
+phenomenon takes place as the resonant condition
+
+2¯εppp ≈ nsΩ + nwω
+
+(7)
+
+(cid:82) τ
+
+holds. In this relation, ns (nw) refers to the number of
+absorbed quanta from the strong (weak) wave, whereas
+0 dt wppp(t) denotes the quasienergy of the pro-
+¯εppp = 1
+τ
+duced particles, i.e. the energy averaged over the total
+pulse length τ . The behavior of the distribution function
+WQED(ppp, t) near a resonance characterized by ns and nw
+is known. Assuming that the external field exists for a
+time duration τ we have
+
+W (ns,nw)
+
+g
+
+A(ns,nw)
+
+ppp
+
+A(ns,nw)
+(ppp, τ ) ≈ 1
+4
+= Λ(ns,nw)
+2τ 2,
+
+ppp
+
+ppp
+
+sin2 (xppp)
+
+x2
+ppp
+
+,
+
+(8)
+
+xppp = Ω(Rabi)
+
+ppp
+
+τ.
+
+ppp
+
+ppp
+
+ppp
+
+ppp
+
+ppp
+
+= 1
+2
+
+)2(cid:105)1/2
+
+2 + (∆(ns,nw)
+
+(cid:104)Λ(ns,nw)
+
+Here Λ(ns,nw)
+is a complex time-independent coefficient
+whose explicit expression is not necessary to understand
+what follows.
+In this formula the Rabilike frequency
+of the vacuum Ω(Rabi)
+≡ 2¯εppp − nsΩ − nwω being the detun-
+with ∆(ns,nw)
+ing parameter. We should, however, emphasize that
+the above resonant approximation is valid if the Rabi-
+like frequency is slow in comparison with the laser one
+(cid:28) ω, Ω [45]. Observe that for a certain param-
+Ω(Rabi)
+eter combination (Ω, ω ns nw), there might be multi-
+ple choices of momenta {ppp0} with ppp0 = (px0, py0) which
+satisfy the resonant condition in Eq. (7). For all these
+≈ 0],
+points the detuning parameter vanishes [∆(ns,nw)
+
+2Λ(ns,nw)
+the Rabilike frequency reduces to Ω(Rabi)
+and the single-particle distribution function approaches
+W (ns,nw)
+
+(ppp0, τ ) ≈ sin2(cid:104)
+
+Ω(Rabi)
+
+ppp0
+
+ppp0
+
+≈ 1
+
+(cid:105)
+
+ppp0
+
+τ
+
+.
+
+ppp0
+
+ppp
+
+g
+
+4
+
+III. ENHANCED PRODUCTION OF
+
+ELECTRON-HOLE PAIRS IN GRAPHENE
+
+We wish to illustrate the phenomenological conse-
+quences of the external field [see Eq. (1)] on the PP pro-
+cess of massive charge carriers.
+In line with Ref. [29]
+we chose ∆ε = 0.26 eV as our standard band-gap value,
+which corresponds to m = 11.7 keV/c2. A suitable real-
+ization of the assisted scenario requires, in first instance,
+a frequency for the perturbative wave carrying a sub-
+stantial fraction of band gap energy [ω (cid:46) ∆ε]. The
+strong field frequency Ω, on the other hand, should re-
+main smaller than the difference between ∆ε and ω, i.e.,
+Ω < ∆ε − ω. Because of this, we will take Ω = 0.026 eV
+and ω = 0.206 eV, so that ns (cid:62) 3 is required for
+any field strength. The plateau region will comprise
+Nplateau = 26 cycles corresponding to a total pulse
+length of τ = 2πN/Ω ≈ 4.2 ps. Here, the strong field
+strength is taken Es = 4.9 × 104 V/cm which corre-
+s = 6.4 × 106 W/cm2.
+sponds to a laser intensity Is = cE2
+The intensity of the perturbative laser wave is set to
+Iw = 9.6 × 104 W/cm2,
+leading to a field strength
+Ew = 0.6 × 104 V/cm. Observe that, in the current sce-
+f /e ≈ 2.6 × 105 V/cm
+nario the critical field is Eg = m 2v 3
+and, correspondingly, a critical scale for the laser inten-
+g ≈ 1.8 × 108 W/cm2 can be set. Clearly,
+sity Ig = cE2
+the parameters above can be combined separately to
+define the laser intensity parameter of the strong field
+ξs = eEs/(mv f Ω) ≈ 0.94 and the perturbative fast-
+oscillating field ξw = eEw/(mv f ω) ≈ 0.014. It is worth
+emphasizing that none of the chosen intensities for the
+waves overpasses the critical scale Is, Iw (cid:28) Ig .
+In-
+deed, all of them can be attained comfortably with ter-
+ahertz laser systems with picosecond duration [46, 47].
+Noteworthy, both the wavelengths associated with the
+strong field λs ≈ 47.4 µm and the highly oscillating pulse
+λw ≈ 5.9 µm exceed the characteristic formation lengths
+lpair ∼ 10−2 µm [read discussion in the paragraph above
+the one containing Eq. (3)].
+
+Now, we solve the system of differential equations (5)
+by varying the momentum components within the inter-
+val −0.5 eV (cid:54) px,yvf (cid:54) 0.5 eV. The results of this
+analysis are displayed in Fig. 1 in a density color scheme
+which corresponds to log10[Wg (ppp, τ )]. While the upper
+panel shows the outcomes associated with the mass-
+less model, the consequences associated with the mass
+m = 11.7 keV/c2 can be evaluated by comparing with
+the middle panel. It is worth remarking that both pic-
+tures were generated by considering the effects due to
+the strong field only. Their main features  --  including the
+occurrence of a narrow vertical blue sector in the mass-
+less case  --  have been studied previously. For details, we
+refer the reader to Ref. [29]. We note that these panels
+have been added here to facilitate  --  via comparisons  -- 
+the understanding of the main outcome resulting from a
+scenario in which massive Dirac quasiparticles are pro-
+duced by the combined effect of both the strong and the
+perturbative fast-oscillating wave [lower panel]. Observe
+
+5
+
+that the three spectral densities are sharply anisotropic
+with respect to the momentum components, and mani-
+fest gradual decrements as both px and py increase. The
+stretching along py is understood as a result of the min-
+imal coupling between the external field and the quasi-
+particle via the kinetic momentum py − eA(t)/c, which
+enters into the quasienergy [see below Eq. (7)]. Hence,
+the creation of quasiparticle-hole pairs with rather large
+longitudinal momentum is more likely to take place.
+
+All panels in Fig. 1 are characterized by ringlike struc-
+tures which differ between each other. Each ring is under-
+stood as an isocontour of fixed quasienergy ¯εppp satisfying
+the resonance condition in Eq. (7). The regions encom-
+passed between two neighboring rings are characterized
+by less intense colors, this way indicating the formation
+of intermediate valleys. Observe that the outcome shown
+in the middle panel, i.e.
+for massive carriers with the
+fast-oscillating field turned off, looks rather different as
+compared with the model of massless Dirac quasiparticles
+[upper]. Clearly the number of resonances in the former
+is considerably smaller than in the latter case where the
+red-colored area is much more pronounced and compact.
+In view of this behavior, we can infer that the volume be-
+low the surface Wg (px, py) will be substantially larger in
+the massless model [upper panel] than in the case where
+the Dirac quasiparticles are massive and only the strong
+field is on [middle panel]. As these volumes result from
+the integration over the momentum components, actu-
+ally they will determine the number of yielded pairs per
+unit of area
+
+(cid:90)
+
+N g = lim
+
+t→∞ gsgv
+
+d2p
+(2π)2 Wg (ppp, t).
+
+(9)
+
+We remark that the factor gs = 2 (gv = 2) accounts for
+the spin (valley) degeneracy. Formally, the integration
+has to be performed over all the Fourier space. However,
+the outcomes given in Fig. 1 provide evidences that the
+contribution of W g (ppp, τ ) is almost insignificant as long
+as px, py > 10 eV/vf . This fact is consistent with the
+limitation indicated above Eq. (3). Hence, to compute
+Eq. (9) numerically we will restrict the integration do-
+main to an area A embedded within a circle with radius
+ppp (cid:28) 10 eV/vf .
+
+The situation changes when massive Dirac quasipar-
+ticles experience both the strong and the perturbative
+fast-oscillating wave simultaneously [lower panel]. Ow-
+ing to the latter, the number of resonances increases and
+the red area enlarges considerably as compared with the
+panel in the middle. This fact makes clear that the cor-
+responding volume below the surface W g (px, py), i.e. the
+density of produced electron-hole pairs, increases in com-
+parison to the situation where m = 11.7 keV/c2 with the
+perturbative wave being switched off. Certainly, the red
+area in the lower panel turns out to be less intense than
+in the upper one [m = 0]. However, in the former case,
+the red portion covers regions in the (px, py)-plane that
+the upper panel does not. Consequently, the volume en-
+closed by W g (px, py) in the assisted setting could reach
+
+FIG. 1: Logarithmic plot of the single-particle distribution
+functions Wg (ppp, τ ). The result shown in the upper panel cor-
+responds to a model involving massless charge carriers. Con-
+versely, the middle and lower panels display outcomes ob-
+tained by considering massive Dirac quasiparticles. The dis-
+tributions in the upper and middle panels follow from the
+strong field only, i.e. Ew = 0, while the lower one takes into
+account that both the strong and the fast-oscillating waves are
+present. The following benchmark parameters have been used
+∆ε = 0.26 eV, Es = 4.9 × 104 V/cm, Ew = 0.6 × 104 V/cm,
+Nplateau = 26 cycles (τ ≈ 4.2 ps), Ω = 0.026 eV and
+ω = 0.206 eV.
+
+6
+
+FIG. 2: Density of produced electron-hole pairs as a function of Es[left panel] and Ew[right panel]. The blue curve in the left
+panel reveals the trend obtained for the massless model when the weak field is off. For the same field setting, the lower curves
+in green and red  --  both with more pronounced slopes as compared with the remaining curves  --  result from considering massive
+Dirac quasiparticles with bandgaps ∆ε = 0.12 eV and ∆ε = 0.26 eV, respectively. The corresponding outcomes resulting from
+the configuration assisted by the perturbative fast-oscillating wave share the previous color scheme but the curves are those
+containing asterisks. Both assisted curves have been obtained by setting Ew = 0.6 × 104 V/cm. The results exhibited in both
+panels were obtained by setting the pulse length Nplateau = 26 cycles (τ ≈ 4.2 ps) and the strong field frequency Ω = 0.026 eV.
+Besides, for ∆ε = 0.26 eV the frequency of the perturbative field was chosen ω = 0.206 eV, whereas for ∆ε = 0.12 eV we
+have utilized ω = 0.09 eV. The curves in the right panel have been obtained by considering the two previous gaps: green for
+∆ε = 0.12 eV and red for ∆ε = 0.26 eV. There the strong field was taken as Es = 4.9 × 104 V/cm with Ω = 0.026 eV.
+
+values comparable to the one associated with the sce-
+nario involving massless carriers and, so for the density
+of created pairs [see Eq. (9)].
+
+In order to verify this enhancement, we compute nu-
+merically the dependence of N g [see Eq. (9)] with respect
+to the strong electric field strength Es. The results of this
+assessment are summarized in the left panel of Fig. 2.
+The outcome linked to the massless model is shown in
+blue, whereas those resulting from scenarios driven by
+massive Dirac quasiparticles characterized by a bandgap
+∆ε = 0.26 eV are depicted in red. For comparison, the
+results linked to a reduced gap ∆ε = 0.12 eV have been
+included [green curves with an adjusted fast-oscillating
+frequency ω = 0.09 eV]. We note that the latter cor-
+responds to a mass m = 5.4 keV/c2 and a critical field
+strength Eg ≈ 5.5 × 104 V/cm which is an order of mag-
+nitude smaller than the one associated with the energy
+gap ∆ε = 0.26 eV, i.e. Eg ≈ 2.6 × 105 V/cm. The right
+panel in Fig. 2 shows the dependence of N g on the weak
+field strength Ew. Each curve corresponds to one of the
+nontrivial bandgaps: green for ∆ε = 0.12 eV and red for
+∆ε = 0.26 eV. Both have been obtained by setting the
+strong field to Es = 4.9 × 104 V/cm. As the previous
+strength is comparable to the critical field linked to the
+gap ∆ε = 0.12 eV, the corresponding results have to be
+considered as estimates. Referring to the red curve, we
+see that the density of pairs grows from left to right by
+a factor of ≈ 20 when the amplitude of the weak field is
+increased by a factor of 8, implying an average growth
+which is faster than linear. For comparison we note that,
+for PP by a bichromatic electric field in a pure QED con-
+
+text [12], a linear dependence on Ew (respectively ξw)
+has been obtained to a good approximation. This simple
+scaling behavior may be attributed to the range of field
+parameters considered there.
+
+Now, throughout the whole range of Es [left panel]
+the number of pairs yielded from the assisted scenario
+ --  green and red curves marked with asterisks  --  is sub-
+stantially larger than those arising when the perturba-
+tive fast-oscillating field is off, i.e. green and red curves
+marked with crosses. We note that, in a scenario with an
+energy gap ∆ε = 0.26 eV and Es ≈ 2.7 × 104 V/cm, the
+result of the assisted setup exceeds the outcome driven by
+a pure strong field setup by four orders of magnitude. For
+comparison we note that the presence of the assisting field
+[Ew = 0.6 × 104 V/cm, ω = 0.206 eV] enhances the pair
+yield in the massless model by only a factor 2, approxi-
+mately. As  --  in average  --  the slopes of those curves linked
+to a pure strong field scenario [m (cid:54)= 0] are larger than the
+corresponding one in the assisted setting, the enhance-
+ment effect due to the weak field diminishes as Es grows
+[see also Refs. [8, 18 -- 20]]. This behavior can be expected
+because  --  in an assisted scenario  --  there are two paths
+for increasing the number of produced pairs. Namely, ei-
+ther by growing the strong field strength or through the
+absorption of energetic quanta, this way promoting the
+emergence of new resonances. While the former becomes
+more relevant as Es grows, the latter dominates as the
+opposite situation takes place.
+
+Noteworthy, those curves linked to scenarios in which
+the production of massive electron-hole pairs is driven by
+the strong field only, manifest pronounced steep fallings
+
+12345678910Es [104 V/cm]1001021041061081010Ng [cm-2]Ew = 0, ∆ǫ = 0.0 eVEw = 0, ∆ǫ = 0.12 eVEw = 0, ∆ǫ = 0.26 eVEw  0, ∆ǫ = 0.12 eV, ω = 0.09 eVEw  0, ∆ǫ = 0.26 eV, ω = 0.206 eV0.511.522.53Ew [104 V/cm]108109Ng [cm-2]∆ǫ = 0.26 eV, ω = 0.206 eV∆ǫ = 0.12 eV, ω = 0.09 eVwhich are caused by the so-called channel-closing effect
+[see, e.g., [12, 29, 48, 49]]. Also the results associated with
+the assisted setups reveal these drop-offs, although much
+less noticeable due to the large scale covered by the verti-
+cal axis. We recall that the channel-closing phenomenon
+can be attributed to the extinction of a resonance at those
+field strengths for which W g (ppp, τ ) is locally minimized.
+Indeed, in the absence of a perturbative fast-oscillating
+wave, the number of produced pairs can increase through
+the growing of the strong field strength Es. When this
+happens, the quasienergies that characterize the reso-
+nances [see below Eq. (7)] change too. Most of theses
+resonances  --  featured by a specific ns  --  survive during
+the electric field change because  --  when integrating over
+ppp  --  a readjustment in the corresponding momentum oc-
+curs in such a way that the relations 2εppp = nsΩ still
+hold. However, throughout the change, the minimal en-
+ergy to be absorbed from the field  --  εppp=0  --  might die out,
+this way compensating the enhancement induced by the
+strong field increment. If this occurs, the volume below
+the surface W g (px, py) diminishes and a drop-off emerges
+in the plane (N g , Es). That this behavior does not man-
+ifest in the assisted curves may be then understood as a
+direct consequence of the additional production channel
+that the assisted scenario provides. Within the context
+of the resonant condition [see Eq. (7)], this manifests via
+the term which contains the number of quanta nw ab-
+sorbed from the weak field.
+
+Let us finally estimate the number of electron-hole
+pairs produced by a single shot in a sheet of graphene
+with a characteristic length (cid:96) ∼ 10 µm. Consider first
+the nonassisted scenario with Es ≈ 5.6 × 104 V/cm
+for which N g ∼ 106 cm−2.
+and m = 11.7 keV/c2,
+Under such circumstances the number of pairs created
+from the vacuum in a single shot is N g (cid:96)2 ∼ 1 approx-
+imately. However, if the previous setup is assisted by
+a perturbative fast-oscillating wave with ω = 0.206 eV
+and Ew ≈ 3 × 104 V/cm, the density of pairs reaches
+values of the order of N g ∼ 108 cm−2. As a consequence
+the number of electron-hole pairs produced by a single
+shot would be of the order of Npairs ≈ N g (cid:96)2 ∼ 102,
+i.e. two orders of magnitude larger than in the nonas-
+sisted configuration. The layer could accumulate a much
+larger number of electron-hole pairs by taking advan-
+tage of the laser repetition rate. For instance, val-
+ues of the order of Npairs ∼ 106 could be reached af-
+ter nshots ∼ 104 laser shots. For a repetition rate of
+ν ∼ O(10 − 100) Hz, this would require to irradiate the
+sample during O(2 − 17) min, approximately. After this
+period the density of produced electron-hole pairs reaches
+values of the order of N f = nshotsN g ∼ 1012 cm−2 which
+exceeds by 2 orders of magnitude the density obtained
+from a single shot in a model with no gap [see blue curve,
+left panel in Fig. 2].
+We note that for a final density N f ∼ 1012 cm−2 the
+electrostatic interactions becomes relevant [50, 51]. This
+way facilitating the attraction between carriers with dif-
+ferent charges and, thus, the formation of excitons i.e.
+
+7
+
+the analog of the positronium in a pure QED context. As
+in the latter scenario, the formed excitons are expected
+to be unstable bound states which decay into photons.
+In first instance, the detection of these photons would
+constitute a direct signature of a prior realization of the
+assisted pair creation process. A study of the annihilation
+channels is beyond the scope of the present investigation,
+but they will be analyzed in a forthcoming publication.
+
+IV. CONCLUSION
+
+Matter-antimatter pair creation via the Schwinger
+mechanism is one of the most striking nonperturbative
+phenomena in quantum field theory. Since it has eluded
+any experimental verification, so far, catalyzing mecha-
+nisms in nonstatic macroscopic gauge fields prove very
+promising in order to circumvent the dramatic suppres-
+sion of the creation rate. Alternatively, one may also
+look for analog realizations in appropriate low energy
+condensed matter systems like graphene. In contrast to
+earlier studies, we have focused on scenarios where a tiny
+bandgap is present in the vicinity of its Dirac points,
+giving rise to the characteristic tunneling exponential in
+the Schwinger pair creation rate. This feature has al-
+lowed us to verify theoretically that such semiconducting
+graphene varieties are rather suitable not only to probe
+the Schwinger effect but also the proposed mechanism of
+dynamical assistance.
+
+Employing a quantum kinetic approach with reduced
+effective dimensionality, we first have computed the cor-
+responding single-particle distribution function for ex-
+perimentally motivated field parameters.
+In doing so,
+we have verified that the presence of an assisting weak
+field can yield a notably enhancement, approaching val-
+ues obtained for ordinary massless graphene via the stan-
+dard PP mechanism. For all configurations a character-
+istic resonant behavior, reflected in form of isocontours
+of fixed quasienergy, has been identified in the momen-
+tum plane. Based on the obtained distribution func-
+tions, we then have computed the total number of created
+quasiparticle-hole pairs. We have shown that the latter
+enabled via the assisted mechanism turned out to be sev-
+eral orders of magnitude larger than in the nonassisted
+process. We have argued that, with a suitable laser repe-
+tition rate, the density of produced electron-hole pairs in-
+creases by several orders of magnitude, allowing to reach
+the level from which the emission of photons  --  as a result
+of the recombination process  --  becomes a clear signature
+of the assisted Schwinger mechanisms.
+
+Acknowledgments
+
+The authors thank A. Golub for useful discussions.
+S. Villalba-Ch´avez and C. Muller gratefully acknowledge
+the funding by the German Research Foundation (DFG)
+under Grant No. MU 3149/2-1.
+I. Akal acknowledges
+
+the support of the Colloborative Research Center SFB
+
+676 of the DFG.
+
+8
+
+[1] F. Sauter, Uber das Verhalten eines Elektrons im homo-
+genen elektrischen Feld nach der relativistischen Theorie
+Diracs, Z. Phys. 69, 742 (1931).
+
+[2] W. Heisenberg and H. Euler, Folgerungen aus der Dirac-
+
+schen Theorie des Positrons, Z. Phys. 98, 714 (1936).
+
+[3] J. S. Schwinger, On gauge invariance and vacuum polar-
+
+ization, Phys. Rev. 82, 664 (1951).
+
+[4] See: http://www.eli-laser.eu
+[5] See: http://www.xcels.iapras.ru/
+[6] F. Hebenstreit and F. Fillion-Gourdeau, Optimization of
+Schwinger pair production in colliding laser pulses, Phys.
+Lett. B 739, 189 (2014).
+
+[7] S. S. Bulanov, V. D. Mur, N. B. Narozhny, J. Nees, and
+V. S. Popov, Multiple colliding electromagnetic pulses: a
+way to lower the threshold of e+e− pair production from
+vacuum, Phys. Rev. Lett. 104, 220404 (2010).
+
+[8] R. Schutzhold, H. Gies and G. Dunne, Dynamically
+assisted Schwinger mechanism, Phys. Rev. Lett 101,
+130404 (2008).
+
+[9] G. Dunne, H. Gies and R. Schutzhold, Catalysis of
+Schwinger vacuum pair production, Phys. Rev. D 80,
+111301 (2009).
+
+[10] M. Orthaber, F. Hebenstreit, and R. Alkofer, Momentum
+spectra for dynamically assisted Schwinger pair produc-
+tion, Phys. Lett. B 698, 80 (2011).
+
+[11] M. Jiang, W. Su, Z. Q. Lv, X. Lu, Y. J. Li, R. Grobe,
+and Q. Su, Pair creation enhancement due to combined
+external fields, Phys. Rev. A 85, 033408 (2012).
+
+[12] I. Akal, S. Villalba-Ch´avez and C. Muller, Electron-
+positron pair production in a bifrequent oscillating elec-
+tric field, Phys. Rev. D 90, 113004 (2014).
+
+[13] A. Otto, D. Seipt, D. Blaschke, B. Kampfer,
+S. A. Smolyansky, Lifting shell structures in the dynam-
+ically assisted Schwinger effect in periodic fields, Phys.
+Lett. B 740, 335 (2014).
+
+[14] A. D. Panferov, S. A. Smolyansky, A. Otto, B. Kampfer,
+D. B. Blaschke, and (cid:32)L. Juchnowski, Assisted dynamical
+Schwinger effect: pair production in a pulsed bifrequent
+field, Eur. Phys. J. D 70, 56 (2016).
+
+[15] M. F. Linder, C. Schneider, J. Sicking, N. Szpak, and
+R. Schutzhold, Pulse shape dependence in the dynami-
+cally assisted Sauter-Schwinger effect, Phys. Rev. D 92,
+085009 (2015).
+
+[16] G. Torgrimsson, J. Oertel, and R. Schutzhold, Dou-
+bly assisted Sauter-Schwinger effect, Phys. Rev. D 94,
+065035 (2016).
+
+[17] I. Akal, G. Moortgat-Pick, Euclidean mirrors: enhanced
+vacuum decay from reflected instantons, J. Phys. G 45,
+055007 (2018).
+[18] A. Di Piazza, E. Lotstedt, A. I. Milstein and C. H. Kei-
+tel, Barrier control in tunneling e+-e− photoproduction,
+Phys. Rev. Lett. 103, 170403 (2009).
+
+[19] M. J. A. Jansen and C. Muller, Strongly enhanced pair
+production in combined high- and low-frequency laser
+fields, Phys. Rev. A 88, 052125 (2013).
+
+[20] S. Augustin and C. Muller, Nonperturbative Bethe-
+Heitler pair creation in combined high- and low-frequency
+laser fields, Phys. Lett. B 737, 114 (2014).
+
+[21] S. Y. Zhou et al., Substrate-induced bandgap opening in
+
+epitaxial graphene, Nature Materials 6, 770 (2007).
+
+[22] G. Giovannetti, P. A. Khomyakov, G. Brocks, P. J. Kelly,
+and J. van den Brink, Substrate-induced band gap in
+graphene on hexagonal boron nitride: Ab initio density
+functional calculations, Phys. Rev. B 76, 073103 (2007).
+[23] D. N. Basov, M. M. Fogler, A. Lanzara, F. Wang, and
+Y. Zhang, Colloquium: Graphene Spectroscopy, Rev.
+Mod. Phys. 86, 959 (2014).
+
+[24] A. Varykhalov, J. S´anchez-Barriga, A. M. Shikin,
+C. Biswas, E. Vescovo, A. Rybkin, D. Marchenko,
+and O. Rader, Electronic and Magnetic Properties of
+Quasifreestanding Graphene on Ni, Phys. Rev. Lett. 101,
+157601 (2008).
+
+[25] I. V. Oladyshkin, S. B. Bodrov, Yu. A. Sergeev, A. I. Ko-
+rytin, M. D. Tokman, and A. N. Stepanov, Optical emis-
+sion of graphene and electron-hole pair production in-
+duced by a strong terahertz field, Phys. Rev. B. 96,
+155401 (2017).
+
+[26] Ch. Lui, K. F. Mak, J. Shan, and T. F. Heinz, Ultrafast
+photoluminicence from graphene, Phys. Rev. Lett. 105,
+127404 (2010).
+
+[27] S. Tani, F. Blanchard, and K. Tanaka, Ultrafast carrier
+Dynamics in graphene under a high electric field, Phys.
+Rev. Lett. 109, 166603 (2012).
+
+[28] P. R. Wallace, The band theory of graphite, Phys. Rev.
+
+71, 622 (1947).
+
+[29] I. Akal, R. Egger, C. Muller, and S. Villalba-Ch´avez,
+Low-dimensional approach to pair production in an os-
+cillating electric field: Application to bandgap graphene
+layers, Phys. Rev. D 93, 116006 (2016).
+
+[30] M. F. Linder, A. Lorke and R. Schutzhold, Analog
+Sauter-Schwinger effect in semiconductors for spacetime-
+dependent fields, Phys. Rev. B 97, 035203 (2018).
+
+[31] D. Allor, T. D. Cohen and D. A. McGady, The Schwinger
+mechanism and graphene, Phys. Rev. D 78, 096009
+(2008).
+
+[32] G. L. Klimchitskaya, and V. M. Mostepanenko, Creation
+of quasiparticles in graphene by a time-dependent electric
+field, Phys. Rev. D 78, 096009 (2008).
+
+[33] H. K. Avetissian, A. K. Avetissian, G. F. Mkrtchian and
+Kh. V. Sedrakian, Creation of particle-hole superposition
+states in graphene at multiphoton resonant excitation by
+laser radiation, Phys. Rev. B 85, 115443 (2012).
+
+[34] F. Fillion-Gourdeau and S. MacLean, Time-dependent
+pair creation and the Schwinger mechanism in graphene,
+Phys. Rev. B 92, 035401 (2015).
+
+[35] F. Fillion-Gourdeau, D. Gagnon, C. Lefebvre and
+S. MacLean, Time-domain quantum interference in
+graphene, Phys. Rev. B 94, 125423 (2016).
+
+[36] K. S. Novoselov, et al., Electric Field effect in atomically
+
+thin Carbon films, Science 306, 666 (2004).
+
+[37] K. S. Novoselov et al., Two-dimensional atomic crystals,
+
+Proc. Natl. Acad. Sci. 102, 10451 (2005).
+
+[38] K. S. Novoselov et al., Two-dimensional gas of massless
+
+Dirac fermions in graphene, Nature 438, 197 (2005).
+
+[39] D. M. Gitman Processes of arbitrary order in quantum
+electrodynamics with a pair-creating external field, J.
+
+Phys. A 10, 2007 (1977).
+
+[40] E. S. Fradkin, D. M. Gitman, and S. M. Shvarts-
+man, Quantum Electrodynamics with Unstable Vacuum
+(Springer-Verlag, Berlin, 1991).
+
+[41] D. V. Vinnik, A. V. Prozorkevich, S. A. Smolyansky,
+V. D. Toneev, C. D. Roberts, and S. M. Schmidt, Plasma
+production and thermalization in a strong field, Eur.
+Phys. J. C 22, 341 (2001).
+
+[42] J. C. R. Bloch, V. A. Mizerny, A. V. Prozorkevich,
+C. D. Roberts, S. M. Schmidt, S. A. Smolyansky,
+D. V. Vinnik, Pair creation: Back reactions and damp-
+ing, Phys. Rev. D 60, 116011 (1999).
+
+[43] N. Tanji, Dynamical view of pair creation in uniform elec-
+tric and magnetic fields, Annals Phys. 324, 1691 (2009).
+[44] F. Hebenstreit, R. Alkofer and H. Gies, Schwinger pair
+production in space- and time-dependent electric fields:
+Relating the Wigner formalism to quantum kinetic the-
+ory, Phys. Rev. D 82, 105026 (2010).
+
+[45] G. R. Mocken, M. Ruf, C. Muller and C. H. Keitel, Non-
+perturbative multiphoton electron-positron-pair creation
+
+9
+
+in laser fields, Phys. Rev. A 81, 022122 (2010).
+
+[46] D. J. Cook and R. M. Hochstrasser, Intense terahertz
+pulses by four-wave rectification in air, Opt. Lett. 25,
+1210 (2000).
+
+[47] T. Bartel, P. Gaal, K. Reimann, M. Woerner, and T. El-
+saesser, Generation of single-cycle THz transients with
+high electric-field amplitudes, Opt. Lett. 30, 2805 (2005).
+[48] H. R. Reiss, Special analytical properties of ultrastrong
+
+coherent fields, Eur. Phys. J. D 55, 365-374 (2009).
+
+[49] C. Kohlfurst, H. Gies, and R. Alkofer, Effective mass
+signatures in multiphoton pair production, Phys. Rev.
+Lett. 112, 050402 (2014).
+
+[50] A. I. Ahiezer, and V. B. Beresteckiy, Quantum electro-
+
+dynamics, Nakua, Moscow (1981).
+
+[51] M. Lewkovicz, H. C. Kao, and B. Rosentein, Signature of
+the Schwinger pair creation rate via radiation generated
+in graphene by strong electric current, Phys. Rev. B. 84,
+035414 (2011).
+
+

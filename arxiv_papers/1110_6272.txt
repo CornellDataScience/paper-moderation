@@ -1,0 +1,539 @@
+
+RKKY Interaction in Disordered Graphene
+
+Hyunyong Lee,1 Junghoon Kim,2 E. R. Mucciolo,3 Georges Bouzerar,4, 5 and S. Kettemann1, 5, ∗
+
+1Division of Advanced Materials Science, Pohang University of
+
+Science and Technology (POSTECH), Pohang 790-784, South Korea
+
+2Department of Physics, Sungkyunkwan University, Suwon 440-746, Korea
+
+3Department of Physics, University of Central Florida, Orlando, Florida 32816, USA
+
+4Institut N´eel, CNRS, d´epartment MCBT, 25 avenue des Martyrs, BP 166, 38042 Grenoble Cedex 09, France
+
+5School of Engineering and Science, Jacobs University Bremen, Bremen 28759, Germany
+
+(Dated: July 29, 2018)
+
+We investigate the effects of nonmagnetic disorder on the Ruderman-Kittel-Kasuya-Yoshida
+(RKKY) interaction in graphene by studying numerically the Anderson model with on-site and
+hopping disorder on a honeycomb lattice at half filling. We evaluate the strength of the interac-
+tion as a function of the distance R between two magnetic ions, as well as their lattice positions
+and orientations. In the clean limit, we find that the strength of the interaction decays as 1/R3,
+with its sign and oscillation amplitude showing strong anisotropy. With increasing on-site disorder,
+the mean amplitude decreases exponentially at distances exceeding the elastic mean free path. At
+smaller distances, however, the oscillation amplitude increases strongly and its sign changes on the
+same sublattice for all directions but the armchair direction. For random hopping disorder, no sign
+change is observed. No significant changes to the geometrical average values of the RKKY interac-
+tion are found at small distances, while exponential suppression is observed at distances exceeding
+the localization length.
+
+An unconventional behavior of the Ruderman-Kittel-
+Kasuya-Yoshida (RKKY) interaction between magnetic
+impurities in undoped graphene was recently reported.1 -- 3
+Rather than the conventional 1/R2 decay expected for
+two-dimensional systems, where R is the distance be-
+tween the two magnetic moments, the RKKY interac-
+tion is found to fall off as 1/R3 at the Dirac (neutrality)
+point. Furthermore, it was found that, due to particle-
+hole symmetry, only ferromagnetic (antiferromagnetic)
+interactions are allowed when two impurities are located
+on the same (different) sublattice.1
+
+In a recent experiment, the authors of Ref. 4 measured
+the Kondo effect on graphene samples with a large num-
+ber of vacancies, confirming that these defects induce lo-
+cal magnetic moments.5,6 Thus, upon increasing the con-
+trol over the location of such defects, one might be able
+to also measure the RKKY interaction as a function of
+distance and location of local moments. Indeed, a direct
+detection of the RKKY interaction is feasible with the
+recent development of a technique to measure the mag-
+netization curves of individual atoms using spin-polarized
+scanning tunneling spectroscopy.7,8 With this technique,
+the orientation and distance dependence of the exchange
+interactions can be observed precisely.
+
+The influence of disorder on the RKKY interaction
+in conventional metals has been thoroughly studied.9 -- 11
+These studies found that the main effect of weak disorder
+is to randomize the electron phase, resulting in an ex-
+ponential decrease of the ensemble-averaged interaction
+amplitude with distance. However, the average does not
+properly characterize the typical interaction strength, as
+any particular disorder configuration has long-range cor-
+relations. Indeed, the typical value, identified as the geo-
+metrical average (J geo
+RKKY ≡ eh(1/2) ln[JRKKY]2iavg) is found
+to have the same power-law behavior with distance as the
+
+amplitude of the interaction in the clean limit. Conse-
+quently, at least for conventional metals, weak disorder is
+not likely to cause any critical change in physical proper-
+ties which derive from the RKKY interaction. It is only
+when the system approaches the localized regime that
+the geometrical average is exponentially suppressed.12
+
+In light of these facts, our study focuses on two main
+questions. The first is how a pair of magnetic impurities
+in disordered graphene will interact in general. We con-
+sider impurities located along any lattice orientation, and
+not only along the zigzag and armchair lines. The second
+is how this interaction changes with increasing disorder
+strength.
+
+Let us begin by considering a general expression for
+the RKKY exchange coupling constant in terms of the
+unperturbed (disorder-free) electronic Green's function
+G(0)(ri, rj , ω),13
+
+JRKKY = J 2 S(S + 1)
+4πS2
+
+Z dω f (ω) ImhG(0)(rj, ri, ω)
+
+× G(0)(ri, rj, ω)i
+= J 2 S(S + 1)
+
+4πS2
+
+ImZ dω f (ω)
+
+(1)
+
+×Xn,m
+
+F ij
+nm
+
+(En − ω + iδ)(Em − ω + iδ)
+
+.
+
+(2)
+
+Here, J is the local coupling constant between the local-
+ized magnetic impurities and the itinerant electrons, S
+is the magnitude of the impurity spin, i (j) is the site
+index of a magnetic impurity located at position ri (rj),
+f (ω) = [e(ω−µ)/T + 1]−1 is the Fermi-Dirac distribution
+function, and F ij
+m(rj)ψm(ri), with
+ψn(ri) denoting the eigenfunction corresponding to the
+
+n(ri)ψn(rj)ψ∗
+
+nm = ψ∗
+
+eigenenergy En of the unperturbed electronic Hamilto-
+nian (i.e., in the absence of magnetic disorder). The lat-
+tice constant a and  are set to unity in all calculations.
+Using a zero-temperature approximation (T = 0) and
+
+(a)
+
+2
+
+2S2
+
+,
+
+ZE<0
+
+dEZE ′>0
+
+changing to an integral form, Eq. (2) can be recast as
+dE′ F (E, E′)
+E − E′
+
+JRKKY = −J 2 S(S + 1)
+(3)
+where F (E, E′) = Re[ρji(E)ρij (E′)], µ is the Fermi en-
+ergy, and ρij(E) = hiδ(E − H)ji, which can be calcu-
+lated numerically using the kernel polynomial method
+(KPM).14 In the KPM, the matrix elements ρij (E) are
+expressed as sums over order-M Chebyshev polynomials
+on the energy E with coefficients obtained through an
+efficient recursion relation involving matrix elements of
+the system Hamiltonian. As our unperturbed electronic
+Hamiltonian with on-site disorder, we employ the single-
+band Anderson tight-binding model on a honeycomb lat-
+tice,
+
+H = −tXhi,ji
+
+i cj +Xi
+c+
+
+wi c+
+
+i ci,
+
+(4)
+
+where t (≈ 2.67 eV for graphene) is the hopping energy,
+ci (c+
+i ) annihilates (creates) an electron at site i, wi is
+the on-site random disorder energy distributed uniformly
+between [−W/2, W/2], and hi, ji denote nearest-neighbor
+sites. Periodic boundary conditions are used for all cal-
+culations. For clean systems (W = 0), the Chebyshev
+polynomials are calculated up to M = 3 × 103 on a lat-
+tice with 5 × 105 sites.
+The RKKY interaction coupling constant between two
+magnetic impurities is calculated using Eq. (3), of which
+the results for the clean limit are shown in Fig. 1.
+In
+order to better visualize the behavior of the amplitude
+in the contour plots, we have multiplied JRKKY by R2,
+resulting in a smoother (1/R) decay. The interactions
+along the zigzag and armchair directions are shown sep-
+arately by line plots in Fig. 1. These results are in excel-
+lent agreement with previous studies.1 -- 3 The authors of
+Ref. 3 used a lattice Green's function method to obtain
+an RKKY interaction of the form
+
+AA = −J 2 1 + cos[(K + − K −) · R]
+J 0
+AB = J 2 3 + 3 cos[(K + − K −) · R + π − 2θR]
+J 0
+
+R3
+
+,
+
+R3
+
+(5)
+
+, (6)
+
+where all the coefficients are set to unity, K ± =
+
+(±2π/3√3, 2π/3) are the Dirac points in the Bloch mo-
+mentum space, R = ri− rj, and θR is defined in the inset
+of Fig. 1a. For a direct comparison, plots of Eqs. (5) and
+(6) are shown in Fig. 1 along with the results calcu-
+lated from Eq. (3). As expected from the particle-hole
+symmetry of the spectrum, the magnetic impurity on the
+origin has ferromagnetic correlations with the impurities
+on the same sublattice (Fig. 1a), while antiferromagnetic
+correlations develop for impurities on different sublattices
+(Fig. 1b).
+
+(b)
+
+(Color online) Plots of the RKKY interaction
+FIG. 1.
+strengths between a magnetic impurity at the origin and an-
+other at: (a) a site from the same sublattice (AA) and (b)
+a site from a different sublattice (AB). In the contour plots,
+the amplitudes are multiplied by the square of the distance
+to facilitate visualization. The lattice constant is set to unity.
+The numerical data is for clean graphene (W = 0). Calcula-
+tions using the kernel polynomial method and lattice Green's
+function method are represented as solid blue and dashed red
+lines, respectively.
+
+In order to investigate the effect of on-site nonmag-
+netic disorder in graphene, we consider 1.6 × 103 differ-
+ent disorder configurations for each value of W and then
+evaluate the matrix elements ρij through the KPM with
+M = 5 × 103 on a lattice with 1.8 × 105 sites.
+For weak (strong) disorder strength, the system is in
+the diffusive (localized) regime, where the actual value of
+W for which this crossover occurs depends on the lattice
+size and has been determined by evaluating the local-
+ization length (see Fig. 4). The average amplitude of
+the RKKY interaction in the diffusive regime is shown
+in Fig. 2. Similar to conventional metals, the interaction
+decays exponentially with increasing disorder strength as
+
+J avg
+RKKY ∼ J clean
+
+RKKY e−R/le ,
+
+(7)
+
+where le is the mean free path and J clean
+RKKY is the inter-
+action amplitude in the clean limit. It is worth noticing
+that the sign of the interaction oscillates when the impu-
+rities are located along the zigzag-AA direction.
+
+3
+
+(a)
+
+(b)
+
+FIG. 3. (Color online) Plots of the geometrical average over
+1.6 × 103 different disorder configurations of the RKKY inter-
+actions for (a) weak and (b) strong disorder. The same lattice
+size and polynomial cutoff of Fig. 2 are used.
+
+data. For W = t, the localization length is about 102,
+which is close to the longest linear distance possible in
+our calculations, namely Rmax = 60√3. Therefore, the
+system crosses over from the diffusive to the localized
+regime around W ∼ t. For uncorrelated, short-range dis-
+order, which allows for intervalley scattering, the local-
+ization length is given by ξ = le exp(πσ/G0),16,17 where
+(vFΛ)2+W 4i, vF denotes the Fermi velocity, Λ is
+πh
+σ = 4
+the energy cutoff, and G0 = e2/h is the conductance
+quantum.
+
+(vFΛ)2
+
+It is well known that the mean free path is inversely
+proportional to the square of disorder strength (le ∼
+1/W 2). Therefore, one expects the localization length to
+obey the relation ξ ≈ (c1/W 2) exph 4(vFΛ)2
+(vFΛ)2+W 4i, where
+
+c1 is a fitting constant. Indeed, these relations fit reason-
+ably well the numerical data, as shown in Fig. 4.
+
+To find out the effect of disorder with no sublattice
+symmetry breaking, we added randomness to the hop-
+ping integral and eliminated on-site disorder (wi = 0),
+
+H = −Xhi,ji
+
+tij c+
+
+i cj,
+
+(9)
+
+where tij = t + ∆tij , with ∆tij being distributed uni-
+formly between [−W/2, W/2]. We perform the same cal-
+culations of the on-site disorder case, but now with a lat-
+tice of 2 × 104 sites and a Chebyshev polynomial cutoff
+
+(Color online) Plots of the RKKY interaction
+FIG. 2.
+strength along the (a) zigzag and (b) armchair directions in
+the diffusive regime, as averaged over 1.6 × 103 different dis-
+order configurations. A lattice with 1.8 × 105 sites and a
+polynomial degree cutoff of M = 5 × 103 are used in these
+numerical calculations.
+
+To better characterize the amplitude of the interac-
+tion, we have also calculated the geometrical average
+(J geo
+RKKY) for both diffusive and localized regimes (Fig. 3).
+In Fig. 3a, one can see that the geometrical average for
+a weakly disordered system remains long ranged and
+has a decaying behavior similar to the clean system.
+As mentioned earlier, studies of conventional metals9 -- 11
+have shown that the geometrical average (i.e., the typical
+value) of the RKKY interaction in weakly disordered sys-
+tems has a power law dependence with the same exponent
+of the clean limit, namely, J geo
+RKKY ∼ 1/Rα (e.g., α = 2
+in a two-dimensional electron gas). Due to the uncon-
+ventional distance dependence (Eqs. (5) and (6)) caused
+by the pseudogap at the Dirac point of clean graphene,
+one may expect two possibilities. If the pseudogap is not
+filled by disorder, the geometrical average value of the
+amplitude is expected to have the same exponent of the
+clean system, namely, α = 3. However, if it is filled, then
+the geometrical average value should approach the con-
+ventional power law of a two-dimensional electron gas,
+namely, α = 2. Our calculations show that the former
+is the correct answer. This is in accordance with the
+fact that short-range disorder preserves the pseudogap in
+graphene.15 Therefore, the presence of weak short-range
+disorder in undoped graphene is not anticipated to in-
+duce any major change in physical properties related to
+the RKKY interaction.
+
+The situation is drastically different in the localized
+regime, where the geometrical average values is exponen-
+tially suppressed with distance, as shown in Fig. 3b. This
+behavior is captured by the following relation,12
+
+J geo
+RKKY ∼ e−R/ξ,
+
+(8)
+
+where ξ is the localization length. Fig. 4 presents the
+mean free path and the localization length obtained by
+fitting the relations Eq. 7 and Eq. 8 to the numerical
+
+4
+
+M = 103. For comparison, we plot the results together
+with those for the on-site disorder calculations in Fig. 5.
+A total of 5×102 configurations of disorder are used, with
+the thick dashed line indicating the average value. While
+the on-site disorder generates random fluctuations in the
+sign and amplitude of the RKKY interaction (Figs. 5a,b),
+the hopping disorders affect only the amplitude, even in
+the presence of very strong randomness (Figs. 5c,d).
+
+In conclusion, we have confirmed that the RKKY in-
+teractions in clean graphene has a strong anisotropy of its
+sign and oscillation amplitude, and it decays as 1/R3 for
+all directions.
+Increasing the amount of nonmagnetic,
+on-site disorder causes the averaged amplitude of the
+RKKY interaction to decrease exponentially at distances
+exceeding the elastic mean free path, similarly to what is
+obtained for conventional metals. At smaller distances,
+however, the fluctuations of the amplitude are found to
+increase strongly, with sign oscillations even for a pair
+of magnetic impurities located on the same sublattice,
+for all directions except the armchair direction. When
+the randomness is instead applied to the hopping (off-
+diagonal disorder), the sign oscillations disappear. This
+shows that these sign changes at weak disorder poten-
+tial are caused by the breaking of the sublattice symme-
+try, since off-diagonal disorder preserves this symmetry.
+Our calculations also confirm that the geometrical aver-
+age of the RKKY interaction in disordered graphene has
+the same power law decay at short distances as in the
+clean case. However, it is exponentially suppressed at
+distances exceeding the localization length. We plan, to
+extend these studies by considering the effects of long-
+range disorder and resonant impurities.
+
+FIG. 4.
+(Color online) Plots of the mean free path le and
+the localization length ξ as functions of the disorder strength
+W (in units of t). The blue dashed line represents a fitting
+to the relation le = c1/W 2 with c1 = 70, whereas the red
+dashed line represents the resulting localization length, with
+vFΛ = 10 (see text).
+
+(a)
+
+(c)
+
+(b)
+
+Y
+K
+K
+R
+J
+-
+
+1.0
+
+0.5
+
+ae
+
+0.0
+
+-0.5
+1
+
+(d)
+
+on-site disorder
+
+zigzag-AA, W = 3t
+
+ae
+
+2
+
+ae
+
+ae
+
+ae
+
+ae
+
+3
+
+4
+
+5
+
+6
+
+R
+
+FIG. 5. Plots of the RKKY interactions along the zigzag-
+AA directions with diagonal disorder (a) W = t, (b) W = 3t
+and off-diagonal (random hopping) (c) W = t, (d) W = 3t
+for 5 × 102 realizations. A lattice with 2 × 104 sites and
+a polynomial degree cutoff of M = 103 are used in these
+numerical calculations. The black dashed line is the averaged
+interaction.
+
+We gratefully acknowledge that this research was
+supported by WCU (World Class University) pro-
+gram through the National Research Foundation of
+Korea funded by the Ministry of Education, Science
+and Technology(R31-2008-000-10059-0), Division of Ad-
+vanced Materials Science. ERM acknowledges partial
+support through the NSF award DMR 1006230. ERM
+and GB thank the WCU AMS for its hospitality.
+
+∗ s.kettemann@jacobs-university.de
+1 S. Saremi, Phys. Rev. B 76, 184430 (2007).
+2 A. M. Black-Schaffer, Phys. Rev. B 81, 205416 (2010).
+3 M. Sherafati and S. Satpathy, Phys. Rev. B 83, 165425
+
+(2011).
+
+4 J.-H. Chen, W. G. Cullen, E. D. Williams, and M. S.
+
+Fuhrer, Nature Phys. 7, 535 (2011).
+
+5 N. M. R. Peres, F. Guinea, and A. H. Castro Neto, Phys.
+
+Rev. B 73, 125411 (2006).
+
+Rodriguez, Phys. Rev. Lett. 104, 096804 (2010).
+
+7 F. Meier L. Zhou, J. Wiebe, and R. Wiesendanger, Science
+
+320, 82 (2008).
+
+8 L. Zhou et al., Nature Phys. 6, 187 (2010).
+9 P. F. de Chatel, J. Magn. Magn. Mater. 23, 28 (1981).
+10 A. Jagannathan, E. Abrahams, and M. J. Stephen, Phys.
+
+Rev. B 37, 436 (1988).
+
+11 A. I. Zyuzin and B. Z. Spivak, JEPT Lett. 43, 243 (1986).
+12 J. A. Sobota, D. Tanaskovic, and V. Dobrosavljevic, Phys.
+
+6 M. M. Ugeda, I. Brihuega, F. Guinea, and J. M. Gomez-
+
+Rev. B 76, 245106 (2007).
+
+13 R. M. White, Quantum Theory of Magnetism (McGraw-
+
+15 M. Amini, S. A. Jafari, and F. Shahbazi, Euro. Phys. Lett.
+
+Hill, New York, 1970).
+
+87 37002 (2009).
+
+14 A. Weisse, G. Wellein, A. Alvermann, and G. Fehske, Rev.
+
+16 A. Lherbier, B. Biel, Y. M. Niquet, and S. Roche, Phys.
+
+Mod. Phys. 78, 275 (2006).
+
+Rev. Lett. 100, 036803 (2008).
+
+17 A. H. Castro Neto et al., Rev. Mod. Phy. 81, 109 (2009).
+
+5
+
+

@@ -1,0 +1,1783 @@
+
+Long-Range Interaction between Charge and Spin Qubits in Quantum Dots
+
+Department of Physics, University of Basel, Klingelbergstrasse 82, CH-4056 Basel, Switzerland
+
+Marcel Serina, Christoph Kloeffel, and Daniel Loss
+
+(Dated: July 15, 2021)
+
+We analyze and give estimates for the long-distance coupling via floating metallic gates between
+different types of spin qubits in quantum dots made of different commonly used materials. In partic-
+ular, we consider the hybrid, the singlet-triplet, and the spin-1/2 qubits, and the pairwise coupling
+between each type of these qubits with another hybrid qubit in GaAs, InAs, Si, and Si0.9Ge0.1.
+We show that hybrid qubits can be capacitively coupled strongly enough to implement two-qubit
+gates, as long as the distance of the dots from the metallic gates is small enough. Thus, hybrid
+qubits are good candidates for scalable implementations of quantum computing in semiconducting
+nanostructures.
+
+PACS numbers: 03.67.Lx, 73.21.La, 73.23.Hk
+
+I.
+
+INTRODUCTION
+
+One of the most promising ways to implement the con-
+cept of quantum computation1 is to use the spins of elec-
+trons in quantum dots as qubits2. Quantum dots fabri-
+cated in semiconductor nanostructures are used to con-
+fine electrons, which can then be manipulated and mea-
+sured by electrical gates3. Many generalizations of qubits
+in quantum dots have been proposed and explored over
+the years4 -- 6. A recent interesting addition is a proposal
+for a so-called hybrid qubit7 -- 10 formed in a double quan-
+tum dot (DQD) by different states of three electrons,
+where both charge and spin degrees of freedom of the
+electrons play a role. Since all types of spin qubits have
+their specific weaknesses and strengths, it is useful to ask
+if one can combine various types of such qubits to make
+optimal use of their particular advantages.
+
+Furthermore, to successfully implement quantum com-
+putation, scalable architectures consisting of many qubits
+are needed. One of the possibilities to achieve such a
+goal is to couple the qubits in quantum dots over a long
+distance by using a metallic floating gate11. In this pro-
+posal, quantum dots could be hundreds of micrometers
+apart from each other, coupled in a similar way as elec-
+tronic components are coupled by wires.
+
+Here, we extend the proposal of Ref. 11 and study
+the long-distance coupling between the newly introduced
+hybrid qubit7 -- 10 and other types of qubits theoretically.
+For this, we consider two lateral DQDs3,4,12 -- 14 that are
+separated so far from each other that tunnel coupling is
+impossible. A floating metallic gate enables a capacitive
+coupling that depends on the positions of the DQDs with
+respect to the gate and that can therefore be controlled
+electrically. We study different host materials such as
+Si or GaAs, analyze the dependence of the qubit-qubit
+interaction on several system parameters, and find that
+strong interactions are achievable which can be used to
+implement entangling two-qubit gates with short opera-
+tion times.
+
+There are three different qubit combinations we con-
+First, we study the case of two hybrid (H)
+In the second case, one DQD contains two
+
+sider.
+qubits7 -- 10.
+
+and the other DQD three electrons, i.e., one DQD hosts
+a singlet-triplet (ST) qubit12,15,16 and the other one a
+hybrid qubit. In these two cases a spin-orbit interaction
+(SOI) is not required, since the qubit-qubit coupling can
+be induced solely by the Coulomb interaction and the
+Pauli exclusion principle. In the third case, we consider
+a system where one of the DQDs is singly occupied form-
+ing the spin-1/2 (LD) qubit2,17 and the second one is
+triply occupied, i.e., a hybrid qubit. Each of these three
+cases will be studied separately. However, it is important
+to mention that experimentally it is possible to realize
+the different schemes within the very same experimental
+setup by only modifying the voltages on the gates.
+
+The paper is organized as follows. First in Sec. II
+we focus on the H-H and H-ST qubit-qubit couplings
+in GaAs. Then, in Sec. III we calculate the H-LD cou-
+pling in GaAs, and in Sec. IV we analyze the dependence
+on the setup geometry and compare all the couplings in
+four different semiconducting materials commonly used
+for the fabrication of quantum dots, namely GaAs, InAs,
+Si, and Si0.9Ge0.1. Finally, in Sec. V we summarize and
+give some conclusions. A detailed derivation of the elec-
+trostatic coupling via floating gates, the expansion of the
+electrostatic potential and details of a used Schrieffer-
+Wolff transformation are appended.
+
+II. H-H AND H-ST COUPLING
+
+The DQD hybrid qubit, introduced recently in Ref. 8,
+operates on three different three-electron-states as illus-
+trated in Fig. 1. In order to implement a universal set of
+quantum gates, one must be able to couple such qubits
+to each other pairwise18.
+
+The idea pursued here is to couple two such hybrid-
+qubits over a (possibly long) distance via a floating gate
+in the way proposed in Ref. 11 and to estimate the
+strength of the resulting coupling between them. This
+setup is promising due to its simplicity and scalabil-
+ity and provides a pathway for implementing large-scale
+quantum computing architectures. The coupling is me-
+diated through the Coulomb interaction of the induced
+
+where e is the elementary positive charge and R is the
+radius of the disc. The ellipsoidal coordinate ξr is given
+by20
+
+2
+
+(2)
+
+2ξ2
+
+r = R2 + d2 + x2 + y2
+
+(cid:113)
+
+(R2 + d2 + x2 + y2)2 − 4R2 (x2 + y2).
+
++
+
+The logical state 1(cid:105) is 1(cid:105) = (cid:112)1/3T0(cid:105)↓(cid:105) −(cid:112)2/3T−(cid:105)↑(cid:105),
+
+States of the double dot hybrid qubit7 -- 10. The
+Figure 1.
+logical state 0(cid:105) is defined as 0(cid:105) = S(cid:105)↓(cid:105), where S(cid:105) is the
+singlet of the two electrons in the ground state of the first dot
+and ↓(cid:105) denotes the electron with spin down in the second dot.
+where T0(cid:105) (T−(cid:105)) is the two-electron triplet state in the first
+dot with spin projection zero (−1) along the quantization axis,
+and ↑(cid:105) denotes the electron with spin up in the second dot.
+Our diagram for 1(cid:105) is a simplified sketch of T0(cid:105)↓(cid:105). The state
+E(cid:105) = ↓(cid:105)S(cid:105) depicted on the right is used as an intermediate
+state to prepare the logical states. We note that each of these
+three states can be written in the simple form "orbital part
+× spin part", because additional corrections are negligible in
+our calculations of the coupling strengths.
+
+charges on the floating gate caused by the charge dis-
+tributions in the qubits. As the different states of the
+hybrid qubit have different charge distributions (in con-
+trast to qubits based on the spin states of a single quan-
+tum dot when SOI is absent), it is sufficient to take into
+account the Coulomb interaction in order to estimate the
+coupling. Thus, one may assume that the hybrid qubit
+is a charge qubit and may disregard the spin degrees of
+freedom (which are on the other hand important for the
+noise and decoherence description).
+
+Figure 2.
+a) Setup consisting of a floating metallic gate
+(blue) and two DQDs (red dots). b) Sketch of the confinement
+potential of a DQD. Here, a0 is an in-plane distance between
+the floating gate disc center and the DQD, d is the vertical
+distance between the floating gate disc center and the DQD,
+R is the radius of the floating gate disc, L is the length of the
+section connecting the discs, Rw is the radius of this section
+(modelled as a wire), λ is the length of the DQD and l is the
+distance between the DQD minima.
+
+Following Refs. 11 and 19, we now describe the setup
+analytically. The induced charge in a disc of the floating
+gate due to an electron at position r is
+
+Qind(r) =
+
+2e
+π
+
+arcsin(R/ξr),
+
+(1)
+
+Assuming that the electron occupies a quantum dot (or
+DQD in our case) within the two-dimensional electron
+gas (2DEG) of a heterostructure, the vertical distance
+d between the electron and the disc corresponds to the
+distance between the floating gate and the 2DEG, as il-
+lustrated in Fig. 2a. The coordinates x and y describe
+the in-plane position of the electron, where the origin
+0 = x = y was chosen below the center of the disc.
+
+When one electron is located near the first disc of the
+floating metallic gate and another electron is located near
+the second disc, the two electrons are electrostatically
+coupled and the associated potential energy is21
+
+v(r1, r2) =
+
+αqQind(r1)Qind(r2)
+
+8r0R
+
+,
+
+(3)
+
+where r1 and r2 are the positions of the two electrons
+with respect to their nearby disc, 0 is the vacuum per-
+mittivity, r is an effective relative permittivity that de-
+pends on the details of the setup, and αq = Cd/(Cw +
+2Cd) is a charge-distribution factor that is determined by
+the capacitances Cd and Cw of the discs and the connect-
+ing wire, respectively, of the floating gate11. A detailed
+derivation of Eq. (3) is provided in Appendix A.
+
+In order to obtain an estimate of the interaction we
+need to model the charge distributions in the DQDs for
+the different logical states. Electrons in the DQDs are
+trapped inside the two overlapping two-dimensional (2D)
+parabolic potential wells (see Fig. 2b), thus their orbital
+states in each quantum dot are in good approximation
+the same as the eigenstates of the 2D simple harmonic
+oscillator (SHO)22. The electron density in a quantum
+dot, which differs from the charge density only by the
+factor −e (electron charge), can therefore be modeled
+by summing up the probability densities of the occupied
+SHO states.
+
+well to both sides by λ0 =(cid:112)/(m∗ω), where ω is the
+
+The probability density in the ground state of a SHO
+is Gaussian and in the first excited state23 we have two
+disjoint peaks shifted with respect to the center of the
+single-particle level spacing in the quantum dot and m∗
+is the effective mass of the electron. We define λ = l+2λ0
+as the length of the DQD, where l is the distance between
+the minima of the potential (see Fig. 2b). Using a model
+as described above, with 2D continuous charge distribu-
+tions in the plane of a 2DEG, we obtain the following
+expression for the electrostatic coupling of the two states
+i(cid:105), j(cid:105) with electron densities ρi(r1), ρj(r2),
+
+Vij =
+
+αq
+
+(cid:90)
+
+8r0R
+×
+
+d2r1
+
+(cid:90)
+
+(4)
+
+d2r2 Qind(r1)Qind(r2)ρi(r1)ρj(r2).
+
+0〉1〉E〉LRa0dλla)b)These four-dimensional integrals can be evaluated nu-
+merically. However, in order to gain more insight, we
+will also evaluate the Vij analytically by substituting the
+Gaussian wave functions by delta functions, thus consid-
+ering the interaction of point charges.
+
+The electron densities in Eq. (4) depend not only on
+the DQD potentials but also on the positions of the DQDs
+with respect to the discs of the floating gate. For our es-
+timate of the feasible coupling strengths, we assume that
+the two DQDs have the same dimensions and the same
+relative positions. More precisely, we choose the two min-
+ima of a DQD potential to lie on the x axis (which can be
+an arbitrary in-plane direction due to the circular sym-
+metry of the discs and which may, in fact, be different
+for each disc), with the first minimum at x = a0 and
+the second minimum at x = a0 + l. The parameter a0
+corresponds to the in-plane distance from the disc cen-
+ter, as sketched in Fig. 2. In order to enable two-qubit
+gates with short operation times, this distance should be
+chosen such that the energies Vij differ strongly when
+changing the qubit states. In Ref. 11, it was shown that
+the floating-gate-mediated coupling between two charges
+is most sensitive to small variations in their positions
+when the charges are placed below the edges of the discs.
+Therefore, we set a0 = R in our model, and in our case
+of DQDs we choose the dots below the edges of the discs
+(x = R) to be the ones whose charge distributions de-
+pend strongest on the qubit states. Our assumptions are
+illustrated in Fig. 3, which shows both the point charge
+approximation and the continuous charge distribution for
+a hybrid qubit.
+
+3
+
+sum over m and n runs over all possible pairs of electrons
+that do not occupy the same DQD and v is the electro-
+static electron-electron coupling introduced in Eq. (3).
+As the Coulomb interaction does not contain any spin
+operators, the spins of the states are always conserved.
+Thus, because the logical states are orthogonal in spin
+space, we get (where i, j, k, l = 0, 1, E)
+(cid:104)i, j V k, l(cid:105) = δikδjlVkl.
+
+(6)
+The used notation k, l(cid:105) for a two-qubit state means here
+that the qubit at the first (second) disc is in state k(cid:105)
+(l(cid:105)). As an example we can write the expression for one
+of the matrix elements in the point charge approximation
+as follows
+
+(cid:104)0, 1 V 0, 1(cid:105) = v(R − b, R) +
+
+1
+2
+
++v(R + b, R) +
+
+v(R − b, R + l)
+1
+2
+
+v(R + b, R + l)
+
++2v(R, R) + v(R, R + l)
++2v(R + l, R) + v(R + l, R + l),
+
+(7)
+
+where v(x1, x2) denotes the Coulomb interaction of two
+electrons placed at the positions x1, x2. The charge in the
+hybrid qubit is equal to three elementary charges, thus
+the sum of the prefactors of all terms in Eq. (7) must be
+nine.
+
+Due to the aforementioned orthogonality in spin space,
+projection of V onto the subspace spanned by the two-
+qubit states 0, 0(cid:105), 0, 1(cid:105), 1, 0(cid:105), and 1, 1(cid:105) yields a diagonal
+4×4 matrix
+
+V = diag (V00, V01, V01, V11) ,
+
+(8)
+
+where we used V01 = V10. We can construct a two-qubit
+gate that is equivalent to the CNOT gate up to single-
+qubit operations as follows24,
+H = Cσz
+
+(9)
+
+eiH π
+
+4C = ei π
+
+4
+
+(10)
+
+ 1 0
+
+1σz
+2,
+0 0
+0 −i 0 0
+0 0 −i 0
+0 1
+0 0
+
+ .
+
+Figure 3. Charge distributions in the logical states of the
+DQD forming the hybrid qubit. In the point charge approx-
+imation we model the charge distribution via delta functions
+localized at the positions (x coordinates) shown by dotted
+lines, with the corresponding charges written in multiples of
+the elementary charge e− = −e. In the numerical integration
+we use for the charge distributions the corresponding eigen-
+functions of the parabolic potential.
+
+When the matrix in Eq. (8) is rewritten in terms of Pauli
+matrices, one obtains
+
+V =
+
+V00 + V11 + 2V01
++
+V00 + V11 − 2V01
+
+4
+
++
+
+1σz
+σz
+2.
+
+4
+
+V00 − V11
+
+4
+
+(σz
+
+1 + σz
+2)
+
+(11)
+
+Now we are prepared to calculate the matrix elements
+
+of the electrostatic coupling
+
+V =
+
+v(rm, rn)
+
+(5)
+
+(cid:88)
+
+m,n
+
+The last term in this decomposition enables us to im-
+plement the CNOT gate2, and from comparison with
+Eqs. (9) and (10) we therefore identify
+V00 + V11 − 2V01
+
+(12)
+
+CH-H =
+
+4
+
+between the different states of two DQDs. In Eq. (5), the
+
+as the qubit-qubit coupling in the H-H setup.
+
+0〉1〉E〉0.5e-RR+bR-bR+lRR+l2e-Re-R+le-e-e-2e-0.5e-We choose the parameters of the setup as follows. For
+the spatial dimensions of the DQDs we assume λ =
+250 nm and l = 150 nm, furthermore d = 100 nm for
+the vertical distance and R = a0 = 4d. We estimate
+αq = 0.19 from11
+
+αq ≈
+
+4R ln(L/Rw)
+
+πL + 8R ln(L/Rw)
+
+,
+
+(13)
+
+with L = 10 µm and Rw = 30 nm as the length and
+radius, respectively, of the thin wire that connects the
+two discs. Considering GaAs as the host material, we use
+r = 13 (the effective value may in fact be smaller, which
+would increase the coupling) and note that λ0 = 50 nm
+and the effective electron mass result in ω (cid:39) 0.5 meV.
+With these values, which are similar to those in Ref. 11,
+we obtain CH-H = 2.0 × 10−10 eV from the point charge
+approximation, while CH-H = 2.6 × 10−10 eV from the
+continuous charge distributions.
+
+Since these results agree very well, we conclude that
+the numerical integration is well reproduced by the point
+charge approximation. One can significantly increase the
+coupling by varying the setup parameters. The coupling
+is most significantly dependent on the vertical distance
+d. Assuming that d = 10 nm can be realized, we are
+able to obtain a coupling strength of CH-H = 1 µeV (see
+Sec. IV).
+
+Next we study the interaction between the ST qubit,
+i.e., singlet-triplet states of two electrons in the DQD,
+and the hybrid qubit, i.e., three electrons in the DQD
+with states 0(cid:105), 1(cid:105), and E(cid:105), see Fig. 3. We assume the
+DQD for the ST qubit to be in the strongly detuned
+regime, thus the singlet state is effectively a (2,0) charge
+state and the triplet state is effectively a (1,1) charge
+state (excited orbital states of the dots that form the
+DQD cannot be occupied). Then we are able to calculate
+the matrix elements, for instance
+
+(cid:104)S, 1 V S, 1(cid:105) = 2v(R, R) + v(R, R − b)
+
++v(R, R + b) + 2v(R, R + l).
+
+(14)
+
+Proceeding analogously to the case of two H qubits, we
+find a qubit-qubit interaction of the form CH-STσz
+1σz
+2,
+where we obtain CH-ST = 5.5 × 10−9 eV for the point
+charges and CH-ST = 1.4 × 10−8 eV for the continu-
+ous charge distributions. As a check of the numerics
+we additionally calculate the ST-ST coupling with the
+continuous distributions and compare it to the expected
+value of 10−5 -- 10−6 eV obtained from Ref. 11. We get23
+CST-ST = 7.5 × 10−7 eV.
+
+It is then interesting to ask why the obtained H-H and
+H-ST couplings are much smaller than in the ST-ST case.
+When we look at the logical states 0(cid:105) and 1(cid:105) of the
+hybrid qubit, we can see that the charge distribution in
+the second quantum dot is the same in both logical states,
+thus the second quantum dot gives us no contribution to
+the coupling, in contrast to the states of the ST qubit.
+Moreover, the charge difference between the singlet and
+the triplet states in the single dot is small, δq = 4.7 ×
+
+4
+
+10−5e according to the calculations in Ref. 25, in contrast
+to the charge difference between the singlet and triplet
+states in the ST qubit where δq = 2.7 × 10−2e.
+It is worth mentioning that when we use the state E(cid:105)
+instead of 1(cid:105) as a computational basis state for the hy-
+brid qubit, we obtain much larger couplings due to the
+different charge configurations in both wells in the dif-
+ferent logical states. For H-H and H-ST we get about
+the same coupling strengths, CH-H ≈ CH-ST ≈ 0.1 µeV,
+which is on the order of what one would expect for the
+charge qubit. In the next section we will pursue this idea
+further, because in order to implement the H-LD cou-
+pling it will be necessary to work in the 0(cid:105), E(cid:105) basis.
+
+Finally, we note that a magnetic field is not needed to
+obtain the H-H, H-ST, and ST-ST couplings. However,
+a magnetic field is usually applied in order to energeti-
+cally separate the qubit subspace from other states. The
+presence of an out-of-plane field, if required, can easily
+be included by using states of Fock-Darwin type, whose
+spatial extent decreases (effective confinement increases)
+with increasing field strength26,27. When the magnetic
+field lies in the plane of the 2DEG, which is the case
+in most present-day experiments7,14,16,28,29 , its effects
+on the orbital states are negligible because of the strong
+and narrow vertical confinement potential. As a conse-
+quence, neither magnetic fields nor SOI are important for
+the estimates of this section and we can omit them in the
+calculations. This is in stark contrast to the LD qubits
+discussed in the next section, where the qubit-qubit cou-
+pling depends strongly on both the SOI and the magnetic
+field.
+
+III. H-LD COUPLING
+
+In this section we want to evaluate the coupling be-
+tween the hybrid qubit in a DQD and the LD qubit in a
+single quantum dot. Given the coordinate system intro-
+duced in the previous section, we assume that the center
+of the quantum dot that hosts a LD qubit is located at
+x = a0 and y = 0. For the sake of simplicity in the nota-
+tion, the coordinate system which we use in the present
+section is shifted such that its origin 0 = x = y and the
+center of the quantum dot coincide.
+
+The Hamiltonian of the single quantum dot reads
+
+HLD = H0 + HZ + HSOI
+
+(15)
+
+with
+
+H0 =
+
+p2
+x + p2
+y
+2m∗ +
+HZ =
+
+gµB
+
+2
+
+HSOI = α (pxσy − pyσx) .
+
+(cid:0)x2 + y2(cid:1) ,
+
+m∗ω2
+
+2
+B · σ,
+
+(16)
+
+(17)
+
+(18)
+
+The px and py are kinetic momentum operators, g is the
+effective electron g-factor, and σ is the vector of Pauli
+matrices σx,y,z. Let us assume that the magnetic field
+
+
+
+m∗λSO
+
+lies in the plane of the 2DEG, i.e., B = (Bx, By, Bz) =
+B (cos φ, sin φ, 0), where B = B. In this case, orbital
+effects due to B are negligible and one can simply use
+px,y = −i∂x,y. The Zeeman energy induced by B is
+EZ = gµBB. The Rashba SOI parameter is defined as
+α =
+, where λSO is the spin-orbit length. We as-
+sume that the SOI is relatively weak and are interested in
+the regime 1 (cid:29) EZ
+λSO . (We allow EZ and λSO to
+be positive or negative depending on the sign of g and α,
+respectively. As these signs, however, cannot affect the
+absolute values of the qubit-qubit couplings in our model,
+the parameters in our calculations will always be chosen
+positive.) In order to remove HSOI in the first order, we
+can therefore employ a Schrieffer-Wolff (SW) transforma-
+tion26. The details are described in Appendix B.
+
+ω (cid:29) λ0
+
+The floating gate couples the three electrons forming
+the hybrid qubit, labeled by positions r1, r2, r3, to the
+electron of the LD qubit, labeled by re, via the potential
+
+V (re, r1, r2, r3) = v(re, r1)+v(re, r2)+v(re, r3) (19)
+
+from Eq. (5). By expanding this electrostatic potential
+around the positions where the confining potential of the
+dots is minimal, we obtain an effective term Hint that
+describes the floating-gate-mediated interaction between
+the electrons,
+
+Hint = ηxe(x1 + x2 + x3),
+
+(cid:18) ∂Qind
+
+(cid:19)2(cid:12)(cid:12)(cid:12)(cid:12)(cid:12)rmin
+
+αq
+
+η =
+
+8r0R
+
+∂x
+
+(20)
+
+(21)
+
+.
+
+The details of this expansion are provided in Appendix C.
+Remarkably, the term Hint is equivalent to that of an elec-
+tric field applied along the DQD axis, and the strength
+of this electric field depends on the coordinate xe of the
+electron in the quantum dot for the LD qubit. We are
+now interested in the energy difference
+
+J01 = (cid:104)0 Hint 0(cid:105) − (cid:104)1 Hint 1(cid:105)
+
+(22)
+which Hint causes between the logical states 0(cid:105) and 1(cid:105)
+of the hybrid qubit. As sketched in Fig. 3, the charge
+distributions of the states 0(cid:105) and 1(cid:105) differ only in one
+valley of the DQD, because one of the two electrons that
+occupy this valley is raised to an excited orbital state
+when 0(cid:105) changes to 1(cid:105). Consequently, we find J01 = 0
+in our model, as it is known that an electric field applied
+to a SHO leads to a constant shift of all energy levels. It
+has already been proposed8 to use the state E(cid:105) instead
+of 1(cid:105) to perform a two-qubit gate as the charge difference
+between those states is large and one can easily pulse the
+state 1(cid:105) into E(cid:105). One finds that
+
+J0E = (cid:104)0 Hint 0(cid:105) − (cid:104)E Hint E(cid:105)
+
+(23)
+is non-zero, as a qubit based on the states 0(cid:105) and E(cid:105) is
+effectively a charge qubit, see Fig. 3.
+The orbital wave functions of the states 0(cid:105) and E(cid:105) in
+
+the DQD are well approximated by
+
+ψ0 = ψL(x1, y1)ψL(x2, y2)ψR(x3, y3),
+ψE = ψL(x1, y1)ψR(x2, y2)ψR(x3, y3),
+
+(24)
+(25)
+
+where
+
+(cid:114) m∗ω
+π e− m∗ ω
+ψL(x, y) =
+ψR(x, y) = ψL(x − l, y).
+
+2 (x2+y2),
+
+5
+
+(26)
+
+(27)
+
+Using these orbital wave functions one gets J0E =
+−ηlxe/2 which corresponds to an interaction of the form
+
+Hint = − ηlxeτz
+
+4
+
+,
+
+(28)
+
+where the Pauli operator τz satisfies τz 0(cid:105) = 0(cid:105) and
+τz E(cid:105) = −E(cid:105).
+
+Finally, we can calculate the H-LD qubit-qubit
+coupling by
+aforementioned SW
+transformation26. As explained in detail in Appendix B,
+the antihermitian operators
+
+considering
+
+the
+
+S1 =
+
+T1 =
+
+(xσy − yσx) ,
+
+i
+
+λSO
+
+(29)
+
+EZλ2
+0
+i2ωλSO
+
+(px cos φ + py sin φ) σz
+
+(30)
+
+are chosen such that the eigenstates of the perturbatively
+transformed Hamiltonian HLD +[S1 +T1, HLD] are eigen-
+states of the Pauli operator σz(cid:48) = σx cos φ + σy sin φ,
+apart from small (higher-order) corrections. When we
+apply the same transformation to Hint, keeping in mind
+that xe in Eq. (28) corresponds to x in Eqs. (29) and
+(30), we identify
+
+[T1, Hint] = CH-LDσy(cid:48)τz
+
+(31)
+
+as the H-LD coupling. We note that the form of this
+qubit-qubit coupling differs from those in Sec. II because
+the axes of the Pauli operators σz(cid:48) and σy(cid:48) = σz are
+perpendicular to each other. The strength of the H-LD
+coupling is
+
+(cid:18) ∂Qind
+and we recall that λ0 =(cid:112)/(m∗ω).
+
+αqλ2
+0lEZ cos φ
+32r0RλSOω
+
+CH-LD =
+
+∂x
+
+(cid:19)2(cid:12)(cid:12)(cid:12)(cid:12)(cid:12)rmin
+
+,
+
+(32)
+
+In this calculation we included Rashba SOI only. One
+can perform the SW transformation including both Dres-
+selhaus and Rashba SOIs with the following modifica-
+tions.
+If the magnetic field is in the plane and if the
+angle γ between the crystallographic [100] axis and the
+x axis of our coordinate system is tuned to π/4, it then
+follows from Eq. (B10) in Ref. 11 that the Dresselhaus
+SOI coefficient β induces a simple shift of the Rashba
+SOI as α = α + β. The same effect can also be achieved
+by choosing the in-plane magnetic field along the x axis,
+regardless of the value of γ, and in this case we have
+α = α + β sin(2γ).
+
+IV. DEPENDENCE ON SETUP GEOMETRIES
+
+AND HOST MATERIALS
+
+bMMx along the z axis, with bMM as the gradient, the
+total (effective) gradient btot is therefore35
+
+6
+
+As evident from Eq. (32), we can obtain a stronger
+H-LD coupling by using a quantum dot material with a
+stronger SOI (like InAs). To verify this statement, we
+calculated the couplings for the fixed setup parameters
+mentioned before for different materials, with the follow-
+ing material parameters: for GaAs11 λSO = 2.0×10−6 m,
+m∗ = 0.067me, ω = 0.5 meV, r = 13, for InAs30 λSO =
+1.64×10−7 m, m∗ = 0.023me, ω = 1.3 meV, r = 15.15,
+in Si31 λSO = 2.6×10−5 m, m∗ = 0.26me, ω = 0.1 meV,
+32 λSO = 2 × 10−5 m,
+r = 11.7, and for Si0.9Ge0.1
+m∗ = 0.19me, ω = 0.2 meV, r = 12.2. We have chosen
+ω in every material such that it is experimentally well ac-
+cessible and keeps λ0 close to 50 nm. The Zeeman energy
+is always set to EZ = 0.5ω. Given these parameters,
+the results for the qubit-qubit couplings CH-H, CH-ST,
+and CH-LD are listed in Table I. However, the couplings
+for this setup are rather small.
+If we want to further
+enhance them, we need to consider smaller geometries.
+The simplest way is to equally shorten the distance d, the
+disc radius R, and the horizontal distance a0 between the
+centers of disc and dot, such that a0 = R = 4d is pre-
+served. Reducing R also results in a small decrease of
+αq, which however does not dominate the parameter de-
+pendence of the qubit-qubit couplings. As expected from
+Eqs. (1) -- (3), the couplings depend strongest on the ver-
+tical distance d between the dots and the metallic gate.
+To quantify this dependence, we calculated the couplings
+again for two smaller setups. In Table II, we present the
+results for currently feasible5 fabrication parameters with
+d = 57 nm, R = a0 = 228 nm, and αq = 0.13, and in Ta-
+ble III for d = 10 nm, R = a0 = 40 nm, and αq = 0.03
+to demonstrate the strong dependence on d. The param-
+eters λ = 250 nm and l = 150 nm of the DQD and the
+angle φ = 0 of the magnetic field in the H-LD case are
+always fixed.
+
+As anticipated, a strong SOI is needed for implement-
+ing the H-LD coupling, which is why the calculated
+CH-LD in Tables I -- III are largest for InAs. In order to
+enhance the relatively weak H-LD couplings in Si and
+Si0.9Ge0.1, one can add a micromagnet33 -- 35 to the setup,
+because the magnetic field gradient caused by a micro-
+magnet can result in a very strong effective SOI. Con-
+sidering the transformation discussed in Sec. III and Ap-
+pendix B, one obtains36 -- 38
+
+(cid:104)
+
+(cid:105)
+
+S1,
+
+B · σ
+
+gµB
+
+2
+
+=
+
+gµBB
+λSO
+
+(x cos φ + y sin φ) σz,
+
+(33)
+
+where S1 is the antihermitian operator of Eq. (29) and
+B · σ = B (σx cos φ + σy sin φ) due to the in-plane mag-
+netic field.
+In particular, when we choose φ = 0 as in
+our calculations for CH-LD in Tables I -- III, the trans-
+formed Zeeman term is simply gµBBxσz/λSO, which cor-
+responds to the effect of an out-of-plane magnetic field
+that increases linearly with the coordinate x. Assum-
+ing that the micromagnet provides such a magnetic field
+
+btot = bMM +
+
+2B
+λSO
+
+.
+
+(34)
+
+Consequently, even if a material does not feature Rashba
+or Dresselhaus SOI at all, a spin-orbit length of the or-
+der of 2B/bMM can be induced by a micromagnet (the
+estimate presented here applies when λSO (cid:29) λ0). Ex-
+perimental setups with bMM ∼ 1 T/µm are already well
+feasible35, which results in an effective spin-orbit length
+λSO ∼ 2 × 10−6 m when we keep our other parameters
+for the Si and Si0.9Ge0.1 setups unchanged. In both Si
+and Si0.9Ge0.1, we find that the considered gradient from
+the micromagnet increases the H-LD couplings by an or-
+der of magnitude. For instance, using the setup with
+d = 10 nm and micromagnets to enhance the SOI, one
+can reach CH-LD ∼ 0.5 µeV for Si 2DEGs.
+
+For a comparison of the H-H and H-ST couplings in
+Tables I -- III, it is important to keep in mind that the
+materials differ from each other only in the relative per-
+mittivities r and effective masses m∗ in the context of
+this calculation. As we chose different values of ω for the
+different materials, such that the confinement length λ0
+is approximately constant, we find that the listed values
+of CH-H and CH-ST are quite similar, because it is evi-
+dent from Sec. II that the couplings CH-H and CH-ST are
+independent of m∗ when λ0 is fixed. Thus, the small dif-
+ferences that remain in the H-H and H-ST cases between
+the couplings obtained for the various 2DEGs are solely
+caused by the small variations in λ0 and the relative per-
+mittivity.
+
+In our analysis of the charge distributions in the states
+of single and double quantum dots, we assumed that all
+wave functions of excited states have an excited orbital
+part.
+In Si, we therefore assume that the orbital level
+spacing ω = 0.1 meV is smaller than the valley split-
+ting, which is reasonable because reported valley split-
+tings are of the order of 0.1 -- 1 meV39 -- 42. For instance,
+Ref. 42 reports an electrically tunable valley splitting in
+the range of 0.3 -- 0.8 meV for a quantum dot in Si/SiO2.
+Consequently, forming Si quantum dots with sufficiently
+large valley splittings is clearly possible (analogous for
+Si0.9Ge0.1).
+
+At the end of this section, we would like to summarize
+some important dependences of the qubit-qubit couplings
+on the sample parameters. For the H-H coupling, we
+can conclude from Eqs. (1) -- (3) that CH-H ∼ 1
+R , and
+the same applies of course to the H-ST coupling CH-ST.
+Moreover, Eq. (32) reveals that CH-LD ∼ B, α, ω−2 for
+the H-LD coupling.
+
+d2 , 1
+
+Finally, we wish to emphasize that additional elec-
+tric gates, which are used to control and manipulate the
+qubits in an experimental setup, were not yet included
+in our calculations. As shown in Ref. 11, the influence of
+these surrounding gates can increase the qubit-qubit cou-
+plings by another two orders of magnitude, which makes
+
+the hybrid qubit a highly promising platform for quan-
+
+tum computation.
+
+Coupling C [µeV]
+
+H-H
+H-ST
+H-LD
+
+InAs
+2.8 × 10−4
+1.3 × 10−2
+3.5 × 10−2
+
+GaAs
+2.6 × 10−4
+1.4 × 10−2
+3.0 × 10−3
+
+Si0.9Ge0.1
+2.2 × 10−4
+1.3 × 10−2
+2.8 × 10−4
+
+7
+
+Si
+4.7 × 10−4
+1.9 × 10−2
+3.3 × 10−4
+
+Table I. Calculated strengths of the coupling between the three different types of qubits [spin-1/2 (LD), singlet-triplet (ST),
+and hybrid (H) qubit] in DQDs for d = 100 nm, αq = 0.19, R = a0 = 400 nm (see Fig. 2) for four different semiconducting
+materials commonly used for the realization of DQDs. We note that in the H-LD case, the two-qubit gate is assumed to be
+performed in the 0(cid:105) ,E(cid:105) basis of the hybrid qubit. In all these calculations we used the continuous charge densities.
+
+Coupling C [µeV]
+
+H-H
+H-ST
+H-LD
+
+InAs
+2.7 × 10−3
+6.5 × 10−2
+1.3 × 10−1
+
+GaAs
+2.6 × 10−3
+7.0 × 10−2
+1.1 × 10−2
+
+Si0.9Ge0.1
+2.2 × 10−3
+6.5 × 10−2
+1.0 × 10−3
+
+Table II. Same as in Table I for d = 57 nm, αq = 0.13 and R = a0 = 228 nm.
+
+Coupling C [µeV]
+
+H-H
+H-ST
+H-LD
+
+InAs
+3.3 × 10−1
+1.3
+5.6
+
+GaAs
+3.7 × 10−1
+1.5
+4.7 × 10−1
+
+Si0.9Ge0.1
+3.7 × 10−1
+1.6
+4.5 × 10−2
+
+Si
+4.5 × 10−3
+9.5 × 10−2
+1.2 × 10−3
+
+Si
+4.4 × 10−1
+1.5
+5.2 × 10−2
+
+Table III. Same as in Table I for d = 10 nm, αq = 0.03 and R = a0 = 40 nm.
+In this setup, as λ = 250 nm the point
+charge approximation would be very imprecise and should not be expected to be comparable with our results obtained with
+the continuous densities.
+
+V. CONCLUSIONS
+
+We have studied an experimentally realizable setup
+which allows different types of qubits in DQDs to be cou-
+pled over long distances. In particular, we have shown
+that using a metallic floating gate, it is possible to capac-
+itively couple the hybrid qubit to a single spin 1/2, to a
+singlet-triplet qubit, or to another hybrid qubit. First we
+employed a simple approximation, where the charge den-
+sity within the quantum dot is treated as a point charge
+distribution, and calculated the couplings between two
+hybrid qubits as well as between the ST and the hy-
+brid qubit. Furthermore, we have verified the validity of
+the point charge approximation by numerically integrat-
+ing over the continuous charge distribution within each
+quantum dot. Next, we have calculated perturbatively
+the coupling between the LD and the hybrid qubit, as-
+suming that the latter is based on the states 0(cid:105) and E(cid:105).
+In order to investigate the influence of the quantum dot
+material and the setup geometry, we have calculated the
+couplings for the four semiconducting materials GaAs,
+InAs, Si, Si0.9Ge0.1, and the three different setups of Ta-
+bles I -- III.
+
+As anticipated, the strongest H-LD coupling is ob-
+
+tained with InAs, which features the strongest SOI. Nev-
+ertheless, as explained in Sec. IV, micromagnets enable
+a strong, effective SOI (and therefore strong H-LD cou-
+plings) even in materials where the intrinsic SOI is weak,
+such as Si or Si0.9Ge0.1.
+
+For setups with a small distance d = 10 nm between
+the 2DEG and the floating gate, our calculated H-LD,
+H-ST, and H-H couplings are of the order of one mi-
+croelectronvolt (see Table III), which leads to very fast
+two-qubit gates with subnanosecond operation times. In
+fact, such short time scales may already be possible with
+present-day samples (see Table II, d = 57 nm), assuming
+that the qubit-qubit couplings increase by two orders of
+magnitude, as simulated in Ref. 11, when all elements of
+the sample, especially all the electric gates, are included
+in the calculation.
+
+In conclusion, we showed that hybrid qubits can be
+very strongly coupled over long distances via floating
+metallic gates, enabling long-range two-qubit gates with
+short operation times and all-electrical control. This ap-
+plies to all of the studied materials, including Si and
+Si0.9Ge0.1. We note that Ge and Si can be grown nuclear-
+spin-free and are therefore highly useful for implement-
+ing spin qubits with long dephasing times14. Our results
+
+prove that hybrid qubits are a promising platform for
+quantum information processing and quantum computa-
+tion with spins in quantum dots.
+
+ACKNOWLEDGMENTS
+
+We are especially grateful to M. A. Eriksson for inter-
+esting us in this problem and for useful comments. This
+work was supported in part by the Swiss NF, NCCR
+QSIT, SiSPIN, and IARPA.
+
+Appendix A: Derivation of the electron-electron
+
+coupling mediated by the floating gate
+
+In this appendix we explain Eqs. (1) -- (3) of the main
+text in more detail and provide an intuitive picture for
+the derivation of the electrostatic electron-electron inter-
+action described by Eq. (3).
+
+We consider a thin conducting disc of radius R and
+assume for now that it is grounded. When an electron is
+located nearby, the charge19
+
+Qind(r) =
+
+2e
+π
+
+arcsin(R/ξr)
+
+(A1)
+
+is induced in the disc, where e is the elementary positive
+charge. Defining the center of the disc as the origin of
+the coordinate system, the ellipsoidal coordinate ξr > R
+is related to the position r = (x, y, z) of the electron via
+
+(cid:113)
+
+2ξ2
+
+r = R2 + x2 + y2 + z2
+
+(A2)
+
+(R2 + x2 + y2 + z2)2 − 4R2(x2 + y2),
+
++
+
+which corresponds to the solution of
+
+x2 + y2
+
+ξ2
+r
+
++
+
+z2
+r − R2 = 1
+ξ2
+
+(A3)
+
+that satisfies ξr > R21. The Cartesian coordinate sys-
+tem was chosen here such that the disc lies in the x-y
+plane. It is important to note that Eq. (A1) for the in-
+duced charge does not change when we allow the system
+to be immersed in a dielectric medium with relative per-
+mittivity r. This might initially be surprising, but it be-
+comes easily comprehensible when one keeps in mind that
+the electrostatic potential due to the electron and the
+induced charge Qind must compensate at the grounded
+disc. Keeping Qind fixed, the potential of both the elec-
+tron and the disc are inversely proportional to r (which
+is also seen, for instance, in the capacitance 8r0R of a
+disc in a dielectric), and so the solution for Qind must in-
+deed be independent of the relative permittivity. In our
+setup (Fig. 2), where vacuum above the floating gates and
+different layers of materials may be involved, small cor-
+rections to Eq. (A1) can be expected which, however, will
+only have minor quantitative effects on our results. A de-
+tailed derivation of Eq. (A1) is provided in Ref. 19, using
+
+8
+
+the aforementioned assumption that the disc is grounded.
+In fact, even though the attached wire and the second
+disc of our floating gate correspond to a finite reservoir,
+the assumption of a grounded disc is not satisfied because
+the floating gate is isolated and so the total charge in the
+gate must be conserved. Nevertheless, as explained in
+the following, Eq. (A1) can be exploited to calculate the
+steady-state charge distribution of the floating gate.
+
+Given our gate geometry of Fig. 2, we now assume that
+an electron is brought close to one of the discs, referred
+to as disc 1. After a very short (subpicosecond) time11,
+much shorter than the typical duration of a quantum op-
+eration on a qubit, the charge distribution in the metallic
+gate will have reached a steady state which can be de-
+scribed by the following simple requirements,
+
+Qd1
+Cd
+
+− Qind,1
+Cd
+
+=
+
+Qw
+Cw
+
+=
+
+Qd2
+Cd
+
+,
+
+Qd1 + Qw + Qd2 = 0.
+
+(A4)
+
+(A5)
+
+With Eq. (A4), we exploit that the floating gate is con-
+ducting, and so the potential at disc 1, the connecting
+wire, and disc 2 must be the same. Equation (A5) arises
+from charge conservation in the floating gate. The in-
+troduced quantities Qd1, Qw, and Qd2 are the charges
+in disc 1, the wire, and disc 2, respectively. The capaci-
+tance of the wire is Cw and, assuming a symmetric gate
+geometry, each of the two discs has the capacitance Cd.
+The term −Qind,1/Cd on the left-hand side of Eq. (A4)
+accounts for the additional potential at disc 1 which re-
+sults from the external electron.
+If Qd1 = Qind,1, this
+term is exactly compensated, and so Qind,1 can be in-
+terpreted as the charge that would be induced in disc 1
+and that would remain there if the disc were grounded
+[see also Eq. (A1)]. Solving the system of three equa-
+tions contained in Eqs. (A4) and (A5) yields the charge
+distribution in the steady state,
+
+Qd1 = Qind,1
+Qw = −Qind,1
+Qd2 = −Qind,1
+
+Cw + Cd
+Cw + 2Cd
+
+,
+
+Cw
+
+Cw + 2Cd
+
+Cd
+
+Cw + 2Cd
+
+,
+
+.
+
+In particular, defining
+
+αq =
+
+Cd
+
+Cw + 2Cd
+
+,
+
+(A6)
+
+(A7)
+
+(A8)
+
+(A9)
+
+we see from Eq. (A8) that the electron near disc 1 results
+in a charge Qd2 = −αqQind,1 in disc 2.
+
+Next, we analyze the electric potential around the sec-
+ond disc, which is charged by Qd2. When a thin conduct-
+ing disc with radius R and charge Q is surrounded by a
+dielectric with relative permittivity r, the potential at a
+position r = (x, y, z) with ξr > R is
+
+Φ(r) =
+
+Q
+
+4πr0R
+
+arcsin(R/ξr).
+
+(A10)
+
+Again, the ellipsoidal coordinate ξr is given by Eq. (A2)
+if the disc lies in the x-y plane of the chosen Cartesian
+coordinate system and if the center of the disc and the
+origin coincide. The result in Eq. (A10) is identical with
+those provided, e.g., in Refs. 19 and 43, keeping in mind
+some properties of inverse trigonometric functions such
+as
+
+arcsin(R/ξr) = arctan
+
+and
+
+arcsin(R/ξr) = R
+
+(cid:17)
+
+r − R2
+
+(cid:16)
+R/(cid:112)ξ2
+(cid:90) ∞
+ξ(cid:112)ξ2 − R2
+
+dξ
+
+ξr
+
+(A11)
+
+(A12)
+
+9
+
+ω (cid:29) λ0
+
+Given the Hamiltonian in Eq. (15) and the regime
+1 (cid:29) EZ
+λSO , we consider two consecutive unitary
+transformations in order to remove the SOI perturba-
+tively,
+
+H(cid:48)
+LD = eT eSHLDe−Se−T ,
+
+S = S1 + . . . ,
+T = T1 + . . . ,
+
+(B1)
+(B2)
+(B3)
+
+where ". . . " stands for additional terms of higher order.
+We choose the form of S1 such that the strongest term
+of the SOI is eliminated,
+
+[S1, H0] = −HSOI,
+
+S1 =
+
+i
+
+λSO
+
+(xσy − yσx).
+
+(B4)
+
+(B5)
+
+[S1, HZ] = H Z
+
+SOI =
+
+EZ
+λSO
+
+(x cos φ + y sin φ) σz,
+
+we have to apply the second transformation such that
+H Z
+
+SOI is removed,
+
+[T1, H0] = −H Z
+
+SOI,
+
+T1 =
+
+EZλ2
+0
+i2ωλSO
+
+(px cos φ + py sin φ) σz.
+
+(B6)
+
+(B7)
+
+Moreover, as the eigenstates of H(cid:48)
+LD correspond es-
+sentially to the eigenstates of H0 + HZ and be-
+cause we consider an in-plane magnetic field B =
+B (ex cos φ + ey sin φ), with ei as unit vectors for the re-
+spective directions, we introduce new basis vectors ez(cid:48) =
+ex cos φ + ey sin φ, ey(cid:48) = ez, and ex(cid:48) = ey cos φ− ex sin φ.
+Consequently,
+
+σx = σz(cid:48) cos φ − σx(cid:48) sin φ,
+σy = σx(cid:48) cos φ + σz(cid:48) sin φ,
+
+σz = σy(cid:48),
+
+HZ =
+
+EZ
+2
+
+σz(cid:48).
+
+(B8)
+(B9)
+(B10)
+
+(B11)
+
+Appendix C: Expansion of the interaction potential
+
+When we expand the electrostatic potential in Sec. III
+around the positions of the quantum dots, we follow the
+approach discussed in Appendix B of Ref. 11. In the fol-
+lowing, we focus on the expansion of the term v(re, r1),
+as the other terms v(re, r2) and v(re, r3) are expanded
+analogously.
+
+We assume that the quantum dot that hosts the LD
+qubit is located below the edge of one of the metallic
+discs. Referring to the coordinate system introduced in
+Sec. II (2DEG in x-y plane, origin 0 = x = y below
+
+for ξr > R. In our setup, the potential within the mate-
+rial below disc 2 is therefore well described by
+
+Φ(r2) =
+
+Qd2
+
+4πr0R
+
+arcsin(R/ξr2 ),
+
+(A13)
+
+Since
+
+where the subscript added to r2 and ξr2 refers to the
+second disc and where r may be replaced by an effective
+value if, e.g., the floating gate is located at the sample
+surface (partially in vacuum) or if the sample consists of
+multiple layers.
+
+Finally, we can combine the previous equations and
+calculate the electron-electron coupling mediated by the
+floating gate. Given our result for Φ(r2), Eq. (A13), the
+associated potential energy v of an electron below disc 2 is
+simply −eΦ(r2). Referring to the position of the electron
+below disc 1 as r1, the combination of Eqs. (A1), (A8),
+(A9), and (A13) yields
+
+v(r1, r2) =
+
+=
+
+eαqQind(r1)
+
+4πr0R
+αq
+
+8r0R
+
+arcsin(R/ξr2)
+
+Qind(r1)Qind(r2),
+
+(A14)
+
+which is the result shown in Eq. (3) of the main text.
+We note that the same result is obtained when one starts
+the derivation at disc 2 instead of disc 1, which is also
+evident from the symmetric form of the final expression.
+As a last remark, we mention that this coupling may be
+interpreted as
+
+and
+
+v(r1, r2) ≈ Qind(r1)Qind(r2)
+
+(A15)
+with the approximation Cd ≈ 8r0R, which simply cor-
+responds to the product of the induced charges [Eq. (A1)]
+divided by the total capacitance of the floating gate.
+
+Cw + 2Cd
+
+Appendix B: Schrieffer-Wolff transformation
+
+In this appendix we provide the details of the SW
+transformation that was performed in Sec. III of the main
+text. We note that this transformation is often exploited
+in the literature11,26,36 -- 38.
+
+the center of the nearby disc), we thus assume that the
+confining potential of the quantum dot is minimal at the
+coordinates x = a0 = R and y = 0. Analogously, we
+consider the DQD with the hybrid qubit to be located
+below the edge of the other metallic disc. In our model,
+the coordinates of the dot that contains two electrons
+when the hybrid qubit is in the state 0(cid:105) are x = a0 = R
+and y = 0. The coordinates of the second dot of the DQD
+are x = a0 + l and y = 0. Thus, keeping in mind that
+the origins of the coordinate systems for the LD and the
+hybrid qubit are related to the respective metallic discs,
+we find that a minimum of the confining potential occurs
+at the position rmin = (a0, 0) = (R, 0) for both qubits.
+
+As we are interested in the qubit-qubit coupling that
+results from v(re, r1), we are looking for terms of type
+xex1, xey1, yex1, or yey1 in the expansion. All the other
+terms up to the second power in coordinates cannot lead
+to a qubit-qubit interaction. Moreover, as the quantum
+
+10
+
+dots are displaced by a0 along the x axis only, we find
+
+(cid:18) ∂Qind
+
+∂y
+
+(cid:19)(cid:12)(cid:12)(cid:12)(cid:12)y=0
+
+= 0.
+
+(C1)
+
+Thus, the expansion up to the second power in coordi-
+nates yields
+
+v(re, r1) ≈ . . . + ηxex1,
+
+(C2)
+
+where ". . . " stands for all the constant or frequency-
+rescaling terms that do not affect the qubit-qubit cou-
+pling and
+
+(cid:18) ∂Qind(re)
+
+αq
+
+η =
+
+8r0R
+
+∂xe
+
+(C3)
+Thus, due to the assumed symmetry in the setup, the
+constant η can be written in the short form
+
+(cid:19)(cid:12)(cid:12)(cid:12)(cid:12)rmin
+
+.
+
+(cid:19)(cid:12)(cid:12)(cid:12)(cid:12)rmin
+(cid:18) ∂Qind
+
+∂x1
+
+(cid:18) ∂Qind(r1)
+(cid:19)2(cid:12)(cid:12)(cid:12)(cid:12)(cid:12)rmin
+
+.
+
+αq
+
+η =
+
+8r0R
+
+∂x
+
+(C4)
+
+After such an expansion of all three terms v(re, r1),
+v(re, r2), and v(re, r3) of the interaction potential, we
+obtain Eqs. (20) and (21) of the main text.
+
+1 R. Feynman, International Journal of Theoretical Physics
+
+and A. C. Gossard, Science 309, 2180 (2005)
+
+21, 467 (1982)
+
+2 D. Loss and D. P. DiVincenzo, Phys. Rev. A 57, 120 (1998)
+3 W. G. van der Wiel, S. De Franceschi, J. M. Elzerman,
+T. Fujisawa, S. Tarucha, and L. P. Kouwenhoven, Rev.
+Mod. Phys. 75, 1 (2002)
+
+4 C. Kloeffel and D. Loss, Annual Review of Condensed Mat-
+
+ter Physics 4, 51 (2013)
+
+5 R. Maurand, X. Jehl, D. Kotekar-Patil, A. Corna, H. Bo-
+huslavskyi, R. Lavi´eville, L. Hutin, S. Barraud, M. Vinet,
+M. Sanquer, and S. De Franceschi, Nature Communica-
+tions 7, 13575 (2016)
+
+6 M. Veldhorst, H. Eenink, C. Yang, and A. Dzurak,
+
+arXiv:1609.09700
+
+7 Z. Shi, C. B. Simmons, J. R. Prance, J. K. Gamble, T. S.
+Koh, Y.-P. Shim, X. Hu, D. E. Savage, M. G. Lagally,
+M. A. Eriksson, M. Friesen, and S. N. Coppersmith, Phys.
+Rev. Lett. 108, 140503 (2012)
+
+8 T. S. Koh, J. K. Gamble, M. Friesen, M. A. Eriksson, and
+S. N. Coppersmith, Phys. Rev. Lett. 109, 250503 (2012)
+9 D. Kim, D. R. Ward, C. B. Simmons, J. K. Gamble,
+R. Blume-Kohout, E. Nielsen, D. E. Savage, M. G. La-
+gally, M. Friesen, S. N. Coppersmith, and M. A. Eriksson,
+Nat. Nano. 10, 243 (2015)
+
+10 D. Kim, D. R. Ward, C. B. Simmons, D. E. Savage, M. G.
+Lagally, M. Friesen, S. N. Coppersmith, and M. A. Eriks-
+son, Npj Quant. Inf. 1, 15004 (2015)
+
+11 L. Trifunovic, O. Dial, M. Trif, J. R. Wootton, R. Abebe,
+
+A. Yacoby, and D. Loss, Phys. Rev. X 2, 011006 (2012)
+
+12 J. R. Petta, A. C. Johnson, J. M. Taylor, E. A. Laird,
+A. Yacoby, M. D. Lukin, C. M. Marcus, M. P. Hanson,
+
+13 R. Hanson, L. P. Kouwenhoven, J. R. Petta, S. Tarucha,
+and L. M. K. Vandersypen, Rev. Mod. Phys. 79, 1217
+(2007)
+
+14 B. M. Maune, M. G. Borselli, B. Huang, T. D. Ladd,
+P. W. Deelman, K. S. Holabird, A. A. Kiselev, I. Alvarado-
+Rodriguez, R. S. Ross, A. E. Schmitz, M. Sokolich, C. A.
+Watson, M. F. Gyure, and A. T. Hunter, Nature 481, 344
+(2012)
+
+15 J. Levy, Phys. Rev. Lett. 89, 147902 (2002)
+16 H. Bluhm, S. Foletti, I. Neder, M. Rudner, D. Mahalu,
+V. Umansky, and A. Yacoby, Nature Physics 7, 109 (2011)
+17 F. H. L. Koppens, C. Buizert, K. J. Tielrooij, I. T. Vink,
+K. C. Nowack, T. Meunier, L. P. Kouwenhoven, and
+L. M. K. Vandersypen, Nature 442, 766 (2006)
+
+18 A. Barenco, C. H. Bennett, R. Cleve, D. P. DiVincenzo,
+N. Margolus, P. Shor, T. Sleator, J. A. Smolin, and H. We-
+infurter, Phys. Rev. A 52, 3457 (1995)
+
+19 J. C.-E. Sten, Journal of Electrostatics 64, 647 (2006)
+20 We note that ellipsoidal coordinates found in the litera-
+ture sometimes have different underlying definitions. De-
+tails about the ξr used here are provided in Ref. 19.
+
+21 Our formula differs from the one given in Ref. 11 by a
+
+factor of 1/2. For the details see Appendix A
+
+22 G. Burkard, D. Loss, and D. P. DiVincenzo, Phys. Rev. B
+
+59, 2070 (1999)
+
+23 In a 2D parabolic potential with circular symmetry, there
+are two degenerate orbital states that correspond to a first
+excited state. We assume here that this degeneracy is lifted
+and consider only one excited state, which is justified be-
+cause asymmetries in the DQD potential can be generated
+
+11
+
+electrically with the gates that control the in-plane con-
+finement.
+
+24 N. Schuch and J. Siewert, Phys. Rev. A 67, 032301 (2003)
+25 T. Hiltunen, H. Bluhm, S. Mehl, and A. Harju, Phys. Rev.
+
+B 91, 075301 (2015)
+
+26 M. Trif, V. Golovach, and D. Loss, Phys. Rev. B 75, 085307
+
+(2007)
+
+34 M. Pioro-Ladriere, T. Obata, Y. Tokura, Y.-S. Shin,
+T. Kubo, K. Yoshida, T. Taniyama, and S. Tarucha, Na-
+ture Physics 4, 776 (2008)
+
+35 T. Takakura, M. Pioro-Ladri`ere, T. Obata, Y.-S. Shin,
+R. Brunner, K. Yoshida, T. Taniyama, and S. Tarucha,
+Applied Physics Letters 97, 212104 (2010)
+
+36 I. L. Aleiner and V. I. Fal'ko, Phys. Rev. Lett. 87, 256801
+
+27 L. P. Kouwenhoven, D. G. Austing, and S. Tarucha, Rep.
+
+(2001)
+
+Prog. Phys. 64, 701 (2001)
+
+28 M. D. Shulman, O. E. Dial, S. P. Harvey, H. Bluhm,
+
+V. Umansky, and A. Yacoby, Science 336, 202 (2012)
+
+29 F. Martins, F. K. Malinowski, P. D. Nissen, E. Barnes,
+S. Fallahi, G. C. Gardner, M. J. Manfra, C. M. Marcus,
+and F. Kuemmeth, Phys. Rev. Lett. 116, 116801 (2016)
+
+30 W. Knap, C. Skierbiszewski, A. Zduniak, E. Litwin-
+Staszewska, D. Bertho, F. Kobbi, J. L. Robert, G. E.
+Pikus, F. G. Pikus, S. V.
+Iordanskii, V. Mosser,
+K. Zekentes, and Y. B. Lyanda-Geller, Phys. Rev. B 53,
+3912 (1996)
+
+31 C. Tahan and R. Joynt, Phys. Rev. B 71, 075315 (2005)
+32 H. Malissa, W. Jantsch, M. Muhlberger, F. Schaffler,
+Z. Wilamowski, M. Draxler, and P. Bauer, Acta Physica
+Polonica A 105, 585 (2004)
+
+33 E. A. Laird, C. Barthel, E. I. Rashba, C. M. Marcus, M. P.
+Hanson, and A. C. Gossard, Phys. Rev. Lett. 99, 246601
+(2007)
+
+37 V. N. Golovach, A. Khaetskii, and D. Loss, Phys. Rev.
+
+Lett. 93, 016601 (2004)
+
+38 P. Stano and J. Fabian, Phys. Rev. Lett. 96, 186602 (2006)
+39 F. A. Zwanenburg, A. S. Dzurak, A. Morello, M. Y. Sim-
+mons, L. C. L. Hollenberg, G. Klimeck, S. Rogge, S. N.
+Coppersmith, and M. A. Eriksson, Rev. Mod. Phys. 85,
+961 (2013)
+
+40 S. Goswami, K. Slinker, M. Friesen, L. McGuire, J. Tru-
+itt, C. Tahan, L. Klein, J. Chu, P. Mooney, D. W. Van
+Der Weide, R. Joynt, S. N. Coppersmith, and M. A. Eriks-
+son, Nature Physics 3, 41 (2007)
+
+41 M. Xiao, M. G. House, and H. W. Jiang, Applied Physics
+
+Letters 97, 032103 (2010)
+
+42 C. H. Yang, A. Rossi, R. Ruskov, N. S. Lai, F. A. Mo-
+hiyaddin, S. Lee, C. Tahan, G. Klimeck, A. Morello, and
+A. S. Dzurak, Nat. Commun. 4, 2096 (2013)
+
+43 L. D. Landau and E. M. Lifshitz, Electrodynamics of Con-
+
+tinuous Media (Pergamon Press, 1960)
+
+

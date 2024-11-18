@@ -1,0 +1,1160 @@
+Resonant optical spin initialization and readout of single silicon vacancies in 4H-SiC
+
+Hunter B. Banks,1 Oney O. Soykal,2, ∗ Rachael Myers-Ward,3
+D. Kurt Gaskill,3 T. L. Reinecke,3 and Samuel G. Carter3, †
+
+1NAS-NRC research associate residing at Naval Research Laboratory, Washington, D.C. 20375, USA
+2Sotera Defense Solutions Inc. residing at Naval Research Laboratory, Washington, D.C. 20375, USA
+
+3Naval Research Laboratory, Washington, D.C. 20375, USA
+
+The silicon monovacancy in 4H-SiC is a promising candidate for solid-state quantum informa-
+tion processing. We perform high-resolution optical spectroscopy on single V2 defects at cryogenic
+temperatures. We find favorable low temperature optical properties that are essential for optical
+readout and coherent control of its spin and for the development of a spin-photon interface. The
+common features among individual defects include two narrow, nearly lifetime-limited optical tran-
+sitions that correspond to ms= ± 3/2 and ms= ± 1/2 spin states with no discernable zero-field
+splitting fluctuations. Initialization and readout of the spin states is characterized by time-resolved
+optical spectroscopy under resonant excitation of these transitions, showing significant differences
+between the ±3/2 and ±1/2 spin states. These results are well-described by a theoretical model
+that strengthens our understanding of the quantum properties of this defect.
+
+I. INTRODUCTION
+
+Defect centers in wide bandgap materials are candi-
+date systems for use in quantum technologies from sens-
+ing to computing, as they harness important advantages
+of both solid-state and atomic systems [1 -- 3]. Defects
+can have sharp optical transitions, strong spin-photon
+coupling, and long coherence times while at the same
+time allowing for straight-forward nanoscale control and
+promising scaling. Nitrogen-vacancy (NV) centers in di-
+amond, owing to their long history and well-understood
+physics, have become the standard platform for defect-
+based quantum demonstrations [2, 4, 5]. Despite their
+experimental successes, however, NV centers have lim-
+itations that have proven difficult to control, from the
+complexity of nanofabrication to substantial spectral dif-
+fusion [6 -- 8]. These challenges have inspired the search
+for a new generation of useful defects.
+
+The deep defects of silicon carbide have generated sig-
+nificant interest and shown promise for quantum applica-
+tions [9 -- 11]. The most immediate and apparent advan-
+tages of silicon carbide lie in its growth and fabrication
+maturity relative to diamond [12, 13]. There also exist
+several commercially viable polytypes which host dozens
+of candidate defects [14]. Among the most attractive de-
+fects in SiC are the silicon vacancies VSi, the divacancies
+VCVSi, and NV centers [15 -- 23]. There are two silicon
+vacancies in 4H-SiC, V1, which has a zero-phonon line
+(ZPL) at 862 nm, and V2, which has a ZPL at 916 nm
+[24 -- 26]. We focus on the negatively charged V2, which
+has room temperature spin coherence (spin echo T2 of
+∼100 µs) [16, 17, 27], like NV centers in diamond, but
+differentiates itself by having a spin 3/2 ground state,
+instead of spin 1 [3, 16, 17, 28].
+
+In this paper, we measure the optical properties of sin-
+gle V2 defects at low temperature and develop a theoret-
+ical fine structure model that reveals its complete opti-
+cal and spin polarization properties for the first time.
+
+We perform high-resolution photoluminescence excita-
+tion (PLE) measurements as well as time dependent ex-
+periments under resonant optical and radio frequency
+(RF) excitation. The PLE spectra of single defects show
+two sharp transitions that correspond to the ms = ±3/2
+and ms = ±1/2 spin states. Time-resolved PL measure-
+ments under resonant and non-resonant laser excitation,
+combined with the theoretical model, provide a quanti-
+tative understanding of the intersystem crossing and the
+spin polarization dynamics. These results provide the
+foundation for optical measurement and control of the
+V2 defect.
+
+II. EXPERIMENTAL METHODS
+
+To study the ZPL of single V2 defects, we perform
+high-resolution optical spectroscopy and cryogenic con-
+focal microscopy. Experimental details are shown in
+Fig. 1(a). The sample is a 18 µm epitaxial film of 4H-SiC
+with an n-doping level of 3× 1014 cm−3, grown by chem-
+ical vapor deposition on an n-doped substrate, and then
+irradiated with 1012 cm−2 2 MeV electrons [29]. The
+sample is mounted in a closed-cycle cryostat at ∼4.9 K
+with the c-axis oriented nearly perpendicular [30] to the
+optical axis, such that optical excitation and collection
+are from the cleaved edge of the sample. This geometry
+is used because the V2 optical dipole moment is oriented
+along the c-axis, and we find that the ZPL emission is
+much stronger from the edge. There are two sources of
+excitation light: a titanium:sapphire laser at 745 nm,
+used for photoluminesence (PL) spectra and to reverse
+resonant bleaching, and an external-cavity diode laser
+tunable around 916 nm, used for all resonant excitation
+experiments. Both lasers are pulsed using acousto-optic
+modulators. The two beams are filtered using 850 nm
+and 925 nm short pass filters, respectively, and are com-
+bined using an 850 nm dichroic mirror. Both beams are
+
+9
+1
+0
+2
+
+ 
+
+n
+a
+J
+ 
+
+1
+1
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+2
+v
+3
+9
+2
+1
+0
+
+.
+
+1
+1
+8
+1
+:
+v
+i
+X
+r
+a
+
+2
+
+magnetic field.
+
+III. RESULTS
+
+A. Single defect emission
+
+Single defects are located by raster scanning a 745 nm
+laser and collecting PL to find defects and identify them
+as V1 or V2 by their ZPL. The map of one region of the
+epitaxial layer is shown in Fig. 1(b), where only emission
+at the V2 ZPL is plotted. The sample surface is indicated
+by the red dashed line, which shows bright emission of
+unknown origin that is not clearly associated with Si va-
+cancies. Below the surface, within the epitaxial layer,
+there are three bright spots that we attribute to single
+V2 defects. While this measurement does not definitively
+indentify single emitters, the density is so low that it is
+unlikely that two defects are at the same location. PLE
+measurements, presented later, indicate that these spots
+are single defects. There are about five times as many
+V1 defects as V2 defects in the same region. This differ-
+ence may be due to electron irradiation on the Si-face,
+consistent with previous studies that the V2 ZPL is sig-
+nificantly dimmer after Si-face irradiation than after C-
+face irradiation [32]. No defect emission is measured in
+the substrate, which is likely due to the high n-doping
+quenching emission.
+
+A single V2 defect has a sharp ZPL and a wide PSB. A
+typical PL spectrum for a V2 defect is shown in Fig. 1(c).
+The ZPL at 1352 meV is the strongest, sharpest feature
+of the PL spectrum, but there are also two broad peaks
+in the PSB before the CCD response falls off around 1000
+nm (1240 meV). The upper bound on the Debye-Waller
+factor (DWF), the ratio of the light emitted in the ZPL
+divided by all of the light emitted by the defect, is about
+30% based on integrating the ZPL and the entire spec-
+trum of Fig. 1(c). The actual DWF is likely much smaller
+due to much of the PSB being at longer wavelengths
+where the Si CCD response is poor.
+
+Optical excitation resonant with the V2 ZPL induces
+photobleaching of the defect PL that can be recovered by
+off-resonant excitation. The photobleaching signal decay
+is shown in Fig. 2 in which a 1 mW, 10 ms, 745 nm
+laser pulse is followed by a 10 µW, 60 ms, resonant laser
+pulse. Under 10 µW of resonant illumination, the sig-
+nal from the defect drops exponentially with a 10 ms
+time constant. The signal recovers very quickly under off
+resonant excitation at 745 nm, faster than the 30 µs res-
+olution, so it is used as a repump pulse to keep the defect
+photoactive. This high repump power, 1 mW, is used to
+demonstrate the constant PL signal on the same scale
+as the resonant signal. In general, much less power and
+pulse width are needed to repump the defects effectively,
+and a power of about 100 µW and a pulse width as small
+as 200 ns are used for all other resonant experiments.
+
+FIG. 1. Confocal spectroscopy setup and defect maps. (a)
+The sample and objective lens (Obj.) are mounted inside the
+cryostat. The sample is mounted on edge relative to the op-
+tical axis. The objective is focused inside the epitaxial layer
+(darker blue). Two excitation lasers are used. The resonant
+laser passes through a 90:10 reflect:transmit non-polarized
+beam splitter (BS), then is combined with the repump laser
+by an 850 nm dichroic mirror (DM). The lasers are then both
+sent into the objective by a two-axis steering mirror (SM)
+through a 4f lens system (not pictured). A simple wire loop
+around the focal spot applies the RF magnetic field. The
+emitted light travels back through the setup and is reflected
+off the BS. (b) Typical raster scan of PL reveals single V2
+defects where the PL signal intensity at 916 nm is mapped
+with a color scale. The red dashed line denotes the surface
+of the epitaxial layer. The scale bar is the white rectangle in
+the lower left, which represents about ∼5 µm. (c) Typical PL
+spectrum of a V2 defect.
+
+focused on the same spot by a 0.75NA objective and are
+polarized parallel to the c-axis at the sample. The emit-
+ted light, and reflected laser light, is separated from the
+excitation path using a 90:10 non-polarizing beam split-
+ter and collected by a single-mode fiber that is sent to a
+detector.
+
+The optical setup is slightly modified depending on
+the measurement. For PL measurements, an 850 nm
+long pass filter is used, and the detector is a silicon CCD
+spectrometer. For PLE and other resonant experiments
+including photobleaching and spin dynamics, a 937 nm
+long pass filter removes the excitation lasers and either a
+silicon photon-counting avalanche photodiode or super-
+conducting nanowire detects signal in the phonon side-
+band (PSB) [31]. A radio-frequency (RF) magnetic field
+for spin-controlled measurements is produced by short-
+ing the inner conductor of a coax cable to the outer con-
+ductor, and the loop is stretched over the sample edge
+so that the RF magnetic field is largely perpendicular to
+the c-axis. All experiments are performed at zero applied
+
+(b)~5 μm120013001400011820PL signal (cps)Photon energy (meV)1000950900Wavelength (nm)(c)DMSMBSSampleObj.CryostatResonant laserSignalRepump laserRF loop(a)3
+
+FIG. 2. Bleaching measurement. (top) The pulse sequence for
+the measurement: 10 ms of 1 mW 745 nm light followed by 60
+ms of 10 µW resonant light. (bottom) Time trace of the PL
+from a single defect. The PL is constant at the millisecond
+timescale under 745 nm illumination. During the resonant
+pulse, the PL from the defect decays away exponentially with
+a time scale of 10 ms.
+
+This photobleaching effect is seen in all V2 defects mea-
+sured, and the bleaching time constant is generally in the
+tens of milliseconds. We suspect that this photobleach-
+ing is related to photoionization of the V2− charge state
+similar to that in NV− centers in diamond [8, 33, 34],
+although there has been no reported observation or iden-
+tification of the ZPL of the V20 or V22− charge states.
+The charge state of both the VSi and VCVSi in SiC have
+previously been shown to be affected by excitation with
+different wavelengths [35, 36]. Another possible mecha-
+nism for this photobleaching is optical spin pumping, but
+we will show that this occurs on much shorter timescales,
+and the signal can be recovered using RF excitation.
+
+B. Photoluminescence Excitation Spectra
+
+The optical spectrum of the V2 ZPL is measured with
+high resolution PLE. The resonant laser is tuned across
+the ZPL of a defect while the laser frequency is measured
+by a high-resolution wavemeter. To prevent bleaching,
+the pulse sequence consists of an 8 µs repump pulse fol-
+lowed by a 40 µs resonant pulse with a 1 µs delay between
+the pulses. The emitted light signal is only counted dur-
+ing the resonant pulse. Without the repump pulse, no
+signal is observed.
+
+The PLE from the V2 defect has two sharp lines con-
+sistent with the spin sublevels of the ground (GS) and
+excited states (ES). A typical PLE spectrum and energy
+level schematic is shown in Fig. 3(a, b). The two sharp
+peaks arise from nominally spin-conserving optical tran-
+
+FIG. 3. PLE spectra of single defects. (a) The experimental
+and theoretical PLE spectrum of a typical single V2 defect
+showing two sharp peaks and one broad one. The frequency
+axis is offset by 1352.8461 meV and the resonant laser power
+is 4 µW. The two sharp peaks, referred to as "red" or "blue"
+transitions, are associated with optical transitions of either
+the ±3/2 or ±1/2 states. (b) Simplified energy level diagram
+showing the red and blue transitions between the ground (g)
+and excited (e) states. (c) The PLE spectra of nine different
+defects. They all have the same overall structure, two sharp
+peaks and a weak broad peak.
+
+sitions between the ground and excited states. At zero
+magnetic field, the spin-3/2 ground state is split into two
+doubly-degenerate sublevels, ms=± 1/2 and ms=± 3/2,
+separated by a zero field splitting (ZFS) of 70 MHz due
+to spin-spin interactions among the active electrons of
+the defect [17, 20, 37, 38]. Similarly, the spin-3/2 excited
+state is also split with a ZFS of 1 GHz [39]. Although
+the ground and excited state ZFSs have been previously
+shown to have the same sign [40], the overall sign is still
+debated. We initially classify these sharp peaks as the
+"red" and "blue" peaks on the left and right, due to
+their respective energies, respectively, with correspond-
+ing ground (gi) and excited (ei) states. Later, we iden-
+tify these red and blue peaks to be ms = ±3/2 and ±1/2
+spin states, respectively, based on their distinct spin po-
+larization properties. The blue peak is slightly stronger
+and narrower than the red peak, with full-widths at half-
+maxima (FWHMs) of 65 MHz and 80 MHz, respectively,
+which is not much larger than the radiative limit of the
+linewidth of about 24 MHz (from a fluorescence lifetime
+of 6.1 ns) [15]. The splitting between the red and blue
+transitions is 1.03 GHz, which is consistent with the sum
+of the ground and excited state ZFSs.
+
+Nine other defects were measured with PLE at a dif-
+
+Repump laser, 745 nmResonant laser0204060800100200 Defect emission 10 ms decaySignal (cps)Time (ms)Blue(b)1352.751352.801352.851352.90(c)PLE (arb. u.)Photon energy (meV)916.52916.48916.44Wavelength (nm)e1g12Dg2Dee2g2 ExpTheory0100200300400-6-4-20246-101PLE signal (cps)Laser detuning (�eV)Laser detuning (GHz)(a)ferent region of the sample, see Fig. 3(c). The blue peak
+of the defects has an ensemble average of 1352.85 meV
+and a standard deviation of 40 µeV (10 GHz), but the
+splitting between the two peaks has an ensemble average
+of 1.03 GHz with a standard deviation of 10 MHz, limited
+by stability of the wavemeter used to measure the exci-
+tation frequency. The blue and red peaks have FWHM
+averages of 170 and 200 MHz, respectively, but with rel-
+atively large standard deviations of about 100 MHz. No
+spectral diffusion at timescales longer than a measure-
+ment (on the order of minutes) was observed. These ob-
+servations are consistent with low strain and electric field
+sensitivity of the ZFS [28], and also indicate small ground
+and excited state permanent dipole moments as expected
+from symmetrically near-Td charge distributions [20].
+
+The detailed fine structure of the V2 defect is shown
+in Fig. 4(a) in the absence of any magnetic field. The
+ms=±3/2 and ms=±1/2 channels have the same orbital
+dipole moment and, therefore, have the same radiative
+decay rates from the ES to the GS. The spin polarization
+properties and the unique features in the PLE spectra
+are governed by the phonon-assisted non-radiative inter-
+system crossing (ISC) processes that are due to direct
+spin-orbit couplings (DSO) of the E symmetry doublet
+state (DS) to the A symmetry GS and ES. This leads
+to four primary ISC rates that need to be determined in
+order to fully understand the optical properties of this
+defect. The non-radiative rates that are associated with
+the decay from the ES to the DS (entry channel) are la-
+beled as γ1 and γ2 for each spin channel. Similarly, the
+decay rates from the DS back to the GS (exit channel)
+are labeled as γ3 and γ4. We obtain the relationship be-
+tween different spin channels within each entry and exit
+channels by evaluating the corresponding DSO coupling
+matrix elements, e.g. γi = 2π(cid:104)ψDS
+(cid:105)2/
+within the symmetry adapted wave-functions basis of
+each j active electrons [20].
+In addition, we find that
+the entry channel ISC rates are ≈2.65 times faster than
+the exit channels taking the relative energy of the DS
+with respect to GS and ES into account [20]. As a result,
+we obtain the following relationship among all the ISC
+rates,
+
+j lj.sjψGS
+
+(cid:80)
+
+i
+
+i
+
+γ1 = 3 γ2 = 2.65 γ3 = 7.95 γ4,
+
+(1)
+and show that ms=± 3/2 spin states always have 3 times
+faster non-radiative decay rate than the ms=±1/2 states.
+The PLE spectra as a function of resonant laser power
+are shown in Fig. 4(b). At lower resonant laser powers,
+Pres, we observe two small sharp peaks. At higher powers
+there is a broad central peak that dominates the spec-
+trum at the highest powers. These sharp peaks in PLE
+spectra can only occur in the presence of spin relaxation
+that limits the effects of optical pumping. For instance,
+resonant excitation of the red transition will eventually
+lead to the defect transitioning through the ISC to g2, a
+
+4
+
+dark state under red excitation. Similarly, resonant op-
+tical excitation of the blue transition eventually leads to
+optical pumping into g1. Therefore, to overcome optical
+pumping and observe a measurable signal during PLE,
+the ground state spin must relax reasonably quickly or
+the laser must be able to excite the opposite transition.
+Some effective spin relaxation occurs from the periodic
+repump pulses, but for moderate to high resonant powers,
+the detuned excitation of the opposite transition plays
+the biggest role.
+
+The PLE spectra are accurately reproduced in Fig. 4(c)
+by using the theoretical fine structure model of this de-
+fect shown in Fig. 4(a). In order to obtain the PLE signal
+theoretically, the steady state excited state populations
+are calculated from the following Lindblad master equa-
+tion,
+
+2(cid:88)
+
+4(cid:88)
+
+= − i
+
+dρ
+dt
+
+ [H0, ρ] + γr
+
+L(M i
+
+r) +
+
+γiL(M i
+I )
+
+i=1
+
+i=1
+
+2(cid:88)
+
++ γR
+
+L(MR) + γsL(Ms).
+
+(2)
+
+i=1
+
+in which the various decay and decoherence processes
+of the defect are represented by the Lindblad super-
+
+operators, i.e. L(A) = AρA† −(cid:8)A†A, ρ(cid:9) /2 for any oper-
+
+ator A. The fine structure Hamiltonian of the V2 defect
+(in the absence of any magnetic field) is given by
+H0 = (Dg − De + δL) (g1(cid:105)(cid:104)g1 − e1(cid:105)(cid:104)e1) /2
+
+− (Dg − De − δL) (g2(cid:105)(cid:104)g2 − e2(cid:105)(cid:104)e2) /2
++ λ (d1(cid:105)(cid:104)d2 + d2(cid:105)(cid:104)d1)
++ ΩL (g1(cid:105)(cid:104)e1 + g2(cid:105)(cid:104)e2 + c.c.) ,
+
+(3)
+
+in the rotating frame of the PLE laser with a frequency
+detuned by δL from the ZPL and a Rabi amplitude of
+ΩL. Our model does not assume the sign of the GS and
+ES ZFS but only that they have the same sign, which has
+previously been demonstrated [41]. The ZFS sign and all
+the relevant decay rates (see Table I) are obtained later
+by applying this fine structure model to the time resolved
+spin polarization and readout measurements, which will
+be explained later. The ZFS of the GS and ES are 2Dg
+and 2De, respectively. We note that the E doublet with
+doubly degenerate d1 and d2 spin states is the only dou-
+blet that is allowed to couple to both GS and ES via
+ISC. Any additional spin-mixing effects stemming from
+the DSO couplings of this doublet with the remaining
+four energetically close doublets (A1, A2, 2E) [20] are in-
+cluded in the parameter λ. The radiative decays are
+r = gi(cid:105)(cid:104)ei in Eq. 2 and governed by the
+given by M i
+same radiative decay rate γr. On the other hand, the
+4 non-radiative ISC decay processes involving the dou-
+I = d2(cid:105)(cid:104)e2,
+blet state are given by M 1
+I = g2(cid:105)(cid:104)d2 with rates γi. We
+I = g1(cid:105)(cid:104)d1, and M 4
+M 3
+also include the spin relaxation rate γR of the ground
+
+I = d1(cid:105)(cid:104)e1, M 2
+
+5
+
+FIG. 4. (a) Detailed energy level diagram of V2, showing the red and blue optical transitions and the non-radiative decay
+channels through the doublets, d1 and d2. (b) Single V2 defect's PLE for a series of resonant laser powers (in µW). Spectra are
+offset from each other by 50 cps for clarity, and the laser detuning is relative to 1352.8461 meV. (c) Theoretical PLE spectra
+for a series of laser powers (in µW).
+
+state defined in MR = g1(cid:105)(cid:104)g2 + c.c. due to the repump
+laser and the intrinsic spin dephasing rate γs of the dou-
+blet states, i.e. Ms = d1(cid:105)(cid:104)d1 − d2(cid:105)(cid:104)d2. γs and λ are
+found to be large enough that the doublet states are com-
+pletely mixed. Dephasing of the GS spin is not included
+as it is typically on a longer time scale than the dynamics
+considered here, and it should not affect the population
+dynamics.
+
+The amplitude difference in the sharp peaks can be un-
+derstood from the different ISC rates of the ms= ± 3/2
+and ms=± 1/2 spin channels (see Eq. 1). The faster ISC
+rate of the ms=± 3/2 excited states causes more popula-
+tion to be removed non-radiatively from these states per
+optical cycle compared to the ms= ± 1/2 states. There-
+fore, the ms= ± 3/2 excited states have smaller steady
+state populations than the ms= ± 1/2 excited states,
+when the laser is on or near resonant with their corre-
+sponding transitions, leading to a reduced PLE signal
+from that peak. As a result, we identify the smaller
+sharp peak as the ms= ± 3/2 states leading to a neg-
+ative ZFS (D < 0) for the ES and the GS. This identifi-
+cation will be corroborated by our time-dependent spin
+polarization and readout measurements. As the Pres is
+increased, as expected by the model, the sharp peaks
+get stronger and broader while the amplitude difference
+between them increases before finally saturating. In ad-
+dition, a broad peak, that increases in amplitude and
+linewidth with increasing power, appears. This broad
+peak, which is prominent only at higher Pres, is due to
+off-resonant excitation of both the red and blue transi-
+tions, which is strongest in between the two transitions.
+Symmetric excitation of both transitions prevents opti-
+cal pumping. This leads to a stationary center frequency
+that remains halfway between the sharp peaks and a peak
+
+area that increases linearly before beginning to saturate
+at about 50 µW. The sharp peaks also appear to move to-
+ward the center at higher powers for reasons that are not
+yet clear. One possibility is that strong resonant driving
+modifies the charge environment surrounding the defect,
+causing electric field induced changes to the ZFS.
+
+C. Time-resolved spin dynamics
+
+The dynamics of this system under laser excitation are
+measured using RF pulses and time-resolved PL. The
+integrated PSB emission is measured as a function of
+time and for a series of resonant laser powers, shown in
+Fig. 5(a,b). A 1.5 µs, 72.5 MHz RF pulse, resonant with
+the ground state ZFS [42] is applied before the resonant
+laser pulse to equalize the spin polarization left over from
+the previous resonant laser pulse. The RF pulse length
+and power are adjusted with the intent to equalize the
+spin populations when Rabi oscillations are damped out,
+but this may not be entirely the case. Regardless, the RF
+pulse at least partially equalizes spin states and allows
+observation of the PL decay. The resonant laser pulse is
+locked by the wavemeter to either the red or blue transi-
+tion at every given Pres. A short repump pulse long after
+the dynamics have reached their steady-states prevents
+the defect from bleaching. Both excitation laser frequen-
+cies initially show strong PSB emission that decays very
+rapidly due to the ISC and optical spin polarization. The
+PL does not decay to zero due to off-resonant excitation
+of the other ground state, giving rise to steady state emis-
+sion. Spin relaxation should also contribute to the steady
+state emission at low powers.
+
+Driving the two transitions resonantly leads to very dif-
+ferent time dependences. Decay rate results are shown
+
+(ms=±3/2)2Dg(a)2Deg1g2e1e2d1d2(ms=±1/2)(ms=±1/2)λ∑(li .si)⊥�r�r����������0100200300400500600700-15-10-5051015-3-2-10123PLE signal (cps)Laser detuning (μeV)0.4141050100Laser detuning (GHz)Exp(b)0100200300400500600700-15-10-5051015-3-2-10123Emission intensityLaser detuning (μeV)(c)Laser detuning (GHz)Theory0.41410501006
+
+excitation, blue or red, there are two primary parameters,
+the excited state-to-intermediate state decay rate (γ2 or
+γ1), and the intermediate state-to-opposite ground state
+decay rate (γ3 or γ4). The former determines how fast
+the defect can leave the resonant radiative transition cy-
+cle (related to how well optical spin readout works), and
+latter determines how likely the defect is to relax to the
+other dark ground state, leaving the radiative transition
+cycle (related to the rate of optical pumping). The differ-
+ent time dependences of red and blue excitations can be
+explained very well using the model in Fig. 4(a) and the
+relationships in Eq. 1. PL decay curves obtained from
+this model are plotted in Fig. 5(a,b), showing very good
+agreement with experiment. For the red excitation, as
+the γ1 decay rate is faster than both the γ3 and γ4, the
+defect spends a significant fraction of a cycle in the DS,
+which leads to a quick decrease in luminescence (due to
+population moving into the DS) that occurs "in series"
+with the optical pumping. Therefore, the decay of red
+excitation exhibits a biexponential time dependence. On
+the other hand, for the blue excitation, since the γ2 decay
+rate is comparable to the γ3 decay rate, the spin polarizes
+to the other dark ground state nearly as quickly as it de-
+cays into the DS, and so only one rate is observed. These
+results significantly strengthen the assignment of the red
+and blue transitions to the ms= ±3/2 and ms= ±1/2
+states, respectively.
+
+Understanding spin dynamics under non-resonant laser
+excitation is also valuable, due to its common use in po-
+larizing and reading out V2 and its use in preventing
+bleaching of emission. As shown in Fig. 6, a combination
+of a non-resonant/repump (745 nm) pulse and a resonant
+pulse on the red or blue transition are used to study these
+dynamics.
+
+Both pulses of the sequence serve to readout and po-
+larize the ground state spin, but the resonant laser acts
+more selectively. In the red pulse sequence, just before
+the repump pulse turns on at t = 0, the defect has pri-
+marily been optically pumped into g2 by the red-tuned
+laser. Just after the repump pulse begins which excites
+both transitions, the PL signal in Fig. 6(a) starts at a
+slightly higher value than the steady state signal at t = 5
+µs. For the blue pulse sequence, the defect has primar-
+ily been pumped into g1, and the PL signal in Fig. 6(b)
+starts at a slightly lower value than the steady state. This
+behavior is consistent with the results from Fig. 5, which
+show that the non-radiative ISC processes are faster for
+e1 than e2, so more photons are collected when starting
+in g2 compared to starting in g1. The difference in PL
+signal, integrating over the 1/e decay time (1.2 µs), is
+18%. This contrast is much larger than the 2% seen in
+room temperature single defect ODMR [16], but is still
+relatively small compared to resonant readout because
+contrast is only due to the differences in the non-radiative
+ISC processes. It is also possible that there may be other
+luminescent defects within the laser spot that contribute
+
+FIG. 5. PL decay due to optical spin pumping and ISC.
+Above: Pulse sequence for time-resolved PL measurements.
+The RF pulse equalizes spin populations. (a,b) Time resolved
+PL from the PSB while driving the (a) blue and (b) red tran-
+sitions for a series of resonant laser powers (in µW). Grey
+curves superimposed on the experimental data are from the
+theoretical model. (c) The ratio of the initial peak of the sig-
+nal to the steady-state signal as a function of Pres. (d) Decay
+rates from fits to the measurements above. The error bars are
+approximated using the diagonal elements of the covariance
+matrix. The dashed line is a linear relationship as a guide to
+the eye. The decay under blue excitation is described well by
+a single exponential decay rate kb, while the decay under red
+excitation requires two rates, kr,fast, kr,slow.
+
+in Fig. 5(d). Under blue excitation after the RF pulse,
+the signal can be fit very well with a single exponential,
+giving a single polarization rate kb. Under red excitation
+after the RF pulse, however, the signal requires a biexpo-
+nential fit, which yields to two polarization rates, kr,fast
+and kr,slow. As expected, the spin polarization rates in-
+crease with increasing power. At 10 µW red excitation,
+however, only the fast rate is observed.
+
+The decay rates as a function of optical power help give
+an intuitive picture for the spin-dependent ISC coupling
+constants and further support the theoretically obtained
+relationship (Eq. 1) among these rates. These coupling
+constants determine optically-pumped ground state spin
+polarization. As shown in Fig. 4(a), for a given resonant
+
+7
+
+FIG. 6. Spin dynamics for pulse sequences of a non-resonant repump pulse (1mW) followed by a red (left column) or blue (right
+column) resonant pulse (5µW). (a, b) Measured and modeled PL signal from a defect as a function of time. (c, d) Calculated
+ground state populations during the sequence extracted from the model fit to the experimental signal above. (e, f) Calculated
+excited state and doublet state populations during the sequence.
+
+to the signal, artificially lowering the contrast.
+
+We also apply the theoretical model of Eq. 2 and Eq. 3
+to these sequences of resonant and non-resonant pulses.
+The comparison to experiment for these sequences is very
+valuable for determining the system parameters and for
+visualizing the populations that cannot be separately
+measured experimentally. The theoretical PL signal in
+Fig. 6(a,b) is calculated by evaluating the time depen-
+dent excited state populations of e1 and e2 as a function
+of two decay rates, γr and γ1, where the ratio between
+all the ISC rates is kept fixed according to Eq. 1. Fit-
+ting these solutions to the experimental data reveals all
+the previously unknown radiative and non-radiative de-
+cay rates of the V2 defect that are shown in Table I. In
+addition, these calculated rates result in an overall fluo-
+rescence lifetime of 5.82 ns (i.e. 1/γF = 1/γr + 4/γ1) in
+good agreement with previous measurements [15].
+
+We also conclude that both the GS and the ES ZFS
+are negative (Dg < 0, De < 0) as the red excitation
+with higher ISC rate corresponds to the ms = ±3/2 spin
+states (see Eq. 1). The population of each state is plotted
+in Fig. 6(c, e) and Fig. 6(d, f) for the red and blue res-
+onant laser, respectively. During the repump laser, the
+initial g1 or g2 population is pumped toward a modest
+g1 polarization, which reaches a population of 0.59 after
+the laser is off and all population is returned to the GS.
+This polarization occurs because of faster decay from the
+doublets to g1 than g2. During the resonant pulse, po-
+larization occurs very rapidly toward g1 or g2, with the
+
+g1 (g2) population reaching 0.92 (0.84) for blue (red) ex-
+citation after the pulse is turned off. These values are
+limited by off-resonant excitation of the opposite tran-
+sition. Based on this model, using lower resonant laser
+powers of ≈15 nW and pulse lengths of 4 µs, the ini-
+tialization fidelity into g1 (g2) can be 0.9996 (0.9993) for
+blue (red) excitation.
+
+Transition
+
+Lifetime (ns)
+
+1/γr
+1/γ1
+1/γ2
+1/γ3
+1/γ4
+
+8.2
+26.7
+80
+70.6
+211.9
+
+TABLE I. Radiative γr, and non-radiative decay rates γi of
+the V2 defect at 5 µW resonant laser power.
+
+IV. DISCUSSION AND CONCLUSION
+
+The results of this article are relevant to applications in
+quantum technology, particularly for quantum networks
+[11, 43], which require fast, high fidelity initialization, ef-
+ficient spin readout, stable, homogeneous emission into
+the ZPL, and the proper energy level structure. As just
+stated, the initialization fidelity for V2 looks very promis-
+ing under the right excitation conditions. Fast initial-
+
+Time (µs)Time (µs)Signal (kcps)Population (×100%)Repump laserRed resonant laser(a)(b)(c)(d)(e)(f)Repump laserBlue resonant laserization requires a rapid change in the spin state under
+optical excitation, which is true for both transitions.
+
+Aside from efficient photon collection, the key to spin
+readout is to preserve the spin state under optical excita-
+tion, opposite the requirement for initialization. Readout
+of the spin state is better for the blue transition since the
+ISC rate to the doublet is 3 times slower than for the red
+transition, meaning more photons can be emitted before
+the defect changes spin state. The blue transition, how-
+ever, does not operate very well as a cycling transition
+since the ISC is still relatively strong. When starting in
+the g2 (ms = ±1/2) state, we estimate that about 8 pho-
+tons should be emitted when driving the blue transition
+before the emission decays to 1/e of its initial value. This
+behavior is in contrast to the S = 1 divacancy in SiC and
+NV− in diamond, in which an ES for the ms = 0 GS has a
+weak ISC for low strain-induced mixing of excited states
+[22, 44], giving long PL decay times for efficient spin read-
+out. Furthermore, for the V2 VSi our model shows that
+the long lifetime of the DS (γ3 < γr, and γ4 < γr) lim-
+its the overall brightness by causing some population to
+become trapped in the DS (see Fig. 6(e,f)).
+Integra-
+tion of these defects into cavities should improve read-
+out by increasing the collection efficiency and by Purcell
+enhancement of the radiative transitions relative to the
+ISC. Cavity enhancement of different optical transitions
+in semiconductor QDs has been successful in improving
+the fidelity of both readout and initialization [45 -- 47].
+
+Obtaining homogeneous emission into the ZPL de-
+pends on having little emission into the PSB, little vari-
+ation in emission energy between defects, and little spec-
+tral diffusion of individual defects. More than 70% of the
+emission from V2 is in the PSB, but this is still likely bet-
+ter than 97% for the NV center [48]. The inhomogeneous
+variation in emission energy, which we attribute to local
+variations in strain and electric field, and the measured
+linewidths of single defects, broadened by fluctuations in
+the environment, are roughly comparable to that of high
+quality diamond NV center samples [49, 50], but we ex-
+pect these may be improved using different irradiation
+conditions and annealing.
+
+The energy level structure required depends on the ap-
+plication. For spin-photon entanglement, Λ energy level
+systems are often used for polarization [50] or frequency
+[51] encoding of the photon, but entanglement can also
+be achieved without a Λ system using time-bin encoding
+of photons, as has been demonstrated with NV centers in
+diamond [5, 52]. This time bin approach appears feasible
+with the current V2 energy level structure. The gener-
+ation of entangled photon states (e.g. cluster states or
+GHZ states) has been studied for both Λ systems [53]
+and double two level systems with orthogonal polariza-
+tions [20, 54, 55], both of which would require additional
+additional work to achieve with V2.
+
+The resonant optical experiments presented here pro-
+vide the essential foundation for an interface between the
+
+8
+
+coherent GS spin system of the V2 VSi and photons. The
+spin system has already been shown to have long coher-
+ence times, up to 10s of milliseconds at low temperatures
+with dynamical decoupling [27]. The combination of this
+spin memory with sharp, stable optical transitions, fast
+initialization, and potentially strong emission into the
+ZPL make it quite promising as an optically active spin
+qubit. The ability to integrate this defect into the tech-
+nologically mature SiC material system is attractive as
+well.
+
+After submission of this article, a related paper ap-
+peared studying resonant optical excitation of the V1 VSi
+[56], with complementary results.
+
+This work was supported by the U.S. Office of Naval
+Research and the OSD Quantum Sciences and Engineer-
+ing Program. H.B. Banks acknowledges the National Re-
+search Council Research Associate Program. We also ac-
+knowledge Evan Glaser, Joel Grim, Allan Bracker and
+Dan Gammon for helpful discussions.
+
+H. B. Banks and O. O. Soykal contributed equally to
+
+this manuscript.
+
+∗ Email: oneysoykal@gmail.com
+† Email: sam.carter@nrl.navy.mil
+[1] J. R. Weber, W. F. Koehl, J. B. Varley, A. Janotti, B. B.
+Buckley, C. G. Van de Walle, and D. D. Awschalom,
+"Quantum computing with defects," Proceedings of the
+National Academy of Sciences 107, 8513 -- 8518 (2010).
+
+[2] M. W. Doherty, N. B. Manson, P. Delaney, F. Jelezko,
+J. Wrachtrup, and L. C. L. Hollenberg, "The nitrogen-
+vacancy colour centre in diamond," Physics Reports 528,
+1 -- 45 (2013).
+
+[3] I. Aharonovich, D. Englund, and M. Toth, "Solid-state
+single-photon emitters," Nature Photonics 10, 631 -- 641
+(2016).
+
+[4] L. Childress, M. V. Gurudev Dutt, J. M. Taylor, A. S.
+Zibrov, F. Jelezko, J. Wrachtrup, P. R. Hemmer, and
+M. D. Lukin, "Coherent dynamics of coupled electron
+and nuclear spin qubits in diamond," Science 314, 281 -- 
+285 (2006).
+
+[5] B. Hensen, H. Bernien, A. E. Dr´eau, A. Reiserer, N. Kalb,
+M. S. Blok, J. Ruitenberg, R. F. L. Vermeulen, R. N.
+Schouten, C. Abell´an, W. Amaya, V. Pruneri, M. W.
+Mitchell, M. Markham, D. J. Twitchen, D. Elkouss,
+S. Wehner, T. H. Taminiau, and R. Hanson, "Loophole-
+free Bell inequality violation using electron spins sepa-
+rated by 1.3 kilometres," Nature 526, 682 (2015).
+
+[6] A. Faraon, C. Santori, Z. Huang, V. M. Acosta, and
+R. G. Beausoleil, "Coupling of nitrogen-vacancy centers
+to photonic crystal cavities in monocrystalline diamond,"
+Phys. Rev. Lett. 109, 033604 (2012).
+
+[7] D. Riedel, I. Sollner, B. J. Shields, S. Starosielec, P. Ap-
+pel, E. Neu, P. Maletinsky, and R. J. Warburton, "De-
+terministic enhancement of coherent photon generation
+from a nitrogen-vacancy center in ultrapure diamond,"
+Phys. Rev. X 7, 031040 (2017).
+
+[8] P. Siyushev, H. Pinto, M. Voros, A. Gali, F. Jelezko,
+
+and J. Wrachtrup, "Optically controlled switching of the
+charge state of a single nitrogen-vacancy center in dia-
+mond at cryogenic temperatures," Phys. Rev. Lett. 110,
+167402 (2013).
+
+[9] S. Castelletto, L. Rosa,
+
+and B. C. Johnson, "Silicon
+carbide for novel quantum technology devices," in Ad-
+vanced Silicon Carbide Devices and Processing, edited by
+S. E. Saddow and F. La Via (IntechOpen, Rijeka, 2015)
+Chap. 8.
+
+[10] G. V. Astakhov, D. Simin, V. Dyakonov, B. V. Yavkin,
+S. B. Orlinskii, I. I. Proskuryakov, A. N. Anisimov, V. A.
+Soltamov, and P. G. Baranov, "Spin centres in SiC for
+quantum technologies," Applied Magnetic Resonance 47,
+793 -- 812 (2016).
+
+[11] D. D. Awschalom, R. Hanson, J. Wrachtrup, and B. B.
+Zhou, "Quantum technologies with optically interfaced
+solid-state spins," Nature photonics 12, 516 (2018).
+
+[12] G. Liu, B. R. Tuttle, and S. Dhar, "Silicon carbide: A
+unique platform for metal-oxide-semiconductor physics,"
+Applied Physics Reviews 2, 021307 (2015).
+
+[13] D. O. Bracher and E. L. Hu, "Fabrication of high-q
+nanobeam photonic crystals in epitaxially grown 4H-
+SiC," Nano Letters 15, 6202 -- 6207 (2015).
+
+[14] D. J. Christle, A. L. Falk, P. Andrich, P. V. Klimov,
+J. U. Hassan, N. T. Son, E. Janz´en, T. Ohshima, and
+D. D. Awschalom, "Isolated electron spins in silicon car-
+bide with millisecond coherence times," Nat. Mater. 14,
+160 (2014).
+
+[15] T. C. Hain, F. Fuchs, V. A. Soltamov, P. G. Baranov,
+G. V. Astakhov, T. Hertel, and V. Dyakonov, "Excita-
+tion and recombination dynamics of vacancy-related spin
+centers in silicon carbide," Journal of Applied Physics
+115, 133508 (2014).
+
+[16] M. Widmann, S.-Y. Lee, T. Rendler, N. T. Son,
+H. Fedder, S. Paik, L.-P. Yang, N. Zhao, S. Yang,
+I. Booker, A. Denisenko, M. Jamali, S. Ali Momen-
+zadeh, I. Gerhardt, T. Ohshima, A. Gali, E. Janz´en,
+and J. Wrachtrup, "Coherent control of single spins in
+silicon carbide at room temperature," Nat. Mater. 14,
+164 (2015).
+
+[17] S. G. Carter, O. O. Soykal, Pratibha Dev, S. E.
+Economou, and E. R. Glaser, "Spin coherence and echo
+modulation of the silicon vacancy in 4H − SiC at room
+temperature," Phys. Rev. B 92, 161202 (2015).
+
+[18] H. J. von Bardeleben, J. L. Cantin, E. Rauls, and U. Ger-
+stmann, "Identification and magneto-optical properties
+of the NV center in 4H − SiC," Phys. Rev. B 92, 064104
+(2015).
+
+[19] F. Fuchs, B. Stender, M. Trupke, D. Simin, J. Pflaum,
+V. Dyakonov, and G. V. Astakhov, "Engineering near-
+infrared single-photon emitters with optically active spins
+in ultrapure silicon carbide," Nature Communications 6,
+7578 (2015).
+
+[20] O. O. Soykal, P. Dev, and S. E. Economou, "Silicon
+vacancy center in 4H-SiC: Electronic structure and spin-
+photon interfaces," Phys. Rev. B 93, 081207 (2016).
+
+[21] H. Seo, A. L. Falk, P. V. Klimov, K. C. Miao, G. Galli,
+and D. D. Awschalom, "Quantum decoherence dynamics
+of divacancy spins in silicon carbide," Nature Communi-
+cations 7, 12935 (2016).
+
+[22] D. J. Christle, P. V. Klimov, C. F. de las Casas, K. Sz´asz,
+V. Iv´ady, V. Jokubavicius, J. Ul Hassan, M. Syvajarvi,
+W. F. Koehl, T. Ohshima, N. T. Son, E. Janz´en, ´A. Gali,
+
+9
+
+and D. D. Awschalom, "Isolated spin qubits in SiC with
+a high-fidelity infrared spin-to-photon interface," Phys.
+Rev. X 7, 021046 (2017).
+
+[23] R. Nagy, M. Widmann, M. Niethammer, D. B. R. Dasari,
+I. Gerhardt, O. O. Soykal, M. Radulaski, T. Ohshima,
+J. Vuckovi´c, N. T. Son, I. G. Ivanov, S. E. Economou,
+C. Bonato, S.-Y. Lee,
+and J. Wrachtrup, "Quantum
+properties of dichroic silicon vacancies in silicon carbide,"
+Phys. Rev. Applied 9, 034022 (2018).
+
+[24] E. Sorman, N. T. Son, W. M. Chen, O. Kordina,
+C. Hallin, and E. Janz´en, "Silicon vacancy related defect
+in 4H and 6H SiC," Phys. Rev. B 61, 2613 -- 2620 (2000).
+[25] Mt. Wagner, B. Magnusson, W. M. Chen, E. Janz´en,
+E. Sorman, C. Hallin, and J. L. Lindstrom, "Electronic
+structure of the neutral silicon vacancy in 4H and 6H
+SiC," Phys. Rev. B 62, 16555 -- 16560 (2000).
+
+[26] E. Janz´en, A. Gali, P. Carlsson, A. Gallstrom, B. Mag-
+nusson, and N. T. Son, "The silicon vacancy in SiC,"
+Physica B: Condensed Matter 404, 4354 -- 4358 (2009).
+
+[27] D. Simin, H. Kraus, A. Sperlich, T. Ohshima, G. V. As-
+takhov, and V. Dyakonov, "Locking of electron spin co-
+herence above 20 ms in natural silicon carbide," Phys.
+Rev. B 95, 161201 (2017).
+
+[28] O. O. Soykal and T. L. Reinecke, "Quantum metrology
+2 defect in silicon carbide," Phys. Rev.
+
+with a single spin- 3
+B 95, 081405 (2017).
+
+[29] R. L. Myers-Ward, N. A. Mahadik, V. D. Wheeler, L. O.
+Nyakiti, R. E. Stahlbush, E. A. Imhoff, K. D. Hobart,
+C. R. Eddy,
+and D. K. Gaskill, Crystal Growth and
+Design 14, 5331 -- 5338 (2014).
+
+[30] Due to 4◦ wafer miscut.
+[31] The superconducting nanowire detector increases the sig-
+nal by a factor of six and the dark counts by a factor of
+five, approximately, compared to the avalanche photodi-
+ode.
+
+[32] W. Sullivan, J. W. Steeds, H. J. von Bardeleben, and
+J. L. Cantin, "A combined photoluminescence and elec-
+tron paramagnetic resonance study of low energy electron
+irradiated 4H SiC," in Silicon Carbide and Related Ma-
+terials 2005 , Materials Science Forum, Vol. 527 (Trans
+Tech Publications, 2006) pp. 477 -- 480.
+
+[33] G. Waldherr, J. Beck, M. Steiner, P. Neumann, A. Gali,
+Th. Frauenheim, F. Jelezko, and J. Wrachtrup, "Dark
+states of single nitrogen-vacancy centers in diamond un-
+raveled by single shot NMR," Phys. Rev. Lett. 106,
+157601 (2011).
+
+[34] K. Beha, A. Batalov, N. B. Manson, R. Bratschitsch, and
+A. Leitenstorfer, "Optimum photoluminescence excita-
+tion and recharging cycle of single nitrogen-vacancy cen-
+ters in ultrapure diamond," Phys. Rev. Lett. 109, 097404
+(2012).
+
+[35] G. Wolfowicz, C. P. Anderson, A. L. Yeats, S. J. White-
+ley, J. Niklas, O. G. Poluektov, F. J. Heremans, and
+Awschalom D. D., "Optical charge state control of spin
+defects in 4H-SiC," Nature Communications 8, 1876
+(2017).
+
+[36] D. A. Golter and C. W. Lai, "Optical switching of defect
+
+charge states in 4H-SiC," Sci. Rep. 7, 13406 (2017).
+
+[37] N. Mizuochi, S. Yamasaki, H. Takizawa, N. Morishita,
+T. Ohshima, H. Itoh, and J. Isoya, "Continuous-wave
+and pulsed epr study of the negatively charged silicon
+vacancy with S = 3
+SiC," Phys. Rev. B 66, 235202 (2002).
+
+2 and C3v symmetry in n-type 4H −
+
+[38] N. Mizuochi, S. Yamasaki, H. Takizawa, N. Morishita,
+T. Ohshima, H. Itoh, and J. Isoya, "Epr studies of the
+isolated negatively charged silicon vacancies in n-type
+4H- and 6H-SiC: Identification of C3v symmetry and sil-
+icon sites," Phys. Rev. B 68, 165206 (2003).
+
+[39] S. A. Tarasenko, A. V. Poshakinskiy, D. Simin, V. A.
+Soltamov, E. N. Mokhov, P. G. Baranov, V. Dyakonov,
+and G. V. Astakhov, "Spin and optical properties of sili-
+con vacancies in silicon carbide  --  a review," physica sta-
+tus solidi (b) 255, 1700258 (2017).
+
+[40] D. Simin, V. A. Soltamov, A. V. Poshakinskiy, A. N.
+Anisimov, R. A. Babunts, D. O. Tolmachev, E. N.
+Mokhov, M. Trupke, S. A. Tarasenko, A. Sperlich, P. G.
+Baranov, V. Dyakonov, and G. V. Astakhov, "All-optical
+dc nanotesla magnetometry using silicon vacancy fine
+structure in isotopically purified silicon carbide," Phys.
+Rev. X 6, 031014 (2016).
+
+[41] A. N. Anisimov, D. Simin, V. A. Soltamov, S. P. Lebe-
+dev, P. G. Baranov, G. V. Astakhov, and V. Dyakonov,
+"Optical thermometry based on level anticrossing in sil-
+icon carbide," Sci. Rep. 6, 33301 (2016).
+
+[42] A small shift from the 70 MHz ZFS resonance was mea-
+
+sured for reasons that are unclear.
+
+[43] H. J. Kimble, "The quantum internet," Nature 453, 1023
+
+(2008).
+
+[44] L. Robledo, L. Childress, H. Bernien, B. Hensen, P. F. A.
+Alkemade, and R Hanson, "High-fidelity projective read-
+out of a solid-state spin quantum register," Nature 477,
+574 (2011).
+
+[45] S. G. Carter, T. M. Sweeney, M. Kim, C. S. Kim,
+D. Solenov, S. E. Economou, T. L. Reinecke, L. Yang,
+A. S. Bracker, and D. Gammon, "Quantum control of a
+spin qubit coupled to a photonic crystal cavity," Nature
+photonics 7, 329 (2013).
+
+[46] S. Sun and E. Waks, "Single-shot optical readout of
+a quantum bit using cavity quantum electrodynamics,"
+Phys. Rev. A 94, 012307 (2016).
+
+[47] S. Sun, H. Kim, Z. Luo, G. S. Solomon, and E. Waks, "A
+single-photon switch and transistor enabled by a solid-
+state quantum memory," Science 361, 57 -- 60 (2018).
+
+[48] A. Alkauskas, B. B. Buckley, D. D. Awschalom, and
+
+10
+
+C. G. Van de Walle, "First-principles theory of the lumi-
+nescence lineshape for the triplet transition in diamond
+NV centres," New Journal of Physics 16, 073026 (2014).
+[49] C. Santori, D. Fattal, S. M. Spillane, M. Fiorentino, R. G.
+Beausoleil, A. D. Greentree, P. Olivero, M. Draganski,
+J. R. Rabeau, P. Reichart, B. C. Gibson, S. Rubanov,
+D. N. Jamieson, and S. Prawer, "Coherent population
+trapping in diamond n-v centers at zero magnetic field,"
+Opt. Express 14, 7986 -- 7994 (2006).
+
+[50] E. Togan, Y. Chu, A. S. Trifonov, L. Jiang, J. Maze,
+L. Childress, M. V. G. Dutt, A. S. Srensen, P. R. Hem-
+mer, A. S. Zibrov, and M. D. Lukin, "Quantum entan-
+glement between an optical photon and a solid-state spin
+qubit," Nature 466, 730 (2010).
+
+[51] W. B. Gao, P. Fallahi, E. Togan, J. Miguel-Sanchez, and
+A. Imamoglu, "Quantum entanglement between an op-
+tical photon and a solid-state spin qubit," Nature 491,
+426 (2012).
+
+[52] H. Bernien, B. Hensen, W. Pfaff, G. Koolstra, M. S.
+Blok, L. Robledo, T. H. Taminiau, M. Markham, D. J.
+Twitchen, L. Childress, and R. Hanson, "Heralded en-
+tanglement between solid-state qubits separated by three
+metres," Nature 497, 86 (2013).
+
+[53] D. D. Bhaktavatsala Rao, S. Yang, and J. Wrachtrup,
+"Generation of entangled photon strings using NV cen-
+ters in diamond," Phys. Rev. B 92, 081301 (2015).
+
+[54] N. H. Lindner and T. Rudolph, "Proposal for pulsed on-
+demand sources of photonic cluster state strings," Phys.
+Rev. Lett. 103, 113602 (2009).
+
+[55] I. Schwartz, D. Cogan, E. R. Schmidgall, Y. Don,
+L. Gantz, O. Kenneth, N. H. Lindner, and D. Gershoni,
+"Deterministic generation of a cluster state of entangled
+photons," Science 354, 434 -- 437 (2016).
+
+[56] N. Roland, M. Niethammer, M. Widmann, Yu-Chen
+Chen, P. Udvarhelyi, C. Bonato, Jawad Ul Hassan,
+R. Karhu,
+I. G. Ivanov, N. T. Son, J. R. Maze,
+T. Ohshima, O. O. Soykal, ´A. Gali, S.-Y. Lee, F. Kaiser,
+and J. Wrachtrup, "High-fidelity spin and optical control
+of single silicon vacancy centres in silicon carbide," ArXiv
+e-prints , arXiv:1810.10296 (2018), arXiv:1810.10296
+[quant-ph].
+
+

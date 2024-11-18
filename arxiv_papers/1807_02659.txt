@@ -1,0 +1,2842 @@
+Quadratic and Cubic Nodal Lines Stabilized by Crystalline Symmetry
+
+Zhi-Ming Yu,1, ∗ Weikang Wu,1, ∗ Xian-Lei Sheng,2, 1 Y. X. Zhao,3, 4, † and Shengyuan A. Yang1, ‡
+
+1Research Laboratory for Quantum Materials, Singapore University of Technology and Design, Singapore 487372, Singapore
+
+2Department of Physics, Key Laboratory of Micro-nano Measurement-Manipulation
+and Physics (Ministry of Education), Beihang University, Beijing 100191, China
+
+3National Laboratory of Solid State Microstructures and Department of Physics, Nanjing University, Nanjing 210093, China
+
+4Collaborative Innovation Center of Advanced Microstructures, Nanjing University, Nanjing 210093, China
+
+In electronic band structures, nodal lines may arise when two (or more) bands contact and form
+a one-dimensional manifold of degeneracy in the Brillouin zone. Around a nodal line, the dispersion
+for the energy difference between the bands is typically linear in any plane transverse to the line.
+Here, we perform an exhaustive search over all 230 space groups for nodal lines with higher-order
+dispersions that can be stabilized by crystalline symmetry in solid state systems with spin-orbit
+coupling and time reversal symmetry. We find that besides conventional linear nodal lines, only
+lines with quadratic or cubic dispersions are possible, for which the allowed degeneracy cannot be
+larger than two. We derive effective Hamiltonians to characterize the novel low-energy fermionic
+excitations for the quadratic and cubic nodal lines, and explicitly construct minimal lattice models to
+further demonstrate their existence. Their signatures can manifest in a variety of physical properties
+such as the (joint) density of states, magneto-response, transport behavior, and topological surface
+states. Using ab-initio calculations, we also identify possible material candidates that realize these
+exotic nodal lines.
+
+Topological metals and semimetals have been attract-
+ing significant interest in current research [1–3]. These
+materials feature nontrivial degeneracies in their low-
+energy band structures, which give rise to novel fermionic
+excitations and lead to fascinating physical properties.
+According to the dimension of the degeneracy manifold,
+we may have zero-dimensional (0D) nodal points [4–7],
+1D nodal lines (NLs), or even 2D nodal surfaces [8–10].
+Of these possibilities, the NLs possess rich characteris-
+tics. For example, they exhibit a variety of topologi-
+cal connections in the Brillouin zone (BZ), such as iso-
+lated rings [11, 12],
+loops traversing the BZ [13, 14],
+nodal chains [15–17], crossed nodal rings [18–20], nodal
+nets [21], and Hopf links [22–25]. Depending on the char-
+acter of the two contacting bands (electronlike or hole-
+like), the NL may also be classified as type-I, type-II, or
+hybrid type [14, 26].
+
+There is yet another important characterization to
+classify a NL, namely, by the order of energy dispersion
+around the line. To illustrate this, consider a NL formed
+by the contact between two bands. Around an arbitrary
+point K on the line, the effective Hamiltonian takes the
+generic form of
+
+Heff(K + q) = w(q) + f (q)σ+ + f∗(q)σ− + g(q)σz, (1)
+where σ± = σx ± iσy with σx,y,z the three Pauli matri-
+ces, w, f , and g are functions of the small wave-vector
+q. Here, we are only concerned with the dispersion in
+the plane transverse to the NL, hence q is restricted to
+
+∗ Z.-M. Yu and W. Wu contributed equally to this work.
+† zhaoyx@nju.edu.cn
+‡ shengyuan yang@sutd.edu.sg
+
+this plane. Also the w term represents an overall energy
+shift for both bands, which does not affect the classifi-
+cation. Hence, more precisely, the classification is based
+on the leading order q-dependence of f and g. Since at
+q = 0, f = g = 0, the typical dependence would be
+linear, which most NLs discussed to date belong to. Al-
+though NLs with quadratic dispersion were noticed in
+a few cases [27–29], their symmetry requirement is not
+clear. Generally, to have leading-order dispersion beyond
+the linear one, it is necessary to require additional sym-
+metries, such that their intricate interplay can eliminate
+the linear term. Then the natural question to ask is:
+Is it possible to have higher-order nodal lines, and what
+symmetries protect them?
+
+In this work, we address the above fundamental ques-
+tion by showing that higher-order NLs,
+including the
+quadratic and cubic lines, can be stabilized by crystalline
+symmetries. This is done by performing an exhaustive
+search over all 230 space groups (SGs) for solid state
+systems with spin-orbit coupling (SOC) and time re-
+versal symmetry (T ). Our key results, as summarized
+in Table I, are the following.
+(i) NLs with quadratic
+and cubic dispersions, hereafter referred to as quadratic
+nodal line (QNL) and cubic nodal line (CNL), are the
+only stable ones beyond the conventional linear NLs. (ii)
+The degeneracy for all the identified higher-order NLs
+is two. This means that the corresponding system must
+have inversion symmetry (P) broken, otherwise, the dou-
+ble degeneracy enforced by PT symmetry for each band
+necessarily make the NL (at least) four-fold degenerate.
+(iii) All the higher-order NLs are located along the high-
+symmetry path through the Γ point, namely, Γ-A path,
+which indicates that the corresponding point group sym-
+metry for each SG is actually sufficient to stabilize the
+NLs. These results are further confirmed and explicitly
+
+arXiv:1807.02659v1  [cond-mat.mes-hall]  7 Jul 2018
+
+SG No.
+
+Point Group
+
+Order
+
+174
+
+187−190
+183−186
+
+C3h
+
+D3h
+
+C6v
+
+Quadratic
+
+Quadratic
+
+Cubic
+
+Path
+
+Γ-A
+
+Γ-A
+
+Γ-A
+
+IRR
+
+{Γ4, Γ5}
+
+Γ4
+
+Γ9
+
+SBF
+2i,  1
+2i,  1
+2i,  3
+
+2 , 1
+2 , 1
+2 , 3
+
+(cid:8) 1
+(cid:8) 1
+(cid:8) 3
+
+2i(cid:9)
+2 ,− 1
+2i(cid:9)
+2 ,− 1
+2i(cid:9)
+2 ,− 3
+
+2
+
+Heff
+
+i(αq3
+
+−σ+ + H.c.
+−σ+ + H.c.
+
+αq2
+αq2
+− + βq3
+
++)σ+ + H.c.
+
+TABLE I. List of all possible higher-order NLs stabilized by crystalline symmetry. IRR and SBF respectively stand for the
+irreducible representation and the standard basis function [30], which correspond to the two contacting bands that form the
+NL. It should be noted that in Heff, there may also be an overall shift term w(q) = w0 + w1q2 which does not affect the
+classification, and is therefore omitted.
+
+demonstrated by the constructed effective k·p models and
+lattice models. We further show that the higher-order
+NLs feature distinct topological charges (Berry phases or
+winding numbers), which strongly influence their spec-
+tral, transport, and magnetic response properties (see
+Table II). We also propose realistic materials which host
+such exotic NLs.
+
+Rationale and effective Hamiltonian. We first describe
+the working procedure that leads to the result in Ta-
+ble I. A higher-order NL must require multiple symme-
+tries for its stabilization, so it has to reside on the high-
+symmetry paths in the BZ. For each SG, we scan all
+the high-symmetry paths, looking for possible band de-
+generacies, which can be inferred from the dimensions
+of the irreducible representations for the little group on
+each path [30]. Here, since SOC is fully considered, we
+deal with the double-valued representations, where a 2π-
+rotation produces a minus sign and T 2 = −1. Then,
+for each irreducible representation with dimension > 1,
+we construct the most general symmetry-preserving k · p
+Hamiltonian expanded at a generic point on the path,
+from which the order of the NL can be directly read off.
+This procedure is applied to all the 230 SGs, and the
+result is presented in Table I.
+
+As an illustration, let us consider SG 174, which hosts
+a QNL along the Γ-A path (chosen as the kz axis). A
+generic point K on this path is invariant under the lit-
+tle group which contains two generators: the three-fold
+rotation C3z and the combined operation T Mz, where
+Mz is the reflection with the x-y mirror plane. Since
+[C3z,H(K)] = 0, the band eigenstates at K can be si-
+multaneously chosen as C3z eigenstates. Consider a basis
+state ψ1 corresponding to the Γ4 representation of the
+little group, which transforms like 1/2, 1/2i.
+It is an
+eigenstate of C3z, but is mapped to an orthogonal state
+ψ2 ∼ 1/2,−1/2i under T Mz. It follows that {ψ1, ψ2}
+gives a protected two-fold degeneracy on Γ-A.
+To construct the k · p effective Hamiltonian around K,
+we express the symmetry operators in the {ψ1, ψ2} basis:
+(2)
+
+C3z = ei σz
+
+2π
+3 ,
+
+2
+
+T Mz = −iσxK,
+
+required to be invariant under the symmetry transforma-
+tions, namely,
+
+C3zHeff(R−1
+
+3z q)C−1
+
+3z = Heff(q),
+
+(T Mz)Heff(−q)(T Mz)−1 = Heff(q),
+
+(3)
+
+(4)
+
+where, in line with the discussion for Eq. (1), q is in plane
+(qz = 0), and R3z is the three-fold rotation acting on q.
+Examining the Taylor series expansion of g(q) in Eq. (1),
+we see that all the even-order terms, which are invariant
+under the inversion of q, are excluded by Eq. (4) because
+{T M, σz} = 0. The linear term in g(q) is also eliminated
+by the constraint of Eq. (3), because σz is invariant under
+C3z, but R3z rotates q. For the Taylor series of f (q), the
+zeroth term vanishes because C3zσ±C−1
+3z = e±i2π/3σ±.
+To preserve C3 symmetry, the linear term in f (q) must
+take the form of cq+σ+ + c∗q−σ−, where q± = qx ± iqy
+and c is a constant. However, such linear term is odd
+under T Mz, hence it must vanish according to Eq. (4).
+Thus, the linear terms in both f and g must vanish, and
+the corresponding effective Hamiltonian, to the leading
+order, reads
+
+eff (q) = αq2
+H174
+
+−σ+ + H.c.,
+
+(5)
+
+where α is a complex parameter that depends on Kz.
+(Here and also in Eq. (6), we have omitted the overall
+shift term w(q), for it does not affect band crossing.) It is
+worth to recall that the Taylor series of g(q)σz begins at
+the third order. Hence, the effective Hamiltonian has an
+emergent chiral symmetry σz: {H174
+eff (q), σz} = 0, which
+holds up to the second order of q. Thus, we conclude that
+the doubly-degenerate line along Γ-A at leading order is
+a QNL with an approximate chiral symmetry.
+
+The analysis for other SGs proceeds in a similar way.
+Particularly, for SGs 187-190, an additional mirror sym-
+metry is required along with C3z and T Mz. As a result,
+the effective Hamiltonians take the same form as Eq. (5),
+but here α becomes real for SGs 187 and 188 with Mx,
+and purely imaginary for SGs 189 and 190 with My.
+
+For SGs 183-186, the little group is generated by C6z
+and Mx. Most interestingly, they host CNLs along Γ-A,
+described by
+
+where K is the complex conjugation operator, and σi are
+the Pauli matrices with i = x, y, z. The Hamiltonian is
+
+H183-186
+
+eff
+
+(q) = i(αq3
+
+− + βq3
+
++)σ+ + H.c.,
+
+(6)
+
+Berry phase Phase offset
+
+Nodal Point
+
+Linear NL
+
+QNL
+
+CNL
+
+−
+π
+
+0
+
+π
+
+±1/8
+
+0
+
+1/2
+
+0
+
+LL energy εn(B)
+
+DOS
+∼ E2
+∼ E
+∼ E0
+3 (∼ E0)? ∼ (nB)3/2 (∼ nB)?
+
+∼ (nB)1/2
+∼ (nB)1/2
+
+∼ nB
+
+∼ E− 1
+
+3
+
+JDOS
+∼ E2
+∼ E
+∼ E0
+∼ E− 1
+
+3
+
+Surface State
+
+Fermi arc
+
+drumhead
+
+−
+
+span BZ
+
+Zero-energy LL
+
+−
+1
+
+2
+
+3
+
+? For CNLs, when w1q2 in the overall shift term dominates, the DOS and LL energy scaling relations would cross over to be
+with ∼ E0 and ∼ B dependence, respectively.
+
+TABLE II. Comparison of properties between different NLs and also nodal point.
+
+where α and β are real parameters that depend on Kz.
+From our search, we find that no higher-order NL beyond
+CNL is protected by symmetry, and the degeneracy of all
+the identified QNLs and CNLs are two-fold.
+
+To further confirm the existence of the QNLs and
+CNLs, we explicitly construct minimal lattice models for
+the nine SGs listed in Table I (see Supplemental Material
+(SM) [31]). In each case, the lattice model reproduces the
+higher-order NL on the Γ-A path, and the model recovers
+the corresponding effective Hamiltonians when expanded
+around the path.
+
+Topological charge. Conventionally, a nodal line can
+be regarded as an infinitely thin "solenoid" with fixed
+"magnetic flux" in momentum space, such that an elec-
+tron circling around it along a closed path C picks up a
+Berry phase similar to the Aharonov-Bohm effect [32]:
+
+γC =IC A(q) · dq mod 2π,
+
+(7)
+
+where A is the Berry connection for the occupied bands.
+Symmetries such as PT and mirror reflection can quan-
+tize γC to be an integral multiple of π. Since a gauge
+transformation may change γC by 2π, it represents a Z2
+topological invariant, namely, that γC is defined mod 2π.
+For the NLs under consideration, the QNLs and CNLs
+carry fluxes of 2π and 3π, respectively, hence γC is triv-
+ial for the QNLs, and is nontrivial for CNLs (if α 6= β).
+On the other hand, as aforementioned, all cases in
+Table I have an emergent chiral symmetry σz with
+{Heff (q), σz} = 0, which is exact up to the leading order.
+We can utilize this chiral symmetry to formulate another
+topological invariant [33–35],
+
+N =
+
+1
+
+4πiIC
+
+Tr σzH−1
+
+eff (q)∇qHeff (q) · dq,
+
+(8)
+
+which is integer valued. Actually, we have the relation,
+γC = πN mod 2π, for the two topological invariants.
+
+For the QNLs, N = 2 to the leading order.
++−q3
+
+If we
+consider the correction due to higher-order terms, for
+SG 174, there are terms a(q3
+−)σz at
+third order, with a and b real parameters, which violate
+the chiral symmetry. Consequently, Eq. (8) is no longer
+quantized, but modified as N = 2 − 2πq2
+c (a2 + b2)/α2,
+
+−)σz and ib(q3
+
+++q3
+
++ + q3
+
+where qc is the radius of the circle C. Hence, N is a
+well-defined topological invariant for low-energy physics,
+as long as q (cid:28) α/√a2 + b2. For SGs 187-188 (SGs 189-
+190), only the term a(q3
+−)σz] exists,
+and N is modified accordingly. For the CNLs in SGs 183-
+186, we have N = 3 (−3) if α > β (β > α). The
+next order nonvanishing term is ic(q6
+−)σz with c
+a real parameter. The correction of N is proportional
+to q6. Therefore, the emergent chiral symmetry is even
+more accurate for CNLs.
+
+−)σz [ib(q3
+
++ − q6
+
++ − q3
+
+Experimental signature. The order of dispersion affects
+a variety of physical properties, leading to distinct signa-
+tures for the higher-order NLs. Some of these are listed in
+Table II and compared with linear NLs and nodal points.
+Particularly, the Berry phase can directly manifest
+when electrons are forced to circling around the NL un-
+der a magnetic field [36]. Consider a B field along the
+z direction. In the semiclassical picture, the electron or-
+bits in momentum space are quantized according to the
+Bohr-Sommerfeld condition,
+
+'2
+BACn = 2π(n + ν),
+
+(9)
+
+where 'B = p1/eB is the magnetic length, ACn is the
+
+area enclosed by the semiclassical orbit Cn in k space,
+n is an integer corresponding to the Landau level (LL)
+index, and the phase offset ν is related to the Berry
+phase by ν = 1/2 − γCn /(2π). In experiment, this orbit
+quantization leads to quantum oscillations in a variety of
+physical properties [37]. For example, the Shubnikov-de
+Haas oscillation in magnetoresistance follows the rela-
+tion δρxx ∼ cos[2π( F
+B − ν)], where F is the oscillation
+frequency. Then, the phase offset ν and hence γCn can
+be extracted from experimental results by the standard
+analysis of the LL fan diagram. According to our dis-
+cussion, ν should be 0, 1/2, and 0 for the contribution
+from the linear, quadratic, and cubic NL fermions, re-
+spectively.
+
+The order of dispersion also affects the scaling of the
+LL energy. From Eq. (9), we see that for an m-th order
+NL, ACn ∼ k2 ∼ E2/m for energy E, such that the LL
+energy scales as εn ∼ (nB)m/2 for large n. We have ver-
+ified this relation by a full quantum solution of the LLs
+using the effective models in Table I. The unconventional
+
+4
+
+FIG. 1. (a) Top and (b) side view of the crystal structure for
+ZrPtGa. (c) shows the BZ. (d) Calculated band structure for
+ZrPtGa with SOC. (e) Enlarged view of the band dispersion
+(in direction transverse to the NL) around a generic point P
+[marked in (d)]. P and Q are the mid-points of the paths Γ-A
+and K-H, respectively. The inset shows the log-log plot of the
+energy ∆E between the two bands versus q.
+
+scaling in the LL spectrum offers another distinguishing
+property for higher-order NLs, which can be detected,
+e.g., by the scanning tunneling spectroscopy measure-
+ment. In addition, the order of the NL also determines
+the number of zero-energy LLs, where the topological
+charge of Eq. (8) plays an essential role as discussed in
+SM [31].
+
+There is caveat for the case of CNLs, due to the over-
+all shift term w(q). This term, when expanded to third
+order for SGs 183-186, takes the form of w0 + w1q2. It
+does not affect the classification, but the w1q2 term may
+alter the LL scaling in a range where it dominates over
+the cubic term, for which the scaling would undergo a
+crossover from ∼ (nB)3/2 to ∼ (nB). Similar discussion
+applies to the scaling in the density of states. Neverthe-
+less, the joint density of states (JDOS), which is crucial
+for optical transitions, is not affected by the shift term.
+Material realization. To demonstrate that QNLs and
+CNLs can indeed exist in real materials, we have searched
+the existing materials with the target SGs and identified
+a few examples [31]. One example is shown here. It is the
+intermetallic ternary compound ZrPtGa, which belongs
+to SG 190 [38]. It has trigonal [Pt2Ga6] prisms running
+along the c axis, with [Pt2Zr3] hexahedral clusters in-
+tercalated in-between [Fig. 1(a,b)]. The calculated band
+structure for ZrPtGa (with SOC) is plotted in Fig. 1(d).
+One finds that there is a NL along Γ-A with quadratic dis-
+persion, more clearly observed in Fig. 1(e) which shows
+a zoom-in image for the dispersion (perpendicular to the
+NL) around a generic point on the NL. The presence of
+this QNL is consistent with our symmetry analysis. The
+calculation details and more examples can be found in
+SM [31].
+
+Discussion. Some NL materials possess protected sur-
+face states. The protection is typically associated with a
+quantized π Zak phase, which is the Berry phase defined
+
+FIG. 2. (a) Bulk and surface BZs for SGs 183-186. (b) Bulk
+band structure for a lattice model with SG 183. Besides the
+CNL along Γ-A, there are three linear NLs along the three
+M-L paths, as indicated in (a). (c) shows the corresponding
+spectrum for a slab with (010) surfaces. The red color high-
+lights the surface states, which span the whole surface BZ, as
+indicated in (d). ±π in (d) denote the Zak phase for lines
+perpendicular to the (010) surface. The calculation details
+are presented in SM [31].
+
+FIG. 3. QNL and CNL under symmetry breaking. Break-
+ing (a) C3z or (b) Mz may transform the QNL of SG 187
+into two linear NLs or four intertwined linear NLs (black and
+green curves), respectively. (c) Breaking Mx may transform
+a CNL into two triple Weyl points at Γ and A points with op-
+posite Chern number. The calculation details are presented
+in SM [31].
+
+for a straight line crossing the bulk BZ and perpendicu-
+lar to the surface. The quantization requires additional
+symmetries, such as inversion symmetry or a reflection
+symmetry with the mirror plane parallel to the stud-
+ied surface. For systems discussed here, we find that
+there is no protected surface state for the QNLs. Inter-
+estingly, for CNL systems, we find that surface states
+exist for the side surfaces, protected by nontrivial Zak
+phases with quantization enforced by the perpendicular
+mirror planes. Moreover, unlike the usual drumhead-like
+surface states [11, 18], these states span over the whole
+surface BZ, as illustrated in Fig. 2(c,d).
+
+Finally, as these NLs are protected by symmetry, they
+will transform under symmetry breaking. Some interest-
+ing cases are illustrated in Fig. 3. For example, breaking
+C3z may split the QNL into two linear NLs [Fig. 3(a)];
+breaking Mz for SG 174 will generally gap out the QNL,
+whereas for SGs 187-190, it may transform the QNL into
+four intertwined linear NLs [see Fig. 3(b)]: One linear
+NL is along Γ-A, while the other three NLs penetrate
+through the BZ once along z and twice along the in-plane
+
+(cid:41)
+
+(cid:49)(cid:34)
+
+(cid:45)
+
+(cid:1013)
+
+(cid:46) (cid:44)
+
+(cid:1014)(cid:38)(cid:1)(cid:665)(cid:1)(cid:82)(cid:157)
+
+(cid:77)(cid:80)(cid:72)(cid:9)(cid:82)(cid:10)
+
+(cid:77)(cid:80)(cid:72)(cid:9)(cid:1014)(cid:38)(cid:10)
+
+(cid:49)
+
+(cid:50)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:17)(cid:15)(cid:20)(cid:18)(cid:24)
+
+(cid:17)(cid:15)(cid:20)(cid:18)(cid:23)
+
+(cid:17)(cid:15)(cid:20)(cid:18)(cid:22)
+
+(cid:50)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:9)(cid:70)(cid:10)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:40)(cid:66)
+(cid:59)(cid:83)
+(cid:49)(cid:85)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:45) (cid:46) (cid:1013) (cid:34)
+
+(cid:49)
+
+(cid:41)
+
+(cid:44)
+
+(cid:66)
+
+(cid:18)(cid:15)(cid:17)
+
+(cid:17)(cid:15)(cid:22)
+
+(cid:17)(cid:15)(cid:17)
+
+(cid:14)(cid:17)(cid:15)(cid:22)
+
+(cid:9)(cid:66)(cid:10)
+
+(cid:67)
+
+(cid:9)(cid:69)(cid:10)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:34)(cid:1013)
+
+(cid:41)
+
+(cid:44)
+
+(cid:57)(cid:665)(cid:54)(cid:665)
+
+(cid:1050) (cid:1050)
+
+(cid:695)
+(cid:779)
+
+(cid:695)
+(cid:779)
+
+(cid:59)(cid:665)
+
+(cid:695)
+(cid:779)
+(cid:14)(cid:1050)
+
+(cid:1013)(cid:665)
+
+(cid:695)
+(cid:779)
+(cid:14)(cid:1050)
+
+(cid:46)
+(cid:9)(cid:69)(cid:10)
+
+(cid:23) (cid:17)
+
+(cid:14)(cid:23)
+
+(cid:45)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:34)
+
+(cid:45)
+
+(cid:41)
+
+(cid:44)
+
+(cid:1013)(cid:1050)
+
+(cid:20)
+
+(cid:46)
+
+(cid:14)(cid:1050)
+
+(cid:665)
+(cid:59)
+
+(cid:665)
+
+(cid:1013)
+
+(cid:665)
+(cid:54)
+
+(cid:665)
+
+(cid:57)
+
+(cid:9)(cid:66)(cid:10)
+
+(cid:20) (cid:17)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:54)(cid:665)
+
+(cid:1013)(cid:665)
+
+(cid:59)(cid:665)
+
+(cid:54)(cid:665)
+
+(cid:57)(cid:665)
+
+(cid:1013)(cid:665)
+
+(cid:14)(cid:20)
+
+(cid:36) (cid:23)(cid:87)
+
+(cid:36) (cid:20)(cid:9)(cid:23)(cid:10)
+
+(cid:9479)(cid:9473)(cid:9457)(cid:20)
+(cid:45)
+(cid:9479)(cid:9473)(cid:20)
+(cid:46)
+
+(cid:34)
+
+(cid:1013)
+
+(cid:41)
+
+(cid:44)
+
+(cid:1)(cid:56)(cid:70)(cid:90)(cid:77)(cid:1)(cid:81)(cid:80)(cid:74)(cid:79)(cid:85)(cid:84)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:36) (cid:20)(cid:87)
+(cid:1050)
+
+(cid:14)(cid:1050)
+
+(cid:35)(cid:83)(cid:70)(cid:66)(cid:76)(cid:74)(cid:79)(cid:72)(cid:1)(cid:36) (cid:20)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:37)(cid:20)(cid:73)
+
+(cid:39)(cid:80)(cid:86)(cid:83)(cid:1)(cid:77)(cid:74)(cid:79)(cid:70)(cid:66)(cid:83)(cid:1)(cid:47)(cid:45)(cid:84)
+
+(cid:1050)(cid:1050)
+
+(cid:1013)
+
+(cid:53)(cid:88)(cid:80)(cid:1)(cid:77)(cid:74)(cid:79)(cid:70)(cid:66)(cid:83)(cid:1)(cid:47)(cid:45)(cid:84)
+
+(cid:9)(cid:66)(cid:10)
+
+directions. Moreover, breaking Mx for SGs 183-186 will
+transform a CNL into two triple Weyl points [Fig. 3(c)].
+Thus, these systems provide a promising playground for
+studying topological phase transitions.
+
+[1] C.-K. Chiu, J. C. Y. Teo, A. P. Schnyder, and S. Ryu,
+
+Rev. Mod. Phys. 88, 035005 (2016).
+
+[2] A. Bansil, H. Lin, and T. Das, Rev. Mod. Phys. 88,
+
+021004 (2016).
+
+[3] N. P. Armitage, E. J. Mele, and A. Vishwanath, Rev.
+
+Mod. Phys. 90, 015001 (2018).
+
+[4] X. Wan, A. M. Turner, A. Vishwanath,
+Savrasov, Phys. Rev. B 83, 205101 (2011).
+
+and S. Y.
+
+[5] S. Murakami, New Journal of Physics 9, 356 (2007).
+[6] S. M. Young, S. Zaheer, J. C. Y. Teo, C. L. Kane, E. J.
+Mele, and A. M. Rappe, Phys. Rev. Lett. 108, 140405
+(2012).
+
+[7] Z. Wang, H. Weng, Q. Wu, X. Dai, and Z. Fang, Phys.
+
+Rev. B 88, 125427 (2013).
+
+[8] C. Zhong, Y. Chen, Y. Xie, S. A. Yang, M. L. Cohen,
+
+and S. B. Zhang, Nanoscale 8, 7232 (2016).
+
+[9] Q.-F. Liang, J. Zhou, R. Yu, Z. Wang, and H. Weng,
+
+Phys. Rev. B 93, 085427 (2016).
+
+[10] W. Wu, Y. Liu, S. Li, C. Zhong, Z.-M. Yu, X.-L. Sheng,
+Y. X. Zhao, and S. A. Yang, Phys. Rev. B 97, 115125
+(2018).
+
+[11] S. A. Yang, H. Pan, and F. Zhang, Phys. Rev. Lett. 113,
+
+046401 (2014).
+
+[12] K. Mullen, B. Uchoa, and D. T. Glatzhofer, Phys. Rev.
+
+Lett. 115, 026403 (2015).
+
+[13] Y. Chen, Y. Xie, S. A. Yang, H. Pan, F. Zhang, M. L.
+
+Cohen, and S. Zhang, Nano letters 15, 6974 (2015).
+
+[14] S. Li, Z.-M. Yu, Y. Liu, S. Guan, S.-S. Wang, X. Zhang,
+Y. Yao, and S. A. Yang, Phys. Rev. B 96, 081106 (2017).
+[15] T. Bzdusek, Q. Wu, A. Ruegg, M. Sigrist, and A. A.
+
+Soluyanov, Nature 538, 75 (2016).
+
+[16] S.-S. Wang, Y. Liu, Z.-M. Yu, X.-L. Sheng, and S. A.
+
+Yang, Nature communications 8, 1844 (2017).
+
+[17] R. Yu, Q. Wu, Z. Fang, and H. Weng, Phys. Rev. Lett.
+
+119, 036401 (2017).
+
+[18] H. Weng, Y. Liang, Q. Xu, R. Yu, Z. Fang, X. Dai, and
+
+Y. Kawazoe, Phys. Rev. B 92, 045108 (2015).
+
+[19] R. Yu, H. Weng, Z. Fang, X. Dai, and X. Hu, Phys. Rev.
+
+5
+
+Lett. 115, 036807 (2015).
+
+[20] Y. Kim, B. J. Wieder, C. L. Kane, and A. M. Rappe,
+
+Phys. Rev. Lett. 115, 036806 (2015).
+
+[21] X.-L. Sheng, Z.-M. Yu, R. Yu, H. Weng, and S. A. Yang,
+
+The Journal of Physical Chemistry Letters 8, 3506.
+
+[22] W. Chen, H.-Z. Lu, and J.-M. Hou, Phys. Rev. B 96,
+
+041102 (2017).
+
+[23] Z. Yan, R. Bi, H. Shen, L. Lu, S.-C. Zhang, and Z. Wang,
+
+Phys. Rev. B 96, 041103 (2017).
+
+[24] G. Chang, S.-Y. Xu, X. Zhou, S.-M. Huang, B. Singh,
+B. Wang, I. Belopolski, J. Yin, S. Zhang, A. Bansil,
+H. Lin, and M. Z. Hasan, Phys. Rev. Lett. 119, 156401
+(2017).
+
+[25] P.-Y. Chang and C.-H. Yee, Phys. Rev. B 96, 081114
+
+(2017).
+
+[26] X. Zhang, Z.-M. Yu, Y. Lu, X.-L. Sheng, H. Y. Yang,
+
+and S. A. Yang, Phys. Rev. B 97, 125143 (2018).
+
+[27] G. Chang, S.-Y. Xu, S.-M. Huang, D. S. Sanchez, C.-
+H. Hsu, G. Bian, Z.-M. Yu, I. Belopolski, N. Alidoust,
+H. Zheng, et al., Scientific Reports 7, 1688 (2017).
+
+[28] Z. Zhu, G. W. Winkler, Q. Wu, J. Li,
+Soluyanov, Phys. Rev. X 6, 031003 (2016).
+
+and A. A.
+
+[29] L. Li, S. Chesi, C. Yin, and S. Chen, Phys. Rev. B 96,
+
+081116 (2017).
+
+[30] C. Bradley and A. Cracknell, The mathematical theory
+of symmetry in solids: representation theory for point
+groups and space groups (Oxford University Press, 1972).
+[31] See Supplemental Material for computational methods,
+more material candidates with the higher-order NLs,
+derivation of effective Hamiltonians and the minimal
+tight-binding models, the number of the zero-energy LLs
+for higher-order NLs, and calculation details of Fig. 2 and
+Fig. 3.
+
+[32] M. V. Berry, Proceedings of the Royal Society A. 392,
+
+45 (1984).
+
+[33] G. E. Volovik, The universe in a helium droplet (Oxford
+
+University Press, 2003).
+
+[34] A. P. Schnyder, S. Ryu, A. Furusaki, and A. W. W.
+
+Ludwig, Phys. Rev. B 78, 195125 (2008).
+
+[35] Y. X. Zhao and Z. D. Wang, Phys. Rev. Lett. 110, 240404
+
+(2013).
+
+[36] G. P. Mikitik and Y. V. Sharlai, Phys. Rev. Lett. 82,
+
+2147 (1999).
+
+[37] D. Shoenberg, Magnetic Oscillations in Metals (Cam-
+
+bridge University Press, Cambridge, England, 1984).
+
+[38] M. F. Zumdick, R.-D. Hoffmann,
+
+and R. Pottgen,
+
+Zeitschrift fur Naturforschung B 54, 45 (1999).
+
+Supplemental Material for "Quadratic and Cubic Nodal Lines Stabilized by
+
+Crystalline Symmetry"
+
+Zhi-Ming Yu,1 Weikang Wu,1 Xian-Lei Sheng,2, 1 Y. X. Zhao,3, 4 and Shengyuan A. Yang1
+
+1Research Laboratory for Quantum Materials, Singapore University of Technology and Design, Singapore 487372, Singapore
+
+2Department of Physics, Key Laboratory of Micro-nano Measurement-Manipulation
+and Physics (Ministry of Education), Beihang University, Beijing 100191, China
+
+3National Laboratory of Solid State Microstructures and Department of Physics, Nanjing University, Nanjing 210093, China
+
+4Collaborative Innovation Center of Advanced Microstructures, Nanjing University, Nanjing 210093, China
+
+I. DETAILS OF FIRST-PRINCIPLES CALCULATION
+
+We performed the first-principle calculations based on the density functional theory (DFT), as implemented
+in the Vienna ab initio simulation package [1, 2]. The projector augmented wave method was adopted [3]. The
+generalized gradient approximation (GGA) with the Perdew-Burke-Ernzerhof (PBE) realization [4] was adopted for
+the exchange-correlation potential. For all calculations, the energy and force convergence criteria were set to be
+10−6 eV and 10−2 eV/A, respectively. The BZ sampling was performed by using k grids with a spacing of 2π × 0.02
+
+A−1 within a Γ-centered sampling scheme. For V12P7, the optimized structure paramemters (a = 9.30 A, c = 3.22
+
+A) were used for the band structure calculation. For the other materials discussed below, the experimental values of
+their respective lattice parameters were used in the calculation.
+
+II. MATERIAL CANDIDATES
+
+In the main text, we have shown the result for ZrPtGa, which hosts a QNL along the Γ-A path. Here, we present
+a few more examples with the higher-order NLs. The first example is the QNL material V12P7, with the structure in
+the space group P ¯6 (No. 174), as illustrated in Fig. S1(a,b). This material is predicted in Materials Project [5]. The
+calculated band structure of V12P7 in the presence of SOC is displayed in Fig. S1(d). From the result, one observes a
+nodal line along the Γ-A path, about 0.2 eV below the Fermi level. This is a QNL. We purposely show the dispersion
+along a path P-Q which is perpendicular to the kz-axis and P (kz = 0.408π) is a generic point on the Γ-A path [see
+the right panel of Fig. S1(d)]. The quadratic dispersion is in agreement with our symmetry analysis in the main text.
+
+The second example is the QNL material ZrRuAs, which has a crystal structure with the space group of P ¯62m
+(No. 189) shown in Fig. S2(a) and S2(b). In the band structure for ZrRuAs (with SOC) plotted in Fig. S2(d), one
+observes that a nodal line exists about 0.5 eV above the Fermi level along the Γ-A path. The dispersion along a
+generic path P-Q around the nodal line (where P is a generic point kz = 0.41π on Γ-A) is shown in the right panel of
+Fig. S2(d). The analysis shows that it is a QNL.
+
+arXiv:1807.02659v1  [cond-mat.mes-hall]  7 Jul 2018
+
+FIG. S1: (a) Top and (b) side view of the crystal structure of V12P7. (c) The corresponding Brillouin zone. The points P and
+Q are generic points on the paths Γ-A and K-H, respectively. (d) Calculated band structure of V12P7 with SOC. The blue
+color marks the QNL. The right panel shows the enlarged view of the band structure around a generic point P (kz = 0.408π)
+on the Γ-A path along the path Q-P-Q which is perpendicular to Γ-A.
+
+(cid:41)
+(cid:50)
+
+(cid:44)
+
+(cid:34) (cid:49)
+
+(cid:1013)
+
+(cid:45)
+
+(cid:50)
+
+(cid:46)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:1)(cid:14)(cid:17)(cid:15)(cid:18)(cid:26)(cid:25)
+
+(cid:1)(cid:14)(cid:17)(cid:15)(cid:18)(cid:26)(cid:26)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:49)
+
+(cid:55)(cid:49)
+
+(cid:46) (cid:1013)
+
+(cid:34) (cid:41)
+
+(cid:44)
+
+(cid:50)
+
+(cid:49)
+
+(cid:50)
+
+(cid:66)
+
+(cid:1)(cid:17)(cid:15)(cid:22)
+
+(cid:1)(cid:17)(cid:15)(cid:17)
+
+(cid:14)(cid:17)(cid:15)(cid:22)
+(cid:45)
+
+(cid:9)(cid:66)(cid:10)
+
+(cid:67)
+
+(cid:9)(cid:69)(cid:10)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+2
+
+FIG. S2: (a) Top and (b) side view of the crystal structure of ZrRuAs. (c) The corresponding Brillouin zone. P and Q are
+generic points on the paths Γ-A and K-H, respectively. (d) Calculated band structure of ZrRuAs with SOC. The blue color
+marks the QNL. The right panel shows the enlarged view of the band structure around a generic point P (kz = 0.41π) on the
+Γ-A path along the path Q-P-Q which is perpendicular to Γ-A path.
+
+FIG. S3: (a) Top and (b) side view of the crystal structure of CaAgBi.
+(c) The corresponding Brillouin zone. P and Q
+are generic points on the paths Γ-A and K-H, respectively. (d) Calculated band structure of CaAgBi with SOC. The cubic
+nodal line is marked with blue color. The right panel shows the enlarged view of the band structure around a generic point P
+(kz = 0.222π) on the Γ-A path along the path Q-P-Q which is perpendicular to Γ-A path.
+
+The third example is the CNL material CaAgBi, with the space group of P 63mc (No. 186). It has been synthesized
+in experiment [8]. As shown in Figs. S3(a) and S3(b), the Ag and Bi atoms form a Wurtzite lattice with encapsulated
+Ca atoms. The calculated band structure for CaAgBi (with SOC included) is plotted in Fig. S3(d). Along the Γ-A
+path, we finds a CNL (marked with blue in the Figure), with the two-dimensional irreducible representation Γ9 of the
+C6v double group. By examining the band dispersion around a generic point (such as kz = 0.222π) along the Γ-A
+path [see the right panel of Fig. S3(d)], we find that the dispersion is indeed cubic, consistent with our symmetry
+analysis.
+
+III. DERIVATION OF EFFECTIVE HAMILTONIAN
+
+Here, we present the derivation of the effective Hamiltonians (shown in the main text) in more detail.
+
+A. SG 174
+
+As discussed in the main text, for SG 177, the symmetry constraints for a point K on Γ-A are from C3z and T Mz.
+
+In the basis corresponding to Γ4 and Γ5 representation [10, 11], the symmetry operators are represented by
+
+C3z = eiσzπ/3,
+
+T Mz = −iσxK,
+
+(S1)
+
+(cid:41)
+(cid:50)
+
+(cid:44)
+
+(cid:34) (cid:49)
+
+(cid:1013)
+
+(cid:45)
+
+(cid:50)
+
+(cid:46)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:51)(cid:86)
+(cid:59)(cid:83)
+(cid:34)(cid:84)
+
+(cid:49)
+
+(cid:1)(cid:17)(cid:15)(cid:21)(cid:23)(cid:26)
+
+(cid:1)(cid:17)(cid:15)(cid:21)(cid:23)(cid:25)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:45)
+
+(cid:46) (cid:1013) (cid:34)
+
+(cid:41)
+
+(cid:44)
+
+(cid:50)
+
+(cid:49)
+
+(cid:50)
+
+(cid:66)
+
+(cid:1)(cid:18)(cid:15)(cid:17)
+
+(cid:1)(cid:17)(cid:15)(cid:22)
+
+(cid:1)(cid:17)(cid:15)(cid:17)
+
+(cid:14)(cid:17)(cid:15)(cid:22)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:9)(cid:66)(cid:10)
+
+(cid:67)
+
+(cid:9)(cid:69)(cid:10)
+
+(cid:41)
+(cid:50)
+
+(cid:44)
+
+(cid:34) (cid:49)
+
+(cid:1013)
+
+(cid:45)
+
+(cid:50)
+
+(cid:46)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:1)(cid:17)(cid:15)(cid:21)(cid:19)(cid:19)
+
+(cid:1)(cid:17)(cid:15)(cid:21)(cid:19)(cid:18)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:36)(cid:66)
+(cid:34)(cid:72)
+(cid:35)(cid:74)
+
+(cid:49)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:1013) (cid:34)
+
+(cid:41) (cid:44)
+
+(cid:50)
+
+(cid:49)
+
+(cid:50)
+
+(cid:45) (cid:46)
+
+(cid:1)(cid:18)(cid:15)(cid:17)
+(cid:1)(cid:17)(cid:15)(cid:22)
+(cid:1)(cid:17)(cid:15)(cid:17)
+(cid:14)(cid:17)(cid:15)(cid:22)
+(cid:1)(cid:14)(cid:18)(cid:15)(cid:17)
+
+(cid:38)(cid:79)(cid:70)(cid:83)(cid:72)(cid:90)(cid:1)(cid:9)(cid:70)(cid:55)(cid:10)
+
+(cid:9)(cid:66)(cid:10)
+
+(cid:9)(cid:69)(cid:10)
+
+(cid:67)
+
+(cid:66)
+
+where σi are the Pauli matrices with i = x, y, z, and K denotes the complex conjugate. Then, the effective k · p
+Hamiltonian (up to second order) reads (q is in the plane transverse to the NL)
+
+3
+
+where q =qq2
+
+x + q2
+
+y, and w0, w1 are real parameters, and α is a complex parameter. All parameters depend on K.
+
+The third order terms, which can violate the emergent chiral symmetry, are given by
+
+eff (q) = w0 + w1q2 + αq2
+H174
+
+−σ+ + α∗q2
+
++σ−,
+
+(S2)
+
+H(3)
+174 = a(q3
+
++ + q3
+
+−)σz + ib(q3
+
++ − q3
+
+−)σz,
+
+(S3)
+
+where a and b are real parameters that depend on K.
+
+B. SGs 187-190
+
+Space groups 187-190 have point group D3h. The little group on Γ-A is C3v, for which the generators can be
+chosen as C3z and a vertical mirror Mx(y) for SGs 187-188 (SGs 189-190) [10]. Moreover, there also exists the
+combined symmetry T Mz. The relevant degenerate basis are those of the Γ4 representation, which transform like
+by
+
+2i(cid:9) under the symmetry operation [10, 11]. For SGs 187-188, the symmetry operations are represented
+
+(cid:8) 1
+2 ,− 1
+
+2i,  1
+
+2 , 1
+
+C3z = eiσzπ/3, Mx = −iσx,
+which leads to the following effective model (up to second order)
+
+T Mz = −iσxK,
+
+H187,188
+
+eff
+
+(q) = w0 + w1q2 + αq2
+
+−σ+ + αq2
+
++σ−.
+
+(S4)
+
+(S5)
+
+where wi and α are real parameters that depend on K. Note that α becomes real in order to preserve the additional
+symmetry Mx, compared with the case of SG 174. Still because of the additional Mx, only the first term of Eq. (S3)
+remains.
+
+For SGs 189-190, instead of Mx, we have My = −iσy, and then the effective model (up to second order) reads
+
+H189,190
+
+eff
+
+(q) = w0 + w1q2 + iαq2
+
+−σ+ − iαq2
+
++σ−.
+
+(S6)
+
+where α is real as required by My. For the third order terms, only the second term of Eq. (S3) can preserve My.
+
+C. SGs 183-186
+
+Space groups 183-186 have the same point group C6v. The little group on Γ-A has the generators C6z and a mirror
+plane Mx. The relevant basis are those corresponding to the Γ9 representation of the little group, which transform
+
+like(cid:8) 3
+2 ,− 3
+
+2i,  3
+
+2 , 3
+
+2i(cid:9) [10, 11]. Hence, the symmetry operations are represented as
+
+C6z = iσz, Mx = iσx,
+
+Then the k · p Hamiltonian up to the third order is obtained as
+
+H183-186
+
+eff
+
+(q) = w0 + w1q2 + i(αq3
+
+− + βq3
+
++)σ+ − i(αq3
+
++ + βq3
+
+−)σ−
+
+where wi, α and β are real parameters that depend on K. Except w(q), the next order violating the emergent chiral
+symmetry is the sixth, and there is only one term given by
+
+where c is a real parameter that depends on K.
+
+H(6)
+183−186 = ic(q6
+
++ − q6
+
+−)σz,
+
+(S9)
+
+(S7)
+
+(S8)
+
+4
+
+FIG. S4: The structure of real materials belonging to different SGs. Only the atoms (marked by the blue region) sitting on the
+four equivalent corners enter in the effective TB model.
+
+IV. DERIVATION OF MINIMAL LATTICE MODELS
+
+To further demonstrate the existence of QNLs and CNLs, we explicitly construct minimal lattice (tight-binding)
+models for the nine SGs listed in Table I of the main text. Here, we follow the method by Wieder and Kane [13].
+The procedure is to write down the representations for the group generators at Γ (including their operations on the
+wave-vector k), and then enumerate all the symmetry-allowed hopping terms up to a specified lattice range.
+
+Since QNLs and CNLs predicted here are all formed by two bands, the minimal lattice models would be two-band
+models for the SGs with only symmorphic symmetry operations, namely for SGs 174, 183, 187 and 189. On the
+other hand, the minimal lattice models for SGs 184-186, 188, and 190 are four-band models, as the corresponding
+non-symmorphic symmetries entangle bands in group of four for these space groups [14].
+
+Specifically, we consider the model defined on an AA-stacked hexagonal lattice, as shown in Fig. S4. For (non-
+)symmorphic SGs, each unit cell contains a single site (two sites) denoted by the blue ball(s), and each site has an
+s-like orbital with two spin states. The gray-colored balls represent sites that do not directly enter the lattice model
+(because the corresponding orbitals are at high energy), but they affect the hopping amplitudes between the active
+(blue-colored) sites in a way that follows the SG symmetry. For simplicity, we assume that the lattice constants
+(a, b, c) for symmorphic SGs are the same c = a = b, whereas for non-symmorphic SGs are related by c = 2a = 2b.
+
+In the following models, we use two sets of Pauli matrices σi and τi to denote operators acting on spin and sublattice
+spaces, respectively. σ0 and τ0 both represent the 2 × 2 identity matrix. All the parameters used in the following
+models are real.
+
+A. SG 174
+
+states(cid:8) 1
+2 ,− 1
+
+2i,  1
+
+2 , 1
+
+The lattice Hamiltonian for SG 174 is constrained by the following symmetries: C3z, Mz, and T . With two basis
+
+2i(cid:9) on a single site in a unit cell [see Fig. S4(a)], the symmetry operators are represented as
+C3z = eiσzπ/3 ⊗(cid:0) kx → cos 2π
+
+3 ky, ky → − sin 2π
+
+3 ky (cid:1)
+
+(S10)
+(S11)
+(S12)
+
+3 kx + sin 2π
+
+3 kx + cos 2π
+
+Mz = −iσz ⊗ (kz → −kz) ,
+T = −iσyK ⊗ (k → −k) .
+
+(cid:9)(cid:66)(cid:10)
+
+(cid:9)(cid:69)(cid:10)
+
+(cid:9)(cid:72)(cid:10)
+
+(cid:67)
+
+(cid:67)
+
+(cid:66)
+
+(cid:66)
+
+(cid:52)(cid:40)(cid:18)(cid:24)(cid:21)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:22)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:25)
+
+(cid:9)(cid:67)(cid:10)
+
+(cid:9)(cid:70)(cid:10)
+
+(cid:67)
+
+(cid:66)
+
+(cid:67)
+
+(cid:66)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:23)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:9)(cid:73)(cid:10)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:26)
+
+(cid:67)
+
+(cid:66)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:67)
+
+(cid:66)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:67)
+
+(cid:66)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:20)
+
+(cid:9)(cid:68)(cid:10)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:21)
+
+(cid:67)
+
+(cid:67)
+
+(cid:66)
+
+(cid:66)
+
+(cid:9)(cid:71)(cid:10)
+
+(cid:9)(cid:74)(cid:10)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:52)(cid:40)(cid:18)(cid:25)(cid:24)
+
+(cid:68)
+
+(cid:66)
+
+(cid:67)
+
+(cid:52)(cid:40)(cid:18)(cid:26)(cid:17)
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+5
+
+H 174
+
+TB = (t1 + t3 cos kz)(cid:16) cos kx + 2 cos
+2 (cid:16) cos
+
+3 cos kz) sin
+
+1 + tSO
+
++(tSO
+
+kx
+
++tSO
+
+4
+
+sin kz(cid:16) cos kx − cos
+
+kx
+2
+
+cos
+
+cos
+
+√3ky
+2 (cid:17)σ0 + t2(cid:16) cos√3ky + 2 cos
+kx
+2
+√3ky
+√3ky
+2 (cid:17)σz + tSO
+2 (cid:16) cos
+kx
+2 − cos
+√3ky
+√3ky
+2 (cid:17)σx −
+√3tSO
+2
+
+sin kz sin
+
+kx
+2
+
+sin
+
+sin
+
+4
+
+2
+
+√3ky
+2 (cid:17)σ0 + t4 cos kzσ0
+
+3kx
+cos
+2
+√3ky
+2 − cos
+
+3kx
+
+2 (cid:17)σz
+
+σy,
+
+(S13)
+
+for which we have enumerated all symmetry-allowed terms up to the third-neighbor hopping. The coefficients ti and
+tSO
+are real valued model parameter. Expanding this model around the Γ-A path (kx = ky = 0), we indeed recover
+i
+the effective Hamiltonian in Eq. (5) of the main text.
+
+B. SG 183
+
+[see Fig. S4(b)], the representations for the symmetry operators are given by
+
+The relevant symmetry generators are C6z, Mx, and T . With two basis states(cid:8) 3
+2 ,− 3
+2i,  3
+3 ky (cid:1) ,
+
+C6z = iσz ⊗(cid:0) kx → cos π
+
+3 ky, ky → − sin π
+
+3 kx + cos π
+
+3 kx + sin π
+
+Mx = iσx ⊗ (kx → −kx) ,
+T = −iσyK ⊗ (k → −k) .
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+2 , 3
+
+2i(cid:9) on a single site
+
+(S14)
+(S15)
+(S16)
+
+3kx
+2
+
+cos
+
+2 ! σ0
+√3ky
+
+(S17)
+
+TB = (t1 + t3 cos kz) cos kx + 2 cos
+
+H 183
+
+kx
+2
+
+cos
+
+2 ! σ0 + (t2 + t4 cos kz) cos√3ky + 2 cos
+√3ky
+2  cos
+
+ky! σy
+
+√3
+2
+
+kx
+
+1 + tSO
+
++t5 cos kzσ0 +(cid:0)tSO
+4 cos kz(cid:1) sin
++(cid:0)tSO
+
+2 + tSO
+
+3 cos kz(cid:1) sin
+2  cos
+√3ky
+
+kx
+2 − cos
+√3
+2
+
+ky! σx,
+
+3kx
+2 − cos
+
+for which we have enumerated all symmetry-allowed terms up to the fourth-neighbor hopping. Expanding this model
+around the Γ-A path, we recover the effective Hamiltonian in Eq. (6) (for the CNL) of the main text.
+
+C. SG 184
+
+The relevant symmetry generators are C6z, the glide mirror plane Gx = (cid:8)Mx00 1
+basis states per unit cell (cid:8)A 3
+2 ,− 3
+
+2i, B 3
+2 ,− 3
+Fig. S4(c)]. The symmetry operators are represented as
+C6z = iσzτ0 ⊗(cid:0) kx → cos π
+
+2(cid:9), and T . Here, we have four
+2i(cid:9), where A and B denote the two sublattices [see
+3 ky (cid:1) ,
+3 ky, ky → − sin π
+
+3 kx + cos π
+
+3 kx + sin π
+
+2i, B 3
+
+2i, A 3
+
+2 , 3
+
+2 , 3
+
+(S18)
+(S19)
+(S20)
+
+Gx = iσxτx ⊗ (kx → −kx) ,
+T = −iσyτ0K ⊗ (k → −k) .
+
+The the symmetry allowed lattice Hamiltonian is obtained as
+
+5 σzτy) cos
+
+7 σzτy) cos
+
+H 184
+
+TB = (cid:20)t1σ0τ0 + (t3σ0τx + tSO
++(cid:20)t2σ0τ0 + (t5σ0τx + tSO
++(cid:18)tSO
++(cid:18)tSO
+
+1 σxτz + tSO
+
+3 σxτ0 + tSO
+
+2 σyτ0 + tSO
+
+8 cos
+
+4 σyτz + tSO
+
+10 cos
+
+√3ky
+
+kz
+
+kz
+
+cos
+
+kx
+2
+
+2(cid:21) cos kx + 2 cos
+2(cid:21) cos√3ky + 2 cos
+σxτy(cid:19) sin
+σyτy(cid:19) sin
+
+σxτx + tSO
+
+σyτx + tSO
+
+3kx
+2
+
+11 sin
+
+kz
+2
+
+kz
+2
+
+sin
+
+9
+
+kz
+2
+
+kz
+2
+
+cos
+
+6 σzτy(cid:1) cos
+
+2 ! +(cid:0)t4σ0τx + tSO
+2 !
+√3ky
+2 !
+2  cos
+√3ky
+2 ! ,
+2  cos
+√3ky
+√3ky
+
+3kx
+2 − cos
+
+kx
+2 − cos
+
+kx
+
+6
+
+kz
+2
+
+(S21)
+
+for which we have enumerated all symmetry-allowed terms up to the fourth-neighbor hopping. One can check that
+the four bands on the Γ-A path form two CNLs.
+
+D. SG 185
+
+The relevant symmetry generators are the screw rotation S6z =(cid:8)C6z00 1
+with the basis(cid:8)A 3
+2 ,− 3
+2i, A 3
+2i, B 3
+S6z = iσzτx ⊗(cid:0) kx → cos π
+3 ky, ky → − sin π
+
+2(cid:9), Mx, and T . Like the previous case,
+2i(cid:9) [see Fig. S4(d)], the symmetry operators are represented as
+
+3 ky (cid:1) ,
+
+3 kx + cos π
+
+3 kx + sin π
+
+2i, B 3
+
+2 ,− 3
+
+2 , 3
+
+2 , 3
+
+(S22)
+(S23)
+(S24)
+
+Mx = iσxτ0 ⊗ (kx → −kx) ,
+T = −iσyτ0K ⊗ (k → −k) .
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+4 σxτy) cos
+
+H 185
+
+TB = (cid:20)t1σ0τ0 + (t3σ0τx + tSO
++(cid:20)t2σ0τ0 + (t5σ0τx + tSO
++(cid:20)tSO
+1 σxτ0 +(cid:0)t6σ0τy + tSO
++(cid:18)tSO
+
+2 σzτz + tSO
+
+3 σyτ0 + tSO
+8
+
+6 σxτy) cos
+
+7 σxτx(cid:1) cos
+
+cos
+
+kz
+
+kz
+
+kx
+2
+
+2(cid:21) cos kx + 2 cos
+2(cid:21) cos√3ky + 2 cos
+2  cos
+√3ky
+2(cid:21) sin
+
+kz
+
+3kx
+2
+
+3kx
+2 − cos
+
+sin
+
+σzτy + tSO
+
+9 cos
+
+kz
+2
+
+kz
+2
+
+σyτx(cid:19) sin
+
+cos
+
+2 !
+√3ky
+2 !
+√3ky
+2  cos
+
+kx
+
+√3ky
+
+2 ! +(cid:0)t4σ0τx + tSO
+
+5 σxτy(cid:1) cos
+
+kz
+2
+
+kx
+2 − cos
+
+2 ! ,
+√3ky
+
+(S25)
+
+for which we have enumerated all symmetry-allowed terms up to the fourth-neighbor hopping. The Hamiltonian H 185
+TB
+contains two CNLs on the Γ-A path.
+
+E. SG 186
+
+operators are
+
+The relevant symmetry generators are the screw rotation S6z =(cid:8)C6z00 1
+2(cid:9), and
+T . With the basis (cid:8)A 3
+2i(cid:9) [see Fig. S4(e)], the representations for the symmetry
+2 ,− 3
+2 ,− 3
+S6z = iσzτx ⊗(cid:0) kx → cos π
+3 ky, ky → − sin π
+
+2(cid:9), the glide mirror Gx =(cid:8)Mx00 1
+
+3 ky (cid:1) ,
+
+3 kx + cos π
+
+3 kx + sin π
+
+2i, B 3
+
+2i, B 3
+
+2i, A 3
+
+2 , 3
+
+2 , 3
+
+(S26)
+(S27)
+(S28)
+
+Gx = iσxτx ⊗ (kx → −kx) ,
+T = −iσyτ0K ⊗ (k → −k) .
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+H 186
+
+TB = (cid:20)t1σ0τ0 + (t3σ0τx + tSO
++(cid:20)t2σ0τ0 + (t5σ0τx + tSO
++(cid:20)tSO
++(cid:20)tSO
+
+2 σzτz + tSO
+
+1 σyτ0 + (t6σ0τy + tSO
+
+3 σxτ0 + tSO
+
+4 σyτy) cos
+
+6 σyτy) cos
+
+6 σyτx) cos
+
+√3ky
+
+cos
+
+kz
+
+kz
+
+kx
+2
+
+2(cid:21) cos kx + 2 cos
+2(cid:21) cos√3ky + 2 cos
+2(cid:21) sin
+
+2  cos
+
+kx
+
+kz
+
+3kx
+2
+
+kx
+2 − cos
+
+σzτy(cid:21) sin
+
+2 ! +(cid:0)t4σ0τx + tSO
+2 !
+√3ky
+cos
+2 !
+√3ky
+2  cos
+√3ky
+
+√3ky
+2 − cos
+
+8 cos
+
+kz
+2
+
+σxτx + tSO
+
+9
+
+sin
+
+kz
+2
+
+7
+
+kz
+2
+
+5 σyτy(cid:1) cos
+
+3kx
+
+2 ! ,
+
+(S29)
+
+for which we have enumerated all symmetry-allowed terms up to the fourth-neighbor hopping. The Hamiltonian H 186
+TB
+has two CNLs on the Γ-A path.
+
+F. SG 187
+
+the unit cell [see Fig. S4(f)], the representations for the symmetry operators are
+
+The relevant symmetry generators are C3z, Mx, Mz, and T . With the basis (cid:8) 1
+2 ,− 1
+3 ky, ky → − sin 2π
+
+3 kx + sin 2π
+
+3 kx + cos 2π
+
+2i(cid:9) on a single site in
+
+2 , 1
+
+2i,  1
+3 ky (cid:1) ,
+
+C3z = eiσzπ/3 ⊗(cid:0) kx → cos 2π
+
+Mx = −iσx ⊗ (kx → −kx) ,
+Mz = −iσz ⊗ (kz → −kz) ,
+T = −iσyK ⊗ (k → −k) .
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+TB = (t1 + t2 cos kz) cos kx + 2 cos
+
+H 187
+
+cos
+
+kx
+2
+
+2 ! σ0 + (tSO
+√3ky
+2 ! σx −
+sin kz" cos kx − cos
+√3ky
+
+kx
+2
+
+1 + tSO
+
+cos
+
+2 cos kz) sin
+
+√3 sin
+
+kx
+2
+
+sin
+
+kx
+2 − cos
+
+kx
+
+2  cos
+σy# ,
+√3ky
+2
+
++t3 cos kzσ0 + tSO
+
+3
+
+(S30)
+(S31)
+(S32)
+(S33)
+
+2 ! σz
+√3ky
+
+(S34)
+
+for which we have enumerated all symmetry-allowed terms up to the second-neighbor hopping. Expanding this model
+around the Γ-A path, we recover the effective Hamiltonian for QNLs in the main text.
+
+G. SG 188
+
+The relevant symmetry generators are C3z, Gx = {Mx00 1
+(cid:8)A 1
+2 ,− 1
+
+2i(cid:9) [see Fig. S4(g)], the representations for the symmetry operators are
+
+2}, Mz, and T . With the four-states basis
+
+2i, B 1
+
+2i, A 1
+
+2 , 1
+
+3 kx + sin 2π
+
+3 ky, ky → − sin 2π
+
+3 kx + cos 2π
+
+2 , 1
+
+2 ,− 1
+
+2i, B 1
+C3z = eiσzπ/3τ0 ⊗(cid:0) kx → cos 2π
+
+Gx = −iσxτx ⊗ (kx → −kx) ,
+Mz = −iσzτ0 ⊗ (kz → −kz) ,
+T = −iσyτ0K ⊗ (k → −k) .
+
+3 ky (cid:1) ,
+
+(S35)
+(S36)
+(S37)
+(S38)
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+H 188
+
+TB = (cid:20)t1σ0τ0 + (t2σ0τx + tSO
+
+2 σzτy) cos
+
++(cid:20)tSO
+
++tSO
+
+5
+
+sin
+
++tSO
+
+6
+
+sin
+
+1 σzτ0 + (t4σ0τy + tSO
+
+4 σzτx) cos
+
+kz
+
+2 " cos kx − cos
+2 " sin kx + sin
+
+kz
+
+kx
+2
+
+kx
+2
+
+cos
+
+cos
+
+3 σzτy(cid:1) cos
+
+√3ky
+
+cos
+
+kz
+
+kz
+
+kx
+
+kx
+2
+
+2(cid:21) cos kx + 2 cos
+2  cos
+2(cid:21) sin
+2 ! σxτx −
+√3ky
+√3 sin
+2 ! σxτy −
+√3ky
+
+√3 cos
+
+kx
+2 − cos
+
+kx
+2
+
+kx
+2
+
+sin
+
+sin
+
+2 ! +(cid:0)t3σ0τx + tSO
+2 !
+√3ky
+σyτx#
+√3ky
+2
+σyτy# ,
+√3ky
+2
+
+8
+
+kz
+2
+
+(S39)
+
+for which we have enumerated all symmetry-allowed terms up to the second-neighbor hopping. Expanding this model
+around the Γ-A path, we recover the effective Hamiltonian for QNLs in the main text.
+
+H. SG 189
+
+representations for the symmetry operators are
+
+The relevant symmetry generators are C3z, My, Mz, and T . With the basis(cid:8) 1
+2 ,− 1
+3 ky, ky → − sin 2π
+
+3 kx + sin 2π
+
+3 kx + cos 2π
+
+C3z = eiσzπ/3 ⊗(cid:0) kx → cos 2π
+
+My = −iσy ⊗ (ky → −ky) ,
+Mz = −iσz ⊗ (kz → −kz) ,
+T = −iσyK ⊗ (k → −k) .
+
+2 , 1
+
+2i(cid:9) [see Fig. S4(h)], the
+2i,  1
+3 ky (cid:1) ,
+
+(S40)
+(S41)
+(S42)
+(S43)
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+TB = (t1 + t3 cos kz) cos kx + 2 cos
+
+H 189
+
+kx
+2
+
+cos
+
+2 ! σ0 + (t2 + t4 cos kz) cos√3ky + 2 cos
+√3ky
+2  cos
+√3ky
+√3ky
+2 − cos
+σx + cos kx − cos
+σx − cos√3ky − cos
+
+2 ! σz
+2 ! σy#
+√3ky
+2 ! σy# ,
+√3ky
+
+3kx
+2
+
+kx
+2
+
+3kx
+
+cos
+
+cos
+
+3kx
+2
+
+cos
+
+2 ! σ0
+√3ky
+
+(S44)
+
++t5 cos kzσ0 + (tSO
+
+1 + tSO
+
+2 cos kz) sin
+
++tSO
+
+3
+
++tSO
+
+4
+
+sin kz"√3 sin
+sin kz"√3 sin
+
+kx
+2
+
+sin
+
+3kx
+2
+
+sin
+
+√3ky
+2
+√3ky
+2
+
+for which we have enumerated all symmetry-allowed terms up to the fourth-neighbor hopping. Expanding this model
+around the Γ-A path, we recover the effective Hamiltonian for QNLs in the main text.
+
+I. SG 190
+
+The relevant symmetry generators are C3z, Gy = {My00 1
+(cid:8)A 1
+2 ,− 1
+
+2i(cid:9) [see Fig. S4(i)], the representations for the symmetry operators are
+
+2}, Mz, and T . With the four-state basis
+
+2i, A 1
+
+2 , 1
+
+3 kx + sin 2π
+
+3 ky, ky → − sin 2π
+
+3 kx + cos 2π
+
+2 , 1
+
+2 ,− 1
+
+2i, B 1
+
+2i, B 1
+C3z = eiσzπ/3τ0 ⊗(cid:0) kx → cos 2π
+
+Gy = −iσyτx ⊗ (ky → −ky) ,
+Mz = −iσzτ0 ⊗ (kz → −kz) ,
+T = −iσyτ0K ⊗ (k → −k) .
+
+3 ky (cid:1) ,
+
+(S45)
+(S46)
+(S47)
+(S48)
+
+Then the symmetry allowed lattice Hamiltonian can be obtained as
+
+9
+
+2 ! σzτz
+√3ky
+
+kx
+2 − cos
+
+4 σzτy(cid:1) cos
+
+kz
+2
+
+(S49)
+
+H 190
+
+TB = (cid:20)t1σ0τ0 +(cid:0)t3σ0τx + tSO
++(cid:20)t2σ0τ0 +(cid:0)t5σ0τx + tSO
++(cid:20)tSO
+2 σzτ0 +(cid:0)t6σ0τy + tSO
+
++tSO
+
+7
+
+sin
+
++tSO
+
+8
+
+sin
+
++tSO
+
+9
+
+sin
+
++tSO
+
+10 sin
+
+kz
+
+kz
+
+2 "√3 cos
+2 "√3 sin
+2 "√3 sin
+2 "√3 sin
+
+kz
+
+kz
+
+kz
+
+kz
+
+kz
+
+kx
+2
+
+3 σzτy(cid:1) cos
+5 σzτy(cid:1) cos
+6 σzτx(cid:1) cos
+√3ky
+2
+√3ky
+2
+√3ky
+2
+√3ky
+2
+
+2(cid:21) cos kx + 2 cos
+2(cid:21) cos√3ky + 2 cos
+2  cos
+√3ky
+2(cid:21) sin
+2  2 cos
+σxτx + cos kx − cos
+σxτx − cos√3ky − cos
+2  cos
+√3ky
+
+σxτy − sin
+
+σyτy − sin
+
+kx
+2
+
+kx
+2
+
+cos
+
+sin
+
+sin
+
+sin
+
+kx
+
+1
+
+kx
+
+cos
+
+sin
+
+cos
+
+3kx
+
+2  cos
+2 ! + tSO
+√3ky
+2 ! +(cid:0)t4σ0τx + tSO
+√3ky
+3kx
+2
+2 !
+√3ky
+2 − cos
+2 ! σxτy#
+√3ky
+2 ! σyτx#
+√3ky
+2 ! σyτx#
+√3ky
+2 ! σyτy# ,
+√3ky
+
+3kx
+2
+
++ 2 cos
+
++ cos
+
+cos
+
+cos
+
+3kx
+2
+
+3kx
+2
+
+3kx
+2
+
+kx
+2
+
+kx
+2
+
+for which we have enumerated all symmetry-allowed terms up to the fourth-neighbor hopping. Expanding this model
+around the Γ-A path, we recover the effective Hamiltonian for QNLs in the main text.
+
+V. ZERO LANDAU LEVELS FOR HIGHER-ORDER NL
+
+The topological charge N defined in the main text also determines the number of zero Landau levels (LLs) for the
+effective model Heff. This result has been proved in Ref. [15]. Here, we have already derived the result explicitly for
+Heff for QNLs and CNLs in Table I of the main text. To get the Hamiltonian with magnetic field, we simply replace
+q± by a† and a, respectively, where a† and a are boson operators corresponding to the cyclotron-motion under a
+magnetic field. For instance, Heff for the QNL in SG 174 has topological charge N = 2, hence the number of zero LLs
+LL = αa2σ+ + H.c., for which 0,↓i and 1,↓i are two degenerate
+is accordingly two. Indeed, the Hamiltonian is H174
+states with zero energy. It is also worth noting that higher-order terms that break the emergent chiral symmetry for
+Heff will not remove the zero LLs but will generally split the degeneracy and shift the LLs from zero energy.
+
+VI. CALCULATION DETAILS FOR FIG. 2 OF MAIN TEXT
+
+In Fig. 2 of the main text, we studied the surface states of a lattice model corresponding to SG 183 which contains a
+CNL. The model we take is Eq. (S17) which we derive for SG 183. In calculating the bulk and surface band structures
+in Fig. 2, we take the following model parameters: t1 = 0.1, t2 = 0.01, t3 = −0.04, t4 = 0.004, t5 = 0.2, tSO
+1 = −4,
+2 = −3.85, tSO
+tSO
+4 = 0.77. The calculation in Fig. 2(c) is performed for a slab with a thickness of 35
+layers of lattice sites.
+
+3 = −0.8 and tSO
+
+VII. CALCULATION DETAILS FOR FIG. 3 OF MAIN TEXT
+
+Here we present the calculation details for Fig. 3 of the main text. In Fig. 3(a), we consider breaking C3z for a
+system that contains a QNL. Here, to be specific, we take the lattice model Eq. (S34) for SG 187, and break the C3z
+symmetry by adding a perturbation term
+
+∆H = δtSO
+
+1
+
+sin kz σx.
+
+(S50)
+
+Then we find that the QNL is split into two linear NLs schematically shown in Fig. 3(a).
+
+In Fig. 3(b), we again take the model Eq. (S34) for SG 187, and break the Mz symmetry by adding the the following
+
+perturbation term
+
+10
+
+∆H = δtSO
+
+kx
+2
+
+2 "3 cos
+2 "sin
++√3δtSO
+
+sin
+
+kx
+2
+
+cos kz + cos
+√3ky
+2
+sin kz + sin
+√3ky
+2
+
+kx
+2
+
+sin
+
+2 − cos kx! sin kz# σx
+√3ky
++ sin kx! cos kz# σy.
+√3ky
+2
+
+cos
+
+cos
+
+kx
+2
+
+(S51)
+
+Then we find that the QNL is transformed to four intertwined linear NLs as schematically illustrated in Fig. 3(b).
+
+In Fig. 3(c), we consider breaking the vertical mirror for a system with CNL. First, we show that generally the CNL
+will be gapped and there will appear a triple Weyl point at Γ. This can be done by constructing a k · p Hamiltonian
+that up to the third order, the effective Hamiltonian reads
+
+around the Γ point with the remaining symmetry constraints of C3z and T . In the basis of(cid:8) 3
+2 ,− 3
+z) + dm,4K+ + dm,5K−i σm,
+
+2i(cid:9), we find
+
+2i,  3
+
+(S52)
+
+Heff = Xm=x,y,zhdm,1kz(1 + dm,2k2
+y, K+ = (kx + iky)3 + (kx − iky)3 and K− = i(cid:2)(kx + iky)3 − (kx − iky)3(cid:3). One can check that
+
+k + dm,3k2
+
+such Weyl point possesses a cubic dispersion in the kx-ky plane and a linear dispersion in the kz direction, and it
+carries a Chern number of ±3. This is verified by the lattice model calculation. We take the model (S17) for SG 183,
+and add a perturbation term
+
+where kk =qk2
+
+x + k2
+
+2 , 3
+
+which breaks the Mx symmetry. Then we indeed find that there are two triple Weyl points located at Γ and at A, as
+illustrated in Fig. 3(c) of the main text.
+
+∆H = δtSO
+
+1
+
+sin kz σz,
+
+(S53)
+
+[1] G. Kresse and J. Hafner, Phys. Rev. B 47, 558 (1993).
+[2] G. Kresse and J. Furthmuller, Phys. Rev. B 54, 11169 (1996).
+[3] P. E. Blochl, Phys. Rev. B 50, 17953 (1994).
+[4] J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996).
+[5] A. Jain, S. P. Ong, G. Hautier, W. Chen, W. D. Richards, S. Dacek, S. Cholia, D. Gunter, D. Skinner, G. Ceder, and K.
+
+Persson, APL Materials 1, 011002 (2013).
+
+[6] G. Meisner, H. Ku, and H. Barz, Materials Research Bulletin 18, 983 (1983).
+[7] I. Hase, Phys. Rev. B 65, 174507 (2002).
+[8] Z.-M. Sun, J.-Y. Xie, D.-C. Pan, and J.-G. Mao, Journal of alloys and compounds 430, 71 (2007).
+[9] C. Chen, S.-S. Wang, L. Liu, Z.-M. Yu, X.-L. Sheng, Z. Chen, and S. A. Yang, Phys. Rev. Materials 1, 044201 (2017).
+
+[10] C. J. Bradley and A. P. Cracknell, The Mathematical Theory of Symmetry in Solids (Clarendon, Oxford, 1972).
+[11] G. F. Koster, Properties of the Thirty-Two Point Groups (MIT Press 1963).
+[12] P. Jacobs, Group Theory with Applications in Chemical Physics (Cambridge University Press, Cambridge, 2005).
+[13] B. J. Wieder and C. L. Kane, Phys. Rev. B 94, 155108 (2016).
+[14] H. Watanabe, H. C. Po, M. P. Zaletel, and A. Vishwanath, Phys. Rev. Lett. 117, 096404 (2016).
+[15] Y. X. Zhao, Y. Lu and Hai-Zhou Lu, arXiv:1706.09783.
+
+

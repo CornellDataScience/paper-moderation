@@ -1,0 +1,3389 @@
+1 
+
+ 
+ 
+Tunneling conductance in strained graphene-based superconductor: 
+Effect of asymmetric Weyl –Dirac fermions 
+
+ 
+
+ 
+Bumned Soodchomshom 
+
+ 
+Thailand Center of Excellence in Physics, Commission Higher on Education, Ministry 
+of Education, Bangkok 10400, Thailand 
+
+ 
+ 
+ 
+ 
+ 
+Abstract 
+         Based  on  the  BTK  theory,  we  investigate  the  tunneling  conductance  in 
+uniaxially  strained  graphene-based  normal  metal  (NG)/  barrier  (I)/superconductor 
+(SG)  junctions.  In  the  present model,  we  assume  that  by  depositing  the  conventional 
+superconductor  on  the  top  of  the  uniaxially  strained  graphene,  normal  graphene  may 
+turn  to  superconducting  graphene  with  the  Cooper  pairs  formed  by  the  asymmetric 
+Weyl-Dirac  electrons,  the  massless  fermions  with  direction-dependent  velocity.  The 
+highly  asymmetrical  velocity,  vy/vx>>1,  may  be  created  by  strain  in  the  zigzag 
+direction  near  the  transition  point  between  gapless  and  gapped  graphene.  In  the  case 
+of highly asymmetrical velocity, we find  that  the Andreev reflection strongly depends 
+on  the  direction  and  the  current  perpendicular  to  the  direction  of  strain  can  flow 
+through  the  junction  as  if  there  was  no  barrier.  Also,  the  current  parallel  to  the 
+direction  of  strain  anomalously  oscillates  as  a  function  of  the  gate  voltage  with  very 
+high  frequency.  Our  predicted  result  is  quite  different  from  the  feature  of  the 
+quasiparticle  tunneling  in  the  unstrained  graphene-based  NG/I/SG  conventional 
+junction.  This  is  because  of  the  presence  of  the  direction-dependent-velocity 
+quasiparticles in the highly strained graphene system. 
+ 
+ 
+Keywords:  tunneling  conductance;  strained  graphene;  Specular  Andreev  reflection; 
+N/I/S junction 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+2 
+
+1. 
+Introduction 
+         Since  graphene,  a  one-atomic-thick  monolayer  of  graphite,  has  been  first 
+fabricated  [1],  it  has  become  a  new  material  with  great  potential  for  novel  devices. 
+Because  of  honeycomb-like  lattice,  electrons  in  grapheme  mimic  the  massless 
+relativistic Weyl –Dirac  particles, with  the  Fermi  v elocity  vF  ~  106 m/s  playing  a  role 
+of the speed of light [2-4]. The energy spectrum E(k) of electrons in graphene exhibits 
+2
+2
+= h
++
+the  linear  dispersion 
+v
+E
+k
+k
+,  obeying  the  spectrum  of  the  massless 
+F
+y
+x
+relativistic particles. Electrons propagate in graphene with the constant velocity vF for 
+∂=
+x,x =
+∂
+all  angles  of  incidence  ie.,
+v
+/E
+v
+. By  having  the  carriers  as massless 
+h
+y,x
+k
+F
+relativistic  fermions,  graphene  leads  condensed  matter  into  the  world  of  quantum 
+electrodynamics.  In  contrast  to  the  Schrödinger-lik e  electrons,  massless  relativistic 
+electrons  in  graphene  tunnel  through  a  barrier  without  back  reflection  at  the  normal 
+incidence, known as Klein paradox [5].  
+         Specular  Andreev  reflection  in  graphene  is  one  of  the  interesting  effects 
+appearing  in  graphene  as  a  bridge  between  relativity  and  superconductivity,  since 
+graphene  can  be  a  superconductor  by  mean  of  proximity  effect  [6,  7].  Depositing 
+conventional superconductor on the top of a graphene sheet leads the normal graphene 
+(NG)  to  become  superconducting  graphene  or  graphene  superconductor  (SG)  [6,  7]. 
+Graphene  superconductor  fabricated  by  depositing  Ti/Al  (10/70nm)  and  Pt/Ta/Pt 
+(3/70/3nm)  on  the  top  of  graphene  sheet  give  rise  to  the  critical  temperature  of  1.3K 
+[6]  and  2.5  K  [7],  respectively.    The  relativistic  Cooper  pairs  in  such  system  are 
+r
+formed  by Weyl-Dirac  electrons  with  momentum  k
+  and  spin  up  attracting  to Weyl-
+r
+−   and  spin  down.  The  tunneling  between  normal 
+Dirac  electrons  with  momentum  k
+graphene  and  superconducting  graphene,  a  NG/SG  junction,  was  first  studied  by 
+Beenakker [8]. The combination between relativity and superconductivity  leads  to  the 
+specular  Andreev  reflection,  occurring  when  the  Fermi  energy  EF  of  NG  is  smaller 
+than  the  biased  energy  eV.  The  conductance  drops  to  zero  at  eV=EF,  the  transition 
+point between the retro and the specular Andreev reflections. Effect of the presence of 
+the  specular Andreev  reflection  in NG/SG  junction  also  gives  rise  to  a  new  aspect  of 
+the  tunneling  conductance which  is  quite  different  from  that  in  the  conventional N/S 
+junction  [9,  10].  In  the  case  of  the  junction  having  a  gate  barrier,  NG/I/SG  junction 
+[11-13],  the  conductance  of  the  junction  oscillates  as  a  function  of  the  gate  voltage, 
+also in contrast to the decaying behavior in the conventional N/I/S junction [9, 10]. 
+        Recently,  electronic  properties  of  the  deformed  graphene  system  have  drawn 
+much  attention  [14-22].    Remarkably,  the  locally  strained  graphene  can  induce  a 
+valley-dependent  pseudo-vector  potential  perpendicular  to  the  direction  of  stain,  due 
+to  shifted  valley-dependent  Dirac  point  in  the  strained  region  [14-17].  This  leads  to 
+the  valley  polarization,  an  important  characteristic  for  valleytronics  [14-17].  Also,  a 
+gigantic  pseudo  magnetic  field  greater  than  300  Tesla  resulting  from  the  strongly 
+deformed  graphene  was  observed  in  graphene  nanobubbles  [18].  In  the  case  of 
+graphene  being  uniaxially  strained,  gapless  graphene may  turn  to  gapped  graphene  at 
+the  critical  strain  (SC)  [21-20].  Several  groups  predicted  that  energy  gap  in  graphene 
+may be opened up by  applying  tension  in  the zigzag direction  [21, 22]. As  in contrast 
+to the electrons in the undeformed graphene system, for strain smaller than the critical 
+value  SC,  electrons  in  the  strained-graphene  exhibit  asymmetric  massless  fermions 
+governed by the asymmetric energy dispersion [22]      
+2
+2
+2
+2
+= h
++
+,                            (1) 
+E
+kv
+kv
+                                                 
+y
+y
+x
+x
+
+ 
+
+3 
+
+h
+
+=
+
+h
+
+H
+
+,              (2) 
+
+                                     
+
+∂=
+≠
+∂
+v ≠
+where 
+v
+/E
+v
+  and 
+v
+.  The  new  effect  of  the  direction-
+F
+k
+y,x
+y
+x
+x,x
+dependent  velocity  give  rises  to  the  asymmetrical  transport  property  [19,  21].  The 
+carriers  of  the  strained  graphene  system  with  strain  smaller  than  SC  are  governed  by 
+the two-dimensional asymmetric Weyl –Dirac Hamiltoni an, as is given by [22, 23] 
+−
+kv
+kiv
+0
+
+
+yy
+xx
+
+
++
+kv
+kiv
+0
+
+
+xx
+yy
+where vx and vy depend on the geometry of the deformed graphene [22]. 
+         In  this  paper,  we  propose  a  model  to  show  the  effect  of  asymmetrical  velocity 
+v ≠
+v
+of  the massless  fermions  in  the  deformed  graphene  on  the  specular  Andreev 
+x
+y
+reflection in a NG/SG junction and the tunneling conductance in NG/I/SG junction. In 
+the  case  of  applying  strain  in  the  zigzag  direction,  the  highly  asymmetrical  velocity 
+)  is  found  at  the  strain  approaching  SC.  By  means  of 
+v >>
+~v x
+small
+v
+(
+y
+x
+proximity-induced  superconductor  [6,  7]  when  conventional  superconductor  is 
+deposited on the top of strained graphene, superconductivity occurs due to the Cooper 
+pairs formed by the asymmetric Weyl –Dirac fermions.
+ Our work focuses on the effect 
+of  direction-dependent  velocity  on  tunneling  conductance  of  the  system  with  highly 
+v >>
+~v x
+small
+asymmetric velocity, 
+v
+(
+). Using the Blonder–Thinkham –Klapwijk 
+x
+y
+(BTK)  theory  [10],  we  show  the  new  feature  of  the  specular  Andreev  reflection  and 
+the  conductance  in  the  strongly  deformed  graphene  NG/I/SG  junction  which  are 
+influenced  by  the  effect  of  the  asymmetric  Weyl –Dir ac  fermions,  instead  of  the 
+symmetric Weyl –Dirac  fermions  in  the  undeformed  gra phene  NG/I/SG  conventional 
+junctions  [8,  11-13].  In  our model we  use  the  strain  dependence  of  the  geometry  and 
+hoping energies of grapheme, based on ref.21. 
+ 
+2. 
+         
+ 2.1 Highly asymmetric Weyl –Dirac fermions in deform ed graphene 
+         Based  on 
+the 
+tight-binding  model,  we  straightforwardly  calculate 
+the 
+Hamiltonian  of  free  electrons  in  deformed  graphene  (see  the  deformed  geometry  in 
+Fig.1a) by using the formalism [21-23], as given by 
+=<
+φ
+0
+k(
+
+
+
+
+
+Theory and formalism 
+
+                              
+
+, (3) 
+
+=<
+
+
+
+
+
+
+k(
+
+H
+
+>
+
+>
+
+)
+
+*
+
+φ
+
+=
+
+1
+
+3
+
+2
+
+−=>
+φ
++
++
+=<
+ and we let t1=t2=t=t3/ η  as 
+)
+et
+et
+et(
+)
+k,k
+k(
+where 
+3
+2
+1
+x
+y
+the  hoping  energies  with  the  asymmetric  constant  η .  In  the  case  of  the  deformed 
+r
+r
+r
+>′
+σ
+−
+=<
+>
+σ
+−
+−=<
+>
+=<
+σ
+L,L
+L,L
+graphene,  we  have 
+, 
+  and 
+c,0
+.  When 
+3
+2
+x
+y
+x
+y
+1
+applying  strain  S  in  the  armchair  direction  (along  the  y-direction)  by  using  the 
+model of ref.21, we therefore have 
+=
++
+−=
+)S1)(2/c(
+L y
+                          
+and
+, 
+1(
+L x
+2/3c)pS
+c
+and in the zigzag direction (along the x-direction), we have 
+=′
+=
+−
+=
++
+L y
+1)(2/c(
+)pS
+                          
+c
+1(c
+and
+, 
+2/3c)S1(
+L x
+                                                                                                   (4) 
+
++
+)S1(c
+
+)pS
+
+=′
+
+−
+
+, 
+
+, 
+
+y
+
+k,k
+x
+rr
+σ
+.ki
+
+)
+
+rr
+σ
+.ki
+
+y
+
+k,k
+x
+0
+rr
+σ
+.ki
+
+ 
+
+4 
+
+applied  [21].  By  expanding 
+
+where  the  carbon-carbon  distance  c=0.142  nm  and  the  Poisson ’s  ratio  p=0.165  are 
+1
+]2/
+[
+η−−
+1
+L
+x
+  [22], we  then  have  asymmetric Hamiltonian  in  eqn.(3)  similar  to  eqn.(2) 
+2
+2
+2
+2
+= h
+kv
+k(v
+y
+y
+x
+ can be obtained as 
+
+with  the  Eigen  energy  related  to  eqn.(1)  in  the  form 
+2<η
+
+k y =  
+0
+
+around 
+
+k =
+x
+
+when 
+
+  and 
+
+2<η
+
+)k
+D
+
+)k(φ
+
+cos
+
+E
+
++
+
+−
+
+=
+
+D
+
+k
+
+x
+
+ 
+
+[22]. The asymmetrical velocities when 
+2
+
+)
+
+−
+
+x
+
+x
+
+y
+
+−
+
+y
+
+v
+
+1
+
+. 
+
+v
+
+−
+
+=
+
+−
+)1
+
+−
+)1
+
+h/
+
+(37.3
+
+(37.3
+
+L(t
+
+tL2
+
+η=
+
+ and 
+
+′+
+h/)c
+
+                            
+
+η
+4
+                                                                                                (5) 
+2>η
+Note  that  gapless  graphene  may  turn  to  gapped  graphene  when 
+.  In  this  work, 
+we  focus  only  on  the  case  of  gapless  graphene.  The  carriers  are  massless  fermions, 
+2<η
+  is  necessary.  Using  the  hoping  energies  as  decaying 
+and  the  condition  of 
+r
+r
+σ
+σ
+1
+3
+c
+c
+
+=η
+=
+models 
+[21] with t0 being the hoping energy 
+t
+et
+and 
+t
+et
+o
+o
+in  the  undeformed  graphene,  we  find  that  the  critical  deformation  point  is  found  at 
+2=η
+strain of SC ~0.228855  (
+)  for  strain applying  in  the zigzag direction as  shown  in 
+Fig.(1b).  In  this  numerical  result,  applying  strain  in  the  armchair  direction  gives  rise 
+2<η
+to  the  gapless  graphene,  due  to 
+  for  all  strain.  The  effect  of  asymmetrical 
+velocity  when  applying  strain 
+in 
+the  armchair  direction  yields  very  small 
+67.1~v/v
+6.0~v/v
+.  Unlike  that  in  the  case  of  applying  strain  in  the 
+  or 
+y
+x
+x
+y
+when  S → SC  which  gives  rise  to  the  highly 
+∞→x
+y v/v
+zigzag  direction,  we  have 
+asymmetric  velocity  effect.  Because  of  applying  strain  in  the  zigzag  direction  can 
+cause  the  highly  asymmetric  velocity  for  fermions,  in  the  next  section, we  focus  this 
+effect  on  the  specular  Andreev  reflection  and  the  tunneling  conductance  in  the 
+deformed graphene-based NG/I/SG junction. 
+ 
+ 2.2 Scattering process in deformed graphene-based NG/I/SG junctions 
+         In  this  section,  we  investigate  the  tunneling  conductance  in  NG/I/SG  junctions 
+in the case of graphene sheet being deformed. Graphene sheet is strained in the zigzag 
+direction  (see  Fig.2).  We  focus  on  the  two  currents  flow  in  x-direction  (model  in 
+Fig.2a) and  y-direction (model  in Fig.2b). The  junctions are biased by  the potential V 
+and  the  gate  voltage  VG.  As  we  have  mentioned  above,  the  Cooper  pairs  in  the 
+deformed  graphene-based  superconductor  are  assumed  as  formed  by  the  asymmetric 
+r
+  attracting  to  the  asymmetric 
+Weyl –Dirac  electron  with  the  spin  ↑  and  momentum  k
+r
+Weyl –Dirac  electron  with  spin  ↓  and  momentum  − k
+.  The  BCS  mean  field 
+Hamiltonian  used  to  describe  the  electron  field  in  SG  for  case  of  deformed  graphene 
+is 
+ 
+*
+*
+**
+)y,x(
+)y,x(
+))y,x(U]
++∂σ+∂σ
+∆
+−ψ
+∆+ψψ
++ψ
+ψψ
+v[i(
+H
+~
+dxdy
+dxdy
+(
+v
+∫
+∫
+h
+σ
+σ
+BCS
+xxx
+yyy
+↓↑
+↓↑
+                                                                                                            (6) 
+* σψ   are  the  annihilation    and  creation  field  operators  for  the 
+σψ
+where 
+  and 
+asymmetric  Weyl-Dirac  electron  with  spin  σ ,  respectively.  U(x,y)  is  the  potential 
+y,xσ
+)y,x(∆
+is  the 
+  are  Pauli  spin  matrices,  and 
+energy  of  a  single  electron, 
+
+, 
+
+
+
+
+ 
+
+5 
+
+superconducting  order  parameter.  The  wave  equation,  asymmetric  Weyl-Dirac 
+Bogoliubov-de Gennes  equation  (BdG),  related  to  the BCS-mean-field Hamiltonian 
+in eqn.(6) is therefore given by 
+ 
+
+. 
+
+  
+
+−
+
+v[i
+h
+
++∂σ+∂σ
+∆
+)y,x(
+v
+)y,x(U]
+
+
+xxx
+yyy
+
+
+ψ
+ψ=
+)y,x(E)y,x(
+*
+
+−∂σ+∂σ
+∆
+v[i
+v
+)y,x(
+)y,x(U]
+h
+xxx
+yyy
+
+
+                                                                                                          (7) 
+In  eqn.  (7),  we  have  canceled  the  Dirac  point  shifting  by  assuming  that  graphene  is 
+homogeneously  strained.  Electrons  have  the  same  Dirac  point  for  all  regions  so  that 
+−
+→
+)k,k
+)k,k(
+k(
+we  can  obtained 
+. Note  that  due  to  the  effect  of  the Dirac 
+x
+yD
+y
+x
+point shifting, the case of the locally strained graphene is only considered as a pseudo 
+vector potential in the strained region [14-16].    
+         Let  we  first  consider  the  scattering  process  due  to  the  current  parallel  to  the 
+direction of  strain  (Ix). This model  is  illustrated  in Fig.2a.  In  this case,  the parallel  (or 
+conservation)  momentum  is  the  wave  vector  in  the  y-direction  ky=k//.    The 
+superconducting order parameter with phase φ  and the potential energy are defined as        
+φ
+i
+−Θ∆=
+∆
+)y,x(
+e
+x(
+)d
+                                                 
+, 
+−
++
+−
+−−Θ−=
++−ΘΘ
+−Θ+
+and       
+E
+)dx(
+)dx(
+)V
+)y,x(U
+)dx(
+E(
+)x(
+E(
+)U
+F
+F
+F
+G
+                                                                                                         (8) 
+respectively.  EF,  VG  and  U  are  the  Fermi  energy  in  NG,  the  gate  potential  in  the 
+barrier  (I)  and 
+in  superconducting  electrode  SG, 
+the  electrostatic  potential 
+respectively.  The wave solution to the BdG equation for each region is obtained as of 
+the form 
+                               
+
+<ψ
+x(
+
+ψ+
+b
+
+ψ+
+a
+
+)y,0
+
+e)
+
+ik
+
+, 
+
+y
+
+//
+
+                         
+
+<<ψ
+x0(
+
+)y,d
+
+and                           
+
+<ψ
+d(
+
+)y,x
+
++
+
++
+
+ψ=
+(
+
+Ne
+ψ=
+l(
+
+Ie
+ψ=
+c(
+
+−
+
+Ne
+ψ+
+m
+
+Ie
+ψ+
+d
+
+−
+
+Sh
+
+Se
+
++
+
+ψ+
+p
++
+Ih
+ik
+y
+, 
+T
+
+e)
+
+−
+
+//
+
+Nh
+
++
+ψ+
+q
+
+,       
+ik
+
+e)
+
+Ih
+
+−
+
+y
+
+//
+
+, 
+
+where        
+
+ψ
+
+Ne
+
+±
+
+=
+
+,1
+
+
+
+
+
+
+±
+
+h
+
+kv
+x
+
+E
+
+F
+
+e,Nx
+
++
+E
+−
+kvi
+h
+y
+
+0,0,
+
+//
+
+                  
+
+ψ +
+Nh
+
+=
+
+
+
+
+
+
+,1,0,0
+
+(
+
+E
+
+F
+
+h
+
+kv
+x
+
+h,Nx
+
+−
+−
+
+E
+kvi
+h
+y
+
+//
+
+)
+
+
+
+
+
+
+
+
+
+
+T
+
+±
+
+ik
+
+x
+
+e,Nx
+
+e
+
+,  
+
+x
+
+h,Nx
+
+ik
+
+e
+
+, 
+
+                  
+
+ψ
+
+=
+
+Ie
+
+±
+
+
+
+,1
+
+
+
+(
+
+±
+
+h
+
+E
+F
+kv
+x
+
++
+
+V
+G
+−
+
++
+E
+kvi
+h
+y
+
+//
+
+),
+
+0,0
+
+e,Ix
+
+                  
+
+ψ
+
+=
+
+Ih
+
+±
+
+
+
+
+
+
+,1,0,0
+
+(
+
+E
+F
+kv
+x
+
+±
+
+h
+
++
+
+V
+G
+−
+
+−
+E
+kvi
+h
+y
+
+//
+
+)
+
+h,Ix
+
+T
+
+T
+
+
+
+
+
+
+
+
+
+
+
+e
+
+e
+
+±
+
+ik
+
+x
+
+e,Ix
+
+±
+
+ik
+
+x
+
+h,Ix
+
+, 
+
+, 
+
+ψ
++
+Se
+
+=
+
+ 
+
+ψ
+
+−
+Sh
+
+=
+
+
+
+,1
+
+
+
+
+,1
+
+
+
+(
+
+Ω++
+UE
+F
+−
+kv
+kvi
+h
+h
+e,Sx
+x
+//y
+
+),
+
+φ−β−
+i
+i
+e
+
+φ−β−
+i
+i
+e,
+
+(
+
+Ω++
+UE
+F
+−
+kv
+kvi
+h
+h
+e,Sx
+x
+//y
+
+T
+
+
+
+
+
+)
+
+ik
+e
+e,Sx
+
+x
+
+, 
+
+E
+F
+kv
+h
+x
+
+Ω−+
+U
+−
+kvi
+h
+y
+
+h,Nx
+
+(
+
+−
+
+),
+
+e
+
+φ−β
+i
+i
+
+φ−β
+i
+i
+
+e,
+
+(
+
+−
+
+//
+
+E
+F
+kv
+h
+x
+
+Ω−+
+U
+−
+kvi
+h
+y
+
+h,Nx
+
+T
+
+)
+
+
+
+
+
+
+//
+
+−
+ik
+h,Sx
+
+x
+
+e
+
+ 
+
+6 
+
+]
+
+A
+sin
+
+, 
+
+2
+
+[
+
+θ
+
+A
+
+]
+
+θ
+]
+
+sin
+
+2
+
+θ
+][
+
+,
+
+k
+
+h,Nx
+
+=
+
+h
+
+v
+
+−
+
+)E
+
+[
+
+θ
+
+−
+
+A
+)E
+
+θ
+cos[
+2
+y
+θ
+
++
+v]
+
+E(
+
+F
+2
+cos
+
+2
+x
++
+V
+G
+2
+θ
+
+[
+
+ 
+
+with 
+
+k
+
+e,Nx
+
+=
+
+)E
+
++θ
+v][
+
+cos[
+2
+y
+θ
+I
+2
+
+]
+
+E(
+
+F
+cos
+
++
+2
+
+h
+
+v
+
++
+
++
+
+)E
+
+2
+x
+V
+G
+F
+2
++θ
+[
+v]
+cos
+I
++
+Ω+
+U
+)
+2
+
+F
+cos
+
+]
+
+]
+
+[
+
+h
+
+h
+
+[
+
+]
+
+ 
+
+]
+
+k
+
+, 
+
+h
+
+v
+
+h
+
+v
+
+v
+
+]
+
+θ
+
+=
+
+=
+
+, 
+
+k
+
+, 
+
+k
+
+=
+
+k
+
+[
+
+θ
+
+v
+
+=
+
+=
+
+I
+]
+
+e,Ix
+
+h,Ix
+
+θ
+S
+
+h,Sx
+
+e,Sx
+
++
+v]
+
++
+v]
+
+θ
+SA
+
+IA
+]
+
+E(
+2
+x
+
+F
+cos
+
+F
+cos
+
+E(
+2
+x
+
++θ
+[
+v]
+S
+
+SI
+2
+sin
+
+IA
+2
+sin
+[
+
+E(
+2
+x
+E(
+2
+x
+
+θ
+cos[
+SA
+2
+2
+θ
+[
+sin
+SA
+y
+
+cos[
+2
+IA
+y
+Ω−+
+U
+)
+2
+
+cos[
+2
+sin
+y
+θ
+cos[
+2
+y
+=β±
+2
+i
+2
+2
+2E
+∆−
+±
+∆
+=Ω
+∆−
+E
+E(
+/)
+e
+. 
+and 
+and 
+                                                                                                          (9) 
+We can easily calculate the angles of incidences as a function of the injected angle,  θ , 
+for  quasielectrons  and  quasiholes  in  the  NG-,  I-  and  SG-  regions  through  the 
+formalism which  is  related  to  the  conservation  of  the  parallel  component  k//,  as  given 
+by 
+=θ
+θ
+θ
+=
+θ
+=θ
+     
+cos[
+]
+sin[
+k
+sin[
+/]
+/]
+cos[
+]
+k
+sin[
+cos[
+/]
+]
+k
+h,Nx
+A
+A
+e,Ix
+I
+I
+//
+e,Nx
+θ
+θ
+=
+ 
+k
+sin[
+/]
+cos[
+]
+       
+θ
+θ
+=
+θ
+θ
+k
+sin[
+/]
+cos[
+]
+k
+sin[
+/]
+cos[
+]
+h,Ix
+IA
+IA
+e,Sx
+S
+S
+h,Sx
+SA
+                                                                                                       (10) 
+The  coefficients  a,  b,  l,  m,  p,  q,  c,  and  d  can  be  calculated  by  using  the  boundary 
+conditions at x=0 and x=d, as given by  
+ 
+       
+, and 
+<ψ=
+<<ψ
+<<ψ=
+<ψ
+x
+0(
+)y,d
+d(
+x(
+)y,0
+0(
+x
+)y,d
+=
+=
+=
+dx
+0x
+0x
+                                                                                                       (11) 
+After  substituting  the  wave  function  in  eqn.(9)  into  the  boundary  condition  in 
+eqn.(11), we  can  thus  determine  the Andreev  reflection  amplitude,  a,  and  the  normal 
+∞→GV
+d →   for  NG/I/SG  junction  for  the 
+0
+reflection  amplitude,  b.  By  setting
+  and 
+G v/
+dV~Z
+case  of  the  thin  barrier  limit,  we  have  defined 
+denoted  as  the  barrier 
+h
+F
+strength. The Andreev and the normal reflection amplitudes are given by 
+ 
+
+)y,x
+
+=
+dx
+
+   
+
+SA
+
+θ
+
+. 
+
+k
+
+                               
+
+−
+
+a
+
+=
+
+and 
+
+−
+−
+A(4
+e)CC)(A
+e
+1e
+2
+1
+2e
+iZ2
++
++
++
+e2mm
+)mm(
+1
+2
+3
+4
+
+x
+
+φ−
+i
+
+iZ2
+
+β
+i
+
+x
+
+e
+
+, 
+
+iZ2
+
+x
+
+x
+
+, 
+
+b
+
+=
+
+iZ2
+
+        
+
+                                
+
++
++
++
+b
+b
+b(
+)b
+e2
+2
+1
+4
+3
++
++
++
+e2mm
+)mm(
+2
+1
+4
+3
+                                                                                                    
+respectively, where 
+iZ4
+=
++−
+e1(
+em
+1
+β
+i2
++−=
+e1(m
+2
+{
++−=
+e1(
+3
+{
+=
++
+e1([Am
+2e
+4
+
++
++
++−
++−
+)C1)(C1)(A1)(A1)(
+h
+2e
+1
+2
++−
++−
++
++
+)C1)(C1)(A1)(A1)(
+, 
+1
+h
+2e
+2
+} {
+})CC1)(
+β
+β
+i2
+i2
++−+
++−
+−
+A)CC)(
+e1(
+, 
+2
+21
+1
+h
+}]A)CC1)(
+} {
+β
+i2
++−−
++−
+−
+)CC)(
+e1(
+21
+h
+1
+2
+
+        
+
+        
+
+β
+i2
+
+β
+i2
+
+m
+
+, 
+
+x
+
+        
+and 
+
+, 
+
+7 
+
+, 
+
+ 
+
+        
+
+        
+
+        
+
+        
+
+b
+1
+b
+
+2
+
+b
+
+3
+
+b
+
+4
+
+iZ4
+
+−=
+e
+
++−−=
+e1(
+β
+i2
++=
+e1(
+{
++
+e1(A
+1e
+
+=
+
+β
+i2
+
+x
+
+, 
+
++−
+e1(
+β
+i2
+
++
++
++−
++−
+)C1)(C1)(A1)(A1)(
+1e
+1
+h
+2
++−
++−
++
++
+)C1)(C1)(A1)(A1)(
+1e
+1
+h
+2
+β
+i2
++−
+−
++−−
+e1(A)CC)(
+)CC1)(
+1
+21
+h
+2
+β
+β
+i2
+i2
++−
++
+−
+A)CC1)(
+)CC)(
+21
+1
+2
+−
++
+E
+E
+E
+E
+−
+−
+−+
+kv)(
+kvi
+kv
+h
+h
+h,Nx
+x
+e,Nx
+x
+y
+Ω−+
+U
+E
+Ω+
++
+U
+E
+F
+−
+−
+kv
+kvi
+kvi
+kv
+h
+h
+h
+x
+h,Sx
+//y
+x
+y
+
++−+
+e1(
+
+kvi
+h
+y
+
+,        
+
+}h
+, 
+
+e,Sx
+
+A
+
+C
+
+−
+
+=
+
+=
+
+, 
+
+, 
+
+2
+
+F
+
+F
+
+F
+
+//
+
+//
+
+//
+
+h
+
+h
+
+h
+
+, 
+
+ 
+
+with 
+
+A
+
+)2(1e
+
+=
+
+              
+
+C
+1
+
+=
+
+F
+
+Z
+
+)
+
+. 
+
+(Z
+
+x =
+
+and 
+
+v
+v
+x
+                                                                                                       (12) 
+2.3  Formulism  of  the  tunneling  conductance  and  the  Andreev  reflection 
+probability amplitude  
+       We  can  then  calculate  the  conductance  of  the  junction  using  the  Blonder–
+Thinkham –Klapwijk (BTK) formalism [10]. The dimension less conductance  in  the x-
+direction is, therefore, given by 
+                                        
+θ
+C
+θ∫
+d
+0
+
+A
+
+
+
+
+
+
+
+
+
+
+The angle-dependent Andreev reflection probability amplitude is also defined as  
+2
+2
+2
+2
+y
+x
+
+ .                                      (13) 
+
+θ
+cos
+A
+θ
+cos
+
+2
+
+−
+
+
++θ
+v][
+
++θ
+v][
+
+where 
+
+~G
+x
+
++θ
+(1(
+
+=θ
+C
+
++
+v]
+
+θ
+)(b
+
+θ
+)(a
+
+      
+
+E
+E
+
+E
+E
+
+cos
+
+cos
+
+cos
+
+cos
+
++
+−
+
+θ
+][
+
+θ
+][
+
+cot
+
+sin
+
+sin
+
+sin
+
+v
+v
+
+
+
+
+
+2
+y
+
+2
+y
+
+2
+x
+
+[
+
+θ
+
+[
+
+θ
+
+2
+x
+
+x
+
+y
+
+F
+
+F
+
+2
+
+2
+
+]
+
+A
+
+2
+
+−
+
+−
+1
+
+v
+
+1
+
+v
+
+v
+
+2
+
+2
+
+)
+
+2
+
+)
+
+ ,          
+
+)
+
+θ
+cos
+A
+θ
+cos
+
+2
+
+θ
+)(a
+
+     (14) 
+
+          
+
+θ
+(~)(A
+x
+
+x
+
+[
+
+2
+
+2
+
+v
+
+θ
+
+cos
+
+2
+2
++
+θ
+v]
+[
+sin
+]
+A
+y
+A
+x
+)(A y θ ,  the  conductance  and  the  Andreev  reflection 
+         In  the  case  of  Gy  and 
+probability  amplitude  are  related  to  the  current  Iy.  They  can  easily  be  determined  by 
+v ↔   in  the  previous  formulae,  ie., 
+↔ and 
+interchange 
+v
+v(G~G
+)v
+y
+y
+y
+x
+x
+x
+↔ . 
+v(A~A
+)v
+y
+x
+y
+ 
+3. 
+Result and discussion 
+)(A x θ  
+         We  first  consider  the  angle-dependent  Andreev  probability  amplitudes 
+)(A y θ   using  eqn.(14)  for  the  various  values  of  strain S=0,  0.2,  0.22  and  0.2288. 
+and 
+As  we  mentioned  in  the  previous  section  (see  Fig.  1b),  the  transition  point  between 
+gapless  graphene  to  gapped  graphene  is  at  strain  of  SC=0.228855.  In  this  section  we 
+need  value  of  strain  near  the  critical  value  SC  to  show  the  effect  of  the  highly 
+asymmetric  velocity  vy>>vx  on  the  Andreev  reflection.  The  Andreev  probability 
+=
+=
+∆=
+∆
+0Z =  as seen in 
+E,5U
+eV,5.0
+,0
+ and
+amplitudes are studied for the case of 
+F
+Figs.3a-3b.  Our  focus  is  to  show  the  effect  of  the  asymmetric-velocity  fermions, 
+
+ 
+
+8 
+
+y
+
+which  form  the  Cooper  pairs  in  the  system,  on  the  Andreev  reflection  at  the  NG/SG 
+)(A x θ is 
+interface. We  find  that  in  case  of  the  current  in  the  x-direction  (see  Fig.3a), 
+suppressed by  strain  for  large angle of  incidence. For all values of  strain,  it  is  smaller 
+than  that  in  the  unstrained  graphene  system  (Strain=0).  When  increasing  strain 
+)(A x θ is  suppressed,  except  for  the 
+approaching  SC~0.228855  (vy/vx  ~  very  large), 
+0=θ
+normal  incidence.  This  is  to  say  that  it  allows  only  the  current  at 
+which 
+A x = ,  showing  the  presence  of  the  Klein  tunneling  [5]  due  to  relativistic 
+1
+yields
+)(A y θ is  almost~1  for  all 
+fermions with  zero mass.  Increasing  strain  approaching SC, 
+angles  of  incidence,  which  is  rather  different  from  the  current  in  the  x-direction  (see 
+Andreev 
+the 
+behaviour, 
+Fig.3b). 
+This 
+novel 
+direction-dependent 
+≠θ)(A x
+)(A y θ , 
+reflection
+results 
+from 
+the  asymmetric  massless 
+fermions 
+v ≠
+  in  strained graphene  system,  in contrast  to  the Andreev  reflection of  the 
+v
+with
+x
+y
+v =
+v
+symmetric  massless  fermions 
+  in  the  unstrained  graphene  NG/SG  system 
+x
+)(A y θ  [8]. 
+)(A x θ = 
+with yielding 
+         Based  on  eqn.(13),the  tunneling  conductances  Gx  and  Gy  as  a  function  of  the 
+biased  voltage  V  are  first  studied  in  case  of  Z=0,  NG/SG  junctions.  The 
+∆
+= 5.0
+∆= 5U
+E F
+parameters,
+, 
+  set  as  weakly  doped  graphene  in  the  SG  region  and 
+E F <
+eV
+are  assumed  to  show  the  effect  of  the  specular Andreev  reflection when 
+on 
+the conductances. We first consider Gx for strain of S=0, 0.2, and 0.2288 (see Fig.4a). 
+The  curve,  for  strain=0,  is  to  show  the  conductance  due  to  the  direction-independent 
+velocity  fermions  in  the  unstrained  graphene  NG/SG  conventional  junction,  as 
+predicted previously  in  refs. 11-13.  In  this direction,  increasing  strain approaching SC 
+Sc→   gives  rise  to  vx~very  small. 
+leads  to  the  conductance  vanishing.  Strain
+Previously obtained  in eqn.(5), we have vx(strain=0, 0.2 and 0.2288)= vF, 0.342292vF 
+and  0.014824vF,  respectively. As  very  different  from Gx,  the  conductance Gy  seen  in 
+Fig.4b  increases  with  increasing  strain  for  all  eV.  Remarkably,  for  strain=0.2288  a 
+similar perfect current switch at eV=EF, the transition point between specular Andreev 
+reflection  and  the  retro  Andreev  reflection  is  observed  in  this  junction.  This  is  very 
+different  from  that  in  the  unstrained  case  (strain=0,  see  refs.11-13)  and  it  may  be 
+applicable  for  nanoswicth  devices. The  strain  dependence  of  velocity  vy(strain=0,  0.2 
+,and  0.2288)=  vF  ,  1.08075vF,  and  1.0928  vF,  respectively.  The  velocity  ratio 
+vy/vx=73%  for  strain  =0.2288.  As  a  conclusion,  rising  velocity  ratio  vy/vx  >>1  by 
+increasing strain approaching SC results in better current switch for the conductance in 
+the y-direction at eV=EF.  
+          We  next  consider  the  case  of  the  heavily  doped  graphene  in  the  SG 
+= 1000
+∆
+region
+U
+  for  no  barrier  Z=0  and  the  case  of  highly-asymmetric-velocity 
+particles  (vy/vx=73%  for  strain  =0.2288),  as  seen  in  Figs.5a-5b.  The  conductances  in 
+NG/SG junction are calculated as a function of the biased voltage V for various values 
+of EF. As  a  result,  the  behavior  of  the  conductance Gy  is  rather  different  from  that  of 
+∆1.0
+∆5.0
+,  ∆   and 
+the  conductance  Gx.  In  case  of  the  conductance  Gy,  for  small  EF=
+,
+∆5.1
+,  the  behavior  of  conductance  is  similar  to  that  of  Gy  for  the  case  of  weakly 
+∆
+doped graphene (U~small). For the large Fermi energy EF~
+1000 , the conductance is 
+similar  to  the  case  of  the  unstrained  graphene-based NG/SG  junction  [8,  11-13],  as  is 
+strain-independent.  But  in  the  case  of  Gx,  the  conductance  is  rather  small.  The 
+∆
+1000 .  
+conductanc peak due to the Andreev resonance is found for the large EF~
+
+ 
+
+9 
+
+         In  Figs.  6-7,  the  conductances  are  plotted  as  a  function  of  the  barrier  strength 
+  in  NG/I/SG  junctions,  for  various  values  of  strain  0,  0.20,  0.22  and 
+Z~
+v/dV
+h
+G
+F
+∆100 , and 
+0.2288. In Fig6a, the conductance Gy is first investigated. We set U=0, EF=
+eV=0,  as  the  case  of  zero  biased  voltage  and  as  the  case  of  the  non-Fermi-energy 
+mismatch in NG and SG. For strain=0, we have the same curve as that in refs.12-13 of 
+the  unstrained  case.  Interestingly, when  increasing  strain  approaching  SC,  the  current 
+flows  through  the  junction  with  G~2  as  if  there  was  no  barrier.  This  is  to  show  that 
+when  vy/vx>>1,  the  general  effect  of  the  gate  voltage  is  destroyed  by  the  highly-
+asymmetric-velocity  effect  for  Gy.  In  Fig6b,  we  take  into  account  the  effect  of  the 
+∆900 .  Increasing  U  decreases  the  amplitude  of  Gy  [11-
+Fermi-energy  mismatch  U=
+13].  We  find  that  increasing  strain  approaching  SC  also  destroys  the  effect  of  gate 
+voltage,  like  the  behavior  of  the  case  for  U~0.  Let  us  next  consider  the  conductance 
+Gx  as  a  function  of  the  barrier  strength  Z,  which  is  numerically  shown  in  Fig7.  For 
+∆100 ,  and  eV=0,  the  anomalous 
+U=0  (case  of  non-Fermi-energy  mismatch),  EF=
+conductance  oscillation  with  very  high  frequency  is  found  when  strain  is  of  0.2288 
+(vy/vx=73%).  The  increasing  frequency  of  the  oscillation  in  Gx  can  be  described  via 
+eqn.(12).  The  anomalous  oscillation  is  due  to  the  term  of  “exp[iZ(v F/vx)] ”.  This  is  to 
+show  straightforwardly  that  the  frequency  related  to  the  term  of  “exp[iZ(v F/vx)] ”  is 
+proportional  to  ~1/vx.  The  small  value  of  vx=0.014824vF  for  strain  of  0.2288  gives 
+rise  to  the  high  frequency.  However,  this  anomalous  behavior,  which  is  rather 
+different  from  the  case  of  the  unstrained  NG/I/SG  junction  [11-13],  is  not  observed 
+∆900 ). 
+when U is very large (see Fig.7b for the case of U=
+ 
+4. 
+Summary and conclusion 
+         We  have  investigated  the  conductances  in  strained  graphene-based  NG/I/SG 
+junctions where  graphene  sheet  is  strained  in  the  zigzag  direction.  This work  studied 
+the  conductance  based  on  the  BTK  formalism  and  based  on  the  assumption  that  by 
+depositing  conventional  superconductor  on  the  top  of  the  strained  graphene  sheet, 
+graphene  can  be  a  superconductor  with  the  Cooper  pairs  formed  by  the  asymmetric 
+Weyl-Dirac  electrons,  instead  of  the  symmetric  Weyl-Dirac  electrons  in  the  case  of 
+unstrained  graphene  system.  Strain  in  the  zigzag  direction  gives  rise  to  the  highly-
+asymmetric-velocity  massless 
+fermions, 
+asymmetric  Weyl –Dirac 
+fermions 
+v <<
+v
+, as  the carriers of  the  system when  strain approaches  the critical point, 
+with
+x
+y
+the  point  of  the  transition  between  gapless  and  gapped  graphene  [21-22].  In  our 
+model,  we  used  the  geometrically  deformed  graphene  based  on  the  model  of  ref.21, 
+leading  to  the  critical  strain  SC~0.228855.  In  this  work,  we  focused  on  the  effect  of 
+strain  near  the  SC  which  causes  the  strong  effect  of  the  highly-asymmetric-velocity 
+fermions  on  the  Andreev  reflection  and  the  conductances  of  the  junctions.  The 
+currents  were  investigated  for  the  two  cases  which  are  parallel  and  perpendicular  to 
+the  direction  of  strain.  As  a  result,  because  we  have  taken  into  account  the  effect  of 
+v ≠
+v
+  resulting  from  strain  on  the  superconducting  transport 
+asymmetric  velocity 
+x
+y
+property,  we  found  a  novel  feature  of  the  Andreev  reflection  and  the  tunneling 
+conductance  which  have  not  been  predicted  in  the  previously  unstrained  graphene-
+based  NG/I/SG  junctions  [8,  11-13].  All  of  our  theoretically  predicted  results  should 
+be experimentally testable.  
+ 
+ 
+ 
+
+ 
+
+10 
+
+References 
+[1] K.S. Novoselov et al., Science 306 (2004), 666. 
+[2] K.S. Novoselov et al., Nature 438 (2005), 197. 
+[3] Y. Zhang et al., Nature 438 (2005), 201. 
+[4] P. R. Wallace, Phys. Rev. 71 (1947), 622. 
+[5] O. Klein, Z. Phys. 53 (1929),157. 
+[6] H.B. Heersche et al., Nature 446 (2007), 56. 
+[7] C. O-Aristizabal et al., Phys. Rev. B 79 (2009), 165436. 
+[8] C.W.J. Beenakker, Phys. Rev. Lett. 97 (2006), 067007. 
+[9] A. F. Andreev, Sov. Phys. JETP 19 (1964), 1228. 
+[10] G. E. Blonder et al., Phys. Rev. B 25 (1982), 4515. 
+[11] S. Bhattacharjee and K. Sengupta, Phys. Rev. Lett. 97 (2006) 217001. 
+[12] J. Lender and A. Sudbo, Phys. Rev. B 77 (2008), 064507. 
+[13] B. Soodchomshom et al., Physica C 469 (2009), 689. 
+[14] F. Zhai et al., Phys. Rev. B 82 (2010), 115442.  
+[15] Y. Lu, J. Guo, Appl. Phys. Lett. 97 (2010), 073105. 
+[16] V. M. Pereira, A. H. C. Neto, Phys. Rev. Lett. 103 (2009), 046801 
+[17] T. Low, F. Guinea, Nano Lett. 10 (2010), 3551.  
+[18] N. Levy et al., Science 329 (2010), 544. 
+[19] J. Kang et al., Appl. Phys. Lett. 96 (2010), 252105 
+[20] Z. H. Ni et al., ACS Nano 2 (2008), 2301 
+[21] V. M. Pereira, et al., Phys. Rev. B 80 (2009), 045401. 
+[22] S.-M. Choi et al., Phys. Rev. B 81 (2010), 081407 (R). 
+[23] O. B.-Treidel et al., Phys. Rev. Lett. 104 (2010), 063901. 
+ 
+ 
+ 
+ 
+ 
+Figure captions 
+ 
+Figure  1  shows  (a)  the  geometry  of  graphene  structure  where  the  hoping  energies 
+r
+r
+1, σσ
+≠
+=
+t
+t
+t
+related  to  the  displacement  vectors  of  the  nearest  neighbor  atoms   
+ 
+2
+3
+2
+1
+r
+3σ
+,  respectively and  (b)  the velocity  ratio vy/vx  for graphene  sheet being  strained 
+and 
+in  the  zigzag  or  x  direction  and  the  armchair  or  y  direction.  The  highly  asymmetric 
+velocity  is  found  only  the  case  where  graphene  is  strained  in  the  zigzag  direction, 
+vy/vx ∞→  for strain →  SC. 
+ 
+Figure  2  shows  the  present  models  of  strained  graphene-based  NG/I/SG  junctions 
+where  graphene  is  strained  in  the  zigzag  direction  for  (a)  the  case  of  current  Ix 
+parallel  to  the  direction  of  strain  and  (b)  the  case  of  current  Iy  perpendicular  to  the 
+direction  of  strain.  The  two  junctions  are  biased  by  the  voltage  V  and  the  gate 
+potential  applied  in  the  barrier  is  denoted  as VG.  The  injected  angle  of  quasiparticles 
+at the interface of the NG/I/SG junction is denoted as θ . 
+ 
+Figure  3  shows  the  effect  of  strain  on  angle-dependent  Andreev  reflection 
+∆= 5U
+probability  amplitude 
+in  NG/I/SG 
+junctions,  where  we  set  Z=0, 
+, 
+
+ 
+
+11 
+
+∆
+= 5.0
+E F
+and  eV=0,  (a)  for  Ax  due  to  the  current  in  the  x-direction  and  (b)  for  Ay 
+due to the current in the y-direction. 
+ 
+Figure  4  shows  the  effect  of  strain  on  the  conductances  as  a  function  of  the  biased 
+∆
+= 5.0
+∆= 5U
+E F
+voltage V  in NG/I/SG  junction  for  Z=0, 
+and 
+,  (a)  for  conductance 
+Gx  related  to  the  current  in  the  x-direction  and  (b)  for  conductance  Gy  related  to 
+current  in  the  y-direction.  Strain  increases  current  in  the  y-direction  but  decreases 
+current in the x-direction. 
+Figure 5  shows  the  conductances  as  a  function  of  the  biased  voltage V  in NG/I/SG 
+∆
+= 1000
+junction  for  Z=0,  strain  of  0.2288,  and 
+U
+,  (a)  for  conductance  Gy  with 
+various values of EF and (b) for conductance Gx with various values of EF. 
+ 
+Figure  6  shows  the  conductance  Gy  as  a  function  of  the  barrier  strength  Z  in 
+∆
+= 100
+0U =   (case  of EFS/EFN=1) with 
+E F
+NG/I/SG  junction  for  eV=0,  and 
+,  (a)  for 
+= 900
+∆
+  (case  of  EFS/EFN=10)  with  various 
+U
+various  values  of  strain  and  (b)  for 
+values of strain. 
+ 
+Figure  7  shows  the  conductance  Gx  as  a  function  of  the  barrier  strength  Z  in 
+= 100
+∆
+0U =   (case  of  EFS/EFN=1)  with 
+E F
+,  (a)  for 
+NG/I/SG  junction  for  eV=0,  and
+= 900
+∆
+various  values  of  strain  and  (b)  for 
+U
+  (case  of  EFS/EFN=10)  with  various 
+values of strain. 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+(1a) 
+
+12 
+
++x 
+
++y 
+
+ 
+
+ x=Zigzag direction 
+ y=Armchair direction 
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+           
+                                                  
+ 
+
+ 
+ 
+                                      
+ 
+ 
+
+Strain
+
+                   
+
+Figure 1 
+
+                                            
+ 
+ 
+ 
+ 
+(1b) 
+ 
+                       
+                                 
+6.1
+5.6
+5.1
+4.6
+4.1
+3.6
+3.1
+2.6
+2.1
+1.6
+1.1
+0.6
+0
+
+x
+V
+/
+y
+V
+
+Gapless graphene 
+2<η
+for 
+ 
+
+Gapped graphene 
+2>η
+for 
+ 
+
+Sc~0.228855      
+     ( =η 2) 
+
+Armchair 
+Zigzag
+
+13 
+
+ 
+
+θ  
+
+ 
+
+ 
+ 
+                                            
+ 
+ 
+ 
+ 
+
+(2a) 
+
+                                 
+ 
+ 
+ 
+ 
+ 
+
+(2b) 
+
+θ  
+
+                                              
+
+ 
+
+ 
+Figure 2 
+ 
+ 
+
+14 
+
+=0.2288
+=0.22
+=0.2
+Strain=0
+
+∆=
+5U
+=
+5.0
+E
+F
+=
+eV
+0
+=
+0Z
+
+∆
+
+ 
+
+-0.25
+
+0
+
+0.25
+
+0.50
+
+ 
+
+1.0
+
+0.8
+
+0.6
+
+0.4
+
+0.2
+
+0
+-0.50
+
+1.0
+
+0.8
+
+0.6
+
+0.4
+
+0.2
+
+ 
+
+ 
+ 
+ 
+
+(3a) 
+
+)
+θ
+(
+x
+A
+
+        
+ 
+
+(3b) 
+
+)
+θ
+(
+y
+A
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+0
+-0.50
+
+-0.25
+
+=0.2288
+=0.22
+=0.2
+Strain=0
+
+0
+
+θ/π
+
+0.25
+
+0.50
+
+ 
+
+ 
+Figure 3 
+
+15 
+
+∆=
+5U
+=
+E
+5.0
+
+F
+
+ 
+
+∆
+
+=0.2288
+=0.2
+Strain=0
+
+0.5
+
+1.0
+
+1.5
+
+ 
+
+=0.2288
+=0.2
+Strain=0
+
+0.5
+
+1.0
+
+eV/∆
+
+1.5
+
+ 
+
+ 
+Figure 4 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+(4a) 
+
+1.6
+
+1.2
+
+X
+G
+
+0.8
+
+      
+ 
+ 
+(4b) 
+
+y
+G
+
+0.4
+
+0
+
+0
+
+2.5
+
+2.0
+
+1.5
+
+1.0
+
+0.5
+
+0
+0
+
+    
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+                
+2.5
+(5a) 
+
+2.0
+
+1.5
+
+1.0
+
+0.5
+
+0
+0
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0
+0
+
+Gy
+
+       
+ 
+
+(5b) 
+
+Gx
+
+       
+
+     
+
+16 
+
+=1000∆
+=10∆
+=1.5∆
+=1∆
+=0.5∆
+EF=0.1∆
+
+∆
+=
+1000
+U
+=
+Strain
+2288
+.0
+
+ 
+
+0.5
+
+1.0
+
+1.5
+
+    
+
+=1000∆
+=10∆
+=1∆
+=0.5∆
+EF=0.1∆
+
+∆
+=
+1000
+U
+=
+Strain
+.0
+2288
+
+ 
+
+0.5
+
+1.0
+
+1.5
+
+eV/∆
+
+ 
+
+ 
+ 
+Figure 5 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+(6a) 
+
+y
+G
+
+(6b) 
+
+y
+G
+
+ 
+
+2.2
+
+2.0
+
+1.8
+
+1.6
+
+1.4
+
+1.2
+
+1.0
+
+0.8
+
+2.2
+
+2.0
+
+1.8
+
+1.6
+
+1.4
+
+1.2
+
+1.0
+
+0.8
+
+=0.2288
+=0.22
+=0.20
+Strain=0
+
+0
+
+1
+
+2
+
+3
+
+0
+
+1
+
+2
+
+Z/π
+
+=0.2288
+=0.22
+=0.20
+Strain=0
+
+3
+
+ 
+
+17 
+
+=
+U 0
+=
+E
+100
+F
+=
+eV 0
+
+∆
+
+ 
+
+∆
+=
+U 900
+=
+∆
+100
+E
+F
+=
+eV 0
+
+ 
+
+ 
+Figure 6 
+ 
+ 
+ 
+
+18 
+
+ 
+ 
+
+=
+U 0
+=
+E
+100
+F
+=
+eV 0
+
+∆
+
+ 
+
+=0.2288
+=0.22
+=0.20
+Strain=0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+∆
+=
+U 900
+=
+∆
+100
+E
+F
+=
+eV 0
+
+ 
+
+=0.2288
+=0.22
+=0.20
+Strain=0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+Z/π
+
+ 
+
+Figure 7 
+
+ 
+
+ 
+     
+(7a) 
+2.0
+
+1.5
+
+x
+G
+
+1.0
+
+0.5
+
+0
+
+0
+
+(7b) 
+2.0
+
+1.5
+
+X
+G
+
+1.0
+
+0.5
+
+0
+
+0
+
+ 
+ 
+
+ 
+ 
+
+

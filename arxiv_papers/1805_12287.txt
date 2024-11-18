@@ -1,0 +1,608 @@
+Variation of photoluminescence spectral line shape 
+
+of monolayer WS2 
+
+Yongjae Kwon,a Kangwon Kim,a Wontaek Kim,b Sunmin Ryu,b,c Hyeonsik Cheonga,* 
+
+a Department of Physics, Sogang University, Seoul 04107, Korea 
+
+b Department of Chemistry, Pohang University of Science and Technology (POSTECH), 
+
+Pohang 37673, Korea 
+
+c Division of Advanced Materials Science, Pohang University of Science and Technology 
+
+(POSTECH), Pohang 37673, Korea 
+
+ 
+
+*E-mail: hcheong@sogang.ac.kr   
+
+ 
+
+Abstract 
+
+The origin of the variation of photoluminescence (PL) spectra of monolayer tungsten 
+
+disulfide  (WS2)  is  investigated  systematically.  Dependence  of  the  PL  spectrum  on  the 
+
+excitation power show that the relatively sharp component corresponds to excitons whereas the 
+
+broader  component  at  slightly  lower  energy  corresponds  to  negatively  charged  trions.  PL 
+
+imaging  and  second  harmonic  generation  measurements  show  that  the  trion  signals  are 
+
+suppressed  more  than  the  exciton  signals  near  the  edges,  thereby  relatively  enhancing  the 
+
+excitonic feature in the PL spectrum and that such relative enhancement of the exciton signals 
+
+is more pronounced near approximately armchair edges. This effect is interpreted in terms of 
+
+depletion  of  free  electrons  near  the  edges  caused  by  structural  defects  and  adsorption  of 
+
+electron acceptors such as oxygen atoms. 
+
+1 
+
+ 
+
+Keywords 
+
+Tungsten disulfide, Photoluminescence, Exciton, Trion, Second harmonic generation 
+
+ 
+
+1. Introduction 
+
+Two-dimensional (2D) layered transition-metal dichalcogenides (TMDs) have attracted 
+
+much interest recently owing to remarkable 2D physical properties that may be useful for novel 
+
+device applications. For example, field effect transistors based on TMDs have shown a high 
+
+on-off ratio [1]. Also, strong luminescence from many monolayer TMDs due to a direct band 
+
+gap  and  a  large  exciton  binding  energy  [2-6]  may  also  be  advantageous  for  nanoscale 
+
+optoelectronic devices such as light-emitting devices [7, 8], photodetectors [9], or solar cells 
+
+[10].  In  addition,  an  optical  logic  gate  by  selective  control  of  light  helicity  [11]  has  been 
+
+demonstrated by utilizing the valley degree of freedom in TMDs [12-15]. Tungsten disulfide 
+
+(WS2) is one of the most studied TMDs and is frequently used to study valley effects or to 
+
+make heterostructures with other TMDs. 
+
+The optical properties of TMDs are often dominated by the excitonic features because of 
+
+large exciton binding energies owing to strong Coulomb interaction due to reduced screening 
+
+in 2D materials [2-5]. Thanks to the strong Coulomb interaction, trions, a bound state of an 
+
+exciton and an electron or a hole, are often observed with binding energies of tens of meV's [2, 
+
+16]. Because of the excitonic nature of the photoluminescence (PL), PL characterizations are 
+
+used routinely to identify the number of layers or to estimate the quality of TMDs samples, etc. 
+
+However, the reported PL spectra of monolayer WS2 sample show a large variation [17, 18] 
+
+unlike the case of MoS2. At room temperature, monolayer WS2 usually have strong PL signals 
+
+at ~2.0 eV. Whereas some samples show a broad PL peak, others have a sharp peak at a slightly 
+2 
+
+ 
+
+higher energy. In this paper, we try to clarify the origin of the variations by analyzing the 
+
+excitation power dependence and spatial variation of the PL spectra of monolayer WS2 samples. 
+
+ 
+
+2. Materials and methods 
+
+Monolayer WS2 samples were prepared by mechanically exfoliating single crystal WS2 
+
+flakes (HQ Graphene) onto Si substrates with a 285-nm SiO2 layer. The number of layer was 
+
+confirmed  by  combination  of  optical  contrast  and  Raman  spectroscopy.  Raman  and  PL 
+
+measurements were carried out using a home-built confocal microscope system using the 488-
+
+nm (2.54 eV) line of an Ar+ laser and the 514.4-nm (2.41 eV) line of a diode-pumped-solid-
+
+state (DPSS) laser, respectively. The laser beam was focused onto a sample by a 50× objective 
+
+lens (0.8 N.A.). The scattered light was collected and collimated by the same objective lens, 
+
+dispersed by a Jobin-Yvon Horiba iHR550 spectrometer (2400 grooves/mm for Raman and 300 
+
+grooves/mm  for  PL),  and  detected  with  a  liquid-nitrogen-cooled  back-illuminated  charge-
+
+coupled-device (CCD) detector. The laser power was kept at 50 µW to avoid damaging the 
+
+sample,  except  for  the  excitation  power  dependence  measurements.  A  microscope-based 
+
+polarized second harmonic generation (SHG) system, described elsewhere in detail [19], was 
+
+used to determine the crystallographic orientation of the sample. Briefly, a 140-fs Ti:sapphire 
+
+laser (Coherent, Chameleon) with a wavelength of 820 nm and a repetition rate of 80 MHz was 
+
+focused onto a 1.0-µm spot with a 40× objective. The SHG signal centered at 410 nm was 
+
+collected  by  same  objective  lens  and  guided  to  a  spectrograph  (Andor,  Shamrock  303i) 
+
+equipped with a thermoelectrically cooled CCD (Andor, Newton). The angle between the WS2 
+
+lattice and the laser polarization was varied by rotating the sample on a rotation stage with 
+
+accuracy better than 0.2. Parallel or perpendicular polarization of SHG signal was selected by 
+
+an analyzer in front of the spectrograph. 
+
+3 
+
+ 
+
+ 
+
+3. Results and discussion 
+
+3.1 Variation of PL spectra from monolayer WS2 samples 
+
+Figures 1(a) and (b) show optical images and Raman spectra of three monolayer WS2 
+
+samples. The E′ and A1′ modes, which correspond to the E2g1 and A1g modes due to intra-layer 
+
+vibrations along the in-plane and out-of-plane directions in bulk WS2, are observed at ~356 
+
+and ~417 cm–1, respectively [20, 21]. The separation between the two peaks (~61 cm–1) is 
+
+consistent with the literature value for monolayer WS2 [20-22]. Figure 1(c) shows PL spectra 
+
+of the three samples. There is a large variation in the peak position and the line shape. Residual 
+
+strain or variations in doping density influence the PL spectrum of TMDs materials [23, 24]. 
+
+For example, the A1′ mode, which is sensitive to doping [23], is slightly red-shifted in the 
+
+Raman spectrum of sample 1 with respect to those in the other two spectra, which indicates 
+
+that  there  is  some  doping.  The  different  line  shapes  also  indicate  that  the  contributions  of 
+
+different components of the PL vary among samples. In order to find the origin of the PL 
+
+spectrum variations, we studied sample 3 in more detail. 
+
+ 
+
+4 
+
+Fig. 1. (a) Optical microscope images of monolayer WS2 samples. Normalized (b) Raman and 
+
+(c) PL spectra of monolayer WS2 for the three samples in (a).   
+
+ 
+
+ 
+
+3.2 Excitation power dependence of PL   
+
+Figure 2(a) shows the dependence of the PL spectrum from sample 3 on the excitation 
+
+laser power from 5 to 200 µW. At low excitation powers, the spectrum is dominated by a 
+
+relatively sharp peak at ~2.02 eV. A much weaker signal is seen at a lower energy of ~1.98 eV. 
+
+As the excitation power increased, the lower energy peak grows much faster than the higher 
+
+energy peak. The PL spectra were deconvoluted using a double-Lorentzian function, and the 
+
+results are summarized in Figs. 2(b) and (c). The intensity reversal and the peak position shift 
+
+are consistent with reported behaviors of exciton and trion peaks from WS2. The PL signal 
+
+from trions, bound states of two electrons and a hole or one electron and two holes, usually 
+
+increase more rapidly than the exciton PL [25, 26]. Furthermore, the trion states tend to redshift 
+
+at higher excitation power due to the shift of the Fermi level [25-28]. Because WS2 samples 
+
+5 
+
+ 
+
+without intentional doping are n-type [29], the trions are negatively charged. Therefore, we 
+
+assign the higher energy peak to the exciton (X) recombination and the lower energy one to the 
+
+negatively charged trion (X–) recombination. 
+
+Fig. 2. (a) Excitation power dependence of PL spectrum of sample 3. (b) Intensities and (c) 
+
+peak energies of exciton (X, black circle) and trion (X–, red triangle) signals as a function of 
+
+ 
+
+excitation power, respectively. 
+
+ 
+
+3.3 Spatial variation of PL 
+
+In order to study the spatial variation of the PL spectrum from monolayer WS2, we carried 
+
+out PL imaging of sample 3. Figure 3(a) show PL spectra taken from the area marked by a 
+
+white-dashed box in Fig. 3(b) in 1-µm steps. Results of deconvolution into double Lorentzian 
+
+are also shown. The relative intensities of exciton and trion signals vary: trion seems to be 
+
+stronger in the middle of the sample. For better comparison, we carried out PL imaging of the 
+
+area in Fig. 3(b) in 0.5-µm steps and deconvoluted the exciton and trion components from each 
+
+spectrum.  Figures  3(c)  and  (d)  show  the  intensity  maps  of  exciton  and  trion  PL  signals, 
+
+respectively,  and  Fig.  3(e)  is  the  ratio  of  the  former  to  the  latter.  Although  the  intensity  is 
+
+stronger in the middle part of the sample for both exciton and trion signals, the exciton signal 
+
+6 
+
+ 
+
+is relatively stronger near the edges, which is what we see in Fig. 3(a). Due to structural defects 
+
+near the edges, it is reasonable to expect that the PL signal is reduced near the edges. In order 
+
+to see if the enhancement of the exciton to trion ratio at the edges has any correlation with the 
+
+orientation of the edges, we carried out second harmonic generation (SHG) measurements. 
+
+Since the intensity of the SHG signal is strongly sensitive to the relative angle between the 
+
+principal  axis  of  the  crystal  and  the  polarization  of  the  incident  light  [30-33],  the 
+
+crystallographic  orientation  of  the  sample  can  be  determined  from  polarized  SHG 
+
+measurements.  Figure  4(b)  shows  the  polarization  dependence  of  the  SHG  signal  with  the 
+
+relative angle θ−θ0 defined in Fig. 4(c). The maximum signal in parallel polarization (minimum 
+
+in cross polarization) corresponds to the armchair direction [30-33]. Figure 4(c) is an overlay 
+
+of  the  determined  crystallographic  directions  with  Fig.  3(e).  It  appears  that  the  relative 
+
+enhancement of the exciton signal is stronger for approximately armchair edges. Since free 
+
+electrons in addition to excitons are required to form negatively charged trions, the enhanced 
+
+exciton  signal  or  equivalently,  suppression  of  the  trion  signal  is  an  indication  of  reduced 
+
+electron density near the edges. This is reasonable because presence of trap states due to a large 
+
+density of structural defects near the edges would inevitably reduce the density of free carriers. 
+
+Oxygen  chemisorption  or  physisorption  is  often  cited  as  the  main  mechanism  for  reduced 
+
+electron density as oxygen atoms act as acceptors [34-40]. The observation that the effect seems 
+
+to  be  stronger  near  approximately  armchair  edges  imply  that  such  chemisorption  or 
+
+physisorption is more effective near such edges. Although there is no systematic studies yet on 
+
+the different sensitivity to chemisorption or physisorption at different edge types of WS2, we 
+
+would like to point to similar work on graphene in which it was found that the armchair edges 
+
+tend to be more chemically active [41, 42]. 
+
+ 
+
+ 
+
+7 
+
+Fig. 3. (a) Position dependence of PL spectrum measured in the white box area of monolayer 
+
+WS2 shown in the optical microscope image of (b). The scan directions are indicated by black 
+
+arrows in (a) and (b). Intensity maps of (c) exciton and (d) trion signals. (e) Intensity ratio 
+
+image of exciton to trion. 
+
+ 
+
+ 
+
+Fig. 4. (a) Crystal structure of WS2 (top view). (b) Polar plots of SHG intensity in parallel and 
+
+perpendicular polarizations as a function of angle θ relative to the laboratory reference direction. 
+
+θ0 is the offset angle between the armchair direction and the reference direction as shown in 
+
+(c). (c) Intensity ratio map of Fig. 3(e) overlaid with relevant crystallographic directions.   
+
+8 
+
+ 
+
+ 
+4. Conclusions 
+
+PL  measurements  have  shown  that  the  PL  spectrum  of  monolayer  WS2  is  a 
+
+convolution of signals from excitons and trions, and the ratio between them varies in 
+
+different  samples  or  in  different  areas  of  the  same  sample.  From  PL  imaging 
+
+measurements, we found that the trion signal is more suppressed than the exciton signal 
+
+near  edges  of  monolayer  WS2,  resulting  in  spectra  with  enhanced  exciton  signals. 
+
+Polarized SHG measurements show that such relative enhancement of the exciton signal 
+
+is more  pronounced near approximately armchair edges. The  suppression  of trions is 
+
+attributed  to  reduction  of  free  electron  density  due  to  structural  defects  near  edges 
+
+through chemisorption or physisorption of adsorbates such as oxygen atoms.   
+
+ 
+
+Acknowledgements 
+
+This work was supported by the National Research Foundation (NRF) grant 
+
+funded by the Korean government (MSIT) (NRF-2016R1A2B3008363 and 
+
+2017R1A5A1014862, SRC program: vdWMRC center) and by a grant (No. 2011-
+
+0031630) from the Center for Advanced Soft Electronics under the Global Frontier 
+
+Research Program of MSIT.   
+
+ 
+
+The authors declare no competing financial interest. 
+
+ 
+
+References 
+
+[1]  B. Radisavljevic, A. Radenovic, J. Brivio, V. Giacometti, A. Kis, Single-layer MoS2 
+
+transistors, Nat. Nanotechnol. 6 (2011) 147–150. 
+
+9 
+
+ 
+
+[2]  Alexey Chernikov, Timothy C. Berkelbach, Heather M. Hill, Albert Rigosi, Yilei Li, 
+Ozgur Burak Aslan, David R. Reichman, Mark S. Hybertsen, Tony F. Heinz, Exciton 
+Binding Energy and Nonhydrogenic Rydberg Series in Monolayer WS2, Phys. Rev. 
+Lett. 113 (2014) 76802. 
+
+[3]    Ziliang Ye, Ting Cao, Kevin O'Brien, Hanyu Zhu, Xiaobo Yin, Yuan Wang, Steven 
+
+G. Louie, Xiang Zhang, Probing excitonic dark states in single-layer tungsten 
+disulphide, Nature 513 (2014) 214–218. 
+
+[4]  Diana Y. Qiu, Felipe H. da Jornada, Steven G. Louie, Optical Spectrum of MoS2: 
+Many-Body Effects and Diversity of Exciton States, Phys. Rev. Lett. 111 (2013) 
+216805. 
+
+[5]  Bairen Zhu, Xi Chen, Xiaodong Cui, Exciton Binding Energy of Monolayer WS2, Sci. 
+
+Rep. 5 (2015) 9218. 
+
+[6]  Kin Fai Mak, Changgu Lee, James Hone, Jie Shan, Tony F. Heinz, Atomically Thin 
+
+MoS2: A New Direct-Gap Semiconductor, Phys. Rev. Lett. 105 (2010) 136805. 
+
+[7] 
+
+[8] 
+
+F. Withers, O. Del Pozo-Zamudio, A. Mishchenko, A. P. Rooney, A. Gholinia, K. 
+Watanabe, T. Taniguchi, S. J. Haigh, A. K. Geim, A. I. Tartakovskii, K. S. Novoselov, 
+Light-emitting diodes by band-structure engineering in van der Waals heterostructures, 
+Nat. Mater. 14 (2015) 301–306. 
+
+Sanghyun Jo, Nicolas Ubrig, Helmuth Berger, Alexey B. Kuzmenko, Alberto F. 
+Morpurgo, Mono- and Bilayer WS2 Light-Emitting Transistors, Nano Lett. 14 (2014) 
+2019–2025. 
+
+[9]  Hee Sung Lee, Sung-Wook Min, Youn-Gyung Chang, Min Kyu Park, Taewook Nam, 
+
+Hyungjun Kim, Jae Hoon Kim, Sunmin Ryu, Seongil Im, MoS2 Nanosheet 
+Phototransistors with Thickness-Modulated Optical Energy Gap, Nano Lett. 12 (2012) 
+3695–3700. 
+
+[10]  Edwin O., Ortiz-Quiles, Carlos R., Cabrera, Exfoliated molybdenum disulfide for dye 
+
+sensitized solar cells, Flatchem. 2 (2017) 1–7. 
+
+[11]  Yu-Ting Wang, Chih-Wei Luo, Atsushi Yabushita, Kaung-Hsiung Wu, Takayoshi 
+
+Kobayashi, Chang-Hsiao Chen, Lain-Jong Li, Ultrafast Multi-Level Logic Gates with 
+Spin-Valley Coupled Polarization Anisotropy in Monolayer MoS2, Sci. Rep. 5 (2015) 
+8289. 
+
+[12]  Kin Fai Mak, Keliang He, Changgu Lee, Gwan Hyoung Lee, James Hone, Tony F. 
+
+Heinz, Jie Shan, Tightly bound trions in monolayer MoS2, Nat. Mater. 12 (2013) 207–
+211. 
+
+[13]  A. Klein, S. Tiefenbacher, V. Eyert, C. Pettenkofer, W. Jaegermann, Electronic band 
+structure of single-crystal and single-layer WS2: Influence of interlayer van der Waals 
+interactions, Phys. Rev. B 64 (2001) 205416. 
+
+10 
+
+ 
+
+[14]  Ashwin Ramasubramaniam, Large excitonic effects in monolayers of molybdenum 
+
+and tungsten dichalcogenides, Phys. Rev. B 86 (2012) 115409. 
+
+[15]  J. Ribeiro-Soares, R. M. Almeida, E. B. Barros, P. T. Araujo, M. S. Dresselhaus, L. G. 
+
+Cancado, A. Jorio, Group theory analysis of phonons in two-dimensional transition 
+metal dichalcogenides, Phys. Rev. B 90 (2014) 115438. 
+
+[16]  A.T.Hanbicki, M.Currie, G.Kioseoglou, A.L.Friedman, B.T.Jonker, Measurement of 
+high exciton binding energy in the monolayer transition-metal dichalcogenides WS2 
+and WSe2, Solid State Commun. 203 (2015) 16–20. 
+
+[17]  Huimin Su, Chengrong Wei, Aiying Deng, Dongmei Deng, Chunlei Yang, Jun-Feng 
+
+Da, Anomalous enhancement of valley polarization in multilayer WS2 at room 
+temperature, Nanoscale 9 (2017) 5148. 
+
+[18]  Amber McCreary, Ayse Berkdemir, Junjie Wang, Minh An Nguyen, Ana Laura Elías, 
+
+Néstor Perea-López, Kazunori Fujisawa, Bernd Kabius, Victor Carozo, David A. 
+Cullen, Thomas E. Mallouk, J. Zhu, Mauricio Terrones, Distinct photoluminescence 
+and Raman spectroscopy signatures for identifying highly crystalline WS2 monolayers 
+produced by different growth methods, J. Mater. Res. 31 (2014) 931–944. 
+
+[19]  Yejin Ryu, Wontaek Kim, Seonghyun Koo, Haneul Kang, Kenji Watanabe, Takashi 
+Taniguchi, Sunmin Ryu, Interface-Confined Doubly Anisotropic Oxidation of Two-
+Dimensional MoS2, Nano Lett. 17 (2017) 7267–7273. 
+
+[20]  Ayse Berkdemir, Humberto R. Gutie´rrez, Andre´s R. Botello-Me´ndez, Ne´stor Perea-
+Lo´pez1, Ana Laura Elı´as, Chen-Ing Chia, Bei Wang, Vincent H. Crespi, Florentino 
+Lo´pez-Urı´as, Jean-Christophe Charlier, Humberto Terrones1, Mauricio Terrones, 
+Identification of individual and few layers of WS2 using Raman Spectroscopy, Sci. 
+Rep. 3 (2013) 1755. 
+
+[21]  W. Zhao, Z. Ghorannevis, K. K. Amara, J. R. Pang, M. Toh, X. Zhang, C. Kloc, P. H. 
+
+Tan, G. Eda, Lattice dynamics in mono- and few-layer sheets of WS2 and WSe2, 
+Nanoscale 5 (2013) 9677. 
+
+[22]  JinhoYang, Jae-Ung Lee, Hyeonsik Cheong, Excitation energy dependence of Raman 
+
+spectra of few-layer WS2, FlatChem. 3 (2017) 64–70. 
+
+[23]  Biswanath Chakraborty, Achintya Bera, D. V. S. Muthu, Somnath Bhowmick, U. V. 
+Waghmare, A. K. Sood, Symmetry-dependent phonon renormalization in monolayer 
+MoS2 transistor, Phys. Rev. B 85 (2012) 161403(R). 
+
+[24]  Hiram J. Conley, Bin Wang, Jed I. Ziegler, Richard F. Haglund Jr., Sokrates T. 
+
+Pantelides, Kirill I. Bolotin, Bandgap Engineering of Strained Monolayer and Bilayer 
+MoS2, Nano Lett. 13 (2013) 3626–3630. 
+
+[25]  A. A. Mitioglu, P. Plochocka, J. N. Jadczak, W. Escoffier, G. L. J. A. Rikken, L. 
+
+Kulyuk, D. K. Maude, Optical manipulation of the exciton charge state in single-layer 
+tungsten disulfide, Phys. Rev. B 88 (2013) 245403. 
+
+11 
+
+ 
+
+[26]  M. Currie, A. T. Hanbicki, G. Kioseoglou, B. T. Jonker, Optical control of charged 
+
+exciton states in tungsten disulfide, Appl. Phys. Lett. 106 (2015) 201907. 
+
+[27]  V. Huard, R.T. Cox, K. Saminadayar, Bound states in optical absorption of 
+
+semiconductor quantum wells containing a two-dimensional electron Gas, Phys. Rev. 
+Lett. 84 (2000) 187–190. 
+
+[28]  Jingzhi Shang, Xiaonan Shen, Chunxiao Cong, Namphung Peimyoo, Bingchen Cao, 
+
+Mustafa Eginligil, Ting Yu, Observation of Excitonic FineStructure in a 2D 
+Transition-Metal Dichalcogenide Semiconductor, ACS Nano 9 (2015) 647–655. 
+
+[29]  Alexey Chernikov, Arend M. van der Zande, Heather M. Hill, Albert F. Rigosi, Ajanth 
+
+Velauthapillai, James Hone, Tony F. Heinz, Electrical Tuning of Exciton Binding 
+Energies in Monolayer WS2, Phys. Rev. Lett. 115 (2015) 126802. 
+
+[30]  Leandro M. Malard, Thonimar V. Alencar, Ana Paula M. Barboza, Kin Fai Mak, Ana 
+
+M. de Paula, Observation of intense second harmonic generation from MoS2 atomic 
+crystals, Phys. Rev. B 87 (2013) 201401(R). 
+
+Heinz, Probing Symmetry Properties of Few-Layer MoS2 and h- BN by Optical 
+
+[31]    Yilei Li, Yi Rao, Kin Fai Mak, Yumeng You, Shuyuan Wang, Cory R. Dean, Tony F. 
+
+Second-Harmonic Generation, Nano Lett. 13 (2013) 3329–3333. 
+
+[32]  Nardeep Kumar, Sina Najmaei, Qiannan Cui, Frank Ceballos, Pulickel M. Ajayan, Jun 
+
+Lou, Hui Zhao, Second harmonic microscopy of monolayer MoS2, Phys. Rev. B 87 
+(2013) 161403(R). 
+
+[33]  Taeg Yeoung Ko, Areum Jeong, Wontaek Kim, Jinhwan Lee, Youngchan Kim, Jung 
+
+Eun Lee, Gyeong Hee Ryu, Kwanghee Park, Dogyeong Kim, Zonghoon Lee, On-stack 
+two-dimensional conversion of MoS2 into MoO3, 2D Mater. 4 (2016) 014003. 
+
+[34]  Se-YangKim, JinsungKwak, JungHwaKim, Jae-Ung Lee, Yongsu Jo, SungYoubKim, 
+
+Hyeonsik Cheong, Zonghoon Lee, Soon-YongKwon, Substantial improvements of 
+long-term stability in encapsulation-free WS2 using highly interacting graphene 
+substrate, 2D Mater. 4 (2017) 011007. 
+
+[35] 
+
+I. Paradisanos, N. Pliatsikas, P. Patsalas, C. Fotakis, E. Kymakis, G. Kioseoglou, E. 
+Stratakis, Spatial non-uniformity in exfoliated WS2 single layers, Nanoscale 8 (2016) 
+16197. 
+
+[36]  Jian Gao, Baichang Li, Jiawei Tan, Phil Chow, Toh-Ming Lu, Nikhil Koratkar, Aging 
+
+of Transition Metal Dichalcogenide Monolayers, ACS Nano 10 (2016) 2628–2635. 
+
+[37]  Kapildeb Dolui, Ivan Rungger, Chaitanya Das Pemmaraju, Stefano Sanvito, Possible 
+
+doping strategies for MoS2 monolayers: An ab initio study, Phys. Rev. B 88 (2013) 
+075420. 
+
+[38]  Lingming Yang, Kausik Majumdar, Han Liu, Yuchen Du, Heng Wu, Michael 
+
+Hatzistergos, P. Y. Hung, Robert Tieckelmann, Wilman Tsai, Chris Hobbs, Peide D. 
+
+12 
+
+ 
+
+Ye, Chloride Molecular Doping Technique on 2D Materials: WS2 and MoS2, Nano 
+Lett. 14 (2014) 6275–6280. 
+
+[39]  Santosh KC, Roberto C. Longo, Robert M. Wallace, Kyeongjae Cho, Surface 
+
+oxidation energetics and kinetics on MoS2 monolayer, J. Appl. Phys. 117 (2015) 
+135301. 
+
+[40]  Victor Carozo, Yuanxi Wang, Kazunori Fujisawa, Bruno R. Carvalho, Amber 
+
+McCreary, Simin Feng, Zhong Lin, Chanjing Zhou, Néstor Perea-López, Ana Laura 
+Elías, Bernd Kabius, Vincent H. Crespi, Mauricio Terrones, Optical identification of 
+sulfur vacancies: Bound excitons at the edges of monolayer tungsten disulfide, Sci. 
+Adv. 3 (2017) e1602813. 
+
+[41]  Teng Ma, Wencai Ren, Xiuyun Zhang, Zhibo Liu, Yang Gao, Li-Chang Yin, Xiu-
+Liang Ma, Feng Ding, Hui-Ming Cheng, Edge-controlled growth and kinetics of 
+single-crystal graphene domains by chemical vapor deposition, Proc. Natl. Acad. Sci. 
+USA 110 (2013) 20386–20391. 
+
+[42]  Vasilii I. Artyukhov, Yuanyue Liu, Boris I. Yakobson, Equilibrium at the edge and 
+atomistic mechanisms of graphene growth, Proc. Natl. Acad. Sci. USA 109 (2012) 
+15136–15140. 
+
+ 
+
+13 
+
+

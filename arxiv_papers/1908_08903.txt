@@ -1,0 +1,888 @@
+a
+
+Ice-rule made manifold: phase transitions,
+topological defects and manifold restoration in
+two-dimensional artificial spin systems
+Gavin M. Macauley1,*, Gary W. Paterson1, Yue Li1,2, Rair Macedo1,3, Stephen McVitie1,*,
+and Robert L. Stamps4,*
+
+1SUPA, School of Physics and Astronomy, University of Glasgow, Glasgow, G12 8QQ, United Kingdom
+2Materials Science Division, Argonne National Laboratory, Lemont, IL, 60439, USA
+3Electronics and Nanoscale Engineering Division, James Watt School of Engineering, University of Glasgow,
+Glasgow, G12 8QQ, United Kingdom
+4Department of Physics and Astronomy, University of Manitoba, Winnipeg, Manitoba, MB R3T 2N2, Canada
+*gavin.macauley@glasgow.ac.uk, stephen.mcvitie@glasgow.ac.uk, robert.stamps@umanitoba.ca
+
+ABSTRACT
+
+Artificial spin ices are arrays of correlated nano-scale magnetic islands that prove an excel-
+lent playground in which to study the role of topology in critical phenomena. Here, we inves-
+tigate a continuum of spin ice geometries, parameterised by rotation of the islands.
+In doing
+so, we morph from the classic square ice to the recently studied pinwheel geometry, with the
+rotation angle acting as a proxy for controlling inter-island interactions. We experimentally ob-
+serve a change in ground state magnetic order from antiferromagnetic to ferromagnetic across
+this class of geometries using Lorentz transmission electron microscopy on thermally annealed
+cobalt arrays. The change in ordering leads to an apparent change in the nature of the defects
+supported: from one-dimensional strings in the antiferromagnetic phase to two-dimensional
+vortex-like structures in the ferromagnetic one, consistent with the scaling predicted by the
+Kibble-Zurek mechanism. Our results show how magnetic order in artificial spin ices can
+be tuned by changes in geometry so that a truly frustrated ice-rule phase is possible in two-
+dimensional systems. Furthermore, we demonstrate this system as a testbed to investigate
+out-of-equilibrium dynamics across phases.
+
+Introduction
+Artificial spin ices (ASIs) are arrays of strongly correlated sub-micron magnetic islands in which the
+individual elements are coupled through magnetostatic interactions1. The aspect ratio of these elements
+is usually chosen so that they behave as single domain Ising macrospins. As the long-range dipolar
+field mixes spin and spatial degrees of freedom, their collective nature depends strongly on the exact
+arrangement and orientation of the nano-magnets2, 3. Interactions can then be tuned locally, achieving
+experimentally tractable mesoscopic analogues to atomistic systems.
+
+Ising-like systems made of magnetic islands have been studied extensively for several decades4,
+and continue to merit attention for the unusual ordering created through tailoring the inter-element
+interactions5 -- 7. More recently, systems obeying Potts-like8, 9 and dipolar XY10 -- 12 Hamiltonians have been
+manufactured from assemblies of patterned magnetic structures using precision lithography. The individual
+microstate of these systems can be interrogated using magnetic microscopy (e.g. MFM13, PEEM14 or
+
+Lorentz TEM15 -- 17) in response to external stimuli such as applied field17, 18, electrical current19, 20 or
+temperature21. ASIs thus prove new platforms in which to examine aspects of physics otherwise not
+directly observable. These include glassiness22; charge fragmentation23; and topologically-induced
+textures such as magnetic 'monopoles'24 -- 26 and Dirac strings27.
+A new geometry which provides one such platform to explore these ideas is the pinwheel form of ASI.
+This structure is formed by rotating each island in the classic square ASI through 45◦ about its centre, and
+has evoked recent interest for its dynamic chirality21; homogeneous domain wall reversal processes17;
+controllable anisotropy28; and as a vortex channel in superconducting-ASI heterostructures29.
+
+In this work, we investigate the class of ASI geometries which covers the continuum between square
+and pinwheel ice. Across these structures, a transition in spin ordering is predicted to emerge28, from
+antiferromagnetism (AFM) in the classic square lattice1 to ferromagnetism (FM) in the pinwheel lattice.
+As the intrinsic coercive field of an island is assumed the same in every geometry, this transition in ordering
+is due solely to the change in dipolar interactions. We experimentally confirm the change in ground state
+and observe directly how this transition is mediated by different defect textures in the two phases using
+Lorentz transmission electron microscopy (LTEM) and in-situ annealing of cobalt (Co) structures formed
+by focused electron beam induced deposition (FEBID). We find certain tilings support mixed phases rather
+than an abrupt change in ordering. This follows from competition between the dipolar interactions and
+the coercive field barriers, and leads to a quenching similar to that in idealised two-dimensional spin ice
+models30. The cooling process then unavoidably establishes defects as the system orders, consistent with
+the Kibble-Zurek mechanism31 -- 33 (KZM). This mechanism predicts how defects scale as a system is driven
+through a second order phase transition. Notably, the change in tiling appears to affect the dimensionality
+of the defects. In the AFM phase, defects take the form of one-dimensional (1-D) strings27, 34, whereas in
+the FM phase, two-dimensional (2-D) structures appear, including many similar to vortices. As a measure
+of the defect density (a common figure of merit for the KZM35), we characterise these by their circulation,
+and show numerically that they scale with cooling rate in accordance with the exponent predicted by the
+KZM for the 2-D Ising universality class. As a corollary, we show that this class of geometries includes a
+frustrated ice-rule manifold in 2-D.
+
+A class of geometries
+Our base structure, the square ice tiling (Fig. 1a), is formed by two interleaved, orthogonal sub-lattices of
+elongated uniformly aligned nanomagnets. From this tiling, we can obtain a continuum of geometries
+through rotating each island by an angle, ϑ, about its midpoint. This rotation acts as a proxy for controlling
+interactions between classes of neighbouring spins, weakening the nearest-neighbour couplings which
+dominate the square lattice28. Consistent with previous work, we choose the zero of this rotation, ϑ = 0◦,
+to be square ice, and term the ϑ = 45◦ state 'pinwheel ice' (Fig. 1b).
+
+Square artificial spin ice is conventionally studied in terms of 'vertices' where four islands meet head on
+(highlighted in red in Fig. 1a,b). The system can then be described in terms of a 'gas' of interacting vertex
+moments, rather than through the full ensemble of island spins36. Given that the macrospin associated
+with each island can point in one of two directions parallel to its long axis, there are 16 possible vertices.
+These are sorted into four distinct types, T1-T4, of increasing magnetostatic energy; an example vertex
+for each type in square and pinwheel37 ice is given in Fig. 1c and d respectively. We note that T1 and T4
+vertices carry no net moment. In this regard, they are antiferromagnetic vertices, as the island moments
+align antiparallel within each sub-lattice. In this nomenclature, the ground state configuration for square
+spin ice is AFM, as it is composed of a chequerboard pattern of the two possible T1 vertices (discussed first
+in Ref. [1], experimentally confirmed in Ref. [38]). Since the T2 and T3 vertices possess a net moment,
+
+2/18
+
+Figure 1. A continuum of geometries defined by rotation angle. a,b, The square ice tiling in a is
+transformed by rotating each island through ϑ. A schematic of the ϑ = 45◦ case, pinwheel ice, is shown
+in b. For both, the location of vertices are highlighted in red. c,d, An example of each of the four vertex
+types for c, ϑ = 0◦, and d, ϑ = 45◦ ice. A consistent colour coding for vertex type is used throughout this
+work. e,f, In-focus TEM images of FEBID arrays for these two angles; dimensions indicated in the inset
+to e are the same as those in f and for all fabricated arrays. g,h, Fresnel images (raw in greyscale,
+Fourier-filtered in colour) obtained after annealing for square and pinwheel ice. The difference in contrast
+across the long axis of the island (dark edge compared with light edge) is used to identify the spin
+direction and, hence, vertex types.
+
+3/18
+
+we consider them ferromagnetic vertices39.
+
+Rotating each island in a vertex changes neither its type nor its ordering so that, say, a T2 vertex carries
+a net moment irrespective of angle. However, it does markedly affect the energies of the types. In square
+ice, the four types possess four well-separated energy levels, whereas in pinwheel ice, they are nearly
+degenerate28. For any given ϑ, the ordering in an array may be characterised in terms of its fractional
+population of vertex types, ni.
+
+In this study, we subject spin ice arrays of various rotation angles to a thermal annealing protocol and
+image the resulting configuration using Lorentz TEM to characterise the ordering. All arrays possess
+four-fold symmetry, so we restrict ϑ to the interval [0◦,90◦]. Samples were fabricated using FEBID of
+the metal-organic precursor Co2(CO)8. Insofar as possible, all Co arrays were deposited under the same
+deposition conditions (as described in Methods). This ensures that the intrinsic energy barrier of each
+island is nominally the same across every tiling. Differences in behaviour then stem solely from the nature
+of the inter-island interactions as controlled by ϑ. Each array covered (10.8 µm)2, comprising 840 islands
+(a lattice of at least 20× 20 vertices). The lateral dimensions of the islands were 300 nm by 100 nm,
+with a lattice constant, a = 450 nm, as shown in Fig.1e. The thickness of the islands over the central
+portion of each array was measured to be ∼ 3 nm using atomic force microscopy (see supplementary,
+§1). Islands closer to the outer edges were thicker (∼ 4 nm), consistent with the effects of gas diffusion
+during deposition40. Similarly, magnetic contrast was poorer there, in line with there being lower local
+Co content and a greater deposit of carbon. As such, statistics were drawn only from those macrospins
+which could be easily identified (in effect, the central portion of each array). By considering only islands
+far from the array edges, we omit those topological defects which tend to form at the boundaries where
+the local field environment is different, and can disregard thicker islands which possess higher blocking
+temperatures. This mitigates the effect of finite size and enables us to probe something approaching the
+bulk behaviour of each tiling pattern.
+Several arrays were deposited for each angle (at least four repetitions; six for those arrays in the range
+[35◦,55◦]; with an additional two for the ϑ = 45◦ case). The arrays were thin enough to be thermally
+active close to room temperature while still providing sufficient magnetic contrast for imaging in LTEM.
+In the Fresnel mode of Lorentz microscopy, contrast arises from deflection of the electron beam by the
+integrated magnetic induction of each island41. By comparing the intensity on either side of the long
+axis of each island in a defocused Fresnel image (Fig. 1g,h), the macrospin orientation can be assigned.
+The thermal annealing protocol involved heating the arrays to 250◦C in-situ in a field-free environment
+(≤ 0.1 Oe). This was above the blocking temperature of individual Co islands, such that their associated
+Ising spin was superparamagnetic. This temperature was maintained for two hours before the arrays were
+cooled at a rate of 1.5◦C min−1 to ∼ −10◦C.
+For the range of samples studied, the onset of island flipping occurred at 110◦C, and continued until
+250◦C. This range reflects the fact that blocking temperatures are site dependent. We assume a saturation
+magnetisation, MS, equal to 70% that of bulk Co (consistent with the Co content obtained under similar
+deposition conditions42, 43). Together with the island dimensions above, the characteristic energy scale in
+terms of the dipolar constant, D = µ0(MSV )2/(4πa3) = 0.033 eV, where V is the volume of the island.
+This corresponds to a temperature of 118◦C -- extremely close to the observed onset of flipping. After
+cooling, Fresnel images were taken and analysed with the aid of semi-automatic image processing to
+extract the direction of magnetisation of each island. This is further discussed in supplementary, §2.
+
+In Fig. 2, we present the results of the thermal annealing. The upper panel of Fig. 2a shows the change
+in excess1 populations of T1 and T2 vertices with angle, with reference to a perfectly uncorrelated sample.
+We pick T1 and T2 vertices as they function as an 'indicator species' for the AFM/FM ordering within an
+array. Full populations are given in supplementary, §3, Fig. S5, but we note that the remaining high-energy
+
+4/18
+
+Figure 2. A transition in ground state ordering with island rotation. a,b, The upper panel of a
+shows the change in excess fractional populations of T1 and T2 vertices with angle. Error bars reflect
+±1 standard deviation when the data is averaged over all samples. The lower panel of a displays the
+correlations for three classes of near neighbours labelled by the schematic in b. For both graphs, the
+dashed horizontal line refers to the expected statistics for an uncorrelated sample. The shaded region
+highlights the FM phase i.e. the angular region for which T2 vertices are in excess above T1 vertices. Full
+populations and uncertainties in the correlations are given in supplementary, §3, Figs. S5 and S6. c-f,
+Typical annealed configurations in terms of vertex type for 0◦, 15◦, 30◦, and 45◦ tilings, respectively.
+Each 15×15 configuration is drawn from the central 'best contrast' portion of an experimental array. Each
+square represents a four-island-unit in the array as depicted in bottom left hand corner of each panel. The
+vertex moment (magnitude and direction) is shown using arrows for FM vertices. A full rotation series is
+given in supplementary, §3, Fig. S7.
+
+5/18
+
+types, T3 and T4, are always suppressed with respect to the expected statistics for an uncorrelated sample.
+Consistent with the experimentally established ground state of square ice, there is a strong excess of
+T1 vertices near to 0◦. Comparing tiling patterns from 0◦ to 90◦ in steps of 5◦, this population decreases to
+a minimum at 45◦ before becoming maximal once more at 90◦, as expected for square ice. Importantly,
+there exists a region from approximately 39◦ to 53◦ where the ferromagnetic T2 vertices are in slight
+excess, consistent with previous predictions28. We make clear that this transition to a T2-excess regime
+is an approximation to the phase transition expected in the thermodynamic limit, as the experimental
+observation relies on finite-sized arrays. Indeed, later in the paper, we make use of the fact that the
+transition persists in Monte Carlo (MC) simulations of pseudo-infinite arrays. For simplicity, we refer to
+both scenarios -- finite-sized arrays and the thermodynamic limit -- as exhibiting a transition in ordering
+with angle.
+
+Two further features are worth remarking upon. First, the transition from the T1-excess phase to the
+T2-excess phase is gradual, rather than abrupt. This suggests the possibility of observing mixed AFM/FM
+ordering. At the transition angles where the populations satisfy n1 = n2, the ice manifold is recovered
+i.e. all two-in-two-out vertices are equally likely. Achieving this equivalence has previously relied on
+introducing a height offset between sub-lattices26, 44, 45 or by coupling XY mesospins to the square tiling46.
+Here, we have restored the degeneracy of near-neighbour interactions through modifying the orientations
+of the nano-magnets. The transition angles then represent planar geometries which obey the ice-rule fully.
+Secondly, the signal from the FM phase is generally weak: the excess T2 population is ∼ 10% in the FM
+phase when averaged over all samples. This will become an important theme in our discussion of defect
+formation in the FM phase later in the paper.
+
+The lower panel of Fig. 2a encapsulates these observations in terms of pairwise correlations be-
+tween island spins. We use the correlation functions as defined by Ref. [1]: namely, a pair of islands
+contribute +1 (−1) if the two moments are aligned in such a way as to minimise (maximise) the corre-
+sponding point dipolar energy. If the dipolar energy of a pair is zero, it contributes 0 to the correlation
+function. We distinguish among three classes of neighbours depicted in Fig. 2b: first-nearest-neighbours
+(1nn); second-nearest-neighbours which are separated laterally i.e.
+in the same vertex (2nn-L); and
+second-nearest neighbours which are separated in a transverse fashion i.e. in adjacent vertices (2nn-T). In
+pinwheel ice, these two classes of second nearest-neighbours are equivalent.
+
+In general, the 1nn correlations are strong in the AFM phase and suppressed in the FM phase.
+These strongly-coupled 1nn pairs drive the AFM ordered ground state of square ice, whereas the FM
+ordering is stabilised by the relative strength of the 2nn correlations compared with the 1nn correlation
+
+for ϑ ∈(cid:2)39◦,53◦(cid:3). At the transition angles, the arrays approximate well a truly frustrated system and
+
+the correlation functions are almost all equal, consistent with the system supporting both AFM and FM
+ordering.
+Figs. 2c-f present typical vertex configurations obtained after annealing 0◦, 15◦, 30◦, and 45◦ arrays,
+respectively. Here, each four-island vertex is represented by a colour-coded square. An arrow is super-
+imposed on those vertices which possess a net moment. Each panel displays 15× 15 vertices, reflecting
+the fact that the data has been 'cut' to remove spins near to the edges of the arrays. For the square ice
+case (Fig. 2c), we observe the formation of large domains of T1 separated by 'string' defects i.e. a state
+where the ordering appears relatively long-ranged in terms of ground state clusters. For the pinwheel ice
+case (Fig. 2f), the majority of vertices are FM and a variety of structures is seen, including stripe patterns,
+small domains, and flux closure regions (marked i., ii., and iii. respectively). However, the ordering is
+short-ranged, extending only a few lattice constants. Comparing arrays with different rotation angles (in
+effect, moving from Fig. 2c-f), we see a shrinkage of the T1 area and an increase in FM coverage. This is
+not an abrupt transition; instead, the long-range AFM phase breaks down gradually to be replaced by a
+
+6/18
+
+short-range FM phase.
+
+Quench behaviour
+To understand the decrease in the correlation length with angle (quantified in supplementary, §4), we
+consider the effect of the relative magnitude of inter-island interactions on the likelihood of single
+macrospin flips. This shows that the rotation angle determines the timescale needed to establish equilibrium.
+In general, the arrays approach their ground state by making a number of Ising spin flips, where a given
+flip may or may not be energetically favourable in global terms. Each spin flip is, however, driven by some
+local fluctuation in energy, ∆E(ϑ ), on a scale set by the interactions in the system and, hence, indirectly
+by ϑ. This fluctuation allows the spin to overcome the intrinsic energy barrier to switching, Eb. For
+simplicity, we take Eb (cid:29) ∆E(ϑ ), to be the same for every island and in every geometry. Assuming a
+N´eel-Arrhenius law for the switching behaviour47, we can compare the spin flip rates, Γ, in the AFM
+phase (typified by the 0◦ case) to that in the FM phase (typified by the 45◦ case) through the ratio
+
+Γ0◦
+Γ45◦
+
+=
+
+τe−β (Eb−∆E(0◦))
+τe−β (Eb−∆E(45◦))
+
+= eβ (∆E(0◦)−∆E(45◦)),
+
+(1)
+
+where τ is an attempt frequency, and β = 1/(kBT ) is the inverse thermodynamic energy. In arriving at
+eq. (1), we have neglected any angular dependence in the prefactor. In a fuller treatment, the attempt
+frequency would be affected by the diminution in interaction strengths with ϑ. For example, studies using
+harmonic transition state theory have shown that symmetry reduction can lead to a signifcant decrease
+in τ when comparing one and two ring kagome ASI arrays48. In fact, when calculating both ∆E and τ
+in this scheme, the change in the prefactor can have a larger effect on the rate than the change in the
+activation energy. This may be relevant for FM array geometries where different magnetic configurations
+are almost degenerate28, and there exists the likelihood of a return to the initial state after subsequent
+√
+spin flips. Nonetheless, approximating the islands as point dipoles, the largest interaction strength in
+√
+2D) is six times greater than the largest
+square ice (originating from the first-nearest-neighbours, J1nn = 3
+2D).
+interaction energy in pinwheel spin ice (originating from the third-nearest-neighbours, J3nn = 1/
+Associating the size of the fluctuation with the largest interaction term, the ratio of the rates at 250◦C
+should go as Γ0◦/Γ45◦ ≈ 10. This estimate suggests that pinwheel ice requires approximately one decade
+of time more to undergo the same number of spin flips as does square ice.
+
+Fig. 3 explores this in the context of Monte Carlo simulations. In Fig. 3a, we show the percentage
+of ground state coverage for square and pinwheel ice as a function of the rate at which the systems are
+cooled from the high-temperature Ising paramagnetic phase. The systems are initialised above their
+ordering temperatures, and then the temperature is decreased to zero in a variable number of steps; this
+acts as a proxy for cooling rate. At each temperature point, one MC step is performed and the final vertex
+population at T = 0 is recorded. In the limit of an infinite number of steps, the arrays should explore all
+phase space49 and find the true ground state, equivalent to cooling the systems adiabatically. We identify
+the change in temperature per MC step with a cooling rate, R, an approach comparable to that in Ref. [50].
+Pinwheel ice needs to equilibrate for longer to reach a similar coverage of ground state vertices and thus
+lags behind square ice by approximately one decade.
+
+The experimentally weak excess in the numbers of T2 vertices in the FM phase (Fig. 2a) reflects the
+fact that the FM tilings are quenched to a greater extent than AFM tilings by the same anneal process.
+Fig. 3b demonstrates this by plotting the excess populations as predicted by MC simulations of T1 and T2
+vertices over the full range of angles for two cases: perfectly annealed infinite systems (dashed-dotted line)
+and a rapid quench (solid line with markers) corresponding to the rate marked in Fig. 3a. The perfectly
+
+7/18
+
+Figure 3. Statistics for quenched samples from Monte Carlo simulations. a, Relative ground state
+coverage as a function of the rate at which the samples are cooled from just above Tc for infinite (i.e. with
+periodic boundary conditions) 0◦ and 45◦ tilings. The dashed vertical line reflects a fast cooling rate
+which recovers well the experimentally obtained populations for the two tilings. In general, the 45◦ tiling
+lags the 0◦ tiling in ground state coverage. b, Expected vertex populations from MC simulations for both
+quenched (solid) and perfectly annealed (dashed-dotted) cases across the full angular range (all evaluated
+at the quench rate marked out a). The perfectly annealed samples show abrupt transitions between AFM
+and FM ordering. In the quenched case, these transitions are smeared out, consistent with the
+experimental populations of Fig. 2 (shown here by the faded lines). MC simulations performed for
+50× 50 vertex arrays with PBC. The angular FM region depends on system size and so the highlighted
+region in b is broader that in Fig. 2a, but consistent with that in Ref. [28].
+
+annealed simulations show an abrupt transition between AFM and FM ordering. On the other hand, the
+quenched simulations -- which are purposely not allowed to equilibrate at each temperature step -- show
+excess populations in good agreement with those obtained in the experiment. In particular, there exists
+only a weak excess in the number of ground state vertices in the FM phase.
+
+At this point, we emphasise the distinction between the two transitions that these geometries exhibit.
+The first concerns the nature of the ground state and is controlled by ϑ i.e. it is a non-thermal transition
+driven by a geometrical parameter. Secondly, each tiling undergoes a second-order phase transition as
+the blocking temperature is traversed. In the experiment, a cooling rate of 1.5◦C min−1 resulted in a
+non-uniform degree of ordering for different island rotations. This is a consequence of the fact that
+relaxation times differ vastly with rotation angle, and so different arrays were out of equilibrium to
+different extents. This is a specific observation of a more general result: the dynamics of a system cease to
+be adiabatic in the vicinity of a critical point as the relaxation time diverges. The non-adiabatic cooling
+enforces regions of incommensurate symmetries, separated by topological defects -- compare, for example,
+He4 quenched across the superfluid transition in which quantised vortex defects appear51 or, analogously,
+the proposed role of cosmic strings in seeding galaxy formation in the early universe52. The Kibble-Zurek
+mechanism describes the universal scaling laws underpinning the formation of such defects with cooling
+rate (discussed in Methods). Our experiments allow us to investigate this mechanism in the context of
+ordering in artificial spin ices.
+
+8/18
+
+Figure 4. Vortex defects in the FM phase. a,b, Curl maps corresponding to the experimentally
+obtained vertex configurations in Fig. 2c,f (square and pinwheel ice). Topological defects (strings, i., in
+square ice; vortices, ii.-iii., in pinwheel ice) are highlighted. c, For finite systems, we integrate the curl
+over the area of the array as a measure of the net circulation. The shaded region highlights ±1 standard
+deviation around the mean MC statistics (dashed line) for this integrated curl. Both the experimental
+results (filled markers) and MC statistics for quenched finite-size arrays prove that these excitations impart
+a net circulation in the FM phase. d, MC simulations only: the integrated absolute value of the curl with
+temperature shows that this holds true even when the arrays are heated slowly. There exists a region
+around t = 0 for which both square and pinwheel ice rapidly produce curl, but this feature is more
+pronounced in the FM phase.
+
+9/18
+
+Defect formation
+It is well established that ordering in square ASI can occur by the formation of strings -- either excited T2
+vertices on a ground state T1 background53, or low-energy T1 vertices on a polarised T2 lattice54. Indeed,
+these topological defects are present in our annealed AFM configurations (Fig. 2c). In the FM phase,
+by contrast, we observe a melting transition mediated by the formation of two-dimensional structures
+and, in particular, 2-D vortices. These vortex structures are composed of nearby vertices, such that the
+vertex moments circulate around a central core. In analogy with the Bloch point in magnetic thin films,
+the role of this core is played by T1/T4 vertices, both of which have no moment. For angles near to 45◦,
+the moments in a T4 vertex are arranged similarly to a vortex, while the moments in a T1 vertex are akin
+to an anti-vortex (see supplementary, §5, Fig. S9).
+
+To quantify the emergence of a vortex regime in the FM phase, we treat the lattice of vertex moments
+as a discrete vector field, V, and calculate its curl through a finite difference scheme to obtain a measure
+of the local circulation at each vertex55. As the vertex moments are constrained to lie in-plane, only the
+z-component of ∇× V is non-zero and the curl may be regarded as a scalar field.
+In Fig. 4a,b, we display heat maps of ∇× V corresponding to the experimentally-obtained vertex
+configurations in Fig. 2c,e for 0◦ square ice and 45◦ pinwheel ice, respectively. The curl is plotted on the
+same scale across both plots with the net moment shown atop FM vertices as before. Comparing the two
+plots, the curl is significantly more pronounced in the 45◦ case and traverses larger extremes. Instances of
+topological defects are highlighted for both tilings; for example, i. in Fig. 4a labels a Dirac string within
+square ice. In pinwheel ice, the defects are no longer one-dimensional chains but instead two-dimensional;
+ii. and iii. in Fig. 4b mark out instances of vortices with a clockwise and counter-clockwise circulation,
+respectively. In both examples, FM T2/T3 vertices surround an inner core of T1/T4 vertices. These
+cooperative structures constitute extrema of ∇× V.
+Integrating ∇× V over the area of an array then gives a measure of the net circulation. Typical results
+taken from our experimental data are shown in Fig. 4c. The solid line is taken from experimental data, and
+the dashed line refers to the mean statistics expected from MC simulations of quenched finite-size arrays.
+The shaded region highlights ±1 standard deviation around this mean. Excellent agreement between the
+experimental and Monte Carlo data is seen: both show a clear peak near to 45◦ when the system begins to
+acquire a net circulation as a result of the preference for FM vertices and the tendency of the system to
+minimise stray field through forming short length scale vortices.
+
+This observation is consistent with the idea that the FM phase is dominated by vortex structures. On its
+own, however, it is not conclusive proof of a vortex-dominated melting/freezing transition. To show this,
+we consider MC simulations of the two prototypical angles, 0◦ and 45◦, as a function of temperature in
+Fig. 4d. Here, we do not quench the systems but quasi-adiabatically increase the temperature from T = 0.
+In both cases, the systems are initialised in their respective ground state. The systems are equilibrated
+at each temperature point with the difference between consecutive temperatures of 10−5 D/kb which is
+approximately ∼ 4 mK in units appropriate to our arrays. For systems with periodic boundary conditions
+(PBCs), the integrated curl is no longer an appropriate figure of merit as neither tiling acquires a consistent
+net circulation in the thermodynamic limit. Instead, we chose the integrated absolute value of the curl. In
+the paramagnetic limit, this quantity tends to ≈ 1 per vertex56. In the low temperature limit, the ground
+state of square ice (uniform T1 tiling) and pinwheel ice (uniform T2 tiling) have (cid:104)∑∇× V(cid:105) = 0. In
+Fig. 4d, we plot the evolution of this quantity with temperature. To make a comparison between square and
+pinwheel ice, we work in reduced units, t = (T − TC)/TC, in terms of the appropriate critical temperatures,
+TC(ϑ ), for each tiling.
+
+Near to the ordering transition at t = 0, both systems undergo a period in which curl is rapidly generated.
+
+10/18
+
+However, this feature is more pronounced and the integrated curl attains a greater magnitude in the FM
+phase. As the system melts to a disordered phase, 2-D structures -- in particular, vortices -- proliferate,
+spoiling the long-range ordering (supplementary, §6, Fig. S11). We emphasise that this vortex-mediated
+regime persists even when the temperature is changed slowly, as in Fig. 4d. This suggests that these defects
+play a more general role in establishing magnetic order during melting and freezing. Furthermore, their
+existence in MC simulations even when PBCs are applied implies that they can nucleate anywhere within
+arrays and do not simply migrate from edges. As further evidence, supplementary, §6, Figs. S10 and S11
+give spatially resolved vertex maps for square and pinwheel ice at various temperatures, as taken from MC
+simulations.
+To complete this discussion, Fig. 5 examines the correlation length, ξ , as extracted from the two point
+correlator, G(r) = (cid:104)(cid:126)si ·(cid:126)s j(cid:105), and the defect density, (cid:104)∑∇× V(cid:105), as a function of cooling rate, R, for square
+and pinwheel ice using MC simulations. We have chosen ∇× V as a measure of the defect density as it
+appears a natural choice for the vortices which form in FM arrays. It is not necessarily as good a measure
+in the AFM phase where another quantity -- string length, perhaps -- would be more appropriate. Strictly,
+the KZM is a statement of the expected power law dependence of the defect density with the 'speed' at
+which the phase transition is traversed. Attributing it to a system undergoing a phase transition relies on
+the values of the equilibrium critical exponents, and the scaling behaviour of the correlation length near
+Tc. Coherent X-ray scattering provides quantitative evidence that square ASI belongs to the 2-D Ising
+universality class57 and, assuming this holds true for any rotation angle, the correlation length and curl
+should scale as R±0.315 (see Methods for further justification). The integrated curl in pinwheel ice exhibits
+a peak (dotted vertical line, Fig. 5b). We relate this feature to the freeze-out behaviour predicted by the
+KZM. Here, there appears a maximum cooling rate beyond which pinwheel ice cannot respond to changes
+in temperature. For fast cooling rates, the curl stays close to the high temperature limit, and even vortices
+appear frozen out.
+We perform a least squares fit to the linear portion of each series in Fig. 5 and extract the exponents
+(values ±1 standard deviation are listed in Table 1). All values are close to the predicted one for the
+2-D Ising universality class. We emphasise that other universality classes would predict different scaling
+exponents. For example, it would be natural to draw an analogy between the formation of vortex structures
+in the FM arrays and those vortices which depin during a Kosterlitz-Thouless transition. However, the
+exponential behaviour of the correlation length even at the critical point in a Kosterlitz-Thouless transition
+results in a more complex dependence on R, i.e. one which is not simply some form of power-law. Even
+assuming the asymptotic values of the critical exponents58 in this case (an approach which neglects key
+aspects of the KZM as applied to the Kosterlitz-Thouless transition59) would give an estimate for the
+scaling exponent of ∼ 0.5. Thus, our work suggests that both AFM and FM geometries obey the KZM
+consistent with the 2-D Ising universality class.
+
+Discussion
+In this work, we have realised experimentally a system in which modifications in the lattice topology
+control the effective dipolar coupling between islands and act to tune the ground state between AFM
+and FM. Values of ϑ near to the transition give rise to competition between phases, while the transition
+angle itself corresponds to a two-dimensional manifold which satisfies the ice rule exactly. Accessing this
+ice-rule phase in a completely planar system opens up the possibility of probing its frustrated dynamics
+and correlated interactions. In addition, arrays comprised from a mixture of tiling patterns -- square ice,
+say, joined to pinwheel ice -- would offer the opportunity to study phase coexistence at interfaces and,
+even, engineer an ASI analogue of exchange bias.
+
+11/18
+
+Figure 5. Scaling of correlation length and defect density with cooling rate. a, Correlation length,
+ξ , in units of the lattice constant, a, as a function of cooling rate for square and pinwheel ice. Taken from
+Monte Carlo simulations of 50× 50 vertex arrays with PBC. b, As in a but for the appropriate defect
+density, (cid:104)∑∇× V(cid:105). A maximum in the curl density is observed for pinwheel ice at the rate indicated by
+the dotted line. This corresponds to a freeze-out rate above which the dynamics of the system remain
+frozen. The linear portion of each series is used for fitting (points explicitly shown with markers; fits are
+shown in black dashed lines). Here, cooling rate is measured in units of temperature, T , per Monte Carlo
+step.
+
+Scaling Exponent
+ξ
+
+(cid:104)∑∇× V(cid:105)
+0.370 ± 0.004
+0.314 ± 0.017
+
+ϑ = 0◦ −0.340± 0.005
+ϑ = 45◦ −0.332± 0.018
+
+Table 1. Best fit critical exponents for ξ and (cid:104)∑∇× V(cid:105) associated with cooling rate, R. Extracted
+from the linear portion of each series in Fig. 5 for 0◦ square and 45◦ pinwheel ice. Assuming only the
+KZM and the equilibrium critical exponents of the 2-D Ising model, these quantities are predicted to scale
+with R as ∼ ±0.315. Uncertainties refer to ±1 standard deviation in the least squares fit used.
+
+12/18
+
+Beyond the change in ground state, our thermal annealing reveals a transition in effective dimension-
+ality of defects: from one-dimensional chains in the AFM phase to two-dimensional vortices in the FM
+phase. Defect densities appear consistent with the Kibble-Zurek mechanism but a systematic investigation
+of their experimental scaling with cooling rate would provide conclusive proof. These results illustrate the
+interplay between topology and magnetic order in artificial spin structures, and allow for the exploration
+of critical phenomena in frozen and glassy spin systems22. Our work demonstrates that this class of ASI
+is an exemplary testbed in which to probe both out-of-equilibrium dynamics and competing theories for
+melting across phases in low-dimensional many-body systems.
+
+Original data files are available at DOI xx.xxxx.
+
+Method
+Sample Fabrication. Arrays were written on a dual column Helios Plasma Focused Ion Beam instrument
+with gas injection system using electron beam induced deposition. Samples were deposited on ∼ 40 nm
+thick electron transparent Si3N4 membranes for TEM measurement. Carbon was sputtered onto the
+membranes before Co deposition and a thin FEBID film applied after to inhibit oxidation and charging.
+The SEM beam current was 0.69 nA; the accelerating voltage was 5 kV; and the half-screen window size
+was 20.7 µm (magnification: 10000×). The working distance was 4 mm. The gas flux of the precursor
+would tend to decrease over the course of a deposition session. To compensate for this, arrays were
+deposited in a different order during subsequent sessions so that the average thickness remained constant
+across arrays.
+
+LTEM Measurement. Annealing experiments were carried out in-situ in a JEOL ARM200cF TEM
+equipped with a cold field emission gun operated at 200 kV. The beam spot size was 2; the emission
+current was 14 pA; and a 70 µm condenser aperture was used. The objective lens was nulled before sample
+insertion to ensure a field-free environment (≤ 1 Oe). A Gatan HC5300 holder was used to heat the arrays
+to 250◦C. This temperature was maintained for two hours to allow the arrays to equilibrate. The samples
+were cooled to ∼ −10◦C at 1.5◦C min−1, and Fresnel images taken using a Gatan Orius SC1000A CCD
+camera. These were processed to extract the macrospin orientation of each island.
+
+Monte Carlo. To compare with experimental results, we employed a Metropolis-Hasting Monte Carlo
+algorithm60 based on approximating each island as a point dipole Ising spin governed by the Hamiltonian,
+
+(cid:19)
+
+,
+
+(cid:18) (cid:126)σi · (cid:126)σ j
+
+r3
+i j
+
+Hdip = D∑
+i(cid:54)= j
+
+sis j
+
+− 3((cid:126)σi ·(cid:126)ri j)((cid:126)σ j ·(cid:126)ri j)
+
+r5
+i j
+
+4πa3
+
+µ0(MSV )2
+
+is the dipole constant, and(cid:126)ri j =(cid:126)r j −(cid:126)ri is a vector connecting the position of spin i
+where D =
+to spin j. The full dipolar sum was implemented for each simulation. The spin at site i has a magnetic
+moment, (cid:126)si = si(cid:126)σi, with si = ±1 the polarity of the spin; and (cid:126)σi a unit vector parallel to the long axis of
+island i. The orientation of (cid:126)σi is dependent on the rotation angle, ϑ, of the tiling pattern, and the sub-lattice
+to which spin i belongs. A single Monte Carlo step (MCS) was taken to be N single spin flips (where N is
+the number of spins in the array). For systems with periodic boundary conditions, the lattice size used was
+50× 50 vertices (comprising 5100 islands). The MC data in Figs. 3, 4c, 4d, and 5 were averaged over 10,
+1000, 5, and 10 independent iterations, respectively. Results were verified up to lattice sizes of 100× 100
+vertices and no appreciable difference was seen. The energy barrier to island flipping was taken to be 10D
+
+13/18
+
+with a standard deviation of 10% to account for disorder within the sample. These values are consistent
+with those used in other work61.
+
+Defect density in the Kibble Zurek Mechanism. For a continuous second order phase transition,
+
+the equilibrium correlation length, ξ , and equilibrium correlation time, τ, diverge as
+
+ξ = (T − TC)−ν;
+τ = (T − TC)−zν ,
+
+where v is the exponent associated with the correlation length, and z is the dynamic critical exponent. The
+Kibble Zurek mechanism describes the dynamics of a system as the critical temperature, TC, is traversed
+in time. Writing ∆T ≡ T − TC, we assume that the temperature can be varied linearly so that
+
+∆T (t) = Rt,
+
+at time, t, for some rate, R. Here, we use Monte Carlo steps as a proxy for time, so that R has units of
+T · MCS−1. Equating the time to the critical point with the relaxation time yields a timescale,
+
+t∗ = R −zν
+1+zν ,
+
+commonly called the freeze-out time. Under the Kibble Zurek mechanism, there exists a region close to
+the critical point in which the order parameter no longer evolves adiabatically. The average correlation
+length at this freeze-out time is
+
+ξ (t = t∗) = R −ν
+1+zν .
+
+Assuming critical exponents for the 2-D Ising universality class (ν = 1, z ≈ 2.166562), the expected
+value for the exponent is ∼ 0.315. We are also interested in the scaling behaviour of (cid:104)∑∇× V(cid:105). In
+this scheme55, the curl of vertex moments is based on the sum and difference of the components of
+neighbouring vertex moments. The vertex moments are themselves simply the sum of the island moments
+in each vertex. Taking the absolute value introduces products of at most two spin components -- exactly
+the same as in the two-point correlator. We thus expect (cid:104)∑∇× V(cid:105) to scale similarly to the correlation
+length except with the opposite sign to reflect its nature as a density: (cid:104)∑∇× V(cid:105) ∼ ξ−1.
+
+References
+1. Wang, R. F. et al. Artificial 'spin ice' in a geometrically frustrated lattice of nanoscale ferromagnetic
+
+islands. Nat. 439, 303 (2006).
+
+2. Malozovsky, Y. & Rozenbaum, V. Orientational ordering in two-dimensional systems with long-range
+
+interaction. Phys. A: Stat. Mech. its Appl. 175, 127  --  145 (1991).
+
+3. Politi, P., Pini, M. G. & Stamps, R. L. Dipolar ground state of planar spins on triangular lattices. Phys.
+
+Rev. B 73, 020405 (2006).
+
+4. Cowburn, R. P. & Welland, M. E. Room temperature magnetic quantum cellular automata. Sci. 287,
+
+1466 -- 1468 (2000).
+
+5. Arnalds, U. B. et al. A new look on the two-dimensional Ising model: thermal artificial spins. New J.
+
+Phys. 18, 023008 (2016).
+
+14/18
+
+6. Nguyen, V.-D., Perrin, Y., Le Denmat, S., Canals, B. & Rougemaille, N. Competing interactions in
+
+artificial spin chains. Phys. Rev. B 96, 014402 (2017).
+
+7. Nisoli, C. Nano-Ising. New J. Phys. 18, 021007 (2016).
+8. Sklenar, J. et al. Field-induced phase coexistence in an artificial spin ice. Nat. Phys. 15, 191 -- 195
+
+(2019).
+
+9. Louis, D. et al. A tunable magnetic metamaterial based on the dipolar four-state Potts model. Nat.
+
+Mater. 17, 1076 -- 1080 (2018).
+
+10. Streubel, R. et al. Spatial and temporal correlations of XY macro spins. Nano Lett. 18, 7428 -- 7434
+
+(2018).
+
+11. Schildknecht, D., Heyderman, L. J. & Derlet, P. M. Phase diagram of dipolar-coupled XY moments
+
+on disordered square lattices. Phys. Rev. B 98, 064420 (2018).
+
+12. Leo, N. et al. Collective magnetism in an artificial 2-D XY spin system. Nat. Commun. 9, 2850
+
+(2018).
+
+13. Tanaka, M., Saitoh, E., Miyajima, H., Yamaoka, T. & Iye, Y. Magnetic interactions in a ferromagnetic
+
+honeycomb nanoscale network. Phys. Rev. B 73, 052411 (2006).
+
+14. Farhan, A. et al. Direct observation of thermal relaxation in artificial spin ice. Phys. Rev. Lett. 111,
+
+057204 (2013).
+
+15. Daunheimer, S. A., Petrova, O., Tchernyshyov, O. & Cumings, J. Reducing disorder in artificial
+
+kagome ice. Phys. Rev. Lett. 107, 167201 (2011).
+
+16. Qi, Y., Brintlinger, T. & Cumings, J. Direct observation of the ice rule in an artificial kagome spin ice.
+
+Phys. Rev. B 77, 094418 (2008).
+
+17. Li, Y. et al. Superferromagnetism and domain-wall topologies in artificial "pinwheel" spin ice. ACS
+
+Nano 13, 2213 -- 2222 (2019).
+
+18. Burn, D. M., Chadha, M. & Branford, W. R. Angular-dependent magnetization reversal processes in
+
+artificial spin ice. Phys. Rev. B 92, 214425 (2015).
+
+19. Le, B. L. et al. Effects of exchange bias on magnetotransport in permalloy kagome artificial spin ice.
+
+New J. Phys. 17, 023047 (2015).
+
+20. Jungfleisch, M. B. et al. High-frequency dynamics modulated by collective magnetization reversal in
+
+artificial spin ice. Phys. Rev. Appl. 8, 064026 (2017).
+
+21. Gliga, S. et al. Emergent dynamic chirality in a thermally driven artificial spin ratchet. Nat. Mater.
+
+16, 1106 -- 1111 (2017).
+
+22. Morley, S. A. et al. Vogel-Fulcher-Tammann freezing of a thermally fluctuating artificial spin ice
+
+probed by X-ray photon correlation spectroscopy. Phys. Rev. B 95, 104422 (2017).
+
+23. Canals, B. et al. Fragmentation of magnetism in artificial kagome dipolar spin ice. Nat. Commun. 7,
+
+11446 (2016).
+
+24. Ladak, S., Read, D. E., Perkins, G. K., Cohen, L. F. & Branford, W. R. Direct observation of magnetic
+
+monopole defects in an artificial spin-ice system. Nat. Phys. 6 (2010).
+
+25. Mengotti, E. et al. Real-space observation of emergent magnetic monopoles and associated Dirac
+
+strings in artificial kagome spin ice. Nat. Phys. 7, 68 (2010).
+
+15/18
+
+26. Farhan, A. et al. Emergent magnetic monopole dynamics in macroscopically degenerate artificial
+
+spin ice. Sci. Adv. 5 (2019).
+
+27. Vedmedenko, E. Y. Dynamics of bound monopoles in artificial spin ice: How to store energy in Dirac
+
+strings. Phys. Rev. Lett. 116, 077202 (2016).
+
+28. Macedo, R., Macauley, G. M., Nascimento, F. S. & Stamps, R. L. Apparent ferromagnetism in the
+
+pinwheel artificial spin ice. Phys. Rev. B 98, 014437 (2018).
+
+29. Wang, Y.-L. et al. Switchable geometric frustration in an artificial-spin-ice-superconductor heterosys-
+
+tem. Nat. Nanotechnol. 13, 560 -- 565 (2018).
+
+30. Levis, D. & Cugliandolo, L. F. Out-of-equilibrium dynamics in the bidimensional spin-ice model.
+
+EPL 97, 30002 (2012).
+
+31. Zurek, W. H. Cosmological experiments in superfluid helium. Nat. 317, 505 -- 508 (1985).
+32. Kibble, T. W. B. Topology of cosmic domains and strings. J. Phys. A: Math. Gen. 9, 1387 -- 1398
+
+(1976).
+
+33. del Campo, A., Kibble, T. W. B. & Zurek, W. H. Causality and non-equilibrium second-order phase
+
+transitions in inhomogeneous systems. J. Physics: Condens. Matter 25, 404210 (2013).
+
+34. Gliga, S., K´akay, A., Hertel, R. & Heinonen, O. G. Spectral analysis of topological defects in an
+
+artificial spin-ice lattice. Phys. Rev. Lett. 110, 117205 (2013).
+
+35. Ulm, S. et al. Observation of the Kibble-Zurek scaling law for defect formation in ion crystals. Nat.
+
+Commun. 4, 2290 (2013).
+
+36. Nisoli, C. et al. Effective temperature in an interacting vertex system: Theory and experiment on
+
+artificial spin ice. Phys. Rev. Lett. 105, 047205 (2010).
+
+37. The geometric structure of a pinwheel type does not involve four islands meeting head on (and so
+'unit' rather than 'vertex' would be a more appropriate description17, 28). As we compare types from
+square to pinwheel, we simply refer to them all as vertices.
+
+38. Morgan, J. P., Stein, A., Langridge, S. & Marrows, C. H. Thermal ground-state ordering and
+
+elementary excitations in artificial magnetic square ice. Nat. Phys. 7 (2010).
+
+39. For the case of a T2 vertex, this definition is unambiguous: the island moments within each sub-lattice
+of the vertex are parallel. For the case of a T3 vertex, while moments in one sub-lattice align parallel,
+the remaining two moments are aligned antiparallel. Nonetheless, the T3 vertex carries a net moment.
+
+40. Ding, W. et al. J. Appl. Phys. 98, 014905 (2005).
+41. McVitie, S. & Cushley, M. Quantitative fresnel lorentz microscopy and the transport of intensity
+
+equation. Ultramicroscopy 106, 423  --  431 (2006).
+
+42. C´ordoba, R., Ses´e, J., Teresa, J. D. & Ibarra, M. High-purity cobalt nanostructures grown by focused-
+electron-beam-induced deposition at low current. Microelectron. Eng. 87, 1550  --  1553 (2010). The
+35th International Conference on Micro- and Nano-Engineering (MNE).
+
+43. Belova, L. M. et al. Rapid electron beam assisted patterning of pure cobalt at elevated temperatures
+
+via seeded growth. Nanotechnol. 22, 145305 (2011).
+
+44. Moller, G. & Moessner, R. Artificial square ice and related dipolar nanoarrays. Phys. Rev. Lett. 96,
+
+237202 (2006).
+
+16/18
+
+45. Perrin, Y., Canals, B. & Rougemaille, N. Extensive degeneracy, Coulomb phase and magnetic
+
+monopoles in artificial square ice. Nat. 540, 410 (2016).
+Ostman, E. et al. Interaction modifiers in artificial spin ices. Nat. Phys. 14, 375 -- 379 (2018).
+
+46.
+47. Nisoli, C. On thermalization of magnetic nano-arrays at fabrication. New J. Phys. 14, 035017 (2012).
+48. Liashko, S. Y., J´onsson, H. & Uzdin, V. M. The effect of temperature and external field on transitions
+
+in elements of kagome spin ice. New J. Phys. 19, 113008 (2017).
+
+49. This implicitly assumes that the systems are not glassy enough to jam in a local energy minima.
+50. Liu, C.-W., Polkovnikov, A. & Sandvik, A. W. Dynamic scaling at classical phase transitions
+
+approached through nonequilibrium quenching. Phys. Rev. B 89, 054307 (2014).
+
+51. Hendry, P. C., Lawson, N. S., Lee, R. A. M., McClintock, P. V. E. & Williams, C. D. H. Generation
+of defects in superfluid 4He as an analogue of the formation of cosmic strings. Nat. 368, 315 -- 317
+(1994).
+
+52. Zurek, W. H. Cosmic strings in laboratory superfluids and the topological remnants of other phase
+
+transitions. Acta Phys. Polon. B24, 1301 -- 1311 (1993).
+
+53. Mol, L. A. S. et al. Magnetic monopole and string excitations in a two-dimensional spin ice. J. Appl.
+
+Phys. 106, 063913 (2009).
+
+54. Kapaklis, V. et al. Melting artificial spin ice. New J. Phys. 14, 035009 (2012).
+55. Choosing a coordinate system in which the vertex moments lie in the (x,y)-plane, only the z-component
+), the
+
+of ∇× V is non-zero. Writing the vertex moment at a lattice point (i, j) as V(i, j) = (V (i, j)
+curl becomes
+
+,V (i, j)
+
+x
+
+y
+
+(cid:19)
+
+,
+
+(cid:12)(cid:12)(cid:12)(cid:12) (i, j)
+
+(cid:18)
+
+≈ 1
+2a
+
+∂xVy − ∂yVx
+
+V (i+1, j)
+y
+
+−V (i−1, j)
+
+y
+
+−V (i, j+1)
+
+x
+
++V (i, j−1)
+
+x
+
+in terms of the vertex moments at the neighbouring lattice points.
+
+56. In fact, it can be shown analytically that the two tilings tend to slightly different limits in the
+
+paramagnetic regime:
+
+T→∞∑∇× V =
+lim
+
+√
+2
+
+674+223
+1024
+
+15(181+248
+
+8192
+
+√
+2)
+
+≈ 0.966 vertex−1 for ϑ = 0◦
+≈ 0.974 vertex−1 for ϑ = 45◦.
+
+57. Sendetskyi, O. et al. Continuous magnetic phase transition in artificial square ice. Phys. Rev. B 99,
+
+214430 (2019).
+
+58. Luo, H., Schulz, M., Schuke, L., Trimper, S. & Zheng, B. Short-time dynamic behaviour of critical
+
+XY systems. Phys. Lett. A 250, 383  --  388 (1998).
+
+59. Dziarmaga, J. & Zurek, W. H. Quench in the 1-D Bose-Hubbard model: Topological defects and
+
+excitations from the Kosterlitz-Thouless phase transition dynamics. Sci. Reports 4 (2014).
+
+60. Metropolis, N., Rosenbluth, A. W., Rosenbluth, M. N., Teller, A. H. & Teller. Equation of state
+
+calculations by fast computing machines. The J. Chem. Phys. 21, 1087 -- 1092 (1953).
+
+61. Budrikis, Z., Politi, P. & Stamps, R. L. A network model for field and quenched disorder effects in
+
+artificial spin ice. New J. Phys. 14, 045008 (2012).
+
+17/18
+
+62. Nightingale, M. P. & Blote, H. W. J. Dynamic exponent of the two-dimensional Ising Model and
+Monte Carlo computation of the subdominant eigenvalue of the stochastic matrix. Phys. Rev. Lett. 76,
+4548 -- 4551 (1996).
+
+Acknowledgements
+This work was supported by the Engineering and Physical Sciences Research Council (EPSRC grant
+nos. EP/L002922/1, EP/L00285X/1, EP/M024423/1, and EP/P001483/1). G.M.M. is supported by the
+Carnegie Trust for the Universities of Scotland. Y.L. was funded by the China Scholarship Council. R.M.
+is supported by the Leverhulme Trust. R.L.S. acknowledges the support of the Natural Sciences and
+Engineering Research Council of Canada (NSERC) -- R.L.S. a ´et´e financ´e par le Conseil de recherches en
+sciences naturelles et en g´enie du Canada (CRSNG). G.M.M. thanks Aurelio Hierro-Rodriguez for useful
+input during sample optimisation.
+
+Contributions
+G.M.M. and Y.L. optimised the sample deposition. Y.L. performed atomic force microscopy on the
+samples. G.M.M. and G.W.P. performed the TEM experiments and processed the Fresnel data. G.M.M.
+with the assistance of R.M. performed Monte Carlo simulations. G.M.M., G.W.P., and R.M. wrote the
+manuscript. All other authors commented on the manuscript. S.McV and R.L.S. supervised the project.
+
+Additional Information
+The authors declare no competing interests.
+
+18/18
+
+

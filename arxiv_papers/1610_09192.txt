@@ -1,0 +1,1201 @@
+
+Anharmonic particles: suppressing van der Waals forces by an external field
+
+Heino Soo,1, 2 David Dean,3 and Matthias Krüger1, 2
+
+14th Institute for Theoretical Physics, Universität Stuttgart, Germany
+
+2Max Planck Institute for Intelligent Systems, 70569 Stuttgart, Germany
+
+3Univ. Bordeaux and CNRS, Laboratoire Ondes et Matière d'Aquitaine (LOMA), UMR 5798, F-33400 Talence, France
+
+We study the classical thermal component of Casimir, or van der Waals, forces between point
+particles with highly anharmonic dipole Hamiltonians when they are subjected to an external electric
+field. Using a model for which the individual dipole moments saturate in a strong field (a model that
+mimics the charges in a neutral, perfectly conducting sphere), we find that the resulting Casimir
+force depends strongly on the strength of the field, as demonstrated by analytical results. For a
+certain angle between external field and center to center axis, the fluctuation force can be tuned and
+suppressed to arbitrarily small values. We compare the forces between these anharmonic particles
+to those between harmonic ones, and also provide a simple formula for asymptotically large external
+fields, which we expect to be generally valid for the case of saturating dipole moments.
+
+I.
+
+INTRODUCTION
+
+Neutral bodies exhibit attractive forces, called van der
+Waals or Casimir forces depending on context. The earli-
+est calculations were formulated by Casimir who studied
+the force between two metallic parallel plates [1], and
+generalized by Lifshitz [2] for the case of dielectric ma-
+terials. Casimir and Polder found the force between two
+polarizable atoms [3]. Although van der Waals forces
+are only relevant at small (micron scale) distances, they
+have been extensively measured, see e.g. [4, 5]. With re-
+cent advances in measurement techniques, including the
+MEMS framework [6], Casimir-Polder forces become ac-
+cessible in many other interesting conditions.
+
+Due to the dominance of van der Waals forces in
+nanoscale devices, there has been much interest in con-
+trolling such forces. The full Lifshitz theory for van der
+Waals forces [2] shows their dependence on the electri-
+cal properties of the materials involved. Consequently
+the possibility of tuning a material's electric properties
+opens up the possibility of tuning fluctuation-induced in-
+teractions. This principle has been demonstrated in a
+number of experimental set-ups, for instance by chang-
+ing the charge carrier density of materials via laser light
+[7, 8], as well as inducing phase transformations by laser
+heating, which of course engenders a consequent change
+in electrical properties [8]. There is also experimental ev-
+idence of reduction of van der Waals forces for refractive
+index-matched colloids [9, 10]. The question of forces
+in external fields, electric and magnetic, has been stud-
+ied in several articles [11 -- 18]. When applying external
+fields, nonlinear materials (which exhibit "nonlinear op-
+tics") open up a variety of possibilities; these possibili-
+ties are absent in purely linear systems where the exter-
+nal field and fluctuating field are merely superimposed.
+Practically, metamaterials are promising candidates for
+Casimir force modulation, as they can exhibit strongly
+nonlinear optical properties [19, 20] and their properties
+can be tuned by external fields [21]. The nature and de-
+scription of fluctuation-induced effects in nonlinear sys-
+tems is still under active research [22 -- 25]. For exam-
+
+ple, in Ref. [25], it was shown that nonlinear properties
+may alter Casimir forces over distances in the nanoscale.
+However, in the presence of only a small number of ex-
+plicit examples, more research is needed to understand
+the possibilities opened up by nonlinear materials.
+
+In this manuscript, we consider an analytically solv-
+able model for point particles with strongly nonlinear
+(anharmonic) properties. This is achieved by introduc-
+ing a maximal, limiting value for the polarization of the
+particles, i.e., by confining the polarization vector in an-
+harmonic potential wells. Casimir forces in such systems
+appear to be largely unexplored, even at the level of two
+particle interactions. We find that strong external elec-
+tric fields can be used to completely suppress the Casimir
+force in such systems. We discuss the stark difference of
+forces compared with the case of harmonic dipoles and
+give an asymptotic formula for the force in strong ex-
+ternal fields, which we believe is valid in general if the
+involved particles have a maximal value for the polariza-
+tion (saturate). In order to allow for analytical results,
+we restrict our analysis to the classical (high tempera-
+ture) limit. However, similar effects are to be expected
+in quantum (low temperature) cases.
+
+We start by computing the Casimir force for harmonic
+dipoles in an external field in section II, where in Sec.
+II B, we discuss the role of the angle between the field and
+the center to center axis. In section III A we introduce
+the nonlinear (anharmonic) well model and compute the
+Casimir force in an external field in section III C. We
+finally give an asymptotic expression for high fields in
+section III D.
+
+II. FORCE BETWEEN HARMONIC DIPOLES
+
+IN A STATIC EXTERNAL FIELD
+
+A. Model
+
+Classical van der Waals forces can be described by use
+of quadratic Hamiltonians describing the polarization of
+the particles involved [26 -- 28]. We introduce the system
+
+comprising of two dipole carrying particles having the
+Hamiltonian,
+
+(1)
+
+(2)
+
+(3)
+
+H (h) = H (h)
+
+2 + Hint,
+
+1 + H (h)
+p2
+i
+2α
+
+− pi · E,
+
+H (h)
+
+i =
+
+Hint = −2kh3(cid:16)p1 · R(cid:17)(cid:16)p2 · R(cid:17) − p1 · p2i ,
+
+where pi is the instantaneous dipole moments of parti-
+cle i. α denotes the polarizability, where for simplicity
+of presentation, we choose identical particles. The exter-
+nal, homogeneous static electric field E couples to pi in
+the standard manner. The term Hint describes the non-
+retarded dipole-dipole interaction in d = 3 dimensions
+with the coupling constant
+
+2
+
+In this series, the first term is of order R−4, while the
+second is of order R−7. The external electric field induces
+finite (average) dipole moments. For an isolated particle,
+this is (index 0 denoting an isolated particle, or k = 0)
+
+hpii0 = R d3pi exp (−βHi) pi
+R d3pi exp (−βHi)
+
+.
+
+(8)
+
+For the case of harmonic particles, Eq. (2), this naturally
+gives
+
+hpii0 = αE.
+
+(9)
+
+The mean dipole moments of the isolated particles in
+Eq. (9), induced by the external electric field, give rise to
+a force decaying with R−4, i.e., the first term in Eq. (7).
+This can be made more explicit by writing
+
+k =
+
+1
+
+4πε0
+
+R−3,
+
+(4)
+
+(cid:18) ∂kZ
+Z (cid:19)k=0
+
+= 2 hp1i0 · hp2i0
+
+where R = R with R the vector connecting the centers
+of the two dipoles, while R denotes corresponding unit
+vector. Since we are considering purely classical forces,
+retardation is irrelevant. ε0 is the vacuum permittivity,
+and we use SI units. Inertial terms are irrelevant as well
+and have been omitted. (Since the interaction does not
+depend on, e.g., the change of pi with time, inertial parts
+can be integrated out from the start in the classical set-
+ting.)
+
+B. Casimir force as a function of the external field
+
+The force F for the system given in Eqs. (1)-(3) can be
+calculated from (as the external electric field is station-
+ary, the system is throughout in equilibrium)
+
+− 6(cid:16)hp1i0 · R(cid:17)(cid:16)hp2i0 · R(cid:17) .
+
+(10)
+
+Representing a force decaying with R−4, this term dom-
+inates at large separations. From Eq. (10), the depen-
+dence on the angle between E and R becomes appar-
+ent. The induced force can be either attractive (e.g.
+R k E) or repulsive (e.g. R ⊥ E) [29]. We are aim-
+ing at reducing the Casimir force through the electric
+field, and thus, term by term, try to obtain small prefac-
+tors. The considered term ∼ R−4 is readily reduced by
+choosing R · E = 1√3
+, for which this term is exactly zero,
+(cid:0) ∂kZ
+Z (cid:1)k=0 = 0. See the inset of Fig. 1 for an illustration.
+
+In the following sections we will thus study the behavior
+of the term ∼ R−7 as a function of the external field,
+keeping this angle thoughout.
+
+F =
+
+1
+β
+
+∂R ln Z,
+
+(5)
+
+C. Force for the angle R · E = 1
+√3
+
+, the force is of order R−7 for large R,
+
+where Z = R d3p1R d3p2 exp (−βH) is the partition
+
+function, with the inverse temperature β = 1/kBT . By
+using the coupling constant k from Eq. (4), this may also
+be written as
+
+For R · E = 1√3
+
+and reads
+
+F  R· E= 1
+
+√3
+
+=
+
+F =
+
+1
+β
+
+(∂Rk)
+
+∂kZ
+Z
+
+.
+
+(6)
+
+Furthermore, we are interested in the large separation
+limit, and write the standard series in inverse center-to-
+center distance (introducing R ≡ R) ,
+
+F =
+
++
+
+1
+β
+
+1
+β
+
+(∂Rk)(cid:18) ∂kZ
+(∂Rk) k"(cid:18) ∂2
+
+Z (cid:19)k=0
+Z (cid:19) −(cid:18) ∂kZ
+
+kZ
+
+Z (cid:19)2#k=0
+
++ O(cid:0)R−10(cid:1) .
+
+∂Rk2
+
+2β (cid:18) ∂2
+
+kZ
+
+Z (cid:19)k=0
+
++ O(cid:0)R−10(cid:1) .
+
+(11)
+
+The discussion up to here, including Eq. (11), is valid
+generally, i.e., for any model describing the individual
+dipoles. For the case of harmonic dipoles, i.e., for Eq. (2),
+for this case
+yields a result which is partly familiar from the case of
+harmonic dipoles in the absence of external fields (de-
+noted F0),
+
+we denote F = Fh. Calculating (cid:16) ∂ 2
+
+Z (cid:17)k=0
+
+kZ
+
+Fh =(cid:18)1 +
+
+2
+3
+
+αβE2(cid:19) F0 + O(cid:0)R−10(cid:1) ,
+4πε0(cid:19)2
+
+R−7.
+
+72
+
+β (cid:18) α
+
+(7)
+
+F0 = −
+
+(12)
+
+(13)
+
+3
+
+Figure 2. Illustration of a simple potential for the individual
+dipoles, which describes saturation. A parabola of curvature
+1 is cut off by a hard "wall" at the value P . Practically,
+α−
+we simplify even further by letting the polarizability α tend
+to infinity, so that the potential of Eq. (17) is approached.
+Physically, α → ∞ means α ≫ βP 2.
+
+As we aim to study the effect of saturation, while keep-
+ing the number of parameters to a minimum, we addi-
+tionally take the limit α → ∞. This yields an infinite well
+potential (see the lower curves of Fig. 2 for the approach
+of this limit),
+
+H (w)
+
+i =(−pi · E,
+
+∞,
+
+pi < P,
+otherwise.
+
+(14)
+
+Such models have been studied extensively in different
+contexts, as, e.g, asymmetric quantum wells of various
+shapes [30 -- 32], two-level systems with permanent dipole
+moments [33], and dipolar fluids [34]. These systems are
+also known to be tunable with an external electric field
+[35, 36]. However the Casimir effect has not been inves-
+tigated.
+
+This model for example mimics free electrons confined
+to a spherical volume, such as in a perfectly conduct-
+ing, neutral sphere. The charge distribution in a sphere
+has, additionally to the dipole moment, higher multipole
+moments, e.g. quadrupolar. For a homogenous external
+field, the Hamiltonian in Eq. (14) is however precise, as
+higher multipoles couple to spatial derivatives (gradients)
+of the field [29], and only the dipole moment couples to
+a homogeneous field. Also, the interaction part, Eq. (3),
+contains in priciple terms with higher multipoles. These
+do however play no role for the force at the order R−7.
+
+B. Polarization and polarizability
+
+We start by investigating the polarization of an indi-
+vidual particle as a function of the field E, resulting from
+Eq. (14), which is defined in Eq. (8). It can be found an-
+
+Figure 1. Casimir force between harmonic dipoles as a func-
+tion of the strength of a static external field. The angle be-
+tween the field and the center-to-center vector R is chosen
+ϕ = arccos (cid:16) 1
+4 then van-
+ishes, so that the force decays as ∼ R−
+
+√3(cid:17). The "deterministic" force ∼ R−
+
+7.
+
+Again, for zero field, E → 0, this is in agreement with
+the Casimir-Polder force in the classical limit [26], given
+by F0. As the field is applied, the force increases, be-
+ing proportional to E2 for αβE2 ≫ 1. This is due to
+interactions of a dipole induced by the E-field with a
+fluctuating dipole (compare also (34) below). The term
+proportional to E2 is naturally independent of T . The
+force as a function of external field is shown in Fig. 1.
+
+The Casimir force given by Eq. (12) is thus tunable
+through the external field, but it can only be increased
+due to the square power law. While this might be useful
+for certain applications, we shall in the following inves-
+tigate the case of highly nonlinear particles. The fact
+that the force in Eq. (13) is proportional to α2 suggests
+that reduction of the force could be achieved, if the po-
+larizabilities were dependent on the external field. In the
+next section, we will investigate a model for saturating
+particle dipole moments, where indeed the forces can be
+suppressed.
+
+III. FORCE BETWEEN SATURATING
+
+DIPOLES IN AN EXTERNAL FIELD
+
+A. Model: Infinite wells
+
+The response of a harmonic dipole to an external field
+is by construction linear for any value of the field (see
+Eq. (9)), and the polarization can be increased without
+bound. We aim here to include saturation by introducing
+a limit P for the polarization, such that pi < P at all
+times and for all external fields. This can be achieved by
+modifying the Hamiltonian in Eq. (2), asigning an infinite
+value for pi > P . The potential for pi obtained in such
+a way is illustrated in Fig. 2.
+
+is defined through the linear response,
+
+αij =
+
+∂ hpii
+∂Ej
+
+.
+
+4
+
+(18)
+
+Note that this derivative is not necessarily taken at zero
+field E, so that αij is a function of E. Indices i and j
+denote the components of vectors (in contrast to previous
+notation). The polarizability tensor as defined in Eq. (18)
+is measured in the absence of any other particle (in other
+words, at coupling k = 0). αij can be deduced directly
+from the function Q in Eq. (16). In general, we can write
+
+αij (β, E, P ) = Aij (βEP ) α0.
+
+(19)
+
+Recall the zero-field polarizability α0 ≡ 1
+5 βP 2 (Eq. (17)).
+For the isolated particle, the only special direction is pro-
+vided by the external field E, and it is instructive to
+examine the polarizability parallel and perpendicular to
+it. As mentioned, these are related to Q, and the corre-
+sponding dimensionless amplitudes Ak and A⊥ are,
+
+Figure 3. Characterization of an isolated particle described
+by the well model. The mean dipole moment (see Eq. (15))
+and polarizations (see Eqs. (20) and (21)). P is the "width"
+5 βP 2 denotes the zero-field
+of the well potential, and α0 ≡
+polarizability.
+
+1
+
+alytically,
+
+hpii0 = Q (βEP ) P E,
+
+Q (x) =
+
+1
+
+x(cid:0)x2 − 3x + 3(cid:1) e2x − x2 − 3x − 3
+
+(x − 1) e2x + x + 1
+
+(15)
+
+.
+
+(16)
+
+Note that the product βEP is dimensionless. For a small
+external field, we find the average polarization is given by
+
+Ak (x) = 5
+
+A⊥ (x) = 5
+
+d
+dx
+1
+x
+
+Q (x) ,
+
+Q (x) .
+
+(20)
+
+(21)
+
+The amplitudes for parallel and perpendicular polariz-
+ability are also shown in Fig. 3. The direct connection
+with the polarization is evident. For small fields, where
+the polarization grows linearly, the polarizability is inde-
+pendent of E. Analytically,
+
+hpii0 =
+
+1
+5
+
+βP 2E + O(cid:0)E3(cid:1) .
+
+(17)
+
+We hence observe, as expected, that for small field
+the particles respond harmonically, with a polarizability
+α0 ≡ 1
+5 βP 2. This polarizability depends on temperature,
+as it measures how strongly the particles' thermal fluctu-
+ations in the well are perturbed by the field. We may now
+give another interpretation of the limit α → 0 in Fig. 2:
+in order to behave as a "perfect" well, the curvature, given
+by α−1 must be small enough to fulfill α ≫ α0.
+
+P
+
+The normalized polarization (i.e. Q (βEP ) =
+
+hpii0
+)
+is shown in Fig. 3 as a function of external field. For
+small values of E, one sees the linear increase, according
+to Eq. (17). In the large field limit, the polarization in-
+deed saturates to P E. The dimensionless axis yields the
+relevant scale for E, which is given through (βP )−1. At
+low temperature (or large P ), saturation is approached
+already for low fields, while at high temperature (or low
+P ), large fields are necessary for saturation.
+
+Ak (x) = 1 −
+
+A⊥ (x) = 1 −
+
+3
+35
+1
+35
+
+x2 + O(cid:0)x3(cid:1) ,
+x2 + O(cid:0)x3(cid:1) .
+
+For large fields, i.e., when βEP is large compared to
+unity, the polarizability reduces due to saturation effects.
+Asymptotically for large fields, the polarizability ampli-
+tudes are given as
+
+(22)
+
+(23)
+
+(24)
+
+(25)
+
+Ak (x) = 10x−2 + O(cid:0)x−3(cid:1) ,
+A⊥ (x) = 5x−1 − 10x−2 + O(cid:0)x−3(cid:1) .
+
+The parallel polarizability αk falls off as E−2 and the
+parallel polarizability α⊥ as E−1. The different power
+laws may be expected, as near saturation, changing the
+dipoles direction is a softer mode compared to changing
+the dipoles' absolute value.
+
+Another important quantity related to the polarization
+is the polarizability, which is a measure of how easy it is
+to induce or change a dipole moment in a system. For
+harmonic particles, it is independent of external fields
+(see Eq. (9)). In the case of anharmonic particles, the
+field-dependent polarizability tensor αij is of interest. It
+
+C. Casimir force
+
+The Casimir force between particles described by the
+well potential, Eq. (14), is computed from the following
+Hamiltonian
+
+2. 5
+
+2. 0
+
+1. 5
+
+1. 0
+
+0. 5
+
+)
+
+T
+
+(
+
+w
+F
+
+)
+0
+T
+(
+0
+F
+
+5
+
+= 1
+2
+= 2
+3
+
+= 1
+
+= 3
+2
+
+= 2
+
+T
+T0
+
+T
+T0
+
+T
+T0
+
+T
+T0
+
+T
+T0
+
+0
+
+10
+
+20
+
+30
+EP
+kBT0
+
+40
+
+50
+
+60
+
+Figure 4. Casimir force between two well particles in an ex-
+ternal electric field E. The angle between the field and the
+vector R is ϕ = arccos (cid:16) 1
+
+√3(cid:17).
+
+Figure 5. Temperature dependence of the Casimir force for
+well particles. For small E, the force decreases with temper-
+5 βP 2. For
+ature, because the zero-field polarizability is α0 = 1
+large E, the force is unexpectedly independent of T .
+
+H (w) = H (w)
+
+1 + H (w)
+
+2 + Hint,
+
+H (w)
+
+i =(−pi · E,
+
+∞,
+
+pi < P,
+otherwise,
+
+(26)
+
+(27)
+
+with the interaction potential Hint given in Eq. (3). The
+discussion in section II regarding the angle of the external
+field holds similarly here, i.e., Eq. (11) is valid. The force
+decaying as R−4 hence vanishes for the angle R · E =
+1√3
+and we continue by studying the R−7 term at this
+angle. Using Eq. (11), the Casimir force can be found
+analytically,
+
+Fw = fw (βEP ) F0 + O(R−10),
+
+(28)
+
+with the zero field force
+
+F0 = −
+
+72
+
+β (cid:18) α0
+
+4πε0(cid:19)2
+
+R−7,
+
+(29)
+
+and the dimensionless amplitude
+
+(30)
+
+1
+
+25
+3
+
+fw (x) =
+
+x4(cid:0)x2 + 3(cid:1) sinh (x) − 3x cosh (x)
+×(cid:2)(cid:0)2x2 + 21(cid:1) x cosh (x) −(cid:0)9x2 + 21(cid:1) sinh (x)(cid:3) .
+
+[x cosh (x) − sinh (x)]2
+
+Again, α0 ≡ 1
+5 βP 2 is the zero-field polarizability (see Eq.
+(17)).The force is most naturally expressed in terms of
+F0, which is the force at zero-field, equivalent to Eq. (13).
+The amplitude fw is then dimensionless and depends, as
+the polarization, on the dimensionless combination βEP .
+The force is shown in Fig. 4. For zero external fields,
+the curve starts at unity by construction, where the force
+is given by F0. The force initially increases for small
+values of βEP , in accordance with our earlier analysis
+of harmonic dipoles. After this initial regime of linear
+
+response, the Casimir force decreases for βEP & 1, and,
+for βEP ≫ 1, asymptotically approaches zero with E−1,
+
+Fw = −
+
+48P 3
+
+(4πε0)2 R−7E−1 + O(cid:0)E−2(cid:1) .
+
+(31)
+
+This behavior yields enormous potential for applications:
+by changing the external field, the force can be switched
+on or off.
+
+The asymptotic law in Eq. (31) gives another intrigu-
+ing insight:
+for large field, the force is independent of
+temperature. This is in contrast to the fact that (classi-
+cal) fluctuation induced forces in general do depend on
+temperature. This peculiar observation is a consequence
+of cancellations between factors of β, and might yield fur-
+ther possibilities for applications. This is demonstrated
+in Fig. 5. Indeed, we see that for small values of E, the
+force does depend on temperature, while for large fields,
+the curves for different values of temperature fall on top
+of each other. As a remark, we note that F0 is inversely
+proportional to temperature, in contrast to F0 for har-
+monic particles in Eq. (13). This is because the zero
+field polarizability depends on temperature for the well
+potentials considered here.
+
+D. Asymptotic formula for high fields
+
+What is the physical reason for the decay of the force
+for large field E observed in Fig. 4? For large values of
+βEP , the force may be seen as an interaction between
+a stationary dipole and a fluctuating one. This is cor-
+roborated by a direct computation of the force between
+a stationary dipole q, pointing in the direction of the
+
+electric field, and a particle with Hamiltonian
+
+H (s)
+
+1 =
+
+p2
+k
+2αk
+
++
+
+p2
+⊥
+2α⊥
+
+− p · E,
+
+(32)
+
+where "perpendicular" and "parallel" refer to the direc-
+tion of the E field as before. The two such hypothetical
+particles interact via the Hamiltonian
+
+H (s)
+
+int = −2kh3(cid:16)p · R(cid:17)(cid:16)q · R(cid:17) − p · qi .
+
+(33)
+
+Choosing the angle between R and E as before, we find
+for the force between these particles (to leading order in
+k),
+
+Fs = −24α⊥q2(cid:18) 1
+
+4πε0(cid:19)2
+
+R−7.
+
+(34)
+
+This result can be related to Eq. (31). Substituting q =
+P E, the value at saturation, and α⊥ = 5/(βEP )α0 =
+P/E (using the leading term for large field from Eq. (25)),
+we find
+
+Fs = −24
+
+P 3
+
+E (cid:18) 1
+
+4πε0(cid:19)2
+
+R−7.
+
+(35)
+
+This is identical to Eq. (31), except for a factor of two.
+This is expected, as this factor of two takes into account
+the force from the first fixed dipole interacting with the
+second fluctuating one and vice versa. We have thus
+demonstrated that Eq. (34) may be used to describe the
+behavior of the force for large values of E. The impor-
+tance of this observation lies in the statement, that such
+reasoning might be applicable more generally: in case of
+more complex behavior of p(E), i.e., more complex (or
+
+[1] H. Casimir, Proc. K. Ned. Akad. 360, 793 (1948).
+[2] E. M. Lifshitz, J. Sov. Phys. 2, 73 (1956).
+[3] H.
+
+Casimir
+
+and
+
+D.
+
+Polder,
+
+B.
+
+G.
+
+Phys. Rev. 73, 360 (1948).
+
+[4] J. M. Obrecht, R. J. Wild, M. Antezza, L. P.
+and E. A. Cornell,
+
+Pitaevskii,
+Phys. Rev. Lett. 98, 063201 (2007).
+
+S. Stringari,
+
+[5] C. I. Sukenik, M. G. Boshier, D. Cho, V. Sandoghdar,
+
+6
+
+realistic) particles. We believe that the value of q at sat-
+uration and the polarizability α⊥ near saturation can be
+used to accurately predict the force in the limit of large
+external fields via Eq. (34).
+
+IV. SUMMARY
+
+We have demonstrated how the classical Casimir-
+Polder force between two saturating dipoles can be sup-
+pressed by applying an external static electric field. Of
+
+special interest is the angle ϕ = arccos(cid:16) 1√3(cid:17) between
+
+the external field and the vector connecting the dipoles,
+for which the deterministic dipole-dipole interaction van-
+ishes. The remaining "Casimir-Polder" part can then be
+tuned and is arbitrarily suppressed at large values of ex-
+ternal fields due to the vanishing polarizability. The force
+in that case decays with E−1. This is in strong con-
+trast to harmonic dipoles, which experience an increase
+of the force in the presence of an external field, growing
+with E2. We also provided a simple formula to estimate
+the force between particles under strong fields. It would
+be interesting to extend the results here to macroscopic
+objects composed of such dipole carrying particles, here
+multi-body effects will potentially change the physics for
+dense systems. However for dilute systems, where the
+pairwise approximation of van der Waals forces is accu-
+rate, the results obtained here are directly applicable and
+thus the modulation of Casimir or van der Waals forces,
+predicted here will apply to a certain extent. Of course
+an important main difference in more than two body sys-
+tems is that the deterministic component of the interac-
+tion cannot be obviously cancelled by a uniform electric
+field, as there is more than one center to center vector,
+denoted by R in this paper, separating the interacting
+dipoles.
+
+We thank G. Bimonte, T. Emig, N. Graham, R.
+L. Jaffe and M. Kardar for useful discussions during
+early stages of this work. This work was supported
+by Deutsche Forschungsgemeinschaft (DFG) grant No.
+KR 3844/2-1 and MIT-Germany Seed Fund Grant
+No. 2746830.
+
+[8] G. Torricelli, P. J. van Zwol, O. Shpak, C. Binns,
+G. Palasantzas, B. J. Kooi, V. B. Svetovoy, and M. Wut-
+tig, Phys. Rev. A 82, 010101 (2010).
+
+[9] A.
+
+Yethiraj
+
+and
+Nature 421, 513 (2003).
+
+A.
+
+van
+
+Blaaderen,
+
+[10] D.
+
+Bonn,
+
+J.
+
+Otwinowski,
+
+S.
+
+H. Guo,
+Phys. Rev. Lett. 103, 156101 (2009).
+
+G. Wegdam,
+
+and
+
+P.
+
+Sacanna,
+Schall,
+
+and E. A. Hinds, Phys. Rev. Lett. 70, 560 (1993).
+
+[11] D. Robaschik, K. Scharnhorst,
+
+and E. Wieczorek,
+
+[6] M. Gad-el Hak, The MEMS Handbook (CRC press,
+
+Ann. Phys. (N. Y). 174, 401 (1987).
+
+2001).
+
+[12] M. V. Cougo-Pinto, C. Farina, M. R. Negrão, and A. C.
+
+[7] F. Chen, G. L. Klimchitskaya, V. M. Mostepanenko, and
+
+Tort, J. Phys. A. Math. Gen. 32, 4457 (1999).
+
+U. Mohideen, Phys. Rev. B 76, 035338 (2007).
+
+[13] D. Andrews, R. Crisp,
+
+and D. Bradshaw,
+
+J. Phys. B At. Mol. Opt. Phys. 39, S637 (2006).
+
+[14] A. Salam, J. Chem. Phys. 124, 14302 (2006).
+[15] J. Wang, X. Zhang, S.-Y. Pei,
+
+and D.-H. Liu,
+
+Phys. Rev. A 73, 042103 (2006).
+
+[16] W.-K.
+
+Tse
+
+and
+
+A.
+
+H.
+
+MacDonald,
+
+Materwiss. Werksttech. 47, 222 (2016).
+M.
+
+and
+
+Soo
+
+[25] H.
+
+7
+
+Krüger,
+
+Europhysics Lett. 115, 41002 (2016).
+
+[26] T. H. Boyer, Phys. Rev. A 11, 1650 (1975).
+[27] D. S. Dean, V. Démery, V. A. Parsegian, and R. Pod-
+
+Phys. Rev. Lett. 109, 236806 (2012).
+
+gornik, Phys. Rev. E 85, 031108 (2012).
+
+[17] C. J. Cao, M. van Caspel,
+
+and A. R. Zhitnitsky,
+
+Phys. Rev. D 87, 105012 (2013).
+
+[28] D. S. Dean, V. A. Parsegian,
+Phys. Rev. A 87, 032111 (2013).
+
+and R. Podgornik,
+
+[18] D. S. Dean, B.-S. Lu, A. C. Maggs, and R. Podgornik,
+
+[29] J. D. Jackson, Classical Electrodynamics (Wiley, New
+
+Phys. Rev. Lett. 116, 240602 (2016).
+
+York, 1998).
+
+[19] M.
+
+Kauranen
+
+and
+
+A.
+
+V.
+
+Zayats,
+
+[30] E.
+
+Rosencher
+
+and
+
+P.
+
+Bois,
+
+Nat. Photonics 6, 737 (2012).
+
+Phys. Rev. B 44, 11315 (1991).
+
+[20] M. Lapine,
+
+I. V. Shadrivov,
+
+and Y. S. Kivshar,
+
+[31] H.
+
+Yildirim
+
+and
+
+M.
+
+Tomak,
+
+Rev. Mod. Phys. 86, 1093 (2014).
+
+Phys. Rev. B 72, 115340 (2005).
+
+[21] A. Boardman, V. Grimalsky, Y. Kivshar, S. Ko-
+shevaya, M. Lapine, N. Litchinitser, V. Mal-
+nev, M. Noginov, Y. Rapoport,
+and V. Shalaev,
+Laser Photon. Rev. 5, 287 (2011).
+
+[32] L.
+
+Zhang,
+
+Chi,
+Phys. Lett. A 366, 256 (2007).
+
+Y.-M.
+
+and
+
+J.-J.
+
+Shi,
+
+[33] R. Bavli and Y. B. Band, Phys. Rev. A 43, 5039 (1991).
+Dietrich,
+[34] I.
+
+Szalai,
+
+Nagy,
+
+and
+
+S.
+
+S.
+
+[22] F. Kheirandish, E. Amooghorban, and M. Soltani, Phys.
+
+J. Chem. Phys. 131, 154905 (2009).
+
+Rev. A 83, 032507 (2011).
+
+[35] D.
+
+Ahn
+
+and
+
+S.
+
+L.
+
+Chuang,
+
+[23] C. Khandekar, A. Pick, S. G. Johnson, and A. W. Ro-
+
+IEEE J. Quantum Electron. 23, 2196 (1987).
+
+driguez, Phys. Rev. B 91, 115406 (2015).
+
+[36] L. Tsang, D. Ahn,
+
+and
+
+S.
+
+L. Chuang,
+
+[24] K.
+
+Makhnovets
+
+and
+
+A.
+
+Kolezhuk,
+
+Appl. Phys. Lett. 52, 697 (1988).
+
+

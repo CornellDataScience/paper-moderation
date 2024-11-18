@@ -1,0 +1,2316 @@
+Effects of the interfacial polarization on tunneling in surface coupled quantum dots
+
+Department of Chemistry, Columbia University, 3000 Broadway, New York 10027, USA
+
+Kuljit S. Virk∗ and David R. Reichman†
+
+Center for Functional Nanomaterials, Brookhaven National Laboratory, Upton, New York 11973, USA
+
+Mark S. Hybertsen‡
+
+Polarization effects are included exactly in a model for a quantum dot in close proximity to a
+planar interface. Efficient incorporation of this potential into the Schrödinger equation is utilized to
+map out the influence of the image potential effects on carrier tunneling in such heterostructures.
+In particular, the interplay between carrier mass and the dielectric constants of a quantum dot,
+its surrounding matrix, and the electrode is studied. We find that the polarizability of the planar
+electrode structure can significantly increase the tunneling rates for heavier carriers, potentially re-
+sulting in a qualitative change in the dependence of tunneling rate on mass. Our method for treating
+polarization can be generalized to the screening of two particle interactions, and can thus be applied
+to calculations such as exciton dissociation and the Coulomb blockade. In contrast to tunneling via
+intermediate surface localized states of the quantum dot, our work identifies the parameter space
+over which volume states undergo significant modification in their tunneling characteristics.
+
+I.
+
+INTRODUCTION
+
+The interface between a semiconductor quantum dot
+(QD) and an extended film is an important part of
+the functionality of many nanostructured devices, with
+such diverse applications as photovoltaics1 -- 3, low thresh-
+old lasers4,5, single electron memory6, and single pho-
+ton emitters7,8. Understanding the physics of this in-
+terface is important for the ultimate technological chal-
+lenges in these applications: increasing energy conversion
+efficiency of solar cells, controlling speed and volatility in
+memory devices, and creating reliable on-demand sources
+of single photons.
+
+In novel photovoltaic concepts, absorption of light by
+QD chromophores can be followed by the transfer of hot
+carriers to a nearby electrode. This allows the excess
+carrier energy to be harvested and can fundamentally
+change solar cell efficiency. Hot carrier transfer was re-
+cently demonstrated for optically excited PbSe QDs cou-
+pled to a TiO2 substrate3. In laser applications, the re-
+verse process is utilized to design the transfer of cold
+carriers from a quantum well to a QD, reducing the en-
+ergy deposition by hot carriers and leading to higher gain
+and lower thresholds4,5.
+In addition, rapid progress is
+being made on creating novel memory devices based on
+QDs. The large tunability of QDs allows flexibility to
+construct fast volatile memories as well as non-volatile
+memories with very long retention times, low electrical
+damage, and the possibility of charge storage based on
+holes as opposed to electrons6. The design strategy of
+each of these devices must take into account the effects
+of the local electrostatic environment on tunneling.
+
+Optically driven QD emitters are designed such that
+carrier tunneling and non-radiative energy transfer mech-
+anisms are slower than the exciton radiative recombina-
+tion rate in order to utilize their fluorescence for single
+photon generation9. The reverse process of non-radiative
+energy transfer from a quantum well to colloidal QDs has
+
+been also been demonstrated as a way of electrically in-
+jecting electron-hole pairs into the dot, where they re-
+combine and emit light10. Other electrically driven emit-
+ters exploit the tunneling of carriers into and out of epi-
+taxial QDs at two different energies to drive the system
+into electroluminescence9,11,12. The local electrostatic
+environment in both types of emitters plays an impor-
+tant role in determining the energy levels and tunneling
+rates, which in turn control the frequency of emitted light
+and the efficiency of these devices. This is also becoming
+more important as research progresses towards single QD
+emitters7,8.
+
+The tunnel coupling that controls the rate of carrier
+transfer in all these tunneling based devices can be heav-
+ily influenced by the image charge effects in the barrier
+separating the two components between which the car-
+rier transfer takes place. That this classical force on a
+non-classical electron in the barrier region is essential for
+accurately determining tunneling rates is well-known in
+the field of scanning tunneling microscopy13. Even when
+tunneling is not an issue, as in optically driven QD emit-
+ters, image charge effects are still important, and serve to
+lower the exciton energy in the QD, as well as to modify
+its transition dipole moment. This affects non-radiative
+energy transfer via the transition amplitudes as well as
+via resonance with surface excitations that absorb or emit
+this energy. Therefore, electrostatics within and at the
+interfaces of sub-systems can be one of the key players in
+each of the above applications of nanostructures.
+
+In this paper, we re-examine a model system consist-
+ing of a spherical QD coupled to a planar surface. An
+exact solution of the Poisson equation, including all im-
+age effects induced by the carrier charge distribution, is
+presented in a form that can be efficiently incorporated
+into the solution of the Schrödinger equation. Because of
+this efficiency, a large parameter space can be explored in
+this model and we exploit this capability to demonstrate
+the impact of the image effects on the carrier tunnel-
+ing rates. In addition to barrier lowering effects, we find
+
+2
+1
+0
+2
+
+ 
+l
+u
+J
+ 
+
+6
+2
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+1
+v
+9
+5
+2
+6
+
+.
+
+7
+0
+2
+1
+:
+v
+i
+X
+r
+a
+
+2
+
+a given choice of these two parameters in the calculations
+below, a possible set of materials realizing it can be read
+from the figure. One first identifies the vertical line clos-
+est to b to choose a barrier material. The range of QD
+materials then fall within the overlap of this line with the
+color representing .
+
+interesting consequences of the interplay between the in-
+duced electrostatic potential and the confinement of the
+particle inside the QD.
+
+The system we have modeled is sketched in Fig. 1, and
+is represented by a point in the parameter space defined
+by three dielectric constants (see figure), confinement po-
+tentials, and effective masses, in each region. To these
+material parameters, we add QD radius and its distance
+from the electrode as two geometrical parameters . We
+find that this space is best understood when we replace
+QD by the ratio  = QD/b, and L by the contrast
+fI = (b − L)/(b + L). Thus fI = 0 represents no
+image potential at the electrode interface, and fI = −1
+represents the opposite limit of the image potential due
+to a metal. Similarly  = 1 represents the lack of image
+potential at the QD surface, while  → ∞ would rep-
+resent a metallic nanoparticle as far as electrostatics is
+concerned.
+
+Figure 2: The barrier dielectric, b, and the ratio,
+
+ = QD/b, over the space spanned by QD materials on
+the vertical and barrier materials on the horizontal axis.
+The values of the barrier dielectric are indicated below
+
+the respective materials. At the intersection of two
+
+lines, the color indicates the value  takes for the given
+combination of QD material and the barrier material
+
+the dot is embedded in. The values of dielectric
+
+constants used are for ω → ∞ since tunneling times are
+
+assumed instantaneous.
+
+In Table I, we categorize the aforementioned classes of
+devices in terms of the ratio . Within each class, devices
+can be found over the entire range of values of the con-
+trast, fI. We present calculations at the two extremes,
+fI = 0 and fI = −1, for each system studied below.
+However the choice of fI for a given electrode can be
+subtle. In systems with low b, fI ≈ −1 for a substrate
+made of metal or an undoped semiconductor. At high b,
+as in the case of III-V epitaxial systems, fI ≈ 0 for an
+undoped substrate while it may be −1 for metallic elec-
+trodes. In the latter case, it is important to realize that
+the metallic electrodes are often doped semiconductors in
+which the carrier densities are of the order of 1018 cm−3,
+which yields an average distance between dopants equal
+to 100 Å. For QDs with diameters smaller than 10 nm,
+the electrode may be best approximated via the static
+dielectric constant of its host material. Thus setting the
+value of the parameter fI can be subtle in some systems,
+and its choice must take into account the properties such
+as dopant densities and the plasma frequency inside the
+
+Figure 1:
+
+(Left) The physical setup showing
+
+coordinates, dielectric constants, and induced charges
+due to a point charge (red) at position s, and its image
+
+(blue). (Right) The confinement potentials and
+
+schematically drawn image potential and wavefunctions
+
+in the QD and the electrode region. Potential is
+calculated at a general point r, and we let r → s to
+
+obtain the self energy.
+
+Having defined the strategy of our study in terms of a
+parameter space, we now connect the most important pa-
+rameters to real materials and device systems. In Fig. 2,
+we show a map of the values of b and  over a space
+spanned by the QD and the barrier materials. Thus for
+
+Quantum dotImage of quantum dotElectrode+++_______+−VL−VbψLψDImagePotentialEnergyz1.01.22.02.02.52.52.53.98.2Barrier materials and bAlNCdSeCdSGaNCdTeAlPAlAsInNGaPInPAlSbGaAsInAsGaSbInSbPbSPbSeQD materialsVacuumP-SiPhosphate1-thyoglicerolTOP/TOPOOelic-AcidE-MAASiO2AlAs 0.1 1.0 4.0 7.010.013.016.019.022.0Dielectric ratioelectrode material.
+
+low : III-V and II-VI systems of epitaxial QD layers
+
+optically and electrically pumped emitters
+volatile single electron memory
+QD lasers
+
+high : III-V, II-VI, Group IV colloidal QDs in vacuum,
+organic, p-Si, SiO2, and MgS matrixes
+
+optically and electrically pumped emitters
+energy transfer pumped emitters
+non-volatile single electron memory
+nanocrystal based photovoltaics
+
+Table I: Various QD-based systems in the parameter
+space defined by the dielectric ratio, , between the
+
+barrier and the QD. The classification, and the shaded
+heading in the low and high  blocks refers to the most
+
+common types of systems. The nanocrystal based
+systems may be found with both high and low 
+depending on the materials used. Specific devices
+
+realized under each system often span the entire range
+of dielectric contrast fI between the background and
+
+the planar medium.
+
+Let us consider the device examples of Table I in light
+of the parameter space of our model. The physical quan-
+tities important in the interplay of confinement and the
+induced potential are the effective mass inside the QD,
+the barrier potential, and the barrier dielectric. This im-
+plies a dependence of tunneling rate on the mass inside
+the QD, which may at first seem strange since a Fermi
+Golden Rule calculation of the tunneling rate involves
+only the wavefunctions within the barrier region14; the
+dependence of this rate on the mass inside the barrier is
+well-known5. However, the amplitude of the wavefunc-
+tion in the barrier region depends on the behavior of the
+wavefunction inside the QD and at its boundaries, and
+therefore on the mass inside the QD volume. The sub-
+stantial difference in effective mass often seen in semicon-
+ductors (including electrons, heavy holes and light holes)
+then suggests that the rates for electron and hole tunnel-
+ing in QD-based structures could also be quite different,
+as seen for example in models for QD laser structures5.
+In fact, depending on the dielectric contrast between
+the barrier and the QD, we find that image effects can
+lead to substantial localization of heavy carriers inside
+the QD with a significant change in tunneling rate. The
+trend in tunneling rate with carrier mass can thus be sub-
+stantially altered from the simpler picture found when
+image effects are neglected.
+In particular, we identify
+a regime in which a heavy carrier tunnels at a similar
+or much higher rate than a light carrier.
+Interestingly
+Mazur et al point to several experimental measurements
+in QD laser systems showing more modest differences
+
+3
+
+between these rates for the two carrier types4 than is
+expected from a simple WKB15 analysis5. While the
+interpretation of these particular experiments requires
+a proper accounting of surface states and defect states
+within the barrier, we find that in a parameter regime
+somewhat different from the conditions in these experi-
+ments, the image effects can also yield similar results.
+
+As is known from elementary electrostatics, the polar-
+ization induced at an interface of two materials is directly
+proportional to the dielectric contrast between them16.
+In the experiment of Tisdale et al.3, the dielectric con-
+stant of the TiO2 electrode is 8.4 and that of the PbSe
+QD is 22.4 at high frequencies17. On the other hand, the
+organic materials used to passivate the QDs, hydrazine
+and ethanedithiol, both have optical refractive index of
+1.517. Thus approximating the high-frequency dielectric
+constant (∞
+) within the barrier region to be 2.3, sub-
+stantial image effects are expected at both the electrode
+and the QD surface. In our model, this corresponds to
+high  and fI → −1. We find that this system should be
+in the parameter regime in which heavier particles tunnel
+faster than the lighter ones.
+
+Furthermore, the most interesting materials for the
+QD chromophore in photovoltaic systems generally have
+small bandgaps, and therefore large dielectric constants.
+These are generally colloidal QDs passivated by organic
+materials with relatively low dielectric constants at high
+frequencies. Therefore, these systems lie in a regime
+where the effects of interfacial polarization are maxi-
+mized. A range of behaviors can thus result from the
+interplay of confinement due to the barrier potential and
+the QD dielectric constant relative to that in the barrier.
+Laser systems based only on III-V semiconductors are
+in a region where the dielectric contrast between each
+pair of materials is low, and thus the interfacial polar-
+ization is small. In our model, this corresponds to low
+ and fI → 0. On the other hand, non-volatile single
+electron memory systems generally contain narrow gap
+nanocrystals (e.g. Si, InAs, GaSb) embedded inside wide
+gap layers (e.g. III-nitrides, AlAs, silica) for greater re-
+liability. Therefore they lie in a regime where the inter-
+facial polarization may be large, much like that for the
+photovoltaic systems discussed above. However, unlike
+photovoltaic systems, these devices often have tunable
+potentials, with barriers that are often thicker than 10
+nm. Therefore only the image effects at the QD/barrier
+interface are important, or in terms of our model param-
+eters: a high  and fI → 0.
+Quantum dot emitters are often embedded in high di-
+electric materials, and therefore have little dielectric con-
+trast with their surroundings. This limits the light collec-
+tion efficiency, and there is thus a growing interest in sys-
+tems with QDs coupled to optical fibers18, or embedded
+in host materials such as photonic crystals19, MgS20, and
+porous silicon21. In addition, large confinement poten-
+tials in these cutting edge systems would also remove the
+limitation of operating only at low temperatures. From
+the foregoing discussion, and the details presented below,
+
+these types of systems are expected to show large interfa-
+cial polarization at the QD boundary, which corresponds
+to a high  in our model. Furthermore fI ≈ 0 for op-
+tically pumped emitters since they do not depend on a
+nearby charge reservoir. In electrically pumped emitters,
+fI may take values between 0 and −1, but the electrode
+properties must first be carefully examined to set a par-
+ticular value as we emphasized in the above discussion.
+In novel energy transfer emitters10, passivated colloidal
+QDs lie on the surface of a dielectric, resulting in a value
+of −1 < fI < 0. Thus we expect QD emitters to span
+a large region in the parameter space of our model, and
+to exhibit a rich interplay between polarization and con-
+finement affecting the binding energy, fluoresence, and
+electroluminescence in these systems.
+
+Our paper is organized as follows. In Sec. II, we begin
+with the Schrödinger equation for a single electron inside
+the system shown in Fig. 1(a), and derive explicit expres-
+sions for its potential energy, and its rate of tunneling
+between the QD and the electrode. The mathematical
+details of the derivation are discussed in the Appendix.
+In Sec. III, we apply this theory to computationally ex-
+plore the parameter space in the manner described above.
+In particular, we present the crossover of trends in tun-
+neling rates for various combinations of parameters, and
+interpret this behavior in terms of the interplay discussed
+above. Following this section are our conclusions and re-
+marks on the use of our results inside more sophisticated
+ab-initio calculations of coupled Schrödinger and Poisson
+equations.
+
+4
+
+II. THEORY
+
+A. Electronic states
+
+(cid:21)
+
+(cid:20)
+
+The basic features of many devices can be modeled
+with the QD treated as a dielectric sphere and with the
+electronic structure of the device treated via an effective
+mass approximation. For a one-band model22,
+
+2
+2m0∇ ·
+
+−
+
+e2Σ(r)
+4πε0ba − E
+
+1
+m(r)∇ + V (r) +
+
+ψ(r) = 0,
+(1)
+where a is the QD radius, b is the dielectric constant
+of the barrier region, m(r) is the ratio of effective mass
+to bare mass m0, V (r) is the confinement potential, and
+Σ(r) is the electrostatic self-energy in the dimensionless
+form.
+
+The electrostatic self-energy of a charge in an isolated
+spherical QD was first derived by Brus23 for the infinite
+spherical well model, and then by Banýai et al. for a finite
+well22. Here we generalize these results by accounting for
+the geometric progression of image charges induced on
+the electrode and the QD surface. The potential energy
+is derived based on re-expansion of spherical harmonics24
+around a shifted origin. This approach may be found in
+several sources, including recent work on plasmonics of
+nanoparticles supported on a substrate25. As appropri-
+ate for the optical domain, the solutions presented there
+apply to an electric field uniform over the particle. Solu-
+tions to the Laplace equation within the space bounded
+by axially symmetric charge distributions in the same
+geometry have also been given26. We present a solution
+applicable to an arbitrary charge density, as needed for
+the self energy in the Schrödinger equation.
+
+We first consider the potential at r of a source charge
+at s, and write it as a superposition of four sources:
+the point charge, the multipole moments of the dielec-
+tric sphere, the image of the point charge in the plane,
+and the image of the multipole moments in the plane (see
+Fig. 1). Subjecting the contribution from surface charge
+densities to a multipole expansion, we write the potential
+as
+
+Φ(r; s) =
+
+q(s)e
+
+fI q(s)e
+
++
+
+4πε0b r − s
+
+4πε0b r − sI
+
++
+
+efI
+ε0ba
+
+(−1)l+p Qlp(s)
+
+2l + 1
+
+(cid:88)
+
+lp
+
+e
+
+(cid:88)
+(cid:19)l+1
+
+l,p
+
+ε0ba
+
+Ylp
+
+(cid:20)
+(cid:18) r + h
+
+Qlp(s)
+2l + 1
+
+r + h
+
++
+
+(cid:18) a
+
+r + h
+
+Θ(a − r)
+
+(cid:19)
+
+,
+
+(cid:16) r
+
+(cid:17)l
+
+a
+
+(cid:16) a
+
+r
+
++ Θ(r − a)
+
+(cid:17)l+1(cid:21)
+
+Ylp(r)
+
+(2)
+
+where sI = s − 2s · z z − h is the position vector of the
+image charge. The dimensionless function q(s) is fixed
+by requiring that the total charge in the real half space
+equal q in units of the elementary charge e. This function
+allows us to isolate the effects of dielectric screening of
+
+the charge in a continuous medium when the point s lies
+inside the sphere, and is given by,
+
+q(s) = q
+
+Θ(s − a) +
+
+Θ(a − s)
+
+.
+
+1
+
+
+(3)
+
+(cid:20)
+
+(cid:21)
+
+In the second and third terms of (2), the functions Ylp(r)
+are spherical harmonics written as a function of the direc-
+tion vector. The second term corresponds to the surface
+charge density in real space, while the third term is due
+to the image of this charge density. In this term, we have
+already accounted for the change in the sign of the mul-
+tipoles in the image space, which depends on l and m,
+where the integer l is the total angular momentum and
+p the azimuthal quantum number.
+
+We find the self consistent multipole moments, Qlp(s)
+by enforcing the electrostatic boundary conditions at the
+surface of the sphere as shown in Appendix A. Imposing
+axial symmetry of the complete system uncouples the
+different p, and the Qlp(s) for each p satisfy a set of
+linear equations indexed by l:
+
+planar surface (ρ = r/a),
+
+q2
+2
+
+(cid:0)1 − −1(cid:1) Θ(1 − ρ)
+(cid:34)
+∞(cid:88)
+
+−1ρ2
+1 − ρ2 −
+
+ρ2l
+
+Θ(1 − ρ)
+
+Σ0(ρ) =
+
++
+
+q2
+2
+
+ − 1
+ + 1
+
+
+
++
+
+(cid:34)
+
+( + 1)
+
+l=1
+
+[( + 1) l + 1] (l + 1)
+
++
+
+q2
+2
+
+ − 1
+ + 1
+
++
+
+ρ−2
+( + 1)
+
+Θ(ρ − 1)
+
+∞(cid:88)
+
+1
+
+1 − ρ2 −
+ρ−2l
+
+[( + 1) l + 1] (l + 1)
+
+l=1
+
+( + 1)
+
+ρ−2 ln(cid:0)1 − ρ2(cid:1) + 1
+(cid:35)
+ln(cid:0)1 − ρ−2(cid:1) + ρ−2
+
+( + 1)
+
+(cid:35)
+
+,
+
+Q(s) = q(s)[Q(0)(s) + fI Q(0)(sI )] + A(a/h)Q(s). (4)
+
+and Σ1 is the correction due to the electrode surface,
+
+5
+
+(7)
+
+(8)
+
+(cid:40)
+
+lp (s) and Q(0)
+
+The Q(0)
+lp (sI ) are induced just by the source
+point charge and the image of the point charge respec-
+tively, where fI = (b − L)/(b + L) (Fig. 1). The
+lp (s) are given by,
+Q(0)
+
+Q(0)
+
+Y ∗lp(s)
+
+lp (s) =
+
+( − 1)
+
+( + 1) l + 1
+
+(l + 1) (s/a)l ,
+−l (a/s)l+1 ,
+where  = QD/b. The matrix elements Ap
+ll(cid:48) depend on
+the radius of the sphere and the distance between the
+center of the sphere and its image (Fig. 1); they are
+given by
+
+s < a
+s > a
+
+,
+
+γl(cid:48)pγlp
+
+fI (2l + 1)
+(cid:112)
+( + 1) l + 1
+l ( − 1) (−1)l
+
+(cid:48)
+
+×
+
++l (l + l(cid:48))!
+(2l(cid:48) + 1) (2l + 1)l!l(cid:48)!
+
+(cid:16) a
+
+(cid:17)l+l
+
+(cid:48)
+
+Ap
+
+ll(cid:48) =
+
+where,
+
++1
+
+,
+
+(5)
+
+(6)
+
+h
+
+.
+
+(cid:112)
+
+γnp =
+
+n!
+
+(n − p)! (n + p)!
+
+The details of this entire derivation are also provided
+in Appendix A. The above equation for self consistent
+multipole moments couple the moments for all angular
+momenta l to each other. In practice, truncation must
+be applied by choosing l < lmax, and increasing lmax
+until the final result converges. We found that lmax > 15
+is sufficient in all cases we have applied this model to,
+and generally set lmax = 50.
+
+Equations (2)-(6) can be applied immediately to the
+interaction energy of two charged particles, e.g. for treat-
+ment of excitons, by considering one charge placed at s
+and using Qlp(s) to calculate the potential at r, the loca-
+tion of the second charge. In the following, we focus only
+on the single particle self-energy Σ and its consequences
+for tunneling. We write Σ as a sum of two contributions,
+Σ0 + Σ1, where Σ0 is the interaction energy without the
+
+Σ1(ρ) =
+
+2πq
+
+∞(cid:88)
+
+l=1
+
+l(cid:88)
+∞(cid:88)
+(cid:34)
+
+l=1
+
+p=−l
+
++2πfI q
+
+lp (ρ)
+
+Qlp(ρ) − Q(0)
+l(cid:88)
+
+2l + 1
+
+(−1)l+p Qlp(ρ)
+
+2l + 1
+
+p=−l
+
++
+
+fI q2
+
+2
+
+Θ(ρ − 1) + −1Θ(1 − ρ)
+
+(2ρ · z + h/a)
+
+Y lp(ρ)Sl(ρ)
+
+Ylp(ρ)Sl(ρ + h/a)
+
+(cid:0)1 − −1(cid:1) Θ(1 − ρ)
+
++
+
+(cid:35)
+
+.
+
+ρ + h/a
+
+Note that in the above expression, both series start at
+l = 1 because the monopole contribution from the in-
+duced charge on the image sphere is explicitly taken into
+account by the last term. In the derivation of the for-
+mula for Σ0, we followed Bánayi et al 22 to separate the
+divergent terms of the multipole series and sum them to
+identify closed form expressions that can be regularized
+(see Appendix B). The form of our expressions is slightly
+different from theirs due to the zeroth order multipole
+contribution written explicitly in our formula, while it
+is subsumed into the series in theirs.
+It represents the
+part of energy stored in the dielectric medium of infi-
+nite extent when a charge is embedded inside it. Here
+this energy is for the QD dielectric relative to the barrier
+medium. In both the above formulas, Sl(ρ) equals ρl for
+ρ < 1 and ρ−(l+1) otherwise.
+
+Since macroscopic electrostatics is being used in this
+model, the material parameters at the QD boundary are
+taken to follow an abrupt profile.
+In the case of effec-
+tive mass, we handle the discontinuity numerically using
+the ghost fluid method27. In the case of electrostatic po-
+tential, the self energy diverges at the boundary, which
+could be regularized by the microscopic profile of the po-
+tential. Since the present paper does not include defects
+of the atomic scale potential, we do not compute this po-
+tential and instead continuously join the self energy with
+the confining potentials of the electrode and the QD rel-
+ative to the background medium28. We do so by linearly
+interpolating Σ between its computed values within one
+lattice spacing inside and outside the QD interface. At
+
+6
+
+the remaining interface, the planar surface, we set the
+image charge interaction to
+
+Vimg = afI q2 1 − exp{−(z + h/2)/η}
+
+4(z + h/2)
+
+,
+
+(9)
+
+where η is chosen to yield a specified potential at the
+image plane. Results are generally insensitive to η for
+sufficiently deep surface potential because we focus only
+on wavefunctions that are decaying exponentially in this
+region.
+
+
+
+
+
+∞
+
+1
+
+
+Having defined the basis set for the final state of the
+electron escaping the QD, the tunneling rates are com-
+puted using the Fermi Golden rule,
+
+0
+
+dkz
+
+γn =
+
+d2k (cid:104)ψL;kz,k V ψD;n(cid:105)2 δ(Ekz,k−En),
+(13)
+where Ekz,k = 2/2m(k2
+z + k2) is the energy of the elec-
+trode basis state. The matrix element is calculated using
+Bardeen tunneling theory, in which it is implicitly as-
+sumed that the wavefunctions of the two subsystems are
+orthogonal. Enforcing this assumption yields,
+
+B. Tunneling rates
+
+
+(cid:104)ψL;kz,k V ψD;n(cid:105)
+
+We now consider tunneling of a single electron from the
+QD to the electrode. We model the electrode as a thick
+square well of finite depth with respect to the barrier at
+z = −h/2, and an infinite potential wall at the opposite
+end z = −h/2−w, letting w → ∞ in the final calculation
+to effect a semi-infinite substrate. Thus letting k be the
+in-plane wavevector and kz the transverse wavenumber,
+we write a complete set of basis functions of the electrode
+as,
+
+ψL(kz, k; r) = A(kz, k)eik·r(cid:104)
+
+e−κ(z+h/2)Θ (2z + h)
+
++ sin (kz (z + h/2) + δ) Θ (h − 2z)] , (10)
+where A normalizes ψL to the volume of the electrode
+(in the limit of semi-infinite electrode below, the volume
+drops out in the final expressions) and tan δ = kz/κ. In
+this simple model, the numbers kz, κ, and k are all real
+valued, and a state at given energy E satisfies
+
+2mL(E + VL)
+
+(11)
+
+2
+
+k2
+z =
+
+− k2,
+,
+
+(12)
+
+κ2 =
+
+2mbE
+
+mb
+mL
+
+2
+k2 −
+z > 0 and κ2 > 0. In the ex-
+and is admissible only if k2
+pressions above, we have introduced mL as the effective
+mass inside the electrode. More realistic models, such
+as those with surface states, will be necessary to obtain
+accurate rates. Regardless of the model used, the states
+would still decay exponentially perpendicular to the sur-
+face, and would be described by a (lattice) translational
+symmetry along the electrode surface29. In addition, the
+states enter into our tunneling rate below in such a way
+that only the wavefunction outside of the electrode is
+required; above, we have included the simplified form
+in z < −h/2 region for completeness. Therefore, at the
+length scale used in the calculations below, the matrix el-
+ements between the QD states and the basis states of the
+electrode, are captured well by the above model. How-
+ever, significant quantitative differences would arise due
+changes in density of states, as well as additional modes
+due to the surface states.
+
+=
+
+d2rψ∗L(kz, k; r) [H(r) − HL(r)] ψD;n(r). (14)
+Here HL is the Hamiltonian for the electrode in isolation
+of the QD, and the eigenstates of which are the above
+ψL(kz, k; r).
+
+The Bardeen tunneling matrix element is tradition-
+ally written as a surface integral. This form can be ob-
+tained by the use of the divergence theorem, but the for-
+mula (14) is more convenient for our calculations. How-
+ever, the aspect of Bardeen theory that is essential in this
+expression is the orthogonality assumption, which yields
+a matrix element of the difference between energies. We
+obtained this form by adding and subtracting HL to
+H, and then exploiting the relation (cid:104)ψL;kz,kHLψD(cid:105) =
+EL;kz,k(cid:104)ψLψD(cid:105) ≈ 0. The subtraction is advantageous
+because it naturally restricts the integration domain in
+(14) to the volume outside the electrode, and thus allows
+the possibility of computing ψD and ψL in separate calcu-
+lations, in which one would focus on the QD and electrode
+properties respectively. The subtracted Hamiltonian HL
+is non-vanishing in calculations in which the termination
+of the potential at the surface occurs smoothly into the
+junction, as is the case in atomic scale modeling. In the
+present calculation, HL describes a square well and thus
+makes no contribution outside the planar surface.
+From (12), we see that κ ∝ √mb, which in turn is
+proportional to log γ. Remarkably, we find that the tun-
+neling rate also shows a similar dependence on the mass
+inside the QD. While this is not a fundamental rela-
+tionship, we find that when the tunneling rates follow
+a monotonically decaying profile with respect to m, they
+can be described well by the expression,
+
+γ0 = αe−τ mβ
+
+,
+
+(15)
+
+where α, β, τ depend on the parameters of our physical
+model.
+
+Finally, we remark that in our calculations, we com-
+pute the electrostatic potential and the QD states using
+high frequency dielectric constants for each material (de-
+noted commonly as ∞
+). This is so because we ignore
+the time-dependence of a single tunneling event, and thus
+model tunneling as instantaneous. To be consistent with
+this viewpoint, or this regime of tunneling, we must take
+
+the material response to be of high frequency. Thus the
+initial and final states of the above matrix element are
+computed using ∞
+. We now turn to results of our cal-
+culations employing the above model.
+
+III. RESULTS
+
+A. Potential and wavefunctions
+
+7
+
+We begin by plotting the electrostatic potential, and
+the QD wavefunctions that result from it, to identify the
+key manifestations of the interplay between confinement
+(via mass) and the induced polarization. Our choice of
+parameters in this subsection is made to obtain the clear-
+est possible visualization of the impact of this interplay.
+Thus we have selected a relatively low b = 2.5, and a
+barrier potential of 0.8 eV to best capture the qualitative
+aspects of the self energy and wavefunctions simultane-
+ously within the QD volume and the barrier region. We
+verify below that the trends in the tunneling rates, based
+on the physical intuition derived here, continue to hold in
+more realistic parameter regimes. The distance between
+the QD and the electrode is chosen such that the effec-
+tive junction width (the smallest distance between the
+two surfaces) is about 1 nm. At the microscopic scale,
+this width may be understood as the distance between
+the image planes of the two surfaces.
+
+Figure 3 displays the contour plot of dimensionless self
+energy in the equatorial plane of the QD, which lies per-
+pendicular to the electrode surface. We observe that the
+junction potential is reduced significantly in a narrow re-
+gion between the two surfaces. The reduction is clearer
+in the lower panel of Fig. 3, where the potential is plotted
+along the z-axis for various dielectric ratios .
+
+Thus outside the QD, the potential becomes more at-
+tractive as  increases, while inside the QD, the bound-
+ary becomes more repulsive. Within the volume of the
+QD the slope of the potential, resulting from the image
+charges on the electrode, reduces as a result of dielec-
+tric shielding. The narrow attractive potential straddling
+outside the QD is due to the image potential at the QD
+boundary, and it becomes asymmetric with greater depth
+on the side facing the electrode due to the image charges
+on the electrode. Below, we will see that the asymmetry
+partially attracts the charge close to the electrode, and
+shifts the center of mass of the wavefunctions towards the
+electrode. Therefore, it could significantly affect tunnel-
+ing, especially for high  which results in a deep potential
+well. Since, this attractive potential is beyond the atomic
+scale variations in the potential at the surface of the QD,
+we must distinguish it from the surface traps formed at
+the defects. Therefore, in order to keep the terminology
+clear, we call this the image potential trap (IPT) follow-
+ing Banýai et al 22.
+
+For quickly estimating the self energy effects, it may
+be convenient to approximate Σ as simply the sum of Σ0
+and Vimg, the potential of the image charge in (9). The
+
+Figure 3: Top: Dimensionless self-energy . Upper: (left)
+
+contour plot (equatorial plane); (right) correction to
+
+multipolar potential induced by the surface.
+
+Parameters: metallic electrode (fI = −1),  = 5, and
+b = 2.5. Bottom: Dimensionless self-energy along the z
+
+axis for three different  = QD/b.
+
+results derived in the previous section allow us to quan-
+tify the error in this approximation. In the right hand
+panel of Fig. 3, we plot this error, which is the contribu-
+tion by the electrode's correction to self-consistent multi-
+poles corresponding to the total self energy plotted in the
+left hand panel. It is clear from the plot that the extra
+contribution is significant only within the junction, and
+the correction caused by the image effect to the dipolar
+and higher order field of the QD is mostly quantitative
+in Σ and less than 30% in most of the space. The size
+of this correction increases with the QD size as a larger
+fraction of the charge on its surface becomes close to the
+electrode and the potential approaches that of a charge
+between two parallel plates. The contribution decreases
+as  → 1, and saturates as (− 1)/( + 1) → 1. This may
+be valuable in design considerations involving charged
+quantum dots. For example, in systems such as epitax-
+ial III-V QDs, the multipole contribution is small, while
+for inorganic colloidal QDs on planar surfaces and sur-
+rounded by vacuum or organic solvents, the contribution
+could approach its saturation value.
+
+In Fig. 4(a) we plot the contours of the lowest en-
+ergy electron wavefunctions in the equatorial plane for
+parameter choices corresponding to the two categories
+in Table I above:
+low and high values of . For each
+, we plot results at two extreme values of fI: matched
+dielectric at the planar interface boundary with no im-
+age effect (fI = 0), and a metallic boundary with the
+full image effect (fI = −1). The image effect due to the
+
+505x [nm]135z [nm]DotBarrierElectrode-5-4-3-2-101505x [nm]135z [nm]DotBarrierElectrode-0.20.00.20.40.6059distance from surface [nm]3.50.01.5Dimensionless PotentialBarrierDot=1.5=5=10metallic boundary leads to increased amplitude in the
+junction and an overall shift of the center of mass to-
+wards the electrode. The center of mass shift is greater
+at low shielding, which can also be seen in Fig. 4(a) as
+the center of mass moves back towards the geometrical
+center of the dot when  increases from 1.2 to 4.0. At
+the same time the larger  yields much higher amplitude
+outside the QD - a result of stronger barrier lowering and
+the asymmetry due to the IPT outside the QD. In the
+lower panel of Fig 4(b), we see that a small peak in the
+wavefunction forms within the IPT at higher . Increas-
+ing  further eventually leads to full localization within
+this region, but at that point our model would lose its
+physical meaning.
+
+We see here that there is a competition between local-
+ization within the QD volume and within the IPT, both
+of which increase with . It is the mass of the particle
+that determines which of these effects wins. The inter-
+mediate regime of the two competing effects occurs when
+the Bohr radius, 4πε02e−2(b/m), matches the length
+scale of the IPT.
+
+The basic effect of the effective mass on localization is
+discussed and illustrated in the next section (also Fig. 6
+below), and it can be briefly stated as follows. At low
+m, we expect less localization within both the QD and
+the IPT. At higher m, which is still small enough for
+significant amplitude outside the QD volume, partial lo-
+calization in the IPT would increase, which would raise
+the tunneling rate due to the larger amplitude close to the
+junction. On the other hand, for sufficiently large m, ψD
+would become either highly localized inside the QD vol-
+ume, or completely within the IPT. Therefore, focusing
+on the volume states at first, the tunneling rate would be
+expected to decrease beyond a certain m. This suggests
+that a maximum in tunneling rates must exist, which is
+confirmed by the calculations below. If we also consider
+raising , the deeper IPT is able to sustain the upward
+trend in tunneling rates up to larger m, and would thus
+push the maximum to larger m, and saturate the rates
+as a result of complete trapping on the surface. The lat-
+ter case is beyond the present model and must include
+atomic scale contributions to the potential.
+
+B. Tunneling rates
+
+We now discuss calculations of tunneling rates for the
+ground QD states at low barriers (1.0 and 1.5 eV), and
+for both the lowest and excited states at high barriers
+(4.5 eV). The low barriers are chosen mainly to illustrate
+how the physical intuition gained in the previous sub-
+section affects tunneling, while the high barrier cases are
+more realistic. Note that one can always consider higher
+energy states to effectively reduce the barrier height, but
+as discussed below, this leads to complicated profiles of
+wavefunctions and obscures the trends that exist for the
+lowest states.
+
+8
+
+(a)
+
+(b)
+
+Figure 4: (a) Wavefunctions in the equatorial plane,
+where thick circle marks the QD boundary, and (b)
+along the dotted line. In each case, b = 2.5, m = 0.4,
+
+and Vb = 0.8 eV.
+
+1. Low barriers
+
+Figures 5-7 show plots of γ0 as a function of the ef-
+fective mass of the particle at low and high values of ,
+where the figures correspond to barrier heights (in eV)
+of 1.5, 1.0, and 0.6 respectively. In each figure the value
+of barrier dielectric constant is b = 2.5, and the effec-
+tive mass in the barrier is mb = 1. We calculated the
+rates assuming an isotropic parabolic energy band within
+the electrode surface having an effective mass of 0.067,
+which roughly mimics the conduction band of GaAs30.
+The rates would scale in magnitude for different density
+of states for the electrode, as was discussed previously.
+In Fig. 5, Vb and b are both high enough that any
+partial localization in the IPT is suppressed. Recalling
+our phenomenological expression (15) we find that at low
+ratio,  = 1.2, the rate decays as β ≈ 1/2, and τ is given
+approximately by an effective reduction in the junction
+width due to the image plane of the QD. The deviation
+in the trend is very slight when the matched electrode is
+replaced by a metallic one. But the total rate increases by
+two orders of magnitude due to the significant lowering
+of the junction potential by the image potential of the
+
+40405z [nm](a)dielectric matched electrode0.01.040405metallic electrode0.01.0404x [nm]05z [nm]0.01.0404x [nm]050.01.0=1.2=4.00.00.40.8AmplitudeBarrierElectrodematchedmetallic01512distance from surface [nm]0.00.40.8AmplitudeDotElectrode=1.2=4.0Figure 5: Tunneling rate for metallic and matched
+dielectric boundary condition at planar interface for
+
+barrier height Vb = 1.5 eV. Shown are the rates for three
+different values of the relative dielectric constants,  and
+
+are normalized to the rate at m = 0.05 in (a). The
+remaining parameters are, barrier dielectric, b = 2.5,
+barrier effective mass mb = 1, QD radius, a = 4 nm,
+
+and the distance between the QD center and the
+
+electrode, h/2 = 5 nm. The rates would scale with the
+density of states at the electrode, which is taken here to
+
+be that of the conduction band of GaAs (parabolic
+
+9
+
+Figure 6: Tunneling rate for metallic and matched
+
+dielectric boundary condition at planar interface for a
+barrier height 1.0 eV. The remaining parameters are the
+
+same as those in Fig. 5.
+
+band with effective mass 0.067).
+
+electrode.
+
+However, when  increases to 4 and beyond, as in pan-
+els (c) and (d), the trend also becomes closer to β ≈ 1.
+This is essentially the regime where heavy particle is re-
+pelled by the self energy barrier inside the QD much more
+effectively than the localization by the IPT.
+
+When we lower the barrier height to 1.0 eV a qualita-
+tive change occurs as shown in Fig. 6(d) for  = 8: the
+escape rate is increasing instead of decreasing with an
+increasing effective mass. In fact, there is a maximum at
+m = 0.85 beyond which the rate decreases slowly. This
+result is the numerical example supporting the discussion
+at the end of the previous section where we argued that,
+for sufficiently deep IPTs, the escape rate can increase
+with mass, or show a maximum.
+
+When the Vb and b are both large enough that the
+effect of IPT on the wavefunction is negligible, we ex-
+pect the dependence of γ0 on m to follow that of the
+energy of the lowest state. This can be understood from
+the binomial expansion of
+(12), which gives log γn ≈
+d√2mbVb(1 − ∆En/(2Vb)), where d is an effective junc-
+tion width and ∆En is the energy measured from the
+bottom of the QD potential well. In Fig. 8 we plot the
+energy of the lowest state with respect to the bottom
+of the potential well as a function of effective mass for
+three barrier heights. Comparison of the plots in this
+figure, with those in Figures 5, 6, and 7 shows that the
+trend of monotonically decreasing log γ0 coincides with
+that of the energy E0 of the QD state. Thus we see that
+for tunneling, the barrier potential is an important pa-
+rameter determining the significance of the interplay of
+
+Figure 7: Tunneling rate for metallic and matched
+
+dielectric boundary condition at planar interface for a
+low barrier height of 0.6 eV. The remaining parameters
+
+are the same as those in Fig. 5.
+
+electrostatic self energy and effective mass. The barrier
+dielectric is also significant as it scales the magnitude self
+energy within the barrier.
+
+The most striking result above is a crossover in the de-
+pendence of tunneling rate on the effective mass - switch-
+ing from decreasing with m to increasing as the barrier
+height is lowered. In order to visualize the extent of this
+crossover, we plot in Fig. 9 the tunneling rate as a func-
+tion of mass for a range of barrier potentials and a di-
+electric matched as well as a metallic electrode. The ex-
+istence of crossover can be clearly identified in the figure
+on the right side.
+
+2. High barriers
+
+It appears from the previous calculations that a po-
+tential energy of 1 eV yields a sufficiently high confine-
+ment to suppress any interesting behavior such as the
+crossovers in the tunneling rates. However, in these cal-
+
+(a)matched10−510−410−3Escaperate[1/ns]ǫ=1.2(b)metallic10−30.01(c)matched0.00.20.40.60.81.0Effectivemass10−30.01Escaperate[1/ns]ǫ=4.0ǫ=8.0(d)metallic0.00.20.40.60.81.0Effectivemass0.010.030.1(a)matched10−30.01Escaperate[1/ns]ǫ=1.2(b)metallic0.030.10.3(c)matched0.00.20.40.60.81.0Effectivemass0.010.030.1Escaperate[1/ns]ǫ=4.0ǫ=8.0(d)metallic0.00.20.40.60.81.0Effectivemass0.313(a)matched0.010.030.1Escaperate[1/ns]ǫ=1.2(b)metallic1310(c)matched0.00.20.40.60.81.0Effectivemass123Escaperate[1/ns]ǫ=4.0ǫ=8.0(d)metallic0.00.20.40.60.81.0Effectivemass3060100culations the barrier dielectric is 2.5. In systems, such as
+in emerging photovoltaics, the barrier is much closer to a
+vacuum than to a solid state material, even when QDs in
+these systems are passivated by organic solvents with low
+refractive index. In the case of vacuum, the self energy
+in the barrier increases by almost a factor of 3 compared
+to its value in the previous calculations, and accounting
+for both the overall scaling and the increased  for a fixed
+QD material. This allows the crossover phenomenon to
+exist for barrier heights of up to 4-5 eV, which are roughly
+the work functions of the semiconducting QD materials.
+In Fig. 10, we plot the tunneling rates over the plane
+defined by (b, m) at a fixed  = 8.0.
+In the absence
+of image effect by the electrode (left plot), the rate de-
+creases with mass at all b, and the decrease becomes
+more rapid as b increases. However, in the presence of
+the metallic electrode (right plot), the rate crosses over
+from decreasing to increasing with mass as b → 1 from
+above. In fact, as b decreases, the rate first exhibits a
+weak maximum, characteristic of the competing effects
+of localization inside and outside the QD volume, as was
+discussed previously. The slow rates in these figures are
+due to the low density of states (DOS) in the electrode
+model, and as noted earlier, they would be scaled sig-
+nificantly with metallic DOS, and thinner barriers, but
+without much effect on tunneling rates.
+
+Finally, we remark that the trends with respect to ef-
+fective mass also occur for higher energy states. As an
+example, we show in Fig. 11 the rates for the second
+lowest state in the present system. We note for a fixed
+ and m, there is no substantial difference in the rates
+with a dielectric matched or a metallic electrode. This
+is due to the fact that the states involved are deep, and
+therefore the wavefunction amplitude in the junction is
+small compared to its values inside the QD. However the
+effect of the electrode is similar to that in the lowest
+
+Figure 8: Energies of the lowest QD, referenced to the
+
+bottom of the well, and for the barrier heights
+
+indicated. As in Figures 5-7 the values of  are 1.2 in
+the upper row and 4.0 in the lower row. The remaining
+parameters are as the same as those in Fig. 5. Energies
+at  = 8.0 are not included for clarity and follow similar
+
+trends as those at 4.0.
+
+10
+
+Figure 9: Surface plot of escape rates over the
+
+two-dimensional space spanned by barrier potential,
+
+and effective mass. The lines show the rate as a
+
+function of mass as the barrier potential is changed. For
+the dielectric matched electrode (left), the rate is clearly
+
+monotonically decreasing, while for the metallic
+
+electrode (right), the dependence of the rate on mass
+
+changes from monotonically decreasing to
+
+monotonically increasing as the barrier potential is
+lowered. The remaining parameters are b = 1.6,
+mb = 1,  = 8.0, radius a = 4 nm, and h/2 = 5 nm.
+
+state, with the characteristic increasing tunneling rate
+with respect to effective mass inside the QD. The impor-
+tant difference between the two cases is that the rate for
+higher state shows a minimum rather than a maximum.
+However the simple interpretation for the trends in the
+lowest, nodeless, state does not carry over to the excited
+states directly. This is because the nodes in the excited
+states act as extra degrees of freedom that determine the
+wavefunction amplitudes.
+
+At even higher energy, especially close to the top of
+the potential well of the QD, the wavefunction acquires
+a large number of nodes, with a spatial scale reaching
+below the spatial scale of the image potential. The rates
+then fluctuate heavily due to the nodal planes moving
+across the IPT as  is varied. Thus no obvious trends can
+be found in this energy range. In addition, microscopic
+contributions to the potential must be computed in this
+regime to obtain a robust and reliable trend.
+
+IV. CONCLUSION
+
+In summary, we have presented an exact solution to
+the electrostatic potential of a point charge in a quan-
+tum dot lying close to a planar surface. We have found
+that at low barrier heights (less than 1 eV) there is a
+significant competition between localization of the par-
+ticle within the volume of the QD and its localization
+within the surface trap formed by the image potential
+at the QD surface. This leads to interesting behavior of
+the tunneling rate as a function of effective mass, even
+reversing the trend for larger dielectric contrast between
+
+(a)matched0.050.1Energy[eV]Vb=1.5Vb=1.0Vb=0.6(b)metallic00.05Vb=1.5Vb=1.0Vb=0.6(c)matched0.00.20.40.60.81.0Effectivemass0.0750.10.125Energy[eV]Vb=1.5Vb=1.0Vb=0.6(d)metallic0.00.20.40.60.81.0Effectivemass0.050.0750.1Vb=1.5Vb=1.0Vb=0.6Barrierpotential[eV]123Effectivemass0.20.40.60.8..EscapeRate[1/ns]10−510−410−310−210−1Barrierpotential[eV]123Effectivemass0.20.40.60.8..EscapeRate[1/ns]10−310−210−1100101the barrier and the quantum dot. At lower barrier di-
+electric constant, this trend continues to exist for much
+higher barriers of up to 4.5 eV.
+
+While the geometry of our model
+
+is idealized, the
+trends may continue to be important in absence of sig-
+nificant geometric perturbations such as protrusions or
+surface states that may introduce entirely new degrees
+of freedom relevant to the problem at hand. The ba-
+sic competition between volume and surface localization
+will continue to exist in more complex quantum dots as
+well, and our confirmation of its basic consequences in
+an idealized model is an important guide to what may
+occur in those cases. Thus ours is a useful model for an
+initial attack on a design problem, or an analysis of an
+experiment in tunneling devices.
+
+The image effects illustrated here can also be imple-
+mented into more complete models at the expense of ad-
+ditional computational effort. The simple model used
+here can be generalized to treat two charges, allowing
+the analysis of the influence of the junction on excitons
+in a QD. In some cases, the optical dipole moment itself
+may result from the image force, in which case the mul-
+tipole fields included here become essential. Finally, the
+polarization effects discussed here can play an important
+role in other Coulomb interaction induced phenomena,
+such as Fermi edge singularity effects in optically excited
+QDs in close proximity to an electrode31.
+
+11
+
+Figure 11: Tunneling rate for metallic and matched
+dielectric boundary condition at planar interface for a
+barrier potential of 4.5 eV, and for the second lowest
+energy state. Shown are the rates for three different
+relative dielectric constants,  = QD/b, with b = 1.1.
+
+The remaining parameters are the same as in 10
+
+ACKNOWLEDGMENTS
+
+This work is part of the Center for Re-Defining Pho-
+tovoltaic Efficiency Through Molecule Scale Control, an
+Energy Frontier Research Center funded by the U.S. De-
+partment of Energy (DOE), Office of Science, Office of
+Basic Energy Sciences under award no. DE-SC0001085
+and the research was carried out in part at the Center for
+Functional Nanomaterials, Brookhaven National Labora-
+tory, contract no. DE-AC02-98CH10886. KSV also ac-
+knowledges partial support by the Natural Sciences and
+Engineering Research Council of Canada.
+
+monotonically decreasing, while for the metallic
+
+electrode (right), the dependence of the rate on mass
+
+changes from monotonically decreasing to
+
+Figure 10: Surface plot of escape rates over the
+
+two-dimensional space spanned by barrier dielectric,
+
+and effective mass. The lines show the rate as a
+
+function of mass as the barrier potential is changed. For
+the dielectric matched electrode (left), the rate is clearly
+
+monotonically increasing as the barrier potential is
+
+lowered. The remaining parameters are: barrier height
+
+of Vb = 4.5 eV, mb = 1, = 8, radius a = 3 nm, and
+h/2 = 4 nm. The effective masses and the barrier
+
+heights in these figures may represent systems of II-VI
+or III-V colloidal quantum dots with the host matrix
+corresponding to vacuum, p-si, phosphate glass, MgS,
+or various organic passivating materials (see Fig 2).
+
+..Barrierdielectric1.01.52.0Effectivemass0.20.40.60.8..EscapeRate[1/ns]10−810−710−610−5..Barrierdielectric1.01.52.0Effectivemass0.20.40.60.8..EscapeRate[1/ns]10−610−510−410−3(a)matched10−710−6Escaperate[1/ns]ǫ=1.2(b)metallic10−610−5(c)matched0.00.20.40.60.81.0Effectivemass10−610−5Escaperate[1/ns]ǫ=4.0ǫ=8.0(d)metallic0.00.20.40.60.81.0Effectivemass10−510−412
+
+∗ kv2212@columbia.edu
+† drr2103@columubia.edu
+‡ mhyberts@bnl.gov
+1 A. Nozik, Physica E: Low-dimensional Systems and Nanos-
+
+tructures 14, 115 (2002).
+
+putational Physics 160, 151 (2000).
+
+28 E. V. Chulkov, V. M. Silkin, and P. M. Echenique, Surface
+
+Science 437, 330 (1999).
+
+29 J. Tersoff and D. R. Hamann, Phys. Rev. B 31, 805 (1985).
+30 I. Vurgaftman, J. R. Meyer, and L. R. Ram-Mohan, Jour-
+
+2 P. V. Kamat, The Journal of Physical Chemistry C 112,
+
+nal of Applied Physics 89, 5815 (2001).
+
+31 N. A. J. M. Kleemans, J. van Bree, A. O. Govorov, J. G.
+Keizer, G. J. Hamhuis, R. Notzel, A. Y. Silov, and P. M.
+Koenraad, Nat Phys 6, 534 (2010).
+
+18737 (2008).
+
+3 W. A. Tisdale, K. J. Williams, B. A. Timp, D. J. Norris,
+
+E. S. Aydil, and X.-Y. Zhu, Science 328, 1543 (2010).
+
+4 Y. I. Mazur, V. G. Dorogan, J. E. Marega, Z. Y.
+Zhuchenko, M. E. Ware, M. Benamara, G. G. Tarasov,
+P. Vasa, C. Lienau, and G. J. Salamo, Journal of Applied
+Physics 108, 074316 (2010).
+
+5 S. L. Chuang and N. Holonyak, Applied Physics Letters
+
+80, 1270 (2002).
+
+6 A. Marent, T. Nowozin, M. Geller, and D. Bimberg, Semi-
+
+conductor Science and Technology 26, 014026 (2011).
+
+7 A. J. Shields, Nat Photon 1, 215 (2007).
+8 B. Lounis and M. Orrit, Reports on Progress in Physics
+
+68, 1129 (2005).
+
+9 M. D. Eisaman, J. Fan, A. Migdall, and S. V. Polyakov,
+
+Review of Scientific Instruments 82, 071101 (2011).
+
+10 M. Achermann, M. A. Petruska, S. Kos, D. L. Smith, D. D.
+
+Koleske, and V. I. Klimov, Nature 429, 642 (2004).
+
+11 Z. Yuan, B. E. Kardynal, R. M. Stevenson, A. J. Shields,
+C. J. Lobo, K. Cooper, N. S. Beattie, D. A. Ritchie, and
+M. Pepper, Science 295, 102 (2002).
+
+12 V. Zwiller, T. Aichele, W. Seifert, J. Persson, and O. Ben-
+
+son, Applied Physics Letters 82, 1509 (2003).
+
+13 G. Binnig, N. Garcia, H. Rohrer, J. M. Soler, and F. Flo-
+
+res, Physical Review B 30, 4816 LP (1984).
+
+14 J. Bardeen, Phys. Rev. Lett. 6, 57 (1961).
+15 E. Merzbacher, Quantum Mechanics (John Wiley and
+
+16 J. Jackson, Classical Electrodynamics (John Wiley and
+
+Sons, New York, 1998).
+
+Sons, Hoboken, NJ, 1998).
+
+17 C. Wohlfahrt, "Springermaterials - the landolt-börnstein
+
+database," (Springer-Verlag Berlin Heidelberg, 2008).
+
+18 M. Davanco, M. T. Rakher, W. Wegscheider, D. Schuh,
+A. Badolato, and K. Srinivasan, Applied Physics Letters
+99, 121101 (2011).
+
+19 J. Vuckovic and Y. Yamamoto, Applied Physics Letters
+
+82, 2374 (2003).
+
+20 M. Funato, K. Omae, Y. Kawakami, S. Fujita, C. Bradford,
+A. Balocchi, K. A. Prior, and B. C. Cavenett, Phys. Rev.
+B 73, 245308 (2006).
+
+21 S. Richter, M. Steinhart, H. Hofmeister, M. Zacharias,
+U. Gosele, N. Gaponik, A. Eychmuller, A. L. Rogach,
+J. H. Wendorff, S. L. Schweizer, A. von Rhein, and R. B.
+Wehrspohn, Applied Physics Letters 87, 142107 (2005).
+
+22 L. Bányai, P. Gilliot, Y. Z. Hu, and S. W. Koch, Phys.
+
+Rev. B 45, 14136 (1992).
+
+23 L. E. Brus, The Journal of Chemical Physics 80, 4403
+
+24 M. J. Caola, Journal of Physics A: Mathematical and Gen-
+
+25 P. A. Letnes, I. Simonsen, and D. L. Mills, Phys. Rev. B
+
+(1984).
+
+eral 11, L23 (1978).
+
+83, 075426 (2011).
+
+26 T. Matsuyama, H. Yamamoto, and M. Washizu, Journal
+
+of Electrostatics 36, 195 (1995).
+
+27 X.-D. Liu, R. P. Fedkiw, and M. Kang, Journal of Com-
+
+Appendix A: Multipole moments
+
+13
+
+In this appendix, we derive the multipole moments, Qlm that appear in the self energy and the two-particle potential
+in Sec. II. As shown in Fig. 1, the origin of the cylindrical coordinate system is at the center of the QD. We expand
+the first two terms of (2) in terms of spherical harmonics, and use the mathematical results on the re-expansion of
+spherical harmonics with a shifted origin24 to re-write the last term of that equation. The basic relation we use is
+obtained from Eq. 10 of Caola24, and using the relationships,
+
+(cid:115)
+(cid:115)
+
+Ylm(r)
+rl+1 =
+
+rlYlm(r) =
+
+(2l + 1)(l − m)!
+
+4π(l + m)!
+
+Ilm(r),
+
+(2l + 1)(l − m)!
+
+4π(l + m)!
+
+Rlm(r),
+
+(cid:48)
+
++1
+
+al
+
+(r + h)l(cid:48)+1 Yl(cid:48)m
+
+(cid:18) r + hz
+
+(cid:19)
+
+r + hz
+
+∞(cid:88)
+
+n=0
+
+=
+
+(−1)n+mγnmγl(cid:48)mC l
+(cid:19)
+
+(cid:18) r + h
+
++1
+
+(cid:48)
+
+r + h
+
+(−1)l+mγlmγl(cid:48)mC l
+
+(cid:48)
+l+l(cid:48)
+
+(cid:88)
+(cid:88)
+
+l(cid:48)m
+
+(cid:48)
+
++mQl(cid:48)m(s)al
+
+(−1)l
+(2l(cid:48) + 1)(r + h)l(cid:48)+1 Yl(cid:48)m
+(cid:88)
+(cid:112)
+
++mQl(cid:48)m(s)
+(−1)l
+(2l(cid:48) + 1)(2l + 1)
+
+(cid:48)
+
+=
+
+lm
+
+l(cid:48)
+
+where the functions R and I are defined in Eq. 1 of Caola24. With these definitions, we can write,
+
+(cid:114)
+
+(cid:48)
+n+l(cid:48)
+
+2l(cid:48) + 1
+2n + 1
+
+(cid:16) a
+
+(cid:17)l
+
+(cid:48)
+
++1(cid:16) r
+
+(cid:17)n
+
+h
+
+h
+
+Ynm(r),
+
+(A1)
+
+(cid:48)
+n+l(cid:48) = (l(cid:48) + n)!/(n!l(cid:48)!), and γnm are defined in the main text. The series is well-behaved in the region relevant
+
+where C l
+to the following analysis, which is in the limit r → a. The last term of (2) now takes the following form,
+
+(cid:16) a
+
+(cid:17)l
+
+(cid:48)
+
++1(cid:16) r
+
+(cid:17)l
+
+h
+
+h
+
+Ylm(r),
+
+(A2)
+
+On the right hand side, we relabeled the index n as l when substituting (A1). The relabeling makes this term take
+the form of a coefficient times Ylm(r), as in the case with the remaining three terms of (2).
+
+For a charge inside the QD, s < r < a−, we take the derivatives of the of potential Φ, defined in (2) inside and
+outside the QD boundary to obtain the displacement field perpendicular to the QD surface. The Maxwell boundary
+conditions then imply that the components of the displacement field normal to the surface are equal,
+
+(cid:20) ∂Φ
+
+(cid:21)
+
+b
+
+∂r
+
+a−
+
+=
+
+e
+
+a2ε0
+
+Ylm(r)
+
+(cid:20) ∂Φ
+
+(cid:21)
+
+∂r
+
+a+
+
+b
+
++l
+
+Qlm(s)
+2l + 1
+
++ fI 
+
+(cid:34)
+
+=
+
+e
+
+a2ε0
+
+Ylm(r)
+
+−qi
+
+(cid:88)
+
+lm
+
+(cid:88)
+
+lm
+
+(cid:34)
+
+−qi
+
+(cid:88)
+
+l(cid:48)
+
+l
+
+al
+
+(cid:19)
+
+(cid:18) sl
+(cid:112)
+(cid:18) sl
+
+ (l + 1)
+2l + 1
+Ql(cid:48)m(s) (−1)l
+(cid:19)
+(cid:112)
+
+l + 1
+2l + 1
+
+(cid:88)
+
+al
+
+l(cid:48)
+
+− (l + 1)
+
+Qlm(s)
+2l + 1
+
++ fI
+
+Y ∗lm(s) + qifI
+
+(cid:48)
+
++l γl(cid:48)mγlmC l
+
+(cid:48)
+l(cid:48)+l
+
+2l + 1
+
+l
+
+(cid:16) a
+
+al
+
+sIl Y ∗lm( sI )
+(cid:17)l+l
+
++1
+
+(cid:35)
+
+(cid:48)
+
+(2l(cid:48) + 1) (2l + 1)
+
+h
+
+Y ∗lm(s) + qifI
+
+l
+
+al
+
+sIl Y ∗lm( sI )
+(cid:16) a
+(cid:17)l+l
+
+(cid:48)
+
++1
+
+2l + 1
+(cid:48)
+l(cid:48)+l
+
+(cid:48)
+
++l γl(cid:48)mγlmC l
+
+(2l(cid:48) + 1) (2l + 1)
+
+h
+
+(cid:35)
+
+.
+
+lQl(cid:48)m(s) (−1)l
+
+Anticipating constant values of q(s) inside and outside the QD, we have set here qi as the value of q(s) inside the
+QD. The factor a2 in the above equations results from differentiating factors such as rl/al+1, and then setting r = a,
+which results in 1/a2. The terms with Qlm contain an extra 1/a in front of the series, and differentiation is done for
+rl/al, yielding 1/a, which combined with the 1/a in front of the series also gives 1/a2. When we subtract the second
+equation from the first, we obtain zero on the left hand side by boundary conditions, and thus the coefficient of each
+Ylm on the right hand side must vanish. We get,
+
+(cid:34)
+
+(cid:18) sl
+
+(cid:19)
+
+al
+
+Y ∗lm(s) − fI
+(cid:88)
+
++ fI ( − 1)
+
+l(cid:48)
+
+lal
+
+(cid:35)
+sIl Y ∗lm( sI )
+lQl(cid:48)m(s) (−1)l
+
+(cid:112)
+
+0 = −
+
+qi ( − 1)
+2l + 1
+
+(l + 1)
+
++Qlm(s)
+
+( + 1) l + 1
+
+2l + 1
+
+(cid:48)
+
++l γl(cid:48)mγlmC l
+
+(cid:48)
+l(cid:48)+l
+
+(2l(cid:48) + 1) (2l + 1)
+
+(cid:16) a
+
+(cid:17)l+l
+
+(cid:48)
+
+h
+
++1
+
+.
+
+When the charge is placed outside outside, we get a similar equation but the one in which only the first term
+
+changes, and the resulting equation is
+
+14
+
+(cid:34)
+
+l
+
+(cid:16) a
+
+(cid:17)l+1
+
+s
+
+0 =
+
+qo ( − 1)
+2l + 1
+
+Y ∗lm(s) + fI l
+
++Qlm(s)
+
+( + 1) l + 1
+
+2l + 1
+
++ fI ( − 1)
+
+al
+
+(cid:35)
+sIl Y ∗lm( sI )
+(cid:88)
+(cid:112)
+lQl(cid:48)m(s) (−1)l
+
+l(cid:48)
+
+(cid:48)
+
+(cid:48)
+
++l γl(cid:48)mγlmC l
+
+(cid:48)
+l(cid:48)+l
+
+(2l(cid:48) + 1) (2l + 1)
+
+(cid:16) a
+
+(cid:17)l+l
+
+(cid:48)
+
+h
+
++1
+
+,
+
+where qo is the value of q(s) for s > a. Writing the two equations together, with Heaviside functions restricting the
+location of the charge for each, we get,
+
+(cid:88)
+
+l(cid:48)
+
+Qlm(s) + fI
+
+= q(s)
+
+( − 1)
+
+( + 1) l + 1
+
+(cid:112)
+
++l γl(cid:48)mγlmC l
+
+(cid:48)
+l(cid:48)+l
+
+(2l + 1)
+
+( + 1) l + 1
+
+(cid:34)(cid:26)
+
+l ( − 1) (−1)l
+(cid:19)
+
+(cid:18) sl
+
+(2l(cid:48) + 1) (2l + 1)
+
+(cid:18) al
+
+(cid:19)
+
+(l + 1)
+
+Θ (a − s) − l
+
+sl
+
+al
+
+(cid:17)1+l+l
+(cid:16) a
+(cid:27)
+
+h
+
+(cid:48)
+
+Ql(cid:48)m(s)
+
+(cid:35)
+
+al
+
+Θ(s − a)
+
+)Y m∗l
+
+(s) − fI l
+
+sIl Y ∗lm( sI )
+lp (s) in the main text, which also generate the
+ll(cid:48), both of which are used
+
+.
+
+The first term in the right hand side of this equation defines the Q(0)
+third term, and the coefficients of Qlm on the left hand side define the matrix elements Am
+in Sec. II to write the expressions for Σ and Φ.
+
+Appendix B: Self energy regularization
+
+When we put r = s in Φ(r; s), the resulting formula has two terms arising from the zeroth order contribution Q(0),
+
+where one term is for s < a and the other for s > a. They can both be written in a single expression as,
+
+∞(cid:88)
+
+(l + β)
+
+ρ2l,
+
+[( + 1) l + 1]
+
+l=0
+
+where β = 1 corresponds to s < a and β = 0 to s > a, (with prefactors not relevant here). In each of the two cases,
+the series at large l becomes a harmonic series and therefore divergent. To isolate the divergent terms, we re-write
+the above series as
+
+= β +
+
+(l + β)
+
+1
+
+[( + 1) l + 1] −
+
+( + 1) −
+
+α
+
+( + 1)2 (l + 1)
+
+ρ2l +
+
+1
+
+ + 1
+
+ρ2l +
+
+α
+
+( + 1)2
+
+l=1
+where α is to be determined. The last two terms of the above equation can be summed to obtain,
+
+l=1
+
+l=1
+
+ρ2l
+l + 1
+
+,
+
+(B1)
+
+∞(cid:88)
+
+∞(cid:88)
+
+(cid:34)
+
+∞(cid:88)
+
+(cid:35)
+
+∞(cid:88)
+
+l=1
+
+ + 1
+
+1
+
+1
+
+l=1
+
+ρ2l =
+
+( + 1)
+
+ρ2
+1 − ρ2
+
+∞(cid:88)
+(cid:20) 1
+(cid:21)
+∞(cid:88)
+ρ2 ln(cid:0)1 − ρ2(cid:1) + 1
+(cid:20) ( + 1) (l + 1) [β ( + 1) − 1] − α ( + 1) l − α
+
+ρ2l
+l + 1
+
+( + 1)2
+
+= −
+
+l=1
+
+α
+
+.
+
+[( + 1) l + 1] (l + 1)
+
+(cid:21)
+
+,
+
+α
+
+( + 1)2
+
+1
+
+( + 1)2
+
+The coefficient of the ρ2l term in the first sum on the right hand side of B1 is,
+
+which behaves as 1/l at large l, unless we set the coefficient of l in the numerator equal to zero. This condition
+determines the value of α and yields α = β ( + 1) − 1. The numerator is then  [β ( + 1) − 1]. Thus
+
+∞(cid:88)
+
+(l + β)
+
+[( + 1) l + 1]
+
+l=0
+
+ρ2l = β +
+
+ [β ( + 1) − 1]
+
+( + 1)2
+
+[( + 1) l + 1] (l + 1)
+
+ρ2l
+
+(cid:2)ρ−2 ln(cid:0)1 − ρ2(cid:1) + 1(cid:3) .
+
++
+
+1
+
+( + 1)
+
+ρ2
+
+1 − ρ2 −
+
+β ( + 1) − 1
+
+( + 1)2
+
+Substitution of β = 0 or β = 1 yields the self energy series shown in the main text.
+
+

@@ -1,0 +1,1347 @@
+a
+
+Transport in strongly-coupled graphene-LaAlO3/SrTiO3 hybrid systems
+I. Aliaj,1, ∗ I. Torre,1 V. Miseikis,2 E. di Gennaro,3 A. Sambri,3 A. Gamucci,4 C. Coletti,2, 4
+
+F. Beltram,5 F. M. Granozio,3 M. Polini,4, 1 V. Pellegrini,4 and S. Roddaro5, †
+
+1NEST, Scuola Normale Superiore, I-56126 Pisa, Italy
+
+2Center for Nanotechnology Innovation @NEST, Istituto Italiano di Tecnologia, Piazza San Silvestro 12, 56127 Pisa, Italy
+
+3CNR-SPIN and Dipartimento di Fisica, Complesso Universitario di Monte S.Angelo, Via Cintia, 80126 Naples, Italy
+
+4Istituto Italiano di Tecnologia, Graphene Labs, Via Morego 30, I-16163 Genova, Italy
+5NEST, Istituto Nanoscienze-CNR and Scuola Normale Superiore, I-56126 Pisa, Italy
+
+We report on the transport properties of hybrid devices obtained by depositing graphene on
+a LaAlO3/SrTiO3 oxide junction hosting a 4 nm-deep two-dimensional electron system. At low
+graphene-oxide inter-layer bias the two electron systems are electrically isolated, despite their small
+spatial separation, and very efficient reciprocal gating is shown. A pronounced rectifying behavior
+is observed for larger bias values and ascribed to the interplay between electrostatic depletion and
+tunneling across the LaAlO3 barrier. The relevance of these results in the context of strongly-coupled
+bilayer systems is discussed.
+Keywords: coupling, graphene, LAO/STO, tunneling
+
+Graphene is widely investigated in view of possible de-
+vice applications owing to its excellent, electric-field tun-
+able electronic properties1, its chemical and structural
+robustness, its ease of production and integrability with a
+plethora of other material systems2. In addition, because
+of its single-atom thickness, its properties can be very
+sensitive to the local environment. In particular, interac-
+tion with the host substrate offers new ways to tune the
+properties of graphene and the case of functional transi-
+tion metal oxides is of significant interest. For instance,
+graphene field-effect transistors (FETs) built on ferroelec-
+tric Pb(Zr,Ti)O3 substrates display pronounced memory
+effects, ultra-low voltage operation3, and open the way
+to novel nanoplasmonic devices4. Similarly, graphene
+photo-sensitivity was shown to increase 25 times on TiO2
+substrates5 and intriguing magnetic phenomena are ac-
+tively pursued in devices combining graphene with EuO
+substrates6 or magnetic LaxSr1−xMnO3 electrodes7.
+
+In the family of transition metal oxides,
+
+interfaces
+between the bulk band insulators LaAlO3 (LAO) and
+SrTiO3 (STO) occupy a special place due to their multi-
+ple, electric-field tunable properties, such as conductiv-
+ity8,9, superconductivity10,11, magnetism12,13 and spin-
+orbit coupling14. These phenomena stem from the emer-
+gence of an interfacial two-dimensional electron system
+(2DES) when more than 3 unit cells (u.c.)
+of LAO
+are grown on a TiO2-terminated STO crystal. Such
+2DES is located only a few nm below the surface and
+its properties are therefore extremely sensitive to other
+materials deposited on this surface, such as metals15
+or other oxides16.
+In this scenario, hybrid structures
+combining graphene with LAO/STO junctions represent
+an exciting platform in which novel phenomena may
+emerge from the strong electronic coupling of the respec-
+tive 2DESs. In particular, collective interlayer-correlated
+phases driven by the strong Coulomb interactions are
+expected at low temperatures, in analogy to what ob-
+
+served in graphene/GaAs/AlGaAs systems17. Further-
+more, magnetic or superconducting properties may be in-
+duced in graphene due to the proximity interaction with
+the ordered phases of the interfacial 2DES. In order to
+enable the exploration of these possibilities, the necessary
+starting point is a clear understanding of the transport
+behavior of these hybrid systems. LAO/STO-graphene
+systems, however, have been so far little studied. In a
+recent paper 18, graphene was integrated with insulat-
+ing LAO/STO substrates with subcritical LAO thickness,
+where a scanning probe microscope was used to "write"
+nanometer-wide conductive regions on the oxide system19
+and graphene was used as a gate electrode controlling
+the conduction of these nanowires at the LAO/STO in-
+terface.
+Here we report on extended (≈ 104 µm2) junctions be-
+tween monolayer graphene grown by chemical vapor de-
+position (CVD) and a conductive, 4 nm-deep LAO/STO
+interface hosting a 2DES. Our results demonstrate that
+strong electrostatic coupling with virtually no leakage
+can be obtained at room-temperature (RT) between a
+two-dimensional hole gas in graphene and the LAO/STO
+2DES, as long as the graphene-oxide bias VGO is suffi-
+ciently small (VGO (cid:46) 1 V). At larger values of VGO,
+we shall report strongly non-linear transport across the
+vertical graphene-LAO/STO junction that will be linked
+to tunneling currents between the two electron systems.
+The device structure adopted in this work is illustrated
+in Fig. 1. High-quality 2DESs were obtained by growing
+10 u.c.-thick LAO films on TiO2-terminated STO chips
+by pulsed laser deposition20. Cr/Au alignment markers
+were fabricated by e-beam lithography and thermal evap-
+oration and no additional processing was carried out in
+order to minimize contamination and damage of the ox-
+ide system. Single-crystalline graphene flakes typically
+measuring 100 µm in diameter were grown by CVD on
+
+2
+
+FIG. 1. Monolayer of CVD graphene crystal deposited on LAO/STO. (a) Sketch of the device architecture and (b)
+optical image of a representative three-terminal graphene/LAO/STO device for electrical transport studies at room temperature.
+Raman microspectrocopy of the contacted CVD graphene monocrystal in a fabricated device, showing the (c) map of the
+integrated intensity of the 2D peak and the (d) Raman spectroscopic analysis of the graphene crystal. The substrate-free
+graphene spectrum (red line) was obtained by subtracting Raman spectra acquired on regions covered by/free of graphene
+(dotted pink/dashed blue); the spectrum is compatible with a single layer crystal and the absence of D peak reveals that
+graphene's good quality is maintained during the fabrication procedure.
+
+flat, ex-situ passivated Cu foils21. Graphene crystals were
+finally deposited on the clean surfaces of LAO/STO het-
+erostructures using a polymer-based transfer process22
+and localized thanks to the Cr/Au markers. The de-
+vice architecture was designed taking particular care to
+avoid spurious electrical losses across the ≈ 4 nm-thin
+LAO barrier. An insulating layer of 200 nm of cross-
+linked PMMA was inserted between the LAO/STO and
+graphene electrodes (see the sketch of Fig. 1a and the op-
+tical picture of Fig. 1b), so that the only electrical path
+between the contact leads and the LAO/STO 2DES oc-
+curred vertically through the graphene-LAO/STO junc-
+tion. The correct alignment of the flakes and their quality
+at the end of the process were assessed through Raman
+spectroscopy, as shown in Fig. 1c,d for one of the stud-
+ied devices. Given the relatively strong background sig-
+nal from the LAO/STO substrate, Raman spectra were
+processed by subtracting the response of the bare oxide
+heterostructure (see Fig. 1d). Once this background sig-
+nal was removed, Raman emission clearly indicated that
+the graphene flake was a high-quality monolayer, with
+
+a single-Lorentzian 2D peak, the expected G/2D peak
+ratio for monolayer graphene and no discernible D peak
+throughout the crystal23. The correct alignment and uni-
+formity of the flake is demonstrated in Fig. 1c, where we
+report a Raman map integrated over the spectral region
+2600 − 2800 cm−1 corresponding to the 2D peak.
+
+Device parameters and structure were chosen to
+achieve strong electrostatic coupling between the 2DESs
+in graphene and in the LAO/STO heterojunction, with
+negligible tunneling in the small interlayer bias (VGO)
+limit. Based on electron affinity values24, we estimate a
+large (∼ 2 eV) graphene - LAO barrier (see Fig. 2a) that
+should electrically decouple the two electronic systems.
+At present many of the band parameters of the junction,
+in particular the exact band offsets and, consequently, the
+built-in field in the LAO layer, are still debated [25,26,
+and references therein]. In addition, the triangular quan-
+tum well potential at the LAO/STO interface confines
+the motion of oxide electrons to a non-trivial set of 2D
+subbands characterized by different and anisotropic ef-
+fective masses27,28. In the following, the interface 2DES
+
+1400160018002000220024002600 LAO/STO graphene/LAO/STO subtracted (x3) Lorentzian fit (x3)Intensity (arb. units)Energy shift (cm-1)50 µm10 µm(a)(b)Source (S)Drain (D)Interfacial 2DES contact (C)STO substrateGraphene crystal10 u.c.-thick LAO filmInterfacial 2DESCross-linked PMMACr/Au 10/100 nm SDbonding grid (C)LAOsurface(c)(d)2D integratedIntensity(arb.units)3
+
+2DES respectively. The negative density indicates that
+the as-deposited graphene is p-doped, as typically ob-
+served. Based on this experimental input, the model
+predicts that graphene can be tuned up to densities of
+∼ 1013 cm−2 both on the electron and hole sides and
+that LAO/STO can be fully depleted by biasing graphene
+at a few Volts. Such a strong electrostatic coupling is
+due to the small thickness of the LAO barrier: assum-
+ing κLAO = 20 for the LAO relative permittivity, the
+geometric capacitance per unit area is estimated to be
+4.5 µF/cm2, corresponding to a gating efficiency ≈ 400
+times higher than available in typical 300 nm thick oxi-
+dized Si. As a consequence, the charge-neutrality point
+(CNP) is expected to occur in graphene at very low (neg-
+ative) bias values (VGO < 0.5 V).
+
+The typical transport and gating properties of a rep-
+resentative graphene-LAO/STO hybrid device are re-
+ported in Fig. 3. The insulating properties of the PMMA
+layer were preliminarily studied on ≈ 200 × 200 µm2 test
+pads covered by unconnected metallic electrodes: negli-
+gible ((cid:46) 0.1 nA) vertical currents were observed for ver-
+tical biases in the studied VGO range. Graphene devices
+were measured using a piezo-actuated microprobe sys-
+tem from Imina Technologies in order to avoid inducing
+electrical loss through the PMMA as a consequence of
+wire-bonding. We studied the RT vertical transport be-
+tween the oxide interfacial 2DES and graphene by ap-
+plying a DC bias VGO to the graphene electrode while
+holding the interfacial 2DES at ground. As shown in
+Fig. 3a, a strongly non-linear transport characteristic was
+observed, where different regimes can be distinguished.
+Around zero bias, graphene and the 2DES are insulated
+and no current could be detected above the noise: a cur-
+rent below few pA is measured for VGO < 0.7 V, cor-
+responding to a resistance in the range 100 GΩ − 1 TΩ.
+Based on the measured carrier densities, graphene's CNP
+is expected to lie in this voltage range (see Fig. 2b).
+Outside this interval, vertical transport sets on, with
+an approximately exponential current-voltage character-
+istic. For VGO < −2.5 V, vertical current saturates to a
+fraction of nA: as discussed in the following, this is due to
+a field-effect depletion of the oxide interfacial 2DES. The
+exponential growth is much more pronounced for positive
+bias values: the current grows by 5 orders of magnitude
+in less than 1V of bias change and it is ultimately limited
+(for VGO > 2 V) by the resistive load of the 2DES paths
+connecting the junction area to the electrodes.
+
+Transport in the latter regime is governed only by the
+vertical junction properties and was therefore amenable
+to theoretical modeling29. The observed transport char-
+acteristics at positive bias are compatible with direct
+tunneling of electrons between graphene and the inter-
+facial 2DES. In fact, the large graphene-LAO barrier
+(∼ 2 eV) suggests that thermionic emission should be
+suppressed even at RT, while tunneling remains possi-
+ble because of the ultra-thin barrier. Zener tunneling
+across the LAO should be negligibly small for 10 u.c.-
+
+FIG. 2. Theoretical modeling of graphene-LAO/STO
+systems. (a) Schematic of the conduction band profile of the
+LAO/STO heterostructure and the relative band alignment
+between graphene and LAO barrier in equilibrium conditions,
+illustrating the relevant microscopic parameters of the verti-
+cal junction and the corresponding values that best reproduce
+the experimental data. (b) Evolution of the graphene (dashed
+blue) and interfacial 2DES (solid green) carrier density with
+vertical bias, showing the pronounced electric-field-effects in
+the hybrid structure. Dots represent the experimentally mea-
+sured carrier densities for the two conductive systems in cal-
+ibration multiterminal devices.
+
+will be simply described by a single isotropic 2D subband
+and charge transport between the two 2DESs will be as-
+sumed to occur via direct tunneling across the ≈ 4 nm
+LAO barrier. The electrostatic coupling between the two
+2DES will be described in terms of a capacitor in which
+the electrodes have a finite density of states (DOS)29.
+
+Figure 2b reports the predicted evolution of the carrier
+density in the two 2DESs, setting the values at zero bias
+to the experimentally-measured ones29. For this mea-
+surement, multi-terminal Hall-bar structures were real-
+ized by a lift-off technique30 with a nominally identical
+10 u.c. LAO/STO heterointerface. The electron den-
+sities at 4.2 K were found to be 1.6 × 1013 cm−2 and
+−6 × 1011 cm−2 for the LAO/STO and the graphene
+
+(a)-1.5-1.0-0.50.00.51.01.5101110121013Carrier density (cm-2)Graphene - Oxide bias VGO (Volt) Graphene LAO/STO 2DES(b)EnergyµG(-0.1 eV)µO(≈ 0.04 eV)ΔG= 2.3 eV0*2DESmm=4nm15ε1.5mmLAO0*LAO==ΔO= 1.7 eV4
+
+FIG. 3. Pronounced non-linear transport and field-
+effects in graphene-LAO/STO systems. (a) Graphene -
+oxide 2DES (black solid) current density as a function of ver-
+tical bias VGO measured in a representative device at room
+temperature and the corresponding graphene-2DES tunneling
+characteristic calculated in the full WKB (red dashed) and
+Simmon's approximation (blue dotted)29. (b) Room temper-
+ature 2-point resistance of the single layer graphene crystal
+as a function of VGO, suggesting the tuning of graphene car-
+rier density across the Dirac point. The insets are schematics
+of the electrical setups employed for studying the transport
+properties of the system. The blue and red arrows represent
+respectively the vertical and in-plane current flow in our de-
+vice.
+
+thick LAO films31, particularly for positive values of VGO,
+which tend to flatten the LAO potential. Therefore, only
+direct graphene-2DES tunneling was considered and cal-
+culated in the semiclassical (WKB) approximation, that
+was already successfully adopted to describe transport
+features in both metal/LAO/STO31 and van der Waals
+heterostructures comprising graphene32. Input parame-
+ters used to reproduce the experimental data are reported
+in Fig. 2a and were set at the typically reported values
+
+in the literature, apart from the barrier effective mass
+that was obtained by fitting the data in the Simmon's
+approximation (dotted blue curve in Fig. 3a)29. Fig. 3a
+compares the resulting theoretical prediction (red dashed
+line) with a typical experimental curve (solid black line):
+the model captures the main transport features in the
+whole bias range and it is quantitatively accurate in the
+intrinsic regime, thus providing evidence that graphene -
+interfacial 2DES transport is indeed dominated by direct
+tunneling of electrons through the LAO barrier. The re-
+maining discrepancies between the theoretical prediction
+and experimental data in the intrinsic regime point to the
+possible role played by the inner structure of the oxide
+interfacial 2DES27,28 (the population of several subbands
+changes the transport characteristics), or the possible
+contribution of tunneling processes assisted by phonons
+and/or in-gap defect states in the LAO barrier (e.g. O
+vacancies). The deviations observed for VGO < 0.5 V
+are due to electronic noise and interface depletion issues
+and are not addressed by the present model. Finally, we
+note that similar rectifying behavior was already reported
+in metal(Pt,Au)/LAO/STO junctions11,31 and was also
+attributed mainly to quantum tunneling31. The simi-
+larities are due to the metallic behavior of graphene for
+large positive values of VGO, as shown in Fig. 2b, and the
+comparable electron affinities of graphene and Pt, Au.
+
+In conclusion, we reported on the transport properties
+
+In the low inter-layer bias limit, and for the full range
+VGO < 1.0 V, graphene and the interfacial 2DES can be
+considered electrically insulated, with vertical currents
+lower than 0.5 nA. The existence of this quasi-insulating
+regime makes it possible to explore Coulomb coupling
+between the two electron systems. We monitored the 2-
+point RT resistance of graphene as a function of VGO:
+the result is shown in Fig. 3b for a representative de-
+vice and demonstrates the significant modulation of the
+graphene resistivity by the electric field of the 2DES elec-
+trode. The resistance curve indicates that graphene can
+be easily tuned between p-type and n-type conduction
+at a VGO value as little as a fraction of a Volt, despite
+the non-negligible intrinsic doping −6× 1011 cm−2. This
+behavior confirms the extremely large gating efficiency of
+the system.
+
+The analogous field-effect of graphene on the interfa-
+cial 2DES predicted from the capacitor model in Fig. 2b
+can be inferred both from gating and vertical transport
+features.
+In fact, the graphene gating efficiency expe-
+riences a sudden drop for VGO < −1V and is totally
+suppressed for VGO < −2.5V, as signaled by the re-
+sistivity saturation in Fig. 3b. This effect matches the
+kink and the subsequent current saturation in the ver-
+tical transport curve in Fig. 3a, which persists up to
+VGO = −90 V (data not shown). These observations
+provide experimental evidence of the predicted depletion
+of the 2DES for large negative bias; the creation of an in-
+sulating region below graphene interrupts the conducting
+paths to the LAO/STO electrodes and therefore limits
+vertical transport.
+
+-3-2-1011.61.82.02.22.42.62.83.0Resistance (kΩ)Graphene - Oxide bias VGO (Volt)10-310-210-1100101102103104 Experimental curve WKB approximation  Exponential fit in            Simmon's approximation  Current density (µA/cm2)(a)(b)currentpreAmpVGO -- +IVGO -- + VSDISDof the graphene-LAO/STO hybrid system and showed
+that it is characterized by strong electrostatic coupling
+at low inter-layer bias and direct tunneling coupling at
+large bias values. Efficient gating could be fruitfully ex-
+ploited for the realization of hybrid "dual" FETs33 with
+very-low operating voltage, where graphene can be em-
+
+5
+
+ployed either as gate, or as the conducting channel back-
+gated by the 2DES. The present device architecture can
+be relevant to the investigation of collective phases with
+very strong inter-layer correlations at low temperatures.
+The research leading to these results received fund-
+ing from the European Union Seventh Framework Pro-
+gramme under grant agreement No. 604391 Graphene
+Flagship.
+S.R. acknowledges the support of CNR
+through the bilateral CNR-RFBR project 2015-2017.
+
+∗ ilirjan.aliaj@sns.it
+† stefano.roddaro@sns.it
+1 A. K. Geim, and K. S. Novoselov, Nature Mater. 6, 183
+(2007); A. H. Castro Neto, F. Guinea, N. M. R. Peres,
+K. S. Novoselov, and A. K. Geim, Rev. Mod. Phys. 81,
+109 (2009);
+
+2 F. Bonaccorso, A. Lombardo, T. Hasan, Zh. Sun,
+L. Colombo, and A. C. Ferrari, Mater. Today 15, 564
+(2012).
+
+3 Y. Zheng, G. X. Ni, S. Bae, C. X. Cong, O. Kahya,
+C. T. Toh, H. R. Kim, D. Im, T. Yu, J. H. Ahn,
+B. H. Hong, and B. Ozyilmaz, Europhys. Lett. 93, 17002
+(2011); X. Hong, K. Zou, A. M. DaSilva, C. H. Ahn, and
+J. Zhu, Solid State Commun. 152, 1365 (2012).
+
+4 D. F. Jin, A. Kumar, K. H. Fung, J. Xu, and N. X. Fang,
+
+Appl. Phys. Lett. 102, 201118 (2013).
+
+5 J. Park, T. Back, W. C. Mitchel, S. S. Kim, S. Elhamri,
+J. Boeckl, S. B. Fairchild, R. Naik, and A. A. Voevodin,
+Sci. Rep. 5, 14374 (2015).
+
+6 H. X. Yang, A. Hallal, D. Terrade, X. Waintal, S. Roche,
+
+and M. Chshiev, Phys. Rev. Lett. 110, 046603 (2013).
+
+7 F. Li, T. Li, and X. Guo, ACS Appl. Mater. Interfaces
+6, 1187 (2014); M. Rocci, J. Tornos, A. Rivera-Calzada,
+Z. Sefrioui, M. Clement, E. Iborra, C. Leon, and J. Santa-
+maria Appl. Phys. Lett. 104, 102408 (2014).
+
+8 A. Ohtomo and H. Y. Hwang, Nature 427, 423 (2004).
+9 S. Thiel, G. Hammerl, A. Schmehl, C. W. Schneider, and
+
+J. Mannhart, Science, 313, 1942 (2006).
+
+10 N. Reyren, S. Thiel, A. D. Caviglia, L. F. Kourkoutis,
+G. Hammerl, C. Richter, C. W. Schneider, T. Kopp, A. -
+S. Ruetschi, D. Jaccard, M. Gabay, D. A. Muller, J. -
+M. Triscone, and J. Mannhart, Science 317, 1196 (2007).
+11 P. D. Eerkes, W. G. Van Der Wiel, and H. Hilgenkamp,
+
+Appl. Phys. Lett., 103, 201603 (2013).
+
+12 A. Brinkman, M. Huijben, M. van Zalk, J. Huijben,
+U. Zeitler, J. C. Maan, W. G. van der Wiel, G. Rijnders,
+D. H. A. Blank, and H. Hilgenkamp, Nat. Mat. 6, 493
+(2007).
+
+13 D. Stornaiuolo, C. Cantoni, G. M. De Luca, R. Di Capua,
+E. Di. Gennaro, G. Ghiringhelli, B. Jouault, D. Marr`e,
+D. Massarotti, F. Miletto Granozio, I. Pallecchi, C. Pi-
+amonteze, S. Rusponi, F. Tafuri, and M. Salluzzo, Nat.
+Mat. Advance Online Publication (2015).
+
+14 M. Ben Shalom, M. Sachs, D. Rakhmilevitch, A. Palevski,
+Y. Dagan, Phys. Rev. Lett. 104, 126802 (2010); A. D. Cav-
+iglia, M. Gabay, S. Gariglio, N. Reyren, C. Cancellieri, and
+J.-M. Triscone, Phys. Rev. Lett. 104, 126803 (2010).
+
+15 R. Arras, V. G. Ruiz, W. E. Pickett, and R. Pentcheva,
+Phys. Rev. B 85, 125404 (2012); E. Lesne, N. Reyren, D.
+
+(2009).
+
+Doennig, R. Mattana, H. Jaffr`es, V. Cros , F. Petroff, F.
+Choueikani, P. Ohresser, R. Pentcheva, A. Barth´el´emy and
+M. Bibes, Nat. Commun. 5, 4291 (2014).
+
+16 B. Forg, C. Richter and J. Mannhart, Appl. Phys.
+Lett. 100, 053506 (2012); M. Huijben, G. Koster,
+M. K. Kruize, S. Wenderich, J. Verbeeck, S. Bals,
+E. Slooten, B. Shi, H. J. A. Molegraaf, J. E. Kleibeuker,
+S. van Aert, J. B. Goedkoop, A. Brinkman, D. H. A. Blank,
+M. S. Golden, G. van Tendeloo, H. Hilgenkamp and G. Ri-
+jnders, Adv. Funct. Mater. 23, 5240 (2013); Y. J. Shi,
+S. Wang, Y. Zhou, H. F. Ding and D. Wu, Appl. Phys.
+Lett. 102, 071605 (2013).
+
+17 A. Gamucci, D. Spirito, M. Carrega, B. Karmakar,
+A. Lombardo, M. Bruna, A. C. Ferrari, L. N. Pfeiffer,
+K. W. West, M. Polini, and V. Pellegrini Nat. Commun.
+5, 5824 (2014).
+
+18 M. Huang, G. Jnawali, J. -F. Hsu, S. Dhingra, H. Lee,
+S. Ryu, F. Bi, F. Ghahari, J. Ravichandran, L. Chen,
+P. Kim, C. -B. Eom, B. D'Urso, P. Irvin, and J. Levy,
+APL Materials 3, 062502 (2015).
+
+19 C. Cen, S. Thiel, J. Mannhart, J. Levy, Science 323, 1026
+
+20 C. Cantoni, J. Gazquez, F. Miletto Granozio, M. P. Ox-
+ley, M. Varela , A. R. Lupini, S. J. Pennycook, C. Aruta,
+U. Scotti di Uccio, P. Perna, and D. Maccariello,
+Adv. Mater. 24, 3952 (2012); C. Aruta, S. Amoruso,
+R. Bruzzese, X. Wang, D. Maccariello, F. Miletto Gra-
+nozio, and U. Scotti di Uccio, Appl. Phys. Lett. 97, 252105
+(2010).
+
+21 V. Miseikis, D. Convertino, N. Mishra, M. Gemmi, T.
+Mashoff, S. Heun, N. Haghighian, F. Bisio, M. Canepa,
+V. Piazza, and C. Coletti, 2D Mater. 2, 014006 (2015).
+
+22 Y. Wang, Y. Zheng, X. Xu, E. Dubuisson, Q. Bao, J. Lu
+and K.P. Loh, ACS Nano 5, 9927 (2011); L. Gao, W. Ren,
+H. Xu, L. Jin, Zh. Wang, T. Ma, L.-P. Ma, Zh. Zhang, Q.
+Fu, L.-M. Peng, X. Bao, and H.-M. Cheng, Nat. Commun.
+3, 014006 (2012).
+
+23 A. C. Ferrari, J. C. Meyer, V. Scardaci, C. Casir-
+aghi, M. Lazzeri, F. Mauri, S. Piscanec, D. Jiang,
+K. S. Novoselov, S. Roth, and A. K. Geim, Phys. Rev.
+Lett. 97, 187401 (2006); A. C. Ferrari and D. M. Basko,
+Nat. Nanotech. 8, 235 (2013).
+
+24 Y. -J. Yu,Y. Zhao, S. Ryu, L. E. Brus, K. S. Kim, and
+P. Kim, Nano Lett. 9, 3430 (2009); P. W. Peacock and
+J. Robertson, J. Appl. Phys. 92, 4713 (2002).
+
+25 G. Drera, G. Salvinelli, A. Brinkman, M. Huijben,
+G. Koster, H. Hilgenkamp, G. Rijnders, D. Visentin, and
+L. Sangaletti, Phys. Rev. B 87, 075435 (2013).
+
+26 U. Treske, N. Heming, M. Knupfer, B. Buchner, E. di Gen-
+
+6
+
+naro, A. Khare, U. Scotti di Uccio, F. Miletto Granozio,
+S. Krause, and A. Koitzsch, Sci. Rep. 5, 14506 (2015).
+
+27 W. J. Son, E. Cho, B. Lee, J. Lee, and S. Han, Phys.
+Rev. B 79, 245411 (2009); Z. S. Popovic, S. Satpathy,
+and R. M. Martin, Phys. Rev. Lett. 101, 256801 (2008);
+J. R. Tolsma, A. Principi, R. Asgari, M. Polini, and
+A. H. MacDonald, arXiv:1510.05299v1 [cond-mat.str-el].
+28 M. Salluzzo, J. Cezar, N. Brookes, V. Bisogni, G. De
+Luca, C. Richter, S. Thiel, J. Mannhart, M. Huijben, A.
+Brinkman, G. Rijnders, and G. Ghiringhelli, Phys. Rev.
+Lett. 102, 166804 (2009); C. Cancellieri, M.L. Reinle-
+Schmitt, M. Kobayashi, V.N. Strocov, P.R. Willmott, D.
+Fontaine, P. Ghosez, A. Filippetti, P. Delugas, and V.
+Fiorentini, Phys. Rev. B 89, 121412 (2014).
+
+29 See the Supplementary notes for a more detailed descrip-
+tion of the electrostatic and transport models of the sys-
+tem.
+
+30 C. W. Schneider, S. Thiel, G. Hammerl, C. Richter,
+
+J. Mannhart, Appl. Phys. Lett. 89, 122101 (2006).
+
+Appl. Phys. Lett. 101, 202104 (2012).
+
+31 G. Singh-Bhalla, C. Bell, J. Ravichandran, W. Siemons,
+Y. Hikita, S. Salahuddin, A. F. Hebard, H. Y. Hwang, and
+R. Ramesh, Nature Phys. 7, 80 (2010).
+
+32 L. Britnell, R. V. Gorbachev, R. Jalil, B. D. Belle,
+F. Schedin, A. Mishchenko, T. Georgiou, M. I. Katsnel-
+son, L. Eaves, S. V. Morozov, N. M. R. Peres, J. Leist,
+A. K. Geim, K. S. Novoselov, and L. A. Ponomarenko,
+Science 335, 947 (2012).
+
+33 C. -C. Tang, M. -Y. Li, L. J. Li, C. C. Chi, and J. -C. Chen,
+
+Sp1
+
+Supplemental Materials
+
+Here we summarize details on the theoretical modeling of electrostatic effects and inter-layer tunneling in graphene-
+LaAlO3/SrTiO3 hybrid systems.
+
+I. ELECTROSTATIC CONSIDERATIONS
+
+The vertical voltage bias VGO is defined as the
+electro-chemical potential difference between the two-
+dimensional electron system (2DES) in graphene and the
+2DES at the oxide interface (the "interfacial 2DES"), i.e.
+
+(0)
+
+(0)
+
+,
+
+− φO − µO + E
+O−e
+
+VGO ≡ φG + µG + E
+G−e
+
+(SE1)
+where −e is the electron charge, φG(O) is the electric po-
+(0)
+tential of the graphene sheet (interfacial 2DES), E
+G(O) is
+the energy of the Dirac point (bottom of the 2D subband,
+represented by the red line inside the triangular well in
+Fig. 2a) of graphene (the interfacial 2DES) measured
+from the vacuum level, and µG(O) is the corresponding
+chemical potential measured with respect to the Dirac
+point (2D subband edge).
+
++ φ . (SE2)
+
++ φ ≡ e(nG − nO)
+
+The two 2DESs can be modeled as a parallel plate
+capacitor. The electric potential difference can therefore
+be written as:
+φG − φO = ed(nG − nO)
+Here, nG(O)
+free electrons in the
+graphene sheet (interfacial 2DES), r is the relative di-
+electric constant of the barrier material, φ is a contri-
+bution arising from bound charges in the system (e.g.
+charges bounded at the termination surface of LAO,
+charged impurities adsorbed on the graphene flake, etc.),
+and C = 0r/d is the geometrical capacitance of the
+junction per unit area.
+In the T → 0 limit the chemical potential coincides
+
+is the density of
+
+20r
+
+2C
+
+with the Fermi energy,
+
+√
+µG(nG, T = 0) = vF
+µO(nO, T = 0) = π2
+
+πnG
+
+nO .
+
+mb
+
+(SE3)
+
+(SE4)
+
+In writing the previous equation we have dramatically
+simplified the description of the interfacial 2DES: we as-
+sume that it occupies a single 2D subband of the inter-
+facial triangular quantum well, and assume the subband
+dispersion to be parabolic and isotropic with an effec-
+tive band mass mb. Following Ref. S1, we identify the
+
+band mass with the mass of light quasiparticles and set
+mb ∼ me, where me is the bare electron mass in vacuum.
+In Eq. (SE3), vF ∼ 106 m/s is the graphene Fermi veloc-
+ity. At finite temperature T, µO(nO, T) and µG(nG, T)
+can be found numerically.
+Increasing temperature, the
+chemical potential moves towards (away from) the Dirac
+point (subband edge) in graphene (the interfacial 2DES).
+
+At zero bias, Eq. (SE1) reduces to
+
+0 = e(n
+
+(0)
+G )
+
+O − n
+(0)
+2C
+
+− φ + µ
+
+(0)
+O + E
+
+O − µ
+(0)
+e
+
+G − E
+(0)
+(0)
+G
+(SE5)
+
+,
+
+(0)
+O(G) are the electron densities at zero bias, while
+(0)
+O(G), T) are the chemical potentials at
+
+where n
+(0)
+O(G) = µO(G)(n
+µ
+zero bias.
+
+We now assume that,
+
+increasing the bias voltage,
+charge is transferred only between graphene and the in-
+terfacial 2DES. We write the carrier densities as nG(O) =
+G(O) ∓ δn, where the minus (plus) sign applies to
+(0)
+n
+graphene (the interfacial 2DES). We can therefore write
+an equation for the unknown δn, which can be easily
+solved numerically. It reads as following
+
+VGO = eδn
+C
+
++ µG(n
+
+G − δn, T) − µ
+(0)
+(0)
+G
+
+−e
+
+− µO(n
+
+O + δn, T) − µ
+(0)
+(0)
+O
+
+−e
+
+(SE6)
+
+.
+
+The input parameters that are needed to solve this equa-
+tion are: i) the capacitance per unit area C, ii) the elec-
+(0)
+tron densities n
+G(O) at zero bias, iii) the effective band
+mass mb of the interfacial 2DES, and iv) temperature T.
+G = −0.7 ×
+(0)
+O = 1.6 × 1013cm−2, C = 3.3 µF/cm2, and
+(0)
+
+1011cm−2, n
+T = 300 K is reported in Fig. 2b of the main text.
+
+The solution of this equation for n
+
+Sp2
+
+II. THEORY OF THE INTER-LAYER
+TUNNELING CURRENT BETWEEN
+
+GRAPHENE AND THE INTERFACIAL 2DES
+
+The current density flowing from graphene to the in-
+
+terfacial 2DES can be written as:
+
+Wαβ(nα − nβ) ,
+
+(SE7)
+
+X
+
+X
+
+α∈O
+
+β∈G
+
+J = e
+S
+
+where α (β) labels the electronic states localized at the
+oxide interface (in the graphene layer), nα(β) is the oc-
+
+cupation probability of the state α (β), Wαβ is the tran-
+sition probability per unit time from the state α to the
+state β, and S is the surface of the device.
+
+We assume that: i) the occupation probability of the
+in each electron system, by a Fermi-
+states is given,
+Dirac distribution nα(β) = fFD(α(β) − µO(G)) where
+fFD(E) = [exp (E/(kBT)) + 1]−1, and α(β)
+is mea-
+sured from the bottom of the conduction band (from
+the Dirac point), T being temperature;
+ii) the transi-
+tion probability Wαβ depends only on the energy of the
+initial and final states;
+iii) only elastic processes con-
+tribute to the tunneling current. Under these assump-
+(0)
+tions Wαβ = δ(α +E
+G +eφG)w(α)/S
+and Eq. (SE7) can be simplified to:
+
+O −eφO−β −E
+(0)
+
+X
+
+X
+
+α∈O
+
+β∈G
+
+Z ∞
+
+−∞
+
+(cid:18)
+
+d δ
+
+J = e
+S2
+
+ − α − e2δn
+2C
+
+(0)
++ µ
+O
+
+(cid:19)
+
+(cid:18)
+
+δ
+
+(cid:19)
+
+ − β + e2δn
+2C
+
+(0)
++ µ
+G
+
+w(α)[fFD(α − µO) − fFD(β − µG)] .
+(SE8)
+
+In deriving Eq. (SE8) we have used the following identity
+
+δ(α + E
+
+Z ∞
+
+−∞
+
+O − eφO − β − E
+(0)
++ µ
+
+dδ( − α − e2δn
+2C
+
+(0)
+G + eφG) =
+O )δ( − β + e2δn
+(0)
+2C
+
+Wentzel-Kramers-Brillouin (WKB) approximation:
+TTB(, ∆1, ∆2) =
+
+#
+
+− 
+
+d∆1 + (∆2 − ∆1)x
+
+0
+
+dx
+
+r
+
+"
+Z x∗
+− α
+(cid:20)
+d
+3 Θ(∆2 − )(∆2 − )3/2
+−2α
+(cid:20)
+∆2 − ∆1
+3 Θ(∆1 − )(∆1 − )3/2
+−2α
+∆1 − ∆2
+
+d
+
+(cid:21)
+(cid:21)
+
+(SE11)
+
+.
+
++ µ
+
+(0)
+G ) .
+(SE9)
+
+= exp
+
+= exp
+
+× exp
+
+We approximate the transmission probability with that
+of a trapezoidal potential barrier:
+
+w(α) = 2π
+
+(0)
+O , ∆O+µ
+
+ Γ2TTB(α, ∆O+µ
+
+O −e(φG−φO)) ,
+(0)
+(SE10)
+where Γ quantifies the probability of jumping from one of
+the two electron systems to the barrier, ∆O is the height
+of the barrier at the oxide interface measured from the
+Fermi level at zero bias, TTB is the transmission proba-
+bility through a trapezoidal barrier calculated using the
+
+where Θ(x) is the usual Heaviside step function and α =
+√
+2m∗d/ with m∗ being the conduction band effective
+2
+mass in the LAO barrier, x∗ is the classical turning point
+of the electron trajectory, while ∆1(2) are the heights of
+the two sides of the barrier.
+Introducing the density-of-states per unit area of
+interfacial 2DES and graphene DO(G)() =
+α∈O(G) δ( − α) or, more explicitly, DO() =
+F), we find the final
+
+mb/(π2), and DG() = 2/(π2v2
+result for the tunneling current:
+
+S−1P
+
+the
+
+Z ∞
+
+−∞
+
+J = 2πeΓ2
+
+
+(cid:18)
+(cid:20)
+
+×
+
+fFD
+
+d DO
+
+ + µ
+
+(cid:18)
+
+(0)
+
+O − e2δn
+2C
+ − µO + µ
+
+(cid:19)
+(cid:18)
+O − e2δn
+2C
+
+DG
+
+(0)
+
+(cid:19)
+
+(cid:18)
+
+ + µ
+
+(cid:19)
+
+(0)
+
+G + e2δn
+(cid:18)
+2C
+− fFD
+ − µG + µ
+
+TTB
+
+, ∆O + e2δn
+, ∆G − e2δn
+(cid:19)(cid:21)
+2C
+2C
+G + e2δn
+2C
+
+(0)
+
+.
+
+(cid:19)
+
+(SE12)
+
+Sp3
+
+In writing the previous equation, we have introduced the
+barrier height at the graphene-LAO interface with re-
+spect to the common Fermi level at zero bias ∆G =
+∆O + φ − e2(n
+(0)
+G )/(2C). Eq. (SE12) represents
+the main result of our model and has been used to gener-
+ate the vertical transport curve shown in red dashed line
+in the Fig. 3a of the main text.
+
+O − n
+(0)
+
+We now make some simplifying assumptions to obtain
+an approximate analytical result for the tunneling cur-
+rent density J, in order to both compare it with well-
+known formulas for 3D-to-3D tunnelingS2 -- S5 and use it
+to fit the experimental data.
+
+Neglecting quantum capacitance effects (i.e. the vari-
+ation of the chemical potentials µG(O) with density)
+Eq. (SE12) reduces to
+
+Z ∞
+
+−∞
+
+J = 2πeΓ2
+
+
+d DO
+
+ + µ
+
+(cid:18)
+(cid:20)
+
+×
+
+fFD
+
+(cid:18)
+
+(cid:19)
+O − eVGO
+(0)
+2
+ − eVGO
+2
+
+(cid:18)
+(cid:18)
+
+(cid:19)
+
+DG
+
+− fFD
+
+ + µ
+
+(cid:19)(cid:21)
+G + eVGO
+(0)
+2
+
+.
+
+ + eVGO
+
+2
+
+(cid:19)
+
+(cid:18)
+
+TTB
+
+, ∆O + eVGO
+2
+
+, ∆G − eVGO
+2
+
+(cid:19)
+
+(SE13)
+
+Setting T = 0 and approximating the density-of-states
+of each 2DES with its value calculated at the chemical
+potential, we obtain
+
+Z eVGO/2
+
+−eVGO/2
+
+J ≈ A
+
+(cid:18)
+
+d TTB
+
+, ∆O + eVGO
+2
+
+, ∆G − eVGO
+,
+2
+(SE14)
+
+where A ≡ 2πeΓ2DO(µ
+
+(0)
+O )DG(µ
+
+(0)
+G )/.
+
+(cid:19)
+
+For low bias (i.e. VGO (cid:28) ∆O, ∆G), in the spirit of
+Simmons' formulaS2 -- S4, we can replace the trapezoidal
+barrier with a rectangular barrier with average height
+¯∆ = (∆O + ∆G)/2 and transmission probability
+
+TRB(, ¯∆) = exp(cid:16)−αΘ( ¯∆ − )p ¯∆ − 
+
+.
+
+(SE15)
+
+(cid:17)
+
+We find
+
+" 
+
+r
+
+1 + α
+
+J ≈ A
+
+2
+α2
+
+¯∆ − eVGO
+2
+
+!
+
+p ¯∆− eVGO
+
+2 −
+
+e−α
+
+r
+
+ 
+
+1 + α
+
+¯∆ + eVGO
+
+2
+
+!
+
+p ¯∆+ eVGO
+
+2
+
+e−α
+
+#
+
+,
+
+(SE16)
+
+which generalizes Simmons' formula to the problem of
+tunneling between two 2DESs with no in-plane momen-
+tum conservation.
+For large negative bias (i.e. eVGO (cid:28) −∆G), we can
+instead approximate Eq. (SE14) neglecting the smallest
+of the two barrier heights, i.e. setting ∆O → 0. We find
+J ≈ A
+
+(∆G − eVGO/2 − )3/2
+
+Z eVGO/2
+
+d exp
+
+(cid:21)
+
+∆G − eVGO
+
+(cid:20)
+−2α
+#
+3
+
+∆3/2
+G
+eVGO
+
+.
+
+"2α
+
+3
+
+−eVGO/2
+
+≈ A
+
+eVGO
+
+2
+
+exp
+
+(SE17)
+This expression is the 2D-to-2D equivalent of the Fowler-
+Nordheim equationS5. However, in our case, the Fowler-
+
+Nordheim regime is preempted by the depletion of the
+interfacial 2DES.
+
+III. ANALYTICAL FITTING PROCEDURE FOR
+
+POSITIVE BIAS
+
+Eq. (SE12) reveals a very complicated dependence of
+the tunneling current on applied bias, which hinders the
+reproduction of the experimental data through direct fit-
+ting; therefore an indirect route was chosen to reproduce
+the transport curves, as described in the following for the
+representative curve in Fig. 3a in the main text.
+
+We notice that between the noise floor and the on-
+for 0.7 < VGO < 1.8 V
+
+set of resistive saturation, i.e.
+
+Sp4
+
+for the particular curve shown in Fig. 3a, the J − VGO
+relationship reduces to a simple exponential function, as
+indicated by the linear dependence exhibited in the semi-
+logarithmic plot. The blue dotted curve in Fig. 3a rep-
+resents the best fit to the data in this bias range with a
+two-parameter exponential function J = c1 exp(c2VGO),
+yielding c1 = 3.6 × 10−5µA/cm2 and c2 = 11 V−1.
+To compare this result with our theoretical model, we
+need a simplified version of Eq. SE16. To this end, we
+notice that for typical values of α ≈ 40 and positive bias
+only the first exponential term in Eq. SE16 is relevant,
+the second being suppressed by several orders of magni-
+tude. Fixing a reference point V ∗ = 1.3 V at the center
+of the relevant bias interval and expanding to first order
+in VGO − V ∗, we obtain
+
+J ≈ Const(A, α, ¯∆, V ∗)×exp
+
+ αeVGO
+q ¯∆ − eV ∗
+(cid:18)
+
+ , (SE18)
+(cid:19)
+q ¯∆ − eV ∗/2
+
+4
+
+2
+
+so that we can identify c2 with αe/
+.
+We estimate an average barrier height ¯∆ ≈ 2 eV and
+
+4
+
+(0)
+G , yields ∆G = 2.3 eV;
+
+consequently extract a value of m∗ = 1.5me, which is
+significantly larger than previously reported valuesS6,S7.
+The barrier is estimated in the following way: combin-
+ing the reported electron affinities values of graphene
+(4.6 eV)S8 and LAO (2.4 eV)S6,S9 and the experimentally
+measured n
+furthermore, by
+assuming typical values for the conduction band offset
+(2 eV) at the oxide interfaceS25, the triangular well con-
+finement energy (0.1 − 0.2 eV), the interfacial subband
+effective mass mb = me
+S1,S6 and using the experimen-
+O , we obtain ∆O ≈ 1.8 eV. The pa-
+(0)
+tally measured n
+rameters concerning the electrostatics of the junction, i.e
+d = 4 nm, r = 15, and the zero bias densities of the two
+electron systems were chosen the same as in Fig. 2. With
+these parameters, we generated the RT vertical transport
+characteristics in the full WKB approximation shown in
+dashed red line in Fig. 3a. The curve reproduces qual-
+itatively the observed transport behavior in the whole
+bias range and is quantitatively accurate in the instrinsic
+bias range, providing evidence that the vertical graphene-
+oxide transport is dominated by direct tunneling of elec-
+trons through the LAO barrier.
+
+∗ ilirjan.aliaj@sns.it
+† stefano.roddaro@sns.it
+
+[S1] J.R. Tolsma, A. Principi, R. Asgari, M. Polini, and
+A.H. MacDonald, arXiv:1510.05299v1 [cond-mat.str-el]
+(2015).
+
+[S2] J.G. Simmons, J. Appl. Phys. 34, 238 (1963).
+[S3] J.G. Simmons, J. App. Phys. 34, 1793 (1963).
+[S4] R. Holm, J. App. Phys. 22, 569 (1951).
+[S5] R.H. Fowler, and L. Nordheim, Proc. R. Soc. A 119,
+
+173-181 (1928).
+
+[S6] G. Singh-Bhalla, C. Bell, J. Ravichandran, W. Siemons,
+Y. Hikita, S. Salahuddin, A. F. Hebard, H. Y. Hwang,
+and R. Ramesh, Nature Phys. 7, 80 (2010).
+
+[S7] I. Y. -K. Chang and J. Y. -M. Lee, Appl. Phys. Lett.
+
+93, 223503 (2008).
+
+[S8] Y. -J. Yu,Y. Zhao, S. Ryu, L. E. Brus, K. S. Kim, and
+
+P. Kim, Nano Lett. 9, 3430 (2009).
+
+[S9] P. W. Peacock and J. Robertson, J. Appl. Phys. 92,
+
+4713 (2002).
+
+[S10] G. Drera, G. Salvinelli, A. Brinkman, M. Huijben,
+G. Koster, H. Hilgenkamp, G. Rijnders, D. Visentin,
+and L. Sangaletti, Phys. Rev. B 87, 075435 (2013);
+U. Treske, N. Heming, M. Knupfer, B. Buchner,
+E. di Gennaro, A. Khare, U. Scotti di Uccio,
+F. Miletto Granozio, S. Krause, and A. Koitzsch, Sci.
+Rep. 5, 14506 (2015).
+
+

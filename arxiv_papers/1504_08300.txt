@@ -1,0 +1,1530 @@
+
+Ultrafast field control of symmetry, reciprocity, and reversibility in buckled
+
+graphene-like materials
+
+Hamed Koochaki Kelardeh∗, Vadym Apalkov†, and Mark I. Stockman‡
+Center for Nano-Optics (CeNO) and Department of Physics and Astronomy,
+
+Georgia State University, Atlanta, Georgia 30303, USA
+
+(Dated: June 29, 2021)
+
+We theoretically show that buckled two-dimensional graphene-like materials (silicene and ger-
+manene) subjected to a femtosecond strong optical pulse can be controlled by the optical field
+component normal to their plane. In such strong fields, these materials are predicted to exhibit
+non-reciprocal reflection, optical rectification and generation of electric currents both parallel and
+normal to the in-plane field direction. Reversibility of the conduction band population is also field-
+and carrier-envelope phase controllable. There is a net charge transfer along the material plane
+that is also dependent on the normal field component. Thus a graphene-like buckled material be-
+haves analogously to a field-effect transistor controlled and driven by the electric field of light with
+subcycle (femtosecond) speed.
+
+I.
+
+INTRODUCTION
+
+Novel Dirac materials such as silicene or germanene
+[1 -- 9] are monolayers of silicon or germanium with hexag-
+onal lattice structures where charge carriers at the Fermi
+surface are, as in graphene, Dirac fermions [10 -- 18]. Re-
+cently, silicene has shown [19] promise for applications in
+electronics such as field-effect transistors (FETs) [20 -- 23]
+where, being a semiconductor, it has a natural advantage
+over graphene that is a semimetal. Below we will con-
+sider silicene but all qualitative results are also valid for
+germanene.
+
+In this paper we theoretically predict that a single
+monolayer of silicene (germanene) is controllable at op-
+tical frequencies by a normal component of the incident
+optical field just like the gate voltage controls channel
+current in FET. The main difference between silicene and
+graphene is that due to a larger radius of a Si (or, Ge
+in germanene) atom compared to a C atom, the corre-
+sponding hexagon lattice in silicene has buckled structure
+[24] consisting of two sublattices that are displaced ver-
+tically by a finite distance Lz ∼ 0.5 A  --  see Fig. 1(a). As
+a result, silicene has large spin-orbit interaction, which
+opens up band gaps at the Dirac points (∆so ≈ 1.55− 7.9
+meV for silicene [6, 25] and ∆so ≈ 24 − 93 meV for ger-
+manene [6, 25]). For graphene, the corresponding spin-
+orbit-induced gap is very small, 25 µeV [26]. The buckled
+structure of silicene/germanene lattice allows also for the
+band gap to be controlled by an applied perpendicular
+electric field [27]: the band gap increases almost linearly
+with this electric field.
+
+Phenomena in silicene in a strong optical pulse field are
+illustrated in Figs. 1(b)-(e). A strong optical field causes
+electron transfer in the direction of the force [28, 29].
+
+∗hkoochakikelardeh1@student.gsu.edu
+†vapalkov@gsu.edu
+‡mstockman@gsu.edu
+
+In fact, a strong optical field in the z-direction (normal
+to the silicene plane) decreases symmetry of the system
+from honeycomb (six-order, centrosymmetric) to trian-
+gular (third-order, non-centrosymmetric). This leads to
+appearance of effects such as optical rectification and in-
+duction of currents normal to the in-plane component of
+the applied electric field.
+
+Microscopically, the z component of the strong field
+causes transfer of electrons between the sublattices. As-
+sume for certainty that, for the chosen pulse, electrons
+are transferred from A to B. (Note that the change of the
+maximum field to the opposite, i.e., change of the carrier-
+envelope phase of the pulse by π, would obviously cause
+an opposite transfer.) In the case of in-plane field F2D
+polarized in the y-direction, there is an electron transfer
+in both the y- and x-directions  --  see Fig. 1(b). The sym-
+metry of the system dictates that with the reversal of F2D
+(for the same z-component, Fz) the y-current changes to
+the opposite but the x-current does not change, as shown
+in Fig. 1(c). This implies, in particular, that the system
+causes optical rectification in the x-direction, which is
+due to the absence of symmetry with respect to the re-
+flection in yz-plane for either sublattices.
+
+Fundamentally different scenario takes place for F2D
+in the x direction  --  see Figs. 1(d) and (e). In this case,
+there is no current in the y-direction due to symmetry
+with respect to reflection in the xz-plane. With respect
+to field F2D changing to the opposite, the x-current does
+not have any definite parity, which is rectification in the
+x-direction.
+
+To provide for the field-effect control of optical phe-
+nomena in silicene, the z-component of the pulse electric
+field should be strong enough: Fz (cid:38) ω/(eLz) ∼ 2 V/A,
+where ω is the optical frequency. Then, necessarily, the
+pulse should be very short, on the femtosecond scale,
+to allow the processes to be complete before significant
+damage to the lattice may have occurred  --  see Sec. II
+below. For such fields, there may be partial adiabaticity
+(reversibility) set on, which we will show below in Sec.
+III.
+
+Fig. 1(a). The angle of incidence of the laser pulse is
+denoted as θ.
+
+2
+
+√
+
+√
+
+√
+
+3, 1) and a2 = a/2(
+
+√
+3, 1/3) and K(cid:48) = (2π/a)(1/
+
+Similar to graphene, the silicene/germanene mono-
+layer has honeycomb lattice structure, which is shown
+in Fig. 2(a). The lattice has two sublattices, labeled
+√
+"A" and "B", and is determined by two lattice vectors,
+3,−1), where a is lat-
+a1 = a/2(
+tice constant, which is 3.866 A for silicene and 4.063 A for
+germanene. The distance between the nearest neighbors
+is a/
+3. The first Brillouin zone of the reciprocal lat-
+tice is a hexagon and is shown in Fig. 2(b). The points
+3,−1/3)
+K = (2π/a)(1/
+are the Dirac points. In the buckled structure [see Fig.
+1(a)], the z-shift distance is Lz = 0.46 A and Lz = 0.66
+A for silicene and germanene, respectively [31, 32].
+For a graphene monolayer, where spin-orbit coupling
+is extremely small ( ≈ 0.03 meV), energy gaps at the
+Dirac points are correspondingly very small and can
+be set as zero for any practical purposes. Then the
+low energy spectra near the Dirac points are well de-
+scribed by the Dirac massless relativistic equation. For
+a silicene/germanene system, finite spin-orbit interaction
+opens up a much larger gap ∼ 10 − 100 meV [27]. Such
+a gap in the energy spectrum of silicene modifies low-
+energy electron transport and interaction between elec-
+trons in weak magnetic fields [33]. However, this spin-
+orbit interaction is too weak and, in our case, can be
+safely neglected compared to characteristic energy scale,
+eFzLz, introduced by the strong electric field of the op-
+tical pulse in the buckled Dirac materials. At the same
+time, the buckled structure of a silicene monolayer in-
+troduces strong sensitivity of the system to the external
+normal field, Fz [27]. Hence, based on this consideration,
+below in this article we disregard the spin-orbit interac-
+tion but take into account the buckled structure bringing
+about the sensitivity to the normal optical electric field.
+The Hamiltonian of an electron in silicene in the field
+
+of an optical pulse has the form
+
+H = H0 + eF2d(t)r +
+
+eLzFz(t)
+
+2
+
+(cid:19)
+
+(cid:18) 1 0
+
+0 −1
+
+,
+
+(2)
+
+where H0 is the field-free electron Hamiltonian, r = (x, y)
+is a two dimensional vector, F2d = (Fx(t), Fy(t)) =
+F (t) sin θ(cos φ, sin φ), and Fz(t) = F (t) cos θ. Here the
+matrix form of the Hamiltonian corresponds to pseudo-
+spin, i.e., two components of the wave function ψA and
+ψB, which describe the amplitudes for an electron to be
+on the lattice site A and B, respectively.
+The field-free electron Hamiltonian, H0, describes the
+nearest neighbor tight-binding model of silicene without
+spin-orbit terms. This Hamiltonian is exactly the same
+as the free-field Hamiltonian of graphene [34 -- 37] and de-
+scribes the tight-binding coupling between two sublat-
+tices A and B  --  see Fig. 2(a). In the reciprocal space,
+the Hamiltonian H0 is a 2× 2 matrix of the form [34, 35]
+
+(cid:18)
+
+(cid:19)
+
+H0 =
+
+0
+
+γf∗(k)
+
+γf (k)
+
+0
+
+,
+
+(3)
+
+FIG. 1: (a) Hexagonal lattice structure of 2D silicene. The
+lattice consists of two inequivalent sublattices labeled by "A"
+and "B". Sublattices A and B are shifted in the z direction
+by distance Lz. The angle of incidence of the pulse is θ. (b)
+Schematic of in-plane electron transfer induced by in-plane
+pulse electric field F2D directed along the y axis as shown.
+The curved red arrows indicate the electron transfer between
+the sublattices.
+(c) The same as (b) but for the opposite
+F2D. (d) The same as (b) but for the field directed along the
+x axis. (e) The same as (d) but for the opposite F2D. The
+z components of the pulse field has the same direction in all
+cases.
+
+II. MODEL AND MAIN EQUATIONS
+
+At the present time, record-setting ultrashort optical
+pulses have duration ≈ 1.5 optical period [28, 30], with
+duration of just a few femtoseconds. We will idealize
+and simulate such an ultrashort pulse with the following
+single-oscillation waveform,
+
+F (t) = F0e−u2(cid:0)1 − 2u2(cid:1) ,
+
+(1)
+
+where F0 is the amplitude, which is related to the pulse
+power, P = cF 2
+0 /4π, c is speed of light, u = t/τ , and
+τ is the pulse length, which is set τ = 1 fs. Note that
+−∞ F (t)dt = 0, which is
+
+this waveform has zero area, (cid:82) ∞
+
+required for a pulse propagating in far-field zone.
+
+We consider a p-polarized laser pulse with polarization
+direction parallel to the plane of incidence, orientation
+of which is determined by an angle ϕ measured relative
+to axis x. Here the xy coordinate system is introduced
+in the plane of silicene/germanene, oriented as shown in
+
+ABx(b)yF2DAB(c)F2DAB(d)F2DABF2D(e)AByxzLzFθ(a)lattice
+
+(a) Hexagonal
+
+3, 1) and a2 = a/2(
+
+FIG. 2:
+structure of 2D sil-
+icene/germanene. The graphene lattice consists of two in-
+√
+√
+equivalent sublattices labeled by A and B. The vectors a1 =
+3,−1) are the direct lattice vectors
+a/2(
+of silicene/germanene. The nearest neighbor coupling, which
+is characterized by the hopping integral γ, is also shown. (b)
+The first Brillouin zone of silicene/germanene. Points K and
+K(cid:48) are two degenerate Dirac points, corresponding to two
+valleys of low energy spectrum of silicene/germanene. The
+blue arrow shows in-plane (xy-plane) component of the time-
+dependent electric field of the pulse. The in-plane field, F2d,
+is characterized by azimuthal angle ϕ.
+
+where the hopping integral γ is −1.6 eV for silicene and
+−1.3 for germanene [27], and
+
+(cid:19)
+
+(cid:18)
+
+i
+
+akx√
+3
+
+(cid:18)
+
+−i
+
+√
+akx
+2
+3
+
+(cid:19)
+
+(cid:18) aky
+
+(cid:19)
+
+2
+
+f (k) = exp
+
++ 2 exp
+
+cos
+
+. (4)
+
+The energy spectrum of Hamiltonian H0 consists of the
+conduction band (CB) (π∗, or anti-bonding band) and
+the valence band (VB) (π, or bonding band) with energy
+dispersion Ec(k) = −γf (k) (CB) and Ev(k) = γf (k)
+(VB). The corresponding wave functions are
+
+and
+
+Ψ(c)
+
+k (r) =
+
+eikr√
+2
+
+Ψ(v)
+
+k (r) =
+
+eikr√
+2
+
+(cid:19)
+(cid:19)
+
+e−iφk
+
+(cid:18) 1
+(cid:18) −1
+
+e−iφk
+
+(5)
+
+3
+
+The electric field of the optical pulse generates both
+interband and intraband electron dynamics. The inter-
+band dynamics introduces coupling of the states of the
+CB and VB and results in redistribution of electrons be-
+tween the two bands. For dielectrics, such dynamics re-
+sults in its metallization, which manifests itself as a finite
+charge transfer through dielectrics and finite CB popula-
+tion after the pulse ends [28, 44, 45].
+
+In the reciprocal space, the intraband dynamics is de-
+
+scribed by the acceleration theorem [46],
+
+ dk
+dt
+
+= eF(t).
+
+(8)
+
+This acceleration theorem is universal and does not de-
+pend on the dispersion law. Therefore the intraband elec-
+tron dynamics is the same for both the VB and CB. The
+time-dependent wave vector kT (q, t) of an electron with
+initial wave vector q can be found by solving Eq. (8) as
+
+kT (q, t) = q +
+
+e
+
+
+F(t1)dt1.
+
+(9)
+
+(cid:90) t
+
+−∞
+
+The corresponding electron wave functions are the well-
+known Houston functions [47],
+
+− i(cid:82) t−∞dt1Eα[kT (q,t1)],
+
+(10)
+
+αq (r, t) = Ψ(α)
+Φ(H)
+
+kT (q,t)(r)e
+
+where α = v (VB) or α = c (CB).
+
+Using the Houston functions as a basis, we express the
+general solution of time-dependent Schrodinger equation
+(7) in the following form
+
+Ψq(r, t) =
+
+βαq(t)Φ(H)
+
+αq (r, t).
+
+(11)
+
+α=v,c
+
+Solution (11) is parametrized by initial electron wave vec-
+tor q. Due to the universal intraband electron dynamics
+in the reciprocal space, the equations, which describe co-
+herent electron dynamics in the pulse field, become de-
+coupled, greatly simplifying the problem.
+
+Expansion coefficients βαq satisfy the following system
+
+of differential equations
+
+(cid:88)
+
+=
+
+dt
+F2d(t)Qq(t) + eFz(t) Lz(t, q)
+
+−i
+dβvq(t)
+
+=
+dt
+F2d(t)Q∗
+
+−i
+
+
+
+
+
+q(t) + eFz(t) Lz(t, q)
+
+βvq(t),
+
+(12)
+
+βcq(t),
+
+(13)
+
+where function Lz(t, q), which is given by the following
+expression,
+
+− i(cid:82) t−∞dt1{Ec[kT (q,t1)]−Ev[kT (q,t1)]}
+
+Lz(t, q) = Lze
+
+,
+
+(14)
+
+is specific to the buckled structure of silicene. It deter-
+mines the interband coupling induced by the perpendicu-
+lar component of the pulse electric field. Vector function
+
+,
+
+(6)
+
+dβcq(t)
+
+where f (k) = f (k)eiφk .
+
+The characteristic electron-electron scattering time
+τe−e in silicene/germanene is expected to be similar to
+the corresponding time is graphene, which is ∼ 10 − 100
+fs [38 -- 43]. The duration of the pulse in our problem
+(τp ∼ 4 fs) is τp (cid:46) τe−e. Therefore, it is not unreason-
+able to assume that the electron dynamics in the external
+electric field of the optical pulse is coherent and can be
+described by time-dependent Schrodinger equation
+
+i dΨ
+dt
+
+= HΨ,
+
+(7)
+
+where Hamiltonian H of Eq. (2) has an explicit time de-
+pendence.
+
+ABγx(a)(b)4π/3aφa/  3F2dkykxKK'yof the velocity operator are
+
+V cc
+x = −V vv
+
+x =
+
+V cc
+y = −V vv
+
+y =
+
+aγ
+ cos
+
+4
+
+,
+
+(21)
+
+(22)
+
+,
+
+(23)
+
+aγ√
+3
+
+sin
+
+(cid:20)
+
+cos
+
+cos
+
+(cid:19)
+
++
+
+(cid:21)
+
+− φk
+
+cos
+
+aky
+2
+
+sin
+
+−
+
+cos
+
+aky
+2
+
+,
+
+(cid:21)
+
+aky
+2
+
+3
+
+sin
+
+√
+2
+
+(cid:20)
+(cid:18) akx√
+(cid:18) akx
+(cid:18) akx√
+(cid:18) akx√
+(cid:18) akx√
+
+3
+
+3
+
+3
+
+3
+
++ φk
+
++ φk
+
+(cid:18) akx√
+(cid:19)
+(cid:19)
+(cid:19)
+(cid:19)
+(cid:19)
+
+− φk
+
++ φk
+
+Substituting Eqs. (5) and (6) into Eq. (16), we obtain
+explicitly,
+
+V cv
+x = −i
+
+2aγ√
+3
+
+Qq(t) is proportional to the in-plane interband dipole
+matrix element,
+
+− i(cid:82) t−∞dt1{Ec[kT (q,t1)]−Ev[kT (q,t1)]}
+
+Qq(t) = D[kT (q, t)]e
+
+,
+(15)
+where D(k) = (Dx(k), Dy(k)) is the dipole matrix ele-
+ment between the states of the CB and VB with the same
+wave vector k, namely,
+
+D(k) =
+
+(cid:68)
+
+Ψ(c)
+k
+
+(cid:12)(cid:12)(cid:12) er
+(cid:16) aky
+(cid:17)(cid:104)
+(cid:17)(cid:104)
+(cid:16) aky
+(cid:16) aky
+(cid:17)(cid:104)
+
+(cid:16) aky
+
+sin
+
+2
+
+2
+
+2
+
+cos
+
+(cid:17)
+
+cos
+
+.
+
+k
+
+(cid:69)
+
+(cid:12)(cid:12)(cid:12)Ψ(v)
+(cid:16) 3akx
+(cid:17) − 2 cos
+(cid:17)
+(cid:16) 3akx
+(cid:16) 3akx
+(cid:17)
+(cid:16) 3akx
+
+3
+√
+2
+
++ cos
+
+(cid:17)
+
+√
+2
+
+sin
+
+√
+
+3
+
+2
+
+3
+
++ cos
+
+√
+
+cos
+
+2
+
+2
+
+3
+
+(16)
+
+(cid:16) aky
+(cid:16) aky
+
+2
+
+(cid:17)(cid:105)
+(cid:17)(cid:105)
+
+2
+
+(17)
+
+(cid:16) aky
+
+(cid:17)(cid:105) .
+
+2
+
+1 + cos
+
+1 + 4 cos
+
+Dx(k) =
+
+√
+ea
+3
+2
+
+and
+
+Dy(k) =
+
+ea
+2
+
+1 + 4 cos
+
+(cid:88)
+
+(18)
+System of equations (12)-(13) describes the interband
+electron dynamics and determines the mixing of CB and
+VB states in the electric field of the pulse. For undoped
+silicene, all VB states are initially occupied and all CB
+states are empty. Then the initial condition for system
+Eqs. (12)-(13) is (βvq, βcq) = (1, 0), and the mixing of
+the states of different bands is characterized by time-
+dependent component βcq(t)2. We also define the time-
+dependent total CB population by the following expres-
+sion,
+
+Nc(t) =
+
+βcq(t)2,
+
+(19)
+
+q
+
+where the sum is over the first Brillouin zone. The CB
+population, Nc(t), characterizes the electron dynamics
+in silicene and determines whether the dynamics for the
+entire system is reversible or not. Namely, the dynamics
+is reversible if, after the pulse ends, the CB population,
+which is the residual CB population, is small compared
+to the maximum CB population throughout the pulse.
+
+Polarization of the system in a time-dependent electric
+field also generates electric current, which can be calcu-
+lated in terms of the velocity operator from the following
+expression
+
+(cid:88)
+
+(cid:88)
+
+(cid:88)
+
+q
+
+α1=v,c
+
+α2=v,c
+
+Jj(t) =
+
+e
+a2
+
+α1q(t)V α1α2
+β∗
+
+j
+
+βα2q(t),
+
+(20)
+
+where j = x, y, and V α1α2
+are matrix elements of the
+velocity operator Vj = 1 ∂H0
+. With the known wave
+functions (5)-(6) of the CB and VB, the matrix elements
+
+∂kj
+
+j
+
+(cid:90) ∞
+
+−∞
+
+and
+
+V cv
+y = −i
+
+2aγ
+ sin
+
++ φk
+
+cos
+
+3
+
+aky
+2
+
+.
+
+(24)
+
+The interband matrix elements of the velocity operator,
+V cv
+x and V cv
+y , are related to the interband dipole matrix
+x = iDx(k) [Ec(k) − Ev(k)] / and V cv
+elements, V cv
+y =
+iDy(k) [Ec(k) − Ev(k)] / [48]. Within the nearest-
+neighbor tight binding model, silicene has electron-hole
+symmetry, which results in the relation V cc
+
+y = −V vv
+y .
+
+Let us denote current in the i direction induced by in-
+plane field F2d in the j direction as Jij, where i, j = x, y.
+Similarly we denote charge transferred after the pulse
+ends through the system as Qij. This is determined by
+an expression
+
+Qij =
+
+dtJij(t),
+
+(25)
+
+The current can be expressed in terms of polarization
+P(t) of the electron system as J(t) = dP(t)/dt. Then
+the transferred charge is determined by the residual po-
+larization of the system as Qij = Pij(t → ∞), where we
+introduced tensor indices for P similarly to those for Jij
+and Qij. The transferred charge is nonzero only due to
+irreversibility of electron dynamics in the optical pulse
+field. For completely reversible dynamics, when the sys-
+tem returns to its initial state after the pulse, the trans-
+ferred charge would be exactly zero.
+
+III. RESULTS AND DISCUSSION
+
+A. Band Population Dynamics in Strong Pulse
+
+Field
+
+The principal distinction of silicene from graphene
+is that the sublattices, A and B, are separated "verti-
+cally" (i.e., in the z-direction) by an appreciable distance,
+Lz ≈ 0.5 A  --  see Fig. 1(a). The strong field of the op-
+tical pulse causes non-perturbative nonlinear changes in
+
+5
+
+√
+
+field Lxy = a/(cid:0)2
+
+3(cid:1) ≈ 0.7 A and adiabaticity is vio-
+
+xz plane is displayed in Figs. 3(c)-(d). In the stark con-
+trast to the case of the yz polarization considered above
+in the previous paragraph, here there is a dramatic dif-
+ference between θ = 80◦ and θ = −80◦. This is due
+to the violation in the reflection symmetry induced by
+the z component of the maximum field. For the case
+illustrated, this field promotes transfer of electrons pre-
+dominantly toward the B sublattice  --  cf. Fig. 1(a).
+For θ = 80◦ as shown in Fig. 3(c), the x component
+of the maximum field, Fx < 0, promotes transfer of elec-
+trons from left to right (in the direction x > 0) according
+to their negative charge  --  cf. Fig. 1(d). The distance of
+transfer is the same as in the case of the yz-polarized
+lated since δ = ω/ (eFyLxy) (cid:38) 1. Correspondingly, the
+residual CB populations N (res)
+are again close to their
+corresponding maxima during the pulse.
+Dramatically different behavior takes place for the re-
+ciprocal incidence, θ = −80◦ where the CB population ki-
+netics is displayed in Fig. 3(d). For relatively weak fields,
+F0 = 0.5−1.5 V/A, the kinetics is essentially irreversible,
+where the maximum CB population is attained at the end
+of the excitation pulse, similar to the case of Fig. 3(c)
+considered above in the previous paragraph. In a sharp
+contrast, for stronger fields, F0 = 2 − 3 V/A, there is
+partial reversibility: at the end of the pulse the CB pop-
+ulation is reduced by a factor of ≈ 2 with respect to its
+maximum. This is related to improved adiabaticity, i.e.,
+decreased adiabaticity parameter, δ = ω/ (eFyLxx) (cid:46) 1
+3 ≈ 1.4 A is the horizontal transfer dis-
+where Lxx = a/
+tance, see Fig. 2(a). This distance is twice longer than
+for the case of Figs. 1(c)-(d) corresponding to the polar-
+izations in Figs. 3(b)-(c).
+
+√
+
+c
+
+Note that the adiabaticity in the case of Fig. 3(d) is
+incomplete; for comparison, in the case of silica (quartz)
+a nearly perfect adiabaticity has been predicted and
+observed [30, 49]. This high degree of adiabaticity is
+most certainly related to a wide band gap, ∆g (see also
+Ref. [44]) and to a significantly larger lattice constant,
+a ≈ 5 A, in quartz. Both these factors determine adi-
+abaticity, which is pronounced when ω/∆g (cid:28) 1 and
+ω/(eF0a) (cid:28) 1. Thus one should not expect near-perfect
+adiabaticity in graphene (cf. Ref. [29]), silicene, and ger-
+manene where ∆g is negligible, and a is relatively small.
+
+B. Ultrafast Currents Induced by Strong Pulse
+
+Electrical current is due to displacement of charges
+caused by the applied pulse field. For free classical elec-
+trons, this current is proportional to their mean velocity,
+i.e., to the integral of the field, often referred to as vector
+potential,
+
+(cid:90) t
+
+−∞
+
+A(t) = −c
+
+F2d(t(cid:48))dt(cid:48) .
+
+(26)
+
+In contrast to free electrons, as we have argued above in
+Sec. III A, the strong field acting on the electrons in crys-
+
+FIG. 3: (a) Pulse waveform as given by Eq. (1) for F0 =
+2 V/A. (b) For excitation pulse polarized in the yz plane,
+CB population Nc is shown as a function of time for pulse
+amplitudes F0 indicated. Incidence angle θ = ±80◦. (c) The
+same as (b) but for the pulse polarized in the xz plane with
+the direction of the maximum field, F, shown in the inset;
+incidence angle θ = 80◦. (d) The same as (c) but for θ =
+−80◦.
+
+the material. Such phenomena are sensitive to the max-
+imum field of the pulse, which is amplitude F0. For our
+choice of pulse Eq. (1), the maximum of the carrier oscil-
+lation occurs at the maximum of the pulse envelope, i.e.,
+the carrier-envelope phase (CEP) is zero  --  see Fig. 3(a)
+illustrating the pulse waveform.
+The CB population, Nc, calculated in accord with Eq.
+(19) for pulse polarized in the yz plane is displayed in
+Fig. 3(b) as a function of time t for different field am-
+plitudes and incidence angle θ = ±80◦. Note that be-
+cause silicene is symmetric with respect to reflection in
+the xz plane, the results for both 80◦ and −80◦ are iden-
+tical. Two most prominent features of this dynamics are:
+(i) dependence on the pulse amplitude is very nonlinear,
+and (ii) the residual (after the pulse end) populations,
+N (res)
+are close to the maximum populations during the
+pulse. The latter property is similar to that in graphene
+[29]. However, it is in a sharp contrast to that in silica,
+cf. Refs. [49] (theory) and [28, 50] (experiment) where
+the residual CB populations are relatively small. This
+large residual CB population for silicene suggests lack of
+adiabaticity, which is likely due to a relatively small dis-
+tance of the transfer between the two sublattices in the xy
+the adiabaticity parameter is δ = ω/ (eFyLxy). Adi-
+abaticity requires δ (cid:28) 1 while, in our case, even at the
+strongest fields, the adiabatic parameter is not too small,
+δ (cid:38) 1.
+
+3(cid:1) ≈ 0.7 A, in this case. Note that
+
+plane, Lxy = a/(cid:0)2
+
+√
+
+c
+
+The response for the case of the pulse polarized in the
+
+Time, t (fs)-2-13210F  (V/Å)02(a)Time, t (fs)-2-13210CB population (%) 030201040F0=1.0 V/Å1.5 V/Å2.0 V/Å3.0 V/Å2.5 V/Å(b)zFθ>0ABTime, t (fs)-2-13210CB population (%) 01284F0=0.5 V/Å1.0 V/Å1.5 V/Å3.0 V/Å2.0 V/Å(c)Time, t (fs)-2-13210CB population (%) 012842610F0=0.5 V/Å1.0 V/Å1.5 V/Å3.0 V/Å2.0 V/Å(a)(d)zFθ<0AB6
+
+FIG. 4: Current dynamics in silicene subjected to strong field
+pulse. The broken line displays the shape of the excitation
+pulse. The numbers labeling the curves are the correspond-
+ing field amplitudes F0 (V/A). (a) The x-component of the
+current density, Jx, as a function of time t for the excitation
+pulse polarized in the xz plane with the direction of the max-
+imum in-plane field, F0x, in the negative x direction [same as
+in Fig. 3(c)]. (b) Same as in panel (a) but for the opposite
+direction of F0x [as denoted as ¯XX, corresponding to Fig.
+3(d)]. (c) The y-component of the current density, Jy, as a
+function of time t for the excitation pulse polarized in the yz
+plane. (d) Same as in panel (c) but for the x component of
+the current density.
+
+tal lattice of silicene causes effective symmetry reduction
+from honeycomb to triangular and, in particular, depen-
+dence of the electron dynamics on the sign of the maxi-
+mum field  --  cf. Figs. 3 (c) and (d). The observed partial
+adiabaticity is also due to the presence of the periodic
+lattice and defined by its period in the field direction.
+
+The effective reduction of symmetry to triangular
+(where there is no inversion center) caused by the strong
+normal (z) field component causes the currents in the sil-
+icene lattice to be highly anisotropic and non-reciprocal
+as we show below in this Section. Let us denote JXX
+an x-component of the current density induced by the
+field polarized in the xz plane with the maximum in the
+negative x direction as shown in Fig. 3(c). Similarly,
+we denote J ¯XX the x component of the current density
+caused by the field with the maximum in the positive x
+direction as in the case of Fig. 3(d). Note that gener-
+ally JXX (cid:54)= −J ¯XX (as would have been the case for free
+electrons) due to the low, triangular effective symmetry.
+Similarly, we introduce current density JY Y as the y
+component of the current density induced by the yz po-
+larized pulse. Note that in this case, the presence of the
+xz-symmetry plane dictates that JY Y = −J ¯Y Y . Interest-
+ingly enough, the in-plane field in the y direction causes
+also a current in the x direction [cf. Figs. 1 (b) and (c)],
+
+FIG. 5: Electron momentum distribution βck2 in the first
+Brillouin zone in the CB for pulse with maximum field F0 =
+2.5 V/A with the Y-polarization of the in-plane field (the
+maximum in-plane field directed along the positive y axis).
+(a) Distribution at the moment of time t = −1.3 fs corre-
+sponding to the maximum negative current JY Y . (b) Distri-
+bution at the moment of time t = −0.7 fs corresponding to
+the maximum positive oscillation of current JY Y .
+
+whose density we will denote as JY X . Note that due to
+the symmetry, this current is invariant with respect to
+inversion in the xz plane, i.e., JY X = J ¯Y X .
+
+In Fig. 4, we plot the temporal behavior of the current
+density for the four independent cases of the pulse polar-
+ization and current direction, XX, ¯XX, Y Y , and Y X,
+as indicated in the panels; the currents in all other cases
+are either related to these cases by symmetry, as pre-
+sented in the previous two paragraphs, or equal zero as,
+e.g., JXY and J ¯XY . For the XX case shown in Fig. 4(a),
+in the relatively weak fields, F0 ≤ 1 V/A, the current
+density, JXX , obviously, qualitatively follows the vector
+potential, A(t) reaching (negative) maximum at approx-
+imately quarter oscillation period and turning to zero at
+the maximum field (t = 0). Kinetics JXX (t) is approxi-
+mately antisymmetric with respect to point t = 0, which
+shows that this process is nearly time-reversible.
+
+However, at higher fields, the behavior in Fig. 4(a) be-
+comes nontrivial. The first manifestation of this behavior
+appears at F0 = 1.5 V/A where instead of a pronounced
+minimum (maximum negative current) there is a plateau,
+which turns to a maximum for F0 ≥ 2 V/A. We attribute
+this behavior to electrons that are compelled by the field
+force to drift in the reciprocal space across the K-point.
+We will discuss this behavior in more detail in conjunc-
+tion with Fig. 4(c)  --  see below.
+
+A phenomenon of fundamental importance is the loss
+of adiabaticity in higher fields, which manifests itself in
+the lack of anti-symmetry with respect to point t =
+0 in Fig. 4(a). Note that non-adiabaticity also im-
+plies irreversibility [53] and, consequently, violation of
+time-reversal symmetry (called also T-invariance or T-
+symmetry). This violation of adiabaticity is related to a
+gradual transfer of population between the A and B sub-
+lattices, as we discussed above in Sec. III A. Such transfer
+is not instantaneous; one can estimate characteristic time
+it requires as ttr ∼ π/(eLzF0). For a high field used,
+
+-2-2-10014-422Time, t (fs)Current density nCfs m⎛⎞⎜⎟⎝⎠YY1.02.51.52.00.5(c)(a)-2-2-10014-421.02.01.52.50.52Time, t (fs)XXCurrent density nCfs m⎛⎞⎜⎟⎝⎠(b)-2-2-10014-421.02.01.52.50.52Time, t (fs)XX_Current density nCfs m⎛⎞⎜⎟⎝⎠(d)-2-10-0.2-0.4-0.6102Time, t (fs)YX1.02.01.52.50.5Current density nCfs m⎛⎞⎜⎟⎝⎠F0 ∼ 2 V/A, we obtain ttr ∼ 1 fs. This is in a full quali-
+tative agreement with the results of Fig. 4(a) where the
+time-reversal asymmetry becomes pronounced for high
+fields and times longer than ∼ 1 fs from the moment the
+pulse is applied.
+
+One of the consequences of the T-invariance violation
+are non-zero values of the transferred charge and of the
+residual polarization  --  see Eq. (25) and Fig. 6 and the
+corresponding discussion  --  violating the T-symmetry and
+adiabaticity. This implies that the system's dynamics is
+irreversible (non-adiabatic), which may surprise one be-
+cause the system is completely Hamiltonian. This is due
+to the fact that the central frequency of the laser radi-
+ation, ω ≈ 1.5 eV, is close to the transition frequency
+between the electron states localized at the two sublat-
+tices, ∆ω ∼ π/ttr = eLzF0 ∼ 1.4 eV. This causes
+resonant absorption leading to dephasing  --  collisionless
+relaxation widely known as Landau damping [51].
+
+Current kinetics for the ¯XX case displayed in Fig. 4(b)
+is qualitatively similar to that for the XX case discussed
+above in the previous three paragraphs. However, the
+symmetry reduction caused by the nonlinear interaction
+with a controlled (zero in our case) CEP causes current
+J ¯XX to differ quantitatively from JXX , which difference
+is pronounced in the second half-period (t > 0) where the
+T-asymmetry of the current becomes evident. The latter
+is due to the non-adiabaticity, already mentioned above
+in the discussion of Fig. 4(a): the transfer of the electrons
+between sublattices occurs during a finite period of time,
+ttr ∼ π/(eLzF0) ∼ 1 fs, comparable with half optical
+period in our case.
+
+The Y Y case illustrated in Fig. 4(c) is not related
+by crystal symmetry or other invariances to the XX
+and ¯XX cases considered above. However, the kinet-
+ics of JY Y is qualitatively similar to, though quantita-
+tively different from, the previous two cases. Note that
+there is strict symmetry J ¯Y Y = −JY Y . Here also the
+T-symmetry is violated: the kinetics in the first and sec-
+ond half-periods is dramatically different. Note that in
+this case, current at the end of the pulse may not van-
+ish, which is certainly due to absence of collisions and
+other interactions in the model. Note that the electron-
+electron collisions is the fastest interaction-induced re-
+laxation process. However, it takes the electron-electron
+collisions ∼ 10 − 20 fs in a similar two-dimensional sys-
+tem, graphene, to make an effect [41], which is too long
+time for our pulse whose entire duration is less than 4 fs.
+The results for current JY X (in the x direction induced
+by the field in the y direction) are displayed in Fig. 4(d).
+Note that exactly JY X = J ¯Y X due to symmetry. With-
+out an electric field applied, silicene is a center-symmetric
+solid. Therefore for low fields current JY X should van-
+ish. This is, in fact, the case with a good accuracy for
+F0 = 0.5 V/A, as one can see in the Fig. 4(d). With
+field increasing, there is an increased current JY X . Pre-
+dominantly, it is directed along the negative x axis, as is
+understandable from comparison with Figs. 1(b) and (c).
+Note that magnitude of this current is approximately an
+
+7
+
+FIG. 6: Charge density Q transferred in the plane of the
+silicene layer as a function of the maximum pulse field, F0.
+Four cases are displayed: QXX , Q ¯XX , QY Y , and QY X , as
+labeled in the Figure. All other components of the charge
+density transferred are either zero, or related to these four
+cases.
+
+order of magnitude smaller than JY Y .
+The origin of the current oscillations for strong fields,
+F0 ≥ 2 V/A, in Figs. 4(a)-(c) can be understood from the
+electron momentum distribution. Consider for certainty
+the YY case, where the current is shown in Fig. 4(c).
+The corresponding momentum distribution for electrons
+in the CB, βck2, for pulse field amplitude F0 = 2.5 V/A
+is displayed in in Fig. 5(a) for moment of time t = −1.3 fs,
+corresponding to the minimum (the maximum negative
+value) of the current, JY Y . At this instance, which just
+precedes the current oscillation, excess electron popu-
+lation (depicted by green) is concentrated at ky < 0,
+kx = 0. This excess population is formed due to field
+force eFy(t) > 0 that pushes the electrons across the K
+points into the second Brillouin zone in the extended zone
+picture; these electrons appear in the first Brillouin zone
+at the K point at ky ≈ −1 A−1, kx = 0. The second lo-
+calization of electrons is around a K(cid:48) point at kx = 1 A−1.
+This electron population is formed due to the lack of the
+center symmetry in the presence of strong field Fz, i.e.,
+it has the same origin at current JY X described above in
+the previous paragraph.
+Dramatically different electron distribution is dis-
+played in Fig. 5(b) for t = −0.7 fs when current JY Y
+experiences the maximum upswing. This is caused by a
+significant number of electrons in the CB with ky > 0
+which appear due to a drift in the reciprocal space under
+force eFy > 0. These electrons make a positive contri-
+bution to the current (their group velocity vg < 0; cor-
+respondingly, due to e < 0, their contribution to JY Y is
+positive).
+
+The currents described above in conjunction with Fig.
+4 cause transfer of charge across the system and accu-
+mulation of charges by the end of the pulse as given by
+Eq. (25). Such charge Q transferred through the system
+is displayed as a function of the field amplitude, F0, in
+Fig. 6 for four independent combinations of the field and
+current directions, XX, ¯XX, Y Y , and Y X. A remark-
+
+XXXXYYYXF0 (V/Å)_5-5-10-150012Charge density  (nC/m) able property of these results is that in all cases, except
+for Y X, the charge transferred changes its sign as the
+field amplitude increases. This can be attributed to the
+increased number of electrons experiencing the Bragg re-
+flections at the Brillouin zone boundary, especially at the
+K-points, with the field increase. Thus this sign change of
+the transferred charge has the same origin as the current
+oscillations in Fig. 4 as described above. This charge ac-
+cumulated at the pulse end is an experimentally observ-
+able quantity just as the previous experiments on cur-
+rents in dielectrics [28, 52]. On the order of magnitude,
+this accumulated charge in Fig. 6 is Q ∼ 1 fC/µm. For
+a ∼ 1 µm focused spot, this gives a ∼ 1 fC transferred
+charge. Such a charge is on the same order of magni-
+tude as in experiments Refs. [28, 52] and is, in principle,
+reliably observable.
+
+IV. CONCLUDING DISCUSSION
+
+The accumulation of charge Q transferred through the
+system implies a dramatic manifestation of symmetry vi-
+olation. This charge accumulation violates simultane-
+ously the parity symmetry (P-symmetry) and the charge-
+inversion symmetry (C-symmetry). This violation hap-
+pens due to the fact that our pulse is short and has a
+controlled CEP (zero in our case): the maximum field
+is reached at the maximum of the envelope (instance
+t = 0). Due to strong nonlinearity of the system for
+fields F0 (cid:38) 1 V/A applied, this maximum field defines a
+selected direction in the system plane for the force act-
+ing on electrons. This causes the violation of the C-
+and P-symmetries. This is actually a general property
+for systems subjected to a short, strong, CEP-controlled
+pulses. It takes place in both two-dimensional solids such
+as graphene, silicene, germanene, and also conventional
+three-dimensional solids such as fused silica, sapphire,
+etc.
+In particular, it was a fundamental origin for the
+charge transfer in silica and quartz in original experi-
+ments [28].
+
+A symmetry violation specific for silicene is related
+to the electron transfer between the sublattices caused
+by the normal field component Fz, which effectively re-
+duces the system's symmetry from hexagonal to trian-
+gular. This causes non-reciprocity: J ¯XX (cid:54)= JXX and
+the appearance of a cross-current, JXY (cid:54)= 0. Note that
+anisotropicity in the xy plane, JXX (cid:54)= JY Y , is inherent
+in both silicene and graphene.
+
+8
+
+Our zero-CEP pulse is T-symmetric; in the absence
+of the T-symmetry violation, the current should be T-
+odd, which would preclude the accumulation of charges
+after the pulse. However, we have seen from the results
+of Figs. 4(a)-(c) that the current is not anti-symmetric
+in time, i.e., there is a significant violation of the T-
+symmetry, which we attribute to the Landau damping.
+This is inherent in both graphene and silicene and is
+due to the absence of a significant band gap; this is
+in contrast to silica that is almost perfectly T-reversible
+[28, 30]. An additional contribution to T-irreversibility
+stems from the fact that the frequency associated with
+the electron transfer in the normal direction, eFzLz/, is
+on the same order as the carrier frequency of the pulse.
+This causes resonant absorption of the excitation pulse
+and the Landau damping, specific for the silicene (and
+also germanene). If adiabaticity were present, it would
+have guaranteed reversibility and would have forbidden
+the charge accumulation.
+
+Finally, we note a close analogy of silicene with
+In FET, the
+the field-effect transistor (FET) [20 -- 23].
+gate field, applied normally to the conducting channel,
+changes the carrier populations in it and, thereby, con-
+trols its conductance. Analogously, in silicene, the nor-
+mal field component, Fz, transfers carriers to one of the
+sublattices, A or B, thereby changing the system's re-
+sponse to the in-plane field. A fundamental difference
+(and advantage) of silicene is that such a "device" works
+at optical frequencies, with the response time on the
+(sub)femtosecond scale. This opens a potential for many
+applications of silicene in future Petahertz-speed devices
+and applications.
+
+Acknowledgment
+
+The work of VA was supported by Grant No. ECCS-
+1308473 from NSF. This work of MIS and HKK was
+supported by major funding from from MURI Grant
+FA9550-15-1-0037 from the U.S. Air Force Office of Scien-
+tific Research; supplementary funding came from Grant
+No. DE-FG02-11ER46789 from the Materials Sciences
+and Engineering Division of the Office of the Basic En-
+ergy Sciences, Office of Science, U.S. Department of
+Energy and Grant No. DE-FG02-01ER15213 from the
+Chemical Sciences, Biosciences and Geosciences Division
+of the Office of the Basic Energy Sciences, Office of Sci-
+ence, U.S. Department of Energy.
+
+[1] A. Kara, H. Enriquez, A. P. Seitsonen, L. C. Lew
+Yan Voon, S. Vizzini, B. Aufray, and H. Oughaddou,
+Surf. Sci. Rep. 67, 1 (2012).
+
+[2] Q. Tang and Z. Zhou, Progr. Mater. Sci. 58, 1244 (2013).
+[3] H. Rostami, A. G. Moghaddam, and R. Asgari, Phys.
+
+G. Burkard, and V. I. Fal'ko, Phys. Rev. B 88, 045416
+(2013).
+
+[5] K. Takeda and K. Shiraishi, Phys. Rev. B 50, 14916
+
+(1994).
+
+[6] C.-C. Liu, W. Feng, and Y. Yao, Phys. Rev. Lett. 107,
+
+Rev. B 88, 085440 (2013).
+
+076802 (2011).
+
+[4] A. Kormanyos, V. Zolyomi, N. D. Drummond, P. Rakyta,
+
+[7] C.-C. Liu, H. Jiang, and Y. Yao, Phys. Rev. B 84, 195430
+
+9
+
+(2011).
+
+[31] C.-C. Liu, H. Jiang, and Y. Yao, Phys. Rev. B 84, 195430
+
+[8] Y. Wang, J. Zheng, Z. Ni, R. Fei, Q. Liu, R. Quhe, C. Xu,
+
+(2011).
+
+J. Zhou, Z. Gao, and J. Lu, Nano 07, 1250037 (2012).
+
+[32] C.-C. Liu, W. Feng, and Y. Yao, Phys. Rev. Lett. 107,
+
+[9] F.-b. Zheng and C.-w. Zhang, Nanoscale Res. Lett. 7,
+
+076802 (2011).
+
+422 (2012).
+
+[33] V. M. Apalkov and T. Chakraborty, Phys. Rev. B 90,
+
+[10] B. Lalmi, H. Oughaddou, H. Enriquez, A. Kara,
+S. Vizzini, B. Ealet, and B. Aufray, Appl. Phys. Lett.
+97, 223109 (2010).
+
+245108 (2014).
+
+[34] P. R. Wallace, Phys. Rev. 71, 622 (1947).
+[35] J. C. Slonczewski and P. R. Weiss, Phys. Rev. 109, 272
+
+[11] P. De Padova, C. Quaresima, B. Olivieri, P. Perfetti, and
+
+(1958).
+
+G. Le Lay, Appl. Phys. Lett. 98, 081909 (2011).
+
+[12] P. Vogt, P. De Padova, C. Quaresima, J. Avila,
+E. Frantzeskakis, M. C. Asensio, A. Resta, B. Ealet, and
+G. Le Lay, Phys. Rev. Lett. 108, 155501 (2012).
+
+[13] L. Chen, C.-C. Liu, B. Feng, X. He, P. Cheng, Z. Ding,
+S. Meng, Y. Yao, and K. Wu, Phys. Rev. Lett. 109,
+056804 (2012).
+
+[14] L. Chun-Liang, A. Ryuichi, K. Kazuaki, T. Noriyuki,
+M. Emi, K. Yousoo, T. Noriaki, and K. Maki, Appl. Phys.
+Expr. 5, 045802 (2012).
+
+[36] R. Saito, G. Dresselhaus, and M. Dresselhaus, Physical
+Properties of Carbon Nanotubes (Imperial College Press,
+London, 1998).
+
+[37] S. Reich, C. Thomsen, and J. Maultzsch, Carbon Nan-
+
+otubes (Wiley-VCH, Weinheim, 2004).
+
+[38] E. H. Hwang and S. DasSarma, Phys. Rev. B 77, 195412
+
+(2008).
+
+[39] M. Breusing, S. Kuehn, T. Winzer, E. Malic, F. Milde,
+N. Severin, J. P. Rabe, C. Ropers, A. Knorr, and T. El-
+saesser, Phys. Rev. B 83, 153410 (2011).
+
+[15] B. Feng, Z. Ding, S. Meng, Y. Yao, X. He, P. Cheng,
+
+[40] E. Malic, T. Winzer, E. Bobkin, and A. Knorr, Phys.
+
+L. Chen, and K. Wu, Nano Lett. 12, 3507 (2012).
+
+Rev. B 84, 205406 (2011).
+
+[16] A. Fleurence, R. Friedlein, T. Ozaki, H. Kawai, Y. Wang,
+and Y. Yamada-Takamura, Phys. Rev. Lett. 108, 245501
+(2012).
+
+[17] M. E. Dvila, L. Xian, S. Cahangirov, A. Rubio, and G. L.
+
+Lay, New J. Phys. 16, 095002 (2014).
+
+[18] L. Li, S.-z. Lu, J. Pan, Z. Qin, Y.-q. Wang, Y. Wang,
+G.-y. Cao, S. Du, and H.-J. Gao, Adv. Mat. 26, 4820
+(2014).
+
+[19] L. Tao, E. Cinquanta, D. Chiappe, C. Grazianetti,
+M. Fanciulli, M. Dubey, A. Molle, and D. Akinwande,
+Nat. Nano doi: 10.1038/nnano.2014.325 (2015).
+
+[20] D. Kahng, United States Patent 3,102,230 (1963).
+[21] Y. Taur and T. H. Ning, Fundamentals of Modern VLSI
+
+Devices (Cambridge University Press, 1998).
+
+[22] J. J. Liou and F. Schwierz, Modern Microwave Tran-
+sistors: Theory, Design and Performance (Wiley-
+Interscience, 2003).
+
+[23] F. Schwierz, H. Wong, and J. J. Liou, Nanometer CMOS
+
+(Pan Stanford, 2010).
+
+[24] L. Meng, Y. Wang, L. Zhang, S. Du, R. Wu, L. Li,
+Y. Zhang, G. Li, H. Zhou, W. A. Hofer, et al., Nano
+Lett. 13, 685 (2013).
+
+[25] C.-C. Liu, H. Jiang, and Y. Yao, Phys. Rev. B 84, 195430
+
+(2011).
+
+[26] M. Gmitra, S. Konschuh, C. Ertler, C. Ambrosch-Draxl,
+
+and J. Fabian, Phys. Rev. B 80, 235431 (2009).
+
+[27] M. Ezawa, New J. Phys. 14, 033003 (2012).
+[28] A. Schiffrin, T. Paasch-Colberg, N. Karpowicz,
+V. Apalkov, D. Gerster, S. Muhlbrandt, M. Korb-
+man, J. Reichert, M. Schultze, S. Holzner, et al., Nature
+493, 70 (2012).
+
+[29] H. K. Kelardeh, V. Apalkov, and M. I. Stockman, Phys.
+
+Rev. B 91, 045439 (2015).
+
+[30] M. Schultze, E. M. Bothschafter, A. Sommer, S. Holzner,
+W. Schweinberger, M. Fiess, M. Hofstetter, R. Kien-
+berger, V. Apalkov, V. S. Yakovlev, et al., Nature 493,
+75 (2012).
+
+[41] D. Brida, A. Tomadin, C. Manzoni, Y. J. Kim, A. Lom-
+bardo, S. Milana, R. R. Nair, K. S. Novoselov, A. C.
+Ferrari, G. Cerullo, et al., Nat. Commun. 4 (2013).
+
+[42] I. Gierz, J. C. Petersen, M. Mitrano, C. Cacho, I. C. E.
+Turcu, E. Springate, A. Sthr, A. Khler, U. Starke, and
+A. Cavalleri, Nat. Mater. 12, 1119 (2013), ISSN 1476-
+1122.
+
+[43] A. Tomadin, D. Brida, G. Cerullo, A. C. Ferrari, and
+
+M. Polini, Phys. Rev. B 88, 035430 (2013).
+
+[44] F. Krausz and M. I. Stockman, Nat. Phot. 8, 205 (2014).
+[45] M. Schultze, K. Ramasesha, C. D. Pemmaraju, S. A.
+Sato, D. Whitmore, A. Gandman, J. S. Prell, L. J. Borja,
+D. Prendergast, K. Yabana, et al., Science 346, 1348
+(2014).
+
+[46] G. H. Wannier, Phys. Rev. 117, 432 (1960).
+[47] W. V. Houston, Phys. Rev. 57, 184 (1940).
+[48] L. D. Landau and E. M. Lifshitz, Quantum Mechanics:
+Non-Relativistic Theory (Pergamon Press, Oxford and
+New York, 1965).
+
+[49] V. Apalkov and M. I. Stockman, Phys. Rev. B 86, 165118
+
+(2012).
+
+[50] A. Schiffrin, T. Paasch-Colberg, N. Karpowicz,
+V. Apalkov, D. Gerster, S. Muhlbrandt, M. Korb-
+man, J. Reichert, M. Schultze, S. Holzner, et al., Nature
+507, 386 (2014).
+
+[51] L. D. Landau, Journal of Physics 10, 25 (1946).
+[52] T. Paasch-Colberg, A. Schiffrin, N. Karpowicz, S. Kru-
+chinin,
+S. Keiber, O. Razskazovskaya,
+S. Muhlbrandt, A. Alnaser, M. Kubel, et al., Nat. Phot.
+8, 214 (2014).
+
+S. Ozge,
+
+[53] Non-adiabaticity implies increase of entropy from the
+statistical or thermodynamic standpoint. Hence, non-
+adiabatic processes are irreversible. Examples of irre-
+versible processes are seen in Fig. 3(b)-(c), while panel
+(d) shows partially reversible processes.
+
+

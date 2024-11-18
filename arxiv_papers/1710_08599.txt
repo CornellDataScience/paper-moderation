@@ -1,0 +1,709 @@
+Ultrafast Graphene Light Emitter  
+
+ 
+Young Duck Kim1†*, Yuanda Gao2†, Ren-Jye Shiue3, Lei Wang4, Ozgur Burak Aslan5, Myung-Ho Bae6,7, Hyungsik 
+Kim8, Dongjea Seo9, Heon-Jin Choi9, Suk Hyun Kim5, Andrei Nemilentsau10, Tony Low10, Cheng Tan2, Dmitri K. 
+Efetov3,11, Takashi Taniguchi12, Kenji Watanabe12, Kenneth L. Shepard8, Tony F. Heinz5, Dirk Englund3, and James 
+Hone2*  
+
+1Department of Physics, Kyung Hee University, Seoul 02447, Republic of Korea. 
+2Department of Mechanical Engineering, Columbia University, New York, NY 10027, USA. 
+3Deparatment of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, 
+USA. 
+4Kavli Institute at Cornell for Nanoscale Science, Ithaca, NY 14853, USA. 
+5Department of Applied Physics, Stanford University, Stanford, CA 94305, and SLAC National Accelerator Laboratory, Menlo 
+Park, CA 94025, USA. 
+6Korea Research Institute of Standards and Science, Daejeon 34113, Republic of Korea.  
+7Department of Nano Science, University of Science and Technology, Daejeon 34113, Republic of Korea. 
+8Department of Electrical Engineering, Columbia University, New York, NY 10027, USA. 
+9Department of Materials Science and Engineering, Yonsei University, Seoul 120-749, Republic of Kore. 
+10Department of Electrical and Computer Engineering, University of Minnesota, Minneapolis, MN 55455, USA. 
+11ICFO-Institut de Ciencies Fotoniques, The Barcelona Institute of Science and Technology, 08860 Castelldefels, Barcelona, 
+Spain. 
+12National Institute for Materials Science, 1-1 Namiki, Tsukuba, 305-0044, Japan. 
+†These authors contributed equally to this work. 
+*Correspondence to: ydk@khu.ac.kr, jh2228@columbia.edu 
+ 
+Abstract:  Ultrafast  electrically  driven  nanoscale  light  sources  are  critical  components  in 
+nanophotonics.  Compound  semiconductor-based  light  sources  for  the  nanophotonic  platforms 
+have  been  extensively  investigated  over  the  past  decades.  However,  monolithic  ultrafast  light 
+sources  with  a  small  footprint  remain  a  challenge.  Here,  we  demonstrate  electrically  driven 
+ultrafast graphene light emitters that achieve light pulse generation with up to 10 GHz bandwidth, 
+across a broad spectral range from the visible to the near-infrared. The fast response results from 
+ultrafast  charge  carrier  dynamics  in  graphene,  and  weak  electron-acoustic  phonon-mediated 
+coupling between the electronic and lattice degrees of freedom. We also find that encapsulating 
+graphene with hexagonal boron nitride (hBN) layers strongly modifies the emission spectrum by 
+changing the local optical density of states, thus providing up to 460 % enhancement compared 
+to the grey-body thermal radiation for a broad peak centered at 720 nm. Furthermore, the hBN 
+encapsulation  layers  permit  stable  and  bright  visible  thermal  radiation  with  electronic 
+temperatures  up  to  2,000  K  under  ambient  conditions,  as  well  as  efficient  ultrafast  electronic 
+cooling  via  near-field  coupling  to  hybrid  polaritonic  modes.  These  high-speed  graphene  light 
+emitters provide a promising path for on-chip light sources for optical communications and other 
+optoelectronic applications. 
+  
+ 
+
+ 
+
+Intense research over the past decades has focused on the development of high bandwidth 
+
+photonics  for  inter-/intra-chip  connections  and  other  applications,  with  a  specific  aim  at 
+
+nanophotonic  building  blocks  such  as  waveguides,  optical  modulators,  and  photodetectors. 
+
+However, on-chip light sources, particularly monolithic nanoscale light sources with direct high-
+
+speed  modulation,  have  remained  challenging  1.  Due  to  its  unique  electronic  and  optical 
+
+properties,  graphene  has  emerged  as  a  promising  material  for  optoelectronic  applications, 
+
+including as ultrafast and broadband photodetectors 2,3, optical modulators 4,5, plasmonics 6-8 and 
+
+nonlinear photonic devices  9. Previous graphene devices have shown the feasibility of ultrafast 
+
+signal  processing  and  frequency  conversion  functionalities  required  for  photonic  integrated 
+
+circuits 9,10.  
+
+Graphene's  high  thermal  stability,  low  heat  capacity,  and  ultrafast  opto-electronic 
+
+properties 3,11 suggest that it could function as an unusual fast and efficient thermal light emitter. 
+
+Early efforts showed infrared light emission from SiO2-supported graphene, with temperatures 
+
+limited to ~ 1,100 K 12-14 due to dielectric degradation at high temperature 15 and significant hot 
+
+carrier cooling to the substrate. We recently demonstrated thermal light emission in the visible 
+
+range from electrically biased suspended graphene 16 which achieves temperature up to ~ 2,800 
+
+K. However, to achieve rapid cooling required for fast modulation and to integrate such devices 
+
+into photonic platforms, a substrate-supported device design is needed. Moreover, little is known 
+
+about the possible modulation rate of graphene thermal emitters. 
+
+Here, we demonstrate electrically driven ultrafast thermal light emitters based on hBN-
+
+encapsulated  graphene.  The  hBN  allows  roughly  60%  larger  current  density  than  for  SiO2-
+
+supported graphene due to its larger optical phonon energy  17 and, at the same time, provides 
+
+excellent encapsulation. As a result, our devices achieve electron temperatures up to 2,000 K and 
+
+produce  broadband  emission  extending  up  to  the  visible  range.  Our  studies  further  indicate 
+
+device  lifetimes  of  years  in  vacuum  and  good  stability  even  under  ambient  conditions.  The 
+
+thermal emission spectrum is strongly modified by the hBN dielectric optical cavity 5,18, which 
+
+provides 460% enhancement for a broad peak centered at 720 nm compared to the grey-body 
+
+thermal radiation. Analysis of thermal transport in the devices shows that the hBN effectively 
+
+spreads heat over the micron scale, and that the dominant thermal transport pathway is vertical, 
+
+with  good  agreement  between  models  and  the  measured  power  consumption  and  temperature 
+
+profile.  Independent  measurements  of  electron  and  acoustic  phonon  temperatures  indicate  that 
+
+the electrons can be ~30% hotter than the acoustic phonons at high bias due to weak electron-
+
+acoustic  phonon  coupling  11,19.  Studies  of  the  light  emission  under  radiofrequency  and  pulsed 
+
+excitation show continuous modulation at 3 GHz and emission pulses of 92 ps full width at half 
+
+maximum (FWHM). This observation is consistent with a model in which electrons are strongly 
+
+coupled to hybrid plasmon-phonon polaritonic modes at the graphene-hBN interface, but out of 
+
+equilibrium with the acoustic phonons. 
+
+To fabricate the graphene light emitters, hBN/graphene/hBN heterostructures were first 
+
+assembled  by  a  van  der  Waals  dry  pick-up  method  using  exfoliated  monolayer  graphene  and 
+
+exfoliated hBN flakes with 10-20 nm thickness and transferred to a SiO2 (285 nm)/Si substrate, 
+
+as shown in Fig. 1A. Electrical contacts were formed by etching the assembled heterostructure 
+
+and depositing metal (Cr/Pd/Au) on the exposed edge 20. The resulting graphene heterostructure 
+
+exhibits mobility near the intrinsic acoustic phonon scattering limit at room temperature 20. The 
+
+atomically clean interface reduces extrinsic effects  21,22 such as surface roughness, defects and 
+
+charged impurities. This permits investigation of intrinsic electro-thermal properties, including 
+
+thermal radiation, energy dissipation, and ultrafast dynamics of hot electrons in the disorder-free 
+
+graphene system.  
+
+Under high electric fields (F) up to ~ 6.6 V/µm and zero back gate voltage (VBG), these 
+
+devices achieve current density (J) up to ~ 4.0 ´ 108 A/cm2. This high current density is due both 
+
+to the high stability of the hBN and its high optical phonon energy, as will be explored further 
+
+below. At high current density, we observe remarkably bright visible light emission from these 
+
+micron-scale structures - even observable by the naked eye, as shown in Fig. 1C. The emission is 
+
+seen across the channel region and increases in intensity with F as shown in Figs. 1D and 1E (see 
+
+Supporting Information Movie Clips).  
+
+Because  stability  is  essential  for  practical  applications,  we  tested  the  long-term 
+
+performance  of  the  graphene  light  emitter  under  high  electric  field  (F  =  4.2  V/µm)  and  high 
+
+current density (J ~ 3.4	×	10( A/cm2) under ~ 10-5 Torr vacuum. These measurements showed 
+
+no significant degradation of emission intensity and electrical current over a test period of ~ 106 
+
+seconds  as  shown  in  Fig.  1F,  suggesting  a  device  lifetime  (defined  by  50%  degradation  in 
+
+current)  exceeding  4  years.  This  result  attests  to  the  remarkable  stability  of  both  the  hBN 
+
+encapsulation  23,24  and  edge  contacts  even  under  high  electric  field,  current  density,  and 
+
+temperature. Important for practical applications, we also observed visible light emission under 
+
+ambient  conditions:  the  best  devices  showed  stable  operation  in  air  for  several  days,  and  it  is 
+
+likely that improved encapsulation will extend this lifetime. 
+
+Figure 2A shows the spectrum of the emitted light for a range of applied electric fields 
+
+(or electric powers) under vacuum conditions. The spectrum extends from the visible to near-
+
+infrared (400 ~ 1,600 nm), with an emission peak around 720 nm and a flat response in the near-
+
+infrared  (>  1,000  nm)  from  several  graphene  light  emitters.  The  spectrum  is  unchanged  for 
+
+emission  in  air  (Fig.  2B).    The  strong  emission  peak  at  720  nm  from  the  hBN  encapsulated 
+
+graphene light emitter can be attributed to the formation of a dielectric optical cavity by the hBN 
+
+layers (refractive index n = 2.2), and the resulting tailoring of thermal radiation by the modified 
+
+local  optical  density  of  states  25.  The  intensity  of  thermal  radiation  from  graphene  at  a  given 
+
+angle 𝜃,  defined  with  respect  to  the  normal  to  graphene  surface,  was  calculated  using  the 
+generalized Kirchoff's law 26,  𝐼+,-𝜔,𝜃,𝑇0 =𝑎+,-𝜔,𝜃,𝑇0𝐼+,3𝜔,𝑇0, 
+where	𝑎+,-𝜔,𝜃,𝑇0  is  a  spectral  directional  absorptivity  (emissivity)  of  the  graphene  layer  in 
+the  stack  for  a  given  polarization  of  electromagnetic  wave 𝛼=𝑇𝐸,𝑇𝑀 , 𝜔  is  frequency, 
+𝐼+,3𝜔,𝑇0 =𝜔7Θ(𝜔,𝑇0)/8𝜋>𝑐7 is the intensity of blackbody radiation for a single polarization, 
+Θ𝜔 =ℏ𝜔/(exp	(ℏ𝜔/𝑘E𝑇0)−1), ℏ is  the  reduced  Planck's  constant,  kB  is  the  Boltzmann's 
+
+constant,  and  Te  is  the  electron  temperature,  which  is  used  as  a  fitting  parameter.  The 
+
+absorptivity  (emissivity)  of  the  graphene  was  calculated  analytically  by  solving  Maxwell's 
+
+equations  for  a  plane  wave  incident  on  the  hBN/graphene/hBN  on  SiO2/Si  substrate.  This 
+
+analysis reproduces the data well (solid lines in Fig. 2B) and implies Te = 1,980 K for F = 5.0 
+
+V/µm.  The  radiation  enhancement  due  to  the  hBN  layers  reaches  460  %  at  the  720  nm  peak, 
+
+relative  to  graphene  grey-body  thermal  radiation  at  same  Te  25  as  detailed  in  Supporting 
+
+Information. We note that a flat response in the near-infrared (> 1,000 nm) is attributed to the 
+
+Pauli  blocking  reduce  absorptivity  (emissivity)  of  graphene  at  high  Te  with  increased  Fermi 
+
+energy.  
+
+power  density  (𝑃0 ),  indicating  that  the  dominant  heat  transfer  mechanism  is  by  conducting 
+
+Figure  2C  shows  that  the  derived  Te  increases  roughly  linearly  with  applied  electrical 
+
+through the substrate rather than radiation. Consistent with this observation, dividing the total 
+
+output optical power (Pr) across all wavelength based on the Stefan-Boltzmann law by 𝑃0, we 
+find  an  radiation  efficiency 𝜂	~	3.45×10KL (see  Supporting  Information).  This  is  smaller  than 
+
+obtained for suspended graphene, but can be improved by optical and thermal engineering. 
+
+To gain insight into the thermal transport processes that determine the efficiency, lateral 
+
+extent,  and  dynamics  of  the  light  emission,  we  measured  both  the  electronic  and  vibrational 
+
+(acoustic phonon) temperature of the light emitters. To provide a second measurement of Te in 
+
+addition  to  that  obtained  by  fitting  the  radiation  spectra  (Fig.  2B),  we  analyzed  the  high-bias 
+
+electrical transport behavior. The I-V behavior for different values of the VBG (Fig. 3A) showed 
+
+current  saturation  16,17,27  under  modest  electrical  fields  (F  >  0.5  V/µm)  for  VBG  >  20  V.  This 
+
+saturation  can  be  attributed  to  efficient  backscattering  of  electrons  by  emission  of  strongly 
+
+optical phonon energy) 28 becomes smaller than the acoustic phonon scattering length Lap, which 
+
+coupled optical phonons when the optical phonon activation length 𝐿N(∝ℏ𝛺 𝐹, where ℏ𝛺 is the 
+approaches 1	µm  in  a  hBN  encapsulated  graphene  at  room  temperature  20.  In  this  regime,  hot 
+electrons in graphene can emit optical phonons in both the graphene and the hBN (ℏ𝛺 ~ 150-200 
+meV). 𝐿N approaches 500 nm at F > 0.3-0.4 V/µm, consistent with the observed onset of current 
+energy (ℏ𝛺RSTU ~ 60-80 meV), resulting in a lower current density (Figure S4). This highlights 
+
+saturation. In SiO2–supported devices, hot electrons can emit SiO2 optical phonons with lower 
+
+the importance of the hBN for achieving efficient visible light emission. Moreover, consistent 
+
+with optical studies which show electron-optical phonon scattering on a sub-100 fs time scale3, 
+
+graphene and hBN. 
+
+this  result  indicates  that    electrons  are  strongly  coupled  with  optical  phonon  modes  of  the 
+
+We measured Te by plotting sheet conductance (𝜎) against VBG for different values of F 
+(Fig. 3B). For F < 3.3 V/µm, 𝜎 is clearly modulated by VBG, while above 4 V/µm, 𝜎 is nearly 
+
+independent  of  VBG.  This  reduction  in  gate  modulation  is  due  to  the  interplay  between 
+
+electrostatically induced charge carriers 𝑛X∝𝑉EZ and thermally generated charge carriers, 𝑛[\∝
+𝑇07  16,29,30.  Since 𝜎∝𝑛[][𝑒𝜇,  where 𝑛[][=𝑛[\+𝑛X  and 𝑒  is  the  electron  charge,  the  gate 
+modulation  effect  becomes  small  when 𝑛[\  >> 𝑛X .  Using 𝜇∝𝑇0Ka  for  the  temperature-
+dependent  mobility,  where 𝛽 =  2.5  is  obtained  from  a  numerical  self-consistent  heat  transport 
+
+model,  and  using  Te  as  an  adjustable  parameter,  we  performed  numerical  calculations  of  the 
+
+graphene self-heating that show good agreement with the measured data (Fig. 3B, solid lines) 
+
+(see  Supporting  Information  for  details).  The  derived  values  of  Te  are  close  to  those  obtained 
+
+from fitting the radiation spectrum (Fig. 2B). 
+
+We  next  measured  Tap  of  graphene  and  hBN  by  Raman  spectroscopy:  the  graphene  G 
+
+mode  and  the  hBN  E2g  mode  shift  downward  with  increasing  Tap  due  to  anharmonic  phonon 
+
+coupling  31  (see  Supporting  Information  for  detail).  Figure  3C  shows  the  variation  of  these 
+
+modes  up  to  F  =3.7  V/µm,  above  which  the  visible  radiation  background  interfered  with  the 
+
+measurement. The derived temperatures, together with the electronic temperature derived above, 
+
+are shown in Fig. 3D. Tap of the graphene and hBN are nearly equal, but fall below Te at high 
+
+bias. Thus, these measurements indicate that Te is out of equilibrium with Tap due to the energy 
+
+relaxation bottleneck, which has been seen to follow 𝑇0=𝑇cd+𝛼(𝑇cd−𝑇e), where 𝛼 is a non-
+measured Te and Tap in the hBN encapsulated graphene heterostructure, we find 𝛼 ~ 0.45-0.77. 
+
+equilibrium  temperature  coefficient  and  T0  is  the  ambient  temperature  16,29,30.  Based  on  the 
+
+This  result  is  consistent  with  ultrafast  spectroscopic  studies  which  have  revealed  that  hot 
+
+electrons  thermalize  rapidly  through  strong  electron-electron  and  electron-optical  phonon 
+
+scattering  3,11,19,    but  more  slowly  with  acoustic  phonons  11,19,29.  In  addition,  previous 
+
+measurements  have  indicated  that  electron  and  acoustic  phonon  temperatures  can  be  out  of 
+
+equilibrium under high electrical bias 16,19.  However, given the uncertainty in calibration of the 
+
+Raman shift rates with temperature and possible confounding effects such as substrate thermal 
+
+expansion, this result alone is not sufficient to definitively establish the disequilibrium between 
+
+Te and Tap. 
+
+Because heat dissipation occurs primarily through transport of acoustic phonons, we used 
+
+the measured lattice temperature (Tap ~ 1,250-1,450 K, which corresponds to Te ~ 2,000 K) to 
+
+heat flow is dominated by vertical transport through the hBN and SiO2 to the Si substrate 32 (See 
+
+calculate the total thermal resistance 𝑅[\to the substrate by 𝑇cd−𝑇e=𝑅[\𝑃029. This calculation 
+yields 𝑅[\ ~ 10,650-11,480 K/W, which matches reasonably well with a simple model in which 
+Supporting  Information  and  Table  S1).  This  analysis  show  that 𝑅[\ is  dominated  by  thermal 
+based on the non-equilibrium temperature coefficient 𝛼 and heat diffusion equation of Tap (see 
+
+We  also  calculated  the  Te  distribution  in  the  hBN  encapsulated  graphene  light  emitter 
+
+resistance of SiO2 layer (~ 8,000 K/W, for 285 nm thickness).  
+
+Supporting Information). Combining the vertical thermal transport results above with the lateral 
+
+thermal  conductivity  of  the  hBN  allows  calculation  of  the  lateral  thermal  diffusion  (healing) 
+
+length (LH ~ 1.3 µm), which is similar to the observed size of the bright emission seen in Fig. 1E. 
+
+Fig. 3E plots the resulting Te distribution along the graphene light emitter for various values of F. 
+
+In  all  cases,  the  cooling  to  the  substrate  keeps  Te  near  the  metal  electrodes  below  ~  600  K, 
+
+explaining  the  high  stability  of  the  devices.  The  expected  thermal  radiation  intensity  profile 
+
+based on the modeled temperature distribution is shown in Fig. 3F, in good agreement with the 
+
+measured  optical  intensity  profile  (Fig.  3F  inset,  and  Supporting  Information).  This  analysis 
+
+suggests  how  to  optimize  the  device  design  by  thermal  engineering  of  the  vertical  thermal 
+
+conductivity and lateral device dimensions.    
+
+The small size and low heat capacity of the graphene emitter presents an opportunity for 
+
+ultrafast  thermal  emission  modulation.  Moreover,  measurement  of  the  dynamics  of  light 
+
+modulation  under  fast  pulses  may  provide  insight  into  the  carrier  dynamics  and  offer  another 
+
+means to examine whether electron and phonon populations are out of equilibrium under high 
+
+bias. Moreover, recent studies  33,34 also suggest that direct electronic cooling into hBN can be 
+
+mediated by efficient near-field heat transfer due to the hybrid plasmon-phonon polaritonic mode 
+
+at highly localized graphene/hBN interface 34. Therefore, we examined the ultrafast response of a 
+
+device  fabricated  on  a  quartz  substrate,  which  reduces  parasitic  capacitance  and  enables 
+
+electrical  driving  at  GHz  frequencies  with  DC  offset  bias  (VDC)  (Fig.  4)  (the  device  exhibits 
+
+identical steady state radiation as observed above for the SiO2/Si substrate-mounted devices). As 
+
+a first test, the emission time trace in Fig. 4B shows on-off modulation with near-perfect contrast 
+
+when  device  is  driven  with  a  continuous  3  GHz  signal.  For  an  even  shorter  pulse  duration 
+
+(FWHM 80 ps, peak to peak 2V with VDC =1.6V), the output light pulse width is only broadened 
+
+to 92 ps (FWHM), which corresponding to above 10 GHz bandwidth as shown in Fig. 4C. This 
+
+response is many orders of magnitude faster than conventional thermal radiation sources based 
+
+on bulk materials, for which modulation speed has been limited to ~ 100 Hz 35.  
+
+This observed ultrafast response may arise from the small size and thermal mass of the 
+
+graphene,  since  vertical  thermal  diffusion  can  occur  over  sub-ns  timescales  for  nm-scale 
+
+structures.  More  intriguingly,  if  electrons  are  out  of  equilibrium  with  the  acoustic  phonons  as 
+
+indicated in Fig. 3, this high speed may be due to ultrafast cooling from Te to Tap, which should 
+
+be sufficient to modulate the output intensity by direct electronic cooling mediated with near-
+
+field heat transfer via hybrid plasmon-phonon polaritonic mode at graphene/hBN interfaces.  
+
+The simple heat transfer model shown in the inset of Fig. 4C allows us to quantify the 
+
+transient cooling behavior. In this model, we assume that the hot graphene electrons are strongly 
+
+coupled to and in equilibrium with the optical phonons of graphene and the top few layers of the 
+
+temperature (Te ~ 2,000 K, Tap ~ 1,000-1,280 K) under steady state measurements shown in Fig. 
+
+hBN  19,34.  These  optical  phonons  are  connected  to  the  acoustic  phonon  bath  by  thermal 
+
+conductance   𝛤h    and  to  the  environment  by 𝛤e  36. 𝛤h  can  be  derived  from  non-equilibrium 
+3D:  𝑇0−𝑇cd≈𝑃/𝛤h	36, with 𝛤h  ~	6.0−8.4	MWm-2K-1, which is consistent with theory 37. The 
+fast cooling time constants (𝜏l) of graphene light emitter was estimated by fitting based on the 
+𝐼∝exp	[−ℏ𝜔d0cn/𝑘E(𝑇e+𝑑𝑇𝑒𝑥𝑝(−𝑡/𝜏l)], where ℏ𝜔d0cn is the maximum spectral sensitivity 
+of avalanche photodetector (corresponding to the 550 nm),  𝑇e is offset temperature controlled by 
+DC  offset  bias,  and 𝑑𝑇 is  modulated  temperature  by  RF  pulses.  Based  on  the  fitting  of  time-
+resolved light pulse output from graphene with 𝑇e (300-700 K) and 𝑑𝑇 (20-200 k) parameters, 
+we  obtained 𝜏l~  120-900  ps  (see  Supporting  Information).  Estimated 𝜏l allow  us  to  determine 
+the heat capacity of the electron/optical phonon system, 𝐶u=𝜏l𝛤h = 0.72−6.63	×	10K>	Jm-2K-
+
+1. This value is 104 times larger than the electronic heat capacity of graphene (see Supporting 
+
+Information),  confirming  the  assumption  that  optical  phonons  are  in  equilibrium  with  the 
+
+electrons. We find that the magnitude of CT corresponds to the optical phonons in graphene in 
+
+addition  to  0.3-3.6  nm  of  the  surrounding  hBN  38,39.  This  view  is  consistent  with  theoretical 
+
+predictions for hybrid modes that are highly localized at the graphene-hBN interface 33,34. 
+
+This  work  establishes  that  hBN-encapsulated  graphene  provides  visible  light  emission 
+
+with  high  stability  and  a  modulation  rate  speed  several  orders  of  magnitude  faster  than 
+
+conventional thermal emitters. Our quantitative model predicts that the exceptional speed likely 
+
+arises  because  hot  electrons  are  strongly  coupled  to  optical  phonons  and  hybrid  plasmon-
+
+hyperbolic phonon polariton modes in hBN, but weakly coupled to acoustic phonons, resulting in 
+
+disequilibrium  between  the  two  populations,  though  the  dynamics  of  this  process  need  to  be 
+
+studied in more detail. We found that the emission spectrum is strongly modified by a tailored 
+
+density of optical modes in the hBN slab; this modification may be engineered to sharply reshape 
+
+the  emission  spectrum  by  coupling  the  hBN  encapsulated  graphene  to  an  optical  cavity. 
+
+Furthermore, making use of a tunable energy relaxation pathway for the graphene light emitter, 
+
+such as tunneling structures 40, could allow an even faster light modulation rate beyond the speed 
+
+limits  explored  here.  Finally,  we  note  that  graphene  thermal  emitters  employ  the  same  basic 
+
+device  architecture  as  demonstrated  previously  for  ultrafast  photodetectors  and  electro-optic 
+
+modulators  2,5,8.  Thus,  one  graphene-hBN  heterostructure  device  could  serve  three  essential 
+
+electro-optic  device  functions,  which  could  enable  flexible  and  reconfigurable  electro-optic 
+
+applications in future photonic system architectures.  
+
+ 
+References  
+(1) 
+(2) 
+
+Zhou, Z.; Yin, B.; Michel, J. Light Sci Appl 2015, 4 (11), e358. 
+Gan, X.; Shiue, R.-J.; Gao, Y.; Meric, I.; Heinz, T. F.; Shepard, K.; Hone, J.; Assefa, S.; 
+Englund, D. Nat Photon 2013, 7 (11), 883–887. 
+J, T.; PiatkowskiL; MassicotteM; WoessnerA; MaQ; LeeY; S, M.; N, L.; Jarillo-
+HerreroP; van HulstN F; L, K. H. Nat Nano 2015, 10 (5), 437–443. 
+Phare, C. T.; Daniel Lee, Y.-H.; Cardenas, J.; Lipson, M. Nat Photon 2015, 9 (8), 511–
+514. 
+Gao, Y.; Shiue, R.-J.; Gan, X.; Li, L.; Peng, C.; Meric, I.; Wang, L.; Szep, A.; Walker, 
+D.; Hone, J.; Englund, D. Nano Lett. 2015, 15 (3), 2001–2005. 
+Low, T.; Avouris, P. ACS Nano 2014, 8 (2), 1086–1101. 
+Grigorenko, A. N.; Polini, M.; Novoselov, K. S. Nat Photon 2012, 6 (11), 749–758. 
+Woessner, A.; Gao, Y.; Torre, I.; Lundeberg, M. B.; Tan, C.; Watanabe, K.; Taniguchi, 
+T.; Hillenbrand, R.; Hone, J.; Polini, M.; Koppens, F. H. L. Nat Photon 2017, 11 (7), 
+421–424. 
+Bonaccorso, F.; Sun, Z.; Hasan, T.; Ferrari, A. C. Nat Photon 2010, 4 (9), 611–622. 
+Bao, Q.; Loh, K. P. ACS Nano 2012, 6 (5), 3677–3694. 
+Lui, C. H.; Mak, K. F.; Shan, J.; Heinz, T. F. Phys. Rev. Lett. 2010, 105 (12), 127404. 
+Freitag, M.; Chiu, H.-Y.; Steiner, M.; Perebeinos, V.; Avouris, P. Nat Nano 2010, 5 (7), 
+497–501. 
+
+(3) 
+
+(4) 
+
+(5) 
+
+(6) 
+(7) 
+(8) 
+
+(9) 
+(10) 
+(11) 
+(12) 
+
+(13) 
+
+Engel, M.; Steiner, M.; Lombardo, A.; Ferrari, A. C.; Löhneysen, H. V.; Avouris, P.; 
+Krupke, R. Nature Communications 2012, 3, 906. 
+Bae, M.-H.; Ong, Z.-Y.; Estrada, D.; Pop, E. Nano Lett. 2010, 10 (12), 4787–4793. 
+
+(14) 
+(15)  DiMaria, D. J.; Cartier, E.; Arnold, D. J. Appl. Phys. 1993, 73 (7), 3367–3384. 
+(16)  Kim, Y. D.; Kim, H.; Cho, Y.; Ryoo, J. H.; Park, C.-H.; Kim, P.; Kim, Y. S.; Lee, S.; Li, 
+Y.; Park, S.-N.; Shim Yoo, Y.; Yoon, D.; Dorgan, V. E.; Pop, E.; Heinz, T. F.; Hone, J.; 
+Chun, S.-H.; Cheong, H.; Lee, S. W.; Bae, M.-H.; Park, Y. D. Nat Nano 2015, 10 (8), 
+676–681. 
+
+(17)  Meric, I.; Han, M. Y.; Young, A. F.; Ozyilmaz, B.; Kim, P.; Shepard, K. L. Nat Nano 
+
+2008, 3 (11), 654–659. 
+
+(19) 
+
+(18)  Gan, X.; Mak, K. F.; Gao, Y.; You, Y.; Hatami, F.; Hone, J.; Heinz, T. F.; Englund, D. 
+
+Nano Lett. 2012, 12 (11), 5626–5631. 
+Berciaud, S.; Han, M. Y.; Mak, K. F.; Brus, L. E.; Kim, P.; Heinz, T. F. Phys. Rev. Lett. 
+2010, 104 (22), 227401. 
+
+(20)  Wang, L.; Meric, I.; Huang, P. Y.; Gao, Q.; Gao, Y.; Tran, H.; Taniguchi, T.; Watanabe, 
+
+K.; Campos, L. M.; Muller, D. A.; Guo, J.; Kim, P.; Hone, J.; Shepard, K. L.; Dean, C. 
+R. Science 2013, 342 (6158), 614–617. 
+
+(21)  Kim, Y. D.; Bae, M.-H.; Seo, J.-T.; Kim, Y. S.; Kim, H.; Lee, J. H.; Ahn, J. R.; Lee, S. 
+
+W.; Chun, S.-H.; Park, Y. D. ACS Nano 2013, 7 (7), 5850–5857. 
+Cui, X.; Lee, G.-H.; Kim, Y. D.; Arefe, G.; Huang, P. Y.; Lee, C.-H.; Chenet, D. A.; 
+Zhang, X.; Wang, L.; Ye, F.; Pizzocchero, F.; Jessen, B. S.; Watanabe, K.; Taniguchi, 
+T.; Muller, D. A.; Low, T.; Kim, P.; Hone, J. Nat Nano 2015, 10 (6), 534–540. 
+
+(23)  Wang, L.; Chen, Z.; Dean, C. R.; Taniguchi, T.; Watanabe, K.; Brus, L. E.; Hone, J. ACS 
+
+Nano 2012, 6 (10), 9314–9319. 
+Lee, G.-H.; Cui, X.; Kim, Y. D.; Arefe, G.; Zhang, X.; Lee, C.-H.; Ye, F.; Watanabe, K.; 
+Taniguchi, T.; Kim, P.; Hone, J. ACS Nano 2015, 9 (7), 7019–7026. 
+Ilic, O.; Bermel, P.; Chen, G.; Joannopoulos, J. D.; Celanovic, I.; Soljačić, M. Nat Nano 
+2016, 11 (4), 320–324. 
+
+(26)  Wang, L. P.; Basu, S.; Zhang, Z. M. J. Heat Transfer 2011, 133 (7), 072701. 
+(27) 
+(28) 
+
+Serov, A. Y.; Ong, Z.-Y.; Fischetti, M. V.; Pop, E. J. Appl. Phys. 2014, 116 (3), 034507. 
+Barreiro, A.; Lazzeri, M.; Moser, J.; Mauri, F.; Bachtold, A. Phys. Rev. Lett. 2009, 103 
+(7), 076601. 
+
+(29)  Kim, Y. D.; Bae, M. H. In Advances in Carbon Nanostructures; InTech, 2016; pp 83–
+
+(22) 
+
+(24) 
+
+(25) 
+
+100. 
+
+(30)  Dorgan, V. E.; Behnam, A.; Conley, H. J.; Bolotin, K. I.; Pop, E. Nano Lett. 2013, 13 
+
+(31) 
+(32) 
+
+(34) 
+
+(10), 4581–4586. 
+Bonini, N.; Lazzeri, M.; Marzari, N.; Mauri, F. Phys. Rev. Lett. 2007, 99 (17), 176802. 
+Liu, Y.; Ong, Z.-Y.; Wu, J.; Zhao, Y.; Watanabe, K.; Taniguchi, T.; Chi, D.; Zhang, G.; 
+Thong, J. T. L.; Qiu, C.-W.; Hippalgaonkar, K. Scientific Reports 2017, 7, 43886EP––8. 
+
+(33)  Kumar, A.; Low, T.; Fung, K. H.; Avouris, P.; Fang, N. X. Nano Lett. 2015, 15 (5), 
+
+3172–3180. 
+Principi, A.; Lundeberg, M. B.; Hesp, N. C. H.; Tielrooij, K.-J.; Koppens, F. H. L.; 
+Polini, M. Phys. Rev. Lett. 2017, 118 (12), 126804. 
+
+(35)  Ali, S. Z.; De Luca, A.; Hopper, R.; Boual, S.; Gardner, J.; Udrea, F. IEEE Sensors J. 15 
+
+(12), 6775–6782. 
+
+(36)  Massicotte, M.; Schmidt, P.; Vialla, F.; Watanabe, K.; Taniguchi, T.; Tielrooij, K. J.; 
+
+(37) 
+
+Koppens, F. H. L. Nature Communications 2016, 7, 12174EP–7. 
+Low, T.; Perebeinos, V.; Kim, R.; Freitag, M.; Avouris, P. Phys. Rev. B 2012, 86 (4), 
+045413. 
+Cocemasov, A. I.; Nika, D. L.; Balandin, A. A. Nanoscale 2015, 7 (30), 12851–12859. 
+
+(38) 
+(39)  Vassiliev, V. P.; Gong, W.; Taldrik, A. F.; Kulinich, S. A. Journal of Alloys and 
+
+Compounds 552 IS -, 248–254. 
+
+(40)  Ma, Q.; Andersen, T. I.; Nair, N. L.; Gabor, N. M.; Massicotte, M.; Lui, C. H.; Young, 
+A. F.; Fang, W.; Watanabe, K.; Taniguchi, T.; Kong, J.; Gedik, N.; Koppens, F. H. L.; 
+Jarillo-Herrero, P. Nat Phys 2016, 12 (5), 455–459. 
+
+ 
+
+Supporting Information.  
+
+Low electric field transport at room temperature; Tailoring of thermal radiation intensity of 
+graphene light emitter with hBN layers; Electro-thermal calculation of graphene light emitter 
+under high electric field; Raman spectroscopy; Optical spectroscopy; Time-resolved light 
+emission; Electrical RC time constant; Current saturation and negative differential conductance 
+under high electric field; Transient temperature in graphene heterostructures; Thermal radiation 
+efficiency. Supporting information is available free of charge at http://pubs.acs.org. 
+
+Note 
+
+The authors declare no competing financial interest. 
+
+Acknowledgements 
+
+Research 
+
+Y.D.K was partially supported by the Columbia University SEAS Translational Fellow program. 
+At  Columbia,  device  fabrication  and  electrical  testing  were  supported  by  the  Office  of  Naval 
+Research  N00014-13-1-0662;  optical  spectroscopy  was  supported  by  DOE-BES  DE-FG02-
+00ER45799. Ultrafast measurements at MIT were supported in part by the Center for Excitonics, 
+an Energy Frontier Research Center funded by the U.S. Department of Energy, Office of Basic 
+Energy  Sciences  under  award  no.DE-  SC0001088.  M.H.B  was  supported  grants  from  the 
+National 
+(NRF-2015R1A2A1A10056103, 
+SRC2016R1A5A1008184) funded by the Korea government. D.S. and H.C. was supported by 
+NRF grant funded by the Korea government (No. 2017R1A2B3011586) and the third Stage of 
+Brain Korea 21 Plus Project. A.N. and T.L was supported by a DARPA grant award FA8650-16-
+2-7640. K.W. and T.T acknowledge support from the Elemental Strategy Initiative conducted by 
+the  MEXT,  Japan  and  JSPS  KAKENHI  Grant  Number  JP15K21722.  The  Stanford  authors 
+acknowledge support by the National Science Foundation (grant no. DMR-1411107 for Raman 
+measurements) and by the Air Force Office of Scientific Research (grant no. FA9550-12-1-0119 
+for emission measurements). 
+
+Foundation 
+
+of 
+
+Korea 
+
+ 
+
+Fig. 1. Ultrafast hBN encapsulated graphene thermal light emitter. (A) The device consists 
+of a monolayer graphene encapsulated on top and bottom by hBN; it has a one-dimensional edge 
+contact to the drain and source contact (see inset). (B) Current density (J) as a function of applied 
+electric field (F) for an emitter with channel length of 5 µm and width of 3 µm (see inset with 
+scale bar of 6 µm).  (C) Optical images show bright visible light emission from a microscale (3 
+µm - 8 µm) individual graphene light emitter under applied electric field (F = 6 V/µm). (D to E) 
+The graphene surface uniformly emits across the entire graphene/hBN heterostructures (3 µm – 6 
+µm) (D) and radiation intensity increase by the applied electric field (E). (Scale bar of 6 µm). (F) 
+Long-term stability of graphene light emitter under vacuum. The current density (J) of graphene 
+light emitter under constant electric field (F = 4.2 V/µm) was measured during 106 seconds (over 
+270  hours),  showing  negligible  variation  in  current  density  and  light  emission  intensity.  Inset 
+shows the optical images. (Scale bar of 6 µm). 
+ 
+ 
+
+ 
+Fig. 2. Radiation spectrum of graphene light emitter under vacuum and air. (A) Measured 
+radiation spectrum of graphene light emitter (scatter) under vacuum with various F and electric 
+power. We find an emission peak at the around 718 nm and a flat response at the near infrared 
+range for high F values. Inset shows the optical image of visible light emission under F = 5.0 
+V/µm. (Scale bar is 6 µm). (B) Measured radiation spectrum of graphene light emitter (scatter) 
+under  air  and  calculated  thermal  radiation  (solid  line)  based  on  the  estimated  electron 
+temperature and grey-body thermal radiation by Plank's law with strong light-matter interaction. 
+Inset shows the optical image of visible light emission under F = 4.3 V/µm. (Scale bar is 6 µm). 
+(C)  Te as a function of Pe under air (red square). Solid line is a linear fit to the data. 
+ 
+
+Fig.  3.  Electronic  and  lattice  temperatures  in  the  graphene  light  emitter.  (A)  Current  as 
+function of applied electric field (F) for various gate voltage (VBG). Above the critical electric 
+field  (F  >  4  V/µm),  current  levels  are  not  changed  by  VBG.  (B)  Sheet  conductance  (s) 
+modulation by VBG of graphene heterostructure for various F. The electron temperature (Te) is 
+estimated based on a simulation of thermally generated charge carriers by F. Experimental data 
+
+ 
+
+(scatter) and simulation (solid line) of s agree well. (C) Raman spectroscopy of graphene/hBN 
+heterostructure to estimate the lattice temperature (Tap). Raman peak shift of the hBN E2g and 
+graphene  G  modes  as  a  function  of  F.  (D)  Decoupling  of  electron  and  lattice  temperature  in 
+graphene light emitters. Values of Te are calculated from the emission spectrum (orange triangles) 
+and s modulation (green circles), and Tap of graphene (blue squares) and hBN (red squares) are 
+estimated  from  the  Raman  peak  shift.  The  black  dashed  line  is  fitting  of  Tap  and  the  shaded 
+
+region  is  obtained  for  non-equilibrium  temperature  coefficients 𝛼  ~  0.45-0.77.  (E  to  F) 
+
+Calculated Te profile of the graphene light emitter for various values of F (arrows indicate the 
+edge of metal electrodes). (F) Calculated radiation intensity profile for various values of F based 
+on  the  temperature  profile  and  the  Stefan-Boltzmann  law.  (Inset,  measured  optical  intensity 
+profile (scatter) and Gaussian fitting (solid line) based on the optical images of Fig. 1E.) 
+ 
+
+ 
+
+ 
+
+ 
+Fig.  4.  Generation  of  ultrafast  light  pulses  by  the  electric  control.  (A)  Schematic  of  the 
+electrically driven ultrafast graphene light emitter. The temporal profile of the light pulses are 
+recorded  by  time  correlated  single-photon  counting.  (B)  Emission  profiles  (lower  panel)  for 
+pulsed electrical excitation (upper panel). The emission profile follws the electrical drive at the 
+indicated  frequency  of  ~  3GHz.  (C)  Generation  of  ultrafast  (92  ps)  light  pulses  from  the 
+graphene  light  emitter  (blue  solid  line)  for  an  80  ps  electrical  drive  pulse,  corresponding  to  a 
+bandwidth of 10 GHz. According to the transit temperature and thermal radiation exponential fit 
+(red  solid  lines).  Insets,  (Left)  schematic  of  energy  relaxation  of  graphene.  The  red  block 
+corresponds  to  quasi-equilibrium  of  electrons  of  in  graphene  and  the  strongly  coupled  optical 
+phonons  of  the  graphene/hBN  by  hybrid  polaritonic  modes  under  electrical  excitation. 
+Subsequently, the heat flows to the acoustic phonons and the substrate. (Right) Temporal profile 
+of the 80 ps electrical drive pulse.  
+
+

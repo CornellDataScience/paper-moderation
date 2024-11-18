@@ -1,0 +1,619 @@
+Carbon Nanotube Millikelvin Transport and Nanomechanics
+
+1Institute for Experimental and Applied Physics, University of Regensburg, Universitatsstrasse 31, 93053 Regensburg, Germany
+
+2Department of Physics, Princeton University, Princeton, New Jersey 08544, USA
+
+K. J. G. Gotz,1 F. J. Schupp,1, 2 and A. K. Huttel1
+
+Single wall carbon nanotubes cooled to cryogenic temperatures are outstanding electronic as well as nano-
+electromechanical model systems. To probe a largely unperturbed system, we measure a suspended carbon-
+nanotube device where the nanotube is grown in the last fabrication step, thus avoiding damage and residues
+from subsequent processing. In this ultra-clean device, we observe the transport spectrum and its interaction with
+nano-electromechanics over a wide gate voltage range and thereby over a wide range of coupling parameters
+between the quantum dot and the contact electrodes.
+
+INTRODUCTION
+
+Both the electronic and the nano-electromechanical low-
+temperature properties of single-wall carbon nanotubes have
+attracted significant research over the past decades, resulting
+in a large spectrum of publications [1].
+In particular "ultr-
+aclean", as grown carbon nanotubes are prototypical single-
+electron devices [2], where the unperturbed transport spec-
+trum reveals a wide range of phenomena originating from the
+band structure [3 -- 6] and the interaction between the charge
+carriers [7 -- 10]. At the same time, single-wall carbon nan-
+otubes at millikelvin temperatures are excellent mechanical
+resonators [11 -- 13], with resonance frequencies up to 39GHz
+[14] and quality factors up to 5× 106 [15]. In suspended car-
+bon nanotube devices, the electrostatic forces acting on single
+electrons dominate the mechanical behaviour, and electronic
+transport is subject to strong coupling between single electron
+tunneling and vibrational motion [16 -- 18].
+
+Typically, reports focus on selected aspects of the behaviour
+of carbon nanotubes, possibly across several devices. While
+this is a suitable approach for in-depth analysis of the ob-
+served phenomena, it is challenging to obtain a complete
+picture of the behaviour of one single wall nanotube device
+across all regimes of coupling to the leads. Here, we present
+low-temperature measurement data collected on a single de-
+vice. We follow both electronic and nano-electromechanical
+phenomena from the highly transparent transport through hole
+states, across the band gap to strong Coulomb blockade, and
+finally towards larger electron numbers, where the tunnel bar-
+riers become increasingly transparent with higher order trans-
+port processes dominating the current.
+
+The schematic device geometry is sketched in Fig. 1(a).
+The device fabrication follows the approach of [2]. We start
+with a highly p++ doped silicon wafer having a 500nm dry-
+grown thermal surface oxide. The contact electrodes, with a
+bilayer of 10nm tungsten and 40nm platinum, are fabricated
+using electron beam lithography, metal evaporation, and lift-
+off. Subsequently, the silicon oxide surface is anisotropically
+etched by 100nm to deepen the trenches between the elec-
+trodes. Nanotube growth catalyst is locally deposited via an
+additional lithography step, drop-casting, and lift-off [19]. In
+the final fabrication step, the carbon nanotubes are grown in
+situ by chemical vapour deposition [19]. The distance be-
+
+FIG. 1. (a) Sketch of the geometry of the measured device. (b) Cur-
+rent I(Vg) at Vsd = 20 µV around the electronic band gap. Hole trans-
+port for Vg < 0.3V, band gap, and electron transport for Vg > 0.3V
+with an electronic shell pattern can be clearly discerned. (c) Mea-
+sured dc current as function of gate voltage Vg and driving rf fre-
+quency f , I( f ,Vg) − I(Vg), with the average current per frequency
+trace subtracted. The transversal vibration resonance becomes vis-
+ible as a sequence of peaks or dips [13]. Vsd = −0.1mV, nominal
+rf generator power P = 2dBm. (d) Extracted resonance frequency
+f0(Vg) for the fundamental vibration mode of (c) and a higher mode;
+the solid lines are parabolic fits.
+
+tween the contact electrodes is L = 1.2 µm, providing a lower
+boundary for the length of the active nanotube segment.
+A measurement of the low-bias (Vsd = 20 µV) current
+through the device at base temperature T ≤ 25mK of the di-
+lution refrigerator is plotted in Fig. 1(b). On the hole conduc-
+tion side, i.e. for Vg < 0.3V, the device is highly transparent,
+while the electron conduction side, Vg > 0.3V, initially dis-
+plays strong Coulomb blockade. This indicates that the actual
+contacts between nanotube and platinum electrodes are trans-
+parent. The opaque tunnel barriers of the quantum dot at low
+electron number are given by the extended p-n junctions be-
+tween the electrostatically n-doped central nanotube segment
+and the nanotube segments close to the leads [3, 20, 21].
+
+Figure 1(c) shows a measurement of the transversal vibra-
+tional resonance of the carbon nanotube [11, 12]. Here, the
+
+8
+1
+0
+2
+
+ 
+c
+e
+D
+0
+1
+
+ 
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+2
+v
+0
+9
+0
+1
+1
+
+.
+
+9
+0
+8
+1
+:
+v
+i
+X
+r
+a
+
+6080100120(c)(d)100.210.1I (pA)0.4(b)W/PtCNT++p SiSiO2(a)2
+−0.19V, where a clear Kondo zero bias anomaly of conduc-
+tance emerges. The yellow asterisks in Fig. 2 mark character-
+istic lobe-shaped features with sharp edges in the data which
+correspond to mechanical instability and vibrational feedback
+phenomena in transport [16, 22, 27, 28].
+
+the absolute value of the dc current(cid:12)(cid:12)I(Vg,Vsd)(cid:12)(cid:12) in logarithmic
+
+Figure 2(c) zooms in on the band gap edge; here we plot
+
+scale since this allows us to resolve smaller signals. The fea-
+ture at Vg = 0.22V turns out to be a clear double-peak, i.e.,
+two nearly merged Coulomb oscillations, consistent with the
+curve shape of Fig. 2(a) [see the dashed boxes in both figures].
+Since the Kondo ridges are associated with odd electron or
+hole numbers, this means that at Vg ≈ 0.23V the nanotube is
+charged with an even number of holes. This leaves us with a
+conundrum about the nature of the structure at Vg ≈ 0.24V,
+also visible as a single sharp peak in Fig. 2(a) and marked in
+both figures with an arrow. Two explanations are possible:
+either this is a single Coulomb oscillation and an additional
+oscillation cannot be resolved due to too small tunnel rates, or
+this peak is already a merger of two oscillations. The former
+explanation seems unlikely since, even at high bias, no further
+structures in current or conductance are visible at the hole side
+of the band gap region. Measurements at larger temperature
+and at finite magnetic field may provide additional informa-
+tion.
+
+A stability diagram at larger hole number, where the inter-
+faces between the carbon nanotube and its contact electrodes
+become increasingly transparent towards Fabry-P´erot conduc-
+tion [31, 32], is plotted in Fig. 3(a). In absence of the (SU(2))
+Kondo effect at even electron number, elastic co-tunneling
+enables large conductance in nominal Coulomb blockade re-
+gions [33]. For odd electron numbers, Coulomb blockade is
+suppressed at low bias, and, as already observed in Fig. 2, sev-
+eral of the conductance peaks merge completely into Kondo
+ridges. This is also clearly visible in the line plot of Fig. 3(b),
+displaying the current at Vsd = −0.1mV.
+
+The subseqent panel, Fig. 3(c), shows the result of me-
+chanical resonance detection in the same gate voltage re-
+gion, using the same measurement and plotting scheme as
+Fig. 1(c), though at much lower driving power (nominally
+P = −13.7dBm). The fundamental vibration mode becomes
+clearly visible as a diagonal feature. In the plotted gate volt-
+age region it displays a near-linear dependence on the gate
+voltage Vg, qualitatively different from the observations of,
+e.g., [16, 30, 34, 35], where each Coulomb oscillation causes a
+strong dip in frequency due to changing electrostatic forces in
+response to single charge tunneling at the charge degeneracy
+points. This indicates that, due to increased tunnel rates and
+lifetime broadening of the involved quantum levels, Coulomb
+blockade is gradually lost [29] and that the nanotube more and
+more resembles a metallic beam. However, a more detailed
+analysis (Fig. 3(d)), where the resonance frequency f0(Vg) has
+been extracted and a linear contribution has been removed,
+still allows to identify some of the characteristic oscillations
+of ω0(Vg), corresponding to the addition of single holes to
+the system [16, 29]; selected features are marked in the figure
+
+FIG. 2.
+Transport spectrum of the few-hole parameter region of
+the device: (a) zero-bias differential conductance dI/dVsd(Vg) and
+(b) stability diagram dI/dVsd(Vg,Vsd) at identical Vg-axis. Zero bias
+ridges of enhanced conductance indicate the presence of the Kondo
+effect. (c) Detail zoom of the band gap edge, now plotting the ab-
+
+solute value of the measured current(cid:12)(cid:12)I(Vg)(cid:12)(cid:12). Yellow asterisks mark
+
+mechanical instability features, see the text.
+
+detection scheme of [13, 16, 22] is used: an antenna several
+millimeters from the device radiatively introduces a MHz sig-
+nal, and the resulting driven vibration at mechanical resonance
+leads to a peak or dip in detected dc-current due to the mod-
+ulated displacement of the nanotube and the resulting mod-
+ulation in gate capacitance. We observe a strong gate volt-
+age dependence of the resonance frequency f0(Vg) due to the
+changing tension in the nanotube induced by the pull of the
+gate voltage. The resonance from Fig. 1(c) and an additional
+second mode at higher frequency are extracted in Fig. 1(d). In
+both cases, a parabolic fit provides a good (though strongly
+simplified) approximation of the gate voltage dependence in
+the measured range (cf. [12, 23] for a more detailed model).
+
+HOLE TRANSPORT REGION
+
+At gate voltages Vg < 0.3V, current is carried by valence
+band states, and the quantum dot is charged with an increas-
+ing number of holes for decreasing gate voltage. Due to the
+absence of abovementioned p-n barriers, the device displays
+strong coupling to the metal contacts. This is illustrated in
+Fig. 2; note that while the line plot of Fig. 2(a) is logarithmic,
+the color scale of Fig. 2(b) is linear. The pronounced sequence
+of conductance oscillations at zero bias turns, upon closer ob-
+servation, out to be a sequence of Kondo conductance ridges
+[6, 24 -- 26] corresponding each to the addition of two holes.
+This is particluarly obvious around Vg = −0.03V, −0.11V,
+
+-0.2-0.10.1"diamond_ac.dat" using 1:($2*(10)+0.117):(abs($3+5e-12))1100.10.01I (nA)0.8-0.80.160.20.24(a)(b)(c)*****3
+
+FIG. 3. Behaviour at large hole number, in the transition region be-
+tween Kondo transport and Fabry-P´erot interference. (a) Stability di-
+agram showing dI/dVsd(Vg,Vsd). Again zero-bias ridges of enhanced
+conductance clearly indicate the Kondo effect. (b) -- (d) Mechanical
+resonance frequency detection in the same gate voltage region: (b)
+off-resonant current I(Vg) for Vsd = −0.1mV, (c) current as function
+of gate voltage Vg and driving rf frequency f , I( f ,Vg)− I(Vg), with
+the average current per frequency trace subtracted; Vsd = −0.1mV,
+nominal rf driving signal power P = −13.7dBm. (d) Resonance (an-
+gular) frequency ω0(Vg) = 2π f0(Vg)− (aVg + b) extracted from (c),
+with a term linear in Vg subtracted; see also [16, 29, 30].
+
+with vertical dashed lines.
+
+For even larger negative gate voltages, our device unam-
+biguously enters the Fabry-P´erot regime, where weak scat-
+tering of the electronic wavefunctions at the contacts causes
+quantum interference [31]. A detailed discussion of the prop-
+erties of the device in this parameter region can be found in
+[32].
+
+STRONG COULOMB BLOCKADE
+
+The differential conductance measurements of Fig. 4 cover
+the parameter region adjacent to the bandgap towards positive
+gate voltage, where few electrons are trapped in the carbon
+nanotube. Fig. 4(a) shows the 1 ≤ Nel ≤ 8 region in loga-
+rithmic color scale. The diamond-shaped regions of Coulomb
+
+FIG. 4. Stability diagrams showing dI/dVsd(Vg,Vsd) of the strong
+Coulomb blockade parameter region at low electron number: (a) 1 ≤
+Nel ≤ 8, logarithmic color scale, and (b) 8 ≤ Nel ≤ 30, linear color
+scale. Yellow asterisks mark (some of the) mechanical instability
+features. (c) Charging energy as function of electron number Nel.
+
+blockade and fixed number Nel of trapped electrons are clearly
+visible. Additionally, we observe multiple conductance lines
+in the single electron tunneling regions corresponding to ex-
+cited quantum states. Already in the Coulomb blockade re-
+gion with Nel = 4, further lobe-shaped features appear, be-
+coming much stronger at Nel = 6 (see the yellow asterisks in
+the figure). These again correspond to vibrational feedback
+phenomena typical for clean and suspended carbon nanotube
+devices at millikelvin temperatures [16, 22, 27, 28].
+Fig. 4(b) continues the plot of Fig. 4(a) towards larger elec-
+tron numbers 8 ≤ Nel ≤ 30, now in linear color scale. The
+lobe-shaped instability regions now occur repetitively for ev-
+ery Coulomb oscillation. In addition, near-horizontal features
+in Coulomb blockade, which can be associated with inelas-
+tic cotunneling [33] and the non-equilibrium Kondo effect
+[6, 25, 36], become increasingly prominent.
+
+A plot of the charging energy Ec(Nel) as function of elec-
+tron number Nel is provided in Fig. 4(c). It displays the overall
+decrease of Ec with Nel, typical for this type of device, in ad-
+dition to "shell-effects" from subsequent filling of quantum
+levels analogous to shells in atomic physics. Interestingly, the
+shell-filling results in a two-fold pattern for Nel < 16, while
+for Nel > 16 a fourfold peak grouping with the largest charg-
+ing energy at 4n + 2 is observed. Electron-electron interac-
+tion effects are a likely cause of this phenomenon [7], requir-
+ing further analysis and potentially additional measurements
+
+73.574.074.5f(MHz)I -I(pA)-10010201.01.52.02.5I (nA)V(mV)sd2dI/dV(e/h)sd0.251.251.750.75-2.00.02.0V(V)g-1.92-1.88-1.84-1.96-0.20.00.26ῶ(10 1/s)0(a)(b)(c)(d)0.60.70.80.9-10010V(V)gV(mV)sd0.02dI/dV(e/h)sd0.10.30.20.412162226(b)8***-100100.40.440.480.52V(V)gV(mV)sd-6-4-202log dI/dV(e/h)sdN=1el48(a)***51015081624(c)NE  (meV)c2-fold4-foldin magnetic fields.
+
+Figure 5 illustrates the attempt to resolve the transversal vi-
+bration resonance for decreasing electron numbers Nel all the
+way to the electronic band gap. Even though a comparatively
+large bias of Vsd = 2mV (see Fig. 5(a)) is applied, the res-
+onance peaks only remain detectable for Nel ≥ 9, as marked
+by an ellipsiod in Fig. 5(b). The peaks are far in the non-
+linear response regime, displaying an abrupt edge similar to
+a Duffing oscillator response at increasing driving frequency.
+For Nel < 9 the resonant response becomes too small to be
+detected. To be able to trace the transversal vibration reso-
+nance frequency across the low electron number region, and
+specifically also the electronic band gap, a different detection
+scheme is required.
+
+LARGE ELECTRON NUMBERS
+
+With increasing positive gate voltage Vg and thereby in-
+creasing number of trapped electrons Nel, higher order tun-
+neling processes become dominant in the transport spectrum.
+This is immediately visible in the differential conductance
+plots of Figs. 6(a) and (b), where the Kondo effect and (to
+a lesser degree) elastic cotunneling increase the signal. While
+the conductance trace dI/dVsd(Vg) retains an overall fourfold
+repetitive pattern, corresponding to the fourfold occupation of
+each longitudinal momentum state in the nanotube confine-
+ment potential, the precise shape of the conductance oscil-
+lations continuously evolves towards Kondo ridges and sup-
+pressed Coulomb blockade.
+
+An example stability diagram, plotting the differential con-
+ductance dI/dVsd(Vg,Vsd) as function of gate voltage Vg and
+
+(a) dc current I(Vg) at Vsd = −2mV for off-resonant rf
+FIG. 5.
+driving signal; trace cut from the raw data of (b). (b) Mechanical res-
+onance detection measurement at nominal rf power P = −13.7dBm;
+
+(cid:12)(cid:12)I( f ,Vg)− I(Vg)(cid:12)(cid:12) in logarithmic scale. The resonance is indicated by
+
+a dashed ellipsoid.
+
+4
+
+(a), (b) Zero-bias differential conductance dI/dVsd(Vg) for
+FIG. 6.
+increasingly positive gate voltage. The number of trapped electrons,
+27 ≤ Nel ≤ 77 in (a) and 77 ≤ Nel ≤ 128 in (b), is indicated in the
+line plots. (c) Example stability diagram: differential conductance
+dI/dVsd(Vg,Vsd) in the region 77 ≤ Nel ≤ 85; linear color scale, cut
+off at 0.6e2/h for better contrast.
+
+bias voltage Vsd in the region 77 ≤ Nel ≤ 85, is shown in
+Fig. 6(c). A zero bias conductance anomaly becomes clearly
+visible at odd electron number, though it is here still compara-
+tively weak. An evaluation of the Kondo ridge width, follow-
+ing [37], leads to typical Kondo temperatures of 1K ≤ TK ≤
+2K at the center of the depicted odd-Nel Coulomb blockade
+regions.
+
+Much more dominant in Fig. 6(c) are, however, different ef-
+fects. As marked by dashed lines in the figure, strong, discrete
+conductance resonances at finite bias pass stepwise through
+the Coulomb blockade regions. Going beyond inelastic cotun-
+neling, which would lead to a conductance threshold alone,
+these lines again correspond to nonequilibrium Kondo phe-
+nomena [6, 25, 36]. Similar "stepwise" resonance structures
+have been observed before and identified with an imbalance
+of the two tunnel barriers connecting a quantum dot to its
+leads [38]. Finally, regions of mechanical instability, marked
+with asterisks in Fig. 6(c), now consistently occur at nearly
+every electron number for bias values above Vsd (cid:39) 0.5mV
+and strongly distort the transport spectrum.
+
+CONCLUSIONS
+
+While a clean and suspended carbon nanotube may seem
+like a comparatively simple object, its spectroscopy reveals
+an immense richness of phenomena in electronics, nanome-
+chanics, and the coupling of both. The tunability of the tun-
+nel couplings via the gate voltage allows access to a wide
+parameter range, from the electronic band gap and strong
+Coulomb blockade all the way to higher order tunneling phe-
+
+0.0010.010.1110I (nA)11015V= -2 mVsdf(MHz)0.40.50.665.866.066.2V(V)g66.4(pA)0.010.1110100(a)(b)V(mV)sdV(V)g22.042.082.12-2.00.02.02dI/dV(e/h)sd0.00.20.40.6N=78el80822.02.22.42.62.81.00.51201008090110V(V)g1.01.21.41.61.80.51.07050304060V(V)g2dI/dV(e/h)sd(a)(b)(c)*********nomena and eventually Fabry-P´erot interference. In nearly all
+of these regions nano-electromechanical phenomena can be
+identified. A driving signal makes it possible to detect the
+transversal vibration resonance frequency from low electron
+numbers all the way to the strong Kondo regime; even where
+charge quantization is nearly lost, a detailed analysis of the
+resonance frequency evolution still allows to characterize the
+electronic system via its quantum capacitance. Additionally,
+nano-electromechanical feedback effects dominate the current
+at finite bias, leading to strongly distorted transport spectra.
+The tunability of a single, clean device allows the direct com-
+parison of parameter regimes [39], at known electron number
+and unchanged molecular structure.
+
+ACKNOWLEDGMENTS
+
+We would like to thank Ch. Strunk and D. Weiss for the use
+of experimental facilities. The authors acknowledge funding
+by the Deutsche Forschungsgemeinschaft via Emmy Noether
+grant Hu 1808/1, SFB 689, and SFB 1277. The measurement
+data has been recorded using the Lab::Measurement software
+package [40].
+
+[1] E. A. Laird, F. Kuemmeth, G. A. Steele, K. Grove-Rasmussen,
+J. Nygard, K. Flensberg, and L. P. Kouwenhoven, "Quantum
+transport in carbon nanotubes," Rev. Mod. Phys. 87, 703 (2015).
+[2] J. Cao, Q. Wang, and H. Dai, "Electron transport in very clean,
+as-grown suspended carbon nanotubes," Nature Materials 4,
+745 (2005).
+
+[3] F. Kuemmeth, S. Ilani, D. C. Ralph, and P. L. McEuen, "Cou-
+pling of spin and orbital motion of electrons in carbon nan-
+otubes," Nature 452, 448 (2008).
+
+[4] G. A. Steele, G. Gotz, and L. P. Kouwenhoven, "Tunable few-
+electron double quantum dots and klein tunnelling in ultraclean
+carbon nanotubes," Nat. Nanotech. 4, 363 (2009).
+
+[5] F. Pei, E. A. Laird, G. A. Steele, and L. P. Kouwenhoven,
+"Valley-spin blockade and spin resonance in carbon nanotubes,"
+Nat. Nanotechn. 7, 630 (2012).
+
+[6] D. R. Schmid, S. Smirnov, M. Marga´nska, A. Dirnaichner,
+P. L. Stiller, M. Grifoni, A. K. Huttel, and Ch. Strunk, "Bro-
+ken SU(4) symmetry in a Kondo-correlated carbon nanotube,"
+Phys. Rev. B 91, 155435 (2015).
+
+[7] V. V. Deshpande and M. Bockrath, "The one-dimensional
+Wigner crystal in carbon nanotubes," Nature Physics 4, 314
+(2008).
+
+[8] A. Hamo, A. Benyamini, I. Shapir, I. Khivrich, J. Waissman,
+K. Kaasbjerg, Y. Oreg, F. von Oppen, and S. Ilani, "Electron
+attraction mediated by Coulomb repulsion," Nature 535, 395
+(2016).
+
+[9] I. Shapir, A. Hamo, S. Pecker, C. Pascu Moca,
+
+O. Legeza,
+G. Zarand, and S. Ilani, "Imaging the Wigner crystal of elec-
+trons in one dimension," (2018), arXiv:1803.08523.
+
+[10] J. O. Island, M. Ostermann, L. Aspitarte, E. D. Minot,
+D. Varsano, E. Molinari, M. Rontani,
+and G. A. Steele,
+"Interaction-driven giant orbital magnetic moments in carbon
+nanotubes," Phys. Rev. Lett. 121, 127704 (2018).
+
+5
+
+[11] V. Sazonova, Y. Yaish, H. Ustunel, D. Roundy, T. A. Arias, and
+P. L. McEuen, "A tunable carbon nanotube electromechanical
+oscillator," Nature 431, 284 (2004).
+
+[12] B. Witkamp, M. Poot,
+
+and H.S.J. van der Zant, "Bending-
+mode vibration of a suspended nanotube resonator," Nano Lett.
+6, 2904 (2006).
+
+[13] A. K. Huttel, G. A. Steele, B. Witkamp, M. Poot, L. P. Kouwen-
+hoven, and H. S. J. van der Zant, "Carbon nanotubes as ultra-
+high quality factor mechanical resonators," Nano Letters 9,
+2547 (2009).
+
+[14] E. A. Laird, F. Pei, W. Tang, G. A. Steele, and L. P. Kouwen-
+hoven, "A high quality factor carbon nanotube mechanical res-
+onator at 39 GHz," Nano Letters 12, 193 (2012).
+
+[15] J. Moser, A. Eichler, J. Guttinger, M. I. Dykman, and A. Bach-
+told, "Nanotube mechanical resonators with quality factors of
+up to 5 million," Nature Nanotechnology 9, 1007 (2014).
+
+[16] G. A. Steele, A. K. Huttel, B. Witkamp, M. Poot, H. B. Meer-
+waldt, L. P. Kouwenhoven, and H. S. J. van der Zant, "Strong
+coupling between single-electron tunneling and nanomechani-
+cal motion," Science 325, 1103 (2009).
+
+[17] A. K. Huttel, H. B. Meerwaldt, G. A. Steele, M. Poot,
+B. Witkamp, L. P. Kouwenhoven, and H. S. J. van der Zant,
+"Single electron tunnelling through high-Q single-wall car-
+bon nanotube NEMS resonators," Phys. Stat. Sol. b 247, 2974
+(2010).
+
+[18] B. Lassagne, Y. Tarakanov, J. Kinaret, D. Garcia-Sanchez, and
+A. Bachtold, "Coupling mechanics to charge transport in carbon
+nanotube mechanical resonators," Science 325, 1107 (2009).
+
+[19] J. Kong, H. T. Soh, A. M. Cassell, C. F. Quate, and H. Dai,
+"Synthesis of individual single-walled carbon nanotubes on pat-
+terned silicon wafers," Nature 395, 878 (1998).
+
+[20] J. Park and P. L. McEuen, "Formation of a p-type quantum dot
+at the end of an n-type carbon nanotube," Applied Physics Let-
+ters 79, 1363 (2001).
+
+[21] M. Marga´nska, D. R. Schmid, P. L. Stiller, A. Dirnaichner, Ch.
+Strunk, M. Grifoni, and A. K. Huttel, "Shaping electron wave
+functions in a carbon nanotube with a parallel magnetic field,"
+(2017), arXiv:1712.08545.
+
+[22] D. R. Schmid, P. L. Stiller, Ch. Strunk, and A. K. Huttel, "Mag-
+netic damping of a carbon nanotube nano-electromechanical
+resonator," New Journal of Physics 14, 083024 (2012).
+
+[23] M. Poot, B. Witkamp, M. A. Otte, and H. S. J. van der Zant,
+"Modelling suspended carbon nanotube resonators," Phys. Stat.
+Sol. b 244, 4252 (2007).
+
+[24] D. Goldhaber-Gordon, Hadas Shtrikman, D. Mahalu, David
+Abusch-Magder, U. Meirav, and M. A. Kastner, "Kondo effect
+in a single-electron transistor," Nature 391, 156 (1998).
+
+[25] J. Nygard, H. C. Cobden, and P. E. Lindelof, "Kondo physics
+
+in carbon nanotubes," Nature 408, 342 (2000).
+
+[26] P. Jarillo-Herrero, J. Kong, H. S. J. van der Zant, C. Dekker,
+L. P. Kouwenhoven, and S. De Franceschi, "Orbital Kondo ef-
+fect in carbon nanotubes," Nature 434, 484 (2005).
+
+[27] O. Usmani, Ya. M. Blanter, and Y. V. Nazarov, "Strong feed-
+back and current noise in nanoelectromechanical systems,"
+Phys. Rev. B 75, 195312 (2007).
+
+[28] D. R. Schmid, P. L. Stiller, Ch. Strunk,
+
+and A. K. Huttel,
+"Liquid-induced damping of mechanical feedback effects in
+single electron tunneling through a suspended carbon nan-
+otube," Appl. Phys. Lett. 107, 123110 (2015).
+
+[29] K. J. G. Gotz, D. R. Schmid, F. J. Schupp, P. L. Stiller, Ch.
+Strunk, and A. K. Huttel, "Nanomechanical characterization of
+the Kondo charge dynamics in a carbon nanotube," Phys. Rev.
+Lett. 120, 246802 (2018).
+
+[30] H. B. Meerwaldt, G. Labadze, B. H. Schneider, A. Taspinar,
+Y. M. Blanter, H. S. J. van der Zant, and G. A. Steele, "Probing
+the charge of a quantum dot with a nanomechanical resonator,"
+Phys. Rev. B 86, 115454 (2012).
+
+[31] W. Liang, M. Bockrath, D. Bozovic, J. H. Hafner, M. Tinkham,
+and H. Park, "Fabry-P´erot interference in a nanotube electron
+waveguide," Nature 411, 665 (2001).
+
+[32] A. Dirnaichner, M. del Valle, K. J. G. Gotz, F. J. Schupp,
+N. Paradiso, M. Grifoni, Ch. Strunk, and A. K. Huttel, "Sec-
+ondary electron interference from trigonal warping in clean car-
+bon nanotubes," Phys. Rev. Lett. 117, 166804 (2016).
+
+[33] S. De Franceschi, S. Sasaki, J. M. Elzerman, W. G. van der
+Wiel, S. Tarucha, and L. P. Kouwenhoven, "Electron cotunnel-
+ing in a semiconductor quantum dot," Phys. Rev. Lett. 86, 878
+(2001).
+
+[34] A. Benyamini, A. Hamo, S. V. Kusminskiy, F. von Oppen, and
+S. Ilani, "Real-space tailoring of the electron-phonon coupling
+in ultraclean nanotube mechanical resonators," Nat. Phys. 10,
+151 (2014).
+
+[35] P. Hakkinen, A. Isacsson, A. Savin, J. Sulkko, and P. Hako-
+nen, "Charge sensitivity enhancement via mechanical oscilla-
+tion in suspended carbon nanotube devices," Nano Letters 15,
+
+1667 (2015).
+
+6
+
+[36] M. Gaass, A. K. Huttel, K. Kang, I. Weymann, J. von Delft,
+and Ch. Strunk, "Universality of the Kondo effect in quantum
+dots with ferromagnetic leads," Phys. Rev. Lett. 107, 176808
+(2011).
+
+[37] A. V. Kretinin, H. Shtrikman, and D. Mahalu, "Universal line
+shape of the Kondo zero-bias anomaly in a quantum dot," Phys.
+Rev. B 85, 201301 (2012).
+
+[38] A. Makarovski, J. Liu, and G. Finkelstein, "Evolution of trans-
+port regimes in carbon nanotube quantum dots," Phys. Rev.
+Lett. 99, 066801 (2007).
+
+[39] M. Niklas, S. Smirnov, D. Mantelli, M. Marganska, N.-V.
+Nguyen, W. Wernsdorfer, J.-P. Cleuziou,
+and M. Grifoni,
+"Blocking transport resonances via Kondo many-body entan-
+glement in quantum dots," Nat. Commun. 7, 12442 (2016).
+
+[40] S. Reinhardt, C. Butschkow, S. Geissler, A. Dirnaichner,
+F. Olbrich, C. Lane, D. Schroer,
+and A. K. Huttel,
+"Lab::Measurement  --  a portable and extensible framework
+for controlling lab equipment and conducting measurements,"
+Computer Physics Communications 234, 216 (2019).
+
+

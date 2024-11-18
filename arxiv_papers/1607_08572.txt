@@ -1,0 +1,1204 @@
+Probing the validity of the diffuse mismatch model for phonons
+
+using atomistic simulations
+
+Rohit R. Kakodkar and Joseph P. Feser∗
+
+Department of Mechanical Engineering,
+
+University of Delaware, Newark, DE, 19716 USA
+
+(Dated: September 19, 2018)
+
+Abstract
+
+Due to it's simplicity the diffuse mismatch model (DMM) remains a popular description of
+
+phonon transmission across solid-solid boundaries. However, it remains unclear in which situations
+
+the DMM should be expected to be a valid model of the underlying physics. Here, its validity
+
+is investigated mode-by-mode using a 3-dimensional extension of the frequency domain, perfectly
+
+matched layer (FD-PML) method, to study the interface between face-centered cubic solids with
+
+interdiffused atoms. While submonolayer levels of interdiffusion are found to increase the number
+
+of available modes for transmission, consistent qualitatively with the DMM, we do not find quanti-
+
+tative or qualitative convergence toward the DMM at higher levels of interdiffusion. In particular,
+
+contrary to the fundamental assumption of the DMM, modes are not found to lose memory of
+
+their initial polarization and wavevector. The transmission coefficients of randomly interdiffused
+
+and smoothly-graded interfaces are also compared. While smoothly graded interfaces show strong
+
+anti-reflection properties, selection rules still prohibit transmission of many modes, whereas inter-
+
+diffused interfaces are not subject to such rules and achieve similar thermal interface conductance
+
+by transmitting with lower probability but using a wider range of modes.
+
+7
+1
+0
+2
+
+ 
+
+n
+a
+J
+ 
+
+6
+1
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+2
+v
+2
+7
+5
+8
+0
+
+.
+
+7
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+1
+
+I.
+
+INTRODUCTION
+
+At the interface between two atomically conformal solids, discontinuities in the vibra-
+
+tional properties result in a finite thermal boundary conductance (TBC) for phononic heat
+
+transport. The TBC becomes especially important whenever multiple interfaces are closely
+
+spaced together or when heat originates from sources which are highly confined by interfaces.
+
+Examples of the former include superlattices, thin films, and high density nanocomposites.
+
+Examples of the latter include finFET transistors, phase-change memory, and the plasmonic
+
+transducer of a heat-assisted magnetic recording head1. Despite the technological impor-
+
+tance of engineering TBC, there are still no widely accepted theories for predicting TBC
+
+a priori that are in excellent agreement with experiment, though modern theories based
+
+on the diffuse mismatch model (DMM) do generally predict the correct order of magnitude
+
+over the entire range of temperature. There are generally two well-developed theoreti-
+
+cal frameworks that have been established for modelling TBC: (1) direct non-equilibrium
+
+computational simulations in the time-domain by molecular dynamics and (2) phonon-gas
+
+treatments which attempt to determine the transport contribution from each phonon mode.
+
+Landry et al2 have compared TBC predictions obtained using Molecular Dynamics in the
+
+harmonic limit with those obtained using both equilibrium and non-equilibrium phonon
+
+gas approaches using transmission coefficients (τ ) determined through a Lattice Dynamics
+
+based scattering boundary method. Their results only show good agreement between the
+
+near-equilibrium phonon gas approach and the MD approach at mass ratios, mr > 2, while
+
+for smaller mass ratios they show that the non-equilibrium correction can be applied to
+
+the phonon gas treatment. However, in conventional MD approaches, mode-by-mode in-
+
+formation is not obtained, which limits the theoretical insights obtainable by such models.
+
+However, recent developments combining modal analysis with MD may reverse this trend3 -- 6.
+
+One potential advantage of the MD approach is the natural inclusion of inelastic phonon
+
+interactions whenever large displacements are present. This manuscript focuses on the latter
+
+approach.
+
+Using the phonon gas approach, the thermal interface conductance can be calculated by
+
+performing integration over k-space in the first Brillouin zone as7
+
+2
+
+(cid:90)(cid:90)(cid:90)
+
+(cid:88)
+
+1
+
+(2π)3
+
+p
+
+{vg.n>0}∈BZ
+
+G =
+
+ω(vg.n)τ1→2
+
+∂f
+∂T
+
+d3k.
+
+(1)
+
+Here, ω is the phonon frequency, vg is the group velocity, n is the unit normal to the inter-
+
+face plane, τ1→2 is the energy transmission coefficient, and f is the Bose-Einstein statistical
+
+distribution. Due to the advent of density functional theory, obtaining the phonon disper-
+
+sions and group velocities on either side of the interface is typically trivial, but methods of
+
+modelling transmission coefficients at solid-solid interfaces remain controversial.
+
+Initial attempts to theoretically describe transmission coefficient included the Acoustic
+
+Mismatch Model (AMM)8, which treats incident phonon reflection and transmission using
+
+continuum mechanics approximations. Simple versions of this theory predict that energy
+
+transmission coefficients for phonons depend only on acoustic impedance mismatch. How-
+
+ever, at room temperature thermal interface conductance in most materials is dominated by
+
+phonons with wavelength comparable to interatomic distances. Thus, the AMM is generally
+
+not appropriate for room temperature solids, though it may correctly describe the behaviour
+
+of some low frequency phonons that are significant at low temperatures. Lattice Dynamics
+
+(LD) models9,10 and the Scattering Mediated Acoustic Mismatch Model(SMAMM)11 were
+
+therefore developed to give a more accurate treatment of phonon dispersion and transmis-
+
+sion coefficients throughout the first Brillouin zone, including the short wavelength phonons
+
+absent in the AMM. However, these models generally still employ an idealized model of the
+
+interface: smooth and epitaxial. Fundamentally, these approaches assume coherent trans-
+
+port of phonons across the interface and do not account for inelastic phenomena.
+
+The diffuse mismatch model (DMM) was developed to handle the opposite extreme12.
+
+In the DMM, it is assumed that the interface is disordered such that, whatever the details
+
+of the interfacial structure and bonding, incident phonons are scattered so intensely that
+
+they lose memory of the polarization and direction from which they originated. Using the
+
+principle of detailed balance and conservation of energy, the transmission coefficient of an
+
+incident phonon depends only on its incident energy and is given by
+
+τ1→2(ω) =
+
+I1(ω)
+
+I1(ω) + I2(ω)
+
+,
+
+(2)
+
+where
+
+3
+
+(cid:90)(cid:90)
+
+(cid:88)
+
+Ij(ξ) =
+
+p
+
+k:ω(k)=ξ
+
+(vj
+g(k, p).n)
+g(k, p) dSk,p.
+vj
+
+(3)
+
+A numerically discretized version of this equation was given by Reddy7, previously. The
+
+integration in Eq. 3 is to be performed over k-space surfaces with constant frequency and
+polarization. For isotropic phonon dispersions in the low frequency limit, where ω = cpk ,
+the isofrequency surfaces are spheres, and the simpler expressions originally given by Swartz
+
+and Pohl are recovered12. An important prediction of the DMM according to Eq. 2 is that
+
+the phonon transmission probability is purely a function of frequency.
+
+The diffuse mismatch model does not consider the details of interface structure. How-
+
+ever, a variety of computational approaches have been developed that can simulate phonon-
+
+structure interactions considering specific atomic placements/bonding at the interface. The
+
+two most highly developed of these are Molecular Dynamics (MD) simulations and the
+
+Atomistic Green's Function method (AGF)13. These methods have previously been used to
+
+study a number of microscopic effects that are important to thermal boundary resistance,
+
+including pressure14,15, interfacial bond strength16, grain boundaries17, and lattice mismatch
+
+between the materials interfaced18. Molecular dynamics can be used either to directly simu-
+
+late macroscopic transport properties19 or to test the mode resolved transmission properties
+
+of energy across an interface. In the latter case, wavepackets are prepared and their interac-
+
+tion with a structure is tracked in the time-domain20,21. Wavepacket MD can present some
+
+challenges though, since a wavepacket necessarily contains a spectrum of phonon frequen-
+
+cies. To accommodate a wavepacket, the simulation domain size must be larger than the
+
+wavelengths to be simulated, and the wave must be tracked long enough to complete its
+
+interaction with the structure, which can be a challenging for highly dispersive modes. The
+
+atomistic Green's function method has no such restrictions, but considers only harmonic
+
+bonding and is fairly limited in terms of its maximum domain size.
+
+The approach here is to utilize an atomistic, mode-resolved computational method to
+
+directly simulate the phonon transmission coefficient of the interface between face-centered
+
+cubic solids with interdiffused atoms. The purpose is to directly test the validity of the
+
+diffuse mismatch model mode-by-mode, and to characterize the transition from specular
+
+to diffuse transmission behaviour as a function of disorder parameters, with the goal of
+
+trying to understand when an epitaxial interface should be considered smooth or rough
+
+4
+
+from the the point-of-view of phonon transport. Previously, several other works22 -- 24 have
+
+found that small interdiffusion layers result in higher thermal interface conductance. Tian
+
+et al.22 attributed this enhancement in TBC to increased density of states overlap due
+
+to interdiffusion. In accordance with this hypothesis, English et al.25 found that thermal
+
+boundary conductance can also be increased by inclusion of an intermediate layer with
+
+mediating vibrational properties (achieved by varying the mass of the intermediate layer).
+
+Furthermore, Zhao et al26 studied geometrically roughened Si/Ge interfaces between FCC
+
+crystal structures. Their results indicate that the overall thermal conductance is independent
+
+of roughness parameters.
+
+While several atomistic computation methods are available, we use the recently developed
+
+frequency-domain perfectly matched layer (FD-PML) method27, rather than the Atomistic
+
+Green's Function (AGF) approach or wavepacket MD, since the FD-PML technique natu-
+
+rally concerns the energy reflection/transmission coefficient of a single incident wavevector
+
+and polarization.
+
+II. METHODOLOGY
+
+The FD-PML method27 involves frequency domain decomposition of the atomistic equa-
+
+tion of motions of each atom, and solving for a scattering systems response to an incident
+
+plane wave of specified wavevector and polarization. A perfectly matched layer (PML) is
+
+used on the boundary of the scattering system to damp scattered waves without spurious
+
+reflections of the scattered waves back into the scattering system. Thus, a well-designed
+
+PML makes the boundary of the scattering system indistinguishable from a boundary that
+
+allows infinite propagation. Like the AGF method, FD-PML reduces scattering problems
+
+to a system of sparse, banded linear algebraic equations, but FD-PML has better scalability
+
+to large system sizes since it does not require storage of a fully inverted matrix and can
+
+thus utilize efficient, low memory iterative solver algorithms. In our original description of
+
+the FD-PML method, the method was demonstrated in one- and two-dimensions27. Details
+
+of its generalization to 3D for arbitrary crystal structures and bonding are given in an Ap-
+
+pendix. Disorder is introduced using random interdiffusion of the atomic masses from each
+
+interface (Fig. 1). To emulate physical interdiffusion, the masses of each atom are assigned
+
+5
+
+FIG. 1. Cross-section of the simulated interface. The colorbar indicates the mass ratio m/mSi
+
+6
+
+FIG. 2. Schematic of the Computational Domain. Hard wall boundary conditions are applied at
+
+edges perpendicular to z-direction and periodic boundaries are applied along all other edges.
+
+with probability,
+
+(cid:20)
+
+1
+2
+
+1 − erf
+
+P1(z) =
+
+(cid:18) z − z0
+
+√
+(cid:96)
+
+2
+
+(cid:19)(cid:21)
+
+,
+
+(4)
+
+where z0 is the location of ideal interface and where P1 is the probability of finding an atom of
+
+type 1 at location z; (cid:96) is the characteristic interdiffusion length and erf is the error function.
+
+By definition, if an atom type is not 1, then it must be 2. To maintain simplicity, we study
+
+interfaces between FCC crystals. Our base case is an idealization of a Si/Ge interface. True
+
+Si/Ge takes the diamond crystal structure, but we adopt the approach of Tamura et al28
+
+of modelling the two atom per primitive unit cell diamond structure as a single atom per
+
+primitive unit cell FCC crystal, by lumping the mass of two atoms into one (i.e. in this model,
+
+mSi = 56.2 amu, mGe = 145.2 amu), treating only the nearest neighbour bonding (K=42.2
+N/m), and using the average lattice constant between Si and Ge (a = 5.54A). This achieves
+
+a similar sound speed to Si and Ge, and a similar maximum frequency using a similar lattice
+
+constant to the true crystal. We should note that by reducing the number density of atoms
+
+by 2-fold, this has the undesirable effects of producing an artificially low heat capacity and
+
+eliminating optical phonons, which are clearly important to the real transport properties.
+
+However, the model is merely to demonstrate the basic physics of interface transport in
+
+the presence of disorder, so its realism compared to Si/Ge system should not be taken too
+
+seriously.
+
+Our computational domain is a rectangular box composed of a central region containing
+
+the interface with the coordinate z running perpendicular to the interface, and bounded by
+
+perfectly matched layers of the Si and Ge in the left and right z-directions (Fig 2). The
+
+z-width of the central region of the simulation box was 10 conventional unit cells (i.e. 10a).
+
+The x-y directions of the box are taken to be periodic with a period in each direction of
+
+Lx = Ly = 16a . The Born von Karman boundary conditions place restrictions on the allow-
+able in-plane k-vectors for the simulations: kx = 2πn/Lx ky = 2πn/Ly, (n = 0,±1, ...± L/a)
+
+7
+
+; there are no restrictions on the allowable kz, however we perform the integration in Eq. 1
+
+using a uniform mesh method spanning the upper half of the first Brillouin zone29; for
+
+k-points where the z-component of incident group velocity is negative, the corresponding
+k-point with positive group velocity is instead simulated (i.e. k → −k). It was found that
+reducing the areal dimension by half of the interface did not significantly affect the calcu-
+
+lated transmission coefficients for the range of disorder length ((cid:96)) studied. The PML region
+
+width was chosen using our previous non-dimensional optimization criteria27, which found
+that larger wavelength requires larger PML domain sizes to maintain accuracy (L ≈ 2λ for
+2-digit accuracy of transmission coefficients). Additional details regarding the PML design
+
+are given in the Appendix. Thus, typical simulation boxes including the PML contained be-
+
+tween 10,000 - 80,000 atoms, with the larger size corresponding to long-wavelength phonon
+
+simulations. For each level of interdiffusion, the energy transmission coefficients for 24,960
+
+individual phonon modes were calculated using a uniform k-grid in the Brillouin zone. In
+
+order to solve such a large system using minimal computing resources, we used sparse, it-
+
+erative solvers. The biconjugate gradient method and the generalized minimum residual
+
+methods were both found to be effective without preconditioners. Note that because of the
+
+roughness of the interface, there were no guaranteed symmetries in the kx-ky plane, though
+
+as we will show one does nearly recover cubic symmetries for statistically large simulation
+
+domains. Once the transmission coefficient, frequency, and group velocity of each mode are
+
+known, the thermal interface conductance can be easily calculated using Eq. 1. For the
+
+case of a flat interface, the Lattice Dynamics technique developed by Young and Maris9 was
+
+used to validate our transmission coefficients in a mode-by-mode manner. That technique
+
+is specifically designed to study the phonon transmission across the interface between FCC
+
+materials with a one atom basis, bonded by nearest neighbor forces, which exactly conforms
+
+to our computational case. For those k-points where the lattice dynamics approach is nu-
+
+merically stable, the predicted transmission coefficients were identical to better than 0.01.
+
+Interface conductance for a flat interface obtained for a similar test case was reported by
+
+Zhao26 as G=111 MW/m2-K, with the only difference being the use of a bonding strength
+
+in the FCC-Ge material, 0.88 times the value used here and by Tamura28. We find a value
+
+of G=123 MW/m2-K in this case, consistent with the lower degree of mismatch between
+
+materials.
+
+8
+
+FIG. 3. Normalized thermal interface conductance as a function of normalized roughness length.
+
+Here G is the thermal interface conductance obtained from simulations and GDM M is the TBC
+
+obtained using DMM, a is the lattice parameter of FCC-Si.
+
+III. RESULTS AND DISCUSSIONS
+
+It is instructive to observe the collective behaviour of thermal boundary conductance prior
+
+to discussing a mode-by-mode analysis. Figure 3 shows the thermal boundary conductance
+
+as a function of the interdiffusion distance, (cid:96) . If the Diffuse mismatch model (DMM) is a
+
+valid description of transport for a disordered interface, then one expects that as disorder is
+
+increased, G should tend toward the DMM value. Interestingly, Fig 3 indicates that this is
+
+not the case.
+
+In the large interdiffusion limit ((cid:96) = 1.6a), we see that the thermal interface conductance
+
+is not approaching the DMM value. For the model Si/Ge interface here, the DMM result
+
+for G is greater than that for a perfect interface. In Fig 3, it can be seen that small levels of
+
+interdiffusion do increase G to 85% of the DMM value. However, the maximum corresponds
+
+to submonolayer interdiffusion distances, (cid:96). Beyond this level of interdiffusion, the thermal
+
+interface conductance is observed to fall monotonically and thus does not converge toward
+the DMM. In the thick interface limit ((cid:96) → ∞), one might expect G ∼ (cid:96)−1 (i.e. rather
+than an interface conductance, one might think of the region as having a bulk thermal con-
+ductivity describing the resistance, (cid:96)/k ∼ 1/G). However, Fig. 3 doesnt show convergence
+toward that diffusive limit either; this is clear because the rate of decrease in G is weakening
+
+9
+
+with increased (cid:96). Previously Tian et al.22 observed qualitatively similar results using AGF
+
+method, where interdiffusion at the interface of a Si/Ge (diamond structure) interface ini-
+
+tially increased TBC followed by a monotonic decrease with greater levels of intediffusion.
+
+However, they did not compare their results to the DMM. In contrast, Zhou et al.30 used
+
+NEMD to characterize TBC of roughness in the form of geometrically wavy interfaces (not
+
+interdiffused), and found that G monotonically increases with increasing roughness length;
+
+this was attributed to an effective increase in surface area of the interface.
+
+In order to understand the physics behind this behaviour, we analysed mode resolved
+
+transmission coefficient data over the entire Brillouin Zone. The phonon dispersion for each
+
+material is given in Fig 4 along the high symmetry lines. The corresponding phonon trans-
+
+mission coefficients are given in Fig 5 for phonons incident from side 1 (Si), corresponding
+
+to the longitudinal and the two transverse phonon polarizations. The predictions for a per-
+
+fectly smooth interface and the DMM are provided for comparison. Comparing Fig 4 & 5,
+
+several important effects can be seen.
+
+FIG. 4. Dispersion relation for FCC-Si and FCC-Ge along high symmetry lines
+
+One of the most distinctive effects of disorder is to make certain types of mode conversion
+
+possible, and consequently to increase the number of available pathways for transmission. In
+
+Figs. 5b and 4c, an example of this can be seen in the transverse modes traveling along Γ-X:
+
+these have identically zero transmission coefficient for a perfectly smooth interface once the
+
+frequency is higher than the maximum frequency of TA phonons on the Ge side. However,
+
+submonolayer levels of disorder change this, enabling the high frequency/wavevector TA
+
+10
+
+FIG. 5. Transmission coefficient along some high symmetry lines for the longitudinal (a) and
+
+transverse (b & c) phonon polarizations. For each polarization, the simulation results are given for
+
+an ideal interface, for three levels of interdiffusion and for mass-graded interface. The prediction
+
+of the diffuse mismatch model is given for reference.
+
+11
+
+phonons in Si to scatter into longitudinal modes of the Ge. However, the value of the
+
+transmission coefficients in this region never reaches as high as predicted by the DMM,
+
+and eventually decreases at higher interdiffusion levels. The DMM, thus contains some of
+
+the right physics (i.e.
+
+increased mode conversion), but does not quantitatively match the
+
+transmission coefficient predicted by an atomistic approach. Previously, Tian et al have
+
+attributed increase in TBC to increased overlap of density of states of the materials across
+
+the interface due to intermixing22. However, figure 5 indicates that this is more likely to be
+
+due an increase in the number of transmission pathways.
+
+Additional violations of the DMMs predictions can be seen throughout the Brillouin zone
+
+in Fig 6. The DMM predicts that all incident modes with equal frequency have the same
+
+probability of transmission (see Eq 2). Fig 6 compares the frequency contours in the kx-kz
+
+plane of the Brillouin zone to the computed values of the transmission coefficient for three dif-
+
+ferent levels of interdiffusion ( 0, 0.4a, and 1.6a top to bottom) and for all three polarizations
+
+(LA, TA1, TA2 left-to-right). Note that the figure denotes the coordinate of the incident
+
+phonon. For a smooth interface, the transmission coefficients do not follow the isofrequency
+
+contours, and the transmission coefficients are typically stronger for modes directed toward
+
+the interface; this is especially true for the TA modes. The incident TA1 phonons show a
+
+peak transmission coefficient along the Γ-K direction associated with a mid-zone maximum
+
+in the dispersion relation. Interdiffusion can be seen to have two primary effects in Fig. 6.
+
+Fig. 6b shows that even (cid:96) = 0.4a is enough to greatly broaden the participation of modes in
+
+transport. While this low level of interdiffusion does not yield transmission coefficients that
+
+are consistent with the DMM (Fig. 6d) throughout the entire Brillouin zone, the changes
+
+are such that many of the high wavevector modes in the center of the Brillouin zone that
+
+dominate the thermal interface integral (Eq. 1) do have similar transmission coefficient. On
+
+the other hand, further increases to the interdiffusion distance (Fig 6c) results in the general
+
+decrease in all transmission coefficients with shorter wavelength phonons being dispropor-
+
+tionately affected. One might attribute this to scattering, though as we've noted above
+
+the interface conductance in Fig. 3 does not appear to be converging to a diffusive limit,
+G ∼ (cid:96)−1. Even at the large level of interdiffusion in Fig. 6c, the transmission coefficients to
+not follow the isofrequency lines. This shows quite clearly that a fundamental assumption
+
+of the DMM is incorrect at the mode-by-mode level: a phonon mode's transmission coeffi-
+
+cient is not independent of its incident wavevector and polarization, and dependent only on
+
+12
+
+FIG. 6.
+
+(contour) Variation of transmission coefficients along the x-z plane of the BZ for FCC-Ar
+
+for a. Ideal Interface b. Rough interfaces with (cid:96)= 0.4a and c. (cid:96) = 1.6a d. DMM prediction. The
+
+colour contour represents the transmission coefficients, white contour lines indicate the isofrequency
+
+lines with their values in THz
+
+13
+
+FIG. 7. Transmission coefficient for a smoothly mass graded interface with characteristic distance,
+
+(cid:96) = 1.6a. For comparison, a mass gradient achieved by interdiffusion is given in Fig. 6c.
+
+frequency (i.e. memory-less). While one should not expect long wavelength modes to act
+
+diffusely since they do not react to local disorder as strongly, Fig. 6c shows that even many
+
+short wavelength modes maintain memory of their incident direction.
+
+Finally, we would note that an interdiffused interface is one way to achieve a graded
+
+transition between interfaces. Several groups have proposed that a gradation between lay-
+
+ers could enhance thermal interface conductance either by providing a material with an
+
+intermediate matching of density of states19 (i.e. SiGe intermediate layer) or by acting as
+
+a coherent anti-reflection coating31,32. Due to the disorder being on the same length scale
+
+as the phonon wavelengths, the phonon transmission behavior of an interdiffused interface
+
+bares little in common with that of a smoothly graded mass transition. To demonstrate this,
+
+we constructed a simulation where, rather than having statistically placed masses, a smooth
+
+transition in the masses (Fig. 1d) is assumed between materials, over a characteristic dis-
+
+tance, (cid:96). At any atomic site at coordinate, z, the mass of the atom is given deterministically
+
+(cid:20)
+
+(cid:18)z − z0
+
+(cid:19)(cid:21)
+
+√
+(cid:96)
+
+2
+
+by
+
+m(z) = mSi +
+
+mGe − mSi
+
+2
+
+1 + erf
+
+.
+
+(5)
+
+This gives the same average mass profile as the the interdiffused case, but without the
+
+presence of random disorder. Fig. 1 shows the schematic of different interfaces studied in this
+
+article. Such a gradation might be impossible to achieve practically since it would require a
+
+different homogeneous mass within each layer, but it serves as a useful point for comparison.
+
+Figure 7 shows the resulting phonon transmission coefficient throughout the kx-kz plane of
+
+the Brillouin zone. It can be seen that for a continuously graded interface, the transmission
+
+14
+
+coefficients are near unity for a wide range of incident phonon wavevectors. Thus, the smooth
+
+mass-gradient acts as an effective phonon anti-reflection coating for phonons with sufficiently
+
+short wavelength. However, comparing Fig. 7 with Fig. 6c shows that if the mass gradient
+
+is instead achieved by interdiffusion over the same characteristic distance and with the
+
+same average mass profile, the anti-reflection effect is not reproduced and the transmission
+
+coefficients are generally smaller. Thus, these results show that a phononic anti-reflection
+
+coatings cannot be practically realised by mere interdiffusion of materials across an extended
+
+distance. The resulting thermal interface conductance from an interdiffused interface may
+
+even be lower than what could be expected for either an ideal interface or a perfectly diffuse
+
+interface, as shown in in Fig. 3 (see (cid:96) = 1.6a ). In addition, while a smooth mass gradient
+
+produces high transmission coefficients, the predicted thermal interface conductance (145
+MW/m2-K) is actually ≈9% lower than the DMM (163 MW/m2-K) and only ≈5% higher
+than for the slightly interdiffused interfaces ((cid:96) = 0.2a and (cid:96) = 0.4a in Fig. 3). This is because
+
+the smoothly graded interface with its perfect in-plane ordering appears to maintain in-
+
+plane scattering selection rules, preventing mode conversion, and effectively blocking higher
+
+wavenumber modes from participating in transport. The interdiffused case (cid:96) = 0.4a (Fig. 6c)
+
+has no such restriction and achieves similar thermal interface conductance using a wider
+
+range of transmitting modes with lower average transmission coefficient. Thus, the effect of a
+
+high transmission coefficient obtained with a graded interface does not significantly outweigh
+
+the effect of increased pathways for transmission brought about by interface disorder.
+
+IV. CONCLUSIONS
+
+In summary, the validity of the diffuse mismatch model (DMM) is investigated on a mode-
+
+by-mode basis for interdiffused interfaces, using a 3-dimensional extension of the frequency
+
+domain, perfectly matched layer (FD-PML) method. It is found that disorder at an interface
+
+can increase the number of available modes for transmission, and subsequently raise the
+
+thermal interface conductance; these general observation are consistent with the DMM.
+
+However, while submonolayer levels of interdiffusion do reproduce similar thermal interface
+
+conductance values as the DMM, the mode-by-mode predictions of transmission coefficient
+
+vary drastically from the DMM. In particular, (1) contrary to the fundamental assumption of
+
+the DMM, not all modes appear to lose memory of their initial polarization and wavevector
+
+15
+
+for the interdiffusion lengths studied here. (2) Interdiffusion length in excess of a monolayer
+
+generally are found to make agreement between the DMM and the simulations worse, not
+
+better. (3) The DMM tends to overestimate the transmission coefficient of short wavelength
+
+phonons at interdiffused interfaces, and to underestimate in longwavelength regions.
+
+With regards to the first point, one intriguing question remains:
+
+if the modes arent
+
+being diffusely scattered, then what modes are they being scattered into, and how are they
+
+distributed? At a perfect interface, there are only 3 modes of transmission possible , while
+
+in the DMM there are an infinite number, evenly distributed along isofrequency lines for
+
+each polarization. If the DMM fails, then it must be because the scattered modes are not
+
+distributed in this way, and are perhaps prevented from doing so by additional selection rules
+
+or the physics of the scattering mechanism. The details of how this occurs remain an open
+
+question at present, as the current FD-PML method only intrinsically tracks the incident
+
+phonon mode (wavevector, polarization), and does not give details on the modes that are
+
+involved in the scattered wave. In principle, though, models like scattering boundary method
+
+are able to provide this information. Although it would be more natural for our method
+
+to use simple modal analysis33 to obtain this information from the scattered field to gain
+
+insight into the composition of the scattered modes, and uncover the details of the physics.
+
+ACKNOWLEDGMENTS
+
+This research was supported in part through the use of the Farber computer cluster and
+
+associated Information Technologies (IT) resources at the University of Delaware.
+
+Appendix A: Extension of the FD-PML Method to 3D
+
+The FD-PML method for phonons has previously been mathematically described and
+
+validated for one-dimension chains as well as in two-dimensions for the specific case of
+
+determining the scattering cross section of embedded nanoparticles with simple cubic lattice
+
+structure and second nearest neighbor interactions27. Here a more general mathematical
+
+description is given, valid for arbitrary 3D arrangements of atoms.
+
+The dynamic equations governing the displacements (u) of each atom in the simulation
+
+cell (for example, box 2 and 3 in Fig. 2) can be written in the frequency domain for each
+
+16
+
+atom under the harmonic approximation as
+
+(Mω2 + K)u = 0
+
+(A1)
+
+where M is a diagonal mass matrix given by M = miδij (summation not implied) where
+mi is the mass associate with the ith degree of freedom (each atom has 3-degrees of freedom),
+
+and K are the interatomic force constants given by
+
+Kij =
+
+∂2Φ
+∂ui∂uj
+
+(A2)
+
+where Φ is the interatomic potential and ui is the real-space displacement of the ith degree
+
+of freedom relative to the equilibrium position. These can be obtained from ab-initio cal-
+
+culation or based on some other description of the interatomic potentials; in the current
+
+paper, we used the simplest possible interaction, based on nearest-neighbor bonding via
+
+linear spring interactions. The diagonal elements for K must obey kii = −(cid:80)
+
+i(cid:54)=j kij .
+
+The frequency domain displacements, u, are then divided into contributions from an
+
+incident wave (which is to be specified before the simulation) and a scattered wave (which
+
+is to be found as part of the solution procedure): u = uinc + uscat. Typically, the context for
+
+specifying the incident mode is self-evident, but the method provides tremendous flexibility
+
+as to how this is accomplished, and several reasonable variations are possible. For example,
+
+if the objective of the computation is to simulate the transmission coefficient from one bulk
+
+material to another, the incident wave displacements would be specified as a plane wave
+
+obeying the dispersion relation in one of the materials, and would be set to zero everywhere
+
+the relation isn't expected to hold; so for a Si-Ge interdiffused interface, one could specify
+
+an incident wave within some portion of the purely Si region, and zero everywhere else
+
+(including the interdiffused zone).
+
+As discussed thus far, the equations for the system would be given as
+
+(Mω2 + K)uscat = −(Mω2 + K)uinc
+
+(A3)
+
+However, the issue of how to handle the outer boundary conditions is also critical. A
+
+typical incident plane wave carries energy into a system, and in most physical situations
+
+this energy is scattered or reflected by inhomogeneities. This scattered energy must be
+
+allowed to escape the system. For reflections from interfaces, the scattered modes are also
+
+17
+
+expected to be infinitely extended in space, which is not possible to simulate numerically.
+
+For scattered modes that do decay radially, the displacements are only zero infinitely far
+
+from the scattering center; numerically setting the scattered wave displacements to zero at
+
+any finite distance is equivalent to preventing energy from leaving the system.
+
+To solve this issue, a special layer called a Perfectly Matched Layer (PML) is employed
+
+at the boundaries of the simulation cell to absorb the scattered wave. The total simulation
+
+domain can thus be decomposed into a Primary Domain (PD), which contains the scattering
+
+problem to be solved, and a PML domain (PMLD) forming boundary layers at the edges
+
+of the simulation domain. A PML is designed to be impedance matched with the PD34,35,
+
+and thus minimizes artificial reflections of the scattered wave back into the PD. PMLs were
+
+initially developed to aid solution of finite-difference time domain problems in electromag-
+
+netics, but have been applied to a variety of problems since. Li et al36 have described their
+
+use in time-domain discrete atomic systems, and Kakodkar et al has extended this to the
+
+frequency domain27. Li et al36 has shown that for discrete atomic systems, the PMLD has
+
+nearly the same equations of motion as the original system, except that atoms in the PML
+
+possess an onsite potential and a damping force. As such, for the FD-PML method, the full
+
+system of equations with the PML becomes
+
+(Mω2 + K + Mσ2 − 2iMσ)uscat = − (Mω2 + K)uinc
+
+(A4)
+
+σ is a diagonal matrix of damping coefficients for each degree of freedom. The value of
+
+σ can be chosen with considerable freedom, and need not be homogeneous. We use an
+
+inhomogeneous σ , whose value for atoms inside the PMLD is given by
+
+σ =
+
+σmaxri2
+L2
+
+P M L
+
+δij
+
+(A5)
+
+where σmax is the maximum value of the damping coefficient, LP M L is the total length
+of the PML layer and the term ri represents the shortest distance of the ith atom from
+
+PD-PMLD boundary. For atoms inside the PD the damping coefficient is simply set to
+
+zero. Here we have chosen a parabolic distribution of the damping coefficient and a more
+
+comprehensive study for obtaining the PML parameters (σmax, LP M L) is given in Kakodkar
+
+et al.27. The following empirical relations were used throughout this manuscript to set the
+
+PML parameters and were found to result in artificial PML energy reflection coefficients of
+
+18
+
+order 10−5.
+
+α1 = Aα3 + B,
+
+α2 = 15(cos2 θ + 0.5)
+
+(A6)
+
+(A7)
+
+Where α1, α2 and α3 are dimensionless parameters given by α1 = kzLP M L/(2π), α2 =
+
+(σmaxLP M L)/cp and α3 = kza/(2π). Here kz is the wavevector component in the direction
+normal to the interface, cp = ω/k is the phase velocity and θ is the angle made by the
+incident wave-vector normal to the interface. The values of A and B used for this work are
+
+27.8 and -1.3 respectively
+
+Equation A4 is a sparse, banded linear algebraic equation where the terms on the right
+
+hand side are known. The equation is solved numerically to obtain the scattered wave
+
+solution (uscat). Note that unlike the atomistic Green's function method, one does not need
+
+to store the inverted matrix which typically has order, O(N 2), non-zero elements, where N is
+
+the total number of atoms; for comparison, the initial matrix typically only has order, O(N )
+
+non-zero elements. Thus, iterative solvers enable very large system sizes to be simulated
+
+without a distributed memory architecture.
+
+The total energy leaving the system through the scattered wave is then straightforwardly
+
+obtained. Since all the energy is absorbed by dampers in the PML, the total scattered
+
+energy, Q, is obtained inexpensively by summing the rate of energy absorption for each
+
+damper such that
+
+Q = ω2(cid:88)
+
+i
+
+miσii(uscat
+
+i
+
+)∗ uscat
+
+i
+
+(A8)
+
+∗ jpfeser@udel.edu
+1 D. G. Cahill, W. K. Ford, K. E. Goodson, G. D. Mahan, A. Majumdar, H. J. Maris, R. Merlin,
+
+and S. R. Phillpot, Journal of Applied Physics 93, 793 (2003).
+
+2 E. S. Landry and A. J. H. McGaughey, Phys. Rev. B 80, 165304 (2009).
+
+3 K. Gordiz and A. Henry, New Journal of Physics 17, 103002 (2015).
+
+4 K. Saaskilahti, J. Oksanen, J. Tulkki, and S. Volz, Phys. Rev. B 90, 134312 (2014).
+
+19
+
+5 K. Gordiz and A. Henry, Scientific Reports 6, 21319 (2016).
+
+6 K. Gordiz and A. Henry, Journal of Apllied Physics 119, 015101 (2016).
+
+7 P. Reddy, K. Castelino,
+
+and A. Majumdar, Applied Physics Letters 87, 211908 (2005),
+
+http://dx.doi.org/10.1063/1.2133890.
+
+8 P. L. Kapitza, Journal of Physics (USSR) 4 (1941).
+
+9 D. A. Young and H. J. Maris, Phys. Rev. B 40, 3685 (1989).
+
+10 H. Zhao
+
+and J. B. Freund,
+
+Journal
+
+of Applied Physics 97,
+
+024903
+
+(2005),
+
+http://dx.doi.org/10.1063/1.1835565.
+
+11 R. S. Prasher and P. E. Phelan, Journal of Heat Transfer 123, 105 (2000).
+
+12 E. T. Swartz and R. O. Pohl, Applied Physics Letters 51, 2200 (1987).
+
+13 N. Mingo and L. Yang, Phys. Rev. B 68, 245406 (2003).
+
+14 J. C. Duda, T. S. English, E. S. Piekos, W. A. Soffa, L. V. Zhigilei, and P. E. Hopkins, Phys.
+
+Rev. B 84, 193301 (2011).
+
+15 M. Shen, W. J. Evans, D. Cahill, and P. Keblinski, Phys. Rev. B 84, 195432 (2011).
+
+16 M. Hu, P. Keblinski, and P. K. Schelling, Phys. Rev. B 79, 104305 (2009).
+
+17 P. K. Schelling, S. R. Phillpot, and P. Keblinski, Journal of Applied Physics 95, 6082 (2004).
+
+18 R. J. Stevens, L. V. Zhigilei, and P. M. Norris, International Journal of Heat and Mass Transfer
+
+50, 3977 (2007).
+
+19 S. G. Volz and G. Chen, Phys. Rev. B 61, 2651 (2000).
+
+20 P. K. Schelling, S. R. Phillpot, and P. Keblinski, Applied Physics Letters 80, 2484 (2002).
+
+21 N. Zuckerman and J. R. Lukes, Phys. Rev. B 77, 094302 (2008).
+
+22 Z. Tian, K. Esfarjani, and G. Chen, Phys. Rev. B 86, 235304 (2012).
+
+23 C. Shao and H. Bao, International Journal of Heat and Mass Transfer 85, 33 (2015).
+
+24 Y. Zhou, X. Zhang, and M. Hu, Nanoscale 8, 1994 (2016).
+
+25 T. S. English, J. C. Duda, J. L. Smoyer, D. A. Jordan, P. M. Norris, and L. V. Zhigilei, Phys.
+
+Rev. B 85, 035438 (2012).
+
+26 H. Zhao
+
+and J. B. Freund,
+
+Journal
+
+of Applied Physics 105,
+
+013515
+
+(2009),
+
+http://dx.doi.org/10.1063/1.3054383.
+
+27 R. R. Kakodkar and J. P. Feser, Journal of Applied Physics 118, 094301 (2015),
+
+http://dx.doi.org/10.1063/1.4929780.
+
+28 S.-i. Tamura, Y. Tanaka, and H. J. Maris, Phys. Rev. B 60, 2627 (1999).
+
+20
+
+29 R. J. Hardy, I. W. Morrison, and S. Bijanki, Journal of Computational Physics 13, 591 (1973).
+
+30 X. W. Zhou, R. E. Jones, C. J. Kimmer, J. C. Duda, and P. E. Hopkins, Phys. Rev. B 87,
+
+094303 (2013).
+
+31 C. A. Polanco and A. W. Ghosh, Journal of Applied Physics 116, 083503 (2014),
+
+http://dx.doi.org/10.1063/1.4893789.
+
+32 C. A. Polanco, R. Rastgarkafshgarkolaei, J. Zhang, N. Q. Le, P. M. Norris, P. E. Hopkins, and
+
+A. W. Ghosh, Phys. Rev. B 92, 144302 (2015).
+
+33 A. McGaughey and M. Kaviany, International Journal of Heat and Mass Transfer 47, 1783
+
+(2004).
+
+34 J.-P. Berenger, Journal of Computational Physics 114, 185 (1994).
+
+35 W. C. Chew and W. H. Weedon, Microwave and Optical Technology Letters 7, 599 (1994).
+
+36 S. Li, X. Liu, A. Agrawal, and A. C. To, Phys. Rev. B 74, 045418 (2006).
+
+21
+
+

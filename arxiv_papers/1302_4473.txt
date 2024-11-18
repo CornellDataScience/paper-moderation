@@ -1,0 +1,1695 @@
+Journal of Computational Electronics manuscript No.
+(will be inserted by the editor)
+
+Atomistic deconstruction of current flow in graphene based
+hetero-junctions
+
+Redwan N. Sajjad · Carlos Polanco · Avik W. Ghosh
+
+3
+1
+0
+2
+ 
+b
+e
+F
+ 
+8
+1
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+1
+v
+3
+7
+4
+4
+.
+2
+0
+3
+1
+:
+v
+i
+X
+r
+a
+
+Received: date / Accepted: date
+
+Abstract We describe the numerical modeling of current
+flow in graphene heterojunctions, within the Keldysh Lan-
+dauer Non-equilibrium Green’s function (NEGF) formalism.
+By implementing a k-space approach along the transverse
+modes, coupled with partial matrix inversion using the Re-
+cursive Green’s function Algorithm (RGFA), we can sim-
+ulate on an atomistic scale current flow across devices ap-
+proaching experimental dimensions. We use the numerical
+platform to deconstruct current flow in graphene, compare
+with experimental results on conductance, conductivity and
+quantum Hall, and deconstruct the physics of electron ‘op-
+tics’ and pseudospintronics in graphene p − n junctions. We
+also demonstrate how to impose exact open boundary condi-
+tions along the edges to minimize spurious edge reflections.
+Keywords NEGF, RGFA, graphene, electron ’optics’
+PACS 85.80.Fi · 81.07.Nb · 73.63.Rt · 72.80.Vp
+
+1 Introduction
+
+Ever since its inception [1], graphene as a material has occu-
+pied a unique place between one dimensional pi-conjugated
+organic molecules and three dimensional bulk crystalline
+solids with well defined bandstructures. The quasi-ballistic
+scattering lengths [2, 3], photon like dispersion [4] and chi-
+ral electron flow [5] together promote nontrivial transport
+physics in graphene, opening up various device possibilities
+that necessitate detailed numerical modeling. While the pho-
+tonic bandstructures argue for a continuum model of mod-
+est sized device segments, scattering at heterojunction inter-
+faces [6] and edges requires a detailed atomistic treatment.
+Redwan N. Sajjad · Carlos Polanco · Avik W. Ghosh
+Department of Electrical and Computer Engineering, Charlottesville,
+VA-22904, USA
+E-mail: redwan@virginia.edu
+
+The aim of this paper is to describe practical techniques for
+simulating quantum transport through graphene based het-
+erojunctions, compare various transport regimes with exper-
+iments associated with the chiral nature of electron transmis-
+sion at graphene heterojunctions. We also point out some of
+the unique electronic properties of bilayer graphene, but un-
+less otherwise stated, the results are for single layer graphene.
+
+2 Simulation platform
+
+The Non-equilibrium Green’s function (NEGF) formalism
+[7] provides a unified, ‘bottom-up’ platform for modeling
+quantum flow of electrons. Indeed, it has been successfully
+applied to understand transport physics in materials and sys-
+tems as diverse as organic molecules [8], carbon nanotubes
+[9, 10], graphene [11–16], silicon nanowires [17–22], spin-
+tronics, nanomagnets [23, 24], nanoscale phonon transport
+[25–27]. A challenge however is the sheer problem size as-
+sociated with atomistic deconstruction of experimentally rel-
+evant dimensions, typically hundreds of nanometers, as well
+as the scattering physics at the atomistically rough edges.
+We employ a recursive technique to simplify the problem
+size in order to make such a deconstruction tractable.
+
+2.1 Recursive Green’s function Algorithm (RGFA)
+
+The central entity for quantum kinetics in a weakly interact-
+ing system is the retarded Green’s function, defined as,
+G = (E I − H − Σ1 − Σ2 )−1
+(1)
+H is the Hamiltonian matrix of graphene, described in this
+paper using a minimal one pz orbital basis per carbon atom
+with t0 = −3eV being the hopping parameter. Σ1,2 are the
+self energy matrices from the source and drain contacts, and
+
+2
+
+Redwan N. Sajjad et al.
+
+done by stepping through the above equation from right to
+left starting at layer N − 1, with the right connected Green’s
+function for the N th layer
+
+gN ,N = [E I − HL − UL − Σ2 ]−1
+(5)
+Once we reach layer 1 and extract g2,2 , the device Green’s
+function component for that layer is then calculated from
+G1,1 = (E I − D1 − Σ1 − t1,2g2,2t2,1 )−1
+(6)
+where D1 = H1,1 + U1 . The remaining layer block diagonal
+matrices are calculated by stepping through from left to right
+using,
+GL,L = gL,L + gL,LtL,L−1GL−1,L−1tL−1,L gL,L
+with L = (2, . . . , N ).
+
+(7)
+
+Fig. 1 Recursive Green’s Function Algorithm (RGFA) requires par-
+titioning the structure in left contact, device (layers of N) and right
+contact.
+
+2.1.2 From Green’s function to conductance and
+non-equilibrium carrier density
+
+Γ1,2 are the corresponding anti-Hermitian parts representing
+the energy level broadening associated with charge injection
+and removal. The corresponding spectral function and quan-
+tum mechanical total transmission are given by
+A = i(G − G † )
+T = T r(Γ1G Γ2G † )
+From the diagonal blocks of the layer Green’s functions,
+(2)
+we can calculate the spectral function
+The local density of states is obtained from the diagonal el-
+AL,L = i(GL,L − G †
+(8)
+ements of A divided by 2π .
+L,L )
+The contact self energy matrices Σ1,2 are calculated from,
+The left connected spectral function for layer L is given by,
+Σ = τ gτ † , where g is the surface Green’s function of the
+L,L = GL,1Γ1,1G †
+AL
+(9)
+L,1
+contact and τ is the coupling matrix between the contact
+which requires evaluating a corner block of G
+and graphene. The surface Green’s function g is found by
+GL,1 = gL,L (−tL,L−1 )GL−1,1
+solving the following equation recursively
+(10)
+1 ]−1
+g = [α − τ1 gτ †
+once again by stepping through from left to right, starting
+(3)
+with G1,1 in layer L=2. All the matrices from Eqs. 4-10 are
+where α = E I − H for the layered contact unit cell. For
+NL × NL , where NL is the number of atoms in one layer. Since
+speedy convergence of g, we use a decimation technique
+matrix inversion is an N 3 procedure, inverting substantially
+outlined in [28].
+smaller matrices at a time leads to considerable computa-
+Inverting the matrix in Eq. 1 is computationally expen-
+tional savings overall.
+sive and goes out of hand even for a small structure (width>5nm).
+The total conductance is calculated from the transmis-
+The Recursive Green’s Function Algorithm (RGFA) is a fast
+sion over all modes
+practical method to avoid inverting the entire matrix by brute
+G = G0 · T r(Γ1,1 [A1,1 − G1,1Γ1,1G †
+(11)
+1,1 ])
+force, but instead extract only select, relevant blocks of the
+G matrix, as described in Ref. [29], [30]. For instance the
+where G0 = 2q2/h takes care of spin degeneracy, while val-
+transmission across a layered device involves only a corner
+ley degeneracy is captured with the graphene Hamiltonian
+block of the G matrix, G1,L , while the density of states in-
+The non-equilibrium carrier density at each layer is cal-
+(cid:90) ∞
+volves only a diagonal block GL,L , enabling such partial in-
+culated from the above quantities as
+version.
+dE
+L,L + f2 (AL,L − AL
+T r[ f1AL
+L,L )]
+2π
+−∞
+where f1 and f2 are Fermi functions at the source and drain
+respectively.
+
+2.1.1 Evaluating the Green’s functions piece by piece
+
+ρL = 2
+
+(12)
+
+We consider the device area in layers of N as shown in
+Fig. 1. The right connected Green’s function [30] is calcu-
+lated from
+gL,L = (E I − HL − UL − tL,L+1 + gL+1,L+1tL+1,L )−1
+(4)
+where HL is the Hamiltonian of the L th layer, tL,L+1 is the
+coupling matrix between adjacent layers and UL is the elec-
+trostatic potential of the Lth layer. The calculation of gL,L is
+
+2.1.3 Extracting current density
+The current from ith atom to jt h atom is calculated from
+(cid:90)
+
+[7],
+
+i, j (E )H j,i − Hi, j G n
+dE Im[G n
+j,i (E )]
+
+Ii, j =
+
+2q
+h
+
+(13)
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+3
+
+where the electron correlation function, G n = G Σ inG † and
+scattering function, Σ in = ΓS fS + ΓD fD . The source and drain
+Fermi levels are at µS = 0 and µD = −qVD . To see the current
+distribution in the device, we apply a small drain bias VD . Ii, j
+is nonzero only if the ith atom and jt h atom are neighbors.
+The total current at one atomic site can be found by adding
+all the components vectorially, Ii =  ∑ j Ii, j eiΦ , where Φ is
+the angle of the individual current vectors with respect to a
+reference direction. As expected, the NEGF expression for
+Ii, j satisfies the steady-state Kirchhoff ’s law, ∑i Ii = 0. The
+terminal current IT is the sum of all currents in one atomic
+layer, and should be equal to the current from the Landauer
+(cid:90) ∞
+formalism using the total transmission,
+G(E )
+q [ fS (E ) − fD (E )]dE
+−∞
+While the total current IT (Eq. 14) can be calculated effi-
+ciently using the partial blocks in the RGFA, the spatially
+resolved current density (Eq. 13), useful primarily for vi-
+sualization purposes, employs the full matrix G and is thus
+computationally expensive. The recursive algorithm to cal-
+culate blocks of G n is described in [29]. The current density
+from layer L to L + 1 is given by,
+
+IT =
+
+(14)
+
+2q
+L,L+1 (E ) − tL+1,LG n
+Im[tL,L+1G n
+IL→L+1 (E ) =
+L+1,L (E )](15)
+h
+The matrix IL→L+1 (E ) has the size of NL × NL carrying the
+atom to atom current components between the two layers.
+
+2.2 k space formalism (KSF)
+
+We can further cut down the problem size when the sys-
+tem is periodic along the direction perpendicular to electron
+transport, by employing Bloch’s theorem. The periodicity
+allows us to decompose the system so that the transverse k-
+points act as decoupled 1-D chains or modes, whose contri-
+bution to the total current can be calculated independently.
+We can thereafter calculate the conductance through bulk
+graphene or graphene nanoribbons (GNRs) with mode by
+mode resolution. As we shall shortly see, it also allows us to
+visualize the transition from the smooth transmission pro-
+file of bulk graphene to the stepwise transmission of GNRs
+driven by width quantization.
+Consider a graphene sheet with an applied potential vary-
+ing only in the x direction (Fig. 2a). After dividing the sheet
+into blocks, we can split the hamiltonian into 4 × 4 block
+matrices (Hy p
+) describing the interaction between the wave
+i yq
+j
+i and yq
+belonging to blocks y p
+and ψ yq
+functions ψ y p
+j , with
+i
+j
+subscripts denoting the rows labeled along the transverse
+direction, and superscripts denoting layer columns labeled
+along the transport direction (Fig. 2b). Using this pictorial
+representation of the Hamiltonian, the Schr odinger equation
+
+Fig. 2 a) Graphene sheet split into blocks that reflect its periodicity
+in the y direction. b) Representation of Graphene’s hamiltonian split
+into matrices describing the interaction between block’s wave func-
+tions. Each box represents the interaction of the a block with itself
+and each line represents the interaction of a block with a neighboring
+block. c) After Fourier transforming the Graphene sheet can be split
+into independent chains, one for each ky .
+
+for the y p
+i block is given by
+
+E ψ y p
+i
+
+ψ y p
+=Hy p
+i y p
+i
+i
++ Hy p
+i y p+1
+i
+
+ψ y p
++ Hy p
+i y p
+i+1
+i+1
++ H †
+ψ y p+1
+y p−1
+i
+i
+
++ H †
+i−1 y p
+y p
+i
+ψ y p+1
+.
+i
+
+y p
+i
+
+ψ y p
+i−1
+
+(16)
+
+To take advantage of the manifest periodicity in y, we as-
+= ψ p eiky ·yq
+j , with yq
+sume Bloch type solutions ψ yq
+j the vec-
+j
+tor describing the position of the block yq
+j . Substituting this
+(cid:16)
+(cid:17)†
+solution into Eq. 16, we get
+H p−1, p
+ky
+
+ψ p + H p, p+1
+ky
+
+E ψ p = H p, p
+ky
+
+ψ p+1 +
+
+ψ p−1 ,
+
+(17)
+
+with
+
+H p, p
+ky
+
+= Hy p
+i y p
+i
+
++ Hy p
+i y p
+i+1
+
+eiky b + H †
+y p
+i−1 y p
+i
+
+e−iky b ,
+
+H p, p+1
+ky
+
+= Hy p
+i y p+1
+i
+
+,
+
+H p−1, p
+ky
+
+= Hy p−1
+i
+
+y p
+i
+
+.
+
+(18)
+
+(19)
+
+(20)
+
+For each ky , Eq. 17 with a varying index p can be interpreted
+as a one dimensional chain (Fig. 2c) decoupled from chains
+with other ky s. In other words, we have split the graphene
+sheet into a set of independent chains or modes. Now, we
+can use the usual NEGF formalism to find the transmission
+of each chain or mode (Tky ).
+
+Tky = T r(Γ 1
+ky
+
+Gky Γ 2
+ky
+
+G †
+ky
+
+)
+
+(21)
+
+The quantities (Σ , Γ , G and T ) in real space are found by
+inverse Fourier transform, since our Bloch assumption is
+
+4
+
+Redwan N. Sajjad et al.
+
+equivalent to Fourier transforming from the discrete yi -space
+to ky -space. For example, the Green’s function is given by
+j −y p
+Gky eiky ·(yq
+i ) ,
+
+i , yq
+G (y p
+j ) =
+
+(22)
+
+1
+Nk
+
+∑
+ky
+
+with Nk , the number of points in ky space, and the ky depen-
+dent Green’s function given by
+
+(23)
+
+Gky = [(E + iη )I − Hky − Σ1,ky − Σ2,ky ]−1
+The sigma matrices are calculated as before, Σky = τ †
+1 gky τ1
+but the surface Green’s function is now ky dependent.
+1 ]−1
+gky = [αky − τ1gky τ †
+(24)
+where αky = E I − Hky . Hky takes care of all the couplings in
+the transverse direction.
+Thus the combination of semi-infinite contacts in the ±x
+direction and Fourier transformation along the ±y direction
+amounts to a change in basis set for the completely periodic
+bulk 2D graphene. Since trace is preserved under the basis
+transformation, we can calculate transmission directly in ky
+space
+
+DOS =
+
+T r(G − G † )
+
+i
+2π
+
+T = ∑
+ky
+
+Tky
+
+where
+G = ∑
+k
+
+Gky
+
+(25)
+
+(26)
+
+The distinction between bulk graphene and GNR arises pri-
+marily from the different sets of ky ’s (in practice, one needs
+to worry about edge reconstruction, next nearest neighbor
+interactions, strain and roughness at the edges of GNRs. For
+an ideal GNR of width W = N b = Nk b the hard wall bound-
+ary conditions restrict ky to the discrete set
+nπ
+with 0 ≤ ky b ≤ π and n integer.
+W
+
+ky =
+
+In the case of bulk graphene we can assume periodic bound-
+ary conditions every W = N b, which restrict the ky ’s to
+2nπ
+with − π ≤ kyb ≤ π and n integer,
+ky =
+W
+and let N → ∞. Note that as N increases, the transmission
+evolves from a stepwise curve showing width quantization
+to a smooth curve.
+
+2.3 Applying open boundary conditions
+
+Since simulations deal with finite sized matrices, it is
+important to make sure the results do not get influenced by
+edge effects. While realistic physical devices do have edges,
+
+their impact on transport is complicated, dominated by strain
+and reconstruction, roughness, possible charge trapping, edge
+dipoles, localized vibrons and other subtleties. In fact, mea-
+surements of tilt-dependent junction resistance in graphene
+show a surprisingly weak influence of edge scattering [16,
+31]. For modeling purposes therefore, it is important to en-
+sure that additional edge effects do not creep in simply be-
+cause of the finite-sized domain of our simulation grid.
+Section 2.1 deals with hard-wall boundary conditions
+along the transverse direction. For such structures, elimi-
+nating edge effects requires making the widths very long
+(often longer than device length), which may have added
+repercussions on material properties (see section 3.1). Sec-
+tion 2.2 implemented periodic boundary conditions (PBC)
+instead with a k-space formalism, allowing us to work with
+just a couple of nearest neighbor unit cells along the trans-
+verse direction, but requiring strict periodicity along that di-
+rection. In this section, we will discuss how to implement
+open boundary conditions (OBC) that would allow us to ir-
+reversibly remove an electron impingent at the edges. The
+trick is to treat the edges as virtual ‘contacts’ with self-energy
+matrices built out of complex numbers, acting like energy-
+dependent lossy potentials.
+In this section, we will show how to generate exact open
+boundary conditions (OBC) at the edges of a device. It is
+worth emphasizing at this point that these are quantum bound-
+ary conditions, i.e., acting on the retarded Green’s function
+G . What is much harder to solve is a thermal open bound-
+ary condition acting on G n , because this depends on details
+of the scattering processes outside the simulation regime.
+In metallurgical contacts, we impose by fiat Fermi-Dirac
+distributions, but in the extended geometry just below our
+simulation regime, the distribution is non-equilibrium and
+the corresponding boundary conditions need to be estimated
+self-consistently with the G n inside the device in order to
+prevent the outside regime from sucking out the electrons
+too aggressively or else inadequately.
+
+2.3.1 The ‘scooped’ open boundary self-energy
+
+The ‘obvious’ way to implement some kind of open bound-
+ary is to attach virtual leads along the transverse direction
+and extract their self-energies Σ3,4 using recursion. This is
+schematically described by Fig. 3(h). While this method will
+take the electrons away, the leads do not completely span the
+outside regime relative to the central device represented by
+the Hamiltonian [H], and the missing chunks at the corners
+are expected to create spurious reflections. One could extend
+the contacts Σ1,2 or Σ3,4 laterally using k space formalism to
+span those corner regions, but the problem is that the four
+virtual leads are ultimately decoupled from each other with
+no bonds running in between, and thus do not quite represent
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+5
+
+Fig. 3 Tracking the injected Gaussian wavepacket at different times (a-e), the wavepacket escapes due to the exact open boundary condition (g)
+imposed through the self energy term. We see some reflections along the corner if we adopt a less exact (but computationally less expensive)
+method to impose open boundary condition through transverse contacts (h).
+
+a straightforward extension of the device domain beyond the
+simulation regime.
+
+unaltered.
+
+2.3.2 Calculating self energy Σo pen
+
+What a proper OBC will need is a geometry like Fig. 3(g),
+where the virtual ‘contact’ should be a single monolithic
+structure with the central device region ‘scooped’ out. The
+single self-energy matrix Σo pen for this outside regime must
+be reverse engineered so that the Green’s function of the
+central region matches that of the infinite system periodi-
+cally extended along all axes. Once we find this self energy
+(section 2.3.2), we can use it for any modified condition (e.g.
+a gate voltage, a molecular adsorbate or an injecting contact)
+that only influences the central region but keeps the outside
+
+To find the boundary free real-space Green’s function in
+the central region, we first extract the k space version corre-
+sponding to the infinite periodic system.
+Gk = [(E + iη )I − Hk − Σ1,k − Σ2,k ]−1
+(27)
+where the k-dependent quantities are Fourier transformed
+sums over nearest neighbors. From this we can calculate the
+real-space Green’s function projected onto the device region
+by inverse transforming
+Gk exp [−ik · (Rm − Rn )]/NmNn
+Gmn = ∑
+k
+for the atoms ‘m’ and ‘n’ spanning the central device seg-
+ment. For a system with N atoms, G is N × N .
+
+(28)
+
+6
+
+Redwan N. Sajjad et al.
+
+We can now reverse engineer the open boundary self-
+energy, armed with this real space Green’s function and the
+N × N device Hamiltonian H , giving us
+Σo pen = E I − H − G −1
+This self energy can be used to calculate transmission through
+the structure with open boundary conditions, additional in-
+jecting/removing leads Σ1,2 and any other perturbations act-
+ing only on the central region through a localized potential
+V that does not influence the boundaries
+T = T race(ΓSGnewΓDG †
+new )
+Gnew = (E I − H − V − ΣS − ΣD − Σo pen )−1
+
+(30)
+
+(29)
+
+2.3.3 Verifying the open boundary condition
+
+In Fig. 3, we verify the efficiency of the open boundary
+condition by launching a Gaussian wavevector with a spread
+{σx , σy} and initial quasi-momentum set by the wave-vector
+{kx , ky},
+Ψ (x, y, t = 0) =
+
+1
+x e−(y−y0 )2 /2σ 2
+e −(x−x0 )2 /2σ 2
+2π√σxσy
+y
+× e −ikx x e−iky y
+(31)
+about an injection point (x0 , y0 ). We calculate the evolu-
+tion of the gaussian wave-packet with time by numerically
+solving the time-dependent Schr odinger equation within the
+Crank Nicholson algorithm (described below), acting on the
+time-dependent vector {Ψ (t )} with row entries correspond-
+{Ψ (t + ∆ t )} = (cid:2)M(cid:3){Ψ (t )}
+ing to the spatial coordinates
+(cid:35)−1
+(cid:35)(cid:34)
+(cid:34)
+(cid:19)
+(cid:18)
+(cid:1)∆ t /2
+I + i(cid:0)H + Σo pen
+I − i
+∆ t /2
+H + Σo pen
+M =
+(32)
+In the absence of any open boundaries, the wavepacket stays
+confined within the simulation domain and bounces around
+(not shown). With the scooped self-energy Σo pen (Fig. 3g),
+the open boundary condition takes the electron out at the
+boundary (Figs. 3a-e). Note that the self-energy we used
+works only at a specific energy E set by the pair (kx , ky ),
+although we can extend it to all energies by Fourier trans-
+forming.
+Fig. 3(f) shows the results for a cross-geometry with
+transverse contacts represented by Fig. 3(h). As expected,
+the missing pieces along the corners give a sizeable reflec-
+tion of the wavepacket.
+
+3 NEGF simulation of electron transport in graphene
+
+In the following sections, we will use a combination of nu-
+merical techniques outlined so far to simulate current flow
+
+through graphene segments comparable in size to experi-
+mental dimensions. We show how these simulations accu-
+rately capture the nuances of conductivity, conductance, mag-
+netotransport, pseudospintronics and Klein tunneling within
+a common, unified simulation platform.
+
+3.1 Minimum conductivity vs conductance
+
+One of the unique properties of graphene is that its mini-
+mum conductivity σ (rather than conductance G = σW /L)
+is quantized in units of 4q2 /π h, when the width to length
+aspect ratio W /L is large. In other words, G is proportion-
+tal to the aspect ratio W /L in wide graphene samples. The
+width-dependence is expected in a large ballistic device as
+the number of modes is roughly proportional to the number
+of Fermi half-wavelengths one can fit into W . However, the
+average transmission per mode, and thus the conductance,
+is usually length-independent. This is because propagating
+modes have transmissions of unity in a ballistic channel,
+while evanescent tunneling modes have transmissions that
+are nearly zero. However since graphene is semi-metallic,
+a wide sheet supports a nearly continuum set of sub-bands
+with ultralow band-gaps and tunneling probabilities that are
+not ignorable. In fact the ∼ 1/ cosh2 qyL tunnel transmis-
+sion terms (qy = nπ /W ) from these closely spaced modes
+all add up to an overall 1/L dependence of the total trans-
+mission (more precisely, a factor 2W /Lπ ) and therefore the
+conductance G, leading to the conductivity quantization. Ex-
+periments on dirty samples show such a quantized mini-
+mum conductivity, albeit off by a factor of ∼ 3 − 4, usu-
+ally attributed to Coulomb scattering from charge puddles
+[32–34].
+We will use the NEGF technique to extract the conduc-
+tivity of graphene at the Dirac point. To recap, for large scale
+graphene devices (L > 1µ m), the conductance per mode is
+expected to be 4q2/h (the mode count is given by the inte-
+ger part of W kF /π ), while for smaller lengths (L < 500nm)
+and larger widths, the conductivity is expected to approach
+4q2/(π h). We will simulate the structure shown in Fig. 4(a)
+to calculate the minimum conductivity of a clean graphene
+sheet. The graphene device is connected to two heavily doped
+graphene contacts. As long as the contacts provide a large
+number of modes and thus minimal series resistance, the de-
+tails of the contact metallicity should not matter. The en-
+ergy band diagram for the problem is shown in Fig. 4(b).
+We model the system atomistically with RGFA as described
+in section 2.1.
+We use Eq. 11 to calculate the total conductance G. Min-
+imum conductivity σmin = GL/W is shown in Fig. 4(c) along
+with the experimental data from Ref. [33]. We take two dif-
+ferent widths W = 100, 200 nm to calculate G and σmin for
+various lengths (L). σmin is found to be very close to 4q2/π h.
+As expected, the minimum conductivity stays close to this
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+7
+
+Fig. 5 (a) Density of states (DOS) and conductance (inset, in units
+of 2q2 /h) calculation from atomistic tight binding RGFA for two
+different widths, (b) Similar calculations over a wider energy range
+done with KSF, atomistic NEGF within RGFA, and an analytical in-
+tegration of the E − k dispersion. Conductance (inset) is in units of
+2q2 /h × 1000µ m−1 . Conductance from KSF (red line) agrees with sim-
+ple linear approximation of no. of modes (black circles) at low energy.
+
+Fig. 4 Numerical extraction of graphene minimum conductivity in the
+small dimension limit (L<500nm). (a) Schematic of the device, (b)
+Energy band diagram for the device with doped contacts, (c) Calculated
+σmin and (d) Gmin for various aspect ratios along with experimental data
+from Ref. [33].
+
+number as long as W /L is large and a continuum evalua-
+tion of the tunnel contribution is a valid approach. In the
+opposite limit W (cid:28) L the conductivity increases with length
+and we reach the conventional regime of conductance quan-
+tization (Fig. 4(d)). Note that for a graphene ribbon of fi-
+nite width, the valley degeneracy of the fundamental mode
+is broken [35], so that the minimum conductance is 2q2/h.
+At higher gate voltages as more modes come into play, the
+conductance per mode reaches 4q2/h, with the degeneracy
+of 4 coming from the presence of 2 spins and 2 valleys at the
+same energy.
+
+3.2 RGFA for finite sized graphene devices
+
+We will now apply the RGFA technique discussed in
+section II to simulate three types of finite sized graphene
+based devices - uniformly doped, pn step junction and n pn
+barrier junction.
+
+3.2.1 Uniformly gated graphene
+
+We apply RGFA to calculate the density of states (DOS)
+and conductance of graphene sheets of various widths (W ).
+Fig. 5(a) shows the DOS (and conductance in inset) for W =
+10 and 100nm. Narrower nanoribbons show a gap as well as
+Van Hove singularities due to quantization for select chiral-
+ities while wider sheets show a quasi-linear bulk graphene
+density of states. In practice, nanoribbons also need atten-
+tion to edge state dynamics, particularly the presence of strain
+and roughness [12].
+A striking property of graphene is its anomalous inte-
+ger quantum Hall effect. When the Fermi energy lies be-
+
+tween two Landau levels (LL) in presence of a magnetic
+field, conventional two-dimensional electron gases show a
+vanishing longitudinal resistance ρxx = 0 and a quantized
+Hall conductance GH = 2q2N /h where N is a non-negative
+integer representing the number of filled Landau levels. In
+(cid:113) ¯h
+contrast, chiral quasiparticles in graphene exhibiting Berry
+sign(n)(cid:112)2n, where rC =
+phase show [36, 37] a Hall conductance GH = 4q2
+h (N + 1/2),
+with LL defined as En = ¯hvF
+qB
+rC
+is the cyclotron radius. This non-conventional sequence can
+be explained with the presence of a LL at E = 0 resulting
+(cid:112)n(n − 1), where ωC is the
+in a four fold degeneracy at zero carrier density (from spin
+and valley degeneracy). On the contrary, Bilayer graphene
+LLs are defined as, En = ¯hωC
+cyclotron frequency. Now both E0 and E1 are at zero energy
+producing thereby an overall eightfold degeneracy at zero
+carrier density and QHE plateaus of GH = 4q2
+h (N + 1) [38].
+Numerical modeling magnetotransport in graphene re-
+quires a minor modification to the transport scheme outlined
+earlier. We replace the kinematic momentum with the quasi-
+momentum k → k − qA/h, so that the plane wave terms
+e−iq/h (cid:82) A·dl where A is the magnetic vector potential such
+in the Bloch representation pick up an additional phase of
+that ∇ × A = B. Thus the hopping parameters between atoms
+(cid:34)
+(cid:35)
+(cid:90) n
+‘m’ and ‘n’ are now given by
+q
+h
+m
+For z directed magnetic field, our guage is, A = (−By, 0, 0).
+We can now turn on a magnetic field perpendicular to the
+sheet, modify the hopping terms as above, and extract the
+transvese (Hall) conductance as a function of varying Fermi
+energy location. The Hall conductance GH = I /VH , where
+I = (2q/h)N (µL − µR ) is the current, N is the number of
+filled Landau levels and the Hall voltage VH = q× the differ-
+ence between the electrochemical potentials of the +k and
+−k edge states. These states represent skipping orbits along
+
+tmn = t0 exp
+
+(33)
+
+i
+
+A · dl
+
+8
+
+Redwan N. Sajjad et al.
+
+drop in electrochemical potential along the channel) is zero.
+
+3.2.2 Single p-n junction
+
+pn junction heterostructures in graphene act qualitatively
+different from conventional pn junctions. In normal semi-
+conductors, the presence of a band-gap blocks electron flow,
+so that reducing (increasing) the built-in potential across a
+pn junction with a drain bias leads to an exponentially in-
+creased (reduced) current, creating a rectifying current-voltage
+(I-V) characteristic. The lack of a bandgap removes such
+rectification in graphene pn junctions (GPNJs). However,
+the chiral nature of the electron flow provides fascinating
+electron ‘optics’ behavior, reminiscent of Snell’s law, albeit
+with some notable twists. Across a pn junction for instance,
+the conservation of transverse quasi-momentum (ky ) leads
+to anomalous Snell’s law
+KF 1 sinθ1 = −KF 2 sinθ2
+where the refractive index is set by the Fermi wavevector
+and thus the gate voltage applied. The opposite sign of the
+voltage across a pn junction, arising when the quasimomen-
+tum component flips sign in going from conduction to va-
+lence band, means that the system acts like a negative index
+metamaterial.
+While the electron trajectories are set by the above Snell’s
+law, i.e., the conservation of transverse quasi-momentum,
+the actual transmission probabilities are set by the conserva-
+tion of pseudospins. The pseudospins arise from the eigen-
+vectors corresponding to the photon-like graphene E-k. The
+(cid:33)
+(cid:32)
+eigenfunctions are given by
+ei(kx x + ky y)
+
+(35)
+
+(36)
+
+Ψ =
+
+1
+seiθ
+
+where θ is the 2-D angle setting the quasi-momentum k and
+s = ±1 denotes the conduction or valence band (An addi-
+tional sign flip with respect to kx occurs near the other val-
+ley). Up and down pseudospin states are given by θ = 0
+and π , corresponding to the bonding and antibonding com-
+binations of the pz dimer basis sets in graphene. Analogous
+to optics, we can derive the equivalent ’Fresnel equation’
+for transmission probabilities, by matching the pseudospinor
+components across the junction. Assuming a split distance
+‘d’ between the backgates defining the pn junction, and a
+(cid:34)
+(cid:19) (cid:35)
+voltage difference V0 between the gates, the transmission
+works out to be
+(cid:18) θ1 + θ2
+e−π ¯hvF k2
+cosθ1 cosθ2
+F d sin2θ1 /V0 (37)
+cos2
+2
+below a critical angle defined from the Snell’s law (Eq. 35),
+θ1 (θ2 ) representing the incident (refracted) angle for elec-
+trons. The first term shows that at normal incidence (θ1 = 0)
+
+T (EF , θ1 ) =
+
+Fig. 6 (a) In presence of a magnetic field, the current is carried by the
+edge states that separate into +k states at the upper edge in equilibrium
+with the left contact and −k states at the lower edge in equilibrium
+with the right contact. (b) The Hall voltage goes through plateaus at
+4q2
+h (N + 1/2) for single layer and 4q2
+h (N + 1) for bilayer graphene with
+N a non-negative integer. Note the presence of a jump at zero energy,
+which is not seen in a two-dimensional free electron gas (and arises
+from a half-filled Landau level at the Dirac point), and the additional
+factor of 2 in the plateau heights, arising from valley degeneracy. (c)
+For a placement of the Fermi energy between two Landau levels, elec-
+tron distribution function at the top and bottom edges resemble Fermi-
+Dirac distributions of the corresponding contacts. Since each current
+carrying state sees a constant electrochemical potential (along trans-
+port direction x), the longitudinal resistance vanishes.
+
+the edges created by the cyclotron orbits in the bulk, and
+are separately in equilibrium with the left and right contact
+Fermi energies.
+Fig. 6b shows the calculated Hall conductance yielding a
+series of plateaus for both single layer and bilayer graphene.
+Fig. 6c shows the local carrier distribution functions f (±k)
+obtained from the ratio of the local carrier density and the
+local density of states, in other words, the ratio
+
+L,L (l , l )/i(GL,L (l , l ) − GL,L (l , l ))
+f (E ) = G n
+
+(34)
+
+where l is the index for an atom belonging to either top or
+bottom edge. The Hall voltage turns out to be VH = q(µL −
+µR ) (Fig. 6c) giving conductance plateaus for GH . The elec-
+trochemical potentials (µL , µR ) don’t change along transport
+direction x so that the longitudinal resistance (given by the
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+9
+
+Fig. 7 Numerical calculation (NEGF) of a single pn junction conductance for both abrupt and smooth GPNJ. (a-b) Variation of total resistance
+with dopings in the two regions for abrupt (a) and smooth junction (c) Resistance as a function of Fermi energy (EF ) for a fixed built in potential
+V0 = 0.2eV. The red (abrupt) and black (smooth junction) lines are resistance plots along the corresponding black and red lines in (a) and (b).
+Conductance (inset) which can be viewed as G = G0MTav where Tav , pinches off at two points - one due to vanishing M and at another one
+due to vanishing Tav , average transmission per mode. (d) The resistance asymmetry between pn and nn regime from plots along specific doping
+(∆ E1 lines from (b). (e) Extraction of Tav numerically. The transmission of a symmetric GPNJ is 2/3 (at EF = 0), which results in asymmetric
+conductance vs doping in GPNJ. The solid lines are from NEGF and the circles are from analytical calculation, Eq. 37. (f) Junction resistance (Eq.
+40) enhancement due to a tilt in the junction with respect to the tilt. This time we vary the doping along the diagonal (orange line in (b)) as done
+in the experiment [31].
+
+the transmission function is unity regardless of the size of
+the barrier V0 . The absence of normal reflection is a manifes-
+tation of Klein tunneling, and arises because backscattering
+requires the flipping of pseudospins, in other words, a fast
+spatially varying potential. The second, exponential factor
+(drops out for unipolar n+n or p+ p junctions) in the trans-
+mission equation comes from tunneling across the slowly
+varying junction, where the transverse modes face a momentum-
+dependent band-gap, reminiscent of cut-off frequencies in a
+wave-guide.
+The overall conductance of a GPNJ can be calculated
+by summing over all transmissions, G = G0 ∑M
+θ T (θ ), which
+can be thought of as the total number of modes times an
+average transmission. Thus the average transmission over
+all modes at a particular energy is given by Tav = G/G0M ,
+where number of modes, M = 4EF W /π ¯hvF . From RGFA
+calculation, we get the total conductance G = T r(Γ1G Γ2G † )
+in units of G0 = 2q2 /h.
+Figs. 7 (a,b) show the doping-dependent resistance of
+a GPNJ for a 100nm wide graphene sheet, for abrupt and
+slowly varying junctions respectively. In fig. 7, we plot the
+variables against the shifts in the Dirac point in both regions,
+i.e. ∆ E1 and ∆ E2 . The resistances at the upper left and lower
+right corners of the plot are higher than the other two ( pn vs
+uniformly doped), resulting in an asymmetric resistance vs
+doping in fig. 7(d) (plotted for specific doping values ∆ E1
+as indicated with horizontal lines in 7(b)).
+
+The WKB term in Eq. 37 is only present in the pn junc-
+tion regime, and that is why only the pn junction resistance
+is affected while going from abrupt to smooth junctions (a-
+b). For a p p or nn junction the Fermi energy does not cross
+the smoothly varying Dirac point anywhere in the device and
+the transmission expression only includes the wave-function
+mismatch term. Fig. 7(c) shows the resistance variation for
+a fixed built-in potential V0 = ∆ E1 − ∆ E2 (along black and
+red lines in fig. 7(a) and (b)). In the conductance variation
+(inset), we see effectively two Dirac points, which has a sim-
+ple physical explanation. Recall that the normalized conduc-
+tance can be decoupled into the mode count from one end
+times the average transmission over to the other side
+
+G/G0 = M1T12 = M2T21
+
+(38)
+
+The left conductance minimum at EF = −0.1eV is where
+M1 becomes zero, while the right one at EF = +0.1eV is
+where the average transmission for all modes, T12 , becomes
+zero. To make this clear, we calculate Tav numerically (Fig.
+7(e)), clearly showing a vanishing transmission at the second
+Dirac point. To calculate Tav , we first simulate a graphene
+device with uniform doping and extract the overall mode
+count from the ballistic conductance (G1 = MG0 ). We then
+simulate the device with different dopings (finite built-in po-
+tential, V0 , and conductance G2 = G0MTav ). The ratio of
+G2 (EF ) and G1 (EF ) at each energy gives us Tav (EF ). For
+
+10
+
+Redwan N. Sajjad et al.
+
+=
+
+=
+
+M (E )
+
+dθ
+
+W kF
+2π
+
+cos2θ
+∆ ky
+
+kF cosθ dθ =
+
+Fig. 8 Tracking electron trajectories in GPNJ, negative index makes the refraction angle negative - resulting in spatial focusing of current flow
+for equal dopings (left column). Right column shows total internal reflection when the refracted side has lower doping, thus reflecting electrons
+outside the critical angle.
+(cid:90) π /2
+example, for a symmetric GPNJ (at EF = 0), we have
+T (θ )
+T (θ ) ≈
+G/G0 = ∑
+(cid:90) π /2
+(cid:90) π /2
+∆ θ
+−π /2
+θ
+−π /2
+−π /2
+2
+3
+leading to Tav = 2/3, which is close to what we get in the
+numerical calculation. Thus the conductance of a symmet-
+ric GPNJ is 2/3 of the uniformly doped graphene sheet with
+the same Fermi energy (EF ). In Fig. 7(e) we also show the
+analytical calculation of Tav (circles) in the same manner as
+done above but this time using the transmission in Eq. 37.
+The analytical calculation matches very closely with the nu-
+merical calculation (solid lines).
+A more direct evidence of chiral tunneling is seen from
+the resistance across a tilted junction. We use the follow-
+ing equation to extract the junction resistance [7], that elim-
+inates the quantized resistance from the contacts.
+1 − Tav
+4q2
+h )−1 [
+MTav
+We calculate M and Tav numerically from NEGF as dis-
+cribed earlier. Fig. 7f shows the variation of RJ plotted against
+∆ E1 (along orange line) for a 100nm wide graphene sheet.
+For low carrier density in the middle, the background dop-
+ing (n0 ) makes the device an n+n or p+ p junction and RJ is
+low. For n1,2 > n0 , i.e., in the wings of the plot, the device
+reaches the p − n junction regime and RJ becomes high. This
+characteristic doping dependence of junction resistance has
+
+been seen in experiments in the past [39, 40], usually cap-
+tured by the odd resistance, 2Rod d = R(n1 , n2 ) − R(n1 , −n2 ).
+The chiral tunneling can be seen more directly by varying
+the tilt angle, as seen in experiments recently [16]. The pur-
+ple squares show the trend for a tilted GPNJ, where a pro-
+nounced peak is seen in RJ . With increasing tilt between the
+junction and the transport axis normal to the contacts, the
+incident angless of the incoming modes are effectively in-
+creased, leading to higher resistance. Such an increase in
+junction resistance is seen in a recent experiment [31] and a
+detailed theoretical treatement can be found in [16]. Interest-
+ingly, the results suggest the absence of specular reflection
+from the edges of the graphene sample.
+We will next apply the current density formalism in RGFA
+to show the electron trajectories inside the GPNJ device.
+The total current at an atomic site is equal to vector sum
+of all current components to nearest neighbor atoms (from
+Eq. 15). The classical ray tracing analysis from Snell’s law is
+shown in Fig. 8(a). For equal dopings on both sides (kF 2 =
+kF 1 ), the angle of refraction is exactly equal (with a neg-
+ative sign) to the incident angle. As a result, a group of
+electrons originating from a point contact focus back to one
+point on the refracted side [6]. Fig. 8(b) shows the trajec-
+tories when the doping at the refracted side is smaller than
+that at the incident side (kF 2 < kF 1 ) making the critical an-
+gle smaller than π /2. The geometrical ‘optics’ trajectories
+corresponding to electron focusing and total internal reflec-
+tion are reproduced by the calculated current density with-
+ing an atomistic RGFA simulation, shown in Fig. 8(c), (d).
+A small source contact (10nm wide) is placed 50nm to the
+left of the pn junction, and electrons are injected with a
+
+RJ = (
+
+]
+
+cos3θ dθ
+
+(39)
+
+(40)
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+11
+
+; Ohmic pl at eaus
+
+(41)
+
+small drain bias (VD = 0.08 V) around a Fermi energy. When
+the gates are biased symmetrically around the junction, al-
+though the electrons see a voltage bias along the drain that
+spans the entire device width, the pn junction Hamiltonian
+and associated pseudospin conservation causes the electrons
+to focus to a small point at the drain. For an n+p junction,
+the electrons incident above the critical angle are unable to
+preserve their transverse quasi-momentum and reflect back,
+while those within critical angle tunnel to the opposite band
+on the other side.
+We now investigate the quantum Hall plateaus for a sin-
+gle pn junction. According to recent experiment [41], the
+conductance in the pn junction regime follows the Ohmic
+conductance rule
+νnν p
+G(q2/h) =
+νn + ν p
+νn and ν p are the filling factors in the two segments of the
+device. This was explained by Abanin et. al. [42] in terms
+of mode mixing at the p − n interface for large systems with
+it produces pn junction plateaus as (cid:8)1, 3
+2 , ...et c.(cid:9) for filling
+diffusive transport. As graphene filling factors are {2, 6, 10, ...},
+factor combinations of (2, 2), (2, 6) etc. matching closely
+with the experiment [41].
+This result changes considerably for coherent ballistic
+transport for smaller structures. Tworzydlo et. al. [43] showed
+that for armchair nanoribbons the conductance plateaus be-
+come
+1
+G0 (1 − cosΦ ); Bal l ist ic pl at eaus
+2
+independent of individual filling factors νn , ν p . G0 = 2q2/h
+is the lowest Hall plateau for graphene. Φ is the angle be-
+tween valley isospins at the top and bottom edges and de-
+pends on the chirality of the nanoribbon. Depending on the
+number of hexagons N along transverse direction, Φ = π for
+(cid:26) 2
+N = 3M + 1 and Φ = π /3 otherwise. This leads to
+1
+2
+The ballistic to ohmic cross over for the plateaus can be re-
+covered by using interface and edge disorder [44].
+The magnetotransport for zigzag ribbons cannot be ex-
+plained with valley isospin arguments. Akhmerov et. al. [45]
+proposed the theory of valley valve effect with intervalley
+scattering which leads to complete suppression of conduc-
+tance in the zigzag pn junction, if the number of atoms across
+(cid:26) 0
+the ribbon is even.
+2
+
+i f N = 3M+1
+otherwise
+
+i f N = 2M
+otherwise
+
+G(q2/h) =
+
+(42)
+
+(43)
+
+(44)
+
+G =
+
+G(q2/h) =
+
+Impact of depletion width d (spacing between two gates)
+on GPNJ ballistic magneto-conductance for both armchair
+and zigzag ribbons are shown in Fig. 9. Magnetic field B
+
+Fig. 9 Magnetotransport in graphene pn junction. Magnetic field,
+B=10T and filling factors are νn = ν p = 6. (Left) Change of conduc-
+tance with depletion width, d for Armchair ribbons. For high depletion
+width, we get the expected plateaus of 2 and 1
+2 . (Right) Plateaus of 0
+and 2 for Zigzag ribbons. Dotted horizontal lines show analytical pre-
+dictions.
+
+Fig. 10 Physics of n pn junction. (a) Band diagram. The black line
+shows the change of Dirac point as a result of different dopings at dif-
+ferent portions of the device. Blue (red) region in the E-k indicates
+empty (filled) states. (b) Electron trajectories in such junctions, mul-
+tiple focusing takes place, (c) Ballistic conductance as a function of
+Fermi energy for a fixed barrier height for different barrier width, D=5,
+25 and 100nm (black, red and blue) . Width of the device is W = 50nm.
+The solid lines are from numerical NEGF calculation, while the cir-
+cles are from analytical calculation, Eq. 45. (d) Experimental data from
+Ref. [46]. Conductance in the experiment is much lower due to scatter-
+ing mechanisms.
+
+= 10T and dopings are ∆ E1 = ∆ E2 = 0.15eV producing
+νn = ν p = 6. Conductance values approach analytically pre-
+dicted numbers only when the depletion width is sufficiently
+large (> 30nm), filtering out higher Landau Levels (LL)
+[44]. It requires larger depletion width as individual filling
+factors get higher. In most cases, the lower plateaus ( 1
+2 and
+0 for armchair and zigzag respectively) are more difficult to
+
+12
+
+achieve than the higher one (2).
+
+3.2.3 n-p-n junction
+
+By applying a step like potential, we can realize an n pn
+junction. The dopings can be done by either a combination
+of global back gate and top gate [40] or by selective chemi-
+cal doping. In fig. 10(a), we show the energy band diagram
+for the device. We consider both junctions as abrupt, d = 0,
+while the extent of the p type barrier region is D. In fig.
+10(c), we show an NEGF calculation of the npn conductance
+for various D values. For larger D, two Dirac points are ev-
+ident from the pinched off conductance, but for smaller Ds
+we see a considerable tunneling around the second Dirac
+point (EF = 0.5eV), where the critical angle for the incident
+electrons is supposed to be very small. The first dip happens
+at the Dirac point of the incident n region where M1 = 0 as
+before, while the second corresponds to the electrons in the
+n region aligned with the Dirac point of the barrier p region
+and the transmission T12 is small. In a single p − n junc-
+tion, the modes with higher angles than the critical angle
+reflect back as they do not have any propagating states to
+tunnel into while preserving their transverse quasimomen-
+tum. But in the n pn junction case, the length of the forbid-
+den region D is finite, and the electrons even while aligned
+with the Dirac point of the central p region can still preserve
+their quasi-momenta by tunneling to the other side. This in-
+creased conductance has been seen experimentally [46] in
+the past (Fig. 10). In the limit when D is very large, we
+approach the single p − n junction case we worked out in
+Fig. 7(c) inset. And when D is very small, we approach the
+uniform doping (n doped here) case through significant tun-
+neling. Note that we also see oscillations for n pn junctions,
+which originate from the Fabry Perot cavity formed by the
+electrostatic barrier [46, 47]. Both the tunneling and the res-
+onant oscillations can be captured analytically by matching
+eigenvector components across the pnp junction, as worked
+out in Ref. [5].
+
+r =
+
+2ieiφ sin(qxD) × (sinφ − ss(cid:48) sinθ )
+ss(cid:48) [e−iqxD cos(φ + θ ) + eiqxD cos(φ − θ )] − 2isin(qxD)
+(45)
+
+(cid:113)
+giving us a transmission, T (φ ) = 1 − R = 1 − r2 . qx is the
+F ) − k2
+(EF − V0 )2 /( ¯h2 v2
+wave vector inside the barrier, qx =
+y ,
+θ = t an−1 (ky/qx ) and s = signEF and s(cid:48) = sign(EF − V0 ).
+We then sum over different modes, set by the width of the
+graphene sheet, to get the total conductance G(EF ) in units
+of G0 = 2q2 /h (Fig. 10 (c), ,circles), in excellent agreement
+with the NEGF atomistic calculation and qualitatively with
+
+Redwan N. Sajjad et al.
+
+Fig. 11 Angle resolved transmission in single layer and bilayer
+graphene for a fixed Fermi energy and for various built-in potential
+V0 . At left (EF = 0.5eV), Klein tunneling with maximum transmission
+at normal incidence. At right (EF = 0.05eV), Klein reflection in bi-
+layer graphene for normal incidence. Top pannel shows the forward
+and backward moving branches colored according to the pseudospin
+texture for normal incidence.
+
+experiments (Fig. 10)).
+
+3.3 KSF to simulate bulk graphene and GPNJ
+
+The inset in Fig. 5(b) shows the calculated conductance
+of bulk graphene from KSF. Note that the peaks due to finite
+width quantization in Fig. 5 are removed by the application
+of periodic boundary conditions. The black circles show the
+trend that is expected from a linear approximation of the
+number of modes M = 2W EF /π ¯hvF at low energy. The
+main figure in Fig. 5(b) shows the bulk graphene density
+of states calculated from three methods. The red line shows
+the result from an atomistic NEGF calculation. The black
+circles are from an analytical formula [48], while the blue
+line is from a numerical extraction of the density of states
+(DOS) from the graphene E − K relation. All three calcula-
+tions match very well with one another.
+
+KSF approach also allows us to show the angle (mode)
+dependent chiral tunneling in graphene. We use Eq. 21 to
+get Tky which is converted into a polar plot (Fig. 11) using
+θ = sin−1 ky
+, for transmission per spin per valley. For single
+kF
+layer graphene the transmission becomes unity for normal
+incidence (known as Klein tunneling). On the contrary, for
+bilayer graphene, the reflection becomes unity (Klein reflec-
+tion). The tranmission ultimately depends on how well the
+wave-functions match on both sides of the junction (branches
+with same pseudospin components have same color in Fig.
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+13
+
+periodic boundary condition. Similarly we use αky to calcu-
+late gky as described in section II. The Tav vs d is shown in
+inset of Fig. 12 with d extended in the micron regime.
+
+4 Conclusions - the role of numerical simulation
+
+Graphene and its heterojunctions constitute a fascinat-
+ing system that demonstrate rich physics such as anoma-
+lous quantum Hall, chiral tunneling, metamaterial behavior
+and pseudospintronics. Extended to other sub-systems such
+as bilayer graphene, this richness proliferates with Lifschitz
+transitions, anti-Klein tunneling, more anomalous Hall sig-
+natures and so on. The simplicity of the low-energy 2-D
+bandstructures of graphene and its progeny allows pen and
+paper demonstration of these physical concepts. The NEGF
+approach provides a common computational framework to
+verify these concepts atomistically, whereby a small modi-
+fication to the Hamiltonian (e.g. a barrier or a field-induced
+phase in the coupling parameter) can manifest these physical
+concepts with very little effort, even in tougher geometries
+such as multiple junctions and tilted heterostructures. When
+comparing with experiments, however, one needs to worry
+about the sensitivity of these effects to scattering, edge states,
+quantization, smooth junctions, strain, roughness and so on.
+This is where computation plays a definitive role. It was
+hard to anticipate a-priori what the effect of specular edge
+scattering would be on the resistance of a tilted junction,
+but we now know through numerical simulations [16] that
+it creates a sweet-spot in the scattering profile that experi-
+ments do not show. Such ‘smoking-gun’ demonstrations al-
+low us to judge the feasibility of devices that utilize uncon-
+ventional electronic switching in graphene, such as the cre-
+ation of transmission gaps with subthermal switching [15].
+We can now atomistically simulate graphene systems whose
+sizes are comparable to experimental dimensions, and di-
+rectly demonstrate many of the physical effects that such
+devices are based on in presence of non-idealities. Further
+extensions will involve the role of self-consistent screening
+(Poisson), charge puddles, defects and incoherent scattering
+from remote optical phonons.
+
+Acknowledgements The authors acknowledge financial support from
+INDEX-NRI. Redwan Sajjad would like to thank Khairul Alam and
+Golam Rabbani for the assistance in implementing RGFA. Authors
+also thank Eugene Kolomeisky, Branislav Nikolic, Farzad Mahfouzi
+for useful discussions.
+
+References
+
+1. K. S. Novoselov, A. K. Geim, S. V. Morozov, D. Jiang, Y. Zhang,
+S. V. Dubonos, I. V. Grigorieva, and A. A. Firsov, “Electric field
+effect in atomically thin carbon films,” Science, vol. 306, no. 5696,
+pp. 666–669, 2004.
+2. S. V. Morozov, K. S. Novoselov, M. I. Katsnelson, F. Schedin,
+D. C. Elias, J. A. Jaszczak, and A. K. Geim, “Giant intrinsic carrier
+
+Fig. 12 KSF-RGFA simulation of smooth GPNJ. (a) Conductance
+characteristics as a function of Fermi energy for a fixed built-in poten-
+tial V0 = 0.6eV, conductance is suppressed in the pn junction regime
+due to the exponentially decaying transmission of higher order modes.
+Inset: Average transmission per mode Tav for a symmetric GPNJ (EF =
+0 point in (a)) vs the separation between two gates.
+
+11).
+
+3.4 Combining KSF and RGFA
+
+We now combine the two transport formalisms KSF and
+RGFA to a graphene p − n junction and show how this method
+allows us to simulate very long, micron-sized devices with
+periodic boundary conditions along the transverse direction.
+We apply this technique to numerically reproduce the tun-
+nel transmission across a GPNJ with split gates, which re-
+quires simulating a long device to extract the proper de-
+cay constant. We assume that the Dirac point varies linearly
+across the junction for simplicity (Fig. 7(a)) In presence of
+a slowly varying potential across the GPNJ, the transverse
+modes with finite wave-vector ky act like waveguides with
+a cut-off frequency and thus need to overcome a real tunnel
+barrier. A smooth GPNJ thus selectively transmits the low
+angle electrons [49], with suppression of the higher angle
+modes with increasing length of the junction transition re-
+gion. The fundamental normal mode still does not see a bar-
+rier and thus transmits perfectly, reflection once again elim-
+inated by a pseudospin dominated selection rule, retaining
+the Klein tunneling properties of GPNJ.
+The conductance of a symmetric (equal and opposite
+doping on both sides) smooth GPNJ, using the expression
+(cid:114) kF
+(cid:90) θ0
+from Eq. 37, becomes
+G ≈ 4q2
+e−π kF dθ 2 ≈ 4q2
+dθ
+W
+(46)
+∆ θ
+π h
+−θ0
+h
+d
+where θ0 = (π kF d )−1 is the effective critical angle imposed
+by the smooth junction [49] and ∆ θ = ∆ ky/(kcosθ ) is the
+angular separation between adjacent modes. Numerically cap-
+turing this exponential decrease in conductance with gate
+split distance d requires simulating a long device. The defi-
+nitions of the unit cell Hamiltonian are now changed by the
+following.
+L,L+1 e−ika
+HL,k = HL + tL,L+1 eika + t †
+where tL,L+1 is the layer to layer coupling matrix in the trans-
+verse direction. This will describe a layer Hamiltonian with
+
+(47)
+
+14
+
+Redwan N. Sajjad et al.
+
+Cam-
+
+mobilities in graphene and its bilayer,” Phys. Rev. Lett., vol. 100,
+no. 1, p. 016602, Jan 2008.
+3. K. Bolotin, K. Sikes, Z. Jiang, M. Klima, G. Fudenberg, J. Hone,
+P. Kim, and H. Stormer, “Ultrahigh electron mobility in suspended
+graphene,” Solid State Communications, vol. 146, no. 9-10, pp.
+351 – 355, 2008.
+4. J. C. Slonczewski and P. R. Weiss, “Band structure of graphite,”
+Phys. Rev., vol. 109, pp. 272–279, 1958.
+5. M. I. Katsnelson, K. S. Novoselov, and A. K. Geim, “Chiral tun-
+nelling and the klein paradox in graphene,” Nat Phys, vol. 2, no. 9,
+pp. 620–625, 2006.
+6. V. V. Cheianov, V. Fal’ko, and B. L. Altshuler, “The Focusing of
+Electron Flow and a Veselago Lens in Graphene p-n Junctions,”
+Science, vol. 315, no. 5816, pp. 1252–1255, 2007.
+7. S. Datta, Electronic Transport in Mesoscopic Systems.
+bridge University Press, 1997.
+8. P. Damle, A. Ghosh, and S. Datta, “Unified description of molec-
+ular conduction: From molecules to metallic wires,” Physical
+Review B, vol. 64, no. 20, p. 201403, 2001.
+9. J. Guo, S. Datta, M. Anantram, and M. Lundstrom, “Atomistic
+simulation of carbon nanotube field-effect transistors using non-
+equilibrium greens function formalism,” Journal of Computational
+Electronics, vol. 3, pp. 373–377, 2004.
+10. S. Koswatta, S. Hasan, M. Lundstrom, M. Anantram, and
+D. Nikonov, “Nonequilibrium green’s function treatment of
+phonon scattering in carbon-nanotube transistors,” Electron
+Devices, IEEE Transactions on, vol. 54, no. 9, pp. 2339 –2351,
+sept. 2007.
+11. Y. Ouyang, Y. Yoon, and J. Guo, “Scaling behaviors of graphene
+nanoribbon fets: A three-dimensional quantum simulation study,”
+Electron Devices, IEEE Transactions on, vol. 54, no. 9, pp. 2223
+–2231, sept. 2007.
+12. F. Tseng, D. Unluer, K. Holcomb, M. R. Stan, and A. W. Ghosh,
+“Diluted chirality dependence in edge rough graphene nanoribbon
+field-effect transistors,” Applied Physics Letters, vol. 94, no. 22,
+p. 223112, 2009.
+13. T. Low, S. Hong, J. Appenzeller, S. Datta, and M. Lundstrom,
+“Conductance asymmetry of graphene p-n junction,” Electron
+Devices, IEEE Transactions on, vol. 56, no. 6, pp. 1292 –1299,
+2009.
+14. J. R. Williams, T. Low, M. Lundstrom, and C. Marcus, “Gate-
+controlled guiding of electrons in graphene,” Nat Nano, vol. 6,
+no. 4, pp. 222–225, 2011.
+15. R. N. Sajjad and A. W. Ghosh, “High efficiency switching us-
+ing graphene based electron ”optics”,” Appl. Phys. Lett., vol. 99,
+no. 12, p. 123101, 2011.
+16. R. Sajjad, S. Sutar, J. U. Lee, and A. Ghosh, “Manifestation of
+chiral tunneling at a tilted graphene pn junction,” Phys. Rev. B,
+vol. 86, p. 155412, 2012.
+17. J. Wang, E. Polizzi, and M. Lundstrom, “A three-dimensional
+quantum simulation of silicon nanowire transistors with the
+effective-mass approximation,” Journal of Applied Physics,
+vol. 96, no. 4, pp. 2192–2203, 2004.
+18. M. Bescond, K. Nehari, J. Autran, N. Cavassilas, D. Munteanu,
+and M. Lannoo, “3d quantum modeling and simulation of
+multiple-gate nanowire mosfets,” in Electron Devices Meeting,
+2004. IEDM Technical Digest. IEEE International, dec. 2004, pp.
+617 – 620.
+19. M. Luisier, A. Schenk, W. Fichtner, and G. Klimeck, “Atomistic
+simulation of nanowires in the s p3 d 5 s∗ tight-binding formalism:
+From boundary conditions to strain calculations,” Phys. Rev. B,
+vol. 74, p. 205323, 2006.
+20. K. Nehari, N. Cavassilas, F. Michelini, M. Bescond, J. L. Au-
+tran, and M. Lannoo, “Full-band study of current across silicon
+nanowire transistors,” Applied Physics Letters, vol. 90, no. 13, p.
+132112, 2007.
+
+21. M. Shin, “Quantum simulation of device characteristics of sili-
+con nanowire fets,” Nanotechnology, IEEE Transactions on, vol. 6,
+no. 2, pp. 230 –237, march 2007.
+22. R. N. Sajjad, K. Alam, and Q. Khosru, “Parametrization of a sil-
+icon nanowire effective mass model from sp3d5s* orbital basis
+calculations,” Semiconductor Science and Technology, vol. 24, p.
+045023, 2009.
+23. A. R. Rocha, V. M. Garcia-suarez, S. W. Bailey, C. J. Lambert,
+J. Ferrer, and S. Sanvito, “Towards molecular spintronics,” Nat
+Mater, vol. 4, no. 4, pp. 335–339, 2005.
+24. S. Salahuddin and S. Datta, “Self-consistent simulation of hybrid
+spintronic devices,” in Electron Devices Meeting, 2006. IEDM
+’06. International, dec. 2006, pp. 1 –4.
+25. N. Mingo and L. Yang, “Phonon transport in nanowires coated
+with an amorphous material: An atomistic green’s function ap-
+proach,” Phys. Rev. B, vol. 68, p. 245406, 2003.
+26. N. Mingo, “Anharmonic phonon flow through molecular-sized
+junctions,” Phys. Rev. B, vol. 74, p. 125402, 2006.
+27. X. Wang, Y. Ouyang, X. Li, H. Wang, J. Guo, and H. Dai, “Room-
+temperature all-semiconducting sub-10-nm graphene nanoribbon
+field-effect transistors,” Phys. Rev. Lett., vol. 100, no. 20, p.
+206803, May 2008.
+28. M. Galperin, S. Toledo, and A. Nitzan, “Numerical computation
+of tunneling fluxes,” The Journal of Chemical Physics, vol. 117,
+no. 23, pp. 10 817–10 826, 2002.
+29. A. Svizhenko, M. P. Anantram, T. R. Govindan, B. Biegel, and
+R. Venugopal, “Two-dimensional quantum mechanical modeling
+of nanotransistors,” Journal of Applied Physics, vol. 91, no. 4, pp.
+2343–2354, 2002.
+30. R. Lake, G. Klimeck, R. C. Bowen, and D. Jovanovic, “Single and
+multiband modeling of quantum electron transport through lay-
+ered semiconductor devices,” Journal of Applied Physics, vol. 81,
+no. 12, pp. 7845–7869, 1997.
+31. S. Sutar, E. S. Comfort, J. Liu, T. Taniguchi, K. Watanabe, and
+J. U. Lee, “Angle-dependent carrier transmission in graphene pn
+junctions,” Nano Letters, vol. 12, no. 9, pp. 4460–4464, 2012.
+32. Y.-W. Tan, Y. Zhang, K. Bolotin, Y. Zhao, S. Adam, E. H. Hwang,
+S. Das Sarma, H. L. Stormer, and P. Kim, “Measurement of scat-
+tering rate and minimum conductivity in graphene,” Phys. Rev.
+Lett., vol. 99, p. 246803, 2007.
+33. F. Miao, S. Wijeratne, Y. Zhang, U. C. Coskun, W. Bao, and C. N.
+Lau, “Phase-coherent transport in graphene quantum billiards,”
+Science, vol. 317, no. 5844, pp. 1530–1533, 2007.
+34. J.-H. Chen, C. Jang, S. Adam, M. S. Fuhrer, E. D. Williams, and
+M. Ishigami, “Charged impurity scattering in graphene,” Nat Phys,
+vol. 4, pp. 377–381, 2008.
+35. J. Tworzydło, B. Trauzettel, M. Titov, A. Rycerz, and C. W. J.
+Beenakker, “Sub-poissonian shot noise in graphene,” Phys. Rev.
+Lett., vol. 96, p. 246802, 2006.
+36. K. S. Novoselov, A. K. Geim, S. V. Morozov, D. Jiang, M. I. Kat-
+snelson, I. V. Grigorieva, S. V. Dubonos, and A. A. Firsov, “Two-
+dimensional gas of massless dirac fermions in graphene,” Nature,
+vol. 438, no. 7065, pp. 197–200, 2005.
+37. Y. Zhang, Y.-W. Tan, H. L. Stormer, and P. Kim, “Experimen-
+tal observation of the quantum hall effect and berry’s phase in
+graphene,” Nature, vol. 438, no. 7065, pp. 201–204, 2005.
+38. E. Mccann and V. I. Fal’ko, “Landau-Level Degeneracy and Quan-
+tum Hall Effect in a Graphite Bilayer,” Phys. Rev. Lett., vol. 96, p.
+086805, Mar 2006.
+39. B. Huard et al., “Transport measurements across a tunable po-
+tential barrier in graphene,” Phys. Rev. Lett., vol. 98, no. 23, p.
+236803, Jun 2007.
+40. N. Stander, B. Huard, and D. Goldhaber-Gordon, “Evidence for
+klein tunneling in graphene p-n junctions,” Phys. Rev. Lett., vol.
+102, p. 026807, Jan 2009.
+41. J. R. Williams, L. DiCarlo, and C. M. Marcus, “Quantum hall ef-
+fect in a gate-controlled p-n junction of graphene,” Science, vol.
+317, no. 5838, pp. 638–641, 2007.
+
+Atomistic Non-equilibrium Green’s function simulation of graphene based heterojunctions
+
+15
+
+42. D. A. Abanin and L. S. Levitov, “Quantized transport in graphene
+p-n junctions in a magnetic field,” Science, vol. 317, no. 5838, p.
+641, 2007.
+43. J. Tworzydło, I. Snyman, A. R. Akhmerov, and C. W. J.
+Beenakker, “Valley-isospin dependence of the quantum hall ef-
+fect in a graphene p-n junction,” Phys. Rev. B, vol. 76, p. 035411,
+2007.
+44. T. Low, “Ballistic-ohmic quantum hall plateau transition in a
+graphene p-n junction,” Phys. Rev. B, vol. 80, p. 205423, 2009.
+45. A. R. Akhmerov, J. H. Bardarson, A. Rycerz, and C. W. J.
+Beenakker, “Theory of
+in graphene
+the valley-valve effect
+nanoribbons,” Phys. Rev. B, vol. 77, p. 205416, 2008.
+46. B. Ozyilmaz, P. Jarillo-Herrero, D. Efetov, D. A. Abanin, L. S.
+Levitov, and P. Kim, “Electronic transport and quantum hall effect
+in bipolar graphene p-n- p junctions,” Phys. Rev. Lett., vol. 99, p.
+166804, 2007.
+47. A. F. Young and P. Kim, “Quantum interference and klein tun-
+nelling in graphene heterojunctions,” Nat Phys, vol. 5, no. 3, pp.
+222–226, 2009.
+48. A. H. Castro Neto, F. Guinea, N. M. R. Peres, K. S. Novoselov, and
+A. K. Geim, “The electronic properties of graphene,” Rev. Mod.
+Phys., vol. 81, no. 1, pp. 109–162, Jan 2009.
+49. V. V. Cheianov and V. I. Fal’ko, “Selective transmission of dirac
+electrons and ballistic magnetoresistance of n − p junctions in
+graphene,” Phys. Rev. B, vol. 74, p. 041403, Jul 2006.
+
+

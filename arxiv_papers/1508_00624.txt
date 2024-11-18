@@ -1,0 +1,1099 @@
+
+High field response of gated graphene at THz frequencies
+
+Hadi Razavipour, Wayne Yang, Abdeladim Guermoune, Michael Hilke, and David G. Cooke∗
+
+Department of Physics, McGill University, Montr´eal, Qu´ebec, Canada
+
+Department of Physics, Engineering Physics and Astronomy, Queen's University, Kingston, Ontario, Canada
+
+Ibraheem Al-Naib and Marc M. Dignam
+
+D´epartement de g´enie ´Electrique, ´Ecole de technologie sup´erieure, Montr´eal, Qu´ebec, Canada
+
+Fran¸cois Blanchard
+
+Hassan A. Hafez, Xin Chai, Denis Ferachou, and Tsuneyuki Ozaki
+
+INRS-EMT, Advanced Laser Light Source, Varennes, Qu´ebec, Canada
+
+D´epartement de Chimie, Universit´e de Montr´eal, Montr´eal, Qu´ebec, Canada
+
+Pierre L´evesque and Richard Martel
+
+We study the Fermi energy level dependence of nonlinear terahertz (THz) transmission of gated
+multi-layer and single-layer graphene transferred onto sapphire and quartz substrates. The two
+samples represent two limits of low-field impurity scattering: short-range neutral and long-range
+charged impurity scattering, respectively. We observe an increase in the transmission as the field
+amplitude is increased due to intraband absorption bleaching starting at fields above 8 kV/cm. This
+effect arises from a field-induced reduction in THz conductivity that depends strongly on the Fermi
+energy. We account for intraband absorption using a free carrier Drude model that includes neutral
+and charged impurity scattering as well as optical phonon scattering. We find that although the
+Fermi-level dependence in the monolayer and five-layer samples is quite different, both exhibit a
+strong dependence on the field amplitude that cannot be explained on the basis of an increase in
+the lattice temperature alone. Our results provide a deeper understanding of transport in graphene
+devices operating at THz frequencies and in modest kV/cm field strengths where nonlinearities
+exist.
+
+PACS numbers: 78.67.Wj, 72.20.Ht, 78.67.-n, 72.80.Vp
+
+I.
+
+INTRODUCTION
+
+gate which is transmissive to THz light (see Fig. 1).
+
+The well known linear electronic dispersion of graphene
+naturally gives rise to unusual optoelectronic properties,1
+potentially useful for high-speed modulators and the
+other active components. While it has been touted as
+an important material for terahertz (THz) frequency
+devices,2 charge transport properties at THz frequencies
+under field conditions commonly found in devices, on the
+order 10's kV/cm, are poorly understood. This is in part
+due to a lack of control over the extrinsic properties of the
+devices and graphene's sensitivity to its environment.3
+The electrodynamic response of doped graphene has pre-
+viously been studied in the low field, linear regime under
+gated conditions4 for frequencies ranging from near dc5
+to THz,6–10 mid IR11 and optical regimes.12 Under in-
+tense fields, however, charge carriers can acquire signifi-
+cant momentum and for Fermi energies (Ef ) close to the
+charge neutrality point (CNP), a complicated interplay
+between intra- and inter-band transitions can occur.13 A
+better understanding of these nonlinear interactions and
+their density dependence is needed for the future device
+design, which is the aim of this study. For this purpose,
+we study the THz electrodynamic response of graphene
+under high field conditions and controlled Fermi level
+through a gate voltage VG applied to an ionic gel top
+
+The development of efficient nonlinear optical methods
+for the generation of intense THz pulses14 has made it
+possible to time resolve the high field response of charge
+and spin excitations in materials.15 In graphene, due to a
+strong interband dipole matrix element that diverges at
+the charge neutrality (Dirac) point, the THz light-matter
+interaction can be easily pushed into the nonperturba-
+tive regime even by modest electric fields on the order
+of several 10's kV/cm.16,17 As the thermalization time of
+accelerated hot carriers is noted to be exceedingly short
+in graphene,18 these nonlinearities can be quantified as
+an elevated temperature of the electronic subsystem.23
+Recent works have demonstrated a strong THz field-
+induced transparency in room-temperature graphene19 in
+both doped19–22 and optically excited graphene.24 This
+phenomenon has been described by ultrafast intra-band
+carrier thermalization on the order of 30 fs,18 leading
+to a transient elevated carrier temperature on the order
+of 2000 K and subsequent optical phonon emission dur-
+ing cooling. In this model, the non-equilibrium heating
+and generation of optical phonons subsequently enhances
+the carrier scattering, suppressing the field-driven current
+and thus THz absorption in graphene. Other sources of
+carrier scattering that can potentially play an important
+role in the THz response of graphene include long-range
+
+2
+
+II. THEORETICAL MODEL
+
+In this section, we discuss the model that we use to
+account for the effects of tuning the Fermi energy on
+the transmission of THz light. Using this model, we
+extract the dependence of the scattering time on the
+Fermi energy and the lattice and electron temperature.
+There are four potentially important sources of carrier
+scattering in graphene: short-range impurity scattering,
+long-range impurity scattering, phonon scattering, and
+carrier-carrier scattering.
+
+Strictly speaking the carrier dynamics should be mod-
+eled using a full dynamic model that includes the nonlin-
+ear response arising from the linear band dispersion and
+interband transitions.13 We find however, in agreement
+with our previous work,24 that for the samples and field
+strengths considered here, there is essentially no intrin-
+sically nonlinear response and a linear Drude model is
+sufficient. The nonlinear response of the graphene is in-
+corporated in the model by employing a scattering time
+that depends on the THz field amplitude. Thus, in what
+follows, we employ the Drude model.
+
+First, we need to relate the transmission level to the
+conductivity of graphene. It can be easily shown that the
+transmission through the graphene sample normalized to
+the transmitted field through the substrate is given by6
+
+T (ω) =
+
+TG+S
+
+TS
+
+=
+
+1 + n
+
+1 + n + Zoσ(ω)N
+
+,
+
+(1)
+
+where TG+S and TS are the transmission through the
+sample and the substrate only, respectively, n is the re-
+fractive index of the substrate, σ(ω) is the complex ac
+sheet conductivity of a single layer of graphene and N is
+the number of graphene layers in the sample. The con-
+ductivity, dominated by the intra-band response at THz
+frequencies is given by a simple Drude model 11
+
+σ(ω) =
+
+D
+
+(1/τ − iω)
+
+,
+
+(2)
+
+where ω is the angular frequency, τ is the total carrier
+momentum scattering time, and D is the Drude weight
+given by9,10
+
+(cid:20)
+
+(cid:21)
+
+µf
+
+2kBTe
+
+D =
+
+2e2kBTe
+(π2)
+
+ln
+
+2cosh
+
+,
+
+(3)
+
+where e is the electron charge, kB is the Boltzmann
+constant, Te is the electron temperature,  is the re-
+duced Planck's constant, and µf is the chemical poten-
+tial. For simplicity, the chemical potential is considered
+to be equal to the Fermi energy at room temperature.
+However, as the electron temperature rises, we adjust
+the chemical potential so that the net charge on the
+graphene is unchanged as the temperature rises. The
+adjusted chemical potential along with the correspond-
+ing temperature are used then to calculate the Drude
+
+FIG. 1. (a) Schematic of the graphene sample on a substrate
+with gold four-point-probe contacts and a side gate contact.
+The broadband THz pulses traverse the sample at normal
+incidence. (b) The mechanism for ionic gating of graphene is
+shown in the inset, illustrating the accumulated Debye layer
+under a gate voltage VG.
+
+impurity scattering, due to the presence of the charged
+impurities in the substrate, short-range scattering, due
+to neutral impurities or disorder in the graphene itself,
+and carrier-carrier scattering. While impurity scattering
+dominates at low lattice temperatures, optical phonon
+scattering becomes more dominant at higher tempera-
+tures (T > 700 K).25
+
+Saturable absorption due to interband contributions
+has also been observed in the visible regime due to the
+phase-space filling effects as well as carrier heating. At
+THz frequencies, the threshold for an interband response
+is determined by the carrier density, as the carriers must
+be excited at twice the quasi-Fermi energy to undergo
+a transition.
+In this work, we study the Fermi energy
+dependence of the nonlinear THz transmission of gated
+graphene and show that although the nonlinear response
+is similar in different samples with different doping lev-
+els, it does not appear that this effect can be described
+by heating of the lattice alone. The paper is organized
+as follows. In Sec. II, we discuss the possible scattering
+mechanisms and their effects on THz transmission as a
+basis for the model used to describe the data. The results
+for both five-layer and single-layer graphene samples are
+presented in Sec. III. Finally, the conclusions are sum-
+marized in Sec. IV.
+
+weight. Using Eqs. (1-3), we can extract the total ef-
+fective scattering time τ for any measured transmission
+level for each gate voltage and THz field amplitude. The
+gate voltage and field amplitude dependence of the scat-
+tering time can therefore be directly obtained from the
+THz transmission data once the electron temperature is
+determined.
+
+We now turn to the model that we employ for the
+scattering time used in the Drude model. We present
+a simple model of the effects of the lattice temperature
+and the carrier density on the scattering times based on
+three scattering mechanisms: short-range neutral impu-
+rity scattering, charged long-range impurity scattering
+and scattering due to absorption of optical phonons. Al-
+though there can be contributions to the scattering rate
+due to interactions with acoustic phonons, these are usu-
+ally considered to be relatively small at the temperatures
+considered here.29 We do not include carrier-carrier scat-
+tering due to the difficulties in accurately modelling its
+effects and because, for similar Fermi energies and THz
+field amplitudes, it has been shown that carrier-carrier
+scattering can be neglected without qualitatively chang-
+ing the results.26 We will return to this issue when dis-
+cussing our field-dependent results.
+
+The expression for the total scattering rate is thus
+
+given by
+
+1
+τ
+
+=
+
+1
+
+τimp
+
++
+
+1
+τop
+
+,
+
+(4)
+
+where τimp is the impurity scattering time τop is the opti-
+cal phonon scattering time. The impurity scattering rate
+is given by
+
+1
+
+τimp
+
+=
+
+1
+τsr
+
++
+
+1
+
+τCoul
+
++
+
+1
+τml
+
+.
+
+(5)
+
+In this expression, 1/τsr is the short-range neutral impu-
+rity scattering rate, which has been shown theoretically
+to be linearly dependent on the energy of the carriers,27;
+in our model, we take this rate to be proportional to the
+average energy per carrier with respect to the Dirac point
+K, which is given by
+
+{ρee(K + k) + ρhh(K + k)} vF k
+
+(cid:80)
+
+(cid:80)
+
+Eav =
+
+k
+
+{ρee(K + k) + ρhh(K + k)}
+
+,
+
+(6)
+
+k
+
+where ρee(ρhh) is the free electron (hole) population den-
+sity, and vF is the Fermi velocity. The second term in the
+impurity scattering rate is, τCoul, which is due to charged
+long-range impurities. This rate has been shown to be
+inversely proportional to the square root of the carrier
+density (due to carrier screening)28. Finally, τml is an
+additional gate-voltage-independent scattering time that
+we find is necessary in order to model the bias depen-
+dence of the scattering time in our multi-layer sample.
+The physical origin of this term is not clear, but it may
+be due to scattering from the ionic gel or is perhaps arises
+
+3
+
+due to a correction term in the relationship between the
+gate voltage and the Fermi energy. Thus, the final ex-
+pression for the impurity scattering rate is
+
+1
+
+τimp
+
+= csrEav +
+
+cCoul
+Eef f
+
++
+
+1
+τml
+
+,
+
+(7)
+
+where csr and cCoul are constants that are experimentally
+determined and are dependent on the impurity densities,
+and Eef f is the effective Fermi energy that corresponds
+to the square root of the carrier density and is given by
+Dπ2/e2.
+
+We now turn to the scattering due to optical phonons.
+There are two potential types of optical phonons that can
+contribute to scattering: optical phonons in the graphene
+itself and polar surface phonons in the substrate.41,42
+We find, using the parameters in Ref. 41 that, due to
+the weak coupling strength, the scattering rate contribu-
+tion from the surface phonons in both substrate materials
+is much smaller than those due to the graphene optical
+phonons. Thus, in what follows, we neglect the phonons
+in the substrate and include only the contribution from
+the phonons in the graphene itself.29
+
+in principle,
+
+Previous studies have shown that energy transfer from
+electrons to phonons takes place on a timescale of about
+100 fs.30,31 Thus,
+if there are electrons
+that have been driven by the field more than an optical
+phonon energy above any vacant states, one would ex-
+pect emission of optical phonons over the pulse duration,
+which would increase the lattice temperature. However,
+without performing a detailed simulation that tracks the
+energies of individual electrons, it is very difficult to accu-
+rately include this contribution to the scattering. Thus,
+for simplicity, we only include the process of phonon ab-
+sorption, but not phonon emission.
+
+The optical phonon scattering rate due to optical
+
+phonon emission in the graphene is given by
+
+1
+τop
+
+=
+
+D2
+o
+(22v2
+F σmωo)
+
+(Eav + ωo)
+(eωo/kB Tl − 1)
+
+,
+
+(8)
+
+where ωo = 147 meV is the graphene optical phonon
+energy, σm = 7.6 × 10−8 g/cm2 is the 2D mass density
+of graphene29, Do = 5 × 109 eV/cm is the deformation
+potential for the optical phonons32 and Tl is the lattice
+temperature. Various values for the optical phonon en-
+ergy and deformation potential have been reported in the
+literature29,32–34. We employ those found in Ref. 24, al-
+though, as we discuss in the following sections, we have
+considered the effect of modifying the deformation po-
+tential on the results. We finally note that in all cases we
+assume equality of the carrier and lattice temperatures
+that appear respectively in the Drude weight (Eq. (3))
+and the optical phonon scattering rate (Eq. (8)).
+
+III. EXPERIMENTAL RESULTS AND
+
+DISCUSSION
+
+4
+
+In order to investigate the effect of the substrates and
+number of graphene layers on the transport properties
+of graphene to the intense THz field, we fabricated two
+different samples treated in the next two sections. The
+first is a five layer graphene sample, fabricated by trans-
+ferring sequentially monolayer graphene onto a sapphire
+substrate, and the second a monolayer sample on a quartz
+substrate. The substrates were patterned with 5/100 nm
+thickness of Cr/Au (prior to transfer) for the electrical
+four-point-probe measurements as shown in Fig. 1. The
+gate was created by placing the fifth contact at the edge
+of the substrate so that it is in contact with the ionic gel
+for electrochemical doping. The ionic gel was fabricated
+using the method proposed by Ref. 35 and transferred to
+the sample under an inert glovebox environment. A uni-
+form layer of ionic gel with a thickness of less than 50 µm
+was spin coated on the graphene sample as well as the
+bare substrate to serve as a reference. Upon applying the
+gate voltage, mobile ions are transferred to the surface of
+the graphene to form a Debye layer with a thickness on
+the order of 1 nm.36 This type of solid polymer electrolyte
+gate is much thinner than the conventional 300 nm SiO2
+back gate, thus a much higher gate capacitance can be
+achieved. With the electrolyte ionic gating, high doping
+levels on the order of 5 × 1013 cm−2 are possible.36 The
+gating response of the graphene is measured in terms of
+the electrical current driven from the source to the drain
+electrode through the graphene channel as a function of
+VG. In order to estimate the Fermi energy as a function of
+gate voltage relative to the charge neutrality point volt-
+age (VCN P ), we use the following equation from Ref. 10
+for a similar geometry and ionic gel, where
+
+Ef = 0.346(cid:112)(VG − VCN P )
+
+[eV ].
+
+(9)
+
+The case of VG = VCN P needs to be treated separately
+because, in agreement with other researchers,37 we find
+that due to spatial inhomogeneity of the charge density
+across the graphene sample an effective Ef must be de-
+termined at the nominal CNP gate voltage, in a range of
+±100 meV.10
+
+The high-field time-domain THz spectrometer was de-
+veloped based on tilted-pulse front optical rectification in
+lithium niobate,14 with peak THz field amplitudes lim-
+ited to 70 kV/cm in this work. The bandwidth of the
+THz pulses was ∼ 3 THz and was detected using electro-
+optic sampling in a 300 µm thick (110)-cut GaP crystal.
+The emitted THz pulses were collected and focused by a
+set of off-axis parabolic mirrors to a 450 µm spot size as
+determined by an uncooled microbolometer camera. The
+graphene sample was positioned carefully at the THz fo-
+cus for high-field transmission measurements at normal
+incidence. The amplitude of the THz pulses was varied
+using a pair of wire-grid polarizers prior to the sample in
+the collimated section of the beam. The measurements
+were performed by sweeping the graphene gate voltage
+
+FIG. 2.
+(a) Four-point-probe measurements of the 5-layer
+sample dc resistance with the charge neutrality point indi-
+cated by the resistance peak.
+(b) The Raman data (with
+the G and 2D peaks) of single layer of CVD grown graphene
+before stacking to form the 5 layers.
+
+and registering the value of the transmitted peak THz
+electric field. No THz pulse reshaping was observed as
+the gate voltage varies from −2.5 V (below the Dirac
+point) to 2.5 V , thus all information on the nonlinear
+transmission can be quantified by monitoring the THz
+pulse peak field transmission.
+
+A. Five-layer sample
+
+Large-area, single-layer graphene was fabricated by
+chemical vapor deposition (CVD) on Cu-foil using stan-
+dard techniques. Poly(methyl methacrylate) (PMMA) is
+used to transfer the graphene to a c-cut sapphire sub-
+strate with refractive index of 3.31 and the PMMA layer
+was removed. The process was repeated five times so that
+the five-layer graphene sample was obtained, with the
+layers electrically decoupled from one another. Fig. 2(a)
+shows the sheet resistance of graphene as a function of
+gate voltage. The CNP is specified as the resistance
+maximum which occurs in this case at VG = −0.8 V .
+We note that hysteresis was observed in these resistance
+measurements when sweeping the gate voltage, which is
+commonly observed in ionic gel gates.38,39 We therefore
+only perform measurements on the positive sweep of the
+gate voltage for repeatability. The Debye absorption of
+
+5
+
+E2
+samp
+E2
+
+FIG. 4. For the five layer sample: (a) THz power transmission
+defined as  T =
+, curve fitted by Eq. 10 for two
+different gate voltages, one at the Dirac point (VG − VCN P =
+0 V , red line) and the other one at a n-doped Fermi level
+corresponding to (VG − VCN P = −2.4 V , blue line). (b-d) Fit
+parameters Esat, Tlin, and Tns extracted from Eq. (10) for
+power transmission curves as a function of gate voltage.
+
+ref
+
+of graphene and the substrate, and Eref is the peak field
+transmitted through the ionic gel and the substrate only.
+The model is given by:19
+
+T (Einc) = Tns
+
+(eEinc
+
+2/Esat
+
+2 − 1)]
+
+ln[1 + Tlin
+Tns
+Einc
+
+2/Esat
+
+2
+
+(10)
+
+where Einc, Esat, Tlin and Tns are the incident peak elec-
+tric field, the saturation electric field, the linear power
+transmission coefficient and the nonsaturable power
+transmission coefficient, respectively.
+
+In Fig. 4(a) we present the measured transmitted
+power as a function of the incident field along with the
+fit using Eq. (10) for VG = VCN P (corresponding to
+the CNP, red line) and VG − VCN P = −2.4 V (i.e.
+highly the n-doped case, blue line). The saturation on-
+T, occurs at a lower
+set of the power transmission,
+Einc = 9.7 kV/cm at the CNP relative to what occurs
+for higher doping, as demonstrated by Fig. 4(b). Tlin
+[Fig. 4(c)] and Tns [Fig. 4(d)] are higher at the CNP
+than at other Fermi levels, overall expected due to the
+larger conductivity of the doped graphene. The satura-
+tion behavior for the curves in Fig. 4(a) is explained by a
+decrease in carrier mobility as the THz excitation redis-
+tributes carriers within the conduction band.19 There-
+fore, the decrease in Esat when the gate voltage ap-
+proaches the Dirac point can be attributed to an increase
+in the scattering rate when the Fermi level is tuned to the
+CNP, as we shall discuss shortly.
+
+We now use the model presented in Section II to ex-
+tract the scattering time as a function of the Fermi energy
+and the incident THz field. While the Fermi energy may
+
+FIG. 3. For the five-layer sample: (a) The THz pulse peak
+field transmission through the gated graphene sample for the
+field strengths indicated, normalized to the transmission at
+the Dirac point at VG − VCN P = 0. (b) The field dependence
+of the THz peak field transmission  t = EG+S
+at various
+gate voltages. Einc is the incident THz electric field at the
+graphene sample position.
+
+ES
+
+the ionic gel is located at lower frequencies than THz,
+producing a transparent top gated graphene sample. All
+measurements in this work are performed at room tem-
+perature. Fig. 2(b) shows the Raman spectroscopy of one
+of the five layers of graphene before stacking. The ratio
+between the 2D and G peak values is 2.8 which indicates
+high quality single layer graphene.40
+
+Fig. 3(a) shows the variation of the transmitted peak
+THz electric field (normalized to its maximum value at
+the Dirac point) as a function of gate voltage sweep
+for different incident peak electric fields in the range
+of 2 kV/cm to 70 kV/cm. The THz modulation in-
+duced by the gate voltage sweep (Fermi level change in
+graphene) is a strongly nonlinear function of the peak
+electric field value. At low fields, gate-induced THz mod-
+ulation is more than 31% whereas for higher field ampli-
+tudes the modulation decreases and saturates at a value
+of 7.4% above 60 kV/cm. As in previous work on un-
+gated graphene, a saturable power transmission function
+can be used to phenomenologically describe the behavior
+observed in Fig. 3(b).19 The power transmission is de-
+fined as  T =
+, where Esamp is the peak THz
+electric field transmitted through the ionic gel, 5 layers
+
+(cid:16) Esamp
+
+(cid:17)2
+
+Eref
+
+not be precisely the same in all 5 layers of the graphene
+sample, for simplicity we use the same value for the five
+layers. Similarly, we assume that the scattering time is
+the same in all layers. We estimate Ef from gate voltages
+other than the CNP voltage using Eq. 9. To determine
+the Fermi energy for VG = VCN P , we first use the model
+of Section II to extract the fitting parameters, csr, cCoul
+and τml in Eq. 7 for the transmission data for the lowest
+THz field amplitude of 2 kV/cm. Taking the lattice and
+electron temperatures at this lowest field to be 300 K, we
+obtain csr=49 ps−1eV −1, cCoul = 0 and 1
+=7.3 ps−1.
+The data as well as the fit are shown in Fig. 5(a). We now
+extract an effective Fermi energy at the VG = VCN P of
+approximately 90 meV by extrapolating the fitting curve.
+This value is in good agreement with other studies that
+used the same mechanism to tune the Fermi energy.10 We
+find from our fit that the contribution of charged impu-
+rities is negligible and that at this temperature and field
+strength, the contribution of the optical phonons is also
+very small. Thus, the dominant contribution to scatter-
+ing at this lowest field appears to arise from short-range
+impurities, which results in the approximately hyperbolic
+relationship between τ and Ef seen in the figure.27
+
+τml
+
+We now turn to the dependence of the scattering time
+on the incident field for different Fermi energies. Rather
+than using our temperature-dependent model of scatter-
+ing, we first assume that the electron and phonon tem-
+peratures do not change with the incident THz field am-
+plitude and simply extract the net scattering time as a
+function of the incident field strength to two different
+Fermi levels. This is plotted in Fig. 5(b). As can be
+seen, for both Fermi energies, the scattering time de-
+creases dramatically with increasing field amplitude. We
+see that the decrease in the scattering time with field is
+much larger for the low Fermi energy case. This would
+be expected if the increased scattering is due to a mech-
+anism that has a rate that is roughly proportional to
+the Fermi energy and that would increase at high fields.
+There are two likely candidates: optical phonon scatter-
+ing and carrier-carrier scattering.
+
+We first consider optical phonon scattering. When the
+field is higher, it heats the graphene up considerably; this,
+in turn results in a larger optical phonon population and
+a shorter scattering time. To test the viability of the
+optical phonon mechanism, we employed our model that
+includes the effects of electron and lattice temperature.
+Using the impurity scattering rates found at the lowest
+field and requiring that the electron and phonon temper-
+atures are equal, we were able to obtain good agreement
+with the experimental data for the transmission by using
+the temperature as a fitting parameter. We found that at
+the highest fields, the temperature required was approx-
+imately 1550 K. To determine if such temperatures are
+physically sensible, we compared the experimental result
+for the energy absorbed per unit area to the increase in
+the electron and phonon populations per unit area. We
+found that the required increase in the system energy
+was more than an order of magnitude greater than the
+
+6
+
+absorbed THz energy for the 70 kV/cm field. Most of
+the increase in the energy of the system when the tem-
+perature increases to such levels resides in the optical
+phonons, not the electrons. Because there is not uni-
+versal agreement as the values of the optical phonon en-
+ergy and deformation potential, we tried adjusting these
+parameters. However, we could not find any values of
+these parameters that yielded anything approaching en-
+ergy balance at all fields and Fermi energies for one set of
+parameters. We conclude from this, that for this sample
+at least, the decrease in the scattering time with increas-
+ing field does not arise entirely from an increase in the
+optical phonon population due to an increase in the lat-
+tice temperature.
+
+Another possible mechanism for the field dependent
+scattering is carrier-carrier scattering. This scattering
+rate increase rapidly as the carrier density increases (as
+observed). Moreover, it also increases with the energy of
+the carriers, which will occur when the field amplitude
+is high. Modeling carrier-carrier scattering with energy
+dependence would require a sophisticated Monte-Carlo
+or density matrix simulation. Thus, although we cannot
+rule out this mechanism, it is beyond the scope of the
+current work.
+
+We now examine the results for our monolayer
+graphene sample to see how its transmission depends on
+the Fermi energy and the THz field amplitude.
+
+B. Single-layer sample
+
+A single-layer graphene sample was prepared by chem-
+ical vapor deposition on Cu-foil and transferred onto a
+z-cut quartz substrate with a refractive index n = 1.96.
+The sheet resistance of this sample as a function of VG
+was determined by a two terminal measurement shown in
+Fig. 6(a) with the CNP indicated again by the resistance
+peak. Electron (hole) doping is induced by changing VG
+above (below) the CNP voltage VCN P and Eq. 9 is used
+to calculate the Fermi level energy. Fig. 6(b) shows the
+Raman spectra for the single layer graphene sample, with
+a 2D/G peak ratio of 1.78 confirming high quality mono-
+layer graphene.
+
+Fig. 7(a) shows the normalized THz peak electric field
+amplitude transmitted through the graphene when the
+Fermi-level is swept from -1 to 0.5 V. Again, our data
+does not show any phase change in the THz waveform
+transmitted through the graphene by increasing the in-
+cident THz field and so the conductivity change can be
+completely quantified by monitoring the peak transmis-
+sion. For the lowest THz peak electric field strength of 1.5
+kV/cm, a significant 20% reduction in the peak transmis-
+sion was observed at VG - VCN P = −1 V or Ef = −340
+meV. As expected, the increased doping leads to higher
+conductivity and therefore absorption of the THz pulse,
+however, increasing the incident THz field leads to a re-
+duction in the doping-induced absorption as in the 5-
+layer sample.21,24 As in the 5-layer case, a continuous
+
+7
+
+FIG. 5. (a) The impurity scattering time (τimp) versus Fermi
+energy, and (b) total scattering time versus incident field am-
+plitude at the CNP and at the highest Fermi level of 442 meV
+for the five-layer sample. Note that in (a), the value for Ef
+the first point is determined via a fit to the curve.
+
+reduction in field-induced transmission modulation oc-
+curs as the gate voltage approaches the charge neutrality
+point. This behavior is best seen in Fig. 7(b), showing
+the peak transmission as a function of the THz peak field
+strength for various applied VG. The THz field-induced
+transparency (the percentage increase in transmission)
+is more pronounced for high doping levels. As with the
+five-layer sample, we find that the induced nonlinearity is
+mainly due to an increase in the carrier scattering when
+the THz field is increased.21,24
+
+We extract the scattering behavior by using the model
+of Section II. We extract the low-field scattering parame-
+ters in the same way as was done in the last section taking
+the temperature to be room temperature. The transmis-
+sion data at the lowest field amplitude can be well repro-
+duced by the theory only if we consider both short-range
+neutral and long-range charged impurity scattering in ad-
+dition to optical phonon scattering. We find that the best
+fit is obtained for csr =30 ps−1eV −1, cCoul =3.63 ps−1eV
+and and τml =0. The data as well as the fit are shown in
+Fig. 8(a). Note that the increase in the scattering time
+with Fermi energy indicates that long range charged im-
+
+(a) Two terminal measurements of the resistance
+FIG. 6.
+and (b) the Raman data (with the G and 2D peaks) of the
+monolayer sample.
+
+purity scattering is dominant at this field. The presence
+of long range scattering in this sample may be linked
+with the direct contact of the graphene with the SiO2
+substrate as opposed to the 5 layer sample, where 4 of
+the layers are physically removed from the substrate and
+the effects of charged impurities on carriers in the up-
+per layers are partially screened by carriers in the lower
+ones. Finally, using the extrapolation of the fit to low
+Fermi energy, we extract and Fermi energy of 88 meV
+for the bias VG = VCN P .
+
+We now use the same constant-temperature model of
+the previous section to determine the net scattering time
+as a function of the incident field strength for the five dif-
+ferent Fermi levels and plot these times in Fig. 8(b). As
+in the five-layer case, the scattering time decreases dra-
+matically with increasing field amplitude for all Fermi en-
+ergies. However, in contrast to the results of the previous
+section, we find that the decrease in the scattering time
+with the field is much smaller when VG = VCN P . One
+reason for this difference is that in the monolayer, the
+low-field scattering time is the shortest when the Fermi
+energy is the lowest, thus the effect of any additional scat-
+tering channels is smaller. At the highest fields, just as
+in the five-layer sample, the scattering time is the largest
+when VG = VCN P . This seems to indicate again that
+
+8
+
+FIG. 7. (a) The normalized peak transmission as a function of
+the gate voltage for various THz peak electric field strengths
+and (b) the dependence of the peak transmission on the THz
+peak electric field for various doping levels for the monolayer
+sample.
+
+FIG. 8. (a) The impurity scattering time (τimp) versus Fermi
+energy at the lowest incident THz field of 1.5 kV/cm, and (b)
+the THz field dependence of (a) the carrier scattering rate.
+Note that in (a), the value for Ef the first point is determined
+via a fit to the curve.
+
+the field-dependent scattering rate is larger when the car-
+rier density (or perhaps average carrier energy) is larger.
+However, the trend is not the same for the intermediate
+Fermi energies, where at the highest field, the scattering
+rate is larger when the Fermi energy is smaller (with the
+exception of the CNP result). It appears that the result
+at the CNP is somewhat of an anomaly in this sample.
+
+Although, the Fermi energy dependence of the field-
+dependent scattering component is not as clear as in
+the five-layer sample, we again examined where optical-
+phonon scattering is a possible mechanism. We modeled
+the optical phonon scattering by taking the temperature
+to be a fitting parameter. Again, although we could re-
+produce the observed transmission curves, the tempera-
+tures required were very large. The temperatures at the
+highest field ranged from 1300 K for the highest Fermi en-
+ergy to almost 3000 K at the CNP. Again, such huge tem-
+peratures require that the energy deposited in the system
+is a factor of 3 to 10 larger than the energy that is experi-
+mentally found to be absorbed by the graphene. As in the
+five-layer case, we tried adjusting the phonon energy and
+deformation potential, but for all combinations that we
+
+tried we could not achieve anything approaching energy
+balance at all fields and Fermi energies. We thus conclude
+that for this sample as well, optical phonons cannot be
+the major contributor to the increase in the scattering
+rate with increasing field. In this sample, however, due
+to the more complex dependence of the field-dependent
+scattering contribution on the Fermi energy, it is not as
+clear that carrier-carrier scattering is a likely candidate.
+
+IV. CONCLUSION
+
+We have studied nonlinear THz light-matter interac-
+tion for both monolayer graphene on quartz and a stack
+of 5 monolayers of graphene on sapphire under the con-
+trolled Fermi level conditions. The two samples exhibited
+opposite dependencies on the Fermi energy for low THz
+fields. The monolayer sample scattering rate was domi-
+nated by charged impurities, while the five layer sample
+scattering was neutral impurity dominated. This differ-
+ence is likely explained as arising from different prepara-
+tion recipes as well as differences in the substrates.
+
+We also observed a strong increase in the THz trans-
+
+9
+
+mission with increasing field that occurs for THz peak
+electric fields as low as 8 kV/cm. This increase appears
+to result from a decrease in the carrier scattering times
+with increasing field. Our analyses indicate that opti-
+cal phonon absorption is not likely the main source of
+this field-induced increase in the scattering rate. The
+source of this increase remains uncertain. For the five
+layer sample, the most promising mechanism is perhaps
+carrier-carrier scattering, but for the monolayer sample
+the mechanism is even more unclear.
+
+This work points to the importance of future modelling
+of full carrier and lattice dynamics in graphene excited by
+intense THz pulses to determine the main source of the
+strongly nonlinear response. The interaction of high field
+
+THz pulses with graphene is significantly dependent on
+Fermi energy. Moreover, given the variability in process-
+ing of graphene films, we show that it is entirely possible
+that different impurity scattering mechanisms dominate
+in different samples, even though the field dependence is
+similar for a fixed Fermi energy. Thus any comprehen-
+sive study must be under controlled gated conditions. We
+anticipate that our findings will be important for future
+designs of graphene devices operating at THz frequencies,
+influencing performance due to nonlinearities arising at
+the kV/cm operating fields.
+
+The authors gratefully acknowledge funding support
+
+from NSERC, FRQNT and CFI.
+
+1 K. S. A. Novoselov, A. K. Geim, S. V. B. Morozov,
+D. Jiang, M. I. V. Grigorieva, S. V. Dubonos, A. A. Firsov,
+Nature 438, 197-200 (2006).
+
+2 T. Otsuji, S. A. B. Tombet, A. Satou, H. Fukidome,
+M. Suemitsu, E. Sano, V. Popov, M. Ryzhii, V. Ryzhii,
+J. Phys. D: Appl. Phys. 45, 303001 (2012).
+
+3 C. J. Docherty, C. T. Lin, H. J. Joyce, R. J. Nicholas,
+L. M. Herz, L. J. Li, M. B. Johnston, Nat. Commun. 3,
+1228 (2012).
+
+4 F. Wang, Y. Zhang, C. Tian, C. Girit, A. Zettl, M. Crom-
+
+mie, Y. R. Shen, Sience 320, 206-209 (2008).
+
+5 Y. M. Lin, K. A. Jenkins, A. Valdes-Garcia, J. P. Small,
+
+D. B. Farmer, P. Avouris, Nano Lett. 9, 422-426 (2009).
+
+6 J. M. Dawlaty, S. Shivaraman, J. Strait, P. George,
+M. V. S. Chandrashekhar, F. Rana, M. G. Spencer, D. Vek-
+sler, Y. Chen, App. Phys. Lett. 93, 131905 (2008).
+
+7 J. D. Buron, D. H. Petersen, P. Bøggild, D. G. Cooke,
+M. Hilke, J. Sun, E. Whiteway, P. F. Nielsen, O. Hansen,
+A. Yurgens, Nano Lett. 12, 5074-5081 (2012).
+
+8 J. L. Tomaino, A. D. Jameson, J. W. Kevek, M. J. Paul,
+A. M. van der Zande, R. A. Barton, P. L. McEuen,
+E. D. Minot, Y. S. Lee, Opt. Expr. 19, 141-146 (2011).
+
+9 A. J. Frenzel, C. H. Lui, Y. C. Shin, J. Kong, N. Gedik,
+
+Phys. Rev. Lett. 113, 056602 (2014).
+
+oni, P. Hoffmann , Phys. Rev. Lett. 111, 027403 (2013).
+
+19 H. Y. Hwang, N. C. Brandt, H. Farhat, A. L. Hsu, J. Kong,
+K. A. Nelson, J. Phys. Chem. B 117, 15819-15824 (2013).
+20 H. A. Hafez, I. Al-Naib, K. Oguri, Y. Sekine, M. M. Dig-
+nam, A. Ibrahim, D. G. Cooke, S. Tanaka, F. Komori,
+H. Hibino, T. Ozaki, AIP Advances 4, 117118 (2014).
+
+21 M. J. Paul, Y. C. Chang, Z. J. Thompson, A. Stickel,
+J. Wardini, H. Choi, E. D. Minot, B. Hou, J. A. Nees,
+T. B. Norris, Y. S. Lee, New J. Phys. 15, 085019 (2013).
+22 M. J. Paul, B. Lee, J. L. Wardini, Z. J. Thompson,
+A. D. Stickel, A. Mousavian, H. Choi, E. D. Minot,
+Y. S. Lee, Appl. Phys. Lett. 105, 221107 (2014).
+
+23 Z. Mics, K. J. Tielrooij, K. Parvez, S. A. Jensen, I. Ivanov,
+X. Feng, K. Mullen, M. Bonn, D. Turchinovich, Nat. Com-
+mun. 6:7655 doi: 10.1038/ncomms8655 (2015).
+
+24 H. A. Hafez, I. Al-Naib, M. M. Dignam, Y. Sekine,
+K. Oguri, F. Blanchard, D. G. Cooke, S. Tanaka, F. Ko-
+mori, H. Hibino, T. Ozaki, Phys. Rev. B 91, 035422 (2015).
+25 W. S. Bao, S. Y. Liu, X. L. Lei, C. Wang, J. Phys. Condens.
+
+Matter. 21, 305302 (2009).
+
+26 I. Al-Naib, M. Poschmann, M. M. Dignam, Phys. Rev. B
+
+91, 205407 (2015).
+
+27 E. H. Hwang, S. D. Sarma, Phys. Rev. B 77, 195412 (2008).
+28 S. Das Sarma, S. Adam, E. H. Hwang, E. Rossi, Rev. Mod.
+
+10 S. F. Shi, T. T. Tang, B. Zeng, L. Ju, Q. Zhou, A. Zettl,
+
+Phys. 83, 407 (2011).
+
+F. Wang, Nano Lett. 14, 1578-1582 (2014).
+
+11 J. Horng, C. F. Chen, B. Geng, C. Girit, Y. Zhang, Z. Hao,
+H. A. Bechtel, M. Martin, A. Zettl, M. F. Crommie, Y. Ron
+Shen, F. Wang, Phys. Rev.B 83, 165113 (2011).
+
+12 K. F. Mak, M. Y. Sfeir, Y. Wu, C. H. Lui, J. A. Misewich,
+
+T. F. Heinz, Phys. Rev. Lett. 101, 196405 (2008).
+
+13 I. Al-Naib, J. E. Sipe, M. M. Dignam, Phys. Rev. B 90,
+
+245423 (2014).
+
+14 H. Hirori, A. Doi, F. Blanchard, K. Tanaka, Appl. Phys.
+
+Lett. 98, 091106 (2011).
+
+15 A. Pashkin, A. Sell, T. Kampfrath, R. Huber, New J. Phys.
+
+15, 065003 (2013).
+
+16 P. Bowlan, E. Martinez-Moreno, K. Reimann, T. Elsaesser,
+
+M. Woerner, Phys. Rev. B. 89, 041408 (2014).
+
+17 J. A. Crosse, X. Xu, M. S. Sherwin, R. B. Liu, Nat. Com-
+
+mun. 5, 4854 (2014).
+
+18 J. C. Johannsen, S. Ulstrup, F. Cilento, A. Crepaldi,
+M. Zacchigna, C. Cacho, I. .C. E. Turcu, E. Springate,
+F. Fromm, C. Raidel, T. Seyller, F. Parmigiani, M. Gri-
+
+29 T. Fang, A. Konar, H. Xing, D. Jena, Phys. Rev. B 84,
+
+125450 (2011).
+
+30 M. Breusing, C. Ropers, T. Elsaesser, Phys. Rev. Lett.
+
+102, 086809 (2009).
+
+31 C. H. Lui, K. F. Mak, J. Shan, T. F. Heinz, Phys. Rev.
+
+Lett. 105, 127404 (2010).
+
+32 N. Sule, I. Knezevic, J. Appl. Phys. 112, 053702 (2012).
+33 J. H. Strait, H. Wang, S. Shivaraman, V. Shields,
+
+M. Spencer, F. Rana, Nano Lett. 11, 4902-4906, (2011).
+
+34 E. H. Hwang, S. D. Sarma, Phys. Rev. B 79, 165404 (2009).
+35 C. F. Chen, C. H. Park, B. W. Boudouris, J. Horng,
+B. Geng, C. Girit, A. Zettl, M. F. Crommie, R. A. Segal-
+man, S. G. Louie, F. Wang, Nature 471, 617-620 (2011).
+36 A. Das, S. Pisana, B. Chakraborty, S. Piscanec, S. K. Saha,
+U. V. Waghmare, K. S. Novoselov, H. R. Krishnamurthy,
+A. K. Geim, A. C. Ferrari, A. K. Sood, Nature Nanotech.
+3, 210-215 (2008).
+
+37 J. Martin, N. Akerman, G. Ulbricht, T. Lohmann,
+J. H. Smet, K. Von Klitzing, A. Yacoby, Nat. Phys. 4,
+
+144-148, (2008).
+
+38 S. K. Lee, H. Y. Jang, S. Jang, E. Choi, B. H. Hong, J. Lee,
+
+S. Park, J. H. Ahn, Nano Lett. 12, 3472-3476 (2012).
+
+39 J. Ye, M. F. Craciun, M. Koshino, S. Russo, S. Inoue,
+H. Yuan, H. Shimotani, A. F. Morpurgo, Y. Iwasa, Proc.
+Natl. Acad. Sci. 108, 13002-13006 (2011).
+
+40 D. Graf, F. Molitor, K. Ensslin, C. Stampfer, A. Jungen,
+
+C. Hierold, L. Wirtz, Nano Lett. 7, 238-242 (2007).
+
+41 K. Aniruddha, F. Tian, J. Debdeep, Phys. Rev. B 82,
+
+115452 (2010).
+
+42 S. Berciaud, M. Y. Han, K. F. Mak, L. E. Brus, P. Kim,
+
+T. F. Heinz, Phys. Rev. Lett. 104, 227401 (2010).
+
+10
+
+

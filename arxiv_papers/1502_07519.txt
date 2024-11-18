@@ -1,0 +1,584 @@
+a
+
+Electric-field induced switching from fcc to hcp stacking of a single layer of Fe/Ni(111)
+
+1Institut fur Nanotechnologie, Karlsruhe Institute of Technology, 76344 Eggenstein-Leopoldshafen, Germany
+
+2Physikalisches Institut, Karlsruhe Institute of Technology, 76131 Karlsruhe, Germany
+
+Lukas Gerhard1, Moritz Peter2, Wulf Wulfhekel1,2
+
+We present a detailed study of an electric-field induced phase transition of a single layer of Fe on
+a Ni(111) substrate. Scanning tunneling microscopy at 4 K substrate temperature is used to provide
+the necessary electric field and to follow the transition from face-centered cubic to hexagonal close-
+packed stacking with atomic resolution.
+
+The concept of electric-field induced switching of mag-
+netic metallic nanosystems is of particular interest in
+the view of potential applications in data storage de-
+vices and led to a tremendous increase of research ac-
+tivities during the last few years1 -- 5.
+In the case of
+2 ML Fe islands on Cu(111), it has been shown that
+a martensitic phase transition between ferromagnetic
+body-centered cubic(bcc) and antiferromagnetic face-
+centered cubic (fcc) phases is induced upon application
+of high electric fields. Herein, the coexistence of two
+different crystallographic phases and the complex mag-
+netic order are closely interwoven3,6. Considering the
+interatomic distances between nearest neighbors dnn and
+the resulting lattice mismatch, a Ni(111) surface where
+dnn = 248 pm should be an ideal candidate to promote
+the coexistence of Fe fcc (dnn = 253 pm) and bcc (dnn =
+247 pm) films. The first layer of Fe/Ni(111) was consid-
+ered to nucleate in the hexagonal close-packed (hcp) sites
+in theoretical calculations and photoelectron diffraction
+experiments7,8, while in other experiments, the fcc sites
+seemed to be favorable9. This fact already hints at a pos-
+sible coexistence of fcc and hcp phases in the first layers
+of Fe/Ni(111), which is known for Fe/Ir(111)10,11. With
+increasing thickness, a transition from fcc to bcc was re-
+ported at thicknesses of 3 to 6 ML8,12. Altogether this
+makes the system of Fe/Ni(111) a complex but promising
+system in the view of possible magnetoelectric coupling
+(MEC).
+
+We studied the crystallographic structure of Fe films
+with a local thickness of 1 to 4 ML grown on a Ni(111)
+single crystal in a low temperature scanning tunneling
+microscope (STM). STM has been proven to be an ideal
+tool as it allows the application of extremely high electric
+fields and at the same time it offers unequaled spacial
+resolution. Here we fully exploit the potential of STM,
+directly imaging the transition of a 1 ML Fe film from fcc
+to hcp stacking with atomic resolution in electric fields
+of the order of 1 GeV/m.
+
+A Ni single crystal always includes a considerable
+amount of contaminations and an atomically clean
+Ni(111) could not be obtained by standard cleaning pro-
+cedures. After systematical testing, we finally obtained
+the lowest contamination (about 1 unwanted molecule
+per 100 Ni atoms, see Fig. 1a)) with the following prepa-
+ration procedure: After repeated cycles of annealing at
+temperatures > 700 ◦C in order to promote segregation of
+contaminants to the surface and cleaning by Argon sput-
+
+tering, the last sputtering was short, just enough as to
+remove residual contamination due to the previous an-
+nealing. The final annealing was shortened to about 1
+second at 400 ◦C to avoid further segregation, to reduce
+heating of the sample surroundings and thus to mini-
+mize cool-down time before deposition of Fe. A cool
+down is necessary to avoid intermixing of the imping-
+ing Fe atoms with the Ni(111) crystal. During this time
+(about 1 h at 1 · 10−10 mbar), the Ni(111) surface became
+partly contaminated. Such contamination leads to an ir-
+regular growth of the Fe film (see Fig. 1b)) and extended
+clusters with a regular 2 × 2 superstructure on the bare
+Ni and particularly on the deposited Fe film (see Fig.
+1c)). This superstructure can be explained by a hydro-
+gen induced reorganization of the atomic structure as it
+has been observed by An et al.13 or by carbon contam-
+ination which we found by Auger electron spectroscopy
+(not shown). Cleaner Fe films were obtained by the fol-
+lowing measures: 1) For the cool down the Ni(111) sam-
+ple was placed in the chamber containing the He cryostat
+which has a lower base pressure of residual gases (e. g.
+hydrogen). 2) Just before the deposition of Fe, the pres-
+sure in the preparation chamber was further improved
+by sublimation of titanium on the walls cooled with liq-
+uid nitrogen. Thereby a base pressure of 4 · 10−11 mbar
+was achieved during the deposition of Fe. A so-prepared
+submonolayer Fe film showed a well-ordered morphology
+with larger terraces and islands oriented along the h1 1 0i
+directions (see Fig. 1d)).
+
+In topographic measurements on the 1 ML thick Fe
+films, bright domain boundaries can be seen which en-
+close irregular domains (see Fig. 2a)). Measurements of
+the differential conductance dI/dV at energies close to
+the Fe surface state at −200 mV14 reveal the white lines
+in the topography as boundaries between two electroni-
+cally different domains. As can be seen in a map of the
+differential conductance (dI/dV ) taken at −130 mV (see
+inset in Fig. 2b)) the enclosed domains appear darker.
+In the dI/dV spectrum, the two phases of 1 ML Fe show
+different intensities in the negative energy range (see Fig.
+2b)). In order to identify the crystallographic structure of
+the two phases, we performed atomically resolved STM
+measurements. Fig. 2c) shows an enlarged view of a
+domain boundary with atomic resolution. The superim-
+posed hexagonal grid is adjusted to the Fe atoms outside
+the domain (on the lower part of the image) which have a
+perfectly hexagonal structure and follow the Ni substrate
+
+a)
+
+c)
+
+b)
+
+d)
+
+2
+
+c)
+
+hcp
+
+d)
+
+FIG. 1. a) Atomically resolved STM topography of the bare
+Ni(111) single crystal surface, 7 × 7 nm2. b), d) 60 × 60 nm2
+topography of similar amounts of Fe deposited at about 30 ◦C:
+b) Standard preparation leading to a highly contaminated
+surface and irregular islands with a 2 × 2 superstructure (c)
+induced by adsorbates on an Fe island (enclosed in red) and
+on the Ni surface. d) Optimized preparation with reduced
+surface contamination.
+
+stacking in an fcc order. Within the domain, the fcc grid
+(blue) does not lie on top of the Fe atoms but exactly in-
+between on threefold hollow sites. This indicates a hcp
+stacking of the Fe monolayer with respect to the Ni sub-
+strate inside the domain. Hence the observed boundaries
+are surface dislocations between fcc and hcp domains.
+About 10 % of the first Fe layer shows hcp stacking with
+domain boundaries mainly perpendicular to the Ni step
+edges. This is in agreement with photoelectron diffrac-
+tion measurements15. As can be seen in Fig. 2c), the
+introduction of the hcp domains leads to a reduction of
+the atomic density in the top layer of about 1.4 %. This
+is equivalent to a reduction of the strain energy of the fcc
+Fe film.
+
+To test for MEC, high electric fields were applied by
+increasing the applied bias voltage. In the 1 ML Fe film,
+it is possible to induce structural changes by the resulting
+high electric fields as is shown in Fig. 2: The same field
+of view is shown before (c) and after (d) an electric-field
+induced change. It can be seen that a small area of about
+20 atoms switched from the hcp domain to the fcc do-
+main thus shifting the domain boundary by about 1 nm.
+This transition corresponds to a collective displacement
+of the Fe atoms by 143 pm along the [1 2 1]f cc direction
+from the hcp threefold hollow sites to the fcc positions.
+The new domain boundary in this direction is confined
+to only one interatomic distance while it extends over 3
+to 5 interatomic distances in the pristine configuration.
+In a further experiment the bistability of the switching
+was confirmed. An hcp domain was imaged at a moder-
+ate electric field of 0.6 GV/m (see Fig. 3a)). The domain
+boundaries appear dark and the hcp and the fcc domains
+
+fcc
+
+FIG. 2. Fe/Ni(111): a) STM topography of a 1 ML Fe film
+(light gray) at a Ni step edge (black) with domain boundaries
+appearing in white. b) In a dI/dV map at −130 mV (see
+inset, position indicated by red rectangle in a)), two different
+intensities divide the 1 ML Fe terrace into domains. dI/dV
+spectra outside the domain on the Fe terrace (solid orange)
+and inside the domain (dashed blue) show different spectra
+for the two phases.
+c) Atomic resolution STM showing a
+coexistence of hcp and fcc lattices with light domain walls.
+The overlaid hexagonal grid is adjusted to the fcc lattice and
+colored orange on the fcc area and blue on the hcp area. d)
+Same area as in c) after an electric field-induced change of
+the lattice. About 20 atoms change their stacking from hcp
+to fcc thus shifting the domain boundary to the left by about
+1 nm.
+
+are marked with blue and orange. A high electric field
+pulse of 7.9 GV/m and 0.1 s was applied at the position
+marked with the red cross as to locally change the struc-
+ture. A second STM image at 0.6 GV/m shows the ma-
+nipulated configuration with a reduced hcp domain (see
+Fig.3b)). After a second electric field pulse, the original
+situation was restored (see Fig. 3c)).
+
+In order to prove that the observed switching is in-
+duced by the applied electric field, we performed a sys-
+tematic study varying the applied voltage and the dis-
+tance between tip and sample. For each distance, which
+we estimated from the tunneling current and bias volt-
+age, the same line across the hcp domain was scanned
+repeatedly while the bias voltage was increased. This al-
+lows to measure the critical value of the voltage at which
+the domain boundary is displaced (see Fig. 3d)). We
+repeated this experiment for a set of distances and the
+measured critical values can be nicely fitted by a linear
+distance dependence of the voltage as it is expected for
+a critical electric field. This excludes other mechanisms
+than the electric field because they would result in dis-
+tinctly different critical-voltage-distance relations3. The
+
+b)
+
+c)
+
+a)
+
+hcp
+
+fcc
+
+3
+
+fcc
+
+d)
+
+4
+
+3.5
+
+]
+
+V
+
+[
+ 
+
+3
+
+e
+g
+a
+
+2.5
+
+t
+l
+
+o
+v
+ 
+s
+a
+B
+
+i
+
+2
+
+1.5
+
+1
+
+2 nm
+
+fcc
+
+]
+
+V
+
+[
+ 
+
+e
+g
+a
+
+t
+l
+
+o
+v
+ 
+s
+a
+B
+
+i
+
+e)
+
+4
+
+3
+
+2
+
+1
+
+0
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+Tip-sample separation [Å]
+
+4
+
+5
+
+FIG. 3. Reproducible switching of the crystallographic struc-
+ture of 1 ML Fe/Ni(111) imaged on 6.25 × 6.25 nm2 (dI/dV
+map at −190 mV ). a) The initial hcp domain is indicated by a
+blue line, the fcc domain by a orange line, domain boundaries
+appear dark. An electric field pulse is applied on the position
+marked with the red cross after the acquisition of the image.
+The new configuration with a smaller hcp domain is imaged
+in b) with the initial position of the domains indicated by
+dashed lines. A second pulse brings the system back to the
+initial state (c)). Critical parameters for the transition: d)
+The same line across a hcp domain (blue frame) is repeatedly
+scanned while the voltage is ramped. Above a certain criti-
+cal voltage (here 2.3 V), the structure partially changes from
+hcp to fcc and the domain boundary (dark) is shifted to the
+right. Repetition of this measurement at different tip-sample
+separations gives the critical electric field shown in e). The
+measurement described in d) corresponds to one data point
+(black cross). The linear relation between the critical volt-
+age and the tip-sample separation corresponds to a critical
+electric field of about 10 GV/m.
+
+negative offset of the voltage for zero distance can be
+explained by the difference of the work functions of the
+tungsten tip and the Fe sample surface which induces a
+potential difference even without an externally applied
+bias. The slope of the linear fit gives the critical value
+of the electric field of about 10 GV/m (see Fig.3e)). This
+value is about one order of magnitude larger than the
+electric fields needed for MEC in 2 ML Fe/Cu(111)3,16.
+These high electric fields require a very stable configura-
+tion of the tip apex.
+
+Similar to the experiments on Fe/Cu(111), electric
+fields slightly lower than the critical values lead to switch-
+ing after a certain residence time16. This can be seen in
+Fig. 4a) which shows switching left and right of the do-
+main boundary during scanning at a constant electric
+field of 7.6 GV/m. However, this implies a high bias volt-
+age (in this case 3 V) which leads to a reduced contrast
+and a rather low signal-to-noise ratio. Therefore, the dis-
+tribution of the residence times ∆t is studied as follows
+(see Fig. 4b)): the displacement to the left is induced by
+electric field pulses of 1.4 GV/m during 0.1 s (at the po-
+sitions indicated in the Fig.), while the switching back
+
+FIG. 4. a) Switching the domain boundary left and right
+when scanning across an hcp domain at a constant field of
+7.6 GV/m (dI/dV at 3.7 V ). b) Switching left by field pulses
+of 1.4 GV/m and right by scanning at 1.0 GV/m across an hcp
+domain (blue) (dI/dV at −240 mV). c) In a histogram of the
+differential conductance, only two stable states are found. d)
+Exponential decay of the fcc state with a lifetime of 0.3 s.
+
+to the right happens after scanning at 1.0 GV/m for some
+time. A displacement to the right has never been ob-
+served during scanning at this value. The corresponding
+histogram of the measured dI/dV intensity at the initial
+position of the domain boundary shows only two differ-
+ent peaks, corresponding to two stable positions of the
+domain boundary. The plot of the residence times of the
+hcp state is depicted in Fig. 4d) and shows an exponen-
+tial decay with a lifetime τf cc of about 0.3 s. In analogy
+to our experiments on Fe/Cu(111) reported in16, this can
+be explained by a thermally activated transition between
+two local energy minima (see inset in Fig. 4d). In con-
+trast to our findings for Fe/Cu(111)17, a clear relation
+between the polarity of the electric field and the result-
+ing lattice state could not be found. Switching in both
+directions was possible with pulses of any polarity with
+approximately the same probability.
+
+Deposition of higher amounts of Fe resulted in films
+locally 2 and more ML thick, showing a superstructure
+with periodic stripes aligned perpendicular to the three
+closed packed h1 1 0i directions, in full agreement with
+the paper from An et al.18. They observed bright and
+dark stripes in STM and two satellite spots in the cor-
+responding LEED pattern. This was interpreted as a
+bcc (1 1 0) lattice in the Nishiyama-Wassermann orienta-
+tion that is expanded in the [1 1 0]bcc direction by 6.5 %.
+In our STM measurements, we observed the same stripe
+pattern (see Fig. 5a)). However, in our dI/dV maps,
+
+4
+
+we identify three different intensities of the stripes and
+thus find a doubled periodicity (see Fig. 5b)), which is
+in contradiction to the model proposed by An et al. An
+atomically resolved STM image of both the Ni surface
+and the 2 ML Fe film (see Fig. 5c)) allows us to un-
+ambiguously determine the atomic structure: The 2 ML
+Fe film is expanded by 7.5 % in the [1 1 0]f cc direction
+and by 1.9 % in the [1 1 2]f cc direction with respect to
+the Ni lattice. Fig. 5d) proposes an atomic model that
+explains the experimentally observed features by a repe-
+tition of fcc, bcc, hcp, bcc-like stripes with a periodicity
+of 3.2 nm. The fcc and hcp areas appear dark, the bcc-
+like areas appear bright (compare to Fig. 5b)). These
+structures of the Fe films thicker than 1 ML could not be
+influenced by the applied electric field.
+
+In summary, we have identified the complex crystal-
+lographic phase diagram of Fe/Ni(111) by atomic reso-
+lution STM. While Fe films of 2 and more layers show
+periodic stripes of fcc, bcc and hcp phases, the single
+monolayer shows domains of fcc and hcp stacking. By
+application of high electric fields, we have been able to
+induce a reproducible transition from fcc the stacking to
+hcp. The underlying mechanism of this transition is sim-
+ilar to that previously observed in 2 ML Fe/Cu(111) and
+thus seems to be a more universal concept for metallic
+surfaces that is not limited to a particular system.
+
+We acknowledge funding by the DFG under gran WU
+
+349/8-1.
+
+M. Schindler, V. Fritzsche, A. M. Bradshaw, and D. P.
+Woodruff, Phys. Rev. B 58, 6768 (1998).
+Heinze,
+
+Bergmann,
+
+von
+
+S.
+
+10 K.
+
+Bode,
+and R. Wiesendanger,
+
+M.
+
+G. Bihlmayer,
+New Journal of Physics 9, 396 (2007).
+
+S. Blgel,
+
+11 B.
+
+Hardrat,
+
+A.
+
+Al-Zubi,
+
+S. Blugel,
+G. Bihlmayer,
+Phys. Rev. B 79, 094411 (2009).
+
+P.
+
+Ferriani,
+S. Heinze,
+
+and
+
+12 R. Wu and A. J. Freeman, Phys. Rev. B 45, 7205 (1992).
+13 B. An, L. Zhang, S. Fukuyama,
+and K. Yokogawa,
+
+FIG. 5. a) A dI/dV map at −240 mV of Fe/Ni(111) films
+thicker than 1 ML shows a stripe pattern perpendicular to the
+closed-packed h1 1 0i directions. The lattice directions given
+in c) also hold for a). b) Three different intensities of the
+stripes are found. c) STM image on the bare Ni surface, 1 ML
+Fe and 2 ML Fe with atomic resolution. d) Atomic model of
+2 ML Fe/Ni(111) for the observed stripe pattern. The rela-
+tive atomic distances of the top layer (gray circles) are taken
+from the measurement in c). The expansion of the top layer
+by 7.5 % in the [1 1 0] direction leads to a periodicity of 13
+interatomic distances (3.2 nm). The bcc lattice (green rect-
+angle) is characterized by a twofold bridge-stacking while the
+two possible threefold hollow sites correspond to fcc (orange
+triangle) and hcp domains (blue triangle).
+
+1 M. Weisheit,
+
+S. Fahler, A. Marty, Y. Souche,
+
+C. Poinsignon, and D. Givord, Science 315, 349 (2007).
+
+2 T. Maruyama, Y. Shiota, T. Nozaki, K. Ohta, N. Toda,
+M. Mizuguchi, A. A. Tulapurkar, T. Shinjo, M. Shi-
+raishi, S. Mizukami, Y. Ando,
+and Y. Suzuki,
+Nat. Nanotechnol. 4, 158 (2009).
+
+3 L. Gerhard, T. K. Yamada, T. Balashov, A. F.
+Tak´acs, R. J. H. Wesselink, M. Dane, M. Fechner,
+S. Ostanin, A. Ernst, I. Mertig,
+and W. Wulfhekel,
+Nat. Nanotechnol. 5, 792 (2010).
+
+4 S.
+
+Subkow
+
+and
+
+M.
+
+Fahnle,
+
+Japanese Journal of Applied Physics 46, 5586 (2007).
+
+Phys. Rev. B 84, 054443 (2011).
+
+14 J. A. Stroscio, D. T. Pierce, A. Davies, R. J. Celotta, and
+
+5 Y. Shiota, T. Nozaki, F. Bonell, S. Murakami, T. Shinjo,
+
+M. Weinert, Phys. Rev. Lett. 75, 2960 (1995).
+
+and Y. Suzuki, Nat. Mater. 11, 39 (2012).
+
+6 S. H. Phark, J. A. Fischer, M. Corbetta, D. Sander,
+
+K. Nakamura, and K. J., Nat. Comms. 5, 5183 (2014).
+
+7 R. C. Longo, E. Martinez, O. Dieguez, A. Vega, and L. J.
+
+Gallego, Nanotechnology 18, 055701 (2007).
+
+8 G. C. Gazzadi, F. Bruno, R. Capelli, L. Pasquali, and
+
+S. Nannarone, Phys. Rev. B 65, 205417 (2002).
+
+9 A. Theobald, V. Fernandez, O. Schaff, P. Hofmann, K.-
+
+15 A. Theobald, V. Fernandez, O. Schaff, P. Hofmann, K.-
+M. Schindler, V. Fritzsche, A. M. Bradshaw, and D. P.
+Woodruff, Phys. Rev. B 58, 6768 (1998).
+
+16 L. Gerhard, R. J. H. Wesselink, S. Ostanin, A. Ernst, and
+
+W. Wulfhekel, Phys. Rev. Lett. 111, 167601 (2013).
+
+17 L. Gerhard, T. Yamada, T. Balashov, A. Takacs,
+S. Os-
+and W. Wulfhekel,
+
+R. Wesselink, M. Dane, M. Fechner,
+tanin, A. Ernst,
+
+I. Mertig,
+
+Magnetics, IEEE Transactions on 47, 1619 (2011).
+
+18 B. An, L. Zhang, S. Fukuyama,
+
+and K. Yokogawa,
+
+Physical Review B 79, 1 (2009).
+
+5
+
+

@@ -1,0 +1,3187 @@
+
+A universal macroscopic theory of surface plasma waves and their losses
+
+School of Physics, University of Exeter, EX4 4QL Exeter, United Kingdom
+
+Hai-Yao Deng∗
+
+Recently, we have revealed an intrinsic instability of metals due to surface plasma waves (SPWs) and raised
+the prospect of using it to create lossless SPWs. The counter-intuitive nature of this finding prompts one to ask,
+why had not this instability been disclosed before, given the long history of this subject? If this instability does
+exist, how far is it from reality? The present work is devoted to answering these questions. To this end, we derive
+a unified macroscopic theory of SPWs that applies to any type of electron dynamics, be they local or non-local,
+classical or quantum-mechanical. In light of this theory, we analyze the behaviors of SPWs according to several
+electron dynamics models, including the widely used local dielectric model (DM), the hydrodynamic model
+(HDM) and the specular reflection model (SRM), in addition to the less common semi-classical model (SCM).
+We find that, in order to unveil the instability, one must (i) self-consistently treat surface effects without any
+of the usually imposed auxiliary conditions and (ii) include translation symmetry breaking effects in electron
+dynamics. As far as we are concerned, none existing work had fulfilled both (i) and (ii). To assess the possibility
+of realizing the instability, we analyze two very important factors: the dielectric interfacing the metal and inter-
+band transitions, which both were ignored in our recent work. Whereas inter-band absorption  --  together with
+Landau damping  --  is shown adverse to the instability, a dielectric brings it closer to occurrence. One may even
+attain it in common plasmonic materials such as silver under not so tough conditions.
+
+I.
+
+INTRODUCTION
+
+Electron density ripples propagating along metal surfaces,
+known as surface plasma waves (SPWs), have been inten-
+sively pursued as a promising enabler of nano photonics1 -- 4.
+A fundamental issue hampering further progress is concerned
+with energy losses5. SPWs lose energy fast due to Joule heat-
+ing, Landau damping and inter-band absorption alongside oth-
+ers such as radiation losses5. It has been suggested that these
+losses  --  especially those due to Landau damping  --  are intrin-
+sic and cannot be significantly reduced without the addition of
+external gain medium5 -- 9. They would ultimately handicap the
+functionalities of SPWs5,6.
+
+Our recent work10 -- 12 challenged the above view and found
+that, thanks to an incipient instability, the losses may well be
+reduced to any level without taking energy from outside. A
+critical point was shown to exist at γ0τ = 1, where τ−1 is the
+thermal electronic collision rate and γ0 is a positive-definite
+quantity. At the critical point, the energy released from the
+Fermi sea  --  at rate γ0  --  just compensates for the dissipation
+due to electronic collisions and SPWs become lossless12. This
+instability was revealed through a semi-classical model (SCM,
+based on Boltzmann's transport equation) of SPWs. Given the
+highly counter-intuitive nature of this possibility and the long
+history on this subject dated back to late 1950s13, the follow-
+ing questions must then be answered: Why has the criticality
+not been discovered in earlier work and what is missing in
+those work? While it is not widely used in the study of SPWs,
+the SCM had certainly been considered before14,15. Yet no-
+body had claimed lossless SPWs.
+
+The main purpose of the present paper is to answer the
+above question. Our strategy is to construct a universal theory
+of SPWs that is applicable to any type of electron dynamics,
+be they local or non-local, classical or quantum-mechanical.
+In light of this theory, the properties of SPWs are then an-
+alyzed with several common electron dynamics models, in-
+cluding the local dielectric model (DM)13, the classical hydro-
+dynamic model (HDM)16 -- 19 and the specular reflection model
+
+(SRM)20 -- 22 in addition to the SCM. The chief result obtained
+through this analysis is that, in order to unveil the instabil-
+ity, (i) a SPW theory must self-consistently deal with physical
+surfaces, and (ii) translation symmetry breaking effects must
+be included in the electron dynamics. Amongst these mod-
+els, only the SCM is capable of (ii), but previous work based
+on the SCM had all failed with respect to (i). This explains
+why the existing work had failed to hit upon the possibility of
+lossless SPWs.
+
+In existing work based on non-local models, auxiliary con-
+ditions have usually been imposed23 -- 26, mostly assuming no
+normal current on surfaces, as in the hard-wall picture adopted
+in computational studies27 -- 30. From a conceptual point of
+view, however, these conditions are obviously incompatible
+with local models and arise only due to an incomplete de-
+scription of physical surfaces31. We will show that the con-
+ventional treatment of SPWs via auxiliary conditions does not
+recover the standard textbook SPWs in the local models. We
+prescribe a simple yet complete macroscopic description of
+physical surfaces, which remedies the conceptual deficiency
+and allows to derive a universal SPW theory accounting for
+surface effects self-consistently.
+
+As a secondary purpose, we wish to address an experimen-
+tally interesting issue, that is, how far is the instability from re-
+ality and how can it be achieved? In general, τ−1 is compara-
+ble to the characteristic plasma frequency ωp, even in defect-
+free materials and at zero temperature32. This is because τ−1
+is the collision rate at the SPW frequency, which is in the or-
+der of a few eVs in metals and thus effects as an effective
+high temperature of tens of thousands of Kelvins opening up
+a large phase volume for electron scattering. One then expects
+γ0τ < 1 usually. In order to devise a practically useful method
+of enhancing γ0, we employ our theory to analyze two impor-
+tant factors affecting γ0: a dielectric interfacing the metal sup-
+porting SPWs and inter-band transition effects, which were
+ignored in Refs.10 -- 12. We find that, inter-band absorption (as
+well as Landau damping) strongly reduces γ0, whereas top-
+ping a dielectric can significantly increase γ0. In this way the
+
+2
+
+A. Macroscopic description of surfaces
+
+The SIM under consideration is assumed to occupy the re-
+gion z ≥ 0 and bounded by a flat interface/surface macroscop-
+ically located at z = 0. The other half space is either the vac-
+uum or a dielectric with dielectric constant ǫd, see Fig. 1. We
+shall use the vector x = (r, z) to denote a point in space, where
+r = (x, y) is the planar projection of x. Further, x0 = (r, 0)
+denotes a point on the surface and t denotes time.
+
+In a macroscopic description of SPWs, one usually consid-
+ers the metal as a medium for an electromagnetic field and
+seeks surface localized (polariton) solutions of the governing
+Maxwell's equations33. The procedure is to write down the
+waves for (an infinite metal) on the metal side and those (for
+an infinite dielectric) on the dielectric side, and then invoke
+conditions to match those waves at the surface. With local dy-
+namics, the usual Maxwell's boundary conditions would do
+the job. With non-local dynamics, however, they are insuf-
+ficient. Historically, auxiliary conditions  --  mostly assuming
+zero normal current at the surface14,15,17,25  --  have been in-
+vented as a remedy since 1950s23, which however treat the
+symptoms not the cause. The cause is a conceptual deficiency
+in the knowledge of surfaces31. Considering that a real mi-
+croscopic surface can hardly be specified even for the sim-
+plest material due to preparation procedures, one might deem
+it hopeless to have a complete description. The following ele-
+mentary analysis suggests otherwise.
+
+Let us imagine bringing two materials (A and B) in con-
+tact, and an interfacial layer of thickness ds  --  in the order
+of a few lattice constants  --  shall form in between. We may
+characterize this layer by a surface potential φs, which should
+quickly decay to zero in the bulk regions outside the interfacial
+layer. The exact microscopic profile of the layer varies from
+one case to another and can hardly be known a priori. De-
+spite this, we may still write down a generic form for the elec-
+tric current density j(x, t) in the whole system including the
+interfacial layer. To this end, we observe that in the bulk re-
+gions where φs vanishes, the form of j(x, t) can be completely
+specified with the respective dynamic equations for the infi-
+nite materials, apart from some parameters (such as the Fuchs
+parameter, see Sec. V) that encode the effects of surface scat-
+tering on the electron waves. Let us denote by JA/B(x, t) the
+forms of j(x, t) in the bulk region of A/B. Microscopically, j
+evolves from JA in the bulk region of A, through a rapid vari-
+ation in the interfacial layer, to JB in the bulk region of B.
+Formally, we can write for the µ-th component of the current
+density that jµ(x, t) = JA,µ(x, t)wµ(z) + JB,µ(x, t)(1 − wα(z)),
+where the profile functions wα(z) approach unity in the bulk
+region of A and zero in that of B. The exact profile of wµ(z)
+depends on the microscopic details of the interfacial layer.
+On the scale of λ, however, the interfacial layer appears in-
+finitely thin and wα(z) reduce to the Heaviside step function
+Θ(z), where Θ(z ≥ 0) = 1 and Θ(z < 0) = 0, in a macroscopic
+theory. One thus ends up with
+
+j(x, t) = JA(x, t)Θ(z) + JB(x, t)(1 − Θ(z)).
+
+(1)
+
+This holds valid for any wµ(z) and is thus a general and com-
+plete macroscopic description of a physical interface, as long
+
+Dielectric
+
+y
+
+x
+
+Metal
+
+z
+
+FIG. 1. Sketch of the system: SPWs are propagating along the inter-
+face between a metal and a dielectric. A point in space is denoted by
+its position vector x = (r, z), where r = (x, y) is the planar projection.
+The position of a point on the interface is denoted by x0 = (r, 0).
+
+instability may well be in reach in a single crystal of silver.
+
+This paper is organized as follows. We develop a univer-
+sal macroscopic SPW theory in the next section and apply it
+to the DM, the HDM and the SRM in Sec IV. Section III in-
+cludes a discussion of a phenomenological approach to inter-
+band transition effects to make the paper self-contained. Sec-
+tion V is devoted to a thorough treatment of SPWs within the
+SCM. Dielectric and inter-band effects are analyzed. We as-
+sess the possibility of creating lossless SPWs by the SCM and
+conclude the paper in Sec. VII. In Appendices A and B, we
+discuss some historical misconceptions regarding the SPWs
+in the HDM and the SRM, respectively.
+
+II. UNIVERSAL THEORY OF SPWS
+
+In this section, we present a general theory of charge den-
+sity waves in semi-infinite metals (SIMs). Extension to sys-
+tems of other geometries is straightforward and will be con-
+sidered elsewhere. The theory is formulated in terms of uni-
+versal physical concepts and makes no resort to the particulars
+of electron dynamics. It is a macroscopic theory, thus valid as
+long as the thickness (ds, typically a few lattice constants) of
+the microscopic surface layer, which forms between the vac-
+uum and the bulk metal, is much smaller than the SPW wave-
+length Λ. In this paper, by 'macroscopic' we always mean
+ds/Λ ≪ 1, with no regard to electron dynamics.
+
+Retardation effects are neglected throughout this paper,
+which is reasonable provided the SPW phase velocity is much
+less than the speed of light in vacuum.
+
+as a perturbation on one side does not cause significant re-
+sponses on the other.
+
+To recapitulate, equation (1) elegantly captures two impor-
+tance physical consequences of an interface: the rapid varia-
+tion of the current density through the step function Θ(z) and
+the surface scattering effects on electron dynamics through the
+parameters contained in the bulk forms. These scattering ef-
+fects  --  including the symmetry breaking effects  --  have been
+ignored in most models except for the SCM. In general JA and
+JB are not equal on the interface, as is certainly the case for
+local dynamics models, and charges accumulate in the interfa-
+cial layer. Such capacitive effects would be mistakenly erased
+under auxiliary conditions, which often dictate continuity of
+current across the interface, e.g. the vanishing of normal cur-
+rent at the metal-vacuum interface.
+
+B. Charge density waves
+
+Now we derive the equations of motion for the charge
+density ρ(x, t) in the SIM. Our starting point is the equa-
+tion of continuity. Specifying Eq. (1) to the SIM, we have
+j(x, t) = Θ(z)J(x, t), where J(x, t) is the current density in the
+metal. The equation of continuity then reads
+
+3
+
+For linear responses, J(z) can be related to E(z) as follows
+
+Jµ(z) = Xµ,ν=x,y,zZ dz′σµν(z, z′, ω)Eν(z′),
+
+(5)
+
+where σµν(z, z′, ω) is the conductivity tensor. Considering that
+E(z) linearly depends on ρ(z), we can define a linear operator
+
+H with kernel H (z, z′) so that
+
+H ρ(z) = Z dz′H (z, z′)ρ(z′) = −i ¯ω∇ · J(z).
+
+(6)
+
+It is easy to show that
+
+dz′′∇µσµν(z, z′′, ω)∇′′ν Vk(z′′ − z′),
+
+H (z, z′) = i ¯ωXµν Z ∞
+where ∇′′ = (ik, ∂z′′) and Vk(z) is the k-th Fourier component
+of the Coulomb interaction V(x) = 1/x. Now Eq. (3) can be
+transformed into
+
+0
+
+(cid:16) H − ¯ω2(cid:17) ρ(z) = S Θ′(z),
+
+S = i ¯ωJz(0).
+
+(7)
+
+Note that S does not depend on z. Since ρ(z) is defined only
+for z ≥ 0, we can introduce a cosine Fourier transform
+
+Dtρ(x, t) + ∂x · j(x, t) = 0, Dt = τ−1 + ∂t.
+
+ρ(z) =
+
+2
+
+π Z ∞
+
+0
+
+dq ρq cos(qz).
+
+Here we have included a global relaxation term −ρ(x, t)/τ to
+account for the thermal relaxation of non-equilibrium charges
+due to microscopic electronic collisions driving the system
+toward thermodynamic equilibrium. In terms of J(x, t), this
+equation becomes
+
+In terms of ρq, Eq. (7) can be rewritten as
+
+Z ∞
+
+0
+
+dq′(cid:16)H (q, q′) − ¯ω2δ(q − q′)(cid:17) ρq′ = S .
+
+(8)
+
+Dtρ(x, t) + ∂x · J(x, t) = −Θ′(z)Jz(x0, t),
+
+(2)
+
+Here
+
+where Θ′(z) = ∂zΘ(z). The right-hand term of this equation
+signifies the capacitive effects, which is critical in the energy
+conversion process but had been overlooked until our recent
+work12. This term was also noticed by A. L. Fetter in studying
+the edge plasmon in two-dimension systems19.
+
+Without loss of generality, we may assume a quasi-plane
+wave for the fields and write ρ(x, t) = ρ(z)ei(k·r−ωt) and simi-
+larly for J(x, t) and the electric field E(x, t), where the wave
+vector k = (k ≥ 0, 0) is directed along the positive x-axis for
+the sake of definiteness. In general the frequency ω = ωs − iγ
+is complex. The relation between ω and k is determined by
+the wave equations to be established in what follows. Equa-
+tion (2) thus becomes
+
+H (q, q′) =
+
+2
+
+π Z ∞
+
+0
+
+dzZ ∞
+
+0
+
+dz′ cos(qz)H (z, z′) cos(q′z′)
+
+is the matrix element between the cosine waves. Finally, we
+close Eq. (8) by the fact that Jz(0) and hence S are also linear
+functionals of ρq. We can thus write
+
+S = Z ∞
+
+0
+
+dq
+
+G(K, ω)
+
+K2
+
+ρq,
+
+(9)
+
+where K = (k, 0, q), K2 = k2 + q2 and G is a kernel given by
+
+G(K, ω) =
+
+2 ¯ω
+
+iπ Z ∞
+
+0
+
+dzZ ∞
+
+0
+
+dz′ cos(qz)σµν(0, z′, ω)∇′νVk(z′−z).
+
+− i ¯ωρ(z) + ∇ · J(z) = −Jz(0)Θ′(z), ∇ = (ik, ∂z),
+
+(3)
+
+where ¯ω = ω + i/τ and Jz(x0, t) = Jz(0)ei(k·r−ωt). We shall
+write ¯ω = ωs + iγ0, so that
+
+As a key result of this paper, Eqs. (8) and (9) constitute a
+complete description of self-sustained charge density waves
+in SIMs. Their basic structures are valid regardless of the un-
+derlying electron dynamics encoded in H and G.
+
+γ = 1/τ − γ0
+
+(4)
+
+C. Universal secular equation for SPWs
+
+by definition. We shall see that γ0 is negative in all models
+except for the SCM, in which it is positive-definite thanks to
+a fundamental physical reason.
+
+Equation (8) is an inhomogeneous linear equation with a
+source term. Equations of this type generally admit of two
+
+classes of solutions, depending on whether S vanishes or not.
+Solutions with S = 0 represent nothing but the bulk plasma
+waves, while those with S , 0 represent localized waves, i.e.
+SPWs in our system. The spectra of these two classes gen-
+erally do not overlap. Had we imposed auxiliary boundary
+conditions as is usually done in the literature, SPWs would
+not exist at all.
+
+To find the 'secular' equation for SPWs, we wish to make a
+simplification, which is not necessary but will make the result-
+ing expressions more transparent. To this end, let us look at
+some general properties of σµν(z, z′, ω). For an infinite system
+without boundaries, the translational symmetry is preserved
+along z-axis as well as along the surface plane, in which case
+σµν only depends on z − z′. For SIMs, however, that sym-
+metry is broken and σµν must in general depend on z and z′
+separately. It shall prove useful to decompose σµν into two
+parts, σb,µν and σs,µν, where σb,µν is defined to be that of the
+infinite system and depends only on z− z′ while σs,µν signifies
+pure surface effects. Namely,
+
+σµν(z, z′, ω) = σb,µν(z − z′, ω) + σs,µν(z, z′, ω).
+
+Accordingly, H and G also each contain two parts arising
+from σb,µν and σs,µν, respectively. Let us then write H =
+Hb + Hs. Now that it reflects on the properties of plasma
+waves of an infinite system, Hb must be diagonal in the q-
+space, i.e. Hb(q, q′) = Ω2(K, ω)δ(q − q′), where Ω(K, ω) is
+a frequency that only depends on K. By definition, one can
+easily show that the dielectric function of an infinite system is
+given by
+
+ǫ(K, ω) = 1 −
+
+Ω2(K, ω)
+
+¯ω2
+
+.
+
+(10)
+
+As for Hs, it gives rise to scattering of plasma waves. Never-
+theless, for bulk waves the scattering due to a surface should
+be insignificant and may be treated perturbatively, as we did
+in Refs.10,11. To the lowest order in this perturbation, we may
+simply put
+
+H (q, q′) = Ω2(K, ω)δ(q − q′).
+
+(11)
+
+This expression contains complete information of bulk plasma
+waves. As expected, the zeros of ǫ(K, ω) give the dispersion
+ǫb(K) of these waves.
+
+We analogously write G = Gb + Gs. Note that via Eq. (9)
+Gb determines Jz at the point z = 0 in a infinite system, for
+which, however this point is none more special than any other
+points. Thus, Gb can only be a constant that does not de-
+pend on q and it is therefore purely due to the local part of
+σb,µν(z − z′). This part must be isotropic for the jellium model
+and it can be written as δµνδ(z− z′)σ(ω), where δµν is the Kro-
+neckle symbol and σ(ω) is to be discussed further. It follows
+that Gb = −4i ¯ωσ(ω)kβ, where we have taken into account
+the effect of the dielectric via the factor β = 2ǫd/(1 + ǫd); see
+details below. We now obtain
+
+G(K, ω) = −4i ¯ωσ(ω)kβ + Gs(K, ω).
+
+(12)
+
+We see that Gs describes translation symmetry breaking ef-
+fects. As to be seen later, it is missing from the DM, the HDM
+
+4
+
+and the SRM. The positive-definiteness of γ0 arises solely
+through this term and therefore cannot be captured in these
+models.
+
+For SPWs, S , 0. Inserting Eq. (11) in (8) and using (9),
+
+we find
+
+ǫs(k, ω) = 1 −Z ∞
+
+0
+
+dq
+K2
+
+G(K, ω)
+
+Ω2(K, ω) − ¯ω2
+
+= 0,
+
+(13)
+
+which determines the SPW frequency ωs and damping rate γ
+as a function of k. This is another key result of this paper. The
+SPW charge density is obtained as
+
+ρq =
+
+S
+
+Ω2(K, ω) − ¯ω2
+
+=
+
+S
+
+¯ω2  −
+
+1
+
+ǫ(K, ω)! .
+
+(14)
+
+The resulting ρ(z) is peaked about the surface.
+
+Equations (13) and (14) constitute a universal description of
+SPWs. They are valid irrespective of the underlying electron
+dynamics, which enter only through ǫ(K, ω) and G(K, ω).
+
+D. Dielectric effects
+
+Let us place a dielectric with dielectric constant ǫd  --  which
+can be complex  --  on the side z < 0. The electrostatic fields
+are affected by this dielectric, which can be calculated with
+the method of mirror charges. Let the mirror charge density
+in the dielectric be ρd(x, t) = ρd(z)ei(k·r−ωt). It is easy to show
+that34
+
+ρd(z < 0) = −
+
+ǫd − 1
+ǫd + 1
+
+ρ(−z).
+
+(15)
+
+The electrostatic potential φ(x, t) = φ(z)ei(k·r−ωt), obeying
+Poisson's equation ∂2
+xφ(x, t) + 4π(ρ(x, t) + ρd(x, t)) = 0, is then
+obtained as
+
+φ(z) =
+
+2π
+
+k Z ∞
+
+−∞
+
+dz′ e−kz−z′(cid:16)ρ(z′) + ρd(z′)(cid:17) .
+
+(16)
+
+In the metal, where z ≥ 0, the electric field E(z) = −∇φ(z) =
+(E x(z), 0, Ez(z)) then follows as
+
+E x(z) = −iZ ∞
+
+0
+
+dq
+
+4kρq
+
+K2 (cid:16)2 cos(qz) − βe−kz(cid:17)
+
+and
+
+Ez(z) = Z ∞
+
+0
+
+dq
+
+4kρq
+
+K2 (cid:18)2
+
+q
+
+k
+
+sin(qz) − βe−kz(cid:19) ,
+
+(17)
+
+(18)
+
+where β has been given in the above. See that Ez(0) and hence
+Gb are enhanced by the factor β, which is why this factor ap-
+pears in Eq. (12). Physically this is because the surface sits
+between the charges in the metal and those in the dielectric
+and spatially separates them.
+
+III.
+
+INTER-BAND TRANSITION EFFECTS
+
+yielding σ(ω) = σDM(ω) + σp(ω). From Eq. (6) one finds Ω2
+dispersionless, given as
+
+5
+
+The dynamics models to be considered in the next two sec-
+tions only describe the currents from electrons in the conduc-
+tion band. Realistically, valence electrons can also contribute
+by virtual inter-band transitions. In this paper, for the sake
+of simplicity, we account for these inter-band transition ef-
+fects by a phenomenological approach35 -- 37. The observation
+is that, valence electrons are usually tightly held to their host
+atoms and the energy bands are largely non-dispersion, and
+thus their electrical responses are mostly local and not sus-
+ceptible to the presence of boundaries. We may then describe
+this response by a local conductivity function σp(ω), so that
+the electrical current density due to the valence electrons is
+given by
+
+Ω2
+
+0(ω) = ω2
+
+p − ¯ω2ǫp(ω)
+
+Bulk plasma waves. Equating Ω2
+
+0 with ¯ω2 yields the fre-
+quency ωb,DM and damping rate γb,DM for bulk plasma waves.
+For ωpτ → ∞ and assuming ǫp(ω) independent of ω, they are
+given by
+
+ωb,DM =
+
+ωp
+
+p1 + ǫpr
+
+,
+
+γb,DM/ωb,DM =
+
+1
+
+ωb,DMτ
+
++
+
+1
+
+2
+
+ǫpi
+
+1 + ǫpr
+
+.
+
+Note that bulk waves bear no dielectric effects, i.e. no depen-
+dence on ǫd. The damping rate γb,DM arises due to thermal
+collisions and inter-band absorption.
+
+Jp(z) = σp(ω)E(z).
+
+(19)
+
+Gs = 0. As such, G(K, ω) becomes
+
+SPWs. The electrical conductivity is purely local and thus
+
+Usually σp(ω) may be modeled in the Lorentz form.
+It
+is related to the inter-band dielectric function by ǫp(ω) =
+4πiσp(ω)/ ¯ω, which can be measured for example by means of
+ellipsometry or computed by density functional theory. ǫp(ω)
+contains a real part ǫpr(ω) and an imaginary part ǫpi(ω). While
+ǫpr(ω) acts to shield the conduction electrons, ǫpi(ω)  --  which
+is always positive  --  leads to inter-band absorption. Being ba-
+sically an atomic property, ǫp is not sensitive to temperature.
+
+IV. SPWS IN DM, HDM AND SRM
+
+While the theory established in Sec. II is universal, the be-
+haviors of SPWs do depend on electron dynamics through
+ǫ(K, ω) and G(K, ω).
+In this section, we apply the theory
+to examine SPWs within several common electron dynamics
+models: the DM, the HDM and the SRM. SPWs in the SCM
+will be thoroughly treated in the next section. We show that
+the usually quoted SPW solution in the HDM is false and clar-
+ify the origin of SPWs in the SRM. A summary of this analysis
+is tabulated in Table I
+
+A. Local dielectric model (DM)
+
+This is the standard model for SPWs. Unlike other mod-
+els, it does not require and is incompatible with any auxiliary
+conditions. Here we reproduce by our theory the well-known
+properties of SPWs in this model.
+
+According to the DM, the current density due to conduction
+
+electrons is given by
+
+JDM(z) = σDM(ω)E(z), σDM(ω) =
+
+ω2
+p
+4π
+
+i
+
+¯ω
+
+,
+
+(20)
+
+where ωp = p4πn0e2/m is the characteristic plasma fre-
+
+quency of the metal with m and e being the effective mass and
+charge of an electron, respectively. The total current density
+J(z) then is
+
+Jp(z) + JDM(z) = (σDM(ω) + σp(ω))E(z),
+
+G0 = (kβ/π)Ω2
+
+0(ω).
+
+Substituting this into Eq. (13), we immediately arrive at the of-
+ten quoted frequency ωs,DM and damping rate γs,DM for SPWs.
+Neglecting absorption in the dielectric, i.e. assuming real ǫd,
+we find
+
+ωs,DM =
+
+ωp
+
+p1 + ǫd + ǫpr
+
+,
+
+γs,DM
+ωs,DM
+
+=
+
+1
+
+ωs,DMτ
+
++
+
+1
+
+2
+
+ǫpi
+
+1 + ǫd + ǫpr
+
+.
+
+In this model, the SPW charge density is completely localized
+on the surface, ρ(z) = ρsΘ′(z), where ρs = S /(Ω2
+0 − ¯ω2) gives
+the areal charge density. See that the dielectric tends to reduce
+the SPW damping rate.
+
+Traditionally38, the above results have been obtained by
+treating the metal as a simple dielectric with dielectric con-
+0/ ¯ω2. Then exponentially decaying electro-
+stant ǫ(ω) = 1− Ω2
+magnetic (EM) waves (or electrostatic potentials in the quasi-
+static limit) are written down on the metal and the dielectric
+sides, and Maxwell's boundary conditions are used to match
+the waves to obtain the above frequency and damping rate of
+SPWs. Our theory works directly with charge density rather
+than EM waves. The two approaches are equivalent.
+
+B. Hydrodynamic model (HDM)
+
+The DM assumes a purely local relation between the cur-
+rent density and the electric field. The HDM extends the DM
+by inclusion of leading-order non-local corrections. Recently,
+this model has attracted lots of attention in plasmonics and
+quantum forces39,40. It has also been synergized with density
+functional theory in the quantum hydrodynamic model41 -- 44 to
+study local plasmon resonances on metal particles.
+
+In the HDM, Ω2 includes leading-order dependence on K
+
+and is given by
+
+Ω2
+
+HDM = Ω2
+
+0 + K2v2
+0,
+
+where v0 is a parameter. The dielectric function45 then reads
+ǫHDM = 1 − Ω2
+HDM/ ¯ω2. The bulk waves are similar to those in
+the DM except for some dispersion with K.
+
+TABLE I. A comparison of various models in light of the present universal theory of SPWs. DM: classical dielectric model. HDM: hy-
+drodynamic model. SRM: specular reflection model. SCM: semi-classical model. For the sake of simplicity, ǫp = 0 and ǫd = 1 have
+been used in the expressions given in this table. K = (k, 0, q). G0 = (k/π)ω2
+p, where ωp denotes the characteristic plasma frequency of
+
+6
+
+the metal. F = (m/2π)3R d3v(−e2 f ′0 )v(K · v/ ¯ω)2(1 − K · v/ ¯ω)−1, where v is the velocity of electrons of mass m. ǫ(K, ω) is the dielec-
+tric function of the infinite system, whose zeros give the dispersion of bulk plasma waves. SPWs are determined by this secular equation:
+ǫs = 1 + R ∞
+= 0. The solution to this equation is written as ω = ωs − iγ. In the SCM, an extra contribution γs arises due to
+symmetry breaking effects contained in Gs. Very interestingly, γ0 = γs − γLandau − γinterband cannot be negative.
+
+G(K,ω)
+
+ǫ(K,ω)
+
+dq
+K2
+
+¯ω2
+
+0
+
+1
+
+Quantity
+
+DM
+
+HDM
+
+Symmetry breaking effects
+
+Ω2(K, ω)
+G(K, ω)
+
+ǫ(K, ω)
+
+Damping rate γ
+
+No
+ω2
+p
+G0
+1 −
+
+ω2
+p
+¯ω2
+
+τ−1 + γinterband
+
+Ω2
+
+No
+HDM = ω2
+G0
+Ω2
+
+p + Bv2
+
+F K2
+
+1 −
+
+HDM
+¯ω2
+
+τ−1 + γinterband
+
+SRM
+
+No
+
+ω2
+
+p + 4π ¯ωK·F
+
+K2
+
+G0
+
+1 − Ω2
+
+¯ω2
+
+τ−1 + γinterband + γLandau
+
+SCM
+
+Yes
+
+ω2
+
+p + 4π ¯ωK·F
+K2
+G0 + Gs
+
+1 − Ω2
+
+¯ω2
+
+τ−1 + γinterband + γLandau − γs
+
+As in the DM, no symmetry breaking effects are included in
+the HDM. G(K, ω) is then the same as that for the DM. Now
+Eq. (13) transforms into the following
+
+1 +
+
+kβ
+
+π
+
+Ω2
+0
+
+¯ω2 Z ∞
+
+0
+
+dq
+K2
+
+1
+
+ǫHDM
+
+= 0,
+
+(21)
+
+which determines the SPWs in the HDM by our theory. Note
+that the integrand contains no poles or resonances near the
+solutions, as the SPW spectra are always gapped from the bulk
+wave spectra gratifying ǫHDM = 0. For v0 = 0, the HDM
+reduces to the DM and so do the SPWs, as expected. With
+ǫd = 0 and ǫp = 0, the equation simplifies to
+
+1 +
+
+k
+
+π Z ∞
+
+−∞
+
+dq
+K2
+
+1
+
+ǫHDM
+
+= 0,
+
+(22)
+
+where we have used the fact that ǫHDM is even in q and that
+p/ ¯ω2 ≈ 2 for the solutions to this equation. As shown in
+ω2
+Appendix A, it leads to a linear dispersion of ωs versus k.
+As in the DM, the SPW damps due to thermal collisions and
+inter-band absorption, at rate γs,HDM ≈ γs,DM apart from some
+dispersion effects.
+In the literature, the condition that Jz(0) = 0 is usually im-
+posed in the HDM15,17. This would mean S = 0 and therefore
+would exclude any SPWs according to our theory. Neverthe-
+less, SPWs have been claimed to exist under this condition.
+In what follows we briefly show that this claim is false, more
+details to be found in Appendix A.
+
+For illustration, we take ǫp = 0 and ǫd = 0. Impose S =
+
+p + v2
+
+equivalently in the real space
+
+HDM − ¯ω2(cid:17) ρq = 0, or
+0 and the wave equation becomes (cid:16)Ω2
+z(cid:17) ρ(z) = 0.
+0∂2
+
+(cid:16) ¯ω2 − (ω2
+
+0k2) + v2
+
+The claimed SPW solution is then sought of the form ρ(z) =
+ρ0e−κz. Substituting this in the equation leads to ¯ω2 = ω2
+p +
+0(k2 − κ2).
+v2
+Imposing Jz(0) = 0 gives another relation,
+ω2
+0 = v2
+0κ(k + κ), which expresses the balance between the
+electronic pressure and the electric force at the surface. Here
+ω0 = ωp/ √2. Those two relations specify the solution. Com-
+bined, they lead to ¯ω2 ≈ ω2
+0 + ω0βk. Nevertheless, this solu-
+tion does not reduce in the limit v0 = 0 to the SPWs found by
+
+(23)
+
+Ritchie with the DM. Actually, κ diverges in this limit, yield-
+
+ing R ρ(z)dz ∼ κ−1 = 0, i.e. the solution is empty of charges.
+
+This false solution is also what was observed in Refs.14,15,47.
+It is plausible that existing ab initio calculations have only ob-
+served this false solution as well28. A comprehensive account
+may merit a future study.
+
+Although the false solution and the correct solution are con-
+ceptually disparate, their dispersion relations are quite similar,
+as shown in Appendix A.
+
+C. Specular reflection model (SRM)
+
+A natural step to go beyond the HDM is to use the full form
+of Ω rather than the approximation ΩHDM. Equation (22) then
+becomes
+
+1 +
+
+k
+
+π Z ∞
+
+−∞
+
+dq
+K2
+
+1
+
+ǫ(K, ω)
+
+= 0.
+
+(24)
+
+This is exactly the equation established by Marusak and
+Ritchie in 1966 for the SRM20. Our derivation makes it clear
+that the SRM is just an extension of the HDM. From this point
+of view, one may also conclude that the usually claimed SPWs
+in the HDM are false, because they are not solutions of Eq. 24
+in the HDM limit.
+
+In contrast with the DM and the HDM, SPWs in the SRM
+can also decay via Landau damping, because of an imaginary
+part in Ω associated with electron-hole excitations. Thus, the
+SPW damping rate is γs,SRM ≈ γs,DM + γLandau, see the next
+section for further discussion on this.
+We wish to point out a logical inconsistency in the original
+contrivance of the SRM. There are two elements in this con-
+trivance: (i) as nominally expected, electron waves impinging
+on the surface are assumed to be specularly reflected back,
+and (ii) a sheet of 'fictitious' charges exactly localized on the
+surface. Element (i) would mean Jz(0) = 0 and hence, by
+our theory, no SPWs would materialize. Then how do those
+waves come about? The answer rests with element (ii). In Ap-
+pendix B, we show that the fictitious charge sheet reinstates
+the capacitive effects lost under element (i). Actually, SPWs
+appear as a pole of this fictitious charge density.
+
+As with the HDM and the DM, the SRM contains no sym-
+metry breaking effects, i.e. Gs is absent from these models.
+To account for these effects, further improvement is required,
+leading to the SCM.
+
+V. SPWS IN THE SCM
+
+In the SCM one calculates the electric currents in terms of
+a distribution function f (x, v, t) defined in the single-particle
+phase space. As usual, we write it as a sum of the equi-
+librium part f0(ε(v)) and the non-equilibrium part g(x, v, t).
+f0(ε) is taken to be the Fermi-Dirac function at zero tempera-
+ture. ε(v) = mv2/2 is the dispersion of the conduction band.
+Within the relaxation time approximation and the regime of
+linear responses, g(x, v, t) = g(v, z)ei(k·r−ωt) satisfies the fol-
+lowing Boltzmann's equation
+
+(cid:16)λ−1 + ∂z(cid:17) g(v, z) + e f ′0 (ε)v · E(z)/vz = 0.
+
+(25)
+
+Here λ = ivz/ ω with ω = ¯ω − kvx and f ′0
+(2/m)δ(v2 − v2
+vF the Fermi velocity.
+
+= ∂ε f0(ε) =
+F ), where m is the electron effective mass and
+
+Physical causality10 requires that γ0 = Im( ¯ω) ≥ 0; oth-
+erwise, reflected electron waves would come before incident
+waves. Together with Eq. (4), we may conclude that the SPW
+damping rate is always in short of τ−1, i.e. γτ < 1, in non-
+reconcilable contrast with other models.
+
+With γ0 ≥ 0, the general solution to Eq. (25) can be written
+
+as
+
+7
+
+This condition is identical with the condition used in Ref.12
+but differs from that in Refs.10,11 except for p = 0. It follows
+that
+
+C(v) = −p
+
+e f ′0 v−
+vz
+
+·Z ∞
+
+0
+
+dz′ e− z′
+
+λ E(z′),
+
+vz ≥ 0.
+
+(30)
+
+Equations (26) - (30) fully specify the distribution function for
+the electrons.
+
+The electrical current density due to the conduction elec-
+
+trons is then calculated as
+
+Jc(z) = (m/2π)3Z d3v evg(v, z).
+
+(31)
+
+Note that the charge density is not given by
+
+ρ(x, t) = (m/2π)3 ei(kx−ωt)Z d3v eg(v, z).
+
+The reason is simple: the as-obtained g(v, z) is for the bulk
+region and not valid on the surface, because Eq. (3.1) in-
+volves no surface potentials, see Sec. II A. Actually, Jc(x, t)
+and ρ(x, t) obey the equation
+
+(∂t + 1/τ) ρ(x, t) + ∂x · Jc(x, t) = 0
+
+rather than the equation of continuity [c.f. Eq. (2)], automat-
+ically embodying the condition that Jz(0) = 0. This underlies
+the incorrect conclusion drawn by Harris and others14.
+
+,
+
+(26)
+
+A. The positive-definiteness of γ0
+
+z′
+
+λ E(z′)
+
+g(v, z) = e− z
+
+C(v) −
+
+e f ′0 v
+vz
+
+·Z z
+
+0
+
+dz′ e
+
+λ 
+
+where C(v) = g(v, 0) is the non-equilibrium deviation on the
+surface to be determined by boundary conditions. We require
+g(v, z) = 0 distant from the surface, i.e. z → ∞. For electrons
+moving away from the surface, vz > 0, this condition is auto-
+matically fulfilled. For electrons moving toward the surface,
+vz < 0, it leads to
+
+C(v) =
+
+e f ′0v
+vz
+
+·Z ∞
+
+0
+
+dz′ ez′/λE(z′),
+
+vz < 0.
+
+(27)
+
+It follows that
+
+g(v, z) =
+
+e f ′0 v
+vz
+
+·Z ∞
+
+z
+
+dz′ e
+
+z′−z
+λ E(z′),
+
+vz < 0.
+
+(28)
+
+To determine C(v) for vz > 0, the boundary condition at z = 0
+has to be used, which, whoever, depends on surface proper-
+ties. We adopt a simple picture first conceived by Fuchs48
+and then widely used in the study of for instance anomalous
+skin effect49 -- 52. According to this picture a fraction p i.e. the
+Fuchs parameter varying between zero and unity, of the elec-
+trons impinging on the surface are specularly reflected back,
+i.e.
+
+g(v, z = 0) = p g(v−, z = 0),
+
+v− = (vx, vy, −vz),
+
+vz ≥ 0.
+(29)
+
+We substitute the expression of E(z) given by Eqs. (17) and
+(18) into (26) - (30) and perform the integration over z′. We
+find it instructive to split g(v, z) into two parts, one denoted by
+gb(v, z) and the other by gs(v, z). They are given by
+
+gb(v, z) = −e f ′0 Z ∞
+
+0
+
+dq
+
+4ρq
+K2 ×
+
+(cid:16)2F+ cos(qz) + 2iF− sin(qz) − βF0e−kz(cid:17) , (32)
+
+where we have introduced the following functions,
+
+F±(K, ¯ω, v) =
+
+1
+
+2 " K · v
+
+¯ω − K · v ±
+
+¯ω − K · v−# .
+K · v−
+
+(33)
+
+Note that F+/− is an even/odd function of vz. In addition,
+
+F0(k, ¯ω, v) =
+
+k∗ · v
+¯ω − k∗ · v
+
+=
+
+∞
+
+Xl=1
+
+¯ω !l
+  k∗ · v
+
+,
+
+k∗ = (k, 0, ik).
+
+(34)
+
+Moreover, we have
+
+vz Z ∞
+
+0
+
+dq
+
+gs(v, z) = Θ(vz)(−e f ′0)ei ¯ωz
+(cid:2)βF0(k, ¯ω, v) − pβF0(k, ¯ω, v−) + 2(p − 1)F+(K, ¯ω, v)(cid:3) .
+
+One may show that gb(v, z) can also be obtained directly by
+Boltzmann's equation for an infinite system. Thus, this part
+
+(35)
+
+4ρq
+K2 ×
+
+contains exactly the responses of an infinite system. It is inde-
+pendent of surface properties, i.e. showing no dependence on
+the Fuchs parameter p, and the electrons incident on the sur-
+face (i.e. with vz < 0) and those departing it (i.e. with vz > 0)
+appear on equal footing in its expression.
+
+On the other hand, gs(v, z) signifies pure surface effects: it
+exists only for departing electrons, as indicated by the Heavi-
+side function Θ(vz) in its expression, and it depends on p thus
+reflecting on surface roughness. If we keep only gb(v, z), the
+SRM will be revisited, making it evident that the SRM does
+not correspond to the limit of p = 1 (specularly reflecting sur-
+face), in contrast with its nominal meaning.
+
+Another important feature of gs(v, z) lies in its dependence
+on z, i.e. gs(v, z) ∝ ei ωz/vz ∝ e−γ0z/vz, which implies that γ0 ≥ 0
+in accord with causality [see also preceding remarks above Eq.
+(26)]. Otherwise, it would diverge far away from the surface.
+
+B. Ω and G in the SCM
+
+The conduction current density is also written in two parts,
+Jc(z) = Jb(z) + Js(z), where Jb/s(z) are defined via Eq. (31)
+with g(v, z) replaced by gb/s(v, z). For small kvF / ¯ω, we may
+keep only the first term in the series of F0(k, ¯ω, v). It is then
+straightforward to show that
+
+Jb(z) = σDM(ω)E(z) + JSRM(z),
+
+(36)
+
+where JSRM(z) is responsible for the extension made through
+the SRM beyond the DM. It is given by53
+
+JSRM,x(z) = Z DqD3v vxF′+(K, ¯ω, v) cos(qz),
+JSRM,z(z) = i Z DqD3v vzF′
+−(K, ¯ω, v) sin(qz),
+
+(37)
+
+(38)
+
+where we have defined a short-hand
+
+Z DqD3v... = (cid:18) m
+
+2π(cid:19)3Z ∞
+
+0
+
+dq
+
+4ρq
+
+K2 Z d3v(cid:16)−e2 f ′0(cid:17) ...
+
+together with these functions
+
+F′
+±(K, ¯ω, v) =
+
+(K · v)2
+1 − K · v/ ¯ω ±
+
+1
+
+2 
+
+(K · v−)2
+
+1 − K · v−/ ¯ω
+
+.
+
+See that JSRM,z(0) ≡ 0, which makes no contribution to G.
+Now the total current density becomes
+
+J(z) = Jb(z) + Js(z) + Jp(z).
+
+By definitions (6) and (11), we find
+
+8
+
+.
+
+Partially performing the integral, we obtain
+
+r3
+
+1 − rKvF / ¯ω
+p(cid:16)1 + 3
+
+Ω2(K, ω) = ω2
+
+¯ω2ǫp
+ω2
+p
+
++
+
+3
+
+2
+
+1 −
+
+KvF
+
+¯ω Z 1
+
+−1
+
+dr
+
+p
+
+(41)
+p(cid:17)
+5 K2/k2
+The real part of this expression approximates ω2
+in the long wavelength limit, corresponding to the HDM limit
+with v0 = √3/5vF. Here kp = ωp/vF.
+
+Landau damping. Obviously, the second term in Eq. (39)
+generally contains an imaginary part even in the collisionless
+limit where τ−1 is vanishingly small, due to a pole at ¯ω = K· v
+in the integrand of the integral in F. This part gives rise to
+Landau damping. For γ0/ωp ≪ 1, we find for ¯ω = ωs + iγ0
+
+Ω2(K, ω) ≈ Ω2
+0 +
+
+3ω2
+p
+
+2 PZ 1
+−i
+
+−1
+3πω2
+p
+
+r3
+
+dr
+
+ωs/KvF − r
+KvF!3
+  ωs
+
+2
+
+Θ(KvF − ωs). (42)
+Here P takes the principal value. The sign of the second line
+depends on the sign of γ0. Only for γ0 > 0, it is negative lead-
+ing to damping, in line with causality. Equation (42) shows
+that, for bulk waves Landau damping exists only for suffi-
+ciently large K. For SPWs, however, Landau damping always
+exists, because q runs over all positive values in the secular
+equation (13).
+
+A major improvement of the SCM over the SRM comes
+through the quantity G(K, ω). In the SRM and its descendents,
+G = G0 contains no symmetry breaking effects. In the SCM,
+one finds G = G0 + Gs, where Gs stems from Js(0) and is
+given by
+
+Gs(K, ω) = 4i ¯ω(cid:18) m
+
+2π(cid:19)3Z>
+
+d3v vz(cid:16)−e2 f ′0(cid:17) ×
+
+(cid:2)βF0(k, ¯ω, v) − pβF0(k, ¯ω, v−) + 2(p − 1)F+(K, ¯ω, v)(cid:3) ,
+
+where ′ >′ indicates that the integral is restricted to departing
+electrons, i.e. vz ≥ 0. Note that Gs depends linearly on p.
+
+(43)
+
+C. The frequency and losses of SPWs
+
+With Ω and G, we now proceed to solve Eq. (13) to find the
+
+frequency ωs and damping rate γ of SPWs in the SCM.
+
+Analytical analysis. As said before, the most significant im-
+provement of the SCM over the SRM is through the term Gs.
+We wish to do an approximate analysis to explicitly demon-
+strate how Gs = G′s + iG′′s affects ωs and γ.
+
+For this purpose, let us write G = G′+iG′′ and Ω = Ω′+iΩ′′
+as well as ǫ = ǫ′ + iǫ′′, and assume that γ0/ωs, G′′/G′ and
+Ω′′/Ω′ are all small quantities. Then, one can show that the
+real part of Eq. (13) gives
+
+Ω2(K, ω) = Ω2
+
+0(ω) +
+
+4π ¯ωK · F(K, ¯ω)
+
+K2
+
+,
+
+(39)
+
+1 +
+
+1
+ω2
+
+s Z ∞
+
+0
+
+dq
+K2
+
+G′(K, ωs)
+ǫ′(K, ωs) ≈ 0,
+
+(44)
+
+where F is an odd function of ¯ω and given by
+
+F(K, ¯ω) = (cid:18) m
+
+2π(cid:19)3Z d3v(cid:16)−e2 f ′0(cid:17) v
+
+(K · v/ ¯ω)2
+1 − K · v/ ¯ω
+
+.
+
+(40)
+
+which determines the SPW frequency ωs. The imaginary part
+of Eq. (13) yields γ0 as
+
+γ0 ≈ ωs(cid:0)ηs − η0(cid:1) ,
+
+(45)
+
+9
+
+p  = 0
+
+(a)
+
+1
+
+0.95
+
+p
+
+/
+
+s
+
+0.9
+
+0.85
+
+0.8
+
+ = 1
+
+ = 5
+
+ = 10
+
+d
+
+d
+
+d
+
+p  = 0
+
+0.01
+
+0.1
+
+k/kp
+
+(b)
+
+0.16
+
+0.14
+
+0.12
+
+p
+
+/
+
+0
+
+0.1
+
+0.08
+
+0.06
+
+ = 1
+
+ = 5
+
+ = 10
+
+d
+
+d
+
+d
+
+0.01
+
+0.1
+
+k/kp
+
+FIG. 2. Frequency ωs and damping rate γ = τ−1 − γ0 of SPWs by the SCM. The results are obtained by numerically solving Eq. (13) without
+inter-band transition effects. ωp is the characteristic frequency of the metal and kp = ωp/vF with vF being the Fermi velocity. Solid lines are
+guides to the eye.
+
+p
+
+ω
+
+/
+ 
+ 
+
+0
+γ
+
+0.08
+
+0.06
+
+0.04
+
+0.02
+
+0
+
+εp = 5, 
+
+Landau damping excluded
+
+εp = 5
+
+εd = 1
+
+εp = 5 + 0.5i
+
+Note that Ω′′ signifies Landau damping and inter-band ab-
+sorption, as is clear from Eq. (42). As such, we may further
+split η0 = ηLandau + ηinterband, so that the SPW damping rate
+becomes
+
+γ ≈ τ−1 + γLandau + γinterband − γs,
+
+(48)
+
+where γLandau,interband,s = ωsηLandau,interband,s, the first term rep-
+resents Joule heating, the second and the third stand for Lan-
+dau damping and inter-band absorption, respectively, while
+the last one is completely new due to G′′ = G′′s . For models
+where Gs = 0, e.g. the DM, the HDM and the SRM, this new
+term is absent.
+
+For the SCM, however, Gs is finite. Retaining only the first
+
+0.01
+
+0.1
+
+term in the series of F0, we find
+
+k/kp
+
+FIG. 3. Effects of inter-band absorption and Landau damping on γ0.
+The results are obtained by numerically solving Eq. (13) for ǫd = 1.
+Exclusion of Landau damping is done by dropping the imaginary part
+of Ω(K, ω). Solid lines are guides to the eye.
+
+where the contribution
+
+ηs =
+
+1
+
+2 Z ∞
+
+0
+
+dq
+K2
+
+G′′(K, ωs)
+ǫ′(K, ωs)
+
+/Z ∞
+
+0
+
+dq
+K2
+
+G′(K, ωs)
+ǫ′2(K, ωs)
+
+Gs ≈ −
+
+(1 + p)βkω2
+p
+
+2π
+
++ 8i ¯ω(p − 1)(cid:18) m
+
+2π(cid:19)3Z>
+
+d3v vz(cid:16)−e2 f ′0(cid:17) F+(K, ¯ω, v).
+
+The second line here approximately corresponds to iG′′s . In
+general G′′s ≤ 0 and hence ηs ≥ 0. This implies that symme-
+try breaking effects tend to counteract the conventional damp-
+ing and destabilize the metal. Our numerical solutions shall
+demonstrate that γ0 is non-negative, in accord with the gen-
+eral argument given in Sec. V A.
+
+(46)
+
+In the long wavelength limit k ∼ 0, one has k/K2 ≈ πδ(q).
+
+Under this approximation, Eq. (44) becomes
+
+stems directly from the imaginary part G′′  --  which equals G′′s
+ --  of G, and
+
+ǫ′(K0, ωs) +
+
+πG′(K0, ωs)
+
+2kω2
+s
+
+≈ 0.
+
+(49)
+
+η0 = R ∞
+
+0
+
+dq
+K2
+
+G′ (K,ωs)
+ǫ′(K,ωs)
+dq
+K2
+
+R ∞
+
+0
+
+ǫ′(K,ωs)−1
+ǫ′(K,ωs)
+
+Ω′′(K,ω)
+Ω′(K,ω)
+G′ (K,ωs)
+ǫ′ 2(K,ωs)
+
+(47)
+
+Here K0 = (k, 0). For models with Gs = 0, one immediately
+recovers from this equation the relation that ǫd + ǫ′ = 0 as
+expected. For the SCM, however, one finds instead
+
+comes directly from the imaginary part Ω′′ of Ω. For stable
+systems, η0 must be non-negative.
+
+ǫ′ + ǫd
+
+1 −
+
+1 + p
+
+2
+
+ω2
+p
+ω2
+s
+
+
+
+= 0.
+
+(50)
+
+This leads to
+
+VI. POSSIBLE LOSSLESS SPWS BY THE SCM
+
+10
+
+1 + ǫd(1 + p)/2
+
+1 + ǫpr + ǫd
+
+ωs ≈ ωp
+
+.
+
+1/2
+
+
+
+(51)
+
+This result differs considerably from what is expected of other
+models. It shows that the value of the SPW frequency depends
+on surface conditions.
+
+If we replace in Eq. (46) ǫ′(K, ωs) with its non-dispersive
+
+part, as is reasonable for small k, then we find
+
+ηs ≈ −
+
+1
+2ω2
+p
+
+1 + ǫd
+
+1 + ǫd(1 + p)/2 Z ∞
+
+0
+
+dq
+
+G′′s (K, ωs)
+
+K2
+
+,
+
+(52)
+
+which implies that inter-band transitions have little effect on
+ηs, whereas a dielectric can enhance it by as much as 200%.
+This is to be borne out in numerical analysis in what follows.
+
+Numerical analysis. We solve Eq. (13) numerically to find
+ωs and γ0 and how they vary with k and ǫd. We present the
+results for diffuse surfaces with p = 0 only. In Eq. (13), the
+integral over q extends to infinity. In numerical calculations,
+we impose a cutoff qc. Roughly, qc ∼ a−1, where a is a lattice
+constant. For metals, this means qc ∼ kF ∼ kp. In all the
+numerical results presented here, we have chosen qc = 1.5kp.
+For qc beyond this value, both ωs and γ0 quickly converge,
+confirming that the results are independent of the choice of
+54. Our results should be taken with a grain of salt for very
+qc
+small k ≪ ωs/c ≈ kpvF /c ∼ 0.01kp, where c is the speed
+of light in vacuum, because of retardation effects neglected in
+our theory.
+
+The results are displayed in Figs. 2 and 3. In Fig. 2, we
+show ¯ω = ωs + iγ0 as a function of k for various ǫd but without
+inter-band transition effects (ǫp = 0). As seen in Fig. 2 (a),
+in agreement with the analytical expression of ωs, increasing
+ǫd leads to smaller ωs. Note that ωs is considerably larger
+than what would be obtained by other models due to surface
+effects. Meanwhile, γ0 increases with increasing ǫd, as seen
+in Fig. 2 (b), in accord with Eq. (52). This increase comes
+from the factor β, i.e. the presence of a dielectric enhances the
+electric field at the surface; see Eqs. (17) and (18).
+
+The effects of inter-band absorption and Landau damping
+are illustrated in Fig. 3. Here we plot γ0 for ǫd = 1 under
+several circumstances as described in the figure. We see that
+inter-band transitions can strongly diminish γ0 in two ways, as
+can be deduced from Eqs. (51) and (52). Firstly, there is the
+screening effect (the curve with ǫp = 5). This leads to smaller
+ωs and hence smaller γ0, while leaving η0 unaffected. Sec-
+ondly, inter-band absorption further reduces γ0 (see the curve
+with ǫp = 5 + 0.5i). As for Landau damping, it is sizable and
+generally increases with k; see Refs.5,12. As such, γ0 decreases
+as k increases. In relation to this feature, we should mention a
+size effect11: in films of thickness d, γ0 is strongly suppressed
+and quickly diminishes to zero when the wavelength becomes
+longer than d. Echoing this, one can show that γ0 ∼ kvF van-
+ishes for k ∼ 0 in the SIM46.
+
+According to the SCM, the SPW loss rate is γ = τ−1−γ0. In
+view of energy conversion, the expression implies a competi-
+tion between the loss due to thermalization and the gain due to
+energy transferred from the electrons to the waves12. Should
+the condition γ0τ = 1 be fulfilled, lossless SPWs may be pro-
+duced. In this section, we discuss this possibility against two
+common plasmonic metals: silver and aluminum.
+
+Note that τ−1 is the collision rate at the SPW frequency ωs.
+Even at zero temperature and in defect-free samples, there is
+sufficient phase space  --  available due to the effective tempera-
+ture ωs/kB  --  for electronic scattering and thus τ−1 is compa-
+rable to ωp. Up to our knowledge, there is virtually no direct
+data on τ−1 for any materials. We then opt to estimate it by
+the following formula32,
+
+τ−1 ≈ γresidual + 4ν0  T
+
+y4dy
+ey − 1
+where γresidual is the residual rate given by
+
+TD!5Z TD/T
+
+0
+
++ ωp
+
+2
+
+kBT
+
+ωp
+
+, (53)
+
+2
+
++ γimpurity.
+
+(54)
+
+γresidual ≈
+
+2ν0
+5
+
++
+
+ωp
+
+4π2 
+
+ωs
+
+ωp
+
+Here the first contribution comes from phonon scattering, the
+second from electron-electron scattering and the third due to
+impurity scattering to be neglected hereafter. The second term
+generally underestimates the electron-electron rate in noble
+metals and Al by a few times55. The coefficient ν0 ∼ kBTD/
+may be determined from the slope of the phononic part of
+the D.C. conductivity at temperatures higher than the Debye
+temperature TD. Equation (54) shows that γresidual may well
+amount to quite a few percentages of ωp for metals.
+
+Silver.
+
+In silver electronic transitions involving the 5s
+and 4d bands have a dramatic effect on the properties of
+SPWs35,56,57, leading to ωs ≈ 3.69 eV and ωb ≈ 3.92 eV
+at long wavelengths, both lying far below the characteristic
+frequency ωp = 9.48 eV. Experimentally32,58, it was found
+that ν0 ∼ 0.1 eV ∼ 0.01ωp, in consistency with the value
+of TD ≈ 220 K for Ag. The electron-electron scattering rate
+according to Eq. (54) would be less than one percent of ωp,
+while experimental measurements and more accurate expres-
+sions55 place it about 0.02ωp. As such, we may reasonably
+take γresidual ∼ 0.03ωp as an estimate.
+The damping rate γ can be read out from the line shape of
+the electron energy loss spectra (EELS). The temperature de-
+pendence of γ has been recorded on a high-quality Ag single
+crystal by means of EELS59,60. The data indicates that at low
+temperature γ amounts to less than one percent of ωp, a value
+a few times smaller than the as-projected γresidual. If Landau
+damping and inter-band absorption are also counted, the dis-
+crepancy can be more dramatic. In light of the present theory,
+this discrepancy gives an estimate of γ0. The values suggest
+that γ0 has substantially compensated for the collision losses,
+i.e. γ0 ∼ γresidual, as borne out in the following analysis.
+To evaluate γ0, ǫp(ω) needs to be supplied. Combin-
+ing a semi-quantum model and ellipsometry as well as
+
+(a)
+
+0.1
+
+0.08
+
+0.06
+
+p
+
+/
+
+0
+
+0.04
+
+0.02
+
+0
+
+Ag
+
+ = 1
+
+ = 5
+
+ = 10
+
+d
+
+d
+
+d
+
+(b)
+
+p
+
+/
+
+0
+
+0.22
+
+0.2
+
+0.18
+
+0.16
+
+0.14
+
+0.12
+
+0.1
+
+γresidual
+
+0.01
+
+0.1
+
+k/kp
+
+11
+
+γresidual
+
+ = 1
+
+ = 5
+
+d
+
+d
+
+ = 10
+
+d
+0.01
+
+Al
+
+k/kp
+
+0.1
+
+FIG. 4. γ0 for SPWs in Ag and Al at various ǫd. In both metals, γ0 is enhanced with a dielectric. Solid lines are guides to the eye.
+
+transmittance-reflectance measurements, Raki´c et al.36 em-
+ployed K-K analysis and prescribed a parametrized dielectric
+function  --  ǫ(b)
+r (ω) in their notation  --  for the inter-band con-
+tribution. Here, we use their fitting as an input for ǫp(ω) but
+with a number of caveats. Firstly, their dielectric function was
+deduced from measurements assuming the conventional elec-
+tromagnetic responses without any surface effects considered
+in the present paper. These effects, however, should be con-
+sidered when analyzing ellipsometry and reflectance spectra.
+A future study will be made to address this issue. Secondly,
+their function very poorly reproduces the electron energy loss
+spectra and the reflectance spectra, especially near the SPW
+frequency of interest. Thirdly, their function does not give
+an accurate partition into inter-band and intra-band contribu-
+tions, e.g. ωp ≈ 8eV was used rather than the widely agreed
+9.48eV57, which may overestimate the inter-band transition
+effects. Finally, their function is defined only for real fre-
+quency, and thus in general not suitable for ǫp(ω), where ω
+is complex. To remedy this point, we substitute ǫ(b)
+r [Re(ω)]
+for ǫp(ω), which should be reasonable if γ/ωs ≪ 1.
+The results are displayed in Fig. 4 (a), where the computed
+γ0 is exhibited as a function of k at various values of ǫd. While
+γ0 for SPWs supported on a pristine Ag surface (i.e. ǫd = 1) is
+negligibly small and way below γresidual, by using a dielectric
+it can be significantly enhanced at long wavelengths beyond
+γresidual. This trend is consistent with Eq. (52). The fact that
+γ0 can be made higher than γresidual suggests the possibility
+of compensating for the plasmonic losses completely in Ag.
+The situation is shown in Fig. 5. By interfacing the metal
+with a lossless dielectric of ǫd = 5 and cooling it down toward
+a critical temperature T ∗ ∼ 120K, one can diminish the net
+losses as much as desired. It should be mentioned that, ǫd is
+the constant at the frequency ωs as well.
+
+Aluminum. Inter-band transitions in Al are widely consid-
+ered less pronounced than in Ag. Nevertheless, their pres-
+ence can still be felt, e.g. in the difference between the val-
+ues of ωp ≈ 12.6eV and ωb ≈ 15.3eV. These numbers
+were obtained by density functional theory61 and experimen-
+
+0.04
+
+Ag, εd = 5, k = 0.07kp
+
+-1
+
+/ωp
+
+γ /ωp
+0
+
+T* ~ 120K
+
+0.038
+
+0.036
+
+0.034
+
+0.032
+
+0.03
+
+0
+
+100
+200
+Temperature (K)
+
+300
+
+FIG. 5. The possibility of compensating for the SPW losses in Ag.
+A critical temperature T ∗ exists where γ0τ = 1. Cooling down the
+system toward T ∗ reduces the losses to a vanishingly small level.
+Here τ−1 is calculated by Eq. (53) with T D = 220K and ν0 = 0.1eV.
+
+In addition, ωs ≈ 10.7eV62,63. γresidual may
+tal fitting37.
+be deduced from the experimental measurements performed
+by Sinvani et al.64 and others65. These authors measured the
+low temperature dependence of the d.c. resistivity ρ of Al.
+Their data shows that ρ ≈ ρ0 + AT 2 + B(T /TD)5, where ρ0
+stems from impurity and lattice dislocation scattering while
+A and B are constants characterizing electron-electron scat-
+tering and electron-phonon scattering, respectively. Analyz-
+ing the data, the authors found that A ≈ 0.21pΩ·cm/K2 (a
+lower bound) and B ≈ 4.9 · 104µΩ·cm for TD = 430K.
+From this we obtain ν0 ≈ 0.18ωp and the residual electron-
+electron scattering rate  --  a few times larger than what would
+be obtained with Eq. (54)32  --  approximating 0.14ωp, yielding
+
+γresidual ≈ 0.21ωp. It is noted that this value is comparable
+to the width (∼ 1.5eV, nearly 0.12ωp) of the electron energy
+loss peak near the frequency of the bulk plasma waves in Al62.
+The as-obtained ν0 (and hence γresidual) represents probably an
+overestimate66.
+
+To compute γ0, we again resort to the fitting function con-
+structed by Raki´c et al.37 and have it in place of ǫp(ω) in our
+theory, in the same way as we did in the case of Ag. It goes
+without saying that the same caveats should be kept in mind.
+The results are shown in Fig. 4 (b). As expected, γ0 is compa-
+rable to that in the absence of inter-band transitions [see Fig. 2
+(b)], as these transitions are weak in Al. As is with Ag, γ0 of
+SPWs in Al can also be fortified  --  but to a lesser extent  -- 
+by a dielectric. Nevertheless, the enhanced γ0 still falls short
+of γresidual unless for very long wavelengths where retardation
+effects need to be properly accounted for.
+
+The calculations reported in the above have assumed p = 0.
+For surfaces strongly reflecting electrons (i.e. p > 0), γ0 could
+be much lower12. We also point out that additional losses such
+as due to SPWs converted into radiation are not considered.
+They can be absorbed in the definition of τ−1.
+
+VII. CONCLUSIONS
+
+In order to answer the two questions posed at the begin-
+ning of this paper, i.e. (i) why had not previous work hit at
+the possibility of lossless SPWs and (ii) how far is the latter
+from reality, we have derived a universal macroscopic theory
+of SPWs that applies to any electron dynamics. In light of the
+theory, our answer to question (i) is simple: lossless waves are
+possible only within a self-consistent description of physical
+surfaces that takes care of translation symmetry breaking ef-
+fects, a condition not met in existing work. As for question
+(ii), we can only suggest an optimistic prospect rather than
+an answer due to various uncertainties in inter-band transition
+effects: our estimate shows that lossless waves may well be
+within the reach in some materials.
+
+Our results reveal two contradictory views regarding SPW
+losses, as compared in Table I. According to the conventional
+framework, as exemplified by the DM, the HDM and the
+SRM,
+
+γ(1) = τ−1 + γLandau + γinterband
+
+and thus the SPW loss rate cannot be smaller than either of
+τ−1 and γLandau. On the other hand, within the SCM, a totally
+different picture emerges, giving
+
+12
+
+even at very short wavelengths38. For example, in single crys-
+tal Ag, the loss rate measured by EELS59,60 is ∼ 1%ωp even
+for k ∼ 1nm−1, whereas γLandau ∼ kvF ∼ 10%ωp. This dis-
+crepancy is inexplicable by γ(1), but easily comprehensible by
+γ(2), i.e. Landau damping has been overcompensated by γs.
+
+Secondly, we note that the loss rate of bulk plasma waves
+differs from that of SPWs primarily because of the absence of
+γ0 in the former, as least in materials where inter-band effects
+are not important. In those materials, bulk waves should be
+generally much more lossy than SPWs, an observation that
+seems in consistency with experience. For example67, the
+loss rates for the SPWs and the bulk waves in potassium are
+0.1eV−1 and 0.24eV−1, respectively, while those in cesium
+are 0.23eV−1 and 0.75eV−1, respectively. In spite of these,
+the general situation is obviously unclear at this stage.
+
+Finally, we mention an experiment performed on a van der
+Waals structure by Iranzo et al.68. These authors were able to
+confine propagating plasmon between a graphene layer and a
+metal array to the atomic limit without sacrificing its lifetime,
+which obviously beats the limit set by Landau damping. From
+an energy conversion point of view12, the plasmon in such a
+structure is not much different from the surface plasmon on
+a metal surface. Their result is compatible with γ(2): in ulti-
+mate confinement γ0 tends to zero due to increase of Landau
+damping (Fig. 3), leaving the loss rate saturating at τ−1, as ob-
+served. We anticipate a similar trend for the losses of local
+plasmon resonance on metal particles.
+
+In the SCM we have assumed that the ground state of the
+underlying metal be simply the Fermi sea. The fact that γ
+can be made negative means an instability of the Fermi sea.
+Upon entering such circumstances, the metals are expected to
+undergo a transition into a different stable state, of which the
+electrical responses cannot be captured by our current SCM
+calculations. We will clarify the nature of this transition in the
+future.
+
+The results reported in this work should be of broad interest
+to the researchers working in plasmonics, surface science and
+condensed matter physics. We hope that experimentalists will
+find the results fascinating enough to put their hands on them.
+
+Acknowledgement  --  The author enjoyed the hospitality
+during his stay with K. Wakabayashi's group at Kwansei
+Gakuin University, Japan, where part of the writing was un-
+dertaken. This work is not supported by any funding bodies.
+
+Appendix A: SPWs in the HDM
+
+γ(2) = τ−1 − γ0,
+
+γ0 = γs − γLandau − γinterband,
+
+which suggests that the loss rate is always smaller than τ−1.
+Here γs = η0ωs, see Eq. (51). To directly contrast these two
+views, one has to measure separately τ−1 and γ. While the
+latter can be measured in many ways, the former is difficult
+to be directly measured. In what follows, we mention some
+indirect observations defying γ(1) but supporting γ(2).
+
+Firstly, we note that γ(2) naturally resolves a long-standing
+puzzle, that of the apparent insignificance of Landau damping
+
+Here we show that the usually claimed SPWs in the HDM
+are incompatible with the waves in the DM. We put ǫp = 0
+and ǫd = 1 for simplicity.
+In the HDM, the electrons are
+treated as a fluid described by two field quantities:
+the ve-
+locity field v(x, t) and the electron density field n0 + n(x, t),
+where n(x, t) denotes the deviation from the mean density n0.
+The charge density is then ρ(x, t) = n(x, t)e and the current
+density is J(x, t) = e(n0 + n(x, t))v(x, t), which in the linear
+responses regime becomes J(x, t) = n0ev(x, t).
+
+A small fluid element of volume δV feels a force consisting
+
+(a)
+
+1
+
+p
+
+ω
+
+/
+
+s
+
+ω
+
+0.95
+
+0.9
+
+0.85
+
+0.8
+
+0.75
+
+0.7
+
+0.65
+
+0
+
+Eq. (A14)
+
+Eq. (A10)
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+kv /ω
+p
+
+0
+
+(b)
+
+0.75
+
+0.7
+
+0.65
+
+0.6
+
+0.55
+
+0.5
+
+0
+
+13
+
+κ
+κ'
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+kv /ω
+p
+
+0
+
+FIG. 6. SPWs in the HDM. In panel (a), the dispersion relation obtained by Eq. (A14) is plotted. The erroneous solution, Eq. (A10), which is
+0 e−κ′z for z not so close
+widely quoted as the SPW dispersion, is shown alongside for comparison. As for the charge density, one has ρ(z) ∼ v−1
+to the surface. The exponent κ′ ∼ v−1
+
+is shown in panel (b). The erroneous solution states that ρ(z) ∼ e−κz, where κ is shown also in (b).
+
+0
+
+of two portions: the electric force n0eδVE(x, t) and the pres-
+sure due to density variation −mδVv2
+0∂xn(x, t). Now the laws
+of mechanics states that in the linear regime one has
+
+Further, taking ρ(z) = ρ0e−κz and substituting it in Eq. (A6),
+we obtain
+
+ω2
+
+p + v2
+
+0(k2 − κ2) − ¯ω2 = 0.
+
+(A7)
+
+n0m ∂t +
+
+1
+
+τ! v(x, t) = n0eE(x, t) − mv2
+
+0∂xn(x, t),
+
+(A1)
+
+The boundary condition (A4) requires
+
+Here shear viscosity effects have been ignored. Now assum-
+ing n(x, t) = n(x)e−iωt and similarly for v(x, t) and other field
+quantities, we obtain the current density as
+
+the divergence of which is then given by
+
+J(x) =
+
+E(x) − v2
+
+ω2
+p
+4π
+
+i
+
+¯ω 
+
+∂x · J(x) =
+
+i
+
+¯ω (cid:16)ω2
+
+p − v2
+
+0∂xρ(x)
+0∂2(cid:17) ρ(x).
+
+,
+
+(A2)
+
+(A3)
+
+Combining this equation with the equation of continuity, one
+obtains the wave equation for the charge density.
+
+The usually quoted SPWs. In the standard but erroneous
+prescription for SPWs in this model, one takes Jz(x0) ≡ 0, or
+equivalently
+
+vz(x0) ≡ 0.
+
+(A4)
+
+Here x0 denotes a point on the surface. The continuity equa-
+tion reads
+
+− i ¯ωρ(x) + ∂x · J(x) = 0.
+
+In conjunction with Eq. (A3), one finds
+
+(cid:16)ω2
+p − ¯ω2 − v2
+
+0∂2(cid:17) ρ(x) = 0,
+
+(A5)
+
+(A6)
+
+which is Eq. (23) given in Sec. II C. One then seeks solutions
+of the form ρ(x) = ρ(z)eikx and similarly for other quantities.
+
+ω2
+p
+4π
+
+Ez(0) = v2
+
+0 ρ′(0) = −κv2
+
+0ρ0,
+
+ρ′(z) = ∂zρ(z).
+
+(A8)
+
+It is easy to show that
+
+Ez(0) = −
+
+2πρ0
+k + κ
+
+.
+
+With this it follows from Eq. (A8) that
+
+ω2
+
+0 = v2
+
+0κ(k + κ), ω0 = ωp/ √2.
+
+Combining this relation with Eq. (A6), we arrive at
+
+¯ω2 = ω2
+
+0 + ω0v0k.
+
+(A9)
+
+(A10)
+
+0
+
+This is the usually quoted dispersion relation claimed for the
+SPWs in the HDM. As briefly captured in Sec. II C, this claim
+is plainly false: in the limit v0 → 0, κ ∼ v−1
+0 diverges and
+hence R ∞
+dz ρ(z) = ρ0κ−1 ∼ ρ0v0 vanishes, thus in contra-
+diction with the DM. This would also erroneously imply that
+Ez(z) did not change sign across the surface charge layer. It
+was essentially this erroneous solution that had been identi-
+fied by Harris14 and Garcia et al15 in their study based on
+Boltzmann's equation. It is plausible that this is also so with
+works employing a more microscopic approach such as the
+density functional theory, at least those using the so-called
+'infinite barrier' model for mimicking the surface30. For ex-
+ample, Feibelman identified a solution of uniform potential
+and hence empty of charges but with frequency ωp/ √2 in the
+long wavelength limit47, exactly in this kind.
+
+SPWs in the HDM by the present theory.
+
+In our theory,
+no restrictions are placed on Jz(x0) and thus the equation of
+continuity reads
+
+For k = 0, it reduces to that for the DM. The dependence of κ′
+on k is shown in Fig. 6 (b), alongside that of κ.
+
+Appendix B: Origin of SPWs in the SRM
+
+14
+
+− i ¯ωρ(x) + ∂x · J(x) = −Θ′(z)Jz(x0).
+
+(A11)
+
+Using Eq. (A3) and taking ρ(x) = ρ(z)eikx and similarly for
+other quantities, one finds
+
+(cid:16)ω2
+p + v2
+
+z − ¯ω2(cid:17) ρ(z) = i ¯ωJz(0)Θ′(z).
+0k2 − v2
+0∂2
+
+Now we introduce the Fourier transform for
+
+(A12)
+
+ρ(z) = (2/π)Z ∞
+
+0
+
+dq ρq cos(qz).
+
+It follows that
+
+Jz(0) = (i/ ¯ω)(ω2
+
+p/4π)Ez(0) = σDMEz(0).
+
+This implies that ρ′(0) = 0, which must hold for any ρ(z) that
+reduces to the Dirac function δ(z) desired in the DM limit. In
+conjunction with
+
+The widely used SRM assumes that the electrons be specu-
+larly reflected off a surface. One would then expect that Jz = 0
+and no SPWs would exist in this model. However, in the main
+text we have shown that what the SRM actually does is an
+extension of the HDM. The question then is, how do SPWs
+originate in the SRM? Here we show that the answer lies with
+the 'fictitious' charge sheet assumed in the model.
+
+We follow the SRM formalism as explained in many pa-
+pers20,26,69 -- 72 and employ it to study the response to an ex-
+ternal distribution of charge ρext(z; k, ω) placed outside the
+metal. We take ρext(z; k, ω) = ρ0(k, ω)δ(z − z0) for simplic-
+ity, where z0 < 0. In the SRM, the total electrostatic potential,
+φtot(z; k, ω) = φ(z; k, ω) + φext(z; k, ω), where φ is the potential
+produced by the induced charges ρ(z; k, ω), is written
+
+φtot(z; k, ω) = Θ(z)φm(z; k, ω) + Θ(−z)φv(z; k, ω),
+
+(B1)
+
+Ez(0) = −Z ∞
+
+0
+
+dq
+
+4kρq
+K2
+
+,
+
+(A13)
+
+where φm and φv are the potentials in the so-called pseudo-
+metal and pseudo-vacuum, respectively. These are further de-
+fined by
+
+we find from Eq. (A11) that
+
+ω2
+p
+
+4π Z ∞
+
+0
+
+1 −
+
+dq
+
+k
+K2
+
+1
+p + v2
+0K2 − ¯ω2
+
+ω2
+
+= 0,
+
+(A14)
+
+which is just Eq. (21) displayed in Sec. II C. The dispersion re-
+lation obtained by this equation has been plotted in Fig. 6 (a),
+where the relation (A10) is displayed together for compari-
+son. Both exhibit a linear dependence on k but with different
+slopes. Our theory predicts a slightly bigger slope.
+
+Let us have a look at the profile of ρ(z). According to our
+
+theory,
+
+ρ(z) = i ¯ωJz(0)Z dq
+
+π/2
+
+φm/v(Q, ω) =
+
+4π
+
+Q2ǫm/v(Q, ω) hρm/v
+
+ext (Q, ω) + σm/v
+
+s
+
+(k, ω)i , (B2)
+
+where φm/v(Q, ω) = R ∞
+
+dz e−iqzφm/v(z; k, ω) is the ordinary
+Fourier transform, Q = (k, q), ǫm(Q, ω) = ǫ(Q, ω), ǫv(Q, ω) =
+1 and σm/v
+(k, ω) is the fictitious surface charge density. In
+addition, ρm/v
+ext
+
+is related to ρext as follows
+
+−∞
+
+s
+
+ρm/v
+ext (z; k, ω) = Θ(z)ρext(∓z; k, ω) + Θ(−z)ρext(±z; k, ω). (B3)
+
+It follows that ρv
+
+ext(Q, ω) = 0 and
+
+cos(qz)(cid:16)ω2
+
+p + v2
+
+0K2 − ¯ω2(cid:17)−1
+
+.
+
+ρm
+ext(Q, ω) = 2ρ0(k, ω) cos(qz0).
+
+(B4)
+
+With q = qv0/ωp and K = Kv0/ωp as well as z = zωp/v0, it
+can be rewritten as
+
+Equations (B1) - (B3) define the SRM. Requiring the continu-
+ity of the dielectric displacement at z = 0 leads to
+
+ρ(z) =
+
+i ¯ωJz(0)
+ωpv0
+
+ρ(z),
+
+where
+
+ρ(z) = Z d q
+
+π/2
+
+cos( qz)(cid:16)1 + K2 − ( ¯ω/ωp)2(cid:17)−1
+
+.
+
+(A15)
+
+(A16)
+
+σm
+s (k, ω) = −σv
+
+s(k, ω) = σs(k, ω).
+
+(B5)
+
+This can be further fixed by requiring the continuity of φtot at
+z = 0. One finds
+
+σs(k, ω) = 2ρ0(k, ω) cosh(kz0)ǫ−1
+
+s,SRM(k, ω),
+
+(B6)
+
+One can show that not so close to the surface ρ(z) =
+
+1
+
+κ′v0/ωp
+
+e−κ′z, where
+
+κ′ =
+
+ωp
+
+v0 q1 + k2 − ( ¯ω/ωp)2
+
+with k = kv0/ωp. Thus,
+
+Z ρ(z) dz =
+
+i ¯ωJz(0)
+
+1
+
+ω2
+p
+
+1 + k2 − ( ¯ω/ωp)2
+
+.
+
+where ǫs,SRM is as given in Sec. IV C, i.e.
+
+ǫs,SRM(k, ω) = 1 +
+
+k
+
+π Z ∞
+
+−∞
+
+dq
+
+Q2ǫ(Q, ω)
+
+.
+
+The zeros of this quantity give poles of σs corresponding to
+SPWs in the SRM, thus revealing that the fictitious charge
+sheet is responsible for the SPWs in the SRM.
+
+15
+
+∗ haiyao.deng@gmail.com; Currently at National Graphene Insti-
+
+tute, University of Manchester, UK.
+
+1 W. L. Barnes, A. Dereux, and T. W. Ebbesen, "Surface plasmon
+
+subwavelength optics." Nature (London) 424, 828 (2003).
+
+2 A. V. Zayats, I. S. Igor, and A. A. Maradudin, "Nano-optics of
+
+surface plasmon polaritons." Phys. Rep. 408, 131 (2005).
+
+3 S. A. Maier, Plasmonics: Fundamentals and Applications
+
+(Springer Science & Business Media, New York, 2007).
+
+4 D. Sarid and W. Cgallener, Modern Introduction to Surface Plas-
+mons: Theory, Mathematic Modeling and Applications (Cam-
+bridge University Press, Cambridge, UK, 2010).
+
+5 J. B. Khurgin and A. Boltasseva, "Reflecting upon the losses in
+plasmonics and metamaterials." MRS Bulletin 37, 768 (2012);
+"How to deal with the loss in plasmonics and metamaterials."
+Nat. Nanotech. 10, 2 (2015); "Ultimate limit of field confinement
+by surface plasmon polaritons." Faraday Discussions 178, 109
+(2015); "How small can 'Nano' be in a 'Nanolaser'?." Nanopho-
+tonics 1, 3 (2012).
+
+6 R. F. Oulton, "Plasmonics: Loss and gain." Nat. Photon. 6, 219
+(2012); "Surface plasmon lasers: sources of nanoscopic light."
+Mater. Today 15, 26 (2012).
+
+7 M. I. Stockman, "Spasers explained." Nat. Photon. 2, 327 (2008).
+8 O. Hess, John B. Pendry, Stefan A. Maier, Rupert F. Oulton, J. M.
+Hamm, and K. L. Tsakmakidis. "Active nanoplasmonic metama-
+terials." Nat. Materials 11, 573 (2012).
+
+9 M. Premaratne and M. I. Stockman, "Theory and technology of
+
+SPASERs." Adv. Optics and Photonics, 31, 79-128 (2017).
+
+10 H.-Y. Deng, K. Wakabayashi and C.-H. Lam, "Universal self-
+amplification channel for surface plasma waves." Phys. Rev. B 95,
+045428 (2017).
+
+11 H.-Y. Deng, "Theory of nonretarded ballistic surface plasma
+
+waves in metal films." Phys. Rev. B 95, 125442 (2017).
+
+12 H.-Y. Deng, "Possible instability of the Fermi sea against surface
+plasma oscillations." J. Phys. Condens. Matter 29, 455002 (2017).
+13 R. H. Ritchie, "Plasma losses by fast electrons in thin films." Phys.
+Rev. 106, 874 (1957); E. A. Stern and R. A. Ferrell, "Surface
+plasma oscillations of a degenerate electron gas." Phys. Rev. 120,
+130 (1960).
+
+14 J. Harris, "The effect of short range correlations on surface plas-
+
+mon dispersion." J. Phys. C 5, 1757 (1972).
+
+15 F. Flores and F. Garcia-Moliner, "Classical electrodynamics of
+non-specular conducting surfaces." Le J. de Physique 38, 863
+(1977).
+
+16 R. H. Ritchie, "On surface plasma oscillations in metal foils."
+
+Prog. Theoret. Phys. (Kyoto) 29, 607 (1963).
+
+17 J. Harris, "Surface plasmon dispersion: A comparison study of
+microscopic and hydrodynamics theories." Phys. Rev. B 4, 1022
+(1971); Y. O. Nakamura, "Quantization of Non-Radiative Surface
+Plasma Oscillations." Prog. Theoret. Phys. 70, 908 (1983).
+
+18 G. Barton, "Some surface effects in the hydrodynamic model of
+
+metals." Rep. Prog. Phys. 42, 65 (1979).
+
+19 A. L. Fetter, "Electrodynamics of a layered electron gas. I. Sin-
+gle layer." Ann. Phys. (NY) 81, 367 (1973); "Edge magneto-
+plasmons in a two-dimensional electron fluid confined to a half-
+plane." Phys. Rev. B 33, 3717 (1986).
+
+20 R. H. Ritchie and A. L. Marusak, "The surface plasmon dispersion
+
+relation for an electron gas." Surface Science 4, 234 (1966).
+
+21 R. Nunez. P. M. Echenique and R. H. Ritchie, "The energy loss of
+energetic ions moving near a solid surface." J. Phys. C 13, 4229
+(1980).
+
+22 A. Vagov, I. A. Larkin, M. D. Croitoru and V. M. Axt, "Role
+
+of nonlocality and Landau damping in the dynamics of a quan-
+tum dot coupled to surface plasmons." Phys. Rev. B 93, 195414
+(2016).
+
+23 S. I. Pekar, "The theory of electromagnetic waves in a crystal in
+
+which excitons are produced." Sov. Phys. JETP 6, 785 (1958).
+
+24 A. A. Maradudin and D. L. Mills, "Effect of Spatial Dispersion on
+the Properties of a Semi-Infinite Dielectric." Phys. Rev. B 7, 2787
+(1973).
+
+25 F. Garcia-Moliner and F. Flores, "Classical Electrodynamics of
+Non-Specular Dielectric Surfaces." Le J. de Physique 38, 851
+(1977).
+
+26 F. Flores and F. Garcia-Moliner, "Self-energy of a fast-moving
+
+charge near a surface." J. Phys. C 12, 907 (1979).
+
+27 P. J. Feibelman, "Surface electromagnetic fields." Prog. Surf. Sci.
+
+12, 287 (1982).
+
+28 K. -D. Tsuei, E. W. Plummer, A. Liebsch, E. Pehlke, K. Kempa
+and P. Bakshi, "The normal modes at the surface of simple met-
+als." Surf. Science 247, 302 (1991).
+
+29 P. Apell, A. Ljungbert and S. Lundgvist, "Non-local optical effects
+
+at metal surfaces." Phys. Scripta 30, 367 (1984)
+
+30 A. Garcia-Lekue and J. M. Pitarke, "Energy loss of charged par-
+ticles interacting with simple metal surfaces." Phys. Rev. B 64,
+035423 (2001).
+
+31 V. M. Agranovich and V. L. Ginzburg, Spatial dispersion in crys-
+tal optics and the theory of excitons (Interscience, London, 1966).
+32 R. T. Beach and R. W. Christy, "Electron-electron scattering in the
+intraband optical conductivity of Cu, Ag, and Au." Phys. Rev. B
+16, 5277 (1977) and references therein.
+
+33 J. M. Pitarke, V. M. Silkin, E. V. Chulkov, and P. M. Echenique,
+"Theory of surface plasmons and surface-plasmon polaritons."
+Rep. Prog. Phys. 70, 1 (2007).
+
+34 P. M. Echenique and J. B. Pendry, "Absorption profile at surfaces."
+
+J. Phys. C 8, 2936 (1975).
+
+35 A. Liebsch, "Surface plasmon dispersion of Ag." Phys. Rev. Lett.
+
+71, 145 (1993).
+
+36 A. D. Raki´c, A. B. Djuri si´c, J. M. Elazer and M. L. Majewski,
+"Optical properties of metallic films for vertical-cavity optoelec-
+tronic devices." Appl. Optics 37, 5271 (1998).
+
+37 A. D. Raki´c, "Algorithm for the determination of intrinsic optical
+constants of metal films: application to aluminum." Appl. Optics
+34, 4755 (1995).
+
+38 H. Raether, Surface Plasmons on Smooth and Rough Surfaces and
+
+on Gratings (Springer, Heidelberg, 1988).
+
+39 C. Cirac´ı, J. B. Pendry and D. R. Smith, "Hydrodynamic model
+for plasmonics: a macroscopic approach to a microscopic prob-
+lem." ChemPhysChem 14, 1109 (2013).
+
+40 O. Schnitzer, V. Giannini, S. A. Maier, and R. V. Craster, "Sur-
+face plasmon resonances of arbitrarily shaped nanometallic struc-
+tures in the small-screening-length limit." Proc. R. Soc. A 472,
+20160258 (2016); Y. Luo, R. Zhao, and J. B. Pendry, "van der
+Waals interactions at the nanoscale: The effects of nonlocality."
+Proc. Natl. Acad. Sci. U.S.A. 111, 18422 (2014); Y. Luo, A. I.
+Fernandez-Dominguez, A. Wiener, S. A. Maier, and J. B. Pendry,
+"Surface plasmons and nonlocality: a simple model." Phys. Rev.
+Lett. 111, 093901 (2013).
+
+41 G. Toscano, J. Straubel, A. Kwiatkowski, C. Rockstuhl, F. Ev-
+ers, H. Xu, N. A. Mortensen and M. Wubs, "Resonance shifts
+and spill-out effects in self-consistent hydrodynamic nanoplas-
+monics." Nat. Communications 6, 7132 (2015)
+
+42 W. Yan, "Hydrodynamic theory for quantum plasmonics: linear-
+response dynamics of the inhomogeneous electron gas." Phys.
+
+Rev. B 91, 115416 (2015).
+
+43 C. Cirac´ı, "Quantum hydrodynamic theory for plasmonics: Im-
+pact of the electron density tail." Phys. Rev. B 93, 205405 (2016).
+44 T. Christensen, W. Yan, A.-P. Jauho, M. Solijacic and N. A.
+shape,
+
+Mortensen, "Quantum corrections in nanoplasmonics:
+scale and material." Phys. Rev. Lett. 118, 157402 (2017).
+
+45 Note that ǫHDM differs from the bulk dielectric function that is
+usually quoted in the literature, which reads 1 − ω2
+p/( ¯ω2 − K2v2
+0).
+This function can be easily obtained from Eqs. (A2) and (A5) by
+adding an external term Eext to E and taking ∂x · Eext = 4πρext. The
+dielectric function then by definition is given by ρext/(ρext + ρ).
+The difference arises from two non-equivalent approaches to the
+HDM, see Ref.46 for more discussions.
+
+46 H.-Y. Deng, "An analytical dynamical
+
+response theory for
+bounded medium without additional boundary conditions:
+a
+unified view of dispersive and non-dispersive models." ArXiv
+1806.08308 (2018).
+
+47 P. J. Feibelman, "Intensity of the infinite-wavelength surface plas-
+mon frequency to the electron density profile." Phys. Rev. B 3,
+220 (1971).
+
+48 K. Fuchs, "The conductivity of thin metallic films according to the
+electron theory of metals." Proc. Camb. Phil. Soc. 34, 100 (1938).
+49 J. M. Ziman, Electrons and Phonons: Thet Theory of Transport
+
+Phenomena in Solids (Oxford University Press, Oxford, 2001).
+
+50 A. A. Abrikosov, Fundamentals of the Theory of Metals (Elsevier
+
+Science Publishers B. V., North-Holland, Amsterdam, 1988).
+
+51 G. E. H. Reuter and E. H. Sondheimer, "The theory of the anoma-
+lous skin effect in metals." Proc. R. Soc. London A 195, 338
+(1948).
+
+52 M. I. Kaganov, G. Y. Lyubarskiy and A. G. Mitina, "The theory
+and history of the anomalous skin effect in normal metals." Phys.
+Rep. 288, 291 (1997).
+
+53 In Refs.10,11, JSRM was called J′. The expressions given there were
+typographically flawed, which though does not affect any state-
+ments or other expressions given in those work.
+
+54 The solutions to Eq. (13) are independent of the choice of qc
+as long as the latter is sufficiently large. For example, for k =
+0.07kp, we find that ¯ω/ωp = 0.93 + 0.095i, 0.95 + 0.099i, 0.95 +
+0.099i, 0.96 + 0.098 for qc/kp = 1.5, 3.0, 4.5, 6.0, respectively.
+There is no difference within the numerical resolution ±0.005.
+More discussions on this can be found in Ref.46.
+55 More detailed calculations [W. E. Lawrence, "Electron-electron
+scattering in the low-temperature resistivity of the noble met-
+als." Phys. Rev. B 13 5316 (1976)] shows that the second term
+in Eq. (54) should be multiplied by a factor (π3/12)Γ∆(ωp/εF ),
+where Γ and ∆ are constants with their product of the order of 0.4
+ --  for noble metals and Al64  --  related to the geometry of the Fermi
+surface. Similarly, the third term in Eq. (53) should be multiplied
+by the same factor. For noble metals and Al this factor is around
+1.5. However, for sodium and potassium it is nearly zero.
+
+56 P. B. Johnson and R. Christy, "Optical constants of the noble met-
+
+als." Phys. Rev. B 6, 4370 (1972).
+
+57 A. Marini, R. D. Sole and G. Onida, "First-principles calculation
+of the plasmon resonance and of the reflectance spectrum of silver
+in the GW approximation." Phys. Rev. B 66, 115101 (2002).
+
+58 It is expected that γresidual for Ag is similar to that for gold. The
+
+16
+
+latter has been measured in several works, e.g. M. Liu, M. Pelton
+and P. Guyot-Sionnest, "Reduced damping of surface plasmons at
+low temperatures." Phys. Rev. B 79, 035418 (2009) and J.-S. G.
+Bouillard, W. Dickson, D. P. O'Connor and G. A. Wurtz, "Low-
+temperature plasmonics of metallic nanostructures." Nano Lett.
+12, 1561 (2012).
+
+59 M. Rocca, F. Biggio and U. Valbusa, "Surface-plasmon spectrum
+of Ag(001) measured by high-resolution angle-resolved electron-
+energy-loss-spectroscopy." Phys. Rev. B 42, 2835 (1990).
+
+60 M. Rocca, F. Moresco and U. Valbusa, "Temperature dependence
+of surface plasmons on Ag (001)." Phys. Rev. B 45, 1399 (1992).
+61 K.-H. Lee and K. J. Chang, "First-principles study of the optical
+properties adn the dielectric response of Al." Phys. Rev. B 49,
+2362 (1994).
+
+62 C. J. Powell and J. B. Swan, "Effect of oxidation on the character-
+istic loss spectra of aluminum and magnesium." Phys. Rev. 116,
+81 (1959); "Origin of the characteristic electron energy losses in
+magnesium." ibid 115, 869 (1959).
+
+63 M. W. Knight, N. S. King, L. Liu, H. O. Everitt, P. Nordlander
+and N. J. Halas, "Aluminum for plasmonics." ACS Nano 8, 834
+(2014)
+
+64 M. Sinvani, A. J. Greenfield, A. Bergmann, M. Kaveh and N.
+Wiser, "Effect of annealing on the temperature dependence of the
+electrical resistivity of aluminium." J. Phys. F: Metal Phys. 11,
+149 (1981).
+
+65 J. H. J. M. Ribot, J. Bass, H. van Kempen and P. Wyder, "Further
+evidence for electron-electron scattering in aluminum." J. Phys. F:
+Metal Phys. 9, L117 (1979).
+
+66 The often quoted resistivity for Al at room temperature is around
+3µΩ·cm, see R. A. Serway, Principles of Physics (2nd ed., Lon-
+don: Saunders College Pub.). Using this to evaluate the contri-
+bution of the electron-phonon scattering to τ−1 would give ν0 ≈
+0.01ωp, a much smaller value than what would be obtained with
+the low temperature data in Ref.64,65. This discrepancy might be
+due to the uncertainty as to the actual scattering mechanism re-
+sponsible for the resistivity at low temperatures.
+
+67 D. E. Beck, "Interband contribution to the long-wavelength damp-
+
+ing of the surface plasmon." Phys. Rev. B 43, 12611 (1991).
+
+68 D. A. Iranzo, S. Nanot, E. J. C. Dias, I. Epstein, C. Peng, D. K.
+Efetov, M. B. Lundeberg, R. Parret, J. Osmond, J.-Y. Hong, J.
+Kong, D. R. Englund, N. M. R. Peres and F. H. L. Koppens, "Prob-
+ing the ultimate plasmon confinement limits with a van der Waals
+heterostructure." Science 360, 291(2018).
+
+69 K. L. Aminov and J. B. Pedersen, "Quantum theory of high-
+energy electron transport in the surface region." Phys. Rev. B 63,
+125412 (2001).
+
+70 F. Garcia-Moliner and F. Flores, Introduction to the theory of solid
+
+surfaces (Cambridge University Press, New York, 1979).
+
+71 J. L. Gervasoni and N. R. Arista, "Energy loss and plasmon excita-
+tion during electron emission in the proximity of a solid surface."
+Surf. Sci. 260, 329 (1992).
+
+72 F. Yubero, J. M. Sanz, B. Ramskov and S. Tougaard, "Model
+for quantitative analysis of reflection-electron-energy-loss spec-
+tra: Angular dependence." Phys. Rev. B 53, 9719(1996).
+
+

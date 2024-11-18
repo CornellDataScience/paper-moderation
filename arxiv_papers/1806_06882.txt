@@ -1,0 +1,747 @@
+Topology-controlled thermopower oscillations in multiterminal Andreev
+
+interferometers
+
+Pavel E. Dolgirev
+
+Skolkovo Institute of Science and Technology, Skolkovo Innovation Center, 3 Nobel St., 143026 Moscow, Russia
+
+I.E. Tamm Department of Theoretical Physics, P.N. Lebedev Physical Institute, 119991 Moscow, Russia and
+
+Moscow Institute of Physics and Technology, Dolgoprudny, 141700 Moscow region, Russia
+
+Mikhail S. Kalenkov
+
+Andrei D. Zaikin∗
+
+Institut fur Nanotechnologie, Karlsruher Institut fur Technologie (KIT), 76021 Karlsruhe, Germany and
+
+National Research University Higher School of Economics, 101000 Moscow, Russia
+
+(Dated: March 23, 2021)
+
+We theoretically investigate coherent oscillations of the thermopower S as a function of the mag-
+netic flux Φ in six-terminal Andreev interferometers. We demonstrate that the thermopower behav-
+ior is determined by a number of contributions originating from the Josephson-like and Aharonov-
+Bohm-like effects as well as from electron-hole asymmetry. The relative weight of these contributions
+depends on the relation between temperature, voltage bias and an effective Thouless energy of our
+setup. We particularly emphasize the role of the system topology that may have a dramatic impact
+on the behavior of S(Φ).
+
+INTRODUCTION
+
+Long-range quantum coherence of electrons in normal-
+superconducting (NS) hybrid nanostructures gives rise to
+a large number of intriguing phenomena [1] which can be
+directly observed at sufficiently low temperatures. A list
+of such phenomena  --  by far incomplete  --  includes the
+so-called π-junction state in SNS structures controlled
+by driving electrons in the N-metal out of equilibrium
+[2 -- 5], conductance reentrance [6, 7], proximity-induced
+Aharonov-Bohm effect in mesoscopic SN-rings [6 -- 10],
+non-local Andreev reflection [11 -- 17] and strongly en-
+hanced thermoelectric effect due to spin-dependent elec-
+tron scattering [18 -- 23] or Andreev reflection at differ-
+ent NS-interfaces [24 -- 26]. The latter mechanism could
+be responsible for large thermoelectric signal observed in
+Andreev interferometers of different topology [27 -- 31].
+
+Note that the thermopower detected in such interfer-
+ometers exhibits coherent oscillations as a function of the
+external magnetic flux Φ with the period equal to the
+flux quantum Φ0 = π/e [32]. Depending on the sample
+topology these oscillations can be described by either odd
+or even functions of Φ [27]. Increasing an external bias
+one could also observe these oscillations to vanish and
+then re-appear with the phase shift equal to π [29]. In
+our recent work [33] we offered an elaborate explanation
+for these striking observations. In particular, we argued
+that the low temperature behavior of Andreev interfer-
+ometers is essentially determined by a trade-off between
+non-equilibrium Josephson and Aharonov-Bohm effects
+resulting in phase-coherent periodic oscillations of both
+electric currents flowing between different terminals and
+the thermopower as functions of the magnetic flux Φ.
+While in general these oscillations were found to be nei-
+
+ther even nor odd in Φ, they can reduce to both these
+particular limits depending on the relation between ex-
+ternal voltage bias eV and/or temperature T and the
+characteristic Thouless energy of the device ETh to be
+defined below. The physics of the π-shifted thermopower
+oscillations observed in experiments [29] was found to be
+similar to that elucidated before [2 -- 5] for the Josephson
+π-junction state controlled by an external voltage bias V .
+In this Letter we will further extend our analysis by
+considering Andreev interferometers of a different topol-
+ogy as compared to that addressed in [33], cf. Fig. 1.
+We will explicitly evaluate the flux- or phase-dependent
+thermopower and demonstrate that the system topology
+ --  in addition to such parameters as eV , T and ETh  --  es-
+sentially determines its thermoelectric properties in the
+quantum limit.
+
+THE MODEL AND BASIC FORMALISM
+
+In what follows we will consider a multiterminal hybrid
+structure schematically depicted in Fig. 1. This structure
+consists of two superconducting and four normal termi-
+nals interconnected by normal diffusive wires of equal
+cross section A and different lengths as shown in Fig. 1.
+The superconducting terminals S1 and S2 are described
+by the complex order parameter ∆e±iφ/2, i.e. the phase
+difference between them is set equal to φ. In practice,
+this phase difference can be controlled, e.g., in a super-
+conducting loop geometry encircling the magnetic flux
+Φ, in which case one has φ = 2πΦ/Φ0. Two normal
+terminals N1 and N2 are attached to the voltage source
+V = V2 − V1, while two remaining terminals N3 and N4
+are electrically isolated from any external circuit and are
+
+8
+1
+0
+2
+
+ 
+l
+u
+J
+ 
+
+0
+3
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+2
+v
+2
+8
+8
+6
+0
+
+.
+
+6
+0
+8
+1
+:
+v
+i
+X
+r
+a
+
+kept at different temperatures T3 and T4. Accordingly,
+the thermoelectric potentials V3 and V4 are generated at
+these two normal terminals.
+An important energy scale of our device is controlled
+by the Thouless energy ETh = D/L2, where D is the wire
+diffusion coefficient and L = lS,1 +lc +lS,2 is effective dis-
+tance between the two superconducting terminals. Pro-
+vided this distance strongly exceeds the superconducting
+coherence length we have ETh (cid:28) ∆, i.e.
+the relevant
+energy scale in our problem stays well below the super-
+conducting gap.
+
+FIG. 1: Schematics of a six-terminal Andreev interferometer
+consisting of two superconducting and four normal terminals
+interconnected by normal metallic wires of different lengths.
+
+In order to proceed we will make use of the stan-
+dard quasiclassical
+formalism of the superconductiv-
+ity theory [1]. Here we will adopt the standard θ-
+parameterisation of the quasiclassical Green functions
+[1, 34]
+
+(cid:19)
+
+(cid:18)G11 F12
+
+F21 G22
+
+GR =
+
+(cid:18) cosh θ
+
+=
+
+eiχ sinh θ
+−e−iχ sinh θ − cosh θ
+
+(cid:19)
+
+,
+
+(1)
+
+where GR is 2 × 2 matrix in the Nambu space repre-
+senting the retarded quasiclassical Green function, θ and
+χ are complex functions satisfying the following spectral
+Usadel equations
+
+D∆θ = −2i sinh θ +
+∇jE = 0, jE = sinh2 θ · ∇χ.
+
+1
+2
+
+D(∇χ)2 sinh 2θ
+
+(2)
+
+(3)
+
+The kinetic equations can be cast to the following stan-
+
+dard form:
+
+∇jL = 0, jL = DL∇fL − Y∇fT + jsfT
+∇jT = 0, jT = DT∇fT + Y∇fL + jsfL,
+
+(4)
+
+(5)
+
+where fL(T )() is symmetric (antisymmetric) in energy
+part of the electron distribution function, and the kinetic
+coefficients in the θ-representation read
+
+(1 +  cosh θ2 ∓  sinh θ2 cosh(2 Im χ))
+
+1
+2
+ sinh θ2 sinh(2 Im χ), js = Im jE.
+
+DL/T =
+Y =
+
+1
+2
+
+(6)
+
+(7)
+
+2
+Note that the spectral function Y accounts for electron-
+hole asymmetry in our system. At this point it is worth
+mentioning here that generic metallic structures without
+superconductors normally exhibit very weak thermoelec-
+tric effect due to the presence of electron-hole symmetry
+in such structures.
+
+Eqs. (2) -- (5) need to be supplemented with proper
+boundary conditions at all interfaces of our structure.
+Here we will restrict our analysis to the important limit
+of fully transparent metallic interfaces meaning that at all
+wire nodes (i) the functions θ, χ, fL and fT remain con-
+tinuous and (ii) the spectral currents A∇θ, A∇χ, AjL
+and AjT are conserved. At the interfaces between the
+wires and the N-terminals the functions θ, χ, fL and fT
+take the bulk values deep inside the terminals. At NS
+boundaries for  < ∆ we have jL = 0 and fT = 0 just
+implying that (a) subgap quasiparticles transfer no heat
+across the interface and (b) charge imbalance vanishes at
+the NS boundary.
+
+THERMOPOWER
+
+The task at hand is to study the thermoelectic ef-
+fect between the reservoirs N3 and N4. Let us set
+lN,3 = lN,4 = lN .
+In this case by symmetry we have
+V3 = V4 = VN provided all terminals are kept at the
+same temperature T . The potential VN just represents
+the voltage drop at the point where the terminals N3 and
+N4 are attached to the central wire lc.
+In what follows we are going to evaluate the thermo-
+electric potential difference V3 − V4. Let us define the
+thermopower as
+
+(cid:12)(cid:12)(cid:12)T4(cid:55)→T3
+
+S34 =
+
+V3 − V4
+T3 − T4
+
+.
+
+(8)
+
+We will demonstrate that this quantity obeys the follow-
+ing general formula
+
+S34(V, φ) = S0(V ) + Sodd(V, φ) + Seven(V, φ),
+
+(9)
+where S0(V ) = (cid:104)S34(cid:105)φ and the last two terms rep-
+resent respectively odd and even in φ oscillating 2π-
+periodic functions with zero average over φ. Hence, in the
+agreement with our previous work [33] the thermopower
+S34(V, φ) (9) is, in general, neither odd nor even function
+of φ taking a nonzero value at φ = 0.
+Making use of the formalism outlined in the previous
+section we evaluated the thermopower S34(V, 0) numer-
+ically as a function of temperature. The results of this
+calculation are displayed in Fig. 2. We observe a rather
+non-trivial non-monotonous behavior of the thermopower
+as a function of T which  --  depending on the bias voltage
+ --  can even change its sign. At high temperatures strongly
+exceeding the Thouless energy ETh the thermopower S34
+shows a slow (power-law) decay with increasing T which
+
+is reminiscent of that for the even in φ (Aharonov-Bohm)
+current component [7].
+
+3
+
+FIG. 2: The thermopower eS34 for φ = 0 as a function of tem-
+perature at different voltage bias values. Here we set lS,1 =
+lS,2 = lN,1 = lN,2 = 1/3L, lc = 0.1L + (1/3 − 0.1)L, lN,3 =
+lN,4 = 1/2L and ∆ = 103ETh.
+
+(cid:90)
+
+(cid:32)
+
+(cid:33)
+
+Turning to the phase dependence of the thermoelectric
+signal, one can resolve the kinetic equations (4) and (5).
+Then inside the normal wires lN,3 and lN,4 one finds
+
+(cid:18)f N
+
+(cid:19)
+
+jN3,4
+L
+jN3,4
+T
+
+=
+
+f N
+L/T (V ) =
+
+(cid:16)
+
+GN3,4
+AσN
+1
+2
+
+tanh
+
+L
+
+L (V3,4) − f c
+T (V3,4) − f c
+f N
+± tanh
+ + eV
+
+T
+
+2T
+
+(cid:17)
+
+(10)
+
+. (11)
+
+,
+ − eV
+2T
+
+Here f c
+T /L are the components of the distribution func-
+tion evaluated in the central crossing point, σN is the
+normal conductivity of the wire and GN = GN3 = GN4
+is the spectral conductance matrix defined as
+
+(cid:18)GN
+
+L −GNY
+GNY GN
+T
+
+(cid:19)
+
+(cid:90)
+
+=
+
+GN =
+
+(cid:19)−1
+
+AσN
+
+(cid:18)DL −Y
+
+Y DT
+
+lN
+
+.
+
+(12)
+
+dx
+
+Here the integration is performed either over the wire lN,3
+or lN,4. In the absence of superconductivity this matrix
+reduces to the diagonal one proportional to the conduc-
+tance of the corresponding normal wire. Assuming the
+proximity effect deep inside the wires lN,3 and lN,4 to be
+sufficiently weak one can rewrite Eq. (12) in the form
+
+(cid:90)
+
+lN
+
+(cid:19)
+
+(cid:18)DL −Y
+
+Y DT
+
+GN ≈ AσN
+
+l2
+N
+
+dx.
+
+(13)
+
+Bearing in mind that no current can flow into and out
+of electrically isolated terminals N3 and N4 and by using
+the T -component of Eq. (10), we transform the condition
+
+FIG. 3: The oscillating parts of the thermopower (left panel)
+and the current IS (right panel) as functions of φ at differ-
+ent bias voltages V . The thermopower is measured in units
+of 10−2/e, while we express the current as eRLIS/ETh with
+RL = L/(σNA).
+
+T } = 0 to:
+
+d{jN3
+
+T − jN4
+(cid:110)
+
+(cid:90)
+
+dε
+
+GN
+
+T [f N
+
+T (V3) − f N
+
+T (V4)]+
+L (V3) − f N
+
++ GNY [f N
+
+L (V4)]
+
+= 0.
+
+(14)
+
+(cid:111)
+
+This equation determines the relationship between the
+terminal temperatures T3, T4 and the induced thermo-
+electric voltages V3, V4. Assuming δT = T3 − T4 to be
+sufficiently small and evaluating the voltage difference
+V3 − V4 up to linear in δT terms, from Eq. (8) we obtain
+
+eS34 ≈ 1
+4T 2
+N
+
+lNAσN
+
+dε
+
+(GT + GY )(ε + eVN )
+cosh2[(ε + eVN )/(2TN )]
+
+.
+
+(15)
+
+(cid:90)
+
+Here VN is the induced voltage in both terminals N3 and
+N4 for T3 = T4 = TN , i.e.
+in the absence of the tem-
+perature gradient. It is also important to keep in mind
+that the spectral conductance GT (ε, φ) (GY (ε, φ)) in Eq.
+(15) is an even (odd) function of both ε and φ.
+
+Eq. (15) represents the cental result of this work.
+The first observation to be made from this result is
+that the thermoelectric effect vanishes in the symmetric
+geometry with lS,1 = lS,2, lN,1 = lN,2 and with the ter-
+minals N3 and N4 attached to the center. It is easy to see
+that in this case we have VN = 0 and, hence, the even
+term in Eq. (15) vanishes after the energy integration.
+At the same time, the spectral function Y remains zero
+in the wires lN,3,4, thus providing GY = 0.
+that eVN <∼ ETh, the odd in φ contribution is dominant
+(Note that eVN <∼ ETh does not
+
+In addition, Eq. (15) implies that at low voltages, such
+
+to the thermopower.
+
+5101520-1.5-1-0.500.511.5-505-101-0.500.50/23/22-0.500.5-0.500.5-101-0.500.50/23/22-0.500.5necessarily mean eV <∼ ETh.) At larger voltages eVN >∼
+ETh, the even harmonics starts to dominate, cf. Fig. 3.
+The latter observation is specific to our geometry, where
+at such voltages the odd harmonics becomes suppressed
+by the factor ∼ (lc,1 − lc,2)/L.
+
+In Fig. 3 (left panel) we display the thermopower-phase
+relations at T = ETh and for several voltage-bias values
+V . We observe that, while at lower voltages the ther-
+mopower S34(φ) is (almost) odd in φ, it then tends to an
+even function of φ rather quickly with increasing V . It is
+interesting to compare this behavior of the thermopower
+with that of the phase-dependent current IS(φ) flowing
+between the two superconducting terminals. The cur-
+rent IS(φ) was recently evaluated elsewhere [35], and the
+corresponding results are displayed in the right panel of
+Fig. 3.
+
+In contrast to the thermopower S34(φ), the odd in φ
+harmonics dominates the function IS(φ) at all given val-
+ues of the bias voltage V . This observation indicates that
+the current IS(φ) and the thermopower S34(φ) may have
+a different origin. Indeed, the current IS(φ) is defined
+through the spectral supercurrent jE, while the odd har-
+monics of S34(φ) originates from the spectral function Y.
+To further stress the difference between these two quan-
+tities, in Fig. 4 we plot the temperature dependence of
+the odd harmonics for both the current and the ther-
+mopower. We observe that at sufficiently high tempera-
+tures T (cid:39) 15ETh the current amplitude is already com-
+pletely suppressed, while the thermopower amplitude is
+not.
+
+FIG. 4: The principal odd Fourier harmonics of the
+thermopower-phase
+(solid lines) and the current-phase
+(dashed lines) relations as functions of temperature for dif-
+ferent bias voltages. The thermopower values are normalized
+to 10−3/e, while the current IS is expressed in the same man-
+ner as in Fig. 3. With increasing T the current amplitude
+decays much faster as compared to that of S34.
+
+4
+
+Note that in our previous study [33] we addressed the
+setup with a somewhat different topology from that ana-
+lyzed here. In [33] we found that the thermopower-phase
+relation closely follows the dependence IS(φ) at all values
+of V . Furthermore, for V = 0 it was argued [25] that the
+thermopower S is simply proportional to S ∝ dIS/dT .
+Making use of this relation one could be tempted to spec-
+ulate that both the supercurrent and the thermopower (i)
+have the same origin and (ii) are odd functions of φ. The
+results displayed in Fig. 4 clearly demonstrate that the
+relation S34 ∝ dIS/dT does not hold for Andreev inter-
+ferometers under consideration.
+
+Thus, the above analysis allows us to conclude that
+the system topology  --  along with such parameters as V ,
+T and ETh  --  plays a decisive role for the thermopower-
+phase relation. This conclusion qualitatively agrees with
+experimental observations [27]. Our results demonstrate
+that  --  depending on the system topology  --  the behavior
+of the thermopower can be diverse: In symmetric setups
+it may get small or even vanish, while in non-symmetric
+ones the origin of the odd-part of the thermopower-phase
+relation may be determined either by the Josephson-like
+effect or through the spectral function Y which accounts
+for electron-hole asymmetry in our system.
+
+This work was supported in part by RFBR Grant No.
+18-02-00586. P.E.D. acknowledges support by Skoltech
+NGP Program (Skoltech-MIT joint project).
+
+∗ Electronic address: andrei.zaikin@kit.edu
+[1] W. Belzig, F.K. Wilhelm, C. Bruder, G. Schon and A.D.
+
+Zaikin, Superlatt. Microstruct. 25, 1251 (1999).
+[2] A.F. Volkov, Phys. Rev. Lett. 74, 4730 (1995).
+[3] F.K. Wilhelm, G. Schon, and A.D. Zaikin, Phys. Rev.
+
+Lett. 81, 1682 (1998).
+
+[4] S. Yip, Phys. Rev. B 58, 5803 (1998).
+[5] J.J.A. Baselmans, A.F. Morpurgo, B.J. van Wees and T.
+
+M. Klapwijk, Nature 397, 43 (1999).
+
+[6] T.H. Stoof and Yu.V. Nazarov, Phys. Rev. B 54, R772
+
+(1996).
+
+[7] A.A. Golubov, F.K. Wilhelm, and A.D. Zaikin, Phys.
+
+Rev. B 55, 1123 (1997).
+
+[8] H. Nakano and H. Takayanagi, Solid State Commun. 80,
+
+997 (1991).
+
+[9] V.T. Petrashov, V.N. Antonov, P. Delsing, and T. Clae-
+
+son, Phys. Rev. Lett. 74, 5268 (1995).
+
+[10] H. Courtois, P. Gandit, D. Mailly, and B. Pannetier,
+
+Phys. Rev. Lett. 76, 130 (1996).
+
+[11] J.M. Byers and M.E. Flatte, Phys. Rev. Lett. 74, 306
+(1995); G. Deutscher and D. Feinberg, Appl. Phys. Lett.
+76, 487 (2000).
+
+[12] D. Beckmann, H.B. Weber, and H. v. Lohneysen, Phys.
+
+Rev. Lett. 93, 197003 (2004).
+
+[13] S. Russo, M. Kroug, T.M. Klapwijk, and A.F. Morpurgo,
+
+Phys. Rev. Lett. 95, 027002 (2005).
+
+[14] P. Cadden-Zimansky and V. Chandrasekhar, Phys. Rev.
+
+Lett. 97, 237003 (2006).
+
+[15] D.S. Golubev and A.D. Zaikin, Phys. Rev. B 76, 184510
+
+01020304050-3-2-10125
+
+(2007).
+
+177004 (2004); J. Low Temp. Phys. 136, 401 (2004).
+
+[16] M.S. Kalenkov and A.D. Zaikin, Phys. Rev. B 76, 224506
+
+[26] M.S. Kalenkov and A.D. Zaikin, Phys. Rev. B 95, 024518
+
+(2007).
+
+(2017).
+
+[17] D.S. Golubev, M.S. Kalenkov, and A.D. Zaikin, Phys.
+
+[27] J. Eom, C.-J. Chien and V. Chandrasekhar, Phys. Rev.
+
+Rev. Lett. 103, 067006 (2009).
+
+Lett. 81, 437 (1998).
+
+[18] M.S. Kalenkov, A.D. Zaikin, and L.S. Kuzmin, Phys.
+
+[28] D.A. Dikin, S. Jung, and V. Chandrasekhar, Phys. Rev.
+
+Rev. Lett. 109, 147004 (2012).
+
+B 65, 012511 (2001).
+
+[19] P. Machon, M. Eschrig, and W. Belzig, Phys. Rev. Lett.
+
+[29] A. Parsons, I.A. Sosnin, and V.T. Petrashov, Phys. Rev.
+
+110, 047002 (2013).
+
+B 67, 140502(R) (2003).
+
+[20] A. Ozaeta, P. Virtanen, F.S. Bergeret, and T.T. Heikkila,
+
+[30] P. Cadden-Zimansky, Z. Jiang, and V. Chandrasekhar,
+
+Phys. Rev. Lett. 112, 057001 (2014).
+
+New J. Phys. 9, 116 (2007).
+
+[21] M.S. Kalenkov and A.D. Zaikin, Phys. Rev. B 90, 134502
+
+[31] C.D. Shelly, E.A. Matrozova, and V.T. Petrashov, Sci.
+
+(2014).
+
+Adv. 2, 1501250 (2016).
+
+[22] M.S. Kalenkov and A.D. Zaikin, Phys. Rev. B 91, 064504
+
+[32] Throughout this paper we set both Boltzmann and
+
+(2015).
+
+Planck constants equal to unity kB = ¯h = 1.
+
+[23] S. Kolenda, M.J. Wolf, and D. Beckmann, Phys. Rev.
+
+[33] P.E. Dolgirev, M.S. Kalenkov and A.D. Zaikin, Phys.
+
+Lett. 116, 097001 (2016).
+
+Rev. B 97, 054521 (2018).
+
+[24] R. Seviour and A.F. Volkov, Phys. Rev. B 62, R6116
+(2000); V.R. Kogan, V.V. Pavlovskii, and A.F. Volkov,
+EPL 59, 875 (2002); A.F. Volkov and V.V. Pavlovskii,
+Phys. Rev. B 72, 014529 (2005).
+
+[25] P. Virtanen and T.T. Heikkila, Phys. Rev. Lett. 92,
+
+[34] A.D. Zaikin and G.F. Zharkov, Fiz. Nizk. Temp. 7, 375
+
+(1981) [Sov. J. Low Temp. Phys. 7, 181 (1981)].
+
+[35] P.E. Dolgirev, M.S. Kalenkov and A.D. Zaikin,
+
+arXiv:1807.10339 (2018).
+
+

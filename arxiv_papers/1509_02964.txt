@@ -1,0 +1,6680 @@
+Quantum transport simulation of exciton condensate transport physics 
+in a double layer graphene system 
+ 
+
+Xuehao Mou,1 Leonard F. Register,1 Allan H. MacDonald,2 and Sanjay K. 
+Banerjee1 
+ 
+
+1Department of Electrical and Computer Engineering and Microelectronics Research Center, The University of 
+Texas at Austin, Austin, Texas 78758, United States 
+ 
+2Department of Physics, The University of Texas at Austin, Austin, Texas 78712, United States 
+
+ 
+
+Abstract—Spatially indirect electron-hole exciton condensates stabilized by interlayer Fock exchange interactions have 
+been predicted in systems containing a pair of two-dimensional semiconductor or semimetal layers separated by a thin 
+tunnel dielectric.  The layer degree of freedom in these systems can be described as a pseudospin. Condensation is then 
+analogous  to  ferromagnetism,  and  the  interplay  between  collective  and  quasiparticle  contributions  to  transport  is 
+analogous  to  phenomena  that  are  heavily  studied  in  spintronics.  These  phenomena  are  the  basis  for pseudospintronic 
+device proposals based on possible low-voltage switching between high (nearly shorted) and low interlayer conductance 
+states  and  on  near  perfect  Coulomb  drag-counterflow  current  along  the  layers.  In  this  work,  a  quantum  transport 
+simulator  incorporating  a  non-local  Fock  exchange  interaction  is  presented,  and  used  to  model  the  essential transport 
+physics in the bilayer graphene system. Finite size effects, Coulomb drag-counterflow current, critical interlayer currents 
+beyond  which  interlayer  DC  conductance  collapses  at  sub-thermal  voltages,  non-local  coupling  between  interlayer 
+critical currents in multiple lead devices, and an Andreev-like reflection process are illustrated.  
+
+ 
+I. INTRODUCTION 
+
+Coherent pairing of electrons and holes localized in separate III-V semiconductor layers has been observed at high 
+
+magnetic fields and cryogenic temperatures in systems containing a pair of quantum wells separated by tunnel barriers 
+
+(where holes are defined within as empty states in partially empty Landau levels).1-4 In these spatially indirect exciton 
+
+condensates,  interlayer  coherence  is  mediated  by  the  interlayer  Fock  exchange  interactions.3  The  consequences  of 
+
+condensate formation that have been studied experimentally include novel transport effects such as near perfect Coulomb 
+
+drag-counterflow currents, and greatly enhanced interlayer conductance up to a critical current Ic and a corresponding 
+
+critical  interlayer  voltage  Vc  beyond  which  the  DC  current  collapses,5  the  latter  effect  being  partially  analogous  to 
+
+transport phenomena in Josephson junctions. In this paper, we present a theoretical quantum transport simulation study of 
+
+closely related phenomena in the absence of a magnetic field. Although spatially indirect exciton condensation has not 
+
+yet been observed in this regime, it is expected to appear when nesting is established between electron- and hole-like 
+
+Fermi surfaces of two-dimensional semiconductors, gapless semiconductors, or semimetals. The prospects for observing 
+
+spatially  indirect  exciton  condensation  are  therefore  being  enhanced  by  progress  in  fabricating  and  studying  two-
+
+dimensional  materials.  In  this  study  we  choose  for  the  sake  of  definiteness  to  study  graphene  bilayers,  but  our 
+
+conclusions apply equally well to other systems. 
+
+First successfully isolated about a decade ago, graphene already has exhibited a broad set of novel phenomena of 
+
+interest  to  researchers  from  multiple  disciplines,  such  as  the  half-integer  quantum  Hall  effect  and  the  related  Berry’s 
+
+phase that had been predicted theoretically by physicists.6,7 Its unique symmetric and conical band structure has allowed 
+
+research  on  the  properties  of  massless  Dirac  Fermions,  including  novel  transport  properties  in  semiconductor  device 
+
+physics. When separated by dielectric tunnel barriers such has hexagonal boron nitride, it is possible to take advantage of 
+
+the symmetry between graphene’s electron and hole band structures to establish the Fermi surface nesting conditions that 
+
+favor interlayer exciton condensates.8,9 Systems based on monolayer or few-layer transition metal dichalcogenide (TMD) 
+
+semiconductors  have  extremely  large  exciton  binding  energies  and  may  provide  an  even  better  platform  for  such 
+
+condensates. The prospect of transport effects analogous to those in already studied in III-V quantum well systems, but 
+
+absent magnetic fields and at higher temperatures9,10 perhaps even room temperature, have led to novel “beyond CMOS” 
+
+device proposals with switching energies potentially of only a few tens of zepto-joules, including the Bilayer pseudoSpin 
+
+Field-Effect Transistor (BiSFET)11-14 and, more recently, the Bilayer pseudoSpin Junction Transistor (BiSJT).15 
+
+Studies of the transport properties of systems containing a spatially indirect exciton condensate require simulators 
+
+that incorporate the non-local Fock exchange interaction. We describe such a simulator in detail, and use it to model 
+
+essential  transport  physics  including  finite  size  effects,  critical  currents  at  sub-thermal  voltages,  Coulomb  drag-
+
+counterflow current, non-local coupling between critical currents in multi-terminal devices, and a reflection process for 
+
+this  system  akin  to  the  Andreev  reflection  at  the  boundary  of  a  conventional  superfluid.  Although  the  simulation 
+
+techniques described here should be transferable to TMD based system, or to other two-dimensional semiconductors or 
+
+semimetals, simulations might in some cases have significantly greater computational costs, depending on the complexity 
+
+of  the  electronic  structure.  The  purpose  of  this  work  is  to  model  essential  transport  properties in  the  presence of  the 
+
+exciton condensates, including but not limited to those serving as the basis for BiSFET and BiSJT. The challenges which 
+
+must be met to achieve such condensates have been and are being addressed elsewhere.8-10,16 This work is intended to 
+
+motivate such work, and to help with the interpretation and design of experiments as well as potential devices. 
+
+ Portions of this work were reported previously in conference publications.13,17,18 Here, more details of the method, 
+
+more complete sets of data, a more comprehensive and synergistic analysis thereof, and a more thorough discussion of 
+
+the underlying essential physics including interpretations in terms of electrons, holes, and excitons are provided. 
+
+The  quantum  transport  simulator  and  the  system  model  used  here  are  discussed  in  Section  II;  various  transport 
+
+properties and discussions of underlying essential physics are addressed in Section III. 
+
+II. TIGHT-BINDING HARTREE-FOCK MODEL 
+
+Although  we  discuss  electron-hole  interactions,  transport  simulations  are  performed  entirely  in  terms  of  electron 
+
+states within the conduction and valence bands of opposite layers. The Hartree-Fock approximation is used to model the 
+
+exchange  interaction  between  electrons  (due  to  their  indistinguishability  and  odd  parity)  within  a  single-particle 
+
+framework.  The  resulting  time-independent  Schrödinger’s  equation  for  single-electron  energy  eigenstates  {φβ(r),  Eβ}, 
+
+neglecting for the moment the external potential profile, takes the form: 
+
+
+
+2
+
+m
+2
+
+
+
+2
+
+φ
+
+
+ 
+r
+
+
+
+φ
+ 
+
+
+ 
+
+r
+
+r
+Vd
+
+
+C
+
+
+rr
+,
+
+
+
+ 
+
+
+rr
+,
+
+
+
+
+
+
+
+r
+Vd
+
+
+C
+
+
+rr
+,
+
+
+
+ 
+
+
+rr
+,
+
+
+
+φ
+
+
+
+r
+
+
+
+
+φE
+
+
+ r
+
+,                       (1a) 
+
+where ρ(r,rꞌ) is the density matrix, 
+
+
+rr
+,
+
+
+
+
+
+
+
+
+
+
+f
+
+ 
+r
+*
+
+
+
+
+
+
+
+
+r
+
+
+
+
+
+.                                                                       (1b) 
+
+The second term on the left of Eq. (1a) is the local Hartree potential term describing the classical electrostatic potential at 
+
+r  due to a charge distribution  −qρ(r) = −qρ(r,r), to which we can readily add the contributions of externally applied 
+
+electrostatic fields. The third term is the non-local and purely quantum mechanical Fock exchange interaction, which 
+
+lowers the electron-electron interaction energy due to tendency of the odd-parity electrons to be further away from each 
+
+other than expected classically.19 The indices β (βꞌ) label the single electron states and the fβ (fβꞌ) are their occupation 
+
+probabilities.  VC(r,rꞌ)  is  the  Coulomb  interaction  energy  between  electrons  at  positions  r  and  rꞌ.  (Notably,  the 
+
+contributions to the Hartree and Fock terms for β = βꞌ cancel, demonstrating that Eq. (1) avoids interaction between any 
+
+electron and itself.) 
+
+For transport simulations, we switch to an atomistic tight-binding approximation considering in this work just one 
+
+2pz  (π)  orbital  per  carbon  atom  site  located  at  discrete  positions  R.  (More  general  models  are  also  described  by  the 
+
+equations that follow if the indices R  are considered to also represent the various orbitals on each atom.) Within this 
+
+tight-binding framework, Eq. (1) can be written in the following form20: 
+
+φH
+TB
+
+
+
+R
+
+
+
+
+
+V
+H
+
+
+R
+
+T
+
+
+φ
+
+
+
+R
+
+T
+
+
+
+
+
+T
+
+
+
+R
+
+B
+
+V
+F
+
+
+RR
+
+,
+
+T
+
+
+φ
+
+
+
+R
+
+B
+
+
+
+
+
+φE
+
+
+
+R
+
+T
+
+B
+
+,                                   (2a) 
+
+VF
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+V
+
+C
+
+
+RR
+
+,
+
+T
+
+B
+
+ 
+
+
+RR
+
+,
+
+T
+
+B
+
+,                                                          (2b) 
+
+
+RR
+
+
+T,
+
+B
+
+
+
+
+
+'
+
+
+f
+
+
+'
+'
+
+
+
+R
+
+T
+
+
+*
+
+'
+
+
+
+R
+
+B
+
+
+
+,                                                             (2c) 
+
+for the top (T) layer. The form for the bottom (B) layer is obtained by switching the “T” and “B” indices. We have 
+
+explicitly  considered  only  the  interlayer  Fock  exchange  interaction,  labeled  VF,  which  is  the  basis  for  exciton 
+
+condensation. VH is the nominal Hartree potential energy, which in principle incorporates contributions due to charges on 
+
+either layer, any external charge (externally applied fields), and, here, any uniform correction to the energy due to intra-
+
+layer  Fock  exchange  interactions.  HTB  includes  the  intra-layer  and  (much  weaker)  interlayer  “bare”  tight-binding 
+
+hopping energies. Note that VF(RT,RB) can become complex under non-equilibrium conditions through the density matrix 
+
+ρ(RT,RB). 
+
+  
+
+FIG. 1.  Simula
+channel of leng
+dielectric envir
+direction is rep
+layer. Atoms w
+N on the right. 
+unit cell of mon
+(bottom left), T
+incorporate ato
+ 
+
+ated structure. T
+gth L and with i
+ronment betwee
+presented by the
+within the armch
+Two consecutiv
+nolayer graphen
+TR (top right) an
+oms 0, −1, −2, …
+
+Two graphene l
+interlayer separ
+en and, still mor
+e shaded stripes
+hair chain are la
+ve atomic sites 
+ne. Four semi-i
+nd BR (bottom 
+… on  the left an
+
+layers (infinite i
+ration d across a
+re importantly, 
+ along the trans
+abeled by conse
+within one arm
+nfinite, perfect 
+right), which c
+nd N+1, N+2, N
+
+in the y directio
+a tunnel dielectr
+above and belo
+sport direction e
+ecutive integers
+mchair chain of 
+absorbing/injec
+conceptually (th
+N+3, … on the r
+
+on) are coupled 
+ric. The effectiv
+ow the graphene
+encompassing o
+s, starting from 
+atoms and with
+cting leads are m
+hey do appear o
+right within a la
+
+via bare and Fo
+ve dielectric co
+e layers as a wh
+one armchair ch
+1 on the left of 
+hin the same lay
+modeled, and la
+only implicitly i
+ayer. 
+
+ock exchange in
+nstant εr repres
+hole. The period
+hain of graphen
+f the channel an
+yer correspond t
+abeled TL (top 
+n the boundary
+
+nteractions in a
+a 
+ents the 
+dicity in the y 
+ne atom per 
+d ending with 
+to a primitive 
+left), BL 
+y conditions) 
+
+Fig. 1 ill
+
+ustrates the fo
+
+our-terminal s
+
+structure used
+
+d in the simula
+
+ator develope
+
+d in Ref. 17, 
+
+where two gr
+
+raphene sheet
+
+s 
+
+are  separated
+
+d  by  a  distan
+
+nce  d  through
+
+h  an  interlaye
+
+er/tunnel  diele
+
+ectric  and  co
+
+oupled  via  the
+
+e  quasi-single
+
+e-particle  bare
+e 
+
+coupling and 
+
+the many-bo
+
+dy Fock exch
+
+hange interact
+
+ion, both with
+
+hin a channel 
+
+of length L.
+
+The dielectric
+
+c properties o
+of 
+
+the  environm
+
+ment,  including
+
+g  the  interlay
+
+yer  dielectric,
+
+,  the  more  im
+
+mportant  diele
+
+ectrics  above 
+
+and  below  th
+
+he  condensate
+e 
+
+region, and fr
+
+ree-carrier scr
+
+reening, are al
+
+ll represented
+
+d very roughly
+
+y by a single e
+
+effective diele
+
+ectric constan
+
+nt εr, given ou
+ur 
+
+focus on esse
+
+ntial transport
+
+t physics in th
+
+he presence of
+
+f the exciton c
+
+condensate an
+
+d not on the c
+
+conditions req
+
+uired to create
+e 
+
+the condensat
+
+te. Beyond the
+
+e channel, the
+
+e interlayer Fo
+
+ock exchange 
+
+interaction is 
+
+taken to be z
+
+zero, qualitativ
+
+vely consisten
+nt 
+
+with a design
+
+ned increase in
+
+n the interlay
+
+yer separation 
+
+or in the per
+
+rmittivity of th
+
+he dielectric e
+
+environment t
+
+to localize the
+e 
+
+condensate.  T
+
+The  width  of
+
+f  the  graphen
+
+ne  sheets  perp
+
+pendicular  to
+
+  the  transpor
+
+rt  direction  ar
+
+re  taken  to  b
+
+be  infinite  fo
+or 
+
+simulation pu
+
+urposes. For s
+
+specificity, the
+
+e graphene is 
+
+oriented such
+
+h that there is
+
+s an armchair 
+
+pattern of ato
+
+oms along the
+e 
+
+transport (x) 
+
+direction. The
+
+e pattern of b
+
+bare interlayer
+
+r tunnel-coup
+
+ling through 
+
+the dielectric 
+
+could be qui
+
+ite complex in
+n 
+
+principle (we 
+
+do not specif
+
+fy a particular 
+
+dielectric her
+
+re), and will n
+
+between  A  an
+
+nd  B  sublatti
+
+ice  atoms  of 
+
+interlayer  cou
+
+upling  pattern
+
+n,  bulk  calcul
+
+opposite  grap
+
+phene  layers 
+
+ations  have  s
+
+shown  that  th
+
+ot in general c
+
+correspond to 
+
+the “A-B” co
+
+oupling pattern
+n 
+
+as  in  a  Berna
+
+al  stack.  Mor
+
+reover,  given 
+
+a  mixed  bare
+e 
+
+e  coherent  in
+
+nterlayer  excit
+
+ton  condensat
+
+te  would  mos
+st 
+
+readily couple
+
+e to the A-A (
+
+(or, equivalent
+
+tly, B-B) com
+
+mponent of the
+
+e bare interlay
+
+er coupling pa
+
+attern.21 There
+
+efore, we have
+e 
+
+taken the bar
+
+e interlayer c
+
+oupling to be
+
+e of the latter 
+
+A-A form. Th
+
+he carriers in 
+
+both layers a
+
+are conceptual
+
+lly created via
+a 
+
+external  gates
+
+s  that  are  om
+
+mitted  in  Fig. 
+
+1.  For  simula
+
+ation  purpose
+
+s,  the  require
+
+ed  carrier  con
+
+ncentrations  ar
+
+re  adjusted  by
+y 
+
+applying fixe
+
+d electrostatic
+
+c potential ene
+
+ergies V(RT) =
+
+= VT = −V(RB
+
+B) = −VB = −V
+
+Vdiff/2, with the
+
+e energy refere
+
+ence being the
+e 
+
+equilibrium  (
+
+(no  voltages 
+
+applied)  che
+
+emical  potent
+
+ial  (Fermi  le
+
+evel).  Conseq
+
+quently,  the  n
+
+nominal  elect
+
+tron  and  hole
+e 
+
+concentration
+
+ns are equal g
+
+given the sym
+
+mmetric band s
+
+structure of g
+
+graphene. For 
+
+all simulation
+
+ns, the variati
+
+ions in carrie
+er 
+
+concentration  with  applied  voltages  are  negligible  compared  to  the  nominal  concentrations,  and  hence  only  the  Fock 
+
+interaction,  VF(RT,RB),  is  considered  self-consistently.  For  this  transport  system,  the  single-electron  state  label  β  = 
+
+{γ,σ,kx,i,ky,s} identifies the lead of injection γ, the energy “valley” σ, the incident crystal momentum ћkx,i of the injected 
+
+wave,  the  transverse  mode  of  well-defined  crystal  momentum  ћky,  and  (real)  spin  s.  The  occupation  probability  fβ  is 
+
+determined by its energy and the voltage applied to the lead in which it originates, Vγ = −μγ/q, where μγ is the chemical 
+
+potential (Fermi level) of the lead γ. 
+
+As  shown  by  the  stripes  in  the  top  and  bottom  layer  oriented  parallel  to  the  transport  direction  in  Fig.  1,  the 
+
+simulated structure is periodic in the transverse (y) direction with a lattice constant of ay encompassing a single armchair 
+
+pattern of carbon atoms with atomic locations within each layer ΓT(B), a subset of RT(B). (Note while we assumed A-A 
+
+coupling here, in general there would be no requirement that the atoms on the top and bottom layers be vertically aligned 
+
+for this purpose.) Therefore, the Fock exchange interaction term can be rewritten for, e.g., any ΓT as 
+
+V
+F
+
+
+RΓ
+
+,
+
+T
+
+
+φ
+
+
+
+R
+
+B
+
+
+
+B
+
+
+
+
+
+R
+
+B
+
+
+ΓΓ
+
+,
+
+T
+
+
+
+B
+
+ 
+ΓΓy
+
+
+
+a
+
+,
+
+T
+
+y
+
+
+
+a
+
+
+y
+
+
+y
+
+B
+
+
+φ
+
+
+
+Γ
+
+B
+
+
+
+a
+
+
+y
+
+
+y
+
+
+
+V
+C
+
+
+
+
+B
+
+Γ
+
+
+
+ 
+
+
+'
+
+
+Γ
+
+y
+
+
+y
+
+
+ΓΓ
+
+,
+
+T
+
+
+
+a
+
+
+B
+
+V
+C
+
+φf
+'
+'
+
+
+
+Γ
+
+T
+
+
+φ
+*
+'
+
+
+
+Γ
+
+
+ΓΓ
+
+,
+
+T
+
+
+
+B
+
+k
+
+y
+
+k
+
+y
+
+φf
+'
+'
+
+
+
+φ
+*
+'
+
+
+
+Γ
+
+B
+
+
+φ
+
+
+
+Γ
+
+B
+
+T
+
+
+ΓΓ
+
+,
+
+T
+
+
+φ
+
+
+
+Γ
+
+B
+
+
+
+B
+
+aki
+
+
+y
+
+y
+
+
+e
+
+φ
+
+
+
+Γ
+
+B
+
+
+e
+
+ik
+
+a
+
+y
+
+y
+
+B
+
+
+
+,                       (3a) 
+
+
+
+
+
+B
+
+Γ
+
+
+
+ 
+
+
+V
+,C
+'
+
+
+V
+F,
+
+Γ
+
+k
+
+B
+
+y
+
+Γ
+
+
+
+
+
+where 
+
+and 
+
+B
+
+V
+,C
+
+k
+
+y
+
+k
+
+y
+
+
+ΓΓ
+
+,
+
+T
+
+
+
+
+
+B
+
+
+
+
+
+
+
+
+V
+C
+
+
+ΓΓ
+
+,
+
+T
+
+a
+
+
+
+y
+
+
+y
+
+B
+
+
+e
+
+ki
+(
+
+k
+
+y
+
+y
+
+a
+)
+
+
+y
+
+                                                  (3b) 
+
+ 
+
+V
+F,
+
+k
+
+y
+
+
+ΓΓ
+
+,
+
+T
+
+
+
+
+
+B
+
+V
+,C
+
+
+
+'
+
+
+k
+
+k
+
+y
+
+y
+
+
+ΓΓ
+
+,
+
+T
+
+
+
+B
+
+φf
+'
+'
+
+
+
+Γ
+
+T
+
+
+φ
+*
+'
+
+
+
+Γ
+
+B
+
+
+
+.                                                 (3c) 
+
+Here, ŷ is a unit vector in the y direction and η is an integer. Moreover, absent explicit free-carrier screening as modeled 
+
+here, the Coulomb interaction potential energy is just 
+
+
+ΓΓ
+
+,
+
+T
+
+V
+C
+
+
+
+a
+
+
+y
+
+
+y
+
+B
+
+
+
+
+
+2
+
+q
+Γ
+(
+
+
+
+a
+
+
+y
+
+
+)
+
+y
+
+B
+
+4
+
+r
+
+Γ
+
+T
+
+
+
+,                                                     (4) 
+
+which allows the VC,ky−k′y(ΓT,ΓB) to be pre-calculated and stored. Using Eq. (3), Eq. (2) can be rewritten in the quasi-one-
+
+dimensional (quasi-1D) form 
+
+φH
+TB
+
+
+
+Γ
+
+
+
+
+
+V
+H
+
+
+Γ
+
+T
+
+
+φ
+
+
+
+Γ
+
+T
+
+
+
+
+
+T
+
+V
+F,
+
+yk
+
+
+ΓΓ
+
+,
+
+T
+
+
+φ
+
+
+
+Γ
+
+B
+
+
+
+
+
+φE
+
+
+
+Γ
+
+T
+
+B
+
+                                   (5) 
+
+
+
+Γ
+
+B
+
+for the top layer. A similar expression can be obtained for the bottom layer. 
+
+For  each  β—suppressing  the  indices  for  notational  convenience  now—Eq.  (5)  can  be  written  in  matrix  form 
+
+including both top and bottom layers as 
+
+mE
+
+
+
+
+n
+
+H
+
+
+
+n
+
+nm
+,
+
+
+
+0
+
+.                                                                             (6a) 
+
+Here, m(n) label individual atomic slices along the transport direction, i.e., pairs of atoms, one in the top layer and one in 
+
+the bottom, along the shaded armchair atomic chains in the transport direction in Fig. 1. The φm(n) are the corresponding 
+
+tight-binding  2×1  matrices/column  vectors  for  each  slice  m(n)  with  components  φT,m(n)  and  φB,m(n).  (Here  we  have 
+
+assumed that there is nothing to induce coupling between orthogonal spin states in this graphene-based system, so that 
+
+we  may  treat  each  spin  state  separately,  unlike  what  would  be  the  case  for  TMDs.)  The  Hm,n  are  2×2  tight-binding 
+
+potential matrices coupling slices m and n via both the bare and Fock interactions of Eq. (5). Note that there are only non-
+
+zero  onsite  and  nearest-neighbor  intra-layer  and  interlayer  bare  coupling  interactions,  while  the  interlayer  Fock 
+
+interactions extend among all sites within the channel but do not, in this model, couple to points beyond the channel. 
+
+The boundary conditions at the ends of the channel are obtained by assuming that the four leads, TL, BL, TR and BR, 
+
+are semi-infinite and perfectly absorbing. Labeling the atomic sites within the channel from m = 1 to N, the incident (i), if 
+
+any,  and  “outgoing”  (o)  (including  outwardly  evanescing  or  reflected  into  the  lead  of  incidence)  components  of  the 
+
+wavefunctions  are  related  across  the  simulation  region  boundaries—between  slices  0  and  1  on  the  left  boundary  for 
+
+example—by 
+
+
+
+0
+
+
+
+
+
+i0;
+
+
+
+
+
+o0;
+
+
+
+
+
+i0;
+
+
+
+P
+o1,0;
+
+
+o1;
+
+
+
+
+
+i0;
+
+
+
+P
+o1,0;
+
+
+
+1
+
+
+
+
+i1;
+
+
+
+
+
+P
+o1,0;
+
+
+1
+
+
+PPI
+
+o1,0;
+
+i0,1;
+
+
+
+
+i0;
+
+.                      (7) 
+
+Here, P0,1;i and P1,0;o are 2×2 diagonal matrices that relate the complex amplitudes of the incident (i) and outgoing (o) 
+
+wave-function components between adjacent slices. The P0,1;i and P1,0;o are defined consistent with the required Bloch 
+
+function form of the propagating modes in the leads, or the counterparts of Bloch functions with complex wave-vectors 
+
+for “outgoing” evanescent modes into the leads. For example, for incident (outgoing) propagating wave-functions φγ″,m,i(o) 
+
+in a given lead γ″ (with m ≤ 1 or m ≥ N for the left and right leads, respectively), φγ″,m,i(o) = eikγ″,i(o)·Γγ″,m ukγ″,i(o)(Γγ″,m), where 
+
+ukγ″,i(o)(Γγ″,m) has the periodicity of the unit cell (four slices in the transport direction). The kγ″,i(o) are readily determined 
+
+based  on  the  energy  E,  potential  energy  in  the  given  lead  γ″,  transverse  wave-vector  ky  and  required  direction  of 
+
+propagation. Applying Eq. (7) to the Schrodinger’s equation, Eq. (6a), yields for the left boundary (slices 0 and 1), 
+
+I
+E
+
+1
+
+
+
+
+H
+
+1,2
+
+
+
+2
+
+
+
+H
+
+
+1
+1,1
+
+
+
+
+
+PH
+1,0
+
+o1,0;
+
+
+1
+
+
+
+
+
+PPIH
+o1,0;
+
+
+
+1,0
+
+i0,1;
+
+A similar expression is obtained for the right boundary (slices N and N+1), 
+
+   
+
+I
+NE
+
+
+
+
+
+H
+
+
+1
+
+
+N
+
+1
+
+
+
+
+H
+
+
+NNN
+
+,
+
+NN
+
+,
+
+
+
+
+
+H
+
+P
+NN
+1
+
+
+,
+
+
+
+N
+
+o;1
+
+
+
+
+H
+
+NN
+
+,
+
+NN
+
+,
+
+1
+
+
+
+PI
+
+
+NN
+
+,
+
+
+
+
+i0;
+
+.                                     (6b) 
+
+P
+N
+
+o;1
+
+
+,1
+
+
+N
+
+i;
+
+
+
+
+N
+
+i;1
+
+
+.                   (6c) 
+
+The injected wave-functions, 0;i and N+1;i, are chosen to be localized to either the left end or the right end of the channel 
+
+and to the top or bottom layer consistent with the definition of the index γ, and are normalized to carry the appropriate 
+
+amount of incident current per transverse mode ky per unit energy consistent with Landauer-Büttiker theory.22 Starting 
+
+with an initial guess of the modified Hartree-Fock potentials VF,ky(ΓT,ΓB), if just uniformly zero, we solve Eqs. (6a-c) for 
+
+each  value  of  ky  independently.  The  Fock  exchange  interaction  for  each  value  of  ky  then  must  be  recalculated  as  a 
+
+function  of  all  values  of  ky.  We  repeat  this  process  iteratively  to  obtain  a  self-consistent  solution  (analogous  to  self-
+
+consistent Schrödinger-Poisson’s calculations, except with non-local potential or off-diagonal density matrix elements 
+
+for the exchange interactions). 
+
+For reference, Eqs. (6a-c) are equivalent to the NEGF problem GS, where the Green’s function is G = (EI – H – 
+
+−  with  self-energy  matrix    and  source  vector  S.22  Therefore,  GS  can  be  rewritten  as  (EI  –  H  –  S. 
+
+Comparing this latter form to Eqs. (6a-c) allows us to identify H1,0P1,0;o, HN,N+1PN,(N+1);o, and all other m,n = 
+
+0. Similarly, S1 = H1,0(I – P1,0;oP0,1;i)0;i, SN = HN,N+1(I – PN,N+1;oPN+1,N;i) N+1;i, and all other Sl = 0. However, in these 
+
+ballistic transport equations, we have no need for the full G matrix, which includes terms representing transport between 
+
+internal points. 
+
+In  the  tight-binding  model,  the  charge  current  flow  from  a  top  layer  atomic  site  RT  to  a  bottom  layer  site  RB 
+
+associated with any particular state β, Iβ(RT,RB), is 
+
+I
+
+
+RR
+
+,
+
+T
+
+
+
+
+
+
+
+
+B
+
+
+hq
+Im/2
+
+
+
+
+f
+
+*
+
+
+
+
+R
+
+T
+
+
+
+H
+
+b
+
+
+RR
+
+,
+
+T
+
+
+
+
+
+V
+F
+
+B
+
+
+RR
+
+,
+
+T
+
+
+
+
+
+
+
+R
+
+B
+
+B
+
+
+,                            (8) 
+
+where the coupling between sites RB and RT is decomposed in terms of the bare coupling Hb and the Fock exchange 
+
+interaction VF. Spin-degeneracy is included with non-interacting spins. The total site-to-site current I(RT,RB), therefore 
+
+can be written as 
+
+I
+
+
+RR
+
+,
+
+T
+
+B
+
+
+
+
+
+
+
+
+
+
+
+
+hq
+Im/2
+
+
+
+
+
+
+
+I
+
+
+RR
+
+,
+
+T
+
+
+
+
+
+B
+
+f
+
+*
+
+
+
+
+R
+
+T
+
+
+
+H
+
+b
+
+
+
+
+
+
+RR
+
+,
+
+B
+
+
+
+
+
+V
+F
+
+T
+
+
+RR
+
+,
+
+B
+
+.                                  (9) 
+
+
+
+
+
+
+
+R
+
+B
+
+T
+
+
+
+
+
+
+Upon inspection, it can be seen that for the total current, but only for the total current, the component associated with the 
+
+Fock exchange interaction includes the imaginary part of the product of the interlayer density matrix (Eqs. (2b-c)) with 
+
+its Hermitian adjoint, which intrinsically vanishes. The expression for the total interlayer site-to-site current I(RT,RB) 
+
+thus takes the simplified form, 
+
+I
+
+
+RR
+
+,
+
+T
+
+
+
+
+
+
+
+Hhq
+/2
+
+b
+
+B
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+
+
+
+
+Hhq
+/2
+
+b
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+
+RR
+
+
+,
+
+T
+
+
+
+B
+
+Im
+
+
+
+
+
+
+
+sin
+arg
+
+f
+
+
+*
+
+
+
+
+
+R
+
+T
+
+
+R
+
+
+
+RR
+
+
+,
+
+T
+
+
+
+B
+
+
+
+
+
+
+B
+
+,                                         (10) 
+
+a result that is independent of condensate formation.14,23 Therefore, bare coupling between sites is required for a nonzero 
+
+net current flow between those sites, and, therefore, a so-called “spontaneous” condensate formed in the absence of any 
+
+bare interlayer coupling—with a large interlayer density matrix ρ(RT,RB) self-consistently obtained via Fock interlayer 
+
+exchange interaction that is proportional to ρ(RT,RB)—is incapable of carrying a net interlayer current. However, the 
+
+enhanced inte
+
+erlayer  densit
+
+ty matrix ρ(R
+
+RT,RB)  in the p
+
+presence of a
+
+a condensate c
+
+can enhance
+
+the interlayer
+
+r  current flow
+w. 
+
+r a particular 
+
+Note that, for
+coupling. 
+
+state β, non-z
+
+zero current Iβ
+
+Iβ(RT,RB) still 
+
+III. SIMULAT
+
+TION RESU
+
+LTS 
+
+can be carrie
+
+ed between si
+
+ites with no a
+
+associated bare
+e 
+
+In this se
+
+ection, we beg
+
+gin showing t
+
+the formation 
+
+of the conden
+
+nsate in nanos
+
+scale structure
+
+es, and with c
+
+calculations o
+of 
+
+intra-layer an
+
+nd interlayer t
+
+ransmission p
+
+probabilities u
+
+under equilibr
+
+rium condition
+
+ns, VTL = VBL
+
+L = VTR = VBR
+
+R = 0 V, in the
+e 
+
+presence of th
+
+he condensate
+
+e, and for ref
+
+ference also in
+
+n its absence.
+
+ However, as
+
+s will become
+
+e apparent, sim
+
+mply knowing
+g 
+
+these transmi
+
+ission probabi
+
+ilities is not en
+
+nough to pred
+
+dict all essent
+
+tial features of
+
+f the non-equ
+
+uilibrium trans
+
+sport. We then
+n 
+
+simulate non-
+
+-equilibrium t
+
+transport unde
+
+er three biasin
+
+ng conditions:
+
+a “drag-coun
+
+nterflow” biasi
+
+ing condition 
+
+with only one
+e 
+
+layer biased, 
+
+VBL = −VBR = 
+
+Val/2 and VTL
+
+L = VTR = 0, an
+
+nalogous to th
+
+hat previously
+
+explored in R
+
+Ref. 24 within 
+
+a simpler 1-D
+D 
+
+effective mas
+
+ss model with
+
+h a local excha
+
+ange interacti
+
+on; an “interl
+
+layer” biasing
+
+g condition mu
+
+uch like that w
+
+which was the
+e 
+
+basis for prev
+
+viously propos
+
+sed BiSFET w
+
+with only one e
+
+end biased,11,1
+
+12 VTL = −VBL
+
+= Vil/2 and VT
+
+TR = VBR = 0; 
+
+and a “mixed”
+” 
+
+biasing schem
+
+me that has be
+
+ecome the ba
+
+sis for the sep
+
+parately propo
+
+osed BiSJT,15
+
+5 VTL = −VBL
+
+Vdrv/2, also to
+
+ouched upon in
+
+n Ref. 24. 
+
+= Vctrl/2 and 
+
+VTR = −VBR =
+= 
+
+ 
+
+FIG. 2.  Local d
+layer LDOS wi
+band gap starts
+(incomplete) ba
+
+density of state
+ith dashed lines
+s to form and sa
+and gap saturat
+
+ (LDOS) plotte
+s, respectively w
+aturates to its bu
+es earlier, and i
+
+ed in the center 
+with solid and o
+ulk value with i
+is larger for the 
+
+of the channel.
+open circles rep
+ncreasing chan
+same channel l
+
+ The top-layer L
+presenting the co
+nel length. For 
+length.  
+
+LDOS is plotte
+ondensate-free 
+stronger conde
+
+ed with solid lin
+LDOS for com
+ensates (low εr),
+
+nes and bottom-
+-
+mparison. A 
+, the 
+
+ 
+
+A.  Formati
+
+ion of a nan
+
+noscale cond
+
+densate 
+
+In this su
+
+ubsection, we
+
+e illustrate ho
+
+w the conden
+
+nsate forms in
+
+n nanoscale c
+
+hannels of in
+
+ncreasing leng
+
+gth. (However
+r, 
+
+scaling issues
+
+s per se will b
+
+be addressed s
+
+subsequently.)
+
+) The calculat
+
+ted local dens
+
+sity of states (
+
+(LDOS) in the
+
+e center of the
+e 
+
+channel for th
+
+he structure i
+
+n Fig. 1 unde
+
+er equilibrium
+
+m conditions i
+
+is plotted in F
+
+Fig. 2 for var
+
+ious channel 
+
+lengths L and
+d 
+
+effective diele
+
+ectric constan
+
+nts εr, with car
+
+rrier concentra
+
+ations n (top l
+
+layer) = p (bot
+
+ttom layer) ≈
+
+6×1012 cm-2 (
+
+(Vdiff = 0.5 eV
+V) 
+
+and interlayer
+
+r separation d 
+
+d = 1 nm. For t
+
+these simulati
+
+ions—and all 
+
+others to foll
+
+low in this wo
+
+rk—room tem
+
+mperature (300
+0 
+
+K)  was  assum
+
+med  in  calcul
+
+lating the ther
+
+rmal  distribut
+
+tions fβ  of  inj
+
+ected  carriers
+
+s  from  the  lea
+
+ads.  For  incre
+
+easing  channe
+el 
+
+lengths, a ban
+
+nd gap, if inco
+
+omplete, begin
+
+ns to form abo
+
+out the chemic
+
+cal potential μ
+
+μ = 0 eV, whic
+
+ch is also the p
+
+point at which
+h 
+
+the top and bo
+
+ottom layer D
+
+Dirac cones wo
+
+ould otherwise
+
+e cross, as ind
+
+dicated by the
+
+reduction in t
+
+the LDOS. Th
+
+he edges of the
+e 
+
+band  gap  reg
+
+gion  saturate 
+
+toward  bulk 
+
+results20,21  (a
+
+although  less 
+
+obviously  so
+
+o  for  εr  =  3.
+
+0  and  the  ch
+
+hannel  length
+
+s 
+
+considered  he
+
+ere).  The  deg
+
+gree  to  which
+
+h  the  gap  form
+
+ms  can  be  us
+
+sed  as  one  m
+
+easure  of  the
+
+e  condensate 
+
+strength.20  An
+n 
+
+example  of  th
+
+he  LDOS  vs.
+
+.  energy  along
+
+g  the  channel
+
+l  is  shown  in
+
+n  Fig.  3,  whic
+
+ch  exhibits  a 
+
+gradual  cross
+
+sover  between
+n 
+
+regions with 
+
+and without th
+
+he condensate
+
+e. The crossov
+
+ver results fro
+
+om both the ev
+
+vanescent dec
+
+cay of lead sta
+
+ates in the gap
+p 
+
+region, much
+
+h as would occ
+
+cur at a conve
+
+entional heter
+
+rojunction, an
+
+d the associat
+
+ted non-local 
+
+exchange inte
+
+eraction that is
+
+s inherently w
+
+weakened near
+
+r the simulatio
+
+on region boun
+
+ndaries. 
+
+self-consisten
+
+ntly-calculated
+d 
+
+ 
+
+or εr = 2.2, Vb = 
+
+0.5 meV, d = 1
+
+1 nm, L = 15 nm
+
+m and n = p ≈ 6
+
+×1012 cm-2. The
+e 
+
+FIG.3.  LDOS 
+lack of LDOS i
+ 
+B.  Intra-lay
+
+vs. energy and 
+is demonstrated
+
+position within
+d by the dark re
+
+n the channel fo
+egions. 
+
+yer and inte
+
+rlayer trans
+
+smission pro
+
+obabilities 
+
+In the pre
+
+esence of the 
+
+condensate-in
+
+nduced band g
+
+gap, the intra-
+
+layer transmis
+
+ssion through
+
+h the channel w
+
+within a single
+e 
+
+layer  with  th
+
+he  energy  ran
+
+nge  of  the  gap
+
+ap  will  be  att
+
+enuated  subst
+
+tantially,  as  i
+
+is  perhaps  to 
+
+be  expected
+
+s 
+.  Perhaps  les
+
+intuitively,  th
+
+he  majority  of
+
+f  the  incident
+
+t  electrons  are
+
+e,  however,  tr
+
+ransmitted  to 
+
+the  other  lay
+
+yer  on  the  sam
+
+me  end  of  the
+e 
+
+channel in the
+
+e presence of
+
+f the condensa
+
+ate. The avera
+
+age transmissi
+
+ion probabiliti
+
+ies as a functi
+
+ion of energy
+
+y for injection
+
+s 
+
+from leads BL
+
+L and TL with
+
+h and without 
+
+the condensa
+
+ate are contras
+
+sted in Fig. 4 f
+
+for εr = 2.2, d 
+
+= 1 nm, L = 1
+
+15 nm, n = p ≈
+≈ 
+
+6×1012 cm-2, a
+
+and interlayer
+
+r A-A bare co
+
+oupling, Hb(RT
+
+T,RB) = Vb = 1
+
+1 meV betwee
+
+en atoms on t
+
+the A sublattic
+
+ce of the same
+e 
+
+bilayer  unit c
+
+cell,  and  zero
+
+  otherwise.  (N
+
+Note  that  diff
+
+ferent  densitie
+
+es  of  transver
+
+rse  modes  in 
+
+the  top  and b
+
+bottom  layers
+s, 
+
+which come f
+
+from the interl
+
+layer electrost
+
+tatic potential
+
+l difference, c
+
+ause the non-
+
+equality betw
+
+ween averaged
+
+d transmission
+
+s 
+
+over propagat
+
+ting modes fro
+
+om BL to TL 
+
+and those fro
+
+m TL to BL. 
+
+However, det
+
+tailed balance 
+
+is guaranteed
+
+d for any given
+n 
+
+single ky mod
+
+de.) In the abs
+
+sence of the c
+
+condensate, a
+
+lmost all inje
+
+cted current i
+
+is transmitted 
+
+to the oppos
+
+site side of the
+e 
+
+same layer (F
+
+Fig. 4(c)) with
+
+h the maximu
+
+um interlayer 
+
+transmission 
+
+over three or
+
+rders of magn
+
+nitude lower (F
+
+Figs. 4(b) and
+d 
+
+(d)). In the pr
+
+resence of the 
+
+condensate, i
+
+intra-layer tran
+
+nsmission fall
+
+ls to a few per
+
+rcent in the ce
+
+enter of the en
+
+nergy gap (Fig
+g. 
+
+4(g)), while t
+
+the majority o
+
+of the injected
+
+d current (~75
+
+5%) tunnels th
+
+hrough the int
+
+terlayer dielec
+
+ctric to the sa
+
+ame end of the
+e 
+
+channel (Fig.
+
+ 4(f)). The re
+
+eason for enha
+
+anced interlay
+
+yer transmissio
+
+on probabiliti
+
+coupling, com
+
+mposed of the 
+
+bare coupling
+
+g as well as th
+
+he exchange in
+
+nteraction. 
+
+es is the cond
+
+densate-enhan
+
+nced interlaye
+er 
+
+ 
+
+alue of the trans
+s, for injection f
+nsate in (e)-(h).
+bare coupling V
+
+smission coeffic
+from leads BL a
+. Simulation pa
+Vb = 1 meV and
+
+cients T(E), inc
+and TL. Transm
+arameters are di
+d carrier concen
+
+luding that for 
+mission coeffici
+electric constan
+ntrations n = p ≈
+
+reflection to the
+ients without th
+nt εr = 2.2, layer
+≈ 6×1012 cm-2. 
+
+e lead of incide
+he condensate ar
+r separation d =
+
+ence and averag
+re plotted in (a)
+= 1 nm, channel
+
+ged over all 
+)-(d), and those 
+l length L = 15 
+
+FIG. 4.  The va
+incident modes
+with the conden
+nm, interlayer b
+ 
+C.  Drag-co
+
+ounterflow b
+
+biasing and 
+
+exciton flow
+w 
+
+As illustr
+
+rated by the e
+
+example of in
+
+n Fig. 5(b) and
+
+d (d), under t
+
+the drag-coun
+
+nterflow biasin
+
+ng condition, 
+
+VBL = −VBR =
+= 
+
+Val/2 and VTL 
+
+= VTR = 0, cu
+
+urrents of nea
+
+arly identical m
+
+magnitude flo
+
+w along the u
+
+upper and low
+
+wer layers in th
+
+he channel bu
+ut 
+
+in opposite di
+
+irections. The
+
+gap within th
+
+he channel in 
+
+se currents flo
+
+ow despite the
+
+e lack of any b
+
+bias on the le
+
+ads to the top
+
+p layer, and de
+
+espite the band
+d 
+
+presence of th
+
+he condensate
+
+e exhibited in
+
+n Fig. 3 and th
+
+he associated 
+
+low intra-lay
+
+er equilibrium
+m 
+
+transmission p
+
+probabilities o
+
+of Fig. 4 near
+
+r the chemical
+
+l potential. In 
+
+addition, the 
+
+interlayer cur
+
+rrent is relativ
+
+vely limited by
+y 
+
+comparison  d
+
+despite  the  la
+
+arge  interlaye
+
+er  transmissio
+
+on  probabilitie
+
+es  of  Fig.  4 
+
+in  the  presen
+
+nce  of  the  co
+
+ondensate.  To
+o 
+
+understand  th
+
+his  behavior  w
+
+we  must  delv
+
+ve  deeper,  lite
+
+erally  here  in 
+
+terms  of  the 
+
+energy.  Figs
+
+.  6(d)-(f)  and
+
+d  (h)  show  the
+e 
+
+current flow s
+
+subdivided ab
+
+bout a cutoff e
+
+energy Eco = −
+
+−65 meV that i
+
+is both well b
+
+elow the chem
+
+mical potentia
+
+al(s) and above
+e 
+
+the nominal l
+
+lower edge of
+
+f the condens
+
+sate-induced b
+
+band gap at a
+
+approximately 
+
+−100 meV (
+
+(Figs. 2 and 3
+
+3). The charge
+e 
+
+current at the
+
+e energy of the
+
+e injected carr
+
+riers is indeed
+
+d substantially
+
+y attenuated in
+
+n the channel,
+
+, as shown in 
+
+Figs. 6(d), (e
+e) 
+
+and (h), altho
+
+ough not comp
+
+pletely for this
+
+s short 15 nm
+
+m channel, and
+
+d flows primar
+
+rily between th
+
+he layers, as s
+
+shown in Figs
+s. 
+
+6(f) and (h). H
+
+However, an o
+
+opposing curr
+
+ent loop along
+
+g and between
+
+n layers within
+
+n the channel 
+
+is excited bel
+
+low Eco—in an
+n 
+
+entirely elasti
+
+ic process—th
+
+hat essentially
+
+y vanishes at t
+
+the ends of th
+
+e channel, as 
+
+also shown in
+
+n Figs. 6(f) an
+
+nd (h). (In tha
+at 
+
+this sub-Eco c
+
+current essenti
+
+ially vanishes
+
+s at the chann
+
+nel ends and th
+
+hat its peak v
+
+value almost m
+
+matches that o
+
+of the inciden
+nt 
+
+and extracted
+
+d currents, it b
+
+becomes clear
+
+r that this sub-
+
+-Eco current is
+
+s not just the 
+
+thermal tail o
+
+of the injected
+
+d and extracted
+d 
+
+current distrib
+
+butions.) It is 
+
+this nominally
+
+y sub-band-ga
+
+ap current that
+
+t extends the t
+
+total current f
+
+flow all the wa
+
+ay through the
+e 
+
+channel. Unli
+
+ike for bare co
+
+oupling alone
+
+, the interlaye
+
+er phase relati
+
+ionship for dif
+
+fferent states β
+
+β becomes se
+
+lf-consistently
+y 
+
+tied together 
+
+through the c
+
+omplex excha
+
+ange potential
+
+l that comes th
+
+hrough the glo
+
+obal interlaye
+
+er phase relatio
+
+onship presen
+nt 
+
+in  the  interla
+
+ayer  density  m
+
+matrix  ρ(RT,R
+
+RB)  (Eqs.  (1)
+
+)-(3)).  It  is  in
+
+n  this  way  th
+
+hat  injected/ex
+
+xtracted  curre
+
+ent  within  the
+e 
+
+condensate-in
+
+nduced band g
+
+gap can induce
+
+e current flow
+
+w below the ba
+
+and gap. 
+
+ 
+
+of intra-layer c
+= 0.5 meV, and
+1 nm, n = p ≈ 6×
+
+current per widt
+d (b) and (d): dr
+×1012 cm-2 and 
+
+th (Iintra) and int
+rag-counterflow
+L = 15 nm. The
+
+terlayer current
+w current biasin
+e positive direc
+
+t per area (Jil). (
+ng with Val = 40
+tions for intra- 
+
+(a) and (c): 
+0 mV and Vb = 
+and interlayer 
+
+FIG. 5.  Illustra
+BiSFET-like bi
+0.5 meV. Other
+currents are as 
+ 
+
+ative samples fo
+iasing with Vil =
+r parameters ar
+shown in the pl
+
+or distributions 
+= 5 mV and Vb 
+e εr = 2.2, d = 1
+lots. 
+
+While th
+
+e calculations
+
+s are performe
+
+ed in terms of
+
+f propagating 
+
+electron state
+
+es only, althou
+
+ugh within the
+
+e valence band
+d 
+
+of the p-type 
+
+layer, turning
+
+g to the langu
+
+uage of electro
+
+ons and holes 
+
+can be helpfu
+
+ul in understa
+
+anding the ess
+
+ential physics
+s. 
+
+At one end o
+
+f the channel
+
+, the current f
+
+flow can be in
+
+nterpreted as
+
+electrons and
+
+d holes being i
+
+injected from 
+
+m (extracted to
+o) 
+
+the n-type and
+
+d p-type leads
+
+s into (from) th
+
+he end of the 
+
+channel to cre
+
+eate/emit/exci
+
+ite/form (annih
+
+hilate/absorb/
+
+destroy/break
+k-
+
+up) coherent 
+
+excitons and 
+
+associated ex
+
+citon flow wi
+
+ithin the chann
+
+nel from (to) 
+
+that end. For 
+
+Coulomb dra
+
+ag-counterflow
+w 
+
+current biasin
+
+ng, specifically
+
+y, the interlay
+
+yer current flow
+
+w above Eco in
+
+n Figs. 6(f) an
+
+nd (h) is assoc
+
+ciated with the
+
+e injection and
+d 
+
+extraction  of 
+
+f electron-hole
+
+e  pairs  at  the 
+
+opposite  end
+
+ds  of  the  chan
+
+nnel.  The  opp
+
+positely  direc
+
+cted  interlayer
+
+r  current  flow
+w 
+
+below Eco in t
+
+the same figur
+
+res is associat
+
+ted with the co
+
+orresponding 
+
+creation and a
+
+annihilation of
+
+f the coherent
+
+t excitons. The
+e 
+
+intra-layer cu
+
+urrent flow be
+
+low Eco in Fig
+
+gs 6(d),(e) an
+
+d (h) is assoc
+
+ciated with the
+
+e flow of the 
+
+excitons alon
+
+ng the channel
+l, 
+
+with  correspo
+
+onding  oppos
+
+site  charge  c
+
+current  flows
+
+s  in  the  two 
+
+layers,  prod
+
+ducing  the  ne
+
+ear-perfect  C
+
+oulomb  drag
+g-
+
+counterflow c
+
+current. Moreo
+
+over, while th
+
+he electron po
+
+ortion of the ex
+
+xciton pairs fl
+
+flows at the lo
+
+ower edge of t
+
+the condensate
+e 
+
+induced band
+
+d gap within t
+
+the channel, t
+
+the hole portio
+
+on flows at th
+
+he upper edge
+
+e of the band 
+
+gap under th
+
+he energy sign
+n 
+
+change requir
+
+red to define h
+
+holes, which m
+
+makes the tot
+
+tal energy con
+
+nservation clea
+
+ar even as the
+
+e energies of t
+
+the constituen
+nt 
+
+electrons and
+
+d holes change
+
+e as they are i
+
+injected to (ex
+
+xtracted from)
+
+) the channel 
+
+to create (ann
+
+nihilate) the e
+
+xcitons within
+n 
+
+the channel. F
+
+Finally, we no
+
+ote that this pr
+
+rocess is some
+
+ewhat analogo
+
+ous to Andree
+
+v reflection in
+
+n which an inj
+
+jected electron
+n 
+
+and reflected 
+
+hole at the ed
+
+dge of a conve
+
+entional super
+
+rfluid region c
+
+creates a cohe
+
+erently bound 
+
+Cooper pair o
+
+of electrons in
+n 
+
+an energy con
+
+nserving mann
+
+ner, but here a
+
+an injected ele
+
+ectron in the n
+
+n-type layer a
+
+and a reflected
+
+d electron (an 
+
+in the p-type l
+
+layer create a 
+
+bound electro
+
+on-hole pair, o
+
+or an exciton.
+
+injected hole
+e) 
+
+ 
+
+m-layer (IB), To
+g-counterflow b
+urrent distributi
+erflow biasing, 
+However, with th
+mponents are c
+or extraction to 
+
+op-layer (IT) cur
+biasing, using t
+ions are also vi
+with vertical an
+he interlayer an
+hosen for illust
+the leads from 
+
+rrent per width 
+the same system
+sualized with a
+nd horizontal co
+nd intra-layer cu
+tration clarity on
+the channel reg
+
+and interlayer (
+m parameters, b
+arrows that origi
+omponents prop
+urrent having di
+nly. The curren
+gion, while thos
+
+(Jil) current per 
+iasing condition
+inate at the pos
+portional to the 
+ifferent units, th
+nts above Eco co
+se below Eco cor
+
+area distributio
+ns and rules for
+itions they repr
+interlayer and 
+he shown relativ
+orrespond to ele
+rrespond to coh
+
+ons for (a)-(c) B
+r signs of curren
+resent for (g) Bi
+intra-layer curr
+ve lengths of th
+ectron and hole 
+herent exciton f
+
+BiSFET biasing
+g, 
+nt flow as for 
+iSFET-like and
+d 
+rents, 
+he horizontal 
+injection from 
+flow within the 
+
+FIG. 6.  Bottom
+and (d)~(f) dra
+Fig. 5. These cu
+(h) drag-counte
+respectively. H
+and vertical com
+the leads into o
+channel.  
+ 
+
+s 
+
+s 
+
+Finally, w
+
+we note that a
+
+as the bias Va
+
+al is increased
+
+d, the near per
+
+rfect Coulomb
+
+b drag-counte
+
+erflow current
+
+t (Fig. 7(a)) i
+
+maintained un
+
+ntil ultimately
+
+y the condens
+
+sate itself coll
+
+lapses, as show
+
+wn by the co
+
+llapse of the b
+
+band gap in F
+
+Fig. 7(b). Thi
+
+eventual  coll
+
+apse  appears 
+
+to  be  with  i
+
+increasing  fre
+
+ee  carrier  con
+
+ncentrations  ab
+
+bove  and  bel
+
+low  the  band 
+
+gap  with  the
+e 
+
+voltage-defin
+
+ed  splitting  o
+
+of  the  chemic
+
+cal  potentials,
+
+,  which  collap
+
+pses  the  cond
+
+densate  in  mu
+
+uch  the  same
+
+e  way  as  high
+h 
+
+temperatures 
+
+or large charg
+
+ge imbalances
+
+s would do.20
+
+llapse of the ne
+rs provided in th
+sponding curren
+o and do not su
+mb drag-counter
+
+ear-perfect Coul
+he figure. The b
+nt amplitudes av
+upport the near-p
+rflow current is
+
+lomb drag-coun
+bottom layer is 
+veraged across 
+perfect Coulom
+ accompanied b
+
+nterflow current
+biased, and thu
+the channel. (b)
+mb drag-counter
+by the collapse 
+
+t in the presenc
+us the drag-effic
+) LDOS in the c
+rflow current, a
+of the condens
+
+ce of the conden
+ciency η is defin
+center of the ch
+s indicated in (a
+ate. 
+
+nsate in a nanos
+ned as the top-t
+hannel for repre
+a). The collapse
+
+scale channel 
+to-bottom ratio 
+esentative 
+e of the near-
+
+ 
+
+FIG. 7.  (a) Col
+with parameter
+between corres
+voltages that do
+perfect Coulom
+ 
+D.  Critical 
+
+current and
+
+d voltage wi
+
+thin the BiS
+
+SFET-like bia
+
+asing schem
+
+me 
+
+ 
+
+FIG. 8.  (a) Am
+and bottom ato
+2.2. (b) Total p
+Apparently, the
+yet largely posi
+ 
+
+mplitude of the F
+oms as a functio
+pseudospin phas
+e pseudospin am
+ition-independe
+
+Fock exchange 
+on of position in
+se between the s
+mplitude is posi
+ent. 
+
+interactions (pr
+n a 15 nm chann
+same pairs of a
+ition-dependent
+
+roportional to th
+nel. Other param
+atoms as a funct
+t yet voltage-in
+
+he pseudospin a
+meters are Vdiff
+tion of position 
+dependent, whi
+
+amplitude) betw
+= 0.5 eV, Vb = 
+with the same 
+ile the pseudosp
+
+ween bare-coup
+0.5 meV, d = 1
+system parame
+pin phase is vol
+
+pled pairs of top
+p 
+.2 nm and εr = 
+ters. 
+ltage-dependent
+t 
+
+ 
+
+FET biasing con
+
+nditions, with  ε
+
+εr = 2.2, d = 1 n
+
+nm, Vb = 0.75 m
+
+meV, and n = p ≈
+
+≈ 6×1012 cm−2, 
+
+FIG. 9.  Linear
+for varying cha
+ 
+
+r sin(θ) vs. Vil re
+elation for BiSF
+annel lengths L.
+. 
+
+For the B
+
+BiSFET-like b
+
+biasing condit
+
+tion, VTL = −
+
+VBL = Vil/2, V
+
+VTR = VBR = 0
+
+0, we find tha
+
+at condensate 
+
+greatly  increa
+
+ase  the  interl
+
+layer  conduc
+
+tance,  reachin
+
+ng  ~75%  of 
+
+the  Landaue
+
+er-Büttiker  ba
+
+allistic  limit 
+
+formation can
+n 
+
+for  the  leads
+s, 
+
+consistent wit
+
+th expectation
+
+ns based on th
+
+he interlayer tr
+
+ransmission p
+
+probabilities. R
+
+Remember tha
+
+at the equilibr
+
+rium interlaye
+er 
+
+transmission probabilities are orders of magnitude lower (Fig. 4) without the condensate. (The BiSFET nominally has 
+
+contacts to only one end, while here a negligible current flows to the grounded contacts for the “BiSFET-like” biasing, as 
+
+seen in Fig. 5(a), so that the systems are the same in terms of this aspect of current flow.) However, this high, at least, DC 
+
+conductance  can  only  be  maintained  up  to  a  critical  current  Ic,  again  as  determined  by  self-consistent  effects  of  the 
+
+current flow on the entire interlayer density matrix ρ(RT,RB). The interlayer density matrix ρ(RT,RB) may be defined as a 
+
+collective “pseudospin” ρ(RT,RB) with pseudospin magnitude ρ(RT,RB) and phase θ(RT,RB) ≡ arg[ρ(RT,RB)], which is 
+
+analogous to a collective real spin state—magnetic moment—with strength and orientation. (This terminology underlies 
+
+the BiSFET and BiSJT names.) As illustrated by Fig. 8, under BiSFET-like biasing, the pseudospin magnitude exhibits a 
+
+position dependence consistent with the localization of the condensate, but is essentially independent of the interlayer 
+
+bias, while the pseudospin phase is weakly dependent of position but varies with Vil, θ(RB,RT) ≈ θ.13 With θ evaluated at 
+
+mid-channel for specificity, sin(θ) is proportional to Vil as shown in Fig. 9. The inter-atom current flow between layers of 
+
+Eq. (10) can be written as 
+
+where 
+
+I
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+
+
+I
+
+max
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+sin(
+
+)
+
+
+,                                                           (11a) 
+
+I
+
+max
+
+
+RR
+
+,
+
+T
+
+
+
+
+
+
+
+Hhe
+/2
+
+b
+
+B
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+
+RR
+
+
+,
+
+T
+
+B
+
+.                                             (11b) 
+
+Similarly, the total interlayer current I can be written as 
+
+I 
+
+I
+
+)
+sin(
+c 
+
+,                                                                             (12a) 
+
+where, in general, 
+
+                  
+
+I
+
+c
+
+
+
+B
+
+R R
+
+T
+
+I
+
+max
+
+
+RR
+
+,
+
+T
+
+
+
+B
+
+,                                                                   (12b) 
+
+although, as previously noted, in this work we only include bare coupling, and thus total inter-atomic-site current flow, 
+
+between top- and bottom-layer A atoms in the same unit cell. With sin(θ) having a maximum magnitude of unity when θ 
+
+= π/2, the maximum or “critical” current magnitude is reached, as indicated by the “max” and “c” subscripts in Eqs. (11) 
+
+and (12). In practice, as θ approaches π/2 in our simulations, the rate of convergence slows asymptotically.17 Therefore, 
+
+we  use  the  observed linear dependence of  sin(θ) on Vil  to extract the critical currents Ic and corresponding values of 
+
+associated “critical voltage” Vc from somewhat smaller interlayer currents and voltages.13 (Such linearity is observed also 
+
+at θ close to π/2 in Ref. 17.) Thus-extracted Vc are shown in Fig. 10 as a function of the bare interlayer coupling, and for 
+
+L = 15 and 20 nm. 
+
+It was not possible to converge any solution in our steady-state calculations beyond the critical voltage. Instead, the 
+
+solutions  are  not  numerically  stable  in  a  conventional  sense.  Instead,  the  pseudospin  magnitude  remains  essentially 
+
+constant  with  iteration  while  the phase  smoothly  rotates  through  all  angles  periodically,  the  larger Vil  beyond  Vc,  the 
+
+faster the rotation with iteration.14,17 The nearly constant pseudospin magnitude suggests that the condensate does not 
+
+collapse beyo
+
+ond Vc, in con
+
+ntrast to cases 
+
+for the collap
+
+pse of the Co
+
+ulomb drag-c
+
+counterflow cu
+
+urrent (Fig. 7)
+
+). The rotation
+n 
+
+with  iteration
+
+n  suggests  ins
+
+stead  time-de
+
+ependent  curre
+
+ent  oscillation
+
+ns  analogous 
+
+to  those  in 
+
+superconducti
+
+ing  Josephson
+n 
+
+j
+junctions, wh
+
+hich have volt
+
+age-dependen
+
+nt DC currents
+
+s below a crit
+
+tical value foll
+
+lowed by coll
+
+lapse of the D
+
+DC current and
+d 
+
+an onset of an
+
+n AC current 
+
+of fixed amp
+
+litude after th
+
+he critical curr
+
+rent is reached
+
+d.11,25 Similar
+
+rly, we expect
+
+t an oscillation
+n 
+
+rate f of f/(Vi
+
+il – Vc)  ≈ 2q/h
+
+h ≈ 0.5 THz/m
+
+mV, which w
+
+would be well 
+
+into the THz
+
+z regime for t
+
+the simulated 
+
+systems here
+e. 
+
+Consistent wi
+
+ith the “pseud
+
+dospin” termin
+
+nology, this tr
+
+ransition from
+
+m steady-state 
+
+to oscillatory
+
+y behavior un
+
+nder increasing
+g 
+
+drive  voltage
+
+e  also is analo
+
+ogous to that 
+
+expected  for 
+
+in-plane easy
+
+y axis nanom
+
+magnets  (magn
+
+nets  with in-p
+
+plane magnetic
+c 
+
+anisotropy)  d
+
+driven  by  spin
+
+n  transfer  tor
+
+rque  (STT)  vi
+
+ia  interlayer  c
+
+charge  curren
+
+nt  flow  throug
+
+gh  perpendicu
+
+s 
+ular  easy  axi
+
+nanomagnets
+
+.26 However, 
+
+our current ca
+
+apabilities.22 
+
+to directly m
+
+model the beha
+
+avior beyond 
+
+Vc would req
+
+quire time-dep
+
+pendent simul
+
+lations beyond
+d 
+
+ 
+
+of critical voltag
+
+ge Vc on interla
+
+ayer bare coupli
+
+ing energy Vb. S
+
+System paramet
+
+ters are n = p ≈
+
+≈ 6×1012 cm−2, ε
+εr 
+
+FIG. 10.  Linea
+= 2.2, and d = 1
+ 
+
+ar dependence o
+1 nm. 
+
+The critic
+
+cal currents a
+
+and, as illustra
+
+ated in Fig. 10
+
+0, the associa
+
+ated critical vo
+
+oltages Vc also
+
+o are linearly 
+
+dependent on
+n 
+
+the bare inter
+
+rlayer hopping
+
+g energy Vb, c
+
+consistent wit
+
+th Eq. (11b). 
+
+Physically, th
+
+his dependenc
+
+ce can be und
+
+derstood in the
+e 
+
+following wa
+
+ay. Above Eco 
+
+most of the c
+
+current flow i
+
+s between lay
+
+yers, but again
+
+n a current loo
+
+op is excited 
+
+in the channe
+el 
+
+below  Eco  (F
+
+Figs.  6(a)-(c) 
+
+and  (g))  that 
+
+  is  associated
+
+d  with  excito
+
+n  flow.  With
+
+h  incident  (ou
+
+utgoing)  electr
+
+s 
+ron  and  hole
+
+creating  (ann
+
+nihilating)  exc
+
+citons  at  one 
+
+end  of  the  ch
+
+hannel  but  no
+
+ot  extracted  (i
+
+injected)  at  th
+
+he  other  end, 
+
+a  steady-state
+e 
+
+exciton popul
+
+lation can only
+
+y be maintain
+
+ed through ba
+
+are-coupling-a
+
+assisted recom
+
+mbination (gen
+
+neration) withi
+
+in the channel
+l. 
+
+Therefore,  th
+
+he  greater  the
+
+e  bare  couplin
+
+ng,  the  greate
+
+er  current  of 
+
+injected  (out
+
+tgoing)  electr
+
+rons  and  hole
+
+es  that  can  be
+e 
+
+maintained in
+
+n the opposite 
+
+layers. Conve
+
+ersely, with ex
+
+xcitons inject
+
+ed at one end
+
+ of the channe
+
+el and extract
+
+ed at the othe
+er 
+
+under drag-co
+
+ounterflow bia
+
+asing, much la
+
+arger current i
+
+injection and 
+
+extraction can
+
+n be supported
+
+d with the sam
+
+me or lower V
+Vb 
+
+as already see
+
+en (Fig. 5(b) v
+
+vs. Fig. 5(a), e
+
+e.g.). 
+
+Critical f
+
+for application
+
+n to the propo
+
+osed BiSFET 
+
+and BiSJT, th
+
+he calculated 
+
+critical voltag
+
+ges can be sca
+
+aled below the
+e 
+
+thermal voltag
+
+ge kBT/q (whe
+
+ere kB is Boltz
+
+zmann’s const
+
+tant), which is
+
+s approximate
+
+ly 26 mV in t
+
+these 300 K si
+
+imulations, via
+a 
+
+the linear dep
+
+pendence on t
+
+the bare coupl
+
+ling, as in the
+
+e examples sh
+
+hown in Fig. 1
+
+10. The basis 
+
+for these sub
+
+b-kBT/q critica
+al 
+
+voltages is the
+
+e collective ef
+
+ffect, represen
+
+nted here throu
+
+ugh the Fock 
+
+exchange inte
+
+eraction that c
+
+couples many 
+
+electron state
+s 
+
+β
+β together. 
+
+ 
+
+ctive interlayer c
+f the interlayer 
+cal voltage cons
+eter are εr = 2.2,
+
+critical voltage 
+voltage applied
+servation such t
+, Vb = 0.5 meV
+
+on the “drive” 
+d to the “contro
+that sum of the 
+, L = 15 nm, d =
+
+(drv) end of the
+l” (ctrl) end of 
+two voltages at
+= 1.0 nm and n
+
+e channel at wh
+the channel. Th
+t which the criti
+= p ≈ 6×1012 c
+
+hich the critical 
+he dashed line w
+ical current is r
+cm-2. 
+
+interlayer curre
+with slope of −1
+eached would b
+
+ent is reached 
+1 corresponds 
+be fixed. 
+
+FIG. 11.  Effec
+as a function of
+to perfect critic
+System parame
+ 
+E.  Mixed B
+
+BiSJT biasin
+
+ng 
+
+While bia
+
+asing both end
+
+ds of the chan
+
+nnel can allow
+
+w for more intr
+
+ra-layer curren
+
+nt flow, it doe
+
+es not increase
+
+e the ability to
+o 
+
+drive interlay
+
+yer current, at 
+
+least not a ne
+
+et current. Ins
+
+stead, when w
+
+we mix the Bi
+
+iSFET-like an
+
+nd drag-counte
+
+erflow biasing
+g 
+
+schemes to ob
+
+btain the BiSJ
+
+JT regime, VT
+
+TL = −VBL = Vc
+
+Vctrl/2, VTR = −
+
+VBR = Vdrv/2, w
+
+we observed b
+
+behavior that 
+
+is, indeed, the
+e 
+
+basis  for  the 
+
+proposed  Bi
+
+iSJT15  from  w
+
+which  we  hav
+
+ve  borrowed 
+
+the  “control”
+
+”  (ctrl)  and  “
+
+“drive”  (drv) 
+
+nomenclature
+e. 
+
+Specifically, w
+
+we find that th
+
+he total interl
+
+ayer critical c
+
+current and as
+
+sociated total 
+
+voltage appli
+
+ied to both ch
+
+annel ends are
+e 
+
+essentially  co
+
+onserved,  as 
+
+shown  in  Fig
+
+g.  11.  Equiva
+
+alently,  applic
+
+cation  of  a  s
+
+ub-critical  vo
+
+oltage  on  one
+
+e  end  with  an
+n 
+
+associated sub
+
+b-critical inter
+
+rlayer current
+
+t can change t
+
+the effective cr
+
+ritical current
+
+t and voltage s
+
+seen at the oth
+
+her end. In the
+e 
+
+1D-effective-
+
+-mass based si
+
+imulations of 
+
+f Ref. 24, it w
+
+was found that
+
+t bare interlay
+
+yer coupling w
+
+was necessary 
+
+to allow less
+s-
+
+than-perfectly
+
+y matched cou
+
+unterflow intra
+
+a-layer curren
+
+nts, which is a 
+
+different pers
+
+spective on the
+
+e same basic c
+
+conclusion. 
+
+F.  Channe
+
+el scaling, sy
+
+ystem param
+
+meters, bulk
+
+k critical tem
+
+mperature an
+
+nd normaliz
+
+zed wavelen
+
+ngth 
+
+Interlaye
+
+r critical curre
+
+ent, voltage an
+
+nd the conduc
+
+ctance have be
+
+een calculated
+
+d with various
+
+s system param
+
+s 
+meters such a
+
+channel lengt
+
+th L, interlaye
+
+er bare couplin
+
+ng energy Vb,
+
+, interlayer se
+
+eparation d, ef
+
+ffective dielec
+
+ctric constant 
+
+εr, and carrie
+er 
+
+concentration
+
+ns n and p. Al
+
+l the simulati
+
+ons are based
+
+d on the BiSFE
+
+ET-like biasin
+
+ng scheme, VT
+
+TL = −VBL = V
+
+Vil/2 and VTR =
+= 
+
+VBR = 0, with
+
+hout losing gen
+
+nerality given
+
+n the critical cu
+
+urrent and vol
+
+ltage conserva
+
+ations. For ref
+
+ference we als
+
+so use the bulk
+k 
+
+value of the c
+
+critical tempe
+
+erature at whic
+
+ch the conden
+
+nsate collapse
+
+s, Tc, which i
+
+is a measure o
+
+of the latter’s
+
+ strength, as a
+a 
+
+unifying para
+
+ameter. (As we
+
+ell as being ca
+
+alculated direc
+
+ctly) Tc can be
+
+e estimated fro
+
+om the 0K ind
+
+duced bulk ba
+
+and gaps Eg0 a
+
+s 
+
+Tc ≈ Eg0/(4kB)
+
+) essentially in
+
+ndependent of
+
+f dielectric en
+
+nvironment, in
+
+nterlayer separ
+
+ration or carri
+
+ier concentrat
+
+tion.20 We also
+o 
+
+use  λ,  the  Fe
+
+ermi  wavelen
+
+gth  normalize
+
+ed  to  the  tran
+
+nsition  length
+
+h  required  to 
+
+form  the  con
+
+ndensate  in  th
+
+he  channel,  to
+o 
+
+characterize t
+
+the abruptness
+
+s of the chann
+
+nel in a way t
+
+that is relevan
+
+nt to quantum
+
+m mechanical r
+
+reflection pro
+
+obabilities. Fo
+
+r 
+
+this purpose, 
+
+the transition 
+
+length is defi
+
+fined as the dis
+
+stance across
+
+which the LD
+
+DOS at the che
+
+emical potent
+
+tial drops from
+m 
+
+90%  to  10% 
+
+of  its  value 
+
+in  the  absenc
+
+ce  of  the  cond
+
+densate.  Thes
+
+e  two  parame
+
+eters  are  inter
+
+rdependent  in
+
+n  that  the  bulk
+k 
+
+condensate st
+
+trength affects
+
+s how abruptly
+
+y the condensa
+
+ate can form w
+
+with position i
+
+in the channel
+
+l, as will be se
+
+een below.  
+
+ 
+
+FIG. 12.  Interl
+current density
+corresponding 
+partially forme
+Therefore, λ is 
+The other param
+ 
+
+layer conductan
+y Ic (per unit wid
+bulk critical tem
+d within the 25
+taken to be sim
+meters are Vb =
+
+nce Gil normaliz
+dth) and critical
+mperatures Tc ≈
+5 nm channel, an
+mply less than th
+= 0.5 meV, d = 1
+
+zed to Laudauer
+l voltage Vc wit
+≈ 655K, 524K a
+nd therefore the
+he Fermi wavel
+1 nm and n = p
+
+r-Büttiker limit
+th varying effec
+and 377 K, resp
+e transition leng
+length divided b
+≈ 6×1012 cm-2.
+
+t for the leads at
+ctive dielectric c
+ectively. (For ε
+gth cannot be d
+by half the max
+
+t the chemical p
+constant εr = 2.2
+εr = 3.0 (Tc ≈ 37
+etermined by th
+ximum channel 
+
+potential (0 eV)
+2, 2.5 and 3.0 a
+77 K) the conde
+he definition in 
+length (12.5 nm
+
+), interlayer 
+and 
+ensate is only 
+the text. 
+m), which is 1.2
+
+2.) 
+
+We first 
+
+consider wha
+
+at is a voltage
+
+e-independent 
+
+interlayer co
+
+onductance Gil
+
+l below the cr
+
+ritical current 
+
+Ic and critica
+al 
+
+voltage Vc as 
+
+a function of
+
+f channel leng
+
+gth for differin
+
+ng effective d
+
+dielectric cons
+
+stants, εr = 2.2
+
+2, 2.5 and 3.0
+
+0, as in Fig. 12
+2 
+
+with the corre
+
+esponding Tc a
+
+and λ listed in
+
+n the collective
+
+e figure inset. 
+
+p ≈ 6×1012 cm
+p
+
+m−2. As seen i
+
+in Fig. 12(a), 
+
+with increasi
+
+ing channel le
+
+Landauer-Büt
+
+ttiker limit GL
+
+LB for the lead
+
+ds, to which it 
+
+is normalized
+
+Other parame
+
+ength, Gil incr
+
+d here. (GLB ≅
+
+eters are d = 1
+
+reases and sat
+
+≅ (Vdiff/t0)(1.15
+
+1 nm, Vb = 0.5
+
+5 meV and n =
+= 
+
+turates to abo
+
+out 75% of the
+e 
+
+5 kS/cm), whe
+
+ere t0 = 2.7 eV
+V 
+
+is the magnitu
+
+ude of the nea
+
+arest-neighbor
+
+r intra-layer ba
+
+are coupling p
+
+potential in the
+
+e tight-binding
+
+g model). 
+
+The rate 
+
+at which Gil s
+
+saturates incre
+
+eases with the
+
+e strength of t
+
+the condensate
+
+e as measure 
+
+by Tc. Consis
+
+stent with bulk
+k 
+
+estimates,20,21
+
+1 Fig. 12(b) ex
+
+xhibits a linea
+
+ar dependence
+
+e of interlayer
+
+r critical curre
+
+ent Ic (actuall
+
+y a current de
+
+ensity per uni
+it 
+
+width for this
+
+s figure and t
+
+those to follow
+
+w) on channe
+
+el length L, su
+
+uggesting a co
+
+onstant critica
+
+al current per
+
+r unit area if a
+a 
+
+shorter effecti
+
+ive channel le
+
+ength Leff—the
+
+e actual L min
+
+nus its L axis 
+
+intercept for 
+
+each linear Ic
+
+ vs. L curve—
+
+—is considered
+d 
+
+to allow for t
+
+the non-abrup
+
+t condensate f
+
+formation illu
+
+ustrated in Fig
+
+g. 3.20 Leff incr
+
+reases with Tc
+
+c. The differen
+
+nce between L
+L 
+
+and Leff lies in
+
+n the non-loca
+
+al nature of th
+
+he exchange in
+
+nteraction. Wi
+
+th a half-widt
+
+th (radius) R =
+
+= RT – RB of
+
+f roughly 2 nm
+m 
+
+at  half  maxim
+
+mum  of  bulk 
+
+density  matr
+
+rix  elements  ρ
+
+ρ(RT,RB)  for 
+
+this  graphene
+
+e  system,  def
+
+fined  by  both 
+
+the  Coulomb
+b 
+
+interaction  an
+
+nd  coherence 
+
+length  of  th
+
+e  interlayer  d
+
+density  matrix
+
+x,20  a  gradual
+
+l  build-up  of 
+
+f the  condensa
+
+ate  within  the
+e 
+
+channel is inh
+
+herent. Moreo
+
+over, in determ
+
+mining the net
+
+t strength of t
+
+the exchange 
+
+interaction in
+
+n, e.g., the top
+
+ layer at some
+e 
+
+point RT with
+
+hin the transit
+
+tion region, a 
+
+reduced amp
+
+plitude in ρ(R
+
+RT,RB) for cou
+
+upling to poin
+
+nts RB closer t
+
+to the channe
+el 
+
+edge must be 
+
+ compensated
+
+d for by an inc
+
+creased amplit
+
+tude in ρ(RT,R
+
+RB) for coupli
+
+ing to points c
+
+closer to the c
+
+channel center
+r. 
+
+The  latter  be
+
+ecomes  increa
+
+asingly  difficu
+
+ult  to  obtain 
+
+as  the  critic
+
+cal  temperatur
+
+re  Tc  approac
+
+ches  the  300 
+
+K  simulation
+n 
+
+temperature. T
+
+Thus, L − Lef
+
+ff increases wi
+
+ith decreases i
+
+in Tc − T. (Th
+
+he relationship
+
+p of the non-lo
+
+ocal nature of
+
+f the exchange
+e 
+
+interaction to 
+
+L − Leff also 
+
+illustrates the
+
+e need for exp
+
+plicit modeling
+
+g of the non-l
+
+ocal interactio
+
+on to judge th
+
+he potential fo
+or 
+
+nano-scale co
+
+ondensates.) In
+
+n addition, the
+
+e effective cri
+
+itical current d
+
+density, Jc,avg
+
+= Ic/Leff, incre
+
+eases with Tc 
+
+even allowing
+g 
+
+for the increa
+
+ses in Leff with
+
+h Tc, consisten
+
+nt with the dep
+
+pendence of I
+
+Imax(RT,RB) on
+
+n ρ(RT,RB) (E
+
+Eq. 12(b)). 
+
+At this po
+
+oint, we note 
+
+that for comp
+
+utational expe
+
+ediency we ge
+
+enerally have 
+
+considered ve
+
+ery strong con
+
+ndensates, with
+h 
+
+the lowest Tc 
+
+of 377 K stil
+
+ll not produci
+
+ing Gil saturat
+
+tion with a 25
+
+5 nm channel 
+
+length in this
+
+s modeled sys
+
+stem at 300 K
+K. 
+
+However, we
+
+ also note tha
+
+at saturation is
+
+s not necessary
+
+ry to achieve g
+
+greatly enhanc
+
+ced Gil still on
+
+n the scale of 
+
+the Landauer
+r-
+
+Büttiker  limit
+
+t  (Fig.  12(a))
+
+  and  orders  o
+
+of  magnitude 
+
+greater  than 
+
+the  condensa
+
+ate-free  interl
+
+layer  conduct
+
+ance  expected
+d 
+
+based on the 
+
+transmission 
+
+probabilities o
+
+of Fig. 4. Mo
+
+reover, satura
+
+ation may not 
+
+even be ideal
+
+l from one pe
+
+erspective. The
+e 
+
+critical voltag
+
+ge, Vc = Ic/Gi
+
+l, decreases w
+
+with L initially
+
+y due to the 
+
+faster increas
+
+se in Gil than 
+
+in Ic, and inc
+
+creases with L
+L 
+
+afterwards  be
+
+ecause  of  the 
+
+saturation  of
+
+f  Gil  and  cont
+
+tinuous  increa
+
+ase  of  Ic.  Thu
+
+us,  the  point 
+
+at  which  Vc—
+
+—an  importan
+nt 
+
+parameter for
+
+r BiSFET and
+
+d BiSJT circu
+
+uit application
+
+ns—is the leas
+
+st sensitive to
+
+o variations in
+
+n channel leng
+
+gth is reached
+d 
+
+prior to satura
+
+ation. 
+
+ 
+
+layer conductan
+n-equilibrium) r
+he other param
+iated bulk critic
+
+nce Gil normaliz
+reflection proba
+meters are εr = 2.
+cal temperature
+
+zed to Laudauer
+abilities, for inc
+.2, Vb = 0.5 meV
+es of Tc ≈ 747 K
+
+r-Büttiker limit
+cident electrons
+V and n = p ≈ 6
+K, 655 K and 58
+
+t for the leads, i
+s in the bottom-
+6×1012 cm-2. Th
+85 K, respective
+
+interlayer critica
+-left lead BL, RB
+he interlayer sep
+ely. 
+
+al current densi
+BL for varying i
+parations d are 0
+
+ity Ic per unit 
+interlayer 
+0.8, 1.0 and 1.2
+2 
+
+FIG. 13.  Interl
+width, and (non
+separation d. T
+nm, with assoc
+ 
+
+For the s
+
+imulation resu
+
+ults of Fig. 13
+
+3, differing in
+
+nterlayer separ
+
+rations, d = 0.
+
+8, 1.0 and 1.2
+
+2 nm, are cons
+
+sidered with ε
+εr 
+
+=  2.2,  Vb  =  0
+
+0.5  meV,  and
+
+d  n  =  p  ≈  6×
+
+1012 cm-2.  Th
+
+he  basic  trend
+
+ds  with  respec
+
+ct  to  Tc  are  m
+
+much  the  sam
+
+me  for  both  G
+Gil 
+
+saturation  and
+
+d  Ic  with  L  a
+
+as  seen  in  Fig
+
+g.  12.  Howeve
+
+er,  the  spread
+
+d  in  Tc is  less 
+
+as  expected 
+
+given  its  gen
+
+nerally  weake
+er 
+
+dependence o
+
+on d than to εr
+
+2
+20 despite the 
+
+slightly large
+
+r percentile va
+
+ariation in d c
+
+considered her
+
+re, and thus in
+
+n the results a
+s 
+
+well. In addit
+
+tion, we see th
+
+hat that the sa
+
+aturated value 
+
+of Gil can var
+
+ry, although t
+
+the overall eff
+
+fect is not larg
+
+ge in this case
+e. 
+
+While  the  sm
+
+maller  the  laye
+
+er  separation 
+
+the  more  qui
+
+ickly Gil  satur
+
+rates  as  expec
+
+cted,  the  satu
+
+uration  is  sligh
+
+htly larger  fo
+or 
+
+larger d (Fig. 
+
+13(a)). This i
+
+increase in sat
+
+turated Gil is a
+
+associated wit
+
+th less abrupt 
+
+change in the
+
+e potential upo
+
+on entering the
+e 
+
+channel—alb
+
+eit  the  interla
+
+ayer  exchang
+
+ge  mediated  h
+
+hopping  energ
+
+gy—indicated
+
+d  by  smaller 
+
+coefficients a
+
+as a function o
+
+of energy (Fig
+
+g. 13(c)), in th
+
+he vicinity of
+
+f the chemical
+
+l potential (0 
+
+λ.  The  avera
+
+aged  reflection
+n 
+
+eV) where th
+
+he incident and
+d 
+
+outgoing curr
+
+rents flow, ex
+
+xhibit this effe
+
+ect even more
+
+e strongly. (Th
+
+he reflection p
+
+probability de
+
+ecreases above
+
+e the chemica
+al 
+
+potential  as  t
+
+the  energy  of
+
+f  incidence  ap
+
+pproaches  the
+
+e  condensate 
+
+band  edge  al
+
+llowing  more 
+
+transmission
+
+n,  and  initially
+y 
+
+increases belo
+
+ow because of
+
+f a lack of ava
+
+ailable final sta
+
+ates in the opp
+
+posite layer.) T
+
+The overall ef
+
+ffect, however
+
+r, is not large.
+. 
+
+ 
+
+layer conductan
+ociated critical v
+nm and n = p ≈ 
+
+nce Gil normaliz
+voltage Vc for v
+6×1012 cm-2. T
+
+zed to Laudauer
+varying interlay
+Tc ~ 655K and λ
+
+r-Büttiker limit
+yer hopping ene
+~ 2.25 for all th
+
+t for the leads, i
+ergies Vb = 0.5, 
+hree cases. 
+
+interlayer critica
+0.75 and 1.0 m
+
+al current densi
+meV. The other p
+
+ity Ic per unit 
+parameters are 
+
+FIG. 14.  Interl
+width, and asso
+εr = 2.2, d = 1 n
+ 
+
+For the r
+
+results of Fig.
+
+. 14, different
+
+t interlayer ba
+
+are coupling s
+
+strengths were
+
+e considered, 
+
+Vb = 0.5, 0.7
+
+75 and 1 meV
+V, 
+
+with εr = 2.2,
+
+ d = 1 nm, an
+
+nd n = p ≈ 6×
+
+×1012 cm-2. Th
+
+he strength of 
+
+the condensa
+
+ate and associa
+
+ated Tc are no
+
+ot significantly
+y 
+
+affected by  V
+
+Vb  at  this  scal
+
+le,  and,  thus, 
+
+the  interlayer
+
+r  conductance
+
+e Gil  also  rem
+
+mains  essentia
+
+ally  unaffected
+
+d  (Fig.  14(a))
+). 
+
+However,  the
+
+e  critical  cur
+
+rrent  (Fig.  14
+
+4(b)  and  asso
+
+ociated  critica
+
+al  voltage  (F
+
+ig.  14(c))  in
+
+crease  with  i
+
+increasing  Vb
+b, 
+
+consistent wi
+
+th Eq. 11(b). 
+
+For strong b
+
+are coupling, 
+
+past bulk wo
+
+ork has shown
+
+n that the stre
+
+ength and eve
+
+en the detailed
+d 
+
+shape of the 
+
+interlayer den
+
+nsity matrix ρ
+
+ρ(RT,RB) can 
+
+be affected.2
+
+1 However, s
+
+uch strong in
+
+nterlayer bare 
+
+coupling also
+o 
+
+would likely p
+
+produce Vc su
+
+ubstantially gre
+
+eater that kBT/
+
+T/q. 
+
+ 
+
+ayer conductanc
+h varying carrie
+nd correspondin
+
+ce Gil normaliz
+er concentration
+ng bulk critical 
+
+ed to Laudauer
+ns n = p ≈ 3.8×
+temperatures T
+
+r-Büttiker limit 
+1012 cm-2, 6.0×
+Tc ≈ 598 K, 655
+
+for the leads, an
+1012 cm-2 and 8
+5 K and 702 K, r
+
+nd interlayer cr
+8.6×1012 cm-2 (V
+respectively. 
+
+ritical current de
+Vdiff = 0.3, 0.5 a
+
+ensity, Ic per 
+and 0.7 eV 
+
+FIG. 15. Interla
+unit width, with
+respectively) an
+ 
+
+Finally, w
+
+we consider d
+
+differing nomi
+
+inal carrier co
+
+oncentrations, 
+
+n = p ≈ 3.8×
+
+1012, 6.0×101
+
+2, and 8.6×10
+
+012 cm-2 (Vdiff =
+= 
+
+0.3, 0.5 and 0
+
+0.7 eV, respec
+
+ctively) in Fig
+
+g. 15, with εr =
+
+= 2.2, Vb = 0.
+
+.5 meV, and d
+
+d = 1.0 nm. T
+
+These paramet
+
+ter sets exhibi
+it 
+
+the  largest  d
+
+difference  in 
+
+saturated  Gil 
+
+as  normaliz
+
+zed  to  the  La
+
+andauer-Büttik
+
+ker  limit  for 
+
+the  correspo
+
+onding  carrie
+er 
+
+concentration
+
+n.  Here,  the  d
+
+decrease  in  the
+
+e  Fermi  wave
+
+elength  relativ
+
+ve  to  the  vall
+
+ley  center  acc
+
+companying  th
+
+he  increase  in
+n 
+
+carrier  conce
+
+entration  exce
+
+eeds  the  decre
+
+ease  in  transi
+
+ition  length  c
+
+caused  by  stro
+
+onger  conden
+
+nsates,  produc
+
+cing  a  smalle
+er 
+
+wavelength-n
+
+normalized  po
+
+otential  chang
+
+ge  (smaller  λ)
+
+).  Moreover, 
+
+this  smoothe
+
+er  potential  ch
+
+hange  is  asso
+
+ociated  with  a
+a 
+
+stronger  condensate.  The combination produces a  significant increase in  the saturated normalized Gil  (Fig. 15(a)).  Of 
+
+course,  the  Landauer-Büttiker  limit  for  Gil  also  increases  with  carrier  concentration.  By  comparison,  it  is  likely  that 
+
+resulting smoother potential change and weaker condensate in the cases for Figs. 12 and 13 partially compensate each 
+
+other producing smaller if any changes in the saturated normalized Gil. In addition, the stronger condensate leads to a 
+
+larger critical current per channel length (Fig. 15(b)) or even effective channel length. 
+
+IV. CONCLUSION 
+
+We have developed an atomistic tight-binding NEGF quantum transport method (except that we need not solve for 
+
+the full Green’s function matrix in these ballistic simulation) for modeling non-equilibrium transport through nanoscale 
+
+exciton condensates realized via the non-local many-body Fock exchange interaction. Specifically, we have modeled the 
+
+graphene-dielectric-graphene  system  here.  However,  the  essential  physics  should  be  similar  in  TMD-based  material 
+
+systems also under consideration or other material systems. In addition, the method itself should also be extendable to 
+
+these  latter  systems,  although  with  a  greater  computational  burden.  We  have  exhibited  the  possibility  for  condensate 
+
+formation  within  nanoscale  regions,  and  its  dependence  on  the  critical  temperature  of  the  bulk  condensate.  We  have 
+
+exhibited essentially transport effects that serve as the basis for beyond-CMOS device proposals including: interlayer 
+
+conductances approaching the Landauer-Büttiker  limits imposed by the  leads but limited by critical currents  (beyond 
+
+which collapse of DC conductance and onset of THz AC conductance are expected, which is at least consistent with the 
+
+oscillation in the pseudospin phase with  iteration seen  here),  with  the latter  reached at sub-kBT/q  voltages (BiSFET); 
+
+critical current conservation for currents injected into two—or likely more—regions of the condensate (BiSJT); and near-
+
+perfect  Coulomb  drag-counterflow  current  between  layers.  We  also  have  exhibited  the  underlying  transport  physics 
+
+including  the  process  by  which  incident  (outgoing)  electron-hole  pairs  in  opposite  layers  excite  (absorb)  coherent 
+
+excitons, in a manner somewhat analogous to Andreev reflection at the edge of conventional superfluids. The work is not 
+
+intended to address the likelihood of achieving such condensates, which requires much greater attention to the details of 
+
+screening and ultimately must be resolved experimentally. It is intended to motivate such work through exhibiting the 
+
+novel  transports  effect  that  could  thus  be  achieved,  and  perhaps  to  help  with  the  interpretation  of  such  experimental 
+
+results.  
+
+REFERENCES 
+
+1 B. Spielman, J. P. Eisenstein, L. N. Pfeiffer, and K. W. West, “Resonantly enhanced tunneling in a double layer 
+
+quantum Hall ferromagnet,” Phys. Rev. Lett., vol. 84, no. 25, pp. 5808-5811, Jun.2000. 
+
+2 E. Tutuc, M. Shayegan, and D. A. Huse, “Counterflow measurements in strongly correlated GaAs hole bilayers: 
+
+Evidence for electron-hole pairing,” Phys. Rev. Lett., vol. 93, no. 3, Jul. 2004. 
+
+3 J. P. Eisenstein and A. H. MacDonald, “Bose-Einstein condensation of excitons in bilayer electron systems,” Nature, 
+
+vol. 432, pp. 691-694, Dec. 2004. 
+
+4 L. Tiemann, W. Dietsche, M. Hauser, and K. von Klitzing, “Critical tunneling currents in the regime of bilayer 
+
+excitons,” New J. Phys., vol. 10, 045018, Apr. 2008. 
+
+5 D. Nandi, A. D. K. Finck, J. P. Eisenstein, L. N. Pfeiffer and K. W. West, “Exciton condensation and perfect Coulomb 
+
+drag, ” Nature ,vol. 488, pp. 481-484, Aug. 2012. 
+
+6 K. S. Novoselov, A. K. Geim, S. V. Morozov, D. Jiang, M. I. Katnelson, I. V. Grigorieva, S. V. Dubonos and A. A. 
+
+Firsov, “Two-dimensional gas of massless Dirac Fermions in graphene,” Nature,. Vol. 438, pp. 197-200, Nov. 2005. 
+
+7 Y. Zhang, Y.-W. Tan, H. L. Stormer and P. Kim, “Experimental observation of the quantum Hall effect and Berry’s 
+
+phase in graphene,” Nature, vol. 438, pp. 201-204, Nov. 2005. 
+
+8 H. Min, R. Bistritzer, J.-J. Su and A. H. MacDonald, “Room-temperature superfluidity in graphene bilayers,” Phy. Rev. 
+
+B, vol. 78, 121401(R), Sep. 2008. 
+
+9 I. Sodemann, D. A. Pesin and A. H. MacDonald, “Interaction-enhanced coherence between two-dimensional Dirac 
+
+layers,” Phy. Rev. B, vol. 85, 195136, May 2012. 
+
+10 F.-C. Wu, F. Xue, and A.H. MacDonald, “Theory of Spatially Indirect Equilibrium Exciton Condensates,” 
+
+arXiv:1506.01947, submitted for publication, 2015. 
+
+11 S. K. Banerjee, L. F. Register, E. Tutuc, D. Reddy and A. H. MacDonald, “Bilayer pseudoSpin Field-Effect Transistor 
+
+(BiSFET): A proposed new-logic device,” Elec. Dev. Lett. IEEE, vol. 30, pp. 158-160, Jan. 2009. 
+
+12 L. F. Register, X. Mou, D. Reddy, W. Jung, I. Sodemann, D. Pesin, A. Hassibi, A. H. MacDonald and S. K. Banerjee, 
+
+“Bilayer pseudo-Spin Field Effect Transistor (BiSFET): Concepts and Critical Issues for Realization,” ECS Trans., vol. 
+
+45, no. 4, pp. 3-14, 2012. 
+
+13 X. Mou, L. F. Register and S. K. Banerjee, “Quantum transport simulations on the Feasibility of the Bilayer 
+
+Pseudospin Field-Effect Transistor (BiSFET)”, in IEEE IEDM, 2013, 4.7.1-4.7.4. 
+
+14 X. Mou, L. F. Register and S. K. Banerjee, “Ultra-low-power pseudospintronic devices via exciton condensation in 
+
+coupled two-dimensional material systems, ” in Nanoscale Materials and Devices for Electronics, Photonics and Solar 
+
+Energy, Eds. S. Goodnick, A. Korkin and R. Nemanich, Springer (in press). 
+
+15 X. Mou, L. F. Register and S. K. Banerjee, “Bilayer pseudoSpin Junction Transistor (BiSJT): A New ‘Beyond-CMOS’ 
+
+Logic Device,” submitted for publication, 2015. 
+
+16 R. T. Weitz, M. T. Allen, B. E. Feldman, J. Martin and A. Yacoby, “Broken-symmetry states in doubly gated 
+
+suspended bilayer graphene,” Science, vol. 330, pp. 812-816, Nov. 2010. 
+
+17 X. Mou, L. F. Register and S. K. Banerjee, “Quantum Transport Simulation of Bilayer pseudoSpin Field-Effect 
+
+Transistor (BiSFET) with Tight-Binding Hartree-Fock Model,” in IEEE SISPAD, 2013, pp. 420-423. 
+
+18 X. Mou, L. F. Register and S. K. Banerjee, “Interplay among Bilayer pseudoSpin Field-Effect Transistor (BiSFET) 
+
+performance, BiSFET scale and condensate strength,” in IEEE SISPAD, 2014, pp. 309-312. 
+
+19 C. F. Fischer, “Hartree-Fock method for atoms: A numerical approach,” J. Wiley & Sons, Inc., 1977. 
+
+20 D. Basu, L. F. Register, D. Reddy, A. H. MacDonald and S. K. Banerjee, “Tight-binding study of electron-hole pair 
+
+condensation in graphene bilayers: Gate control and system-parameter dependence,” Phys. Rev. B, vol. 82, 075409, Aug. 
+
+2010. 
+
+21 D. Basu, L. F. Register, A. H. MacDonald and S. K. Banerjee, “Effect of interlayer bare tunneling on electron-hole 
+
+coherence in graphene bilayers,” Phys. Rev. B, vol. 84, 035449, Jul. 2011. 
+
+22 S. Datta, Electronic Transport in Mesoscopic Systems, Cambridge Studies in Semiconductor Physics and 
+
+Microelectronic Engineering, 1997. 
+
+23 D. Reddy, L. F. Register and S. K. Banerjee, “Bilayer pseudoSpin Field Effect Transistor,” in CMOS and Beyond: 
+
+Logic Switches for Terascale Integrated Circuits, Cambridge University Press, 2014. 
+
+24 J.-J. Su and A. H. MacDonald, “How to make a bilayer exciton condensate flow,” Nat. Phys., vol. 4, pp. 799-802, Aug. 
+
+2008. 
+
+25 K. K. Ng, Complete Guide to Semiconductor Devices, pp. 569, J. Wiley & Sons, New York, 2002. 
+
+26 H. Chen, A. Kent, A. H. MacDonald and I. Sodemann, “Nonlocal transport mediated by spin supercurrents,” Phys. Rev. 
+
+B., vol. 90, 220401(R), Dec. 2014. 
+
+

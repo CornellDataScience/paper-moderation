@@ -1,0 +1,920 @@
+Phys. Rev. A 95, 052110 (2017)
+
+Infrared Problem in Quantum Acoustodynamics
+
+Dennis P. Clougherty and Sanghita Sengupta
+
+Department of Physics, University of Vermont, Burlington, VT 05405-0125
+
+(Dated: October 6, 2018)
+
+Abstract
+
+Quantum electrodynamics (QED) provides a highly accurate description of phenomena involving
+
+the interaction of atoms with light. We argue that the quantum theory describing the interaction
+
+of cold atoms with a vibrating membrane -- quantum acoustodynamics (QAD) -- shares many issues
+
+and features with QED. Specifically, the adsorption of an atom on a vibrating membrane can be
+
+viewed as the counterpart to QED radiative electron capture. A calculation of the adsorption
+
+rate to lowest-order in the atom-phonon coupling is finite; however, higher-order contributions
+
+suffer from an infrared problem mimicking the case of radiative capture in QED. Terms in the
+
+perturbation series for the adsorption rate diverge as a result of massless particles in the model
+
+(flexural phonons of the membrane in QAD and photons in QED). We treat this infrared problem in
+
+QAD explicitly to obtain finite results by regularizing with a low-frequency cutoff that corresponds
+
+to the inverse size of the membrane. Using a coherent state basis for the soft phonon final state, we
+
+then sum the dominant contributions to derive a new formula for the multiphonon adsorption rate
+
+of atoms on the membrane that gives results that are finite, nonperturbative in the atom-phonon
+
+coupling, and consistent with the KLN theorem. For micromembranes, we predict a reduction with
+
+increasing membrane size for the low-energy adsorption rate. We discuss the relevance of this to
+
+the adsorption of a cold gas of atomic hydrogen on suspended graphene.
+
+7
+1
+0
+2
+
+ 
+
+y
+a
+M
+5
+2
+
+ 
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+3
+v
+5
+4
+4
+9
+0
+
+.
+
+1
+1
+6
+1
+:
+v
+i
+X
+r
+a
+
+1
+
+I.
+
+INTRODUCTION
+
+The adsorption process, where a free atom or molecule adheres to the surface of a material,
+
+is central to a variety of phenomena in surface science [1]. Experimental study of adsorption
+
+relies on having clean surfaces and gases at low temperature. Recent experimental advances
+
+in the cooling and manipulation of ultracold atomic beams have opened up a new low-energy
+
+regime of adsorption where models of atom-surface interactions require a complete quantum
+
+mechanical treatment. Furthermore, newly discovered materials such as graphene provide
+
+truly two-dimensional solids where strong low-frequency fluctuations of the surface might
+
+dramatically alter the adsorption dynamics [2].
+
+In addition to its centrality in surface science, it has been proposed that the dynamics
+
+of such a "quantum hybrid" system could be utilized for quantum information processing
+
+[3] or precision measurement [4]. It has been demonstrated that the interactions between a
+
+cold atom and a vibrating membrane can be engineered by placing the system in an optical
+
+cavity [5]. Laser light can be bounced off the membrane to form an optical lattice [6] that
+
+can strongly couple over large distances the motion of the atoms to the vibrational modes
+
+of the membrane. The dynamics of cold atoms with nanotubes and cantilevered beams has
+
+also been studied both experimentally [7, 8] and theoretically [9 -- 11].
+
+Our focus here is the dynamics of a system consisting of a single atom interacting with an
+
+elastic membrane. Such a system can be realized with a cold atom coupled via the van der
+
+Waals (vdW) interaction to a suspended two-dimensional material such as graphene. While
+
+the vdW interaction between a cold neutral atom and graphene is weak, it is sufficiently
+
+strong for a hydrogen atom to bind to graphene at low temperatures. We examine the tran-
+
+sition rate of a cold atom to a bound state on the clamped membrane at zero temperature.
+
+It was previously recognized that there are similarities between the adsorption process
+
+and radiative capture [12, 13]. Our work highlights the fact that quantum adsorption is
+
+a non-relativistic, condensed matter analogue of QED. We essentially study in this work
+
+the phonon analogue to radiative corrections in scattering.
+
+It is interesting to note that
+
+another well-known analogous effect, the phononic Lamb shift, has been detected in a recent
+
+experiment [14] in a related system.
+
+A straightforward perturbative expansion of the adsorption rate in the atom-phonon
+
+interaction has terms that become infrared divergent for macroscopic membrane size. In
+
+2
+
+analogy to the well-known infrared problem in QED [15], we show explicitly that the infrared
+
+divergences in the perturbation expansion of the adsorption rate can be remedied by using an
+
+appropriate set of soft phonon final states and summing over contributions corresponding to
+
+multiphonon emission. We subsequently obtain a closed-form expression for the multiphonon
+
+adsorption rate. The calculated rate is infrared finite, a result consistent with the KLN
+
+theorem [16, 17].
+
+II. MODEL
+
+We take for our model the following Hamiltonian H = Ha + Hph + Hbi + Hki where
+
+(cid:88)
+
+q
+
+qaq,
+
+Ha = Ekc
+
+kck − Ebb†b,
+†
+ωqa†
+(cid:88)
+Hph =
+Hbi = −gbbb†b
+Hki = −gkb(c
+†
+kb + b†ck)
+
+(aq + a†
+q)
+
+(aq + a†
+q),
+
+(cid:88)
+
+q
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+q
+
+The model was derived previously [2] by assuming that the atom moves slowly in the per-
+
+pendicular direction toward an elastic, clamped membrane under tension and can transfer
+
+energy through force-coupling to the membrane by exciting its circularly symmetric flexural
+
+modes (Fig. 1). The model has linear phonon dispersion with constant transverse speed of
+
+sound.
+
+Here, ck (c
+
+†
+k) annihilates (creates) an atom in the continuum state with energy Ek; b
+(b†) annihilates (creates) an atom bound to the static membrane with energy -Eb; aq (a†
+q)
+annihilates (creates) a circularly symmetric flexural phonon in the membrane with energy
+
+ωq; gkb is the atom-phonon coupling for an atom in the continuum state; and gbb is the
+
+atom-phonon coupling for an atom bound to the membrane.
+
+If one regards the atom-phonon interactions as perturbations Hi = Hbi + Hki, the ad-
+
+sorption rate can be estimated using Fermi's golden rule. The unperturbed Hamiltonian
+H0 = Ha + Hph has eigenstates nk, nb;{nq}(cid:105) labeled by the number of atoms in the contin-
+uum nk, the number of atoms bound nb and the number of phonons in each vibrational mode
+of the membrane {nq}. The initial state has an atom in the continuum and the membrane
+
+3
+
+FIG. 1. Atom impinging on an elastic membrane. During adsorption, energy is transferred from
+
+the atom to the membrane and is radiated away by phonons.
+
+in its ground state; the final state has a bound atom plus a phonon present. The adsorption
+
+rate Γ0 for a micromembrane is then
+
+(cid:88)
+
+Γ0 = 2π
+
+q
+= 2πg2
+kbρ
+
+δ(Ek + Eb − ωq)(cid:104)0, 1; 1qHi1, 0; 0(cid:105)2
+
+(5)
+
+(6)
+
+where ρ is a partial phonon density of states for the circularly symmetric vibrational modes
+
+of the membrane. This result, finite in the limit of a large membrane, is of order g2
+
+kb and
+is independent of gbb. Higher order contributions in gbb however are divergent in the large
+
+membrane limit where soft phonon emission becomes possible. We use the inverse size of the
+
+membrane  as an infrared regulator that provides a low frequency cutoff to the vibrational
+
+spectrum; ωD is the membrane's high frequency limit.
+
+The KLN theorem [16, 17] informs us that infrared divergences are specious and are
+not contained in the true physical adsorption rate as  → 0. Thus, approximations to the
+adsorption rate obtained by truncation of this (divergent) perturbation expansion must be
+
+carefully scrutinized for large membranes [18].
+
+If one regroups the Hamiltonian so that Hbi is included in the unperturbed Hamilto-
+
+nian, a quite different result follows for the lowest order adsorption rate. With Hki as the
+
+only perturbation, the remaining terms of H form the unperturbed Hamiltonian which can
+
+4
+
+be diagonalized with a canonical transformation (see Appendix). We find that under the
+
+perturbation Hki, the adsorption rate Γ1 is given by
+
+(7)
+
+(cid:18)
+
+(cid:19)−2
+
+Γ1 = 2πg2
+
+kbρe−2F
+
+1 +
+
+∆
+Es
+
+(cid:80)
+
+q
+
+(cid:80)
+(cid:82)
+
+
+
+q
+
+bb
+2
+
+1
+ω2
+q
+
+, ∆ = g2
+bb
+
+where F = g2
+kb and contains
+effects of gbb to all orders. Most importantly, in the large membrane limit ( → 0), we see
+that F ∼ ρg2
+dω
+ω2 , consequently growing as 1/. Thus, the lowest order adsorption rate
+becomes exponentially small for large membranes, a result in dramatic contrast to Eq. 6.
+
+, and Es = Ek + Eb. Γ1 is of order g2
+
+1
+ωq
+
+bb
+2
+
+The rate of adsorption producing a multiphonon final state is found in a similar fashion
+
+(see Appendix). In the large membrane regime, the rate of adsorption via emission of n
+
+phonons is
+
+Γn ≈ 2πg2
+
+kbρe−2F
+
+(cid:18)
+
+(cid:19)−2(cid:18) g2
+
+(cid:19)n−1
+
+1 +
+
+∆
+Es
+
+bbρ
+
+
+1
+
+(n − 1)!
+
+(8)
+
+∞(cid:88)
+
+Γn ≈ 2πg2
+kbρ
+
+(cid:18)
+
+(cid:19)−2
+
+∆
+Es
+
+We conclude that the adsorption rate for any finite number of phonons emitted is vanishingly
+
+small in the large membrane regime. The situation here is reminiscent of bremsstrahlung
+
+emission by a charged particle in QED [15]. We also note that for large membranes where
+ (cid:28) ρg2
+photon emission from a scattered electron in QED.
+
+bb, the multiphonon rate exceeds the 1-phonon rate Γ1, a familiar situation for soft
+
+To obtain the total adsorption rate, we can sum over all n and obtain a finite result;
+
+namely,
+
+Γ =
+
+(9)
+We conclude that, as  → 0, a non-vanishing adsorption rate results only with the emission
+of an infinite number of phonons. We further note that the multiphonon rate differs from
+
+the simplest golden rule estimate Γ0 by a fractional factor R =(cid:0)1 + ∆
+
+(cid:1)−2 which depends
+
+1 +
+
+n=1
+
+Es
+
+logarithmically on the IR cutoff  (see Fig. 2). Lastly, we observe that all adsorption rates
+
+Γn, as well as the total rate Γ, are finite (specifically, tending to zero) in the infrared limit
+ → 0 in accord with the KLN theorem.
+
+III. SUMMARY
+
+We have studied a quantum model for low-energy atomic adsorption on a 2D membrane.
+
+The strength of the atom-phonon interaction at low frequencies gives rise to an infrared di-
+
+vergence problem in the adsorption rate for large membranes. We use the inverse membrane
+
+5
+
+FIG. 2. Normalized sticking rate Γ/Γ0 versus the IR cutoff  for micromembranes with different
+
+binding energies. Multiphonon processes (MP, Eq. 9) suppress the simple golden rule (GR, Eq. 6)
+
+adsorption rate Γ0. The suppression of the adsorption rate is stronger for shallow bound states.
+
+GR can be a poor approximation for large membranes where soft phonon processes are important.
+
+size  as a natural IR regulator. With a canonical transformation, we obtain the adsorption
+
+rate in each sector of the phonon Fock space, and we show that each rate vanishes exponen-
+tially in the limit of a vanishing cutoff  → 0. We sum the dominant terms in each sector of
+the phonon Fock space for small  to obtain a new adsorption rate formula. We show that
+
+the simplest golden rule approximation to the adsorption rate lacks a factor that reduces the
+adsorption rate, vanishing slowly as ln−2(ωD/) as  → 0. This prediction might be exper-
+imentally tested by comparing the cold atom adsorption rates by samples with membranes
+
+that range up to macroscopic size.
+
+This result provides the answer to the question raised previously [19] concerning the
+
+effect of the IR cutoff on the low-energy sticking of atomic hydrogen on suspended graphene
+
+[20]. It was anticipated [19] that changes in the low-frequency phonon spectrum will have
+
+"little impact" on the sticking process. This logic is used to justify an approximation of
+
+the phonon spectrum that ignores phonons with energies below 0.79 meV. Surprisingly, our
+
+result illustrates that the low-frequency phonon spectrum can have a substantial effect on
+
+the sticking, as the emission of an infinite number of soft phonons can dominate the sticking
+
+6
+
+012345[µeV]0.750.800.850.900.951.00StickingRateΓ/Γ0GRMP, Es = 44.0 meV MP, Es = 8.0 meVprocess for micromembranes. This differs from "quantum sticking" [12] where the emission
+
+of a finite number of quanta facilitates the adsorption. Lastly, we note that this result is in
+
+agreement with previous results based on a variational mean-field method [2, 21, 22] that
+
+find a suppression of the adsorption rate with respect to the simple golden rule rate for
+
+sticking via emission of a finite number of phonons.
+
+IV. ACKNOWLEDGMENTS
+
+We gratefully acknowledge useful discussions with Professor V.N. Kotov on a variety of
+
+issues pertaining to this work.
+
+Appendix
+
+We group the Hamiltonian in Eqs. (1-4) as H = H0 + H1 where
+
+(cid:88)
+kck − Ebb†b +
+†
+(cid:88)
+†
+kb + b†ck)
+
+q
+
+H0 = Ekc
+H1 = −gkb(c
+
+(cid:88)
+
+q
+
+ωqa†
+
+qaq − gbbb†b
+
+(aq + a†
+q)
+
+(aq + a†
+q),
+
+(A.1)
+
+(A.2)
+
+H0 contains the independent boson model [23] Hamiltonian and can be diagonalized with a
+
+q
+
+canonical transformation
+
+H0 = eSH0e−S
+
+= Ekc
+
+kck − (Eb + ∆)b†b +
+†
+
+where S = −b†b(cid:80)
+
+q − aq) and ∆ = g2
+(a†
+
+bb
+
+gbb
+ωq
+
+q
+
+for one atom Eg is thus Eg = −(Eb + ∆).
+
+(cid:80)
+
+(cid:88)
+
+q
+
+ωqa†
+
+qaq
+
+(A.3)
+
+(A.4)
+
+1
+ωq
+
+. The unperturbed ground state energy
+
+q
+
+Since the 1-phonon eigenstate of H0 is 0, 1; 1q(cid:105) with energy Eq = −(Eb + ∆) + ωq, the
+corresponding unperturbed eigenstate of H0 is e−S0, 1; 1q(cid:105), a product of phonon coherent
+states over the modes. (Technically, one state in the product is a "phonon-added" coherent
+
+state.) Thus, from the golden rule, the adsorption rate for 1st order transitions under the
+
+perturbation H1 is
+
+Γ1 = 2π
+
+(cid:88)
+(cid:88)
+
+δ(Ek + Eb + ∆ − ωq)(cid:104)0, 1; 1qeSH11, 0; 0(cid:105)2
+q(cid:48)0(cid:105)2
+†
+
+δ(Ek + Eb + ∆ − ωq)(cid:104)1qX†(cid:88)
+
+a
+
+q
+= 2πg2
+kb
+
+q(cid:48)
+
+q
+
+7
+
+(A.5)
+
+(A.6)
+
+where X = exp((cid:80)
+(cid:80)
+
+where F = g2
+
+bb
+2
+
+q − aq)). We evaluate the phonon matrix element and find that
+(a†
+
+gbb
+ωq
+
+q
+
+(cid:19)
+
+1 − ∆
+ωq
+
+(cid:18)
+
+(cid:104)1qX†a
+
+q(cid:48)
+
+(cid:88)
+(cid:18)
+kbe−2F(cid:88)
+(cid:90) ωD
+(cid:18)
+
+kbe−2F
+
+q
+
+
+
+kbe−2F ρ
+
+q(cid:48)0(cid:105) = e−F
+†
+(cid:19)2
+
+(cid:19)2
+
+(cid:18)
+
+1 − ∆
+ωq
+1 − ∆
+ω
+
+ρdω
+
+(cid:19)2
+
+1 − ∆
+
+Es + ∆
+
+1
+ω2
+q
+
+q
+
+. Thus,
+
+Γ1 = 2πg2
+
+≈ 2πg2
+
+= 2πg2
+
+δ(Ek + Eb + ∆ − ωq)
+
+δ(Ek + Eb + ∆ − ω)
+
+(A.7)
+
+(A.8)
+
+(A.9)
+
+(A.10)
+
+where the quasi-continuum approximation is used to evaluate the sum. As the IR cutoff 
+
+For final states obtained from 2-phonon eigenstates of H0, the rate of adsorption is
+
+p npωp)(cid:104)0, 1;{nq}eSH11, 0; 0(cid:105)2
+
+(A.11)
+
+approaches zero, Γ1 exponentially vanishes.
+
+(cid:88)
+{nq}, (cid:80)
+kbe−2F ρ2 g2
+bb
+
+
+q nq=2
+
+δ(Ek + Eb + ∆ −(cid:80)
+(cid:18)
+(cid:19)2
+
+1 − ∆
+
+,  → 0
+
+Γ2 = 2π
+
+≈ 2πg2
+
+(A.12)
+Other contributions to Γ2 are subdominant as  → 0. The use of a coherent state phonon
+basis for the final state removes the IR divergence. This gives insight into the analogous
+
+Es + ∆
+
+method to remedy IR divergences in QED with coherent states [24]. In our case, the coherent
+
+states are a natural phonon basis, given our choice of H0.
+
+The dominant contribution to the adsorption rate from n-phonon eigenstates has (n− 1)
+
+soft phonons (ω ∼ ) and a hard phonon (ω ∼ Es) to satisfy energy conservation.
+p npωp)(cid:104)0, 1;{nq}eSH11, 0; 0(cid:105)2
+
+Γn = 2π
+
+(cid:88)
+{nq}, (cid:80)
+kbe−2F
+
+δ(Ek + Eb + ∆ −(cid:80)
+(cid:18) g2
+
+(cid:19)n−1(cid:18)
+
+q nq=n
+ρn
+
+(n − 1)!
+
+bb
+
+
+≈ 2πg2
+
+1 − ∆
+
+Es + ∆
+
+,  → 0
+
+(cid:19)2
+
+Thus, the IR divergences have been successfully removed to all orders in gbb.
+
+The total adsorption rate for a micromembrane is obtained by summing over the n-phonon
+
+contributions.
+
+Γ =
+
+(cid:19)−2 ∞(cid:88)
+
+(cid:18) ρg2
+
+(cid:19)n 1
+
+bb
+
+
+n!
+
+n=0
+
+∆
+Es
+
+∞(cid:88)
+
+n=1
+
+Γn ≈ 2πg2
+
+(cid:18)
+
+kbρe−2F
+
+(cid:19)−2
+
+≈ 2πg2
+kbρ
+
+1 +
+
+∆
+Es
+
+(cid:18)
+
+1 +
+
+8
+
+(A.13)
+
+(A.14)
+
+(A.15)
+
+(A.16)
+
+since 2F = (ρg2
+bb/) in the quasi-continuum approximation for a dense phonon spectrum.
+Remarkably, the exponentially decaying factor e−2F is cancelled with the infinite summation,
+and the resulting rate is the product of the simple GR rate Γ0 with a cutoff-dependent
+reduction factor R = (1 + ∆/Es)−2.
+
+[1] L. Bruch, M. W. Cole, and E. Zaremba, Physical Adsorption (Dover, New York, 1997).
+
+[2] D. P. Clougherty, Phys. Rev. B 90, 245412 (2014).
+
+[3] K. Hammerer, M. Aspelmeyer, E. S. Polzik, and P. Zoller, Phys. Rev. Lett. 102, 020501
+
+(2009).
+
+[4] T. J. Kippenberg and K. J. Vahala, Science 321, 1172 (2008).
+
+[5] S. Camerer, M. Korppi, A. Jockel, D. Hunger, T. W. Hansch, and P. Treutlein, Phys. Rev.
+
+Lett. 107, 223001 (2011).
+
+[6] K. Hammerer, K. Stannigel, C. Genes, P. Zoller, P. Treutlein, S. Camerer, D. Hunger, and
+
+T. W. Hansch, Phys. Rev. A 82, 021803 (2010).
+
+[7] A. Goodsell, T. Ristroph, J. A. Golovchenko, and L. V. Hau, Phys. Rev. Lett. 104, 133002
+
+(2010).
+
+[8] Z. Wang, J. Wei, P. Morse, J. G. Dash, O. E. Vilches, and D. H. Cobden, Science 327, 552
+
+(2010).
+
+[9] D. P. Clougherty, Phys. Rev. Lett. 91, 226105 (2003).
+
+[10] D.-L. Chen, L. Mandeltort, W. A. Saidi, J. T. Yates, M. W. Cole, and J. K. Johnson, Phys.
+
+Rev. Lett. 110, 135503 (2013).
+
+[11] P. Schneeweiss, M. Gierling, G. Visanescu, D. Kern, T. Judd, A. Gunther, and J. Fort´agh,
+
+Nature Nanotech. 7, 515 (2012).
+
+[12] D. P. Clougherty and W. Kohn, Phys. Rev. B 46, 4921 (1992).
+
+[13] S. Sengupta, V. N. Kotov, and D. P. Clougherty, Phys. Rev. B 93, 235437 (2016).
+
+[14] T. Rentrop, A. Trautmann, F. A. Olivares, F. Jendrzejewski, A. Komnik,
+
+and M. K.
+
+Oberthaler, Phys. Rev. X 6, 041041 (2016).
+
+[15] V. B. Berestetskii, E. M. Lifshitz, and L. P. Pitaevskii, Quantum Electrodynamics (Landau
+
+and Lifshitz Vol. 4) (Butterworth-Heinemann, England, 1982).
+
+[16] T. Kinoshita, Journal of Mathematical Physics 3 (1962).
+
+9
+
+[17] T. D. Lee and M. Nauenberg, Phys. Rev. 133, B1549 (1964).
+
+[18] D. P. Clougherty, Phys. Rev. Lett. 113, 069601 (2014).
+
+[19] B. Lepetit and B. Jackson, Phys. Rev. Lett. 113, 069602 (2014).
+
+[20] B. Lepetit and B. Jackson, Phys. Rev. Lett. 107, 236102 (2011).
+
+[21] Y. Zhang and D. P. Clougherty, Phys. Rev. Lett. 108, 173202 (2012).
+
+[22] D. P. Clougherty and Y. Zhang, Phys. Rev. Lett. 109, 120401 (2012).
+
+[23] G. D. Mahan, Many-Particle Physics (Plenum Press, New York, 1981).
+
+[24] V. Chung, Phys. Rev. 140, B1110 (1965).
+
+10
+
+

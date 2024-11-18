@@ -1,0 +1,697 @@
+Photonic orbital angular momentum transfer and magnetic skyrmion rotation
+
+Wenrui Yang, Huanhuan Yang, Yunshan Cao,∗ and Peng Yan†
+
+School of Electronic Science and Engineering and State Key Laboratory of Electronic Thin Film and Integrated Devices,
+
+University of Electronic Science and Technology of China, Chengdu 610054, China
+
+Magnetic skyrmions are chiral quasiparticles that show promise for future spintronic applications such as
+skyrmion racetrack memories and logic devices because of their topological stability, small size (typically ∼
+3 − 500 nm), and ultralow threshold force to drive their motion. On the other hand, the ability of light to carry
+and deliver orbital angular momentum (OAM) in the form of optical vortices has attracted a lot of interest. In this
+work, we predict a photonic OAM transfer effect, by studying the dynamics of magnetic skyrmions subject to
+Laguerre-Gaussian optical vortices, which manifests a rotational motion of the skyrmionic quasiparticle around
+the beam axis. The topological charge of the optical vortex determines both the magnitude and the handedness
+of the rotation velocity of skyrmions. In our proposal, the twisted light beam acts as an optical tweezer to enable
+us displacing skyrmions over large-scale defects in magnetic films to avoid being captured.
+
+I.
+
+INTRODUCTION
+
+A skyrmion is a swirling noncoplanar texture originally introduced by Skyrme a half century ago, as a hypothetical particle
+in the baryon theory [1], and later was observed in many condensed matter systems, such as liquid crystals, superfluids, and
+chiral magnets. The magnetic skyrmion, a topologically protected spin texture with a quantized topological charge [2–8], has
+been a prominent topic of spintronics since the first experimental observations of skyrmion lattices in bulk noncentrosymmetric
+magnets [9, 10] and thin films [11]. Depending on the magnetization rotation, three distinct types of skyrmions have been
+observed experimentally, referred to as N´eel skyrmion, Bloch skyrmion and antiskyrmion [12]. The manipulation of skyrmions
+is of great importance and interest: skyrmions can be driven by spin-polarized current [13–17], magnetic field or electric-field
+gradients [18–20], temperature gradients [21–23], and spin waves [24–27]. However, the genuine skyrmion Hall effects [28, 29]
+tend to result in skyrmion accumulations at the edge of devices, although strongly coupled bilayer-skyrmions [30] were proposed
+hopefully to overcome the problem. Crystal imperfections [31, 32] on the other hand may capture or stop skyrmions. These
+difficulties hinder the precise manipulation of the skyrmion motion by the mentioned control methods. Thus, it should be very
+interesting and important if one can find other effective control methods and principles to manipulate skyrmions in magnetic thin
+films.
+
+Since the theoretical work of Poynting [33] and the experiments by Beth [34, 35], it has been known that light can carry
+angular momentum that is associated with circular polarization and arises from the spin of individual photons and is termed spin
+angular momentum. Following the pioneering work by Allen et al. [36], it was realized that light can also carry orbital angular
+momentum (OAM) with helical phase fronts characterized by an exp(ilϕ) azimuthal phase dependence. Such twisted lights
+have a phase dislocation on the axis that is sometimes referred to as an optical vortex [37]. The OAM in the light propagation
+direction has the discrete value of l per photon. Integer l is called the topological charge of the twisted photon. A number
+of demonstrations and applications of twisted lights have been brought forward [38]. They range from optical data storages
+to quantum communications, and black holes, among others [39–42]. Optical vortices with high OAM have been achieved
+using spiral phase plates, computer-generated holograms, mode conversions, spatial light modulators, etc. Very recently, OAM
+quantum number up to 10,010 by means of spiral phase mirrors was reported [43].
+
+In this work, we let skyrmions enter the field of OAM. We theoretically propose to use Laguerre-Gaussian (LG) optical
+vortices to manipulate the skyrmion dynamics via the OAM transfer. A rotational motion of an isolated skyrmion is found (see
+Fig. 1). We show that the topological charge l of the optical vortex plays a key role in driving the skyrmion motion: a positive l
+brings about an anticlockwise rotation of skyrmions around the beam axis, while a negative l results in a clockwise one. Finally,
+we demonstrate that optical vortices like tweezers can grip a skyrmion to overfly large-scale defects in magnetic films to avoid
+being captured.
+
+II. LAGUERRE-GAUSSIAN BEAM AND OAM TRANSFER
+
+8
+1
+0
+2
+
+ 
+r
+a
+
+ 
+
+M
+1
+2
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+3
+v
+6
+2
+9
+6
+0
+
+.
+
+4
+0
+7
+1
+:
+v
+i
+X
+r
+a
+
+The twisted light beam with LG mode is a special solution of Maxwell's Eqs. under the paraxial approximation for electro-
+
+magnetic waves in vacuum. At the focal plane z = 0, the vortex magnetic field is given by [36]
+
+(cid:19)
+
+(cid:18) 2ρ2
+
+w2
+
+(cid:17)l
+
+(cid:16) ρ
+
+w
+
+e− ρ2
+w2 Ll
+√
+w
+
+n
+
+Bn,l (ρ, ϕ, t) = B0
+
+ei(ωt−lϕ)ep,
+
+(1)
+
+2
+
+FIG. 1: Schematic of the rotational motion of a N´eel skyrmion in a thin ferromagnetic film driven by an optical vortex with radial index n = 1
+and OAM quantum number l = 3. The solid circle with a red core represents the skyrmion. The flower-like pattern (pink and blue spots)
+sketches the induced magnetization profile by the optical vortex field shinning on the magnetic film. In the main text, the origin of Cartesian
+coordinates coincides with the beam center, while it does not in the figure for clarity.
+
+in the cylindrical coordinate (ρ, ϕ, z) with the radial coordinate ρ, the azimuthal angle ϕ, and the coordinate z along the wave
+propagation direction (Fig. 1). Here w is the width of the beam waist, B0 is a constant, Ll
+n is the generalized Laguerre function,
+and ep is the polarization vector. Two integers n and l denote the radial index and OAM quantum number [44], respectively. In
+this work, we focus on linearly polarized lights and assume ep = x.
+
+Optical vortex can transfer its OAM to skyrmions via a coherent Zeeman coupling between photon magnetic fields and local
+magnetic moments. One thus expect a skyrmion rotation after it absorbs the OAM of twisted lights, besides a possible ultrafast
+generation of skyrmions [45, 46], because a rotating skyrmion manifests itself carrying orbital angular momentum [26, 47]. In
+the following, we address this idea both theoretically and numerically.
+
+III. THEORETICAL CONSIDERATION BASED ON THIELE EQUATION
+
+We consider an isolated N´eel skyrmion whose spin texture is illustrated in Fig. 1 (Bloch skyrmions and antiskyrmions are
+
+also interesting). Magnetization dynamics generally is modeled by the Landau-Lifshitz-Gilbert (LLG) equation [48]:
+
+∂m
+∂t
+
+= −γm × Beff + αm × ∂m
+∂t ,
+
+(2)
+where m = M/Ms is the magnetization unit vector with saturation magnetization Ms, γ is the gyromagnetic ratio, α (cid:28) 1 is
+the Gilbert damping constant, and Beff is the local effective field consisting of isotropic exchange coupling, uniaxial anisotropy
+along z−axis, the interfacial Dzyaloshinskii-Moriya interaction favoring N´eel skyrmions, and the optical vortex field (1). Finite
+temperature effects can be taken into account by including a Gaussian stochastic magnetic field satisfying fluctuation-dissipation
+theorem [49, 50]. We focus on skyrmion dynamics at zero temperature, if not stated otherwise. The Thiele approach [51, 52] is
+convenient to derive the analytical solution, where the magnetization dynamics is encoded in the time evolution of the skyrmion
+position and velocity, m = m (r − R (t) , V (t)) with R (t) the skyrmion center and V (t) = ∂tR (t) its velocity. We thus obtain
+
+(3)
+where M multiplying Msd/γ is the effective skyrmion mass originating from the skyrmion deformation and/or dissipation
+[53, 54], d is the thickness of the film, G = −4πQz is the gyromagnetic coupling vector with the skyrmionic topological charge
+
+− M∂ttR + G × ∂tR − αD · ∂tR + F = 0,
+
+Ferromagne�c filmzyxφρφOp�cal vortex n = 1, l = 3Magne�c skyrmion(cid:82) (cid:16)
+
+(cid:17)
+
+∂im · ∂ jm
+
+(cid:17)
+
+(cid:82)
+
+m ·(cid:16)
+
+∂xm × ∂ym
+
+dxdy, Di j = (1/4π)
+
+3
+dxdy is the dissipative force tensor, and F = −δH/δR is the
+Q = (1/4π)
+driving force with H the total magnetic energy/Hamiltonian [55]. In general, the force F includes the coupling between the
+skyrmion with both the optical field and the rotating flower-like magnetization profile (see Fig. 1). Obtaining the analytical
+expression of the effective force is obviously extremely difficult. As a first approximation, we assume that the skyrmion-flower
+coupling can be included into the effective skyrmion mass M and that only the optical field contributes to the effective force.
+
+(cid:1) dxdy. The value of Q depends on the detailed spin profile, e.g.
+
+We then arrive at a simple expression F = −(cid:82) ∇m · x Re(cid:0)Bn,l
+
+Q = +1 for the skyrmion shown in Fig. 1. If G (cid:44) 0, the Lorentz-like force is much larger than the dissipative one. We thus can
+ignore the friction in (3), and obtain the gyration velocity of the skyrmion V = V ϕ with V satisfying
+
+MV2
+R
+
++ 4πQV + Fr = 0,
+
+(4)
+
+(cid:113)
+(Q/M)2 − Fr/(cid:0)4π2MR(cid:1). The friction term in (3) then can be treated perturbatively, which leads to a small velocity cor-
+where R is the gyration radius of skyrmion, i.e., the distance from the skyrmion to the optical vortex center, and Fr is
+the radial component of the driving force. Equation (4) has two circular modes with frequencies Ω±/2π = −Q/M ±
+rection along the radial direction δv = −αDV/ (4πQ + MV/R) ρ. In the perturbative calculation, we have assumed a constant R.
+However, the restoring force F may slow down this radial velocity δv as R varies, and thus leads to a radial oscillation (shown in
+the numerical simulations below).
+
+We emphasize that the predicted rotational motion is not from the geometric confinement due to boundary edges [56–58] of
+the film, but from the optical trapping and OAM transfer. A spatially homogeneous time-oscillating field considered by Moon et
+al. [58] can induce an unidirectional skyrmion motion with a helical trajectory, where the skyrmion Hall effect was not avoided.
+Here, the skyrmion gyrates locally around the optical vortex center, instead of either unidirectionally or along device edges, thus
+in principle avoiding accumulation or annihilation by boundaries.
+
+IV. MICROMAGNETIC SIMULATIONS
+
+To demonstrate the time evolution of the skyrmion motion, we solved numerically the full LLG Eq. (2) using the micro-
+magnetic simulation codes MuMax3 [59–62]. We used magnetic parameters for Pt/Co/AlOx system with an exchange constant
+A = 15 pJ m−1, a uniaxial anisotropy Kz = 0.8 MJ m−3, a saturation magnetization Ms = 0.58 MA m−1, a Dzyaloshinskii-
+Moriya constant D = 3.5 mJ m−2, and a Gilbert damping α = 0.01. The skyrmion radius rsk is about 10 nm. Materials
+supporting skyrmions with a larger radius and a stronger thermal stability at room temperature are also interesting. For the
+majority of results presented in this paper, we consider a ferromagnetic thin film with length 200 nm, width 200 nm and thick-
+ness 1 nm, which was discretized using 100 × 100 × 1 finite difference cells. The spin Hamiltonian in the lattice is then
+zΣi(mi · z)2 − MsΣiBn,l,i · mi, where mi is the unit magnetization vector at i
+H = −A(cid:48)Σ<i, j>mi · m j − D(cid:48)Σ<i, j>(mi × m j) · z − K(cid:48)
+site, < i, j > runs over the nearest neighborings, with parameters A(cid:48) = 187.5 meV, D(cid:48) = 87.5 meV, and K(cid:48)
+z = 40 meV in lattices.
+In the simulations, we consider simple optical vortices with n = 1. Each B field has one zero at ρ = ρ0 (besides ρ = 0) and two
+local extremums at ρ = ρ1 and ρ2 (0 < ρ1 < ρ0 < ρ2). The field gradient at ρ = ρ0 increases sharply with increasing index l (see
+Appendix for Fig. 5). In order to reduce the skyrmion deformation caused by the twisted light, we place the skyrmion initially
+at the zero point ρ = ρ0 of the optical field. We note that, in general, the magnetic/optical constraint works very well when we
+initially put the skyrmion in the region (0 < ρ1 < ρ < ρ2). We set w = 10 nm (cf. wavelength λ ∼ 10 cm for GHz microwaves in
+vacuum). We should point out that the width of the light-beam waist w usually cannot be smaller than a half of the wavelength
+of light due to the diffraction limit. However, thanks to the plasmonics techniques [63, 64], it is possible to achieve focused
+twisted light with beam width much smaller than the wavelength [65, 66]. On the other hand, although it is computationally
+too expensive to simulate the gyration of nano-scale skyrmions driven by centimeter-scale microwave vortices if the diffraction
+barrier is respected, the present results can transfer to those large scales by a proper scaling of the topological charge l with
+respect to the optical vortex size w based on an angular momentum conservation argument: The dissipation rate of the OAM
+of a rotating skyrmion is αDR × ∂tR which should be compensated by optical vortices with OAM l per photon [This can be
+proved by taking a cross product with R at both sides of Eq. (3)]. So, one should keep l ∝ R to maintain comparable skyrmion
+rotation velocities when a much wider beam (w ∼ R) is used. Numerical results below justifies this argument.
+In Figs. 2(a1)-(a9), we show an anticlockwise rotation of the skyrmion about the beam center due to an application of an optical
+vortex with OAM quantum number l = +5, frequency f = ω/2π = 1 GHz, and coefficient B0 = 10−4 T m1/2 corresponding
+to a peak magnetic field 1.7 T of the optical vortex. The initial distance ρ0 between the skyrmion and the optical vortex center
+is about 20 nm. We find quite a stable skyrmion rotation with negligibly small fluctuations in both the radius and shape (see
+Visualization 1) indicating a nearly massless skyrmion. The period of rotation is about 6 ns. The linear velocity of the skyrmion
+V+ is close to −34.6 m s−1 (positive velocity is defined for clockwise rotation). The velocity is comparable to that achieved by
+
+4
+
+FIG. 2: Time evolution of an isolated N´eel skyrmion under optical vortices with OAM quantum number l = +5 (a1)-(a9) and l = −5 (b1)-(b9).
+The time intervals between successive snapshots in two cases are 0.8 ns and 0.5 ns, respectively. A positive (negative) topological charge
+induces an anticlockwise (clockwise) rotation of a skyrmion around the beam axis.
+
+spin-polarized currents with electrical current density of 1010 A m−2 [3]. The radius of gyration R+ ≈ 33 nm is larger than ρ0,
+because the viscous drag δv is outward in the presence of a negative gyration velocity. This stable skyrmion rotation can survive
+at finite temperatures up to 200 K, without obvious velocity reduction (see Appendix for finite temperature simulations and Fig.
+6).
+To prove that the rotational motion is indeed due to the OAM transfer from optical vortices to the skyrmion, we provide two
+more numerical evidences: (i) we reverse the helicity of the optical vortex from l = +5 to l = −5 without changing the rest
+parameters. Figures 2(b1)-(b9) demonstrate a striking reversal of the rotation direction of skyrmions, as expected. The rotation
+period becomes 4 ns. The linear velocity V− of the skyrmion is estimated to be 31 m s−1, with a compressed radius of gyration
+R− ≈ 19.7 nm slightly smaller than ρ0 since the viscous drag δv now becomes inward. An interesting skyrmion breathing,
+i.e., skyrmion radius regularly expands and contracts, is found. The observed asymmetry between V+ and V− can be well
+explained by the effective skyrmion mass. From Eq. (4), we derive the emerging skyrmion mass by equating MV2−/R− with
+4πQ(−V+ − V−), assuming Fr(l = 5) ≈ −Fr(l = −5). After including the coefficient Msd/γ = 3.3 × 10−15 J s m−2, we evaluate
+the skyrmion mass M ≈ 3.06 × 10−24 kg. To demonstrate the robustness of the optical confinement, we have tested the case
+that the skyrmion carries a finite initial velocity achieved by applying an in-plane spin polarized electric current. We find that
+a small initial velocity, e.g., 16.7 m/s (driven by a current with density 2 × 1011 A/m2), cannot destroy the magnetic constraint.
+To test this issue further, we increase the current density up to 2 × 1013 A/m2, and still find a very nice magnetic constraint.
+This can be related to the fact that the skyrmion mass is so small that its inertial effect does not play a key role to overcome
+the optical trapping. (ii) There still exists a loophole in the above analysis that the skyrmion is probably just interacting with
+the moving potential minima (the rotating flower) created by the spatially inhomogeneous field. In order to close this loophole,
+we cut the film into a very narrow annular plate to exclude the effect from the rotating magnetization flower. We observe a fast
+skyrmion rotation in the confined annular geometry (see Visualization 2 and the Appendix for Fig. 7). This is a direct evidence
+to justify our understanding. We also note that switching Q from +1 to −1, i.e., spins in the skyrmion core pointing down
+surrounded by background spins pointing up, does not reverse the handedness of skyrmion rotation. This can be understood that
+both the driving force F and skyrmionic topological charge Q are odd functions of the magnetization m, which thus remains the
+handedness of the rotation identical for opposite Q, cf. Eq. (4). This unique feature has motivated us to apply the present idea to
+skyrmions in antiferromagnets [67, 68] which usually operate in terahertz (THz) ranges, because an antiferromagnetic skyrmion
+can be regarded as a superposition of two ferromagnetic skyrmions with antiparallel spins and opposite topological charges. We
+indeed numerically observed a much faster antiferromagnetic skyrmion rotation with an extremely high velocity ∼ 1000 m s−1
+driven by THz optical vortices (see Visualization 3 and the Appendix for the parameters used in the simulation).
+
+The rotation velocity of skyrmions as a function of the driving frequency ω is shown in Fig. 3(a). The velocity linearly
+increases with the frequency below 1.5 GHz and sharply decreases then. The peak is due to the resonance between the skyrmion
+circular frequency Ω+ and the vortex frequency ω. Higher frequency indicates more diluted photon number density ∝ B2
+0/ω,
+thus reducing the OAM transfer and lowering the skyrmion velocity drastically. Figure 3(b) shows the OAM dependence of the
+skyrmion velocity, in which we fix the frequency at 1 GHz and choose a coefficient B0 = 6 × 10−5 T m1/2 [69]. The skyrmion
+velocity is shown to be sensitive to l. At l = +6, the breathing skyrmion moves outward due to the radial drag and breaks
+down when approaching the position ρ = ρ2 where the magnetic field of the optical vortex reaches its local extremum which is
+so strong to annihilate skyrmions (see Visualization 4). However, this annihilation does not happen for smaller l (< 6) because
+the magnitude of the vortex field is too weak. Larger l (> 6) sustains a stable skyrmion rotation because skyrmions are pulled
+back by strong restoring forces (radial field gradients) before they hit the local maximum at ρ = ρ2. A generic criteria to this
+instability is that the discriminant ∆ = (2πQ)2 − FrM/R becomes negative which allows no real solutions of Eq. (4). For l > 6,
+
+Time(b1)(b2)(b3)(b4)(b5)(b6)(b7)(b8)(b9)l =+5l = -5(a1)(a2)(a3)(a4)(a5)(a6)(a7)(a8)(a9)+10-1mz15 nm5
+
+FIG. 3: Skyrmion velocity as a function of the driving frequency (a) and the topological charge (b) of optical vortices. The red cross stamps a
+skyrmion annihilation. The minus sign of the velocity is dropped.
+
+the skyrmion annihilation does not happen because the corresponding Fr is actually much smaller than the one at l = +6. This
+interpretation is based on analyzing the profile of the optical vortex field Bn,l (ρ) plotted in Fig. 5, which has been discussed
+at the beginning of this session. In our model, the coupling strength between skyrmions and the magnetic profile of the light
+solely depends on the Zeeman interaction. Since the optical vortex field is non-uniformly distributed in space, the coupling
+strength varies for different skyrmion position with respect to the beam axis, and for different profile of optical fields as well.
+The skyrmion velocity dependence on l calculated above indeed changes quantitatively if B0 (amplitude of light) and w (waist
+width) are different, while the driving mechanism is essentially the same. A thorough investigation on skyrmion annihilations
+process will be presented elsewhere.
+
+FIG. 4: Skyrmion overflies patterned antidots. The red curve represents the trajectory of the skyrmion with arrows indicating its moving
+direction. Small white dashed circles are snapshots of the skyrmion. It takes 11.5 ns to deliver the skyrmion from left to the right.
+
+Another merit of our proposal is that a proper design of the gyration orbit can enable skyrmions to bypass defects in magnetic
+films. To this end, we numerically show how optical vortices can displace magnetic skyrmions across a long distance to overfly
+patterned antidots (no materials) forming a picture UESTC (white holes in blue magnetic region shown in Fig. 4) on the film
+of size 400 nm × 400 nm × 1 nm. Here UESTC stands for the abbreviation of the institute of the authors (It can be replaced
+
+Frequency ω/2π (GHz)Skyrmion velocity (m/s)OAM quantum number l (a)(b)ω/2π = 1GHzl = +5(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)012345678905101520253035(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)(cid:176)0.00.51.01.52.02.53.00102030405040 nm6
+
+by other patterns). We consider a beam with a larger width w = 35 nm and an enhanced OAM quantum number l = +15. A
+successful flight for skyrmions without being captured by the holes is observed, despite of a somewhat lingering process due to
+the competition between the viscous drag induced radial oscillation and the gyration motion (see Visualization 5). The average
+rotation velocity of the skyrmion is 50 m s−1, which quantitatively supports the earlier argument on how to transfer our results
+to a larger length scale. If the defects/barriers are placed in the light-induced magnetic profile, rather than the beam center, one
+may expect that the field strength of the optical vortex should be large enough to help the skyrmion bypass them. Numerical
+simulations indeed demonstrate this point (not shown).
+
+V. CONCLUSION
+
+In summary, we proposed an all-photonic orbital angular momentum transfer mechanism to manipulate magnetic skyrmions.
+This OAM transfer can effectively drive the skyrmion rotation around the beam axis. Optical vortices like tweezers are capable
+of gripping the skyrmion to overfly large-scale barriers without being trapped. The mechanism applies not only to ferromagnetic
+skyrmions but also to antiferromagnetic ones. Our proposal opens the door for all-optical manipulations of magnetic skyrmions
+by harvesting the OAM of twisted lights and raises the challenge to generate micron-/submicron-focused optical vortices. Other
+types of vortex beams such as electron vortices [70, 71] and their acoustic counterparts [72, 73] without breaking the diffraction
+limit are also promising candidates to drive skyrmion rotations via magnetoelectric and magnetoelastic couplings, respectively.
+These should be interesting subjects for future research.
+
+VI. APPENDIX
+
+This appendix consists of four parts: The first one shows the spatial distribution of the optical vortex field, the second one
+details the description of 5 visualizations, the third one calculates the finite temperature effect on the optical vortex driven
+skyrmion motion, and the last one discusses the skyrmion motion in a narrow annulus.
+
+A. Optical vortex fields
+
+FIG. 5: Spatial profile of the optical vortex field Bn,l(ρ) with n = 1 for different index l.
+
+As shown in Fig. 5, each B field has one zero at ρ = ρ0 (besides ρ = 0) and two local extremums at ρ = ρ1 and ρ2
+
+(0 < ρ1 < ρ0 < ρ2). The field gradient at ρ = ρ0 increases sharply with increasing index l.
+
+ρ / wBn=1,l (ρ / w)(arb.unit)01234(cid:14)10(cid:14)50510l=8l=7l=6l=5l=4B. Visualizations
+
+7
+
+We describe the five visualizations in detail below.
+Visualization 1: Ferromagnetic skyrmion rotation driven by the optical vortex with OAM quantum number l = +5 under
+
+frequency f = ω/2π = 1 GHz and coefficient B0 = 10−4 T m1/2. The beam waist width is w =10 nm.
+Visualization 2: Optical vortex driven skyrmion motion in a narrow annular plate (shown in Fig. 7).
+Visualization 3: To perform simulations of optical vortex driven antiferromagnetic skyrmion motion, we use the material
+parameters for antiferromagnet KMnF3 (see Ref. [67] in the main text), with the parameters as follows: lattice constant a = 0.5
+nm, saturation magnetization Ms = 0.376 MA m−1, antiferromagnetic exchange constant A = −6.59 pJ m−1, uniaxial anisotropy
+Kz = 0.116 MJ m−3, Dzyaloshinskii-Moriya constant D = 0.7 mJ m−2, and a Gilbert damping α = 0.01. We consider a film of
+size 150 nm × 150 nm × 0.5 nm. The mesh size for the simulations is 0.5 nm. The applied THz optical vortex carries OAM
+quantum number l = −10, frequency f = 2 THz, waist width w = 10 nm, and B0 = 1 × 10−5 T m1/2. In the simulation, we set a
+fixed time step ∆t = 10 fs.
+Visualization 4: Ferromagnetic skyrmion annihilation process by an optical vortex with OAM quantum number l = +4 and
+B0 = 7 × 10−5 T m1/2 in a larger ferromagnetic film of size 400 nm × 400 nm × 1 nm.
+Visualization 5: Optical vortices displace ferromagnetic skyrmions to overfly patterned antidots (no materials) UESTC (white
+holes in blue magnetic region) on the two-dimensional ferromagnetic film of size 400 nm × 400 nm × 1 nm. The applied optical
+vortex carries OAM quantum number l = +15 with frequency f = 1 GHz, width w = 35 nm, and coefficient B0 = 3.3 × 10−8
+T m1/2. The maximal magnetic field of the optical vortex is 1.29 T. Center of the beam coincides with that of the patterned
+antidots.
+
+C. Finite temperature calculations
+
+FIG. 6: Time evolution of a N´eel skyrmion driven by an optical vortex with l=+5 at different temperatures. The time interval between
+successive snapshots for each temperature is 0.8 ns.
+
+All numerical data presented in the main text are calculated at zero temperature. Here, we take finite temperatures into account
+
+Time(a1)(a2)(a3)(a4)(a5)(a6)(a7)(a8)(a9)+10-1mz40 nm(b1)(b2)(b3)(b4)(b5)(b6)(b7)(b8)(b9)(c1)(c2)(c3)(c4)(c5)(c6)(c7)(c8)(c9)(d1)(d2)(d3)(d4)(d5)(d6)(d7)(d8)(d9)(e1)(e2)(e3)(e4)(e5)(e6)(e7)(e8)(e9)0 K50 K100 K150 K200 Kby introducing a Gaussian stochastic magnetic field h satisfying fluctuation-dissipation theorem
+
+(cid:104)hi(r, t)h j(r(cid:48)
+
+, t(cid:48))(cid:105) =
+
+2αkBT
+
+γMs∆V δ(r − r(cid:48))δi jδ(t − t(cid:48))
+
+8
+
+(5)
+
+into the effective field in Eq. (2) in the main text, with kB the Boltzmann constant, T the absolute temperature of thermal bath,
+and ∆V the volume of the cell.
+
+Without optical vortices, a single skyrmion can survive in the ferromagnetic thin film at temperatures up to T = 250 K. In the
+presence of an optical vortex with OAM quantum number l = +5, waist width w = 10 nm, frequency f = ω/2π = 1 GHz, and
+coefficient B0 = 10−4 T m1/2, we find quite a stable skyrmion rotation without obvious reduction of the velocity by increasing the
+temperature till T = 200 K, above which the skyrmion becomes unstable and can be annihilated by strong thermal fluctuations.
+This proves that the optical OAM transfer mechanism is robust against thermal fluctuations. Figure 6 shows the calculated time
+evolution of an isolated N´eel skyrmion under the optical vortex described above, at five different temperatures: T = 0 K in Fig.
+6(a1)-6(a9), T = 50 K in Fig. 6(b1)-6(b9), T = 100 K in Fig. 6(c1)-6(c9), T = 150 K in Fig. 6(d1)-6(d9), and T = 200 K in
+Fig. 6(e1)-6(e9).
+
+D. Skyrmion rotation in an annular plate
+
+FIG. 7: Geometry of an annular plate confining the skyrmion driven by an optical vortex with l = +28.
+
+The ferromagnetic thin film is cut into a very narrow annular plate with inner radius 200 nm and outer radius 250 nm (shown
+in Fig. 7). The two dashed circles denote the local extremums of the optical vortex with radius ρ1 = 198 nm and ρ2 =258 nm,
+respectively. In this annular geometry, we are able to exclude the effect from the rotating flower-like magnetization profile (or the
+moving potential minimum) on the skyrmion motion. In the numerical simulation, we utilize an optical vortex with frequency
+f = 1 GHz, field coefficient B0 = 4.0 × 10−15 T m1/2, waist width w = 60 nm, n = 1, and OAM quantum number l = +28. We
+use a mesh size 1 nm × 1 nm × 1nm. A fixed/pinned boundary condition is adopted for spins at both the inner and the outer
+edges. The observed period of skyrmion rotation is about 29 ns with an average velocity 48.7 m s−1 along the orbit of radius
+225 nm (see Visualization 2). We thus provide a strong and direct evidence to support our claim of all-photonic orbital angular
+momentum transfer effect.
+
+-1+10mz198 nm200 nm250 nm258 nm225 nmExtremum of Bnll = +28Funding
+
+9
+
+National Natural Science Foundation of China (Grants No. 11604041 and 11704060); the National Key Research Develop-
+
+ment Program under Contract No. 2016YFA0300801; the National Thousand-Young-Talent Program of China.
+
+We thank H.Y. Yuan and Z.Y. Wang for useful discussions.
+
+Acknowledgments
+
+∗ Corresponding author: yunshan.cao@uestc.edu.cn
+† Corresponding author: yan@uestc.edu.cn
+[1] T.H.R. Skyrme, "A unified field theory of mesons and baryons," Nucl. Phys. 31, 556-569 (1962).
+[2] N. Nagaosa and Y. Tokura, "Topological properties and dynamics of magnetic skyrmions," Nat. Nanotech. 8(12), 899-911 (2013).
+[3] A. Fert, V. Cros, and J. Sampaio, "Skyrmions on the track," Nat. Nanotech. 8(3), 152-156 (2013).
+[4] J. Sampaio, V. Cros, S. Thiaville, and A. Fert, "Nucleation, stability and current-induced motion of isolated magnetic skyrmions in
+
+nanostructures," Nat. Nanotech. 8(11), 839-844 (2013).
+
+[5] J. Iwasaki, M. Mochizuki, and N. Nagaosa, "Current-induced skyrmion dynamics in constrained geometries," Nat. Nanotech. 8(10),
+
+742-747 (2013).
+
+[6] F. Buttner, C. Moutafis, M. Schneider, B. Kruger, C.M. Gunther, J. Geilhufe, C.v. Korff Schmising, J. Mohanty, B. Pfau, S. Schaffert, A.
+Bisig, M. Foerster, T. Schulz, C.A.F. Vaz, J.H. Franken, H.J.M. Swagten, M. Klaui, and S. Eisebitt, "Dynamics and inertia of skyrmionic
+spin structures," Nat. Phys. 11(3), 225-228 (2015).
+
+[7] N. Romming, A. Kubetzka, C. Hanneken, K. von Bergmann, and R. Wiesendanger, "Field-Dependent Size and Shape of Single Magnetic
+
+Skyrmion," Phys. Rev. Lett. 114, 177203 (2015).
+
+[8] W. Jiang, P. Upadhyaya, W. Zhang, G. Yu, M.B. Jungfleisch, F.Y. Fradin, J.E. Pearson, Y. Tserkovnyak, K.L. Wang, O. Heinonen, S.G.E.
+
+te Velthuis, and A. Hoffmann, "Blowing magnetic skyrmion bubbles," Science 349(6245), 283-286 (2015).
+
+[9] S. Mulbauer, B. Binz, F. Jonietz, C. Pfleiderer, A. Rosch, A. Neubauer, R. Georgii, and P. Boni, "Skyrmion lattice in a chiral magnet,"
+
+Science 323(5916), 915-919 (2009).
+
+[10] X.Z. Yu, Y. Onose, N. Kanazawa, J.H. Park, J.H. Han, Y. Matsui, N. Nagaosa, and Y. Tokura, "Real-space observation of a two-
+
+dimensional skyrmion crystal," Nature 465(7300), 901-904 (2010).
+
+[11] S. Heinze, K. von Bergmann, M. Menzel, J. Brede, A. Kubetzka, R. Wiesendanger, G. Bihlmayer, and S. Blugel, "Spontaneous atomic-
+
+scale magnetic skyrmion lattice in two dimensions," Nat. Phys. 7(9), 713-718 (2011).
+
+[12] A.K. Nayak. V. Kumar, T. Ma, P. Werner, E. Pippel, R. Sahoo, F. Damay, U.K. Rossler, C. Felser, and S.S.P. Parkin, "Magnetic anti-
+
+skyrmions above room temperature in tetragonal Heusler materials," Nature 548(7669), 561-566 (2017).
+
+[13] J. Zang, M. Mostovoy, J.H. Han, and N. Nagaosa, "Dynamics of Skyrmion Crystals in Metallic Thin Films," Phys. Rev. Lett. 107, 136804
+
+[14] S.-Z. Lin, C. Reichhardt, C.D. Batista, and A. Saxena, "Driven Skyrmions and Dynamical Transitions in Chiral Magnets," Phys. Rev.
+
+(2011).
+
+Lett. 110, 207202 (2013).
+
+4, 1463 (2013).
+
+16044 (2016).
+
+[15] J. Iwasaki, M. Mochizuki, and N. Nagaosa, "Universal current-velocity relation of skyrmion motion in chiral magnets," Nat. Commun.
+
+[16] H.Y. Yuan and X.R. Wang, "Skyrmion Creation and Manipulation by Nano-Second Current Pulses," Sci. Rep. 6, 22638 (2016).
+[17] R. Wiesendanger, "Nanoscale magnetic skyrmions in metallic films and multilayers: a new twist for spintronics," Nat. Rev. Mater. 1(7),
+
+[18] K. Everschor, M. Garst, B. Binz, F. Jonietz, S. Muhlbauer, C. Pfleiderer, and A. Rosch, "Rotating skyrmion lattices by spin torques and
+
+field or temperature gradients," Phys. Rev. B 86, 054432 (2012).
+
+[19] Y.-H. Liu, Y.-Q. Li, and J.H. Han, "Skyrmion dynamics in multiferroic insulators," Phys. Rev. B 87, 100402 (2013).
+[20] W. Wang, M. Beg, B. Zhang, W. Kuch, and H. Fangohr, "Driving magnetic skyrmions with microwave fields," Phys. Rev. B 92,
+
+020403(R)(2015).
+
+[21] L. Kong and J. Zang, "Dynamics of an Insulating Skyrmion under a Temperature Gradient," Phys. Rev. Lett. 111, 067203 (2013).
+[22] S.-Z. Lin, C.D. Batista, C. Reichhardt, and A. Saxena, "ac Current Generation in Chiral Magnetic Insulators and Skyrmion Motion
+
+induced by the Spin Seebeck Effect," Phys. Rev. Lett. 112, 187203 (2014).
+
+[23] M. Mochizuki, X.Z. Yu, S. Seki, N. Kanazawa, W. Koshibae, J. Zang, M. Mostovoy, Y. Tokura, and N. Nagaosa, "Thermally driven
+
+ratchet motion of a skyrmion microcrystal and topological magnon Hall effect," Nat. Mater. 13(3), 241-246 (2014).
+
+[24] P. Yan, X.S. Wang, and X.R. Wang, "All-Magnonic Spin-Transfer Torque and Domain Wall Propagation," Phys. Rev. Lett. 107, 177207
+
+(2011).
+
+[25] J. Iwasaki, A.J. Beekman, and N. Nagaosa, "Theory of magnon-skyrmion scattering in chiral magnets," Phys. Rev. B 89, 064412 (2014).
+[26] C. Schutte and M. Garst, "Magnon-skyrmion scattering in chiral magnets," Phys. Rev. B 90, 094423 (2014).
+[27] Y.-T. Oh, H. Lee, J.-H. Park, and J.H. Han, "Dynamics of magnon fluid in Dzyaloshinskii-Moriya magnet and its manifestation in
+
+magnon-Skyrmion scattering," Phys. Rev. B 91, 104435 (2015).
+
+10
+
+[28] W. Jiang, X. Zhang, G. Yu, W. Zhang, X. Wang, M.B. Jungfleisch, J.E. Pearson, X. Cheng, O. Heinonen, K.L. Wang, Y. Zhou, A.
+
+Homann, and and S.G.E. te Velthuis, "Direct observation of the skyrmion Hall effect," Nat. Phys. 13(2), 162-169 (2016).
+
+[29] K. Litzius, I. Lemesh, B. Kruger, P. Bassirian, L. Caretta, K. Richter, F. Buttner, K. Sato, O.A. Tretiakov, J. Forster, R.M. Reeve, M.
+Weigand, I. Bykova, H. Stoll, G. Schutz, G.S.D. Beach, and M. Klaui, "Skyrmion Hall effect revealed by direct time-resolved X-ray
+microscopy," Nat. Phys. 13(2), 170-175 (2017).
+
+[30] X. Zhang, Y. Zhou, and M. Ezawa, "Magnetic bilayer-skyrmions without skyrmion Hall effect," Nat. Commun. 7, 10293 (2016).
+[31] J. Muller and A. Rosch, "Capturing of a magnetic skyrmion with a hole," Phys. Rev. B 91, 054410 (2015).
+[32] C. Reichhardt, D. Ray, and C.J. Olson Reichhardt, "Collective Transport Properties of Driven Skyrmions with Random Disorder," Phys.
+
+Rev. Lett. 114, 217202 (2015).
+
+[33] J. Poynting, "The wave motion of a revolving shaft, and a suggestion as to the angular momentum in a beam of circularly polarised light,"
+
+Proc. R. Soc. London A Contain. Pap. Math. Phys. Character 82, 560 (1909).
+
+[34] R.A. Beth, "Direct detection of the angular momentum of light," Phys. Rev. 48, 471 (1935).
+[35] R.A. Beth, "Mechanical detection and measurement of the angular momentum of light," Phys. Rev. 50, 115 (1936).
+[36] L. Allen, M.W. Beijersbergen, R.J. Spreeuw, and J.P. Woerdman, "Orbital angular momentum of light and the transformation of Laguerre-
+
+Gaussian laser modes," Phys. Rev. A 45, 8185 (1992).
+
+[37] I.V. Basistiy, M.S. Soskin, and M.V. Vasnetsov, "Optical wavefront dislocations and their properties," Opt. Commun. 119(5-6), 604-612
+
+[38] D.L. Andrews and M. Babiker, The Angular Momentum of Light (Cambridge Univ., 2012).
+[39] A. Nicolas, L. Veissier, L. Giner, E. Giacobino, D. Maxein, and J. Laurat, "A quantum memory for orbital angular momentum photonic
+
+qubits," Nat. Photonics 8(3), 234-238 (2014).
+
+[40] N. Bozinovic, Y. Yue, Y. Ren, M. Tur, P. Kristensen, H. Huang, A.E. Willner, and S. Ramachandran, "Terabit-scale orbital angular
+
+momentum mode division multiplexing in fibers," Science 340(6140), 1545-1548 (2013).
+
+[41] J. Wang, J.-Y. Yang, I.M. Fazal, N. Ahmed, Y. Yan, H. Huang, Y. Ren, Y. Yue, S. Dolinar, M. Tur, and A.E. Willner, "Terabit free-space
+
+data transmission employing orbital angular momentum multiplexing," Nat. Photonics 6(7), 488-496 (2012).
+
+[42] F. Tamburini, B. Thide, G. Molina-Terriza, and G. Anzolin, "Twisting of light around rotating black holes," Nat. Phys. 7(3), 195-197
+
+(1995).
+
+(2011).
+
+numbers up to 10,010," PNAS 113(48), 13642-13647 (2016).
+
+[43] R. Fickler, G. Campbell, B. Buchler, P.K. Lam, and A. Zeilinger, "Quantum entanglement of angular momentum states with quantum
+[44] The cycle-averaged angular momentum density j associated with the transverse EM field is shown to be j = ε0r × (cid:104)E × B(cid:105), while the
+r × (cid:104)E × B(cid:105) dr. Here ε0 is the vacuum permittivity and E is the electric field. For linearly
+total angular momentum of the field is J = ε0
+polarized LG modes (1), the OAM density in the direction of propagation is given by jz = ε0ωlB (r)2 . The OAM integrated over the
+beam is shown to be equivalent to l per photon: Jz = l.
+
+[45] H. Fujita and M. Sato, "Ultrafast generation of skyrmionic defects with vortex beams: Printing laser profiles on magnets," Phys. Rev. B
+
+(cid:82)
+
+95, 054421 (2017).
+
+[46] H. Fujita and M. Sato, "Encoding Orbital Angular Momentum of Lights in Magnets," arXiv:1612.00176.
+[47] O. Tchernyshyov, "Conserved momenta of a ferromagnetic soliton," Ann. Phys. 363, 98-113 (2015).
+[48] T.L. Gilbert, "A phenomenological theory of damping in ferromagnetic materials," IEEE Trans. Mag. 40(6), 3443-3449 (2004).
+[49] W.F. Brown, Jr., "Thermal Fluctuations of a Single-Domain Particle," Phys. Rev. 130, 1677 (1963).
+[50] P. Yan, G.E.W. Bauer, and H.W. Zhang, "Energy repartition in the nonequilibrium steady state," Phys. Rev. B 95, 024417 (2017).
+[51] A.A. Thiele, "Steady-State Motion of Magnetic Domains," Phys. Rev. Lett. 30, 230 (1973).
+[52] O.A. Tretiakov, D. Clarke, Gia-Wei Chern, Ya.B. Bazaliy, and O. Tchernyshyov, "Dynamics of Domain Walls in Magnetic Nanostrips,"
+
+Phys. Rev. Lett. 100, 127204 (2008).
+
+217201 (2012).
+
+[53] I. Makhfudz, B. Kruger, and O. Tchernyshyov, "Inertia and Chiral Edge Modes of a Skyrmion Magnetic Bubble," Phys. Rev. Lett. 109,
+
+[54] R.E. Troncoso and A.S. Nez, "Brownian motion of massive skyrmions in magnetic thin films," Ann. Phys. 351, 850-856 (2014).
+[55] A.P. Malozemoff and J.C. Slonczewski, Magnetic Domain Walls in Bubble Materials (Academic, New York, 1979).
+[56] Y.Y. Dai, H. Wang, P. Tao, T. Yang, W.J. Ren, and Z.D. Zhang, "Skyrmion ground state and gyration of skyrmions in magnetic nanodisks
+
+without the Dzyaloshinsky-Moriya interaction," Phys. Rev. B 88, 054403 (2013).
+
+[57] F. Garcia-Sanchez, J. Sampaio, N. Reyren,V. Cros, and J.-V. Kim, "A skyrmion-based spin-torque nano-oscillator," New J. Phys. 18,
+
+075011 (2016).
+
+magnetic field," Sci. Rep. 6, 20360 (2015).
+
+MuMax3," AIP Adv. 4(10) 107133 (2014).
+
+[58] K.-W. Moon, D.-H. Kim, S.-G. Je, B.S. Chun, W. Kim, Z.Q. Qiu, S.-B. Choe, and C. Hwang, "Skyrmion motion driven by oscillating
+
+[59] A. Vansteenkiste, J. Leliaert, M. Dvornik, M. Helsen, F. Garcia-Sanchez, and B. Van Waeyenberge, "The design and verification of
+
+[60] S. Pizzini, J. Vogel, S. Rohart, L.D. Buda-Prejbeanu, E. Ju´e, O. Boulle, I.M. Miron, C.K. Safeer, S. Auffret, G. Gaudin, and A. Thiaville,
+
+"Chirality-Induced Asymmetric Magnetic Nucleation in Pt/Co/AlOx Ultrathin Microstructures," Phys. Rev. Lett. 113, 047203 (2014).
+
+[61] Y. Zhou, E. Iacocca, A.A. Awad, R.K. Dumas, F.C. Zhang, H.B. Braun, and J. Akerman, "Dynamically stabilized magnetic skyrmions,"
+
+[62] X. Zhang, M. Ezawa, and Y. Zhou, "Thermally stable magnetic skyrmions in multilayer synthetic antiferromagnetic racetracks," Phys.
+
+[63] Y. Gorodetski, A. Niv, V. Kleiner, and E. Hasman, "Observation of the Spin-Based Plasmonic Effect in Nanoscale Structures," Phys. Rev.
+
+Nat. Commun. 6, 8193 (2016).
+
+Rev. B 94, 064406 (2016).
+
+Lett. 101, 043903 (2008).
+
+[64] W.L. Barnes, A. Dereux, and T.W. Ebbesen, "Surface plasmon subwavelength optics," Nature 424(6950), 824-830 (2003).
+
+11
+
+[65] R.W. Heeres and V. Zwiller, "Subwavelength Focusing of Light with Orbital Angular Momentum," Nano Lett. 14(8), 4598-4601 (2014).
+[66] J.Y. Yin, J. Ren, L. Zhang, H. Li, and T.J. Cui, "Microwave Vortex-Beam Emitter Based on Spoof Surface Plasmon Polaritons,"
+
+[67] J. Barker and O.A. Tretiakov, "Static and Dynamical Properties of Antiferromagnetic Skyrmions in the Presence of Applied Current and
+
+arXiv:1703.07487.
+
+Temperature," Phys. Rev. Lett. 116, 147203 (2016).
+
+[68] X. Zhang, Y. Zhou, and M. Ezawa, "Antiferromagnetic Skyrmion: Stability, Creation and Manipulation," Sci. Rep. 6, 24795 (2016).
+[69] The corresponding maximal magnetic field of the optical vortex is 0.56 T, 0.34 T, 0.35 T, 0.44 T, 0.63 T, 1.06 T, 1.87 T, 3.38 T, 7.61 T,
+
+and 16.76 T for l = 0, 1, 2,··· , and 9, respectively.
+
+[70] A. B´ech´e, R. Juchtmans, and J. Verbeeck, "Efficient creation of electron vortex beams for high resolution STEM imaging," Ultrami-
+
+croscopy 178, 12-19 (2017).
+
+[71] E. Mafakheri, A.H. Tavabi, P.-H. Lu, R. Balboni, F. Venturi, C. Menozzi, G.C. Gazzadi, S. Frabboni, A. Sit, R.E. Dunin-Borkowski, E.
+Karimi, and V. Grillo, "Realization of electron vortices with large orbital angular momentum using miniature holograms fabricated by
+electron beam lithography," Appl. Phys. Lett. 110, 093113 (2017).
+
+[72] Z. Hong, J. Zhang, and B.W. Drinkwater, "Observation of Orbital Angular Momentum Transfer from Bessel-Shaped Acoustic Vortices
+
+to Diphasic Liquid-Microparticle Mixtures," Phys. Rev. Lett. 114, 214301 (2015).
+
+[73] D. Baresch, J.-L. Thomas, and R. Marchiano, "Observation of a Single-Beam Gradient Force Acoustical Trap for Elastic Particles:
+
+Acoustical Tweezers," Phys. Rev. Lett. 116, 024301 (2016).
+
+

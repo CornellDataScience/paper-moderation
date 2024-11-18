@@ -1,0 +1,1910 @@
+Analysis of optical properties of strained semiconductor quantum
+
+dots for electromagnetically induced transparency
+
+D. Barettin,∗ B. Lassen, and M. Willatzen
+
+Mads Clausen Institute for Product Innovation,
+
+University of Southern Denmark, 6400 Sønderborg, Denmark
+
+J. Houmark
+
+DTU Nanotech  --  Department of Micro- and Nanotechnology,
+
+Technical University of Denmark, DK-2800 Kongens Lyngby, Denmark
+
+T. R. Nielsen and J. Mørk
+
+DTU Fotonik, Department of Photonics Engineering,
+
+Technical University of Denmark, Building 343,
+
+DK-2800 Kongens Lyngby, Denmark
+
+A.-P. Jauho
+
+DTU Nanotech  --  Department of Micro- and Nanotechnology,
+
+Technical University of Denmark, DK-2800 Kongens Lyngby, Denmark and
+
+Department of Applied Physics, Helsinki University of Technology,
+
+P. O. Box 1100, FI-02015 HUT, Finland
+
+(Dated: November 6, 2018)
+
+0
+1
+0
+2
+
+ 
+
+b
+e
+F
+0
+1
+
+ 
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+1
+v
+2
+0
+1
+2
+
+.
+
+2
+0
+0
+1
+:
+v
+i
+X
+r
+a
+
+1
+
+Abstract
+
+Using multiband ~k · ~p theory we study the size and geometry dependence on the slow light prop-
+erties of conical semiconductor quantum dots. We find the V -type scheme for electromagnetically
+
+induced transparency (EIT) to be most favorable, and identify an optimal height and size for
+
+efficient EIT operation. In case of the ladder scheme, the existence of additional dipole allowed
+
+intraband transitions along with an almost equidistant energy level spacing adds additional decay
+
+pathways, which significantly impairs the EIT effect. We further study the influence of strain and
+band mixing comparing four different ~k · ~p band structure models. In addition to the separation of
+the heavy and light holes due to the biaxial strain component, we observe a general reduction in the
+
+transition strengths due to energy crossings in the valence bands caused by strain and band mixing
+
+effects. We furthermore find a non-trivial quantum dot size dependence of the dipole moments
+
+directly related to the biaxial strain component. Due to the separation of the heavy and light holes
+
+the optical transition strengths between the lower conduction and upper most valence-band states
+
+computed using one-band model and eight-band model show general qualitative agreement, with
+
+exceptions relevant for EIT operation.
+
+PACS numbers: 73.21.La, 78.67.Hc, 42.50.Gy
+
+2
+
+I.
+
+INTRODUCTION
+
+InAs/GaAs quantum dot structures have recently received much attention due to their
+
+relevance for optoelectronic devices.1 The discrete level nature of quantum dots offer im-
+
+portant advantages over bulk and quantum well material for applications in conventional
+
+devices like lasers and optical amplifiers, as well as devices for all-optical signal processing.
+
+However, quantum dots also give the possibility of realizing solid-state implementations of
+
+effects and functionalities so far only demonstrated in atomic systems. For instance, the
+
+practical exploitation of slow light effects such as electromagnetically induced transparency
+
+(EIT) demonstrated in ultracold atoms2 is naturally pursued using quantum dots.3 Impor-
+
+tant aspects in this context are to accurately model the optical properties of the quantum
+
+dots and to consider the influence of the lattice mismatch induced strain field and its effects
+
+on the bandstructure and eigenstates. Apart from Refs. [4,5] that focus on the many-body
+
+aspects of EIT operation most theoretical investigations of EIT induced slow light6 -- 9 have
+
+been based on simple quantum dot models that do not take into account important contri-
+
+butions from e.g. biaxial strain.
+
+In this paper, we use ~k · ~p theory10,11 to determine the bandstructure of conical quan-
+tum dots. A first popular ~k · ~p multiband calculation scheme for bulk materials is due to
+Luttinger and Kohn12,13 which later on was extended to heterostructures by an ad hoc sym-
+
+metrization procedure.14 In order to overcome this ad hoc procedure, Burt formulated the
+
+so-called exact envelope function method15,16 and soon after Foreman17 used this method to
+
+derive a six-band model for the valence bands of zincblende heterostuctures. Pokatilov et
+
+al.18 have provided an eight-band model for the conduction and the valence bands. They
+
+studied quantum dots using a spherical approximation and compared their model, based on
+
+exact envelope-function theory, against the usual symmetrized approach. The asymmetry
+
+parameter present in the Burt-Foreman formalism but not in the Luttinger-Kohn formalism
+is shown to lead to changes of approximately ±25 meV in the electronic bandstructures of
+InAs/GaAs.18
+
+Optoelectronic properties of InGaAs zincblende quantum-dot with varying shape and
+size based on ~k · ~p theory have already been studied by Schliwa et al.19 and Veprek et al..20
+However, so far, only a small selection of all possible transitions have been studied. In this
+
+work we apply the eight-band model based on Burt-Foreman formalism derived in Ref. [18]
+
+3
+
+to zincblende InAs/GaAs conical quantum dots. We choose the conical geometry because
+
+(i) it introduces important symmetry lowering effects not present in the earlier spherical
+
+models, and (ii) it mimicks closely the structures realized in experimental systems, e.g., in
+
+Ref. [21]. We study the size and shape dependence. In particular, we show that some of
+
+the, for EIT yet unexplored, interband transitions are highly relevant. Furthermore, we
+
+investigate the effect of strain and band-mixing between the conduction band and valence
+bands by comparing four different ~k · ~p models. Although the previous ~k · ~p bandstructure
+studies do include these effects, their impact on optical properties, such as EIT, have not
+
+yet been investigated.
+
+The paper is organized as follows. In Sec. II the theory for EIT, bandstructure calcula-
+
+tions and dipole moments is introduced. In Sec. III we present results for the bandstructure
+
+and dipole moments calculations, addressing the volume and shape effects, while in Sec. IV
+
+these results are used to develop level schemes that lead to an efficient EIT operation. The
+
+paper is concluded in Sec. V.
+
+II. THEORY
+
+A. EIT
+
+EIT refers to an artificially created spectral region of transparency in the middle of an
+
+absorption line due to the destructive quantum interference arising from two transitions in
+
+a three-level system.22,23 By virtue of the Kramers-Kronig relations a dip in absorption is
+
+accompanied by a large positive slope of the refractive index which translates into a reduced
+
+group velocity in vicinity of the resonance. Experimental realization of EIT in semiconductor
+
+structures has been achieved for the case of quantum wells Ref. [24 -- 26], whereas for quantum
+
+dots (QDs), to the best of our knowledge, only two reports exist.27,28
+
+EIT effects in quantum dots and wells have mostly been studied using models that are
+
+rooted in atomic physics assuming an archetypical EIT configuration in an ideal medium.3,6 -- 8
+
+These models truncate the number of active levels in the system to consider only the 3 levels
+
+being addressed by the laser fields. The generic EIT setup relies on a coupling and a probe
+laser driving separate transitions (see Fig. 1). In case of the Λ-scheme, the ground state 1i
+has the same parity as state 3i, and the transition is thereby dipole forbidden. State 2i
+
+4
+
+is of the opposite parity and dipole coupled to both 1i and 3i. An intense near resonant
+continuous wave electromagnetic field, termed the coupling field, drives the 2i-3i transition.
+Another also near resonant, but much weaker probe field, is applied to the 1i-2i transition.
+
+FIG. 1: The three generic EIT schemes. ωp and ωc refer to the frequency of the probe and coupling
+
+transitions, respectively.
+
+The archetypical EIT schemes are native to the atomic physics literature and gener-
+
+ally one seeks to avoid excitation of carriers. In semiconductors such non-carrier exciting
+
+schemes involve a interband probe transition along with an intraband coupling transition.
+
+The frequency for the coupling field lies within the deep infrared, a range for which high
+
+intensity laser operation is very difficult. Carrier exciting schemes on the other hand involve
+
+two interband transitions, where the coupling field is effectively pumping carriers into the
+
+conduction band. The carriers interact via the Coulomb force, EIT schemes of this kind have
+
+been shown to be favorable when the effect of such many-body interactions are included.4,5,29
+
+The study of pulse propagation in a semiconductor slow light medium generally involves
+
+solving the coupled Maxwell-Bloch equations (see e.g. Ref. [30]). However, under certain
+
+circumstances an analysis of the steady state properties of the semiconductor Bloch equations
+
+(SBE) alone is adequate.29 If this is the case then the linear optical response extracted via
+
+the SBE will be directly linked to the propagation characteristics of a wavepacket traveling
+
+in an optically thick system.
+
+A relevant figure of merit for slow light operation is the slowdown factor S, which is
+
+defined as the ratio of the velocity of light in vacuum to the group velocity of a wavepacket
+
+traveling through the slow light medium:
+
+S(ω) =
+
+c0
+vg
+
+= n + ω
+
+∂n
+∂ω
+
+,
+
+(1)
+
+2} is the refractive index,
+where c0 is the speed of light in vacuum, and n = Re{[ǫb + χ(ω)]
+with ǫb being the background permittivity and χ(ω) the susceptibility of the active material.
+
+1
+
+5
+
+is largest. Notice that the slowdown factor obtained away from resonance ( ∂n
+
+The maximum slowdown is found at the frequency for which the slope of the refractive index
+∂ω ≈ 0) is given
+by the background refractive index. The first order susceptibility, or linear system response,
+is found from the induced macroscopic polarization P (ω) as χ(ω) = P (ω)
+
+ǫ0Ep(ω) , where ǫ0 is the
+vacuum permittivity and Ep(ω) is the amplitude of the probe field. In turn the time resolved
+
+macroscopic polarization component in the direction of the probe field, P (t), is computed
+
+from the microscopic polarizations according to semiclassical theory:31
+
+P (t) =
+
+1
+w
+
+NdotXn,m
+
+µnmρmn(t) ,
+
+(2)
+
+where ρnm is the density matrix for localized dot states (n, m). Dipole matrix elements are
+
+denoted µnm, Ndot is the two-dimensional density of the dots in the growth plane, and w is
+
+the thickness of the active region. Within the 3-level, (non-carrier exciting) approximation
+
+one can derive an analytical expression for the susceptibility χ(ω) (see e.g. Ref. [3]). When
+
+both fields are resonant with their respective transitions (ω = ωp), the slowdown factor S
+
+and the absorption α become:
+
+b + ǫres
+2
+
+#1/2
+
+ω
+b + ǫ2
+
+res
+
+cc − γ2
+Up(Ω2
+nr)
+2(γnrγp + Ω2
+
+cc)2# .
+
+S(ω) = " ǫb +pǫ2
+×"1 +
+
+α(ω) =
+
+=
+
+ω
+
+c0nb
+
+ω
+
+c0nb
+
+2pǫ2
+
+Im [χ(ω)]
+
+Up
+
+
+γnr(Ω2
+(Ω2
+
+cc + γpγnr)
+cc + γpγnr)2
+
+,
+
+(3)
+
+(4)
+
+where Up = Ndot
+
+cc/γnr). Ic is the
+intensity of the coupling beam, µp and µc are the dipole moments of the probe and coupling
+
+cc = µc2Ic/42cǫ0√ǫb, ǫres = Up/(γp + Ω2
+
+w µp2/ǫ0, Ω2
+
+transition, respectively and γp and γnr are the dephasing rates of the polarization components
+
+of the probe and the uncoupled non-radiative transition, respectively. The above expressions
+
+displays the significance of maximizing the transition strengths of the two light beams. In
+
+case of the slowdown factor the dipole moment of the probe transition determines the largest
+
+obtainable slowdown, while the dipole moment of the pump transition is related to the pump
+power required to reach this maximum. The absorption drops as 1/µc2.
+
+6
+
+B. Bandstructure
+
+The dipole moments which govern the EIT characteristics are determined using eight-
+band ~k · ~p theory including strain effects. We study the conical quantum dots shown in
+Fig. 2. The dot material is InAs and the barrier material is GaAs. Both InAs and GaAs are
+
+FIG. 2: The shape of the quantum dots under consideration.
+
+zincblende materials so in order to reduce the problem to a two dimensional model we dis-
+
+regard anisotropy effects. This entails that we disregard phenomena such as piezoelectricity
+
+and atomistic anisotropic effects32,33. The atomistic anisotropic effects have been investi-
+
+gated by Bester and Zunger34 showing that they lead amongst other things to a splitting
+
+of states which in our model are degenerate. This splitting is however less pronounced for
+
+cylindrical shaped quantum dots as studied here. Recently it has been shown that second
+
+order piezoelectric terms effectively cancel linear piezoelectric effects for cylindrical shaped
+
+quantum dots.
+
+19,35,36 We have checked the isotropic assumption and found a maximum
+
+error for the strain fields of 8% along the z axis, going rapidly to zero at the edges of the
+
+dot.
+
+We investigate both the effect of strain and band mixing. The effect of band mixing
+
+is determined by comparing the eight-band results with one-band model results for the
+
+conduction band and the heavy holes. Due to the lattice mismatch present in the systems
+
+under consideration in this paper (InAs/GaAs quantum dots) the materials will be strained.
+
+7
+
+In the eight-band model the wavefunction ψn of the localized dot state n is given by a linear
+
+combination of the eight Bloch states weighted by an envelope function,
+
+ψn =
+
+8
+
+Xi=1
+
+φ(n)
+i ui,
+
+(5)
+
+where φ(n)
+
+i
+
+are the envelope function and ui are the Bloch states. We use the eight-band
+
+Hamiltonian described in Ref. [18], while for the strain-dependent part we follow Ref. [37].
+
+In the following we explicitly present the one-band models as due to their simplicity
+
+these are most open to interpretation. The one-band eigenvalue equation for the envelope
+
+functions reads Hαφα = Eαφα where Hα, φα and Eα are the Hamiltonian, the envelope wave
+
+function and the energy, respectively. α denotes either the conduction band or the heavy
+holes, i.e., α = {e, hh}. The Hamiltonian is
+
+Hα = H k
+
+α( ~rα) + H b
+
+α( ~rα) + H ǫ
+
+α( ~rα),
+
+(6)
+
+where H k
+
+α(~rα) is the kinetic part, H b
+
+α( ~rα) is the energy of the unstrained band edge, and
+α( ~rα) is the strain dependent part. The solutions are spin degenerate in the one-band
+
+H ǫ
+
+model, i. e., ψ↑
+
+e = φeS ↑i and ψ↓
+
+e = φeS ↓i, and ψ↑
+
+hh = φhhhh ↑i and ψ↓
+
+hh = φhhhh ↓i.
+
+In the one-band model the strain Hamiltonian for a zincblende crystal structure is given
+
+by
+
+H ǫ
+
+e(~re) = ac(~r)εH(~r),
+
+H ǫ
+hh( ~rhh) = −av(~r)εH(~r) +
+
+b
+2
+
+εB(~r),
+
+(7)
+
+(8)
+
+where ac (av) and b are the conduction (valence)-band hydrostatic deformation potential and
+
+b is the shear deformation potential,38 while the hydrostatic and biaxial strain components
+
+read
+
+εH(~r) = εxx(~r) + εyy(~r) + εzz(~r),
+
+εB(~r) = εxx(~r) + εyy(~r) − 2εzz(~r),
+
+(9)
+
+(10)
+
+where εik is the strain tensor. The strain fields are found by minimizing the elastic strain
+
+energy.32
+
+8
+
+C. Dipole moments
+
+The momentum matrix element ~pnm is given by:
+
+~pnm ≡ hψn~pψmi
+
+N
+
+i
+
+~pφ(m)
+
+j
+
+iδij + hφ(n)
+
+i
+
+φ(m)
+
+j
+
+ihui~puji(cid:19)
+
+=
+
+Xi,j=1(cid:18)hφ(n)
+≡ ~p (φ)
+
+nm + ~p (u)
+nm,
+
+(11)
+
+where N = 1 or 8. ~p (φ) and ~p (u) are the envelope and the Bloch parts of the momentum
+
+matrix element, respectively.
+
+It is usual to consider only the Bloch part ~p (u) since the
+
+envelope part ~p (φ) is usually an order of magnitude smaller.39
+
+As shown in Ref. [40], the evaluation of the momentum matrix element ~pnm is meaningful
+
+while dipole matrix ~µnm elements are ill-defined in crystals involving extended Bloch states.
+
+Thus, we first calculate ~pnm and then use the relation between the momentum and the
+
+electric dipole matrix element given by Ref. [41]
+
+~pnm =
+
+im0
+e
+
+ωnm~µnm,
+
+(12)
+
+where ωnm = En − Em, m0 is the free electron mass and e is the electronic charge.
+
+For material parameters used in calculations we refer to Ref. [42].
+
+III. RESULTS: BANDSTRUCTURE AND DIPOLE MOMENTS
+
+The first results we present are related to a set of conical quantum dots where the aspect
+
+ratio between the radius r and the height h of the dot has been fixed so that r = 2h. We
+
+focused on the first twelve bound states for both bands. Since all the states are at least
+
+doubly degenerate (spin degeneracy), we consider six energy levels (labeled from 1 to 6) for
+
+both bands. In the one-band model, due to the conical quantum-dot symmetry and isotropy
+
+assumption (giving an inversion symmetric model), level 2 and level 3 are degenerate for
+
+both the conduction and the valence band, level 4 and level 5 are degenerate for the valence
+
+band, and level 5 and level 6 are degenerate for the conduction band. In the upper part of
+
+Fig. 3 and Fig. 4 we show the energy levels and the most relevant interband dipole moments
+
+for EIT (µ22 is also included due to its relevance for other applications) corresponding to
+
+9
+
+a dot with h = 7.5 nm for the four different models: one-band model without strain, one-
+
+band model with strain, eight-band model without strain and eight-band model with strain.
+
+Throughout this paper we consider only right-handed circularly polarized light.
+
+One band without Strain
+
+Eight band without Strain
+
+6
+
+3
+
+5,
+4
+,
+2
+1
+
+6
+5
+4
+3
+2
+1
+
+µ
+16
+
+µ
+41
+
+µ
+46
+
+µ
+22
+
+µ
+11
+
+µ
+16
+
+µ
+41
+
+µ
+46
+
+µ
+22
+
+µ
+11
+
+1
+,
+2
+3
+5,
+4
+6
+
+1
+2
+3
+4
+5
+6
+
+ 10
+
+)
+e
+Å
+
+(
+ 
+µ
+
+ 8
+
+ 6
+
+ 4
+
+ 2
+
+ 0
+
+µ
+33
+
+µ
+11
+
+µ
+55
+
+µ
+22 µ
+
+64 µ
+
+46 µ
+
+41 µ
+
+16 
+
+ 10
+
+)
+e
+Å
+
+(
+ 
+µ
+
+ 8
+
+ 6
+
+ 4
+
+ 2
+
+ 0
+
+µ
+33
+
+µ
+11
+
+µ
+55
+
+µ
+22 µ
+
+64 µ
+
+46 µ
+
+41 µ
+
+16 
+
+FIG. 3: Energy levels and the most relevant dipole moments for EIT (top) and values of the eight
+
+strongest interband dipole moments (bottom) for one-band (left) and eight-band (right) model
+
+without strain for a dot with h = 7.5 nm.
+
+In Figs. 3 and 4 the thicknesses of the lines indicating the transitions are proportional
+
+to the corresponding dipole moments. Obviously, an eight-band model calculation leads
+
+to a higher valence-band density-of-states as compared to a one-band calculation. Hence,
+
+also more interband transitions result, in a given energy range, when using an eight-band
+
+model. We have chosen to show in the bottom part of Fig. 3 and Fig. 4 only the strongest
+
+eight dipole-matrix elements for both one-band and eight-band models. First, we observe
+
+that there is a qualitative agreement between dipole-moment results for the one-band and
+
+eight-band models with strain (Figure 4). This is due to the fact that in the eight-band
+
+10
+
+One band with Strain
+
+Eight band with Strain
+
+,
+5 6
+4
+,
+2
+1
+
+3
+
+6
+5
+4
+3
+2
+1
+
+41µµ
+16
+
+µ
+46
+
+µ
+22
+
+µ
+11
+
+µ
+16
+
+µ
+41
+
+µµ
+22
+46
+
+µ
+11
+
+1
+3,
+2
+,
+4 5
+6
+
+1
+2
+3
+4
+5
+6
+
+ 10
+
+)
+e
+Å
+
+(
+ 
+µ
+
+ 8
+
+ 6
+
+ 4
+
+ 2
+
+ 0
+
+µ
+33
+
+µ
+11
+
+µ
+55
+
+µ
+22 µ
+
+64 µ
+
+46 µ
+
+41 µ
+
+16 
+
+ 10
+
+)
+e
+Å
+
+(
+ 
+µ
+
+ 8
+
+ 6
+
+ 4
+
+ 2
+
+ 0
+
+µ
+33
+
+µ
+11
+
+µ
+55
+
+µ
+22 µ
+
+64 µ
+
+46 µ
+
+41 µ
+
+16 
+
+FIG. 4: Energy levels and the most relevant dipole moments for EIT (top) and values of the eight
+
+strongest interband dipole moments (bottom) for one-band (left) and eight-band (right) model
+
+with strain for a dot with h = 7.5 nm.
+
+model the biaxial strain component of Eq. (10) shifts heavy-holes (light-holes) to higher
+
+(lower) energies. As a consequence the valence-band groundstate and the first excited states
+
+are predominantly heavy-holes like giving rise to a general better agreement between the
+
+one-band model and the eight-band model. The only notable discrepancies are observed for
+
+the EIT relevant transitions µ46 and µ41. Second, the inclusion of strain reduces the strength
+
+of the dipole moments significantly. This is because there is a non-trivial influence of strain
+
+on dipole moments. The conduction-band states are only affected by the hydrostatic strain
+
+component of Eq. (9) giving rise more or less to a constant shift in the effective potential
+
+inside the dot while the valence band states, in addition to the hydrostatic strain, are also
+
+affected by the biaxial strain component [see Eq. (10)]. The latter component is highly
+
+inhomogeneous inside the dot. In the eight-band model there is a third contribution from
+
+11
+
+ǫxz and ǫyz strain components37 but this term is not as significant as the biaxial of Eq. (10).
+
+In order to understand the influence of strain on the dipole moment we compare in Fig. 5
+the valence-band groundstate probability density ψ2 (eight-band model) with and without
+the influence of the strain field for a quantum dot with height h = 11.5 nm and radius
+
+r = 23 nm. While in the case without strain the groundstate shows a s-like shape, the
+
+FIG. 5: Probability density ψ2 of the valence-band groundstate for the eight-band model without
+(up) and with (down) strain. The dimensions of the quantum dot are h = 11.5 nm and r = 23 nm.
+
+biaxial-strain component modifies the hole wave function into a toroidal shape moving it
+
+away from the center of the dot where the potential is stronger. This drastically reduces
+
+the overlap between the envelope functions φi of the conduction and valence band and
+
+consequently the corresponding dipole moments.
+
+The reduction of the dipole moment due to strain is evident in Fig. 6 where we plot
+
+the interband dipole moment µ11 between the conduction- and the valence-band ground
+
+states for the four different models as a function of h. In the models with strain we have a
+
+maximum around h = 5 nm while the dipole moments for the two models without strain grow
+
+monotonically with increasing height and eventually reach a plateau value corresponding to
+the bulk value of 16.8 Ae. The monotonic increase of the dipole moments can be understood
+
+based on Eq. (12). Without strain the momentum matrix elements ~p (mainly determined by
+
+~p (u)) remains constant with increasing height whereas the energy difference ωnm decreases.
+
+The presence of strain reduces the overlap of electron and hole distributions as a result of
+
+12
+
+One band without Strain
+One band with Strain
+Eight band without Strain
+Eight band with Strain
+
+ 10
+
+)
+e
+Å
+
+(
+ 
+
+1
+1
+
+µ
+
+ 9
+
+ 8
+
+ 7
+
+ 6
+
+ 5
+
+ 4
+
+ 3
+
+ 2
+
+ 4
+
+ 5
+
+ 6
+
+ 7
+
+ 8
+h (nm)
+
+ 9
+
+ 10
+
+ 11
+
+FIG. 6: Interband µ11 dipole moments as a function of h for the four different models.
+
+the increased displacement of the hole wavefunctions away from the center leading to the
+
+observed decrease in the dipole moments.
+
+ 0.85
+ 0.8
+ 0.75
+ 0.7
+ 0.65
+ 0.6
+ 0.55
+ 0.5
+
+)
+
+V
+e
+(
+ 
+
+E
+
+−0.35
+
+−0.4
+
+−0.45
+
+)
+
+V
+e
+(
+ 
+
+E
+
+−0.5
+
+−0.55
+
+−0.6
+
+ 4
+
+Ec
+1
+Ec
+2
+Ec
+3
+Ec
+4
+Ec
+5
+Ec
+6
+WL
+
+Ev
+1
+Ev
+2
+Ev
+3
+Ev
+4
+Ev
+5
+Ev
+6
+WL
+
+ 5
+
+ 6
+
+ 7
+
+ 8
+h (nm)
+
+ 9
+
+ 10
+
+ 11
+
+FIG. 7: Energies of the six considered levels in conduction (top) and valence (bottom) band as a
+
+function of h for eight-band model with strain. The onset of continuous wetting layer states (WL)
+
+is also indicated (dashed-horizontal line).
+
+In Fig. 7 we plot the energies of the first six levels in the conduction (top) and valence
+
+band (bottom) as a function of the height h. The wave functions of the confined states are
+
+characterized (in the eight-band model) by eight envelopes weighted differently depending
+
+13
+
+on the state. As mentioned above, the biaxial strain is inhomogeneous and this, combined
+
+with the differently spatially distributed envelope functions, leads to a higher sensitivity
+
+against strain as compared to a one-band model. Further, the inhomogeneity of the strain
+
+field grows with volume, especially for the biaxial-strain component of Eq.
+
+(10). These
+
+coupled strain-band mixing effects lead to energy crossings in the valence band. We have
+
+also indicated where the wetting layer continuum starts (WL). The WL dashed lines in Fig. 7
+
+are computed using a Ben-Daniel Duke approach for a 0.5 nm InAs quantum-well embedded
+
+in GaAs14. We observe that only the last three considered conduction-band levels for the
+
+smallest quantum dot lay above the lower bound of the wetting layer continuum states.
+
+)
+e
+Å
+
+(
+ 
+µ
+
+ 7
+ 6
+ 5
+ 4
+ 3
+ 2
+ 1
+ 0
+ 1.3
+ 1.2
+ 1.1
+ 1
+ 0.9
+ 0.8
+
+)
+
+V
+e
+(
+ 
+
+E
+∆
+
+ 4
+
+µ11 
+µ22 
+µ46 
+µ41 
+µ16 
+
+ 5
+
+ 6
+
+ 7
+
+ 8
+h (nm)
+
+ 9
+
+ 10
+
+ 11
+
+FIG. 8: Interband dipole moments µ (top) and relative band energy difference ∆E (bottom) as a
+
+function of the height h with fixed aspect ratio r = 2h.
+
+The most relevant dipole moments for EIT for the eight-band model are shown in the
+
+upper part of Fig. 8 as a function of h. The bottom part gives the related energy differences
+
+∆E. The strain reduces the dipole-moment strengths with increasing volume because of the
+
+decreasing wave function overlap (similar to what was found for µ11).
+
+This geometry effect is indeed mainly a function of the dot volume as Fig. 9 shows. Here,
+
+we refer to a second set of quantum dots with different aspect ratios (Asp = r/h) having
+the same volume (V = 226.19 (nm)3). The interband dipole moments (top) and relative
+
+energy differences (bottom) are depicted as a function of Asp and evidently results are rather
+
+insensitive to the aspect ratio.
+
+14
+
+)
+e
+Å
+
+(
+ 
+µ
+
+ 7
+ 6
+ 5
+ 4
+ 3
+ 2
+ 1
+ 0
+ 1.4
+ 1.3
+ 1.2
+ 1.1
+ 1
+ 0.9
+
+)
+
+V
+e
+(
+ 
+
+E
+∆
+
+µ11 
+µ22 
+µ46 
+µ41 
+µ16 
+
+ 1
+
+ 1.5
+
+ 2
+
+ 2.5
+
+Aspect ratio
+
+ 3
+
+ 3.5
+
+ 4
+
+FIG. 9: Interband dipole moments µ (top) and relative band energy difference ∆E (bottom) as a
+
+function of the aspect ratio at constant volume.
+
+IV. RESULTS: EIT
+
+A. 3 level vs. many levels
+
+In this section we consider right-handed circularly polarized light for both the coupling
+
+and probe fields and investigate the slow light characteristics upon propagation through
+
+several stacked layers of QD material. We assume that one can disregard propagation effects
+
+in the coupling field. In case of non-carrier exciting schemes, the coupling field is effectively
+
+connecting two empty states, thus rendering the transition transparent. In the case where the
+
+coupling beam is exciting carriers we consider a propagation through sufficiently thin device
+
+so that the coupling intensity remains constant. We use a lattice temperature of 200 K, for
+which the literature 43,44 gives dephasing rates around 1.5 · 1012 s−1. The system response is
+calculated using a procedure similar to Ref. [29]. First we investigate a ladder-type scheme.
+
+The ladder scheme is generally non-carrier exciting. We consider a situation where the probe
+
+pulse connects the conduction band/valence band ground state (µ11) and the coupling beam
+
+is tuned to the intraband transition in the conduction band between the ground state -
+
+and first excited level. This particular setup has been the prime candidate for theoretical
+
+scrutiny3,8 employing a three level approach along with a single band model including only
+
+hydrostatic strain. To illustrate the importance of including all energy levels and transitions
+
+along with a more detailed bandstructure calculation we show in Fig. 10 the imaginary part
+
+15
+
+of the susceptibility calculated using a coupling intensity of 1 MW/cm2 for two dot sizes
+
+(height 7.5 nm and 9 nm, both Asp = 2 ) using either the most simple model (one-band
+
+unstrained) or the most complex (eight-band strained). Most notably the EIT effect, which
+
+!ALA&>IJH=EA@
+!ALA>7IJH=EA@
+
+ 
+
+#
+
+
+
+E
+
+χ
+
+
+
+#
+
+
+
+#
+
+ 
+
+#
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+2H>A@AJKECA8
+
+!ALA&>IJH=EA@
+!ALA>7IJH=EA@
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+2H>A@AJKECA8
+
+
+
+E
+
+χ
+
+ 
+
+#
+
+
+
+E
+
+χ
+
+
+
+#
+
+
+
+#
+
+ 
+
+#
+
+
+
+E
+
+χ
+
+
+
+#
+
+
+
+#
+
+&>5JH=EA@
+>7IJH=EA@
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+2H>A@AJKECA8
+
+&>5JH=EA@
+>7IJH=EA@
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+2H>A@AJKECA8
+
+FIG. 10: Example of susceptibility calculated for a ladder scheme using the 3 level - or a full
+
+multi level approach based on either the eight band strained or one band unstrained model. The
+
+results are presented for dots of height 7.5 nm (top panel) and 9 nm (bottom panel), both Asp = 2.
+
+The reason for the larger features in the one band calculations is that the strength of the probe
+
+transition is larger within this model (see Fig. 6).
+
+is recognized as a dip in the absorption spectrum symmetric around the probe frequency
+
+and is present in the simple three level models, is absent from three out of four multi-level
+
+calculations. The reason for this is that the additional level structure is dipole coupled to the
+
+three level EIT system. In the particular ladder configuration considered here, due to the
+
+relatively close spacing between the energy levels, higher lying states are also being addressed
+
+by the coupling field thereby adding alternative decay pathways that effectively destroy the
+
+destructive interference between the available paths, which is at the origin of EIT. In the
+
+one band unstrained calculation the energy levels are almost equidistantly spaced resulting
+
+in a peak in stead of a dip in the spectrum. The level structure is modified by strain and
+
+the inclusion of additional bandstructure, in fact the multi-level model for the dot of 7.5 nm
+
+height indeed displays the EIT effect. In this particular case the higher lying shells are not
+
+16
+
+in as close resonance with the coupling beam and a simple three level treatment is seen to
+
+produce similar results as the full multi-level model. The eight-band multi-level calculation
+
+for the larger dot (h = 9 nm) has reminiscence of the EIT effect but the spectrum is quite
+
+far from the "ideal" spectrum predicted by the simple model. In general, ladder schemes in
+
+rotationally symmetric dots are, due to the near equidistantly spaced energy levels, likely
+
+subjected to the issue of the coupling beam being in resonance with other transitions. Carrier
+
+exciting Λ or V - schemes connecting only inter-band transitions are due to their larger
+
+transition energies much less likely to encounter this problem. Furthermore, the frequency
+
+range of inter-band transitions is much easier accessible to industry lasers, than the near
+
+infrared required by ladder-type schemes.
+
+B. Size/geometry dependence
+
+The possible interband EIT schemes are illustrated in Fig. 4 (top). By combining the
+
+shown EIT relevant transitions a variety of different V as well as Λ-schemes can be accessed.
+
+As noted in a previous section there are very few differences between dipole moments pre-
+
+dicted by the one-band strained model and the eight-band strained model, however the
+
+deviations that do exist, appears for transitions that could be used in connection with EIT.
+
+The one-band strained model significantly overestimates µ46, a transition that would other-
+
+wise seem attractive to use for EIT. Furthermore µ41 is very small in all but the eight-band
+
+strained model. To illustrate the impact of these differences we have in Fig. 11 shown ab-
+
+sorption spectra for an EIT scheme constructed using µ41 as probe and µ46 as coupling
+
+transition. It is seen that using eight-band strained bandstructure results in an altered EIT
+
+behavior. The signature feature, the split peaks, are higher and closer together, a direct
+
+consequence of the magnitudes of the involved dipole moments. These significant differences
+
+between the spectra justifies focusing on the results of the more exact eight-band strained
+
+bandstructure model. A V and Λ scheme can be realized using µ41 as coupling transition
+
+and either of the two transitions µ11 or µ46 for the probe field. Two similar schemes can
+
+be accessed using the same probe transitions and µ16 for the coupling field. As is evident
+
+from Fig. 9 the dipole moments are relatively unchanged by varying shape (aspect ratio), we
+
+choose to focus on Asp = 2 since the common probe transitions (µ11 and µ46) are maximized
+
+for this geometry and consider volume dependencies.
+
+17
+
+1b Unstrained
+1b Strained
+8b Strained
+
+ 0.14
+
+ 0.12
+
+ 0.1
+
+ 0.08
+
+ 0.06
+
+ 0.04
+
+ 0.02
+
+m
+
+i
+
+χ
+
+ 0
+
+-15
+
+-10
+
+ 0
+
+-5
+ 5
+Probe detuning [meV]
+
+ 10
+
+ 15
+
+FIG. 11: EIT absorption spectrum calculated using µ41 as probe and µ46 as coupling transition for
+
+different models: one-band unstrained (full line), one-band strained (dashed line) and eight-band
+
+strained (dotted line). The additional feature in the eight-band strained calculation is due to the
+
+nearby lying µ55 resonance.
+
+We see that for small dots (h < 5 nm) the dipole moments addressed by the coupling
+
+beam are relatively small (on the order of 1 nm) and therefore dots of this size are not
+
+suitable for EIT operation. As the dot increases in size both coupling transitions become
+
+stronger, the two probe transitions, however begins to decrease. The dipole µ46 is always
+
+the smaller of the two probe transitions, and the fact that it drops off faster suggests that
+
+one should aim at using µ11, ground state to ground state, as probe transition.
+
+To quantify the above discussion we show in Fig. 12 the slowdown factor as a function
+
+of coupling intensity calculated for three different dot volumes (h = 6.5 nm, 8 nm, 10 nm)
+
+for each of the two remaining EIT schemes (for the h = 10 nm dot, in the case of the Λ
+
+scheme no EIT behavior is found due to its weak coupling transition. Slowdown results
+
+for this dot/EIT setup has therefore been omitted in Fig. 12.). For every dot type we see
+
+that the V -scheme prevails, it has the lowest coupling power requirements and the largest
+
+obtainable slowdown value. The first observation can be understood from Fig. 8 where the
+
+V -scheme coupling transition µ41 is always the larger. Since both schemes utilize the same
+
+probe transition one could be inclined to think that they should display the same maximum
+
+slowdown value. The reason they do not, is that the coupling beam, although detuned, is
+
+exciting carriers into the levels connected by the probe beam. The presence of the carriers
+
+18
+
+serve to block the probe transition. As indicated in the lower part of Fig. 8, the coupling
+
+beam in the Λ case is less detuned from the probe transition than in the V case, and thus
+
+more carriers are excited into the electron and hole ground states, resulting in a smaller
+
+effective probe transition strength. It is apparent that the best tradeoff between maximum
+
+slowdown and coupling intensity is found using the V scheme for dots having a relatively
+
+large height, in the region around 8 nm. In the literature the V scheme has also been deemed
+
+preferable due to its ability to overcome inhomogeneous broadening,9 and a favorable carrier
+
+redistribution mechanism.29
+
+n
+w
+o
+d
+w
+o
+S
+
+l
+
+ 10
+
+ 1
+
+ 0.1
+
+h=6.5, V
+h=6.5, Λ
+h=8, V
+h=8, Λ
+h=10, V
+
+ 10
+
+ 100
+
+Ic [MW/cm2]
+
+FIG. 12: (Color online) Slowdown versus coupling beam intensity calculated for three different dot
+
+sizes. The black curve refers to the V scheme whereas the red curve is for Λ configuration.
+
+V. CONCLUSION
+
+For the investigated system we have shown that the strain field generally reduces optical
+
+transition strengths as a function of the volume of the quantum dot for a fixed aspect
+
+ratio. This is due to a decreasing overlap of the involved wavefunctions. This geometry
+
+effect has been shown to be a volume effect rather than a shape effect. Moreover, the
+
+combined influence of band mixing and strain entails state crossings in the valence band,
+
+and a separation of the heavy and light holes. The latter leads to a qualitative agreement
+
+between the lower conduction and upper most valence-band states computed using the one-
+
+band model and the eight-band model. The observed discrepancies for µ46 and µ41 have an
+
+impact on the choice of EIT scheme. We have investigated the importance of including the
+
+19
+
+full energy level structure and optical transitions in an EIT simulation. In particular we find
+
+for a ladder type scheme that the additional transitions along with an almost equidistant
+
+energy level spacing can severely impair the EIT effect. We have studied the effect of varying
+
+dot size and geometry on EIT and identified a V -type configuration in a dot of aspect ratio
+r = 2h with height h ≈ 8 nm to have the best possibilities for efficient EIT operation.
+
+Acknowledgments
+
+This work is supported by the Danish Research Council for Technology and Production
+
+(QUEST). APJ is grateful to the FiDiPro program of the Finnish Academy.
+
+∗ Corresponding author: daniele@mci.sdu.dk
+
+1 J. Piprek, Nitride Semiconductor Devices - Principles and Simulation (Wiley VHC, 2007).
+
+2 L. V. Hau, S. E. Harris, Z. Dutton, and C. H. Behroozi, Nature 397, 594 (1999).
+
+3 C. J. Chang-Hasnain, P. C. Ku, J. Kim, and S. L. Chuang, Proc. IEEE 91, 1884 (2003).
+
+4 S. Michael, W. W. Chow, and H. C. Schneider, Appl. Phys. Lett. 89, 181114 (2006).
+
+5 W. W. Chow, S. Michael, and H. C. Schneider, J. Mod. Opt. 54, 2413 (2007).
+
+6 J. Kim, S. L. Chuang, P. C. Ku, and C. J. Chang-Hasnain, J. Phys.: Cond. Matt. 16, 3727
+
+(2004).
+
+7 P. Janes, J. Tidstrom, and L. Thyl´en, J. Lightwave Technol. 23, 3893 (2005).
+
+8 P. K. Nielsen, H. Thyrrestrup, J. Mørk, and B. Tromborg, Optics Express 15, 6396 (2007).
+
+9 P. Lunnemann and J. Mørk, Appl. Phys. Lett. 94, 071108 (2009).
+
+10 E. Kane, Physics of III-V Compounds, Vol. 1, Chap. 3 (Academic Press, Inc., New York, 1966).
+
+11 G. Dresselhaus, A. F. Kip, and C. Kittel, Phys. Rev. 98, 368 (1955).
+
+12 J. M. Luttinger, Phys. Rev. 102, 1030 (1956).
+
+13 J. M. Luttinger and W. Kohn, Phys. Rev. 97, 869 (1955).
+
+14 G. Bastard, Wave mechanics applided to semiconductor heterostructures,
+
+les Editions de
+
+Physique (Wiley, New York, 1988).
+
+15 M. G. Burt, J. Phys. Condens. Matter 4, 6651 (1992).
+
+16 M. G. Burt, Phys. Rev. B 50, 7518 (1994).
+
+20
+
+17 B. A. Foreman, Phys. Rev. B 48, 4964 (1993).
+
+18 E. P. Pokatilov, V. A. Fonoberov, V. M. Fomin, and J. T. Devreese, Phys. Rev. B 64, 245328
+
+(2001).
+
+19 A. Schliwa, M. Winkelnkemper, and D. Bimberg, Phys. Rev. B 76, 205324 (2007).
+
+20 R. G. Veprek, S. Steiger, and B. Witzigmann, J. Comput. Electron. 7, 521 (2008).
+
+21 T. Inoue, T. Kita, O. Wada, M. Konno, T. Yaguchi, and T. Kamino, Appl. Phys. Lett 92,
+
+031902 (2008).
+
+22 S. E. Harris, J. E. Field, and A. Imamoglu, Phys. Rev. Lett. 64, 1107 (1990).
+
+23 S. E. Harris, Phys. Today 50, 36 (1997).
+
+24 G. B. Serapiglia, E. Paspalakis, C. Sirtori, K. L. Vodopyanov, and C. C. Phillips, Phys. Rev.
+
+Lett. 84, 1019 (2000).
+
+25 M. C. Phillips and H. Wang, Phys. Rev. B 69, 115337 (2004).
+
+26 H. Kang, J. S. Kim, S. I. Hwang, Y. H. Park, D. kyeong Ko, and J. Lee, Opt. Express 16, 15728
+
+(2008).
+
+27 S. Marcinkevicius, A. Gushterov, and J. P. Reithmaier, Appl. Phys. Lett. 92, 041113 (2008).
+
+28 S.-M. Ma, H. Xu, and B. S. Ham, Opt. Express 17, 14902 (2009).
+
+29 J. Houmark, T. R. Nielsen, J. Mørk, and A.-P. Jauho, Phys. Rev. B 79, 115420 (2009).
+
+30 T. R. Nielsen, A. Lavrinenko, and J. Mørk, Appl. Phys. Lett. 94, 113111 (2009).
+
+31 H. Haug and S. W. Koch, Quantum Theory of the Optical and Electronic Properties of Semi-
+
+conductors (World Scientific, Singapore, 1990), 3rd ed.
+
+32 V. A. Fonoberov and A. A. Balandin, J. Appl. Phys. 94, 7178 (2003).
+
+33 D. Barettin, B. Lassen, and M. Willatzen, J. Phys. Conf. Ser. 107 (2008).
+
+34 G. Bester and A. Zunger, Phys. Rev. B 71, 045318 (2005).
+
+35 G. Bester, A. Zunger, X. Wu, and D. Vanderbilt, Phys. Rev. B 74, 081305(R) (2006).
+
+36 G. Bester, X. Wu, D. Vanderbilt, and A. Zunger, Phys. Rev. Lett. 96, 187602 (2006).
+
+37 Y. Zhang, Phys. Rev. B 49, 14 352 (1994).
+
+38 G. L. Bir and G. E. Pikus, Symmetry and Strain-Induced Effects In semiconductors (Wiley,
+
+New York, 1974).
+
+39 O. Stier, M. Grundmann, and D. Bimberg, Phys. Rev. B 59, 5688 (1999).
+
+40 M. G. Burt, J. Phys. Condens. Matter 5, 4091 (1993).
+
+41 E. Merzbacher, Quantum Mechanics (Wiley, New York, 1961).
+
+21
+
+42 V. Meyer and Ram-Mohan, J. Appl. Phys. 89 (2001).
+
+43 P. Borri, W. Langbein, J. Mørk, J. M. Hvam, F. Heinrichsdorff, M. H. Mao, and D. Bimberg,
+
+Phys. Rev. B 60, 7784 (1999).
+
+44 P. Borri, W. Langbein, S. Schneider, U. Woggon, R. L. Sellin, D. Ouyang, and D. Bimberg,
+
+Phys. Rev. Lett. 87, 157401 (2001).
+
+22
+
+

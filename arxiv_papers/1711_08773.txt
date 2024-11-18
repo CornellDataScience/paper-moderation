@@ -1,0 +1,1473 @@
+a
+
+Chaos in two-dimensional Kepler problem with spin-orbit coupling
+
+V.A. Stephanovich1 and E.Ya. Sherman2, 3
+
+1Institute of Physics, Opole University, Opole, 45-052, Poland
+
+2Department of Physical Chemistry, University of the Basque Country UPV/EHU, 48080 Bilbao, Spain
+
+3IKERBASQUE Basque Foundation for Science, Bilbao, Spain
+
+(Dated: July 8, 2021)
+
+We consider classical two-dimensional Kepler system with spin-orbit coupling and show that at
+a sufficiently strong coupling it demonstrates a chaotic behavior. The chaos emerges since the
+spin-orbit coupling reduces the number of the integrals of motion as compared to the number of
+the degrees of freedom. This reduction is manifested in the equations of motion as the emergence
+of the anomalous velocity determined by the spin orientation. By using analytical and numerical
+arguments, we demonstrate that the chaotic behavior, being driven by this anomalous term, is
+related to the system energy dependence on the initial spin orientation. We observe the critical
+dependence of the dynamics on the initial conditions, where system can enter and exit a stability
+domain by very small changes in the initial spin orientation. Thus, this system can demonstrate a
+reentrant order-from-disorder transition driven by very small variations in the initial conditions.
+
+I.
+
+INTRODUCTION
+
+The emergence of a chaotic behavior is one of the
+most intriguing features of dynamical systems [1 -- 5].
+For instance, simple dynamical systems with an energy-
+dependent separatrix (boundary between qualitatively
+different trajectories in their phase space), demonstrate
+chaos, e.g., being driven by a periodic external field.
+
+Dynamical systems with spin-orbit coupling (SOC),
+ranging from semiconductors [6] to ultracold atomic mat-
+ter [7, 8], became a topic of a great interest due to rich
+variety of physical effects observable there. Here we pro-
+pose and study a class of nonstandard classical conser-
+vative dynamical systems, which can be characterized as
+two-dimensional (2D) spin-orbit coupled Kepler systems.
+We show that inclusion of a new internal degree of free-
+dom, namely, the particle spin, coupled to its momentum,
+leads to the chaos emergence.
+
+Without SOC, the properties of the above systems are
+well-known in classical [9] and quantum [10] realization
+and no chaotic behavior is expected there except a quan-
+tum chaos in an applied magnetic field acting at the or-
+bital electron motion [11]. Three integrals of motion:
+the energy, the angular momentum, and the Runge-Lenz
+vector fully determine the dynamics of the system and as-
+sure its stability against chaos. The SOC introduces new
+degrees of freedom and lowers the system symmetry to
+the existence of only two integrals of motion. This sym-
+metry reduction can be seen as a SOC-generated spin-
+dependent contribution to the velocity proportional to
+the SOC constant. As a result, the system loses integra-
+bility due to the spin back action on the orbital motion
+and can demonstrate a chaotic behavior close to the sep-
+aratrix which determines the boundary between a finite
+and a delocalized motion.
+
+An experimentally realizable example of such a system
+is given by 2D excitons in semiconductor structures [12 -- 
+14]. We shall consider the classical limit of orbital motion
+corresponding to the highly excited Rydberg states of
+these excitons. Recently, it has been experimentally es-
+
+tablished that lowering of the system symmetry from the
+vacuum SO(4) to the discreet symmetry of a host crys-
+tal for three-dimensional excitons leads to a chaos even
+in the SOC absence [15 -- 17]. Using only classical argu-
+ments, here we prove that the spin-orbit coupling, being
+a lower-symmetry contribution to the system dynamics,
+can induce the chaotic motion.
+
+Two aspects of SOC-related randomness have recently
+been studied in two-dimensional harmonic potentials,
+where particle's motion is always finite. Larson et al.
+[18] studied thermalization in cold atomic gases in the
+presence of anisotropic SOC, while Marchukov et al. [19]
+examined the spectral properties in terms of the ensem-
+bles emerging in the random matrix theory.
+In addi-
+tion, a chaos-like behavior in driven SOC systems with
+[20]
+a strong confinement has been considered in Refs.
+and [21]. Conservative two-dimensional systems with in-
+teraction potentials vanishing at large distances, being
+augmented by the SOC, provide nontrivial examples of
+a classical chaotic behavior, qualitatively different from
+above settings. Motivated by possible transitions to the
+nontrivial chaotic behavior, here we study the effects of
+weak and strong SOC on the dynamics of a Kepler-like
+system, prove that such transitions indeed occur, and
+analyze different regimes of the chaotic motion.
+
+This paper is organized as follows.
+
+In Section II we
+introduce general equations and integrals of motion for
+the Kepler system with spin-orbit coupling. In Section
+III we perform perturbative analysis of the trajectories
+at a weak SOC. In Section IV the chaotic behavior at a
+sufficiently strong SOC will be presented and analyzed.
+Conclusions and relation to possible experiments will be
+given in Section V.
+
+II. EQUATIONS AND INTEGRALS OF
+
+MOTION
+
+We take the minimal Hamiltonian describing the 2D
+Kepler problem with SOC in the form H = H0 + Hso.
+
+and the corresponding length lso = 2/mα, necessary for
+electron to essentially rotate the spin.
+
+2
+
+To formulate the classical equations of motion, we ob-
+serve from Eq.
+(2) that the above anomalous velocity
+is the derivative vso = ∂Hso/∂p. For Hamiltonian func-
+tion H = H0 + Hso these equations can be obtained by
+substituting the spin components in Eq. (2) by their ex-
+pectation values ¯σi such that ¯σ2
+z = 1. This
+yields
+
+x + ¯σ2
+
+y + ¯σ2
+
+p = −e2 r
+r3 ,
+
+r =
+
+p
+
+m −
+
+α
+
+
+[z × ¯σ] ,
+
+(5)
+
+where z = (0, 0, 1) is the unit vector perpendicular to
+(xy) plane, where the motion occurs. The equations for
+spin components corresponding to the precession depen-
+dent on the particle momentum read:
+
+α m
+
+¯σx = 2
+
+¯σy = −2
+¯σz = −2
+
+α
+
+
+2 (cid:16) x −
+2 (cid:16) y +
+
+α m
+
+¯σy(cid:17) ¯σz,
+¯σx(cid:17) ¯σz,
+
+α
+
+
+α m
+2 ( x¯σx + y¯σy) .
+
+(6)
+
+Integrals of motion in this
+
+Equations (5) and (6) permit the complete classical anal-
+ysis of particle position and spin components time depen-
+dence [26]. Their direct iterative and exact numerical so-
+lutions will be used for the description of the trajectories.
+system are the en-
+ergy E, the z−component of total angular momentum
+ (L + ¯σz/2) ≡ pyx − pxy + ¯σz/2 and the length of the
+spin vector ¯σ2 = 1. The above conservation laws can be
+verified by direct calculation. The conservation of spin
+vector length is due to the spin precession with the tip
+moving over the Bloch sphere. Note that there is no in-
+tegral of motion corresponding to the Runge-Lenz vector
+specific for the Coulomb-like field in the Kepler prob-
+lem without spin-orbit coupling. Then, with the SOC
+included, the system having five coupled degrees of free-
+dom, possesses only three integrals of motion. As a re-
+sult, it exhibits an unusual chaotic behavior as we shall
+see below.
+
+Since the comprehensive description of the Kepler tra-
+
+jectories can be done with the t = 0 initial conditions
+
+r(0) = (r0, 0),
+
+p(0) = (0, p0),
+
+(7)
+
+we employ these conditions for subsequent analysis. We
+will measure the energy in e2/r0 and momentum in
+
+epm/r0 units respectively. The condition for the system
+to be in a highly excited Rydberg state is r0 ≫ 2/me2.
+In addition, in what follows we put  = m = e = 1. In
+Eq. (7), p2
+0/2 − 1 ≡ E0 is the initial energy in the SOC
+absence, which determines the trajectory shape. In this
+case, the initial angular momentum L(0) ≡p2 (1 + E0).
+Note that E0 = −1/2 determines the special case of circu-
+lar trajectory. Its special character will be demonstrated
+below. The total conserved energy is E = E0− αp0¯σx(0).
+We will vary the initial conditions by modifying the initial
+
+FIG. 1. Single-period trajectory with ¯σx = 1 at a weak SOC.
+Notations correspond to the text. Electron (e) starts to move
+at the distance r(0) from the fixed hole (h) and at t = T /2,
+where T is the rotation period, reaches the distance r(T /2).
+
+The spin-independent part is:
+
+H0 =
+
+p2
+2m −
+
+e2
+r
+
+,
+
+(1)
+
+where r = (x, y) is the electron coordinate, p is the elec-
+tron momentum (see Fig. 1), m is its mass, and e is the
+effective charge including the dielectric constant of a host
+crystal. We take the SOC term in the Rashba form [22]
+with rotational symmetry of the spectrum:
+
+Hso =
+
+α
+
+
+(pxσy − pyσx) ,
+
+(2)
+
+with α being the coupling constant [24] and σi are the
+Pauli matrices corresponding to spin 1/2. This type of
+coupling appears as a result of either spatial inversion
+asymmetry in solids [22, 23] or can be generated optically
+in cold atomic gases [7, 8].
+
+Although here we concentrate on the classical dynam-
+ics, it is instructive to make a connection with the quan-
+tum approach. Namely, we consider a system with two-
+component wavefunction in the form:
+
+ψ (r, t) = ϕ (r, t)(cid:20) cos (θ/2) eiφ
+
+sin (θ/2)
+
+(cid:21) .
+
+(3)
+
+Here ϕ(r, t) is the (spatial and temporal dependent)
+wavepacket-like envelope function and time-dependent
+angles θ and φ determine spin components as:
+
+σz = cos θ,
+
+σx = sin θ cos φ,
+
+σy = − sin θ sin φ. (4)
+Subsequently we assume the classical limit for orbital mo-
+tion, while the spin remains quantum. To be specific,
+here we characterize the orbital motion by the classical
+coordinate r and momentum p, whereas quantum spin
+defines the momentum-dependent precession [18, 23] and
+related to this precession effects, as described below.
+
+The characteristic feature of Hamiltonian (2) is the
+anomalous spin-dependent velocity [25] (see Fig. 1) pre-
+sented in the commutator form vso ≡ i[Hso, r]/ =
+α (σy,−σx) /. Two other SOC characteristics [23] of
+our interest are the spin precession with the rate 2pα/2
+
+y
+
+4
+
+3
+
+2
+
+1
+
+0
+
+-1
+
+-2
+
+σ
+x(0)=1
+
+E0 = -0.25
+
+(a)
+-3
+
+α= 0.1
+
+-2
+
+-1
+
+x
+
+0
+
+1
+
+2
+
+y
+
+4
+
+3
+
+2
+
+1
+
+0
+
+-1
+
+-2
+
+σ
+z(0)=1
+
+E0 = -0.25
+
+(b)
+-3
+
+α= 0.1
+
+-2
+
+-1
+
+x
+
+0
+
+1
+
+2
+
+FIG. 2. Trajectories for E0 = −0.25 and initial spins ¯σx(0) =
+1 (a) and ¯σz(0) = 1 (b). In both panels α = 0.1. Elliptic line
+is the trajectory for α = 0.
+
+spin: ¯σ(0) = (¯σx(0), ¯σy(0), ¯σz(0)) and study the subse-
+quent coupled spin-coordinate motion dependent on the
+initial spin vector. We shall demonstrate numerically
+that at sufficiently large α the chaotic trajectories emerge
+in the system under consideration.
+
+III. WEAK SPIN-ORBIT COUPLING:
+
+TRAJECTORY DEFORMATION
+
+We begin with the solution of equations of motion to
+describe the trajectories at weak SOC. Here we can study
+the dynamics by iterative procedure in α in Eqs. (5),(6)
+with the elliptic Kepler trajectory and time-independent
+spin as zero-order approximation. In this case the anoma-
+lous velocity has two main effects on the trajectory shape:
+(i) it shifts the position of the point r(T /2) (see Fig. 1)
+and (ii) it rotates the entire trajectory (see Appendix A
+for details). Based on the total angular momentum and
+energy conservation, we present the position of the par-
+ticle at t = T /2 as:
+
+r(T /2) =
+
+ZT /2 ∓qZ 2
+
+L2(T /2)
+
+T /2 + 2EL2(T /2)
+
+,
+
+(8)
+
+where ZT /2 ≡ 1 − αL(T /2)¯σx(T /2), L(T /2) ≡ L(0) +
+∆z, 2∆z ≡ ¯σz(0) − ¯σz(T /2), and the upper (lower) sign
+corresponds to E0 > −1/2 (E0 < −1/2). At α = 0 we
+have r(T /2) = R, where R ≡ −(E0 + 1)/E0 determines
+the limit of the trajectory in the absence of the SOC, and
+at finite α, we consider the shift r(T /2) − R. Analysis of
+Eq. (8) shows that E0 = −1/2, where 1 + 2E0L2(0) = 0,
+is the special case (see Appendix A for details), which
+should be considered separately. To demonstrate the key
+role of the initial conditions, we consider two cases which
+are strongly different in terms of the anomalous initial
+velocity.
+
+We begin with ¯σx(0) = 1, where the initial velocity
+is v(0) = (0, p − α). The first two iterations of Eqs.
+(5), (6) yield the leading terms in the spin components
+¯σz(T /2) = 2α (R + 1) and ¯σx(T /2) = 1−2α2 (R + 1)2. It
+
+3
+
+is seen that the main contribution in Eq. (8) comes from
+¯σz(T /2), which is linear in α, and we may safely disregard
+the ∼ α2 correction in ¯σx(T /2). Then, at 1 + 2E0 ≫ α,
+the linear in α correction to the position becomes:
+
+R − r(T /2) = −
+
+R
+lso
+
+1
+E0
+
+√2
+
+√1 + E0
+
+.
+
+(9)
+
+The initial condition ¯σz(0) = 1 can be considered along
+the same lines with v(0) = (0, p0) and E = E0. We
+obtain two main contributions to the shape of the trajec-
+tory: ¯σx(T /2) = −2(R + 1)/lso and ¯σz(T /2) = 1− 2(R +
+1)2/l2
+
+so, resulting at 1 + 2E0 ≫ α2 in
+R (R + 1)
+
+R − r(T /2) = −
+
+l2
+so
+
+√2
+
+√1 + E0
+
+.
+
+(10)
+
+To illustrate the deformation of the trajectories, in Fig.
+2, we present them at a moderate SOC for different initial
+conditions. The shapes of the trajectories correspond
+well to Eqs. (9) and (10). At a sufficiently strong SOC,
+corresponding to a small lso, the relevant quantities such
+as deformations and rotations, become large, providing a
+hint to possible chaotic behavior.
+
+IV. CHAOS AND ORDER FROM DISORDER
+
+AT STRONG COUPLING
+
+Having discussed the effect of the relatively weak and
+moderate SOC, we can establish a crossover from the
+weak to a strong coupling regime. The qualitative effects
+of strong SOC appear when α becomes of the order of
+the minimal Kepler velocity, vmin. For simplicity we con-
+sider the case E0 → −0. In this limit R = 1/E0 and
+L(0) = √2, therefore, vmin = √2E0 and the criterion of
+strong SOC becomes α & E0. However, there is a subtle
+effect related to the role of the initial conditions - if the
+anomalous velocity is initially zero, as in the ¯σz(0) = 1
+case, it needs some time to be developed. Taking into
+account that the spin precession yields ¯σx(T /2) ∼ αR,
+here the condition of an immediate strong effect of SOC,
+becomes α2R ∼ E0.
+Now we can determine the critical value αc, which per-
+mits ionization of the initial state and serves as a typical
+SOC value where the chaotic regime can be seen. The
+minimum of the SOC (2) eigenenergy E = −α2/2 occurs
+at p = α, and the ionization is determined by the condi-
+tion that the total energy E = E0 − αcp0¯σx(0) equals to
+the SOC eigenenergy minimum
+
+E0 − αcp0¯σx(0) = −
+
+α2
+c
+2
+
+.
+
+(11)
+
+The solution of Eq. (11) yields αc = u0 +pu2
+
+0 − 2E0,
+where u0 = p0¯σx(0), demonstrating a non-analytical de-
+pendence of αc on the initial conditions.
+
+For ¯σx(0) = 0 it is immediately seen that αc =
+
+p2  E0, and this condition is stronger than α & E0.
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+y
+
+-30
+
+2
+
+1
+
+0
+
+-1
+
+y
+
+20
+
+0
+
+y
+
+-20
+
+-40
+
+-60
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+y
+
+σ
+z(0)=1
+E0=-0.5
+α=0.95α
+
+c
+
+(c)
+
+-2
+
+-2
+
+-1
+
+0
+x
+
+1
+
+2
+
+σ
+x(0)=-1
+E0=-0.25
+(e)
+-60
+
+α=0.95α
+c
+-20
+
+-40
+
+x
+
+σ
+
+z(0)=1
+
+E0=-0.25
+
+0
+
+2
+
+1
+
+0
+
+-1
+
+y
+
+-2
+
+-2
+
+0
+
+-100
+
+y
+
+-200
+
+-300
+
+-400
+
+-400
+
+40
+30
+20
+10
+0
+-10
+-20
+-30
+
+y
+
+(d)
+
+-1
+
+0
+x
+
+1
+
+2
+
+σ
+
+x(0)=-1
+E0=-0.25
+
+(f)
+
+α=1.05α
+
+c
+
+-300
+
+-200
+x
+
+-100
+
+0
+
+σ
+z(0)=1
+E0=-0.25
+
+α=0.95α
+c
+
+σ
+x(0)=-1
+E0=-0.5
+
+(a)
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+y
+
+-30 -20 -10 0
+
+10 20 30 40
+
+x
+
+σ
+x(0)=-1
+E0=-0.5
+
+(b)
+
+-20
+
+-60 -40 -20
+
+α=1.05α
+c
+
+10
+
+σ
+
+x(0)=-0.91
+
+0
+
+y
+
+-10
+
+4
+
+α=0.46
+E0=-0.5
+
+σ
+
+x(0)=-0.90
+
+20
+
+10
+
+y
+
+0
+
+20 40 60
+
+0
+x
+
+-20
+
+-20
+
+σ
+
+x(0)=-0.92
+
+-10
+
+0
+
+x
+
+(a)
+
+10
+
+-10
+
+σ
+
+-20
+
+x(0)=-0.91
+-10
+
+(b)
+10
+
+0
+
+x
+
+σ
+z(0)=1
+E0=-0.5
+α=1.05α
+
+c
+
+FIG. 4. Trajectories at different initial spins marked near the
+lines for the parameters shown in the panel (b). Note that at
+¯σx(0) = −0.91 the trajectory is flower-like (as presented for
+t < 2 × 102). Here initial spin rotates in the (xz) plane such
+that ¯σy(0) = 0.
+
+α. To create such a trajectory (which is a consequence
+of the initial bound state ionization), one needs ¯σx(0) <
+x (0) ≡ (cid:0)E0 + α2/2(cid:1) /αp0. This equation determines
+¯σcr
+the minimal value of αc, corresponding to ¯σx(0) = −1 :
+c = −p0 +qp2
+αmin
+
+0 − 2E0 = √2(cid:16)1 −p1 + E0(cid:17) .
+
+(12)
+
+At smaller α < αmin
+SOC-induced ionization is prohibited.
+
+c
+
+the motion is always finite and the
+
+Therefore,
+
+if the total
+
+initial energy of the system
+approaches −α2/2 from below, the particle shows a fi-
+nite but long-range motion with the maximal distance
+rmax ∼ (αc − α)−1. In contrast to the conventional Ke-
+pler problem, where the motion remains elliptic when the
+negative total energy approaches zero, here it can become
+In general, condition E = −α2/2 determines
+chaotic.
+a multidimensional separatrix in the phase space aug-
+mented by spin subspace. Note that ionization condition
+E > −α2/2 is a necessary, but not sufficient one - even
+when it is satisfied, the motion can still be finite, making
+a qualitative difference from the behavior without SOC.
+Indeed, at α = 0, when L is the integral of motion, the
+dynamics can be reduced to one-dimensional form with
+the effective potential energy Ueff(r) = −1/r + L2/2r2
+[9] explicitly including L. This one-dimensional mapping
+results in E0 > 0 being both the necessary and sufficient
+condition for the ionization. For nonzero α such a map-
+ping cannot be done and the condition E0 > −α2/2 is
+not sufficient anymore.
+Now we provide evidence for the chaotic behavior
+based on numerical solutions of Eqs. (5) and (6). The
+particle trajectories near the separatrix corresponding to
+the critical SOC are presented in Fig. 3, demonstrating a
+variety of behaviors. The minimal and maximal distance
+reached by the particle in this case are determined by the
+conservation laws. Figure 3, demonstrating all possible
+behaviors of the SOC-augmented Kepler problem close
+to the critical coupling, can be considered as the main
+result of our analysis. These behaviors include:
+
+(g)
+
+-30
+
+-30 -20 -10
+
+α=0.95α
+c
+10
+
+0
+x
+
+(h)
+
+α=1.05α
+c
+
+20
+
+30
+
+-20 -10 0 10 20 30 40 50
+
+x
+
+αc = √2(1 −
+
+FIG. 3. The electron trajectories in the exciton with SOC
+for energies E0 = −0.5 ((a)-(d)) and E0 = −0.25 ((e)-(h)) for
+the parameters shown in the panels. Left and right columns
+correspond to α = 0.95αc and α = 1.05αc, respectively. Here
+−2E0 for
+¯σz(0) = 1. Panels (c) and (d) demonstrate that these initial
+conditions belong to a domain of stability with respect to
+SOC-induced chaotization. In all the panels except (c), time
+t < 103; in the panel (c) t < 2 · 102 for a better resolution of
+the trajectory.
+
+√1 + E0) for ¯σx(0) = −1 and αc = √
+
+Therefore, even when the trajectory is strongly modified
+by the Rashba coupling, the motion can still be finite.
+This difference can be seen in the opposite limit as well:
+
+E0 → −1 yields p0 → 0 with αc = √2 ≫ p0.
+
+We now address the possibility of occurrence of infinite
+trajectories, that is of the exciton ionization, at a given
+
+_
+
+_
+
+_
+
+FIG. 5.
+Different regimes of motion dependent on the
+initial spin component ¯σx(0) exemplified by xz-plane rota-
+tion for α = 0.46 and 0.6.
+In this case ¯σy(0) = 0 and
+¯σz(0) = p1 − ¯σ2
+x(0). Dark (blue in color version) parts cor-
+respond to a regular finite motion, while gray (light blue)
+parts correspond to chaotic one, either localized or delocal-
+ized. Thus, the bars show a gradual development of the chaos-
+related features following the regular motion. The necessary
+condition (boundary, dashed vertical lines) for ionization is
+given by ¯σcr
+z (0) = −0.86
+and ¯σcr
+x (0) = −0.53 for α = 0.46 and α = 0.6 respectively. A
+narrow domain of a regular motion appears at ¯σx(0) < ¯σcr
+x (0).
+These domains are determined by ¯σx(0) ∈ (−0.915, −0.905)
+and ¯σx(0) ∈ (−0.64, −0.6) for α = 0.46 and α = 0.6 respec-
+tively.
+
+z (0) defined above Eq. (12) with ¯σcr
+
+1) strongly entangled chaotic trajectories with "protu-
+berances" in Figs. 3(a), (b), (e), (g), and (h), as expected
+from the fact that the number of the integrals of motion
+is less than the number of the degrees of freedom;
+
+2) stable unperiodic orbits filling regular ring-like areas
+in the (xy)−plane in Figs. 3(c) and (d). This behavior re-
+sembles the trajectories in a system with a non-Coulomb
+potential U (r) as presented, e.g., in Ref. [9], demonstrat-
+ing a stability point in the Kepler problem with SOC, and
+3) relatively simple trajectories corresponding to the
+
+exciton ionization in Fig. 3(f).
+
+At large distances, r ≫ πlso, the influence of Coulomb
+potential on the velocity is negligible compared to that of
+the spin-orbit coupling. Hence, in this case the electron
+motion is almost completely defined by SOC. Latter fact
+permits analytical description of both the trajectories like
+rare protuberances, where electron still returns to the
+chaotic region with r . πlso, and ionization ones with
+r → ∞. Without loss of generality, here we concentrate
+on the case of the particle characterized by weakly time-
+dependent momentum, which we consider for definiteness
+to be constant in time as p = p (cos θ, sin θ). The total
+energy now consists of two constant terms: the kinetic
+energy p2/2 and the SOC-related contribution
+
+ǫso = α (px ¯σy(0) − py ¯σx(0)) .
+
+(13)
+
+Hence, the precession of the SOC-induced spin compo-
+nent parallel to the momentum p ¯σ reads:
+
+p ¯σ(t) = p ¯σ(0) cos(cid:0)2αpt(cid:1) , t ≡ t − t0,
+
+(14)
+
+where t0 is the initial time for the constant-p motion. By
+solving these equations we obtain the velocities vx(t) =
+
+px + α¯σy(t) and vy(t) = py − α¯σx(t):
+
+vx(t) = px + αh¯σy(e0)f1(t) − ¯σx(e0)f2(t)i ,
+vy(t) = py − αh¯σx(e0)f3(t) − ¯σy(e0)f2(t)i ,
+
+5
+
+(15)
+
+where f1(t) = 1−2 sin2 θ sin2 φ, f2(t) = sin 2θ sin2 φ, and
+f3(t) = 1 − 2 cos2 θ sin2 φ with φ ≡ αpt. As we can see
+from Eqs.(15), the motion has an oscillatory character
+corresponding to Fig. 3.
+
+Equations (15) have an interesting limit. Consider par-
+ticle with momentum p = α. Then, the energy E =
+α2/2+α2 (cos θ¯σy(0) − sin θ¯σx(0)) has the minimum E =
+−α2/2 at ¯σy(0) = − cos θ, ¯σx(0) = sin θ. Slightly away
+from the minimum by taking: ¯σy(0) = − cos (θ + η) ,
+¯σx(0) = sin (θ + η) with small η ≪ 1 we obtain vx =
+αη sin θ cos(cid:0)2α2t(cid:1) and vy = −αη cos θ cos(cid:0)2α2t(cid:1) . Here
+the nonzero velocity appears only due to deviation of the
+energy from −α2/2 with E = −α2(cid:0)1 − η2(cid:1) /2. This cor-
+
+responds to small but fast oscillations in the "protuber-
+ances" in Fig. 3. These oscillations are an extreme mani-
+festation of a Zitterbewegung [27, 28] typical for spin-orbit
+coupled systems.
+
+An important characteristic feature of a chaotic motion
+such as strong dependence on the initial conditions is
+presented in Fig. 4. It clearly demonstrates a transition
+from chaotic to confined regular trajectory (Fig. 4(a))
+in the stability domain and vice versa (Fig. 4(b)) at
+small variations in the initial spin direction. The stability
+point here is approximately ¯σx(0) = −0.91. Note that
+the chaotic trajectories reported in Fig. 4(a) and (b)
+(corresponding to ¯σx(0) = −0.9 and 0.92 respectively)
+are qualitatively similar to those in Fig. 3(b) since the
+value of α is larger than the critical αc obtained with Eq.
+(11) for both initial spin orientations.
+
+In general, the trajectory shape depends on the SOC
+strength and the entire set of the initial conditions, mak-
+ing the analysis very cumbersome. To obtain a semi-
+quantitative pattern of different regimes of the motion,
+the domain of initial conditions in Fig. 4 can be extended
+to the entire ¯σx(0) = (−1, 1) domain. The results are pre-
+sented in Fig. 5 for two values of the constant α. This
+Figure shows a gradual development of chaos-related fea-
+tures such as increasing entanglement of the trajectories
+and length of the protuberances following the regular be-
+havior and can be regarded as a "stability diagram" of
+the system under consideration. Another important fea-
+ture, which already follows from Fig. 4, is a reentrance of
+regular trajectories from chaotic ones and vice versa near
+the threshold values ¯σcr
+x (0). Latter effect can be consid-
+ered as "order from disorder" driven by variation in the
+initial spin direction.
+
+V. CONCLUSIONS
+
+We have studied the emergence of chaos in the clas-
+sical Kepler problem with the Rashba spin-orbit cou-
+pling. Such systems can be experimentally realized, for
+
+instance, in highly excited Rydberg-like states of two-
+dimensional excitons in semiconductor structures. At a
+weak Rashba coupling, corresponding to small interac-
+tion constants α, the elliptic Kepler trajectories are mod-
+ified in shape and orientation and densely fill a part of the
+particle motion plane. This behavior is somewhat simi-
+lar, although not identical, to that of the Kepler problem
+trajectories in the potentials −1/rb, where b > 0 and
+b 6= 1 [9]. With the increase in α, the deformations of
+the trajectories become strong and in the vicinity of the
+critical αc corresponding to the exciton breakdown, the
+trajectories can become chaotic. Typical chaotic trajec-
+tory can be described as a highly entangled path in the
+vicinity of the initial position with rare long protuber-
+ances increasing in length at approaching the ionization
+threshold. At a sufficiently large α, the SOC assisted ion-
+ization becomes possible and the bound state disappears.
+The reason for the chaos lies in the fact that the system
+lost integrability since in possesses only to integrals of
+motion for its four degrees of freedom. Dynamically, this
+effect is clearly seen in the equations of motion including
+the anomalous spin-dependent velocity term.
+
+As typical for a chaotic system, its dynamics exhibits
+a critical dependence on the initial conditions, demon-
+strating the transition from a chaotic to a regular be-
+havior and vice versa caused by very small variations in
+the initial spin orientation. The latter feature could be
+referred to as reentrant "order-from-disorder" transition.
+Our results can have important implications for the prop-
+erties of semiclassical Rydberg-like states of excitons in
+two-dimensional structures, where a chaotic regime due
+to spin-orbit coupling may be developed.
+
+To make relation to possible observations, we mention
+that the typical energies of highly excited Rydberg 2D ex-
+
+6
+
+citons in semiconductor quantum wells are of the order of
+0.1 meV and the size is around 100 nm [29]. Therefore, a
+typical length of the chaotic protuberances is about 103
+nm (1 µm) and a typical time the electron spends in a
+long protuberance is about a nanosecond. We mention
+here several realizations, where predicted chaotic trajec-
+tories can play a role. For example, they can be relevant
+for interaction between distant 2D excitons. Indeed, the
+long-range chaotic trajectories presented in Fig. 3 are
+characterized by large dipole moments er(t), enhancing
+long-range electric fields of the excitons. The chaotic tra-
+jectories of electrons from different excitons can interlace,
+which alters the exciton-exciton interaction leading either
+to their ionization or to a modified lateral motion. In ad-
+dition, this chaotic behavior can strongly influence relax-
+ation of electron energy in the Rydberg excitons by emis-
+sion of phonons. Instead of a process with well-defined
+time dependence, the energy relaxation from a highly ex-
+cited to the ground state may become chaotic and largely
+unpredictable. Moreover, the electrons at those remote
+trajectories, can eventually be trapped in distant electro-
+static fields (e.g. Ref. [30]) or at the system boundaries.
+
+ACKNOWLEDGMENTS
+
+E.Y.S. acknowledges the support by the Spanish Min-
+istry of Economy, Industry, and Competitiveness and the
+European Regional Development Fund FEDER through
+Grant No. FIS2015-67161-P (MINECO/FEDER), and
+Grupos Consolidados UPV/EHU del Gobierno Vasco
+(IT-986-16).
+
+Appendix A: Trajectory shape at weak spin-orbit
+
+coupling
+
+Based on the energy and angular momentum conservation, we calculate the particle's position at t = T /2. At this
+
+time instant, the energy can be written as:
+
+E =
+
+p2 (T /2)
+
+2
+
++ αp (T /2) ¯σx(T /2) −
+
+1
+
+r (T /2)
+
+, p(T /2) =
+
+L(T /2)
+r(T /2)
+
+.
+
+The total angular momentum conservation yields L (T /2) = L(0) + (¯σz(0) − ¯σz(T /2)) /2. Thus, we obtain:
+
+(L(0) + ∆z)2
+
+r2 (T /2)
+
++
+
+2
+
+r (T /2)
+
+(α (L(0) + ∆z) σx(T /2) − 1) − 2E = 0,
+
+(A1)
+
+(A2)
+
+where ∆z ≡ (¯σz(0) − ¯σz(T /2)) /2. The solution of (A2) with respect to r(T /2) yields
+
+r (T /2) =
+
+1 − α (L(0) + ∆z) ¯σx(T /2) ∓q(α(L(0) + ∆z)¯σx(T /2) − 1)2 + 2E (L(0) + ∆z)2
+
+(L(0) + ∆z)2
+
+,
+
+(A3)
+
+where upper (lower) sign corresponds to E0 > −1/2 (E0 < −1/2). This equation is tantamount to Eq. (8) of the
+main text.
+Now we apply Eq. (A3) to the initial conditions ¯σx(0) = 1, where E = E0−αp2 (1 + E0), and L(0) =p2 (1 + E0).
+
+The equations for spin precession with respect to anomalous velocity read:
+
+¯σx = 2α (vx − α¯σy) ¯σz;
+
+¯σy = −2α (vy + α¯σx) ¯σz;
+
+¯σz = −2α (vx ¯σx + vy ¯σy) .
+
+(A4)
+
+α=0.5α
+c
+
+2
+
+1
+
+0
+
+-1
+
+y
+
+α=0.9α
+
+c
+
+10
+
+5
+
+y
+
+0
+
+15
+
+10
+
+y
+
+5
+
+0
+
+-5
+
+7
+
+E0=-0.7
+σ
+x(0)=-1
+α=1.1α
+c
+
+(a)
+
+-2
+
+-2
+
+-1
+
+0
+x
+
+-5
+
+(b)
+
+1
+
+2
+
+-5
+
+0
+
+x
+
+5
+
+-10
+
+10
+
+(c)
+0
+
+10
+
+x
+
+20
+
+FIG. 6. Particle trajectory for different values of SOC constant as shown in the panels. (a) Moderate α with the trajectory
+filling the allowed part of the (xy) plane, (b) a chaotic trajectory at α close to but smaller than the critical value, and (c)
+ionization trajectory at α > αc. In all panels E0 = −0.7 and initial spin ¯σx(0) = −1.
+
+We begin with the time dependence of ¯σz(t) and obtain
+
+¯σz(t) = −2α (x(t) − x(0)) ≡ −2α (x(t) − 1) ,
+
+(A5)
+
+resulting in ¯σz(T /2) = 2α (R + 1) and L(T /2) = L(0)−σz(T /2)/2 = L−α (R + 1) . Second iteration yields ¯σx(T /2) =
+1 − 2 (α (R + 1))2 , providing the contribution which is not important for the linear in α approximation. Assuming
+E0 > −1/2, for this case we obtain
+
+r (T /2) =
+
+1 − α (L(0) − α (R + 1)) −q(α (L(0) − α (R + 1)) − 1)2 + 2E (L(0) − α (R + 1))2
+
+(L(0) − α (R + 1))2
+
+.
+
+(A6)
+
+Equation (9) of the main text immediately follows from the above Eq. (A6).
+
+Now we express (α (L(0) − α (R + 1)) − 1)2 + 2E (L(0) − α (R + 1))2 in terms of the energy E0 and obtain
+
+(α (L(0) − α (R + 1)) − 1)2 + 2E (L(0) − α (R + 1))2 =
+= (1 + 2E0)2 − 2αL(0) (1 + 2E0) + α2(cid:18)p2 (1 + E0) − 8
+
+1 + E0
+
+E0 (cid:19) + O(α3).
+
+(A7)
+
+Therefore, at 1 + 2E0 = 0, the corresponding circular trajectory cannot be treated perturbatively and the condition
+1 + 2E0 ≫ α is required for the applicability of the perturbation theory at given α ≪ 1.
+
+Appendix B: Trajectories at E0 < −1/2.
+
+In the main text, we have considered three principal realizations of trajectories with E0 ≥ −1/2 as shown in Fig.3
+there. Here we complement the corresponding analysis by typical results for E0 < −1/2 at different values of the
+SOC constant. Figure 6 shows that the behavior of trajectories corresponds to the chaos emergence near the critical
+αc = √2(1 − √1 + E0), followed by exciton ionization with α increase. This result follows from the general analysis
+
+in the main text.
+
+[1] M. C. Gutzwiller, Chaos in Classical and Quantum Me-
+
+[3] F. Haake, Quantum Signatures of Chaos, 3rd ed.
+
+chanics (Springer-Verlag, New York, 1990).
+
+(Springer-Verlag, Berlin/Heidelberg, 2010).
+
+[2] L. E. Reichl, The Transition to Chaos. Conservative
+Classical Systems and Quantum Manifestations, 2nd ed.
+(Springer-Verlag, New York, 2004).
+
+[4] H.-J. Stockmann, Quantum Chaos: An Introduction
+
+(Cambridge University Press, Cambridge, U.K., 1999).
+
+[5] Classical and Quantum Hamiltonian Systems, edited by
+
+8
+
+H. Araki, Lecture Notes in Physics Vol. 93 (Springer-
+Verlag, Berlin, 1979).
+
+[6] Spin Physics in Semiconductors Springer Series in Solid-
+State Sciences, Ed. by M. I. Dyakonov, Springer (2008).
+[7] V. Galitski and I. B. Spielman, Nature 494, 49 (2013).
+[8] H. Zhai, Int. J. Mod. Phys. B 26, 1230001 (2012).
+[9] L. D. Landau and E.M. Lifshitz, Classical Mechanics,
+Third Edition: Volume 1 (Course of Theoretical Physics
+(1976).
+
+Mol. and Opt. Phys. 47, 195303 (2014).
+
+[20] D. V. Khomitsky, A. I. Malyshev, E. Ya. Sherman, and
+
+M. Di Ventra, Phys. Rev. B 88, 195407 (2013).
+
+[21] L. Chotorlishvili, Z. Toklikishvili, A. Komnik, and J. Be-
+
+rakdar, J. Phys. Condens. Matter. 24 255302 (2012).
+
+[22] Yu. A. Bychkov and E.I. Rashba, JETP Lett. 39, 78
+
+(1984).
+
+[23] I. Zuti´c, J. Fabian, and S. Das Sarma, Rev. Mod. Phys.
+
+76, 323 (2004).
+
+[10] D.G.W. Parfitt and M.E. Portnoi, Journ. of Math. Phys.
+
+[24] Although α can be either positive or negative, we con-
+
+43, 4681 (2002).
+
+sider here only α > 0 realization.
+
+[11] H. Friedrich and H. Wintgen, Physics Reports 183, 37
+
+[25] E. N. Adams and E. I. Blount, J. Phys. Chem. Solids 10,
+
+(1989).
+
+286 (1959).
+
+[12] M. V. Durnev and M. M. Glazov, Phys. Rev. B 93,
+
+155409 (2016)
+
+[13] D. V. Vishnevsky, H. Flayac, A. V. Nalitov, D. D. Sol-
+nyshkov, N. A. Gippius, and G. Malpuech, Phys. Rev.
+Lett. 110, 246404 (2013).
+
+[14] A. A. High, A. T. Hammack, J. R. Leonard, S. Yang, L.
+V. Butov, T. Ostatnick´y, M. Vladimirova, A. V. Kavokin,
+T. C. H. Liew, K. L. Campman, and A. C. Gossard, Phys.
+Rev. Lett. 110, 246403 (2013).
+
+[15] M. Assmann, J. Thewes, D. Frohlich, and M. Bayer, Nat.
+
+Mater. 15, 741 (2016).
+
+[16] E. A. Ostrovskaya and F. Nori, Nat. Mater. 15, 702
+
+(2016).
+
+[17] F. Schweiner, J. Main, and G. Wunner, Phys. Rev. E 95
+
+(2017).
+
+[18] J. Larson, B. M. Anderson, and A. Altland, Phys. Rev.
+
+A 87, 013624 (2013).
+
+[19] O.V. Marchukov, A.G. Volosniev, D.V. Fedorov, A.S.
+Jensen, and N.T. Zinner, Journal of Physics B: Atomic,
+
+[26] The role of the modified position operator for macro-
+scopic spin effects in two-dimensional electron systems
+was studied in X. Bi, P. He, E. M. Hankiewicz, R. Win-
+kler, G. Vignale, and D. Culcer, Phys. Rev. B 88, 035316
+(2013).
+
+[27] J. Schliemann, D. Loss, and R. M. Westervelt, Phys. Rev.
+
+Lett. 94, 206801 (2005).
+
+[28] R. Winkler, U. Zulicke, and J. Bolte, Phys. Rev. B 75,
+
+205314 (2007).
+
+[29] P. Harrison and A. Valavanis, Quantum Wells, Wires and
+Dots: Theoretical and Computational Physics of Semi-
+conductor Nanostructures (John Wiley & Sons, Ltd.,
+2016)
+
+[30] A. A. High, A. K. Thomas, G. Grosso, M. Remeika, A.
+T. Hammack, A. D. Meyertholen, M. M. Fogler, L. V.
+Butov, M. Hanson, and A. C. Gossard, Phys. Rev. Lett.
+103, 087403 (2009).
+
+

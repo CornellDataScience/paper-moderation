@@ -1,0 +1,418 @@
+
+Voltage assisted asymmetric nanoscale wear on
+ultra-smooth diamond like carbon thin films at high
+sliding speeds
+Sukumar Rajauria1*, Erhard Schreck1, and Bruno Marchon1
+
+1HGST, a Western Digital Company, Recording Sub System Staging and Research, San Jose, CA 95135 USA.
+*corresponding.sukumar.rajauria@hgst.com
+
+ABSTRACT
+
+The understanding of tribo- and electro-chemical phenomenons on the molecular level at a sliding interface is a field
+of growing interest. Fundamental chemical and physical insights of sliding surfaces are crucial for understanding
+wear at an interface, particularly for nano or micro scale devices operating at high sliding speeds. A complete in-
+vestigation of the electrochemical effects on high sliding speed interfaces requires a precise monitoring of both the
+associated wear and surface chemical reactions at the interface. Here, we demonstrate that head-disk interface in-
+side a commercial magnetic storage hard disk drive provides a unique system for such studies. The results obtained
+shows that the voltage assisted electrochemical wear lead to asymmetric wear on either side of sliding interface.
+
+Introduction
+Wear is broadly classified in two categories: physical wear and progressive wear. Physical wear is further classified as adhesive,
+fatigue and abrasive wear which all lead to the formation or transfer of material across the sliding interface.1 -- 6 At macro or
+micro scale it follows Archard's law describing fracture and plastic deformation with wear volume being proportional to both
+the applied load and sliding distance.7 -- 9 Such phenomena lead to catastrophic wear and are rare in nanoscale devices where the
+progressive chemically assisted wear is likely to be dominant. Recently observed nanoscale wear showed that stress-assisted
+chemical reactions occur through an atom-by-atom process.10 -- 14 In chemical assisted wear, environmental species like oxygen
+and humidity play a critical role. For instance, oxygen can readily chemisorb on carbon surfaces, leading to surface oxides
+such as carbonyl groups, thereby depleting the carbon surface during thermal desorption.15 -- 21 In addition to environmental
+species, the chemical potential across the sliding interface is expected to affect the surface chemical reaction rates. On the
+macroscale level many studies were conducted to understand the impact of chemical potential on surface oxidation,22 -- 24 but at
+the nanoscale a quantitative understanding of its mechanism and impact on wear appears to be little understood.
+
+A complete investigation of the electrochemical effects on high sliding speed interfaces requires a precise monitoring of
+both the associated wear and surface chemical reactions at the interface. The head-disk interface inside a commercial magnetic
+storage hard disk drive provides a unique system for such studies. In a hard disk drive, the head has an embedded micro-scale
+heater which produces through thermal expansion a well-defined mechanical protrusion. This allows to adjust the head-to-disk
+interference level within sub-nanometer precision over a contact area of several square micrometers. The relative sliding speed
+between head and disk ranges from 10-40 m/s. It is worth noticing here that while the vertical spacing is of the same order
+of various AFM based studies, the sliding speed is nearly six orders of magnitude higher, thus allowing a unique set-up for a
+systematic study of nanoscale wear at high sliding speeds. Interfering surfaces of the head and the disk are coated with an
+amorphous diamond like carbon which has exceptional mechanical properties like low friction and wear rate.25 -- 27
+
+In this letter, we report the precise monitoring of both the carbon overcoat wear and the corresponding interfacial current on
+the nanoscale high sliding speed interface. Carbon overcoat wear is monitored and calibrated using the embedded micro-heater
+power. The interface current between the head and the disk monitor the rate of electrochemical oxidation of the carbon overcoat.
+We show that the interface current decay sharply with time indicating the chemical passivation of the surface carbon dangling
+bonds that are created while sliding. This unique approach provides an in-depth understanding of the electrochemically assisted
+wear at high sliding speeds which until now has never been applied to such devices.
+
+Results
+A typical head-disk interface setup features the head flying on top of the disk similar to the one studied in Ref.6, 28 The disk
+is fabricated by depositing a magnetic multilayer film structure onto a glass substrate, then coated with 3 nm amorphous
+
+nitrogenated carbon (protective overcoat layer), and finally covered with a molecular layer of perfluoropolyether polymer
+lubricant (∼ 1 nm thick). The electrically conductive ceramic substrate head is also coated with 1.4 nm of diamond like carbon
+on top of a 0.3 nm Silicon based adhesive layer, making the head and the disk interface a carbon-lubricant-carbon sliding
+interface. The disk facing head surface is carefully shaped through etching such that while flying on top of the disk an airbearing
+lift force is generated that keeps it afloat over the disk in the nanometer range.29, 30 The linear sliding speed in the described
+experiments is set to 10 m/s. The initial clearance (physical gap) between the head and the disk is typically 10 nm. Clearance is
+controlled precisely using the embedded micro-heater in the head.31, 32 We estimate the wear depth by continuous monitoring
+of the micro-heater power and later verified the wear using AFM, scanning electron microscope (SEM) and Auger electron
+microscopy (Auger).33 Contact between head and disk is detected using an acoustic emission (AE) sensor.34
+
+Figure 1. Simultaneous measurement of interfacial current and overcoat wear: (a) Blue and Red dots represent the
+rapid decay of the interfacial current between the head and the disk with -1 V and +0.8 V applied on head. Dashed line is a fit
+to Eq. 1. Inset shows the associated charge transfer for the two polarities. (b) Blue and Red dots show the simultaneous in-situ
+measurement of overcoat wear depth as a function of time. (c), (d) Shows the schematic cartoon of the wear on head and disk
+overcoat for positive and negative voltage on the head. Clearance between head and disk is controlled precisely using the
+embedded micro-heater in the head.
+
+While in operation, a voltage is applied directly to the head overcoat while the disk was electrically grounded. Voltage
+difference across the interface decrease the initial flying clearance, which is symmetric to 0 V. Variation in initial flying
+clearance across various applied voltages here is estimated to be around 3% of the initial flying clearance (see supplementary
+Figure S1) and part-to-part variation in initial flying clearance is estimated to be around 5%. Interfacial current was measured
+across the interface. The load is set using the micro-heater design. Air bearing simulations estimate the normal load to increase
+by 0.25 mN/mW of excess heater power (Air bearing simulation using HGST internal code). Uncertainty due to variation in
+initial flying clearance is estimated to change the contact force by 10%. Excess heater power is defined as excess power applied
+to the micro-heater after head-to-disk contact was detected. Figure 1a shows the interfacial current at two applied voltages
+of +0.8 V and -1 V on two heads under a normal load condition of 2.5 mN. For both polarities, the interfacial current at head
+disk interface decay with time. For further insight, an in-situ monitoring of the wear is desired to gain better insight into the
+impact of electrochemical oxidation during sliding. The head disk interface has a unique feature with the micro-heater power
+calibrated precisely to measure the head overcoat wear depth in a continuous manner during the experiment (see Supplementary
+Information for more detail).6 Figure 1b shows the wear depth profile of the head carbon overcoat for the respective voltage
+condition as a function of time. For positive voltage, the 0.3 nm thin carbon overcoat wears out within 3 second of intimate
+head disk contact (see red dots in Figure 1b).
+
+We associate the rapid decay in current to the electrochemical oxidation of the carbon overcoat, with voltage polarity
+governing whether the head or disk is undergoing oxidation. It is worth mentioning that similar rapid decay in current has
+previously been observed in macroscopic systems such as the carbon based fuel cell.22, 23 In an acidic environment, the current
+across the fuel cell decays rapidly with time across all potentiostatics. The electrochemical oxidation of carbon in fuel cell
+is written as: C + 2H2O → CO2 + 4H+ + 4e−. Empirically, the measured oxidative electrochemical current is adequately
+
+2/9
+
+Figure 2. Head overcoat wear depth: (a) Shows the wear depth profile as a function of sliding distance under an applied
+bias of -1 V and +1 V on the head overcoat. (b) Shows the wear depth profile of the head overcoat wear as a function of
+interfacial voltage on the head under different environment conditions.
+
+represented by a simple power law expression:
+
+i = kt−n + io
+
+(1)
+
+where t is the time, i is the specific current, k is the rate parameter which is a function of both the temperature and potential, n is
+the time decay exponent, and io is the ohmic current. This decay in current with time is mainly attributed to two competing
+parallel reactions involving one to passivate the surface and another to oxidize the carbon producing carbon dioxide CO2. Eq.
+(1) fits the interfacial current data in Figure 1a well. This good agreement demonstrates the surface passivation dominated
+electrochemical oxidation of the carbon overcoat is an important mechanism at the high sliding speed interface. In a head-disk
+interface both the head and disk have a carbon overcoat. The head is coated with FCAC (field cathodic arc carbon) carbon
+on top which is more resistant than the nitrogenated carbon present on the disk.35 -- 37 The voltage polarity solely determines
+which surface is undergoing electrochemical oxidation. The inset of Figure 1a shows the associated net charge transfer in the
+electrochemical reaction for the negative and positive voltage. Charge associated mass transfer is driven more by the negative
+voltage. We associate it with electrochemical oxidation on the disk as nitrogenated disk carbon is tribochemically less stable
+than FCAC head carbon. The associated wear or weight loss due to electrochemical oxidation is given by:
+
+Weightloss =
+
+qM
+4F
+
+(2)
+
+where q is the integrated total charge transfer across the interface, M is the molecular weight, and F is the Faraday constant.
+The factor of four assumes the number of electrons transferred in the head overcoat reaction is similar to the fuel cell oxidation
+case. Typically the area of contact on the head overcoat due to the heater bulge is around 10 µm2. For positive voltage, Eq. 2
+estimates the weight loss of head overcoat to 8.75.10−18 kg which corresponds to a wear depth of around 0.3 nm. This is in
+excellent agreement with the measured wear depth (see red dots in Figure 1b), thus confirming the electrochemical oxidation of
+carbon overcoat as the dominant wear mechanism. For negative voltages, no head overcoat wear is observed (see blue dots in
+Figure 1b). Here the carbon overcoat on the disk undergoes electrochemical wear, and the head carbon remains intact, and
+leading to almost no wear under the same loading force conditions. The comparative volumetric loss for two polarities is more
+for positive bias, which results in high wear volume on disk overcoat. However, the overcoat wear on disk is diluted over a
+large area leading to a negligible wear depth in comparison to a localized wear on head where it could be quantified using
+AFM, SEM and Auger (see supplementary Figure S3 and Figure S4).33, 38, 39
+
+Figure 2a shows the head overcoat wear as a function of sliding distance on the same head-disk interface. No head overcoat
+wear is observed for the first 1400 m sliding distance under an applied bias of -1 V. As the polarity is reversed to +1 V, the wear
+rate increases sharply. This behavior exemplifies clearly that the voltage leads to asymmetric wear on head overcoat.
+
+Environmental effects on electrochemical wear
+To gain further insight in the involved electrochemical process, we now turn to measurements in a controlled environment. The
+measurements are performed in an enclosed humidity controlled continuous flow set-up (as shown in Figure 3a). The chamber
+
+3/9
+
+is connected to high purity gases (Nitrogen or dry Air) and the percentage of oxygen and humidity is monitored using gas
+sensors placed inside.
+
+Figure 2b shows the head overcoat wear depth as a function of head and disk interfacial voltage under atmospheric nitrogen
+condition with different relative humidity. The head overcoat undergoes the same wear cycle at each interfacial voltage and
+environment condition. The head overcoat wear depth is measured on an unused and pristine location on a disk after sliding
+on it for 3000 m in intimate contact. It shows the importance of humidity on the head overcoat wear profile. At high relative
+humidity(RH) of 45%, the head overcoat wear is not symmetric to the interfacial voltage. Positive voltage leads to high overcoat
+wear on the head, and negative voltage significantly suppresses the head overcoat wear. It is consistent with the overcoat wear
+as observed in Figure 1b. The impact of interfacial voltage polarity on the head overcoat reduces as the humidity content in the
+environment decreases. At low RH of 7% the overcoat wear is very high and insensitive to voltage polarity. We attribute the
+high wear to the slower tribochemical passivation of the dangling -OH bond on the surface at low humidity conditions.21 The
+interfering surfaces are sliding at high speeds (almost six orders of magnitude faster than AFM), potentially leading to high
+flash temperatures and posing a greater challenge to stability of carbon under dry conditions.
+
+Figure 3. Environment control: (a) Shows the set-up schematic of the high sliding speed head-disk interface in an
+environmental control chamber. (b) Black, Red and Blue dots represent the rapid decay of the interfacial current in dry
+Nitrogen, dry Air and wet Nitrogen environment conditions. The measurements are done at a normal load of 3.75 mN with -1.3
+V applied on the head overcoat. Dashed line is fit to Eq. 1. (c) Shows the associated charge transfer for the three environment
+conditions.
+
+To understand the complex electrochemical reaction, we investigate the effect of environmental conditions on the passivation
+process. The involved electrochemical reaction involves two competing parallel reactions: one to oxidize the carbon to produce
+carbon dioxide CO2 leading to current in the circuit and another to passivate the surface leading to reduction in current. Figure
+3b shows the interfacial current time decay at the head disk interface at -1.3 V applied voltage on the head under a normal
+load of 3.75 mN for three environmental conditions: dry nitrogen (black), dry air (red) and wet nitrogen (blue). The two dry
+conditions have RH¡6% and wet air has RH=40%. Compared to the two dry (nitrogen and air) conditions, the current under the
+wet nitrogen condition starts at lower value and saturates earlier, demonstrating the effectiveness of water in passivating the
+surface. Among the two dry case (nitrogen and air), air has 20% atmospheric oxygen. As observed, molecular oxygen also
+contributes to surface passivation. Figure 3c shows the integrated charge transfer across the interface for the three environmental
+conditions. It shows that both humidity and molecular oxygen passivate the carbon overcoat with the former being more
+effective.
+
+Friction under electrochemical wear
+In addition to an in-situ monitoring of wear and interfacial current, a measurement of the frictional properties is also desired to
+gain further insight into surface modification during sliding. The friction force between the head and the disk is also measured
+under a normal load condition. A calibrated strain gauge was instrumented to measure the friction force (in the sliding direction)
+between the head and the disk interface. The frictional force at an interface is written as, F = µL + FA, where F is the total
+friction at the interface, µ the non-dimensional coefficient of friction, L the applied normal load, and FA the adhesion component
+of friction.40 -- 42 Figure 4 shows the delta friction force as a function of normal load when applied -1 V and +1 V on the head
+
+4/9
+
+overcoat. Here, we have subtracted the friction contribution at low load (=1.25 mN) from all other load conditions to measure
+delta friction force. Dashed line is the linear fit with slope being the coefficient of friction. For positive voltage cycle on
+head, the friction coefficient is 0.4 in comparison to 0.2 for negative voltage cycle on the head. This further demonstrates the
+importance of the electrochemical activity on the carbon overcoat during sliding is determining the friction properties and long
+term durability of the overcoat.
+
+Figure 4. Frictional properties under an applied voltage: Shows the delta friction force as a function of normal load under
+a repetitive cycle of applied +1 V and -1 V on head. Dashed line is the linear fit with slope being the friction coefficient.
+
+Chemical marking of contact location
+As a practical application of surface passivation, it was used to chemically mark the disk overcoat surface. Intentional contacts
+at two distinct tracks (radius 21 mm and 23 mm on disk) were made for 3 seconds under a normal load of 3.75 mN at the head
+disk interface. The head is held at -1 V with respect to the disk. Figure 5b shows the decay in the interfacial current with the
+same head at two distinct tracks. Once the head passivates the first track on disk, the initial current on the new track is similar to
+the initial current of the previously passivated track. This further shows that for negative head voltages, the surface passivation
+dominated the electrochemical activity on the disk leaving the head in pristine condition. We used the same head to scan probe
+the electrical conductivity of the complete disk. Figure 5c shows the interfacial current as probed by the same head at different
+tracks. The electrical current on the passivated track is found to be significantly lower than the untreated area of the disk surface.
+We believe that this surface passivation of the carbon overcoat can have significant applications for high speed lithography. It
+is worth mentioning that recently AFM has been used to perform similar surface passivation of graphitic surfaces but AFM
+operates at typically six orders of magnitude slower sliding speed.43 Chemical analysis of the oxide formed on carbon overcoat
+is still missing and requires more work.
+
+Discussion
+In summary, we have outlined a quantitative analysis of voltage assisted nanoscale electrochemical wear on carbon overcoat at
+high sliding speed interfaces. At high sliding speeds, in-situ measurements were performed of the interfacial current and the
+associated wear amount due to the electrochemical process. In addition, the effect of electrochemical activity on the interface is
+further quantified by measuring the friction force and the friction coefficient. It is found that the voltage assisted electrochemical
+activity greatly influences the interfacial wear and frictional properties. Positive voltage applied to the head leads to high
+wear on the head overcoat but no head overcoat wear was observed for negative applied voltage. As a useful application, we
+exploited the electrochemical passivation to mark the head-disk contact regions on the disk. The contact regions can be clearly
+identified by the associated conductivity variations of the surface. We believe that the observed voltage assisted asymmetric
+nanoscale wear will lead to additional experimental and simulation work, and will help to understand precisely the chemical
+origin of the involved process.
+
+5/9
+
+Figure 5. Chemical marking of contact location: (a) Cartoon of disk depicting the intentional contact at two location,
+Radius =21 mm and 23 mm. (b) Marking: dots represent the passivation of carbon overcoat at two locations. (c) Detection:
+shows the interfacial current as probed by the same head at different tracks.
+
+Our results are expected to have strong impact on fundamentally improving the carbon overcoat for various applications.
+The effect of interfacial voltage on the sliding interface is expected to be of great importance for understanding and improving
+the wear properties in nanoscale devices.
+
+Methods
+Sample preparation
+Disk: the rotating disk is a commercial 2.5" CoCrPt:oxide based hard disk media fabricated onto a glass substrate. Outermost
+thin film layer of hard disk media consist of 3 nm amorphous nitrogenated carbon overcoat coated with a molecular layer of
+perfluoropolyether polymer lubricant (∼ 1 nm thick).
+
+Head: the head is a commercially available with read and write elements fabricated on a ceramic substrate. Similar to the
+disk, the head is also coated with a carbon overcoat with 1.4 nm diamond like carbon on top of a 0.3 nm Silicon based adhesive
+layer. The head surface is carefully etched (known as air bearing surface (ABS)) such that while flying on top of the disk an air
+lift force is generated that keeps it afloat in the nanometer distance over the disk.
+
+Contact detection between the head and disk
+Contact between the head and disk is monitored using a piezo-electric based acoustic emission (AE) sensor of the type PICO -
+200-750 kHz. It detects elastic propagating waves generated during the head-disk contact events.34 Figure 6 shows a typical
+contact detection between the head and the disk. Vertical clearance between the head and disk is set using the embedded
+micro-heater inside the head. For protruding head making a contact with disk, AE signal increases sharply compare to
+non-contact condition.
+
+Interfacial current and friction measurements
+Electrical measurement: In all interfacial measurement, the head-disk interface is first voltage biased then the contact is made
+using the micro-heater. The voltage bias is done using a HP 3314A source and the corresponding interfacial current is measured
+using Agilent 4155C. Interfacial current measurement are done under a positive normal load condition.
+
+Friction measurement: Contact friction force is measured using a calibrated strain gauge mounted at the end of the
+
+suspension. The strain gauge signal is measured and amplified using a Vishay 2311 signal conditioning amplifier.
+
+References
+1. D.H. Buckley, Surface Effects in Adhesion, Friction, Wear, and Lubrication 429-508 (Elsevier, Amsterdam, 1981).
+2. Wimmer, M. A., Sprecher, C., Hauert, R., Tager, G. and Fischer, A. Tribochemical reaction on metal-on-metal hip joint
+
+bearings - A comparison between in-vitro and in-vivo results. Wear 255, 1007-1014 (2003).
+
+6/9
+
+Figure 6. Contact detection: Shows the normalized acoustic emission signal as a function of normal load between the head
+and the disk.
+
+3. Mosey, N. J., Muser, M. H. and Woo, TK Molecular mechanisms for the functionality of lubricant additives. Science 307,
+
+1612-1615 (2005).
+
+4. Bhushan, B., Israelachvili J. N. and Landman, U. Nanotribology: friction, wear and lubrication at the atomic scale. Nature
+
+374, 607-616 (1994).
+
+5. Gosvami, N. N. et al. Mechanisms of antiwear tribofilm growth revealed in situ by single-asperity sliding contacts. Science
+
+348, 102-106 (2015).
+
+6. Rajauria, S., Canchi, S. V., Schreck, E. and Marchon, B. Nanoscale wear and kinetic friction between atomically smooth
+
+surfaces sliding at high speeds. Applied Physics Letters 106, 081604 (2015).
+
+7. Archard, J. F. Contact and rubbing of flat surfaces. Journal of Applied Physics 24, 981-988 (1953).
+8. Jia, K. and Fischer, T. Sliding wear of conventional and nanostructured cemented carbides. Wear 203, 310-318 (1997).
+9. Chung, K. and Kim, D. Fundamental investigation of micro wear rate using an atomic force microscope. Tribology Letter
+
+15, 135-144 (2003).
+
+10. Gnecco, E., Bennewitz, R. and Meyer, E. Abrasive wear on the atomic scale. Phys. Rev. Lett. 88, 215501 (2002).
+11. Gotsmann, B. and Lantz, M. Atomistic wear in a single asperity sliding contact. Phys. Rev. Lett. 101, 125501 (2008).
+12. Bhaskaran, H. et al. Ultralow nanoscale wear through atom-by-atom attrition in silicon-containing diamond-like carbon.
+
+Nature Nanotechnology 5, 181 (2010).
+
+13. Jacobs, T. D. B. and Carpick, R. W. Nanoscale wear as a stress-assisted chemical reaction. Nature Nanotechnology 8,
+
+108-112 (2013).
+
+14. Hanggi, P., Talkner, P. and Borkovec M. Reaction-rate theory: fifty years after Kramers. Review of Modern Physics 62, 251
+
+(1990).
+
+15. Robertson, J. Diamond-like amorphous carbon. Materials Science and Engineering: R: Reports 37, 129-281 (2002).
+16. Marchon, B., Carrazza, J., Heinemann, H. and Somorjai, G. A. TPD and XPS studies of O2, CO2 and H2O adsorption on
+
+clean polycrystalline graphite. Carbon 26, 507-514 (1988).
+
+17. Marchon, B., Heiman, N. and Khan, M. R. Evidence for tribochemical wear on amorphous carbon thin films. IEEE
+
+Transactions on Magnetics 26, 168-170 (1990).
+
+18. Strom, B. D., Bogy, D. B., Bhatia, C. S. and Bhushan B. Tribochemical effects of various gases and water vapor on thin
+
+film magnetic disks with carbon overcoats. Journal of Tribology-Transactions of the ASME 113, 689-693 (1991).
+
+7/9
+
+19. Dai, Q., Yen, B. K., White, R. L., Peterson, P. J. and Marchon, B. Toward an understanding of overcoat corrosion protection.
+
+IEEE Transactions on Magnetics 39, 2450-2452 (2003).
+
+20. Konicek, A. R. et al. Influence of surface passivation on the friction and wear behavior of ultrananocrystalline diamond and
+
+tetrahedral amorphous carbon thin films. Physical Review B 85, 155448 (2008).
+
+21. Marino, M. J. et al. Understanding run-in behavior of diamond-like carbon friction and preventing diamond-like carbon
+
+wear in humid air. Langmuir 27, 12702 -- 12708 (2011).
+
+22. Kinoshita, K. and Bett, J. Electrochemical oxidation of carbon black in concentrated phosphoric acid at 135oC. Carbon 11,
+
+237-247 (1973).
+
+23. Gallagher, K. G. and Fuller, T. F. Kinetic model of the electrochemical oxidation of graphitic carbon in acidic environments.
+
+Physical Chemistry Chemical Physics 11, 11557-11567 (2009).
+
+24. Zilibotti, G., Righi, M. C. and Ferrario M. Ab initio study on the surface chemistry and nanotribological properties of
+
+passivated diamond surfaces. Physical Review B 79, 075420 (2009).
+
+25. Mate, C. M., McClelland, G. M., Erlandsson, R. and Chiang, S. Atomic-scale friction of a tungsten tip on a graphite
+
+surface. Phys. Rev. Lett. 59 1942 (1987).
+
+26. Robertson, J Ultrathin carbon coatings for magnetic storage technology. Thin Film Solids 383, 81-88 (2001).
+27. Ferrari, A. C. Diamond-like carbon for magnetic storage disks. Surface and Coatings Technology 180-181 190-206 (2004).
+28. Suh, A. Y., Mate, C. M., Payne, R. N. and Polycarpou, A. A. Experimental and theoretical evaluation of friction at
+
+contacting magnetic storage slider-disk interfaces. Tribology Letters 23, 177-190 (2006).
+
+29. CMLAir 8.3 (2015): CMLAir Bearing Design Program. URL http://cml.berkeley.edu/ (Accessed: 12th January 2016).
+30. Zheng, J. and Bogy, D.B Investigation of flying-height stability of thermal fly-height control sliders in lubricant or solid
+
+contact with roughness. Tribology Letters 38, 283-289 (2010).
+
+31. Zeng, Q., Yang, C.-H.. Ka, S. and Cha, E. An experimental and simulation study of touchdown dynamics. IEEE Transactions
+
+on Magnetics 47, 3433-3436 (2011).
+
+32. Canchi, S. V., Bogy, D. V., Wang, R. H. and Murthy A. N. Parametric Investigations at the Head-Disk Interface of Thermal
+
+Fly-Height Control Sliders in Contact. Advances in Tribology 2012, 303071 (2012).
+
+33. Chen, Y.-K., Murthy, A. N., Pit, R. and Bogy, D. B. Angstrom scale wear of the air-bearing sliders in hard disk drives.
+
+Tribology Letters 54, 273-278 (2014).
+
+34. Bhushan, B., Wu, Y. and Tambe, N. S. Sliding contact energy measurement using a calibrated acoustic emission transducer.
+
+IEEE Transactions on Magnetics 39, 881-887 (2003).
+
+35. Wei, B., Zhang, B. and Johnson, K. E. Nitrogen-induced modifications in microstructure and wear durability of ultrathin
+
+amorphous-carbon films. Journal of Applied Physics 83, 2491-2499 (1988).
+
+36. Khun, N. W., Liu, E. and Krishna, M. D. Structure, adhesive strength and electrochemical performance of nitrogen doped
+diamond-like Carbon thin films deposited via DC magnetron sputtering. Journal of Nanoscience and Nanotechnology 10,
+4752-4757 (2010).
+
+37. Dwivedi, N. et al. Understanding the role of nitrogen in plasma-assisted surface modification of magnetic recording media
+
+with and without ultrathin carbon overcoats. Scientific Reports 5, 7772 (2015).
+
+38. Juang, J.-Y., Forrest, J. and Huang, F.-Y. Magnetic head protrusion profiles and wear pattern of thermal flying-height
+
+control sliders with different heater designs. IEEE Transactions on Magnetics 47, 3437-3340 (2011).
+
+39. Su, L. et al. Tribological and dynamic study of head disk interface at sub 1-nm clearance. IEEE Transactions on Magnetics
+
+47, 111-116 (2011).
+
+40. Bowden, F.P. and Tabor D. The friction and Lubrication of Solids 90-98 (Claredon, 1950).
+41. Mo, Y. F., Turner, K. T. and Szlufarska, I. Friction laws at the nanoscale. Nature 457, 1116-1119 (2009).
+42. Berman, A., Drummond, C. and Israelachvili, J. Amontons' law at the molecular level. Tribology Letters 4, 95-101 (1998).
+43. Garcia, R., Knoll A. W. and Riedo E. Advanced scanning probe lithography. Nature Nanotechnology 9, 577 -- 587 (2014).
+
+Acknowledgements
+The authors thank O. Ruiz for air bearing simulations, and S. Canchi, A., Murthy, N. Wang and V. Sharma for technical
+assistance.
+
+8/9
+
+Author contributions statement
+S.R. and E.S. designed the experiments with contribution from B.M.. S.R. performed the experiments and analyzed the data.
+S.R., E.S. and B.M. wrote the manuscript.
+
+Additional information
+The authors declare they have no competing financial interests.
+
+9/9
+
+

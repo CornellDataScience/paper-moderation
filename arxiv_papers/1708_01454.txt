@@ -1,0 +1,1399 @@
+A >99.9%-fidelity quantum-dot spin qubit with coherence limited 
+by charge noise 
+ 
+J. Yoneda1,2,*,  K. Takeda1,2,  T. Otsuka1,2,3,  T. Nakajima1,2,  M. R. Delbecq1,2, 
+
+G. Allison1,  T. Honda4,  T. Kodera4,  S. Oda4,  Y. Hoshi5,  N. Usami6,  K. M. Itoh7, 
+
+S. Tarucha1,2 
+
+ 
+
+1 RIKEN Center for Emergent Matter Science, RIKEN, 2-1 Hirosawa, Wako, Saitama 351-0198, Japan 
+
+2 Department of Applied Physics, University of Tokyo, Tokyo 113-8656, Japan 
+
+3 JST, PRESTO, 4-1-8 Honcho, Kawaguchi, Saitama, 332-0012, Japan 
+
+4 Department of Physical Electronics, Tokyo Institute of Technology, Meguro-ku, Tokyo 152-8552, Japan 
+
+5 Institute of Industrial Science, University of Tokyo, Meguro-ku, Tokyo 153-8505, Japan 
+
+6 Graduate School of Engineering, Nagoya University, Nagoya 464-8603, Japan 
+
+7 Department of Applied Physics and Physico-Informatics, Keio University, Hiyoshi, Yokohama 223-8522, 
+
+Japan 
+
+*Electronic mail: jun.yoneda@riken.jp   
+
+ 
+
+ 
+
+ 
+
+Recent  advances  towards  spin-based  quantum  computation  have  been  primarily 
+
+fuelled by elaborate isolation from noise sources, such as surrounding nuclear spins 
+and  spin-electric  susceptibility1-4,  to  extend  spin  coherence.  In  the  meanwhile, 
+addressable  single-spin  and  spin-spin  manipulations  in  multiple-qubit  systems  will 
+necessitate  sizable  spin-electric  coupling5-7.  Given  background  charge  fluctuation  in 
+nanostructures,  however,  its  compatibility  with  enhanced  coherence  should  be 
+crucially questioned8-10. Here we realise a single-electron spin qubit with isotopically-
+enriched  phase  coherence  time  (20 s)11,12  and  fast  electrical  control  speed  (up  to 
+30 MHz) mediated by extrinsic spin-electric coupling. Using rapid spin rotations, we 
+reveal that the free-evolution dephasing is caused by charge (instead of conventional 
+
+magnetic) noise featured by a 1/f spectrum over seven decades of frequency. The qubit 
+
+nevertheless exhibits superior performance with single-qubit gate fidelities exceeding 
+
+99.9%  on  average.  Our  work  strongly  suggests  that  designing  artificial  spin-electric 
+
+coupling with account taken of charge noise is a promising route to large-scale spin-
+qubit systems having fault-tolerant controllability. 
+
+ 
+
+ 
+
+1 
+
+Single  electron  spins  confined  in  quantum  dots  (QDs)  constitute  a  promising 
+semiconductor platform for spin-based quantum computing. A wide variety of devices11-
+20,  have  been  examined  in  a  quest  for  higher  quality  factor,  Q  –  the  number  of  qubit 
+
+operations  available  before  coherence  is  lost.  Fault-tolerant  universal  gates  in  this 
+system21,22  would  comprise  a  sequence  of  several  single-qubit  operations  and  require 
+*)  and  a  short 
+
+single-qubit  Q   1000.  Q  benefits  both  from  a  long  dephasing  time  (T2
+
+manipulation  time  (T),  between  which  a  coherence-controllability  trade-off  has  been 
+
+experimentally identified. 
+
+ 
+
+Unlike  charge,  a  single  spin  does  not  couple  directly  to  electric  noise,  so 
+
+dephasing is predominated by magnetic noise, typically from surrounding nuclear spins. 
+
+A major approach to improve Q has therefore been engineering host materials to enhance 
+* by suppressing magnetic fluctuations. With the ultimate development of isotopically 
+T2
+purified  devices11,12,  Q  reaches ~  100,  achieved  by  slow  spin  manipulation  as  a 
+
+manifestation of the coherence-controllability trade-off. Note that now the spin dephasing 
+
+mechanism  becomes controversial, with  no longer apparent  magnetic  fluctuators – but 
+
+there is no convincing experimental  study that elucidates non-magnetic  dephasing. On 
+
+the other hand, an approach to increase Q by shortening T has been commonly pursued 
+
+in  materials  with  large  intrinsic  spin-electric  coupling  (SEC),  e.g.  narrow-bandgapped 
+semiconductors15,16,  bent  nanotubes17  and  holes  in  silicon20.  While  this  will  promote 
+individual  accessibility6,7,  realising  Q  >  100  in  such  structures  has  also  proven 
+*  is  degraded  by  isotopically-purified  material 
+
+challenging  due  to  the  trade-off;  T2
+
+standards. 
+
+ 
+
+Our  work  strikes  a  balance  between  controllability  (short  T)  and  coherence 
+*) at an isotopically-enhanced level in order to go beyond the above described 
+
+(long T2
+
+approaches, and reveals the coherence limited by electrical charge noise. We introduce 
+"artificial" SEC fields with local magnets5,14 to an isotopically-clean silicon QD qubit, 
+* while reducing T by two orders of magnitude. 
+
+only to the extent that it barely affects T2
+
+Fast spin rotations allow us to unveil that, as a result of inducing SEC in the absence of 
+
+nuclear spins, the free-evolution dephasing of the spin is caused solely by 1/f charge noise 
+
+at least up to the sub-MHz range. This is in marked contrast to conventional dephasing 
+due to magnetic noise sources featured with higher spectral exponents12-17. With the Rabi 
+
+oscillation Q reaching 888, we demonstrate > 99.9% average single-qubit control fidelity. 
+
+ 
+The experiment is performed on an electron spin confined in a 28Si/SiGe QD by 
+
+ 
+
+2 
+
+applying electrical pulses to initialise, control and read out the qubit state (Fig. 1a,b and 
+
+Methods).  Our  qubit  device  is  equipped  with  a  proximal  micro-magnet  which  induces 
+
+SEC fields both in the "transverse" and "longitudinal" coupling directions (Fig. 1c). The 
+transverse  field  slope  btrans  mediates  rapid  electrical  spin  rotations19,23,  while  the 
+
+longitudinal slope blong provides electrical tunability of the qubit frequency, which would 
+be useful for selective manipulation and non-demolition dispersive readout6,7. Aside from 
+
+improving qubit controllability, these SEC fields mediate dephasing in combination with 
+the  fluctuating  electrical  field  (charge  noise),  Erms  ~ 0.1 V/cm  typically9,10.  In  our 
+
+nuclear-spin-free  device,  this  otherwise  negligible  effect  will  become  relevant.  To  still 
+
+benefit  from  isotopic  purification  would  require  blong  <<  3 mT/nm  (Supplementary 
+
+Materials), assuming the orbital energy spacing orb ~ 1 meV. We therefore pattern our 
+Co  micro-magnet24  such  that  blong  ~  0.2 mT/nm,  which  in  practice  limits  btrans  to 
+
+~ 1.0 mT/nm. 
+
+ 
+
+To  first  demonstrate  enhanced  transverse  SEC,  we  drive  electric  dipole  spin 
+
+resonance  (EDSR).  When  the  control  microwave  is  exactly  on  resonance,  the  spin-up 
+
+probability Pup shows a so-called Rabi oscillation as a function of the microwave duration. 
+
+Figure 1d  shows  16.6  MHz  oscillations,  whose  decaying  time  is  too  long  to  measure 
+
+within forty  π  rotations. The decaying time of 3.9 MHz Rabi oscillations is 1133 s, 
+
+yielding the Rabi oscillation Q = 888 (Supplementary Fig. 2b). The rotation frequency 
+
+increases  proportionally  to  the  microwave  amplitude  up  to  approximately  20 MHz 
+
+(Fig. 1e), above which faster oscillation damping is observed (Supplementary Fig. 2a). A 
+
+nearly-ideal EDSR rotation in the linear regime is further verified by the chevron pattern 
+
+(Fig. 1f); the pattern reflects the qubit spin rotation along a tilted axis in the Bloch sphere 
+
+with deliberately detuned microwave excitation. 
+
+ 
+
+We next quantify a longitudinal SEC field in the device. This is performed by 
+
+applying an additional bump pulse to gate R in the control stage, during which the qubit 
+
+precession  frequency is rapidly shifted (Fig.  2a). Figure 2b shows the  resulting  phase-
+
+shift-induced  oscillations  of  Pup  lasting  20 s  with  no  indication  of  decay.  The  phase 
+
+rotation speed grows linearly with the bump amplitude VR, yielding a frequency-shift 
+
+lever-arm of 93 kHz/mV. Note that the maximum shift (5.2 MHz) is limited by the pulse-
+
+generating hardware and induced within the same equilibrium charge occupation. 
+
+ 
+
+A crucial question, given the enhanced electrical controllability, is whether the 
+
+isotopically-enhanced spin coherence survives the induced size of SEC. We reveal this by 
+
+ 
+
+3 
+
+measuring T2
+
+* from the Ramsey interference effect (Fig. 3a). Curve fitting to the fringe 
+* 
+decay  yields  T2
+value is similar to those in  28Si QDs without an on-chip magnet11,12,25 and indicates the 
+
+*  =  20 s,  consistent  with  the  EDSR  spectral  width  (Fig. 3b).  This  T2
+
+compatibility of the SEC-enhanced controllability and the isotope-purified coherence. It 
+*  ~  2 s  previously  reported  for  isotopically  natural  Si/SiGe  QDs 
+
+also  suggests  that  T2
+(refs. 18,19) is limited by the fluctuating nuclear-spin field due to 5% 29Si. 
+
+ 
+
+To  further  study  phase  coherence  of  our  qubit,  we  employ  Carr-Purcell-
+Meiboom-Gill (CPMG) protocols26,27. Such dynamical decoupling controls can partially 
+
+cancel the dephasing effect, with efficacy strongly dependent on the qubit noise spectral 
+CPMG, characterises the decay timescale of the 
+
+density, S(f). The CPMG coherence time, T2
+
+remaining phase coherence ACPMG (echo amplitude) after the sequence with the total wait 
+
+time twait. Note that in the following we normalise ACPMG by the estimated measurement 
+
+visibility  for  each  number  of    pulses,  n.  When  n  =  1,  it  is  essentially  a  Hahn  echo 
+
+sequence, and the measured coherence time is 99 s (Fig. 3c). 
+
+ 
+When n is sequentially increased as n = 21, 22…, 210, ACPMG always takes the 
+CPMG)] (Fig. 4a) with the best fit values of  falling in the range of 
+ with 
+
+form of exp[(twait/T2
+2.20.2. We see a clear power-law scaling27 of T2
+
+CPMG with n, i.e. T2
+
+CPMG  ∝  n
+
+the exponent   0.5260.011 (Fig. 4a inset). We furthermore relate ACPMG to S(f) using 
+the filter function formalism for Gaussian noise26, and obtain (Supplementary Materials) 
+for n ≳ 8, 
+
+ 
+Figure 4b plots S(f) calculated from Eq. (1) for n ≥ 8 and 0.15 < ACPMG < 0.85. All data 
+points  nicely  follow  a  power  law  1/f    in  the  frequency  range  of  13  to  320  kHz,  with 
+
+𝑆(𝑛π/2𝑡wait) ≃ −ln(𝐴CPMG) /2𝜋2𝑡wait.   
+
+  (1) 
+
+  1.010.05.  From  this  simple  power-law  spectrum,  we  obtain    1  2.01  and 
+
+  1  , both of which agree well with the independent fitting results to the 
+CPMG  scaling  described  above.  Such  1/f  charge  noise  has 
+ACPMG  envelopes  and  the  T2
+commonly been observed in electrical properties in semiconductor devices8-10 and is also 
+
+measured as current fluctuations in our device (Supplementary Fig. 1). 
+
+ 
+
+We can independently estimate S(f) around 0.01-1 Hz by tracking Ramsey fringe 
+dynamics28 (Fig. 4b and Supplementary Materials). Surprisingly enough, the results fall 
+
+on the extended line of the noise spectrum revealed by CPMG at tens of kHz. This means 
+
+that the 1/f charge noise constitutes the only dominant source of spin phase noise in this 
+* of 25 s,  in 
+
+device over seven decades of frequency. Indeed, this scenario predicts T2
+
+ 
+
+4 
+
+excellent agreement with the value measured directly (Supplementary Materials). 
+
+ 
+
+As  a  concluding  test  of  how  SEC  enhances  the  qubit  performance,  we 
+characterise  single-qubit  control  fidelities  based  on  randomized  benchmarking29  (see 
+
+Methods). As the number of applied Clifford gates m increases, the standard sequence 
+m,  with  the  visibility  V  =  0.712  and  the  depolarising 
+
+fidelity  (Fig. 5)  decays  as  VpC
+
+parameter pC = 0.997210.00009. This corresponds to the single Clifford gate fidelity of 
+
+99.8610.005% and the average single gate fidelity of 99.9260.002%, which give nearly 
+an-order-of-magnitude smaller error rates than the best values reported in QDs11,19 and 
+well exceed the threshold for fault-tolerant quantum computing21. 
+
+ 
+
+We also evaluate the fidelity of each single-qubit operation individually through 
+
+the interleaved benchmarking (Methods). The obtained fidelity curves (Fig. 5) are then 
+fitted with V(pCpG)m, yielding the gate fidelity as (1+pG)/2. The average value of fidelities 
+
+99.928% is consistent with the value from the standard sequence. We speculate that the 
+
+gate  fidelities  are  limited  by  systematic  pulse  calibration  errors  rather  than  dephasing 
+
+effects, since the fidelities for half  rotations are strongly sign dependent. 
+
+ 
+
+To  conclude,  designing  SEC  in  QD  spin  qubits  is  a  viable  approach  to  meet 
+
+antithetic requirements for high electrical controllability and isotopically-enriched spin 
+
+coherence. In this approach, 1/f charge noise can become the exclusive source of free-
+
+evolution dephasing of a single spin, and the qubit performance may be further enhanced 
+
+by  improving  the  electrical  stability.  Qubit  control  fidelity  exceeding  99.9%  strongly 
+
+underpins  the  prospects  for  fault-tolerant  universal  quantum  computation  in  this 
+
+architecture. 
+
+ 
+
+ 
+
+5 
+
+Acknowledgements 
+
+We thank the Microwave Research Group in Caltech for technical supports. This work 
+
+was  supported  financially  by  CREST,  JST  (JPMJCR15N2,  JPMJCR1675)  and  the 
+
+ImPACT Program of Council for Science, Technology and Innovation (Cabinet Office, 
+
+Government  of  Japan).  JY,  TN  and  TO  acknowledge  support  from  RIKEN  Incentive 
+
+Research  Projects.  TO  acknowledges  support  from  PRESTO  (JPMJPR16N3);  JSPS 
+
+KAKENHI  Grant  Numbers  JP25800173  and  JP16H00817;  Strategic  Information  and 
+
+Communications R&D Promotion Programme; Yazaki Memorial Foundation for Science 
+
+and  Technology  Research  Grant;  Japan  Prize  Foundation  Research  Grant;  Advanced 
+
+Technology  Institute  Research  Grant;  the  Murata  Science  Foundation  Research  Grant; 
+
+Izumi  Science  and  Technology  Foundation  Research  Grant;  TEPCO  Memorial 
+
+Foundation  Research  Grant;  The  Thermal  &  Electric  Energy  Technology  Foundation 
+
+Research  Grant;  The  Telecommunications  Advancement  Foundation  Research  Grant; 
+
+Futaba Electronics Memorial Foundation Research Grant; and MST Foundation Research 
+
+Grant.  TK  acknowledges  support  from  JSPS  KAKENHI  Grant  Numbers  JP26709023, 
+
+JP16F16806. ST acknowledges support by JSPS KAKENHI Grant Numbers JP26220710 
+
+and JP16H02204. 
+
+ 
+
+Author contributions 
+
+J.Y. performed the bulk of measurement and data analysis. K.T. fabricated the device with 
+
+the  help  of  T.O.  Y.  H.,  N.  U.,  and  K.  M.  I.  supplied  the  isotopically  enriched  Si/SiGe 
+
+heterostructure. J.Y. wrote the manuscript with inputs from other authors. T.N. M.R.D., 
+
+G.A.,  T.N.,  T.K.,  and  S.O.  contributed  to  device  fabrication  and  measurement.  S.T. 
+
+supervised the project. 
+
+ 
+
+Competing financial interests 
+
+The authors declare that they have no competing financial interests. 
+
+ 
+
+ 
+
+6 
+
+References 
+
+1.  Balasubramanian,  G.  et  al.  Ultralong  spin  coherence  time  in  isotopically 
+
+engineered diamond. Nat. Mater. 8, 383–387 (2009). 
+
+2.  Muhonen,  J.  T.  et  al.  Storing  quantum  information  for  30  seconds  in  a 
+
+nanoelectronic device. Nat. Nanotechnol. 9, 986–991 (2014). 
+
+3.  Kuhlmann, A. V et al. Charge noise and spin noise in a semiconductor quantum 
+
+device. Nat. Phys. 9, 570–575 (2013). 
+
+4.  Reed, M. D. et al. Reduced Sensitivity to Charge Noise in Semiconductor Spin 
+
+Qubits via Symmetric Operation. Phys. Rev. Lett. 116, 110402 (2016). 
+
+5.  Tokura, Y., Wiel, W. G. Van Der, Obata, T. & Tarucha, S. Coherent Single Electron 
+
+Spin Control in a Slanting Zeeman Field. Phys. Rev. Lett. 96, 47202 (2006). 
+
+6.  Trif, M., Golovach, V. N. & Loss, D. Spin dynamics in InAs nanowire quantum 
+
+dots coupled to a transmission line. Phys. Rev. B 77, 45434 (2008). 
+
+7.  Hu, X., Liu, Y. & Nori, F. Strong coupling of a spin qubit to a superconducting 
+
+stripline cavity. Phys. Rev. B 86, 35314 (2012). 
+
+8.  Bermeister,  A.,  Keith,  D.  &  Culcer,  D.  Charge  noise,  spin-orbit  coupling,  and 
+
+dephasing of single-spin qubits. Appl. Phys. Lett. 105, 192102 (2014). 
+
+9.  Huang, P. & Hu, X. Electron spin relaxation due to charge noise. Phys. Rev. B 89, 
+
+195302 (2014). 
+
+10. Paladino, E., Galperin, Y., Falci, G. & Altshuler, B. L. 1/ f noise: Implications for 
+
+solid-state quantum information. Rev. Mod. Phys. 86, 361–418 (2014). 
+
+11. Veldhorst, M. et al. An addressable quantum dot qubit with fault-tolerant control-
+
+fidelity. Nat. Nanotechnol. 9, 981–985 (2014). 
+
+12. Eng,  K.  et  al.  Isotopically  enhanced  triple-quantum-dot  qubit.  Sci.  Adv.  1, 
+
+e1500214 (2015). 
+
+13. Koppens, F. H. L. et al. Driven coherent oscillations of a single electron spin in a 
+
+quantum dot. Nature 442, 766–771 (2006). 
+
+14. M.  Pioro-Ladriere,  T.  Obata,  Y.  Tokura,  Y.-S.  Shin,  T.  Kubo,  K.  Yoshida,  T. 
+
+Taniyama, and S. Tarucha, Electrically driven single electron spin resonance in a 
+
+slanting Zeeman field, Nat. Phys. 4, 776 (2008). 
+
+15. Nadj-Perge, S., Frolov, S. M., Bakkers, E. P. a M. & Kouwenhoven, L. P. Spin-
+
+orbit qubit in a semiconductor nanowire. Nature 468, 1084–1087 (2010). 
+
+16. Berg,  J.  W.  G.  Van  Den  et  al.  Fast  Spin-Orbit  Qubit  in  an  Indium  Antimonide 
+
+Nanowire. Phys. Rev. Lett. 110, 66806 (2013). 
+
+17. Laird, E. a, Pei, F. & Kouwenhoven, L. P. A valley-spin qubit in a carbon nanotube. 
+
+Nat. Nanotechnol. 8, 565–8 (2013). 
+
+ 
+
+7 
+
+18. Kawakami,  E.  et  al.  Electrical  control  of  a  long-lived  spin  qubit  in  a  Si/SiGe 
+
+quantum dot. Nat. Nanotechnol. 9, 666 (2014). 
+
+19. Takeda,  K.  et  al.  A  fault-tolerant  addressable  spin  qubit  in  a  natural  silicon 
+
+quantum dot. Sci. Adv. 2, e1600694 (2016). 
+
+20. Maurand, R. et al. A CMOS silicon spin qubit. Nat. Commun. 7, 13575 (2016). 
+
+21. Fowler, A. G., Mariantoni, M., Martinis, J. M. & Cleland, A. N. Surface codes : 
+
+Towards  practical  large-scale  quantum  computation.  Phys.  Rev.  A  86,  32324 
+
+(2012). 
+
+22. Veldhorst, M. et al. A two-qubit logic gate in silicon. Nature 526, 410–414 (2015). 
+
+23. Yoneda, J. et al. Fast Electrical Control of Single Electron Spins in Quantum Dots 
+
+with Vanishing Influence from Nuclear Spins. Phys. Rev. Lett. 113, 267601 (2014). 
+
+24. Yoneda, J. et al. Robust micromagnet design for fast electrical manipulations of 
+
+single spins in quantum dots. Appl. Phys. Express 8, 84401 (2015). 
+
+25. Veldhorst, M. et al. Spin-orbit coupling and operation of multivalley spin qubits. 
+
+Phys. Rev. B 92, 201401 (2015). 
+
+26. Cywiński,  Ł.,  Lutchyn,  R.  M.,  Nave,  C.  P.  &  Das  Sarma,  S.  How  to  enhance 
+
+dephasing time in superconducting qubits. Phys. Rev. B 77, 174509 (2008). 
+
+27. Medford, J. et al. Scaling of dynamical decoupling for spin qubits. Phys. Rev. Lett. 
+
+108, 86802 (2012). 
+
+28. Delbecq, M. R. et al. Quantum Dephasing in a Gated GaAs Triple Quantum Dot 
+
+due to Nonergodic Noise. Phys. Rev. Lett. 116, 46802 (2016). 
+
+29. Muhonen, J. T. et al. Quantifying the quantum gate fidelity of single-atom spin 
+
+qubits in silicon by randomized benchmarking. J. Phys. Condens. Matter 27, 
+
+154205 (2015). 
+
+ 
+
+ 
+
+8 
+
+Figure 1  QD device with extrinsic SEC fields. 
+
+ 
+
+(a) Device layout. Circles indicate approximate positions of a qubit and a charge sensing 
+
+QD. We typically apply an external magnetic field Bext of around 0.5 T so that the Larmor 
+
+precession  frequency  is  roughly  18 GHz  (the  optimal  frequency  for  the  set-up  of  our 
+
+control  circuit).  (b)  Control  pulse  sequence.  Waveforms  are  applied  to  gate  electrode 
+
+potentials  VR  and  VC  of  gates  R  and  C,  respectively. Traces  of  typical radio-frequency 
+
+charge-sensing  signals  VRF  with  and  without  tunnelling  events  are  shown  in  the  inset. 
+
+(c) Micro-magnet  SEC  fields.  The  magnet  is  designed  to 
+
+induce  a  spatially 
+
+inhomogeneous  stray  field  BMM  at  the  QD  position  when  magnetised  along  Bext.  The 
+
+transverse coupling is produced by the inhomogeneous component perpendicular to Bext 
+and  is  proportional  to  the  field  slope  btrans = (𝑒⃗ ⋅ ∇)𝐵MM
+along an in-plane (yz) electric field. The longitudinal one is, on the other hand, mediated 
+𝑧. We have assumed a QD 
+by the gradient of the parallel component blong = (𝑒⃗ ⋅ ∇)𝐵MM
+confinement that is strong vertically (along x) and symmetric laterally. (d) Rabi oscillation. 
+
+,  where  𝑒⃗  is  the  unit  vector 
+
+𝑥
+
+Each  data  point  represents  the  probability  of  detecting  tunnelling  events,  which  we 
+
+ 
+
+9 
+
+interpret as Pup, based on 100 single-shot measurements. The solid curve is the best-fit 
+
+cosine  with  the  Rabi  frequency  of  16.6 MHz  (no  decay  is  assumed).  The  oscillation 
+
+visibility  is  limited  by  the  initialisation/readout  fidelity.  (e)  Driving  amplitude 
+
+dependence of the Rabi frequency. The dashed line plots a linear fit with the data points 
+
+whose  Rabi  frequencies  are  below  24 MHz.  (f)  Chevron  pattern.  Pup  is  collected  as  a 
+
+function of microwave burst time and detuning. The Rabi frequency is 3.9 MHz and Bext 
+
+is 0.506 T. 
+
+ 
+
+ 
+
+Figure 2  Longitudinal SEC characterisation. 
+
+ 
+
+(a) Schematic representation of pulse sequences used to evaluate the longitudinal SEC. 
+
+To  detect  the  pulse-induced  phase,  we  use  three  equidistant  EDSR  rotations  around  a 
+
+fixed axis (x): /2X  X  /2X. The first and the last /2 rotations together map the phase 
+
+accumulated  between  them  to  a  measurable  spin  component.  For  a  phase  shift,  for 
+
+example, an electron initialised in the spin-down state ends up in the spin-up state after 
+
+the pulse sequence. By inserting a  π-flip midway, the signal becomes robust against a 
+
+static,  microwave  detuning  effect.  (b)  Oscillation  due  to  phase  rotation  for  pulse 
+
+amplitudes  VR  =  15,  35  and  55  mV.  Measurement  data  with  control  pulse  lengths 
+
+between 0 and 4 s or between 16 and 20 s are shown. Solid curves are the fits with a 
+
+sinusoidal  function  with  a  phase  offset  (common  to  both  regions).  The  oscillation 
+
+frequency gives the size of the induced qubit-frequency shift. The traces are offset by 1 
+
+for clarity. (c) Pulse amplitude dependence of the extracted frequency shift. The solid line 
+
+ 
+
+10 
+
+plots a linear fit, giving the gate lever-arm of 93.1  0.7 kHz/mV for gate R. A similar 
+
+lever-arm is obtained in the frequency domain (Supplementary Fig. 3). 
+
+ 
+
+ 
+
+Figure 3  Phase coherence and a spin echo. 
+
+ 
+
+(a) Ramsey interference. The Ramsey fringe is observed for a spin undergoing two EDSR 
+
+half-  rotations,  i.e.  /2X    /2X. The  visibility  reflects the  phase  coherence  preserved 
+
+during  the  inter-rotation  period.  The  final  Pup  oscillates  at  a  microwave  detuning 
+*. Each data point is 
+
+frequency, with a characteristic damping time giving a measure of T2
+
+the  average  over  500  single-shot  measurements  per  evolution  time,  and  the  total 
+measurement time is 98 sec. The curve shows the fit with  𝐴 cos(2𝜋𝑓𝑡 + 𝜑) exp(−(𝑡/
+∗)𝛼 ) + 𝐵  where t denotes the inter-pulse evolution time. The best fit is obtained with 
+𝑇2
+* = 20.4 s, and  = 2.0. (b) EDSR spectrum at a low 
+A = 0.43, B = 0.54, f = 194 kHz, T2
+
+excitation power fitted with a Gaussian peak function. The full width at half maximum is 
+
+21 kHz. The lateral axis is a microwave frequency offset from 17.980347 GHz. To avoid 
+
+extrinsic spectral broadening, a three-ms-long, Gaussian-envelope burst is used. Note that 
+
+the peak height is limited due to the slow Rabi frequency (estimated to be ~ 1 kHz). (c) 
+
+Normalised echo signal (CPMG with n = 1) as a function of total evolution time, t. The 
+
+sequence  comprises  three  EDSR  pulses  with  different  rotation  axes,  /2XY/2. 
+
+Each data point represents the oscillation amplitude ACPMG of Pup by sweeping the rotation 
+
+ 
+
+11 
+
+axis  of  the  final  echoing    rotation  (see  the  insets).  Fitting  with  a  form  of 
+exp(−(𝑡/𝑇2
+ 
+
+CPMG = 99 s and  = 1.8. 
+
+)  yields T2
+
+𝛼
+
+CPMG)
+
+ 
+
+Figure 4  Dynamical decoupling and noise spectral density. 
+
+(a) Coherence decay under CPMG decoupling pulses as a function of total evolution time, 
+
+for  different  n.  In  the  CPMG  sequence,  equally-spaced    pulses  are  applied  n  times 
+
+ 
+
+between two  rotations. The rotation axis of the decoupling Y pulses is set orthogonal 
+CPMG = 3.1 ms, which 
+*.  Similarly  to  Fig.  3(c),  each  data  point 
+
+to that of the first X pulseFor the largest n = 1024 we obtain T2
+
+is  two-orders-of-magnitude  longer  than  T2
+
+represents the coherent oscillation amplitude ACPMG extracted by changing the angle of 
+
+the last /2 rotation. Since waveforms describing EDSR pulse sequences are at least as 
+
+ 
+
+12 
+
+long as the total evolution time, the sampling time resolution needs to be sufficiently large. 
+
+and /2 rotations, respectively). The inset shows the extracted coherence times T2
+
+Therefore, relatively long rectangular-shaped bursts are used here (500 and 250 ns for  
+CPMG as 
+CPMG grows monotonically with n, as expected for coherence limited 
+
+a function of n. T2
+
+by low-frequency noise. Fitting is performed for values in the logarithmic scale. (b) Noise 
+
+spectral content extracted independently from ACPMG in (a) and from repeated Ramsey 
+
+measurements. The solid line is a fit of the CPMG noise data, S ∝ 1/f. Ramsey noise 
+
+data (red points) are calculated from the estimated qubit frequency evolution of 24 mins 
+
+in total. They are based on 3600 Ramsey fringe records with each containing 200 single 
+
+shot measurement results. An example of a two-minute trace of the qubit frequency is 
+
+displayed in the inset. 
+
+ 
+
+ 
+
+Figure 5 Gate fidelity benchmark. 
+
+Sequence  fidelities  for  standard  (top-most)  and  interleaved  randomised  benchmarking 
+
+show a single-exponential decay over more than 200 Clifford gate operations. Interleaved 
+
+single-qubit gates are annotated in the figure along with extracted fidelities. Traces are 
+
+offset by an increment of 0.2 for clarity. Visibilities are all within 0.72  0.012. 
+
+ 
+
+ 
+
+13 
+
+Methods   
+
+ 
+
+The  Device.  The  Si/SiGe  heterostructure  was  grown  by  gas-source  molecular  beam 
+epitaxy. An isotopically  purified silane source  (with a residual  concentration of  29Si at 
+
+around 800 ppm) was used exclusively for the strained well. The QD and the bottom of 
+
+the 250-nm-thick on-chip micro-magnet are separated by ~ 170 nm and designed in line 
+
+with ref. 24. Carriers are induced in the well with a global top-gate electrode and further 
+
+lateral confinement is provided by individually biasing surface metal gates. We confirm 
+
+the valley splitting is much larger than the Zeeman splitting from magneto-spectroscopy 
+
+measurements. 
+
+ 
+
+Measurement pulses. We apply two-stage pulses to gate R for spin initialisation, control 
+
+and  readout  as  shown  in  Fig. 1b,  except  for  longitudinal  SEC  characterisation 
+
+measurements (Fig. 2a). The typical readout time is ~ 1 ms, as we tune the QD-reservoir 
+
+tunnel  rate  to  around  10 kHz.  In  the  initialisation  and  readout  stage,  the  centre  of  the 
+
+Zeeman-split energy levels in the QD is aligned to the chemical potential in the reservoir. 
+
+Then, only the excited spin-up electron will tunnel out, and only the ground spin-down 
+
+electron will tunnel in. We detect such tunnelling events by thresholding charge sensor 
+
+reflectometry signals, to measure the qubit spin state in a single-shot manner. During the 
+
+control stage, on the other hand, both spin sublevels in the QD are plunged energetically 
+
+far  below  to  prevent  population  leakage.  During  spin  manipulation,  the  measurement 
+
+reflectometry carrier power is blanked. 
+
+ 
+
+Clifford  benchmarking  protocol.  Randomized  benchmarking  protocols  apply 
+
+sequences of randomly chosen gates from some group and map the error probability to 
+
+the  fidelity  decay  rate  as  a  function  of  sequence  length.  In  the  standard  randomized 
+
+benchmarking, after initialisation in a spin-down state, we apply m successive Clifford 
+
+gates, which are randomly chosen to twirl gate errors. In the interleaved benchmarking, 
+
+we insert an additional test gate between randomly chosen Clifford gates. We then rotate 
+
+the  spin  state  such  that  the  output  ideally  becomes  one  of  the  target  spin  states,  up  or 
+down29. We  calculate  the  difference  of  the  spin-up  probabilities  Pup  between  the  two 
+
+target-state  cases  with  each  based  on  1000  single-shot  measurements.  Each  sequence 
+
+fidelity value is obtained by averagingPup over 20 different random Clifford gate sets. 
+The sequence fidelity then decays as (2F – 1)m with F denoting the average fidelity per 
+
+step. 
+
+ 
+
+ 
+
+Each of the 24 gates in the Clifford gate set is constructed by concatenating on 
+
+14 
+
+average 1.875 single-qubit physical gates of 7 kinds,  and /2 rotations around the x 
+
+and  y  axes  and  an  identity  operation.  To  implement  the  physical  gates,  we  use  two-
+
+quadrature EDSR microwave pulses. On the main quadrature, we feed Gaussian envelope 
+
+bursts truncated at ± 2 denotes the standard deviation On the second quadrature, we 
+
+simultaneously  apply  the  derivative-of-Gaussian  envelope  pulses  to  account  for  the 
+
+control-induced frequency shift. These pulse amplitudes are individually optimized for  
+
+and  /2  gates.  The  pulse  durations  (4)  are  120  and  60 ns  for  the    and  /2  gates, 
+
+respectively, due to pulse-shaping hardware limitation. 
+
+ 
+
+ 
+
+15 
+
+Supplementary Information: 
+A >99.9%-fidelity quantum-dot spin qubit with coherence limited 
+by charge noise 
+ 
+
+1.  Details of the experimental setup 
+
+ 
+
+The device was cooled in a dilution refrigerator with an electron temperature of 
+
+around 100 mK (estimated from the charging line width). The high-frequency electrical 
+
+cable connected to gate R was coupled to a DC bias through resistive dividers at room 
+
+temperature  and  was  then  filtered  inside  the  refrigerator  with  a  cut-off  frequency  of 
+
+~ 100 MHz. Gate pulse signals were generated by Tektronix AWG520. The other high-
+
+frequency cable for gate C was designed for a bandwidth of 20 GHz. For microwave pulse 
+
+shaping, we used either analogue (pulse and phase) modulations (for higher powers) or 
+
+digital,  quadrature  modulation  (for  narrower  spectral  broadening).  These  modulations 
+
+were  realised  by  feeding  two-channel  waveform  signals  from  Tektronix  AWG7122C, 
+
+triggered by Tektronix AWG520 during the control stage. The microwave was generated 
+
+by Agilent generators E8257D or E8267D (depending on pulse shaping schemes). 
+
+ 
+
+We formed a tank circuit resonating at 185 MHz on the device printed circuit 
+
+board.  Reflected  RF  charge-sensing  signals  were  collected  with  AlazarTech  digitizer 
+
+ATS9440 at 1 MS/s after demodulation. Single-shot spin measurements were performed 
+
+by thresholding the maximum signal level with respect to the median value during the 
+
+measurement stage. This readout thresholding value and the readout gate  voltage were 
+
+calibrated almost hourly prior to measurements such that the Rabi oscillation visibility 
+
+would  be  maximised.  The  microwave  carrier  frequency  was  also  calibrated  similarly 
+
+often  based  on  Ramsey  fringes  to  compensate  for  a  systematic  decrease  of  the  EDSR 
+
+frequency.  We  believe  that  this  drift  is  primarily  due  to  the  field  decay  of  the 
+
+superconducting  magnet  operated  in  persistent  mode  (while  also  sending  a  current 
+
+through the external leads). 
+
+ 
+
+2.  Charge-noise-induced spin dephasing mediated by a longitudinal SEC 
+
+ 
+
+1/f  charge  noise  is  commonly  observed  in  nano-electronic  devices,  and  could 
+arise from a variety of mechanisms8-10. For QDs based on semiconductor heterostructures, 
+
+charge traps near interfaces are typically believed to be the leading source. Exposure to 
+
+SEC will couple the qubit spin to such electric field noise, to which the pure electron spin 
+
+ 
+
+16 
+
+would  be  insensitive.  More  specifically,  fluctuating  in-plane  electric  field  δ𝐸rms  will 
+displace the QD position by 
+
+δ𝑟rms =
+
+ℎ2𝑒
+
+4𝜋2𝑚SiΔorb
+
+2 δ𝐸rms  , 
+
+where  ℎ  is  Planck's  constant,  e  is  the  single  electron  charge,  and  mSi  is  the  electron 
+
+effective mass in Si (~ 0.2 m0 with m0 the electron rest mass). We have assumed an in-
+
+plane  symmetric  harmonic  confinement  potential,  characterised  by  the  orbital  spacing 
+Δorb. In electrically controlled QDs, the size of fluctuating electric potential  δ𝑉rms has 
+been  conventionally  measured  instead  of δ𝐸rms,  with  a  typical  value  of  ~ 1 μeV8-10. 
+Given that this level of potential noise is generated by an ensemble of interface charge 
+traps located typically  𝑑trap ~ 100  nm away from the QD9,   
+
+δ𝐸rms ~  𝛿𝑉𝑟𝑚𝑠/(𝑒𝑑trap) ~ 0.1 V/cm. 
+
+This corresponds to  δ𝑟rms = 4 pm  for  Δorb = 1 meV. The QD displacement will shift 
+the qubit frequency via a longitudinal SEC field by 
+
+δ𝑓𝐸 =  𝑔𝜇B𝑏longδ𝑟rms/ℎ, 
+
+where g ~ 2 is the Landé g-factor in Si. We note that since Bext is much larger than the 
+
+size of stray field, the dephasing will be nominally mediated by the longitudinal one. To 
+benefit  from  isotopic  purification,  this  charge-noise-induced  detuning  fluctuation  δ𝑓𝐸 
+should  be  safely  smaller 
+the  nuclear-spin-induced  detuning  fluctuation 
+𝛿𝑓nat ~ 0.3 MHz   (r.m.s.) observed in isotopically natural Si/SiGe QDs18. We will then 
+arrive at 
+
+than 
+
+ 
+
+ 
+
+𝑏long ≪
+
+2
+
+4π2𝑚SiΔorb
+𝑔𝜇B𝑒ℎ 𝛿𝐸rms
+
+𝛿𝑓nat ~  3 mT/nm. 
+
+3.  Charge noise spectrum in the device 
+
+ 
+
+We  evaluate  the  spectrum  of  the  device  charge  noise  by  recording  the 
+
+demodulated RF amplitude of the sensor signal for 0.5 sec. We divide the trace into 25 
+
+parts (the Bartlett method) and calculate the average power spectral density (Figure S1). 
+
+The procedure is repeated for cases where the sensor sensitivity is maximal and minimal 
+
+(tuned to a Coulomb slope and valley). The obtained spectra in a frequency range of 10 – 
+
+1000 Hz show clear evidence of 1/f charge noise in the device. 
+
+ 
+
+4.  Rabi oscillation decay at moderate and strongest driving powers 
+
+ 
+
+ 
+
+The  Rabi  oscillation  Q-factor  is  a  key  parameter  to  quantify  the  spin-qubit 
+
+17 
+
+controllability and can be defined as Q = T2
+
+Rabi/T T2
+
+Rabi fRabi, where T2
+
+Rabi denotes the 
+
+characteristic decaying time of the Rabi oscillation and 1/T = 2fRabi is the  rotation time. 
+Rabi and fRabi should ideally increase as we raise the microwave amplitude, 
+
+While both T2
+
+it is evident from Figure 1e of the main text that fRabi does not linearly grow above 20 MHz 
+
+in the present device. Furthermore, when the spin is driven in this saturating range, we 
+
+observe faster Rabi oscillation decay (Figure S2a). These observations imply that the Rabi 
+
+oscillation Q-factor  would be peaked at  some  fRabi value, which would be an educated 
+estimate of an optimal working point to enhance the control fidelity19. In our current setup 
+
+for randomised benchmarking experiments, however, the maximum applicable amplitude 
+
+is decreased by the conversion loss of an additional mixer for quadrature control (Marki 
+
+Microwave MLIQ-0218), making maximum fRabi ~ 4 MHz, far below saturation. The Rabi 
+
+oscillation quality factor for fRabi = 3.93 MHz is evaluated to be Q = 888 (Figure S2b). 
+
+ 
+
+5.  Frequency-domain measurement of in-situ qubit-frequency shift 
+
+ 
+
+In  this  section  we  describe  a  measurement  of  the  qubit-frequency  shift  in  the 
+
+spectral domain, as opposed to the one in the time domain (Figure 2 in the main text). We 
+
+obtain the resonance frequency fres at different operation biases by changing the control 
+
+pulse amplitude VR (see Figure S3a). We measure frequency-dependence of Pup under a 
+
+ pulse (we fix the Rabi frequency fRabi to 1 MHz and the microwave duration to 500 ns) 
+
+and fit the obtained spectra to a model function for an ideal  rotation, 
+
+𝐴 𝜋 sinh(𝐷(𝑓)) /2𝐷(𝑓)2 + 𝐵 
+
+where  𝐷(𝑓) =
+
+π
+
+2
+
+√i[(𝑓 − 𝑓res)/𝑓Rabi]2 − 1,  and  A  and  B  account  for  initialisation  and 
+
+readout errors (Figure S3b). Figure S3c plots the extracted fres values as a function of VR, 
+
+from which we get a gate lever-arm of 91.1 kHz/mV for gate R. While, strictly speaking, 
+
+this measures the steady-state frequency shift, a consistent value is obtained for the real-
+
+time modulation as well (see the main text). 
+
+ 
+
+6.  Calculations of noise spectral content 
+
+ 
+
+The noise spectral content  𝑆(𝑓)  used in the main text is defined by the power 
+
+spectral density of detuning frequency noise  ν(𝑡) or 
+
+ 
+
+𝑆(𝑓) =   lim
+𝑇→∞
+
+1
+
+𝑇
+
+∫ d𝑡 𝑒2πi𝑓𝑡 𝜈(𝑡)
+
+
+𝑇
+0
+
+2
+
+ .   
+
+(S1) 
+
+From the Wiener-Khinchin theorem, we can rewrite this as 
+
+ 
+
+18 
+
+∞
+
+𝑆(𝑓) =   ∫ d𝑡  e2πi𝑓𝑡 〈𝜈(𝑡′)𝜈(𝑡′ + 𝑡)〉 
+ 
+
+−∞
+
+in terms of the autocovariance function  〈𝜈(𝑡′)𝜈(𝑡′ + 𝑡)〉 =   lim
+𝑇→∞
+
+1
+
+𝑇
+
+𝑇
+∫ d𝑡′𝜈(𝑡′)𝜈(𝑡′ + 𝑡)
+0
+
+, 
+
+with  〈⋅〉  denoting the statistical average. If the distribution of  𝜈(𝑡′)  is Gaussian, random 
+
+phase  accumulation  𝜙(𝑡)after  some  sequence  with  the  total  evolution  time  t,  𝜙(𝑡) =
+
+∞
+ ∫ d𝑡′ 2𝜋 ν(𝑡′) 𝜃𝑡(𝑡′)
+−∞
+
+,  is also Gaussian distributed. Note we have introduced a pulse-
+
+sequence specific function  𝜃𝑡(𝑡′), which switches between  ±1  at every decoupling  
+pulse and is 0 before and after the sequence26. Then the coherence amplitude is given by 
+
+ 
+
+ exp[〈𝑖𝜙(𝑡)〉] =   exp [−
+
+〈𝜙(𝑡)2〉
+
+2
+
+] = exp[ −4𝜋2 ∫ d𝑓 𝑆(𝑓) 𝐹𝑡(𝑓)
+
+∞
+0
+
+] 
+
+(S2) 
+
+where  𝐹 𝑡(𝑓) = ∫ d𝑓  e−2πi𝑓𝑡′
+
+∞
+−∞
+
+2
+𝜃𝑡(𝑡′)
+
+ 
+
+.   
+
+ 
+
+For decoupling pulses,  𝐹 𝑡(𝑓)  effectively behaves as a band-passing filter. By 
+denoting times at which the decoupling  pulses are applied as  𝜏𝑘  (and with  𝜏0 = 0  and 
+𝜏𝑛𝜋+1 = 𝑡), for even numbered CPMG we have26 
+
+1
+
+𝑛𝜋
+
+𝐹𝑛π,𝑡(𝑓) =
+
+(2𝜋𝑓)2 ∑ (−1)𝑘
+
+𝑘=0
+
+(𝑒−2πi𝑓𝜏𝑘+1 − 𝑒−2πi𝑓𝜏𝑘)
+
+ 
+
+2
+
+ 
+
+=
+
+4
+
+𝜋2𝑓2
+
+sin4(
+
+𝜋𝑓
+
+2𝑓rep
+
+) sin2(
+
+𝜋𝑛𝜋𝑓
+)
+𝑓rep
+, 
+
+cos2(
+
+𝜋𝑓
+𝑓rep
+
+)
+
+where  𝑓rep = 𝑛π/𝑡  is the decoupling pulse frequency. For  𝑛𝜋 > 8, it narrowly peaks at 
+odd  multiples  of  𝑓rep/2    with  contributions  from  higher  harmonics  decaying 
+quadratically. Noting from Parseval's theorem that 
+
+∞
+∫ d𝑓 𝐹𝑡(𝑓)
+0
+
+=
+
+1
+
+2
+
+2
+∞
+∫ d𝑡′𝜃𝑡(𝑓)
+−∞
+
+=
+
+𝑡
+
+, 
+2
+
+we can derive Eq. (1) of the main text from Eq. (S2); 
+
+ln(exp[〈𝑖𝜙(𝑡)〉]) =   −4𝜋2 ∫ d𝑓 𝑆(𝑓) 𝐹𝑡(𝑓)
+
+∞
+0
+
+≃ −2𝜋2𝑡 𝑆(𝑓rep/2). 
+
+ 
+
+For Ramsey experiments (𝑛𝜋 = 0),  lim
+𝑓𝑡→0
+
+𝐹 𝑡(𝑓) = 𝑡2. Then for 1/f noise  𝑆(𝑓) =
+
+𝑆0/𝑓, Eq.(S2) reduces to 
+
+ 
+
+19 
+
+ 
+
+exp(−(𝑡/𝑇2
+
+∗)2) ≃ exp [−4π2𝑡2 ∫
+
+1/𝑡
+1/𝑇
+
+d𝑓 𝑆(𝑓)
+
+] = exp [−4π2𝑡2𝑆0 ln (
+
+𝑇
+
+𝑡
+
+)] 
+
+which gives 
+
+ 
+
+1/𝑇2
+
+∗ ≃ 2π√𝑆0 ln(𝑇/𝑡) . 
+
+(S3) 
+
+Here  t  is  the  evolution  time  and  T  is  given  by  the  total  measurement  time,  typically 
+
+~ 100 sec in our case (Fig. 3a of the main text). Then the logarithmic factor is ~ 15 when 
+t  is  tens  of  microseconds.  Assuming  𝑆0 =  2.67 × 106   as  extracted  from  CPMG 
+∗ = 24.8 μs  for  𝑡 = 20 μs, in excellent agreement with 
+coherence amplitudes, we get  𝑇2
+the value obtained independently from Ramsey fringes. 
+
+ 
+
+The discrete version of Eq. (S1) provides another way of estimating  𝑆(𝑓)  based 
+
+on Ramsey  sequences, which we employ in  Figure 4c of the  main  text. Supposing we 
+have a sequence of  𝜈(𝑡𝑛)  of a length N with a sampling lag of  𝑡d, the discrete version 
+of  𝑆(𝑓)  is 
+
+𝑆d(𝑓𝑘) =   
+
+𝑡d
+𝑁
+
+ ∑ 𝜈(𝑡𝑛) e−2πi𝑓𝑘𝑡d
+
+𝑁
+
+𝑛=1
+
+2
+
+
+
+ 
+
+where  𝑓𝑘 = 𝑘/𝑁𝑡d. It is known that the average of  𝑆d(𝑓𝑘)  for M sets of such sequences 
+will asymptotically tend to  𝑆(𝑓). To perform this spectral estimation, we infer detuning 
+
+values  from  Ramsey  fringes  based  on  200  single  shot  measurements  in  total 
+(corresponding to a sampling lag of0.4 seconds) using a Bayesian estimation method28. 
+
+We  use  evolution  times  between  0.4  and  40  s  and  repeat  the  cycle  3600  times 
+continuously with  (𝑀, 𝑁) = (12, 300).  
+
+ 
+
+ 
+
+20 
+
+Figure S1  Charge noise spectrum in the device. 
+
+The power spectral density of the device charge noise is estimated by performing discrete 
+
+Fourier  transformation  on  25  traces  of  the  sensor  signal  when  the  sensor  is  tuned  to  a 
+
+sensing condition (red trace). It shows a clear 1/f dependence below 1 kHz, above which 
+
+it is exceeded by the background noise floor (blue trace). 
+
+ 
+
+ 
+
+ 
+
+Figure S2  Rabi oscillation decay. 
+
+(a) Rabi oscillation in the saturating, high-power range. In contrast to the one below 20 
+
+MHz (see Fig. 1d of the main text), a clear oscillation decay is observed. The solid curve 
+Rabi = 
+plots the best fit to  𝐴cos(2𝜋𝑓𝑅𝑎𝑏𝑖𝑡) exp(−𝑡/𝑇2
+0.57 s, A = 0.374, B = 0.51, which corresponds to Q = 28. (b) Rabi oscillation decay for 
+
+𝑅𝑎𝑏𝑖 ) + 𝐵  with fRabi = 24.3 MHz, T2
+
+fRabi = 3.93 MHz. Each data point represents the Rabi oscillation amplitude for a given 
+
+ 
+
+ 
+
+21 
+
+burst time (see the insets). Fitting to a single-exponential decay (the black curve) gives 
+
+T2
+
+Rabi = 113 3 s. 
+
+ 
+
+ 
+
+Figure S3  Spectroscopy of the in-situ qubit-frequency shift. 
+
+ 
+(a) Pulse  schematic  used  for  spectroscopic  measurement  of  the  longitudinal  SEC. 
+
+(b) EDSR spectra after a single  pulse for various the control-stage voltages VR. The 
+
+traces are offset for clarity. (c) Extracted resonance frequency against the control-stage 
+
+voltage  VR.  The  linear  fit  yields  the  gate  lever-arm  for  the  qubit-frequency  shift  of 
+
+91.1 kHz/mV. 
+
+ 
+
+22 
+
+

@@ -1,0 +1,823 @@
+Rigid Unit Modes in sp-sp2 Hybridized Carbon Systems: Origin of
+
+Negative Thermal Expansion
+
+Cheol-Woon Kim, Seoung-Hun Kang, and Young-Kyun Kwon∗
+
+Department of Physics and Research Institute for Basic Sciences,
+
+Kyung Hee University, Seoul, 02447, Korea
+
+(Dated: June 10, 2021)
+
+Abstract
+
+Using density functional theory combined with quasi-harmonic approximation, we investigate
+
+the thermal expansion behaviors of three different types (α, β, and γ) of graphyne which is a
+
+two-dimensional carbon allotrope composed of sp and sp2 bonds. For each type of graphyne, we
+
+obtain the temperature dependent area variation by minimizing its free energy as a function of
+
+temperature, which is calculated by considering all the phonon modes in the whole Brillouin zone.
+We find that all three types of graphyne exhibit negative in-plane thermal expansion up to T <∼
+1000 K. The observed in-plane thermal contraction can be attributed partially to the ripple effect,
+
+similarly in graphene. The ripple effect itself, however, is not sufficient to explain anomalously
+
+larger thermal contraction found in graphyne than in graphene. Our deliberate analysis on the
+
+phonon modes observed in graphyne enables us to discover another source causing such thermal
+
+expansion anomaly. We find that there are particular phonon modes with frequencies around a
+few hundreds of cm−1 existing exclusively in graphyne that may fill empty spaces resulting in area
+
+reduction. These modes are identified as "rigid unit modes" corresponding to the libration of each
+
+rigid unit composed of sp2 bonds.
+
+5
+1
+0
+2
+
+ 
+l
+u
+J
+ 
+
+0
+2
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+1
+v
+2
+6
+5
+5
+0
+
+.
+
+7
+0
+5
+1
+:
+v
+i
+X
+r
+a
+
+∗ Corresponding author. E-mail: ykkwon@khu.ac.kr
+
+1
+
+I.
+
+INTRODUCTION
+
+Various carbon allotropes based on sp2 hybridization, such as fullerenes, [1] nanotubes, [2]
+
+and graphene, [3] have been intensively studied during last a few decades, since their first
+
+discoveries. Their unique properties are basically related to the hexagonal geometry and the
+
+Dirac cones in the electronic structure of graphene, [4 -- 6] which is a base material to form
+
+other sp2-bonded carbon allotropes. To make use of graphene in future nanoelectronics,
+
+however, it is indispensable to open an energy gap at the Fermi level EF . Although lots
+
+of attempts have been made to open a band gap, [7 -- 12] nothing has yet come along for
+
+practical applications. As a separate approach, sundry efforts have been made to search
+
+for other 2D allotropes intrinsically possessing an energy gap at EF to be used as graphene
+
+substitutes in electronic applications. [13]
+
+A new 2D layered carbon allotrope called graphyne was proposed in 1987. [14] It can be
+
+geometrically generated from graphene by inserting a single acetylenic linkage (AL) consist-
+
+ing of two sp-hybridized carbon atoms into a bond in graphene composed of sp2-hybridized
+
+carbon atoms only. Since there are a number of ways of inserting ALs, many different
+
+types of graphyne can be formed. Among them were mainly considered three types with
+
+a hexagonal symmetry, classified by the number of ALs attached to each sp2-hybridized or
+
+triply-coordinated carbon atom: α-, β-, and γ-graphyne. Fig. 1(a -- c) shows their equilib-
+
+rium structures. In α-graphyne shown in Fig. 1(a), there are three ALs connected to each
+
+sp2-hybridized carbon atom, whereas in β-graphyne (γ-graphyne), every sp2-bonded atom
+
+has only two ALs (one AL) as shown in Fig. 1(b) and (c), respectively.
+
+Theoretical studies reported that both α- and β-graphyne structures possess Dirac cones
+
+near EF in its Brillouin zone (BZ) representing their semi-metallic characteristics like in
+
+graphene. [15 -- 21] It was also reported that γ-graphyne, which is by far the most stable
+
+graphyne, is interestingly an intrinsic semiconductor with a direct band gap of 0.46 eV at M
+
+points. The existence of the band gap was ascribed by the Peierls instability resulting in the
+
+wave function localization at the triple bonds. [18] It is, therefore, expected that γ-graphyne
+
+could be made use of as a semiconducting component in future nanoelectronics.
+
+Although various research groups have endeavored to synthesize them, graphyne has not
+
+yet been realized in a crystalline form. Nevertheless, it was already reported that graphyne
+
+sub units that resemble γ-graphyne were successfully synthesized. [22 -- 24] Moreover, one of
+
+2
+
+FIG. 1. Equilibrium structures of (a) α-graphyne, (b) β-graphyne and (c) γ-graphyne. Respective
+
+hexagonal unit cells are depicted by dashed parallelograms. Nonequivalent bonds in each type of
+
+graphyne are denoted by d1, d2, and dt. d1 and d2, which are single-bond like, represent a bond
+
+between an sp2-bonded (or triply-coordinated) and an sp-bonded (or doubly-coordinated) atoms,
+
+and one between two triply-coordinated atoms, respectively, whereas dt designates a triple bond
+
+between two sp atoms in every acetylenic linkage. (d) Cohesive energy comparison of three types
+
+of graphyne and graphdiyne with respect to graphene as a function of Nsp/N , where Nsp and N
+
+are the number of sp-bonded or doubly-coordinated atoms and N and the total number of atoms
+
+in the unit cell, respectively.
+
+3
+
+d1dtdtd1d2dtd1d2(d)ΔE (eV/atom)graphene-graphyne-graphyne-graphyne0.00.5Nsp/N1.00.00.20.40.60.81.0graphdiyne(a)(c)(b)their cousin structures with two ALs in a sequence instead of a single AL in γ-graphyne,
+
+called graphdiyne, was also reported to be discovered in the form of sheet, [25] as well as in a
+
+tube form. [26] According to our calculation as well as other studies, [27 -- 29] β-graphyne and
+
+γ-graphyne are even more stable than graphdiyne, as shown in Fig. 1(d), and thus expected
+
+to be synthesized in near future.
+
+Compared to the structural and electronic properties of α-, β-, and γ-graphyne that
+
+have been intensively studied as discussed above, there have been not many studies on
+
+their thermal and thermal expansion (TE) behaviors, [20, 21, 30] which are also necessary
+
+properties to be disclosed in advance for them to be utilized as various devices in future
+
+nanoelectronics.
+
+It is well known that most materials expand thermally with a very different material-
+dependent linear TE coefficient (TEC) of 10−7 ∼ 10−4 mainly due to the atomic vibration
+under asymmetric potential. In almost all devices and equipment, such a TE usually be-
+
+comes a critical problem deteriorating their performance and lifetime. There have been,
+
+on the other hand, several reports revealing materials with a negative TEC (NTEC), such
+
+as graphite, [31] carbon nanotubes, [32, 33] zirconium tungstate (ZrW2O8), [34] perovskite
+
+oxides, [35 -- 37] and Invar alloys, [38, 39] originating due to a ripple effect, bending/twisting
+
+modes, rigid unit modes (RUMs), [40, 41] atomic radius contraction, [42] or a magnetovolume
+
+effects. [43] Researchers have made various attempts to make composites containing NTE
+
+materials, such as ZrW2O8 [44 -- 46] and β-eucryptite [47], as a TE compensator, expecting
+
+them to be high-performance composites with near zero TE. It was indeed shown that TE
+
+can be suppressed in molten aluminum alloy with NTE manganese antiperovskites. [48]
+
+In this letter, we report a first discovery of RUMs in two-dimensional graphitic carbon
+
+systems, which are responsible for a TE anomaly of NTE in sp-sp2 hybridized carbon sys-
+
+tems, similarly observed in 2D perovskites. [49] The thermal properties and TE behaviors
+
+of α-, β-, and γ-graphyne were investigated by first-principles calculations of temperature-
+
+and volume-dependent free energies from the phonon properties. Similar to graphene, all of
+three configurations contract with temperature up to T≈1000 K, but the absolute values of
+their TECs are much larger than that of graphene especially at low temperatures. Based on
+
+our thorough investigation on their phonon modes, we attributed such thermal contraction
+
+behaviors to not only the ripple effect as in graphene, but also RUMs corresponding to
+
+libration motions of rigid units composed of sp2-bonds only.
+
+4
+
+II. COMPUTATIONAL DETAILS
+
+To investigate the TE behaviors of three types of graphyne, we first obtained their equi-
+
+librium structures by carrying out first-principles calculations within the density functional
+
+theory (DFT), [50] as implemented in Vienna ab initio simulation package (VASP), [51, 52]
+
+while adjusting three different carbon-carbon bonds, and thus the lattice constant of each
+
+graphyne as discussed in Sect. III. Projector augmented wave potentials [53, 54] was em-
+
+ployed to describe the valence electrons, and the electronic wave functions were expanded by
+
+a plane wave basis set with the cutoff energy of 450 eV. The exchange-correlation functional
+
+was treated with the Perdew-Burke-Ernzerhof (PBE) parameterization [55] of the gener-
+
+alized gradient approximation (GGA). To mimic single-layered graphyne, we introduced a
+vacuum region with 15 A along the c-axis perpendicular to the sheet. The BZ was sampled
+using a Γ-centered 10×10×1 k-grid for the primitive unit cell of each type of graphyne. Al-
+though the primitive cell size of β-graphyne is larger than the other types, the same k-grid
+
+was employed for precise calculation for β-graphyne because there were earlier studies on
+
+β-graphyne showing inconsistent results on structural stability. [20, 21]
+
+The phonon dispersion relations were computed by applying the finite displacement
+method (FD) [56, 57] for 3×3×1 supercells. The corresponding reduced BZs were sampled
+by 3×3×1 k-point meshes. In each supercell, we solved the secular equation of dynamical
+matrix constructed at every wave vector q from the force constant matrices computed under
+
+FD to obtain the phonon dispersion relation. To investigate thermal properties, we em-
+
+ployed quasi-harmonic approximation (QHA), [58, 59] in which the Helmholtz free energy
+
+of a 2D graphyne sheet was calculated by
+
+F (T, A) = U (A) +
+
+1
+2
+
+¯hωq,n + kBT
+
+(cid:88)
+
+q,n
+
+(cid:26)
+
+(cid:88)
+
+q,n
+
+ln
+
+(cid:18)
+
+−¯hωq,n
+kBT
+
+(cid:19)(cid:27)
+
+,
+
+1 − exp
+
+(1)
+
+where ¯h, and kB are the reduced Planck constant, and the Boltzmann constant, respectively;
+
+and ωq,n is the phonon frequency with the wave vectors q and the mode indices n. In Eq. (1),
+
+the first term U (A) is the system internal energy with a constant area A at T = 0; the second
+
+term represents the vibrational zero-point energy of the lattice; and the last term corresponds
+
+to the phonon contribution to the free energy in QHA. [58, 59] U (A) and ωq,n were evaluated
+
+at 12 different area points. F (T, A) was fitted to the integral form of the Vinet equation
+
+of state [60] to obtain the minimum values of the thermodynamic functions with respect to
+
+5
+
+the area, and thus the equilibrium area, A(T ), as a function of temperature. TE behaviors
+
+of three types of graphyne sheets were explored by calculating the area TEC αS(T ) as a
+
+function of T ,
+
+αS(T ) =
+
+1
+
+dA(T )
+
+A(T )
+
+dT
+
+.
+
+(2)
+
+III. RESULTS AND DISCUSSION
+
+We first searched for the equilibrium structures of three kinds of graphyne, which are
+
+indispensable to their phonon dispersion relations and thermal properties. Graphyne can
+be made by replacing all or some bonds in graphene by an AL (-C≡C-). Among numerous
+different types of graphyne produced in this way, we only focused on three types of gra-
+
+phyne, α, β, and γ, which are highly symmetric in a hexagonal lattice relative to the other
+
+types. The α-graphyne can be made by a complete substitution for graphitic bonds, while
+
+the β-graphyne and γ-graphyne can be formed by two-thirds and one-third substitutions, re-
+
+spectively. In these types of graphyne, there are at most three nonequivalent carbon-carbon
+
+bonds, d1, d2, and dt. Single-bond like d1 and d2 represent bonds from a sp2 atom to a
+neighboring sp and sp2 atom, respectively, while a triple-bond dt describes a bond between
+
+two neighboring sp atoms forming an AL together with two d1 bonds.
+
+For each graphyne, we completely scanned the whole energy surface while adjusting the
+
+bond length of three nonequivalent carbon-carbon bonds, d1, d2, and dt keeping its hexagonal
+
+symmetry. Note that there are no d2 bonds in α-graphyne, and the lattice constant of
+
+each unit cell is uniquely determined for each set of given d1, d2, and dt. The equilibrium
+
+structures of three types of graphyne were determined at the minimum energy point in
+
+each energy surface, and shown in Fig. 1(a -- c), where their hexagonal lattices were depicted
+
+by dashed parallelograms representing their unit cells. Two nonequivalent bonds in the
+α-graphyne were calculated to be d1 = 1.397 A and dt = 1.230 A with lattice constant of
+aeq = 6.969 A. For the β-graphyne (γ-graphyne), on the other hand, its calculated lattice
+constant and three nonequivalent bond lengths are aeq = 9.480 A (6.890 A), d1 = 1.389 A
+(1.408 A), d2 = 1.458 A (1.426 A), and dt = 1.232 A (1.223 A). Our determined structural
+
+parameters are in good agreement with other studies. [18, 21]
+
+To compare the structural stability of three types of graphyne, we evaluated their cohesive
+
+energies with respect to that of graphene as a function of Nsp/N , where Nsp and N are the
+
+6
+
+FIG. 2. The phonon dispersion relations of (a) α-graphyne, (b) β-graphyne, and (c) γ-graphyne
+
+along the high symmetry lines in 2D hexagonal Brillouin zones.
+
+number of sp-bonded or doubly-coordinated atoms, and N and the total number of atoms
+
+in the unit cell, respectively. As displayed in Fig. 1(d). these types of graphyne are only
+0.6−0.8 eV/atom less stable than graphene. This tendency agrees well with quantum Monte
+Carlo calculations [27 -- 29]. Especially, the γ-graphyne and β-graphyne are even more stable
+
+than graphdiyne, which was already reported to be synthesized, [25, 26] expecting to be
+
+synthesized as well.
+
+Using 3×3×1-repeated supercells of the equilibrium structures, we calculated the phonon
+dispersion relations of all three types of graphyne as shown in Fig. 2, and identified all the
+
+phonon branches by analyzing their corresponding eigenvectors. We found in all cases that
+there are three acoustic phonon branches below ν ≈ 400 cm−1, two in-plane modes with a
+linear dispersion and one quadratic out-of-plane mode near Γ point. We did not find any
+
+imaginary frequencies in all the types of graphyne indicating their structural stability. Note
+
+that there were inconsistent results for β-graphyne in previous studies showing imaginary
+
+phonon frequencies [21] or phonon mode anomalies, [20] which were not observed in our
+
+calculation. We believe that such inconsistency was due to use of an incompletely relaxed
+
+7
+
+Frequency(cm-1)MKMKMK2000150010005000(a)(b)(c)2500structure in a small supercell size. On the other hand, the calculated phonon dispersion
+
+relations of α-graphyne and γ-graphyne are in good agreement with other studies. [20, 21]
+Compared to graphene with its maximum frequency of <∼1600 cm−1, [61] graphyne ex-
+hibits even higher phonon branches dispersed at ν >∼ 2000 cm−1. These high frequency
+modes correspond mainly to the stretching vibration of the triple bonds dt with larger force
+
+constants than single-bond-like d1 and d2, which generate graphene-like phonon modes at
+ν <∼ 1500 cm−1 below a large frequency gap of ∆ν ≈ 500 cm−1, as displayed in Fig. 2.
+The existence of such a large frequency gap implies that the vibration of dt bond stretching
+
+modes is strongly protected from being scattered by the graphene-like modes by the energy
+conservation law. [62] Another phonon gap of ∆ν ≈ 32, 78, or 67 cm−1, was also observed
+near ν ≈ 500, 750, or 1000 cm−1 for α-, β-, or γ-graphyne, respectively. We found that the
+d1 and d2 stretching modes are dispersed above the gap, while all the bending modes includ-
+
+ing optical flexural modes are settled below. Note there is an exception in the α-graphyne
+
+as displayed in Fig. 2(a) that there are two flat modes identified as optical flexural modes
+located at ν ≈ 602 and 622 cm−1 above the gap. Therefore, in the α-graphyne, these optical
+flexural phonons can be scattered by the stretching phonons, while in the other types of
+
+graphyne, they are located at similar frequencies, but below their frequency gap, as shown
+
+in Fig. 2(b) and (c), which protects them from being scattered by their corresponding d1
+
+and d2 stretching modes.
+
+To evaluate the Helmholtz free energy, we used Eq. (1) with the phonon dispersion rela-
+
+tions ωq,n calculated at 12 different area points, based on QHA. For each type of graphyne,
+
+the calculated Helmholtz free energy was plotted as a function of temperature and area
+
+in a color-coded map as displayed in Fig. 3. Note that color-coded energy values clearly
+
+represent that the γ-graphyne is more stable than the other two types. The temperature
+
+dependence of the equilibrium area A(T ) was obtained by minimizing the thermodynamic
+
+functions with respect to the area as denoted with the black solid line on each color-coded
+
+map in Fig. 3.
+
+We explored the TE behaviors of three types of graphyne as well as graphene for com-
+
+parison by evaluating the temperature dependence of change in each system's area with
+respect to the zero-temperature area, ∆A/A0 ≡ [A(T ) − A0]/A0, and its area TEC αs(T )
+given by Eq. (2). It was found that similar to graphene, all three types of graphyne contract
+as temperature increases up to T ≈ 1000 K, as shown in Fig. 4(a). Such an area shrink
+
+8
+
+FIG. 3.
+
+(Color online) Color-coded maps of Helmholtz free energy of (a) α-graphyne, (b) β-
+
+graphyne, and (c) γ-graphyne as a function of temperature and area calculated using Eq. 1. The
+
+black solid line on each plot indicates minimum value of free energy at each given temperature
+
+with respect to the area, and thus the equilibrium area for a given temperature. The color-coded
+
+free energy values are given in the color bar below.
+
+observed in a 2D sheet was attributed to its flexural modes, which are mainly responsible
+
+for the ripple effect, [63] as in graphene, [30, 61] and in graphyne. [21, 30] We confirmed the
+
+contribution of flexural modes of graphyne to NTE by evaluating their corresponding mode
+
+Gruneisen parameters, γq,n, defined as
+
+γq,n = −∂log ωq,n
+∂log V
+
+= − V
+ωq,n
+
+∂ωq,n
+∂V
+
+,
+
+(3)
+
+to be negative.
+
+Using Eq. (2), we also calculated the TECs of three types of graphyne as well as graphene.
+
+Compared to our calculated TEC values of graphene, which are in good agreement with
+
+previous studies, [30, 61] it was observed that graphyne exhibits significantly lower TEC
+
+values than graphene as shown in Fig. 4(b), which cannot be fully understood only by
+
+the flexural modes responsible for the ripple effect. To scrutinize such large differences,
+
+we thoroughly inspected the real-space vibrations of all the phonon modes by visualizing
+
+their corresponding eigenvectors together with mode Gruneisen parameters at different wave
+
+vectors q and mode indices n, and found intriguing unexpected vibrational modes, which
+
+we classified as RUMs. [40] It has already been known that the RUMs and quasi RUMs
+
+(qRUMs) involving a little distortion of rigid polyhedra are major causes of NTE occurred
+
+in an oxide framework consisting of rigid polyhedra, such as MO4 and MO6, where M and
+
+9
+
+F(T,A) (eV/atom)(a)0500100041.9-8.15-8.25-8.3542.042.142.2(b)77.077.578.078.5-8.20-8.30-8.4005001000(c)41.042.142.242.3-8.40-8.50-8.6005001000-8.60-8.45-8.30-8.15FIG. 4. (a) Temperature dependence of the ratio of area expansion to the reference area at T = 0 K,
+
+∆A/A0 in the unit of percentage %, and (b) the corresponding area thermal expansion coefficient,
+αS(T ), defined by Eq. 2, in the unit of 10−6 K−1, of α-graphyne (dotted line), β-graphyne (dashed
+line), and γ-graphyne (solid line) as well as of graphene (dash-dotted line) for comparison.
+
+O are a metal cation and oxygen, [64, 65] although it was reported that there is no simple
+
+correlation between NTE and RUMs. [66]
+
+Fig. 5(a -- c) shows real-space visualization of typical RUMs (in the right) observed at
+ν ≈ 382, 277, and 249 cm−1 in α-, β-, and γ-graphyne, respectively, in tandem with their
+corresponding equilibrium configurations (in the left). The corresponding rigid units are
+
+denoted respectively by gray polygons of a triangle, a rectangle, and a hexagon, each of
+
+which encloses the sp2 carbon atoms connected with d1 and d2 bonds. During the libration
+
+mode of the rigid unit in each graphyne, every AL becomes bended and thus the dt bonds
+
+are lengthened as shown in Fig. 5(a -- c). We found that such lengthened bonds can be
+
+compensated by filling an empty space or reducing the area size. To clarify the correlation
+
+between these RUMs and NTE in the graphyne systems and to analyze the size reduction
+
+quantitatively, we calculated the relative energy of each type of graphyne as a function of the
+
+area change ∆A/A0 with respect to the zero-temperature area A0, and the rotation angle
+
+ϕ of each rigid unit. Fig. 5(d -- f) displays the color-coded energy map, in which the area
+
+reduction was estimated by searching for the minimum values of the relative energy ∆E
+
+for a given ϕ, as depicted with cyan-colored line with dots. Since the maximum rotation
+
+10
+
+50010000.00.1-0.2-0.3-0.4-0.505001000ΔA/A0 (%)T (K)T (K)-200-15-10αS(10-6K-1)-505grapheneFIG. 5. Real-space visualization of typical rigid unit modes observed in (a) α-graphyne (b) β-
+graphyne, and (c) γ-graphyne respectively with ν ≈ 382, 277 and 249 cm−1. Each local rigid
+
+unit is represented by gray polygon (triangle, square, or hexagon in (a), (b), or (c), respectively)
+
+surrounding sp2 carbon atoms with d1 and d2 bonds. Each equilibrium structure is depicted in the
+
+left box, while the right box shows a snapshot of rigid units rotated counterclockwise corresponding
+
+to the selected RUM. Relative energy map color-coded as a function of ∆A/A0 and rotation angle ϕ
+
+of each rigid unit calculated for (d) α-graphyne, (e) β-graphyne, and (f) γ-graphyne. Cyan-colored
+
+solid line with dots indicates the area contraction determined by the minimum energy for given ϕ.
+
+Energy values are given in terms of the equilibrium energy of each graphyne.
+
+11
+
+(a)382 cm-1(b)277 cm-1(c)249 cm-10.20.10.00.30.20.10.0A/A0(%)𝜑0°2°4°6°0-2-4(e)(f)(d)E(eV/atom)0-2-40-2-40.40.20.0angle may increase with temperature, RUMs as well as the ripple effects may contribute
+
+to the area reduction. The mode Gruneisen parameters corresponding the RUMs was also
+
+calculated to be negative as similarly in the flexural modes contributing to the ripple effects.
+
+IV. CONCLUSIONS
+
+We presented the phonon dispersion relations and the thermal expansion behaviors of α-,
+
+β- and γ-graphyne using the density functional theory. Our calculated phonon dispersion
+
+relations showed that there were no imaginary frequencies implying their structural stability.
+Their high-frequency modes at ν ≈ 2000 cm−1 correspond to the stretching modes of the
+triple bonds dt, which are protected by the large frequency gap from being scattered by
+
+graphene-like modes of d1 and d2 bonds. Similarly, the stretching modes of d1 and d2 bonds
+
+can also be protected from being scattered by their bending modes, since the latter modes are
+
+separately located below another frequency gap, with an exception in α-graphyne. Our quasi
+
+harmonic approximation calculations revealed that all types of graphyne exhibit negative
+
+thermal expansion as in other 2D materials, but they have much larger values in negative
+
+thermal expansion coefficients than graphene. This significant discrepancy was resolved
+
+by identifying the rigid unit modes, which were firstly observed in 2D carbon graphitic
+
+structures. We found that not only the ripple effect originating from the flexural modes,
+
+but also the rigid unit modes are strongly responsible for the negative thermal expansion in
+
+graphyne.
+
+ACKNOWLEDGMENTS
+
+We thank Mr. Hyeonsu Lee for fruitful discussion. We acknowledge financial support from
+
+the Korean government through National Research Foundation (NRF-2015R1A2A2A01006204).
+
+Some portion of our computational work was done using the resources of the KISTI Super-
+
+computing Center (KSC-2014-C2-028 and KSC-2014-G2-001).
+
+[1] H. W. Kroto, J. R. Heath, S. C. O'Brien, R. F. Curl, and R. E. Smalley, Nature 318, 162
+
+(1985).
+
+12
+
+[2] S. Iijima, Nature 354, 56 (1991).
+
+[3] K. S. Novoselov, A. K. Geim, S. V. Morozov, D. Jiang, Y. Zhang, S. V. Dubonos, I. V.
+
+Grigorieva, and A. A. Firsov, Science 306, 666 (2004).
+
+[4] Y. Zhang, Y.-W. Tan, H. L. Stormer, and P. Kim, Nature 438, 201 (2005).
+
+[5] K. S. Novoselov, A. K. Geim, S. V. Morozov, D. Jiang, M. I. Katsnelson, I. V. Grigorieva,
+
+S. V. Dubonos, and A. A. Firsov, Nature 438, 197 (2005).
+
+[6] A. H. Castro Neto, N. M. R. Peres, K. S. Novoselov, A. K. Geim, and F. Guinea, Rev. Mod.
+
+Phys. 81, 109 (2009).
+
+[7] H. S¸ahin and S. Ciraci, Phys. Rev. B 84, 035452 (2011).
+
+[8] S. Kim, J. Ihm, H. Choi, and Y.-W. Son, Phys. Rev. Lett. 100, 176802 (2008).
+
+[9] Y.-W. Son, M. L. Cohen, and S. G. Louie, Phys. Rev. Lett. 97, 216803 (2006).
+
+[10] S. Y. Zhou, G.-H. Gweon, A. V. Fedorov, P. N. First, W. A. de Heer, D.-H. Lee, F. Guinea,
+
+A. H. Castro Neto, and A. Lanzara, Nat. Mater. 6, 770 (2007).
+
+[11] Y.-K. Kwon, J. Korean Phys. Soc. 57, 778 (2010).
+
+[12] J. Haskins, A. Kınacı, C. Sevik, H. Sevincli, G. Cuniberti, and T. Cagn, ACS Nano 5, 3779
+
+(2011).
+
+[13] A. Hirsch, Nat. Mater. 9, 868 (2010).
+
+[14] R. H. Baughman, J. Chem. Phys. 87, 6687 (1987).
+
+[15] J. Kang, J. Li, F. Wu, S.-S. Li, and J.-B. Xia, J. Phys. Chem. C 115, 20466 (2011).
+
+[16] J. Zhou, K. Lv, Q. Wang, X. S. Chen, Q. Sun, and P. Jena, J. Chem. Phys. 134, 174701
+
+(2011).
+
+[17] D. Malko, C. Neiss, F. Vines, and A. Gorling, Phys. Rev. Lett. 108, 086804 (2012).
+
+[18] B. G. Kim and H. J. Choi, Phys. Rev. B 86, 115435 (2012).
+
+[19] Z. Liu, G. Yu, H. Yao, L. Liu, L. Jiang, and Y. Zheng, New J. Phys. 14, 113007 (2012).
+
+[20] V. N. Popov and P. Lambin, Phys. Rev. B 88, 075427 (2013).
+
+[21] N. K. Perkgoz and C. Sevik, Nanotechnology 25, 185701 (2014).
+
+[22] E. L. Spitler, C. A. J. Ii, and M. M. Haley, Chem. Rev. 106, 5344 (2006).
+
+[23] M. M. Haley, Pure Appl. Chem. 80, 519 (2008).
+
+[24] T. Takeda, A. G. Fix, and M. M. Haley, Org. Lett. 12, 3824 (2010).
+
+[25] G. Li, Y. Li, H. Liu, Y. Guo, Y. Li, and D. Zhu, Chem. Commun. (Camb). 46, 3256 (2010).
+
+[26] X. Qian, Z. Ning, Y. Li, H. Liu, C. Ouyang, Q. Chen, and Y. Li, Dalton Trans. 41, 730 (2012).
+
+13
+
+[27] A. L. Ivanovskii, Prog. Solid State Chem. 41, 1 (2013).
+
+[28] W.-J. Yin, Y.-E. Xie, L.-M. Liu, R.-Z. Wang, X.-L. Wei, L. Lau, J.-X. Zhong, and Y.-P. Chen,
+
+J. Mater. Chem. A 1, 5341 (2013).
+
+[29] H. Shin, S. Kang, J. Koo, H. Lee, J. Kim, and Y. Kwon, J. Chem. Phys. 140, 114702 (2014).
+
+[30] T. Shao, B. Wen, R. Melnik, S. Yao, Y. Kawazoe, and Y. Tian, J. Chem. Phys. 137, 194901
+
+(2012).
+
+[31] J. B. Nelson and D. P. Riley, Proc. Phys. Soc. 57, 477 (1945).
+
+[32] Y.-K. Kwon, S. Berber, and D. Tom´anek, Phys. Rev. Lett. 92, 015901 (2004).
+
+[33] Y.-K. Kwon, S. Berber, and D. Tom´anek, Phys. Rev. Lett. 94, 209702 (2005).
+
+[34] C. Martinek and F. A. Hummel, J. Am. Ceram. Soc. 51, 227 (1968).
+
+[35] Y. Long, N. Hayashi, T. Saito, M. Azuma, S. Muranaka, and Y. Shimakawa, Nature 458, 60
+
+(2009).
+
+[36] Y. Long and Y. Shimakawa, New J. Phys. 12, 063029 (2010).
+
+[37] M. Azuma, W.-t. Chen, H. Seki, M. Czapski, S. Olga, K. Oka, M. Mizumaki, T. Watanuki,
+
+N. Ishimatsu, N. Kawamura, et al., Nat. Commun. 2, 347 (2011).
+
+[38] T. Moriya and K. Usami, Solid State Commun. 88, 911 (1993).
+
+[39] K. Sumiyama, M. Shiga, M. Morioka, and Y. Nakamura, J. Phys. F Met. Phys. 9, 1665 (1979).
+
+[40] K. D. Hammonds, M. T. Dove, A. P. Giddy, V. Heine, and B. Winkler, Am. Mineral. 81, 1057
+
+(1996).
+
+[41] M. Tucker, A. Goodwin, M. Dove, D. Keen, S. Wells, and J. Evans, Phys. Rev. Lett. 95,
+
+255501 (2005).
+
+[42] J. Arvanitidis, K. Papagelis, S. Margadonna, K. Prassides, and A. N. Fitch, Nature 425, 599
+
+(2003).
+
+[43] C. E. Guillaume, CR Acad. Sci 125, 18 (1897).
+
+[44] L. M. Sullivan and C. M. Lukehart, Chem. Mater. 17, 2136 (2005).
+
+[45] C. Verdon, Scr. Mater. 36, 1075 (1997).
+
+[46] H. Holzer and D. C. Dunand, J. Mater. Res. 14, 780 (2011).
+
+[47] Z. W. Xue, L. D. Wang, Z. Liu, and W. D. Fei, Scr. Mater. 62, 867 (2010).
+
+[48] M. Ishii, H. Shimojima, H. Takagi, K. Takenaka, and M. Watanabe, Metal/ceramic composite
+
+material and process for production thereof (2008).
+
+[49] A. L. Goodwin and C. J. Kepert, Phys. Rev. B 71, 140301 (2005).
+
+14
+
+[50] W. Kohn and L. J. Sham, Phys. Rev 385 (1965).
+
+[51] G. Kresse and J. Furthmuller, Phys. Rev. B. Condens. Matter 54, 11169 (1996).
+
+[52] G. Kresse and J. Hafner, Phys. Rev. B 47 (1993).
+
+[53] P. E. Blochl, Phys. Rev. B 50, 17953 (1994).
+
+[54] G. Kresse and D. Joubert, Phys. Rev. B 59, 11 (1999).
+
+[55] J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996).
+
+[56] K. Parlinski, Z. Li, and Y. Kawazoe, Phys. Rev. Lett. 78, 4063 (1997).
+
+[57] A. Togo, F. Oba, and I. Tanaka, Phys. Rev. B 78, 134106 (2008).
+
+[58] P. Pavone, K. Karch, O. Schutt, and D. Strauch, Phys. Rev. B 48, 3156 (1993).
+
+[59] A. Togo, L. Chaput, I. Tanaka, and G. Hug, Phys. Rev. B 81, 174301 (2010).
+
+[60] P. Vinet and J. H. Rose, J. Phys. Condens. Matter 1, 1941 (1989).
+
+[61] N. Mounet and N. Marzari, Phys. Rev. B 71, 205214 (2005).
+
+[62] J.-W. Jiang, Nanoscale 6, 8326 (2014).
+
+[63] I. M. Lifshitz, Zh. Eksp. Teor. Fiz 22, 475 (1952).
+
+[64] A. K. A. Pryde, K. D. Hammonds, M. T. Dove, V. Heine, J. D. Gale, and M. C. Warren, J.
+
+Phys. Condens. Matter 8, 10973 (1996).
+
+[65] W. Miller, C. W. Smith, D. S. Mackenzie, and K. E. Evans, J. Mater. Sci. 44, 5441 (2009).
+
+[66] J. Z. Tao and A. W. Sleight, J. Solid State Chem. 173, 442 (2003).
+
+15
+
+

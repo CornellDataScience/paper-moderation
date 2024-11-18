@@ -1,0 +1,4323 @@
+a
+
+Long optical lattice vibrations and dielectric function of monolayer hexagonal boron
+
+nitride
+
+J.-Z. Zhang∗
+
+School of Physics, Jilin University, Changchun, 130012, China.
+
+(Dated: May 31, 2019)
+
+Using two pairs of lattice equations [resembling Huang's equations for bulk crystals, Proc. Roy.
+Soc. A 208, 352 (1951)] deduced from a microscopic dipole lattice model taking into account
+electronic polarization (EP) of ions and local field effects (LFEs) self-consistently, in-plane and out-
+of-plane optical vibrations in two-dimensional (2D) hexagonal BN are studied theoretically. The
+three mutually independent coefficients of either pair of lattice equations are determined by a set
+of three generally known quantities such as the 2D electronic and static susceptibilities and phonon
+frequency, making the lattice equations very useful for calculating the lattice dynamical properties.
+Explicit expressions are obtained for lattice vibrational energy density, and phonon dispersion, group
+velocity and density of states. The transparent phonon dispersion relations describe the previous
+numerical calculations very well, and the longitudinal optical (LO) phonon dispersion relation is
+identical to the analytical expression of Sohier et al. [Nano Lett. 17, 3758 (2017)], and it expresses
+the degeneracy of the LO and transverse optical (TO) modes at Γ and their splitting at finite
+wavevectors due to the long-range macroscopic field. The out-of-plane phonon frequency is finite
+owing to ionic EP. A 2D lattice dielectric function ǫ(k, ω) is derived -- due solely to the LO vibrations -- 
+which also allows the LO phonon dispersion to be rederived simply from ǫ(k, ω) = 0, similar to the
+bulk case. A 2D Lyddane -- Sachs -- Teller relation and a frequency -- susceptibility relation are obtained
+for the in-plane and out-of-plane vibrations, respectively, connecting the phonon frequencies to the
+2D dielectric functions or susceptibilities. Using three first-principles calculated parameters, the
+lattice dynamical properties are studied comprehensively, particular attention being paid to the EP
+and LFEs. The ionic EP and LFEs should be included simultaneously, but otherwise neglecting
+either or both causes large discrepancies to the calculated dynamical properties. The rigid-ion
+model cannot properly describe the optical vibrations, which, for instance, yields a 15%-19% larger
+phonon frequency and 77% smaller Born charge for in-plane motion, and an infinitely large phonon
+frequency and four times larger Born charge for out-of-plane motion. With no LFEs or EP, the
+LO modes display very small linear dispersion, nearly flat in the long wavelength region, which is
+distinct from the LO phonon dispersion calculated after including both LFEs and EP. Furthermore,
+with ionic EP included, the LFEs increase the 2D susceptibility and Born charge by two and three
+times for in-plane vibrations but reduce both significantly for out-of-plane vibrations.
+
+PACS numbers: 63.20.D-, 63.22.Np, 77.22.Ch
+
+I.
+
+INTRODUCTION
+
+Since the discovery of graphene two-dimensional (2D)
+materials have become a subject of intense research due
+to their novel mechanical, electronic and optical proper-
+ties [1]. Monolayer (ML) hexagonal Boron nitride (hBN)
+and transition metal dichalcogenides (TMDs) such as
+MoS2 are two types of prominent 2D binary crystals with
+a similar honeycomb lattice structure to graphene. While
+graphene is a purely covalent material, ML hBN is a
+2D polar crystal with mixed covalent and ionic bond-
+ing. Also distinct from graphene, a semimetal, 2D hBN
+is an insulator with a large bandgap ∼7 eV [2, 3]. Fur-
+ther, piezoelectricity occurs in ML hBN owing to inver-
+sion symmetry breaking. In recent years ML hBN has
+attracted intense interest due to its strong piezoelectric
+response [4 -- 6], large in-plane stiffness and strong resis-
+tance to stretching [3, 7 -- 9], and also its capability to
+combine with graphene due to lattice match as a key
+
+∗ phyjzzhang@jlu.edu.cn
+
+material in layered graphene/hBN heterostructure elec-
+tronic devices [10, 11].
+
+Optical phonons are key scattering partners of elec-
+trons [12] and play crucial roles in carrier transport in
+electronic devices.
+In a polar crystal long optical lat-
+tice vibrations are closely connected to the electric fields
+[13]. While the macroscopic electric field E is an av-
+erage field, with the averaging being made to the total
+field of all the ions over a lattice cell [13, 14], the lo-
+cal field on any particular ion El, as was introduced by
+Lorentz, is the total electric field after deduction of the
+contribution due to the ion itself. In a bulk polar crys-
+tal the Lorentz relation connects the local and macro-
+scopic fields with the macroscopic dielectric polarization
+P, El = E + 4πP/3 [13, 14], where the last term is the
+inner field [13]. The electric field acting on each ion of
+the crystal polarizes it by inducing an electric dipole mo-
+ment, thus causing electronic polarization (EP) to the
+ion, or concisely ionic polarization. A treatment neglect-
+ing (including) such EP is termed rigid (polarizable) ion
+model, i.e., RIM and PIM. Using the Lorentz relation
+whilst considering the ions to be polarizable with a mi-
+
+croscopic model, Huang deduced a pair of equations de-
+scribing the long optical vibrations of isotropic bulk crys-
+tals, w = b11w + b12E, P = b21w + b22E (b12 = b21)
+[13, 15, 16], where w describes the optical displacement
+
+of the unit cell, w =p ¯m/va(u1 − u2), u1 and u2 being
+
+the displacements of the positive and negative ions, ¯m
+being their reduced mass and va the cell volume. The
+lattice dielectric function can be deduced directly from
+Huang's equations, allowing one to conveniently express
+the b-coefficients in terms of experimentally measurable
+quantities such as the static and high-frequency dielec-
+tric constants ǫ0 ǫ∞ and infrared dispersion frequency
+ω0 [13]. Solving Huang's equations and the equation
+of electrostatics yields the longitudinal and the trans-
+verse optical (LO and TO) modes, with TO phonon fre-
+quency ωt equal to ω0. Further, there is a macroscopic
+electrostatic field associated with the LO modes making
+their frequency ωl higher than ωt, with the frequency
+ratio given by the Lyddane -- Sachs -- Teller (LST) relation
+
+[17], ωl/ωt =pǫ0/ǫ∞, which can also be rederived from
+
+Huang's equations [13].
+
+In experimental study [18], phonon spectra for ML
+hBN on Ni and Pt have been measured by electron energy
+loss spectroscopy. Phonon spectra of ML hBN are usually
+calculated by diagonalizing the dynamical matrix which
+is obtained by first-principles calculation, or a tight-
+binding or an empirical model. Phonon spectra have
+been studied for ML hBN within the local-density ap-
+proximation in density functional theory (DFT) [19, 20].
+As a ML of hBN can be rolled up to form a BN nan-
+otube, first-principles [21] and tight-binding [22] calcula-
+tions have been performed to make a comparative study
+of dielectric polarizabilities [21] as well as phonon spectra
+[22] of hBN MLs and nanotubes. Phonon modes of 2D
+hBN calculated from first principles [3, 6, 23 -- 25] or an
+empirical force constant model [26 -- 28] have been com-
+pared with those of three-dimensional (3D) bulk hBN
+[23, 24, 27, 28] or other 2D honeycomb materials such
+as TMDs [6, 25] and group III nitrides [3].
+In these
+studies, there are several common features present in the
+phonon spectra for ML hBN [3, 22 -- 26]: (i) the LO and
+TO modes are degenerate at the Γ point but split up at
+a finite wavevector with the LO mode having a higher
+frequency; (ii) overbending occurs in the LO phonon dis-
+persion curve so the LO modes have maximum frequency
+not at Γ, but at an intermediate point away from the Bril-
+louin zone edges; (iii) both TO and ZO (i.e., out-of-plane
+optical) modes show a nondispersive character at long
+wavelengths with a nearly constant frequency. While
+most of these studies are performed by numerical meth-
+ods, only few studies have used analytical approaches
+[22, 25, 26]. The degeneracy has been proved to be due
+to the macroscopic field's in-plane component vanishing
+at zero wavevector [22], and analytical expressions have
+been obtained later for the long-wavelength dispersion of
+LO and TO modes [25, 26]. In Ref.[25] an LO phonon dis-
+persion relation is derived using a simple model, in which
+the relationship between the squared LO and TO phonon
+
+2
+
+frequencies for bulk materials [29, 30] is generalized and
+used for the 2D materials, and the parameters in the dis-
+persion relation are obtained from their first-principles
+calculation so both ionic EP and LFEs are taken into
+account. The analytical theory of Michel et al. [26] tack-
+les the dynamical matrix, which is obtained based on a
+microscopic RIM, to find the vibrational modes; while
+the eigensolutions of the dynamical matrix are numeri-
+cally calculated for an arbitrary wavevector, the analyt-
+ical phonon dispersions are obtained for small wavevec-
+tors.
+In the study [26] ionic polarization has not been
+accounted for, as the inclusion of EP presents a challenge
+and makes it more difficult to obtain analytical solutions
+to the polar optical vibrations. Equally important are
+the local fields on the ions, which have been found to
+be very strong in 2D hBN [31]. Further, the local fields
+and EP are interdependent [13] and should be included
+in a self-consistent manner, and therefore the addition
+of local field effects (LFEs) makes the lattice-dynamical
+solutions for a general wavevector more complicated. For
+the long wavelengths, however one expects that the 2D
+lattice motion can be described on a macroscopic basis,
+i.e., using macroscopic quantities such as the macroscopic
+field and dielectric polarization, by lattice equations like
+Huang's equations for bulk crystals. Such equations need
+to be deduced from a microscopic model so as to include
+the intricate EP and LFEs. So far as we know, there are
+no equations of motion for the macroscopic description
+of the 2D lattice vibrations, and ionic EP or LFEs on the
+lattice dynamical properties of the 2D crystals have not
+been studied systematically. From the viewpoint of ba-
+sic research, ML hBN, the structurally simplest 2D polar
+crystal, provides a model system for analytically study-
+ing the 2D optical vibrations and further local field and
+polarizable ion effects.
+
+In this paper, we study long wavelength optical lattice
+vibrations and local field and polarizable ion effects for
+ML hBN with an analytical approach. For this purpose,
+we deduce lattice equations for optical vibrations using a
+microscopic model that includes the ionic EP and LFEs.
+We make the deduction with Huang's approach, by intro-
+ducing the macroscopic field into the equation of motion
+whilst constructing an equation for the macroscopic di-
+electric polarization by adding up the two contributions
+due to the lattice displacement and the induced electric
+polarization. We solve the simultaneous lattice equations
+and equation of electrostatics, rather than solve the dy-
+namical matrix equations as in previous studies, to ob-
+tain explicit expressions for the optical modes, which can
+describe the key features of the 2D phonon modes. We
+derive a 2D longitudinal lattice dielectric function ǫ(k, ω)
+which also allows one to rederive the LO phonon disper-
+sion simply from ǫ(k, ω) = 0. We also deduce a LST re-
+lation, a 2D counterpart of the LST relation in bulk, for
+in-plane motion and a frequency -- susceptibility relation
+for out-of-plane motion. Using first-principles calculated
+quantities we study the lattice dynamical properties for
+2D hBN and discuss in great detail the local field and
+
+polarizable ion effects.
+
+This paper is organized as follows.
+
+In Section II, a
+deduction of 2D lattice equations for in-plane and out-
+of-plane motion is made, through a 2D Lorentz relation,
+from a microscopic dipole lattice model including LFEs
+and EP. From the lattice equations, the dispersion re-
+lations of the optical modes are deduced, followed by
+a derivation of the phonon group velocity and density
+of states (DOS). Then the dynamical lattice dielectric
+susceptibilities are derived yielding the relations relat-
+ing the static and electronic susceptibilities to the a12
+and c12 coefficients of the lattice equations. Further,
+a 2D longitudinal lattice dielectric function is deduced
+after considering the general test charge distributions,
+and from it a 2D LST relation follows. In Section III,
+we present results of the in-plane and out-of-plane opti-
+cal vibrations in ML BN. A comparison of microscopic
+quantities such as effective charges and spring force con-
+stants is made, which are calculated when knowing three
+quantities including the electronic and static susceptibil-
+ities from independent first-principles calculations. Then
+various lattice-dynamical quantities, such as the Born
+charge, the phonon dispersion and the static and elec-
+tronic susceptibilities, are compared with those obtained
+from a RIM, with or without LFEs taken into account, to
+study the EP and LFEs on the lattice dynamical prop-
+erties. Finally, Section V summarizes the main results
+obtained.
+In Appendix A, we show that using the 2D
+Clausius-Mossotti relation obtained, the unit-cell atomic
+polarizability falls in an interval for in-plane or out-of-
+plane polarization, which is used to evaluate the LFEs
+on the phonon dispersion and 2D dielectric susceptibili-
+ties. In Appendix B we show that in terms of macroscopic
+theory the relations a12 = a21 and c12 = c21, which con-
+nect the coefficients of the lattice equations, follow from
+the principle of energy conservation. Further we obtain
+a lattice-vibrational energy density as a function of the
+optical displacement and electric field for in-plane or out-
+of-plane vibrations.
+
+II. THEORY
+
+A. Equations of motion and lattice polarization
+
+ML hBN, a 2D binary crystal with point group D3h,
+is composed of two sublattices of B and N (as shown in
+Fig. 1), labeled with κ = 1, 2, respectively. Let mκ and
+eκ be the mass and charge of the type κ ions , and let
+e1 = −e2 = ea, where ea is the static effective charge [32]
+due to electron charge transfer −ea from B to N in 2D
+h-BN, ea > 0 [6, 24]. The masses of the B and N atoms
+are m1=10.81 Da and m2=14.01 Da. In the dipole lat-
+tice model [13] each ion site of type κ is occupied by an
+electric dipole pκ which arises due partly to the ionic dis-
+placement uκ and partly to the induced electric moment
+µκ on the ion. Associated with the long wavelength op-
+tical modes, there is macroscopic dielectric polarization
+
+3
+
+P = (p/s)eik·ρδ(z), where p is the total dipole moment
+p = p1 + p2 of a unit cell with area s = √3a2/2, a being
+the lattice constant a=2.5 A (see Fig. 1). The δ function
+describes the dependence of the polarization on z for a
+ML in the plane z = 0. k is the 2D wave vector, and
+ρ = (x, y) is the position vector in the plane parallel to
+the ML.
+
+We first consider in-plane optical vibrations; that is,
+the displacements uκ and dipole moments pκ lie in the
+ML plane. The macroscopic electric field E due to the
+charge density −∇ · P is given by the equation of elec-
+trostatics ∇ · (E + 4πP) = 0, the electric field E being
+an irrotational field, E = −∇φ [φ is the electrostatic po-
+tential, φ(ρ, z) = ϕ(z)eik·ρ]. To solve the corresponding
+Poisson's equation ∇2φ(ρ, z) = 4πip · keik·ρδ(z)/s, we
+expand ϕ(z) and δ(z),
+
+ϕ(z) =Z ∞
+
+−∞
+
+ϕ(q)eiqz dq,
+
+δ(z) =
+
+1
+
+2π Z ∞
+
+−∞
+
+eiqzdq.
+
+(1)
+
+(2)
+
+We find ϕ(q) = −2ip · k/[s(k2 + q2)] and from Eq. (1)
+ϕ(z) = −2πip · ke−kz/(sk), and then obtain for the
+macroscopic field its components in the directions parallel
+and perpendicular to the ML:
+
+Eρ(ρ, z) = −
+
+2π
+s
+
+k
+k
+
+p · ke−kzeik·ρ,
+
+Ez(ρ, z) = −ez
+
+2πi
+s
+
+p · k sgn(z)e−kzeik·ρ.
+
+(3a)
+
+(3b)
+
+Here sgn(z) is the sign function and in particular the
+z-component of the field is zero in the ML.
+
+Recall that in bulk polar crystals the macroscopic
+field is strongly nonanalytical close to zero wavevector,
+i.e., its limiting value depending on the direction along
+which zero wavevector is approached [13], and the LO
+vibrations have a finite field at small wavevectors. Dis-
+tinct from the field in 3D crystals, the macroscopic field
+[Eqs. (3a) and (3b)] of 2D hBN vanishes at a very small
+wavevector for in-plane motion [22], independent of the
+direction of the wavevector.
+
+i + 3p · ρiρi/ρ5
+
+In a 2D dipole lattice a dipole p on the ion at a lattice
+point ρi = (xi, yi) gives rise to a field at the origin equal
+to −p/ρ3
+i . The Lorentz local field El, also
+called the exciting field [13], is the electric field acting
+on an ion due to all the other dipoles oscillating in the
+lattice, and can be written as the macroscopic field E
+plus another field Ein (namely, the inner field) [13], El =
+E+Ein. In a long wavelength lattice wave, the local fields
+at the B and N lattice points are given by the following
+expressions [31], respectively,
+
+El,1 = E + Q0 p1 + Q1 p2,
+
+(4a)
+
+El,2 = E + Q1 p1 + Q0 p2.
+
+(4b)
+
+E2 = E + Q1 p1 + Q0 p2 − ea(Q1 − Q0)u2,
+
+4
+
+(7b)
+
+with the coefficients Q0 and Q1 [31, 33]
+
+Q0 = X(m,n)6=(0,0)
+
+1
+
+2(m2 + n2 + mn)3/2a3 ≈
+
+5.5171
+
+a3
+
+,
+
+(5a)
+
+11.5753
+
+a3
+
+.
+
+2(m2 + n2 + mn + n + 1/3)3/2a3 ≈
+
+1
+
+Q1 =Xm,n
+
+(5b)
+Let dipole p1 or equally p2 have 0.01 eA, for instance,
+corresponding to a displacement of 0.01 A of the ions
+with charge e, then from these expressions one finds very
+strong local fields with a magnitude 1000 kV/cm [31].
+
+The LFEs are included through coefficients Q0 and
+Q1. Note that E is the macroscopic field [Eqs. (3a) and
+(3b)] rather than an external field in a simple sense [31].
+Such a simple relation between the local field and the
+macroscopic field is valid only for the long lattice waves,
+while the general expression for an arbitrary wavelength
+is quite complicated with both coefficients Q0 and Q1 de-
+pendent on the wavevector. In 3D iostropic polar crys-
+tals [13] the difference between the local and macroscopic
+fields is proportional to the macroscopic polarization di-
+rectly (the Lorentz relation), El = E + 4πP/3, as the Q
+coefficients are equal to 4π/(3va) at k = 0 [13]. When
+approximating Q0 = Q1, Eqs. (4a) and (4b) can be trans-
+formed into a simple Lorentz relation involving macro-
+scopic areal polarization (p1 + p2)/s, and also a Clausius-
+Mossotti relation can be deduced for 2D BN (Appendix
+A). Expressions (4a) and (4b), the Lorentz relations for
+2D BN, show that the finite local fields occur in ML hBN
+at k = 0, different from those in the 3D polar crystals
+where local fields vanish in the long wavelength limit [13].
+Apart from the macroscopic field and local fields, we
+also need to find the field change at the center of an ion
+of type κ owing to its own displacement uκ [13]. The
+field is evidently equal to the field created at the ion κ
+site by displacing all other ions by −uκ. Hence it is equal
+to the local field at that ion site in a dipole lattice with
+displacement dipoles pκ′ = −eκ′uκ, where type κ′ = 1, 2.
+Substituting this dipole expression into Eqs. (4a) and
+(4b) and putting E = 0 as wavevector k = 0, we find the
+field changes at the centers of the B and N ions due to
+their own displacements respectively,
+
+Eu,1 = −u1(e1Q0 + e2Q1),
+
+Eu,2 = −u2(e1Q1 + e2Q0).
+
+(6a)
+
+(6b)
+
+The total Coulomb fields E1 and E2 at the centers of
+the B and N ions are simply the sums of El,1 and Eu,1
+[Eqs. (4a) and (6a)], and El,2 and Eu,2 [Eqs. (4b) and
+(6b)], respectively,
+
+E1 = E + Q0 p1 + Q1 p2 + ea(Q1 − Q0)u1,
+
+(7a)
+
+where all the vectors are in the layer plane.
+
+Assuming that the electronic polarization of an ion
+is equivalent to a point-dipole [13], the electronic (i.e.,
+induced) dipole moment of the ion κ is then given by
+µκ = ακEκ, where ακ is the in-plane electronic polariz-
+ability of the ion κ. Then the total dipole moments on
+the B and N ions are
+
+p1 = eau1 + α1 E1,
+
+p2 = −eau2 + α2 E2.
+
+(8a)
+
+(8b)
+
+Inserting the expressions for the total fields E1 and E2
+into Eqs. (8a) and (8b) and then rearranging the terms,
+we find
+
+(1− α1Q0)p1 − α1Q1p2 = ea[1 + α1(Q1 − Q0)]u1 + α1 E,
+(9a)
+
+−α2Q1p1+(1−α2Q0)p2 = −ea[1+α2(Q1−Q0)]u2+α2 E.
+(9b)
+Solving Eqs. (9a) and (9b) then we can express p1 and
+
+p2 in terms of u1, u2 and E as follows:
+
+1
+
+p1 =
+
+p2 =
+
+1
+
+Dnea(1 − α2Q0)(cid:2)1 + α1(Q1 − Q0)(cid:3)u1
+− eaα1Q1(cid:2)1 + α2(Q1 − Q0)(cid:3)u2
++ α1(cid:2)1 + α2(Q1 − Q0)(cid:3)Eo,
+Dneaα2Q1(cid:2)1 + α1(Q1 − Q0)(cid:3)u1
+− ea(1 − α1Q0)(cid:2)1 + α2(Q1 − Q0)(cid:3)u2
++ α2(cid:2)1 + α1(Q1 − Q0)(cid:3)Eo,
+D = 1 − (α1 + α2)Q0 − α1α2(Q2
+
+1 − Q2
+0).
+
+where
+
+Define the areal polarization P
+
+P = (p1 + p2)/s,
+
+and introduce the optical displacement w
+
+w =r ¯m
+
+s
+
+(u1 − u2),
+
+(10a)
+
+(10b)
+
+(11)
+
+(12)
+
+(13)
+
+where ¯m is the reduced mass, ¯m = m1m2/(m1 + m2).
+
+When expressions (10a) and (10b) are substituted for
+
+p1 and p2, we obtain
+
+P = a21w + a22E,
+
+(14)
+
+where
+
+a21 =
+
+ea
+
+D√ ¯ms(cid:2)1+α1(Q1−Q0)(cid:3)(cid:2)1+α2(Q1−Q0)(cid:3), (15a)
+
+1
+
+a22 =
+
+sD(cid:2)(α1 + α2) + 2α1α2(Q1 − Q0)(cid:3).
+
+(15b)
+
+Eq. (14) shows that the macroscopic quantity P of the
+2D crystal, which has a clear physical meaning as given
+by expressions (12), is simplified to a sum of two con-
+tributions, one due to the optical displacement and the
+other due to the macroscopic field.
+
+It is evident from Eq. (14) that a22 is the in-plane
+component χe of the electronic susceptibility of the 2D
+crystal,
+
+a22 = χe.
+
+(16)
+
+When the Born charge [34]
+
+ea
+
+eB =
+
+D(cid:2)1 + α1(Q1 − Q0)(cid:3)(cid:2)1 + α2(Q1 − Q0)(cid:3),
+
+is introduced, then the coefficient a21 relates simply to
+the Born charge eB by
+
+5
+
+this virtual energy with respect to virtual displacement
+u, given by ∇u(µκ· El,κ). Inserting the above dipole mo-
+ment expression into Eqs. (4a) and (4b) and recalling the
+macroscopic field E = 0, we find the local fields and then
+obtain for the forces on the dipoles µ1 and µ2 the expres-
+sions ea(Q1 − Q0)µ1 and −ea(Q1 − Q0)µ2, respectively,
+where µκ = ακEκ (κ = 1, 2).
+Apart from the electric forces, there are also restor-
+ing forces caused by the overlap potential between the
+positive and negative ions in the 2D polar crystal. The
+restoring forces on the B and N ions are −K(u1 − u2),
+and −K(u2 − u1), respectively, where the spring force
+constant K for in-plane motion is a simple scalar rather
+than a tensor due to the hexagonal symmetry.
+
+Therefore the equations of motion for the B and N ions
+
+(17)
+
+are given by
+
+m1 u1 = −K(u1− u2) + eaE1 + eaα1(Q1− Q0)E1, (21a)
+
+a21 =
+
+eB√ ¯ms
+
+.
+
+From Eqs. (15b), (16) and (17) we find
+
+a22 = χe =
+
+1
+
+sQ1 (cid:18) eB
+
+ea − 1(cid:19) ,
+
+m2 u2 = −K(u2− u1)− eaE2− eaα2(Q1− Q0)E2. (21b)
+Substitute expressions (20a) and (20b) for E1 and E2 re-
+spectively in the two equations above. Using the Born
+charge eB [expression (17)] and introducing a force con-
+stant due to LFEs Ke,
+
+(18)
+
+(19)
+
+Ke = eaeBQ1,
+
+(22)
+
+showing that apart from a21, the coefficient a22 is also
+related to the Born charge. eB 6= ea owing to the elec-
+tronic polarization of the ions, and further considering
+Q1 > 0, eB is greater than ea.
+
+Inserting expressions (10a) and (10b) for p1 and p2
+into Eqs. (7a) and (7b), we express the total fields E1 and
+E2 in terms of the ionic displacements and macroscopic
+field. After collecting like terms we can simplify the total
+field expressions to
+
+1
+
+E1 =
+
+E2 =
+
+D(cid:2)1 + α2(Q1 − Q0)(cid:3)(cid:2)eaQ1(u1 − u2) + E(cid:3), (20a)
+D(cid:2)1 + α1(Q1 − Q0)(cid:3)(cid:2)eaQ1(u1 − u2) + E(cid:3). (20b)
+
+1
+
+The Coulomb force acting on the ion κ consists of two
+parts [13], (i) the force exerted on the ionic charge eκ by
+the total field Eκ, and (ii) the force exerted on the in-
+duced dipole µκ by the field of all other ions. The latter
+electric force can be sought by using again the Lorentz
+relations (4a) and (4b) as follows. Imagine that we sub-
+ject the dipole µκ at a particular site of ion κ a virtual
+displacement u while keeping all other ions in their undis-
+placed positions. The virtual energy is then simply the
+interaction energy between the dipole and the field at the
+ion site which is created equivalently by displacing all
+other ions by −u [13], and which is thus the local field in
+a dipole lattice with dipole moments pκ′ = −eκ′u, (type
+κ′ = 1, 2). Therefore the virtual energy is −µκ · El,κ,
+and the force on the dipole is the negative gradient of
+
+the equations of motion reduce to
+
+m1 u1 = (Ke − K)(u1 − u2) + eBE,
+
+m2 u2 = (K − Ke)(u1 − u2) − eBE.
+
+(23a)
+
+(23b)
+
+Multiplying Eqs. (23a) and (23b) by m2 and m1 re-
+spectively, subtracting and then dividing by (m1 + m2),
+we find
+
+¯m(u1 − u2) = (Ke − K)(u1 − u2) + eBE.
+
+(24)
+
+On expressing (u1 − u2) in terms of w [Eq. (13)], we
+
+obtain
+
+w = a11w + a12E,
+
+(25)
+
+where
+
+a11 =
+
+1
+¯m
+
+(Ke − K) = −ω2
+0,
+
+a12 =
+
+eB√ ¯ms
+
+,
+
+(26a)
+
+(26b)
+
+ω0 being the intrinsic oscillator frequency, i.e., in the ab-
+sence of macroscopic field E.
+
+Comparing Eqs. (18) and (26b) we find the relation
+
+a12 = a21.
+
+(27)
+
+The equation of motion (25) and the polarization equa-
+tion (14) describe the in-plane polar optical vibrations of
+2D BN, the frequencies of which will be derived in Sec.
+III below. The lattice vibrations we are dealing with
+are of long wavelengths, and the pair of equations (25)
+and (14) constitute a macroscopic description of the lat-
+tice motion. It is shown in Appendix B that, from the
+viewpoint of the macroscopic theory, the relation (27) is
+due to the principle of energy conservation, and further
+this relation makes it possible to define an areal energy
+density [expression (B16)] from which the lattice equa-
+tions (25) and (14) can be rederived. It is evident from
+Eqs. (23a) and (23b) that the center of mass of the two
+atoms remains stationary (frequency ω = 0), yielding
+trivial nondynamical solutions. We note that for clear-
+ness E appearing in all the equations above is used to
+represent the in-plane component of the macroscopic field
+in the ML, i.e., E = Eρ(ρ, 0).
+
+Now we consider ionic motion perpendicular to the
+in which case the displacements uκ and
+layer plane,
+dipole moments pκ are parallel to ez. Let α′κ denote
+the electronic polarizability of the type κ ions; note that
+in general α′κ 6= ακ (the latter is the polarizability for
+in-plane motion), as they are simply components of the
+polarizability tensor [13]. Let K′ be the force constant
+associated with the perpendicular motion. Considering
+the anisotropic 3D charge density distribution, another
+static effective charge e′a exists likewise, which may differ
+from ea for in-plane motion (anisotropy), and is needed
+in the point-ion model for the perpendicular motion; thus
+the charges on the ions are e′1 = −e′2 = e′a.
+potential
+
+Solving the Poisson equation yields the electrostatic
+
+ϕ(z) = 2πp · ez sgn(z)e−kz/s,
+
+(28)
+
+and then the z- and in-plane components of the macro-
+scopic field follow,
+
+Ez(ρ, z) = −
+
+4π
+s
+
+p(cid:20)δ(z) −
+
+1
+2
+
+ke−kz(cid:21) eik·ρ,
+
+Eρ(ρ, z) = −
+
+2πi
+s
+
+k p · ez sgn(z)e−kzeik·ρ.
+
+(29a)
+
+(29b)
+
+We note that (i) there is a δ(z) term in the z-component
+of the macroscopic field, which reflects the microscopic
+character of the polarization in terms of its atomic scale
+when the dipoles point to the z direction. This term
+follows the dielectric polarization P according to −4πP,
+which is also true when the δ(z) function of P is gen-
+eralized to an arbitrary function f (z); (ii) the in-plane
+component of the field is zero in the ML.
+
+The local fields at the B and N sites are given by
+
+El,1 = E + Q′0 p1 + Q′1 p2,
+
+El,2 = E + Q′1 p1 + Q′0 p2,
+
+(30a)
+
+(30b)
+
+6
+
+respectively, where the coefficients Q′0 and Q′1 are nega-
+tive, Q′0 = −2Q0, and Q′1 = −2Q1 [31]. The long wave-
+length macroscopic field has a δ(z) form [Eq. (29a)] but
+in calculating the field change experienced by a type κ
+ion owing to its own displacement uκ, the contribution of
+
+this macroscopic field is zero, i.e., 4πuκPκ′ e′κ′δ(z)/s =
+
+4πuκ(e′1 + e′2)δ(z)/s = 0. Thus the field changes at the
+centers of B and N owing to their own displacements are
+
+Eu,1 = −u1(e′1Q′0 + e′2Q′1),
+
+Eu,2 = −u2(e′1Q′1 + e′2Q′0),
+
+(31a)
+
+(31b)
+
+respectively. Similarly, in calculating the force exerted on
+the induced dipole µκ at a type κ ion by the field of all
+other ions, the macroscopic field makes no contribution to
+this force again because the net charge per cell vanishes.
+Then repeating the process as before, we find that with
+replacements Q0 → Q′0, Q1 → Q′1, ea → e′a, ακ → α′κ
+and K → K′, the equations and expressions above for
+the in-plane motion are applicable to the out-of-plane
+motion.
+
+The Born charge is
+
+e′a
+
+e′B =
+
+where
+
+D′(cid:2)1 + α′1(Q′1 − Q′0)(cid:3)(cid:2)1 + α′2(Q′1 − Q′0)(cid:3),
+D′ = 1 − (α′1 + α′2)Q′0 − α′1α′2(Q′2
+
+1 − Q′2
+0 ).
+
+The polarization equation is
+
+P = c21w + c22E,
+
+(32)
+
+(33)
+
+(34)
+
+where w is the optical displacement as given by Eq. (13)
+and c22 is the out-of-plane component χ′e of the electronic
+susceptibility of the 2D crystal,
+
+c22 = χ′e,
+
+and c21 and c22 relate to the Born charge via
+
+c21 =
+
+e′B√ ¯ms
+
+,
+
+c22 = χ′e =
+
+1
+
+sQ′1 (cid:18) e′B
+
+e′a − 1(cid:19) .
+
+(35)
+
+(36a)
+
+(36b)
+
+The equation of motion is given by
+
+w = c11w + c12E,
+
+(37)
+
+where
+
+c11 =
+
+1
+¯m
+
+(K′e − K′) = −ω′2
+
+0
+
+(K′e = e′ae′BQ′1),
+
+(38a)
+
+c12 = c21 =
+
+e′B√ ¯ms
+
+,
+
+(38b)
+
+ω′0 being the intrinsic oscillator frequency.
+
+In the lattice equations (37) and (34) E is the field in
+the ML, E(ρ, 0), and evidently E(ρ, 0) = Ez(ρ, 0) for the
+out-of-plane vibrations. The areal energy density associ-
+ated with the out-of-plane optical vibrations is given by
+expression (B31).
+
+When the equations for in-plane motion [Eqs. (25) and
+(14)] and out-of-plane motion [Eqs. (37) and (34)] are
+considered simultaneously, they can be rewritten for clar-
+ity as
+
+wρ(ρ) = a11wρ(ρ) + a12Eρ(ρ, 0),
+
+(39a)
+
+P ρ(ρ) = a21wρ(ρ) + a22Eρ(ρ, 0),
+
+(39b)
+
+and
+
+wz(ρ) = c11wz(ρ) + c12Ez(ρ, 0),
+
+(40a)
+
+P z(ρ) = c21wz(ρ) + c22Ez(ρ, 0),
+
+(40b)
+
+respectively, where a12 = a21 and c12 = c21. These equa-
+tions have similar forms to Huang's equations for bulk
+crystals [13, 15].
+
+B.
+
+In-plane and out-of-plane optical modes
+
+The in-plane optical vibration modes can be obtained
+from Eqs. (25) and (14) in conjunction with the equa-
+tion of electrostatics ∇ · (E + 4πP) = 0, where P is
+the dielectric polarization (namely, a dipole moment per
+unit volume), P = Pδ(z), and E is an irrotational
+field, E = −∇φ. Let w(ρ) = w0eik·ρ and electro-
+static potential φ(ρ, z) = ϕ(z)eik·ρ (time dependence
+e−iωt
+is omitted for clearness). Expressing the field
+E = −∇φ in terms of ϕ gives the in-plane component
+Eρ(ρ, z) = −ikϕ(z)eik·ρ and further this field in the ML
+Eρ(ρ, 0) = −ikϕ(0)eik·ρ. Then apply divergence ∇ρ to
+Eq. (14), and we have the polarization charge density
+−∇·P = −δ(z)∇ρ·P = −δ(z)[a21ik·w+a22k2ϕ(0)eik·ρ]
+and obtain Poisson's equation,
+∇2φ(ρ, z) = 4πδ(z)[a21ik· w(ρ) + a22k2ϕ(0)eik·ρ]. (41)
+To solve Eq. (41), we insert the expansions of ϕ(z)
+
+[Eq. (1)] and δ(z) [Eq. (2)], yielding
+
+ϕ(q) = −2(cid:2)a21ik · w0 + a22k2ϕ(0)(cid:3)
+
+1
+
+k2 + q2 .
+
+(42)
+
+When this expression is substituted for ϕ(q) of the fol-
+lowing equation,
+
+we find
+
+ϕ(0) =Z ∞
+
+−∞
+
+ϕ(q)dq,
+
+(43)
+
+ϕ(0) = −
+
+2πa21ik · w0
+k(1 + 2πa22k)
+
+,
+
+(44)
+
+and then obtain the electric field in the ML,
+
+Eρ(ρ, 0) = −
+
+2πa21k
+
+k(1 + 2πa22k)
+
+w · k.
+
+7
+
+(45)
+
+For a normal mode with wavevector k, Eq. (25) be-
+
+comes
+
+(−ω2 − a11)w(ρ) = a12Eρ(ρ, 0).
+
+(46)
+
+The expression (45) admits two possibilities for w · k,
+namely, case (i) w · k = 0, or case (ii) w · k 6= 0. In case
+(i), as w · k = 0 the normal modes are transverse waves.
+Eq. (44) gives ϕ(0) = 0, and on account of Eq. (42) we
+have ϕ(q) = 0. Then it follows from Eq. (1) that ϕ(z) =
+0, and therefore in the electrostatic approximation the
+macroscopic field vanishes identically, E(r) = 0. The
+frequency of the TO mode of wavevector k is given by
+the solution of Eq. (46) with the field equal to zero,
+
+ωt = ω0 = √−a11 =r K − eaeBQ1
+
+¯m
+
+,
+
+(47)
+
+which is independent of wavevector; that is, the long-
+wavelength TO modes are dispersionless, consistent with
+previous tight-binding [22] and first-principles [24, 25, 35]
+calculations.
+
+In case (ii) the electric field Eρ(r) is nonzero, and from
+the equations evidently the vectors w(ρ), Eρ(r), P(r) as-
+sociated with the mode are all longitudinal, i.e., parallel
+Inserting
+to wave vector k, w(ρ) k Eρ(r) k P(r) k k.
+expression (45) for Eρ(ρ, 0) into Eq. (46) we find the
+frequency of the longitudinal optical (LO) mode,
+
+ωl(k) =(cid:16) − a11 +
+
+2πa2
+
+21k
+
+1 + 2πa22k(cid:17)1/2
+
+.
+
+(48)
+
+Expressing the a-coefficients in terms of eB, χe, ω0 by
+Eqs. (16), (18) and (47), then ωl(k) can be rewritten as
+
+ωl(k) =hω2
+
+0 +
+
+2πe2
+
+Bk
+
+¯ms(1 + 2πχek)i1/2
+
+.
+
+(49)
+
+Physically, Eq. (49) is valid for small wavevectors; math-
+ematically ωl is a monotonically increasing function of k
+and has an upper limit ωM for very large k,
+
+ωM =qω2
+
+0 + e2
+
+B/( ¯msχe) .
+
+(50)
+
+l = ω2
+
+In the theoretical study by Sohier et al.
+
+[25] the LO
+phonon dispersion is expressed as ω2
+0 + Sk/(1 +
+ref f k). From their Eqs. (2) and (3)[36] one finds that
+the parameter S relates to the Born charge via S =
+2πe2
+B/( ¯ms). ref f is an effective screening length, given by
+by ref f = ǫpt/2 with an effective medium model [25, 37],
+where ǫp and t are effective dielectric constant and ef-
+fective thickness of the ML material. Both parameters
+S and ref f are computed by first-principles calculation
+[25]. According to the defintion in Refs.[38, 39], the ef-
+fective screening length is given by 2πχe or 2πχ0 when
+
+including the vibrational contribution [χ0 is the static
+susceptibility Eq. (74)]. As it is the high-frequency di-
+electric constant that determines the difference between
+the squared LO and TO phonon frequencies [29, 30, 34]
+so ref f takes the former, i.e., ref f = 2πχe. Therefore
+the LO phonon dispersion Eq. (49) is identical to the
+analytical expression of Sohier et al..
+
+Having ϕ(0) [Eq. (44)] for the LO mode ωl(k), we sub-
+stitute expression (42) back into Eq. (1) to give the elec-
+tric potential and then obtain the macroscopic field as-
+sociated with the LO mode, expressed in terms of mode
+displacement w [in a form consistent with Eqs. (3a) and
+(3b)],
+
+Eρ(ρ, z) = −
+
+2πeBk
+
+√ ¯msk(1 + 2πχek)
+
+w · ke−kz,
+
+(51a)
+
+Ez(ρ, z) = −ez
+
+2πieB
+
+√ ¯ms(1 + 2πχek)
+
+w · k sgn(z)e−kz.
+
+(51b)
+The long-range electrostatic interactions cause a higher
+LO frequency than the TO frequency for a finite k [22]
+with the splitting determined by the latter term in the
+square brackets of Eq. (49). This term also shows that
+there is no splitting in the limit k → 0 as the macro-
+scopic field vanishes [Eq. (51a)], which is different from
+the situation in bulk BN where LO-TO splitting occurs
+also at the Γ point [24, 40]. Therefore, the transpar-
+ent expressions (47) and (49) show the degeneracy of the
+LO and TO modes at Γ and their splitting at a finite
+wavevector, well-known phenomena of the 2D semicon-
+ductors [22, 24 -- 26, 35].
+
+The out-of-plane optical vibrations, namely, the ZO
+modes, can be obtained from Eqs. (37) and (34) with
+the electrostatic approach as follows. Recall that the
+z-component of the field [Eq. (29a)] has a δ(z) term, di-
+vergent at z = 0, because the ML is treated as a ge-
+ometric plane where the ionic charge distribution and
+polarization density P have a δ(z) form. We approxi-
+mate δ(z) by a Gaussian distribution with a small thick-
+ness ε (ε → 0 ), δε(z) = 1√πε e−z2/ε2
+, as in the theo-
+retical study [26]. A similar treatment is used also in
+first-principles calculations [25]. The z-component of the
+field in the ML is Ez(ρ, 0) = −ezϕ′(0)eik·ρ, and after
+inserting this field into Eq. (34) the polarization charge
+density can be expressed as −∇ · P = −δ′ε(z)ez · P =
+−[c21w · ez − c22ϕ′(0)eik·ρ]δ′ε(z). Thus Poisson's equa-
+tion is given by
+∇2φ(ρ, z) = 4πδ′ε(z)[c21w(ρ) · ez − c22ϕ′(0)eik·ρ]. (52)
+Expanding ϕ(z) [Eq. (1)] and δε(z)
+
+then we have
+
+δε(z) =
+
+−∞
+
+1
+
+2π Z ∞
+ϕ′(z) =Z ∞
+
+−∞
+
+e−(qε/2)2
+
+eiqzdq,
+
+(53)
+
+iq ϕ(q)eiqz dq,
+
+(54)
+
+8
+
+iqe−(qε/2)2
+
+eiqzdq.
+
+(55)
+
+δ′ε(z) =
+
+1
+
+2π Z ∞
+
+−∞
+
+Inserting the expansions (1) and (55) into Poisson's equa-
+tion (52) we find ϕ(q),
+
+ϕ(q) = −2 [c21w0 · ez − c22ϕ′(0)]
+
+iq
+
+k2 + q2 e−(qε/2)2
+
+, (56)
+
+and then carrying out the integration in Eq. (54) we ob-
+tain
+
+ϕ′(z) = 2hc21w0 · ez − c22ϕ′(0)i(cid:26) 2√π
+
+ε
+
+e−z2/ε2
+
+π
+2
+
+ke(kε/2)2h2 cosh(kz) − e−kz erf(cid:0)
+−
+− ekz erf(cid:0)
+
+ε (cid:1)i(cid:27) ,
+
++ z
+
+kε
+2
+
+kε
+
+2 − z
+ε (cid:1)
+
+(57)
+
+where erf(x) is the error function, erf(x) = 2√π R x
+
+Taking z = 0 in Eq. (57) we find ϕ′(0),
+
+0 e−t2
+
+dt.
+
+ϕ′(0) =
+
+c21
+
+ε/ζk + c22
+
+w0 · ez,
+
+where
+
+ζk = 4√πh1 − √π
+
+kε
+2
+
+erfc(
+
+kε
+2
+
+)e(kε/2)2i,
+
+complementary error
+
+erfc(x) being
+the
+erfc(x) = 1 − erf(x).
+
+The electric field in the ML Ez(ρ, 0) follows,
+
+(58)
+
+(59)
+
+function,
+
+Ez(ρ, 0) = −
+
+c21
+
+ε/ζk + c22
+
+w = −
+
+e′B
+
+√ ¯ms(ε/ζk + χ′e)
+
+w. (60)
+
+When this field is substituted into the equation of motion
+(37), we obtain the frequency of the ZO mode,
+
+ωz(k) =hω′2
+
+0 +
+
+e′2
+B
+
+¯ms(ε/ζk + χ′e)i1/2
+
+.
+
+(61)
+
+Considering that both ε and k are small quantities, ex-
+pression (59) reduces to a constant ζ = 4√π, and the ZO
+phonon frequency becomes independent of wavevector,
+
+ωz =nω′2
+
+0 +
+
+e′2
+B
+
+¯ms[ε/(4√π) + χ′e]o1/2
+
+;
+
+(62)
+
+for a planar material when taking ε ≪ 4√πχ′e the fre-
+
+quency becomes
+
+ωz =(cid:16)ω′2
+
+0 +
+
+e′2
+B
+
+¯msχ′e(cid:17)1/2
+
+.
+
+(63)
+
+The ionic polarization (i.e., χ′e 6= 0) ensures a finite fre-
+quency; otherwise ωz [Eq. (62)] becomes extremely large
+and even ωz → ∞ [Eq. (63)] when χ′e is neglected in the
+RIM (also see Table IV). The result here that the long
+
+wavelength ZO modes are dispersionless agrees with pre-
+vious calculations which show a very flat dispersion curve
+at small wavevectors [22, 24, 26, 35].
+
+Having ϕ′(0) [Eq. (58)] for a ZO mode we then get
+ϕ′(z) from Eq. (57) and also obtain ϕ(z) after substi-
+tuting the ϕ(q) expression (56) into Eq. (1). It follows
+that the macroscopic field associated with the ZO mode
+is given by
+
+Eρ(ρ, z) =
+
+Ez(ρ, z) =
+
+iπe′Bk
+
+kε
+2
+
+w · ez sgn(z)e(kε/2)2
+2 − z
+ε (cid:1)
+
+kε
+
+√ ¯ms(1 + χ′eζk/ε)
+×h2 sinh(kz) + e−kz erf(cid:0)
+− ekz erf(cid:0)
+−2e′B
+√ ¯ms(1 + χ′eζk/ε)
+ke(kε/2)2h2 cosh(kz) − e−kz erf(cid:0)
+−
+− ekz erf(cid:0)
+
++ z
+ε (cid:1)i,
+w(cid:26) 2√π
+
+ε (cid:1)i(cid:27) ,
+
+e−z2/ε2
+
++ z
+
+kε
+2
+
+π
+2
+
+ε
+
+(64a)
+
+kε
+
+2 − z
+ε (cid:1)
+
+(64b)
+
+which for small k and ε reduce to the following expres-
+sions [compare to Eqs. (29a) and (29b)],
+
+Eρ(ρ, z) =
+
+−2iπe′Bk
+
+√ ¯ms(1 + χ′e4√π/ε)
+
+w · ez sgn(z)e−kz,
+
+(65a)
+
+Ez(ρ, z) =
+
+−4πe′B
+
+√ ¯ms(1 + χ′e4√π/ε)
+
+w(cid:18)δ(z) −
+
+1
+2
+
+ke−kz(cid:19) .
+
+(65b)
+In particular we note that the in-plane component is an
+odd function of z, and negligible at very small k and ε.
+
+C. Phonon group velocity and density of states
+
+Expanding ωl(k) [Eq. (49)] to second order in wavevec-
+tor k, the LO phonon frequency near the Γ point is given
+by
+
+ωl(k) = ω0 + clk −
+
+1
+2
+
+cl(
+
+cl
+ω0
+
++ 4πχe)k2,
+
+(66)
+
+where
+
+9
+
+where ωM is the upper bound of LO phonon frequency
+[expression (50)].
+
+Similarly, expanding ωz(k) [Eq. (61)] we find the ZO
+
+phonon frequency near Γ,
+
+ωz(k) = ωz−czk−
+
+1
+2
+
+cz(cid:16) cz
+
+ωz
+
++
+
+4πεχ′e
+
+ε + 4√πχ′e −
+
+2ε
+
+√π(cid:17)k2, (69)
+
+where ωz is the ZO mode frequency given by Eq. (62),
+and
+
+cz =
+
+πe′2
+B
+
+¯msωz(cid:16)
+
+ε
+
+ε + 4√πχ′e(cid:17)2
+
+.
+
+(70)
+
+Dropping the terms due to the EP of ions, expansions
+(66) and (69) then reduce to a form as given by the RIM
+of Ref.[26] [Eqs. (57) and (59) therein]. The nearly flat
+dispersion of the ZO modes allows their DOS to be ap-
+proximated by [26]
+
+gz(ω) =
+
+ωz − ω
+2πc2
+z
+
+, ω < ωz.
+
+(71)
+
+Evidently cz is close to zero as ε ≪ 4√πχ′e for the 2D
+crystal, resulting in the ZO modes being nondispersive.
+The group velocity is ∇kωi(k) = ω′i(k)k/k, where i
+indexes a phonon branch of LO, TO or ZO modes so
+the cl and cz above are simply the norms of the group
+velocities of the LO and ZO modes at Γ, respectively,
+corresponding to the slopes [25] of the phonon dispersion
+curves. For the long lattice waves, as the wavevector k
+increases, clearly ωl increases and ωz decreases, whereas
+ωt stays flat near Γ [Eq. (47)].
+
+D.
+
+2D lattice dielectric susceptibility and dielectric
+
+function
+
+The lattice susceptibility of ML hBN for in-plane po-
+larization can be deduced from Eqs. (25) and (14) by
+considering periodic solutions, W, E, P ∝ e−iωt, due
+to an external charge or electromagnetic field with os-
+cillation frequency ω. Then Eq. (25) reduces simply to
+Eq. (46).
+Inserting Eq. (46) into Eq. (14) to eliminate
+W, one finds
+
+P(ρ) = [a22 −
+
+a12a21
+ω2 + a11
+
+]Eρ(ρ, 0),
+
+(72)
+
+and subsequently the 2D dielectric susceptibility, defined
+by χ = P(ρ)/Eρ(ρ, 0),
+
+cl =
+
+πe2
+B
+¯msω0
+
+,
+
+(67)
+
+χ(ω) = a22 −
+
+a12a21
+ω2 + a11
+
+= χe +
+
+e2
+B
+¯ms(ω2
+0 − ω2)
+
+,
+
+(73)
+
+which is identical to that given in Ref.[26].
+
+From the dispersion Eq. (49) we find straightforward
+
+the DOS of the LO modes,
+
+gl(ω) =
+
+clω0
+4π4χ3
+e
+
+ω(ω2 − ω2
+0)
+M − ω2(cid:1)3 , ω0 ≤ ω < ωM ,
+(cid:0)ω2
+
+(68)
+
+where χe is the high-frequency (i.e., clamped-ion, or elec-
+tronic) susceptibility.
+
+The static dielectric susceptibility χ0 follows from ex-
+
+pression (73),
+
+χ0 = χe +
+
+e2
+B
+
+¯msω2
+0
+
+,
+
+(74)
+
+where the second term on the right-hand side is the vi-
+brational (also called ionic) contribution. With Eq. (74),
+a12 [Eq. (26b)] can be expressed in terms of the 2D sus-
+ceptibilities,
+
+a12 = a21 = ω0√χ0 − χe.
+
+(75)
+
+The 2D dynamical susceptibility χ(ω) can be ex-
+pressed in terms of three quantities that are usually used,
+namely, the intrinsic oscillator frequency ω0 and the high-
+frequency and static susceptibilities χe, χ0,
+
+χ(ω) = χe +
+
+χ0 − χe
+1 − ω2/ω2
+
+0
+
+,
+
+(76)
+
+which has a similar form to its counterpart of bulk polar
+crystals [13].
+
+Similarly, the 2D dielectric susceptibility for the ver-
+tical z-polarization χ′ (the prime does not indicate a
+derivative), defined by χ′ = P(ρ)/Ez(ρ, 0) for any par-
+ticular ω, is deduced from Eqs. (37) and (34),
+
+χ′(ω) = c22 −
+
+c12c21
+ω2 + c11
+
+= χ′e +
+
+e′2
+B
+¯ms(ω′2
+0 − ω2)
+
+,
+
+with the static dielectric susceptibility χ′0,
+
+χ′0 = χ′e +
+
+e′2
+B
+
+¯msω′2
+0
+
+.
+
+(77)
+
+(78)
+
+Combining Eqs. (78) and (38b), one can express c12 in
+
+terms of the 2D susceptibilities,
+
+c12 = c21 = ω′0pχ′0 − χ′e.
+
+(79)
+
+The 2D dynamical susceptibility χ′(ω) can also be ex-
+
+pressed in terms of three quantities χ′e, χ′0, ω′0,
+
+χ′(ω) = χ′e +
+
+χ′0 − χ′e
+1 − ω2/ω′2
+
+0
+
+.
+
+(80)
+
+On eliminating e′2
+
+B/( ¯ms) in Eq. (63) with the help of
+
+Eq. (78) we find a simple relation
+
+ω2
+z
+ω′2
+0
+
+=
+
+χ′0
+χ′e
+
+.
+
+(81)
+
+The 2D high-frequency and static dielectric susceptibil-
+ities can be calculated from first principles, and knowing
+their values the susceptibility expressions (74) and (78)
+obtained here will be used below in Sec. III to determine
+the model parameters such as the effective charges and
+spring force constants, and the a- or c-coefficients of the
+lattice equations [Eqs. (39a), (39b), (40a) and (40b)].
+
+The lattice dielectric function (DF) can be obtained by
+considering the response of the 2D lattice to a test charge
+in the electrostatic approximation. Now the equation of
+electrostatics is given by ∇· (E + 4πP) = 4πσ, where σ is
+the test charge density function dependent on r, t, and E
+is the total field of the test charge plus the polarization
+
+10
+
+charge. To find the dielectric response let σ have the form
+σ = σ0eik·ρf (z), where f (z) is an arbitrary function to
+describe the charge distribution in the z direction, for the
+general case that the external charge is not necessarily
+confined in the ML, and time dependence e−iωt has been
+absorbed into σ0 for clearness.
+
+First, let us consider a charge distribution that is asym-
+metric with respect to the ML, i.e., f (−z) 6= f (z), for in-
+stance, when the test charge is simply put above or below
+the ML. Then the field due to the charge is nonzero in the
+ML, Eρ(ρ, 0) 6= 0, Ez(ρ, 0) 6= 0, and therefore the lattice
+responds creating both in-plane [Eqs. (39a) and (39b)]
+and out-of-plane [Eqs. (40a) and (40b)] vibrations, with
+all quantities such as wρ, wz, P ρ, P z, E varying ac-
+cording to ei(k·ρ−ωt). Now the dielectric polarization is
+given by the sum of the in-plane and out-of-plane contri-
+butions, P = (P ρ + P z)δ(z), where P ρ = χ(ω)Eρ(ρ, 0)
+and P z = χ′(ω)Ez(ρ, 0), with χ and χ′ being the 2D
+susceptibilities [Eqs. (73) and (77)]. Writing E = −∇φ
+with the total electrostatic potential φ(ρ, z) = ϕ(z)eik·ρ,
+one expresses the polarization charge density −∇ · P in
+terms of the derivatives of potential φ, and then Poisson's
+equation follows from the equation of electrostatics,
+
+∇2φ(ρ, z) = −4π(cid:2)σ0eik·ρf (z) + χ(ω)δ(z)∇2
+
++χ′(ω)ϕ′(0)eik·ρδ′(z)(cid:3) ,
+
+where φ(ρ, 0) is the total potential in the ML, φ(ρ, 0) =
+ϕ(0)eik·ρ. Inserting the expansion of f (z),
+
+ρφ(ρ, 0)
+
+(82)
+
+f (z) =Z ∞
+
+−∞
+
+f (q)eiqzdq,
+
+(83)
+
+and expansions (1) and (2) into Poisson's equation (82)
+one finds ϕ(q),
+
+2
+
+ϕ(q) =
+
+k2 + q2 (cid:2)2πσ0f (q) − χ(ω)k2ϕ(0) + iχ′(ω)ϕ′(0)q(cid:3) ,
+
+(84)
+where the three terms on the right-hand side represent
+the respective contributions due to the external charge,
+in-plane and out-of-plane lattice polarization. Here ϕ(q)
+is expressed in terms of ϕ(0) and ϕ′(0) as they are
+proportional to the field components in the ML, i.e.,
+ϕ(0) ∝ Eρ(ρ, 0) and ϕ′(0) ∝ Ez(ρ, 0). Integrating ϕ(q)
+over q according to Eq. (43), one then obtains ϕ(0),
+
+where
+
+ϕ(0) =
+
+ϕσ(0)
+
+1 + 2πkχ(ω)
+
+,
+
+ϕσ(0) = 4πσ0Z ∞
+
+−∞
+
+f (q)
+k2 + q2 dq .
+
+(85)
+
+(86)
+
+The out-of-plane (ZO) motion makes no contribution
+to ϕ(0) as the integration value of the third term of ϕ(q)
+is zero. Clearly ϕσ(0)eik·ρ is the electrostatic potential
+in the ML due to the test charge alone, and therefore the
+
+dielectric function of the 2D lattice, which is defined as
+the ratio of this test charge potential to the total poten-
+tial in the ML ϕ(0)eik·ρ (extension of the 2D wavevector-
+dependent dielectric function ǫ(k) of Ref.[38]), is given
+by
+
+ǫ(k, ω) = 1 + 2πkχ(ω) = 1 + 2πk(cid:20)χe +
+
+e2
+B
+¯ms(ω2
+
+0 − ω2)(cid:21) ,
+
+(87)
+showing a linear dependence on wavevector as the ǫ(k)
+of Ref.[38]).
+
+In expression (84) for ϕ(q), ϕ(0) is known [Eq. (85)],
+and ϕ′(0) can be determined through expression (54) for
+ϕ′(z) as follows. Substituting expression (84) for ϕ(q) in
+Eq. (54) one finds
+
+ϕ′(z) = 4πσ0Z ∞
+
+−∞
+
+iqf (q)
+k2 + q2 eiqzdq
+− 2k2χ(ω)ϕ(0)Z ∞
+− 4πχ′(ω)ϕ′(0)hδ(z) −
+
+−∞
+
+iq
+
+k2 + q2 eiqzdq
+ke−kzi.
+
+1
+2
+
+(88)
+
+The square bracketed part is a familiar form that has
+appeared in Eq. (29a). To find ϕ′(0) we introduce an ef-
+fective thickness ε to δ(z) to approach it with δε(z) as was
+done above in Sec. III. Let Λ = δε(0); Λ = 1/(√πε), for
+instance, when δ(z) is approximated by a Gaussian [26],
+/(√πε). Now taking z = 0 in Eq. (88),
+δε(z) = e−z2/ε2
+the term containing χ(ω)ϕ(0) vanishes, i.e., the in-plane
+motion makes no contribution to ϕ′(0), which is given by
+
+ϕ′(0) =
+
+4πσ0
+
+1 + 4πχ′(ω)(Λ − k/2)Z ∞
+
+−∞
+
+iqf (q)
+k2 + q2 dq .
+
+(89)
+
+Having ϕ(q) [expression (84)] then the total potential φ
+is known, and the total field E can be obtained straight-
+forward,
+
+Eρ(ρ, z) = −2πikn2σ0Z ∞
+
+−∞
+
+f (q)eiqz
+k2 + q2 dq − [kχ(ω)ϕ(0)
+(90a)
+
++ χ′(ω)ϕ′(0) sgn(z)]e−kzoeik·ρ,
+iqf (q)
+k2 + q2 eiqzdq
+
+Ez(ρ, z) = −2πez(cid:26)2σ0Z ∞
+
+−∞
+
++ k2χ(ω)ϕ(0) sgn(z)e−kz
+
+−2χ′(ω)ϕ′(0)hδ(z) −
+
+1
+2
+
+ke−kzi(cid:27) eik·ρ ,
+
+(90b)
+
+where ϕ(0) and ϕ′(0) are given by expressions (85) and
+(89), respectively.
+
+Recalling Eρ(ρ, z) = −ikφ(r) with Eq.
+
+(90a)
+for Eρ(ρ, z), evidently the induced potential asso-
+ciated with the ZO polarization is proportional to
+χ′(ω)ϕ′(0) sgn(z)e−kz, which is zero in the ML plane
+
+11
+
+and antisymmetric with respect to it, consistent with
+Eq. (28) above. The in-plane component of the field
+associated with the ZO motion [the term containing
+χ′(ω)ϕ′(0) in Eq. (90a)] is zero in the ML and thus the
+ZO motion does not influence the LO motion; mean-
+while the LO motion has zero z-component of its field
+[the χ(ω)ϕ(0) term in Eq. (90b)] in the ML and thus
+no influence on the ZO motion, making the LO and ZO
+vibrations driven by the exernal charge essentially inde-
+pendent of each other. For small thickness ε, ϕ′(0) is
+small from Eq. (89) and there is only a small ZO compo-
+nent, which becomes negligible in the limit ε → 0, in the
+driven lattice motion [refer to Eq. (82)]. For a symmetric
+test charge distribution f (−z) = f (z), Ez(ρ, 0) = 0, and
+this causes only in-plane vibration, with displacement w
+and polarization P both parallel to the ML plane, and ev-
+idently yields the same DF ǫ(k, ω) as given by expression
+(87) above.
+
+As the polarization charge density associated with
+the in-plane motion is −δ(z)∇ρ · P ρ(ρ) = −δ(z)[a21 −
+a22(ω2 + a11)/a12]ik · wρ 6= 0, and wρ k P ρ k Eρ(ρ, 0) k
+k, the DF ǫ(k, ω) is due only to the LO vibrations and
+thus is a longitudinal DF. In the absence of a test charge
+(σ = 0), there is still a finite electric field Eρ(ρ, 0) and
+potential φ(ρ, 0) due to the LO vibrations, and there-
+fore it follows from Eq. (85) that the LO modes are the
+solutions to
+
+ǫ(k, ω) = 0.
+
+(91)
+
+From Eqs. (87) and (91) one indeed obtains the LO
+phonon dispersion ωl(k) of expression (49).
+In bulk
+crystals the lattice DF is zero at the bulk LO mode
+frequency [13]. From expression (87) the static DF is
+ǫ0(k) = 1 + 2πχ0k, while at high frequencies ω ≫ ω0
+the vibrational contribution is negligible yielding the DF
+ǫ∞(k) = 1 + 2πχek, with 2πχ0 and 2πχe being the ef-
+fective screening lengths [38, 39]. Both static and high-
+frequency DFs have the same form as that deduced by
+Cudazzo et al. [38].
+
+In terms of the three key quantities ωt, ωl(k), ǫ∞(k)
+the lattice DF of the 2D crystal can be expressed in the
+form
+
+ǫ(k, ω) = ǫ∞(k)
+
+ω2 − ω2
+l (k)
+ω2 − ω2
+
+t
+
+,
+
+(92)
+
+which is similar to the lattice DF of bulk polar crystals
+[13], the difference being that here both the LO phonon
+frequency and DF are dependent on wavevector. In bulk
+crystals there is the LST relation [17], ω2
+t = ǫ0/ǫ∞;
+for the 2D crystal a similar relation can be deduced from
+expression (92),
+
+l /ω2
+
+ω2
+
+l (k)
+ω2
+t
+
+=
+
+ǫ0(k)
+ǫ∞(k)
+
+,
+
+(93)
+
+with the three quantities dependent on wavevector.
+
+The extended LST relation (93) connects the phonon
+frequencies to the two DFs; given the former, then the ra-
+tio of the latter is known, and vice versa. Furthermore,
+
+since the difference between the LO and TO frequen-
+cies is due entirely to the macroscopic field, the relation
+can be used to measure the phonon frequency change
+caused by the field. Similarly, for out-of-plane motion
+the susceptibilities χ′0 and χ′e are related to phonon fre-
+quencies ωz and ω′0 via the frequency -- susceptibility rela-
+tion (81), which conveniently quantifies the effect of the
+macroscopic field on the ZO phonon frequency.
+
+III. LATTICE DYNAMICAL PROPERTIES:
+
+LOCAL FIELD AND POLARIZABLE ION
+
+EFFECTS
+
+A.
+
+In-plane optical modes
+
+The 2D clamped-ion susceptibility χe, a key quan-
+tity entering the derived expressions for in-plane motion,
+can be obtained from first-principles calculation in four
+ways as follows. The 2D DF ǫ(q) was calculated within
+the random-phase approximation by a first-principles su-
+percell approach for a number of 2D crystals such as
+h-BN [2], phosphorene and TMDs [2, 39, 41].
+In the
+first method, from the calculated DF the χe values of
+2D TMDs were extracted in Ref.[39] by employing the
+relation ǫ(L) = 1 + 4πχe/L [38], where L is the inter-
+layer separation for a supercell containing two MLs of
+TMD, and ǫ(L) is the in-plane dielectric constant due
+to electronic polarization. For 2D MoS2, the obtained
+χe=6.6 A [39] is nearly equal to the susceptibility 6.5 A
+extracted from bulk MoS2 simply by taking L = c/2 (c
+is the lattice constant of bulk MoS2) whilst making ǫ(L)
+equal to the in-plane dielectric constant of bulk MoS2.
+When the experimental lattice constant c=6.66 A [42]
+and in-plane high-frequency dielectric constant ǫ = 4.95
+(Ref.[43]) of bulk h-BN are put into the above relation,
+the susceptibility of 2D BN is estimated to be χe=1.0 A.
+The 2D susceptibility χe can also be obtained by employ-
+ing ǫ(q) = 1 + 2πχeq [38] as the slope of the ǫ(q) curve
+[2, 41] in the small-wavevector q region equals the screen-
+ing length ref f = 2πχe. From Fig. 1 of Ref.[2] one finds
+a susceptibility χe=5.9 A for 2D MoS2 and χe=0.8 A
+for 2D hBN. The 2D susceptibility can also be calculated
+when knowing the screening length ref f . For 2D hBN
+the calculated screening length is 7.64 A [25], thus corre-
+sponding to a susceptibility χe of 1.216 A. In the fourth
+method, the (clamped ion) electronic energy in the unit
+cell is calculated for crystals in an external electric field
+[21, 44], and then the first derivative of the electronic en-
+ergy with respect to the field yields the induced dipole
+moment per cell, namely, the induced macroscopic po-
+larization corresponding, for 2D hBN, to the last term in
+Eqs. (14) and (34), and the second derivative of the en-
+ergy with respect to the field yields the electronic polar-
+izability per cell. For ML hBN an electronic polarizabil-
+ity 4.591 A3 per cell (Table IV of Ref.[21]) was obtained
+from a coupled perturbed Kohn-Sham (CPKS) calcula-
+tion with the ab initio CRYSTAL09 code. Dividing this
+
+12
+
+value by the area of the unit cell s we find a 2D suscepti-
+bility χe=0.848 A which is very close to the value 0.8 A
+of the second method. Similarly, using the static polariz-
+ability 7.111 A3 per cell given in the same reference [21]
+we find a static dielectric susceptibility (i.e., including
+the lattice contribution) χ0=1.314 A. Unless otherwise
+stated, these 2D susceptibilities χe and χ0 from Ref.[21]
+are used in this study.
+
+Through the three expressions (19), (47) and (74) we
+obtained, the three quantities of the 2D crystal, namely,
+the two macroscopic susceptibilities χe, χ0 and the col-
+lective vibration frequency ω0 are related to the three
+microscopic quantities, ea, eB, K. Therefore, the values
+of the three microscopic quantities can be determined by
+using a set of three values χe, χ0, ω0 calculated from
+first principles. Further, all the three mutually indepen-
+dent a-coefficients a11, a21 (or a12), a22 in the equation
+of motion (25) and polarization equation (14) can also
+be determined through Eqs. (16), (26a) and (75). Of the
+four microscopic quantities α1, α2, ea, K on which the a-
+coefficients originally depend [refer to Eqs. (15a), (15b),
+(26a), (22) and (17)], the polarizabilities of the con-
+stituent atoms of ML hBN α1, α2 are unknown. There-
+fore, the adoption of the three known quantities χe, χ0,
+ω0 facilitates the use of the deduced equations for in-
+plane motion by circumventing the two unknowns α1 and
+α2. We note that, although the values of α1, α2 are un-
+known, their sum α1 + α2, the atomic poarizability of
+the unit cell, is found to fall in an interval, expressed in
+terms of χe in inequality (A10), which is obtained with
+a generalized Clausius-Mossotti relation connecting the
+microscopic polarizabilities α1, α2 and the macroscopic
+dielectric susceptibility χe (refer to Appendix A). Taking
+χe = 0.85 A [21] yields 1.3084 A3 ≤ α1 + α2 ≤ 1.7530 A3,
+which are smaller than the total free-atom polarizability
+4.0 A3 (Appendix A). This interval will be used below to
+evaluate the LFEs on the LO phonon frequency and 2D
+dielectric susceptibilities (Table II below).
+
+Using the susceptibilities χe = 0.848 A and χ0 =
+1.314 A from CPKS calculation (Ref.[21]) and the
+phonon frequency ω0=1371 cm−1 calculated from first
+principles by the same group (Ref.[45]), we calculated the
+three microscopic quantities ea, eB, K from Eqs. (19),
+(47) and (74). We also calculated the force constant due
+to LFEs Ke [Eq. (22)] and the LO phonon group veloc-
+ity cl [Eq. (67)] and present the result in Table I (upper
+row). In the theoretical study by Sohier et al.
+[25] the
+S parameter, related to eB by S = 2πe2
+B/( ¯ms), is calcu-
+lated by density-functional perturbation theory (DFPT).
+For 2D hBN the value S = 8.4 × 10−2 eV2·A [25] so we
+find eB = 2.71e. In that study, the calculated frequency
+ω0 is 1387.2 cm−1 (Table 1 of Ref.[25]), and recall that
+a susceptibility χe=1.216 A has been already calculated
+above through ref f =7.64 A [25]. Now having these three
+values of χe, eB, ω0, again by using Eqs. (19), (47) and
+(74) we calculated the quantities Ke, cl as well as χ0, ea,
+K, which are also listed in Table I (lower row) for com-
+parison. First, we see two nearly equal values of Born
+
+charge, 2.70e and 2.71e, the latter being also equal to an-
+other recent DFPT calculation [6] as well as the eB value
+of the bulk hBN [40]. According to Eq. (19), eB is greater
+than ea as χe > 0 due to EP of ions, and the numerical
+result shows that eB is four times larger than ea. Also
+the two effective charge ea values are close to previous
+first-principles results 0.56e [46] and 0.43e [24] obtained
+respectively with Bader's method and Lowdin's analysis
+on charge transfer. Second, both susceptibilities χe and
+χ0 are larger in the lower row but the vibrational con-
+tributions to the static susceptibility namely the χ0 − χe
+values are nearly equal in the two cases, which are 0.46
+and 0.45 A for the upper and lower rows, respectively.
+Third, the group velocity cl corresponds to the slope of
+the LO phonon dispersion curve at Γ; the two values of
+cl are very close with a difference of only 0.38% (Table I)
+but they are one order of magnitude larger than the value
+1.94 km/s calculated without taking into account EP of
+ions [26]. Fourth, in Ref.[26] the force constant parame-
+ters are generated by making a percentage reduction of
+those of graphene, and from their table I we work out a
+spring force constant K=41.86 eV/A2 (K′=14.48 eV/A2
+for out-of-plane motion), which is 26% and 30% smaller
+than the force constant K values 56.5 and 59.8 eV/A2
+of the present Table I. Fifth, the intrinsic oscillator fre-
+quency ω0 is determined by K − Ke [Eq. (26a)] rather
+than by K alone, i.e., ω2
+0 = (K − Ke)/ ¯m; then the ra-
+tio Ke/K expresses the percentage reduction due to the
+LFEs, which from Table I is Ke/K=24% and 29%. Sixth,
+the two quantities cl/ω0 and 4πχe form a factor of the
+k2 term in the expansion of ωl(k) [Eq. (66)], and from
+Table I the ration is cl
+/4πχe=13.5% and 9.3%, indi-
+ω0
+cating the EP of ions makes the dominant contribution.
+Further, this result, together with the third point above,
+shows that neglecting ionic polarization such as RIM [26]
+cannot properly describe the LO phonon dispersion. Be-
+low we shall use the first row of parameters to evaluate
+the influence of EP and LFEs on the lattice vibrations
+(as is presented in Table II).
+
+In Sec. II the electronic polarization of all the ions is
+included through ακ, and the model is referred to as PIM
+hereafter, in particular when comparing to the results cal-
+culated with the RIM (ακ = 0). In the above calculations
+for Table I, therefore both the EP and LFEs have been
+taken into account. We now look at what happens when
+EP or LFEs are not included. To do this, we compare
+various lattice-dynamical quantities such as χe, χ0, eB,
+ωt, ωl(k), cl obtained with the RIM and PIM when the
+LFEs are neglected or taken into account, the expressions
+of which are listed in Table II, for the four approaches
+in total. Given χe, χ0, ω0, their expressions (19), (47)
+and (74), as noted in Table II, are used to calculate the
+microscopic quantities such as ea, eB, K, α1 + α2 (see
+Appendix A) needed in these approaches. Just below the
+expressions in the table the specific value-substituted LO
+phonon dispersion ωl(k) and the values of the other five
+quantities are also listed for comparison: for the PIM in-
+cluding the LFEs (last row), the susceptibilities χe, χ0
+
+13
+
+and frequency ωt (equal to ω0) are input values taken
+from first-principles calculations [21, 45], while the oth-
+ers were calculated using this set of χe, χ0, ω0 values,
+as we did in the above calculations for Table I; for the
+other three approaches, the quantities are transformed to
+depend on ea and/or K as their expressions show, and
+are therefore calculated using the ea and K parameters
+that are obtained with the same set of χe, χ0, ω0 values
+(as was given in the first row of Table I). Several points
+can be made by comparing the results obtained with the
+four approaches. First, there is no electronic polarization
+in the RIM and therefore χe = 0. In the PIM with no
+LFEs the electronic susceptibility of ML hBN is simply
+χe = (α1 + α2)/s, and taking the interval we obtained
+above for α1 + α2 gives 0.2417 A ≤ χe ≤ 0.3239 A, values
+that are even smaller than half the 0.85 A obtained when
+the LFEs are taken into account. Second, in the RIM -- 
+for both cases of excluding and including the LFEs -- and
+also in the PIM when neglecting LFEs, the Born charge
+reduces simply to the static charge ea = 0.61e, a value
+only 23% of the eB that we calculated with the PIM in-
+cluding the LFEs. Third, the ions in motion contribute
+e2
+B/[s(K − eaeBQ1)] to the static susceptibility χ0, and
+with the RIM a smaller Born charge of 0.61e causes this
+contribution to be only ∼0.018 A, thus underestimat-
+ing the vibrational contribution by 96% compared to the
+0.46 A which was calculated with the PIM including the
+LFEs. Fourth, the LO phonon group velocity cl evalu-
+ated with the three simpler approaches, 1.61-1.67 km/s,
+is similar to the 1.94 km/s of a RIM result [26] but is one
+order of magnitude smaller than the 37.24 km/s given by
+the PIM including the LFEs.
+
+Furthermore, the LO phonon dispersion relations given
+by the four quantitative expressions of Table II are com-
+pared in Fig. 2, where wavevector k is given in units of
+Γ− K [25], the distance between the Γ and K points in
+the Brillouin zone. For the PIM without LFEs, the pa-
+rameter γ is simply taken to be the lower bound 3.8172
+as the numerical calculation indicates that the use of
+the upper bound 5.1144, for instance, reduces the LO
+phonon frequencies by less than 0.08% (not shown), a
+change indiscernible to the dispersion curve. When LFEs
+are neglected, the two models PIM and RIM yield very
+close phonon frequencies that fall in a very narrow range
+from 1631 to 1653 cm−1 (upper two lines). The two
+curves touch each other at the Γ point with the same
+tangent and slope cl=1.61 km/s; the curve obtained by
+the RIM displays a linear dispersion relation through
+the long-wavelength region k ≤ 0.15Γ − K, while the
+PIM curve becomes flatter at larger wavevectors in the
+same region of k. When the LFEs are taken into ac-
+count, the phonon frequencies are reduced significantly.
+For the dispersion calculated with the RIM (middle line),
+the dependence of frequency on wavevector remains lin-
+ear, with a small slope similar to the case with no LFEs.
+For the dispersion curve obtained with the PIM (solid
+line), in contrast, owing to the EP of ions, a steep slope
+appears on the small wavevector side, corresponding to
+
+an substantially increased phonon group velocity 37.24
+km/s, and as the wavevector increases the increase of the
+phonon frequency becomes slower (i.e. with a smaller cl),
+deviating significantly from its linear dependence near
+the Γ point. The LO phonon dispersion of Ref.[25],
+ωl = [ω2
+0 +Sk/(1 + ref f k)]1/2, with first-principles calcu-
+lated values ω0=1387.2 cm−1, S = 8.4 × 10−2 eV2·A,
+and ref f =7.64 A,
+is also shown (dotted line) and is
+very close to the dispersion curve obtained with the our
+PIM. According to Eq. (49), the upper limit of ωl at a
+sufficiently large k is ωM =1701.6 cm−1; at wavevector
+k = 0.15Γ − K, the LO phonon frequency ωl is 1569
+cm−1, which is quite close to its limiting value (only
+7.8% smaller). For wavevectors k > 0.02Γ− K, as ω in-
+creases, the decrease of the group velocity with wavevec-
+tor k causes a rapid increase to the LO phonon DOS,
+as is clearly seen from Fig. 3 [also refer to the DOS ex-
+pression (68)]. Overbending is a prominent feature of
+the numerically calculated LO phonon dispersion of ML
+hBN [19, 22 -- 24, 26, 35]. For instance, a maximum LO
+phonon frequency of 1533 cm−1 (Ref.[35]) or 1570 cm−1
+(Ref.[24]) appears at a wavevector ∼0.30Γ − K. Evi-
+dently a positive slope cl is essential for the overbending
+of the dispersion curve ωl(k). Therefore our result above
+indicates that due to the EP of ions, the increase of group
+velocity cl has enhanced the overbending substantially.
+
+B. Out-of-plane optical modes
+
+Values of phonon frequency ωz [19, 24, 35, 45], 2D elec-
+tronic susceptibility χ′e and static susceptibility χ′0 [21]
+associated with out-of-plane motion have been calculated
+from first principles. Having these then the intrinsic os-
+cillator frequency ω′0 is known through the relation (81).
+Given three quantities ω′0, χ′e, χ′0, the three microscopic
+quantities namely the static effective charge e′a, the Born
+charge e′B and the effective force constant K′ follow from
+the three equations (36b), (38a) and (78). Further, all
+the three mutually independent c-coefficients c11, c12 (or
+c21), c22 in the lattice equations (37) and (34) are also
+determined by Eqs. (36b), (38a) and (79).
+
+From Ref.[21] the 2D electronic susceptibility is given
+by χ′e = 0.815A3/s = 0.151A. Putting this into Eq. (36b)
+gives a negative ratio e′B/e′a = −0.21; that is, the positive
+B ions carry a negative Born charge while the negative N
+ions move with a positive Born charge. As a result, the
+polarization induced by ionic vibrations e′B(u1 − u2)/s is
+antiparallel (parallel) to the displacements of the B (N)
+ions, and meanwhile the electric force exerted on the B
+(N) ions is antiparallel (parallel) to the macroscopic field.
+However the negative e′B value has no influence on the
+out-of-plane optical (ZO) phonon frequency as e′B enters
+the frequency expression via e′2
+
+B [Eq. (63)].
+
+Using the first-principles calculated values χ′e =
+0.151 A and χ′0 = 0.164 A (Ref.[21]), we calculated ω′0,
+e′a, e′B, K′, K′e for two values of frequency ωz taken from
+previous first-principles calculations, 836 cm−1 (first-
+
+14
+
+principles perturbation result of Ref.[45], by the same
+group of Ref.[21], and also the direct method result of
+Ref.[19]), 800 cm−1 (DFPT value of Refs.[24, 35]), and
+for one experimental ωz of 734 cm−1 (Ref.[18]) and also
+for a low frequency ωz=405 cm−1 (see Table III). A
+larger static effective charge e′a, greater than 1.0e, occurs
+for out-of-plane motion than in-plane motion (compare
+with in-plane effective charge ea values given in Table I).
+Charge transfer is quite complicated in semiconductors
+where covalent bonds and ionic bonds coexist [47]. For
+2D hBN there is a space allowing a more electron charge
+distribution outside the layer plane, probably causing a
+larger out-of-plane charge transfer from B to N. In fact,
+the calculation shows that a smaller e′a equal to the in-
+plane effective charge of 0.61e corresponds to a very low
+phonon frequency 405 cm−1 (last row of Table III) that
+is unacceptably lower than the first-principles and exper-
+imental values. We see a negative Born charge e′B (on B
+ions) one order of magnitude smaller than the in-plane
+Born charge eB, while the force constant due to LFEs K′e
+is one-third the effective spring force constant K′, similar
+to the in-plane motion case.
+
+To examine the EP of ions and LFEs on the out-of-
+plane motion, we look at the lattice-dynamical proper-
+ties χ′e, χ′0, e′B, ω′0, ωz obtained with the RIM and PIM
+each including or excluding the LFEs, whose expressions
+are listed in Table IV and also whose values obtained
+with a set of three first-principles values, χ′e = 0.151
+A, χ′0 = 0.164 A, ωz = 836 cm−1 (Refs.[21, 45]), are
+given just below the corresponding expressions (the mi-
+croscopic quantities e′a, e′B, K′ used in the models were
+calculated using the same method as above for Table III).
+For the adopted χ′e value 0.151 A the atomic polariz-
+ability of the unit cell is found to fall in the interval,
+1.9329 A3 ≤ α′1 + α′2 ≤ 2.5792 A3 (Appendix A). In
+the PIM without LFEs then the dielectric susceptibil-
+ity of ML hBN is given by χ′e = (α′1 + α′2)/s, thus
+yielding 0.3571 A ≤ χ′e ≤ 0.4765 A. When the LFEs
+are accounted for, the dielectric susceptibility χ′e is re-
+duced significantly (by over 55%) -- different from the in-
+plane motion case where the dielectric susceptibility is
+increased -- and the Born charge on the B ions becomes
+negative with a magnitude that is only 21% of their static
+effective charge. In fact, there is a very small vibrational
+contribution (only 0.013 A) to the static susceptibility
+χ′0 due to this small value of Born charge; in contrast,
+when LFEs are neglected, a large Born charge equal to
+the static effective charge leads to an overestimation of
+the vibrational contribution, which rises to a one or-
+der of magnitude higher value (0.196 A). The out-of-
+plane phonon frequency ωz is 836 cm−1 with the PIM
+including the LFEs, which is overestimated by over 39%
+when LFEs are not included.
+In the RIM there is no
+EP, i.e., α′1 = α′2 = 0, which causes χ′e to vanish and
+consequently an extremely large out-of-plane phonon fre-
+quency, ωz → ∞. In consequence the RIM fails to de-
+scribe the out-of-plane vibrations.
+
+IV. SUMMARY AND CONCLUSIONS
+
+We have studied long wavelength optical vibrations
+in ML hBN using two pairs of equations [Eqs. (39a),
+(39b), (40a) and (40b)] to describe the in-plane and out-
+of-plane lattice vibrations, respectively. These lattice
+equations, which have similar forms to Huang's equa-
+tions for bulk crystals, are deduced from a microscopic
+dipole lattice model taking into account the LFEs and
+EP self-consistently. The 2D Lorentz relation connecting
+the macroscopic and local fields, and the use of the areal
+polarization, a macroscopic quantity to describe the 2D
+dielectric polarization, are fundamental to deducing the
+lattice equations from the atomic theory. From the lat-
+tice equations the expressions for the areal energy density
+are obtained for the in-plane and out-of-plane lattice vi-
+brations, respectively. The three mutually independent
+a- or c-coefficients of the equations are expressed in terms
+of a set of three quantities such as the 2D electronic
+and static susceptibilities and the intrinsic oscillator fre-
+quency, calculated from first principles, thus making the
+lattice equations very useful for calculating the lattice
+dynamical properties.
+
+The lattice equations are solved simultaneously with
+the equation of electrostatics to deduce the optical modes
+of the TO, LO and ZO vibrations. The explicit expres-
+sions have been obtained for phonon frequency, macro-
+scopic field, and also phonon group velocity and density
+of states. The frequency expressions are found to de-
+scribe the dispersion relations of previous first-principles
+calculations very well: while the TO and ZO modes are
+dispersionless, the LO modes have dispersion with the
+frequency increasing with the wavevector.
+In particu-
+lar, our LO phonon dispersion relation is identical to the
+analytical expression of Sohier et al., and it evidently
+shows that the LO and TO modes are degenerate at Γ
+and split up at a finite wavevector due to the long-range
+macroscopic field.
+It is also shown that the finite ZO
+phonon frequency exists owing to the electronic polar-
+ization of ions, without which the frequency becomes in-
+finitely large in the rigid ion model.
+
+From the lattice equations the frequency-dependent
+dielectric susceptibilities are deduced for in-plane and
+out-of-plane lattice motion. By considering the response
+of the lattice to a test charge with a charge distribu-
+tion asymmetric or symmetric with respect to the ML,
+a 2D lattice dielectric function ǫ(k, ω) is derived [expres-
+sion (87)], which is shown to be due solely to the LO
+vibrations, and the driven LO and ZO vibrations are fur-
+ther discussed. It is also shown that such a 2D longitudi-
+nal DF allows the LO phonon dispersion [expression (49)]
+to be rederived from ǫ(k, ω) = 0, similar to the case of
+bulk crystals. The 2D LST relation (93) and frequency -- 
+susceptibility relation (81) are obtained for in-plane and
+out-of-plane motion, respectively, connecting the phonon
+frequencies to the 2D dielectric functions or susceptibil-
+ities, which are very useful for quantifying the effects of
+the macroscopic field on the phonon frequencies.
+
+15
+
+The analytical expressions have been applied to study
+the lattice dynamical properties of ML hBN. For the in-
+plane motion, two sets of three quantities from two in-
+dependent first-principles calculations, one set of χe, χ0,
+ω0 from Ref.[21] and the other set of χe, eB, ω0 from
+Ref.[25], are used as parameters and very close results
+are obtained for the calculated properties such as the
+LO phonon dispersion relation, the effective spring force
+constant and the vibrational contribution to the static
+susceptibility. To evaluate the LFEs the unit-cell atomic
+polarizability is used, which, given a dielectric suscep-
+tibility, is found to be limited in an interval using the
+2D Clausius-Mossotti relation. The LFEs and electronic
+polarization of ions should be included simultaneously,
+but otherwise neglecting either or both causes large dis-
+crepancies to the calculated properties: the phonon fre-
+quency at Γ is overestimated by 15%-19%, whereas the
+Born charge, the LO phonon group velocity and the vi-
+brational contribution to the static susceptibility are un-
+derestimated by 77%, 96%, 96%, respectively. With no
+ionic EP or LFEs, the LO modes display very small lin-
+ear dispersion, almost flat in the long wavelength region,
+which is distinct from the LO phonon dispersion calcu-
+lated after accounting for both EP and LFEs. For out-
+of-plane motion, using χ′e, χ′0, ωz calculated mainly from
+Refs.[21, 45] as parameters, the static effective charge is
+found to be different from that for in-plane motion re-
+flecting anisotropy of the 3D charge density distribution.
+Further, the positive B ions carry a negative Born charge
+while the negative N ions move with a positive Born
+charge. Similar to the in-plane motion case, the RIM can
+not properly describe the out-of-plane vibrations, which,
+for instance, yields a four times larger Born charge and
+infinitely large phonon frequency. When the EP of ions
+is included, the LFEs have significantly reduced the 2D
+dielectric susceptibility and the Born charge (by 60% and
+80%, respectively), different from the in-plane motion
+case where the dielectric susceptibility and Born charge
+are both increased substantially (by two and three times,
+respectively).
+
+ACKNOWLEDGMENTS
+
+We acknowledge support from the Natural Science Re-
+search Funds (Nos. 419080500175 & 419080500260) of
+Jilin University.
+
+Appendix A: The generalized Clausius-Mossotti
+
+relations and intervals of the total atomic
+
+polarizability in ML hBN
+
+In bulk diatomic crystals the electronic susceptibility χ
+relates to the atomic polarizabilities of constituent atoms
+α1 and α2 by the Clausius-Mossotti relation [48, 49],
+
+χ =
+
+(α1 + α2)/va
+
+1 − 4π(α1 + α2)/(3va)
+
+.
+
+(A1)
+
+There is no such a simple relation for 2D hBN. Substi-
+tuting Eqs. (11) and (16) into Eq. (15b), χe, the in-plane
+electronic susceptibility of ML hBN, is given by [31, 33]
+
+χe =
+
+(α1 + α2) + 2α1α2(Q1 − Q0)
+
+s[1 − (α1 + α2)Q0 − α1α2(Q2
+
+1 − Q2
+0)]
+
+.
+
+(A2)
+
+If Q0 = Q1, then the 2D susceptibility of the dielectric
+χe relates to the total atomic polarizability of the unit
+cell α1 + α2 by a simple relation,
+
+χe =
+
+(α1 + α2)/s
+
+1 − (α1 + α2)Q0,1
+
+which is similar to the Clausius-Mossotti relation (A1)
+for bulk materials. In fact in ML hBN Q0 6= Q1 (Sec.
+II) so the sum α1 + α2 can not be determined from the
+generalized Clausius-Mossotti relation (A2); adding the
+Born charge expression (17) does not help because eB and
+χe are related through Eq. (19) and not independent of
+each other.
+
+Interestingly, when knowing χe the upper and lower
+bounds of the unit-cell atomic polarizability α1 + α2 can
+be determined from expression (A2). Let α = α1 + α2.
+Then Eq. (A2) can be transformed into a quadratic equa-
+tion in variable α1,
+
+2
+
+(Q1−Q0)(cid:0)Q1+Q0+
+
+χes(cid:1)(α2
+
+1−αα1)+1−α(cid:0)Q0+
+
+with the discriminant ∆α,
+
+1
+
+χes(cid:1) = 0,
+
+(A4)
+
+∆α = (Q1 − Q0)(cid:0)Q1 + Q0 +
+
+2
+
++
+
+χes(cid:1)α2 − 4(cid:2)1 − α(Q0 +
+
+= (Q1 − Q0)2(cid:0)Q1 + Q0 +
+χes(cid:17).
+
+Q1 + Q0 + 2
+
+(cid:16)α −
+
+2
+
+2
+
+χes(cid:1)n(Q1 − Q0)(cid:0)Q1 + Q0
+
+1
+χes
+
+)(cid:3)o
+χes(cid:1)2(cid:16)α +
+Q1 − Q0(cid:17)
+
+2
+
+2
+
+(A5)
+
+Eq. (A4) has two real roots only when ∆α ≥ 0. There-
+fore it follows from the ∆α expression (A5) that either
+
+α ≥
+
+2
+
+Q1 + Q0 + 2
+χes
+
+,
+
+(A6)
+
+or
+
+α ≤ −
+
+2
+
+Q1 − Q0
+
+.
+
+(A7)
+
+For ML hBN (Q1 > Q0) the latter inequality leads to
+only negative α and is dropped. Now one finds that α1
+and α2 are given by
+
+α1,2 =
+
+1
+
+2hα±s(cid:16)α +
+
+2
+
+Q1 − Q0(cid:17)(cid:16)α −
+
+2
+
+Q1 + Q0 + 2
+
+χes(cid:17)i;
+
+(A8)
+
+,
+
+(A3)
+
+2
+
+Q1 + Q0 + 2
+
+χes ≤ α1 + α2 ≤
+
+1
+
+Q0 + 1
+χes
+
+.
+
+(A10)
+
+16
+
+if α1 takes the plus square root then α2 takes the minus
+square root, and vice versa. For α1 and α2 to be positive,
+one further requires that the above square root is not
+greater than α and obtains
+
+α ≤
+
+1
+
+Q0 + 1
+χes
+
+.
+
+(A9)
+
+Combining the inequalities (A6) and (A9) then re-
+stricts the atomic polarizability in the unit cell for in-
+plane polarization to the following interval,
+
+When the 2D susceptibility χe = 0.85 A [21] is used, for
+instance, one finds 1.3084 A3 ≤ α1 + α2 ≤ 1.7530 A3,
+which is only a narrow range of 0.44 A3.
+For the vertical polarization (parallel to ez), the elec-
+tronic susceptibility χ′e can be expressed in terms of the
+atomic polarizabilities α′1, α′2 as (refer to Sec. II above
+and also Ref.[31])
+
+χ′e =
+
+(α′1 + α′2) − 4α′1α′2(Q1 − Q0)
+
+s[1 + 2(α′1 + α′2)Q0 − 4α′1α′2(Q2
+
+1 − Q2
+0)]
+
+.
+
+(A11)
+
+Following the preceding derivation we find that the
+atomic polarizability of the unit cell falls in the interval,
+
+1
+
+es − 2Q0 ≤ α′1 + α′2 ≤
+
+1
+χ′
+
+1
+
+Q1 − Q0
+
+.
+
+(A12)
+
+χ′
+
+i )α0
+
+Taking the 2D susceptibility χ′e = 0.151 A [21], one
+finds 1.9329 A3 ≤ α′1 + α′2 ≤ 2.5792 A3. Mathematically,
+the solution α′1 + α′2 ≥ 1/( 1
+es − Q1 − Q0) is also permit-
+ted, but yielding α′1 + α′2 ≥ 7.3 A3 for ML hBN, which
+are much larger than the total polarizability 4.0 A3 of
+the free atoms B and N (the polarizabilities of free atoms
+B and N are 3.038 and 1.097 A3, respectively [50]). Us-
+ing the linear volume-polarizability relationship [51], the
+polarizability of a constituent atom αi in a crystal can
+be estimated by αi = (vi/v0
+i [52, 53], where vi is the
+i and α0
+effective volume of the atom in the crystal, and v0
+i
+are the free-atom volume and polarizability, respectively.
+Numerical calculations have shown that the polarizabili-
+ties of the B and N atoms in bulk h-BN are reduced com-
+pared to their free-atom polarizabilities [52, 53]. Anyhow
+the values α′1 + α′2 ≥ 7.3 A3 are unacceptably large to be
+considered.
+Compared to the their free-atom polarizability 4.0 A3,
+the atoms B and N have a significantly reduced total
+polarizability after forming the 2D crystal hBN. There
+is a slightly larger atomic polarizability in the vertical
+direction than in the layer plane, i.e., α′1 + α′2 > α1 +
+α2 (with a 0.6 A3 difference in upper bound), as the
+constituent B and N atoms are close packed on the plane
+causing the electron cloud to be more easily deformed
+and polarized along the vertical direction. If LFEs are
+neglected then the dielectric susceptibilities become χe =
+
+(α1 + α2)/s, and χ′e = (α′1 + α′2)/s, leading to χ′e > χe.
+Therefore the first-principles result χe > χ′e as shown in
+Ref.[21] is attributed to the LFEs.
+
+We note that χe and χ′e are susceptibilities due to po-
+larizable atoms or ions, and thus they also occur in non-
+ionic 2D crystals such as graphene. For graphene expres-
+sions (A2) and (A11) for χe and χ′e are still applicable
+but become simpler considering there are two C atoms
+in a unit cell, namely α1 = α2 and α′1 = α′2.
+
+Appendix B: Proof of a12 = a21 and c12 = c21 from
+
+macroscopic theory and areal energy density in 2D
+
+hBN
+
+We first consider in-plane motion. Let the ions have
+a displacement in the layer plane, w(ρ) = wρ(ρ), in
+the presence of a point charge eν fixed at (ρ0,0), and
+let us find the electric field in the monolayer (in-plane
+component), Eρ(ρ, 0). The polarization P is P(r) =
+[a21w(ρ) + a22Eρ(ρ, 0) + c22Ez(ρ, 0)]δ(z) upon using
+Eqs. (39b) and (40b), and the Poisson equation is given
+by
+
+∇2φ(ρ, z) = 4π{∇ρ · [a21w(ρ) + a22Eρ(ρ, 0)]δ(z)
+
++ c22Ez(ρ, 0)δ′(z) − eνδ(ρ − ρ0)δ(z)}.
+
+(B1)
+
+Expanding φ(ρ, z), w(ρ) and δ(ρ − ρ0),
+
+ϕk(z)eik·ρ,
+
+wkeik·ρ,
+
+φ(ρ, z) =Xk
+w(ρ) =Xk
+AXk
+
+1
+
+δ(ρ − ρ0) =
+
+eik·(ρ−ρ0),
+
+(B4)
+
+A being the sample area, Eq. (B1) is then transformed
+to
+
+17
+
+We note that from the above expansions one has reality
+conditions ϕ−k(z) = ϕ∗k(z), w−k = w∗k and ϕ−k(−q) =
+ϕ∗k(q) considering that quantities such as φ(ρ, z), w(ρ)
+are real.
+
+Taking z = 0 in Eq. (B6) and integrating ϕk(q) over q
+
+one finds
+
+ϕk(0) =
+
+2π
+
+k(1 + 2πa22k)(cid:16)−a21ik · wk +
+
+eν
+A
+
+e−ik·ρ0(cid:17) ,
+
+(B8)
+and then the in-plane component of the electric field in
+the monolayer,
+
+Eρ(ρ, 0) = −Xk
+
+2πk
+
+k(1 + 2πa22k)
+
+(a21k · wk
+
++
+
+ieν
+A
+
+e−ik·ρ0(cid:19) eik·ρ,
+
+(B9)
+
+where the latter sum represents the field due to the point
+charge (including dielectric effects through a22), which is
+zero at the charge site. Eq. (B9) will be used below to
+calculate the work required to displace the ions or the
+charge.
+
+We have obtained Eq. (27), namely, a12 = a21, from
+the microscopic dipole lattice model, and here we show
+that from the viewpoint of macroscopic theory it follows
+from the principle of energy conservation. Place the point
+charge eν at the origin, whilst setting the ions in the
+configuration w(ρ) = 0, and consider the following cy-
+cle [13]: (a) keeping the charge at the origin, displace
+the ions horizontally into an irrotational configuration
+w(ρ) = ∇ρψ(ρ), according to
+
+w(ρ) = ξ∇ρψ(ρ),
+
+(B10)
+
+by increasing ξ from 0 to 1, ψ(ρ) being a nonzero arbi-
+trary scalar field; (b) keeping the ions at w(ρ) = ∇ρψ(ρ),
+displace the charge to ∆ρ; (c) fixing the charge at ∆ρ,
+reverse process (a), i.e., by decreasing ξ from 1 to 0 ac-
+cording to Eq. (B10); (d) move the charge back to the
+origin to complete the cycle.
+
+−[a11w(ρ) + a12Eρ(ρ, 0)]· ∆w(ρ) is the work per unit
+area required to change w(ρ) to w(ρ)+∆w(ρ), and total
+work expended on the ionic system for the configuration
+change is
+
+−Z [a11w(ρ) + a12Eρ(ρ, 0)] · ∆w(ρ)dρ.
+
+(B11)
+
+From Eq. (B10) ∆w(ρ) = ∆ξ∇ρψ(ρ) follows, and
+then insert expansion ψ(ρ) = Pk ψkeik·ρ into w(ρ)
+[Eq. (B10)] and ∆w(ρ). Comparing the former expan-
+sion with Eq. (B3) one finds wk for Eq. (B9), wk =
+ξikψk. Inserting these expansions of w(ρ) and ∆w(ρ)
+together with Eq. (B9) into the above expression (B11),
+and integrating over ξ from 0 to 1, one obtains the work
+
+(B2)
+
+(B3)
+
+(B5)
+
+∂2
+
+(∇2
+
+ρ +
+
+ϕk(z)eik·ρ = 4πXk
+
+∂z2 )Xk
++a22k2ϕk(0)) − δ′(z)c22ϕ′k(0)(cid:3) eik·ρ
+−
+
+eik·(ρ−ρ0)δ(z).
+
+4πeν
+
+A Xk
+
+[δ(z)(a21ik · wk
+
+Expanding ϕk(z)
+
+ϕk(z) =Z ∞
+
+−∞
+
+ϕk(q)eiqz dq,
+
+(B6)
+
+and δ(z) as Eq. (2), one finds ϕk(q) from Eq. (B5),
+
+ϕk(q) =
+
+2
+
++
+
+eν
+A
+
+k2 + q2 (cid:2)−(a21ik · wk + a22k2ϕk(0))
+
+e−ik·ρ0 + c22ϕ′k(0)iqi .
+
+(B7)
+
+done during process (a),
+
+Wa =Xk (cid:20) 1
+
+2
+
+1 + 2πa22k − a11(cid:19) ψk
+
+A(cid:18) 2πa12a21k
+k(1 + 2πa22k)(cid:21) k2ψ−k.
+
+2πa12eν
+
++
+
+(B12)
+
+The field acting on charge eν during process (b) is given
+by setting ρ = 0 (as ∆ρ is small) and wk = ikψk in the
+first term of Eρ(ρ, 0) [Eq. (B9)], and the work expended
+during the process is
+
+Wb = 2πieνa21Xk
+
+kψkk
+
+1 + 2πa22k · ∆ρ.
+
+(B13)
+
+Process (c) is the reverse of process (a) except for the
+altered position of charge eν. Therefore after reversing
+the sign of expression (B12) and multiplying its latter
+summands by a factor e−ik·∆ρ we find the work expended
+during the process,
+
+18
+
+Now we consider out-of-plane motion. Let the ions
+have a displacement perpendicular to the layer plane,
+w(ρ) = wz(ρ), in the presence of a point charge eν placed
+at (0,z0), and let us find the z-component of the field,
+Ez(ρ, z). Now the polarization P is P(r) = [c21w(ρ) +
+c22Ez(ρ, 0) + a22Eρ(ρ, 0)]δ(z) upon using Eqs. (39b) and
+(40b)], and the Poisson equation is given by
+
+∇2φ(ρ, z) = 4π{[c21w(ρ) + c22Ez(ρ, 0)]δ′(z)
+
++ a22∇ρ · Eρ(ρ, 0)δ(z) − eνδ(ρ)δ(z − z0)}. (B17)
+Expanding δ(z) [Eq. (2)] and the other spatially vary-
+ing quantities exactly as in the in-plane motion case
+[Eqs. (B2), (B3), (B4) and (B6)], one finds from the Pois-
+son equation ϕk(q),
+
+ϕk(q) =
+
+2
+
+k2 + q2 [−(c21wk · ez − c22ϕ′k(0))iq
++
+
+e−iqz0 − a22k2ϕk(0)i .
+
+eν
+A
+
+(B18)
+
+Wc = −Xk (cid:20) 1
+
+2
+
+A(cid:18) 2πa12a21k
+
+1 + 2πa22k − a11(cid:19) ψk
+e−ik·∆ρ(cid:21) k2ψ−k.
+
+2πa12eν
+
+k(1 + 2πa22k)
+
++
+
+Taking z = 0 in Eq. (B6) and integrating ϕk(q) over q
+
+one finds
+
+(B14)
+
+ϕk(0) =
+
+2πeν
+
+Ak(1 + 2πa22k)
+
+e−kz0.
+
+(B19)
+
+During process (d) w(ρ) = 0, and according to
+Eq. (B9) no field acts on charge eν, and therefore no work
+is needed to restore the charge to the origin, Wd = 0.
+
+As Wa + Wb + Wc + Wd = 0, one finds
+
+2πa12eνXk
+
+kψ−k
+1 + 2πa22k (cid:0)1 − e−ik·∆ρ(cid:1)
+
+kψkk
+
++ 2πia21eνXk
+
+1 + 2πa22k · ∆ρ = 0.
+
+(B15)
+
+Upon making e−ik·∆ρ = 1 − ik · ∆ρ, and changing the
+index of summation k to −k for the former summation,
+one immediately obtains a12 = a21.
+The relation a12 = a21 allows us to define an energy
+density (energy per unit area) up associated with the
+in-plane optical vibrations, as a function of wρ(ρ) and
+Eρ(ρ, 0),
+
+1
+
+uh = −
+
+2(cid:2)a11w2
+
+ρ(ρ) + 2a12wρ(ρ) · Eρ(ρ, 0) + a22E2
+
+ρ(ρ, 0)(cid:3) .
+(B16)
+Inserting this uh expression into wρ(ρ) = −∇wuh, and
+P(ρ) = −∇Euh, where ∇w = ( ∂
+), for instance,
+and the vector subscripts w and E of del ∇ are shorthand
+notations for in-plane vectors wρ(ρ) and Eρ(ρ, 0), one
+rederives the lattice equations (39a) and (39b). We note
+that, similar to the bulk polar crystal case [13], it is not a
+priori obvious that an energy density of this simple form
+should exist for ML hBN, in particular when considering
+E is the macroscopic field  --  not simply an externally
+applied field.
+
+, ∂
+∂wy
+
+∂wx
+
+Differentiating Eq. (B6) with respect to z and substi-
+tuting Eq. (B18) for ϕk(q) and then integrating over q,
+one obtains
+
+ϕ′k(z) = 2πn2(c21wk · ez − c22ϕ′k(0))hδ(z) −
+
+eν
+A
+
+sgn(z − z0)e−kz−z0
+−
++ a22k2ϕk(0) sgn(z)e−kzo.
+
+1
+2
+
+ke−kzi
+
+(B20)
+
+To find ϕ′k(0) we approach δ(z) with δε(z) where ε is
+a small thickness [25, 26] and let Λ = δε(0). Thus from
+Eq. (B20) one finds
+
+ϕ′k(0) =
+
+2π
+
+1 + 4πc22(Λ − k/2)(cid:20)2c21(Λ −
+
++
+
+eν
+A
+
+sgn(z0)e−kz0i .
+
+k
+2
+
+)wk · ez
+
+(B21)
+
+Having ϕk(0) and ϕ′k(0) [Eqs. (B19) and (B21)], now
+insert them into Eq. (B20) for ϕ′k(z), from which one
+
+obtains Ez(ρ, z) via Ez(ρ, z) = −ezPk ϕ′k(z)eik·ρ,
+Ez(ρ, z) =Xk n
+
+2π
+
+eν
+A
+
++ 4πc22
+
+1 + 4πc22(Λ − k/2)(cid:16) − 2c21wk
+sgn(z0)e−kz0ez(cid:17)(cid:2)δ(z) −
++ sgn(z − z0)e−kz−z0(cid:3)ezoeik·ρ.
+
+A (cid:2) −
+
+1 + 2πa22k
+
+2πa22k
+
+2πeν
+
++
+
+sgn(z)e−k(z+z0)
+
+1
+2
+
+ke−kz(cid:3)
+
+(B22)
+
+Let z0 > 0 in what follows. Taking z = 0 yields the
+
+z-component of the field in the ML,
+
+Ez(ρ, 0) = −2πXk
+
+1
+
+1 + 4πc22(Λ − k/2)(cid:20)2c21(Λ −
+e−kz0 ezi eik·ρ,
+
+k
+2
+
+)wk
+
+(B23)
+
++
+
+eν
+A
+
+while taking z = z0 and ρ = 0 one finds the z-component
+of the field acting on the point charge eν,
+
+Ez(0, z0) = −2πXk n
+
+1 + 4πc22(Λ − k/2)(cid:16) − c21wk
+
+k
+
++ 2πc22
+
+eν
+A
+
+e−kz0 ez(cid:17) +
+
+eν
+A
+
+2πa22k
+
+1 + 2πa22k
+
+e−kz0 ezoe−kz0,
+
+(B24)
+
+of the terms containing wk of Eq. (B24), with wk =
+ψk, and the work expended for this field of the ionic
+displacements is
+
+19
+
+kψk
+
+e−kz0∆z.
+
+1 + 4πc22(Λ − k/2)
+
+Wb,w = −2πeνc21Xk
+
+(B28)
+The field acting on charge eν due to the charge itself is
+Ez,eν (0, z0), i.e., the sum of the terms containing eν of
+Eq. (B24), and the work done for this field can be simply
+written as Wb,eν = −eνEz,eν (0, z0)∆z.
+Process (c) is the reverse of process (a) except for the
+displacement of charge eν. Therefore upon reversing the
+sign of expression (B27) and multiplying its latter sum-
+mands by a factor e−k∆z, we readily find the work ex-
+pended during the process,
+
+where the sum of the terms containing eν (wk) represents
+the field due to the point charge (ionic displacements),
+denoted by Ez,eν (0, z0) (Ez,w(0, z0)) for simplicity.
+
+Now we show that c12 = c21 [Eq. (38b)] follows from
+the principle of energy conservation. Place the point
+charge eν above the ML at a point P (ρ0 = 0,z0), while
+keeping the ions in the configuration w(ρ) = 0, and con-
+sider the following cycle: (a) keeping the charge at the
+point P , displace the ions vertically into the configura-
+tion w(ρ) = ψ(ρ) = ψ(ρ)ez, according to
+
+w(ρ) = ξψ(ρ)ez,
+
+(B25)
+
+by increasing ξ from 0 to 1; (b) keeping the ions at
+w(ρ) = ψ(ρ), displace the charge vertically by a small
+∆z to point P ′ (ρ0 = 0,z0 + ∆z); (c) fixing the charge at
+the point P ′, reverse process (a), i.e., by reducing ξ from
+1 to 0 according to Eq. (B25); (d) move the charge back
+to point P to complete the cycle.
+
+The work per unit area required to change w(ρ) to
+w(ρ) + ∆w(ρ) is −[c11w(ρ) + c12Ez(ρ, 0)] · ∆w(ρ), and
+thus total work expended on the ionic system for the
+configuration change is
+
+−Z [c11w(ρ) + c12Ez(ρ, 0)] · ∆w(ρ)dρ.
+
+(B26)
+
+From Eq. (B25) one has ∆w(ρ) = ∆ξψ(ρ)ez. Expand-
+ing w(ρ) and ψ(ρ) as in-plane motion above, one finds
+wk in Eq. (B23) is given by wk = ξψk. Substituting
+these expansions in terms of ψk together with Eq. (B23)
+into the above expression (B26), and integrating over ξ
+from 0 to 1, one obtains for the work expended during
+process (a),
+
+Wc = −Xk (cid:20) 1
+
+2
+
+A(cid:18) 4πc12c21(Λ − k/2)
+
+1 + 4πc22(Λ − k/2) − c11(cid:19) ψk
+e−k(z0+∆z)(cid:21) ψ−k.
+
+2πc12eν
+
+1 + 4πc22(Λ − k/2)
+
++
+
+(B29)
+
+During process (d) w(ρ) = 0, and according to
+Eq. (B24) no field is associated with displacement w(ρ),
+and accordingly no work is needed for the displacement
+part, Wd,w = 0. For the field due to the point charge it-
+self, the work done is given by reversing the sign of Wb,eν ,
+i.e., Wd,eν = eνEz,eν (0, z0)∆z.
+
+As Wa + Wb,w + Wb,eν + Wc + Wd,w + Wd,eν = 0, one
+
+finds
+
+2πeν"c12Xk
+−c21Xk
+
+ψ−ke−kz0
+
+1 + 4πc22(Λ − k/2)
+
+kψke−kz0
+
+1 + 4πc22(Λ − k/2)
+
+(1 − e−k∆z)
+∆z# = 0.
+
+(B30)
+
+Using e−k∆z = 1 − k∆z, and changing the index of sum-
+mation k to −k for the former summation, one readily
+finds c12 = c21.
+Having c12 = c21, now an areal energy density associ-
+ated with the out-of-plane optical vibrations can be in-
+troduced,
+
+1
+
+uv = −
+
+2(cid:2)c11w2
+
+z(ρ) + 2c12wz(ρ) · Ez(ρ, 0) + c22E2
+
+z(ρ, 0)(cid:3) ,
+(B31)
+from which the lattice equations (40a) and (40b) can be
+rederived through wz = −∂uv/∂wz, Pz = −∂uv/∂Ez
+[wz = wz(ρ), and Ez = Ez(ρ, 0)].
+
+Wa =Xk (cid:20) 1
+
+2
+
+A(cid:18) 4πc12c21(Λ − k/2)
+
+1 + 4πc22(Λ − k/2) − c11(cid:19) ψk
+
+2πc12eν
+
++
+
+1 + 4πc22(Λ − k/2)
+
+e−kz0(cid:21) ψ−k.
+
+(B27)
+
+During process (b) the field acting on charge eν due to
+the ionic displacements is Ez,w(0, z0), namely, the sum
+
+20
+
+[1] A. K. Geim and I. V. Grigorieva, Nature 499, 419 (2013).
+[2] F. A. Rasmussen, P. S. Schmidt, K. T. Winther, and
+
+[29] W. Cochran and R. A. Cowley, J. Phys. Chem. Solids 23,
+
+447 (1962).
+
+K. S. Thygesen, Phys. Rev. B 94, 155406 (2016).
+
+[30] P. Giannozzi, S. de Gironcoli, P. Pavone, and S. Baroni,
+
+[3] H. S¸ahin, S. Cahangirov, M. Topsakal, E. Bekaroglu,
+E. Akturk, R. T. Senger, and S. Ciraci, Phys. Rev. B
+80, 155453 (2009).
+
+Phys. Rev. B 43, 7231 (1991).
+
+[31] S. A. Mikhailov, Phys. Rev. B 88, 195410 (2013).
+[32] K. Karch and F. Bechstedt, Phys. Rev. B 56, 7404
+
+[4] I. Naumov, A. M. Bratkovsky, and V. Ranjan, Phys.
+
+(1997).
+
+Rev. Lett. 102, 217601 (2009).
+
+[33] L. Dell'Anna and M. Merano, Phys. Rev. A 93, 053808
+
+[5] M. Droth, G. Burkard, and V. M. Pereira, Phys. Rev. B
+
+(2016).
+
+94, 075404 (2016).
+
+[6] K. H. Michel, D. Cakir, C. Sevik, and F. M. Peeters,
+
+[34] X. Gonze and C. Lee, Phys. Rev. B 55, 10355 (1997).
+[35] L. Wirtz, A. Rubio, R. A. delaConcha, and A. Loiseau,
+
+Phys. Rev. B 95, 125415 (2017).
+
+Phys. Rev. B 68, 045425 (2003).
+
+[7] L. Song, L. Ci, H. Lu, P. B. Sorokin, C. Jin, J. Ni, A. G.
+Kvashnin, D. G. Kvashnin, J. Lou, B. I. Yakobson, and
+P. M. Ajayan, Nano Lett. 10, 3209 (2010).
+
+[36] There is a misprint in Eq. (2) of Ref.[25]: the square
+should be for each summand rather than for the total
+sum.
+
+[8] R. C. Andrew, R. E. Mapasha, A. M. Ukpong,
+
+and
+
+[37] T. Sohier, M. Calandra, and F. Mauri, Phys. Rev. B 94,
+
+N. Chetty, Phys. Rev. B 85, 125428 (2012).
+
+085415 (2016).
+
+[9] S. Thomas, K. M. Ajith,
+
+and M. C. Valsakumar, J.
+
+[38] P. Cudazzo, I. V. Tokatly, and A. Rubio, Phys. Rev. B
+
+Phys.: Condens. Matter 28, 295302 (2016).
+
+84, 085406 (2011).
+
+[10] L. A. Ponomarenko, A. K. Geim, A. A. Zhukov, R. Jalil,
+S. V. Morozov, K. S. Novoselov,
+I. V. Grigorieva,
+E. H. Hill, V. V. Cheianov, V. I. Falko, K. Watanabe,
+T. Taniguchi, and R. V. Gorbachev, Nature Phys. 7,
+958 (2011).
+
+[11] S. J. Haigh, A. Gholinia, R. Jalil, S. Romani, L. Britnell,
+D. C. Elias, K. S. Novoselov, L. A. Ponomarenko, A. K.
+Geim, and R. Gorbachev, Nature Mater. 11, 764 (2012).
+[12] B. K. Ridley, Quantum Processes in Semiconductors
+
+[39] T. C. Berkelbach, M. S. Hybertsen, and D. R. Reichman,
+
+Phys. Rev. B 88, 045318 (2013).
+
+[40] N. Ohba, K. Miwa, N. Nagasako,
+
+and A. Fukumoto,
+
+Phys. Rev. B 63, 115207 (2001).
+
+[41] F. Huser, T. Olsen, and K. S. Thygesen, Phys. Rev. B
+
+88, 245309 (2013).
+
+[42] V. L. Solozhenko, G. Will, and F. Elf, Solid State Com-
+
+mun. 96, 1 (1995).
+
+[43] R. Geick, C. Perry, and G. Rupprecht, Phys. Rev. 146,
+
+(Clarendon Press, Oxford, 2013).
+
+543 (1966).
+
+[13] M. Born and K. Huang, Dynamical Theory of Crystal
+
+[44] M. Ferrero, M. R´erat, R. Orlando, and R. Dovesi, J.
+
+Lattices (Clarendon Press, Oxford, 1954).
+
+Chem. Phys. 128, 014110 (2008).
+
+[14] C. Kittel, Introduction to Solid State Physics (John Wi-
+
+[45] A. Erba, M. Ferrabone, J. Baima, R. Orlando, M. R´erat,
+
+ley & Sons, New Jersey, 2004).
+
+[15] K. Huang, Proc. Roy. Soc. A 208, 352 (1951).
+[16] K. Huang, Nature 167, 779 (1951).
+[17] R. H. Lyddane, R. G. Sachs, and E. Teller, Phys. Rev.
+
+and R. Dovesi, J. Chem. Phys. 138, 054906 (2013).
+
+[46] G. B. Grad, P. Blaha, K. Schwarz, W. Auwarter, and
+
+T. Greber, Phys. Rev. B 68, 085404 (2003).
+
+[47] J. C. Phillips, Bonds and Bands in Semiconductors (Aca-
+
+59, 673 (1941).
+
+[18] E. Rokuta, Y. Hasegawa, K. Suzuki, Y. Gamou, C. Os-
+and A. Nagashima, Phys. Rev. Lett. 79, 4609
+
+hima,
+(1997).
+
+[19] Y. Miyamoto, M. L. Cohen, and S. G. Louie, Phys. Rev.
+
+B 52, 14971 (1995).
+
+[20] S. Illera, M. Pruneda, L. Colombo, and P. Ordej´on, Phys.
+
+Rev. Mater. 1, 044006 (2017).
+
+[21] M. Ferrabone, B. Kirtman, M. R´erat, R. Orlando, and
+
+R. Dovesi, Phys. Rev. B 83, 235421 (2011).
+
+[22] D. S´anchez-Portal and E. Hern´andez, Phys. Rev. B 66,
+
+235415 (2002).
+
+[23] J. Serrano, A. Bosak, R. Arenal, M. Krisch, K. Watan-
+abe, T. Taniguchi, H. Kanda, A. Rubio, and L. Wirtz,
+Phys. Rev. Lett. 98, 095503 (2007).
+
+demic Press, New York, 1973).
+
+[48] R. Clausius, Die mechanische Behandlung der Elec-
+
+tricitat (Vieweg, Braunschweig, 1879).
+
+[49] O. F. Mossotti, Memorie di Matematica e di Fisica della
+Societ`a Italiana delle Scienze Residente in Modena 24,
+49 (1850).
+
+[50] P. Schwerdtfeger,
+
+in Electric Fields: Theoretical Approaches
+
+in Atoms, Molecules and Clus-
+to
+ters
+edited
+the Calculation of Electric Polarizability,
+by G. Maroulis
+2006)
+(Imperial College Press,
+Chap. 1, pp. 1 -- 32, also updated dipole polarizabili-
+ties are available on the Massey University website,
+http://ctcp.massey.ac.nz/Tablepol2017.pdf.
+
+[51] T. Brinck, J. S. Murray, and P. Politzer, J. Chem. Phys.
+
+98, 4305 (1993).
+
+[24] M. Topsakal, E. Akturk, and S. Ciraci, Phys. Rev. B 79,
+
+[52] A. Tkatchenko and M. Scheffler, Phys. Rev. Lett. 102,
+
+115442 (2009).
+
+073005 (2009).
+
+[25] T. Sohier, M. Gibertini, M. Calandra, F. Mauri, and
+
+[53] O. Hod, J. Chem. Theory Comput. 8, 1360 (2012).
+
+N. Marzari, Nano Lett. 17, 3758 (2017).
+
+[26] K. H. Michel and B. Verberck, Phys. Rev. B 80, 224301
+
+(2009).
+
+[27] K. H. Michel and B. Verberck, Phys. Rev. B 83, 115328
+
+(2011).
+
+[28] K. H. Michel and B. Verberck, Phys. Rev. B 85, 094303
+
+(2011).
+
+21
+
+FIG. 1. (Color online) Schematic diagram of the honeycomb
+structure of monolayer hexagonal BN with the Bravais lattice
+basic vectors a1 and a2.
+
+FIG. 2. (Color online) Longitudinal optical (LO) phonon dis-
+persion relations of monolayer hexagonal BN from the rigid
+ion model (RIM) and the polarizable ion model (PIM) with or
+without taking local field effects (LFEs) into account, which
+are described by the four specific value-substituted expres-
+sions for ωl(k) in Table II (see text). For the PIM without
+LFEs γ is taken to be 3.8172. Also shown is the LO phonon
+dispersion from Ref.[25] obtained by Sohier et al.. Here the
+wavevector is made dimensionless as in Ref.[25] with respect
+to Γ − K, the distance between the Γ and K points in the
+Brillouin zone.
+
+FIG. 3.
+(Color online) Density of states (DOS) of the longi-
+tudinal optical (LO) phonon modes [expression (68)] (upper
+horizontal axis) and LO phonon dispersion [expression (49)]
+(lower horizontal axis), calculated with the polarizable ion
+model (PIM) including the local field effects (LFEs) and us-
+ing the first row of parameters of Table I.
+
+22
+
+TABLE I. Two groups of calculated lattice-dynamical quantities associated with the in-plane optical vibrations in ML hBN,
+namely, the intrinsic oscillator frequency ω0, the 2D electronic susceptibility χe and static susceptibility χ0, the Born charge
+eB, the static effective charge ea, the effective spring force constant K, the force constant due to LFEs Ke, and the LO
+phonon group velocity cl.
+In the upper (lower) row, the set of three quantities ω0, χe, χ0 (ω0, χe, eB) are obtained from
+first-principles calculations of Refs.[21, 45] (Ref.[25]), and then used to calculate the other quantities in this table with our
+expressions accounting for both EP and LFEs (see text).
+
+ω0 (cm−1)
+
+χe (A)
+
+χ0 (A)
+
+eB (e)
+
+ea (e)
+
+K (eV/A2)
+
+Ke (eV/A2)
+
+cl (km/s)
+
+1371a
+
+1387b
+
+0.85
+
+1.22
+
+1.31
+
+1.67
+
+2.70
+
+2.71
+
+0.61
+
+0.46
+
+59.796
+
+56.495
+
+17.613
+
+13.317
+
+37.24
+
+37.10
+
+a First-principles perturbation result of Ref.[45], equal to the experimental value [18] of ML hBN on substrate Ni and very
+
+close to DFPT value 1378 cm−1 of Ref.[35].
+
+b DFPT value from Ref.[25].
+
+TABLE II. Expressions for 2D electronic susceptibility χe, 2D static susceptibility χ0, Born charge eB, TO phonon frequency
+ωt, LO phonon dispersion ωl(k), and LO phonon group velocity cl associated with the in-plane optical vibrations of ML hBN in
+the RIM and PIM, obtained with or without taking LFEs into account (see text). Below the expressions are the values of these
+physical quantities and also the specific quantitative dispersion ωl(k), obtained with a set of first-principles values χe = 0.85 A,
+χ0 = 1.31 A, ω0=1371 cm−1 (put in the last row); values of χe and χ0 are in A, eB in e, ωt and ωl in cm−1 and cl in km/s.
+
+model
+
+no LFEs
+
+LFEs
+
+no LFEs
+
+LFEs
+
+RIM
+
+PIM
+
+χe
+
+0
+
+0
+
+0
+
+0
+
+α1+α2
+
+s
+
+[0.24,0.32]†
+
+χ0
+e2
+a
+sK
+
+0.017
+
+e2
+a
+s(K−e2
+a Q1)
+0.018
+s + e2
+[0.26,0.34]†
+
+α1+α2
+
+a
+sK
+
+eB
+
+ea
+
+0.61
+
+ea
+
+0.61
+
+ea
+
+0.61
+
+ωt
+
+¯m
+
+1632
+
+q K
+q K−e2
+
+¯m
+
+a Q1
+
+1577
+
+q K
+
+¯m
+
+1632
+
+Eq. (19)
+
+Eq. (74)
+
+Eq. (47)
+
+0.85
+
+1.31
+
+2.70
+
+1371
+
+ωl(k)
+q K
+¯m + 2πe2
+a k
+
+¯ms
+
+¯m
+
+¯ms
+
+a Q1
+
+p1632.42 + 837.42 k
+q K−e2
++ 2πe2
+a k
+p15772 + 837.42 k
+q K
+¯m +
+q1632.42 + 837.42 k
+q13712 + 3691.52 k
+
+¯m[s+2π(α1+α2)k]
+⊕
+
+Eq. (49)
+
+1+13.42k
+
+1+γk
+
+2πe2
+
+a k
+
+cl
+πe2
+a
+s√ ¯mK
+1.61
+πe2
+a
+
+s√ ¯m(K−e2
+
+a Q1)
+
+1.67
+πe2
+a
+s√ ¯mK
+1.61
+
+Eq. (67)
+
+37.24
+
+k is the normalized wavevector (dimensionless), k = k/ 2π
+a .
+
+Dispersion relations given by the specific value-substituted expressions ωl(k) are also shown in Fig. 2.
+
+† An interval (see text).
+
+⊕ γ is dimensionless, 3.8172 ≤ γ ≤ 5.1144.
+
+TABLE III. Comparison of intrinsic oscillator frequency ω′0, static effective charge e′a, Born charge e′B, force constant due to
+LFEs K′e and effective force constant K′ associated with the out-of-plane optical modes in ML hBN calculated with the PIM
+including LFEs, for two values of frequency ωz taken from previous first-principles calculations (Refs.[19, 24, 35, 45]), one
+experimental ωz value (Ref.[18]) and one low frequency ωz of 405 cm−1, using 2D electronic susceptibility χ′e = 0.151 A and
+static susceptibility χ′0 = 0.164 A calculated from first principles (Ref.[21]).
+
+ωz (cm−1)
+
+ω′0 (cm−1)
+
+e′a (e)
+
+e′B (e)
+
+K′e (eV/A2)
+
+K′ (eV/A2)
+
+836a
+
+800b
+
+734c
+
+405d
+
+802
+
+768
+
+704
+
+389
+
+1.26
+
+1.20
+
+1.11
+
+0.61
+
+-0.27
+
+-0.25
+
+-0.23
+
+-0.13
+
+7.136
+
+6.535
+
+5.501
+
+1.675
+
+21.575
+
+19.758
+
+16.630
+
+5.063
+
+a First-principles perturbation result of Ref.[45] and direct method result of Ref.[19].
+
+b DFPT value of Refs.[24, 35].
+
+c
+
+d This frequency yields a static effective charge 0.61e equal to the ea value for in-plane motion.
+
+Experimental value of ML hBN on substrate Ni of Ref.[18].
+
+TABLE IV. Expressions for 2D electronic susceptibility χ′e, 2D static susceptibility χ′0, Born charge e′B, intrinsic oscillator
+frequency ω′0 and phonon frequency ωz associated with the out-of-plane optical vibrations of ML hBN in the RIM and PIM,
+obtained with or without taking LFEs into account (see text). Below the expressions are the values of these physical quantities
+obtained with a set of first-principles values, χ′e = 0.151 A, χ′0 = 0.164 A, ωz = 836 cm−1 (given in the last row); values of χ′e
+and χ′0 are in A, e′B in e, and ω′0 and ωz in cm−1.
+
+23
+
+model
+
+no LFEs
+
+LFEs
+
+χ′e
+
+0
+
+0
+
+0
+
+χ′0
+e′2
+a
+sK ′
+
+0.196
+
+e′2
+a
+
+s(K ′+2e′2
+
+a Q1)
+
+0
+1+α′
+
+2
+
+α′
+
+no LFEs
+
+s
+
+[0.36,0.48]†
+
+α′
+
+1+α′
+
+0.076
+s + e′2
+sK ′
+[0.55,0.67]†
+
+a
+
+2
+
+RIM
+
+PIM
+
+e′B
+
+e′a
+
+1.26
+
+e′a
+
+1.26
+
+e′a
+
+1.26
+
+¯m
+
+ω′0
+q K ′
+q K ′+2e′2
+
+981
+
+¯m
+
+a Q1
+
+1571
+
+q K ′
+
+¯m
+
+981
+
+LFEs
+
+Eq. (36b)
+
+Eq. (78)
+
+Eq. (38a)
+
+ωz
+∞
+∞
+∞
+∞
+
+a e′
+B
+¯m
+
+Q1
+
++
+
+e′2
+B
+¯msχ′
+e
+
+e′2
+a
+1+α′
+
+2)
+
+¯m(α′
+
+¯m +
+[1165,1220]†
+
+q K ′
+r K ′+2e′
+
+0.151
+
+0.164
+
+-0.27
+
+802
+
+836
+
+† An interval.
+
+24
+
+)
+
+1
+-
+
+m
+c
+(
+ 
+
+ω
+ 
+y
+c
+n
+e
+u
+q
+e
+r
+F
+
+1650
+
+1600
+
+1550
+
+1500
+
+1450
+
+1400
+
+0
+
+RIM, no LFE
+RIM & LFEs
+PIM, no LFE
+PIM & LFEs
+From Ref.25
+0.1
+
+0.05
+Wave-vector k (Γ-K)
+
+0.15
+
+Fig. 2
+
+Density of States (arb. units)
+5
+1
+
+2
+
+3
+
+4
+
+25
+
+6
+
+D O S
+
+n
+
+s i o
+
+r
+
+e
+
+p
+
+d i s
+
+0
+
+1600
+
+)
+
+1
+-
+
+m
+c
+(
+ 
+
+ω
+ 
+y
+c
+n
+e
+u
+q
+e
+r
+F
+
+1550
+
+1500
+
+1450
+
+1400
+
+0
+
+0.05
+Wave-vector k (Γ-K)
+
+0.1
+
+0.15
+
+Fig. 3
+
+

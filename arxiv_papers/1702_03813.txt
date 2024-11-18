@@ -1,0 +1,493 @@
+a
+
+Density Functional Based Simulations of Proton Per-
+meation of Graphene and Hexagonal Boron Nitride
+J.M.H. Kroes∗, A. Fasolino, and M.I. Katsnelson
+
+Using density functional theory, we study proton permeation through graphene and
+hexagonal boron nitride. We consider several factors influencing the barriers for perme-
+ation, including structural optimization, the role of the solvent, surface curvature and pro-
+ton transport through hydrogenated samples. Furthermore, we discuss the ground state
+charge transfer from the membrane to the proton and the strong tendency for bond for-
+mation. If the process is assumed to be slow we find that none of these effects lead to a
+satisfactory answer to the observed discrepancies between theory and experiment.
+
+1 Introduction
+Graphene and hexagonal boron nitride (h-BN) are chemically in-
+ert and strongly hydrophobic materials. As a result, it has gen-
+erally been expected that no ions could penetrate their dense
+electron clouds (Fig. 1). However, recently it was nevertheless
+observed 1 that it is possible for protons to do precisely that.
+
+In the experiments by Hu et al. 1, hydrogen was split into elec-
+trons and protons, with protons passing through the membrane
+and electrons passing through an electrical wire under the influ-
+ence of an applied bias voltage. These protons and electrons then
+recombine into hydrogen again on the other side. From the re-
+sulting IV-curve the conductivity could then be extracted. The
+temperature dependence of the conductivity was used to deter-
+mine the energy barrier for permeation. These experiments are
+characterized by a highly reproducible and linear IV-behaviour,
+indicative of an independence of specific details of the sample
+such as defects.
+
+Hu et al.
+
+found proton permeation to be easiest for mono-
+layer h-BN but also observable for bilayer h-BN and monolayer
+graphene 1. Notably, no measurable conductance was observed
+for bilayer graphene, which was understood to be a result of its
+AB layered stacking. From the near-perfect Boltzmann behaviour
+of the conductance as a function of temperature the associated
+barriers were estimated to be 0.3, 0.6 and 0.8 eV for monolayer
+h-BN, bilayer h-BN and monolayer graphene respectively. At a
+typical bias voltage of 0.1 V, the resulting proton current through
+h-BN corresponds to roughly 600 protons/s/nm2. We therefore
+consider this process to be slow in comparison to typical ionic
+timescales and attempt rates.
+
+More recently it has also been observed that the permeation
+
+Radboud University,
+6525 AJ Nijmegen, The Netherlands.
+
+Institute for Molecules and Materials, Heijendaalseweg 135,
+
+barrier depends on the ionic mass 2, making these materials natu-
+rally selective membranes for separating protons and deuterons.
+This was explained 2 as originating from the isotope effect, i.e. the
+difference in zero-point energies of the proton and deuteron. The
+zero-point energy, ∆E0, comes into play only for the initial state,
+where the proton is bound to an oxygen atom. In water, ∆E0 is
+principally determined by the OH− stretching frequency, which is
+estimated to be ∆E0 = 0.20 eV for protons and ∆E0 = 0.14 eV for
+deuterons based on literature values 2,3. In DFT, the barrier (∆E)
+is calculated as difference between the transition state and the
+initial state (without zero-point energy), whereas experimentally,
+the barrier is calculated between the transition state and the ini-
+tial state which is raised by its zero-point energy with respect to
+the value given by DFT. Therefore, the barrier calculated within
+DFT is larger than the experimental barrier which naturally in-
+cludes the zero-point motion, namely ∆Eexp = ∆EDFT − ∆E0.
+
+(a) graphene
+
+(b) h-BN
+
+Fig. 1 Electron density clouds at an isovalue of 0.1 e−/bohr3 for
+monolayer graphene (a) and h-BN (b) with B (N) in pink (blue) .
+
+This selective permeation of protons versus other ions as well as
+the separation of protons and deuterons, has multiple direct tech-
+nological applications making a fundamental understanding of
+this process important (see also Refs. 1,2 and references therein).
+
+1 -- 5  1
+
+Journal NameJournal Name, [year], [vol.],The most obvious application lies perhaps in proton exchange
+membrane fuel cells, which can be scaled down in size by the
+use of such nano-sized membranes. Another application may be
+found in the separation of protons and deuterons for example in
+the production of heavy water. This is typically a complicated
+and costly process which may be greatly simplified by the use of
+naturally semi-permeable membranes.
+
+On the theoretical side, several efforts have been undertaken to
+understand the proton permeation of 2D membranes 1,4 -- 6, most
+of them using density functional theory (DFT). However, signifi-
+cant discrepancies remain between the barriers found in experi-
+ment and those calculated. For example, for graphene, calculated
+values are 1.17 eV 4, 1.41 or 2.21 eV 5 (the latter after relaxation),
+1.25 -- 1.40 eV 1 or 1.56 eV 7, all of which overestimate the exper-
+imental value of 1.0 eV 2. More severe discrepancies arise when
+attempting to improve upon these calculations as discussed in the
+following sections.
+
+One may question the accuracy of the applied theoretical meth-
+ods for the problem at hand and whether DFT based calcula-
+tions are indeed suitable to describe the permeation of a proton
+through a highly polarizable membrane or the quantum nature
+of the ions or excited states should be taken into account. Classi-
+cal molecular dynamics simulations 8 using the REBO potential 9
+found much higher barriers for hydrogen permeation (11 eV for
+REBO compared to 2.5 eV for DFT) illustrating the need to go
+beyond classical force fields for quantitative estimates of the bar-
+riers. Recent calculations also aimed to take into account the
+quantum nature of the ions by means of path integral molecular
+dynamics 10. These calculations predict lower barriers as result of
+quantum tunneling but at the same time predict a much larger
+isotope effects (∼1 eV instead of 0.06 eV) than observed experi-
+mentally. Therefore, despite the claims made in Ref. 10, the puzzle
+of low barriers is still unsolved.
+
+Aside from these theoretical considerations, many of the details
+of the experimental setup may prove essential. The theoretical
+difficulty to reproduce these barriers stems at least partially from
+the difficulty in identifying the relevant experimental parameters.
+For example, the role of the solvent (Nafion) in which the proton
+diffuses is largely unknown. The effect of temperature, surface
+curvature or applied electric field may also prove crucial. Finally,
+it can also not be excluded that (ad-)atoms or other defects are
+present that may modify the barrier as suggested by experiments
+with varying pH concentrations 11,12.
+2 Methods
+Here we consider various factors relevant to the calculated pro-
+ton permeation barriers within the framework of DFT. Our cal-
+culations were done using the non-empirical PBE exchange-
+correlation functional 13,14 implemented in the CP2K code 15. To
+account for van-der-Waals interactions, especially relevant for the
+simulations of the membrane in water, we use the Grimme-D3
+dispersion correction term 16. Unless mentioned, for graphene
+(h-BN) we use a model consisting of 6x12 orthorhombic cells,
+corresponding to 288C (144B and 144N) atoms and a supercell
+of 25.6×29.5 Å2 (26.2×30.3 Å2) with periodic boundary condi-
+tions. For the perpendicular cell size we use 15 Å. The lattice
+
+2 
+
+1 -- 5
+
+constant of graphene and h-BN are fixed such that rCC = 1.421 Å
+and rBN = 1.457 Å when flat. We considered non-spin polarized
+calculations at the Γ-point of the Brioullin zone , used a Fermi-
+Dirac electronic smearing with a width of 300 K. The Quickstep
+method is employed, with wave functions expanded onto a local-
+ized double-ζ -valence-polarized basis set and the electronic den-
+sity expanded onto a plane-wave basis set with a kinetic energy
+cutoff of 500 Ry. Goedecker-Teter-Hutter pseudopotentials 17 are
+used to describe the interactions with the core electrons.
+
+For the optimization of the barrier we used climbing-image
+nudged elastic band (CI-NEB 18) method with 18 images, of which
+one was the climbing image.
+
+We also performed Born-Opperheimer molecular dynamics
+(MD) simulations of a proton,
+in water solution, permeating
+through graphene or h-BN. For this we used a velocity-Verlet inte-
+gration timestep of 0.5 fs. These simulations were done using us-
+ing a periodic model of graphene or h-BN consisting of 60 atoms
+with a solvent consisting of 88 water molecules in an orthorhom-
+bic super cell, corresponding to a 1 kg/L density of water when
+taking into account a 3.5 Å vacuum due to the hydrophobic na-
+ture of the membrane. The cell sizes are 12.8×12.3×20.2 Å3
+for graphene and 13.2×12.7×19.4 Å3 for h-BN. In order to have
+well converged wavefunctions, a 1 ps NVE benchmark simulation
+was performed to determine the necessary convergence criteria to
+have total energy drifts of at most 1 meV/ps, which was found to
+be εSCF = 10−7 Ha. For temperature control we used the coloured
+noise NVT thermostat 19 with a coupling constant of 1 ps and a
+constant temperature of 325 K. After an equilibration period of
+30 ps, a proton is pulled through the membrane by means of a
+steered molecular dynamics (SMD) simulation in 2 ps.
+
+To compute the free energy barrier at room temperature with
+SMD, a guiding spring-force is added between the proton and a
+(moving) target point using a collective variable, ξ , equal to the
+height difference between the proton and an atom in the mem-
+brane
+
+(cid:104)
+ξ pr(t)− ξ pr(0)− vξ t
+
+(cid:105)2
+
+,
+
+Fguide = −κ
+
+with spring constant κ = 10 eV/Å, where vξ = 5 Å/ps is the target
+speed, chosen such that during the simulation time the proton
+will pass through the membrane. The work done then gives an
+estimate of the barrier and is computed as
+
+dt(cid:48)(cid:2)ξ − ξ target(t(cid:48))(cid:3)dt(cid:48).
+
+(cid:90) t
+
+0
+
+W (ξ ) = κv
+
+These simulations were done using the PLUMED package 20, inte-
+grated with CP2K.
+3 Static energy barriers
+In the simplest calculations 1,4 -- 6, the proton passes through the
+center of a hexagon with the lattice remaining fixed and the pro-
+ton permeation path being a straight line perpendicular to the
+material. The energy barriers found in this way are about 0.9
+or 1.5 eV for a proton passing through h-BN or graphene respec-
+tively as shown in Fig. 2a. These values are higher than the ex-
+perimentally observed barriers (0.5 and 1.0 eV), but appear to be
+in reasonable agreement. Tensile strain may further reduce the
+
+Journal Name, [year], [vol.],(a) static barriers
+
+(b) ∆ρ for h-BN with a proton at h=1 Å
+
+Fig. 2 (a) shows the static energy barrier of a proton passing through the center of a hexagon for h-BN (red) and graphene (black) without structural
+relaxation at equilibrium lattice constant (solid) and under 2% isotropic tensile strain (dashed). In the left panel, also the Bader charge is shown for
+each frame (which assigns about half an electron to the proton) by the triangles connected by dotted lines. The panel on the right shows the
+dependence on the model size for distances h ≥ 1 Å is shown. (b) shows ∆ρ = ρtot − ρh-BN for (15×30) h-BN with a proton at h=1 Å plotted at an
+isovalue of +/- 0.0001 e−/bohr3 (top-view) and +/- 0.01 e−/bohr (side-views) in red/green.
+
+(a) optimization
+
+(b) NEB path
+
+(c) NEB barrier
+
+Fig. 3 In (a) the optimization of the initial state is illustrated. The proton
+goes from 3 Å above a hexagon center to a state where it is bonded to
+boron with a bond length of 1.05 Å. The system gains 4.6 eV during the
+optimization. (b) shows the CI-NEB path for permeation between the
+two equivalent sides of the membranes. Boron, nitrogen and hydrogen
+atoms are shown in pink, blue and white respectively. The energy
+barrier corresponding to (b) is shown in (c).
+
+calculated barriers slightly but, as shown in Fig. 2a, even 2% of
+tensile strain reduces the calculated barriers by only about 0.1 eV.
+We verified that the perpendicular cell size is sufficient, increasing
+it from 15 to 30 Å, the barrier changes less than 2 meV.
+
+The interpretation of the proton by itself in DFT calculations
+is however not obvious. This is because, in the presence of a
+highly polarizable membrane such as graphene or hBN, an elec-
+tron will be taken from the membrane leaving a charged mem-
+brane with neutral hydrogen in the ground state as illustrated in
+Fig. 2b and described in more detail in the supplementary infor-
+mation (Fig. S1, S2 and Table S1). As a result, at larger proton-
+membrane separation distances (above ∼1 Å), the energy curves
+depend strongly on the model size as shown in the right panel of
+Fig. 2a but flatten out with increasing sample size.
+
+If we indeed assume this process to be slow, relaxation of the
+nuclear coordinates should be possible. When such a relaxation
+is done using a quasi-Newton method 21, the initial state is found
+to be unstable and the proton will chemisorb on the surface. If
+we then compute the barrier by means of the nudged elastic band
+(NEB) method with one climbing image (CI-NEB 18) the barrier
+(for h-BN) increases from 0.5 to 3.0 eV as shown in Fig. 3, a value
+similar to the barrier for permeation of a hydrogen atom 22. Thus,
+contrary to the intuition that optimization of the path should lead
+to a lower barrier, the barrier increases as a result of relaxation
+because the initial state is in fact unstable.
+
+4 Effect of the solvent
+
+In order to consider the role of the solvent we performed
+room-temperature Born-Oppenheimer ab initio molecular dynam-
+ics simulations of the membrane plus the explicit solvent with
+one additional solved proton. An example of the proton perme-
+ation process in the presence of water for h-BN is shown in Fig. 4.
+In this case we consider proton-membrane separation distances
+larger than 1 Å because the proton is stabilized by the presence of
+the water as demonstrated by the Mulliken population analysis 23
+in Table S2.
+
+After equilibration, the hydrogen nucleus closest to the mem-
+brane, together with the nearest atom in the lattice (B or N) are
+chosen for the SMD forcing. The SMD spring force is applied
+to both these atoms, forcing a change in z-coordinate difference
+(perpendicular to the membrane) from its initial value to a value
+of opposite sign and large enough that the SMD work is expected
+to flatten out. We note that, because the excess charge is spread
+over different nuclei in the liquid (see Fig. S3 and Table S2), the
+identification of a single proton is not possible and our selected
+H nucleus is in fact close to neutral initially. Rather than passing
+directly through the membrane, we observe the selected atom to
+move sideways away from its initial position. Simultaneously, a
+curvature is induced in the membrane (Fig. 4b) which brings the
+atoms closer in height to follow the (moving) SMD equilibrium
+spring position. This shows that it is favourable to bend the sub-
+strate rather than to directly approach the surface. The resulting
+work done is shown in Fig. 4f. The barrier estimated from these
+curves contains two separate effects. The first involves the re-
+moval of the proton from the liquid and the second involves pass-
+ing through the membrane. These steered dynamics simulations
+are equivalent to the Tomlinson model (see e.g. Ref. 24 and refer-
+ences therein) used in the field of friction at the atomic scale. The
+top of the barrier relevant to the experimental setup is therefore
+defined by the moment of slipping, whereas the starting configu-
+ration is given by the moment of OH bond breaking. As can be
+seen from Fig.4f and in more detail in Fig. S4, these barriers are
+then of the order of 3 -- 5 eV, in qualitative agreement the nudged
+elastic band calculations of Ref. 11. After the reformation of an OH
+
+1 -- 5  3
+
+ 0 1 2 3energy (eV)Journal Name, [year], [vol.],(a) t0
+
+(b) t0+0.4 ps
+
+(c) t0+0.8 ps
+
+(d) t0+1.2 ps
+
+(e) t0+1.6 ps
+
+(f) W(ξ )
+
+Fig. 4 Time lapse (a-e) of the SMD simulation to force proton permeation for h-BN. B, N, O and H atoms are shown in pink, blue, red and white
+respectively. Light-blue balls mark the atoms to which the SMD force is applied. (f) shows the work done by the SMD force and the distance from the
+forced nucleus to the nearest oxygen. In red (black) the results for h-BN (graphene). The two black lines indicate different H-C pairs for permeation.
+
+(a) initial structure
+
+(b) after optimization
+
+Fig. 6 Proton permeation of hydrogenated h-BN: (a) shows the initial
+state with a proton 3 Å above the h-BN surface with six chemisorbed H
+atoms and (b) shows the optimized structure with H2 formed.
+
+for graphene, while for (ii) we keep the usual 6x12 orthorhombic
+cells. The resulting barriers are shown in Fig. 5. While the barri-
+ers indeed decrease when considering permeation from the side
+favourable by curvature, the net effect is small compared to the
+total barrier, ∼0.2 eV in the case of a buckled h-BN sheet and less
+than 0.1 eV in the case of the CNT. These modifications therefore
+remain insufficient to explain the discrepancies between theory
+and experiment despite the relatively high curvature induced in
+these model system. Moreover, if it is indeed the case that the pro-
+cess is slow, we should rather expect it to chemisorb as discussed
+before and therefore only increase the barrier further.
+6 Hydrogenation
+In Ref. 22 we considered in detail the hydrogenation of h-BN. We
+also considered the permeation of a proton through these hydro-
+genated surfaces. However, as in the case of static permeation in
+vacuum, we find the initial state with a proton 3 Å above (mea-
+sured from the center of mass) a group of chemisorbed hydrogen
+atoms to be unstable. In this case however, the intermediate state
+is not a chemisorbed one, but rather the formation of molecular
+hydrogen (H2) as shown in Fig. 6. We find similar formations of
+molecular hydrogen in other structures considered in Ref. 22. As
+a result, these intermediate stable states again lead to a increase
+in barrier when optimization of the path is considered.
+7 Conclusion
+We considered several effects on calculated barrier heights for
+proton permeation through h-BN and graphene. Despite our ef-
+
+Fig. 5 Energy barrier for proton permeation for the indicated curvature
+models (see text).
+
+bond on the opposite side of the membrane the SMD work done
+indeed tends to flatten out as expected. Compared to the static
+calculations, rather than decreasing the barrier, barriers are thus
+increased because of the stabilizing effect the water has on the
+proton, lowering the energy of the initial state. We thus conclude
+that the inclusion of water in our model (one proton for 87 water
+molecules, corresponding to a pH close to zero) cannot explain
+the observed discrepancy between theory and experiment.
+5 Curvature
+We also considered the effect of curvature. For this we return
+to the case of static permeation, i.e. without optimization of the
+path. We consider two different cases of curvature, namely (i) a
+(10,0) -- carbon nanotube (CNT) compared to graphene, and (ii)
+a buckled h-BN surface, where all B (N) atoms are displaced up
+(down) by 0.1 Å. The latter configuration could for example be
+the result of the ionic nature of h-BN causing B and N atoms to
+respond oppositely to the applied electric field. For (i) we use a
+model consisting of 360C atoms (9x10 orthorhombic unit cells)
+and recompute the energy curve with the same amount of atoms
+
+4 
+
+1 -- 5
+
+Journal Name, [year], [vol.],forts to include more features of the environment we systemat-
+ically find an increase of the permeation energy barriers rather
+than the desired decrease needed to match experimental obser-
+vations. Several complications are discussed such as the high
+polarizability of the membranes and the existence of stable in-
+termediates. These naturally arising complications have not been
+considered in previous work and we therefore found it necessary
+to comment explicitly on them in this work, despite not providing
+a definitive explanation for the proton permeation barrier heights
+observed experimentally. We therefore believe this problem may
+lie outside the scope of our DFT-PBE approach if the experimental
+membranes are indeed assumed to be defect-free and the process
+is slow compared to atomistic timescales.
+
+The research leading to these results received funding from
+the Foundation for Fundamental Research on Matter (FOM), part
+of the Netherlands Organisation for Scientific Research (NWO).
+The work was carried out on the Dutch national e-infrastructure
+with the support of SURF Cooperative. This project has received
+funding from the European Union's Horizon 2020 research and
+innovation programme under grant agreement No. 696656  -- 
+GrapheneCore1. We thank A.K. Geim, W. Brandeburgo and E.J.
+Meijer for useful discussions.
+References
+1 S. Hu et al., Nature, 2014, 516, 227 -- 230.
+2 M. Lozada-Hidalgo et al., Science, 2016, 351, 68 -- 70.
+3 K. B. Wiberg, Chem. Rev., 1955, 55, 713 -- 743.
+4 W. L. Wang and E. Kaxiras, New J. Phys., 2010, 12, 125012.
+5 M. Miao, M. B. Nardelli, Q. Wang and Y. Liu, Phys. Chem.
+
+Chem. Phys., 2013, 15, 16132 -- 16137.
+
+6 L. Tsetseris and S. T. Pantelides, Carbon, 2014, 67, 58 -- 63.
+7 M. Seel and R. Pandey, 2D Mater., 2016, 3, 025004.
+8 E. Despiau-Pujo, A. Davydova, G. Cunge, L. Delfour, L. Mag-
+
+aud and D. B. Graves, J. Appl. Phys., 2013, 113, 114302.
+
+9 D. W. Brenner, O. A. Shenderova, J. A. Harrison, S. J. Stuart,
+B. Ni and S. B. Sinnott, J. Phys.: Condens. Matter, 2002, 14,
+783.
+
+10 I. Poltavsky, L. Zheng, M. Mortazavi and A. Tkatchenko,
+
+arXiv:1605.06341 [cond-mat, physics:physics], 2016.
+
+11 J. L. Achtyl et al., Nat Commun, 2015, 6, 6539.
+12 M. I. Walker, P. Braeuninger-Weimer, R. S. Weatherup, S. Hof-
+mann and U. F. Keyser, Appl. Phys. Lett., 2015, 107, 213104.
+13 J. P. Perdew, K. Burke and M. Ernzerhof, Phys. Rev. Lett., 1996,
+
+77, 3865 -- 3868.
+
+14 J. P. Perdew, K. Burke and M. Ernzerhof, Phys. Rev. Lett., 1997,
+
+78, 1396 -- 1396.
+
+15 J. VandeVondele, M. Krack, F. Mohamed, M. Parrinello,
+T. Chassaing and J. Hutter, Comput. Phys. Commun., 2005,
+167, 103 -- 128.
+
+16 S. Grimme, J. Antony, S. Ehrlich and H. Krieg, J. Chem. Phys.,
+
+2010, 132, 154104.
+
+17 S. Goedecker, M. Teter and J. Hutter, Phys. Rev. B, 1996, 54,
+
+1703 -- 1710.
+
+18 G. Henkelman, B. P. Uberuaga and H. Jónsson, J. Chem. Phys.,
+
+2000, 113, 9901 -- 9904.
+
+19 G. Bussi, D. Donadio and M. Parrinello, The Journal of Chemi-
+
+cal Physics, 2007, 126, 014101.
+
+20 M. Bonomi et al., Computer Physics Communications, 2009,
+
+180, 1961 -- 1972.
+
+21 R. Byrd, P. Lu, J. Nocedal and C. Zhu, SIAM J. Sci. Comput.,
+
+1995, 16, 1190 -- 1208.
+
+22 J. M. H. Kroes, A. Fasolino and M. I. Katsnelson, Phys. Chem.
+
+Chem. Phys., 2016, 18, 19359 -- 19367.
+
+23 R. S. Mulliken, J. Chem. Phys., 1955, 23, 1833 -- 1840.
+24 N. Sasaki, K. Kobayashi and M. Tsukada, Phys. Rev. B, 1996,
+
+54, 2138.
+
+1 -- 5  5
+
+Journal Name, [year], [vol.],

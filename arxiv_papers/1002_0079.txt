@@ -1,0 +1,858 @@
+0 Flux-free conductance modulation in a helical
+1
+0
+2
+
+Aharonov-Bohm interferometer
+
+Hisao Taira1,2,3) and Hiroyuki Shima1,2)
+1) Department of Applied Physics, Graduate School of Engineering, Hokkaido
+University, Sapporo 060-8628, Japan
+2) Department of Applied Mathematics 3, LaC`aN, Universitat Polit`ecnica de
+Catalunya (UPC), Barcelona 08034, Spain
+3) Department of Physics, The Chinese University of Hong Kong (CUHK), Shatin,
+New Territories, Hong Kong
+
+E-mail: taira@eng.hokudai.ac.jp
+
+Abstract. A novel conductance oscillation in a twisted quantum ring composed of
+a helical atomic configuration is theoretically predicted. Internal torsion of the ring is
+found to cause a quantum phase shift in the wavefunction that describes the electron's
+motion along the ring. The resulting conductance oscillation is free from magnetic flux
+penetrating inside the ring, which is in complete contrast with the ordinary Aharonov-
+Bohm effect observed in untwisted quantum rings.
+
+ 
+
+y
+a
+M
+5
+
+ 
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+2
+v
+9
+7
+0
+0
+
+.
+
+2
+0
+0
+1
+:
+v
+i
+X
+r
+a
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+2
+
+1. Introduction
+
+The Aharonov-Bohm (AB) effect is a pivotal manifestation of geometric phase governing
+quantum dynamics [1].
+It occurs when a charged particle travels along a coherent
+loop threaded by external magnetic flux; the particle's wave function acquires an
+additional quantum phase that influences an interference pattern. Experimental efforts
+to confirm its topological nature [2, 3] as well as possible applications toward quantum
+computations [4, 5] have made it a topic of more broader interest than ever [6, 7].
+
+The AB effect was originally predicted for charged particles moving around
+magnetic flux. Since then, it has been generalized to neutral particles having magnetic
+[8, 9, 10] or electric [11, 12] dipole momenta that travel around a line of electric
+or magnetic charges, respectively. A unified picture for the three phenomena was
+established in the framework of the electromagnetic duality, which further predicted
+another interference phenomenon called the dual AB effect [13]. It is noteworthy that the
+AB effect has many analogues; in fact, light penetrating through an optical medium [14],
+quasiparticles moving in Bose-Einstein condensates [15, 16, 17, 18], and particles in a
+gravitational background [19, 20, 21] have been suggested to exhibit AB-like phenomena.
+In addition, recent attempts to reveal the Dirac fermion dynamics in the AB ring [22]
+and to unveil the ponderomotive AB effect driven by laser pulses [23] are quite intriguing.
+The series of work evidences the relevance of the effect to diverse fields in physics.
+
+In the present paper, we propose a distinct class of the AB-like interference effect
+for non-interacting charged particles that moves along a helical circuit, i.e., a quantum
+ring consisting of helical atomic structure. Surprisingly, the effect requires no magnetic
+flux threading inside the ring, which is in complete contrast to the ordinary AB effect.
+Such the flux-free interference effect originates from a torsion-induced vector potential
+Aeff that appears in the effective Hamiltonian describing the particle's motion along the
+helical circuit [24, 25, 26]; a similar torsion-induced effect was found in twisted optical
+waveguides [27]. We demonstrate that an additional phase associated with Aeff results
+in a conductance oscillation whose pattern is determined by the helicity of the atomic
+configuration.
+
+2. Basic equation and electronic eigenstates
+
+We consider a twisted quantum ring that has the ring radius R1 and a uniform
+circular cross section with the tube radius R2 (≪ R1). The ring is composed of a
+helical atomic configuration around the centroidal axis C parametrized by q0. Using
+an appropriate reference frame (q0, q1, q2), a point in the vicinity of C is represented
+by R = r(q0) + q1e1(q0) + q2e2(q0), where the set (e0, e1, e2) with e0 ≡ ∂0R and
+e1 = e2 = 1 forms a right-handed orthogonal triad and ∂a ≡ ∂/∂qa (a = 0, 1, 2).
+The vectors e1 and e2 rotate along C with the same rotation rate as that of helical
+atomic configuration, as a result of which the torsion, τ ≡ e2 · ∂0e1, of the reference
+frame equals the internal torsion of the atomic configuration. Such the twisted reference
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+3
+
+I
+
+ext
+
+)(2
+xψ
+
+)(1
+xψ
+
+P
+
+)(3
+xψ
+
+Q
+
+)(4
+xψ
+
+Figure 1. Two terminal electron interferometer based on a twisted quantum ring
+encircling external current flow Iext. Each wavefunction ψs(x) (s = 1, 2, 3, 4) describes
+the electron's motion lying at the lead (s = 1, 4) or the arc (s = 2, 3) as indicated in
+the figure.
+
+frame can be useful for analyzing physical properties of actual twisted nanowires that
+were experimentally fabricated [28, 29] or theoretically suggested [30, 31, 32, 33, 34].
+
+Using the twisted reference frame, the motion of non-interacting electrons is written
+
+by the Schrodinger equation such as [35, 36]
+
+2
+
+µ
+
+∂a(cid:16)√ggab∂b(cid:17) φ + V φ = Eφ,
+where µ ≡ −¯h2/(2m∗) with an effective mass m∗ and
+
+Xa,b=0
+
+1
+√g
+
+g = det[gab], gab = ∂aR · ∂bR, gab = g−1
+ab .
+
+(1)
+
+(2)
+
+[a, b = 0, 1, 2]
+
+In equation (1), V represents a potential that confines the transverse motion of electrons
+within the cross section. Components of the tensor gab in equation (2) are given by
+
+where γ =
+
+matrix [gab] inverse to [gab], and thus they can read as
+
+g00 = γ4 + τ 2(cid:16)q2
+
+1 + q2
+gij = δij, [i, j = 1, 2],
+
+2(cid:17) , g01 = g10 = −τ q2, g02 = g20 = τ q1,
+
+(3)
+
+2
+
+(1 − κiqi)1/2 and κi = e0 · ∂0ei. The elements gab are those of the 3 × 3
+
+Xi=1
+g00 = γ −4, g01 = g10 = γ −4τ q2, g02 = g20 = −γ −4τ q1,
+gij = δij + γ −4τ 2h(cid:16)q2
+
+2(cid:17) δij − qiqji .
+
+1 + q2
+
+(4)
+
+For simplicity, we assume that geometric deviation of the twisted frame from the
+2)1/2R2 ≪ 1 and τ R2 ≪ 1.
+
+orthogonal one is sufficiently smooth and small so that (κ2
+These assumptions allow to obtain [24, 37]
+
+1 +κ2
+
+µ"∂2
+
+1 + ∂2
+
+2 +(cid:18)∂0 −
+
+2
+
+iτ L
+
+¯h (cid:19)
+
++
+
+1
+4R2
+
+1# φ + V φ = Eφ,
+
+(5)
+
+where L ≡ −i¯h(q1∂2 − q2∂1) is the angular momentum operator in the cross section.
+Eigenfunctions of the equation (5) have the form
+
+φ(q0, q1, q2) = ψ(q0)
+
+N
+
+Xn=1
+
+cnun(q1, q2).
+
+(6)
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+4
+
+Here, uj(q1, q2) are N-fold eigenfunctions in the cross section ‡ and ψ(q0) describes the
+axial motion of electrons along the twisted wire. It follows from equations (5) and (6)
+that ψ(q0) obeys the effective one-dimensional Schrodinger equation such as
+
+µ
+ ∂0 −
+
+¯h !2
+iτhLi
+
++
+
+1
+4R2
+
+1 −
+
+τ 2
+
+¯h2 (cid:16)hL2i − hLi2(cid:17)
+
+ ψ(q0) = ǫψ(q0),
+
+(7)
+
+The angular brackets h· · ·i in equation (7) indicate to take an expectation value with
+respect to the two-dimensional ground-state function in the cross section. We see from
+equation (7) that the product τhLi/¯h plays a role of the effective vector potential Aeff
+we have mentioned earlier. Hence, nonzero values of τ and hLi are expected to yield a
+quantum phase shift in the wavefunction ψ(q0), which originates from the helical atomic
+configuration in the ring. If the ring has non-uniform cross section, equation (7) contains
+a spatially dependent scalar potential that stems from the geometric curvature of the
+cylindrical surface of the ring [38, 39, 40, 41]. This potential, nevertheless, requires no
+qualitative revision in the conclusion of this paper.
+
+1 + q2
+
+To obtain a finite hLi, we suppose an external current Iext that penetrates through
+the center of the ring as shown in figure 1. The operator L is then given by L =
+−i¯h∂/∂θ − eB (q2
+2) /2, where θ is the angular coordinate in the cross section, B =
+µ0Iext/ℓ, ℓ = 2πR1 and µ0 is the permeability of vacuum. We also assume a constant
+τ throughout the ring and a parabolic potential well V (q1, q2) = m∗ω2
+2) /2
+that strongly confines the transverse motions of electrons within the cross section of
+radius R2 ≪ R1; the parameter ωp determines the steepness of the potential. These
+assumptions allow to write eigenfunctions of equation (7) as [37]
+
+1 + q2
+
+p (q2
+
+ψ(q0) = ψunt(q0) exp(cid:18)−
+
+iτ
+
+¯h Z q0
+
+0(cid:19) ,
+0 hLidq ′
+
+(8)
+
+where ψunt is an eigenfunction for an untwisted quantum ring (i.e., τ = 0). The ground-
+state function ug(q1, q2) in the cross section reads [42, 43]
+
+ug(q1, q2) =
+
+√πℓΩ
+where ℓΩ = q¯h/(m∗Ω), Ω = qω2
+
+Then, we can prove that
+
+1
+
+exp −
+
+1 + q2
+q2
+2ℓΩ ! ,
+2
+
+(9)
+
+p + (ωc/2)2 and ωc = eB/m∗ is the cyclotron frequency.
+
+hLi
+¯h
+
+= −
+
+Iext
+I0
+
+1
+
+2
+
+s4 +(cid:18)Iext
+I0 (cid:19)
+
+, I0 =
+
+m∗ωpℓ
+
+eµ0
+
+.
+
+(10)
+
+Equations (8) and (10) state that nonzero Iext gives rise to quantum phase shift by
+τhLiℓ/¯h in the eigenstate ψ(q0), in which the magnitude of the shift is determined by
+the formula (10).
+
+Figure 2 shows how hLi depends on the external current Iext normalized by I0. hLi
+decreases monotonically with increasing Iext, while it converges to −¯h (or +¯h) in the
+‡ The value of N depends on the eigenenergy E of equation (5) to which φ belongs, and also on the
+shape of the cross section in general.
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+5
+
+Figure 2. Expectation value hLi of the cross-sectional angular momentum operator
+L of the twisted quantum ring. It decreases monotonically in response to an increase
+in the external current Iext that penetrates within the ring (see figure 1).
+
+limit of Iext → +∞ (or −∞). Furthermore, the decay in hLi is steep only within the
+region −5 < Iext/I0 < 5. These features of hLi imply that the torsion-induced phase
+shift τhLiℓ/¯h shows a significant response to the change in Iext when Iext lies within the
+region above. The flux-free interference effect in a helical circuit is a direct consequence
+of the torsion-induced phase shift, as demonstrated later.
+
+3. Electron interferometer with a twisted quantum ring
+
+Let us consider the conductance of a twisted-ring based interferometer measured by two
+terminals, as illustrated in figure 1. Two different paths connecting the two points P
+and Q have the same length of πR1. The electron's path along two semi-infinite leads
+and the two semicircular arcs is parametrized by x such that x = 0 at P and x = πR1
+at Q; electron flow inserted from x = −∞ bifurcates at P, passing through either of the
+two branches (i.e., semicircles of the ring) until getting confluent at Q, and then flow
+away toward x = +∞.
+
+The wave functions ψs(s = 1, 2, 3, 4) corresponding to the four different regions
+
+depicted in figure 1 are given by [44]
+
+ψ1(x) = A1eikx + B1e−ikx,
+ψ2(x) = A2ei(k+a)x + B2e−i(k−a)x,
+ψ3(x) = A3ei(k−a)x + B3e−i(k+a)x,
+ψ4(x) = A4eikx.
+
+(11)
+
+Here, k is the wavenumber of the incident electron, and a ≡ τhLi/¯h is a wavenumber
+shift caused by Iext.
+
+The wavefunctions ψs satisfy the connection conditions: ψ1 = ψ2 = ψ3 and
+∂xψ1 = ∂xψ2 + ∂xψ3 at P, and ψ4 = ψ2 = ψ3, ∂xψ4 = ∂xψ2 + ∂xψ3 at Q. Applying
+the conditions to equation (11), we obtain the conductance G of the system by using
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+6
+
+the two-terminal Landauer formula [45],
+
+G =
+
+2e2
+h A42 =
+
+2e2
+h (1 + θ1)A2 + 2θ1(A3 − 1)2,
+
+where
+
+and
+
+A2 =
+
+α′γ − βγ ′
+αα′ − ββ ′ , A3 = −
+
+β ′
+α′ A2 +
+
+γ ′
+α′ ,
+
+α(k, a) = k [2(2k + a) − (k + a)(θ2/θ1) + (k − a)θ2] ,
+β(k, a) = k [2k + a + (a/θ1) + 2(k − a)θ2] ,
+γ(k, a) = 2k[2k + a + (k − a)θ2],
+
+(12)
+
+(13)
+
+(14)
+
+with the notations θ1 = exp(−ikℓ), θ2 = exp(iaℓ) and ξ ′(k, a) = ξ(k,−a) for ξ = α, β, γ.
+Once determining the dimensionless parameters kℓ and aℓ (or equivalently, kℓ, τ ℓ and
+hLi/¯h), we can evaluate G by using equations (12)-(14). If we impose a = 0 in equation
+(14), the expression of G reduces to that of an ordinary un-twisted interferometer [44]
+
+G =
+
+2e2
+h
+
+.
+
+(15)
+
+32
+
+41 − 9 cos(kℓ)
+
+To make concise arguments, we omit the electron's spin-dependent transport [46] nor
+impurities/structural disorder [47] in the system, though each of them is expected to
+yield interesting consequences similarly to the case of un-twisted systems.
+
+4. Results
+
+region (cid:12)(cid:12)(cid:12)
+
+Iext(cid:12)(cid:12)(cid:12)
+
+Figures 3 and 4 show the plots of the dimensionless conductance G ≡ G/(2e2/h) as
+a function of the dimensionless current Iext ≡ Iext/I0 for various values of τ ℓ and kℓ.
+In figure 3 (or figure 4), we fix kℓ = 1.0 (or τ ℓ = 1.0) and choose several values of
+τ ℓ (or kℓ) as indicated. In both figures, the curves of G exhibit waveforms within the
+< 5 but smooth (or almost constant) behaviors outside the region: The two
+contrasting features of G in the two regions are attributed to the nonlinear response in
+hLi to Iext, which will be discussed soon later.
+
+The most important observation in figure 3 is an oscillation in G for large τ ℓ,
+which does not take place in figure 4. This conductance oscillation is what we call
+the flux-free interference effect, the peculiar phenomenon to the twisted-ring based
+AB interferometer. The magnitude of oscillation can be enhanced (i.e., the oscillation
+period is shortened) by increasing τ ℓ, since the larger τ ℓ results in the larger torsion-
+induced phase shift τhLiℓ/¯h. What value of τ ℓ should be required for observing the
+flux-free conductance oscillation strongly depends on the condition of kℓ we choose.
+When kℓ = 1.0, for instance, the oscillation disappears for τ ℓ ≪ 10.0 as shown in figure
+3. An exhaustive study covering wide ranges of the parameter space makes clear the
+required values of τ ℓ and kℓ, which will be given elsewhere.
+
+It is also noteworthy that the conductance oscillation in the present system is not
+periodic against the variation in Iext, which differs from the ordinary AB effect driven by
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+7
+
+ 
+ 
+ 
+
+l=1.0
+
+l=5.0
+
+1.0
+1.0
+1.0
+
+0.8
+0.8
+0.8
+
+0.6
+0.6
+0.6
+
+0.4
+0.4
+0.4
+
+0.2
+0.2
+0.2
+
+)
+h
+/
+2
+e
+2
+(
+/
+
+ 
+ 
+ 
+
+G
+
+ 
+ 
+ 
+
+0.0
+0.0
+0.0
+
+-15
+-15
+-15
+
+l=10.0
+-10
+-10
+-10
+
+-5
+-5
+-5
+
+5
+5
+5
+
+10
+10
+10
+
+15
+15
+15
+
+0
+0
+0
+ Iext/I0
+
+ 
+
+Figure 3. Dimensionless conductance G/(2e2/h) as a function of the normalized
+external current Iext/I0. The parameter kℓ = 1.0 is fixed for all curves that are each
+associated with different values of τ ℓ. An oscillation of G is observed around Iext = 0
+at τ ℓ = 5.0, 10.0, and larger τ ℓ (not shown).
+
+1.0
+1.0
+1.0
+1.0
+
+0.8
+0.8
+0.8
+0.8
+
+0.6
+0.6
+0.6
+0.6
+
+0.4
+0.4
+0.4
+0.4
+
+0.2
+0.2
+0.2
+0.2
+
+)
+h
+/
+2
+e
+2
+ 
+ 
+(
+/
+
+G
+
+ 
+ 
+ 
+ 
+
+kl=1.0
+
+kl=10
+
+kl=0.25
+
+ 
+ 
+ 
+ 
+
+0.0
+0.0
+0.0
+0.0
+
+-15
+-15
+-15
+-15
+
+kl=0.025
+-10
+-5
+-5
+-5
+-5
+-10
+-10
+-10
+
+5
+5
+5
+5
+
+10
+10
+10
+10
+
+15
+15
+15
+15
+
+0
+0
+0
+0
+Iext/I0
+
+ 
+ 
+
+Figure 4. Iext-dependence of G/(2e2/h) with τ ℓ = 1.0 being fixed. As kℓ increases,
+the width of the upward peak that initially arises at Iext = 0 becomes broader, and
+finally a slight hollow emerges at Iext = 0.
+
+penetrating magnetic flux. The non-periodic character is a consequence of the nonlinear
+dependence of hLi on Iext (see equation (10) and figure 2). We have seen from figure
+2 that hLi decreases steeply with increasing Iext around Iext ∼ 0 (at Iext ≫ 0) and it
+decreases gently at the regions of Iext ≫ 0. This means that the phase shift τhLiℓ/¯h
+shows sensitive (insensitive) response to a change in Iext at Iext ∼ 0 (Iext ≫ 0), and
+thus it reaches 2π by only a small (very large) increase in Iext at Iext ∼ 0 (Iext ≫ 0).
+As a result, the conductance oscillates densely (sparsely) at Iext ∼ 0 (Iext ≫ 0) since
+the oscillation stems from the quantum interference caused by the phase shift τhLiℓ/¯h.
+As a by-product, we show in figure 4 the Iext-dependence of G for a fixed τ ℓ
+(τ ℓ = 1.0) and various kℓ. At kℓ ≪ 1.0, a sharp peak arises at Iext = 0 whose peak
+width broadens gradually with increasing kℓ. The peak height at Iext = 0 is given
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+8
+
+by equation (15), thus it oscillates with increasing kℓ. When kℓ exceeds 1.0, then G
+becomes almost constant over the range of Iext we have considered, and it shows a slight
+hollow at Iext = 0. The almost constant behavior of G(Iext) indicates that the torsion-
+induced phase shift gives little contribution to the motion of electrons whose energies
+are large enough to satisfy kℓ ≥ 1.0.
+
+5. Discussions
+
+We remark that the numerical results in figures 3 and 4 are based on the presence of
+Iext that threads the center of the ring. An experimental realization of such the setup
+may not be feasible in a straightforward manner, since the ring radius R1 should be
+small enough to keep the quantum coherence of mobile electrons. Still, we can build an
+equivalent setup to the above by applying an external magnetic field Bext, instead of
+Iext, to a portion of the ring in a tangential direction. This is because the tangential field
+Bext engenders nonzero hLi in the cross section and thus a phase shift in ψ(q0). A field
+strength of B0 ∼ 10T is required to observe the flux-free interference effect, provided
+the ring of the cross-sectional radius R2 ∼ 10nm; we can estimate it from the relations
+of B0 = µ0I0/ℓ = m∗ωp/e and ¯hωp ∼ m∗ω2
+2/2 (see Sec. 2). This field strength is
+accessible in the existing nanometric measurements, thus supporting an experimental
+feasibility of our results.
+
+pR2
+
+It is noticed that our attention has been limited to non-interacting electrons. When
+taking into account a Coulomb interaction between electrons, the amplitude of the
+conductance oscillation is expected to decrease to a degree. In fact, such the amplitude
+reduction caused by the Coulomb interaction was experimentally observed for un-twisted
+AB interferometers [48, 49], where sizeable interference patterns still remained to be
+obtained. A further interesting issue would be transport properties of the Tomonaga-
+Luttinger liquid (TLL) state in an AB interferometer. In one-dimensional systems, the
+slightest correlation between electrons can lead to the TLL states, a highly collective
+state of matter [50]. Recent studies have revealed that the conductance of TLL-based
+AB interferometers shows anomalous interference patters that are substantially different
+from those of the ordinary (non-interacting) AB system [51, 52]. These facts pose a
+question as to what happens in the helical AB interferometer composed of the TLL
+states, which requires establishing newly the bosonization theory for a twisted quantum
+wire.
+
+6. Conclusion
+
+We theoretically predicted a non-trivial conductance oscillation in a twisted quantum
+ring that is free from threading magnetic flux. Helical atomic configuration inside the
+ring gives rise to a phase shift in the electron's eigenstates by τhLiℓ/¯h, where τ the
+internal torsion of the ring, hLi the angular momentum expectation value in the cross
+section, and ℓ the ring perimeter. The phase shift induces the flux-free conductance
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+9
+
+oscillation in response to a change in the external current Iext or a tangential magnetic
+field Bext, in which neither Iext nor Bext yields magnetic flux threading the ring. Our
+results suggest untouched quantum nature in actual low-dimensional nanostructures
+composed of helical atomic configuration.
+
+Acknowledgments
+
+We would like to express our thanks to K Yakubo for illuminating discussions. One of the
+authors (HT) acknowledges K W Yu and M Arroyo for their comments and hospitalities
+during the stay in CUHK and UPC. HT also thanks the financial supports from the
+Japan Society for the Promotion of Science for Young Scientists and the Excellent
+Young Researcher Overseas Visit Program. This work is supported by a Grant-in-Aid
+for Scientific Research from the MEXT, Japan. Numerical calculations were performed
+in part by using the facility of Supercomputer Center, ISSP, University of Tokyo.
+
+References
+
+[1] Aharonov Y and Bohm D 1959 Phys. Rev. 115 485
+[2] Tonomura A, Osakabe N, Matsuda T, Kawasaki T, Endo J, Yano S and Yamada H 1986
+
+Phys. Rev. Lett. 56 792
+
+[3] Caprez A, Barwick B and Batelaan H 2007 Phys. Rev. Lett. 99 210401
+[4] Ionicioiu R 2003 Phys. Rev. A 68 034305
+[5] Fischer A M, Campo V L Jr., Portnoi M E and Romer R A 2009 Phys. Rev. Lett. 102 096405
+[6] Schwingenschlogl U and Schuster C 2008 J. Phys.: Condens. Matter 20 383201
+[7] Cano A and Paul I 2009 Phys. Rev. B 80 153401
+[8] Aharonov Y and Casher A 1984 Phys. Rev. Lett. 53 319
+[9] Cimmino A, Opat G I, Klein A G, Kaiser H, Werner S A, Arif M and Clothier R 1989 Phy. Rev. Lett.
+
+63 380
+
+[10] Sangster K, Hinds E A, Barnett S M and Riis E 1993 Phys. Rev. Lett. 71 3641
+[11] He X-G and McKellar B H J 1993 Phys. Rev. A 47 3424
+[12] Wilkens M 1994 Phy. Rev. Lett. 72 5
+[13] Dowling J P, Williams C P and Franson J D 1999 Phys. Rev. Lett. 83 2486
+[14] Cook R J, Fearn H and Milonni P W 1995 Am. J. Phys. 63 705
+[15] Haldane F D M and Wu Y-S 1985 Phys. Rev. Lett. 55 2887
+[16] Kivelson S A and Spivak B Z 1992 Phys. Rev. B 45 10490
+[17] Sonin E B 1997 Phys. Rev. B 55 485
+[18] Mel'nikov A S 2001 Phys. Rev. Lett. 86 4108
+[19] Ford L H and Vilenkin A 1981 J. Phys. A 14 2353
+[20] Reznik B 1995 Phys. Rev. D 51 3108
+[21] Bakke K and Furtado C 2009 Phys. Rev. D 80 024033
+[22] Cotaescu I I and Papp E 2007 J. Phys.: Condens. Matter 19 242206
+[23] Barwick B and Batelaan H 2008 New J. Phys. 10 083036
+[24] Takagi S and Tanzawa T 1992 Prog. Theor. Phys. 87 561
+[25] Mitchell K A 2001 Phys. Rev. A 63 042112
+[26] ´Entin M V and Magarill L I 2002 Phys. Rev. B 66 205308
+[27] Longhi S 2009 Laser and Photon. Rev. 3 243
+[28] Cohen-Karni T, Segev L, Srur-Lavi O, Cohen S R and Joselevich E 2006 Nature Nanotech. 1 36
+
+Flux-free conductance modulation in a helical Aharonov-Bohm interferometer
+
+10
+
+[29] Nagapriya K S, Goldbart O, Kaplan-Ashiri I, Seifert G, Tenne R and Joselevich E 2008 Phys. Rev.
+
+Lett. 101 195501
+
+[30] Balakrishnan R and Dandoloff R 2007 Nonlinearity 21 1
+[31] da Fonseca A F and Galvao D S 2008 Phys. Rev. Lett. 92 175502
+[32] Arias I and Arroyo M 2008 Phys. Rev. Lett. 100 085503
+[33] Wang Z, Zu X, Gao F and Weber W J 2008 Phys. Rev. B 77 224113
+[34] Vassilev V M, Djondjorov P A and Mladenov I M 2008 J. Phys. A.: Math. Theor. 41 435201
+[35] Jensen H and Koppe H 1971 Ann. Phys. 63 586
+[36] da Costa R C T 1981 Phys. Rev. A 23 1982
+[37] Taira H and Shima H 2010 J. Phys.: Condens. Matter 22 075301
+[38] Taira H and Shima H 2007 Surf. Sci. 601 5270
+[39] Shima H, Yoshioka H and Onoe J 2009 Phys. Rev. B 79 201401(R)
+[40] Ono S and Shima H 2009 Phys. Rev. B 79 235407
+[41] Atanasov V, Dandoloff R and Saxena A 2009 Phys. Rev. B 79 033404
+[42] Fock V 1928 Z. Phys. 47 446
+[43] Darwin C G 1930 Proc. Camb. Philos. Soc. 27 86
+[44] Yakubo K and Ohe J 2000 J. Phys. Soc. Jpn. 69 2170
+[45] Hod O, Baer R and Rabani E 2008 J. Phys.: Condens. Matter 20 383201
+[46] Ying Y, Jin G and Ma Y 2009 J. Phys.: Condens. Matter 21 275801
+[47] Heinrichs J 2009 J. Phys.: Condens. Matter 21 295701
+[48] Tarucha S, Honda T and Saku T 1995 Sol. Stat. Comm. 94 413
+[49] Ihnatsenka S and Zozoulenko I V 2008 Phys. Rev. B 77 235304
+[50] Voit J 1995 Rep. Prog. Phys. 58 977
+[51] Aristov D N and Wolfle P 2009 Phys. Rev. B 80 045109
+[52] Krive I V, Palevski A, Shekhter R I and Jonson M 2010 Low Temp. Phys. 36 119
+
+

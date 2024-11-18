@@ -1,0 +1,2915 @@
+
+Electron spin relaxation in bilayer graphene
+
+L. Wang and M. W. Wu∗
+
+Hefei National Laboratory for Physical Sciences at Microscale and Department of Physics,
+
+University of Science and Technology of China, Hefei, Anhui, 230026, China
+
+(Dated: November 24, 2018)
+
+Electron spin relaxation due to the D'yakonov-Perel' mechanism is investigated in bilayer graphene
+with only the lowest conduction band being relevant. The spin-orbit coupling is constructed from
+the symmetry group analysis with the parameters obtained by fitting to the numerical calculation
+according to the latest report by Konschuh et al.
+[Phys. Rev. B 85, 115423 (2012)] from first
+principles. In contrast to single-layer graphene, the leading term of the out-of-plane component of the
+spin-orbit coupling in bilayer graphene shows a Zeeman-like term with opposite effective magnetic
+fields in the two valleys. This Zeeman-like term opens a spin relaxation channel in the presence of
+intervalley scattering. It is shown that the intervalley electron-phonon scattering, which has not
+been reported in the previous literature, strongly suppresses the in-plane spin relaxation time at high
+temperature whereas the intervalley short-range scattering plays an important role in the in-plane
+spin relaxation especially at low temperature. A marked nonmonotonic dependence of the in-plane
+spin relaxation time on temperature with a minimum of several hundred picoseconds is predicted in
+the absence of the short-range scatterers. This minimum is comparable to the experimental data.
+Moreover, a peak in the electron density dependence of the in-plane spin relaxation time at low
+temperature, which is very different from the one in semiconductors, is predicted. We also find a
+rapid decrease in the in-plane spin relaxation time with increasing initial spin polarization at low
+temperature, which is opposite to the situation in both semiconductors and single-layer graphene.
+A strong anisotropy between the out-of- and in-plane spin relaxations at high temperature is also
+revealed with the out-of-plane spin relaxation time being about two orders of magnitude larger than
+the in-plane one. Detailed comparisons of the temperature and electron density dependences of the
+spin relaxation with the existing experiments [Phys. Rev. Lett. 107, 047206 (2011), Phys. Rev.
+Lett. 107, 047207 (2011) and Nano Lett. 11, 2363 (2011)] are reported.
+
+PACS numbers: 72.25.Rb, 81.05.ue, 71.10.-w, 71.70.Ej
+
+I.
+
+INTRODUCTION
+
+In recent years, single-layer graphene has received
+much attention due to its two dimensionality, Dirac-
+like energy spectrum and outstanding spin-coherence
+properties.1 -- 14 Specifically, the hyperfine interaction and
+spin-orbit coupling (SOC) are considerably weak,15 -- 25
+suggesting a long spin relaxation time (SRT) in single-
+layer graphene.
+This long SRT makes single-layer
+graphene a promising candidate for spintronic applica-
+tion. So far, a number of experiments on spin relax-
+ation have been carried out, with the SRTs being orders
+of magnitude shorter than theoretical prediction.3,26 -- 41
+This pronounced discrepancy has provoked many in-
+vestigations on the extrinsic effects of spin relaxation
+such as adatoms,24,42 -- 47 curvature,16,48 -- 50
+substrate
+effects44,51,52 and contacts.30,39,40,53 Consisting of two
+layer graphene, bilayer graphene (BLG) also possesses
+good spin-coherence properties.20,21,54 -- 57 Additionally, in
+contrast to single-layer graphene, BLG has a tunable gap
+caused by an out-of-plane electric field,55,56,58 -- 62 which
+can be used to turn on or off the electronic transport. In
+addition, in the absence of space inversion symmetry, the
+intrinsic SOC in the pseudospin space of BLG provides an
+out-of-plane effective magnetic field near the Dirac points
+whereas the intrinsic SOC of single-layer graphene only
+induces a shift of the energy spectrum.36,44,55 Moreover,
+
+the electron-phonon coupling becomes more complex in
+BLG due to the existence of more phonon modes.63 -- 65
+So far, some efforts have been made to investigate the in-
+travalley electron-phonon coupling.63 -- 65 Specifically, the
+intravalley electron-acoustic (AC) phonon coupling has
+been calculated by Viljas and Heikkila63 with the con-
+tinuum theory and also by Borysenko et al.64 from first
+principles. To explore the intravalley electron-optical
+(OP) phonon coupling, the tight-binding model, density
+functional theory and first principles approach are em-
+ployed by Viljas and Heikkila,63 Cappelluti et al.65 and
+Borysenko et al.,64 respectively. However, the intervalley
+electron-phonon coupling, which has been shown to play
+an important role in spin relaxation in rippled single-
+layer graphene,50 has not been reported in the previous
+literature. All these intriguing features make BLG an
+attractive material for investigation.
+
+Very recently, some attention has been devoted to the
+spin relaxation in BLG.37 -- 39,66 -- 68 Experimentally, the
+SRTs of BLG on SiO2 substrate37,38,66 or in freely sus-
+pended BLG68 are reported to be of the order of 0.01-
+1 ns. Both Yang et al.66 and Han and Kawakami37 mea-
+sured the temperature and carrier dependences of the
+SRT. Yang et al.66 showed that the SRT is weakly de-
+pendent on temperature. However, Han and Kawakami37
+reported a marked decrease of the SRT with the increase
+of the temperature. As for the carrier density depen-
+
+dence, the decrease of the SRT with increasing carrier
+density at low temperature is reported in both exper-
+iments. However, at room temperature, Yang et al.66
+observed an increase of the SRT with increasing density
+whereas the SRT measured by Han and Kawakami37 ex-
+hibits a marginal density dependence. In addition, Yang
+et al.66 also showed that the SRT scales inversely with the
+mobility at both room and low temperatures. In contrast
+to the above two experiments based on the micromechan-
+ically exfoliated BLG samples, Avsar et al.38 carried out
+the experiment in chemical vapor deposition grown BLG.
+The carrier density and temperature dependences of the
+SRT measured are comparable to the ones by Yang et
+al.66 both quantitatively and qualitatively. Motivated
+by these experiments, Diez and Burkard67 calculated
+the electron spin relaxation due to the D'yakonov-Perel'
+(DP) mechanism69 with only the long-range electron-
+impurity scattering included in BLG. They claimed to
+obtain a good agreement with the experimental data of
+Yang et al..66 It is noted that the effective SOC (re-
+ferred to as the spin-orbit field in Ref. 67) used in their
+calculation is induced by an interlayer bias voltage to-
+gether with the intrinsic SOC in the pseudospin space.54
+However, the intrinsic SOC in the pseudospin space be-
+comes incomplete in the presence of the interlayer bias
+since the interlayer bias breaks the space inversion sym-
+metry and leads to additional extrinsic SOC terms in
+the pseudospin space.55 Also even with only the intrinsic
+SOC in the pseudospin space in their calculation, they
+overlooked the out-of-plane component of the effective
+SOC. As will be shown later, the leading term of this
+component leads to a Zeeman-like term in the two val-
+leys and makes a dominant contribution to the in-plane
+spin relaxation. Moreover, they neglected the electron-
+phonon and electron-electron Coulomb scatterings.
+In
+fact, the electron-electron Coulomb scattering has been
+demonstrated to be very important for the spin relax-
+ation in semiconductor systems70 -- 77 and also single-layer
+graphene at high temperature.36 The electron-phonon
+scattering has also been shown to play an important role
+in spin relaxation in both semiconductors70 and single-
+layer graphene36 at high temperature. Therefore, both
+have to be included in studying the spin relaxation.
+
+In the present work, with the electron-electron
+Coulomb, (both the intra- and inter-valley) electron-
+phonon, possible short-range9 as well as long-range
+electron-impurity scatterings explicitly included, we in-
+vestigate the electron spin relaxation due to the DP
+mechanism in BLG with only the lowest conduction band
+being relevant by the kinetic spin Bloch equation (KSBE)
+approach.70 The SOC of the lowest conduction band near
+the Dirac points Ωµ(k) is constructed from the symme-
+try group C3 in the presence of an out-of-plane electric
+field.78 Its three components Ωµ
+i (k) (i = x, y, z) can be
+
+written as (see Appendix A)
+
+Ωµ
+
+x(k) = α1(k) sin θk + µ[α2(k) sin 2θk
+
++ α3(k) sin 4θk],
+
+2
+
+(1)
+
+Ωµ
+y (k) = −α1(k) cos θk + µ[α2(k) cos 2θk
+
+− α3(k) cos 4θk],
+
+Ωµ
+
+z (k) = µβ1(k) + β2(k) cos 3θk,
+
+(2)
+(3)
+with µ = 1(−1) standing for K(K′) valleys and k and
+θk representing the magnitude and the polar angle of
+the momentum k relative to K(K′) points, respectively.
+The coefficients αi(k) (i = 1-3) and β1,2(k) are given
+in Appendix A by fitting to the numerical results calcu-
+lated according to the latest report by Konschuh et al.55
+from first principles with both the intrinsic and extrin-
+sic SOC terms in the pseudospin space included. The
+out-of-plane component Ωµ
+z (k) [Eq. (3)], which has not
+been reported in the previous literature, is induced by
+the intrinsic SOC in the pseudospin space in the absence
+of space inversion symmetry, whereas the in-plane com-
+ponent is contributed by both the intrinsic and extrinsic
+SOCs in the pseudospin space. This is very different
+from the case in single-layer graphene where the intrin-
+sic SOC in the pseudospin space only induces a shift
+of the energy spectrum in the conduction band.36,44,55
+We find that the magnitudes of both the out-of- and in-
+plane components decrease with the increase of k at large
+momentum, indicating a suppression of the inhomoge-
+neous broadening71 by increasing momentum.55 This is
+very different from the case in both semiconductors and
+single-layer graphene.36,70 Additionally, the leading term
+of the out-of-plane component, i.e., µβ1(k), serves as a
+Zeeman-like term with opposite effective magnetic fields
+perpendicular to BLG plane in the two valleys, similar to
+the case in rippled single-layer graphene.50 This Zeeman-
+like term, together with the intervalley scattering, opens
+a spin relaxation channel. This spin relaxation channel
+suppresses the in-plane SRT significantly at high temper-
+ature by the intervalley electron-phonon scattering and
+also at low temperature by the short-range scattering.9
+In addition, we find that although such Zeeman-like
+terms also exist in the in-plane components of the SOC,
+their contributions to the out-of-plane spin relaxation are
+marginal since these terms are of the high order of the
+momentum. This leads to a strong anisotropy between
+the in-plane and out-of-plane spin relaxations. We also
+find that the in-plane SRT shows a marked nonmonotonic
+dependence on temperature with a minimum down to
+several hundred picoseconds in the absence of short-range
+scatterers. This minimum is comparable to the experi-
+mental data. The nonmonotonic behavior results from
+the crossover between the weak and strong intervalley
+electron-phonon scattering. Moreover, we predict a peak
+in the density dependence at low temperature, which is
+very different from the one in semiconductors.77,79 As for
+high temperature, the SRT shows a monotonic increase
+with increasing density. We also find that the in-plane
+SRT decreases rapidly with increasing initial spin polar-
+
+ization at low temperature, which is very different from
+the previous studies in both semiconductors72,76,80,81 and
+single-layer graphene.36 Finally, we report detailed com-
+parisons of the temperature and electron density depen-
+dences with the existing experiments.37,38,66
+
+This paper is organized as follows.
+
+In Sec. II, we
+present our model and construct the KSBEs. The main
+results are given in Sec. III. In Sec. IIIA, we investigate
+the temperature, electron density and also initial spin
+polarization dependences of the electron spin relaxation
+in the absence of short-range scatterers. The anisotropy
+of the spin relaxation is also addressed in this part. In
+Sec. IIIB, we show detailed comparisons of the tempera-
+ture and electron density dependences of the spin relax-
+ation with the existing experiments with the inclusion of
+short-range scatterers. We summarize in Sec. IV.
+
+II. MODEL AND KSBES
+
+We start our investigation from the AB-stacked BLG
+on SiO2 substrate. The spinless π-band structure can be
+described by the effective 4 × 4 Hamiltonian:55
+γ1
+
+γ0f (k) γ4f∗(k)
+
+HTB(k) =
+
+
+
+
+∆ + V
+γ0f∗(k) +V
+γ4f (k) γ3f∗(k) −V
+
+γ3f (k) γ4f∗(k)
+γ0f (k)
+γ4f (k) γ0f∗(k) ∆ − V
+
+γ1
+
+
+
+
+in the on-site orbital Bloch basis ΨA1(k), ΨB1(k), ΨA2(k)
+and ΨB2 (k), where A1 refers to the A sublattice in the
+lower layer, B2 to the B sublattice in the upper layer,
+etc., and k represents the two-dimensional wave vec-
+tor counted from the Γ point. Here, γ0 and γ1 de-
+scribe the nearest-neighbor intralayer and interlayer hop-
+pings whereas γ3 and γ4 stand for the indirect hop-
+pings between two layers. ∆ represents the asymme-
+try in the energy shift of the on-site energy due to
+the interlayer hopping. The potential V = eEzdeff /2
+with e, Ez and deff representing the electron charge
+(e > 0), the out-of-plane electric field and the effec-
+tive electrostatic bilayer distance, respectively. f (k) =
+ei a
+√3
+is the nearest-neighbor
+structural function of the graphene hexagonal lattice with
+a denoting the lattice constant. Near the Dirac points,
+to the first order of the momentum k originated from the
+
+K(K′) points, f (k) ≡ p(k) = −√3a(µkx − iky)/2. Then
+the effective 4× 4 Hamiltonian near the Dirac points can
+be written as
+
+ky [1 + 2e−i
+
+ky cos( a
+2
+
+kx)]
+
+√3a
+
+2
+
+H µ(k) = 
+
+
+∆ + V γ0p γ4p∗
+γ1
+γ0p∗ +V
+γ4p∗
+γ3p
+γ3p∗ −V
+γ4p
+γ0p
+γ4p γ0p∗ ∆ − V
+γ1
+
+.
+
+
+
+
+(5)
+
+By exactly diagonalizing this Hamiltonian, one obtains
+the eigenvalue ǫµνk and the eigenfunction ψµν
+k with ν be-
+ing the band index including two conduction bands and
+
+(4)
+
+∂t ρµk = ∂t ρµkcoh + ∂t ρµkscat,
+
+(7)
+
+3
+
+two valence ones. In our calculation, we concentrate on
+the heavily n-doped case with only the lowest conduction
+band being relevant whereas other bands are separated
+by large energy intervals. For convenience, the eigen-
+value and the corresponding eigenfunction of the lowest
+conduction band at k are denoted by ǫµk and ψµ
+k, respec-
+tively.
+
+By incorporating the spin degree of freedom, the effec-
+tive Hamiltonian of the lowest conduction band is given
+by
+
+H µ
+eff = ǫµk + Ωµ(k) · σ/2.
+
+(6)
+
+Here, σ are the Pauli matrices. Ωµ(k) stands for
+the effective magnetic field of the SOC, which is con-
+structed from the symmetry analysis with the parame-
+ters obtained approximately by fitting to numerical re-
+sults based on the report by Konschuh et al..55 The an-
+alytical form of the SOC with three components Ωµ
+i (k)
+(i = x, y, z) is shown in Eqs. (1-3) and the explicit numer-
+ical calculation is given in Appendix A. It is noted that
+at large momentum, the analytical result agrees with the
+numerical one fairly well (see Appendix A).
+
+We then construct the microscopic KSBEs70 to study
+the electron spin relaxation in BLG. The KSBEs read70
+
+k†ψµ
+
+k′2.
+
+(8)
+
+k,k′ I µ
+
+µk , ρµk],
+
+scattering terms
+
+form factor
+the
+
+where ρµk represent the density matrices of electrons
+with the diagonal terms ρµk,σσ ≡ fµkσ (σ = ± 1
+2 ) de-
+scribing the distribution functions and the off-diagonal
+ones ρµk,(1/2)(−1/2) = ρ∗µk,(−1/2)(1/2) denoting the spin
+coherence. The coherent term is given by
+∂t ρµkcoh = −i[Ωµ(k) · σ/2 + ΣHF
+the
+
+k,k′2), intravalley electron-AC phonon (M AC
+
+commutator;
+where [A, B] ≡ AB − BA is
+µk = −Pk′ V µ
+ΣHF
+kk′ ρµk′ represents the Coulomb
+Hartree-Fock (HF) term.72 V µ
+k,k′ denotes the screened
+Coulomb potential with its form given in Appendix B.
+I µ
+kk′ = ψµ
+The
+∂t ρµkscat
+are
+electron-
+electron Coulomb (V µ
+k,k′2), long-range electron-impurity
+(U µ
+µk,µ′k′2),
+electron-OP phonon (M OP
+electron-remote-
+interfacial (RI) phonon (M RI
+µk,µ′k′2) and especially
+the intervalley electron-phonon scattering including
+the electron-KA′1 phonon (M KA′1
+µk,µ′k′2), electron-KA′2
+phonon (M KA′2
+µk,µ′k′2)
+and electron-KZ phonon (M KZ
+µk,µ′k′2) scatterings. Their
+detailed expressions can be found in Ref. 36.82 Here,
+KA′1, KA′2 and KE′ are the in-plane phonon modes corre-
+sponding to the representations A′1, A′2 and E′ of group
+D3h, respectively whereas KZ stands for the out-of-plane
+phonon mode.64,83 -- 85 It is noted that the intravalley
+electron-phonon scattering has been reported in the pre-
+vious literature as mentioned in the introduction.63,64
+
+µk,µ′k′2), electron-KE′ phonon (M KE′
+
+µk,µ′k′2),
+
+including the
+
+However, to the best of our knowledge, there is no spe-
+cific report to the intervalley electron-phonon scattering.
+In this work, we derive the intervalley electron-phonon
+scattering matrix elements using the tight-binding model
+according to the arXiv version of Ref. 63. The scattering
+matrix elements are given by
+
+δµ′,−µhψµ
+
+k†(2√3γ′0σ23
+
+†(2√3iγ′0σ01
+
+3a2γ′4
+2ρl2
+4
+
+2
+
+2
+
+2ΩKA′2
+
+D − aγ′4γ3
+Dγ5
+δµ′,−µhψµ
+
+k†γ3
+
+D/l4)ψµ′
+
+D + aγ′4γ0
+k′2i,
+Dψµ′
+k′2
+
+Dγ5
+
+D/l4)
+
+(9)
+
+(10)
+
+k†(γ′3γ1
+
+Dγ5
+
+D − γ′3γ1
+
+Dγ5
+
+D − γ′4γ0
+
+D
+
+D − iγ′3γ2
+D)ψµ′
+k′2
+(11)
+
+M KA′1
+
+M KA′2
+
+32
+
+4ρΩKA′1
+
+k
+
+k′2 + ψµ
+
+µk,µ′k′2 =
+× ψµ′
+µk,µ′k′2 =
+k†γ0
++ ψµ
+µk,µ′k′2 =
+D)ψµ′
+− γ′4γ0
+k†γ′4γ3
++ 4ψµ
+γ′1
+µk,µ′k′2 =
+ρ
+
+2
+
+k′2i,
+
+Dψµ′
+3a2
+ρl2
+4ΩKE′
+4
+k′2 + ψµ
+Dψµ′
+Dγ5
+2
+2
+
+M KE′
+
+δµ′,−µhψµ
+†(iγ′3γ2
+k′2i,
+
+k
+
+M KZ
+
+δµ′,−µψµ
+
+2ΩKZ
+
+k†(γ1
+
+Dγ5
+
+D + iγ2
+
+D)ψµ′
+
+k′2,
+
+(12)
+where ρ is the mass density of the BLG;63 ΩKA′1 , ΩKA′2,
+ΩKE′ and ΩKZ are the energy spectra of KA′1, KA′2,
+KE′, and KZ phonon modes, respectively;64,83,84 γ′i (i =
+0, 1, 3, 4) is the derivative of γi with respect to the cor-
+responding hopping bond length;65 l4 is the bond length
+of the interlayer hopping γ4; γi
+D and
+σ23
+D are 4 × 4 Dirac matrices given in Appendix C.86 We
+will show that the above intervalley electron-phonon scat-
+tering plays a significant role in the in-plane spin relax-
+ation in our investigation. The remaining scattering ma-
+trix elements such as V µ
+µk,µ′k′2
+(λ = AC, OP and RI) are given in Appendix B. It is
+noted that we also include the short-range scattering in
+our calculation with the scattering term laid out later in
+this paper.
+
+k,k′2, and M λ
+
+D (i = 0-3, 5), σ01
+
+k,k′2, U µ
+
+TABLE I: Parameters used in the calculation (from Ref. 55
+unless otherwise specified).
+
+4
+
+z ) µeV
+
+z ) µeV
+
+9.7 meV
+0.339 eV
+−0.14 eV
+10 µeV
+(5 − 10E ∗
+(−12 − 3E ∗
+2.46 A
+0.4 nm a
+8 × 105 m/s b
+
+∆
+γ1
+γ4
+λI2
+λ′
+0
+λ4
+a
+d
+vF
+DAC 15 eV c
+ωRI
+1
+g1
+ΩLT 196 meV a
+4.4 eV/A e
+γ ′
+0
+0.54 eV/A e
+γ ′
+3
+ΩKA′1
+161.2 meV
+ΩKE′ 152 meV c
+l3
+Zi
+
+2.6 eV
+0.28 eV
+12 µeV
+(5 + 10E ∗
+1.5E ∗
+z µeV
+(−12 + 3E ∗
+0.1 nm
+0.8 a
+2 × 104 m/s a
+1.52 × 10−7 g/cm2 d
+155 meV a
+3.5 × 10−2 a
+
+γ0
+γ3
+λI1
+λ0
+z ) µeV λ3
+z ) µeV λ′
+4
+deff
+rs
+vph
+ρ
+ωRI
+2
+g2
+ΩZO 104 meV c
+γ ′
+1
+γ ′
+4
+ΩKA′2
+ΩKZ
+l4
+
+0.61 eV/A e
+0.3 eV/A e
+125 meV c
+65 meV c
+3.64 A
+
+59 meV a
+5.4 × 10−3 a
+
+3.64 A
+1
+
+aReference 36.
+bReference 87.
+cReference 64.
+dReference 63.
+eReference 65.
+It is noted that E ∗
+unit of V/nm.
+
+z is the magnitude of Ez in the
+
+A. Spin relaxation in BLG with high mobilities
+
+In our calculation, the out-of-plane electric field is
+chosen to be a typical value Ez = 0.14 V/nm37 and
+the long-range impurity density is taken to be Ni =
+1.5×1011 cm−2. The corresponding mobility in our inves-
+tigation is of the order of 104 cm2/(V s), which is about
+1-2 orders of magnitude larger than those reported in
+the existing experiments in BLG on SiO2 substrate37,38,66
+and comparable to the ones in the experiments in freely
+suspended BLG.68 It is noted that the short-range scat-
+tering is not included in this subsection.
+
+III. NUMERICAL RESULTS
+
+By numerically solving the KSBEs, one obtains the
+time evolution of spin polarization along direction n
+
+P (t) = Pµk Tr[ρµk(t)σ · n]/Ne with Ne being the elec-
+
+tron density. Then the SRT can be determined from the
+slope of the envelope of the spin polarization P (t).70 The
+initial spin polarization P (0) is set to be 2.5 % and the
+spin-polarization direction n is along the x-axis unless
+otherwise specified. It is noted that all the parameters
+used in our calculation are listed in Table I. It is also
+noted that the SOC is calculated both fully numerically
+following the approach by Konschuh et al.55 and analyt-
+ically by using Eqs. (1-3). The SRT calculated with the
+analytical form of the SOC and with the explicit numer-
+ical one agrees fairly well with each other.
+
+1. Temperature dependence of spin relaxation
+
+We first investigate the temperature dependence of the
+spin relaxation. In Fig. 1, the SRT along the x-axis τsx
+is plotted as function of temperature T . It is seen that
+τsx changes little with the temperature at low temper-
+ature (i.e., T ≤ 60 K). However, as T becomes larger,
+the SRT decreases dramatically with increasing temper-
+ature.
+In particular, the SRT reaches down to several
+hundred picoseconds at T = 200 K, which is comparable
+to the experimental values.37,38,66,68 A detailed compar-
+ison with the existing experiments will be discussed in
+Sec. IIIB. When T further increases, the SRT begins to
+increase with T .
+
+total
+without intervalley e-p
+without e-i
+without e-AC
+without e-RI
+without e-e
+
+102
+
+)
+s
+n
+(
+ 
+
+x
+
+s
+
+τ
+
+101
+
+100
+
+ 30
+
+ 130
+
+ 230
+T (K)
+
+ 330
+
+FIG. 1: (Color online) Total SRT along the x-axis τsx (×) and
+the calculation without the long-range electron-impurity (•),
+electron-AC-phonon (N), electron-RI-phonon ((cid:3)), electron-
+electron Coulomb (+) or intervalley electron-phonon ((cid:4)) scat-
+tering as function of temperature T . It is noted that when
+T > 150 K, only the total SRT and the calculation without
+the intervalley electron-phonon scattering are shown since the
+remaining ones almost coincide with the total SRT. In the cal-
+culation, the electron density Ne = 3 × 1012 cm−2.
+
+To understand the behavior of the spin relaxation, we
+show in Fig. 1 the temperature dependence of the SRT
+calculated with the electron-electron Coulomb, electron-
+RI-phonon, electron-AC-phonon,
+long-range electron-
+impurity, or intervalley electron-phonon scattering re-
+moved, separately. We find that at low temperature,
+the intervalley electron-phonon scattering is negligible.
+Therefore, spins relax independently in the two val-
+leys and the SRT is solely determined by the intraval-
+ley spin relaxation channel. Specifically, the long-range
+electron-impurity scattering is dominant, which leads
+to a weak temperature dependence of the SRT.36,50
+With the increase of the temperature, the contribution
+of the long-range electron-impurity scattering becomes
+marginal whereas the intervalley electron-phonon scat-
+tering becomes important. This intervalley scattering
+opens another spin relaxation channel together with the
+Zeeman-like term with opposite effective magnetic fields
+in the two valleys, which is similar to the case in rippled
+single-layer graphene.50 This Zeeman-like term is given
+by µβ1(k) [Eq. (3)] approximately. Then the spin relax-
+ation due to the above intervalley spin relaxation channel
+can be approximated by the rate equations50
+
+Sµk(t) + Sµk(t) × ωµk +
+
+Sµk(t) − S−µk(t)
+
+τv(k)
+
+= 0,
+
+(13)
+
+where Sµk, ωµk = [µβ1(k)]z and τv(k) represent the in-
+plane spin vectors in each valley, spin precession vec-
+tor along the z-axis and the intervally electron-phonon
+
+scattering time, respectively. According to the report by
+Zhang et al.,50 the in-plane SRT is given by
+
+5
+
+τsx,y (k) =
+
+τv(k) weak scattering
+
+β1(k)2τv(k)
+
+2
+
+limit (β1(k)τv(k) ≥ 1)
+strong scattering
+limit (β1(k)τv(k) ≪ 1)
+
+(14)
+
+
+
+
+Here, τsy stands for the SRT along the y-axis. Since
+the system we investigate is always in the degenerate
+regime, we take τsx,y (k) ≈ τsx,y (kF ) approximately with
+kF representing the Fermi wave vector. In our calcula-
+tion, the SRT along the x-axis is solely determined by the
+intervalley electron-phonon scattering at T ∼ 100-400 K.
+At T = 100 K, β1(kF )τv(kF ) ≈ 160, i.e., the inter-
+valley electron-phonon scattering is in the weak scatter-
+ing limit. As a result, the SRT τsx = τv(kF ) according
+to Eq. (14), which decreases with the enhancement of
+the intervalley scattering as the temperature increases.
+Nevertheless, at T = 400 K, β1(kF )τv(kF ) ≈ 0.04, i.e.,
+the intervalley scattering is in the strong scattering limit.
+Then the SRT τsx = 2/[β1(kF )2τv(kF )] from Eq. (14),
+which increases with increasing of T . Therefore, the SRT
+first decreases then increases with increasing temperature
+when the intervalley scattering changes from the weak to
+strong scattering limit. The crossover between the weak
+and strong intervalley scattering limit is determined by
+τv(kF )−1 ≈ β1(kF ).50 At this crossover point,
+
+τsx ≈ β1(kF )−1.
+
+(15)
+Here τsx ≈ 315 ps, very close to the value 330 ps shown
+in the figure.
+It is noted that the electron-electron
+Coulomb scattering is unimportant in the whole temper-
+ature regime.
+
+2. Electron-density dependence of spin relaxation
+
+Then we turn to study the electron-density depen-
+dence.
+In Fig. 2, the SRT along the x-axis is plotted
+against the electron density at T = 100 (300) K. One ob-
+serves a peak in the electron-density dependence of the
+SRT at T = 100 K whereas the SRT increases with the
+increase of the electron density when T = 300 K. We
+first focus on the case at T = 100 K and show the SRT
+with the intervalley electron-phonon scattering excluded
+in Fig. 2. It is seen that when the electron density is low,
+the intervalley electron-phonon scattering is marginal.
+The SRT is then determined by the intravalley spin relax-
+ation channel and hence increases with the suppression
+of the inhomogeneous broadening71 as the electron den-
+sity increases.55 The suppression of the inhomogeneous
+broadening can be understood from the decrease of the
+spin splitting with increasing momentum at high momen-
+tum [see Eqs. (1-3)], as shown in Fig. 9 in Appendix A.
+This behavior is very different from the case in both semi-
+conductors and single-layer graphene.36,70 When the elec-
+tron density further increases, the intervalley electron-
+phonon scattering becomes important. This intervalley
+
+scattering is always in the weak scattering limit with
+β1(kF )τv(kF ) ≥ 40 and therefore τsx = τv(kF ) accord-
+ing to Eq. (14). As a result, the SRT decreases with the
+increase of the intervalley scattering and hence the in-
+crease of the electron density.50 Therefore, in the whole
+electron-density regime, a peak is observed. It is noted
+that this peak is very different from the one predicted
+by Jiang and Wu79 in semiconductors where the peak
+is attributed to the crossover from the nondegenerate-
+to-degenerate limit. As for the case at T = 300 K,
+the SRT is always dominated by the intervalley electron-
+phonon scattering as shown in Fig. 2 by comparing the
+SRT calculated with and without the intervalley electron-
+phonon scattering. Since this intervalley scattering is in
+the strong scattering limit with β1(kF )τv(kF ) ≤ 0.75,
+the SRT τsx = 2/[β1(kF )2τv(kF )] from Eq. (14). This
+SRT increases with increasing electron density since both
+β1(kF ) and the intervalley scattering time τv(kF ) de-
+crease with the increase of the electron density.50,55
+
+T=100 K total
+without intervalley e-p
+T=300 K total
+without intervalley e-p
+
+ 600
+
+ 400
+
+ 200
+
+)
+s
+n
+(
+ 
+
+x
+
+s
+
+τ
+
+×5
+
+ 0
+
+ 1.5
+
+ 2.5
+
+ 3.5
+
+ 4.5
+
+Ne (1012 cm-2)
+
+FIG. 2: (Color online) SRT along the x-axis τsx as function
+of the electron density Ne with × (◦) and without (cid:3) (N) the
+intervalley electron-phonon scattering at T = 100 (300) K.
+
+3.
+
+Influence of initial spin polarization
+
+The initial spin polarization dependences of the SRT
+along the x-axis at T = 100 and 300 K are shown
+in Fig. 3.
+It is seen that the SRT decreases rapidly
+with the increase of initial spin polarization P at T =
+100 K whereas the SRT shows a slight increase with in-
+creasing P at T = 300 K. The rapid decrease of the
+SRT at T = 100 K is very different from the previous
+studies in both semiconductors72,76,80,81 and single-layer
+graphene36 where the SRT increases significantly with in-
+creasing initial spin polarization. In the previous studies,
+the increase of the SRT originates from the contribution
+
+6
+
+103
+
+)
+s
+n
+(
+ 
+
+102
+
+x
+
+s
+
+τ
+
+101
+
+100
+
+ 0
+
+T=100 K total
+without intervalley e-p
+without HF
+T=300 K total
+without intervalley e-p
+without HF
+
+ 20
+
+ 40
+P (%)
+
+ 60
+
+ 80
+
+FIG. 3: (Color online) Total SRT along the x-axis τsx
+N (H)
+and the calculation without the Coulomb HF term ◦ (×) or
+the intervalley electron-phonon scattering • ((cid:3)) as function
+of the initial spin polarization P at T = 100 (300) K. In the
+calculation, the electron density Ne = 3 × 1012cm−2.
+
+of the Coulomb HF term.72 This term serves as an effec-
+tive magnetic field along the direction of the spin polar-
+ization, which blocks the spin precession induced by the
+Dresselhaus88 and/or Rashba89 SOCs and slows down
+the spin relaxation. However, the contribution of the
+Coulomb HF term is marginal to the spin relaxation in
+our investigation, which is shown in Fig. 3 by comparing
+the the SRT calculated with and without the Coulomb
+HF term. Here, the SRT is determined by the inter-
+valley electron-phonon scattering, as shown in Fig. 3 by
+comparing the calculation with and without the interval-
+ley electron-phonon scattering. The intervalley electron-
+phonon scattering transfers electrons between the two
+valleys. The transferred electrons experience opposite ef-
+fective magnetic fields induced by the Zeeman-like term
+in the two valleys, which are not affected by the effective
+magnetic field induced by the Coulomb HF term. More-
+over, the intervalley electron-phonon scattering is in the
+weak scattering limit at low temperature and hence the
+SRT τsx = τv(kF ) [see Eq. (14)]. The intervalley scatter-
+ing time τv(kF ) decreases significantly with the increase
+of the initial spin polarization as the density of states in-
+creases with the polarization. Therefore, the SRT shows
+a rapid decrease with the initial spin polarization at
+T = 100 K. As for the case of T = 300 K, the SRT is also
+determined by the intervalley electron-phonon scattering
+in comparison with the case of T = 100 K. However, in
+contrast to the case of T = 100 K, the intervalley scat-
+tering is in the strong scattering limit. This makes the
+SRT present an opposite trend to the case of T = 100 K.
+A mild increase of the SRT results from the insensitivity
+of τv(kF ) to the initial spin polarization at T = 300 K.
+
+7
+
+ 17
+
+ 12
+
+ 7
+
+ 2
+
+ 0
+
+ 100
+
+ 200
+
+ 300
+
+τ
+sxτ
+sz
+
+104
+
+102
+
+)
+s
+n
+(
+ 
+
+s
+
+τ
+
+100
+
+)
+
+2
+-
+
+m
+c
+ 
+
+2
+1
+
+0
+1
+(
+ 
+
+(a)
+
+i
+
+N
+
+Ref. 37
+
+103
+
+102
+
+)
+s
+n
+(
+ 
+
+s
+
+τ
+
+101
+
+100
+
+10-1
+
+ 50
+
+ 150
+
+ 250
+
+T (K)
+
+ 350
+
+FIG. 4: (Color online) SRT along the x (z)-axis τsx (τsz ) as
+function of temperature T . In the calculation, the electron
+density Ne = 3 × 1012 cm−2.
+
+4. Anisotropy of spin relaxation
+
+We also address the anisotropy of the spin relaxation
+with respect to the spin polarization direction. Due to
+the existence of the out-of-plane effective magnetic field
+[see Eq. (3)], the in-plane SRTs are identical.50 For com-
+parison, we plot the temperature dependence of the SRT
+along the x (z)-axis as the red curve with crosses (blue
+curve with open squares) in Fig. 4.
+It is seen that in
+comparison with the SRT along the z-axis, the one along
+the x-axis is comparable at low temperature and orders
+of magnitude smaller at high temperature. As men-
+tioned previously, the SRT along the x-axis is strongly
+suppressed by the intervalley spin relaxation channel in-
+duced by the intervalley electron-phonon scattering and
+the Zeeman-like term in the two valleys at high tem-
+perature. However, the contribution of this spin relax-
+ation channel to the SRT along the z-axis is marginal [see
+Eqs. (1-2)]. Therefore, a strong anisotropy between the
+out-of- and in-plane spin relaxations is observed at high
+temperature.
+
+B. Comparison with experiments
+
+As mentioned in the introduction, experiments on
+spin relaxation have been carried out in BLG on SiO2
+substrate37,38,66 or in freely suspended BLG68 very re-
+cently by different groups. The in-plane SRTs in these
+experiments are of the order of 0.01-1 ns, which are
+comparable to our theoretical results at high tempera-
+ture (several hundred picoseconds). This motivates us
+to carry out a detailed comparison with the existing ex-
+periments. In these experiments, the gate voltage, tem-
+
+10-2
+
+ 0
+
+Ref. 66
+
+Ref. 38
+
+Ref. 68
+
+ 100
+
+ 200
+
+ 300
+
+T (K)
+
+nd (1011 cm-2)
+
+ 0
+
+ 1
+
+ 2
+
+ 3
+
+ 4
+
+)
+s
+n
+(
+ 
+
+s
+
+τ
+
+102
+
+100
+
+10-2
+
+ 0
+
+)
+
+2
+-
+
+m
+c
+ 
+
+1
+1
+
+0
+1
+(
+ 
+
+d
+n
+
+ 15
+
+ 10
+
+ 5
+
+ 0
+
+ 0
+
+ 100
+
+ 200
+
+ 300
+
+(b)
+
+Ref. 37
+
+Ref. 66
+
+Ref. 38
+
+Ref. 68
+
+ 100
+
+ 200
+
+ 300
+
+T (K)
+
+FIG. 5: (Color online) In-plane SRT τs as function of tem-
+perature T . + (N) corresponds to the case of the gate
+voltage VCNP + 20 (60) V in the experiment of Han and
+Kawakami;37 × ((cid:3)) stands for the case of electron density
+Ne = 0.75 (1.5) × 1012 cm−2 in the experiment of Avsar et
+al.;38 H ((cid:4)) represents the case of Ne = 0.7 (2.2) × 1012 cm−2
+in the experiment of Yang et al.;66 △ denotes the case of
+Ne = 1011 cm−2 in the experiment of Neumann et al..68 (a)
+Red solid (orange chain) curve stands for our calculation cor-
+responding to the case of VCNP + 20 (60) V in the absence
+of the short-range scatterers. In the inset, we show the tem-
+perature dependence of the long-range impurity density Ni
+corresponding to the case of VCNP + 20 V. (b) Grey dashed
+and skyblue double-dotted chain curves are obtained from
+our calculations corresponding to the case of VCNP + 20 V by
+including the short-range scatterers, with a fixed short-range
+impurity density nd = 2×1010 cm−2 and a tunable nd (shown
+in the inset), respectively. We also show the dependence of τs
+on nd (with the scale on the top of the frame) at T = 50 K
+with other conditions the same as the case of VCNP + 20 V.
+The short-range potential strength V0 = 6 × 10−17 meV m2.
+
+perature and electron density90 (tuned by the gate volt-
+age) are given explicitly. However, some parameters such
+as the out-of-plane electric field and the impurity den-
+sity are not available in the experiments. In our calcu-
+lation, the out-of-plane electric field is taken to be the
+ratio of the gate voltage to the thickness of the substrate
+approximately.16,46 The impurity density is obtained by
+fitting to the mobility or the spin diffusion coefficient
+given in the experiments.91 In addition, we assume the
+initial spin polarization along the x-axis without loss of
+generality since the in-plane spin relaxations are identical
+as pointed out previously.
+
+We first compare the temperature dependence of the
+SRTs obtained from the experiments and calculation
+from our model.
+In these experiments, the mobilities
+are reported of the order of 102-104 cm2/(V s). The
+SRTs from different groups are comparable as shown
+in Fig. 5. However, the SRT from the experiment of
+Han and Kawakami37 decreases with increasing temper-
+ature whereas the ones from the experiments of Yang
+et al.66 and Avsar et al.38 show a marginal tempera-
+ture dependence. In addition, Han and Kawakami37 re-
+ported the longest SRT among these experiments, in-
+dicating that their experimental data may contain less
+extrinsic effects. Motivated by this, we show our com-
+parison with the experiment of Han and Kawakami37 in
+Fig. 5(a). The experimental data with the gate voltage
+VCNP + 20 (60) V corresponding to the electron density
+Ne = 1.47 (4.4) × 1012 cm−2, is labeled as + (N). By
+fitting to the spin diffusion coefficient given in the ex-
+periment, we obtain the long-range impurity density Ni
+shown in the inset as the curve with •. In contrast to
+the long-range impurity scattering, the contribution of
+other scatterings to the spin diffusion coefficient (mobil-
+ity) is marginal. Then we calculate the SRT correspond-
+ing to VCNP + 20 (60) V shown as the red solid (orange
+chain) curve. A crossover is observed in the tempera-
+ture dependence of the SRT, similar to the one shown
+in Sec. IIIA. It is seen that the SRT from our calcula-
+tion is comparable to the experimental data at high tem-
+perature. This suggests that the intervalley spin relax-
+ation channel induced by the intervalley electron-phonon
+scattering and the Zeeman-like term in the two valleys
+addressed in Sec. IIIA, plays an important role at high
+temperature. Nevertheless, the SRTs are still larger than
+the experimental data with an observable difference at
+high temperature. Additionally, at low temperature, our
+results are orders of magnitude larger than the experi-
+mental ones since the intervalley electron-phonon scat-
+tering is marginal at low temperature and the SRT is
+determined by the long-range electron-impurity scatter-
+ing in our calculation. Due to the existence of all these
+discrepancies, one has to take into account extrinsic ef-
+fects such as adatoms,24,42 -- 47 curvature,16,48 -- 50 substrate
+effects44,51,52 and also contacts.30,39,40,53 In the above
+experiments on BLG, the spin polarized electrons are
+all injected from ferromagnetic contacts.37,38,66,68 As re-
+ported, the ferromagnetic electrodes generate stray fields,
+
+8
+
+which cause spin precession around the contact.53 As a
+result, the stray fields may have a strong influence on
+the observed experimental results. Additionally, electron
+scattering by the tunneling contacts may also be respon-
+sible for the available experimental data.30,39,40
+
+In addition to the above extrinsic effects, the short-
+range scatterers may also be an extrinsic source.9,92,93
+Here, we discuss
+short-range
+scatterers9 in detail. The scattering term induced by the
+short-range scatterers is given by
+k†ψµ′
+ψµ
+
+∂t ρµkSR = −πndV 2
+
+k′2δ(ǫµ′k′ − ǫµk)
+
+the
+
+contribution of
+
+0 Xµ′k′
+
+× (ρµk − ρµ′k′ ) + H.c.,
+
+(16)
+
+with nd and V0 denoting the short-range impurity den-
+sity and the constant short-range potential strength,
+respectively.9 This scattering term contributes to both
+the intra- and inter-valley scatterings. The intervalley
+scattering opens an intervalley spin relaxation channel
+together with the Zeeman-like term in the two valleys [see
+Eq. (3)], similar to the intervalley electron-phonon scat-
+tering. However, in contrast to the intervalley electron-
+phonon scattering, the intervalley scattering induced by
+the short-range scatterers is insensitive to the tempera-
+ture and may play an important role in the in-plane spin
+relaxation especially at low temperature. Here, we choose
+a fixed short-range impurity density nd = 2 × 1010 cm−2
+and potential strength V0 = 6×10−17 meV m2. It is noted
+that although with this additional short-range scatter-
+ing included, the mobility is still dominated by the long-
+range electron-impurity scattering since the contribution
+of the long-range electron-impurity scattering is about
+four orders of magnitude larger than that of the short-
+range one. We calculate the temperature dependence
+of the SRT corresponding to the case of VCNP + 20 V
+in the experiment of Han and Kawakami37 by including
+the additional short-range scattering. The result is plot-
+ted as the grey dashed curve in Fig. 5(b). A crossover
+is also observed at high temperature due to the contri-
+bution of the intervalley electron-phonon scattering as
+pointed out previously. By comparing our calculation
+with the experimental data labeled as +, we find that our
+result becomes comparable at low temperature. Further-
+more, by fitting to the experimental data with tunable
+short-range impurity density shown as the curve with ◦ in
+the inset, our result labeled as the skyblue double-dotted
+chain curve agrees fairly well with the experimental data
+in the temperature regime lower than the crossover. As
+for the temperature higher than the crossover, our result
+becomes even larger than the experimental one once the
+short-range scattering is included. This is because that
+the intervalley electron-phonon scattering is in the strong
+scattering limit. With the inclusion of the short-range
+scattering, the intervalley scattering becomes stronger
+and the SRT becomes larger. This discrepancy may be
+attributed to other extrinsic effects.
+
+As mentioned above, the SRT can be tuned by the
+short-range impurity density. We show the short-range
+
+impurity density dependence of the in-plane SRT at
+T = 50 K as the purple dotted curve in Fig. 5(b), with
+all other conditions remaining the same as the case of
+VCNP + 20 V. A valley is also observed, similar to the
+case of the temperature dependence discussed above. At
+low temperature, the intervalley electron-phonon scat-
+tering is negligible. The SRT is then determined by the
+intervalley short-range scattering. The valley originates
+from the crossover between the weak and strong inter-
+valley short-range scattering limit by tuning the short-
+range impurity density. At the crossover point, the SRT
+τs ≈ 232 ps according to Eq. (15), close to the value
+252 ps shown in the figure. This crossover point gives the
+minimum of the SRT and can be taken as a criterion for
+determining the possible contribution of the short-range
+scattering. Specifically, the crossover point τs ≈ 316,
+258, 232, 283, and 249 ps corresponding to the case of
+the experimental data shown as N, ×, (cid:3), H and (cid:4), re-
+spectively. We find that both the experimental data of
+Han and Kawakami37 and Avsar et al.38 are larger than
+the crossover point whereas the one of Yang et al.66 is
+smaller. This suggests the experimental data of Han and
+Kawakami37 and Avsar et al.38 can be explained by the
+short-range scatterers. As for the experiment of Yang et
+al.,66 some other extrinsic effects have to be considered.
+
+101
+
+100
+
+)
+s
+n
+(
+ 
+
+s
+
+τ
+
+10-1
+
+Avsar et al.38
+
+HK37
+
+Yang et al.66
+
+ 0
+
+ 1
+
+ 3
+
+ 2
+Ne (1012 cm-2)
+
+ 4
+
+ 5
+
+FIG. 6: (Color online) In-plane SRT τs as function of electron
+density. The dotted curves with symbols correspond to the
+experimental data of Han and Kawakami (HK)37 at T = 20 K
+and Avsar et al.38 and Yang et al.66 at T = 5 K. The solid
+curves with symbols correspond to the experimental data at
+room temperature of Han and Kawakami,37 Avsar et al.38 and
+Yang et al..66 Red solid (blue chain) curve is from our calcu-
+lation corresponding to the case of room (low) temperature in
+the experiment of Han and Kawakami.37 It is noted that the
+blue chain curve is calculated with the short-range scatterers
+with the short-range impurity density nd = 1010 cm−2 and
+potential strength V0 = 6 × 10−17 meV m2.
+
+Then we turn to compare the electron density depen-
+dence of the SRTs from the experiments and our calcu-
+
+9
+
+lation. Among the experiments, Han and Kawakami37
+measured the longest SRT at low temperature (up to
+several nanoseconds) shown as the dotted curve with N
+in Fig. 6. This SRT is about one order of magnitude
+larger than the ones from other experimental cases. In
+addition, the SRTs from the experiments show different
+dependences on electron density. Specifically, at low tem-
+perature, both Avsar et al.38 and Yang et al.66 show a
+decrease of the SRT with the increase of the electron
+density whereas a mild peak is observed by Han and
+Kawakami.37 At room temperature, the SRTs from Avsar
+et al.38 and Yang et al.66 increase with increasing elec-
+tron density whereas Han and Kawakami37 reported an
+insensitive density dependence of the SRT.
+
+We first show our comparison with the experimen-
+tal data at low temperature. As shown in Fig. 5(a),
+our result is orders of magnitude larger than the ex-
+perimental data of Han and Kawakami37 at low tem-
+perature without short-range impurities. However, with
+the inclusion of the short-range scatterers, our result
+shows good agreement with the experimental data. Here,
+with the short-range scatterers explicitly included, we
+also show our comparison with the experimental data
+of Han and Kawakami.37 With a fixed short-range im-
+purity density nd = 1010 cm−2 and potential strength
+V0 = 6 × 10−17 meV m2, the electron density depen-
+dence of the SRT from our calculation is shown as blue
+chain curve in Fig. 6. We find that our result marginally
+agrees with the experimental data shown as the dotted
+curve with N. Better agreement can be obtained with
+tunable short-range impurity density.
+In addition, we
+also find that the experimental data of Avsar et al.38 can
+be explained by the short-range scatterers. However, to
+account for the experimental data of Yang et al.,66 one
+has to include other extrinsic effects. This is because the
+SRT of Yang et al.66 is smaller than the crossover point in
+the short-range impurity density dependence of the SRT
+(230-320 ps), which is taken as a criterion for the possible
+contribution of the short-range scattering as mentioned
+previously.
+
+We then address our comparison with the experimen-
+tal data at room temperature. As shown in Fig. 5(a),
+our result is larger than the experimental data of Han
+and Kawakami37 with an observable difference at room
+temperature without short-range impurities. With the
+short-range scatterers included, the SRT from our calcu-
+lation becomes even larger than the experimental data
+as mentioned previously, indicating that other extrinsic
+effects have to be taken into account. Here, we show our
+comparison with the experiment of Han and Kawakami37
+without extrinsic effects. The experimental data and our
+result are shown as the solid curve with • and the red
+solid curve in Fig. 6, respectively. We find that the SRT
+in our calculation is about three times as large as the
+experimental one in low electron density regime and one
+order of magnitude larger than the experimental one in
+high density regime.
+
+IV. SUMMARY
+
+In summary, we have investigated the electron spin re-
+laxation due to the DP mechanism in BLG with only
+the lowest conduction band being relevant. The SOC
+of the lowest conduction band is constructed from the
+symmetry group analysis with the parameters obtained
+by fitting to the numerical calculation according to the
+latest report by Konschuh et al.55 from first principles
+with both the intrinsic and extrinsic SOC terms in the
+pseudospin space included. We find that the magni-
+tudes of both the out-of- and in-plane components of
+the SOC decrease with increasing momentum at large
+momentum, indicating a suppression of the inhomoge-
+neous broadening with the increase of the momentum.
+This is different from the case in both semiconductors
+and single-layer graphene. Additionally, the leading term
+of the out-of-plane component of the SOC serves as a
+Zeeman-like term with opposite effective magnetic fields
+in the two valleys, which is similar to the case in rip-
+pled single-layer graphene. This Zeeman-like term, to-
+gether with the intervalley electron-phonon and/or pos-
+sible intervalley short-range scatterings, opens an inter-
+valley spin relaxation channel, which has not been re-
+ported in the literature in BLG. The intervalley electron-
+phonon scattering is derived by using the tight-binding
+model.
+In addition to the intervalley electron-phonon
+and short-range scatterings, we also include the long-
+range electron-impurity, electron-electron Coulomb and
+intravalley electron-phonon scatterings to calculate the
+SRT. We find that the in-plane SRT is strongly sup-
+pressed by the intervalley electron-phonon scattering at
+high temperature. In contrast to the intervalley electron-
+phonon scattering, the intervalley short-range scattering
+is insensitive to the temperature and plays an important
+role in the in-plane spin relaxation especially at low tem-
+perature.
+
+In the absence of short-range scatterers, a marked non-
+monotonic temperature dependence of the in-plane SRT
+is predicted with a minimum SRT down to several hun-
+dred picoseconds. This nonmonotonic behavior origi-
+nates from the crossover between the weak and strong in-
+tervalley electron-phonon scattering. Moreover, we pre-
+dict a peak in the electron density dependence of the
+in-plane SRT at low temperature, which is very different
+from the one in semiconductors. At high temperature,
+the in-plane SRT increases monotonically with increas-
+ing density. We also find that the in-plane SRT decreases
+rapidly with the increase of the initial spin polarization at
+low temperature. This is very different from the previous
+studies in both semiconductors and single-layer graphene
+where the SRT increases significantly with increasing ini-
+tial spin polarization. The physics is understood that
+the spin relaxation time is determined by the interval-
+ley electron-phonon scattering, which transfers electrons
+between the two valleys. The transferred electrons expe-
+rience opposite effective magnetic fields in the two val-
+leys, which are not affected by the Coulomb HF term.
+
+10
+
+In addition, a strong anisotropy between the out-of- and
+in-plane spin relaxations is also addressed at high temper-
+ature where the out-of-plane SRT is about two orders of
+magnitude larger than the in-plane one. As for low tem-
+perature, the out-of- and in-plane spin relaxation times
+are comparable.
+
+We also show our comparison with the existing exper-
+iments of Han and Kawakami,37 Avsar et al.38 and Yang
+et al..66 We find that without intervalley scattering, the
+SRT is orders of magnitude larger than the experimental
+data in the whole temperature regime. With the inter-
+valley electron-phonon scattering explicitly included, the
+SRT from our calculation becomes comparable to the ex-
+perimental data at high temperature but still orders of
+magnitude larger than the experimental data at low tem-
+perature. In addition, a crossover in the temperature de-
+pendence of the in-plane SRT is shown, which also results
+from the crossover between the weak and strong interval-
+ley electron-phonon scattering. With the inclusion of the
+short-range scatterers, our result agrees fairly well with
+the experimental data in the temperature regime lower
+than the crossover. As for the temperature higher than
+the crossover, other extrinsic effects have to be included.
+Moreover, a crossover point is also shown in the short-
+range impurity density dependence of the in-plane SRT,
+which gives a minimum for determining the possible con-
+tribution of the short-range scattering. The experimental
+SRT larger than the minimum can be explained by the
+possible short-range scatterers whereas other extrinsic ef-
+fects have to be considered for experimental data smaller
+than the minimum.
+
+Acknowledgments
+
+This work was
+
+supported by the National Ba-
+sic Research Program of China under Grant No.
+2012CB922002 and the Strategic Priority Research Pro-
+gram of the Chinese Academy of Sciences under Grant
+No. XDB01000000. One of the authors (L.W.) would like
+to thank B. Y. Sun for double checking the derivation of
+the electron-phonon scattering matrix elements.
+
+Appendix A: SOC OF THE LOWEST
+
+CONDUCTION BAND
+
+The SOC term of the lowest conduction band near the
+
+Dirac points can be described by a 2 × 2 matrix
+
+H SO
+
+effµ = (cid:18) H SO
+
+µ11 H SO
+µ22 (cid:19)
+µ12
+∗ H SO
+H SO
+µ12
+
+(A1)
+
+ks = ψµ
+
+i (k)Ψµ
+
+in the basis ψµ
+
+k =
+Pi cµ
+i (k) (i = A1, B1, A2, B2). The coefficients
+cµ
+i (k) can be obtained by exactly diagonalizing the 4 × 4
+
+k ⊗ si where s = {↑,↓} and ψµ
+
+ 3500
+
+ 2500
+
+ 1500
+
+ 500
+
+-500
+
+j1
+α
+
+j=1
+2
+3
+4
+5
+
+×10
+
+×10
+
+(a)
+
+×5
+
+-1500
+
+ 0.04
+
+ 0.09
+
+ 0.14
+
+ 0.19
+Ez (V/nm)
+
+ 0.24
+
+ 0.29
+
+ 3000
+
+ 2000
+
+ 1000
+
+j2
+α
+
+ 0
+
+-1000
+
+-2000
+
+-3000
+
+×10
+
+×10
+
+×10
+
+j=1
+2
+3
+4
+5
+
+(b)
+
+ 0.04
+
+ 0.09
+
+ 0.14
+
+ 0.19
+Ez (V/nm)
+
+ 0.24
+
+ 0.29
+
+ 800
+
+ 500
+
+ 200
+
+×0.1
+
+j=1
+2
+3
+4
+5
+
+j3
+α
+
+-100
+
+×10
+
+-400
+
+-700
+
+-1000
+
+×10
+
+(c)
+
+ 0.04
+
+ 0.09
+
+ 0.14
+
+ 0.19
+Ez (V/nm)
+
+ 0.24
+
+ 0.29
+
+FIG. 7: (Color online) (a) αj
+3 as function
+of the out-of-plane electric field Ez with j = 1-5. It is noted
+that α1
+
+i (i = 1-3) are dimensionless.
+
+2 and (c) αj
+
+1, (b) αj
+
+i and α5
+
+i , α4
+
+i , α2
+
+i , α3
+
+effective Hamiltonian given in Eq. (5). Here,
+
+H SO
+
+H SO
+
+µ11 = Xi,j
+µ22 = Xi,j
+µ12 = Xi,j
+
+H SO
+
+i ∗(k)cµ
+cµ
+
+i ∗(k)cµ
+cµ
+
+i ∗(k)cµ
+cµ
+
+j,↑i,
+
+j,↓i,
+
+j (k)hΨµ
+j (k)hΨµ
+j (k)hΨµ
+
+i,↑HSOΨµ
+i,↓HSOΨµ
+i,↑HSOΨµ
+
+j,↓i,
+
+(A2)
+
+(A3)
+
+(A4)
+
+11
+
+i,s1HSOΨµ
+
+with hΨµ
+j,s2i (s1,2 = {↑,↓}) being the spin-
+orbit matrix elements near the Dirac points in the pseu-
+dospin space given by Konschuh et al..55 Specifically,
+µ11 = µλI1(cµ
+H SO
+H SO
+µ22 = −H SO
+µ11
+µ + 1
+H SO
+µ12 =
+
+22) + µλI2(cµ
+
+32 − cµ
+
+12 − cµ
+
+3 (iλ4) + cµ
+
+1 ∗cµ
+[cµ
+
+42)
+
+2 ∗cµ
+
+(A5)
+
+2
+3 ∗cµ
+1 ∗cµ
+3 ∗cµ
+
++ cµ
+
++ cµ
++ cµ
+
+2 (−iλ3) + cµ
+2 (−iλ0) + cµ
+4 (iλ′0)].
+
+4 ∗cµ
+4 ∗cµ
+
+2 ∗cµ
+
+1 (−iλ0) + cµ
+µ − 1
+3 ∗cµ
+[cµ
+3 (iλ′0)] +
+2
+2 ∗cµ
+2 (−iλ′4) + cµ
+3 (−iλ3)
+
+(A6)
+4 (−iλ′4)
+1 (iλ4)
+
+(A7)
+
+λI1 and λI2 are the strengths of single-layer-like intrinsic
+SOC; λ0 and λ′0 represent single-layer-like extrinsic spin-
+orbit strengths; λ3, λ4 and λ′4 stand for interlayer spin-
+orbit parameters.55 Then the effective magnetic field of
+the SOC Ωµ(k) in Eq. (6) is given by Ωµ
+x(k) = 2ReH SO
+µ12,
+Ωµ
+z (k) = 2H SO
+y (k) = −2ImH SO
+µ11. It is noted that
+the contribution of other energy bands to the SOC of the
+lowest conduction band is marginal in our calculation.
+
+µ12 and Ωµ
+
+As reported by Konschuh et al.,55 the small group of
+the Dirac points is C3 in the presence of an out-of-plane
+electric field. Following from the symmetry group C3,78
+we derive an analytical form of the SOC near the Dirac
+points [see Eqs. (1-3)].
+In these equations, the coeffi-
+cients αi(k) (i = 1-3) and βi(k) (i = 1-2) are obtained by
+fitting to the numerical calculation from Eqs. (A5) and
+(A7) using the Pad´e approximation.94 Specifically, the
+coefficients αi(k) (i = 1-3) in Eqs. (1-2) read
+
+αi(k) = λI1ak
+
+α1
+i + α2
+1 + α4
+
+i ak + α3
+i ak + α5
+
+i a2k2
+i a2k2 .
+
+(A8)
+
+β1(k) = β0
+
+1 + λI1ak
+
+β2(k) = λI1ak
+
+β1
+1 + β2
+1ak
+1ak + β4
+1 + β3
+2 + β2
+β1
+2 ak
+1 + β3
+2ak + β4
+
+2a2k2 .
+
+1a2k2 ,
+
+(A9)
+
+(A10)
+
+i (i = 1-3, j = 1-5) and βj
+
+Here, the coefficient β0
+1 = −24 µeV, which is indepen-
+dent of the applied electric field. The electric field de-
+pendences of αj
+i (i = 1-2,
+j = 1-4) are plotted in Figs. 7 and 8, respectively. It is
+noted that the Pad´e approximation94 can give a precise
+description of αi(k) (i = 1-3) and βi(k) (i = 1-2) at large
+momenta near the Dirac points, which can be populated
+and play an important role in spin relaxation according
+to the experimental conditions (heavily doped).37,38,66,68
+With only a simple linear k-order approximation, αi(k)
+and βi(k) agree with the numerical results only at very
+small momentum near the Dirac points.
+
+We also show in Fig. 9 the spin splitting of the lowest
+conduction band calculated with analytical form of the
+SOC (blue dashed curve) and with the explicit numer-
+ical one (red solid curve). We find that the analytical
+
+×10
+
+The coefficients βi(k) (i = 1-2) in Eq. (3) are given by
+
+ 5000
+
+ 4000
+
+ 3000
+
+j1
+β
+
+ 2000
+
+ 1000
+
+ 0
+
+-1000
+
+(a)
+
+j=1
+2
+3
+4
+
+×10
+
+×10
+
+ 0.04
+
+ 0.09
+
+ 0.14
+
+ 0.19
+Ez (V/nm)
+
+ 0.24
+
+ 0.29
+
+×10
+
+(b)
+
+×5
+
+ 500
+
+ 200
+
+-100
+
+-400
+
+-700
+
+j2
+β
+
+×0.1
+
+j=1
+2
+3
+4
+
+-1000
+
+ 0.04
+
+ 0.09
+
+ 0.14
+
+ 0.19
+Ez (V/nm)
+
+ 0.24
+
+ 0.29
+
+FIG. 8: (Color online) (a) βj
+2 as function of the
+out-of-plane electric field Ez with j = 1-4. It is noted that
+β1
+i , β2
+
+i (i = 1, 2) are dimensionless.
+
+1 and (b) βj
+
+i and β4
+
+i , β3
+
+result agrees fairly well with the numerical one at large
+momentum.
+In addition, the spin splitting decreases
+with increasing momentum at large momentum, which
+is very different from the case in both semiconductors70
+and single-layer graphene.36
+
+Appendix B: SCATTERING MATRIX ELEMENTS
+
+The electron-electron Coulomb scattering matrix ele-
+ment is given by V µ
+k,k−q2. The screened Coulomb po-
+k,k−q = V (0)
+tential V µ
+q /ε(q, ǫµk − ǫµk−q) with ε(q, ǫµk −
+ǫµk−q) = 1 − V (0)
+q Π(q, ǫµk − ǫµk−q) being the screen-
+ing under the random phase approximation.95 V (0)
+q =
+2πvFrs/q is the two-dimensional bare Coulomb poten-
+tial with vF and rs being the Fermi velocity in single-
+layer graphene87 and the dimensionless Wigner-Seitz
+
+12
+
+)
+
+V
+e
+µ
+(
+ 
+
+E
+∆
+
+ 25
+
+ 20
+
+ 15
+
+ 10
+
+ 5
+
+ 0
+
+-20
+
+-10
+
+ 0
+
+kx/K × 10-3
+
+ 10
+
+ 20
+
+FIG. 9: (Color online) Spin splitting of the lowest conduc-
+tion band ∆E near the K point as function of the momen-
+tum kx under a typical electric field Ez = 0.14 V/nm. Solid
+(dashed) curve represents the numerical (analytical) result.
+K = 4π/(3a).
+
+radius,96 -- 98 respectively. Π(q, ω) is given by36,99 -- 101
+
+ks − f µν′
+f µν
+
+k+qs
+
+k †ψµν′
+
+T µνν′
+kk+q2
+
+kk+q = ψµν
+
+ǫµνk − ǫµν′k+q + ω + i0+ ,(B1)
+
+Π(q, ω) = Xµkνν′s
+where T µνν′
+k+q. The long-range electron-
+U µ
+k,k−q2 =
+impurity scattering matrix element
+i V µ
+Z 2
+k,k−q2e−2qd, in which Zi and d stand for the im-
+purity charge number and effective distance of the im-
+purity layer to the BLG sheet.44,96 -- 98,102 It is noted
+that when we calculate the electron-electron Coulomb
+and long-range electron-impurity scatterings, we take
+the distance between the graphene layers to be zero
+approximately.103 It is further noted that the Coulomb
+potential in the HF term is in the static screening limit,
+i.e., V µ
+
+q /ε(q, 0).
+
+Then we turn to the electron-phonon scattering ma-
+trix elements. For the intravalley electron-AC-phonon
+scattering, the scattering matrix element M AC
+µk,µ′k′2 =
+kk′ δµµ′ where q = k − k′; DAC and
+D2
+vph represent the deformation potential64 and acoustic
+phonon velocity,104,105 respectively.
+
+q/(2ρvph)I µ
+
+AC
+
+k,k−q = V (0)
+
+F
+
+a
+
+e−2qd
+q+qs
+
+√32v2
+
+the intravalley electron-RI-phonon scattering,
+For
+I µ
+M RI
+µk,µ′k′2 = g
+kk′ δµµ′ with qs = 4rskF be-
+ing the Thomas-Fermi screening length.99 For SiO2 sub-
+strate, the energy spectra of the two remote phonon
+modes are denoted as ωRI
+2 , respectively; g1
+1
+and g2 are the corresponding dimensionless coupling
+parameters.102
+
+and ωRI
+
+The matrix elements for the intravalley electron-OP-
+phonon scattering (M OP
+µk,µ′k′2) are derived using the
+tight-binding model according to the arXiv version of
+Ref. 63. The intravalley electron-OP-phonon scattering
+
+includes both the electron in-plane (M LT
+µk,µ′k′2) and out-
+of-plane (M ZO
+µk,µ′k′2) OP phonon scatterings. The elec-
+tron in-plane OP phonon scattering matrix element is
+given by
+
+M LT
+
+92
+
+k†[γ′0(sin θqσ23
+
+D + cos θqσ13
+D )
+
+δµµ′nψµ
+D − i sin θqγ2
+k′2 + ψµ
+D − sin θqγ3
+
+k
+
+D − sin θqσ13
+
+2ρΩLT
+Dγ5
+
+µk,µ′k′2 =
+− aγ′3(sin θqγ1
+D)/(2√3l3)]ψµ
+Dγ5
+× γ2
+× σ02
+D ) + aγ′4(i cos θqγ3
++ ψµ
+− i cos θqγ2
++ ψµ
++ cos θqγ5
+
+D − i sin θqγ1
+D)/(√3l4)]ψµ
+
+k†[iγ′0(cos θqσ01
+
+†[γ′0(cos θqσ23
+
+k
+
+D + sin θqσ02
+
+D − sin θqγ2
+
+Dγ5
+
+D + i cos θqγ1
+†[iγ′0(sin θqσ01
+
+D + cos θq
+D − cos θq
+D)/(√3l4)]ψµ
+k′2
+Dγ5
+D ) − aγ′3(cos θqγ1
+D
+D)/(2√3l3)]ψµ
+k′2
+D(i sin θq
+
+D ) − aγ′4γ3
+
+Dγ5
+
+(B2)
+
+k′2o,
+
+where ΩLT is the energy of the in-plane OP phonon
+modes;83,84 l3 is the bond length corresponding to the
+interlayer hopping γ3; and σ02
+D are 4 × 4 Dirac
+matrices given in Appendix C.86 Here, θq is the polar
+angle of the momentum q. The electron out-of-plane OP
+phonon scattering matrix element reads
+
+D and σ13
+
+M ZO
+
+µk,µ′k′2 =
+
+2
+
+2γ′1
+2ρΩZO
+
+δµµ′ψµ
+
+k†(γ1
+
+Dγ5
+
+D + iγ2
+
+D)ψµ
+
+k′2,
+
+with ΩZO being the energy of the out-of-plane OP phonon
+mode.64
+
+13
+
+Appendix C: RELEVANT DIRAC MATRICES
+
+The relevant Dirac matrices86 used in the electron-
+
+phonon scattering are
+
+γ0
+
+D = (cid:18) 0 I
+
+I 0 (cid:19) ,
+
+γ5
+
+D = (cid:18) −I 0
+
+I (cid:19) ,
+
+0
+
+(C1)
+
+σ01
+
+0
+
+D = −i(cid:18) σx
+D = −i(cid:18) σy
+
+0 −σx (cid:19) , σ13
+0 −σy (cid:19) , σ23
+
+0
+
+0 σy (cid:19) , (C2)
+D = −(cid:18) σy 0
+0 σx (cid:19) ,
+D = (cid:18) σx 0
+
+(C3)
+
+σ02
+
+γi
+
+D = (cid:18) 0
+
+−σi 0 (cid:19) (i = 1-3),
+
+σi
+
+(C4)
+
+(B3)
+
+with I being 2 × 2 unit matrix.
+
+∗ Author to whom correspondence should be addressed;
+
+Electronic address: mwwu@ustc.edu.cn.
+
+1 K. S. Novoselov, A. K. Geim, S. V. Morozov, D. Jiang, Y.
+Zhang, S. V. Dubonos, I. V. Grigorieva, and A. A. Firsov,
+Science 306, 666 (2004).
+
+2 A. K. Geim and K. S. Novoselov, Nature Mater. 6, 183
+
+(2007).
+
+3 N. Tombros, C. Jozsa, M. Popinciuc, H. T. Jonkman, and
+
+B. J. van Wees, Nature (London) 448, 571 (2007).
+
+4 F. Wang, Y. Zhang, C. Tian, C. Girit, A. Zettl, M. Crom-
+
+mie, and Y. Ron Shen, Science 320, 206 (2008).
+
+5 C. W. J. Beenakker, Rev. Mod. Phys. 80, 1337 (2008).
+6 A. H. Castro Neto, F. Guinea, N. M. R. Peres, K. S.
+Novoselov, and A. K. Geim, Rev. Mod. Phys. 81, 109
+(2009).
+
+7 N. M. R. Peres, Rev. Mod. Phys. 82, 2673 (2010).
+8 D. S. L. Abergel, V. Apalkov, J. Berashevich, K. Ziegler,
+
+and T. Chakraborty, Adv. Phys. 59, 261 (2010).
+
+9 S. Das Sarma, S. Adam, E. H. Hwang, and E. Rossi, Rev.
+
+Mod. Phys. 83, 407 (2011).
+
+burger, E. Whiteway, and V. Yu, ISRN Condensed Matter
+Physics 2012, 501686 (2012).
+
+15 C. L. Kane and E. J. Mele, Phys. Rev. Lett. 95, 226801
+
+(2005).
+
+16 D. Huertas-Hernando, F. Guinea, and A. Brataas, Phys.
+
+Rev. B 74, 155426 (2006).
+
+17 H. Min, J. E. Hill, N. A. Sinitsyn, B. R. Sahu, L. Klein-
+man, and A. H. MacDonald, Phys. Rev. B 74, 165310
+(2006).
+
+18 Y. Yao, F. Ye, X.-L. Qi, S.-C. Zhang, and Z. Fang, Phys.
+
+Rev. B 75, 041401(R) (2007).
+
+19 J. C. Boettger and S. B. Trickey, Phys. Rev. B 75,
+
+121402(R) (2007).
+
+20 B. Trauzettel, D. V. Bulaev, D. Loss, and G. Burkard,
+
+Nature Phys. 3, 192 (2007).
+
+21 J. Fischer, B. Trauzettel, and D. Loss, Phys. Rev. B 80,
+
+155401 (2009).
+
+22 M. Gmitra, S. Konschuh, C. Ertler, C. Ambrosch-Draxl,
+
+and J. Fabian, Phys. Rev. B 80, 235431 (2009).
+
+23 D. Huertas-Hernando, F. Guinea, and A. Brataas, Phys.
+
+10 M. Acik and Y. J. Chabal, Jpn. J. Appl. Phys. 50, 070101
+
+Rev. Lett. 103, 146801 (2009).
+
+(2011).
+
+11 A. K. Geim, Rev. Mod. Phys. 83, 851 (2011).
+12 M. O. Goerbig, Rev. Mod. Phys. 83, 1193 (2011).
+13 V. N. Kotov, B. Uchoa, V. M. Pereira, F. Guinea, and A.
+
+H. Castro Neto, Rev. Mod. Phys. 84, 1067 (2012).
+
+14 D. R. Cooper, B. D'Anjou, N. Ghattamaneni, B. Harack,
+M. Hilke, A. Horth, N. Majlis, M. Massicotte, L. Vands-
+
+24 S. Abdelouahed, A. Ernst, J. Henk, I. V. Maznichenko,
+
+and I. Mertig, Phys. Rev. B 82, 125424 (2010).
+
+25 S. Konschuh, M. Gmitra, and J. Fabian, Phys. Rev. B 82,
+
+245412 (2010).
+
+26 S. Cho, Y.-F. Chen, and M. S. Fuhrer, Appl. Phys. Lett.
+
+91, 123105 (2007).
+
+27 C. J´ozsa, M. Popinciuc, N. Tombros, H. T. Jonkman, and
+
+B. J. van Wees, Phys. Rev. Lett. 100, 236603 (2008).
+
+28 N. Tombros, S. Tanabe, A. Veligura, C. J´ozsa, M. Popin-
+ciuc, H. T. Jonkman, and B. J. van Wees, Phys. Rev.
+Lett. 101, 046601 (2008).
+
+29 C. J´ozsa, T. Maassen, M. Popinciuc, P. J. Zomer, A.
+Veligura, H. T. Jonkman, and B. J. van Wees, Phys. Rev.
+B 80, 241403(R) (2009).
+
+30 M. Popinciuc, C. J´ozsa, P. J. Zomer, N. Tombros, A.
+Veligura, H. T. Jonkman, and B. J. van Wees, Phys. Rev.
+B 80, 214427 (2009).
+
+31 W. Han, K. Pi, W. Bao, K. M. McCreary, Y. Li, W. H.
+Wang, C. N. Lau, and R. K. Kawakami, Appl. Phys. Lett.
+94, 222109 (2009).
+
+32 W. Han, W. H. Wang, K. Pi, K. M. McCreary, W. Bao,
+Y. Li, F. Miao, C. N. Lau, and R. K. Kawakami, Phys.
+Rev. Lett. 102, 137205 (2009).
+
+33 M. Shiraishi, M. Ohishi, R. Nouchi, N. Mitoma, T.
+Nozaki, T. Shinjo, and Y. Suzuki, Adv. Funct. Mater.
+19, 3711 (2009).
+
+34 K. Pi, W. Han, K. M. McCreary, A. G. Swartz, Y. Li, and
+
+R. K. Kawakami, Phys. Rev. Lett. 104, 187201 (2010).
+
+35 W. Han, K. Pi, K. M. McCreary, Y. Li, J. J. I. Wong, A.
+G. Swartz, and R. K. Kawakami, Phys. Rev. Lett. 105,
+167202 (2010).
+
+36 Y. Zhou and M. W. Wu, Phys. Rev. B 82, 085304 (2010).
+37 W. Han and R. K. Kawakami, Phys. Rev. Lett. 107,
+
+047207 (2011).
+
+38 A. Avsar, T.-Y. Yang, S. Bae, J. Balakrishnan, F. Volmer,
+M. Jaiswal, Z. Yi, S. R. Ali, G. Guntherodt, B. H. Hong,
+B. Beschoten, and B. Ozyilmaz, Nano Lett. 11, 2363
+(2011).
+
+39 W. Han, K. M. McCreary, K. Pi, W. H. Wang, Y. Li, H.
+Wen, J. R. Chen, and R. K. Kawakami, J. Magn. Magn.
+Mater. 324, 369 (2012).
+
+40 T. Maassen, I. J. Vera-Marun, M. H. D. Guimaraes, and
+
+B. J. van Wees, Phys. Rev. B 86, 235408 (2012).
+
+14
+
+Rev. B 85, 115423 (2012).
+
+56 E. McCann and M. Koshino, Rep. Prog. Phys. 76, 056503
+
+(2013).
+
+57 A. Korm´anyos and G. Burkard, Phys. Rev. B 87, 045419
+
+(2013).
+
+58 H. Min, B. Sahu, S. K. Banerjee, and A. H. MacDonald,
+
+Phys. Rev. B 75, 155115 (2007).
+
+59 E. V. Castro, K. S. Novoselov, S. V. Morozov, N. M. R.
+Peres, J. M. B. Lopes dos Santos, J. Nilsson, F. Guinea,
+A. K. Geim, and A. H. Castro Neto, Phys. Rev. Lett. 99,
+216802 (2007).
+
+60 Y. Zhang, T.-T. Tang, C. Girit, Z. Hao, M. C. Martin, A.
+Zettl, M. F. Crommie, Y. R. Shen, and F. Wang, Nature
+(London) 459, 820 (2009).
+
+61 J. Nilsson, A. H. Castro Neto, F. Guinea, and N. M. R.
+
+Peres, Phys. Rev. B 78, 045405 (2008).
+
+62 E. McCann, arXiv:1205.4849.
+63 J. K. Viljas and T. T. Heikkila, Phys. Rev. B 81, 245404
+(2010). Its arXiv version arXiv:1002.3502 contains more
+detailed information.
+
+64 K. M. Borysenko, J. T. Mullen, X. Li, Y. G. Semenov,
+J. M. Zavada, M. Buongiorno Nardelli, and K. W. Kim,
+Phys. Rev. B 83, 161402(R) (2011).
+
+65 E. Cappelluti and G. Profeta, Phys. Rev. B 85, 205436
+
+(2012).
+
+66 T.-Y. Yang, J. Balakrishnan, F. Volmer, A. Avsar, M.
+Jaiswal, J. Samm, S. R. Ali, A. Pachoud, M. Zeng,
+M. Popinciuc, G. Guntherodt, B. Beschoten, and B.
+Ozyilmaz, Phys. Rev. Lett. 107, 047206 (2011).
+
+67 M. Diez and G. Burkard, Phys. Rev. B 85, 195412 (2012).
+68 I. Neumann, J. Van de Vondel, G. Bridoux, M. V.
+Costache, F. Alzina, C. M. S. Torres, and S. O. Valen-
+zuela, Small 9, 156 (2013).
+
+69 M. I. D'yakonov and V. I. Perel', Zh. Eksp. Teor. Fiz. 60,
+
+1954 (1971) [Sov. Phys. JETP 33, 1053 (1971)].
+
+70 M. W. Wu, J. H. Jiang, and M. Q. Weng, Phys. Rep. 493,
+
+41 M. Wojtaszek, I. J. Vera-Marun, T. Maassen, and B. J.
+
+61 (2010).
+
+van Wees, Phys. Rev. B 87, 081402(R) (2013).
+
+42 A. Varykhalov, J. S. Barriga, A. M. Shikin, C. Biswas, E.
+Vescovo, A. Rybkin, D. Marchenko, and O. Rader, Phys.
+Rev. Lett. 101, 157601 (2008).
+
+43 A. H. Castro Neto and F. Guinea, Phys. Rev. Lett. 103,
+
+026804 (2009).
+
+44 C. Ertler, S. Konschuh, M. Gmitra, and J. Fabian, Phys.
+
+Rev. B 80, 041405(R) (2009).
+
+71 M. W. Wu and C. Z. Ning, Eur. Phys. J. B 18, 373 (2000);
+
+M. W. Wu, J. Phys. Soc. Jpn. 70, 2195 (2001).
+
+72 M. Q. Weng and M. W. Wu, Phys. Rev. B 68, 075312
+
+(2003); 70, 195318 (2004).
+
+73 M. M. Glazov and E. L. Ivchenko, Pis'ma Zh. Eksp. Teor.
+Fiz. 75, 476 (2002); Zh. Eksp. Teor. Fiz. 126, 1465 (2004)
+[JETP Lett. 75, 403 (2002); JETP 99, 1279 (2004)].
+
+74 J. Zhou, J. L. Cheng, and M. W. Wu, Phys. Rev. B 75,
+
+45 V. K. Dugaev, E. Ya. Sherman, and J. Barna´s, Phys. Rev.
+
+045305 (2007).
+
+B 83, 085306 (2011).
+
+46 P. Zhang and M. W. Wu, Phys. Rev. B 84, 045304 (2011).
+47 P. Zhang and M. W. Wu, New J. Phys. 14, 033015 (2012).
+48 S. V. Morozov, K. S. Novoselov, M. I. Katsnelson, F.
+Schedin, L. A. Ponomarenko, D. Jiang, and A. K. Geim,
+Phys. Rev. Lett. 97, 016801 (2006).
+
+49 J. S. Jeong, J. Shin, and H. W. Lee, Phys. Rev. B 84,
+
+195457 (2011).
+
+50 P. Zhang, Y. Zhou, and M. W. Wu, J. Appl. Phys. 112,
+
+073709 (2012).
+
+51 Y. S. Dedkov, M. Fonin, U. Rudiger, and C. Laubschat,
+
+Phys. Rev. Lett. 100, 107602 (2008).
+
+52 S. Ryu, L. Liu, S. Berciaud, Y.-J. Yu, H. Liu, P, Kim, G.
+
+W. Flynn, and L. E. Brus, Nano Lett. 10, 4944 (2010).
+
+53 P. Gallo, A. Arnoult, T. Camps, E. Havard, and C.
+
+Fontaine, J. Appl. Phys. 101, 024322 (2007).
+54 F. Guinea, New J. Phys. 12, 083063 (2010).
+55 S. Konschuh, M. Gmitra, D. Kochan, and J. Fabian, Phys.
+
+75 W. J. H. Leyland, G. H. John, R. T. Harley, M. M. Glazov,
+E. L. Ivchenko, D. A. Ritchie, I. Farrer, A. J. Shields, and
+M. Henini, Phys. Rev. B 75, 165309 (2007).
+
+76 D. Stich, J. Zhou, T. Korn, R. Schulz, D. Schuh, W.
+Wegscheider, M. W. Wu, and C. Schuller, Phys. Rev. Lett.
+98, 176401 (2007); Phys. Rev. B 76, 205301 (2007).
+
+77 L. F. Han, X. H. Zhang, H. Q. Ni, and Z. C. Niu, Physica
+
+E 43, 1127 (2011).
+
+78 G. F. Koster, J. O. Dimmock, R. G. Wheeler, and H.
+Statz, Properties of the Thirty-two Point Groups (MIT
+Press, Cambridge, Massachusetts, 1963).
+
+79 J. H. Jiang and M. W. Wu, Phys. Rev. B 79, 125206
+
+(2009).
+
+80 F. Zhang, H. Z. Zheng, Y. Ji, J. Liu, and G. R. Li, Euro-
+
+phys. Lett. 83, 47006 (2008).
+
+81 T. Korn, D. Stich, R. Schulz, D. Schuh, W. Wegscheider,
+
+and C. Schuller, Adv. Solid State Phys. 48, 143 (2009).
+
+82 It is noted that when dealing with the delta function in
+
+the scattering terms, we neglect the anisotropy of the en-
+ergy spectrum since the effect of the anisotropy on spin
+relaxation is marginal.67
+
+81, 161407(R) (2010).
+
+93 S. Adam and M. D. Stiles, Phys. Rev. B 82, 075423
+
+(2010).
+
+83 S. Piscanec, M. Lazzeri, F. Mauri, A. C. Ferrari, and J.
+
+94 G. A. Baker, Jr., Essentials of Pad´e Approximants (Aca-
+
+Robertson, Phys. Rev. Lett. 93, 185503 (2004).
+
+demic, New York, 1975).
+
+84 M. Lazzeri, S. Piscanec, F. Mauri, A. C. Ferrari, and J.
+
+95 G. D. Mahan, Many-Particle Physics (Plenum, New York,
+
+15
+
+Robertson, Phys. Rev. Lett. 95, 236802 (2005).
+
+85 F. Rana, P. A. George, J. H. Strait, J. Dawlaty, S. Shiv-
+araman, M. Chandrashekhar, and M. G. Spencer, Phys.
+Rev. B 79, 115447 (2009).
+
+86 M. E. Peskin and D. V. Schroeder, An Introduction
+to Quantum Field Theory (Addison-Wesley, New York,
+1995).
+
+87 D. P. DiVincenzo and E. J. Mele, Phys. Rev. B 29, 1685
+
+(1984).
+
+88 G. Dresselhaus, Phys. Rev. 100, 580 (1955).
+89 Y. A. Bychkov and E. I. Rashba, J. Phys. C 17, 6039
+(1984); Pis'ma Zh. Eksp. Teor. Fiz 39, 66 (1984) [JETP
+Lett. 39, 78 (1984)].
+
+90 The
+
+electron density in the
+
+experiment by Han
+and Kawakami37 is obtained from its arXiv version
+(arXiv:1012.3435).
+
+91 It is noted that due to the complicated energy spectrum of
+BLG, we employ the single-layer graphene approximation
+to calculate the spin diffusion coefficient in BLG according
+to the report by Zhang and Wu.46
+
+92 S. Das Sarma, E. H. Hwang, and E. Rossi, Phys. Rev. B
+
+1990).
+
+96 S. Adam, E. H. Hwang, V. M. Galitski, and S. Das Sarma,
+
+Proc. Natl. Acad. Sci. U.S.A. 104, 18392 (2007).
+
+97 E. H. Hwang, S. Adam, and S. Das Sarma, Phys. Rev.
+
+Lett. 98, 186806 (2007).
+
+98 S. Adam and S. Das Sarma, Solid State Commun. 146,
+
+356 (2008).
+
+99 B. Wunsch, T. Stauber, F. Sols, and F. Guinea, New J.
+
+Phys. 8, 318 (2006).
+
+100 X.-F. Wang and T. Chakraborty, Phys. Rev. B 75, 033408
+
+(2007).
+
+101 E. H. Hwang and S. Das Sarma, Phys. Rev. B 75, 205418
+
+(2007).
+
+102 S. Fratini and F. Guinea, Phys. Rev. B 77, 195415 (2008).
+103 O. V. Gmayun, Phys. Rev. B 84, 085112 (2011).
+104 E. H. Hwang and S. Das Sarma, Phys. Rev. B 77, 115449
+
+(2008).
+
+105 J.-H. Chen, C. Jang, S. Xiao, M. Ishigami, and M. S.
+
+Fuhrer, Nat. Nanotechnol. 3, 206 (2008).
+
+

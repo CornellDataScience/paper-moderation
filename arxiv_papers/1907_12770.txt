@@ -1,0 +1,564 @@
+Evidence of topological gap opening in the surface state of Bi2Se3 by proximity to a
+
+magnetic insulator
+
+S. Mathimalar,1, ∗ S. Sasmal,1, ∗ P. Rajasekhar,1, ∗ A. Bhardwaj,1 S. Chaudhary,1 B. Satpati,2 and K. V. Raman1, †
+
+1Tata Institute of Fundamental Research, Centre for Interdisciplinary Sciences, Hyderabad-500107, India
+
+2Saha Institute of Nuclear Physics, 1/AF Bidhannagar, Kolkata, 700064, India
+
+Topological insulators are bulk insulators with exotic surface states, protected under time-reversal
+symmetry, that hold promise in observing many exciting condensed-matter phenomena.
+In this
+report, we show that by having a topological insulator (Bi2Se3) in proximity to a magnetic insulator
+(EuS), a metal-to-insulator transition in the surface state, attributed to opening of an exchange gap,
+can be observed whose properties are tunable using bottom gate voltage and external magnetic field.
+Our study provides evidence of gate-controlled enhanced interface magnetism with the signature of
+half-integer quantum Hall effect when the Fermi level is tuned into the exchange gap. These results
+pave the way for using magnetic proximity effect in developing topological electronic devices.
+
+The process of breaking time reversal symmetry, by
+introducing out-of-plane magnetism, at the surface of a
+3-dimensional (3-D) topological insulator (TI) [1, 2] is
+known to open up an exchange gap (EG) at the Dirac
+point of the topologically protected surface states (TSS)
+[3]. Such a mechanism support several new quantum phe-
+nomena, such as quantum anomalous Hall effect (QAHE)
+[4, 5], half-integer quantum Hall effect (H-IQHE) [1, 6],
+topological magneto-electric effect [7, 8], and image mag-
+netic monopoles [9]. In realizing these effects, the main
+challenge is to successfully demonstrate an opening of
+gap at the surface of TI. Currently, this is made possible
+in magnetic TIs such as in Cr and V-doped compensated
+TIs, where perpendicular magnetism is developed in the
+bulk showing QAHE [5, 10].
+In comparison, inducing
+local magnetism at TI surface through the short range
+nature of magnetic proximity effect (MPE) can provide
+a number of advantages over bulk-doping [3, 5, 11]; these
+include lower bulk and surface defect density due to im-
+proved film crystallinity, better controllability of the sur-
+face states (SSs) and independently controlling the mag-
+netic state at each surface of TI to build switchable topo-
+logical devices [12].
+
+Conventionally, MPE can be achieved by using mag-
+netic insulators (MIs). However, requirement of an out-
+of-plane magnetization at the TI surface makes this study
+difficult since most of the MIs naturally possess in-plane
+anisotropy. Additionally, new hybridization states [13]
+that may form at the TI/MI interface near the Fermi
+level (EF ) can contaminate the topological properties of
+the Dirac SSs [14 -- 16]. As a result, observing these effects
+through transport studies can become non-trivial.
+In
+this regard, MPE studies in the 3D TI, Bismuth Selenide
+(Bi2Se3), with an MI, Europium sulphide (EuS), is exten-
+sively researched [17 -- 19]. Different research groups con-
+firm the presence of an out-of-plane component of magne-
+tization at the Bi2Se3/EuS interface with the magnetism
+existing at temperature much above the magnetic transi-
+
+∗ equal contribution
+† Corresponding author: kvraman@tifrh.res.in
+
+tion temperature (Tc) of EuS (∼ 17K). Our magnetome-
+try studies on Bi2Se3(10nm)/EuS(1nm) also confirm the
+existence of enhanced interface magnetism with a second
+transition close to 232K (refer to Fig. S8). Here, the
+strong spin-orbit contribution of the Bi2Se3 surface is re-
+ported to give rise to an out-of-plane magnetic anisotropy
+in the interface EuS layer [18, 20]. Unlike other TI/MI
+interfaces [14, 15, 21, 22], recent theoretical calculation
+of the above interface also suggest induced magnetism,
+localized within the first quintuple layer (QL) of Bi2Se3
+[23], with the SS retaining most of the topological char-
+acter compared to a pristine Bi2Se3 SSs [20]. Further, an
+induced EG of ∼ 9 meV in the surface Dirac cone is sug-
+gested [23]. Despite these reports, experimental observa-
+tion of the EG opening at this surface has been elusive
+[24]. This is primarily due to inherent intrinsic doping
+caused by large Se vacancies leading to bulk dominated
+conduction with EF pinning deep inside the conduction
+band (CB). In this letter, using gate controlled trans-
+port studies, we provide evidence of gaining access to
+the exchange gapped TSSs at the Bi2Se3/EuS interface
+showing signature of H-IQHE (Fig.1a) and observe a gate
+and magnetic-field controlled interface magnetism affect-
+ing the metal-to-insulator transition (MIT) response.
+
+Thin films of Bi2Se3 were grown on amorphous SiO2
+(a-SiO2) substrate at 250◦C in our molecular beam epi-
+taxy system with a base pressure of 8× 10−10 mbar using
+a co-evaporation technique. The film's structural proper-
+ties were characterized using Raman spectroscopy, X-ray
+diffraction and Transmission electron microscopy (TEM)
+(see Fig. S1 in Suppl. Mater.).
+Interestingly, cross-
+sectional TEM images reveal a layered growth, support-
+ing the hexagonal structure with 0.95 nm thickness of
+the QL (inset of Fig.1b), as also observed in the work
+of Bansal et. al.
+[25]. For transport measurements,
+thicker Bi2Se3 films in 10 to 16 nm range were grown.
+Subsequently, a 3 nm film of EuS was deposited in a
+sulphur-rich environment at room temperature, without
+breaking vacuum, followed by a 2 nm-capping layer of
+AlOx(x∼1.3-1.5). Hall bar structures with length, L and
+width, W were patterned by mechanical etching (Fig. 1a,
+also see Fig. S2). Compared to the Hall mobility (µ) of
+
+9
+1
+0
+2
+
+ 
+t
+c
+O
+8
+2
+
+ 
+
+ 
+ 
+]
+l
+l
+a
+h
+-
+s
+e
+m
+
+.
+t
+a
+m
+-
+d
+n
+o
+c
+[
+ 
+ 
+
+3
+v
+0
+7
+7
+2
+1
+
+.
+
+7
+0
+9
+1
+:
+v
+i
+X
+r
+a
+
+2
+
+FIG. 1. (a) Schematic of our TI/MI Hall bar devices (left) with bottom gate electrode. Chemical potential dependency of
+Hall resistivity (ρxy) in B=0 (red) and B(cid:54)=0 (blue) demonstrating H-IQHE is shown. Three different positions (1,2 and 3) of
+surface EF , modulated by Vg, is labelled in the exchange gapped SSs of TI. For B=0, When EF lies in the EG (position 2),
+half-integer quantized value of ρxy is expected which vanish when EF moves out of the EG (position 1 and 3). At B=0, 1D
+chiral Fermion edge states appear along magnetic domain walls which vanish in external magnetic field due to alignment of
+domains. (b) Normalized longitudinal resistivity (ρxx) vs T of 12 nm Bi2Se3 films capped by 2 nm-AlOx (red circles), 2 nm-Se
+(black square) and 3 nm-EuS (blue triangle). Inset shows cross-sectional TEM image of sample: Si/SiO2/Bi2Se3(5.5 nm). (c)
+Thickness dependence of normalize ρxx vs T for the Se capped (hollow symbols) and EuS capped device (solid symbols) with
+12nm (triangles) and 16nm (circles) thickness of Bi2Se3. Corresponding temperature value of the resistivity up-turn is also
+indicated. Temperature dependence of (d) µ and (e) nHall for Bi2Se3(16nm)/Se and Bi2Se3(16nm)/EuS devices.
+
+epitaxial films of similar thickness grown on c-cut sap-
+phire substrate (∼1000 cm2/V·s for 16 nm), mobility of
+films on a-SiO2 substrates were found to be lower (∼450
+cm2/V·s). This relatively lower bulk mobility of films on
+a-SiO2 substrate may be beneficial in detecting a larger
+contribution of the robust SSs, unaffected by defects, over
+bulk conduction.
+
+Figure 1b shows the temperature dependence of lon-
+gitudinal resistivity (ρxx) for 12 nm Bi2Se3 films with
+three different capping layers viz. 2 nm AlOx, 2 nm Se
+and 3 nm EuS. All the three devices show a predomi-
+nant metallic signature during cool down, but respond
+differently at lower temperatures (< 30K). Films with
+AlOx capping layer show a weak upturn in ρxx at ∼28K
+followed by a metallic signature at lower temperatures
+(<19K). On the other hand, Bi2Se3 films with Se and
+EuS capping layer show an upward trend in ρxx below
+19K, with a stronger response in the latter. The above
+observation of capping layer dependent variations in the
+temperature dependence of ρxx, primarily in a narrow
+thickness window of ∼12 to 16 nm of our Bi2Se3 films,
+does suggest combination of bulk impurity band freez-
+ing [26] and complex interface processes such as charge
+transfer across the interface due to work function mis-
+match/chemical reactivity and charge transfer between
+the TSSs and bulk states, all of them to be playing a
+role in the device response (see section 3 & 4 of Suppl.
+
+Mater.). In the case of TIs, position of EF at the sur-
+face can greatly depend on the relative concentration of
+bulk and surface defect density [27, 28]. A large mis-
+match in the surface and bulk EF can lead to charge
+transfer and bending of bulk bands near the surface, re-
+sulting in a depleted (an accumulated) surface region in
+films with lower (higher) surface defect density (see sec-
+tion 4 of Suppl. Mater.). Importantly, the decrease in
+ρxx in AlOx capped films below ∼19K does suggest that
+apart from the insulating-like response due to impurity
+band freezing at ∼28K, interface band bending leading
+to accumulation is also playing a contributory role to the
+overall device resistance (see Fig S5).
+
+To investigate the upturn in film's ρxx for the Se and
+EuS capped films, thickness dependence of ρxx vs T plot
+is shown in figure 1c. Hall mobility of these devices in-
+crease with cool down and finally saturate (Fig. 1d),
+suggesting a dominant band-transport conduction (see
+section 3 of Suppl. Mater.).
+In the case of Se capped
+films, the upturn in ρxx occur at ∼18K for 12 nm films
+and decrease to ∼15K for 16 nm films which we attribute
+primarily due to impurity band freezing. In the case of
+films of similar thickness and mobility, capped wih EuS,
+a stronger upturn in ρxx occur at a temperature of 19K,
+that remain unchanged in both the 12 nm and 16 nm
+Bi2Se3/EuS devices. These observations suggest the ori-
+gin of this upturn to a more dominant interface effect
+
+supporting an MIT response. Further, the decrease in
+ρxx of the EuS capped devices with cool down is rel-
+atively gradual than the Se capped devices (Fig. 1c), a
+trend observed in different samples with different W (200
+µm to 2 mm). This response is primarily caused by de-
+pletion of charge carriers, noted by the relatively lower
+Hall carrier density (nHall, Fig. 1e), that suggest contri-
+butions from the upward band bending (depletion region)
+near the Bi2Se3/EuS interface with the possible lowering
+of interface EF below the conduction band edge.
+It is
+experimentally known that the surface of Bi2Se3 can be
+chemically reactive that can cause strong band-bending
+effects at the surface [29, 30]. Density functional the-
+ory (DFT) studies reveal that Eu-Se bond formation at
+the Bi2Se3/EuS interface is more favorable [23] and hence
+may cause lower surface defect density supporting an up-
+ward band bending. Further studies may be needed to
+microscopically probe these interface chemical responses.
+Additionally, we also explored the effect of above insu-
+lating transition on the topological properties of Bi2Se3
+SSs using weak antilocalization (WAL) studies [27, 31]
+at low temperatures (< 30K, Fig. S7). Our analysis
+using the Hikami-Larkin-Nagaoka (HLN) formalism [32]
+reveal a drop in WAL channel by a value of ∼1 in the
+Bi2Se3/EuS devices compared to the Bi2Se3/Se devices
+(showing a value close to 2). This finding corroborates
+well with the possibility of MPE opening up an EG in the
+top SS, with only the bottom surface channel dominantly
+contribute to the WAL response.
+
+In an effort to tune EF within the bandgap to ac-
+cess the exchange gapped TSSs, the devices were inves-
+tigated using back gate voltage (Vg) studies. Here, the
+high bulk carrier density (> 1019/cm3) prevent the move-
+ment of bulk EF towards the Dirac point and is expected
+to only modulate the band bending near the depleted
+Bi2Se3/EuS interface. Figure 2a shows the temperature
+dependence of longitudinal resistance (Rxx) vs Vg of the
+Bi2Se3/EuS devices. Here, a hysteresis response in Rxx
+is observed at all temperatures below 125K, with simi-
+lar response observed in 4 different sets of samples and
+with different film thickness (Fig. S10).
+In compari-
+son, the Se capped devices show no such behavior (Fig.
+S9). Our analysis suggest that the hysteresis in Rxx arise
+due to weaker gating, with the interface EF pinning/de-
+pinning within the band gap of Bi2Se3 (primarily at the
+band edge). The fact that the onset of hysteresis occurs
+around the same temperature when the carrier density
+falls down (T < 100K, Fig. 1e) corroborates well with
+the mechanism related to band bending and the EF at
+the interface dropping into the band gap. In figure 2a,
+at temperatures below 25K, a second smaller hysteresis
+response is noted, extending to positive gate voltage (re-
+fer to Fig. S10). We attribute the origin of the second
+hysteresis to the opening of EG by EuS and the associ-
+ated EF pinning/de-pinning within the EG. In figure 2b,
+we show Rxx and Hall resistance (Rxy) vs Vg of the de-
+vice measured at 1.5K. Rxy, measured in zero magnetic
+field, also shows a hysteresis response with the value ris-
+
+3
+
+FIG. 2. (a) Rxx vs Vg of the Bi2Se3(16 nm)/EuS(3 nm) device
+measured at different T s. A second hysteresis response appear
+in positive Vg at and below 25K (refer to Fig. S6). The plots
+are shifted vertically for clarity.
+(b) Rxx (triangles, left y-
+axis) and Rxy (circle and square, right y-axis) vs Vg for the
+above device at 1.5K. Red circle is measured at 0 Oe and blue
+square is taken in a perpendicular field of 100 Oe. The solid
+arrow heads denote the direction of sweep in Vg. Position of
+the EF corresponding to the high and low value of Rxy (for 0
+Oe data) is schematically shown.
+
+ing above Vg ∼15V in the positive sweep cycle reach-
+ing ∼70mΩ and dropping down at -27V in the negative
+sweep cycle of Vg. We associate the high resistance state
+of Rxy to the condition of EF lying in the EG of the SSs
+showing signature of H-IQHE (Fig. 1a). Interestingly, as
+expected, the H-IQHE disappear in presence of a small
+perpendicular magnetic field of 100 Oe that aligns the do-
+mains in the EuS, without an appreciable change in Rxx.
+These observations further validate the existence of per-
+pendicularly aligned magnetic domains that support dis-
+sipationless chiral edge states at the domain walls. Here,
+the existence of bulk conduction channel, multi-domain
+structure and bottom Dirac SS are limiting the observa-
+tion of half-integer value of quantised Hall conductance.
+We next probe the effect of Vg on the MIT response,
+due to opening of EG, in our Bi2Se3/EuS devices. Fig-
+ure 3 shows the measurements of Rxx vs T, performed
+at different Vgs. At negative Vg, the insulating transition
+was observed at temperature, TM IT ∼ 19K, which is en-
+hanced to ∼ 32K at positive Vg with an corresponding in-
+crease in the carrier density (top inset of Fig.3). In com-
+parison, the Se capped devices showed no such response
+(see Fig. S9). Such an increase in TM IT at positive
+Vg, which also makes the device conducting (seen by the
+downward shift of plots), at first seems counter-intuitive.
+However, this observation is suggestive of conduction-
+electron-mediated ferromagnetic exchange between the
+
+Eu atoms strengthening the interface magnetism, with an
+enhancement in Tc of the EuS 'interface layer'. In EuS,
+magnetism arises due to the overlap of the Eu 4f orbitals
+with the valence band below the EF leading to a weaker
+exchange coupling [33]. DFT studies by Kim et. al. [20]
+have shown that the TSSs that weakly interconnect the
+conduction and valance bands can mediate exchange cou-
+pling between Eu atoms through the Ruderman-Kittel-
+Kasuya-Yosida (RKKY) type interactions [34 -- 36], with
+the exchange constant being sensitive to the position of
+EF near the Dirac point. The observed gate controlled
+tuning of TM IT in our devices does provide evidence of
+such an indirect exchange mechanism at the Bi2Se3/EuS
+interface. This enhanced interface magnetism can hence
+open up a larger EG and may be responsible for the
+larger increase in resistance under positive Vg, peaking
+at Vg ∼ 50V (bottom-right inset of Fig.3). A higher
+value of TM IT ∼ 19K i.e. 2K above the bulk Tc of EuS
+is observed even at high negative Vg (depleted interface)
+which may indicate the role of high spin-orbit strength of
+the Bi2Se3 surface states leading to an enhancement in
+the Tc of the bulk EuS film. For Vg > 15V, the resistance
+plots show a point of inflection at 19K, below which, the
+resistance increases further. This feature may therefore
+correspond to the magnetic transition of EuS layers away
+from the interface, unaffected by the above carrier me-
+diated indirect exchange interactions. Comparing with
+the warm up data of Rxx vs T (Fig. S11), our analy-
+sis support the existence of difference in the transition
+temperature of bulk and interface EuS layer.
+
+Apart from the enhancement in TM IT for Vg > 15V,
+we also observe a very prominent and reproducible drop
+(observed in different devices) in the device resistance
+preceding MIT. This sudden drop in resistance, by al-
+most 10 Ω (for the plot of Vg=50V), may be suggestive
+of formation of 1D chiral fermion edge states [1] along the
+magnetic domain walls at the interface around Tc (Fig.
+1a), with the simultaneous opening of EG. With the low-
+ering of temperature, domains become larger leading to a
+dominant insulating transport response due to EG open-
+ing. Comparing with the Rxy vs Vg data of figure 2b
+(in the positive sweep cycle), the observation of the re-
+sistance drop for Vg > 15V in figure 3 corroborates well
+with the position of EF within the EG to start observing
+the H-IQHE signal and to access these chiral edge states
+in our devices.
+
+To further investigate these responses, the devices
+were cooled down in different perpendicular magnetic
+fields (HF C), keeping Vg at 50V, as shown in figure 4.
+Firstly, we observe a decrease in TM IT with the increas-
+ing strength of HF C (inset of Fig.4). This may be sug-
+gestive of weakening of the antiferromagnetic exchange
+between the conduction electrons and the Eu 4f atoms,
+observed in such indirect exchange interactions. Also
+notably, when cooled in higher magnetic fields, the re-
+sistance drop preceding TM IT starts to vanish in these
+devices. This occurs because the domain with parallel
+magnetization grows at the onset of magnetism, result-
+
+4
+
+c
+
+FIG. 3. Rxx vs T of Bi2Se3(16 nm)/EuS(3 nm) device (L=1.5
+mm, W=1 mm) measured at different Vgs. T bulk
+denotes
+the Tc of the bulk EuS film, measured at negative Vg (de-
+pleted carriers at interface). Top middle inset shows increase
+in TM IT (square; shown by vertical lines in main figure) at
+positive Vgs which is corroborated by the increase in nHall
+(circle). Left inset shows schematic of CB bending (solid lines)
+at the top Bi2Se3 surface for large positive Vg (bottom) and
+large negative Vg (top). Enhanced interface magnetism, at-
+tributed to indirect exchange at positive Vgs, can also lead to
+increased EG suggested by large ∆R = R(1.5K) − R(TM IT )
+peaking at Vg = 50V (bottom right inset).
+
+FIG. 4. Rxx vs T of the Bi2Se3(16 nm)/EuS(3 nm) device
+measured at Vg = 50V with varying perpendicular HF C s.
+The plots are shifted vertically for clarity. Bottom right inset
+shows lowering of TM IT with HF C attributed to the weaken-
+ing of the indirect exchange at the interface.
+
+ing in the reduction of domain wall that support these
+conducting 1D edge states. These observations of the
+dip in resistance before MIT, which we attribute to the
+formation of conducting 1D edge states at the domain
+walls, also highlight that the interface-gapped states in
+our devices do carry topological properties, and the MIT
+
+response of our devices is not due to the formation of
+any trivial hybridization gap [16, 37]. Together with the
+evidence of H-IQHE signal, our results therefore demon-
+strate the capability to use MPE to engineer new classes
+of topological electronic devices.
+
+KVR acknowledges Ajit C. Balram for useful discus-
+sions. All authors acknowledge TIFR-Hyderabad, SERB
+Ramanujan, Department of Atomic Energy (DAE) and
+ECR grant for funding. SM acknowledges SERB NPDF
+fellowship.
+
+5
+
+[1] M. Z. Hasan and C. L. Kane, Rev. Mod. Phys. 82, 3045
+
+(2010).
+
+[19] Q. I. Yang et al., Phys. Rev. B 88, 081407(R) (2013).
+[20] J. Kim, K.-W. Kim, H. Wang, J. Sinova, and R. Wu,
+
+[2] X. L. Qi and S. C. Zhang, Rev. Mod. Phys. 83, 1057
+
+Phys. Rev. Lett. 119, 027201 (2017).
+
+(2011).
+
+[3] Y. L. Chen et al., Science 329, 659 (2010).
+[4] R. Yu, W. Zhang, , H.-J. Zhang, S.-C. Zhang, X. Dai,
+
+[21] M. Lang et al., Nano Lett. 14, 3459 (2014).
+[22] W. Liu et al., Nano Lett. 15, 764 (2015).
+[23] A. T. Lee, M. J. Han, and K. Park, Phys. Rev. B 90,
+
+and Z. Fang, Science 329, 61 (2010).
+
+155103 (2014).
+
+[5] C.-Z. Chang et al., Science 340, 167 (2013).
+[6] V. P. Gusynin and S. G. Sharapov, Phys. Rev. Lett. 95,
+
+146801 (2005).
+
+[7] X.-L. Qi, T. L. Hughes, and S.-C. Zhang, Phys. Rev.
+B 78, 195424 (2008), erratum Phys. Rev. B 81, 159901
+(2010).
+
+[8] A. M. Essin, J. E. Moore, and D. Vanderbilt, Phys. Rev.
+Lett. 102, 146805 (2009), erratum Phys. Rev. Lett. 103,
+259902 (2009).
+
+[9] X.-L. Qi, R. Li, J. Zang, and S.-C. Zhang, Science 323,
+
+1184 (2009).
+
+[10] M. Mogi, M. Kawamura, A. Tsukazaki, R. Yoshimi, K. S.
+Takahashi, M. Kawasaki, and Y. Tokura, Sci. Adv. 3,
+eaao1669 (2017).
+
+[11] Y. S. Hor et al., Phys. Rev. B 81, 195203 (2010).
+[12] Y. Hou, J. Kim, and R. Wu, Science Adv. 5, 1874 (2019).
+[13] V. N. Men'shov, V. Tugushev, S. Eremeev, P. Echenique,
+
+[24] J. A. Krieger et al., Phys. Rev. B 99, 064423 (2019).
+[25] N. Bansal, N. Koirala, M. Brahlek, M.-G. Han, Y. Zhu,
+Y. Cao, J. Waugh, D. S. Dessau, and S. Oh, Appl. Phys.
+Lett. 104, 241606 (2014).
+
+[26] J. G. Analytis, J.-H. Chu, Y. Chen, F. Corredor, R. D.
+McDonald, Z. X. Shen, and I. R. Fisher, Phys. Rev. B
+81, 205407 (2010).
+
+[27] M. Brahlek, N. Koirala, N. Bansal, and S. Oh, Solid State
+
+Comm. 215, 54 (2015).
+
+[28] L. Veyrat et al., Nano Lett. 15, 7503 (2015).
+[29] H. M. Benia, C. Lin, K. Kern, , and C. R. Ast, Phys.
+
+Rev. Lett. 107, 177602 (2011).
+
+[30] M. Bianchi, D. Guan, S. Bao, J. mi, B. B. Iversen, P. D.
+King, and P. Hofmann, Nature Communications 1, 128
+(2010).
+
+[31] M. Brahlek, N. Koirala, M. Salehi, N. Bansal, and S. Oh,
+
+Phys. Rev. Lett. 113, 026801 (2014).
+
+and E. Chulkov, Phys. Rev. B 88, 224401 (2013).
+
+[32] S. Hikami, A. I. Larkin, and Y. Nagaoka, Prog. Theor.
+
+[14] W. Luo and X.-L. Qi, Phys. Rev. B 87, 085431 (2013).
+[15] S. V. Eremeev, V. N. Men'shov, V. V. Tugushev, P. M.
+Echenique, and E. V. Chulkov, Phys. Rev. B 88, 144430
+(2013).
+
+[16] S. V. Eremeev, V. N. Men'shov, V. V. Tugushev, and
+E. V. Chulkov, Journal of Magnetism and Magnetic Ma-
+terials 383, 30 (2015).
+
+[17] P. Wei, F. Katmis, B. A. Assaf, H. Steinberg, P. Jarillo-
+Herrero, D. Heiman, and J. S. Moodera, Phys. Rev. Lett.
+110, 186807 (2013).
+
+[18] F. Katmis et al., Nature 533, 513 (2016).
+
+Phys. 63, 707 (1980).
+
+[33] J. M. D. Coey, M. Viret, , and S. V. Molnar, Adv. in
+
+Phys. 58, 571 (2009).
+
+[34] M. A. Ruderman and C. Kittel, Phys. Rev. C 96, 99
+
+(1954).
+
+[35] T. A. Kasuya, Prog. Theory Phys. 16, 45 (1956).
+[36] K. Yosida, Phys. Rev. 106, 893 (1957).
+[37] M. Dzero, J. Xia, V. Galitski, and P. Coleman, Annual
+
+Review of Condensed Matter Physics 7, 249 (2016).
+
+

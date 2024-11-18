@@ -1,0 +1,1807 @@
+All-dielectric nanolaser 
+D. G. Baranov,1,2 A. P. Vinogradov,1,2,3 and A. A. Lisyansky4,5,a) 
+
+1Moscow Institute of Physics and Technology, 9 Institutskiy per., Dolgoprudny 141700, Russia 
+2All-Russia Research Institute of Automatics, 22 Sushchevskaya, Moscow 127055, Russia 
+3Institute for Theoretical and Applied Electromagnetics, 13 Izhorskaya, Moscow 125412, Russia 
+4Department of Physics, Queens College of the City University of New York, Queens, New York 11367, USA 
+5The Graduate Center of the City University of New York, New York, New York 10016, USA 
+
+ 
+
+We demonstrate theoretically that a subwavelength spherical dielectric nanoparticle coated with a gain shell forms a 
+nanolaser. Lasing modes of such a nanolaser are associated with the Mie resonances of the nanoparticle. We 
+establish a general condition for the lasing threshold and show that the use of high refractive index dielectric media 
+allows for lasing with a threshold significantly lower than that for nanolasers incorporating lossy plasmonic metals. 
+
+ 
+
+A nanolaser is a novel type of quantum device that enables the generation of a coherent 
+electromagnetic field at the subwavelength scale.1-4 In order to localize the electromagnetic field 
+of a laser mode at the nanoscale, one employs surface plasmons instead of photons because the 
+wavelength of a plasmon is shorter than that of a photon at the same frequency. The nanolaser 
+can  be  several  wavelengths  in  length5  producing  a  beam  of  light  like  a  usual  laser  or  be  of 
+subwavelength  size  radiating  like  a  multipole.  In  the  latter  case,  it  is  referred  to  as  a  spaser.1 
+Basically, a spaser consists of a plasmonic nanoparticle (NP) coupled to a gain medium pumped 
+by  an  external  energy  source.  A  serious  problem  that  hinders  the  experimental  realization  of 
+spasers is that the extreme loss in plasmonic metals raises the lasing threshold of spasers.6, 7 In 
+addition, the effects of nonlocality and spatial dispersion generally increase the lasing threshold.8 
+Attempts  have  been  made  to  lower  the  high  gain  required  for  generation  in  plasmonic-based 
+nanolasers using a special design for core-shell cavities.9, 10 However, the resulting threshold is 
+still high. In particular, use of the optimal core-shell design9 allows one to lower threshold gain 
+1
+to values as low as 
+, while a characteristic gain provided by organic dyes is of order 
+4 10 cm−
+⋅
+1
+. 
+of several 
+10 cm−
+
+ 
+
+3
+
+4
+
+ 
+
+Semiconductor media exhibiting high refractive indices in the optical range, such as Si, 
+Ge, and GaAs, allow for a realization of subwavelength spherical resonators without the use of 
+lossy  metals.  Note  that  in  the  near  infrared  region  these  materials  should  be  considered  as 
+dielectrics  rather  than  semiconductors,  which  they  are  in  the  optical  region.  It  was  predicted 
+theoretically that spherical silicon NPs exhibit a strong low-loss magnetic response in the optical 
+                                                 
+a) Corresponding author: lisyansky@qc.edu 
+
+ 
+
+1 
+
+frequency  range.11  Thanks  to  the  progress  in  the  fabrication  of  silicon  nano-sized  spherical 
+particles,12, 13 the predicted strong magnetic response of dielectric particles associated with Mie 
+resonances has become experimentally accessible. Very recently, it has been proposed that the 
+use of a gain medium can further enhance the magnetic response of silicon particles.14 Such a 
+high-quality  resonator  may  serve  as  a  platform  for  the  design  of  a  quantum  generator  of  a 
+coherent  near-field.  As  with  a  spaser,  in  which  a  plasmon  mode  localized  on  a  metallic  NP 
+couples  to  the  gain  medium,  in  the  case  of  a  high-permittivity  spherical  dielectric  particle 
+surrounded by an active material, the near-field of a certain Mie resonance should couple to the 
+gain medium. 
+
+Scattering of light from spherical particles with gain, or “negative absorption”, has been 
+studied long ago in a number of works.15, 16 Although peculiarities in the scattering spectrum by a 
+particle were found, their connection to the lasing modes of an amplifying particle has not been 
+discussed.  In  those  works,  the  response  of  the  amplifying  nanoparticle  has  been  studied  for  a 
+discreet set of gain values, while a scattering singularity, which gives rise to the laser generation, 
+occurs at one point in the gain parameter space. Later, the connection between these singularities 
+and lasing has been established.17 After that, lasing in dielectric cavities through Mie resonances 
+has been extensively studied.18-20 Mie resonances giving rise to lasing considered in those studies 
+are  the  well-known  whispering  gallery  mode  (WGM)  resonances.  Resonances  supported  by 
+subwavelength semiconductor NPs should be distinguished from the WGM resonances, which 
+occur in particles with sizes larger than the  free space wavelength.21 Unlike WGM lasers, the 
+semiconductor NP based nanolaser theoretically described in our work operates at low order Mie 
+resonances which occur at free space wavelength larger than the NP dimension. This is the main 
+feature of our work. 
+
+In  this  paper,  we  investigate  self-oscillations  of  a  core-shell  dielectric  nanostructure 
+containing an active medium with inverse population. We show that a lasing transition can be 
+observed beyond a certain (threshold) level of gain appearing as a singularity of the scattering 
+cross  section.  We  find  the  set  of  lasing  modes  of  the  dielectric  nanolaser  and,  using  actual 
+material  parameters  for  high  refractive-index  media,  compare  the  threshold  characteristics  of 
+dielectric-based nanolasers with those of metallic-based spasers. 
+
+Although the laser generation is essentially a nonlinear process, the threshold pumping 
+for lasing can be found within a linear approximation.22, 23 The transition to lasing emerges as a 
+non-trivial solution of Maxwell’s equations in the absence of an incident field. The amplitude of 
+this self-oscillation is determined by an excess of the pump rate over the pumping threshold. At 
+the  threshold,  the  amplitude  of  the  laser  self-oscillation  is  equal  to  zero.  Therefore,  for  pump 
+te ω -time 
+powers below and at the threshold, the problem can be treated linearly. Assuming the  
+i
+dependence  of  the  electromagnetic  fields  we  describe  the  gain  medium  by  the  Lorentzian 
+permittivity with the negative imaginary part due to population inversion created by an external 
+pump:24, 25 
+
+2 
+
+ 
+
+ 
+
+ε ω ε
+0
+
+gain
+
+=
+
+(
+
+)
+
++
+
+D
+0
+
+2
+ωγ
+0
+2
+2
+i
++
+0
+
+2
+
+ω ω ωγ
+
+−
+
+,
+
+ 
+
+(1) 
+
+0ε  is the background permittivity of the gain medium in the absence of pumping, 
+
+where 
+the  emission  frequency,  γ  is  the  emission  linewidth,  and 
+emission frequency, characterizes the gain strength. 
+
+0ω  is 
+0D ,  which  equals  Im gainε   at  the 
+
+The geometry of the problem is illustrated in the inset of Fig. 1. The system under study 
+is a core-shell spherical NP consisting of an inner high-permittivity core coated with the gain 
+shell. The total radius of the NP is R, which is less than the free-space wavelength, the radius of 
+the core is r. Figure 1 shows the frequency dependence of the scattering cross section of the core-
+shell particle with no loss or gain, i.e., at 
+0D = . In the optical frequency range, the core-shell 
+particle  exhibits  a  series  of  resonances  that  are  represented  mainly  by  dipole  and  quadrupole 
+terms. 
+
+0
+
+0D = ) core-shell 
+FIG. 1. The scattering cross section (normalized by the geometrical cross section) of a passive (
+NP  with a silicon core of radius r = 120 nm. The radius of the  whole NP is R = 1.7r and the background  shell 
+2ε = . Here and below, the permittivity of silicon is taken  from Ref. 26. Inset: schematic of the 
+permittivity is 
+0
+core-shell dielectric nanolaser. 
+
+0
+
+ 
+
+ 
+
+In order to find the electromagnetic self-oscillation of a core-shell spherical particle, we 
+look for a non-zero solution of Maxwell’s equations in absence of an incident field. Following 
+the  standard  approach,  we  decompose  electric  and  magnetic  fields  in  the  dielectric  core  in  a 
+1e nN , expressions for which may be 
+series of spherical vector functions 
+found in Ref. 27: 
+
+1o nN  and 
+
+1e nM , 
+
+1o nM , 
+
+(1)
+
+(1)
+
+(1)
+
+(1)
+
+ 
+
+3 
+
+M
+
+(1)
+1
+o n
+
+−
+
+id
+
+N
+
+(1)
+1
+e n
+
+n
+
+)
+,
+
+Ε
+
+core
+
+=
+
+H
+
+core
+
+= −
+
+∞
+
+∑
+1
+=
+k
+
+n
+
+(
+E c
+n
+n
+ε
+core
+ω
+
+(
+E d
+n
+
+M
+
+(1)
+1
+e n
+
+n
+
++
+
+ic
+n
+
+N
+
+(1)
+1
+o n
+
+ 
+
+)
+,
+
+(2) 
+
+∞
+
+∑
+
+n
+
+1
+=
+
+=
+
+n
+
+i
+
+(
+
+2
+
+n
+
++
+
+)
+1
+
+(
+n n
+
++
+
+)
+1
+
+
+
+
+  and 
+
+
+k
+
+/
+cω=
+
+. For electric and magnetic fields in the gain shell 
+
+ 
+
+where 
+nE
+we have 
+
+ 
+
+Ε
+
+shell
+
+=
+
+H
+
+shell
+
+= −
+
+∞
+
+∑
+1
+=
+k
+
+m
+
+n
+
+(
+E f
+n
+ε
+shell
+ω
+
+M
+
+(1)
+1
+o n
+
+−
+
+ig
+
+N
+
+(1)
+1
+e n
+
+n
+
++
+
+v
+n
+
+M
+
+(2)
+1
+o n
+
+−
+
+iw
+n
+
+N
+
+(2)
+1
+e n
+
+)
+,
+
+(
+E g
+n
+
+M
+
+(1)
+1
+e n
+
+n
+
++
+
+if
+
+N
+
+(1)
+1
+o n
+
+n
+
++
+
+w
+n
+
+M
+
+(2)
+1
+e n
+
++
+
+iv
+n
+
+N
+
+(2)
+1
+o n
+
+ 
+
+)
+.
+
+∞
+
+∑
+
+m
+
+1
+=
+
+The fields in the outer region can be represented as 
+
+ 
+
+Ε
+
+out
+
+=
+
+H
+
+out
+
+=
+
+(
+E ia
+n
+n
+
+N
+
+(3)
+1
+e n
+
+−
+
+b
+n
+
+M
+
+(3)
+1
+o n
+
+)
+,
+
+(
+E ib
+n
+n
+
+N
+
+(3)
+1
+o n
+
++
+
+a
+n
+
+M
+
+(3)
+1
+e n
+
+ 
+
+)
+.
+
+∞
+
+∑
+1
+m
+=
+k
+ω
+m
+
+∞
+
+∑
+
+1
+=
+
+(3) 
+
+(4) 
+
+The  field  in  the  external  region  contains  only  terms  corresponding  to  the  outgoing 
+solution, which implies an absence of incident radiation. This field is non-zero if at least one of 
+na  or 
+nb  coefficients is non-zero for some  n . By imposing boundary conditions at the interfaces 
+between high-permittivity and gain media, and between the gain medium and the vacuum, we 
+arrive at a system of linear equations, allowing us to determine unknown coefficients in series 
+(2), (3), and (4): 
+
+)
+(
+)
+(
+)
+(
+0,
+m
+v
+f m
+x
+m
+m x
+c m
+m x
+=
+−
+−
+ψ
+χ
+ψ
+1
+2
+2
+1
+2
+1
+n
+n
+n
+n
+n
+n
+)
+)
+(
+(
+)
+(
+′
+′
+′
+0,
+m
+g
+w m
+x
+m
+m x
+d m
+m x
++
+=
+−
+χ
+ψ
+ψ
+1
+2
+1
+2
+2
+1
+n
+n
+n
+n
+n
+)
+(
+(
+)
+(
+)
+′
+′
+′
+0,
+f
+m
+m x
+v
+x
+c
+m x
++
+=
+−
+ψ
+χ
+ψ
+2
+2
+1
+n
+n
+n
+n
+n
+n
+)
+)
+(
+)
+(
+(
+0,
+m
+w
+g
+x
+m x
+d
+m x
+−
+=
+−
+ψ
+χ
+ψ
+1
+2
+2
+n
+n
+n
+n
+n
+n
+)
+)
+)
+(
+(
+(
+′
+′
+′
+0,
+m
+a
+w
+y
+m
+g
+y
+m y
+−
+−
++
+=
+ξ
+ψ
+χ
+2
+2
+2
+n
+n
+n
+n
+n
+n
+(
+)
+(
+)
+(
+)
+(
+m
+f
+m b
+m
+y
+y
+m y
+v
+−
++
+−
+χ
+ψ
+ξ
+ψ
+2
+2
+2
+2
+n
+n
+n n
+n
+n
+n
+(
+)
+)
+(
+)
+(
+0,
+y
+m
+y
+m
+y
+g
+a
+w
+=
+χ
+−
+−
++
+ψ
+ξ
+2
+2
+n
+n
+n n
+n
+n
+(
+)
+(
+)
+)
+(
+′
+′
+′
+0,
+b
+v
+f
+y
+m
+y
+m
+y
+ξ
++
+ψ
+χ
+−
+=
+2
+2
+n
+n n
+n
+n
+n
+
+y
+
+)
+
+=
+
+4 
+
+ 
+
+0,
+
+(5) 
+
+ 
+
+ 
+
+, 
+
+1/2
++
+
+a
+n
+
+,
+
+1/2
++
+
+= −
+
+x
+π
+
+,  y
+
+( )
+x
+
+( )
+x
+
+kr=
+
+kR=
+
+/ 2 n
+Y
+
+ε=
+
+shell
+( )
+x
+
+m
+2
+/ 2 n
+J
+
+ and 
+x
+π
+
+ε=
+core
+( )
+x
+=
+
+ψ
+
+( )xψ , 
+, 
+( )
+, 
+x
+ξ
+=
+
+( )xχ , and 
+x
+π
+
+where  x
+m
+1
+Bessel functions defined as 
+
+( )xξ  are the Riccati-
+( )
+  and 
+x
+
+.27 Note that system (5) is composed of two independent linear systems 
+χ
+for the two sets of coefficients  {
+, respectively. The system for 
+coefficients   {
+ determines the electric modes of the spherical resonator, while the 
+other  system  determines  the  magnetic  modes.  To  be  specific,  we  will  study  the  “magnetic” 
+subsystem of the linear equations and the corresponding magnetic laser modes. The treatment of 
+electric modes is similar. 
+
+ and  {
+b
+n
+
+,
+g w d
+n
+
+,
+
+,
+g w d
+n
+
+,
+
+,
+f v c
+n
+n
+
+,
+
+n
+
++
+
+iY
+n
+
+( )
+x
+
+/ 2
+
+J
+
+
+
+
+}
+
+n
+
+n
+
+}
+
+n
+
+n
+
+n
+
+1/2
++
+
+1/2
++
+
+,
+
+}
+
+a
+n
+
+,
+
+The  condition  for  the  existence  of  a  non-zero  solution  to  a  uniform  system  of  linear 
+
+equations is the equality of its determinant to zero: 
+
+ 
+
+where 
+
+ 
+
+(
+′
+m
+ξ ψ
+2
+n
+
+y
+
+)
+
+
+
+
+(
+
+m y
+2
+
+)
+
+−
+
+β
+n
+
+′
+χ
+n
+
+(
+
+m y
+2
+
+)
+
+
+
+
+−
+
+(
+
+′
+ξ ψ
+n
+n
+
+y
+
+
+
+
+)
+
+(
+
+m y
+2
+
+)
+
+−
+
+χβ
+n
+
+n
+
+(
+
+m
+2
+
+y
+
+)
+
+
+
+
+=
+
+0,
+
+ 
+
+β
+n
+
+=
+
+m
+ψ
+2
+n
+′
+m
+χ
+2
+n
+
+(
+(
+
+m
+1
+m
+2
+
+)
+′
+x
+ψ
+n
+)
+x
+ψ
+n
+
+(
+m
+2
+(
+m
+1
+
+x
+x
+
+)
+)
+
+−
+−
+
+m
+ψ
+1
+n
+′
+m
+ψ
+1
+n
+
+(
+(
+
+)
+′
+m
+x
+ψ
+2
+n
+)
+x
+m
+χ
+1
+n
+
+(
+x
+m
+1
+(
+xm
+2
+
+)
+)
+
+.
+
+  
+
+(6) 
+
+(7) 
+
+Nonlinear  complex-valued  Eq.  (6)  determines  the  lasing  threshold, 
+
+thD ,  as  well  as  the 
+frequency  of  the  self-oscillation.  Note  that  at  fixed  pumping,  below  the  threshold,  Eq.  (6) 
+nB .27 In a problem with an incident 
+represents the condition for the poles of the Mie coefficients 
+field, these coefficients determine the electromagnetic field scattered by the NP. Similarly, the 
+condition for the existence of the electric lasing mode coincides with the condition for the pole of 
+nA  coefficients. Therefore, the lasing modes of a core-shell spherical NP are associated with the 
+poles  of  the  corresponding  Mie  coefficients.  Below  the  threshold,  the  scattering  singularities 
+have complex-valued frequencies. Specifically, these singularities are located in the frequency 
+lower half-plane; i.e., their frequencies have a negative imaginary part,  Im
+0ω< , indicating the 
+exponential in time decay of the corresponding quasistationary state.28 With a gain increase in 
+the system, the poles may reach the real frequency axis on the complex plane, giving rise to a 
+lasing mode.23, 25 
+
+Let us show that, for a certain value of gain, the pole of the magnetic coefficient, 
+
+1B , 
+appears at a real-valued frequency. To demonstrate the existence of a self-oscillating solution we 
+tune the emission frequency of the gain medium to the dipole magnetic resonance of the core-
+shell  nanolaser,  occurring  at  approximately 
+.  Figure  2  shows  the  logarithm  of  the 
+1B , as a function of the wavelength and the gain 
+squared absolute value of the Mie coefficient, 
+
+940nm
+
+λ≈
+
+ 
+
+5 
+
+2
+
+0
+
+, 
+
+1.0
+
+D =
+
+0D . At a certain wavelength, when the gain reaches a value close to 
+
+1B  is 
+parameter 
+increased by orders of magnitude (the peak denoted by a black color in Fig. 2). This feature of 
+the graph is a clear indication that a pole of the Mie coefficient has been reached and, therefore, 
+that laser generation should begin. Importantly, the resulting lasing wavelength is not necessarily 
+equal to the gain medium emission wavelength if it was initially tuned to the wavelength of the 
+Mie resonance. This occurs due to an increase of the refractive index of the gain shell induced by 
+the increase in gain that leads to the shift of the “cold” resonance wavelength. With a further 
+1B  decreases. This behavior, however, does not imply that the lasing has been 
+increase in gain, 
+turned off, because when the threshold is reached, the laser becomes a strongly nonlinear system, 
+and saturation of the gain medium must be taken into account to correctly describe the behavior 
+of the laser above the threshold.  In fact, when the gain exceeds the threshold, the pole of the 
+corresponding  Mie  coefficient  moves  to  the  upper  half  of  the  complex  frequency  plane, 
+0ω> .23 It corresponds to  a solution with a time dependence proportional to  the diverging 
+Im
+exp Im tω . This exponential growth is suppressed by the saturation of the 
+exponential factor, 
+gain medium when lasing reaches the steady-state regime. 
+
+(
+
+)
+
+2
+
+FIG  2. The  squared  absolute  value  of  the  Mie  coefficient 
+increase in 
+
+
+
+B  indicates the pole of the Mie coefficient which is associated with the lasing threshold. 
+1
+
+ 
+
+1B   as  a  function  of  the  wavelength  and  gain.  A  giant 
+
+ 
+
+To  rigorously  show  that  at  a  certain  level  of  gain  the  transition  to  lasing  occurs,  we 
+
+rewrite Eq. (6) in the form of two real-valued equations: 
+(
+,
+ω
+
+(
+,
+ω
+
+Re
+
+Im
+
+0,
+
+F
+
+F
+
+=
+
+)
+
+ 
+
+D
+0
+
+D
+0
+
+)
+
+0,
+=  
+
+(8) 
+
+where 
+
+ 
+
+6 
+
+ 
+
+F
+
+(
+,
+ω
+
+D
+0
+
+)
+
+=
+
+(
+′
+m
+ξ ψ
+2
+n
+
+y
+
+)
+
+
+
+
+(
+
+m y
+2
+
+)
+
+−
+
+′
+βχ
+n
+
+n
+
+(
+
+m
+2
+
+y
+
+)
+
+
+
+
+′−
+ξ ψ
+n
+n
+
+y
+
+
+
+
+(
+
+)
+
+(
+
+m y
+2
+
+)
+
+−
+
+βχ
+n
+
+n
+
+(
+
+m
+2
+
+y
+
+)
+
+  
+.
+
+
+(9) 
+
+In Fig. 3, we depict both real and imaginary parts of 
+two different values of gain 
+of the curves  Re
+)0
+Since 
+the real axis, indicating the onset of lasing generation. 
+
+1B  calculated at 
+0D  below and above the lasing threshold, respectively. Intersections 
+0F =  occur on different sides of the real axis for different gains. 
+thD , this intersection occurs exactly on 
+
+(
+Dω  is continuous, for a certain value of gain 
+
+0F =  and  Im
+
+(
+Dω  for coefficient 
+
+)0
+
+F
+
+F
+
+,
+
+,
+
+ 
+
+,
+
+F
+
+)0
+
+(
+Dω  [see Eq. (8)] for values of gain 
+
+0D  below and above the lasing 
+FIG. 3. Real and imaginary  parts of 
+threshold. The short arrows show the evolution of the two curves with the gain increase. Points A and C show the 
+intersection  of  Re F   and  Im F   below  and  above  the  threshold,  respectively.  With  an  increase  in  gain,  point  A 
+moves towards the 
+. The 
+1B  
+intersection of  Re F  and  Im F  occurring exactly at the point 
+and the onset of laser generation. 
+
+-x axis of the plot; it crosses the axis (point B) at a certain value of gain, 
+
+0F =  indicates the pole of the Mie coefficient 
+
+D<
+0
+
+0.5
+
+1.3
+
+<
+
+ 
+
+We  stress  that  the  lasing  modes  of  the  dielectric  nanolaser  considered  in  this  paper 
+substantially differ from those of WGM lasers. Although WGM lasers have an ultra-low lasing 
+threshold,  their  sizes  are  typically  of  the  order  of  microns  or  a  dozen  microns.21  Indeed,  the 
+WGM resonance is a Mie resonance of a dielectric particle that occurs at large n. To fulfill the 
+resonance condition for a high-order Mie coefficient, either the wavelength must be small or the 
+particle size must be large. 
+
+ 
+
+7 
+
+th
+
+g
+
+=
+
+The  gain  threshold  for  lasing  for  each  lasing  mode  depends  strongly  on  the  material 
+parameters and geometry. Table I presents lasing wavelength 
+thD , and 
+lasλ , the threshold gain, 
+,  for  the  electric  and  magnetic 
+the  corresponding  volume  gain  coefficient, 
+/
+Im
+cω ε
+gain
+  with  the  geometric  parameters 
+modes  of  a  core-shell  nanolaser  corresponding  to 
+1,2
+n =
+specified above.  In each case, the central frequency 
+0ω  of the gain medium is adjusted to the 
+resonance  frequency  of  the  corresponding  lasing  mode.  At  optical  frequencies  in  silicon,  the 
+Ohmic  loss  due  to  interband  transitions  is  relatively  low.  Thus,  the  main  loss  channel  of  the 
+dielectric  resonator  is  radiation.  Since  quadrupoles  radiate  much  less  than  dipoles,  the 
+2B  have lower lasing thresholds than 
+quadrupole resonances associated with the poles of 
+excitation of dipole electric and magnetic modes. 
+
+2A  and 
+
+nm
+
+r =
+
+7 nm
+
+R r− =
+
+530λ=
+
+  (the  pole  of 
+
+  coated  by  a  doped  silica  shell  of  thickness 
+
+We now compare the lasing thresholds of the dielectric nanolaser with that of an Au-
+based spaser. Based on the geometry of spasers,4 we calculate the response of a NP consisting of 
+the  Au  core  of  radius 
+ 
+15nm
+immersed  in  water.  At  optical  frequencies,  the  response  of  such  a  NP  is  dominated  by  the 
+1A );  only  the  corresponding 
+plasmon  resonance  at  the  wavelength 
+dipole mode gives rise to lasing. The calculated threshold of the Au-based spaser, 
+, and 
+the  corresponding  volume  threshold  gain, 
+,  are  comparable  to  that  of  the 
+magnetic dipole mode of the dielectric nanolaser. As can be inferred from Table 1, the thresholds 
+of the quadrupole modes (
+2B ) of the dielectric dipole nanolaser are significantly lower 
+than  those  of  the  spaser.  This  is  especially  noticeable  for  the  low-loss  magnetic  quadrupole 
+mode, 
+  and 
+.  This  is  also  smaller  than  was  previously  reported  for  plasmonic  core-shell 
+thg
+=
+nanolaser with optimized geometry and material parameters.9 
+
+2B ,  whose  threshold  gain  and  volume  gain  coefficient  are  as  low  as 
+⋅
+
+46 10 cm
+
+11 10 cm
+
+2A  and 
+
+thD =
+
+thD =
+
+0.35
+
+thg
+
+=
+
+3
+
+1
+−
+
+3
+
+1
+−
+
+⋅
+
+1.2
+
+Silicon is not the only material that can be used in the design of subwavelength non-
+metallic  nanolasers.  In  particular,  spherical  NPs  made  of  other  materials  with  high  refractive 
+indexes, such as Ge and GaAs, can be fabricated.29 From our point of view, however, silicon 
+seems to be the most favorable candidate for the realization of dielectric nanolasers. Due to its 
+electronic  bandgap  of 
+  and  a 
+ in the region in which quadrupole resonances of the 
+relatively high refractive index of  ~ 3.5
+core-shell  particle  appear  (wavelengths  600 700nm
+).  GaAs  has  a  larger  refractive  index  at 
+optical  frequencies  that  could  allow  for  lasing  modes  at  smaller  particle  sizes;  however,  its 
+absorption is higher by an order of magnitude.26 Ge also exhibits high absorption at wavelengths 
+up to 1 micron.26 
+
+,  silicon  has  a  moderate  loss  with 
+1.1eV
+n
+
+~ 0.01...0.02
+
+E∆ =
+
+ε′′
+
+−
+
+ 
+
+ 
+
+8 
+
+TABLE I. Lasing threshold values for different lasing modes of the core-shell dielectric NP and 
+of an Au-based spaser. 
+
+Type of 
+resonance 
+
+Resonance 
+
+wavelength, nm 
+
+thD  
+
+, cmthg
+
+1
+−  
+
+ 
+
+1A  
+
+500 
+
+1.8 
+
+1B  
+
+945 
+
+1.0 
+
+2A  
+
+590 
+
+0.6 
+
+2B  
+
+690 
+
+0.35 
+
+1A  (spaser) 
+
+530 
+
+1.2 
+
+76 10⋅
+
+3
+
+ 
+
+50 10⋅
+
+3
+
+ 
+
+22 10⋅
+
+3
+
+ 
+
+11 10⋅
+
+3
+
+ 
+
+46 10⋅
+
+3
+
+ 
+
+To conclude, we have shown that a subwavelength spherical dielectric NP coupled to a 
+gain medium forms a nanolaser whose lasing modes are associated with the Mie resonances of a 
+NP.  We  establish  the  general  condition  for  the  lasing  threshold,  from  which  one  can  obtain 
+numerically  the  level  of  threshold  gain.  The  thresholds  for  the  electric  and  magnetic  dipole 
+modes  of  the  dielectric  nanolaser  are  comparable  to  the  thresholds  for  the  dipole  mode  of  a 
+spaser with a 7-nm Au core. The thresholds of the quadrupole modes arising in the optical range 
+are significantly lower than the characteristic spaser threshold. 
+
+This work was supported by RFBR grants Nos 13-07-92660, 12-02-01093, and 12-02-
+00407, by Dynasty Foundation, by PSC-CUNY Research Award, and by the NSF under Grant 
+No. DMR-1312707. 
+
+REFERENCES 
+
+1D. J. Bergman and M. I. Stockman, Phys. Rev. Lett. 90, 027402 (2003). 
+2M. I. Stockman, Nat. Photon. 2, 327 (2008). 
+3I. E. Protsenko, A. V. Uskov, O. A. Zaimidoroga, V. N. Samoilov and E. P. O’Reilly, Phys. 
+
+Rev. A 71, 063812 (2005). 
+
+4M. A. Noginov, G. Zhu, A. M. Belgrave, R. Bakker, V. M. Shalaev, E. E. Narimanov, S. Stout, 
+
+E. Herz, T. Suteewong and U. Wiesner, Nature 460, 1110-1112 (2009). 
+
+5Y.-J. Lu, J. Kim, H.-Y. Chen, C. Wu, N. Dabidian, C. E. Sanders, C.-Y. Wang, M.-Y. Lu, B.-H. 
+
+Li, X. Qiu, W.-H. Chang, L.-J. Chen, G. Shvets, C.-K. Shih and S. Gwo, Science 337, 
+450-453 (2012). 
+
+6J. B. Khurgin and G. Sun, App. Phys. Lett. 100, 011105 (2012). 
+7J. B. Khurgin and G. Sun, Nat. Photon. 8, 468 (2014). 
+8Y. Huang, X. Bian, Y. X. Ni, A. E. Miroshnichenko and L. Gao, Phys. Rev. A 89, 053824 
+
+(2014). 
+
+ 
+
+9 
+
+9X. F. Li and S. F. Yu, Opt. Lett. 35, 2535-2537 (2010). 
+10D. G. Baranov, A. P. Vinogradov, A. A. Lisyansky, Y. M. Strelniker and D. J. Bergman, Opt. 
+
+Lett. 38, 2002-2004 (2013). 
+
+11A. García-Etxarri, R. Gómez-Medina, L. S. Froufe-Pérez, C. López, L. Chantada, F. Scheffold, 
+
+J. Aizpurua, M. Nieto-Vesperinas and J. J. Sáenz, Opt. Express 19, 4815-4826 (2011). 
+12A. B. Evlyukhin, S. M. Novikov, U. Zywietz, R. L. Eriksen, C. Reinhardt, S. I. Bozhevolnyi 
+
+and B. N. Chichkov, Nano Lett. 12, 3749-3755 (2012). 
+
+13U. Zywietz, A. B. Evlyukhin, C. Reinhardt and B. N. Chichkov, Nat. Commun. 5, 3402 (2014). 
+14I. Liberal, I. Ederra, R. Gonzalo and R. W. Ziolkowski, Opt. Express 22, 8640-8653 (2014). 
+15M. Kerker, Appl. Opt. 17, 3337 (1978). 
+16M. Kerker, Appl. Opt. 18, 1180 (1979). 
+17V. Datsyuk, J. Opt. Soc. Am. B 19, 142 (2002). 
+18K. Molen, P. Zijlstra, A. Lagendijk and A. Mosk, Opt. Lett. 31, 1432 (2006). 
+19J. Ripoll, C. Soukoulis and E. Economou, J. Opt. Soc. Am. B 21, 141 (2004). 
+20S. L. McCall, A. F. J. Levi, R. E. Slusher, S. J. Pearton and R. A. Logan, App. Phys. Lett. 60, 
+
+289 (1992). 
+
+21K. J. Vahala, Nature 424, 839-846 (2003). 
+22H. Haken, Laser Light Dynamics (North-Holland, Amsterdam, 1986). 
+23L. Ge, Y. D. Chong and A. D. Stone, Phys. Rev. A 82, 063824 (2010). 
+24S. Solimeno, B. Crosignani and P. Di Porto, Guiding, Diffraction, and Confinement of Optical 
+
+Radiation (Academic Press, Orlando, 1986). 
+
+25A. V. Dorofeenko, A. A. Zyablovsky, A. A. Pukhov, A. A. Lisyansky and A. P. Vinogradov, 
+
+Phys. Usp. 55, 1080-1097 (2012). 
+
+26D. E. Aspnes and A. A. Studna, Phys. Rev. B 27, 985-1009 (1983). 
+27C. F. Boheren and D. R. Huffman, Absorption and Scattering of Light by Small Particles 
+
+(Wiley, New York, 1983). 
+
+28L. A. Weinstein, Open Resonators and Open Waveguides (Golem Press, Boulder, 1969). 
+29B. N. Chichkov, private communication 
+
+ 
+
+ 
+
+ 
+
+10 
+
+

@@ -1,0 +1,1247 @@
+Spin Polarized Transport in Core Shell Nanowire of 
+
+Silicon and Germanium 
+
+ 
+
+Bhupesh Bishnoi1 and Bahniman Ghosh1, 2 
+
+1DEPARTMENT OF ELECTRICAL ENGINEERING, INDIAN INSTITUTE OF TECHNOLOGY, KANPUR, 
+208016, INDIA 
+
+Email: bbishnoi@iitk.ac.in 
+
+2MICROELECTRONICS RESEARCH CENTER, 10100, BURNET ROAD, BLDG. 160, UNIVERSITY OF 
+
+TEXAS AT AUSTIN, AUSTIN, TX, 78758, USA 
+
+Email: bghosh@utexas.edu 
+
+ 
+
+ABSTRACT 
+
+ 
+
+We  investigate  spin  polarized  electron  transport  in  ultra-thin  Si-Core/Ge-Shell  and  Ge-
+
+Core/Si-Shell  nanowire  system  using  semi-classical  Monte  Carlo  simulation  method. 
+
+Depolarization  of  electron's  spin  occurs  in  nanowire  mainly  due  to  D'yakonov-Perel 
+
+dephasing  (DP-mechanism)  and  Elliott-Yafet  dephasing  (EY-mechanism).  We  studied  the 
+
+dependence  of  spin  dephasing  on  ultra-thin  silicon  core  diameter  in  Si-Core/Ge-Shell 
+
+nanowire  and  germanium  core  diameter  in  Ge-Core/Si-Shell  nanowire.  Variation  in  spin 
+
+dephasing  length  with  varying  core  diameter  ranging  from  1  nm  to  9  nm  indicate  that  spin 
+
+dephasing  length  increases  with  increase  in  Si-core  diameter  in  Si-Core/Ge-Shell  nanowire 
+
+and  spin  dephasing  length  decreases  with  increase  in  Ge-core  diameter  in  Ge-Core/Si-Shell 
+
+nanowire.  We  then  studied  the  variation  in  spin  dephasing  length  with  varying  externally 
+
+applied  transverse  electric  field  ranging  from  20  kV/cm  to100  kV/cm.  In  the  electric  field 
+
+dependence  study  we  found  that  spin  dephasing  length  is  weakly  dependent  upon  applied 
+
+electric  field.  In  the  end,  we  studied  the  variation  in  spin  dephasing  length  with  varying 
+
+temperature in the range of 4 K to 377 K. In this simulational study we found that for both Si-
+
+Core/Ge-Shell and Ge-Core/Si-Shell nanowire system spin dephasing length shows a strong 
+
+dependence on temperature and spin dephasing length increases with decrease in temperature 
+
+from room temperature range. 
+
+ 
+
+KEYWORDS:  
+
+Spintronics,  Spin-transport,  Si-Core/Ge-Shell  nanowire,  Ge-Core/Si-Shell  nanowire,  Monte-
+
+Carlo Simulation. 
+
+ 
+
+I. INTRODUCTION 
+
+ 
+
+Spintronics has attracted a lot of research interest in the last decade with an aim to integrate 
+
+magnetic materials and semiconductors. The motivation behind the spintronics technology is 
+
+to use the spin of electrons as a tool to encode, store and transmit in an energy-efficient way 
+
+digital  data  in  modern  electronics.  [1-3]  Spintronics  technology  based  on  semiconductor 
+
+material can be used to integrate both logic processing, memory storage and communication 
+
+device  on  a  single  chip.  [4,  5]  Hence,  spintronics  technology  provides  a  path  for 
+
+multifunctional  devices  in  classical  sense.  Also,  spin  is  used  in  the  domain  of  quantum 
+
+computation. [6] There are basically three basic phenomena in the spintronics technology, (1) 
+
+at the source information is stored in spin state and then injected. This process is known as 
+
+spin injection. (2) Information is carried by electrons which experience scattering and hence 
+
+the  electron  spin  states  relax  along  the  channel.  This  is  the  method  of  spin  dephasing.  (3) 
+
+Information  is  detected at the drain known as  spin  detection. [7, 8]An analysis  described in 
+
+our  paper  focuses  on  spin  dephasing.  Implementation  of  spin-based  electronics  in  the 
+
+mainstream  semiconductor  material  such  as  Silicon  (Si)  and  Germanium  (Ge)  is  important 
+
+challenge  for  the  success  of  spintronics  technology.  [9-12]Other  than  conventional 
+
+semiconductor nanowire structure, recently core-shell nanowire structure draws the attention 
+
+of research community and offers larger carrier confinement due to their unique structure. 
+
+In the core-shell nanowire system band engineered dimension and material creates the band 
+
+offsets in the energy band diagram and carriers are confined in the core material and effect of 
+
+surface  states  is  eliminated.  Hence,  effective  conductance  increases.  In  the  Ge-core/Si-shell 
+
+nanowire structure due to band alignment hole confinement potential has larger value and in 
+
+the Si-core/Ge-shell nanowire structure electrons and holes confinement potential has smaller 
+
+value. [13] 
+
+ 
+
+ 
+
+ 
+
+Another advantage of Ge-core/Si-shell nanowire structure is Ge-core has high intrinsic carrier 
+
+mobilities and Si-shell can be used for chemical passivation of nanowire by oxidation process 
+
+as  formation  of  SiO2  is  well  calibrated  process  in  semiconductor  technology  and  gives  a 
+
+stable higher quality surface passivation when compared to Ge based oxides. Ge-core/Si-shell 
+
+nanowire  channels  based  Field-effect  Transistor  (FETs)  has  shown  better  performance 
+
+metrics  compared  to  single-element  material  e.g.  Ge,  Si  based  nanowire  FETs.  [14]  Ge-
+
+core/Si-shell  nanowire  exhibits  significant  quantum  coherence  effects  accompanied  by  high 
+
+hole  mobility  which  provide  an  excellent  one-dimensional  nanoscale  system.  [15,  16]  In 
+
+core/shell  nanowire  structure  scattering  rates  are  reduced  as  electron  transport  is  restricted 
+
+only  in  the  lateral  direction  and  hence  mean  free  path  of  carriers  is  several  hundred 
+
+nanometers  at  room  temperature.  [17]  In  the  present  work  we  studied  spin  polarized 
+
+electronic  transport  in  ultra-thin  Si-Core/Ge-Shell  and  Ge-Core/Si-Shell  nanowire  system 
+
+using  a  semi-classical  Monte  Carlo  simulation  approach.  The  effect  of  different  parameter 
+
+(total core–shell diameter, core diameter, electric field, temperature) on spin dephasing length 
+
+is  investigated.  For  Si-Core/Ge-Shell  and  Ge-Core/Si-Shell  nanowire  structure  we  perform 
+
+simulation  for  the  electric  field  in  the  ranges  from  20  kV/cm  to  100  kV/cm  and  the 
+
+temperature  ranges  from  4  K  to  373  K.  Previously  our  group  has  studied  spin  relaxation 
+
+under  the  influence  of  varying  electric  field  and  temperature  in  Silicon  and  Germanium 
+
+nanowires.  [18,  19]  We  also  studied  influence  of  variation  of  Germanium  mole  fraction  on 
+
+spin  relaxation length in Silicon  Germanium (Si1-xGex) and III-V group nanowires. [20, 21] 
+
+In  the  rest  of  the  paper  spin  polarized  transport  in  ultra-thin  Si-Core/Ge-Shell  and  Ge-
+
+Core/Si-Shell nanowires have been investigated and to the best of our knowledge no Monte-
+
+Carlo simulation work has been done in these very thin nanowires of up to few nanometers in 
+
+diameter.  Recently  chemically  synthesized  Ge-core/Si-shell  nanowire  and  their  roughening 
+
+and  dislocation-mediated  strain  relaxation  are  reported.  [14]  In  another  study  synthesis  of 
+
+Core-Shell  Nano-needle  Arrays  of  Black  Ge  is  reported  by  Chuehet  al.[22]  In  Ge-Si 
+
+nanowire  structure  through  magneto-transport  study  strong  tunable  spin-orbital  coupling  is 
+
+investigated  [15,23]  In  Ge-core/Si-shell  nanowire  structure  helical  hole  states  and  strong 
+
+spin-orbital  interaction  is  reported  by  Kloeffel  et  al.[24]  In  another  study  of  band  offset 
+
+configurations  by  doping  in  Si-Core/Ge-Shell  nanowire,  Amato  et  al.[25]  show  band  offset 
+
+variation  in  core-shell  structure  and  experimental  work  has  been  done  in  Ge-core/Si-shell 
+
+nanowire qubits for hole spin relaxation by Yongjie et al.[26] These studies show that core-
+
+shell nanowire structure is strong contender for future spintronics devices. 
+
+ 
+
+II.   MODEL 
+
+ 
+
+Jacoboni et al. first present Monte-Carlo simulation model for charge transport [27] and then 
+
+spin  transport  in  a  quantum  wire  is  studied  by  Pramanik  et  al.  using  a  semi-classical 
+
+approach. [28] Later Saikin et al. utilize kinetic transport equation, drift-diffusion and Monte-
+
+Carlo  simulation  approaches  to  summarize  spin  dynamics  and  transport  in  semiconductor 
+
+structures.  [29]  Monte  Carlo  simulation  approaches  are  extensively  used  for  transport  in 
+
+nanowire  [30-32]  and  modeling  of  spin  FETs.  [33]  Recently  modeling  and  analysis  of  Si-
+
+core/SiGe-shell  nanowire  has  been  done  by  Tang  et  al.  [34]  and  shows  greater  quantum 
+
+mechanical effect and carrier confinement in core-shell structure compared to semiconductor 
+
+alloy  nanowire. Hence  core-shell structure shows promising thermoelectric-related transport 
+
+property.  In  this  article,  we  take  core-shell  structure  with  silicon  as  core  material  in  Si-
+
+Core/Ge-Shell  nanowire,  germanium  as  core  material  in  Ge-Core/Si-Shell  nanowire  and 
+
+studied spin transport property by using semi-classical Monte-Carlo simulation. In the present 
+
+article  we  only  discuss  key  modification  and  necessary  feature  of  Monte-Carlo  simulation. 
+
+For simplicity we approximate the cross section of core-shell nanowire as square as shown in 
+
+Fig.1.The coordinate system is chosen where X is along the length of the core-shell structure, 
+
+Y is along the width of the core-shell structure and Z is along the thickness of the core-shell 
+
+structure.  In  the  1-D  system  electrons  are  restricted  in  the  Y  direction  and  the  Z  direction. 
+
+Both  the  materials  e.g.  Silicon  and  Germanium  possess  bulk  inversion  symmetry.  [35,  36] 
+
+Hence, bulk inversion asymmetry or Dresselhaus spin-orbital interaction is absent in both Si 
+
+and Ge. Therefore Dresselhaus spin-orbital interaction is also absent in Si-Core/Ge-Shell and 
+
+Ge-Core/Si-Shell  nanowire  system.  The  transverse  electric  field  which  breaks  structural 
+
+inversion asymmetry results in Rasbha spin orbit interaction. Spin polarization hence occurs 
+
+in  core-shell  system  along  the  channel  due  to  Rasbha  spin  orbit  coupling  via  D'yakonov-
+
+Perel (DP) relaxation. [37, 38] 
+
+ 
+
+Fig.1. Core-Shell nanowire structure with core diameter of 'd' 
+
+ 
+
+ 
+
+During  free flight in  which  no scattering  occurs,  the temporal  evolution  of  spin is  given  by 
+
+following equation  
+
+  ⃗
+  
+
+   ⃗⃗⃗       ⃗                                                                   
+
+Precession vector   ⃗⃗⃗⃗⃗    has only Rasbha component which is given by  
+
+              
+
+    
+
+ 
+
+                                                       
+
+Where   is Rasbha coefficient given by, [39] 
+
+ 
+
+   
+
+ 
+
+   
+
+     
+  
+
+(           )
+
+(          )(            )
+
+  ⃗⃗                                        
+
+Where      is the spin orbit splitting,   is electron charge, ⃗⃗is transverse electric field,  is the 
+band gap and    is effective mass of electron. 
+
+Using Eq. (2) in Eq. (1), with spin vector   ⃗⃗⃗⃗expressed as 
+
+ ⃗      ⃗      ⃗      ⃗                                                           
+
+We get components of spin vector  ⃗⃗⃗, expressed as 
+
+  ⃗ 
+  
+
+   
+
+ 
+ 
+
+     ⃗                                                              
+
+  ⃗ 
+  
+
+                                                                           
+
+  ⃗ 
+  
+
+   
+
+ 
+ 
+
+    ⃗                                                               
+
+ 
+
+Sudden spin flipping happens due to Elliott-Yafet (EY) relaxation mechanism [40] and spin-
+
+flip scattering rate is given by, 
+
+ 
+       (
+  
+
+   
+  
+
+ 
+
+)
+
+   (
+
+       ⁄
+       ⁄
+
+)
+
+ 
+  
+
+                                            
+
+Where    is the band-gap,                       , where      is spin-orbital splitting and    is 
+
+momentum relaxation time.   is dimensionless constant and varies between 2 and 6. We have 
+
+considered      .The non-parabolicity approximation of the band is accounted by following 
+
+energy-wave vector relation: [41] 
+
+                                            
+
+    
+                                                                
+
+ 
+
+Where  , is a non-parabolicity parameter and is given by the following expression, 
+
+   
+
+ 
+  
+
+(   
+
+   
+  
+
+ 
+
+)
+
+                                                           
+
+ 
+
+We have assumed that phonons of core region are confined in core and similar assumption is 
+
+considered  for  shell  region  also.  In  our  simulation,  we  have  considered  surface  roughness 
+
+scattering,  optical  phonon  scattering,  spin  flip  scattering,  ionized  impurity  scattering  and 
+
+acoustic phonon scattering mechanism. [42-46] 
+
+ 
+
+III. SIMULATION FRAME WORK  
+
+ 
+
+Spin polarized electronic transport in the core/shell nanowire structure is simulated based on 
+
+models  described  in  the  section  II.  The  total  core-shell  nanowire  system  cross  section  area 
+
+is10  nm   10  nm  and  length  is  10  um.  In  the  core/shell  nanowire  structure  we  applied 
+
+transverse  electric  field  of  100  kV/cm  and  this  effective  electric  field  is  responsible  for 
+
+Rasbha spin orbit coupling as it acts as symmetry breaking field. In our model we have taken 
+
+four  lower  valleys  and  the  energy  levels  of  subbands  are  calculated  by  method  of  finite 
+
+differences.[45] Reasonable value of driving electric field is chosen to restrict the majority of 
+
+electrons  in  four  subbands.  The  cross-sectional  dimensions  of  the  nanowire  are  also 
+
+considerably small, such that the higher subbands will be at high energy levels and thus can 
+
+be safely considered to be unpopulated. 
+
+The  material parameters for  Si and  Ge are taken from Jacoboni et al. [27] and  are  given in 
+
+Table I. 
+
+TABLE I 
+
+ 
+
+Simulation parameter for Si and Ge 
+
+Ge 
+
+Longitudinal mass 
+
+Transverse mass 
+
+Bandgap (eV) at 300K 
+
+Density (g/cm3) 
+
+Speed of sound (cm/s) 
+
+Static dielectric constant 
+
+Non-parabolicity factor (eV-1) 
+
+Acoustic phonon deformation potential (eV) 
+
+1.58m0 
+
+0.081m0 
+
+0.66 
+
+5.32 
+
+Si 
+
+0.98m0 
+
+0.19m0 
+
+1.12 
+
+2.33 
+
+5.4x105 
+
+9.0x105 
+
+16 
+
+0.65 
+
+11.0 
+
+11.8 
+
+0.5 
+
+9.0 
+
+Optical phonon coupling constant (eV/cm) 
+
+3 x 108 
+
+2 x 108 
+
+Optical phonon temperature (K) 
+
+Lande g-factor 
+
+Spin Orbit Splitting (eV) 
+
+320 
+
+1.563 
+
+0.29 
+
+685 
+
+2.0 
+
+0.044 
+
+ 
+
+The simulations are run for 1 million time steps with time steps of 0.2 femto-seconds so that 
+
+electrons will reach their steady state condition. Data is recorded for last 50,000 steps and for 
+
+all  the  components  of  spin  vector  ⃗⃗⃗    ⃗      ⃗  ensemble  average  is  computed  according  to 
+the following expression, [47] 
+
+ 
+
+ 
+
+    ⃗⃗⃗⃗        
+
+∑
+
+       
+   
+
+       
+
+   
+    
+∑
+
+∑
+   
+    
+
+        
+
+                                                
+
+Where         represents  the  value  of  the       spin  component  of  the       electron  at 
+
+time    ,          is total number of electron in a grid of distance    around position   at time 
+          is the time where we start recording the data,      denotes the            components, 
+
+    is the end time. The magnitude of ensemble averaged spin vector      ⃗           is given 
+
+by, 
+
+     ⃗             √   ⃗        ⃗        ⃗                                       
+
+ 
+
+Spin  dephasing  length  is  expressed  by  distance  travelled  by  electron  from  the  point  of 
+
+injection  to  the  point  where   ⃗  falls  to  one  upon  exponential  times  of  its  initial  value  at 
+
+injection  point.  Z-spin  polarized  electrons  are  injected  with  100%  initial  polarization  hence 
+
+initial value of    ⃗         is one. 
+
+ 
+
+IV. RESULTS 
+
+ 
+
+A.  Variation  in  magnitude  of  ensemble  averaged  spin  vector     and  spin  dephasing  length 
+
+variation with core diameter in Si-Core/Ge-Shell and Ge-Core/Si-Shell nanowire: 
+
+Here we investigate the spin dephasing length for various core diameters with the total core-
+
+shell diameter  fixed for transverse effective electric field  of 100kV/cm at room temperature 
+
+(300K). From Figures 2-5, we show variation in magnitude of ensemble averaged spin vector 
+
+with core diameter in Si-Core/Ge-Shell and Ge-Core/Si-Shell nanowire. 
+
+ 
+
+ 
+
+ 
+
+Fig.2. Variation in magnitude of ensemble averaged spin vector    with varying core 
+
+diameter in Si-Core/Ge shell nanowire 
+
+Fig.3. Variation in spin dephasing length with varying core diameter in Si-Core/Ge-Shell 
+
+nanowire 
+
+ 
+
+ 
+
+Fig.4. Variation in magnitude of ensemble averaged spin vector    with varying core 
+
+diameter in Ge-Core/Si-Shell nanowire 
+
+ 
+
+ 
+
+ 
+
+Fig.5. Variation in spin dephasing length with varying core diameter in Ge-Core/Si-Shell 
+
+ 
+
+ 
+
+nanowire 
+
+In  Figures  3  and  5,  we  show  the  variation  of  spin  dephasing  length  with  varying  core 
+
+diameter  and  it  clearly  indicates  that  spin  dephasing  length  decreases  with  increase  in  Ge-
+
+core  diameter  in  Ge-Core/Si-Shell  nanowire  and  spin  dephasing  length  increases  with 
+
+increase  in  Si-core  diameter  in  Si-Core/Ge-Shell  nanowire.  Difference  primarily  lies  in 
+
+different band profiles obtained by different material combinations in Core/shell structure and 
+
+hence  carriers  are  confined  according  to  Core/shell  structure.  The  dimensions  of  the  core-
+
+shell  nanowire  system  govern  the  quantum  confinement  effects.  The  thickness  of  core  and 
+
+shell  region  is  critical  in  determination  of  band  structure  and  subband  energy  levels.  In  our 
+
+Si-Core/Ge-Shell and Ge-Core/Si-Shell system there is a band offset at the interface between 
+
+core and shell as shown in the Figure 6. When band-gap of core region is smaller than that of 
+
+shell region, core acts as a potential well. When the core diameter is very small, the effect of 
+
+quantum confinement is more significant. The energy of carriers confined in the core region 
+
+becomes very high. 
+
+ 
+
+Table II shows the Spin dephasing length for various core diameters of Si-Core/Ge-Shell and 
+
+Ge-Core/Si-Shell nanowire 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Core Diameter (nm) 
+
+Spin Dephasing Length(nm) 
+
+Spin Dephasing Length(nm)  
+
+Ge-Core/Si-Shell nanowire 
+
+Si-Core/Ge-Shell nanowire 
+
+TABLE II 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+
+1054 
+
+502 
+
+230 
+
+320 
+
+283 
+
+200 
+
+180 
+
+140 
+
+90 
+
+330 
+
+290 
+
+170 
+
+235 
+
+534 
+
+783 
+
+1119 
+
+1698 
+
+3750 
+
+ 
+
+The  subband  energy  levels  exceed  the  band  offset  at  interface.  Most  of  the  carriers  have 
+
+higher probability of being found in shell region. However, as we increase the core diameter 
+
+keeping  total  nanowire  diameter  constant,  the  subband  energy  levels  get  lowered  due  to 
+
+reduced  quantum  confinement  effects.  In  this  case,  most  of  the  carriers  are  confined  to  the 
+
+core region. This is reflected in Figures 3 to 5 showing the variation of spin dephasing length 
+
+with core diameter. In our simulations, we observed that for value of core diameter of 1 nm, 
+
+in  Ge-Core/Si-Shell  nanowire  almost  all  carriers  were  confined  to  shell  region.  Shell  is 
+
+composed  of  Silicon  which  exhibits  higher  spin  dephasing  length  than  Germanium  and  so 
+
+spin dephasing length is high for these values of core diameter and as core diameter increases 
+
+from this value confinement is reduced and carriers start distributing in core region and spin 
+
+dephasing length decreases. For core diameters above 3 nm, spin dephasing length decreases 
+
+by 80% and most of the carriers were trapped in the core region. Core region is composed of 
+
+Germanium which exhibits lower spin dephasing length compared to Silicon and so the spin 
+
+dephasing length is quite low in that region. On the other hand in Si-Core/Ge-Shell nanowire 
+
+increment in Si-Core diameter increases the spin dephasing length as more and more carriers 
+
+are confined in Si-Core regions and silicon has high value of spin dephasing length compared 
+
+to  germanium.  Above  8  nm  of  Si-Core  diameter  almost  all  the  carriers  are  confined  in  Si-
+
+Core region and this gives rise to higher spin dephasing length. Whereas for the intermediate 
+
+values, it was observed that the distribution of carriers was a bit more uniform and the value 
+
+of spin dephasing length is in mid-range.  
+
+Fig.6. Band diagram of (a) Ge-Core/Si-Shell nanowire and (b) Si-Core/Ge-Shell nanowire 
+
+ 
+
+ 
+
+B.  Variation  in  magnitude  of  ensemble  averaged  spin  vector     and  spin  dephasing  length 
+
+variation with applied electric field in Si-Core/Ge-Shell and Ge-Core/Si-Shell nanowire: 
+
+ 
+
+Figures 7-10 show the variation in magnitude of ensemble averaged spin vector     and Spin 
+
+dephasing  length  variation  with  applied  electric  field  in  core  diameter  of  4  nm  for  Si-
+
+Core/Ge-Shell  and  Ge-Core/Si-Shell  nanowire.  We  observed  that  spin  dephasing  length 
+
+depends weakly on electric field and the variation in itself is non-monotonic in nature. When 
+
+increment  in  drift  velocity  dominates  the  increase  in  scattering  rates,  the  spin  penetrates 
+
+deeper  in  the  channel,  giving  us  higher  values  of  spin  dephasing  lengths.  However,  when 
+
+scattering  rates  dominate  drift  velocity,  spin  dephasing  is  faster.  The  overall  effect  is 
+
+governed  by  the  prevailing  effect  of  the  scattering  rate  and  drift  velocity.  Scattering  rates 
+
+saturate  at  higher  field  value.  It  remains  nearly  constant  with  only  slight  variation.  Driving 
+
+electric fields are selected so that drift velocity does not get saturated. Thus in high electric 
+
+field region spin dephases slower due to dominance of drift velocity over scattering rates.  
+
+Fig.7. Variation in magnitude of ensemble averaged spin vector    with varying electrical 
+
+field in Si-Core/Ge Shell nanowire 
+
+Fig.8. Variation in spin dephasing length with varying electrical field in Si-Core/Ge-Shell 
+
+ 
+
+nanowire 
+
+ 
+
+ 
+
+Fig.9. Variation in magnitude of ensemble averaged spin vector    with varying electrical 
+
+ 
+
+field in Ge-Core/Si-Shell nanowire 
+
+ 
+
+ 
+
+ 
+
+Fig.10. Variation in spin dephasing length with varying electrical field in Ge-Core/Si-Shell 
+
+nanowire 
+
+ 
+
+C.  Variation  in  magnitude  of  ensemble  averaged  spin  vector     and  Spin  dephasing  length 
+
+variation with Temperature in Si-Core/Ge-Shell and Ge-Core/Si-Shell nanowire: 
+
+ 
+
+Acoustic phonon scattering for Si-Core/Ge-Shell and Ge-Core/Si-Shell nanowire depends on 
+
+temperature  as  shown  in  equation  10.  Increase  in  temperature  causes  increase  in  acoustic 
+
+phonon scattering which results in randomization of  k and   . As a result dephasing occurs 
+
+more quickly and therefore spin dephasing length decreases with increase in temperature. 
+
+           
+   
+
+   
+
+     √   
+      
+
+   
+
+(        )
+
+√  (       )
+
+ (  )                       
+
+Where    is  the  sound  velocity,    is  the  crystal  density,      is  the  acoustic  deformation 
+
+potential and  is the Heaviside step function.     is overlap integral associated with electron 
+
+phonon interaction.[31] 
+
+ 
+
+ 
+Fig.11. Variation in magnitude of ensemble averaged spin vector    with varying temperature 
+
+in Si-Core/Ge Shell nanowire 
+
+ 
+
+ 
+
+Fig.12. Variation in spin dephasing length with varying temperature in Si-Core/Ge-Shell 
+
+ 
+
+ 
+
+nanowire 
+
+ 
+Fig.13. Variation in magnitude of ensemble averaged spin vector    with varying temperature 
+
+in Ge-Core/Si-Shell nanowire 
+
+ 
+
+Fig.14. Variation in spin dephasing length with varying temperature in Ge-Core/Si-Shell 
+
+ 
+
+Table III shows the Spin dephasing length at various Temperature of Si-Core/Ge-Shell and 
+
+nanowire 
+
+Ge-Core/Si-Shell nanowire 
+
+TABLE III 
+
+Temperature (K) 
+
+Spin Dephasing Length(nm) 
+
+Spin Dephasing Length(nm)  
+
+Ge-Core/Si-Shell nanowire 
+
+Si-Core/Ge-Shell nanowire 
+
+4 
+
+77 
+
+150 
+
+230 
+
+300 
+
+373 
+
+ 
+
+8473 
+
+5835 
+
+1454 
+
+653 
+
+320 
+
+158 
+
+8778 
+
+6696 
+
+2704 
+
+930 
+
+235 
+
+233 
+
+Figures 11-14 show the variation in magnitude of ensemble averaged spin vector    and spin 
+
+dephasing length variation with Temperature for core diameter of 4nm at applied transverse 
+
+electric  field  of  100  kV/cm.  It  clearly  shows  that  the  spin  dephasing  length  decreases 
+
+monotonically with increase in temperature. 
+
+ 
+
+V. CONCULSION 
+
+ 
+
+In  this  article,  we  studied  spin  polarized  electronic  transport  in  Si-Core/Ge-Shell  and  Ge-
+
+Core/Si-Shell  nanowire.  Our  study  revealed  that  spin  dephasing  length  depends  on 
+
+germanium  core  diameter  in  Ge-Core/Si-Shell  and  on  silicon  core  diameter  in  Si-Core/Ge-
+
+Shell nanowire structure. We found that spin dephasing length increases with increase in Si-
+
+core  diameter  in  Si-Core/Ge-Shell  nanowire  and  spin  dephasing  length  decreases  with 
+
+increase  in  Ge-core  diameter  in  Ge-Core/Si-Shell  nanowire.  Effect  of  temperature  on  spin 
+
+dephasing  length  is  also  investigated  for  core  diameter  of  4  nm.  We  found  that  Spin 
+
+dephasing  length  is  strongly  dependent  on  temperature  and  it  decreases  monotonically  with 
+
+increase  in  temperature.  Finally,  we  studied  the  variation  in  spin  dephasing  length  with 
+
+varying externally applied transverse electric field ranging from 20 kV/cm to100 kV/cm. In 
+
+the electric field dependence study we found that spin dephasing length is weakly dependent 
+
+upon applied electric field in Si-Core/Ge-Shell and Ge-Core/Si-Shell nanowire structure. 
+
+ 
+
+ACKNOWLEDGEMENT 
+
+ 
+
+The authors thank the Department of Science and Technology of the Government of India for 
+
+partially funding this work.   
+
+ 
+
+REFERENCES 
+
+[1] Sarma, S. Das, "Spintronics: A new class of device based on electron spin, rather than on 
+
+charge, may yield the next generation of microelectronics," American Scientist, vol. 89, no.6, 
+
+pp. 516-523, 2001. 
+
+[2] Bandyopadhyay, S., and Cahay, M., Introduction to Spintronics: CRC Press, Boca Raton, 
+
+USA, ISBN-10: 0849331331, 2008. 
+
+[3] Jansen, Ron, "Silicon spintronics," Nature Materials, vol.11, no.5, pp. 400-408, 2012. 
+
+[4]  Behin-Aein,  Behtash,  Datta,  Deepanjan,  Salahuddin,  Sayeef,  Datta,  Supriyo,  "Proposal 
+
+for an all-spin logic device with built-in memory," Nature Nanotechnology, vol. 5, pp. 266–
+
+270, 2010. 
+
+[5]  Dery,  Hanan,  Song,  Yang,  Li,  Pengke,  and  Zutic,  Igor  "Silicon  spin  communication," 
+
+Appl. Phys. Lett., vol. 99, no.8, pp. 082502, 2011. 
+
+[6] Mani, R.G., Johnson, W.B., Narayanamurti, V., Privman, V., Zhang, Y-H., "Nuclear spin 
+
+based  memory  and  logic  in  quantum  Hall  semiconductor  nanostructures  for  quantum 
+
+computing applications," Physica E, vol. 12, no.1-4, pp. 152-156, 2002. 
+
+[7]  Fabian,  J.,  Matos-Abiague,  A.,  Ertler,  C.,  Stano,  P.,  and  Žutić,  I.,  "Semiconductor 
+
+Spintronics," ActaPhysicaSlovaca. Reviews and Tutorials, vol.57, no.4, pp.565-907, 2007. 
+
+[8]  Dash,  Saroj  P.,  Sharma,  Sandeep,  Patel,  Ram  S.,  de  Jong,  Michel  P.,  Jansen,  Ron, 
+
+"Electrical  creation  of  spin  polarization  in  silicon  at  room  temperature,"  Nature  Letters, 
+
+vol.462, no.7272, pp. 491-494, 2009. 
+
+[9]  Xiang,  Jie,  Vidan,  A.,  Tinkham,  M.,  Westervelt,  R.  M.,  Lieber,  Charles  M.,  "Ge/Si 
+
+nanowire mesoscopic Josephson Junctions," Nature Nanotechnology, vol.  1, no.1,  pp. 208-
+
+213, 2006. 
+
+[10]  McAlpine,  Michael  C.  and  Friedman,  Robin  S.  and  Jin,  Song  and  Lin,  Keng-hui  and 
+
+Wang,  Wayne  U.,  Lieber,  Charles  M.,  "High-Performance  Nanowire  Electronics  and 
+
+Photonics on Glass and Plastic Substrates," Nano Lett., vol. 3, no. 11, pp. 1531-1535, 2003. 
+
+[11]  Nautiyal,  Tashi,  Rho,  T.  H.,  Kim,  Kwang  S.,  "Nanowires  for  spintronics:  A  study  of 
+
+transition-metal elements of groups 8–10," Phys. Rev. B, vol.69, no.19, pp. 193404, 2004. 
+
+[12]  Eriksson,  Mark  A.,  Friesen,  Mark,  "Quantum  devices:  Nanowires  charge  towards 
+
+integration," Nature Nanotechnology, vol. 2, no. 10, pp. 595-596, 2007. 
+
+[13]  Schaffler, Friedrich, "High-mobility Si and Ge structures," Semiconductor Science  and 
+
+Technology, vol.12, no.12, pp. 1515–1549, 1997. 
+
+[14]  Goldthorpe,  Irene  A.,  Marshall,  Ann  F.,  McIntyre,  Paul  C.,  "Synthesis  and  Strain 
+
+Relaxation of Ge-Core/Si-Shell Nanowire Arrays," Nano Lett., vol. 8, no. 11, pp. 4081-4086, 
+
+2008. 
+
+[15] Prabhakaran, K., and Ogino, T., "Oxidation of Ge (100) and Ge (111) surfaces: an UPS 
+
+and XPS study," Surface Science, vol. 325, no. 3, pp. 263-271, 1995. 
+
+[16]  Kloeffel,  Christoph,  Trif,  Mircea  and  Loss,  Daniel,  "Strong  spin-orbit  interaction  and 
+
+helical hole states in Ge-Si nanowires," Phys. Rev. B, vol. 84, no.19, pp. 195314, 2011. 
+
+[17] Liang,  Gengchiau, Xiang, Jie, Kharche, Neerav, Klimeck, Gerhard, Lieber, Charles M. 
+
+and  Lundstrom,  Mark,  "Performance  Analysis  of  a  Ge-Si  Core-shell  Nanowire  Field-Effect 
+
+Transistor," ACS Nano Lett., vol. 7, no. 3, pp. 642-646, 2012. 
+
+[18]  Lu,  Wei,  Xiang,  Jie,  Timko,  Brian  P.,Wu,  Yue  and  Lieber,  Charles  M.,  "One-
+
+dimensional  hole  gas  in  germanium/silicon  nanowire  heterostructures,"  Proceedings  of  the 
+
+National Academy of Sciences of the United States of America, vol. 102, no. 29, pp. 10046–
+
+10051, 2005. 
+
+[19]  Ghosh,  Bahniman,  Kumar,  Ashish,"Spin  Relaxation  in  Silicon  Nanowires,"  arXiv: 
+
+1105.0173, pp. 12, 2011. 
+
+[20] Kumar, Ashish, Ghosh, Bahniman, "Spin Relaxation in Germanium Nanowires," arXiv: 
+
+1106.4378, pp. 12, 2011. 
+
+[21]  Kumar,  Ashish,  Akram,  Md.Waseem,  Dinda,  SatyaGopal,  Ghosh,  Bahniman,  "Spin 
+
+dephasing in silicon germanium (Si1−xGex) nanowires," J. Appl. Phys., vol.110, no.11, pp. 
+
+113720, 2011. 
+
+[22]  Kumar,  Ashish,  and  Ghosh,  Bahniman,  "Spin  dephasing  in  III-V  nanowires,"  arXiv: 
+
+1106.4618, pp. 15, 2011. 
+
+[23]  Chueh,  Yu-Lun,  Fan,  Zhiyong,  Takei,  Kuniharu,  Ko,  Hyunhyub,  Kapadia,  Rehan, 
+
+Rathore, Asghar A., Miller, Nate, Yu, Kyoungsik, Wu, Ming, Haller, E. E., and Javey, Ali, 
+
+"Black  Ge  Based  on  Crystalline/Amorphous  Core-shell  Nano-needle  Arrays,"  ACS  Nano 
+
+Lett., vol. 10, no.2,  pp. 520-523, 2010. 
+
+[24] Hao, Xiao-Jie, Tu, Tao, Cao, Gang, Zhou, Cheng, Li, Hai-Ou, Guo, Guang-Can, Fung, 
+
+Wayne  Y.,  Ji,  Zhongqing,  Guo,  Guo-Ping  and  Lu,  Wei,  "Strong  and  Tunable  Spin−Orbit 
+
+Coupling of One-Dimensional Holes in Ge-Si Core-shell Nanowires," ACS Nano Lett., vol. 
+
+10, no. 8, pp. 2956-2960, 2010. 
+
+[25]  Kloeffel,  Christoph,  Trif,  Mircea  and  Loss,  Daniel,  "Strong  spin-orbit  interaction  and 
+
+helical hole states in Ge-Si nanowires," Phys. Rev. B, vol. 84, no. 19, pp. 195314, 2011. 
+
+[26]  Amato,  Michele,  Rurali,  Riccardo  and  Ossicini,  Stefano,  "Doping  of  Si-Ge  core-shell 
+
+nanowires," Journal of Computational Electronics, vol.11, no. 3, pp. 272-279, 2012. 
+
+[27] Hu, Yongjie, Kuemmeth, Ferdinand, Lieber, Charles M. and Marcus, Charles M., "Hole 
+
+spin  relaxation  in  Ge-Si  core-shell  nanowire  qubits,"  Nature  Nanotechnology,  vol.7,  no.  1, 
+
+pp. 47-50, 2012. 
+
+[28] Jacoboni, Carlo and Reggiani, Lino, "The monte-carlo method for the solution of charge 
+
+transport  in  semiconductors  with  applications  to  covalent  materials,"  Reviews  of  modern 
+
+physics, vol. 55, no. 3, pp. 645-705, 1983. 
+
+[29] Pramanik, S., Bandyopadhyay, S., and Cahay, M., "Spin dephasing in quantum wires," 
+
+Phys. Rev. B, 68, pp. 075313-1-10, 2003. 
+
+[30] Saikin, S., Pershin, Y.V., and Privman, V., "Modelling for semiconductor spintronics," 
+
+IEE Proc.-Circuits Devices System, vol. 152, no. 4, pp. 366-376, 2005. 
+
+[31]  Borzdov,  A.V.,  Pozdnyakov,  D.V.,  Borzdov,  V.M.,  Orlikovsky,  A.A.  and  V'yurkov, 
+
+V.V.,  "Effect  of  a  Transverse  Applied  Electric  Field  on  Electron  Drift  Velocity  in  a  GaAs 
+
+Quantum  Wire:  A  Monte  Carlo  Simulation,"  Russian  Microelectronics,  vol.  39,  no.  6,  pp. 
+
+411–417, 2010. 
+
+[32] Barraud, S., Sarrazin, E., and Bournel A., "Electron Dynamics in Silicon Nanowire using 
+
+a Monte-Carlo Method," Journal of Physics: Conference Series, vol. 26, no. 2, pp.012126-1-
+
+4, 2009. 
+
+[33]  Ramayya,  E.B.,  and  Knezevic,  I.,  "Self-consistent  Poisson-Schrödinger-Monte  Carlo 
+
+solver: electron mobility in silicon nanowires," Journal of Computational Electronics, vol. 9, 
+
+no. 3-4, pp. 206–210, 2010. 
+
+[34] Min, Shen, Semion, Saikin, Ming-C., Cheng, Vladimir Privman, "Monte Carlo modeling 
+
+of  spin  FETs  controlled  by  spin–orbit  interaction,"  Mathematics  and  Computers  in 
+
+Simulation, vol. 65, no. 4-5, pp. 351-363, 2004. 
+
+[35]  Ming  Y.  Tang,  "Modeling  and  Analysis  of  core-shell  Si/SiGe  Nanowires,"  in  MIT 
+
+Thesis, DSPACE, http://hdl.handle.net/1721.1/28734, Massachusetts, 2004. 
+
+[36]  Tahan,  Charles  and  Joynt,  Robert,  "Rashba  spin-orbit  coupling  and  spin  relaxation  in 
+
+silicon quantum wells," Phys. Rev. B, vol. 71, no. 7, pp. 075315, 2005. 
+
+[37] Patibandla, S., Pramanik, S., Bandyopadhyay, S. and Tepper, G.C., "Spin relaxation in a 
+
+germanium nanowire," J. Appl. Phys., vol. 100, no. 4, pp. 044303, 2006. 
+
+[38] D'yakonov, M. I., Perel, V. I., Sov. Phys.JETP, vol. 33, 1953(1971);  Sov. Phys. Solid 
+
+Stat. Phys. vol. 13, 3023 (1972) 
+
+[39]  E.I.  Rashba,  "Properties  of  semiconductors  with  an  extremum  loop  .1.  Cyclotron  and 
+
+combinational  resonance  in  a  magnetic  field  perpendicular  to  the  plane  of  the  loop,"  Sov. 
+
+Phys. Solid. State, vol. 2, pp.1109, 1960. 
+
+[40]  de  Andrada e Silva, E. A., La  Rocca, G. C., and Bassani, F., "Spin-split  subbands and 
+
+magneto-oscillations in III-V asymmetric heterostructures," Phys. Rev. B, vol. 50, no. 12, pp. 
+
+8523-8533, 1994. 
+
+[41]  Elliott,  R.  J.,  "Theory  of  the  Effect  of  Spin-Orbit  Coupling  on  Magnetic  Resonance  in 
+
+Some Semiconductors," Phys. Rev. B, vol. 96, no. 2, pp. 266-279, 1954. 
+
+[42]  Carlo  Jacoboni,  Paolo  Lugli,  "The  Monte  Carlo  Method  for  Semiconductor  Device 
+
+Simulation," 1st Ed. ISBN 978-3-211-82110-7, Springer, 1989. 
+
+[43]  M.  V.  Fischetti  and  S.  E.  Laux,  "Band  structure,  deformation  potentials,  and  carrier 
+
+mobility in strained Si, Ge, and SiGe alloys," J. Appl. Phys., vol. 80, no. 4, pp. 2234-2252, 
+
+1996. 
+
+[44] Pop, Eric, Dutton, Robert W., Goodson, Kenneth E.,  "Analytic band Monte Carlo model 
+
+for electron transport in Si including acoustic and optical phonon dispersion," J. Appl. Phys., 
+
+vol. 96, no. 9, pp. 4998-5005, 2004. 
+
+[45]  Verma,  A.,  Buin,  A.K.,  Anantram,  M.P.,  "High-field  hole  transport  in  silicon 
+
+nanowires," J. Appl. Phys., vol.106, no.11, pp. 113713, 2009. 
+
+[46]  Ramayya,  E.B.,  Vasileska,  D.,  Goodnick,  S.M.,  Knezevic,  I.,  "Electron  transport  in 
+
+silicon  nanowires:  The  role  of  acoustic  phonon  confinement  and  surface  roughness 
+
+scattering," J. Appl. Phys., vol.104, no.6, pp. 063711, 2008. 
+
+[47] Lee, Johnson and Spector, Harold N., "Impurity limited mobility of semiconducting thin 
+
+wire," J. Appl. Phys., vol. 54, no. 7, pp. 3921-3925, 1983. 
+
+
