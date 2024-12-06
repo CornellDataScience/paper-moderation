@@ -1,0 +1,249 @@
+Solving subset sum in polynomial time and prooving P = NP
+Samir Bouftass
+E-mail : crypticator@gmail.com
+November 18, 2024
+Abstract
+In this paper, we show that subset sum problem is solvable in polynomial time.
+Keywords : Subset sum problem, Polynomial time, NP complete.
+1 Introduction :
+Subset sum is a famous problem in computer science, shown to be NP complete [1], it consists on
+deciding whether there is a substet of integers belonging to a set that sums to a given target sum
+integer. In this paper we show that varient of subset sum in which all inputs are positive could be
+solved in polynomial time, this varient is also NP complete [1][2].
+2 (b,d) Vectors :
+Definition 2.1. A(b, d)vector corresponding to number nis a vector Vsatisfying the following
+equality : n=V0b0+. . . ..+Vd−1bd−1, where Vi(0≤i < d )components of V are positive numbers.
+Definition 2.2. Let(b, d)vector V[V0...V iV(i+1). . . V d−1]corresponding to number n.
+Carry up ith component of V is defined by operations below
+Vi=Vi–b.
+V(i+1)=V(i+1)+ 1.
+Constrained Carry up requires Vi> b.
+Carry down ith component of V is defined by operations below :
+V(i+1)=V(i+1)−1.
+Vi=Vi+b.
+Constrained Carry down requires V(i+1)>1.
+1Definition 2.3. Let two vectors V1 and V2 . abs distance between V1 and V2 isP
+i|V1i–V2i|.
+Definition 2.4. abs modulus of vector V isP
+i|Vi|.
+Proposition 2.1. There is at least one (b, d)vector corresponding to a number n.
+Proof.
+Let[V0V1. . . V d−1]be a (b, d)vector that corresponds to a number n.
+n=V0b0+V1b1+. . . ..+Vd−1bd−1, where V1>1.
+By constrained carry down V0, we get :
+n= (V0+b)b0+ (V1−1)b1+. . . .. +Vd−1bd−1. Meaning [V0+b V 1−1. . .Vd−1]is also a (b, d)
+vector corresponding to n.
+Proposition 2.2. It is easy to find a (b, d)vector corresponding to a number n.
+Proof.
+We will proceed by proving by construction
+We represent n in base b.
+We automatically get a (b,s) vector V corresponding to n, s being n size in base b.
+ifs < d , we extend V size to d by filling its components of which indexes are greater than s, by
+zeroes.
+ifs < d , we replace V dth component value by n/2d−1.
+Proposition 2.3. Let a (b,d) vector V, constrained carry down its components increases
+resulting (b,d) vector Abs modulus. Conversely constrained carry up decreases it.
+Proof.
+Note, If we constrained carry up Vi, abs modulus decreases by :
+b−1 =|Vi−b|+|V(i+1)+ 1|.
+If we constrained carry down Vi, abs modulus increases by :
+b−1 =|Vi+b|+|V(i+1)−1|.
+2Lemma 2.1. Let a (b,d) vector V1, there is only one (b,d) vector V2 corresponding to
+a number n that minimizes Abs distance between V1 and V2.
+Proof.
+Let m be the number that V1 corresponds to.To find V2, we choose a (b, d)vector V3corresponding
+to|m−n|such as V3i< bfori < d−1.
+Then compute V2 =V1–V3ifn≤m,V2 =V1 +V3otherwise.
+And carry down negative V2 components to fulfill (b,d) vector condition :
+0< V2ifor0≤i < d .
+Observe, V3, ( b,d ) vector corresponding to |m−n|is the closest one can get to nil vector
+( proposition 3 ) . Indeed, because all components of V3 are inferior to b where i < d , we can’t
+carry up nor carry down to decrease the abs distance.
+Theorem 2.1. Let V1 and V2 be 2 different (b,d) vectors corresponding to the same
+number n. There is a polynomial time algorithm that transforms V2 to V1.
+Proof.
+We will proceed by proving by construction, pseudo code below transforms V2 to V1.
+Observe, this pseudo code transforms V2 components one by one, its complexity is O(n ²).
+Algorithm 1 Pseudo code 1
+i←0
+while i < d do
+ifV2i> V1ithen
+repeat Carry up V2i
+until V2i=V1i
+end if
+ifV2i< V1ithen
+repeat Carry down V2i
+until V2i=V1i
+end if
+i←i+ 1
+end while
+The following pseudo code complexity is also in O(n ²). it uses abs distance to adjust all the
+components of V2 in one loop, whereas in the former, components of V2 are adjusted sequentially.
+3Algorithm 2 Pseudo code2. Input : V1, V2. Output : V2
+i←0
+dist←absdist(V1, V2)
+updated dist←0
+while i < d do
+V3←V2
+constrained carry up V3i
+updated dist←absdist(V3, V1)
+ifupdated dist < dist then
+V2←V3
+dist←updated dist
+end if
+ifdist < updated distthen
+V3←V2
+constrained carry down V3i
+updated dist←absdist(V3, V1)
+ifupdated dist < dist then
+V2←V3
+dist←updated dist
+end if
+end if
+i←i+ 1
+ifdist= 0then return V2
+end if
+ifi=dthen
+i←0
+end if
+end while
+Theorem 2.2. Let V1 and V2 be 2 different (b,d) vectors, V2 corresponds to number
+n. There is a polynomial time algorithm that finds V3 the closest (b,d) vector to V1,
+corresponding to n.
+Proof.
+According to Lemma 2.1 , we know that V3 exists. We adapt pseudo code 2 to find V3.
+Observe, in a loop all possible carry ups and carry downs of components of V3 are performed,
+meaning |V1–V2|is minimized if absdistance (V1, V2)don’t decrease after a loop.
+4Algorithm 3 Pseudo code 3. Input V1, V2. Output : V3
+i←0
+dist←absdist(V1, V2)
+updated dist←0
+dist1←0
+while i < d do
+V3←V2
+constrained carry up V3i
+updated dist←absdist(V3, V1)
+ifupdated dist < dist then
+V2←V3
+dist←updated dist
+end if
+ifdist < updated distthen
+V3←V2
+constrained carry down V3i
+updated dist←absdist(V3, V1)
+ifupdated dist < dist then
+V2←V3
+dist←updated dist
+end if
+end if
+i←i+ 1
+ifi=danddist̸= 0then
+ifdist = dist1 then return V3
+end if
+dist1←dist
+i←0
+end if
+end while
+3 Subset sum complexity class :
+Addition seen differently :
+Addition of 2 numbers can be performed by first adding their corresponding ( b, d) vectors. bis the
+base where they are represented . Carry propagation is realized by extending sum vector Vsize
+and carry up its components until their values become inferior to b.
+Definition 3.1 . Given a set S of (b,d) vectors and and a (b,d) target vector T. Subset sum without
+carrying problem, consists on finding a subset of vectors Sb that sums to T.
+5Definition 3.2 . Let a vector V, abs distance to binary of V isP
+i||Vi–0.5| −0.5|.
+abs distance to binary of V equals 0, imply components of V are in N2.
+Proposition 3.1 . Subset sum without carrying is in P.
+Proof.
+Observe, solving subset sum without carry is equivalent to find solutions of following linear equation
+AX=Twhere components of a column of matrix Aare components of a vector in set S.
+If subset Sb exists, components of solution X are in N2.
+IfXi= 0,Siith vector in S, is not in subset Sb.
+IfXi= 1,Siith vector in S, is in subset Sb.
+Observe, Hardness of Subset sum resides mainly in carry propagation complexity, that’s sort of
+hiding the target vector and showing a number it corresponds to. To Solve subset sum efficiently,
+man had to find the right (b,d) vector T corresponding to target t such as X=A−1Tcomponents
+are in N2meaning :P
+i||(A−1T)i–0.5| −0.5|= 0.
+NB : If matrix Ais not invertible we use gaussian elimination to solve AX=T.
+Proposition 3.2 . Let V : [V0V1. . . V d−1]be a (b, d)vector corresponding to a number
+n, and a number u < V d−1. (b,d) vector : [(V0+ 2×u) (V1+u). . .(Vd−1−u)]corresponds
+ton.
+Proof.
+Observe ucarry down V (d-1)th component gives also a (b,d) vector corresponding to n which
+is : [V0V1. . .(Vd−2+ 2×u) (Vd−1−u)]. If we uright permute V ith component to its (i-1)th
+component from i=d−2, we get also a (b,d) vector corresponding to n which is : [ V0+u×2
+V1+u . . . V d−1−u].
+Theorem 3.1. Subset set sum is in P.
+Proof.
+Let S be a set of numbers whose maximal size in bits is d and a target t.
+Observe the binary representations of S elements are (2,d) vectors that corresponds to them.
+Ts is a (2,s) vector corresponding to t where s is t size in bit. By proposition 3.2 , it is easy
+to show that T= [(Ts0+ 2×(t/2d)) (Ts1+ (t/2d)). . .(Tsd−1+ (t/2d))]is a (b,d) vector that
+corresponds to t.
+Ais a matrix which columns are (2,d) vectors corresponding to elements of S.
+To find if a subset of S sums to t, we execute pseudo code 4 which is basically the same as pseudo
+code 3, it transforms T to a (2,d) vector that is closest to vectors over N2in basis A.
+Because solving linear system of equation complexity is O(n3), according to theorems 2.1 & 2.2
+Pseudo code 4 complexity is O(n5). If final computed distant is nil, transformed T components in
+base A ( X components ) are in N2, meaning there is a subset of S that sums to t, otherwise there
+is no subset of S that sums to t.
+6Algorithm 4 Pseudo code 4. Inputs S : A, T. Outputs : T, X
+Solve AX=T
+dist←absdist2binary (X)
+updated dist←0
+dist1←0
+while i < d do
+T1←T
+constrained carry up T1i
+Solve AX=T1
+updated dist←absdist2binary (X)
+ifupdated dist < dist then
+T←T1
+dist←updated dist
+end if
+ifdist < updated distthen
+T1←T
+constrained carry down T1i
+Solve AX=T1
+updated dist←absdist2binary (X)
+ifupdated dist < dist then
+T←T1
+dist←updated dist
+end if
+end if
+i←i+ 1
+ifi=danddist̸= 0then
+ifdist = dist1 then return T,X
+end if
+dist1←dist
+i←0
+end if
+end while
+Corollary 3.1. P = NP.
+Proof.
+Subset sum is in an NP complete problem meaning that if it is in P all the problems in NP are in
+it too [1][2]. Proof follows directly from theorem 3.1 .
+74 Conclusion :
+Subset sum may be considered as equivalent to a two stage algorithm.
+In the first stage :
+Matrix Ais a given, vector X over N2is unknown . The first stage output is vector T=AX.
+In the second stage :
+Vector T which is also a (b,d) vector for some b and d, is transformed to integer n it corresponds
+to.n=T•Uwhere U is vector [(20)(21)....(2d−2)(2d−1)]
+Solving subset sum consists on finding a solution over N2of equation n=AX•U
+where U = [(20)(21)....(2d−2)(2d−1)]
+In this paper, we showed that it is easy to find a (b,d) vector corresponding to an integer n.
+We equally showed transforming a (b,d) vetor corresponding to integer n to another vector, it
+corresponds to can be performed in polynomial time by decreasing distance between them to zero.
+(theorem 2.1 and 2.2 ) .
+In subset sum we dont know the final (2,d) vector V, we had to transform to, but we know that its
+components are in N2: they verify ||Vi−0.5| −0.5|= 0. To capture this proprety we introduced
+abs 2 binary distance, and showed that the ”first stage” is also easy to invert. (theorem 3.1) .
+References
+[1] Stephen A. Cook The complexity of theorem-proving procedures, STOC (1971) : Proceedings
+of the third annual ACM symposium on Theory of computing Pages 151 - 158
+[2] Richard M Karp. Reducibility Among Combinatorial Problems , (1972), Complexity of Computer
+Computations, Springer Verlag , Berlin Heidelberg .
+8

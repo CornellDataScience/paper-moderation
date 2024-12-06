@@ -1,0 +1,325 @@
+The Effect of Kinetic Energies on the Relationship Between Molecular Collision
+Speed and Acoustic Wave Speed
+Hejie Lin1 and Tsung-Wu Lin2
+1Computere-aided Engineering Methods Group,
+General Motors, Warren, Michigan, USA
+2Department of Civil Engineering,
+National Taiwan University, Taipei, Taiwan
+Date: November 30, 2024
+Abstract
+Acoustic waves are the result of molecules colliding and fluctuating. However, the relationship between
+acoustic wave speed and molecular collision speed has not been directly formulated and validated as a
+function of kinetic properties in terms of the translational and rotational kinetic energies. This article will
+present and validate a formula that connects acoustic wave speed and molecular collision speed with the
+translational and rotational kinetic energies of molecules. This formula not only provides insight into the
+microscopic mechanisms of acoustic waves but can also be used to determine acoustic wave speed from
+mechanic analyses such as collision simulations of particles.
+Keywords:  acoustic wave speed, molecular collision speed, the ratio of heat capacity, heat capacity at
+constant pressure, heat capacity at constant volume, kinetic theory of gases, kinetic energy.
+Introduction
+Acoustic waves are the result of molecules colliding and fluctuating [1,2]. However, the relationship between
+acoustic wave speed and molecular collision speed has not been directly formulated and validated as a
+function of kinetic properties in terms of the translational and rotational kinetic energies of molecules. The
+author1 and his co-authors have documented a formula for this purpose in a published lecture notes [3]
+without a self-contained proof of this formula. In this article, this formula will be derived in detail based only
+on mechanical properties.
+The relationship between molecular collision speed ( 𝑣) and acoustic wave speed ( 𝑐) is typically formulated as
+[2]
+𝑐2=𝛾
+3𝑣2(1)
+Where 𝛾 is the ratio of heat capacity [1,4] defined as the ratio of the heat capacity at constant pressure ( 𝐶𝑃) to
+the heat capacity at constant volume ( 𝐶𝑉) as
+𝛾≡𝐶𝑃
+𝐶𝑉(2)
+The ratios of heat capacity ( 𝛾) for different molecules are obtained experimentally. Kinetic energies, in terms
+of the translational and rotational kinetic energies, are not shown explicitly in the formulas.We propose a new formula for the ratio of heat capacity that relates the molecular collision speed ( 𝑣) with the
+acoustic wave speed ( 𝑐) as
+𝛾=3𝛼+2
+3𝛼(3)
+where 𝛼 is a new variable defined as the ratio of total kinetic energy ( 𝐸𝑡+𝐸𝑟) to translational kinetic ( 𝐸𝑟)
+energy as
+𝛼≡𝐸𝑡+𝐸𝑟
+𝐸𝑡(4)
+Where 𝐸𝑡 is the translational kinetic energy, 𝐸𝑟 is the rotational (spin) kinetic energy, and 𝐸𝑡+𝐸𝑟 is the total
+kinetic energy.
+From the new proposed ratio of heat capacity formula (Eq.3), the relationship between the molecular collision
+speed ( 𝑣) and the acoustic wave speed ( 𝑐) is affected by the ratio of kinetic energies in terms of the new
+variable 𝛼 as shown in Eq.1.
+The resulting formula from combining the above three equations (Eqs.1,3,4) connects acoustic wave speed
+and molecular collision speed with the translational and rotational kinetic energies of molecules. This formula
+provides insight into the microscopic mechanisms of acoustic waves.  In a practical sense, the wave speed can
+be determined from mechanic analyses such as collision simulations of particles.
+This new proposed formula (Eq.3) with the new variable 𝛼 (Eq.4) will be derived as following: First, we will
+derive the equation of state which is defined with the new variable 𝛼. Second, we will derive the acoustic
+wave equation using equation of state with the new variable 𝛼. Third, we will derive the formula (Eq.1) that
+relates the molecular collision speed ( 𝑣) to the wave propagation speed ( 𝑐).
+Three Governing Equations
+To derive the acoustic wave equation, three governing equations are required: the equation of state, Euler’s
+force equation, and the equation of continuity. These three governing equations connect three physical
+properties: pressure ( 𝑃), collision velocity ( 𝑣), and density ( 𝜌) as shown in the figure below.
+Pressure Density
+Equation of StateEquation of ContinuityVelocity
+∆𝑃
+𝑃=𝛾∆𝜌
+𝜌where 𝛾=3𝛼+2
+3𝛼𝜕
+𝜕𝑥𝑣𝑓=−𝜕
+𝜕𝑡𝜌−𝜌 0
+𝜌0𝜕
+𝜕𝑥𝑝=− 𝜌 0𝜕𝑣𝑓
+𝜕𝑡
+Euler ′s Force Equation
+Figure 1. Three Governing Equations
+The equation of state will be derived in detail using the new formula for the ratio of heat capacity ( 𝛾). Euler’s
+force equation and the equation of continuity will be briefly derived as they are well documented in literature.Equation of State
+To setup the derivation of the equation of state, three equations (Eqs. 5-7) based on the kinetic theory are
+listed below for reference:
+𝐸𝑡=1
+2𝑛𝑁 𝐴𝑚𝑣2(5)
+𝐸𝑟=1
+2𝑛𝑁 𝐴𝐼𝜔2(6)
+𝑃𝑉=1
+3𝑛𝑁 𝐴𝑚𝑣2(7)
+where 𝐸𝑡 is the translational kinetic energy, 𝐸𝑟 is the rotational kinetic energy, 𝑛 is the number of moles, 𝑁𝐴 is
+Avogadro’s number, 𝑚 is the mass of one molecule, 𝐼 is the mass moment of inertia of one molecule, 𝑣 is the
+translational velocity, 𝜔 is the angular velocity, 𝑃 is the pressure, and 𝑉 is the volume.
+Combining Eqs.5 and 7, the translational kinetic energy 𝐸𝑡 can be related to the pressure 𝑃 as
+𝐸𝑡=3
+2𝑃𝑉 (8)
+This equation (Eq.8) shows that at a fixed volume ( 𝑉), pressure ( 𝑃) is only related to the translational kinetic
+energy ( 𝐸𝑡) and is not related to the rotational kinetic energy ( 𝐸𝑟). This is an important property for the kinetic
+theory of gases which will be used to develop the formula for the equation of state as following.
+Adiabatic Process
+𝑃𝑃
+𝑃
+𝑃𝑉Energy
+InputInternal KE
+increase
+∆𝐸𝑡+𝐸 𝑟W ork
+Done
+𝑃∆𝑉𝑃
+Figure 2. Adiabatic Process
+The equation of state in terms of the translational kinetic energy ( 𝐸𝑡) and the rotational kinetic energy ( 𝐸𝑟) is
+derived as following. In an adiabatic process, according to the conservation of energy, if there is no energy
+input ( ∆𝑄=0), the summation of the change in internal kinetic energy ( ∆𝐸𝑡+∆𝐸𝑟) and the work done
+(𝑃∆𝑉) is equal to zero as
+∆(𝐸𝑡+𝐸𝑟)+𝑃∆𝑉=0 (9)
+Since pressure ( 𝑃) is only related to the translational kinetic energy ( 𝐸𝑡) and not to the rotational kinetic
+energy ( 𝐸𝑟) as shown in Eq.8, we want to represent the total kinetic energy increase ( ∆𝐸𝑡+∆𝐸𝑟) with the
+translational kinetic energy increase ( 𝐸𝑡). This is accomplished by introducing a new variable 𝛼 defined as the
+ratio of the total kinetic energy ( 𝐸𝑡+𝐸𝑟)  to the translational kinetic energy ( 𝐸𝑡) as
+𝛼≡𝐸𝑡+𝐸𝑟
+𝐸𝑡(10)
+Substituting Eq.10 into Eq.9 gives∆(𝛼𝐸 𝑡)+𝑃∆𝑉=0 (11)
+Substituting Eq.8 into the above equation (Eq 11) gives
+𝛼3
+2∆(𝑃𝑉)+𝑃∆𝑉=0 (12)
+Taking the derivative of 𝑃𝑉 gives
+𝛼3
+2(∆𝑃∙𝑉+𝑃∙∆𝑉)+𝑃∆𝑉=0 (13)
+Rearrangement of the above equation gives the equation of state that relates pressure change to volume
+change of the transmission media as
+∆𝑃
+𝑃=−ቀ3𝛼+2
+3𝛼ቁ∆𝑉
+𝑉(14)
+According to the conservation of mass, ∆𝑚=∆(𝜌𝑉)=0, volume change (∆𝑉
+𝑉) is related to density change
+(∆𝜌
+𝜌) as
+∆𝑉
+𝑉=−∆𝜌
+𝜌(15)
+Substituting Eq.15 into Eq.14 gives the equation of state as
+∆𝑃
+𝑃=𝛾∆𝜌
+𝜌(16)
+Where3𝛼+2
+3𝛼 is the ratio of heat capacity ( 𝛾) as
+𝛾=3𝛼+2
+3𝛼(17)
+For monatomic gases with 𝐸𝑟=0,𝛼=1 , 𝛾=5
+3. For diatomic gases with 𝐸𝑟=2
+3𝐸𝑡,𝛼=5
+3,𝛾=7
+5.
+𝐸𝑟=1
+2𝑛𝑁𝐴𝐼𝜔2
+𝐸𝑡=1
+2𝑛𝑁𝐴𝑚𝑣2
+𝑃 𝑉=1
+3𝑛𝑁𝐴𝑚𝑣2 
+𝛼≡𝐸𝑡+𝐸 𝑟
+𝐸𝑡𝐸𝑡=3
+2𝑃𝑉
+𝐸𝑡+𝐸 𝑟=𝛼 𝐸 𝑡∆𝐸𝑡+𝐸𝑟+𝑃∆𝑉=0
+→∆ 𝛼𝐸𝑡+𝑃 ∆ 𝑉=0
+→𝛼3
+2∆𝑃 𝑉+ 𝑃 ∆ 𝑉 = 0
+→𝛼3
+2∆ 𝑃ȉ𝑉+𝑃ȉ∆ 𝑉 +𝑃 ∆ 𝑉=0
+→∆𝑃
+𝑃=−3𝛼+2
+3𝛼∆𝑉
+𝑉
+→∆𝑃
+𝑃=3𝛼+2
+3𝛼∆𝜌
+𝜌
+→∆𝑃
+𝑃=𝛾∆𝜌
+𝜌∆ 𝑚=0 ∆𝜌 𝑉= 0∆𝑉
+𝑉=−∆𝜌
+𝜌
+𝛾=3𝛼+2
+3𝛼
+Figure 3. Flowchart of the Derivation of the Equation of State
+The Euler’s Force Equation
+The Euler’s force equation can be derived from Newton’s second law of motion. According to Newton’s Law
+of Motion, the force 𝑓⃗ applied on the cubic will cause an acceleration 𝑎⃗ on this cubic with three-dimensional
+lengths of ∆𝑥,∆𝑦,𝑎𝑛𝑑  ∆𝑧. The free body diagram of the cubic is shown in the figure below.∆𝑦
+∆𝑥𝑝∆𝑦∆𝑧𝑒̂𝑧𝑒̂𝑦𝑒̂𝑥
+∆𝑧𝑝+𝜕𝑝 
+𝜕𝑥∆𝑥 ∆𝑦∆𝑧𝜕𝑣𝑓
+𝜕𝑡𝜌𝑜∆𝑥∆𝑦∆𝑧Molecular flow velocity: 𝑣𝑓 𝑑𝑖𝑠𝑡𝑎𝑛𝑐𝑒
+𝑢𝑛𝑖𝑡 𝑡𝑖𝑚𝑒
+Force Mass Acceleration−𝑝+𝜕𝑝 
+𝜕𝑥∆𝑥 ∆𝑦∆𝑧+𝑝∆𝑦∆𝑧
+𝜌𝑜∆𝑥∆𝑦∆𝑧𝜕 
+𝜕𝑡𝒗𝒇
+𝑝≡𝑃−𝑃𝑜Difference
+Averaged = Constant = 1 A TMAbsolute𝑃≅𝑃 𝑜
+Figure 4. Newton’s Second Law of Motion
+The governing equation of the cubic can be expressed as:
+−ቀ𝑝+𝜕𝑝
+𝜕𝑥∙∆𝑥ቁ∆𝑦∆𝑧+(𝑝)∆𝑦∆𝑧=𝜌0∆𝑥∆𝑦∆𝑧∙𝜕
+𝜕𝑡𝑣𝑓 (18)
+Simplifying the equation above by eliminating ∆𝑥∆𝑦∆𝑧 yields the one-dimensional Euler’s force equation in
+Cartesian coordinates:
+𝜕𝑝
+𝜕𝑥=−𝜌𝑜𝜕
+𝜕𝑡𝑣𝑓 (19)
+Where 𝑝≡𝑃−𝑃𝑜 and 𝑃≅𝑃𝑜. Here 𝑃 is the instantaneous pressure and 𝑃𝑜 is the averaged pressure which
+can be treated as a constant. Based on this, Eq.16 can be rewritten as
+𝑃−𝑃 𝑜
+𝑃𝑜=𝛾𝜌−𝜌 𝑜
+𝜌𝑜(20)
+Note that 𝜌 is the instantaneous density and 𝜌𝑜 is the averaged density and can be treated as a constant.
+Equation of Continuity
+The equation of continuity can be derived from the law of conservation of mass. According to the law of
+conservation of mass, the increase of mass in the cubic unit is equal to the “mass flow in” minus “mass flow
+out”, as shown in the figure below:
+∆𝑦
+∆𝑥𝜌𝑜𝑣𝑓∆𝑦∆𝑧∆𝑡𝑒̂𝑧𝑒̂𝑦𝑒̂𝑥
+∆𝑧𝜌𝑜𝑣𝑓+𝜕
+𝜕𝑥𝜌𝑜𝑣𝑓∆𝑥 ∆𝑦∆𝑧∆𝑡
+𝜌: Instantaneous Density
+𝜌𝑜:Average  Density𝜕𝜌
+𝜕𝑡∆𝑡∆𝑥∆𝑦∆𝑧Increase
+of massMass in Mass out
+𝑄𝜌∆𝑦∆𝑧∆𝑡𝜕𝜌
+𝜕𝑡∆𝑡∆𝑥∆𝑦∆𝑧 𝑄𝜌+𝜕𝑄𝜌
+𝜕𝑥∆𝑥 ∆𝑦∆𝑧∆𝑡
+Mass flow rate
+𝑄𝜌=𝜌 𝑜𝑣𝑓𝑚𝑎𝑠𝑠
+𝑢𝑛𝑖𝑡 𝑎𝑟𝑒𝑎ȉ𝑢𝑛𝑖𝑡 𝑡𝑖𝑚𝑒
+Mass passing through an unit area per unit time
+Figure 5. Equation of ContinuityThe governing equation of the cubic can be expressed as:
+𝜕𝜌
+𝜕𝑡∙∆𝑡∙∆𝑥∆𝑦∆𝑧=𝑄𝜌∙∆𝑦∆𝑧∙∆𝑡−ቀ𝑄𝜌+𝜕𝑄𝜌
+𝜕𝑥∆𝑥ቁ∙∆𝑦∆𝑧∙∆𝑡 (21)
+Where 𝑄𝜌 is the mass flow rate defined as 𝜌𝑜𝑣𝑓. The above equation can be simplified to the one-dimensional
+equation of continuity in Cartesian coordinates as:
+𝜕𝜌
+𝜕𝑡=−𝜕
+𝜕𝑥൫𝜌𝑜𝑣𝑓൯ (22)
+Since 𝜌 is the instantaneous density and 𝜌𝑜 is the averaged density which can be treated as a constant,
+therefore 𝜕𝜌≡𝜕(𝜌−𝜌𝑜). The equation above (Eq.22) can be rewritten as
+𝜕𝑣𝑓
+∂𝑥=−𝜕
+𝜕𝑡ቀ𝜌−𝜌 𝑜
+𝜌𝑜ቁ (23)
+Acoustic Wave Equation
+Finally, the acoustic wave equation can be obtained by combining the three governing Eqs.19,20,23 to get
+𝜕2
+𝜕𝑥2𝑝(𝑥,𝑡)=1
+𝑐2𝜕2
+𝜕𝑡2𝑝(𝑥,𝑡) (24)
+where
+𝑐2=𝛾𝑃𝑜
+𝜌𝑜(25)
+Where 𝑐 is the speed of sound, 𝑃𝑜 is the averaged pressure, and 𝜌𝑜 is the averaged density.
+𝝏
+𝝏𝒙𝒑=−𝝆𝒐𝒅𝒗𝒇
+𝒅𝒕
+𝝏𝒗𝒇
+𝛛𝒙 =−𝝏
+𝝏𝒕 𝝆−𝝆 𝒐
+𝝆𝒐
+ 𝝆−𝝆 𝒐
+𝝆𝒐    =  𝟏
+𝜸𝑷−𝑷 𝒐
+𝑷𝒐
+𝝏𝟐
+𝛛𝒙𝟐𝒑=−𝝆𝐨𝒅𝟐𝒗𝒇
+𝒅𝒙𝒅𝒕=𝝆𝐨𝝏𝟐
+𝝏𝒕𝟐𝝆−𝝆 𝒐
+𝝆𝒐=𝝆𝐨
+𝜸𝝏𝟐
+𝝏𝒕𝟐𝑷−𝑷 𝒐
+𝑷𝒐𝝏𝟐
+𝛛𝒙𝟐𝒑=𝟏
+𝜸𝑷 𝒐
+𝝆𝒐𝝏𝟐
+𝝏𝒕𝟐𝒑
+𝒑=𝑷−𝑷 𝒐
+Figure 6. Derivation of the Acoustic Wave Equation
+The relationship between the wave propagation speed ( 𝑐) and the molecular collision speed ( 𝑣) can be
+obtained by replacing the pressure ( 𝑃𝑜) with1
+3𝑉𝑛𝑁 𝐴𝑚𝑣2 as shown in Eq.7 and replacing density ( 𝜌𝑜) with
+𝑛𝑁 𝐴𝑚
+𝑉 as
+𝑐2=𝛾𝑃𝑜
+𝜌𝑜=𝛾1
+3𝑉𝑛𝑁𝐴𝑚𝑣2
+𝑛𝑁𝐴𝑚
+𝑉=𝛾
+3𝑣2(26)
+Where 𝛾 is the ratio of heat capacity defined as
+𝛾=3𝛼+2
+3𝛼(27)where 𝛼 is the new variable defined as the ratio of total kinetic energy ( 𝐸𝑡+𝐸𝑟) to translational kinetic ( 𝐸𝑟)
+energy as
+𝛼≡𝐸𝑡+𝐸𝑟
+𝐸𝑡(28)
+Where 𝐸𝑡 is the translational kinetic energy, 𝐸𝑟 is the rotational kinetic energy, and 𝐸𝑡+𝐸𝑟 is the total kinetic
+energy.
+The relationship between acoustic wave speed and molecular collision speed (Eqs.1 or 26) is now validated
+with the translational and rotational kinetic energies of molecules (Eqs.5 and 6). The relationship between
+acoustic wave speed and molecular collision speed is affected by the kinetic energies as following: when the
+rotational kinetic energy ( 𝐸𝑟) is very small relative to the translational kinetic energy ( 𝐸𝑡), the ratio of heat
+capacity ( 𝛾) will be close to 5/3 and the acoustic wave speed ( 𝑐) will be close to the molecular collision speed
+(𝑣) multiplied by ට5
+9 as shown in Eq.26. On the other hand, when the rotational kinetic energy ( 𝐸𝑟) is very
+large relative to the translational kinetic energy ( 𝐸𝑡), the ratio of heat capacity ( 𝛾) will be close to 1 and the
+acoustic wave speed ( 𝑐) will be close to the molecular collision speed ( 𝑣) multiplied by ට1
+3. By comparing
+these two extreme cases, if the molecular collision speed ( 𝑣) is fixed, the acoustic wave speed ( 𝑐) is faster in
+particles with smaller rotational energies and slower in particle with larger rotational energies. This can be
+explained by the derivation that rotational energy absorbs part of the kinetic energy and hence slows down the
+acoustic wave speed.
+Conclusion
+A formula that connects acoustic wave speed and molecular collision speed with kinetic properties in terms of
+the translational and rotational kinetic energies is presented and validated based only on kinetic properties.
+This formula not only provides insight into the acoustic microscopic mechanisms of acoustic waves but also
+can be used to determine the wave speed from the mechanic analysis such as the numerical collision
+simulation of particles.
+Reference
+1.Pathria, R.K., (1972), Statistical Mechanics , Pergamon Press, pp.43–48, 73–74, ISBN 0-08-016747-0.
+2.Young, H., F. Freedman, (2016), University Physics with Modern Physics (14th ed.), Pearson, pp.599-601,
+633-636, ISBN 0-0-321-97361-0.
+3.Kinsler, L.E., A.R. Frey, A.B. Copper, J.V. Sanders, (2016), Fundamental of Acoustics (3th ed.) , John
+Wiley & Sons, pp.105-107, ISBN 0-471-02933-5.
+4.Lin, H., T. Bengisu, Z. Mourelatos, (2021), Lecture Notes on Acoustics and Noise Control,  Springer,
+pp.39-47, ISBN 978-3-030-88212-9.
+5.Blackstock, D.T., (2000), Fundamentals of Physical Acoustics , John Wiley & Sons, pp.80-82, ISBN 0-
+471-31979-1.

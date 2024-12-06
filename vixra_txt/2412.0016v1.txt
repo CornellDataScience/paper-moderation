@@ -1,0 +1,372 @@
+Power Sums Via Odd Sequences
+Maurizio M. D’Eliseo∗
+Osservatorio S.Elmo - Via A.Caccavello 22, 80129 Napoli, Italia
+Power sums can be reinterpreted as weighted sums of odd sequences using a simple transformation
+of Riemann sums into Lebesgue sums. This reformulation introduces a self-referential framework
+in which power sums are expressed as linear combinations of power sums in descending order.
+Keywords : Power sums, odd number sequences, Riemann and Lebesgue summation, count-
+ing measure, weight functions, linear combinations, reductions.
+I. INTRODUCTION
+Consider a sequence of nrectangles on a plane, each
+with a base of 1 and heights that increase according
+to the powers of the integers: 1k,2k,3k, . . . , nk, where
+k= 0,1,2. . .. The cumulative area of these rectangles
+serves as a visual interpretation of a power sum of powers,
+denoted as follows:
+Sk
+n≡nX
+i=1ik, k = 0,1,2, . . . . (1)
+In particular, when k= 0, we encounter the simple case:
+S0
+n=nX
+i=11 =n, (2)
+which is the total area of nsquare units. The sum Sk
+n
+can be interpreted as the Riemann sum (and integral) of
+a step function f(x) =⌊x⌋kdefined in the interval [1 , n],
+where ⌊x⌋represents the floor function. Our primary goal
+was to derive a closed-form expression for an unknown
+power sum Sk
+nusing a recursive framework. We show
+that this problem can be solved by representing Sk
+nas a
+linear combination of the previously known power sums
+Si
+n, fori < k . This approach leads to the following final
+representation:
+Sk
+n=k−1X
+i=0aiSi
+n, (3)
+where aiare either rational numbers or polynomials in
+nwith rational coefficients. Note that we have included
+i= 0 in the sum, as S0
+n=nis a known quantity that
+may appear in the linear combination.
+A. The general case
+Our method begins by manipulating the formal struc-
+ture of a generic sum, decomposing it into an equivalent
+∗s.elmo@mail.comexpression. Specifically, we express any power sum Sk
+nin
+what we call its ( k, h)-form:
+Sk
+n=nX
+i=1ik=nX
+i=1ihik−h, h = 0,1,2. . . , h ≤k.(4)
+This move favors the possibility of a fractional represen-
+tation of the power sum if we look for a polynomial ph(j)
+such that:
+iX
+j=1ph(j) =ih. (5)
+By the inverse relation between summations and finite
+differences, the degree of the polynomial must be ( h−1),
+so that its summation yields the ihterm. By substituting
+this into Eq. (4), we obtain the double sum:
+Sk
+n=nX
+i=1iX
+j=1ph(j)ik−h. (6)
+To simplify this double sum, we have to change the order.
+Considering that 1 ≤j≤i≤n, we allow jto range
+from 1 to n, and for each j, variable iranges from j
+ton. Finally, because ph(j) depends only on j, we can
+factor it out of the inner sum, yielding a more manageable
+expression:
+Sk
+n=nX
+j=1ph(j)nX
+i=jik−h. (7)
+The inner sum,Pn
+i=jik−h, can evidently be expressed as
+the difference between the power sums Sk−h
+nandSk−h
+j−1
+(assumed known), and we denote this difference as µk
+j:
+nX
+i=jik−h=Sk−h
+n−Sk−h
+j−1≡µk
+j. (8)
+So the power sum Sk
+ncan now be expressed as:
+Sk
+n=nX
+j=1ph(j)µk
+j. (9)
+By developing the product in the sum, we get a polyno-
+mialpk(j) of order kcontaining all the decreasing powers
+ofj. Executing the summation and shifting the jksum-
+mation to the left, we obtain the desired result.2
+B. The form (k, h) = (1 ,1)
+Here, with p1(j) =j0= 1, Eq. (4) becomes:
+S1
+n=nX
+i=1i=nX
+i=11X
+j=11·i. (10)
+Reversing the order of summation, we get:
+S1
+n=nX
+j=1nX
+i=j1 =nX
+j=1(n−j+ 1) = −S1
+n+n2+n,(11)
+from which:
+S1
+n=(n+ 1)n
+2=n+ 1
+2S0
+n. (12)
+C. The form (k, h) = (k,2)
+Consider the sequence of the first iodd numbers
+{1,3,5, . . . , 2i−1}. The sum of its elements is:
+iX
+j=1(2j−1) = 2iX
+j=1j−iX
+j=11 =i2+i−i=i2.(13)
+It follows that we can manage the ( k,2)-form of the sum
+with p2(j) = 2j−1 and get:
+Sk
+n=nX
+j=1(2j−1)nX
+i=jik−2, (14)
+where
+nX
+i=jik−2=Sk−2
+n−Sk−2
+j−1≡µk
+j. (15)
+So the power sum µk
+jcan now be expressed as:
+µk
+j=nX
+j=1(2j−1)µk
+j. (16)
+This formulation decomposes the sum of powers of order
+kinto sums over the sums of lower-order powers Sk−2
+n
+andSk−2
+j−1, providing a recursive structure for expressing
+higher-order sums in terms of lower-order ones.
+1. The form (k, h) = (2 ,2)
+The case (2 ,2) has a significant interpretation. We
+have:
+µ2
+j=S0
+n−S0
+j−1=n−j+ 1, (17)
+which satisfies the “boundary conditions”:
+µ2
+1=n, µ2
+n= 1. (18)Thus, the double sum can be formally reduced to a sim-
+pler form, interpretable as a Lebesgue sum of the step
+function 2 j−1 over a discrete measure space. The mea-
+sureµ2
+j“counts” the contributions of each odd number,
+weighted by itself [1]:
+S2
+n=nX
+j=1(2j−1)µ2
+j=nX
+j=1(2j−1)(n−j+ 1).(19)
+Expanding, yields:
+S2
+n=nX
+j=1[−2j2+ (2n+ 3)j−(n+ 1)]. (20)
+Solving for S2
+n, we obtain:
+S2
+n=2n+ 3
+3S1
+n−n+ 1
+3S0
+n, (21)
+expressing the sum of the squares in terms of lower power
+sums. Substituting known values of S1
+nandS0
+ngives:
+S2
+n=2n+ 3
+3n2+n
+2
+−n+ 1
+3(n) =2n3+ 3n2+n
+6.
+(22)
+This approach reveals a connection between S2
+nand
+Lebesgue summation. By shifting focus from indices to
+values of odd numbers, we gain a new perspective. The
+table below illustrates the transformation from double to
+single sum for n= 5:
+S2
+5σ1σ3σ5σ7σ9µ2
+jP
+L
+919
+77214
+555315
+3333412
+1111155P
+R122232425255
+2. The cases (k,2)fork >2
+When k > 2, in constructing the corresponding
+Lebesgue sum for these cases, we can still use the func-
+tion (2 j−1), but the function µk
+jis no longer a simple
+counting measure as seen in the case of µ2
+j. Instead,
+µk
+jbecomes a more complicated arithmetic function. To
+better understand this, we will outline the step-by-step
+construction for the specific case k= 3, with n= 5. In
+this case, we have:
+µ3
+j=n2+n
+2−j2−j
+2. (23)
+The generalized sum for k= 3 becomes:
+S3
+n=nX
+j=1
+−j3+3
+2j2+2n2+ 2n−1
+2j−n2+n
+2
+,3
+which simplifies to:
+S3
+n=3
+4S2
+n+2n2+ 2n−1
+4S1
+n−n+ 1
+4S0
+n
+=n4+ 2n3+n2
+4= (S1
+n)2. (24)
+This result expresses the cube sum S3
+nas a function of
+lower-order sums, and interestingly, it matches the square
+of the linear sum S1
+n. The following table summarizes the
+process of transforming the double sum S3
+5into a single
+sum:
+S3
+5j(2j−1)µ3
+j(2j−1)µ3
+j
+5 9 5 45
+4 7 9 63
+3 5 12 60
+2 3 14 42
+1 1 15 15
+P5
+j115 25 55 225
+D. The form (k, h) = (k,3)
+Our method suggests the possibility of a broader
+hierarchy of sum representations of the form
+(k,1),(k,2),(k,3), . . ., each of which can be analyzed
+using the approach outlined above. The non-uniqueness
+of these decompositions becomes apparent from the fact
+that different associated polynomials must be used. In
+fact, the decomposition of a power sum into weighted
+sums of lower-order powers is inherently flexible and
+not restricted to a single representation. To illustrate
+this point, we can explore the specific case of the form
+(k, h) = ( k,3) using the established methodological
+framework. This investigation will reveal the fun-
+damental malleability of power sum representations.
+The sequence 3 j2−3j+ 1, j= 1,2. . . n, satisfies the
+identity:
+iX
+j=1(3j2−3j+ 1) = i3. (25)
+It follows that we can express the sum Sk
+nfork≥3 in
+this way:
+Sk
+n=nX
+j=1(3j2−3j+ 1)nX
+i=jik−3, (26)
+which simplifies to:
+Sk
+n=nX
+j=1(3j2−3j+ 1)µk
+j, (27)where:
+µk
+j=Sk−3
+n−Sk−3
+j−1. (28)
+In particular, for k= 3, we have:
+µ3
+j=S0
+n−S0
+j−1=n−j+ 1. (29)
+Thus, the generalized sum for k= 3 becomes:
+S3
+n=nX
+j=1(3j2−3j+ 1)( n−j+ 1)
+=nX
+j=1
+−3j3+ 3j2n+ 6j2−3jn−4j+n+ 1
+.(30)
+Simplifying this expression leads to:
+S3
+n=3(n+ 2)
+4S2
+n−3n+ 4
+4S1
+n+n+ 1
+4S0
+n
+=n4+ 2n3+n2
+4. (31)
+Comparison of Eq. (24) with Eq. (30) shows that the de-
+composition of S3
+ninto combinations of lower sums is not
+unique. While the final result is fixed, the route taken to
+arrive at it can vary. We can then think of obtaining rep-
+resentations of sums of progressively higher orders that
+provide equivalent decompositions for the same sum but
+with different coefficients.
+II. CONCLUSION
+Our reformulation provides a new perspective on power
+sums, revealing hidden structures that go beyond their
+apparent simplicity. By introducing the weighting factors
+µ2
+j, we express power sums as weighted sums of sequences
+of odd numbers in the form ( k, h) = ( k,2) with k≥2.
+This provides a consistent framework for analyzing power
+sums of different orders. In particular:
+1) For k= 2, the weights simplify to: µ2
+j=n−j+ 1.
+This allows us to interpret S2
+nas a Lebesgue sum of the
+step function 2 j−1 over a discrete measure space. The
+measure µ2
+j“counts” the contributions of each odd num-
+ber.
+2) For k >2, the weighting factors µk
+jbecome more com-
+plex, assigning decreasing weights to odd numbers and
+reflecting the influence of the higher-order power sum.
+3) Unlike the case of k= 2, which involves multiple se-
+quences, the method for k > 2 is based on a single se-
+quence of odd numbers.
+While this reformulation does not improve computational
+efficiency, it does provide a systematic way to decom-
+pose power sums into lower-order sums that may reveal
+new patterns, relationships, and identities. Using this
+approach with k= 3 demonstrates the non-uniqueness
+of power sum decompositions. This flexibility allows for
+multiple valid decompositions, depending on the desired
+outcome–whether computational efficiency or theoretical
+insight. The non-uniqueness highlights the richness of
+power sums and suggests new avenues of investigation,
+as different decompositions can provide alternate ways
+to understand their properties.4
+[1] H. Lebesgue, Measure and the Integral , (Holden Day, San
+Francisco, 1966, pag. 180).

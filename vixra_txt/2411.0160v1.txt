@@ -1,0 +1,139 @@
+An Extension of the Schwarzschild  Solution: C ombined 
+Gravitational Fiel d of Two or More Sources  
+Mueiz Gafer KamalEldeen  
+Mueizphysics @gmail.com  
+November 2024  
+ 
+ 
+Abstract  
+There is no direct mathematical tool that enables us to generalize Schwarzschild solution to cases where there is more than 
+one source of gravitational field. In  this paper, we  explained that this generalization can be made if we develop  an equivalent 
+and parallel description  to the geometric description  based on the metric tensor, and we found that this method succeeds in 
+generalizing the Schwarzschild solution for any number of gravitational sources that move relative to each other.  
+ 
+Introduction  and O verview  
+The great work that Schwarzschild  accomplished [1] in finding a simple and elegant  relationship between 
+space and mat ter has one flaw  which is that the solution he arrived at is very rigid and can only be app lied 
+in one ideal case and cannot be dealt with using mathematical tools  such as superposition, integration o r 
+statistics to derive solutions for general cases such as the presence of more than one source of 
+gravitational fi eld, that is  because  the  metric tensor which represents the variable of gravitational field 
+in general relativity cannot be combined by any mathematical too l, given multiple sources of gravity, each 
+source corresponding to some metric , the “net metric ” at a given point does not equal the sum of the 
+indiv idual metrics of each sources or  any known function  of these metrics. But  the situation  is not 
+completely hopeless, as mathematics has many tactics other than these direct tools for  deducing general 
+relations from special  and ideal cases. Here , we want to use one of this tactics which is to replace the 
+variables of  the relationship of the ideal case with other variables that can be dealt with by mathematical 
+tools.  
+I want the reader not to rush to criticize the idea through  the issue of whether the new description  
+matches rea lity or not, because the intention is not to present an alternative to the geometric description 
+based on the metric tensor of the gravitational field, this alternative description is mer ely a mean s to 
+perform some mathematical operations and we quickly return to the original descr iption . 
+Equivalence of Metric Tensor and Space Flow  
+Let's have a polar refe rence system with center O  in a vacuum devoid of matter , in thi s case the metric 
+tensor distribute d around this point can be found from  the formula:  
+ⅆ𝒔𝟐=𝑪𝟐ⅆ𝒕𝟐−ⅆ𝒓𝟐−𝒓𝟐ⅆ𝜽𝟐−𝒓𝟐𝒔𝒊𝒏𝟐𝜽ⅆ𝜴𝟐       (1) 
+ So for  a point P(t , r , 𝜽 , 𝛀 ) the metric  is : 
+𝒈𝒕𝒕 =𝑪𝟐 ,   𝒈𝒓𝒓=−𝟏 ,𝒈𝜽𝜽=−𝒓𝟐 ,𝒈𝛀𝛀=−𝒓𝟐𝒔𝒊𝒏𝟐𝜽 , 
+and all other component s equal  zero . 
+Now suppose we put a mas s M in point O . This mass will cause some cha nges in the space -time  around 
+the point . 
+Let's temporarily forget everything we know about Newton's law, general relativity and Schwarzschild's 
+solution and look for a new way to address the problem guided  only by  the ge neral principles of  physics 
+and special relativit y and let us begin by making the  following simple assumption : The presence of mass 
+will cause the s pace around it t o move inward in the direction to  the center, so that the sp eed of any poi nt 
+of this space with respect to  the center  is given by: 
+𝐯=√𝟐𝐆𝐌
+𝐫   (2) 
+This velocity will cause changes in the radial  distance and time measurements as required by special 
+relativity:  
+ 
+ⅆr′=√1−v2
+C2ⅆr   , 
+and   
+ⅆt′=ⅆt
+√1−v2
+c2 . 
+Substituting from equ ation (2) we get:  
+ⅆr′=√1−𝟐𝑮𝑴
+𝒄𝟐𝒓ⅆr , 
+  and   
+ⅆt′=ⅆt
+√1−𝟐𝑮𝑴
+𝒄𝟐𝒓 . 
+Now by s ubstituting into Equation (1) we get:  
+ ⅆ𝒔𝟐=√𝟏−𝟐𝑮𝑴
+𝒄𝟐𝒓𝑪𝟐ⅆ𝒕′𝟐−ⅆ𝒓′𝟐
+√𝟏−𝟐𝑮𝑴
+𝒄𝟐𝒓−𝒓′𝟐ⅆ𝜽′𝟐−𝒓′𝟐𝒔𝒊𝒏𝟐𝜽′ⅆ𝜴′𝟐(3) 
+ 
+This is the same result that Schwarzschild arrived at! 
+We also notice the equivalence  between the two methods when we calculate the singularity points . 
+According  to the formula (2) , there is a singularity point when the speed of points  of space reaches the 
+speed of light. When  calculating the radius with which this speed is achieved,  we will find it to be the  same 
+as the Schwarzschild  radius.  
+ 
+[This formula is attributed to Schwarzschild, although the first person to arrive at this exact formulation 
+was Droste, [2] but it was Schwarzschild who developed the general method that leads to this formula 
+and the formula close to it that he himself arrived at, which does not differ from Droste's formula except 
+in the assumption that determines the point of singularity. ] 
+ 
+It is truly amazing that such a simple assumption can lead to the same formula deduced by Schwarzschild  
+from the principles of general relativity, an d it is worth notin g that  if we consider equation (2) to be a 
+modified version of Newton's law of universal gravitation, it will be an equivalent formula to general 
+relativity, at least in applications to the gravitational field outside the gravitational source.  But in reality, 
+although this f ormula bears apparent resemblance to newton ’s law of gravitation,  we find this formula 
+radically different from it because it does not represent a force field,  but rather represents the effect of 
+matter on the space around it in the form of movement off  all points of space (space flow) at  certain 
+speeds to be reflected on the metric tensor and meet general relativity.  
+ More importantly, the velocity, which we have used as a means by which we can calculate the effect of 
+a gravitational source on the metric tensor, can be used to solve a major dilemma in general relativity, 
+namely the summation of gravi tational fields, since the metric tensor produced by two gravitational 
+sources is not equal to the sum of the two metric tensors produced by each source separately and we do 
+not know any way to find the resultant. We do not know any way to find the resultant  metric in the case  
+of two sources , but we do know how to add the velocities, so in the case of  more than one source of 
+gravitation,  we can add the velocities resulting from each source at a certain point and t hen convert this 
+velocity into metric  tensor and so we have a complete map o f the distribution of the  metric  tens or around 
+the sources of gravitation . Not only that, but we can also calculate this for all cases of gravitational source 
+motion because we know the effect of the velocity of the gravitational source on the velocity of the points 
+where we want to study the gravitational field.  
+Let's illustrate this with a simple example where we apply these ideas:  
+Suppose we have two objects of mases M1 and M2 and let them be separated  by a distance D, and that 
+M2 is at rest and M1  is moving with speed u away  from M 2, and we wa nt to calcul ate the  effect of these 
+two object on the metric tensor at the midpoint between them:   
+ 
+ 
+We have:  
+𝐯𝟐=√𝟒𝐆(𝐌𝟐)
+𝐃   and 
+ 
+ 
+𝐯𝟏=√𝟒𝐆(𝐌𝟏)
+𝐃  + 𝐮
+𝟏+√𝟒𝐆(𝐌𝟏)
+𝐃  𝐮/𝐂𝟐 
+ 
+The resulta nt velocity  V=V2−𝑉2 in X direction , the other direction will no t be affected.  
+Then if we use Cartesian  coordinates shown in the figure we get:  
+𝒈𝒙𝒙 =−𝟏
+√𝟏−𝒗𝟐
+𝒄𝟐 ,   𝒈𝒚𝒚=−𝟏 ,𝒈𝒛𝒛=−𝟏 ,𝒈𝐭𝐭=𝑪𝟐√𝟏−𝒗𝟐
+𝑪𝟐 , 
+and all other components equal zero.  
+ 
+  
+ 
+Conclusions and Outlook  
+It is clear that the idea of explaining gravitation on the basis of geometry  is a beautiful  and very attractive 
+to the point of discouraging  physicists from thinking about alternatives to it, but t his does not prevent us 
+from trying  to address the shortcomings and fill the gaps in this explanation by using other concepts that  
+share the same results.  
+ 
+References  
+[1] On the Gravitational Field of a Point -Mass According to Einstein’s  Theory.  Karl Schwarzschild,  Jan1916 . 
+[2] The Gravitational field  of one or more bodies according to Einstein’ s Theory.  Johannes  Droste, 
+Des.1916 . 
+ 
+ 
+ 
+ 
+ 

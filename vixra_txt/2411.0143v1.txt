@@ -1,0 +1,123 @@
+Modified Collatz Method
+Marko V. Jankovic
+Institute of Electrical Engineering “Nikola Tesla”, Belgrade, Serbia
+Swiss Rockets, Belgrade, Serbia
+Abstract  In this paper, a modification of Collatz method is going to be presented, It is going to be proved that iterative
+implementation of the corresponding modified Collatz function on any natural number will eventually lead to the number 1.
+An alternative definition of Collatz and modified Collatz functions are going to be presented, and some interesting results
+that are obtained from it are going to be briefly analyzed.
+1 Introduction
+The Collatz method [1-3] is concerned with the following arithmetic procedure that is applied on natural numbers – if the
+number is odd, multiply it by 3 and add 1, and if the number is even, divide it by 2. This operation can be expressed by
+Collatz function:
+C(x)={3x+1if x≡1mod(2),
+x
+2if x≡0mod(2).
+Collatz conjecture states that iterations of the Collatz function starting from any natural number will eventually lead to the
+number 1, and then it will cycle between numbers 1, 4, 2, 1 … The conjecture, that is also known under many different
+names [1-3], is still not proven.
+Here, a small modification of the Collatz method is going to be proposed. In this case it is easy to prove that iterations of
+the corresponding modified Collatz function will eventually lead to the number 1. Then, the Collatz and modified Collatz
+methods, and corresponding functions are going to be defined alternatively and some consequences of that modified
+definitions are going to be presented. 2 Modified Collatz function
+Modified Collatz function is defined by the following expression:
+Cm(x)={3x±1if x≡±1mod(4),
+x
+2if x≡0mod(2).
+In other words, if the odd number produces a reminder equal to 1 when it is divided by 4, number is multiplied by 3 and 1 is
+added (like in the original Collatz function), but when it produces reminder 3 when it is divided by 4, then the number is
+multiplied by 3 and 1 is subtracted. (In the case of even numbers, nothing is changed.) This small change will lead toward
+very simple proof that starting from any natural  number, iterations of modified Collatz function will eventually lead to 1.
+The reason is the following – after implementation of the function Cm on an odd number, the number that is going to be
+obtained is always even and divisible by 4 (if not some higher power of 2). This means that after one step of Cm applied on
+an odd natural number k > 1, and then several (at least 2) steps are iterated on an even number 3 k ± 1,  a number f is
+obtained, such that the following holds:
+f⩽3k±1
+4<k ,  
+and that will obviously, eventually lead to the number 1 (equality sign (in the left inequality) is going to be obtained every
+time 3k ± 1 is divisible by 4, and inequality when it is divisible by 2n, where n > 2). 
+It is easy to understand that number 3 x + 1 is divisible by the 22, if x is in the form 4 l + 1 (l is a natural number), since 
+3(4l + 1) + 1 = 12 l + 4= 4(3l + 1). 
+The same holds for the number 3 x - 1, if the x is in the form 4 l + 3, since  
+3(4l + 3) – 1 = 12 l + 8 = 4(3 l + 2). 
+In the case of modified Collatz function, the upper bound for the number of steps s, that are required to transform an odd
+number x to number 1, can be, roughly, estimated  as 
+s<3⋅floor(log4
+3(x)).
+In the most cases, it is a quite conservative estimation. It is interesting to notice that iterative application of Cm(27) will lead
+toward 1 in only a few steps: 27 → 80 → 40 →20→10→5→16→8→4→2→1, comparing to 111 steps that will take in the
+case of original C function. 
+In the case of the C function, application of C on an odd number results in an even number divisible by 22 on average (here
+we assume that function C will produce even numbers that will keep the natural structure of even natural numbers, that halfof the even numbers is divisible by 4, quarter by 8 and so on), and it is always divisible at least by 2. That is the reason why
+it is almost certain that iterative application of C function will eventually lead to 1, and why it is difficult to prove it  - it is
+not easy to prove that iterative application of C function will not repeatedly lead to numbers that are divisible by 2 and not
+some higher power of 2. The major problem is the lack of understanding what factors is going to have number 3 x + 1, even
+if we know all factors of number x. The difficulty of the problem could easily be understood if we consider the binary
+representation of the number x = bnbn-1...b1b0, where bi (i <  n) takes value 0 or 1, and bn is 1. Imagine that all bi are 1. In that
+case the first n iterations of the function C will produce even numbers that are divisible by 2 and not by any higher power of
+2. That means that after n iterations x will be increased by the factor that is larger than (3/2)n, which is much bigger that x,
+for big n. In the step n+1 function C is going to produce an even number that is divisible at least by 4, if not some higher
+power of 2. However, it is not easy to prove that iterations that follow will not produce the numbers whose binary
+representations end in multiple ones and create bigger and bigger numbers. Good example for such way of “behaving” are
+numbers 27 or 109 (among small numbers).  
+Here we are going to conjecture the following:
+An iterative application of C will never produce a number whose binary representation has more than 3 times more bits
+than the initial number.
+3 Some additional results
+In this section the alternative definitions of C and Cm functions are going to be presented, and some results that could be
+obtained from it, are going to be briefly analyzed.
+Alternative definition of C(x) is given by the following expression:
+Ca(x)=3x+2l,
+where l represents the index of the bit bl that represents the lowest position bit in the binary representation of number x =
+bnbn-1...b1b0,  that takes value 1 ( bn is 1, and bi (i <  n) can have values 1 or 0)).  Now, the Collatz conjecture can be stated as
+the following:
+Iterations of the alternative Collatz function C a starting from any natural number will eventually reach the number 2c,
+where c is a natural number, and then it will continue as 2c+2, 2c+4 … 
+This formulation is practically the same as the original one, except that tail zeros in the binary representation of the numberobtained by Collatz function are not removed. It can be seen that the same function can be applied on odd as well as even
+numbers.
+Analogously, Cm(x) can be alternatively defined as:
+Cma(x)=3x+(−1)bl+12l,
+where l is defined in the same way like in the case of Ca(x) – the index of the lowest bit in the binary representation of x,
+that has value 1. It is interesting to notice that in this case number 27 is going to be transformed to power of 2 in just 2
+steps: 27 → 80 → 256. From previous analysis we know that exists a minimum value for the number of steps s, when any
+natural number can be transformed to the power of number 2, by successive implementation of Ca(x) or Cma(x) – the only
+difference is that it can be proved if the case of Cma(x) and not in the case Ca(x). 
+One interesting fact that follows directly from alternative definition of modified Collatz function, is that it is always
+possible to create a polynomial in the following form  ( n  ≥ nmin, where nmin represent the minimal number of steps to convert
+an odd number k to power of 2, using Cma)
+kxn+(−1)bl1+1xn−1+(−1)bl2+12l2xn−2+...+(−1)bln+12ln−2c=0,
+that has one zero equal to 3, where bli represents the first nonzero bit in the binary representation of the number k after i
+iterations of Cma, and l1=0 < l2 < l3 < … < ln < c. Analysis of the geometrical position of all zeros of the above defined
+polynomial is a quite interesting problem, but it will not be done here. Another interesting thing that follows from previous
+equation, is that it is possible to obtain a representation of an odd number k in the bases 1/3 or 2/3. It is easy to understand
+that polynomial can be created for even numbers analogously – the only difference is that factor 2m multiplies the term xn-1,
+where m is a natural number, and reflects the maximal power of number 2 by which the even number is divisible.
+Analogously, it is going to be conjectured that the similar thing can be done in the case of C function. In that case, for any
+odd number k it is possible to make a polynomial in the following form ( n  ≥ nmin, where nmin represent the minimal number
+of steps to convert odd number k to power of 2, using Ca):
+P(k ,n)=k xn+xn−1+2l2xn−2+...+2ln−2c=0,
+that has 3 as one of the zeros, li are defined like in the case of Cma, and where the following holds l1=0 < l2 < l3 < … < ln < c.For even number k, situation is analogous – the only difference is that term xn-1 must be multiplied by 2m,, where m is a
+natural number (like in the case of Cma). Again, it is clear that representations of an natural number k, can be defined in
+bases 1/3 or 2/3. It is clear that poof that it is always possible to create a polynomial P(k, n) for any odd number k and finite
+n, would lead to proof of the Collatz conjecture.
+Here, it is going to be conjectured that for any odd k, it is possible to find  n min  < 2 k, and/or c < 3 k, such that polynomial
+P(k, n) can be made, and that it has one zero equal to 3. This would lead toward proof of the Collatz conjecture.
+In the following figure the position of zeros of the above polynomial P (k, n) is depicted for the case ( k =1, n = 13).
+Fig. 1 Position of the zeros of the polynomial P(1, 13)
+It can be noticed that zeros are evenly positioned on the circle that has radius 4, with the exception of zero at 3. It will hold
+for any value of n > 2, if k = 1. If k > 1, geometric position of zeros will deviate from the position of zeros for the case k =1
+and same n, and will be more and more evenly distributed for bigger n. This is not going to be discussed here in details. 
+Conjecture : For the odd numbers k, the following holds:
+if n>nmin+1,∑cos(αi)
+ri=1
+12,
+where αi and ri are angle and radius of the polar representation of individual zeros of the polynomial P(k, n).
+Generalization of the Cm function can be done for the cases 5 x ± 1 and 7 x ± 1, but it is not going to be discussed here.  
+4 Conclusion
+In this paper, a simple modification of Collatz function, Cm,  has been proposed. It has been proved that in that case iterative
+application of function Cm on any natural number will lead toward number 1. Also, an alternative definition of Collatz and
+modified Collatz functions have been proposed, and several new conjectures have been stated.
+References:
+1. Crandall, R.E. (1978): “On the “3x + 1” problem”, Mathematics of computation , 32(144), pp. 1281-1292.
+2, Lagarias, J.C. (1985): “The 3x+1 problem and its generalization”, The American Mathematical Monthly , 92(1), pp. 3-23.
+3, Lagarias, J.C. (2010): “The 3x+1 problem: An Overview”, The ultimate challenge: The 3x, 1, pp. 3-29.

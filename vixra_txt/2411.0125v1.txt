@@ -1,0 +1,697 @@
+Definitive e xperimental test  of Lorentzian Relativity  
+ 
+Simon WW Manley , Brisbane, QLD, Australia  
+ORCID: https://orcid.org/0000 -0002 -7396 -691X  
+e-mail: SimonWWManley@gmail.com  
+ 
+ 
+Abstract   In contrast with Special Relativity, the Lorentzian formulation allows absolute 
+motion of the laboratory against  a putative preferred frame of reference to be revealed by small 
+but non-zero signal s in Michelson -Morley experiments with light beams passing through  a 
+refractive medium.  Testing th is hypothesis, we developed a rotating Mach -Zehnder  
+interferometer  to compare  the phase velocity of light in gas and vacuum. The new experiment 
+reduces by three orders of magnitude the drift velocity against a preferred frame derived from 
+historical Michelson -Morley data under the assumptions of Lorentzian Relativity , rendering 
+this formulation untenable .  
+ 
+1  Introduction  
+ 
+The concept of a preferred frame of reference, such as the luminiferous aether of 19th century 
+electromagnetic theory, was rendered superfluous in Special Relativity  (SR) by the universal 
+equivalence of  inertial frames  [Einstein, 1905] . The isotropy and constancy of the vacuum 
+speed of light in this formulation guarantee d a null result in M ichelson -Morley  (M-M) 
+experiments.  SR has been orthodox  for so long now that competing explanations for the 
+experimental data are all but forgotten. Occasionally however, well -reasoned arguments [e.g. 
+Consoli  & Pluchino , 2023] are presented in favor of an earlier theoretical framework, 
+Lorentzian Relativity (LR), which was the consensus of such luminaries as HA Lorentz, Henri 
+Poincaré , Joseph Larmor and George F Fitzgerald around the year 1900.  
+In LR, a preferred frame of reference is concealed by a conspiracy of clock aberration 
+and length contraction, rendering  absolute  motion  undetectable and  ensuring null results for 
+M-M experiments  [Lorentz, 1904] . The conventional  view , formulated early in the 20th century 
+and persisting  to this day, holds  that LR is experimentally indistinguishable  from SR  [Consoli 
+& Pluchino, 2018 b].  
+Arguments have been presented , however,  that the expe rimental equivalence of S R and 
+the L R is exact  only in vacuum. As several authors have pointed out,  LR predicts null results 
+of M-M experiments  because  changes in light speed  due to motion against the preferred frame  
+are compensated by changes in the length of interferometer arms . Such compensation would  
+no longer be exact if light were  slowed  in the optical pathways  by a refractive medium [Cahill 
+& Kitto, 2002; Cahill & Kitto, 2003;  Consoli & Costanzo, 2003;  Dmitriyev, 2011;  Consoli, 
+Matheson & Pluchino, 2013 ; Consoli, & Pluchino , 2021 ; Consoli  & Pluchino , 2023 ]. Early M -
+M experiments were conducted in atmospheric air (refractive index, n ≈ 1.000  290), or later 
+helium  (n ≈ 1.000  030). The signal residuals reported were well short of classical predictions, 
+justify ing their traditional description as a “null result,” but were  in fact  never precisely zero  
+[Hicks, 1902 ; Miller, 1933 ].  
+It has been proposed that the  small  signal  residuals  in historical M -M experiments  were 
+actually consistent w ith relevant cosmic velocities if proper account is taken of the refractive 
+medium in the optical pathways  [Cahill & Kitto, 2002; Consoli  & Pluchino , 2023]. The signal 
+in a Michelson interferometer moving  with velocity, v, against the preferred frame in LR was 
+predicted to be proportional  to the refractivity of the medium, ε = n – 1 ≈ 3  10–4 for air, and 
+to v2/c2, of the order of  10–6 for the  velocity of the solar system with respect to  the frame in 
+which  the dipole anisotropy of the  Cosmic Microwave Background  (CMB)  radiation  vanishes , 
+v = 369.82  ± 0.11 km/s [Planck Collaboration, 2020] . The combination of these  small factors 
+indicates that a Michelson interferometer of any practical dimensions could yield  only miniscule signals, comparable to the level of  noise and systematics characteristic of the old 
+instruments.  Distinguishing such signals from the  precise null predicted by a nalyses  using the 
+full mathematical machinery of SR [Sfarti, 2009, 2011; Shanahan, 2014 ] remains contentious 
+and arguments favorin g the LR interpretation with a pref erred frame of reference are at best 
+plausible rather than convincing.  
+A novel M -M experiment  was recently developed , employing  a rotating  Mach -Zehnder 
+interferometer instead of the Michelson  configuration  to specifically  measure  the difference 
+between the phase velocities of light  in gas and vacuum  [Manley, 2023;  Manley, 2024] . Under 
+the assumptions of LR, the new interferometer deliver s a fringe -shift signal proportional to the 
+first power of  v/c. Gaining orders of magnitude in sensitivity compared with the Michelson 
+design  by virtue of the first -order response and the electronic regist ration of fringes to 10–4 λ, 
+this innovation  permits the definitive  testing  of the LR interpretation of M -M experiments .  
+ 
+2  Historical M ichelson -Morley  experiments  
+ 
+The critical factor in a ny decisive experimental test is the magnitude of the signal in relation to 
+the noise floor of the instrument . Interpretation of the historical data from M -M experiments 
+requires  the examination of  signals at or near the limits of detection . Rather than simply 
+perusing the well -known theory predicting the magnitude of fringe shifts in a rotating 
+interferometer, it  is therefore  instructive to carry out precise numerical calculations  (Table 1 ).  
+Let us first  review  the historical experiments of  Dayton C Miller in the 1920s with a  
+huge  Michelson interferometer  at Mt Wilson, near the astronomical observatory  site [Miller, 
+1933]. Among the records of historical Michelson -Morley experiments, Miller’s dataset was 
+the most extensive, totaling around 200,000 fringe shift readings recorded during 12,500 
+rotations of the  largest interferometer constructed  in that er a. Despite the widespread 
+acceptance of SR, Miller had remained convinced of a luminiferous aether acting as a preferred 
+frame and dismissed the idea of Fitzgerald -Lorentz length contraction, attributing the shortfall 
+of signal amplitudes in M -M experiment s to the aether being “dragged” by matter. This belief 
+motivated his years of repetitive work, resulting in a substantial  data archive.  
+ 
+ 
+ 
+Fig. 1  On the left, the concept of the Michelson interferometer.  The instrument is moving to 
+the right relative to a preferred frame of ref erence . On the right,  the optical paths in an 
+implementation  with 16 mirrors , used by Dayton C Miller in the 1920s  at Mt Wilson .  
+ 
+Since the aim of the M -M experiment was to detect directional variations in the speed 
+of light, it may seem logical to place  the observer  with the instrument at rest in the laboratory. 
+A more convincing  interpretation, however, comes from considering the o bserver to be at rest 
+in the preferred frame while the interferometer moves (Fig. 1).  
+The phase velocity  of light in the preferred fr ame is by definition isotropic . Our task is 
+to calculate the relationship betw een the translational velocity and the shift  in the interference 
+fringe pattern  caused by the difference in transit times for the wavefront in the arm parallel to 
+the direction of motion and the arm perpendicular to the motion. The schematic of  Miller’s 
+practical implementation of the Michelson inte rferometer [Miller, 1933] is illustrated  in Fig. 1.  
+The 19th century analysis  assumed the linear addition of velocities inherent in  classical physics 
+and Galilean Relativity  [Michelson & Morley, 1887].  Compar ing the two -way transit times of 
+light in orthog onal limbs of length, L, as the instrument moves  against the preferred frame at  
+velocity, v, predict ed a peak -to-peak fringe shift  on rotation , ΔN, given by:  
+ 
+Δ𝑁=2𝐿
+𝜆𝑣2
+𝑐2 
+(1) 
+In Miller’s instrument , the effective  arm length  was 32.030 m. The term 2 L/λ was  
+quoted as  1.12  108, implying an approximate  wavelength  for the yellow light from the oil 
+lamp used in most of the work , λ = 572 nm . The objective of the historical M -M experiments  
+was detection of the orbital motion of the Earth around the Sun  at v ≈ 30 km/s, v/c ≈ 10–4.  
+Replicating Miller’s design calculations,  we commence with the instrument static in the 
+preferred frame (Table 1 , values are femtoseconds ). Neglecting the refractivity of air, we 
+assume light propagates at its vacuum velocity of cvac ≡ 299 792 458 m/s , so the transit times 
+for a light wavefront are simply  T0 = L/cvac = 106 840 579.691  968 fs, in each of the four 
+directions . The wavelength, λ = 572 nm, corresponds to a period of  1.907  987 fs. Calculations  
+were implemented  at 15 significant figures, but rounded down  in the table  for readability.   
+Next, we consider the instrument moving at the Earth’s orbital velocity, v = 30 km/s 
+(Table 1, group 2). A light wavefront, leaving the beamsplitter to travel along the arm paralle l 
+to the direction of motion, overtakes the optical components at a speed, c – v. In the reverse 
+direction, the wavefront advances at a relative speed, c + v. We note that the transit times are 
+increased for the outward journey, decreased for the backward, but sum to a total which has 
+increased compared with the static case. For ease of reading, numerical values in the table are 
+shown as differences from the s tatic value of the transit time, T0.  
+The calculations for the arm perpendicular to the direction of motion are more intricate. 
+The effect of motion against the preferred frame on light travel in the perpendicular arm was 
+neglected in the earliest formulat ion of M -M experiments, which assumed that any such effect 
+would be negligible [Cassini & Levinas , 2024]. Considering the effect of motion, we see that 
+the beamsplitter has moved to the right during the travel of the wavefront out to the mirror and 
+back (F ig. 1). The path lengths for light in the perpendicular arm are therefore no longer exactly 
+L, but instead are the hypotenuse lengths of two (very narrow) right angled triangles. The 
+increase in time in the perpendicular arm turns out to be half that in th e parallel arms.  
+The difference between light propagation times in the two arms, under the assumptions 
+of Galilean Relativity, with light propagating at its vacuum speed and motion against the 
+preferred frame at a velocity of 30 km/s, was predicted to be about 1.07 fs, which is 0.56 of the 
+period of the 572 nm light. Rotation effectively interchanges the arms of the instrument with 
+each 90 degrees of turn, so the peak -to-peak shift in the interference fringe pattern becomes 
+twice the difference from the st atic case. Miller expected a shift, Δ N ≈ 1.12 λ, which would 
+have been easily quantifiable as he read the fringe pattern by eye against a pointer, calling 
+values in tenths of the fringe period for an assistant to record. Miller’s copious records show, 
+howe ver, that the signal actually observed was an order of magnitude smaller than expectation, 
+right at the limit of readability, Δ N ≈ 0.1 λ.  
+ Table 1: T ransit times  (fs) and signal amplitudes  (ΔN as λ, p–p) for D.C. Miller’s 1920s 
+Michelson interferometer calculated under various  assumptions  
+ 
+ Time Out Time Back  Time Total  ΔT (fs)  ΔN (λ)  
+---{T0 = 106 840 579.691  968 fs}--- 
+1: Static, Vacuum  
+Parallel arm  T0 T0 2T0   
+Perpendicular  T0 T0 2T0 0.000000  0.000000  
+ 
+2: 30 km/s, Vacuum,  Galilean Relativity , no length contraction  
+Parallel arm  T0 + 10692.524  T0 – 10690.385  2T0 + 2.139771    
+Perpendicular  T0 + 0.534943  T0 + 0.53943 2T0 + 1.069886  1.069886  1.121 481 
+  
+3: 30 km/s, Vacuum, Lorent zian Relativity, parallel arm  length contracted  
+Parallel  arm T0 + 10691.989  T0 – 10690.919  2T0 + 1.069886    
+Perpendicular  T0 + 0.534943  T0 + 0.534943 2T0 + 1.069886  0.00000 0 0.000 000 
+ 
+---{Ta = 106 871 563.460 079  fs}--- 
+4: Static, Atmospheric Air  
+Parallel arm  Ta Ta 2Ta   
+Perpendicular  Ta Ta 2Ta 0.000000  0.000000  
+ 
+5: 30 km/s, Atmospheric Air, Lorent zian Relativity, parallel arm  length contracted  
+Parallel arm  Ta + 10698.192  Ta – 10697.121  2Ta + 1.071437    
+Perpendicular  Ta + 0.535 408 Ta + 0.535 408 2Ta + 1.070817  0.000621  0.000651  
+ 
+6: 371.880  km/s, Atmospheric Air, Lorentzian Relativity, parallel arm length contracted  
+Parallel arm  Ta+132690.61  Ta –132525.97  2Ta+164.63826    
+Perpendicular  Ta + 82.271435  Ta + 82.271435  2Ta+164.54287  0.095393  0.100000  
+ 
+7: 369.82 km/s, Atmospheric Air, Special Relativity  
+Parallel arm  Ta +131878.54  Ta –131715.9 1 2Ta+162.63052     
+Perpendicular  Ta + 81.315258  Ta + 81.315258  2Ta+162.63052  0.000000  0.000000  
+ 
+In contrast with Miller’s expectations based on classical physics and Galilean 
+Relativity, LR predicts a null result in vacuum (Table 1, group 3). The Lorentz -Fitzgerald 
+contraction of the parallel arm reduces  its length from L = 32.030 m to L/γ = 32.029 9 99 840 
+m, without affecting the perpendicular arm. T he two-way travel time s for the light wavefront  
+in the parallel and perpendicular arms now match precisely . In vacuum, the prediction of LR  
+is a null result .  
+With light propagating in a  refractive medium,  LR no longer predicts a null result  
+(Table 1, group 5) . In atmospheric air,  with n = 1.0002 90, light speed reduces  from  the value  
+cvac ≡ 299 792 458 m/s to cvac/n = 299 705 543.392  416 m/s, a decrease of 0.029 %. We have a 
+new value for wavefront transit times in the static case, Ta = 106 871 563.460 079 fs (Table 1, 
+group 4). With the instrument  moving, the Lorentz -Fitzgerald length contraction, still governed 
+by the vacuum speed of light , no longer  compensates for the increase in transit time caused by 
+motion against the preferred frame . The predicted signal  at 30 km/s , ΔN = 0.0006 51 λ, though 
+quite undetectable  in the  era of the historical M-M experiments , is definitively non -zero.  
+In contrast with SR, which  of course  predicts an exact null result for M -M experiments 
+in any instrument al configuration,  we see that  LR predicts a non -zero signal whe n light in the 
+optical pathways propagates through  a refractive medium.   The question immediately follows : what cosmic velocity would have yielded  a readable 
+fringe shift with the equipment and techniques employed  by Miller in  his 1933  report ?  
+Estimating fringe positions by eye,  Miller  reported a shift , ΔN ≈ 0.1 λ . Under the 
+assumptions of LR, this exact value of fringe shift would occur  at a velocity , v = 371.880  km/s , 
+with air of refractive index,  n = 1.0002 90 in the optical pathways  (Table 1, group 6) . The 
+agreement with the CMB dipole velocity  of 369.82 km/s  [Planck Collaboration, 2020]  is 
+striking  [Cahill & Kitto, 2002; Consoli  & Pluchino , 2023 ].  
+The skeptical reader will immediately  suspect that the figures have been rigged to give 
+such a precise  agreement. The suspicious value is the refractive index of a ir, which in reality 
+varies with barometric pressure and temperature. The values of 1.000 280 or 1.000 290 found in 
+the literature discussing the L R interp retation of historical M -M experiments are plausible at 
+sea level. At 1013  hPa pressure , a temperature of 20 C and relative humidity of 50%  (typical 
+for the author’ s laboratory  at an elevation of only 40 m above mean sea level  in Brisbane, 
+Australia ) the refractive index  of air  is n = 1.000 273.  
+Miller , however,  worked  at the Mt Wilson site . The example record sheet shown in his 
+1933  report  was for September 23, 192 5, 2:57 to 3:19 AM at temperatures of 13.8–14.1 C . The 
+barometric pressure was not recorded, but the site was at 1,740 m  elevation, where air at 14 C 
+has a standard pressure of 824 hPa. The NIST online calculator gives  n = 1.000 226. The cosmic 
+velocity  needed for a fringe shift value  of ΔN = 0.1  increases to 421 km/s. This is still of the 
+correct order, but the phenomenal m atch to the CMB dipole velocity reported in the literature 
+for the  refractive index,  n = 1.000 290, clearly represents a triumph of enthusiasm over reali sm.  
+A further complication in analysis of M -M experiments is  the Fresnel drag effect, in 
+which  the velocity of light is altered by interaction with a moving medium.  The equation  below 
+[Janssen, 2013 ] predicts  the phase velocity of lig ht, cnv, in a medium  of refractive index, n,  
+moving at velocity, v. Under LR , where velocities add linearly,  the equation is valid,  though  
+under SR, where  velocity  addition is nonlinear , it is only  applicable for  v << c  [Sfarti, 2011].   
+ 
+𝑐𝑛𝑣=𝑐𝑣𝑎𝑐
+𝑛+𝑣(1−1
+𝑛2)  
+(2) 
+For atmospheric air, n = 1.000273, the expression in brackets evaluates to 0.000546 . At 
+the CMB dipole velocity of v = 369.82 km/s , the Fresnel drag effect alters the  speed of light in 
+the moving refractive medium by  only 0.202 km/s.  We could calculate the effect of this change 
+on transit times in the interferometer, but there is a simpler workaround  in the LR framework . 
+Let us move our observer from the preferred frame of reference to a new frame moving in the 
+direction of the drag a t an appropriate ly small velocity, 0.000546 v. In this new frame, light 
+propagation is isotropic, and our calculation s remain qualitatively valid, with only a small  
+quantitative error .  
+In contrast with the calculations above, SR predicts a null result  (Table 1, group 7). An 
+exact calculation cannot use the Fresnel drag equation, valid only as v → 0. Instead, we must 
+employ the transformation formulae for velocities as view ed from relatively moving frames. A 
+wavefront moving at a velocity, wx, with resp ect to a local frame which moves at velocity, v, 
+in the x-direction  is seen by an observer at rest to be moving at velocity, ux, given by:   
+ 
+𝑢𝑥=𝑤𝑥+𝑣
+1+𝑣𝑤𝑥𝑐2⁄ 
+(3) 
+As light in vacuum is always observed at the same speed in SR, the equation of course 
+yields u = c for the case where w = c. For speeds approaching the limit set by the vacuum speed 
+of light, such as the (slightly) reduced velocity of light in gas, the non linear velocity addition 
+in SR has a drastic effect. Adding or subtracting the CMB dipole velocity , v = 369.82  km/s , to 
+the phase velocity of light in air alters  that velocity, as seen by our observer at rest, by only +0.214 or –0.215  km/s.  The increment in the two -way transit time for the light wavefront in 
+the parallel arm in SR is less than that calculated under the assumptions of LR where  addition 
+of velocities  is linear  (Table 1, group 7 vs. group 6).  
+The calculation for the perpendicul ar arm is  rather intricate, complicated by  the vector 
+calculation of the velocity in the diagonal path , but reduces to the simple expression, 2 γnL/cvac, 
+matching the ti me for the parallel arm exactly  and so yielding the null result . We also note that 
+an observer moving with the instrument would measure the time for the two -way transit of the 
+wavefront in each arm as 2 nL/cvac. Our static observer in the preferred frame sees the moving 
+observer’s clock running slow, introducing the γ-factor.  
+A null result for M -M experiments in SR follows  immediately without calculation , of 
+course, from the assumption of universal equivalen ce of inertial frames. All observers must 
+record readings from experimental apparatus which are independent of their state of motion.  
+We conclude that LR predicts a different result from SR , when M -M experiments are 
+conducted with  a refractive medium in the optical paths. The calculations in Table 1 reveal  the 
+origin of this difference. Departing from the assumptions of classical physics and Galilean 
+Relativity, SR requires comparison of measurements in relatively -moving inertial frames to 
+conform to the Lorentz transformations of length and time, to the no nlinear addition of 
+velocities, and  to the relativity of simultaneity. Predict ing a null result for M -M experiments in 
+vacuum requires only  that classical expectations be augmented by the  Lorentz -Fitzgerald 
+length contraction. With a refractive medium  in the optical paths , a null prediction also requires 
+the nonlinear addition of velocities, respecting the light speed limit. Thus LR, which retains 
+the classical assumption of linear velocity addition, predicts a small fringe shift with gas -filled 
+Michelson i nterferometers moving against a preferred frame of reference , while SR predicts a 
+null.  
+The interpretation of the signal residuals in historical M -M experiments remains a topic 
+of ongoing deb ate in the literature. If a preferred frame of reference were  definitively  detected, 
+revision of a substantial tract of physical dogma would be required. Conservative opinion 
+demands the signals be dismissed as noise and systematics of thermal origin [Shankland et al., 
+1955]. It is apparent that further analysis of his torical records is unlikely to convince either side 
+of the debate. New data is required.  
+ 
+3  A new M -M experiment  testing L orentzian Relativity  
+ 
+The mainstream literature dismisses the sig nal residuals in early M -M experiments as 
+instrumental systematics which diminish ed with technological progress over time , essentially  
+vanishing with modern cryogenic experiments  in vacuum  or dense solids . The limits on Lorentz 
+symmetry violation  have been pushed down to Δ c/c  10–18 in contemporary work  [Muller et 
+al., 2003;  Tobar et al., 2006; Müller et al., 2007 ; Nagel et al., 2015 ]. If there is any interesting 
+physics driving the anomalous signals  in the historical data, it must be a function of the gas (air 
+or helium) in the optical pathways of the old in struments. The Lorentzian interpretation of 
+relativity , where motion against a preferred frame of reference  might  be revealed by reducing 
+the phase velocity of light  with a refractive medium , retains  sufficient plausibility to justify 
+investigation .  
+How might LR be tested in a modern laboratory ? The notion  of rebuilding one of the 
+historical instruments, such as Miller’s gigantic device, is preposterous. But today’s  optics and 
+electronics allows  the construct ion of  a device of benchtop  dimensions  which  matches or 
+exceed s the sensitivity of the historical experiments  to anomalous propagation of light in gas  
+[Manley , 2023, 2024] .  
+While developing a  modern experiment , our conceptual breakthrough was separating 
+tests for anisotropic refractivity in gases from tests of L ocal Lorentz Invariance . Since we know 
+that light propagation in vacuum is isotropic to accuracy well beyond the anomalies we seek to 
+study in gas, it follows that instead of testing ort hogonal paths in air, as in the historical M -M 
+experiments, we should test light propagation in air against propagation in vacuum.  Thus we no longer require the  orthogonal light paths of a traditional Michelson interferometer but are 
+able to  employ a Mach -Zehnder design  with optical paths parallel and adjacent (Fig. 2) .  
+By avoiding  the awkward engineering of the Michelson design with its cross layout, we 
+greatly improve mechanical stability . The theory of the instrument is simplified , the vacuum 
+reference provid ing a perfect clock (constant length traversed at constant speed) against which 
+to compare light propagation through t he gas -filled path . Whereas  the Michelson’s  two-way 
+measure of light transit times incurs a  response  proportional to v2/c2 or (Δc/c)2, the Mach -
+Zehnder instrument’s one-way measurement confers a fringe shift signal  which is  first order  in 
+Δc/c. And Lorentz -Fitzgerald length contraction has negligible effect as it would influence  the 
+adjacent parallel  pathways equall y.  
+ 
+ 
+ 
+Fig. 2  Concept of a Mach -Zehnder interferometer  testing for an anomaly of light propagation 
+in gas . From modern experiments, we can be certain that a rotating  Michelson interferometer 
+would show a zero signal  in vacuum . Historical gas -filled instruments , however,  presented  
+small anomalous fringe shift s. The Mach -Zehnder design directly compares gas with vacuum.   
+ 
+In a practical implementation of this concept [Manley, 2024],  the straight path used for 
+the gas (test) and vacuum (reference) beams  was 530 mm , 1.00  106 λ for the 532 nm light 
+from a diode -pumped solid -state laser  (Thorlabs CPS532 -C2). With electronic recording of 
+interference fringe position , data from the instrument was taken in hourly blocks of 72 rotations 
+with a period of 50 s  per rotation  (0.02 Hz) . Fringe shift readings were  recorded at 16 equally -
+spaced azimuth values during each rotation  (an experimental design chosen to echo  Miller’s 
+1933 report) .  
+ 
+ 
+ 
+Fig. 3  Representative data from the new Mach -Zehnder interferometer. Left panel: signal 
+treated as repeated measures of fringe shift readings at 16 azimuth directions during rotation  
+(means  S.E.M, n = 72). Cosine waves were fitted by least squares at the rota tion frequency 
+(red, 0.02 Hz) and second harmonic (green, 0.04 Hz). Middle panel: amplitudes of harmonic 
+components fitted by least squares from the fundamental up to the Nyquist limit (half the 
+sampling frequency of 0.32 Hz). Right panel: Fourier spectrum  of data treated as a continuous 
+stream of readings at 0.32 Hz , after digital filtering to suppress  baseline drift.  
+ 
+An illustrative example of processed data is shown in Fig. 3. Treating the data as 72 
+repetitions of fringe position measurements at each of the 16 azimuth values yielded a plot of 
+the fringe shift during rotation as means  standard errors of the means (S EM) with harmonic 
+components fitted by least squares (Fig. 3, left panel; harmonic amplitudes in middle panel). 
+Alternatively, the data could be treated as a continuous stream of 1152 readings taken at equal 
+intervals, a format suitable for Fourier analysi s. The spectrum revealed broadband noise in 
+addition to a spike at the rotation frequency and often a (much smaller) spike at the second 
+harmonic (Fig. 3, right panel). Variation in the amplitude of the fundamental remained in the 
+range of 0.1 up to 1.0 in  units of λ/1000 during daily and seasonal variations [Manley, 2024].  
+A significant innovation in the new design was the control configurati on. Traditional 
+M-M experiments, from  the historical interferometers to modern devices  with resonant cavities, 
+have thus far provided a data stream consisting  of putative signals summed with noise and the 
+systematics caused by rotation. There has been no means of sup pressing the signal to provide  
+control data containing noise and syste matic s alone. With the new Mach -Zehnder design, 
+physically meaningful signals were suppressed when the optical paths were balanced, the data 
+consisting entirely of systematics and noise. Unbalancing the paths then permit ted a putative 
+genuine signal to add into  the data stream, to be revealed as components of increased amplitude 
+and/or altered phase compared with the controls  [Manley, 2023, 2024] .  
+In the control configuration (vacuum cell removed so test and reference beams 
+traversed  matching paths in air ) the noise floor of the  new instrument was 0.072 ± 0.004 in 
+units of λ/1000  (n = 81) . Removal or reinstallation of the vacuum cell (mass ≈ 0.3  kg) involved 
+only minimal disturbance to the mechanics of the rotating chassis (mass ≈ 20 kg) carrying the 
+optical com ponents.  
+Unlike the  analysis of the  Michelson interferometer in traditional M -M experiments, 
+which involves s ubtleties in the comparison of  two-way measure s of the phase velocity of light 
+in orthogonal directions, the operation of the new Mach -Zehnder design is straightforward. A 
+one-way comparison is made between a beam in vacuum and a beam with phase velocity 
+reduced by the refractivity, ε = n – 1, of the g aseous medium . A change, Δ c, in the vacuum 
+speed of light would shift the interference fringe pattern by:  
+ 
+Δ𝑁=𝐿
+𝜆𝜀Δ𝑐
+𝑐 
+(4) 
+Having a response which is first order in Δ c/c, the new instrument gain ed a large 
+increase in sensitivity compared with the secon d order response of the Michelson . In the normal 
+operating configuration  of the Mach -Zehnder interferometer , where light propagation in air 
+was compared with vacuum, the minimum discernable signal was about 0.1 units of λ/1000, 
+corresponding to Δ cgas/cvac ≈ 10–10, or Δ cgas ≈ 0.03 m/s (note meters not kilometers per second). 
+Compared  with the historical M -M experiments reporting fringe shift residuals which could be 
+interpreted as translational velocities, v ≈ 1 – 10 km/s, th e modern benchtop design gains  5 
+orders of magnitude in sensitivity to variation s in the phase velocity of light in gas.  
+In Table 2, below, we calculate predicted signal amplitudes for the new instrument, 
+under the assumptions of classical Galilean Relativity, LR and SR. As before, we p lace the 
+observer  at rest  in a putative preferred frame, while  the instrument moves at relevant velocities .  
+We begin by c onsidering the M ach-Zehnder  interferometer static  in the preferred fra me 
+(Table 2, group 1). T he optical path length, 0.530 m, was traversed in the vacuum  reference 
+pathway  at cvac ≡ 299 792 458 m/s, in a time T0 = 1 767 889. 704 550 fs. The gas cell, containing  
+air with refractive index, n = 1.000 273, was traversed  at cvac/n = 299 710 636.996 100 m/s, in  a time of  1 767 372.338  440 fs. The time difference,  482.633 889 fs, was the zero offset for 
+measurements of fringe shift and represented about 272  wavelengths, matching  the shift in the 
+fringe pattern as the reference cell was pumped down from atmospheric air to a hard vacuum . 
+The shift in  effective optical path lengths was about 0.145 mm, well within  the coher ence 
+length of the laser source .  
+In groups 2 – 5 of Table 2, we compare the one -way transit times for the light wavefront 
+through the vacuum and air paths, assuming linear addition of velocities in the Galilean and 
+Lorentzian interpretations. For ease of reading, transit times were expres sed as a difference 
+from the time in vacuum at rest, T0. We note that in the moving interferometer, times change 
+with rotation as the laser beam propagates in the direction of the instrument’s motion (denoted 
+“Downstream”), and then in the opposite directi on (denoted “Upstream”).  
+ 
+Table 2: T ransit times  (fs) and signal amplitudes  (A, λ/1000)  for the new Mach -Zehnder 
+interferometer calculated under various  assumptions  
+ 
+Laser Beam  T vac (fs)  T air (fs) T vac – T air ΔT  A (λ/1000)  
+---{T0 = 1 767 889.704 550  fs}--- 
+1: Static in preferred frame  
+Downstream  T0 + 0.000  T0 + 482.634  482.633889    
+Upstream  T0 + 0.000  T0 + 482.634  482.633889  0.000000  0.000000  
+      
+2: 30 km/s, Galilean Relativity  
+Downstream  T0 + 176.929  T0 + 659.6 60 482.730511     
+Upstream  T0 – 176.89 4 T0 + 305.6 44 482.537297  0.193214  54.440  
+      
+3: 30 km/s, Lorentzian Relativity  
+Downstream  T0 + 176.92 0 T0 + 659.65 1 482.730508    
+Upstream  T0 – 176.903 T0 + 305.63 5 482.537295  0.193214  54.440  
+      
+4: 369.82  km/s {CMB dipole velocity} , Lorentzian Relativity   
+Downstream  T0+2182.192  T0+2,666.019  483.826633    
+Upstream  T0–2179.502  T0–1,698.057  481.444819  2.381814  671.099  
+       
+5: 0.165320  km/s {typical signal} , Lorentzian Relativity  
+Downstream  T0 + 0.974 90 T0+483.60932  482.634422    
+Upstream  T0 – 0.974 90 T0+481.6584 6 482.633357  0.001065  0.300  
+       
+6: 369.82  km/s {CMB dipole velocity} , Special Relativity  
+Downstream  T0+2182.192  T0+2664.826  482.634257    
+Upstream  T0–2179.502  T0–1696.868  482.634257  0.000000  0.000000  
+ 
+Predicted signal amplitudes are large in relation to those actually observed, e.g. Fig. 3 
+and the previous report [Manley, 2024]. A typical signal would require a velocity some 3 orders 
+of magnitude less than the CMB dipole (Table 2, group 5)  and similarly less than the velocities 
+inferred from signals in historical M -M experiments interpreted according to LR . 
+We note that Lorentz -Fitzgerald length contraction, predicted  under the assumptions of 
+LR to cancel the signal in traditional M -M experiments with Michelson interferometers, is 
+without noticeable effect on the new instrument , where the optical paths are parallel rather than 
+orthogonal  (compare groups 2 & 3 of Table 2).  
+SR, of course, predicts zero signal s in all M -M experiments . A trivial analysis p laces 
+the observer stationary with respect to  the instrument . Since SR demands light propagation  be 
+isotropic  in all frames of reference,  a zero frin ge shift  in M -M experiments  is implicit .  The analysis for an observer watching a moving instrument  under SR  is rather more 
+instructive, however . As in the analysis of the Michelson interferometer, we cannot rely on the 
+Fresnel drag equation, but must apply the (nonlinear) transformation of velocities between 
+relatively moving frames to obtain the corre ct values for the phase velocities of light in the 
+refractive medium  (Eq. 3). The difference between transit times in vacuum and air now match 
+for the upstream and downstream directions, yielding a zero signal on rotation of the 
+interferometer (Table 2, gr oup 6).  
+In conclusion, we note that data from the new Mach -Zehnder instrument is in conflict 
+with data from historical M -M experiments when interpreted under the assumptions of LR. 
+Cosmic velocities deduced from signal amplitudes are 3 orders of magnitude  less than those 
+inferred from historical data.  
+ 
+4  Discussion  
+ 
+The original conception of the Michelson -Morley experiment was formulated in the framework 
+of classical physics. Linear addition of velocities  and constancy of lengths in relative motion , 
+principles implicit in  the absolute  space  and time of  Newtonian physics and Galilean Relativity, 
+were regarded as so elementary  and self -evident they were not even worthy of identification  as 
+axiomatic assumptions underlying  the analysis  [Michelson &  Morley, 1887].  
+The failure of rotating interferometers to demonstrate fringe shifts concordant with 
+relevant cosmic  velocities, such as  the orbital speed of the Earth, was a crisis of paradigm -
+shifting import. The first hint of the revolution in theoreti cal physics which was to culminate 
+in Einstei n’s 1905 formulation of S R came in a short letter by G.F. FitzGerald  in 1889 , 
+proposing  the contraction in length of moving objects [Fitzgerald, 1889].   
+By 1892, H.A. Lorentz, a leading theoretician of the era, had formu lated the transforms  
+for which he is now principally remembered . At the time of his lectures at Colombia University 
+in 1906, Lorentz was convinced that the null result  of M -M experiments provided irrefutable 
+proof  of the Lorentz -FitzGerald length contraction of moving objects  [Lorentz,  1904;  1916] . 
+Rather than being merely the consequence  of a change in perspective due to relative motion, 
+length contraction  was a real physical effect  according to Lorentz,  mediated by changes in  the 
+behavior  of atomic electron s.  
+Minkowski , meanwhile, was developing  Einstein’s ideas into the full mathematical 
+machinery of  electromagnetism  in relativistic space -time [Minkowski, 1908 ]. Einstein initially 
+characterized  this elaboration  as “überflüssige Gelehrsamkeit ” – usually given a tactful 
+translation as “superfluous erudition,” but perhaps more accurately  rendered as  “overflowing 
+learnedness .”  
+In today’s world , the debates on  the foundations of relativity theory during the late 19th 
+and early 20th centuries are all but forgotten, of more interest to historians than physicists. SR 
+provides an entirely consistent system for the transformation of measurements between inertial 
+frames in relative motion  without acceleration or gravity . Refinements of M -M experiments  
+testing Local Lorentz Invariance  to higher and higher precision  are no longer  motivated by  any 
+doubts about the validity of SR, but instead by  the prospect of quantum gravity phenomena 
+expected in the Planck regime  leaving  subtle hints in a technologically  accessible  domain  
+[Eichhorn,  Platania & Schiffer,  2020].  
+An unresolved  issue from the historical era concerns the  small anomalous signals in M -
+M experiments with gas -filled interferom eters . In 1955,  Shankland  and colleagues  published a 
+frequently -cited reanalysis of Miller’s extensive data from the 1920s , attributing the signals to 
+thermal fluctuations and gradients  [Shankland et al . 1955].  The widespread acceptance of 
+Shankland’s work represented a collective sigh of relief  from the physics community  that a 
+nagging issue in the foundations of SR could be laid to rest. A detailed reading of the paper, 
+however, raises  doubts of which no hint is to be found in the abstract.  The only certain 
+conclusion we can draw  from the comparison of historical and modern M -M experiments is 
+that gas in the optical pathways  of interferometers  was problematic.  In the 21st century, Reginald Cahill in Australia and Maurizio Consoli in Italy advanced 
+novel  proposals whereby the reduced phase velocity of light in the gas -filled optical pathways 
+of historical M -M experiments  might  have confer red sensitivity to motion against a preferred 
+frame of reference  [Cahill & Kitto, 2002; Consoli & Costanzo, 2003] . The miniscule 
+refractivity of atmospheric air, ε = n – 1 ≈ 3 ∙ 10–4, indicated  that fringe shift signals would be 
+orders of magnitude smaller than  naïve  predictions  based on classical physics  and thus  would 
+be consistent with the traditional picture of M -M expe riments yielding null results.  Under the 
+new paradigm however, the se small  signal amplitudes bec ame concordant with  relevant cosmic  
+velocities, such as the motion of the solar system against the CMB ( v ≈ 370  km/s) or against 
+the rotating disk of our Milky Way galaxy ( v ≈ 220 km /s).  
+Considerable effort has been  expended in  reanalysis of historical records . The picture 
+that has emerged is at best  consistent  with the  new hypothesis , rather than compelling . The 
+limitation in such analyses was the poor  quality of the original data,  which recorded  signals 
+close to the limit s of detection.   
+The development of a novel  M-M experiment, using a Mach -Zehnder interferometer to 
+test light propagation in gas against a vacuum reference, now provides interpretative clarity 
+[Manley, 2023, 2024].  Rather than the two -way measurement of light propagation in the 
+Michelson interferometer, t he new instrument  compares one -way phase velocities , gaining 
+orders of magnitude  in sensitivity to  anomalous propagation of light in gas . Translational 
+speeds against a preferred frame of reference must be at least 3 orders of magnitude less than 
+relevant cosmic velocities to predict  the signal amplitudes typical of  the modern instrument.  
+Thus we reject, with high confidence, the LR interpr etation of M -M experiments  where 
+sensitivity to motion against a preferred frame of reference is conferred by a refractive medium 
+reducing the phase velocity of light in the optical pathways .  
+It is instructive to dissect the characteristics of SR which , in contrast with the 
+predictions of classical physics, conspire to yield a null result in  M-M experiments. I n an 
+inertial observer’s view of a relatively moving inertial frame,  SR predicts contraction of  
+length s, slowing of clocks , disruption of  simultaneity and  the nonlinear addition of velocities . 
+In vacuum, only the Lorentz -Fitzgerald length contraction is needed to predict a null result 
+from  M-M experiments. With a refractive medium in the optical pathways, nonlinear addition 
+of velocities is  also required for the  null.  
+The rejection of the LR interpretation of M -M experiments leaves us  with an unresolved 
+question. What is the significance of the non -zero signals in historical M -M experiments and 
+the—small  but still non -zero—signals in our mo dern experiment?  
+Straightforward kinematic interpretations must be  ruled out. The critical factor in the 
+comparison of Michelson interferometers with the new Mach -Zehnder instrument is the two -
+way versus one -way measure ment  of light speed. With the two -way measure, gains and losses 
+of speed caused by motion against a preferred frame would  cancel to first order, leaving only 
+a second order response , with a drastic reduction in sensitivity .  
+If we postulate  that the Michelson and Mach -Zehnder  instruments  are actually —despite 
+appearance s—responding to the same  physical  phenomenon, then the mechanism affecting  
+light propagation would have to  avoid the cancellation of gains and losses  of speed  inherent in 
+the two -way measure. This  demands that the effect be non -directional ( or omnidirectional), 
+ruling out kinematics, but perhaps opening the door to another idea.   
+A minute temperature fluctuation of the gas in the optical pathways could alter light 
+speed, changing density and theref ore refractivity at constant pressure. Unlike a kinematic 
+mechanism, this effect would avoid the  first order  cancellation inherent in two -way measures.  
+In a careful analysis  of 6 historical M -M experiments , Consoli and Pluchino  proposed 
+a the rmal effect of non -local origin, providing a plausible explanation for  the signals and their 
+reduced magnitude when helium  (n ≈ 1.000 030)  replaced atmospheric air  (n ≈ 1.000 290)  in 
+the optical paths  [Consoli & Pluchino, 2018a]. The temperature difference  between the gas in 
+orthogonal limbs of Michelson interferometers required to impose the requisite difference in 
+phase velocities was 0.26  0.06 ( n = 6) mK. In this interpretation,  the Michelson interferometer is vastly  more sensitive to changes in the phase velocity of light  than usually inferred . Miller’s 
+1933 data, instead of implying Δc/c ≈ 3 ∙ 10–5, would signify Δc/c ≈ 2.5 ∙ 10–10 [Manley, 2024 ].  
+In our modern Mach -Zehnder instrument, a thermal cycle of 0.26 mK wo uld yield an 
+amplitude of 0.25 in units of λ/1000, matching  our observed  signals, as in Fig. 3 and the 
+previous report [ Manley, 2024].  The concordance of the new observations with historical data 
+under the thermal proposal stands in sharp contrast with the  severe conflict under kinematic 
+analysis .  
+The mechanism of such a t hermal cycle remains a matter of conjecture . The suggestion 
+of a non -local coupling to the CMB dipole  through the quantum mechanical vacuum  [Consoli 
+& Pluchino, 2018a]  requires  development of theory before it can yield a quantitative prediction 
+of amplitudes.  
+Daily and seasonal cycles in the amplitude of signals from the new Mach -Zehnder 
+interferometer were consistent with  a celestial vector matching the predicted Dark Matter w ind, 
+rather than the CMB dipole [Manley, 2024].  This suggest ed a mechanism involving i nteraction 
+with a field of movi ng particles having a low cross -section for interaction with baryonic matter , 
+such as axions , which are currently regarded as plausible  candidates for Dark Matter  [Chadha -
+Day, Ellis &  Marsh, 2022 ]. How such an interaction might confer the directional sensitivity 
+implicit in the generation of a signal in rotating interferometers is not immediately obvious.  
+ 
+5  Conclusion s 
+ 
+Data from a novel Michelson -Morley experiment with a rotating Mach -Zehnder interferometer 
+comparing the phase velocity of light in air and vacuum is inconsistent with  the Lorentzian 
+interpretation  of historical Michelson -Morley experiments , in which  signal  residuals  were 
+postulated to  reveal motion against a preferred frame of reference. The conflict is 3 orders of 
+magnitude in velocities inferred under kinematic assumptions.  An alternative explanation is 
+plausible: a  fractional millikelvin cycle in the tem perature of gas in the optical pathways during 
+rotation of interferometers would account quantitatively for signals in the current  work  and the 
+historical records. The mechanism driving such a thermal cycle is presently unknown: tempting 
+speculations include a  non-local coupling through the quantum mechanical vacuum  to a cosmic 
+vector or an interaction of gas with moving particles in the Dark Matter halo of our Milky Way 
+galaxy.   
+ 
+6  References  
+ 
+Cahill, R. & Kitto, K. (2002). Re-Analysis of Michelson -Morley Experiments Reveals 
+Agreement with COBE Cosmic Background Radiation Preferred Frame so Impacting on 
+Interpretation of General Relativity . arXiv :physics/0205070 [physics.gen -ph]. DOI: 
+https://doi.org/10.48550/arXiv.physics/0205070 .  
+ 
+Cahill, R. & Kitto, K. (2003). Michelson -Morley experiments revisited and the cosmic 
+background radiation preferred frame. arXiv :physics/0205065 [physics.gen -ph]. DOI: 
+https://doi.org/10.48550/arXiv.physics/0205065  
+ 
+Cassini,  A. & Levinas , L. (2024). How th e Michelson and Morley experiment was 
+reinterpreted by special relativity . arXiv :2407.12960 [physics.hist -ph]. DOI: 
+https://doi.org/10.48550/arXiv.2407.12960  
+ 
+Chadha -Day,  F., Ellis,  J. & Marsh, D.J.E.  (2022).  Axion dark matter: What is it and Why 
+Now?  Science Advances  8, 8. DOI:  https://doi.org/10.1126/sciadv.abj3618  
+ Consoli, M. & Costanzo, E. (2003). The motion of the Solar System and the Michelson -
+Morley experiment . arXiv :astro -ph/0311576 . DOI: https://doi.org/10.48550/arXiv.astro -
+ph/0311576  
+ 
+Consoli,  M., Matheson,  C. & Pluchino,  A. (2013).  The classical ether -drift experiments: a 
+modern re -interpretation . European Physical Journal Plus  128, 71. DOI:  
+https://doi.org/10.1140/epjp/i2013 -13071 -7 
+ 
+Consoli, M.  & Pluchino, A. (2018 a). Cosmic microwave backgr ound and the issue of a 
+fundamental preferred frame . European Physical Journal Plus  133, 295. DOI: 
+https://doi.org/10.1140/epjp/i2018 -12136 -5 
+ 
+Consoli, M.  & Pluchino, A. (2018 b). The classical Michelson -Morley experiments: A new 
+solution to an old problem . Section 7 : Light anisotropy in gases as a non -local thermal effect . 
+Atti della Accademia Peloritana dei Pericolanti - Classe di Scienze Fisiche, Matematiche e 
+Naturali , 96 (S1), A2.  (The text is in English ). DOI: https://doi.org/10.1478/AAPP.96S1A2  
+ 
+Consoli, M. & Pluchino , A. (2021 ). The CMB, Preferred Reference System, and Dragging of 
+Light in the Earth Frame . Universe  7, 311. DOI:  https://doi.org/10.3390/universe7080311  
+ 
+Consoli , M. & Pluchino , A. (2023). Michelson –Morley experiments: at the crossroads of 
+relativity, cosmology and quantum physic s. International Journal of Modern Physics A . 
+38:35n36 . DOI: https://doi.org/10.1142/S0217751X2330017X  
+ 
+Dmitriyev, V. (2011) . Absolute Motion Determined from Michelson -Type Experiments in 
+Optical Media . Zeitschrift für Naturforschung A , 66, 228 -230. DOI: 
+https://doi.org/10.1515/zna -2011 -3-413 
+ 
+Eichhorn,  A., Platania,  A. & Schiffer,  M. (2020).  Lorentz invariance violations in the 
+interplay of quantum gravity with matter . Phys ical Review D 102, 026007 . 
+https://doi.org/10.1103/PhysRevD.102.026007  
+ 
+Einstein, A. (1905) . On the electrodynamics of moving bodies . Annalen der Physik  17, 891 –
+921. In German, an  English translation, based on Einstein (1923) , The Principle of Relativity  
+(Methuen, 1905) is online at: www.fourmilab.ch/etexts/einstein/specrel/www/  
+ 
+FitzGerald,  G.F. (1889).  The ether and the earth’s atmosphere . Science  13(328), 390 –390. 
+DOI:  https://doi.org/10.1126/science.ns -13.328.390.a  
+ 
+Hicks, W.M. (1902) II. On the Michelson -Morley experiment relating to the drift of the 
+Aether . The London, Edinburgh, and Dublin Philosophical Magazine and Journal of 
+Science  Series 6, 3, 9-42, DOI:  https://doi.org/ 10.1080/14786440209462735  
+ 
+Janssen, M.  (2013 ). The drag coefficient from Fresnel to Laue . In: Maas, A. &  Schatz , H. 
+(eds). Physics as a calling, science for society: Studies in Honour of AJ Kox . Leiden: Leiden 
+University Press, 2013. p. 47 -60. 
+ 
+Lorentz, H.A. (1904). Electromagnetic phenomena in a system moving with any velocity  
+smaller than that of ligh t. Proc eedings of the  Royal  Academy  Amsterdam  6, 809-831. Also 
+in: Collected Papers (1937). Springer, Dordrecht. DOI: https://doi.org/10.1007/978 -94-015-
+3445 -1_5 
+ Lorentz, H.A. (1916).  The theory of electrons and its applications to the phenomena of light 
+and radiant heat ; a course of lectures delivered in Columbia University, Ne w York, in March 
+and April 1906.  New York: Columbia University Press . The book is available through many 
+university libraries and as scanned page images of the 1923 reprint online t hrough Hathitrust: 
+https://babel.hathitrust.org/cgi/pt?id=uiug.30112062076283&seq=5  
+ 
+Manley, S.W.W.  (2023).  A novel Michelson –Morley experiment testing for anisotropic light 
+propagation in gas without violation of local Lorentz invariance . European  Phys ical 
+Journal  Plus 138, 206 . DOI: https://doi.org/10.1140/epjp/s13360 -023-03812 -w 
+ 
+Manley, S.W.W. (2024) . Experimental replication of the anomalous signal residuals in 
+historical Michelson –Morley experiments with gas -filled interferometers indicates a celes tial 
+vector matching the predicted dark matter wind . European  Phys ical Journal  Plus 139, 730. 
+DOI: https://doi.org/10.1140/epjp/s13360 -024-05529 -w 
+ 
+Michelson, A.A. & Morley, E. W. (1887). On the relative motion of the Earth and the 
+luminiferous ether . American Journal of Science , s3-34(203), 333 –345. 
+https://doi.org/10.2475/ajs.s3 -34.203.333  
+ 
+Miller,  D.C. (1933).  The Ether -drift experiment and the determination of the absolute motion 
+of the earth . Reviews of  Mod ern Phys ics 5, 203 –242. DOI:  
+https://doi.o rg/10.1103/RevModPhys.5.203  
+ 
+Minkowski, H. (1908). Space and Time , a lecture given at the 80th Meeting of the Natural 
+Scientists in Cologne on September 21, 1908 . In: Minkowski’s Papers on Relativity . 
+Minkowski Institute Press, Montreal , 2012 , 134 pages.  Available free online:  
+http://minkowskiinstitute.org/mip/MinkowskiFreemiumMIP2012.pdf  
+ 
+Müller,  H., Herrmann,  S., Braxmaier,  C., Schiller,  S. & Peters,  A. (2003).  Modern 
+Michelson –Morley experiment using cryogenic optical resonators . Phys ical Review 
+Letters 91, 020401 . DOI:  https://doi.org/10.1103/PhysRevLett.91.020401  
+ 
+Müller,  H., Stanwix,  P.L., Tobar,  M.E., Ivanov,  E., Wolf,  P., Herrmann,  S., Senger,  A., 
+Kovalchuk,  E. &  Peters , A. (2007). Tests of Relativity by Complementary Rotating 
+Michelson -Morley Experi ments . Phys ical Review  Letters 99, 050401 . DOI: 
+https://doi.org/10.1103/PhysRevLett.99.050401  
+ 
+Nagel,  M., Parker,  A., Kovalchuk , A.E.  et al. (2015).  Direct terrestrial test of Lorentz 
+symmetry in electrodynamics to 10–18. Nature Commun ications  6, 8174 . DOI:  
+https://doi.org/10.1038/ncomms9174  
+ 
+Planck Collaboration. (2020).  Planck 2018 results . Astron omy &  Astrophys ics 641, A1, ( 56 
+pp). DOI:  https://doi.org/10.1051/0004 -6361/201833880  
+ 
+Sfarti, A. (2009). Simplified single postulate theory of relativity . Physics Essays  22, 223-224. 
+DOI: https://doi.org/ 10.4006/1.3138103  
+ 
+Sfarti, A. (2011). Comment on the Paper “Absolute Motion Determined from Michelson - 
+Type Experiments in Optical Media” by V. P. Dmitriyev . Zeitschrift für Naturforschung A , 
+66,791-794. DOI: https://doi.org/10.5560/zna.2011 -0059  
+ Shanahan, D. (2014). A Criticism of "Gas Mode" Reinterpretations of the Michelson -Morley 
+and Similar Experiments. arXiv :1404.6095 [physics.class -ph].  DOI: 
+https://doi.org/10.48550/arXiv.1404.6095  
+ 
+Shankland,  R.S., McCuskey,  S.W., Leone,  F.C. &  Kuerti , G. (1955). New Analysis of the 
+Interferometer Observations of Dayton C. Miller . Reviews of Modern Physics  27, 167 -178. 
+DOI: https://doi.org/10.1103/RevModPhys.27.167  
+ 
+Tobar,  M.E., Stanwix,  P.L., Susli,  M., Wolf,  P., Locke,  C.R. & Ivanov,  E.N. (2006).  
+Rotating Resonator -Oscillator experiments to test Lorentz Invariance in Electrodynamics, in 
+Special relativity . ed. J. Ehlers, C. Lämmerzahl (Springer, Berlin Heidelberg, 2006), pp.416 –
+450. DOI: https://doi.org/10.1 007/3 -540-34523 -X_15  
+ 

@@ -1,0 +1,318 @@
+1  
+PICARD –FUCHS HYPERGEOMETRIC MANIFOLDS: A NEW LENS ON QUANTUM ENTANGLEMENT  
+ 
+Arturo Tozzi  
+Center  for Nonlinear Science, Department of Physics, University of North Texas, Denton, Texas, USA  
+1155 Union Circle, #311427 Denton, TX 76203 -5017 USA  
+tozziarturo@libero.it  
+ 
+ 
+ABSTRACT  
+ 
+A unified mathematical framework, referred to as Picard –Fuchs Hypergeometric Manifolds (PFHM), is introduced to 
+integrate modular symmetry, coupled dynamics and energy conservation. PFHM are constructed using a synthesis of 
+Ramanujan’s real period functions, Picard –Fuchs differential equations and Gaussian hypergeometric functions. We argue 
+that PFHM provide an effective representation of two -dimensional coupled subsystems embedded in three -dimensional 
+manifolds with dihedral symmetry .  These coupled subsys tems exhibit constrained energy reciprocity, making PFHM a 
+robust tool for elucidating stable, closed and homoclinic orbits in Hamiltonian systems.  An application of the proposed 
+method is explored in the context of quantum entanglement .  The intrinsic energetic reciprocity and symmetry of PFHM 
+are shown to be analogous to the nonlocal correlations in entangled quantum systems.  Modelling entangled pairs as 
+constrained subsystems, the PFHM framework sheds new light on the energy dynamics and nonlocal corre lations 
+underpin ning quantum entanglement .   
+ 
+KEYWORDS : dynamical systems theory ; elliptic curves; homoclinic orbit ; geometry .  
+ 
+ 
+INTRODUCTION  
+ 
+Hamiltonian systems capture  the dynamics of physical phenomena through conservation laws. Yet, the behavior of 
+coupled subsystems, particularly in higher -dimensional manifolds, presents significant analytical and computational 
+challenges. This paper proposes a unified framework  that combines modular symmetry, coupled dynamics, and energy 
+conservation.  This framework links three mathematical constructs that are known for their versatility in addressing 
+complex systems : 
+1. Picard –Fuchs differential equations (henceforth  PF).  PF are simple, linear, ordinary differential equations whose 
+solutions describe the periods of elliptic curves (Shen 2017; Kreshchuk and Gulden, 2019 ).  Well-suited for 
+defining periods of algebraic varieties, PF characterize the behavior of physical systems over parameter spaces .  
+They  have the unvaluable advantage of encompassing period -energy functions, allowing energy to be used as a 
+parameter.  
+2. Gaussian hypergeometric functions .  In particular, the Gaussian hypergeometric special function 2F1 (a,b;c;z) is 
+characterized by three regular singular points where the growth of solutions in the complex plane is bounded by 
+an algebraic function (Becken and Schmelcher, 2000; Olde Daalhuis 2010).  It  allow s the construction of 
+manifolds with rich symmetry properties and smooth interrelations between subsystems  (Ratner et al., 2001; 
+Jong et al., 2015).   
+3. Ramanujan’s real period functions .  They provide a foundation for describing modular structures  (Shen 2017) .   
+ 
+ 
+Picard –Fuchs Hypergeometric Manifolds  (PFHM) can be constructed as follows : 
+1. Hypergeometric manifolds .  Begin with a two -dimensional base manifold defined using Gaussian 
+hypergeometric functions. The base manifold is governed by the Picard –Fuchs equation:  
+, 
+               where . 
+ 
+2. Ramanujan’s period functions .  Define modular transformations on  M2, embedding it in a higher -dimensional 
+space. The transformation generates symmetries corresponding to 
+dihedral structures.  
+ 
+3. Three -dimensional coupled systems .  Extend  M2 to a three -dimensional manifold M3 by coupling two 
+subsystems with Hamiltonian interactions:  
+2 , 
+               where is the coupling potential.  
+ 
+ 
+The hypergeometric version of P F is satisfied by a set of integral period functions that define geometries characterized 
+by simple, closed plane curves originating at regular points  (Beukers and Heckman, 1989;  Fürnsinn and Yurkevich, 2023 ).   
+PFHM  are characterized by a double -periodic elliptic function and a countable toric section of the Hamiltonian  (Klee 
+2018a) .  Given the system’s Hamiltonian , the associated real period function  can be described by the 
+integral -differential algorithm (Klee 2019):  
+ 
+ 
+ 
+with the same signatures  found in the Ramanujan theory of elliptic functions related to the integral period 
+functions ,  and  (Ramanujan 1914; Shen 2017 ).   
+When the potential reaches its minimum, the phase curves form closed loops, which can be characterized using the period 
+function   (Klee 2019) : 
+. 
+ 
+The invariant differential  can be integrated on any loop around the Riemannian 
+surface  .  
+This means that the total Hamiltonian H enforces energetic reciprocity:  
+ 
+, 
+ 
+ensuring that energy shifts in one subsystem inversely mirror shifts in the other. This reciprocity leads to constrained 
+dynamics that stabilize periodic orbits.  
+This fram ework is especially valuable for describing the behaviour of stable, periodic closed trajectories in multi -
+dimensional phase spaces, such as homoclinic orbits connecting saddle points and periodic orbits exhibiting dihedral 
+symmetry  of M3.  Additionally, t he PFHM framework also facilitates chaotic dynamics under certain parameter 
+conditions, where nonlinear interactions induced by the coupling potential amplify sensitivity to initial 
+conditions  (Guo et al., 2021) .  
+ 
+In sum, PFHM is a versatile tool that enables the generation of numerous algorithms and series of identities  (Klee 2018a) .  
+Slight changes in the variable period  and/or the Gaussian hypergeometric function lead to entirely different 
+manifolds, which can be interpreted in the context of (physical or biological) dynamical systems exhibiting dihedral 
+symmetry .  Notably, the systems’ energetic requirement s and constraints can be calculated  by plotting cross sections of 
+the toric energy surface with plane curves .  In the sequel , we will assess the phase space  and the Hamiltonian of dynamical 
+system s characterized by stable and closed orbits , with special emphasis on the ir energetic features.   
+ 
+ 
+ 
+FROM HYPERGEOMETRIC PHASE SPACES TO REAL SYSTEMS   
+ 
+We propose that PFHM could serve as a mathematical framework to elucidate the phase spaces and energetic dynamics 
+of real systems .  To provide a  proof -of-concept  example, consider the phase space trajectories of three -dimensional system 
+composed of the orthogonal subsystems S1 and S2 characterized by homoclinic,  stable, closed orbits , where p eriod 
+integrals along the contour curves enable the evalua tion of  time dynamics (Klee 2018 b).  See Figure .  The S1’s planar 
+layer contain s a family of Hamiltonian level curves indexed by energy   with the lowest energetic level located 
+at the center  and the higher on the borders .  The higher the energy, the larger the closed orbit crossed by a hypothetical  
+particle traveling in the S1’s phase space.  The HPFM procedure allows S1 and its family of Hamiltonian curves to be  
+coupled with S2 Hamiltonian curves  that reciprocally influence each other. The single complex dynamical system formed 
+by the two subsystems S1 and S2 displays peculiar features:    
+1) The two-dimensional subsystems are located on perpendicular planes inside a three -dimensional phase space.   
+2) The system is finite and featur es dihedral symmetry . 
+3) The constrained trajectories of the subsystems follow homoclinic, stable  and closed orbits .  
+3 4) The system could be treated either as continuous or quantized.    
+5) Due to the extreme value theorem, a real -valued function that is continuous on the closed and bounded interval 
+must attain at least a maximum and a minimum  on a compact manifold .  
+6) Plotting cross sections of the toric energy surface s allows energy inversion symmetry.  Differently from other 
+Hamiltonian surfaces, the real period T(α) determines the complex period T(1-α) up to a rescal ing, leading to 
+energy inversion  α
+1−α   (Klee 2018a).      
+7) For every fixed value of the Hamiltonian, equipotential subspaces can be found in every subsystem.   Therefore, 
+changes in radius and energetic levels in S1 are inversely correlated with changes in radius and energetic levels 
+in S2  (Figure ).  Contrary to S1, the S2 energetic values  decrease from the center to the periphery.     
+8) The (physical or biological) subsystems S1 and S2 are coupled by an inverse linear function in such a way that 
+the total energy of the system is conser ved.  Energetic increases in S 1 must be balanced by inversely proportional  
+energetic decreases in S 2.  This means that the dynamics result in linear, balanced, reciprocally induced energetic 
+constraints between the S1 and S2 subsystems.    
+ 
+The closed  orbits with coupled Hamiltonian dynamics could represent energetic levels of physical forces like gravitation 
+or electromagnetism, energy exchanges between coupled plasma waves, coupled celestial orbits in three -body problems, 
+oscillatory dynamics in coupled neurons, predator -prey systems with constrained energy exchanges, paths followed by 
+social agents’ networks, etc.  In the sequel, we will focus on the special case of quantum entanglement.  
+ 
+Figure 2 .  The dynamical three -dimensional system S1 -S2 featur es dihedral symmetry  with r eal period function T(α) = 
+2F1 (1/6, 5/6; 1; α). Every one of the two  perpendicular two-dimensional planar layer s contain s a family of Hamiltonian 
+level curves indexed by energy .  By adjusting the α value upward or downward, distinct and predictable time dynamics 
+emerge within each subsystem  (thicker circles) . In contrast to subsystem S1 , the energetic values of S2 decrease from the 
+center to the periphery, such that changes in the energy of S1  are inversely proportional to those in S2 .  Modified from 
+Klee (2018b); Klee (2019) . 
+ 
+ 
+ 
+4 QUANTUM ENTANGLEMENT THROUGH THE LENS OF PICARD –FUCHS HYPERGEOMETRIC 
+MANIFOLDS  
+ 
+Despite experimental validation, a comprehensive framework link ing the nonlocal correlations of quantum entanglement 
+to the underlying dynamics remains elusive  (Nakata and Murao , 2020; Köhnke  et al., 2021 ).  Since PFHM are manifolds 
+derived from the modular structures and symmetries inherent in hypergeometric functions, they naturally account for 
+coupled dynamics and reciprocal interactions, making them a promising framework for modelling the behaviour of 
+entangled particles .  PFHM  allows the description of the coordinate variables in terms of c omplex values match ing each 
+plane curve to a Riemann surface  with nontrivial topology.  This observation provides the mathematical and 
+logical backbone  to treat quantum entanglement i n terms of paths travel ing inside PFHM -like manifolds  (Krutyanskiy et 
+al., 2023 ).   
+ 
+PFHM for quantum systems is  constructed using three core components:  
+1. Base manifold representation .  The state space of two entangled particles is modeled using a two -dimensional 
+hypergeometric manifold with state amplitudes defined as solutions to the Picard –Fuchs equation:  
+ 
+, 
+where represents the quantum state amplitudes and a,  b, c parameterize the system.  
+ 
+2. Extension to PFHM .  By embedding  M2 into a three -dimensional manifold M3, the coupled dynamics of 
+entangled subsystems are described by a Hamiltonian:  
+ 
+, 
+where is the interaction potential that encapsulates entanglement.  
+ 
+3. Symmetry and reciprocity .  Using modular transformations derived from Ramanujan’s period functions, the 
+energy dynamics of the coupled system satisfy reciprocity:  
+ 
+. 
+ 
+ 
+Once PFHM has been  established for quantum systems, quantum entanglement can be modelled  using the following 
+procedure :   
+1.  Representing entangled states .  In the PFHM framework, an entangled quantum state  is represented as a 
+point on M3.  For a two -particle system:  
+, 
+where and are basis states. The amplitudes α and β evolve on the manifold according to the Picard –Fuchs 
+equations, with the coupling potential encoding the entanglement.  
+ 
+2. Energetic reciprocity in entangled systems . The constrained energetic reciprocity in PFHM reflects the 
+conservation laws in quantum systems:  
+. 
+ 
+In entangled states, changes in one subsystem’s energy spectrum are instantaneously mirrored in the other, preserving the 
+total system’s symmetry.   Within a PFHM -like phase space, the energetic configuration of particles in one subsystem can 
+be predicted by examining the energetic configuration of particles in the coupled subsystem .   
+ 
+ 
+5 3. Quantum measurement as a geometric projection .  Quantum measurement is modeled as a projection of the state 
+vector onto a specific submanifold of M3.  The outcome of a measurement collapses the manifold’s global 
+symmetry into localized states, consistent with observed quantum correlations.   
+ 
+ 
+In sum, by embedding quantum systems in a higher -dimensional manifold, the dihedral symmetry of PFHM captures the 
+nonlocal nature of entanglement.  The simultaneous correlation of entangled particles becomes clear when viewed as 
+embedded within hypergeometric coupled phase spaces, where their trajectories are governed by constraints imposed by 
+conservation laws inherent in the Hamiltonian .   
+ 
+ 
+ 
+ 
+CONCLUSIONS  
+ 
+We introduce a new mathematical approach for modeling Hamiltonian dynamics in complex coupled systems while 
+leaving room for empirical validation and interdisciplinary exploration.   The concept of energetic reciprocity in coupled 
+Hamiltonian subsystems  with dihedral symmetry  aligns with the conservation principles and the coupled behaviors 
+observed in biological and physical systems , offer ing new insights into periodic and chaotic behaviors .  For example, in 
+cryptography and image processing, a message or visual image encoded within the invariant orbits of PHFM subsystems 
+can be mapped onto the orbits of another subsystem, creating a hypergeometric projection of the original data. Similar to 
+mapping a world chart, homoclinic or heteroclinic projections between two coupled hypergeometric manifolds c an be 
+performed, offering additional applications in digital imaging and memory storage.  
+ 
+This paper specifically explores PFHM as a structured framework for modelling quantum entanglement .  Taking into 
+account the constrained inverse reciprocity of trajectories within coupled subsystems , the modular structures, the energetic 
+reciprocity and the higher -dimensional symmetries, PFHM offers a novel approach to understanding the dynamics  and 
+nonlocality of entangled systems.  The framework is very flexible and can be adapted to multi -particle entanglement and 
+extended to infinite -dimensional systems.  The extension of PFHM to field -theoretic systems suggests applications in 
+describing entangled fields, particularly in curved spacetime or sce narios involving the AdS/CFT correspondence  
+ 
+Our study has its limitations. While the concept offers several strengths, it ventures  into complex theoretical terrain that 
+demands rigorous validation and enhanced conceptual clarity. In particular, the mapping of quantum observables onto 
+PFHM needs further refinement, especially for systems with high degrees of freedom. Developing experimental designs 
+to test the predict ions of the PFHM framework is an essential next step.  
+   
+Future research should aim to extend PFHM to non -Hamiltonian systems and investigate computational techniques for 
+solving PFHM -derived equations in high -dimensional spaces. Additionally, future work will focus on expanding this 
+structured framework to inco rporate quantum computing, specifically to model qubits in entangled states  (Graham  et al., 
+2022) . Indeed, t he geometric properties of PFHM can be used to optimize quantum gate operations by maintaining the 
+reciprocity and symmetry crucial for preserving e ntanglement.  
+ 
+In summary, the connection between dynamical systems (e.g., homoclinic paths), Hamiltonian mechanics and quantum 
+entanglement represents a significant leap from abstract mathematical structures to dynamic systems. This suggests a 
+unifying framework that co uld provide  a versatile approach to understanding complex interactions across disciplines.  
+ 
+ 
+ 
+DECLARATIONS  
+ 
+Ethics approval and consent to participate: This research does not contain any studies with human participants or 
+animals performed by the Author.  
+Consent for publication: The Autho r transfer s all copyright ownership, in the event the work is published.  The 
+undersigned author warrant s that the article is original, does not infringe on any copyright or other proprietary right of 
+any third part, is not under consideration by another journal, and has not been previously published.  
+Availability of data and materials: all data and materials generated or analyzed during this study are included in the 
+manuscript.  The Author had full access to all the data in the study and take responsibility for the integrity of the data an d 
+the accuracy of the data analysis.  6 Competing interests: The Author do es not have any known or potential conflict of interest including any financial, 
+personal or other relationships with other people or organizations within three years of beginning the submitted work that 
+could inappropriately influence, or be perceived to in fluence, their work.  
+Funding: This research did not receive any specific grant from funding agencies in the public, commercial, or not -for-
+profit sectors.  
+Authors' contributions: The Author  performed:  study concept and design, acquisition of data, analysis and interpretation 
+of data, drafting of the manuscript, critical revision of the manuscript for important intellectual content, statistical anal ysis, 
+obtained funding, administrative, technical, and material support, study supervision.  
+Acknowledgements: none.  
+ 
+ 
+ 
+REFERENCES   
+ 
+1) Becken W, P. Schmelcher. 2000. The analytic continuation of the Gaussian hypergeometric function 2F1(a,b;c;z) 
+for arbitrary parameters.  Journal of Computational and Applied Mathematics.  V olume 126, Issues 1 –2, 30 
+December 2000, Pages 449 -478 
+2) Beukers Frits; Gert Heckman.  1989.  Monodromy for the hypergeometric function nFn -1.   Invent. Math. 95 
+(1989) 325 -354, 
+3) Briske, D.D., Illius , A.W., Anderies, J.M. (2017). Nonequilibrium Ecology and Resilience Theory. In: Briske, D. 
+(eds) Rangeland Systems. Springer Series on Environmental Management. Springer, Cham. 
+https://doi.org/10.1007/978 -3-319-46709 -2_6 
+4) Chen, Y ., Wu, T. & Yang, X. On the existence of homoclinic orbits in some class of three -dimensional piecewise 
+affine systems. Comp. Appl. Math. 37, 6022 –6033 (2018). https://doi.org/10.1007/s40314 -018-0659 -6 
+5) Cinti, E., Corti, A. & Sanchioni, M.  2022. On entanglement as a relation. Euro Jnl Phil Sci 12, 10. 
+https://doi.org/10.1007/s13194 -021-00439 -5 
+6) Hetebrij , Wouter; J. D. Mireles James.  2021.  Critical homoclinics in a restricted four -body problem: numerical 
+continuation and center manifold computations.  Celestial Mechanics and Dynamical Astronomy.  V olume 133, 
+article number 5 .   
+7) Fürnsinn  Florian; Sergey Yurkevich. 2023.  Algebraicity of hypergeometric functions with arbitrary parameters. 
+arXiv:2308.12855  
+8) Graham TM, Song Y , Scott J, Poole C, Phuttitarn L, et al.  2022. Multi -qubit entanglement and algorithms on a 
+neutral -atom quantum computer.  Nature. 2022 Apr;604(7906):457 -462. doi: 10.1038/s41586 -022-04603 -6.  
+9) Guo, S., Luo, A.C. A Family of Periodic Motions to Chaos with Infinite Homoclinic Orbits in the Lorenz System. 
+Lobachevskii J Math 42, 3382 –3437 (2021). https://doi.org/10.1134/S1995080222020093  
+10) Jong, Mathijs de; Seijo, Luis; Meijerink, Andries; Rabouw, Freddy T. 2015. Resolving the ambiguity in the 
+relation between Stokes shift and Huang –Rhys parameter. Physical Chemistry Chemical Physics. 17 (26): 
+16959 –16969. doi:10.1039/C5CP02093J.  
+11) Kepley, Shane; J. D. Mireles James.  2019.  Homoclinic dynamics in a restricted four -body problem: transverse 
+connections for the saddle -focus equilibrium solution set.  Celestial Mechanics and Dynamical Astronomy.  
+V olume 131, article number 13.  
+12) Klee, Brad. 2018 a.  Deriving Hypergeometric Picard -Fuchs Equations. 
+http://demonstrations.wolfram.com/DerivingHypergeometricPicardFuchsEquations/    Wolfram Demonstrations 
+Project.  
+13) Klee Brad. 2018b.  D4 Symmetric Stratum of Quartic Plane Curves.  
+http://demonstrations.wolfram.com/D4SymmetricStratumOfQuarticPlaneCurves/       Wolfram Demonstrations 
+Project  
+14) Klee, Brad. 2019.  A Few More Geometries after Ramanujan.  
+http://demonstrations.wolfram.com/AFewMoreGeometriesAfterRamanujan/    Wolfram Demonstrations Project.  
+15) Köhnke S, Agudelo E, Schünemann M, Schlettwein O, V ogel W, Sperling J, Hage B.  2021.  Quantum 
+Correlations beyond Entanglement and Discord.  Phys Rev Lett. 2021 Apr 30;126(17):170404. doi: 
+10.1103/PhysRevLett.126.170404.  
+16) Kreshchuk, Michael; Tobias Gulden 2019 J. Phys. A: Math. Theor. 52 155301.  DOI 10.1088/1751 -8121/aaf272  
+17) Krutyanskiy, V; M. Galli, V . Krcmarsky, S. Baier, D. A. Fioretto, et al.  2023.  Entanglement of Trapped -Ion 
+Qubits Separated by 230 Meters   Phys. Rev. Lett. 130, 050803 – Published 2 February 2023  
+18) Mickens, R.E.  1979.  Long -range interactions. Found Phys 9, 261 –269. https://doi.org/10.1007/BF00715182  
+19) Nakata Y , Murao M.  2020.  Generic Entanglement Entropy for Quantum States with Symmetry.  Entropy 
+(Basel). 2020 Jun 19;22(6):684. doi: 10.3390/e22060684.  7 20) Olde Daalhuis AB. 2010 .  Hypergeometric function . In Olver, Frank W. J.; Lozier, Daniel M.; Boisvert, Ronald 
+F.; Clark, Charles W. (eds.), NIST Handbook of Mathematical Functions, Cambridge University Press, ISBN 
+978-0-521-19225 -5, MR 2723248.  
+21) Planat, Michel; David Chester, Klee Irwin.  2024. Dynamics of Fricke –Painlevé VI Surfaces.  Dynamics 2024, 
+4(1), 1 -13; https://doi.org/10.3390/dynamics4010001  
+22) Rabinovich, Mikhail I; Pablo Varona.  2011.  Robust transient dynamics and brain functions.  Front. Comput. 
+Neurosci., 13 June 2011.  volume 5 - 2011 | https://doi.org/10.3389/fncom.2011.00024  
+23) Ramanujan  S. 1914.  Modular Equations and Approximations to ,".  Quarterly Journal of Mathematics , 45, 
+1914 pp. 350 –372. 
+24) Ratner, Schatz ; Mark A., George C. (2001). Quantum Mechanics in Chemistry. 0-13-895491 -7: Prentice Hall. 
+pp. 90 –91. 
+25) Shen, L. C.  2017.  On Three Differential Equations Associated with Chebyshev Polynomials of Degrees 3, 4 
+and 6.  Acta Mathematica Sinica, 33(1), 2017 pp. 21 –36. doi:10.1007/s10114 -016-6180 -1. 
+26) Wolfram S.  2011.  Waves from a Moving Source in 3D. Wolfram Demonstrations Project. 
+http://demonstrations.wolfram.com/WavesFromAMovingSourceIn3D/  

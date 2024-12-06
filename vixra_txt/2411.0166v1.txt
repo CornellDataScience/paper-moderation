@@ -1,0 +1,129 @@
+Simplified Trigonometric Method for Distance Measurements 
+Abstract 
+This!study!develops!a!mathematical!approach!to!estimate!the!dista nce!of!a!celestial!object!
+from!an!observer!using!angular!measurements.!The!method!inv olves!capturing!the!
+subtended!angles!of!the!object!from!two!distinct!positions!along!a! known!baseline!distance!
+and!employs!trigonometric!relationships!to!derive!a!formula!for! calculating!the!distance.!
+Using!a!camera,!the!angular!size!of!the!object!is!determined !based!on!its!apparent!size!on!
+the!camera's!sensor.!The!calculated!angles!are!substituted!into!th e!derived!formula!to!
+compute!the!distance.!!
+Validation!of!the!formula!was!performed!by!calculating!the!Moon' s!distance!from!Earth!
+using!angular!measurements!taken!at!two!locations!separated!by!10 0!km.!The!computed!
+distance!of!approximately!376,742!km!closely!aligns!with!the!Moon 's!average!distance!from!
+Earth,!confirming!the!accuracy!of!the!method.!This!straightfo rward!approach!demonstrates!
+potential!utility!for!amateur!astronomers!and!educators,!offering !an!accessible!tool!for!
+celestial!distance!measurement!using!basic!geometry.!
+1. Introduction 
+1.1 Background and Context 
+Determining!the!distances!to!celestial!objects!has!been!a!corn erstone!of!astronomical!study,!
+offering!insights!into!the!scale!and!structure!of!the!univer se.!Traditional!methods,!such!as!
+parallax!measurements!and!radar!ranging,!require!sophisti cated!instruments!and!
+significant!computational!resources.!While!effective,!these!techn iques!are!often!inaccessible!
+to!amateur!astronomers!or!in!educational!settings,!where!simplici ty!and!cost-effectiveness!
+are!critical.!
+1.2 Need for Simplified Methods 
+The!resource-intensive!nature!of!traditional!methods!emphasizes!th e!need!for!accessible!
+alternatives.!Developing!simplified!approaches!not!only!democ ratizes!astronomical!
+measurements!but!also!fosters!a!deeper!understanding!of!ge ometry!and!trigonometry.!This!
+is!especially!relevant!in!educational!contexts,!where!hands-o n!demonstrations!enhance!
+learning.!
+1.3 Objective 
+This!study!aims!to!derive!and!validate!a!straightforward!meth od!for!estimating!the!distance!
+to!a!celestial!object!using!minimal!equipment.!By!capturing!the !objects!angular!size!from!
+two!observer!positions!separated!by!a!known!distance,!trigonometric !principles!are!used!to!
+compute!the!distance.!The!methodology!is!tested!with!the!Moon!as !an!example,!and!the!
+derived!results!are!compared!against!its!known!average!dist ance!to!evaluate!accuracy!and!
+practicality.!AryanG.Chopade,GovardhanS.Chopade 2. Theory and Derivation 
+fig!(1)!
+2.1 Problem Setup (see fig (1)) 
+Consider!an!object!of!diameter!(a)!(e.g.,!a!celestial!body)!lo cated!at!a!distance!(y)!from!the!
+observer.!Observations!are!taken!from!two!positions:!!
+-!Position!(A):!The!initial!observation!point,!where!the!angle!subten ded!by!the!object's!
+edges!is!(!").!
+-!Position!(B):!The!second!observation!point,!separated!by!a!baseli ne!distance!(x),!where!the!
+subtended!angle!is!( !#).!
+!
+The!goal!is!to!calculate!(y),!the!distance!from!the!observer!at!( A)!to!the!object.!
+2.2 Derivation of the Formula 
+Using!the!tangent!relationship:!
+At!(A):!
+!!!!$%& (!")='
+#*+!!
+Rearranging:!
+!!!!%+=+2,+$%&(!-) !!-----------------!(1)!
+!
+At!(B):!
+!!!!$%& (!#)='
+#(*++.)!!----------------!(2)!
+!
+Substituting!(a)!from!(1)!into!(2):!
+!!!!$%& (!#)=#*++/'0 (1-)
+#(*++.)+=+*+/'0 (13)
+*++.!
+Simplifying:!
+!!! ! !! ,+($%&(!4)+5+$%&(!-))+=+6+$%&(!4) !
+Solving!for!(y):!
+!! ! !!! ,+=.+/'0 (14)
+/'0 (14)7+/'0 (13)!
+!
+3. Methodology 
+!
+3.1 Setup and Measurements (see fig (2)) 
+-!Observer's!Positions:!Choose!two!positions,!(A)!and!(B),!separated !by!a!known!baseline!
+(x).!
+-!Object!of!Observation:!Select!a!celestial!object!with!a!measura ble!angular!size,!such!as!the!
+Moon.!
+-!Equipment:!Use!a!digital!camera!with!a!known!focal!length!( f)!to!capture!images!of!the!
+object!from!(A)!and!(B).!
+3.2 Procedure 
+1.!Image!Capture:!
+!!!-!At!(A),!capture!an!image!of!the!celestial!object.!
+!!!-!Move!a!distance!(x)!to!(B)!and!capture!a!second!i mage.!
+2.!Calculate!Angular!Size:!
+!!!Using!the!apparent!radius!of!the!object's!image!( 89:';< )!on!the!sensor:!
+!!!!!!!$%&>1
+#?+=@ABCDE 
+F!
+!!!Determine! ("#)!and!("$) !for!positions!(A)!and!(B).!
+3.!Calculate!Distance:!
+!!!Substitute!the!measured!angles!into!the!formula:!
+!!!!!!!,+=.++/'0 (GH)
+/'0 (G4 )7+/'0 (G- )!
+ 
+!
+ 
+4. Results and Discussion 
+4.1 Results 
+For!the!Moon:!
+-!Baseline:!(x!=!100!km)!
+-!Focal!length:!(f!=!0.001!km)!
+-!Apparent!radii:!
+!!-!I89:';< J"=KLKKKKKMNOPQ+RS !at!(A)!
+!!-!I89:';< J#=KLKKKKKMN2KP+RS !at!(B)!
+!
+Computed!angles:!
+T"=IUVWXYZ J3
+[=\L\\\\\]^"_` 
+\L\\" rad=KLKKMNOPQ+rad !!
+T#=IUVWXYZ JH
+[=\L\\\\\]^#\_ 
+\L\\" rad=KLKKMN2KP+rad !!
+tanT"=tan(KLKKMNOPQ)bKLKKMNOPQ !!
+tanT#=tan(KLKKMNOPQ)bKLKKMNOPQ !!
+cdistanef+og+moon+grom+ohsfrvfr=y=jklpGH
+klpGH7klpG3!!
++="\\×\L\\]^#\_ 
+\L\\]^#\_7\L\\]^"_` bqQuQMOLuuuuuQ+wm !!
+!
+Result:!!
+y!%!qQuQMOLuuuuuQ !km!
+!
+4.2 Discussion 
+The!calculated!distance!aligns!closely!with!the!Moon's!average!di stance!(384,400!km).!
+Minor!discrepancies!arise!from!measurement!precision!and !environmental!factors.!The!
+simplicity!of!this!method!makes!it!ideal!for!amateur!and!educa tional!applications.!
+5. Conclusion 
+This!study!presents!a!practical!and!accessible!method!for!calcula ting!celestial!distances!
+using!simple!trigonometric!relationships.!The!successful!validation!of !the!formula!with!the!
+Moon!underscores!its!potential!for!educational!and!observational !purposes.!Future!work!
+could!explore!enhancements!for!measuring!more!distant!obje cts.!
