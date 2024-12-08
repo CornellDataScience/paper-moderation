@@ -1,0 +1,53 @@
+Rajendra (Lord of Kings) is a passive electronically scanned array radar developed by the Defence Research and Development Organisation (DRDO). This acts as the Fire-control radar for Akash weapon system. It is a multifunction radar, capable of surveillance, tracking and engaging low radar cross section targets. It is a ground surveillance radar and is a great source of surveillance operating at frequency around 20 GHz. It is mainly used to track enemy's installations.
+
+
+== Description ==
+Rajendra is a slewable passive phased array radar used for 3-D target detection, multi target tracking and multiple missile guidance under extreme hostile EW environment. It makes use of a passive phased array to search a volume of space, distinguish between hostile and friendly targets, automatically track up to 64 targets and command one of several launchers to engage up to 4 targets simultaneously. Initially designed as a standalone system, Rajendra is now equipped with the ability to integrate with a network of sensors, including long and medium-range surveillance radars of foreign and domestic origin. 
+Rajendra's multi-element antenna arrangement folds flat when the vehicle is in motion. The Radar consists of a surveillance antenna array with 4000 phase control modules (PCM's) operating in the G/H-Band (4-8 GHz), engagement antenna array with 1000 PCM's operating in the I/J-Band (8-20 GHz), a 16-element IFF array and steering units. A powerful high-end computer computes phases for all the elements of the array. Rajendra controls the beam positioning sequence through beam requests for each track at adaptive data rates and performs multifunctional roles like search –confirm –track -interrogate targets, assign and lock on launchers, and launch/acquire/ track/guide missiles. The RDP supplies track data to remote group control centre. Rajendra features a Dual channel radar receiver and a C band transmitter, although the complete transmitting and receiving features and bands are unknown.
+Rajendra radar uses phase shifters integrated in large numbers for electronic beam steering. This allows Rajendra radar to simultaneously track multiple aircraft and also guide multiple missiles towards these targets. The phase shifter was designed and developed by Prof Bharati Bhat, a scientist from Centre for Applied Research in Electronics (CARE) of IIT, Delhi, and her team.
+The phased array radar rotates 360 degrees on a rotating turnstile at a moderate speed. This allows it to perform 360 degree surveillance. The phased array itself has 45 degree scan limits to either side, giving a total scan coverage of 90 degrees, if the radar array is static.
+During Multisensor Tracking a 2-D battery surveillance radar (BSR) with 360 degree coverage and a larger detection range provides track data to the multifunction, slewable, 3-D phased array radar. This is useful when a single battery of the Rajendra is detached from the group to fight alone, and early warning from the 3-D CAR is not available. The 2-D BSR data is then integrated by the Rajendra's radar vehicle. The multisensor direction finder in Rajendra processes the track data from the phased array radar and the BSR to identify the targets reported by both the sensors and maintains a common track database. For those BSR tracks, which are not being reported by Rajendra though under its coverage, target acquisition is initiated with elevation search in the designated direction. The antenna is skewed in the direction of threat to acquire the targets, which are outside the covered air space. The Rajendra's tracking range is 60 km against fighter aircraft flying at medium altitude. 
+The major functions of the Rajendra are:
+
+Surveillance of the assigned volume of space
+Acquisition of aircraft targets either independently or handed over from group control centre via the 3-D CAR or from the battery surveillance radar
+Tracking of targets (64)
+Tracking of assigned targets (up to 4) and missiles (up to 8) during engagement
+Command guidance of missiles (up to 8)
+Integrated IFF (Identification Friend or Foe) functions
+
+
+== Trials ==
+By 2005, Rajendra II had participated in more than 15 flight trials at Balasore missile testing range. The flight trials have been spread over 4 missions in both group and autonomous mode. High altitude engagement, far boundary engagement, crossing and receding target engagement and multiple missions against multiple targets capabilities have been established. Consistency in performance of radar in guiding missiles as close as 15m has been established. During a mission, a Pilot less Target Aircraft (PTA) was neutralized while engaging crossing and receding target.
+In 2007, the Akash system cleared the Indian Air Force's user trials with the Rajendra tracking and engaging several targets with warhead equipped missiles. Prior to that, the Akash system elements, including the Rajendra underwent mobility trials at Pokhran and the radar successfully demonstrated its performance in an EW environment, and its ECCM features at the IAF Electronic warfare range at Gwalior.
+
+
+== Deployment ==
+Each Akash battery has a single Rajendra radar which is linked to up to 4 Akash launchers, each with 3 missiles. Each Rajendra radar can guide up to 2 of these missiles against a single target, with 8 missiles in the air at the same time.
+4 Akash batteries make up a group in the Indian Army configuration, with a central 3D CAR radar acting as the early warning sensor for the entire group.In 2007, the Indian Air Force ordered 2 Akash squadrons to begin with. Each squadron consists of a minimum of two batteries, and hence at least 4 Rajendra radars are on order. Many more orders are expected to come over time, as the Indian Air Force phases out its older Pechora systems. The IAF had 30 Pechora squadrons of which 9 were to be replaced by the DRDO-IAI MRSAM project. The rest were to be replaced by the Akash, over time. As of May 2008, the LRSAM project is on hold on account of Indian Government investigations over the earlier Barak SAM deal with the Indian Navy. This is expected to put more emphasis on orders for the Akash SAM, as the Indian Air Force moves towards revamping its SAM inventory.
+
+
+== Current status ==
+The Rajendra Multi-Function Phased Array radar system, designed at the Electronics and Radar Development Establishment (LRDE), part of DRDO, is currently in production at Bharat Electronics. It is named after India's First president Dr. Rajendra Prasad.
+The LRDE is working on the Rajendra III radar for the Indian Army. Rajendra III is a slewable phased array radar based on the T-72 chassis built by Ordnance Factories Board's Ordnance Factory Medak. As of 2007, the BLR-III vehicle on T-72 chassis was ready for a track test. The Phased array antenna is fabricated at Bharat Electronics Limited (BEL), Ghaziabad. Collimated beam pattern and D/S curve for all 16 spot frequencies has been taken.
+Current orders for the Rajendra and its derivatives are at least 32 units, considering the order for 2 Squadrons of the Akash system by the Indian Air force and the indent for 28 Weapon Locating Radars by the Indian Army.
+
+
+=== Weapon Locating Radar ===
+The Army intends to use a Rajendra radar derivative in the artillery locating role. During tests at Chandipur for the Akash missile system, engineers noticed the Rajendra radar was able to detect and track artillery shells being test fired at a nearby range. This led to the development of the domestic Weapon Locating Radar, called the Swathi Weapon Locating Radar, an item in high demand by the Indian Army's artillery units, especially after the Kargil War. 28 LRDE Rajendra based WLR's have been ordered by the Indian Army. In June 2008, the WLR was accepted for induction by the Army, and 28 units are being produced by Bharat Electronics Limited (BEL).
+
+
+== Operators ==
+ India
+Indian Air Force
+Indian Army
+
+
+== See also ==
+INDRA ( 2D radar for low detection)
+BEL Battle Field Surveillance Radar (man-portable 2D radar for battlefield)
+Swathi Weapon Locating Radar(Weapon locating radar)
+Swordfish Long Range Tracking Radar (Very long range radar for ballistic missiles detection )
+
+
+== References ==

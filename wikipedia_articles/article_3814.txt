@@ -1,0 +1,1393 @@
+The notion of non-malleable codes was introduced in 2009 by Dziembowski, Pietrzak, and Wichs, for relaxing the notion of error-correction and error-detection. Informally, a code is non-malleable if the message contained in a modified code-word is either the original message, or a completely unrelated value. Non-malleable codes provide a useful and meaningful security guarantee in situations where traditional error-correction and error-detection is impossible; for example, when the attacker can completely overwrite the encoded message. Although such codes do not exist if the family of "tampering functions" F is completely unrestricted, they are known to exist for many broad tampering families F.
+
+
+== Background ==
+
+
+=== Tampering experiment ===
+To know the operation schema of non-malleable code, we have to have a knowledge of the basic experiment it based on. The following is the three step method of tampering experiment.
+
+A source message 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ is encoded via a (possibly randomized) procedure 
+  
+    
+      
+        E
+        n
+        c
+      
+    
+    {\displaystyle Enc}
+  
+, yielding a code-word 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ = 
+  
+    
+      
+        E
+        n
+        c
+        (
+        s
+        )
+      
+    
+    {\displaystyle Enc(s)}
+  
+.
+The code-word is modified under some tampering-function 
+  
+    
+      
+        f
+        ∈
+        F
+      
+    
+    {\displaystyle f\in F}
+  
+ to an erroneous-code-word 
+  
+    
+      
+        
+          c
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle c^{*}}
+  
+=
+  
+    
+      
+        f
+        (
+        c
+        )
+      
+    
+    {\displaystyle f(c)}
+  
+.
+The erroneous-code-word 
+  
+    
+      
+        
+          c
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle c^{*}}
+  
+ is decoded using a procedure 
+  
+    
+      
+        D
+        e
+        c
+      
+    
+    {\displaystyle Dec}
+  
+, resulting in a decoded-message  
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle s^{*}}
+  
+= 
+  
+    
+      
+        D
+        e
+        c
+        (
+        
+          c
+          
+            ∗
+          
+        
+        )
+      
+    
+    {\displaystyle Dec(c^{*})}
+  
+.
+The tampering experiment can be used to model several interesting real-world settings, such as data transmitted over a noisy channel, or adversarial tampering of data stored in the memory of a physical device. Having this experimental base, we would like to build special encoding/decoding procedures 
+  
+    
+      
+        (
+        E
+        n
+        c
+        ,
+        D
+        e
+        c
+        )
+      
+    
+    {\displaystyle (Enc,Dec)}
+  
+, which give us some meaningful guarantees about the results of the above tampering experiment, for large and interesting families 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ of tampering functions. The following are several possibilities for the type of guarantees that we may hope for.
+
+
+=== Error correction ===
+One very natural guarantee, called error-correction, would be to require that for any tampering function and any source-message s, the tampering experiment always produces the correct decoded message  
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+        =
+        s
+      
+    
+    {\displaystyle s^{*}=s}
+  
+.
+
+
+=== Error detection ===
+A weaker guarantee, called error-detection, requires that the tampering-experiment always results in either the correct value 
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+        =
+        s
+      
+    
+    {\displaystyle s^{*}=s}
+  
+ or a special symbol 
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+        =⊥
+      
+    
+    {\displaystyle s^{*}=\perp }
+  
+ indicating that tampering has been detected. This notion of error-detection is a weaker guarantee than error-correction, and achievable for larger F of tampering functions.
+
+
+== Algorithm description ==
+A non-malleable code ensures that either the tampering experiment results in a correct decoded-message  
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+        =
+        s
+      
+    
+    {\displaystyle s^{*}=s}
+  
+, or the decoded-message 
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle s^{*}}
+  
+ is completely independent of and unrelated to the source-message 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+. In other word, the notion of non-malleability for codes is similar, in spirit, to notions of non-malleability for cryptographic primitives (such as encryption2, commitments and zero-knowledge proofs), introduced by the seminal work of Dolev, Dwork and Naor.
+Compared to error correction or error detection, the "right" formalization of non-malleable codes is somewhat harder to define. Let 
+  
+    
+      
+        T
+        a
+        m
+        p
+        e
+        
+          r
+          
+            s
+          
+          
+            f
+          
+        
+      
+    
+    {\displaystyle Tamper_{s}^{f}}
+  
+ be a random variable for the value of the decoded-message, which results when we run the tampering experiment with source-message 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ and tampering-function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, over the randomness of the encoding procedure. Intuitively, we wish to say that the distribution of 
+  
+    
+      
+        T
+        a
+        m
+        p
+        e
+        
+          r
+          
+            s
+          
+          
+            f
+          
+        
+      
+    
+    {\displaystyle Tamper_{s}^{f}}
+  
+ is independent of the encoded message 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+. Of course, we also want to allow for the case where the tampering experiment results in 
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+        =
+        s
+      
+    
+    {\displaystyle s^{*}=s}
+  
+ (for example, if the tampering function is identity), which clearly depends on 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+.
+Thus, we require that for every tampering-function 
+  
+    
+      
+        f
+        ∈
+        F
+      
+    
+    {\displaystyle f\in F}
+  
+, there exists a distribution 
+  
+    
+      
+        
+          D
+          
+            f
+          
+        
+      
+    
+    {\displaystyle D_{f}}
+  
+ which outputs either concrete values 
+  
+    
+      
+        
+          s
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle s^{*}}
+  
+ or a special same 
+  
+    
+      
+        ∗
+      
+    
+    {\displaystyle *}
+  
+ symbol, and faithfully models the distribution of 
+  
+    
+      
+        T
+        a
+        m
+        p
+        e
+        
+          r
+          
+            s
+          
+          
+            f
+          
+        
+      
+    
+    {\displaystyle Tamper_{s}^{f}}
+  
+ for all 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ in the following sense: for every source message 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, the distributions of 
+  
+    
+      
+        T
+        a
+        m
+        p
+        e
+        
+          r
+          
+            s
+          
+          
+            f
+          
+        
+      
+    
+    {\displaystyle Tamper_{s}^{f}}
+  
+ and 
+  
+    
+      
+        
+          D
+          
+            f
+          
+        
+      
+    
+    {\displaystyle D_{f}}
+  
+ are statistically close when the 
+  
+    
+      
+        ∗
+      
+    
+    {\displaystyle *}
+  
+ symbol is interpreted as 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+. That is, 
+  
+    
+      
+        
+          D
+          
+            f
+          
+        
+      
+    
+    {\displaystyle D_{f}}
+  
+ correctly simulates the "outcome" of the tampering-experiment with a function 
+  
+    
+      
+        f
+        ∈
+        F
+      
+    
+    {\displaystyle f\in F}
+  
+ without knowing the source-messages 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, but it is allowed some ambiguity by outputting a same 
+  
+    
+      
+        ∗
+      
+    
+    {\displaystyle *}
+  
+ symbol to indicate that the decoded-message should be the same as the source-message, without specifying what the exact value is. The fact that 
+  
+    
+      
+        
+          D
+          
+            f
+          
+        
+      
+    
+    {\displaystyle D_{f}}
+  
+ depends on only 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ and not on 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, shows that the outcome of 
+  
+    
+      
+        T
+        a
+        m
+        p
+        e
+        
+          r
+          
+            s
+          
+          
+            f
+          
+        
+      
+    
+    {\displaystyle Tamper_{s}^{f}}
+  
+ is independent of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, exempting equality.
+
+
+== Relation to error correction/detection ==
+Notice that non-malleability is a weaker guarantee than error correction/detection; the latter ensure that any change in the code-word can be corrected or at least detected by the decoding procedure, whereas the former does allow the message to be modified, but only to an unrelated value. However, when studying error correction/detection we usually restrict ourselves to limited forms of tampering which preserve some notion of distance (e.g., usually hamming distance) between the original and tampered code-word. 
+For example, it is already impossible to achieve error correction/detection for the simple family of functions 
+  
+    
+      
+        
+          F
+          
+            c
+            o
+            n
+            s
+            t
+          
+        
+      
+    
+    {\displaystyle F_{const}}
+  
+ which, for every constant 
+  
+    
+      
+        
+          c
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle c^{*}}
+  
+, includes a "constant" function 
+  
+    
+      
+        
+          f
+          
+            
+              c
+              
+                ∗
+              
+            
+          
+        
+      
+    
+    {\displaystyle f_{c^{*}}}
+  
+ that maps all inputs to 
+  
+    
+      
+        
+          c
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle c^{*}}
+  
+. There is always some function in 
+  
+    
+      
+        
+          F
+          
+            c
+            o
+            n
+            s
+            t
+          
+        
+      
+    
+    {\displaystyle F_{const}}
+  
+ that maps everything to a valid code-word 
+  
+    
+      
+        
+          c
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle c^{*}}
+  
+. In contrast, it is trivial to construct codes that are non-malleable w.r.t 
+  
+    
+      
+        
+          F
+          
+            c
+            o
+            n
+            s
+            t
+          
+        
+      
+    
+    {\displaystyle F_{const}}
+  
+, as the output of a constant function is clearly independent of its input. The prior works on non-malleable codes show that one can construct non-malleable codes for highly complex tampering function families 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ for which error correction/detection can not be achievable.
+
+
+== Application over tampering functions ==
+
+
+=== Bit-wise independent tampering ===
+As one very concrete example, we study non-malleability with respect to the family of functions 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ which specify, for each bit of the code-word 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, whether to keep it as is, flip it, set it to 0, set it to 1. That is, each bit of the code-word is modified arbitrarily but independently of the value of the other bits of the code-word. We call this the “bit-wise independent tampering” family 
+  
+    
+      
+        
+          F
+          
+            B
+            I
+            T
+          
+        
+      
+    
+    {\displaystyle F_{BIT}}
+  
+. Note that this family contains constant functions 
+  
+    
+      
+        
+          F
+          
+            c
+            o
+            n
+            s
+            t
+          
+        
+      
+    
+    {\displaystyle F_{const}}
+  
+ and constant-error functions 
+  
+    
+      
+        
+          F
+          
+            e
+            r
+            r
+          
+        
+      
+    
+    {\displaystyle F_{err}}
+  
+ as subsets. Therefore, as we have mentioned, error-correction and error-detection cannot be achieved w.r.t. this family. Nevertheless, the following can show an efficient non-malleable code for this powerful family.
+With 
+  
+    
+      
+        
+          F
+          
+            B
+            I
+            T
+          
+        
+      
+    
+    {\displaystyle F_{BIT}}
+  
+ we denote the family which contains all tampering functions that tamper every bit independently. Formally, this family contains all functions 
+  
+    
+      
+        
+          f
+          
+            i
+          
+        
+        :
+        
+          
+            {
+            
+              
+                0
+              
+              ,
+              
+                1
+              
+            
+            }
+          
+          
+            n
+          
+        
+        →
+        
+          
+            {
+            
+              
+                0
+              
+              ,
+              
+                1
+              
+            
+            }
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle f_{i}:\left\{{0},{1}\right\}^{n}\to \left\{{0},{1}\right\}^{n}}
+  
+  that are defined by n functions
+  
+    
+      
+        
+          f
+          
+            i
+          
+        
+        :
+        
+          {
+          
+            
+              0
+            
+            ,
+            
+              1
+            
+          
+          }
+        
+        →
+        
+          {
+          
+            
+              0
+            
+            ,
+            
+              1
+            
+          
+          }
+        
+      
+    
+    {\displaystyle f_{i}:\left\{{0},{1}\right\}\to \left\{{0},{1}\right\}}
+  
+ (for i=1...n) as 
+  
+    
+      
+        f
+        (
+        
+          c
+          
+            1
+          
+        
+        .
+        .
+        
+          c
+          
+            n
+          
+        
+        )
+        =
+        
+          f
+          
+            1
+          
+        
+        (
+        
+          c
+          
+            1
+          
+        
+        )
+        .
+        .
+        
+          f
+          
+            n
+          
+        
+        (
+        
+          c
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle f(c_{1}..c_{n})=f_{1}(c_{1})..f_{n}(c_{n})}
+  
+. Note that there are only 4 possible choices for each 
+  
+    
+      
+        
+          f
+          
+            i
+          
+        
+      
+    
+    {\displaystyle f_{i}}
+  
+ (i.e. how to modify a particular bit) and we name these “set to 0”, “set to 1”, “flip”, “keep” where the meanings should be intuitive. We call the above family the bit-wise independent tampering family.
+
+
+=== All families of bounded size ===
+Probabilistic Method Approach
+For any "small enough" function family 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+, there exists a (possibly inefficient) coding scheme which is non-malleable w.r.t. F. Moreover, for a fixed "small enough" function family 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+, a random coding scheme is likely to be non-malleable w.r.t. F with overwhelming probability. Unfortunately, random coding schemes cannot be efficiently represented, nor is the encoding/decoding function likely to be efficient. Therefore, this result should merely be thought of as showing "possibility" and providing a target that we should then strive to match constructively. Moreover, this result also highlights the difference between "error-correction/detection" and "non-malleability" since a result of this form could not be true for the former notions.
+
+Random Oracle Model Approach
+It is not clear what the bound from the theorem of this type actually implies. For example, it does tell us that non-malleable codes exist with respect to all efficient functions, but this is misleading as we know that efficient non-malleable codes (and ultimately we are only interested in such) cannot be non-malleable w.r.t. this class. Nevertheless, the result by the probabilistic method does give us codes which are non-malleable w.r.t. very general classes of functions in the random oracle model.
+
+
+=== Model of tamper-resilient security ===
+In this model, we consider two ways of interacting with the system:
+Execute(
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+): A user can provide the system with Execute(x) queries, for 
+  
+    
+      
+        x
+        ∈
+        
+          
+            {
+            
+              
+                0
+              
+              ,
+              
+                1
+              
+            
+            }
+          
+          
+            u
+          
+        
+      
+    
+    {\displaystyle x\in \left\{{0},{1}\right\}^{u}}
+  
+, in which case the system computes 
+  
+    
+      
+        (
+        y
+        ,
+        
+          s
+          
+            
+              
+              ′
+            
+          
+        
+        )
+        ←
+        G
+        (
+        x
+        ,
+        s
+        )
+      
+    
+    {\displaystyle (y,s^{'})\gets G(x,s)}
+  
+, updates the state of the system to 
+  
+    
+      
+        s
+        :=
+        
+          s
+          
+            
+              
+              ′
+            
+          
+        
+      
+    
+    {\displaystyle s:=s^{'}}
+  
+ and outputs 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+.
+Tamper(
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+): We also consider tampering attacks against the system, modeled by Tamper(
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+) commands, for functions 
+  
+    
+      
+        f
+        :
+        
+          
+            {
+            
+              
+                0
+              
+              ,
+              
+                1
+              
+            
+            }
+          
+          
+            n
+          
+        
+        →
+        
+          
+            {
+            
+              
+                0
+              
+              ,
+              
+                1
+              
+            
+            }
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle f:\left\{{0},{1}\right\}^{n}\to \left\{{0},{1}\right\}^{n}}
+  
+. Upon receiving such command, the system state is set to 
+  
+    
+      
+        s
+        :=
+        f
+        (
+        s
+        )
+      
+    
+    {\displaystyle s:=f(s)}
+  
+.
+An attacker that can also interact with the system via Tamper queries can potentially learn significantly more about the secret state, even recover it entirely. Therefore, we would like to have a general method for securing systems against tampering attacks, so that the ability to issue Tamper queries (at least for functions f in some large family 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+) cannot provide the attacker with additional information. By using non-malleable code for this purpose we have the conclusion: Let 
+  
+    
+      
+        (
+        E
+        n
+        c
+        ,
+        D
+        e
+        c
+        )
+      
+    
+    {\displaystyle (Enc,Dec)}
+  
+ be any coding scheme which is non-malleable w.r.t 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+, then 
+  
+    
+      
+        (
+        E
+        n
+        c
+        ,
+        D
+        e
+        c
+        )
+      
+    
+    {\displaystyle (Enc,Dec)}
+  
+ can also be tamper-simulate w.r.t. 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+.
+
+
+== Capacity of non-malleable codes ==
+For every family 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ with 
+  
+    
+      
+        
+          |
+        
+        F
+        
+          |
+        
+        ≤
+        
+          2
+          
+            
+              2
+              
+                α
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle |F|\leq 2^{2^{\alpha n}}}
+  
+, there exist non-malleable codes against 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ with rate arbitrarily close to 1 − 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ (this is achieved w.h.p. by a randomized construction).
+For families of size 
+  
+    
+      
+        e
+        x
+        p
+        (
+        
+          n
+          
+            O
+            (
+            1
+            )
+          
+        
+        
+          2
+          
+            α
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle exp(n^{O(1)}2^{\alpha n})}
+  
+ against which there is no non-malleable code of rate 1 − 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ (in fact this is the case w.h.p for a random family of this size).
+1 − 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ is the best achievable rate for the family of functions which are only allowed to tamper the first 
+  
+    
+      
+        α
+        n
+      
+    
+    {\displaystyle \alpha n}
+  
+ bits of the code-word, which is of special interest.
+
+
+== References ==

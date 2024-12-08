@@ -1,0 +1,73 @@
+Mark Eugene Russinovich (born December 22, 1966) is a Spanish-born American software engineer and author who serves as CTO of Microsoft Azure. He was a cofounder of software producers Winternals before Microsoft acquired it in 2006.
+
+
+== Early life and education ==
+Russinovich was born in Salamanca, Spain and was raised in Birmingham, Alabama, United States, until he was 15, when he moved with his family to Pittsburgh, Pennsylvania. His father was a radiologist and his mother was a business administrator of his father's radiology practice in Pittsburgh. Russinovich is of Croatian descent.
+He was introduced to computers when his friend's father got an Apple II in the 1970s. He reverse-engineered its ROM program and wrote programs for it. At age 15, he bought himself his first computer, a TI-99/4A. About six months later, his parents bought him an Apple II+ from his local high school when it upgraded the computer labs to Apple IIes. He also wrote magazine articles about Apple II.
+In 1989, Russinovich earned his Bachelor of Science degree in computer engineering from Carnegie Mellon University, where he was a member of the Pi Kappa Alpha Beta Sigma chapter. The following year he received a Master of Science degree in computer engineering from Rensselaer Polytechnic Institute. He later returned to Carnegie Mellon, where he received a Ph.D. in computer engineering in 1994 with the thesis Application-Transparent Fault Management under the supervision of Zary Segall.
+
+
+== Career ==
+From September 1994 through February 1996, Russinovich was a research associate with the University of Oregon's computer science department. From February through September 1996 he was a developer with NuMega Technologies, where he worked on performance-monitoring software for Windows NT.
+In 1996, he and Bryce Cogswell cofounded Winternals Software, where Russinovich served as Chief Software Architect, and the web site sysinternals.com, where Russinovich wrote and published dozens of popular Windows administration and diagnostic utilities including Autoruns, Filemon, Regmon, Process Explorer, TCPView, and RootkitRevealer.
+From September 1996 through September 1997, he was a consulting associate at OSR Open Systems Resources, Inc., based in Amherst, New Hampshire. From September 1997 through March 2000, he was a research staff member at IBM's Thomas J. Watson Research Center, researching operating system support for Web server acceleration and serving as an operating systems expert.
+Russinovich joined Microsoft in 2006 when it acquired Winternals.
+As an author, Russinovich is a regular contributor to TechNet Magazine and Windows IT Pro magazine (previously Windows NT Magazine) on the Architecture of Windows 2000, and was co-author of Inside Windows 2000 (Third Edition). He wrote many tools used by Windows NT and Windows 2000 kernel-mode programmers, and the NTFS file system driver for DOS.
+
+
+== Works ==
+In 1996, Russinovich discovered that altering two values in the Windows Registry of the Workstation edition of Windows NT 4.0 changed the installation so it was recognized as a Windows NT Server and allowed the installation of Microsoft BackOffice products which were licensed only for the Server edition. The registry key values were guarded by a worker thread to detect tampering; later, a program called NT Tune was released to kill the monitor thread and change the values.
+Russinovich wrote LiveKD, a utility included with the book Inside Windows 2000. As of 2022, the utility is readily available to download.
+In 2005, Russinovich discovered the Sony rootkit in Sony DRM products, whose function was to prevent users from copying their media.
+In January 2006, Russinovich discovered a rootkit in Norton SystemWorks by Symantec. Symantec immediately removed the rootkit. He also analyzed the Windows Metafile vulnerability and concluded that it was not a deliberate backdoor. This possibility had been raised—although tentatively—by Steve Gibson after a cursory investigation of the nature of the exploit and its mechanism.
+Russinovich's novels Zero Day (foreword by Howard Schmidt) and Trojan Horse (foreword by Kevin Mitnick) were published by Thomas Dunne Books on March 15, 2011 and September 4, 2012, parts of a series of popular techno-thrillers that have attracted praise from industry insiders such as Mikko Hyppönen and Daniel Suarez. A short story, "Operation Desolation", was published just before Trojan Horse and takes place one year after the events of Zero Day. Book 3, Rogue Code: A Novel (Jeff Aiken Series, May 2014) deals with vulnerabilities of the NYSE. It has a foreword by Haim Bodek, author of The Problem of HFT: Collected Writings on High Frequency Trading & Stock Market Structure Reform.
+Computer books
+
+Solomon, David; Russinovich, Mark (September 16, 2000). Inside Microsoft Windows 2000 (Third ed.). Microsoft Press. ISBN 0-7356-1021-5.
+Russinovich, Mark; Solomon, David (December 8, 2004). Microsoft Windows Internals (Fourth ed.). Microsoft Press. ISBN 0-7356-1917-4.
+Russinovich, Mark; Solomon, David; Ionescu, Alex (June 17, 2009). Microsoft Windows Internals (Fifth ed.). Microsoft Press. ISBN 978-0-7356-2530-3.
+Russinovich, Mark; Margosis, Aaron (July 12, 2011). Windows Sysinternals Administrator's Reference. Microsoft Press. ISBN 978-0-7356-5672-7.
+Russinovich, Mark; Solomon, David; Ionescu, Alex (April 5, 2012). Microsoft Windows Internals, Part 1 (Sixth ed.). Microsoft Press. ISBN 978-0-7356-4873-9.
+Russinovich, Mark; Solomon, David; Ionescu, Alex (October 2, 2012). Microsoft Windows Internals, Part 2 (Sixth ed.). Microsoft Press. ISBN 978-0-7356-6587-3.
+Russinovich, Mark; Margosis, Aaron (October 17, 2016). Troubleshooting with the Windows Sysinternals Tools. Microsoft Press. ISBN 978-0-7356-8444-7.
+Novels
+
+Zero Day: A Novel. Thomas Dunne Books. March 15, 2011. ISBN 978-0-312-61246-7.
+Operation Desolation: A Short Story. Thomas Dunne Books. August 7, 2012. ISBN 9781466821552.
+Trojan Horse. Thomas Dunne Books. September 4, 2012. ISBN 9781250010483.
+Rogue Code. Thomas Dunne Books. May 20, 2014. ISBN 9781250035370. Archived from the original on May 30, 2014. Retrieved May 30, 2014.
+Articles
+
+"Inside NT's Object Manager". Windows IT Pro. Penton. October 1997. Archived from the original on October 11, 2017. Retrieved March 31, 2013.
+"Inside NT's Scheduler Part 1". Windows IT Pro. Penton. July 1997. Archived from the original on April 12, 2013.
+"Inside NT's Scheduler Part 2". Windows IT Pro. Penton. August 1997. Archived from the original on April 12, 2013.
+"NT vs. UNIX: Is One Substantially Better". Windows IT Pro. Penton. December 1998. Archived from the original on October 24, 2017. Retrieved March 31, 2013.
+"Inside Encrypting File System, Part 1". Windows IT Pro. Penton. June 1999. Archived from the original on October 11, 2017. Retrieved March 31, 2013.
+"Inside Encrypting File System, Part 2". Windows IT Pro. Penton. June 1999. Archived from the original on October 11, 2017. Retrieved March 31, 2013.
+"Inside the Windows Vista Kernel: Part 1". TechNet Magazine. Microsoft. February 2007. Archived from the original on November 18, 2008. Retrieved March 30, 2007.
+"Inside the Windows Vista Kernel: Part 2". TechNet Magazine. Microsoft. March 2007. Archived from the original on March 31, 2007. Retrieved March 30, 2007.
+"Inside the Windows Vista Kernel: Part 3". TechNet Magazine. Microsoft. April 2007.
+"Inside Windows Vista User Account Control". TechNet Magazine. Microsoft. June 2007.
+"Inside Windows 7 User Account Control". TechNet Magazine. Microsoft. July 2009.
+Videos
+
+"Advanced Malware Cleaning". Windows Sysinternals. Microsoft. November 2006.
+"Mysteries of Windows Memory Management Revealed, Part 1 of 2". Channel 9. Microsoft. October 2010.
+"Mysteries of Windows Memory Management Revealed, Part 2 of 2". Channel 9. Microsoft. October 2010.
+"Cloud Security Video: Public Cloud Security: Surviving in a Hostile Multitenant Environment – Mark Russinovich, CTO, Microsoft Azure". IP EXPO Europe. Imago Techmedia. October 2014. Archived from the original on October 11, 2017. Retrieved July 19, 2017.
+
+
+== References ==
+
+
+== External links ==
+Official website
+Video interview with Mark in his office at Microsoft on TechNet Edge
+Mark's public event/session videos on Microsoft IT's Showtime! by TechNet
+Appearance on The Stack Exchange Podcast, Nov 11, 2011
+Original Article on Sony's rootkit
+Inside the WMF backdoor
+Windows Sysinternals Tools written by Mark Russinovich
+Interview with Scott Hanselman about Zero Day and Trojan Horse, 26 July 2012
+Mark on Security Now, 19 Sep 2012
+Mark on Windows Weekly, 20 Sep 2012

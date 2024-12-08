@@ -1,0 +1,127 @@
+WorkNC is a computer-aided manufacturing (CAM) software developed by Sescoi for multi-axis machining.
+
+
+== History ==
+
+Sescoi released the first version of WorkNC CAM software in 1988. The main driving forces behind the product were Bruno Marko, president of Sescoi, and Gerard Billard, R&D Innovation Manager.
+Salomon Group was the first customer to use WorkNC in 1988 in order to manufacture ski boots and other sports equipment.
+In 2002, Sescoi launched WorkNC-CAD, followed by WorkNC 5-axis in 2003 and WorkNC G3 in 2007.
+In 2008, Sescoi launched WorkXPlore 3D, a collaborative viewer for 3D CAD files that didn't require the original CAD application.
+In 2009, Sescoi launched WorkNC Dental, a CAD/CAM software for the machining of prosthetic appliances, implants and dental structures, as well as WorkNC Wire EDM, a software for Wire EDM.
+In 2010, Sescoi launched WorkNC-CAD Hybrid Modeling, a 3D CAD software for 3D model design, reparation, machining preparation, and surface design capabilities.
+In 2010, Sescoi introduced WorkNC Version 21, a 64-bit version with multi-threading.
+
+
+== Functionality ==
+WorkNC CAM main functions include:
+
+Automatic geometry and machining zone detection and management
+Toolpaths designed for High Speed Machining
+User stock definition (block, CAD, STL)
+Dynamic 3 and 3+2 stock Management
+Collision detection with automatic stock update
+Machining simulation
+Tool and tool holder library
+HTML workshop documentation.
+Estimated machining times can be exported to WorkPLAN
+Predefined machining sequences for automatic machining
+Machining STL files and point clouds
+Batch mode calculations
+Postprocessor generator
+
+
+=== Roughing toolpaths ===
+Trochoidal high speed machining
+Collision detection and automatic stock updates
+Rest Machining based on dynamic stock
+
+
+=== Finishing toolpaths ===
+Z Level, planar, flat surface, contour, and edge finishing
+Rest-material finishing
+Automatic 5 Axis conversion
+
+
+=== 2 and 2.5 Axis toolpaths ===
+Pocketing, contouring, curve machining, engraving, rib machining, facing, drilling, tapping
+Automatic Drilling Module and pre-defined drilling sequence selection
+Automatic feature detection and recognition
+
+
+=== 5 Axis toolpaths ===
+Automatic 3 to 5-axis conversion with WorkNC Auto 5
+Simultaneous 4 and 5 Axis toolpaths
+5 Axis Rolling, Planar finishing, Spiral Blade, Impeller, Tube, Laser
+Collisions detection and machine limits management
+
+
+=== Supported CAD formats ===
+WorkNC can read the following CAD file formats: 
+
+DXF
+STEP
+IGES
+CATIA V4 & V5
+Unigraphics
+SolidWorks
+SolidEdge
+Pro/E
+Parasolid
+STL
+
+
+== Products ==
+
+
+=== WorkNC Dental ===
+
+Automatic machining of prosthetic appliances, implants, crowns, bridge implants and dental structures.
+Intelligence within the system considers the limitations of the machine tool in automatically producing collision-free toolpaths.
+
+
+=== WorkNC MPM (Multi-Part Machining) ===
+A CAD/CAM module allows simultaneous machining of multiple parts on the same machine.
+
+
+=== WorkNC LMP (Layer Milling Process) ===
+WorkNC LMP is a CAD/CAM software for cutting parts in layers, a well-known technique for machining deep and narrow cavities.
+WorkNC-LMP automatically divides 3D models and creates roughing and finishing toolpaths for each layer. This technology can be used in any machining center, simplifying the programming and cutting of complex shapes by building them up in manageable sections.
+Sescoi collaborated with F. Zimmermann, combining the speed and accuracy of the dedicated Zimmermann LMC (Layer Milling Centre) with Sescoi's WorkNC-LMP. The software is used in conjunction with the machine, and all the toolpaths and special machine control sequences are automatically generated to cut parts in unmanned operation.
+The LMC, operating from underneath, employs high-speed techniques to machine each layer sequentially. As each layer is roughed and finished, a new plate is bonded, ready for the next machining operation. This process continues until the final part is built. WorkNC-LMP automates this process, starting from the CAD model, by splitting it into layers and generating roughing and finishing toolpaths for each layer. This efficient technique is ideal for high-speed machining, allowing the use of short and rigid cutters and eliminating the risk of collision. WorkNC-LMP offers a materials library for material selection and controls various factors such as surface roughening, cutting adhesive channels, overlapping cutter paths, and paths for adhesive application between layers. It provides visual control of all toolpaths and estimates the total machining time.
+WorkNC-LMP combines the advantages of generative rapid prototyping with conventional machining and is the latest example of the company's resolve to make new processes a reality for its customers.
+
+
+=== WorkNC Wire EDM ===
+WorkNC Wire EDM is a CAD/CAM software for Wire Electrical discharge machining. Dialog boxes guide the user through the system. Functions within WorkNC Wire EDM allow the extraction of cross sections, ready for 2- or 4-axis cutting. Alternatively, the 3D surfaces of the CAD model can be used directly.
+It also includes graphical verification to automatically check for collisions and the maximum wire angle possible on each individual EDM machine. The latest version makes it easy to extract and link 4-axis wire paths. Dialog boxes guide the user through the process, making it simple to add tags, create roughing and finishing wire paths, lead in and out moves, use a range of corner strategies, and use tag removal cycles. Postprocessors and technology libraries are included for all leading machines.
+
+
+=== WorkNC-CAD ===
+WorkNC-CAD is a manufacturing CAD software with surface and solid modeling functions. It is included free as a standard integrated component of WorkNC. It provides features required to design and manufacture molds, dies, and tooling without the need for additional software applications or outsourcing.
+WorkNC-CAD has advanced intelligent surface morphing for filling simple or complex cavities, automatic 2D feature recognition and cycle definition for drilling, counterboring, reaming and tapping, as well as automatic mold and die core separation.
+
+
+=== WorkNC-CAD Hybrid Modeling ===
+WorkNC-CAD Hybrid Modeling (HM) is a 3D CAD software launched by Sescoi in 2010 for 3D model design, reparation and machining preparation, with surface design capabilities integrated with solid modeling functionality in a user friendly environment. It can be used as an independent CAD product. It is powered by D-Cubed software components from Siemens PLM.
+WorkNC-CAD HM works on solid and surface models making use of parametric commands to easily manipulate and repair CAD data. Along with multiple CAD translators, it includes modules for electrode creation, core/cavity separation and Wire EDM. The WorkNC Electrode module makes use of the WorkNC-CAD Hybrid Modeling capabilities to extract electrode shapes directly from solid or surface models. The electrode model can be modified and extended, and tool holders added from a library to produce a complete electrode. WorkNC's collision checking ensures the electrode does not collide with any surrounding surfaces, automatically adding extensions as required. Documentation and electrode coordinate systems are produced by the software to ensure correct positioning for the EDM operations.
+WorkNC-CAD Hybrid Modeling features include:
+
+Large visualization area
+Construction tree that enables simplified CAD/CAM entity management
+Context menus accessible in the construction tree and in the graphic window
+Access to features according to context
+Real-time preview of surface and solid modeling functions
+Configurable interface (keyboard shortcuts, position of adjustable toolbars).
+When used in its standalone design version by toolmakers in their technical departments, it offers mold, tool and die businesses a uniform CAD product throughout the entire manufacturing process.
+
+
+=== WorkXPlore 3D ===
+
+WorkXPlore 3D is a 3D viewer for CAD files. A free viewer version and a free evaluation version are available.
+
+
+== References ==
+
+
+== External links ==
+Official website

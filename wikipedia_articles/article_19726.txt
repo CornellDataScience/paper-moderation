@@ -1,0 +1,40 @@
+In software, a data access object (DAO) is a pattern that provides an abstract interface to some type of database or other persistence mechanism. By mapping application calls to the persistence layer, the DAO provides data operations without exposing database details. This isolation supports the single responsibility principle. It separates the data access the application needs, in terms of domain-specific objects and data types (the DAO's public interface), from how these needs can be satisfied with a specific DBMS (the implementation of the DAO).
+Although this design pattern is applicable to most programming languages, most software with persistence needs, and most databases, it is traditionally associated with Java EE applications and with relational databases (accessed via the JDBC API because of its origin in Sun Microsystems' best practice guidelines "Core J2EE Patterns".
+This object can be found in the Data Access layer of the 3-Tier Architecture.
+There are various ways in which this object can be implemented:
+
+One DAO for each table.
+One DAO for all the tables for a particular DBMS.
+Where the SELECT query is limited only to its target table and cannot incorporate JOINS, UNIONS, subqueries and Common Table Expressions (CTEs)
+Where the SELECT query can contain anything that the DBMS allows.
+
+
+== Advantages ==
+Using data access objects (DAOs) offers a clear advantage: it separates two parts of an application that don't need to know about each other. This separation allows them to evolve independently. If business logic changes, it can rely on a consistent DAO interface. Meanwhile, modifications to persistence logic won't affect DAO clients.
+All details of storage are hidden from the rest of the application (see information hiding). Unit testing code is facilitated by substituting a test double for the DAO in the test, thereby making the tests independent of the persistence layer.
+In the context of the Java programming language, DAO can be implemented in various ways. This can range from a fairly simple interface that separates data access from the application logic, to frameworks and commercial products.
+Technologies like Java Persistence API and Enterprise JavaBeans come built into application servers and can be used in applications that use a Java EE application server. Commercial products such as TopLink are available based on object–relational mapping (ORM). Popular open source ORM software includes Doctrine, Hibernate, iBATIS and JPA implementations such as Apache OpenJPA.
+
+
+== Disadvantages ==
+Potential disadvantages of using DAO include leaky abstraction, code duplication, and abstraction inversion. In particular, the abstraction of the DAO as a regular Java object can obscure the high cost of each database access. Developers may inadvertently make multiple database queries to retrieve information that could be returned in a single operation. If an application requires multiple DAOs, the same create, read, update, and delete code may have to be written for each DAO.
+Note that these disadvantages only appear when you have a separate DAO for each table and the SELECT query is prevented from accessing anything other than the target table.
+
+
+== Tools and frameworks ==
+ODB compiler-based object–relational mapping (ORM) system for C++
+ORMLite: Lightweight object–relational mapping (ORM) framework in Java for JDBC and Android
+Microsoft Entity Framework
+DBIx::Class object–relational mapping (ORM) module for Perl
+TuxORM: Simple object–relational mapping (ORM) library in Java for JDBC
+Persist (Java tool) Java-based object–relational mapping and data access object tool
+
+
+== See also ==
+Create, read, update and delete (CRUD)
+Data access layer
+Service Data Objects
+Object–relational mapping
+
+
+== References ==

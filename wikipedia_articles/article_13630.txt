@@ -1,0 +1,819 @@
+In the domain of wireless communication, air-to-ground channels (A2G) are used for linking airborne devices, such as drones and aircraft, with terrestrial communication equipment. These channels are instrumental in a wide array of applications, extending beyond commercial telecommunications — including important roles in 5G and forthcoming 6G networks, where aerial base stations are integral to Non-Terrestrial Networks — to encompass critical uses in emergency response, environmental monitoring, military communications, and the expanding domain of the internet of things (IoT). A comprehensive understanding of A2G channels, their operational mechanics, and distinct attributes is essential for the enhancement of wireless network performance (range of signal coverage, data transfer speeds, and overall connection reliability).
+In wireless communication networks, the channel of propagation serves as the medium between the transmitter and the receiver. The characteristics of this channel largely dictate the operational limits of wireless networks in terms of range, throughput, and latency, thereby significantly influencing technological design decisions. Consequently, the characterization and modeling of these channels are of paramount importance.
+A2G channels are notably characterized by a high probability of line-of-sight (LOS) propagation, a critical factor for higher frequency transmissions like mmWaves and THz. This feature leads to enhanced reliability of links and a reduction in the necessary transmission power to meet the desired link budget. Moreover, for non-line-of-sight (NLOS) links, especially at lower frequencies, the variations in power are less pronounced compared to terrestrial communication networks, attributed to the fact that only the ground-based elements of the link encounter obstacles affecting propagation.
+
+
+== Basics of signal propagation ==
+Electromagnetic waves emitted by the transmitter propagate in multiple directions. These waves interact with the environment via different propagation phenomena before reaching the receiver. The figure below demonstrates how processes like specular reflection, diffraction, scattering, and penetration, or a combination thereof, can play a role in wave propagation. It's also important to consider the potential obstructions in the signal's path.
+The signal received is essentially a combination of multiple versions of the original signal, known as Multipath Components (MPCs), each arriving with varying amplitude, delay (phase), and direction. This results in a coherent aggregate of all these signal copies, which may enhance or weaken the overall signal, depending on the random phases of these components.
+
+Radio channels are typically characterized as a superposition of various fading phenomena:
+
+  
+    
+      
+        H
+        =
+        Λ
+        +
+        
+          X
+          
+            s
+            h
+          
+        
+        +
+        
+          X
+          
+            S
+            S
+          
+        
+        ,
+      
+    
+    {\displaystyle H=\Lambda +X_{sh}+X_{SS},}
+  
+
+Here, 
+  
+    
+      
+        Λ
+      
+    
+    {\displaystyle \Lambda }
+  
+ refers to the distance-dependent Pathloss (PL), 
+  
+    
+      
+        
+          X
+          
+            s
+            h
+          
+        
+      
+    
+    {\displaystyle X_{sh}}
+  
+ denotes Shadow fading, which accounts for large-scale power variations due to environmental factors, and 
+  
+    
+      
+        
+          X
+          
+            S
+            S
+          
+        
+      
+    
+    {\displaystyle X_{SS}}
+  
+ represents Small-Scale or fast fading. The following sections detail the modeling of these components.
+
+
+== Channel modeling ==
+There exist several channel models not drawing an explicit distinction between LOS and NLOS channels. However, the most common channel modeling approach consists of the four following steps:
+
+Define the link state (LOS/NLOS);
+Generate pathloss accordingly;
+Generate Shadow fading;
+Generate SS fading.
+
+
+=== Line-of-sight modeling ===
+In cases where the distinction between LOS (Line-of-Sight) and NLOS (Non-Line-of-Sight) links is made, modeling the LOS probability 
+  
+    
+      
+        
+          P
+          
+            LOS
+          
+        
+      
+    
+    {\displaystyle P_{\text{LOS}}}
+  
+ becomes critical. The most popular approach to deriving these statistics is based on creating a geometrical model (e.g., Manhattan grid) of the propagation environment.
+Simplified 2D model: a popular approach suggested by the International Telecommunication Union (ITU). According to ITU 
+, the LOS probability is given by:
+
+  
+    
+      
+        
+          P
+          
+            LOS
+          
+        
+        =
+        
+          ∏
+          
+            n
+            =
+            0
+          
+          
+            m
+          
+        
+        
+          [
+          
+            1
+            −
+            exp
+            ⁡
+            
+              (
+              
+                −
+                
+                  
+                    
+                      
+                        [
+                        
+                          
+                            h
+                            
+                              UAV
+                            
+                          
+                          −
+                          
+                            
+                              
+                                (
+                                n
+                                +
+                                
+                                  
+                                    1
+                                    2
+                                  
+                                
+                                )
+                                (
+                                
+                                  h
+                                  
+                                    UAV
+                                  
+                                
+                                −
+                                
+                                  h
+                                  
+                                    G
+                                  
+                                
+                                )
+                              
+                              
+                                m
+                                +
+                                1
+                              
+                            
+                          
+                        
+                        ]
+                      
+                      
+                        2
+                      
+                    
+                    
+                      2
+                      
+                        Ω
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+              )
+            
+          
+          ]
+        
+        ,
+      
+    
+    {\displaystyle P_{\text{LOS}}=\prod _{n=0}^{m}\left[1-\exp \left(-{\frac {\left[h_{\text{UAV}}-{\frac {(n+{\frac {1}{2}})(h_{\text{UAV}}-h_{\text{G}})}{m+1}}\right]^{2}}{2\Omega ^{2}}}\right)\right],}
+  
+
+where 
+  
+    
+      
+        m
+        =
+        
+          floor
+        
+        
+          (
+          
+            
+              d
+              
+                h
+              
+            
+            
+              
+                ς
+                ξ
+              
+            
+            −
+            1
+          
+          )
+        
+      
+    
+    {\displaystyle m={\text{floor}}\left(d_{h}{\sqrt {\varsigma \xi }}-1\right)}
+  
+, 
+  
+    
+      
+        
+          d
+          
+            h
+          
+        
+      
+    
+    {\displaystyle d_{h}}
+  
+ is the horizontal distance between the UAV and the ground node, 
+  
+    
+      
+        
+          h
+          
+            UAV
+          
+        
+      
+    
+    {\displaystyle h_{\text{UAV}}}
+  
+ and 
+  
+    
+      
+        
+          h
+          
+            G
+          
+        
+      
+    
+    {\displaystyle h_{\text{G}}}
+  
+ are the terminal heights, 
+  
+    
+      
+        ς
+      
+    
+    {\displaystyle \varsigma }
+  
+ is the ratio of land area covered by buildings compared to the total land area, 
+  
+    
+      
+        ξ
+      
+    
+    {\displaystyle \xi }
+  
+ is the mean number of buildings per km2, and 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  
+ is the scale parameter of building heights distribution (assumed to follow a Rayleigh distribution). In some cases, it is more convenient to express the LOS probability as a function of incident or elevation angle.
+Note that the expression is independent of the azimuth angle, consequently, the orientation over the city layout is not taken into account resulting in a 2D model even though the terminal heights are used.
+The NLOS probability is computed from the LOS probability by the following equation:
+
+  
+    
+      
+        
+          P
+          
+            NLOS
+          
+        
+        =
+        1
+        −
+        
+          P
+          
+            LOS
+          
+        
+        .
+      
+    
+    {\displaystyle P_{\text{NLOS}}=1-P_{\text{LOS}}.}
+  
+
+
+=== Pathloss modeling ===
+Path loss represents the reduction in power density of an electromagnetic wave as it propagates through space. This attenuation is a critical factor in wireless communication, including A2G channels. A basic path loss model considers a Line-of-Sight (LOS) scenario where the signal travels freely without obstructions between the transmitter and receiver. The formula for calculating the received signal power under these conditions is as follows:
+
+  
+    
+      
+        
+          P
+          
+            R
+          
+        
+        =
+        
+          P
+          
+            T
+          
+        
+        ×
+        
+          G
+          
+            T
+          
+        
+        ×
+        
+          G
+          
+            R
+          
+        
+        ×
+        
+          
+            (
+            
+              
+                λ
+                
+                  4
+                  π
+                  d
+                
+              
+            
+            )
+          
+          
+            η
+          
+        
+        ,
+      
+    
+    {\displaystyle P_{\text{R}}=P_{\text{T}}\times G_{\text{T}}\times G_{\text{R}}\times \left({\frac {\lambda }{4\pi d}}\right)^{\eta },}
+  
+
+Here, 
+  
+    
+      
+        
+          P
+          
+            T
+          
+        
+      
+    
+    {\displaystyle P_{\text{T}}}
+  
+ denotes the power of the transmitted signal, 
+  
+    
+      
+        
+          G
+          
+            T
+          
+        
+      
+    
+    {\displaystyle G_{\text{T}}}
+  
+ and 
+  
+    
+      
+        
+          G
+          
+            R
+          
+        
+      
+    
+    {\displaystyle G_{\text{R}}}
+  
+ are the gains of the transmitting and receiving antennas, respectively, 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is the wavelength of the carrier signal, and 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ represents the distance between the transmitter and receiver. The Path Loss Exponent (PLE), 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+  
+, typically has a value of 2 in a free-space environment, indicative of free-space propagation. However, PLE can take other values depending on the propagation environment. Therefore, the general expression for path loss can be represented as:
+
+  
+    
+      
+        Λ
+        =
+        
+          
+            (
+            
+              
+                
+                  4
+                  π
+                  d
+                
+                λ
+              
+            
+            )
+          
+          
+            η
+          
+        
+        .
+      
+    
+    {\displaystyle \Lambda =\left({\frac {4\pi d}{\lambda }}\right)^{\eta }.}
+  
+
+However, real-world A2G communication scenarios often differ from ideal free-space conditions. The log-distance path loss model, which considers a reference point for free-space propagation, is frequently utilized to estimate path loss in more complex environments (expressed in decibels):
+
+  
+    
+      
+        Λ
+        (
+        d
+        )
+        =
+        
+          Λ
+          
+            0
+          
+        
+        +
+        10
+        η
+        log
+        ⁡
+        
+          (
+          
+            
+              d
+              
+                d
+                
+                  0
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \Lambda (d)=\Lambda _{0}+10\eta \log \left({\frac {d}{d_{0}}}\right),}
+  
+
+where 
+  
+    
+      
+        
+          Λ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \Lambda _{0}}
+  
+ is the path loss at a reference distance 
+  
+    
+      
+        
+          d
+          
+            0
+          
+        
+      
+    
+    {\displaystyle d_{0}}
+  
+, which can be calculated or predetermined based on free-space path loss (
+  
+    
+      
+        
+          Λ
+          
+            0
+          
+        
+        =
+        20
+        log
+        ⁡
+        
+          [
+          
+            
+              
+                4
+                π
+                
+                  d
+                  
+                    0
+                  
+                
+              
+              λ
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle \Lambda _{0}=20\log \left[{\frac {4\pi d_{0}}{\lambda }}\right]}
+  
+).
+Incorporating both LOS and Non-Line-of-Sight (NLOS) conditions, the average path loss can be estimated by combining the path loss values for these two scenarios
+
+  
+    
+      
+        Λ
+        =
+        
+          P
+          
+            LOS
+          
+        
+        ×
+        
+          Λ
+          
+            LOS
+          
+        
+        +
+        (
+        1
+        −
+        
+          P
+          
+            LOS
+          
+        
+        )
+        ×
+        
+          Λ
+          
+            NLOS
+          
+        
+        ,
+      
+    
+    {\displaystyle \Lambda =P_{\text{LOS}}\times \Lambda _{\text{LOS}}+(1-P_{\text{LOS}})\times \Lambda _{\text{NLOS}},}
+  
+
+In this formula, 
+  
+    
+      
+        
+          Λ
+          
+            LOS
+          
+        
+      
+    
+    {\displaystyle \Lambda _{\text{LOS}}}
+  
+ and 
+  
+    
+      
+        
+          Λ
+          
+            NLOS
+          
+        
+      
+    
+    {\displaystyle \Lambda _{\text{NLOS}}}
+  
+ refer to the path loss values for LOS and NLOS conditions, respectively, while 
+  
+    
+      
+        
+          P
+          
+            LOS
+          
+        
+      
+    
+    {\displaystyle P_{\text{LOS}}}
+  
+ indicates the likelihood of an LOS link between the UAV and the ground station. The respective PLE values for 
+  
+    
+      
+        
+          Λ
+          
+            LOS
+          
+        
+      
+    
+    {\displaystyle \Lambda _{\text{LOS}}}
+  
+ and 
+  
+    
+      
+        
+          Λ
+          
+            NLOS
+          
+        
+      
+    
+    {\displaystyle \Lambda _{\text{NLOS}}}
+  
+ are detailed in various studies.
+Additionally, atmospheric absorption and rain attenuation can also lead to significant power loss for mmWaves and THz frequency bands.
+
+
+=== Modeling of shadowing and small-scale fading ===
+Beyond path loss, the presence of large structures like buildings, trees, and vehicles introduces specific, random variations in the power of received signals. These changes, known as Shadow fading, generally evolve at a slower pace, spanning tens to hundreds of wavelengths. Shadow fading at a given distance 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ is typically represented as a normal random variable 
+  
+    
+      
+        
+          X
+          
+            s
+            h
+          
+        
+      
+    
+    {\displaystyle X_{sh}}
+  
+ in decibels (dB), with a variance 
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+. This variance reflects the deviations in received power around the mean path loss.
+On a smaller scale, fading involves rapid changes in received signal strength over shorter distances, typically within the span of a few wavelengths. These fluctuations arise from the interference of Multipath Components (MPCs) that converge at the receiver. To quantify this behavior, statistical models such as the Rayleigh and Rice distributions are frequently used. Both are founded on complex Gaussian statistics. In environments with many MPCs, each with distinct amplitudes and random phases, small-scale fading often adheres to a Rayleigh distribution. Particularly in Air-to-Air (A2A) and Air-to-Ground (A2G) channels, where Line-of-Sight (LOS) propagation predominates, a Ricean distribution is a more appropriate model. Additionally, other models like Nakagami, chi-squared (
+  
+    
+      
+        
+          χ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \chi ^{2}}
+  
+), and non-central 
+  
+    
+      
+        
+          χ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \chi ^{2}}
+  
+ distributions are also considered relevant in certain scenarios. Notably, the 
+  
+    
+      
+        
+          χ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \chi ^{2}}
+  
+ family of distributions encompasses many of these models.
+For the modeling of small-scale fading, Geometry-Based Stochastic Channel Models (GBSCM) are among the most widely used methodologies. These models are developed through empirical measurements or geometric analysis and simulation, accommodating the inherently stochastic nature of signal variation. GBSCM is particularly effective in modeling narrow-band channels or the taps of wideband models that employ a tapped delay line approach.
+
+
+== References ==

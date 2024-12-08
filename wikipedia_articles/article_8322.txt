@@ -1,0 +1,35 @@
+The Mars general circulation model is the result of a research project by NASA to understand the nature of the general circulation of the atmosphere of Mars, how that circulation is driven and how it affects the climate of Mars in the long term.
+
+
+== How it works ==
+This Mars climate model is a complex 3-dimensional (height, latitude, longitude) model, which represents the processes of atmospheric heating by gases and ground-air heat transfer, as well as large-scale atmospheric motions. The model also uses geophysical boundaries which are taken from spacecraft observation. These boundaries can include Martian topography, albedo, or thermal inertia. By solving the dynamics and physics of the model an overall understanding of the planets processes can be estimated.  
+The current model has not been modified for use with distributed computing systems like BOINC.
+
+
+== History ==
+A first attempt at a Mars general circulation model was created by Leovy and Mintz who used an Earth model and adapted it to Martian conditions. This preliminary model had the capability to predict atmospheric condensation of carbon dioxide and the presence of transient baroclinic waves in the winter mod-latitudes. After this NASA Ames Research Center started adding more data to improve the model and gain more insight into Martian weather and climate.  Mars climate simulation models date as far back as the Viking missions to Mars. Most Mars climate simulation models were written by individual researchers that were never reused or open-sourced. By the 1990s the need for a unified model codebase came into being, due to the general impact of the internet on climate modelling and research. This current Mars climate simulation model has its origins with the internet era. In 2007, Jeff Hollingsworth took leadership of the Ames Mars GCM group. With the aid of NASA HQ a Mars Climate Modeling Center (MCMC) was created in order to provide more services to the community. Since 2019, Melinda Kahre spearheads the leadership of MCMC and has aided in developing a new cubed-sphere finite volume (FV3-based) Mars general circulation model to provide higher resolution modeling. The new FV3-based model replaced the older latitude-longitude dynamical core (Legacy Mars GCM). Other improvements has been made in order to allow public access to older and newer models of Mars' general circulation. MCMC has recently presented a community analysis pipeline (CAP) which is an open-source tool for analyzing and visualizing the Mars general circulation model. The project hopes to streamline and increase access to Mars data.  This goal of increasing accessibility is to provide scientist and researcher more opportunity to contribute to data from Mars missions. 
+
+
+== Research using the Mars general circulation model ==
+The Mars general circulation model has been a tool used by researchers to better understand the planet. The model includes various Martian cycles including active carbon dioxide, pressure, dust, and water cycles. These elements combined provide insight into the planet's atmospheric chemistry. The model is used as an aid in interpreting as well as analyzing the data received from spacecraft and applies to numerous disciplines that have lingering questions about the planet. Some of the recent research using the model is determining the processes that caused an abundance of high-altitude water vapor during the 2018 global dust storm, interpreting Martian thermospheric waves, effects of any orbital changes to the planets circulator and climate system, and much more. In 2016 the ExoMars Trace Gas Orbiter was launched with hopes of looking for evidence of methane and other trace elements that could be signature of biological and/or geological processes.  The NOMAD spectrometer instrument onboard ExoMars will rely on the Mars general circulation model for much of the data interpretation and analysis. Other spacecraft instruments have been compared to the circulation model such as water-ice and dust results from Maven's Imaging Ultraviolet Spectrograph (IUVS).  With the continuous additions of new spacecraft being sent the Mars, the data is rapidly updating making the Martian model highly advanced.
+
+
+== Methane on Mars ==
+
+The Martian atmosphere contains 10 nmol/mol methane (CH4). In 2014, NASA reported that the Curiosity rover detected a tenfold increase ('spike') in methane in the atmosphere around it in late 2013 and early 2014. Four measurements taken over two months in this period averaged 7.2 ppb, implying that Mars is episodically producing or releasing methane from an unknown source. Before and after that, readings averaged around one-tenth that level. On 7 June 2018, NASA announced a cyclical seasonal variation in the background level of atmospheric methane.
+The principal candidates for the origin of Mars' methane include non-biological processes such as water-rock reactions, radiolysis of water, and pyrite formation, all of which produce H2 that could then generate methane and other hydrocarbons via Fischer–Tropsch synthesis with CO and CO2. It has also been shown that methane could be produced by a process involving water, carbon dioxide, and the mineral olivine, which is known to be common on Mars.
+Living microorganisms, such as methanogens, are another possible source, but no evidence for the presence of such organisms has been found on Mars.
+
+
+== Other planets ==
+There are global climate simulation models that have been written for Jupiter, Saturn, Neptune and Venus.
+
+
+== See also ==
+Atmosphere of Mars
+Climate of Mars
+Global climate model
+Methane
+
+
+== References ==

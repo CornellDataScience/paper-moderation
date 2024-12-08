@@ -1,0 +1,1058 @@
+The backward differentiation formula (BDF) is a family of implicit methods for the numerical integration of ordinary differential equations. They are linear multistep methods that, for a given function and time, approximate the derivative of that function using information from already computed time points, thereby increasing the accuracy of the approximation. These methods are especially used for the solution of stiff differential equations. The methods were first introduced by Charles F. Curtiss and Joseph O. Hirschfelder in 1952. In 1967 the field was formalized by C. William Gear in a seminal paper based on his earlier unpublished work.
+
+
+== General formula ==
+A BDF is used to solve the initial value problem
+
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        f
+        (
+        t
+        ,
+        y
+        )
+        ,
+        
+        y
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            0
+          
+        
+        .
+      
+    
+    {\displaystyle y'=f(t,y),\quad y(t_{0})=y_{0}.}
+  
+
+The general formula for a BDF can be written as 
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            s
+          
+        
+        
+          a
+          
+            k
+          
+        
+        
+          y
+          
+            n
+            +
+            k
+          
+        
+        =
+        h
+        β
+        f
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            s
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle \sum _{k=0}^{s}a_{k}y_{n+k}=h\beta f(t_{n+s},y_{n+s}),}
+  
+
+where 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ denotes the step size and 
+  
+    
+      
+        
+          t
+          
+            n
+          
+        
+        =
+        
+          t
+          
+            0
+          
+        
+        +
+        n
+        h
+      
+    
+    {\displaystyle t_{n}=t_{0}+nh}
+  
+. Since 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ is evaluated for the unknown 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            s
+          
+        
+      
+    
+    {\displaystyle y_{n+s}}
+  
+, BDF methods are implicit and possibly require the solution of nonlinear equations at each step. The coefficients 
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle a_{k}}
+  
+ and 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+ are chosen so that the method achieves order 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, which is the maximum possible.
+
+
+=== Derivation of the coefficients ===
+Starting from the formula 
+  
+    
+      
+        
+          y
+          ′
+        
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        )
+        =
+        f
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        ,
+        y
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        )
+        )
+      
+    
+    {\textstyle y'(t_{n+s})=f(t_{n+s},y(t_{n+s}))}
+  
+ one approximates 
+  
+    
+      
+        y
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        )
+        ≈
+        
+          y
+          
+            n
+            +
+            s
+          
+        
+      
+    
+    {\displaystyle y(t_{n+s})\approx y_{n+s}}
+  
+ and 
+  
+    
+      
+        
+          y
+          ′
+        
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        )
+        ≈
+        
+          p
+          
+            n
+            ,
+            s
+          
+          ′
+        
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        )
+      
+    
+    {\displaystyle y'(t_{n+s})\approx p_{n,s}'(t_{n+s})}
+  
+, where 
+  
+    
+      
+        
+          p
+          
+            n
+            ,
+            s
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle p_{n,s}(t)}
+  
+ is the Lagrange interpolation polynomial for the points 
+  
+    
+      
+        (
+        
+          t
+          
+            n
+          
+        
+        ,
+        
+          y
+          
+            n
+          
+        
+        )
+        ,
+        …
+        ,
+        (
+        
+          t
+          
+            n
+            +
+            s
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            s
+          
+        
+        )
+      
+    
+    {\displaystyle (t_{n},y_{n}),\ldots ,(t_{n+s},y_{n+s})}
+  
+. Using that 
+  
+    
+      
+        
+          t
+          
+            n
+          
+        
+        =
+        
+          t
+          
+            0
+          
+        
+        +
+        n
+        h
+      
+    
+    {\displaystyle t_{n}=t_{0}+nh}
+  
+ and multiplying by 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ one arrives at the BDF method of order 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+.
+
+
+== Specific formulas ==
+The s-step BDFs with s < 7 are:
+
+BDF1: 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        −
+        
+          y
+          
+            n
+          
+        
+        =
+        h
+        f
+        (
+        
+          t
+          
+            n
+            +
+            1
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle y_{n+1}-y_{n}=hf(t_{n+1},y_{n+1})}
+  
+ (this is the backward Euler method)
+BDF2: 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            2
+          
+        
+        −
+        
+          
+            
+              4
+              3
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        +
+        
+          
+            
+              1
+              3
+            
+          
+        
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          
+            
+              2
+              3
+            
+          
+        
+        h
+        f
+        (
+        
+          t
+          
+            n
+            +
+            2
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle y_{n+2}-{\tfrac {4}{3}}y_{n+1}+{\tfrac {1}{3}}y_{n}={\tfrac {2}{3}}hf(t_{n+2},y_{n+2})}
+  
+
+BDF3: 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            3
+          
+        
+        −
+        
+          
+            
+              18
+              11
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            2
+          
+        
+        +
+        
+          
+            
+              9
+              11
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        −
+        
+          
+            
+              2
+              11
+            
+          
+        
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          
+            
+              6
+              11
+            
+          
+        
+        h
+        f
+        (
+        
+          t
+          
+            n
+            +
+            3
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle y_{n+3}-{\tfrac {18}{11}}y_{n+2}+{\tfrac {9}{11}}y_{n+1}-{\tfrac {2}{11}}y_{n}={\tfrac {6}{11}}hf(t_{n+3},y_{n+3})}
+  
+
+BDF4: 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            4
+          
+        
+        −
+        
+          
+            
+              48
+              25
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            3
+          
+        
+        +
+        
+          
+            
+              36
+              25
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            2
+          
+        
+        −
+        
+          
+            
+              16
+              25
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        +
+        
+          
+            
+              3
+              25
+            
+          
+        
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          
+            
+              12
+              25
+            
+          
+        
+        h
+        f
+        (
+        
+          t
+          
+            n
+            +
+            4
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            4
+          
+        
+        )
+      
+    
+    {\displaystyle y_{n+4}-{\tfrac {48}{25}}y_{n+3}+{\tfrac {36}{25}}y_{n+2}-{\tfrac {16}{25}}y_{n+1}+{\tfrac {3}{25}}y_{n}={\tfrac {12}{25}}hf(t_{n+4},y_{n+4})}
+  
+
+BDF5: 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            5
+          
+        
+        −
+        
+          
+            
+              300
+              137
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            4
+          
+        
+        +
+        
+          
+            
+              300
+              137
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            3
+          
+        
+        −
+        
+          
+            
+              200
+              137
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            2
+          
+        
+        +
+        
+          
+            
+              75
+              137
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        −
+        
+          
+            
+              12
+              137
+            
+          
+        
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          
+            
+              60
+              137
+            
+          
+        
+        h
+        f
+        (
+        
+          t
+          
+            n
+            +
+            5
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            5
+          
+        
+        )
+      
+    
+    {\displaystyle y_{n+5}-{\tfrac {300}{137}}y_{n+4}+{\tfrac {300}{137}}y_{n+3}-{\tfrac {200}{137}}y_{n+2}+{\tfrac {75}{137}}y_{n+1}-{\tfrac {12}{137}}y_{n}={\tfrac {60}{137}}hf(t_{n+5},y_{n+5})}
+  
+
+BDF6: 
+  
+    
+      
+        
+          y
+          
+            n
+            +
+            6
+          
+        
+        −
+        
+          
+            
+              360
+              147
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            5
+          
+        
+        +
+        
+          
+            
+              450
+              147
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            4
+          
+        
+        −
+        
+          
+            
+              400
+              147
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            3
+          
+        
+        +
+        
+          
+            
+              225
+              147
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            2
+          
+        
+        −
+        
+          
+            
+              72
+              147
+            
+          
+        
+        
+          y
+          
+            n
+            +
+            1
+          
+        
+        +
+        
+          
+            
+              10
+              147
+            
+          
+        
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          
+            
+              60
+              147
+            
+          
+        
+        h
+        f
+        (
+        
+          t
+          
+            n
+            +
+            6
+          
+        
+        ,
+        
+          y
+          
+            n
+            +
+            6
+          
+        
+        )
+      
+    
+    {\displaystyle y_{n+6}-{\tfrac {360}{147}}y_{n+5}+{\tfrac {450}{147}}y_{n+4}-{\tfrac {400}{147}}y_{n+3}+{\tfrac {225}{147}}y_{n+2}-{\tfrac {72}{147}}y_{n+1}+{\tfrac {10}{147}}y_{n}={\tfrac {60}{147}}hf(t_{n+6},y_{n+6})}
+  
+
+Methods with s > 6 are not zero-stable so they cannot be used.
+
+
+== Stability ==
+The stability of numerical methods for solving stiff equations is indicated by their region of absolute stability. For the BDF methods, these regions are shown in the plots below.
+Ideally, the region contains the left half of the complex plane, in which case the method is said to be A-stable. However, linear multistep methods with an order greater than 2 cannot be A-stable. The stability region of the higher-order BDF methods contain a large part of the left half-plane and in particular the whole of the negative real axis. The BDF methods are the most efficient linear multistep methods of this kind.
+
+
+== References ==
+
+
+=== Citations ===
+
+
+=== Referred works ===
+Ascher, U. M.; Petzold, L. R. (1998), Computer Methods for Ordinary Differential Equations and Differential-Algebraic Equations, SIAM, Philadelphia, ISBN 0-89871-412-5.
+Iserles, Arieh (1996), A First Course in the Numerical Analysis of Differential Equations, Cambridge University Press, ISBN 978-0-521-55655-2.
+Süli, Endre; Mayers, David (2003), An Introduction to Numerical Analysis, Cambridge University Press, ISBN 0-521-00794-1.
+
+
+== Further reading ==
+BDF Methods at the SUNDIALS wiki (SUNDIALS is a library implementing BDF methods and similar algorithms).

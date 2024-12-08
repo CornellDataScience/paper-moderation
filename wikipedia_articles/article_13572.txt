@@ -1,0 +1,34 @@
+Windows code page 936 (abbreviated MS936, Windows-936 or (ambiguously) CP936), is Microsoft's legacy (pre-Unicode) character encoding for representing simplified Chinese text on computers. It is one of the four Windows DBCSs for East Asian languages, accompanying code pages 932 (Japanese), 949 (Korean) and 950 (Traditional Chinese). It is a variant of the Mainland Chinese Guójiā Biāozhǔn Kuòzhǎn (GBK) encoding, and roughly corresponds to IBM code page 1386 (CP1386 or IBM-1386).
+
+
+== History ==
+Originally, Windows-936 covered GB 2312 (in its EUC-CN form), but it was expanded to cover most of GBK with the release of Windows 95. The Euro sign (€), not defined in GBK, is encoded as 0x80 in Windows-936 and IBM-1386. On the other hand, 95 characters defined in GBK 1.0 were initially not encoded into Windows-936. This is partly resolved in later versions of Windows and, as in Windows 7, all GBK characters not in the Unicode BMP Private Use Area can be displayed using code page 936, but encoding the 95 characters was still not supported as of 2014.
+Windows code page 936 was superseded by code page 54936 (GB 18030), but as of 2014 was still prevalent in use. The Windows console uses code page 936 as the default code page for simplified Chinese installations, although part of the GB 18030 was made mandatory for all software products sold in China. In 2002, the IANA Internet name GBK was registered with Windows-936's mapping, making it the de facto GBK definition on the Internet.
+
+
+== Terminology ==
+
+The name "code page 936" is ambiguous. IBM's code page 936,, an obsolete IBM 5550 encoding, is also a Simplified Chinese encoding, but uses a different encoding method for GB 2312 (Shift GB), and so is entirely incompatible with Windows code page 936 (in contrast to IBM code page 932 being, to a first approximation, a subset of Windows code page 932)—although International Components for Unicode does not include an IBM-936 codec, and uses the Windows code page for the cp936 label. IBM's code page for GBK coverage is code page 1386, which is defined as a combination of the single byte Code page 1114 and the double byte Code page 1385.
+The concepts of "Windows-936", "GBK", "GB2312" and "EUC-CN" are sometimes conflated in various software products. EUC-CN is registered with the IANA as GB2312, although it is a specific, variable-width 8-bit stateless, encoding format of GB 2312 (which also has other, less widely used, encoding formats such as HZ-GB-2312, ISO-2022-CN or the aforementioned Shift GB).
+Since GBK is a superset of EUC-CN (although not itself an EUC code) and superseded GB 2312 long ago, and since Microsoft software continued to assign the GB2312 encoding label to code page 936 even after extending it to implement GBK rather than EUC-CN, most modern-day Windows-based software products mean partial support for GBK via Windows-936, rather than EUC-CN or other encoding formats of GB 2312, when they use the term "GB 2312" as a character encoding option. This can be observed in products such as Microsoft Internet Explorer and Notepad++.
+
+
+== Footnotes ==
+
+
+== References ==
+
+
+== External links ==
+Windows-936:
+
+Microsoft's reference for Windows-936
+Code page file for Windows-936
+Mapping of Windows-936 to Unicode
+ICU demonstration of Windows-936
+International Components for Unicode (ICU), windows-936-2000.ucm
+IBM-1386:
+
+IBM's documentation for IBM-1386
+ICU demonstration of IBM-1386
+ICU mapping of IBM-1386 to Unicode

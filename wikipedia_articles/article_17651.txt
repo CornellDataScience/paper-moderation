@@ -1,0 +1,113 @@
+A boronic acid is an organic compound related to boric acid (B(OH)3) in which one of the three hydroxyl groups (−OH) is replaced by an alkyl or aryl group (represented by R in the general formula R−B(OH)2). As a compound containing a carbon–boron bond, members of this class thus belong to the larger class of organoboranes.
+Boronic acids act as Lewis acids. Their unique feature is that they are capable of forming reversible covalent complexes with sugars, amino acids, hydroxamic acids, etc. (molecules with vicinal, (1,2) or occasionally (1,3) substituted Lewis base donors (alcohol, amine, carboxylate)). The pKa of a boronic acid is ~9, but they can form tetrahedral boronate complexes with pKa ~7. They are occasionally used in the area of molecular recognition to bind to saccharides for fluorescent detection or selective transport of saccharides across membranes.
+Boronic acids are used extensively in organic chemistry as chemical building blocks and intermediates predominantly in the Suzuki coupling. A key concept in its chemistry is transmetallation of its organic residue to a transition metal.
+The compound bortezomib with a boronic acid group is a drug used in chemotherapy. The boron atom in this molecule is a key substructure because through it certain proteasomes are blocked that would otherwise degrade proteins. Boronic acids are known to bind to active site serines and are part of inhibitors for porcine pancreatic lipase, subtilisin and the protease Kex2. Furthermore, boronic acid derivatives constitute a class of inhibitors for human acyl-protein thioesterase 1 and 2, which are cancer drug targets within the Ras cycle.
+
+
+== Structure and synthesis ==
+In 1860, Edward Frankland was the first to report the preparation and isolation of a boronic acid. Ethylboronic acid was synthesized by a two-stage process. First, diethylzinc and triethyl borate reacted to produce triethylborane. This compound then oxidized in air to form ethylboronic acid. Several synthetic routes are now in common use, and many air-stable boronic acids are commercially available.
+Boronic acids typically have high melting points. They are prone to forming anhydrides by loss of water molecules, typically to give cyclic trimers.
+
+
+=== Synthesis ===
+Boronic acids can be obtained via several methods. The most common way is reaction of organometallic compounds based on lithium or magnesium (Grignards) with borate esters. For example, phenylboronic acid is produced from phenylmagnesium bromide and trimethyl borate followed by hydrolysis
+
+PhMgBr + B(OMe)3 → PhB(OMe)2 + MeOMgBr
+PhB(OMe)2 + 2 H2O → PhB(OH)2 + 2 MeOH
+Another method is reaction of an arylsilane (RSiR3) with boron tribromide (BBr3) in a transmetallation to RBBr2 followed by acidic hydrolysis.
+A third method is by palladium catalysed reaction of aryl halides and triflates with diboronyl esters in a coupling reaction known as the Miyaura borylation reaction. An alternative to esters in this method is the use of diboronic acid or tetrahydroxydiboron ([B(OH2)]2).
+
+
+== Boronic esters (also named boronate esters) ==
+Boronic esters are esters formed between a boronic acid and an alcohol.
+
+The compounds can be obtained from borate esters by condensation with alcohols and diols. Phenylboronic acid can be selfcondensed to the cyclic trimer called triphenyl anhydride or triphenylboroxin.
+
+Compounds with 5-membered cyclic structures containing the C–O–B–O–C linkage are called dioxaborolanes and those with 6-membered rings dioxaborinanes.
+
+
+== Organic chemistry applications ==
+
+
+=== Suzuki coupling reaction ===
+Boronic acids are used in organic chemistry in the Suzuki reaction. In this reaction the boron atom exchanges its aryl group with an alkoxy group from palladium.
+
+
+=== Chan–Lam coupling ===
+In the Chan–Lam coupling the alkyl, alkenyl or aryl boronic acid reacts with a N–H or O–H containing compound with Cu(II) such as copper(II) acetate and oxygen and a base such as pyridine forming a new carbon–nitrogen bond or carbon–oxygen bond for example in this reaction of 2-pyridone with trans-1-hexenylboronic acid:
+
+The reaction mechanism sequence is deprotonation of the amine, coordination of the amine to the copper(II), transmetallation (transferring the alkyl boron group to copper and the copper acetate group to boron), oxidation of Cu(II) to Cu(III) by oxygen and finally reductive elimination of Cu(III) to Cu(I) with formation of the product.  In catalytic systems oxygen also regenerates the Cu(II) catalyst.
+
+
+=== Liebeskind–Srogl coupling ===
+In the Liebeskind–Srogl coupling a thiol ester is coupled with a boronic acid to produce a ketone.
+
+
+=== Conjugate addition ===
+The boronic acid organic residue is a nucleophile in conjugate addition also in conjunction with a metal. In one study the pinacol ester of allylboronic acid is reacted with dibenzylidene acetone in such a conjugate addition:
+
+The catalyst system in this reaction is tris(dibenzylideneacetone)dipalladium(0) / tricyclohexylphosphine.
+Another conjugate addition is that of gramine with phenylboronic acid catalyzed by cyclooctadiene rhodium chloride dimer:
+
+
+=== Oxidation ===
+Boronic esters are oxidized to the corresponding alcohols with base and hydrogen peroxide (for an example see: carbenoid)
+
+
+=== Homologation ===
+In boronic ester homologization an alkyl group shifts from boron in a boronate to carbon:
+
+		
+			
+			
+		
+		
+			
+			
+		
+
+In this reaction dichloromethyllithium converts the boronic ester into a boronate. A Lewis acid then induces a rearrangement of the alkyl group with displacement of the chlorine group. Finally an organometallic reagent such as a Grignard reagent displaces the second chlorine atom effectively leading to insertion of an RCH2 group into the C-B bond. Another reaction featuring a boronate alkyl migration is the Petasis reaction.
+
+
+=== Electrophilic allyl shifts ===
+Allyl boronic esters engage in electrophilic allyl shifts very much like silicon pendant in the Sakurai reaction. In one study a diallylation reagent combines both:
+
+
+=== Hydrolysis ===
+Hydrolysis of boronic esters back to the boronic acid and the alcohol can be accomplished in certain systems with thionyl chloride and pyridine.
+Aryl boronic acids or esters may be hydrolyzed to the corresponding phenols by reaction with hydroxylamine at room temperature.
+
+
+=== C–H coupling reactions ===
+The diboron compound bis(pinacolato)diboron reacts with aromatic heterocycles or simple arenes to an arylboronate ester with iridium catalyst [IrCl(COD)]2 (a modification of Crabtree's catalyst) and base 4,4′-di-tert-butyl-2,2′-bipyridine in a C-H coupling reaction for example with benzene:
+
+In one modification the arene reacts using only a stoichiometric equivalent rather than a large excess using the cheaper pinacolborane:
+
+Unlike in ordinary electrophilic aromatic substitution (EAS) where electronic effects dominate, the regioselectivity in this reaction type is solely determined by the steric bulk of the iridium complex. This is exploited in a meta-bromination of m-xylene which by standard AES would give the ortho product:
+
+
+=== Protonolysis ===
+Protodeboronation is a chemical reaction involving the protonolysis of a boronic acid (or other organoborane compound) in which a carbon-boron bond is broken and replaced with a carbon-hydrogen bond. Protodeboronation is a well-known undesired side reaction, and frequently associated with metal-catalysed coupling reactions that utilise boronic acids (see Suzuki reaction). For a given boronic acid, the propensity to undergo protodeboronation is highly variable and dependent on various factors, such as the reaction conditions employed and the organic substituent of the boronic acid:
+
+
+== Supramolecular chemistry ==
+
+
+=== Saccharide recognition ===
+
+The covalent pair-wise interaction between boronic acids and hydroxy groups as found in alcohols and acids is rapid and reversible in aqueous solutions. The equilibrium established between boronic acids and the hydroxyl groups present on saccharides has been successfully employed to develop a range of sensors for saccharides. One of the key advantages with this dynamic covalent strategy lies in the ability of boronic acids to overcome the challenge of binding neutral species in aqueous media. If arranged correctly, the introduction of a tertiary amine within these supramolecular systems will permit binding to occur at physiological pH and allow signalling mechanisms such as photoinduced electron transfer mediated fluorescence emission to report the binding event.
+Potential applications for this research include blood glucose monitoring systems to help manage diabetes mellitus. As the sensors employ an optical response, monitoring could be achieved using minimally invasive methods, one such example is the investigation of a contact lens that contains a boronic acid based sensor molecule to detect glucose levels within ocular fluids.
+
+
+== Safety ==
+Some commonly used boronic acids and their derivatives give a positive Ames test and act as chemical mutagens.  The mechanism of mutagenicity is thought to involve the generation of organic radicals via oxidation of the boronic acid by atmospheric oxygen.
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Boronic acids database

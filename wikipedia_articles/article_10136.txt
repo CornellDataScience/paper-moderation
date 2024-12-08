@@ -1,0 +1,68 @@
+A site-specific browser (SSB) is a software application that is dedicated to accessing pages from a single source (site) on a computer network such as the Internet or a private intranet. SSBs typically simplify the more complex functions of a web browser by excluding the menus, toolbars and browser  GUI associated with functions that are external to the workings of a single site. These applications are typically started by a desktop icon which is usually a favicon.
+Site-specific browsers are often implemented through the use of existing application frameworks such as  Gecko, WebKit, Microsoft's Internet Explorer (the underlying layout engines, specifically Trident and JScript) and Opera's Presto. SSBs built upon these frameworks allow web applications and social networking tools to start with desktop icons launching in a manner similar to standard non-browser applications. Some technologies, including Adobe's AIR and JavaFX use specialized development kits that can create cross-platform SSBs. Since version 6.0, the Curl platform has offered detached applets Archived 2011-07-08 at the Wayback Machine and the EmbeddedBrowserGraphic class which can be used as an SSB on the desktop.
+
+
+== Applications ==
+One early example of an SSB is MacDICT, a Mac OS 9 application that accessed various web sites to define, translate, or find synonyms for words typed into a text box. A more current example is WeatherBug Desktop, which is a standalone client accessing information also available at the weatherbug.com website but configured to display real-time weather data for a user-specified location.
+The first general purpose SSB is believed to be Bubbles which launched late 2005 on the Windows platform and later coined the term "Site Specific Extensions" for SSB userscripts and introduced the SSB Javascript API.
+On 2 September 2008, the Google Chrome web browser was released for Windows. Although Chrome is a full featured browser, it also contains a "Create application shortcut" menu item that adds the ability to create a stand-alone SSB window for any site. This is similar to Mozilla Prism (formerly WebRunner), now discontinued, but which is available as an add-on to the Firefox browser version 3.
+Examples of applications of SSBs in various situations include:
+
+Social networking: dedicated application to access and use sites such as Facebook, MySpace, Twitter, or personal blog pages
+Email: dedicated to webmail sites such as Gmail, Hotmail, or Yahoo! Mail
+Business: customer relationship management (CRM) or ERP client for sites such as Salesforce.com, specific web/browser hybrid implementations such as Elements SBM or intranet pages from suites like those sold by Oracle or SAP
+Mapping: SSB specific to maps from providers like Google Maps, Mapquest, or Yahoo! Maps
+Retail: desktop portal to major retailers that are accessed frequently or consumer services such as Carfax or CNET
+
+
+=== Mobile applications ===
+As of 2019, Firefox and Google Chrome on Android and Safari on iOS allow the creation of site-specific browsers for progressive web applications (PWAs).
+
+
+== Software ==
+Utilities that produce site-specific browsers:
+
+WebCatalog (macOS/Windows/Linux, isolated cookie storage)
+Chromeless (macOS, isolated cookie storage, discontinued)
+Flotato (macOS only)
+Fluid (Mac OS X only, isolated cookie storage)
+Epichrome (Mac OS only, discontinued)
+Unite (Mac OS only)
+Coherence (Mac OS only)
+Nativefier (Windows, macOS and Linux, discontinued)
+Google Chrome (Available for Windows, Mac, and Linux: "Application shortcut" feature, though not entirely sandboxed like Mozilla Prism) (feature modified, "Create shortcut...", possibly sometimes unavailable, as of 2020)
+ICE (software)|ICE (Linux only, developed for Peppermint OS)
+Mailplane (Mac OS only)
+Mozilla Prism (cross-platform, Flash-compatible, and true application isolation (e.g., cookies); discontinued)
+GNOME Web ("Install Site as Web Application" feature)
+Microsoft Edge
+Internet Explorer 9 and higher
+Wavebox (Available for Windows, Mac, and Linux)
+Hermit (Available for Android only)
+Safari (iOS/macOS, Share then Add to Home Screen / to Dock).
+NoScript's ABE module with rules like
+Site x.com y.net
+Accept from x.com y.net
+Deny
+Site * Deny
+
+Rich web application platforms:
+
+JavaFX 2.0
+Adobe Air
+Curl RIA platform
+Microsoft Silverlight
+Widget engines:
+
+Opera Widgets
+
+
+== See also ==
+Electron (software framework)
+Chromium Embedded Framework
+
+
+== References ==
+
+
+== External links ==

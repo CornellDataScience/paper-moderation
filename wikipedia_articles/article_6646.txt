@@ -1,0 +1,27 @@
+Loop start is a telecommunications supervisory protocol between a central office or private branch exchange (PBX) and a subscriber telephone or other terminal for the purpose of starting and terminating a telephone call.  It is the simplest of the telephone signaling systems, and uses the presence or absence of loop current to indicate the off-hook and on-hook loop states, respectively. It is used primarily for subscriber line signaling. An extension of the protocol that adds disconnect supervision is often called kewlstart.
+
+
+== Protocol operation ==
+When the telephone is on-hook, the potential of the ring conductor of the local loop is held at a nominal level of -48V DC with respect to the tip conductor, provided by the telephone exchange or a foreign exchange station (FXS) interface. When the terminal initiates use of the line, it causes current to flow by closing the loop, and this signals the exchange to provide dial tone on the line and to expect dial signals, in form of DTMF digits or dial pulses, or a hook flash. When the loop is opened and current stops flowing for a certain period of time, the subscriber equipment signals that it has finished using the line; the telephone exchange resets the line to an idle state. For alerting an incoming call, the exchange rings the telephone by superimposing an alternating current (AC) signal onto the line of between 40 V and 90 V. The frequency of the signal is 20 Hz. In early exchanges, the ringing power was produced by a hand-cranked generator in the operator console of the exchange.
+Loop-start signaling cannot detect simultaneous seizure of the line on both ends, commonly called glare, when used on trunk lines. The protocol imposes no requirement to the central office end to inform the subscriber end of distant far-end disconnection conditions.  Such conditions are properly recognized in ground start signaling, a protocol primarily used on trunks between switching systems.
+
+
+== Signaling extensions ==
+Modern loop-start trunks often provide additional methods supervision to avoid the far-end-disconnect problem. Answer supervision and disconnect supervision are extensions to alert a foreign exchange office (FXO) interface that the remote party has answered or hung up. Answer supervision usually takes the form of the central office reversing the polarity of the line (battery reversal) for the duration of the call when it has been answered. For disconnect supervision the polarity may reverse back to its original state. Polarity switching results in reversals of the direction of loop current.
+When disconnect supervision is implemented without answer supervision, polarity reversal may still be used, but this is rarely implemented in public telephone networks. Typically, it is implemented by removal of battery voltage from the line for a short period of time, resulting in loss of loop current.  Interruption of loop current is variously called open loop disconnect, or an open switching interval.
+Additional types of loop signaling are signals to the central office that the subscriber intends to initiate a second simultaneous call, a three-way conference call, or answer a second incoming call. This signal is called flashing or hook flash, and is performed by interrupting the loop for a fraction of a second, typically at least 300 ms. The flash signal is longer than a rotary dial pulse, sometimes called a short flash, and is shorter than the time required for the on-hook condition.
+Disconnect supervision is also known as calling party control (CPC), and forward disconnect.
+
+
+=== Kewlstart ===
+Kewlstart is a coined term created in the Asterisk PBX open-source software community for an extension of loop start signaling for FXS and FXO telephony interfaces which adds disconnect supervision. This type of on-hook/off-hook supervision was in use in step-by-step systems as well as electronic switching systems in North America for many decades.
+Disconnect supervision signals the called terminal device, typically an automated customer premises equipment, that the remote calling party has hung up. Disconnect supervision is implemented as an open switching interval (OSI), a period of several hundred milliseconds during which the loop current is interrupted. Some switching systems remove loop battery voltage for about 250 ms within 6 seconds after the far-end party disconnects.
+
+
+== See also ==
+BORSCHT
+
+
+== References ==
+
+Glossary of telecommunications terms

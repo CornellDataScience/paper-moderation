@@ -1,0 +1,45 @@
+Patchy particles are micron- or nanoscale colloidal particles that are anisotropically patterned, either by modification of the particle surface chemistry ("enthalpic patches"), through particle shape ("entropic patches"), or both. The particles have a repulsive core and highly interactive surfaces that allow for this assembly. The placement of these patches on the surface of a particle promotes bonding with patches on other particles. Patchy particles are used as a shorthand for modelling anisotropic colloids, proteins  and water and for designing approaches to nanoparticle synthesis. Patchy particles range in valency from two (Janus particles) or higher. Patchy particles of valency three or more experience liquid-liquid phase separation. Some phase diagrams of patchy particles do not follow the law of rectilinear diameters. 
+
+
+== Assembly of patchy particles ==
+
+
+=== Simulations ===
+The interaction between patchy particles can be described by a combination of two discontinuous potentials. A hard sphere potential accounting for the repulsion between the cores of the particles and an attractive square potential for the attraction between the patches. With the interaction potential in hand one can use different methods to compute thermodynamic properties.
+
+
+==== Molecular dynamics ====
+Using a continuous representation of the discontinuous potential described above enables the simulation of patchy particles using molecular dynamics.
+
+
+==== Monte Carlo ====
+One simulation done involves a Monte Carlo method, where the best “move” ensures equilibrium in the particle. One type of move is rototranslation. This is carried out by choosing a random particle, random angular and radial displacements, and a random axis of rotation. Rotational degrees of freedom need to be determined prior to the simulation. The particle is then rotated/moved according to these values. Also, the integration time step needs to be controlled because it will affect the resulting shape/size of the particle. Another simulation done is the grand-canonical ensemble. In the grand-canonical ensemble, the system is in equilibrium with a thermal bath and reservoir of particles. Volume, temperature, and chemical potential are fixed. Because of these constants, a number of particles (n) changes. This is typically used to monitor phase behaviour. With these additional moves, the particle is added at a random orientation and random position.
+Other simulations involve biased Monte Carlo moves. One type is aggregation volume-bias moves. It consists of 2 moves; the first tries to form bond between two previously unbonded particles, the second tries to break an existing bond by separation. Aggregation volume-bias moves reflects the following procedure: two particles are chosen, I and J, which are not neighboring particles, particle J is moved inside the bonding volume of particle I. This process is carried out uniformly. Another aggregation volume-bias move follows a method of randomly choosing a particle J that is bonded to I. Particle J is then moved outside the bonding volume of particle I, resulting in the two particles no longer being bonded. A third type of aggregation volume-bias move takes a particle I bonded to particle J and inserts it into a third particle.
+Grand canonical ensemble is improved by aggregation volume-bias moves. When aggregation volume-bias moves are applied, the rate of monomer formation and depletion in enhanced and the grand-canonical ensemble moves increase.
+A second biased Monte Carlo simulation is virtual move Monte Carlo. This is a cluster move algorithm. It was made to improve relaxation times in strongly interacting, low density systems and to better approximate diffusive dynamics in the system. This simulation is good for self-assembling and polymeric systems that can find natural moves that relax the system.
+
+
+=== Self-assembly ===
+Self-assembly is also a method to create patchy particles. This method allows formation of complex structures like chains, sheets, rings, icosahedra, square pyramids, tetrahedra, and twisted staircase structures. By coating the surface of particles with highly anisotropic, highly directional, weakly interacting patches, the arrangement of the attractive patches can organize disordered particles into structures. The coating and the arrangement of the attractive patches is what contributes to the size, shape, and structure of the resulting particle.
+
+
+==== Emergent valence self-assembly ====
+Developing entropic patches that will self-assemble into simple cubic, body-centered cubic (bcc), diamond, and dodecagonal quasicrystal structures. The local coordination shell partially dictates the structure that is assembled. Spheres are simulated with cubic, octahedral, and tetrahedral faceting. This allows for entropic patches to self-assemble.
+Tetrahedral faceted spheres are targeted by beginning with simple spheres. In coordination with the faces of a tetrahedron, the sphere is sliced at four equal facets. Monte Carlo simulations were performed to determine different forms of α, the faceting amount. The particular faceting amount determines the lattice that assembles. Simple cubic lattices are achieved in a similar way by slicing cubic facets into spheres. This allows for the assembly of simple cubic lattices. A bcc crystal is achieved by faceting a sphere octahedrally.
+The faceting amount, α, is used in the emergent valence self-assembly to determine what crystal structure will form. A perfect sphere is set as α=0. The shape that is faceted to the sphere is defined at α=1. By fluctuating the faceting amount between α=0 and α=1, the lattice can change. Changes include effects on self-assembly, packing structure, amount of coordination of the faceting patch to the sphere, shape of the faceting patch, type of crystal lattice formed, and the strength of the entropic patch.
+
+
+== See also ==
+Self-assembly
+Janus particles
+Entropic force
+
+
+== References ==
+
+
+== Related reading ==
+Amar B. Pawar and Ilona Kretzschmar "Fabrication, Assembly, and Application of Patchy Particles", Macromolecular Rapid Communications 31 pp. 150-168 (2010)
+Willem K. Kegel and Henk N. W. Lekkerkerker "Colloidal gels: Clay goes patchy", Nature Materials 10 pp. 5-6 (2011)
+Zhenping He and Ilona Kretzschmar "Template-Assisted Fabrication of Patchy Particles with Uniform Patches", Langmuir 28 pp. 9915-9919 (2011)
+SKlogWiki page on Patchy Particles

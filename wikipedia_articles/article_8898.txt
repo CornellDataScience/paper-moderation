@@ -1,0 +1,53 @@
+A wide character is a computer character datatype that generally has a size greater than the traditional 8-bit character.  The increased datatype size allows for the use of larger coded character sets.
+
+
+== History ==
+During the 1960s, mainframe and mini-computer manufacturers began to standardize around the 8-bit byte as their smallest datatype.  The 7-bit ASCII character set became the industry standard method for encoding alphanumeric characters for teletype machines and computer terminals. The extra bit was used for parity, to ensure the integrity of data storage and transmission.  As a result, the 8-bit byte became the de facto datatype for computer systems storing ASCII characters in memory.
+Later, computer manufacturers began to make use of the spare bit to extend the ASCII character set beyond its limited set of English alphabet characters. 8-bit extensions such as IBM code page 37, PETSCII and ISO 8859 became commonplace, offering terminal support for Greek, Cyrillic, and many others.  However, such extensions were still limited in that they were region specific and often could not be used in tandem.  Special conversion routines had to be used to convert from one character set to another, often resulting in destructive translation when no equivalent character existed in the target set.
+In 1989, the International Organization for Standardization began work on the Universal Character Set (UCS), a multilingual character set that could be encoded using either a 16-bit (2-byte) or 32-bit (4-byte) value.  These larger values required the use of a datatype larger than 8-bits to store the new character values in memory.  Thus the term wide character was used to differentiate them from traditional 8-bit character datatypes.
+
+
+== Relation to UCS and Unicode ==
+A wide character refers to the size of the datatype in memory.  It does not state how each value in a character set is defined.  Those values are instead defined using character sets, with UCS and Unicode simply being two common character sets that encode more characters than an 8-bit wide numeric value (255 total) would allow.
+
+
+== Relation to multibyte characters ==
+Just as earlier data transmission systems suffered from the lack of an 8-bit clean data path, modern transmission systems often lack support for 16-bit or 32-bit data paths for character data.  This has led to character encoding systems such as UTF-8 that can use multiple bytes to encode a value that is too large for a single 8-bit symbol.
+The C standard distinguishes between multibyte encodings of characters, which use a fixed or variable number of bytes to represent each character (primarily used in source code and external files), from wide characters, which are run-time representations of characters in single objects (typically, greater than 8 bits).
+
+
+== Size of a wide character ==
+Early adoption of UCS-2 ("Unicode 1.0") led to common use of UTF-16 in a number of platforms, most notably Microsoft Windows, .NET and Java. In these systems, it is common to have a "wide character" (wchar_t in C/C++; char in Java) type of 16-bits. These types do not always map directly to one "character", as surrogate pairs are required to store the full range of Unicode (1996, Unicode 2.0).
+Unix-like generally use a 32-bit wchar_t to fit the 21-bit Unicode code point, as C90 prescribed.
+The size of a wide character type does not dictate what kind of text encodings a system can process, as conversions are available. (Old conversion code commonly overlook surrogates, however.) The historical circumstances of their adoption does also decide what types of encoding they prefer. A system influenced by Unicode 1.0, such as Windows, tends to mainly use "wide strings" made out of wide character units. Other systems such as the Unix-likes, however, tend to retain the 8-bit "narrow string" convention, using a multibyte encoding (almost universally UTF-8) to handle "wide" characters.
+
+
+== Programming specifics ==
+
+
+=== C/C++ ===
+The C and C++ standard libraries include a number of facilities for dealing with wide characters and strings composed of them. The wide characters are defined using datatype wchar_t, which in the original C90 standard was defined as
+
+"an integral type whose range of values can represent distinct codes for all members of the largest extended character set specified among the supported locales" (ISO 9899:1990 §4.1.5)
+Both C and C++ introduced fixed-size character types char16_t and char32_t in the 2011 revisions of their respective standards to provide unambiguous representation of 16-bit and 32-bit Unicode transformation formats, leaving wchar_t implementation-defined. The ISO/IEC 10646:2003 Unicode standard 4.0 says that:
+
+"The width of wchar_t is compiler-specific and can be as small as 8 bits. Consequently, programs that need to be portable across any C or C++ compiler should not use wchar_t for storing Unicode text. The wchar_t type is intended for storing compiler-defined wide characters, which may be Unicode characters in some compilers."
+
+
+=== Python ===
+According to Python 2.7's documentation, the language sometimes uses wchar_t as the basis for its character type Py_UNICODE. It depends on whether wchar_t is "compatible with the chosen Python Unicode build variant" on that system. This distinction has been deprecated since Python 3.3, which introduced a flexibly-sized UCS1/2/4 storage for strings and formally aliased Py_UNICODE to wchar_t. Since Python 3.12 use of wchar_t, i.e. the Py_UNICODE typedef, for Python strings (wstr in implementation) has been dropped and still as before an "UTF-8 representation is created on demand and cached in the Unicode object."
+
+
+== References ==
+
+
+== External links ==
+
+The Unicode Standard, Version 4.0 - online edition
+C Wide Character Functions @ Java2S
+Java Unicode Functions @ Java2S
+Multibyte (3) Man Page @ FreeBSD.org
+Multibyte and Wide Characters @ Microsoft Developer Network
+Windows Character Sets @ Microsoft Developer Network
+Unicode and Character Set Programming Reference @ Microsoft Developer Network
+Keep multibyte character support simple @ EuroBSDCon, Beograd, September 25, 2016

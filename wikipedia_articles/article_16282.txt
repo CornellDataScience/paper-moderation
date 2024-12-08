@@ -1,0 +1,91 @@
+The Harvard Mark I, or IBM Automatic Sequence Controlled Calculator (ASCC), was one of the earliest general-purpose electromechanical computers used in the war effort during the last part of World War II.
+One of the first programs to run on the Mark I was initiated on 29 March 1944 by John von Neumann. At that time, von Neumann was working on the Manhattan Project, and needed to determine whether implosion was a viable choice to detonate the atomic bomb that would be used a year later. The Mark I also computed and printed mathematical tables, which had been the initial goal of British inventor Charles Babbage for his analytical engine in 1837.
+According to Edmund Berkeley, the operators of the Mark I often called the machine "Bessy, the Bessel engine", after Bessel functions.
+The Mark I was disassembled in 1959; part of it was given to IBM, part went to the Smithsonian Institution, and part entered the Harvard Collection of Historical Scientific Instruments. For decades, Harvard's portion was on display in the lobby of the Aiken Computation Lab. About 1997, it was moved to the Harvard Science Center. In 2021, it was moved again, to the lobby of Harvard's new Science and Engineering Complex in Allston, Massachusetts.
+
+
+== Origins ==
+The original concept was presented to IBM by Howard Aiken in November 1937.  After a feasibility study by IBM engineers, the company chairman Thomas Watson Sr. personally approved the project and its funding in February 1939.
+Howard Aiken had started to look for a company to design and build his calculator in early 1937.  After two rejections, he was shown a demonstration set that Charles Babbage’s son had given to Harvard University 70 years earlier.  This led him to study Babbage and to add references to the Analytical Engine to his proposal; the resulting machine "brought Babbage’s principles of the Analytical Engine almost to full realization, while adding important new features."
+The ASCC was developed and built by IBM at their Endicott plant and shipped to Harvard in February 1944. It began computations for the US Navy Bureau of Ships in May and was officially presented to the university on August 7, 1944.
+Although not the first working computer, the machine was the first to automate the execution of complex calculations, making it a significant step forward for computing.
+
+
+== Design and construction ==
+The ASCC was built from switches, relays, rotating shafts, and clutches. It used 765,000 electromechanical components and hundreds of miles of wire, comprising a volume of 816 cubic feet (23 m3) – 51 feet (16 m) in length, 8 feet (2.4 m) in height, and 2 feet (0.61 m) deep. It weighed about 9,445 pounds (4.7 short tons; 4.3 t). The basic calculating units had to be synchronized and  powered mechanically, so they were operated by a 50-foot (15 m) drive shaft coupled to a 5 horsepower (3.7 kW) electric motor, which served as the main power source and system clock. From the IBM Archives:
+
+The Automatic Sequence Controlled Calculator (Harvard Mark I) was the first operating machine that could execute long computations automatically. A project conceived by Harvard University’s Dr. Howard Aiken, the Mark I was built by IBM engineers in Endicott, N.Y. A steel frame 51 feet long and 8 feet high held the calculator, which consisted of an interlocking panel of small gears, counters, switches and control circuits, all only a few inches in depth. The ASCC used 500 miles (800 km) of wire with three million connections, 3,500 multipole relays with 35,000 contacts, 2,225 counters, 1,464 tenpole switches and tiers of 72 adding machines, each with 23 significant numbers. It was the industry’s largest electromechanical calculator.
+The enclosure for the Mark I was designed by futuristic American industrial designer Norman Bel Geddes at IBM's expense.  Aiken was annoyed that the cost ($50,000 or more according to Grace Hopper) was not used to build additional computer equipment.
+
+
+== Operation ==
+The Mark I had 60 sets of 24 switches for manual data entry and could store 72 numbers, each 23 decimal digits long.  It could do 3 additions or subtractions in a second. A multiplication took 6 seconds, a division took 15.3 seconds, and a logarithm or a trigonometric function took over one minute.
+The Mark I read its instructions from a 24-channel punched paper tape. It executed the current instruction and then read the next one. A separate tape could contain numbers for input, but the tape formats were not interchangeable. Instructions could not be executed from the storage registers. Because instructions were not stored in working memory, it is widely claimed that the Harvard Mark I was the origin of the Harvard architecture. However, this is disputed in The Myth of the Harvard Architecture published in the IEEE Annals of the History of Computing, which shows  the term 'Harvard architecture' did not come into use until the 1970s (in the context of microcontrollers) and was only retrospectively applied to the Harvard machines, and that the term could only be applied to the Mark III and IV, not to the Mark I or II.
+The main sequence mechanism was unidirectional. This meant that complex programs had to be physically lengthy. A program loop was accomplished by loop unrolling or by joining the end of the paper tape containing the program back to the beginning of the tape (literally creating a loop). At first, conditional branching in Mark I was performed manually. Later modifications in 1946 introduced automatic program branching (by subroutine call). The first programmers of the Mark I were computing pioneers Richard Milton Bloch, Robert Campbell, and Grace Hopper. There was also a small technical team whose assignment was to actually operate the machine; some had been IBM employees before being required to join the Navy to work on the machine. This technical team was not informed of the overall purpose of their work while at Harvard.
+
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+== Instruction format ==
+The 24 channels of the input tape were divided into three fields of eight channels each. Each storage location, each set of switches, and the registers associated with the input, output, and arithmetic units were assigned a unique identifying index number. These numbers were represented in binary on the control tape. The first field was the binary index of the result of the operation, the second was the source datum for the operation and the third field was a code for the operation to be performed.
+
+
+== Contribution to the Manhattan Project ==
+In 1928 L.J. Comrie was the first to turn IBM "punched-card equipment to scientific use: computation of astronomical tables by the method of finite differences, as envisioned by Babbage 100 years earlier for his Difference Engine". Very soon after, IBM  started to modify its tabulators to facilitate this kind of computation.  One of these tabulators, built in 1931, was The Columbia Difference Tabulator.
+John von Neumann had a team at Los Alamos that used "modified IBM punched-card machines" to determine the effects of the implosion. In March 1944, he proposed to run certain problems regarding implosion of the Mark I, and in 1944 he arrived with two mathematicians to write a simulation program to study the implosion of the first atomic bomb.
+
+The Los Alamos group completed its work in a much shorter time than the Cambridge group.  However, the punched-card machine operation computed values to six decimal places, whereas the Mark I computed values to eighteen decimal places. Additionally, Mark I integrated the partial differential equation at a much smaller interval size [or smaller mesh] and so...achieved far greater precision.
+"Von Neumann joined the Manhattan Project in 1943, working on the immense number of calculations needed to build the atomic bomb. He showed that the implosion design, which would later be used in the Trinity and Fat Man bombs, was likely faster and more efficient than the gun design."
+
+
+== Aiken and IBM ==
+Aiken published a press release announcing the Mark I listing himself as the sole inventor. James W. Bryce was the only IBM person mentioned, even though several IBM engineers including Clair Lake and Frank Hamilton had helped to build various elements. IBM chairman Thomas J. Watson was enraged, and only reluctantly attended the dedication ceremony on August 7, 1944. Aiken, in turn, decided to build further machines without IBM's help, and the ASCC came to be generally known as the "Harvard Mark I". IBM went on to build its Selective Sequence Electronic Calculator (SSEC) to both test new technology and provide more publicity for the company's efforts.
+
+
+== Successors ==
+The Mark I was followed by the Harvard Mark II (1947 or 1948), Mark III/ADEC (September 1949), and Harvard Mark IV (1952) – all the work of Aiken. The Mark II was an improvement over the Mark I, although it still was based on electromechanical relays. The Mark III used mostly electronic components—vacuum tubes and crystal diodes—but also included mechanical components: rotating magnetic drums for storage, plus relays for transferring data between drums. The Mark IV was all-electronic, replacing the remaining mechanical components with magnetic core memory. The Mark II and Mark III were delivered to the US Navy base at Dahlgren, Virginia. The Mark IV was built for the US Air Force, but it stayed at Harvard.
+The Mark I was disassembled in 1959, and portions of it went on display  in the Science Center, as part of the Harvard Collection of Historical Scientific Instruments.  It was relocated to the new Science and Engineering Complex in Allston in July 2021. Other sections of the original machine had much earlier been transferred to IBM and the Smithsonian Institution.
+
+
+== See also ==
+Difference engine – a pioneering 19th-century mechanical computer
+History of computing hardware
+List of electromechanical computers
+List of vacuum-tube computers
+
+
+== References ==
+Notes
+
+Publications
+
+
+== Further reading ==
+
+
+== External links ==
+
+Oral history interview with Robert Hawkins at Charles Babbage Institute, University of Minnesota, Minneapolis.  Hawkins discusses the Harvard-IBM Mark I project that he worked on at Harvard University as a technician as well as Howard Aiken’s leadership of the project.
+Oral history interview with Richard M. Bloch at Charles Babbage Institute, University of Minnesota, Minneapolis.  Bloch describes his work at the Harvard Computation Laboratory for Howard Aiken on the Mark I.
+Oral history interview with Robert V. D. Campbell at Charles Babbage Institute, University of Minnesota, Minneapolis.  Campbell discusses the contributions of Harvard and IBM to the Mark I project.
+Photo with parts of the machine identified: "IBM ASCC-Mark I computer framed photograph | Objects | The Collection of Historical Scientific Instruments". waywiser.rc.fas.harvard.edu. Archived from the original on August 1, 2020. Retrieved November 4, 2018.
+IBM Archive: IBM ASCC Reference Room

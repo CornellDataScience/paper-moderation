@@ -1,0 +1,454 @@
+The center of percussion is the point on an extended massive object attached to a pivot where a perpendicular impact will produce no reactive shock at the pivot.   Translational and rotational motions cancel at the pivot when an impulsive blow is struck at the center of percussion.   The center of percussion is often discussed in the context of a bat, racquet, door, sword or other extended object held at one end.
+The same point is called the center of oscillation for the object suspended from the pivot as a pendulum, meaning that a simple pendulum with all its mass concentrated at that point will have the same period of oscillation as the compound pendulum.
+In sports, the center of percussion of a bat, racquet, or club is related to the so-called "sweet spot", but the latter is also related to vibrational bending of the object.
+
+
+== Explanation ==
+
+Imagine a rigid beam suspended from a wire by a fixture that can slide freely along the wire at point P, as shown in the Figure. An impulsive blow is applied from the left.  If it is below the center of mass (CM) it will cause the beam to rotate counterclockwise around the CM and also cause the CM to move to the right. The center of percussion (CP) is below the CM.  If the blow falls above the CP, the rightward translational motion will be bigger than the leftward rotational motion at P, causing the net initial motion of the fixture to be rightward.  If the blow falls below the CP the opposite will occur, rotational motion at P will be larger than translational motion and the fixture will move initially leftward. Only if the blow falls exactly on the CP will the two components of motion cancel out to produce zero net initial movement at point P.
+When the sliding fixture is replaced with a pivot that cannot move left or right, an impulsive blow anywhere but at the CP results in an initial reactive force at the pivot.
+
+
+== Calculating the center of percussion ==
+
+
+=== General case ===
+For a free, rigid beam, an impulse 
+  
+    
+      
+        F
+        d
+        t
+      
+    
+    {\displaystyle Fdt}
+  
+ is applied at right angle at a point of impact, defined as a distance 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ from the center of mass (CM).
+The force results in the change in velocity of the CM, i.e. 
+  
+    
+      
+        d
+        
+          v
+          
+            c
+            m
+          
+        
+      
+    
+    {\displaystyle dv_{cm}}
+  
+:
+
+  
+    
+      
+        F
+        =
+        M
+        
+          
+            
+              d
+              
+                v
+                
+                  c
+                  m
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle F=M{\frac {dv_{cm}}{dt}},}
+  
+
+where 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is the mass of the beam.
+Moreover, the force produces a torque about the CM, which results in the change in angular velocity 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ of the beam, i.e. 
+  
+    
+      
+        d
+        ω
+      
+    
+    {\displaystyle d\omega }
+  
+:
+
+  
+    
+      
+        F
+        b
+        =
+        I
+        
+          
+            
+              d
+              ω
+            
+            
+              d
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle Fb=I{\frac {d\omega }{dt}},}
+  
+
+where 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ is the moment of inertia around the CM.
+For any point P a distance 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ on the opposite side of the CM from the point of impact, the change in velocity of point P is:
+
+  
+    
+      
+        d
+        
+          v
+          
+            n
+            e
+            t
+          
+        
+        =
+        d
+        
+          v
+          
+            c
+            m
+          
+        
+        −
+        p
+        d
+        ω
+        .
+      
+    
+    {\displaystyle dv_{net}=dv_{cm}-pd\omega .}
+  
+
+Hence, the acceleration at P due to the impulsive blow is:
+
+  
+    
+      
+        
+          
+            
+              d
+              
+                v
+                
+                  n
+                  e
+                  t
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          (
+          
+            
+              
+                1
+                M
+              
+            
+            −
+            
+              
+                
+                  p
+                  b
+                
+                I
+              
+            
+          
+          )
+        
+        F
+        .
+      
+    
+    {\displaystyle {\frac {dv_{net}}{dt}}=\left({\frac {1}{M}}-{\frac {pb}{I}}\right)F.}
+  
+
+The center of percussion (CP) is the point where this acceleration is zero (i.e. 
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  v
+                  
+                    n
+                    e
+                    t
+                  
+                
+              
+              
+                d
+                t
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {dv_{net}}{dt}}}
+  
+ = 0), while the force is non-zero (i.e. F ≠ 0). Thus, at the center of percussion, the condition is:
+
+  
+    
+      
+        
+          
+            1
+            M
+          
+        
+        −
+        
+          
+            
+              p
+              b
+            
+            I
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {1}{M}}-{\frac {pb}{I}}=0.}
+  
+
+Therefore, the CP is at a distance from the CM, given by:
+
+  
+    
+      
+        b
+        =
+        
+          
+            I
+            
+              p
+              M
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b={\frac {I}{pM}}.}
+  
+
+Note that P, the rotation axis, need not be at the end of the beam, but can be chosen at any distance 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+.
+Length 
+  
+    
+      
+        b
+        +
+        p
+      
+    
+    {\displaystyle b+p}
+  
+ also defines the center of oscillation of a physical pendulum, that is, the position of the mass of a simple pendulum that has the same period as the physical pendulum.
+
+
+=== Center of percussion of a uniform beam ===
+For the special case of a beam of uniform density of length 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+, the moment of inertia around the CM is:
+
+  
+    
+      
+        I
+        =
+        
+          
+            1
+            12
+          
+        
+        M
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle I={\frac {1}{12}}ML^{2}}
+  
+ (see moment of inertia for derivation),
+and for rotation about a pivot at the end,
+
+  
+    
+      
+        p
+        =
+        L
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle p=L/2}
+  
+.
+This leads to:
+
+  
+    
+      
+        b
+        =
+        
+          
+            
+              L
+              
+                2
+              
+            
+            
+              12
+              p
+            
+          
+        
+        =
+        
+          
+            1
+            6
+          
+        
+        L
+      
+    
+    {\displaystyle b={\frac {L^{2}}{12p}}={\frac {1}{6}}L}
+  
+.
+It follows that the CP is 2/3 of the length of the uniform beam 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ from the pivoted end.
+
+
+== Some applications ==
+For example, a swinging door that is stopped by a doorstop placed 2/3 of the width of the door will do the job with minimal shaking of the door because the hinged end is subjected to no net reactive force.  (This point is also the node in the second vibrational harmonic, which also minimizes vibration.)
+The sweet spot on a baseball bat is generally defined as the point at which the impact feels best to the batter.   The center of percussion defines a place where, if the bat strikes the ball and the batter's hands are at the pivot point, the batter feels no sudden reactive force.  However, since a bat is not a rigid object the vibrations produced by the impact also play a role.    Also, the pivot point of the swing may not be at the place where the batter's hands are placed.   Research has shown that the dominant physical mechanism in determining where the sweet spot is arises from the location of nodes in the vibrational modes of the bat, not the location of the center of percussion.
+The center of percussion concept can be applied to swords.  Being flexible objects, the "sweet spot" for such cutting weapons depends not only on the center of percussion but also on the flexing and vibrational characteristics.
+
+
+== References ==

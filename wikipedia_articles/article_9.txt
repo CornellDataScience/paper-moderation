@@ -1,0 +1,27 @@
+Fenwick is an advanced statistic used in the National Hockey League to measure shot attempt differential while playing at even strength. It is also known as unblocked shot attempts (USAT) by the NHL. This includes shots on goal and missed shots on goal towards the opposition’s net minus the same shot attempts directed at your own team’s net. Unlike Corsi, it does not include blocked shot attempts.
+
+
+== History ==
+The Fenwick number was named by Matt Fenwick, a blogger from Alberta and fan of the Calgary Flames. On November 22, 2007, he wrote a blog post in which he explained his argument that the best use of Corsi was to derive objective figures that could be used to predict scoring chances, and that a blocked shot is either not a true scoring chance or an average that is of worse quality than unblocked shots. He proposed a new figure that excludes blocked shots, which took on his name, as an alternative. Since then, it has evolved into an advanced statistic that is often used to analyze scoring chances alongside Corsi.
+
+
+== Formula ==
+Fenwick = (Shots on goal FOR + missed shots FOR) – (Shots on goal AGAINST + missed shots AGAINST)
+
+
+== Relevance ==
+Fenwick is an indicator of how much a team controls the puck offensively throughout the course of a game. A positive Fenwick number would indicate that a team spends more time in the offensive zone than the defensive zone, while a negative Fenwick numbers would indicate that a team is more frequently in the defensive zone than offensive zone. Using Fenwick to record possession is useful in that the team with the higher possession numbers generally wins any given game.
+On a team level, Fenwick is considered to be one of the best ways of predicting future success because it may be a better indicator of quality shot chances than Corsi as a result of its exclusion of blocked shots, which is considered a skill that defensive players use to prevent scoring chances.
+Additional subcategories of Fenwick exist, including Even Strength Fenwick and Close Fenwick. Even Strength Fenwick specifically refers to the shot differential when both teams are at even strength, as opposed to when special teams are in play for one or both teams. Close Fenwick refers to when the score of the game only differs by one point in either direction. These subcategories are useful in coaching for determining which players should be sent out on the ice depending on the current score of the game.
+
+
+== Criticisms ==
+Fenwick (and its counterpart Corsi) may provide a better evaluation of an individual player’s contributions to a team’s winning effort than plus-minus (which is a statistic that assigns a plus to players who are on ice when their team scores a goal and a minus to players who are on ice when their opponent scores a goal), it is not without criticism. Fenwick is often critiqued for being nothing more than a modification of Corsi that excludes blocked shots. This exclusion is due to the idea that blocking shots is a skill used by defensive players, but it is not universally accepted that this is indeed a skill. There is no proof that blocking shots affects scoring chances in any real way.
+Additionally, because blocked shot events are not recorded, there is a reduction in total events that are being measured and a slightly smaller sample of data is being used. With fewer variables, the usefulness of Fenwick may be less significant. In fact, some critics say that in most cases, the difference between Fenwick and Corsi is statistically insignificant.
+
+
+== See also ==
+Corsi
+
+
+== References ==

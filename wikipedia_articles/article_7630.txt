@@ -1,0 +1,82 @@
+Alan Cooper (born June 3, 1952) is an American software designer and programmer. Widely recognized as the "Father of Visual Basic", Cooper is also known for his books About Face: The Essentials of Interaction Design and The Inmates Are Running the Asylum: Why High-Tech Products Drive Us Crazy and How to Restore the Sanity. As founder of Cooper, a leading interaction design consultancy, he created the Goal-Directed design methodology and pioneered the use of personas as practical interaction design tools to create high-tech products. On April 28, 2017, Alan was inducted into the Computer History Museum's Hall of Fellows "for his invention of the visual development environment in Visual BASIC, and for his pioneering work in establishing the field of interaction design and its fundamental tools."
+
+
+== Biography ==
+
+
+=== Early life ===
+Alan Cooper grew up in Marin County, California, United States, where he attended the College of Marin, studying architecture. He learned programming and took on contract programming jobs to pay for college.
+In 1975, soon after he left college and as the first microcomputers became available, Alan Cooper founded his first company, Structured Systems Group (SSG), in Oakland, California, which became one of the first microcomputer software companies. SSG's software accounting product, General Ledger, was sold through ads in popular magazines such as Byte and Interface Age. This software was, according to the historical account in Fire in the Valley (by Paul Freiberger and Michael Swaine), “probably the first serious business software for microcomputers.”  It was both the start of Cooper's career as a software author and the beginning of the microcomputer software business. Ultimately, Cooper developed a dozen original products at Structured Systems Group before he sold his interest in the company in 1980.
+Early on, Cooper worked with Gordon Eubanks to develop, debug, document, and publish his business programming language, CBASIC, an early competitor to Bill Gates' and Paul Allen's Microsoft BASIC.  Eubanks wrote CBASIC’s precursor, BASIC-E as a student project while at the Naval Postgraduate School in Monterey, California with professor Gary Kildall. When Eubanks left the Navy, he joined Kildall’s successful operating system company, Digital Research, Inc., in Monterey. Soon thereafter, Eubanks and Kildall invited Cooper to join them at Digital Research as one of four founders of their research and development department. After two years at DRI, Cooper departed to develop desktop application software by himself.
+During the 1980s, Alan Cooper authored several business applications including Microphone II for Windows and an early, critical-path project management program called SuperProject. Cooper sold SuperProject to Computer Associates in 1984, where it achieved success in the business-to-business marketplace.
+
+
+=== Visual Basic ===
+In 1988, Alan Cooper created a visual programming language (code-named “Ruby”) that allowed Windows users to build “Finder”-like shells. He called it “a shell construction set."  After he demonstrated Ruby to Bill Gates, Microsoft purchased it. At the time, Gates commented that the innovation would have a “profound effect” on their entire product line. Microsoft initially decided not to release the product as a shell for users, but rather to transform it into a professional development tool for their QuickBASIC programming language called Visual Basic, which was widely used for business application development for Windows computers.
+Cooper's dynamically installable control facility, which became famous as the “VBX” interface, was a well-known component of "Ruby". This innovation allowed any 3rd party developer to write a widget (control) as a DLL, put it in the Visual Basic directory, and Visual Basic would find it, communicate with it, and present it to the user as a seamless part of the program. The widget would appear in the tool palette and appropriate menus, and users could incorporate it into their Visual Basic applications. The invention of the “VBX” interface created an entire new marketplace for vendors of these “dynamically installable controls.” As a result of Cooper's work, many new software companies were able to deliver Windows software to market in the 1990s.
+The first book ever written about Visual Basic, The Waite Group’s Visual Basic How-To by Mitchell Waite, is dedicated to Alan Cooper. In his dedication, the author calls Cooper the “Father of Visual Basic.” This nickname has often served as Cooper's one-line resume.
+In 1994, Bill Gates presented Cooper with the first Windows Pioneer Award for his contributions to the software industry. During the presentation, Gates took particular note of Cooper's innovative work creating the VBX interface.
+In 1998, the SVForum honored Cooper with its Visionary Award.
+
+
+=== Interaction design and user experience ===
+Early in his career, Cooper began to critically consider the accepted approach to software construction. As he reports in his first book, he believed something important was missing—software authors were not asking, “How do users interact with this?” Cooper's early insights drove him to create a design process, focused not on what could be coded but on what could be designed to meet users’ needs.
+In 1992, in response to a rapidly consolidating software industry, Cooper began consulting with other companies, helping them design their applications to be more user friendly. Within a few years, Alan Cooper had begun to articulate some of his basic design principles. With his clients, he championed a design methodology that puts the users’ needs first. Cooper interviewed the users of his client's products and discovered the common threads that made these people happy. Born of this practice was the use of personas as design tools. Cooper preached his vision in two books. His ideas helped to drive the user experience movement and define the craft that would come to be called “interaction design.”
+
+
+==== About Face ====
+Cooper's best-selling first book, About Face: The Essentials of User Interface Design, was first published in 1995. In it, Cooper introduces a comprehensive set of practical design principles, essentially a taxonomy for software design. By the second edition, as the industry and profession evolved, “interface design” had become the more precise “interaction design.” The basic message of this book was directed at programmers: Do the right thing. Think about your users. The book is now in its fourth edition, entitled About Face: The Essentials of Interaction Design, and is considered a foundation text for the professional interaction designer. Cooper introduced the ideas of software application posture such as a "sovereign posture" where an application uses most of the space and waits for user input or a "transient posture" for software that does not run or engage with the user all the time. With websites he discusses "informational" and "transactional" postures in 
+
+
+==== The Inmates Are Running the Asylum ====
+ In his 1998 book, The Inmates Are Running the Asylum: Why High-Tech Products Drive Us Crazy and How to Restore the Sanity, Alan Cooper outlined his methodology, called Goal-Directed design, based on the concept that software should speed the user towards his or her ultimate goal rather than ensnare him or her in computer minutiae. In the book, Cooper introduced a new concept that he called personas as a practical interaction design tool. Based on a brief discussion in the book, personas rapidly gained popularity in the software industry due to their unusual power and effectiveness. Today, the concepts of interaction design strategy and the use of personas have been broadly adopted across the industry. Cooper directs the message of his second book to the businessperson: know your users’ goals and how to satisfy them. You need interaction design to do the thing right. Cooper advocates for integrating design into business practice in order to meet customer needs and to build better products faster by doing it right the first time.
+Alan Cooper's current focus is on how to effectively integrate the advances of interaction design with the effectiveness of agile software development methods. Cooper regularly speaks and blogs about this on his company's website.
+
+
+=== Cooper ===
+Cooper has a user experience design and strategy consulting firm headquartered in San Francisco with an office in New York. Cooper is credited with inventing several widely used design concepts, including goal-directed design, personas, and pair design. It was founded by Sue Cooper and Alan Cooper in 1992 in Menlo Park, California, under the name 'Cooper Software,' then changing the name to 'Cooper Interaction Design' in 1997. Cooper was the first consulting firm dedicated solely to interaction design. Its original clients were mainly Silicon Valley software and computer hardware companies.
+The company uses a human-centered methodology called “goal-directed design” that emphasizes the importance of understanding the user's desired end-state and their motivations for getting there.
+In 2002, Cooper began offering training classes to the public including topic as interaction design, service design, visual design, and design leadership.
+Cooper has served as the President of Cooper (formerly Cooper Interaction Design), a user experience and interaction design consultancy in San Francisco, California, since its founding in 1992. Cooper helps their customers with interaction design challenges and offers training courses in software design and development topics, including their Goal-Directed design (under the CooperU brand).
+In 2017, Cooper became part of Designit, a strategic design arm of Wipro Digital. Cooper Professional Education continued to exist as a teaching and learning division of Designit until it closed its doors to business on May 29, 2020.
+
+
+== Bibliography ==
+About Face: The Essentials of User Interface Design (ISBN 1-56884-322-4), 1995
+The Inmates Are Running the Asylum: Why High-Tech Products Drive Us Crazy and How to Restore the Sanity (ISBN 0-672-31649-8), 1998
+About Face 2.0: The Essentials of Interaction Design (with Robert Reimann) (ISBN 0-7645-2641-3), 2003
+About Face 3: The Essentials of Interaction Design (with Robert Reimann and David Cronin) (ISBN 0-4700-8411-1), 2007
+About Face: The Essentials of Interaction Design, 4th Edition (with Robert Reimann, David Cronin, and Christopher Noessel) (ISBN 978-1118766576), 2014
+
+
+== See also ==
+Application posture
+Design methods
+Design thinking
+Interaction design
+User centered design
+User experience design
+Windows Pioneers
+
+
+== References ==
+
+
+== External links ==
+Profile at Cooper.com Archived 2016-11-26 at the Wayback Machine
+Article, Alexa, please kill me now: My thoughts on conversational UI
+Agile 2008 interview, “Similarities Between Interaction Designers and Agile Programmers”
+Interview, UX Podcast, Ranch Stories with Alan Cooper
+Interview, Alan Cooper Interview on .NET Rocks
+Interview, Conversation with Alan Cooper at Microsoft's Channel 9
+Article, Alan Cooper on why he has been called "the Father of Visual Basic"
+Interview, SEOV: Visions of Alan Cooper (Video Interviews) Archived 2008-04-17 at the Wayback Machine
+Discussion, Alan Cooper on what companies must do to improve software products - mp3 format
+Article, Alan Cooper and the Goal Directed Design Process—Gain AIGA Journal of Design for the Network Economy, 2001
+Software Development Forum's Software Visionary Award
+Interview, Triangulation 262: Alan Cooper
+Article, "Tech Republic" The Church of Usability, Alan K'necht
+Article, Dr. Dobbs Special Report 1997 (re. Gary Kildall), Michael Swaine
+"History of CBASIC". Archived from the original on 2006-05-04. Retrieved 2006-05-04.
+Encyclopedia entry, Structured Systems Group (Britannica.com)
+Interview, Why People Yell at Their Computer Monitors and Hate Microsoft's Clippy

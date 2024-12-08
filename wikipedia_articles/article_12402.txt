@@ -1,0 +1,145 @@
+In particle physics, flavour or flavor refers to the species of an elementary particle. The Standard Model counts six flavours of quarks and six flavours of leptons. They are conventionally parameterized with flavour quantum numbers that are assigned to all subatomic particles. They can also be described by some of the family symmetries proposed for the quark-lepton generations.
+
+
+== Quantum numbers ==
+In classical mechanics, a force acting on a point-like particle can only alter the particle's dynamical state, i.e., its momentum, angular momentum, etc. Quantum field theory, however, allows interactions that can alter other facets of a particle's nature described by non-dynamical, discrete quantum numbers. In particular, the action of the weak force is such that it allows the conversion of quantum numbers describing mass and electric charge of both quarks and leptons from one discrete type to another. This is known as a flavour change, or flavour transmutation. Due to their quantum description, flavour states may also undergo quantum superposition.
+In atomic physics the principal quantum number of an electron specifies the electron shell in which it resides, which determines the energy level of the whole atom. Analogously, the five flavour quantum numbers (isospin, strangeness, charm, bottomness or topness) can characterize the quantum state of quarks, by the degree to which it exhibits six distinct flavours (u, d, c, s, t, b).
+Composite particles can be created from multiple quarks, forming hadrons, such as mesons and baryons, each possessing unique aggregate characteristics, such as different masses, electric charges, and decay modes. A hadron's overall flavour quantum numbers depend on the numbers of constituent quarks of each particular flavour.
+
+
+=== Conservation laws ===
+All of the various charges discussed above are conserved by the fact that the corresponding charge operators can be understood as generators of symmetries that commute with the Hamiltonian. Thus, the eigenvalues of the various charge operators are conserved.
+Absolutely conserved quantum numbers in the Standard Model are:
+
+electric charge (Q)
+weak isospin (T3)
+baryon number (B)
+lepton number (L)
+In some theories, such as the grand unified theory, the individual baryon and lepton number conservation can be violated, if the difference between them (B − L) is conserved (see Chiral anomaly).
+Strong interactions conserve all flavours, but all flavour quantum numbers are violated (changed, non-conserved) by electroweak interactions.
+
+
+== Flavour symmetry ==
+If there are two or more particles which have identical interactions, then they may be interchanged without affecting the physics. All (complex) linear combinations of these two particles give the same physics, as long as the combinations are orthogonal, or perpendicular, to each other.
+In other words, the theory possesses symmetry transformations such as 
+  
+    
+      
+        M
+        
+          (
+          
+            
+              u
+              d
+            
+          
+          )
+        
+      
+    
+    {\displaystyle M\left({u \atop d}\right)}
+  
+, where u and d are the two fields (representing the various generations of leptons and quarks, see below), and M is any 2×2 unitary matrix with a unit determinant. Such matrices form a Lie group called SU(2) (see special unitary group). This is an example of flavour symmetry.
+In quantum chromodynamics, flavour is a conserved global symmetry. In the electroweak theory, on the other hand, this symmetry is broken, and flavour changing processes exist, such as quark decay or neutrino oscillations.
+
+
+== Flavour quantum numbers ==
+
+
+=== Leptons ===
+All leptons carry a lepton number L = 1. In addition, leptons carry weak isospin, T3, which is −⁠1/2⁠ for the three charged leptons (i.e. electron, muon and tau) and +⁠1/2⁠ for the three associated neutrinos. Each doublet of a charged lepton and a neutrino consisting of opposite T3 are said to constitute one generation of leptons. In addition, one defines a quantum number called weak hypercharge, YW, which is −1 for all left-handed leptons. Weak isospin and weak hypercharge are gauged in the Standard Model.
+Leptons may be assigned the six flavour quantum numbers: electron number, muon number, tau number, and corresponding numbers for the neutrinos (electron neutrino, muon neutrino and tau neutrino). These are conserved in strong and electromagnetic interactions, but violated by weak interactions. Therefore, such flavour quantum numbers are not of great use. A separate quantum number for each generation is more useful: electronic lepton number (+1 for electrons and electron neutrinos), muonic lepton number (+1 for muons and muon neutrinos), and tauonic lepton number (+1 for tau leptons and tau neutrinos). However, even these numbers are not absolutely conserved, as neutrinos of different generations can mix; that is, a neutrino of one flavour can transform into another flavour. The strength of such mixings is specified by a matrix called the Pontecorvo–Maki–Nakagawa–Sakata matrix (PMNS matrix).
+
+
+=== Quarks ===
+All quarks carry a baryon number  B = ⁠++1/3⁠ , and all anti-quarks have  B = ⁠−+1/3⁠ . They also all carry weak isospin,  T3 = ⁠±+1/2⁠ . The positively charged quarks (up, charm, and top quarks) are called up-type quarks and have  T3 = ⁠++1/2⁠ ; the negatively charged quarks (down, strange, and bottom quarks) are called down-type quarks and have T3 = ⁠−+1/2⁠ . Each doublet of up and down type quarks constitutes one generation of quarks.
+For all the quark flavour quantum numbers listed below, the convention is that the flavour charge and the electric charge of a quark have the same sign. Thus any flavour carried by a charged meson has the same sign as its charge. Quarks have the following flavour quantum numbers: 
+
+The third component of isospin (usually just "isospin") (I3), which has value  I3 = ⁠1/2⁠  for the up quark and  I3 = −⁠1/2⁠  for the down quark.
+Strangeness (S): Defined as  S = −n s + n s̅ , where ns represents the number of strange quarks (s) and ns̅ represents the number of strange antiquarks (s). This quantum number was introduced by Murray Gell-Mann. This definition gives the strange quark a strangeness of −1 for the above-mentioned reason.
+Charm (C): Defined as  C = n c − n c̅ , where nc represents the number of charm quarks (c) and nc̅ represents the number of charm antiquarks. The charm quark's value is +1.
+Bottomness (or beauty) (B′): Defined as  B′ = −n b + n b̅ , where nb represents the number of bottom quarks (b) and nb̅ represents the number of bottom antiquarks.
+Topness (or truth) (T): Defined as  T = n t − n t̅ , where nt represents the number of top quarks (t) and nt̅ represents the number of top antiquarks. However, because of the extremely short half-life of the top quark (predicted lifetime of only 5×10−25 s), by the time it can interact strongly it has already decayed to another flavour of quark (usually to a bottom quark). For that reason the top quark doesn't hadronize, that is it never forms any meson or baryon.
+These five quantum numbers, together with baryon number (which is not a flavour quantum number), completely specify numbers of all 6 quark flavours separately (as  n q − n q̅ , i.e. an antiquark is counted with the minus sign). They are conserved by both the electromagnetic and strong interactions (but not the weak interaction). From them can be built the derived quantum numbers:
+
+Hypercharge (Y):  Y = B + S + C + B′ + T 
+Electric charge (Q):  Q = I3 + ⁠1/2⁠Y  (see Gell-Mann–Nishijima formula)
+The terms "strange" and "strangeness" predate the discovery of the quark, but continued to be used after its discovery for the sake of continuity (i.e. the strangeness of each type of hadron remained the same); strangeness of anti-particles being referred to as +1, and particles as −1 as per the original definition. Strangeness was introduced to explain the rate of decay of newly discovered particles, such as the kaon, and was used in the Eightfold Way classification of hadrons and in subsequent quark models. These quantum numbers are preserved under strong and electromagnetic interactions, but not under weak interactions.
+For first-order weak decays, that is processes involving only one quark decay, these quantum numbers (e.g. charm) can only vary by 1, that is, for a decay involving a charmed quark or antiquark either as the incident particle or as a decay byproduct,  ΔC = ±1 ; likewise, for a decay involving a bottom quark or antiquark  ΔB′ = ±1 . Since first-order processes are more common than second-order processes (involving two quark decays), this can be used as an approximate "selection rule" for weak decays.
+A special mixture of quark flavours is an eigenstate of the weak interaction part of the Hamiltonian, so will interact in a particularly simple way with the W bosons (charged weak interactions violate flavour). On the other hand, a fermion of a fixed mass (an eigenstate of the kinetic and strong interaction parts of the Hamiltonian) is an eigenstate of flavour. The transformation from the former basis to the flavour-eigenstate/mass-eigenstate basis for quarks underlies the Cabibbo–Kobayashi–Maskawa matrix (CKM matrix). This matrix is analogous to the PMNS matrix for neutrinos, and quantifies flavour changes under charged weak interactions of quarks.
+The CKM matrix allows for CP violation if there are at least three generations.
+
+
+=== Antiparticles and hadrons ===
+Flavour quantum numbers are additive. Hence antiparticles have flavour equal in magnitude to the particle but opposite in sign. Hadrons inherit their flavour quantum number from their valence quarks: this is the basis of the classification in the quark model. The relations between the hypercharge, electric charge and other flavour quantum numbers hold for hadrons as well as quarks.
+
+
+== Flavour problem ==
+The flavour problem (also known as the flavour puzzle) is the inability of current Standard Model flavour physics to explain why the free parameters of particles in the Standard Model have the values they have, and why there are specified values for mixing angles in the PMNS and CKM matrices.  These free parameters - the fermion masses and their mixing angles - appear to be specifically tuned. Understanding the reason for such tuning would be the solution to the flavor puzzle. There are very fundamental questions involved in this puzzle such as why there are three generations of                 quarks (up-down, charm-strange, and top-bottom quarks) and leptons (electron, muon and tau neutrino), as well as how and why the mass and mixing hierarchy arises among different flavours of these fermions.
+
+
+== Quantum chromodynamics ==
+
+Quantum chromodynamics (QCD) contains six flavours of quarks. However, their masses differ and as a result they are not strictly interchangeable with each other. The up and down flavours are close to having equal masses, and the theory of these two quarks possesses an approximate SU(2) symmetry (isospin symmetry).
+
+
+=== Chiral symmetry description ===
+Under some circumstances (for instance when the quark masses are much smaller than the chiral symmetry breaking scale of 250 MeV), the masses of quarks do not substantially contribute to the system's behavior, and to zeroth approximation the masses of the lightest quarks can be ignored for most purposes, as if they had zero mass. The simplified behavior of flavour transformations can then be successfully modeled as acting independently on the left- and right-handed parts of each quark field. This approximate description of the flavour symmetry is described by a chiral group SUL(Nf) × SUR(Nf).
+
+
+=== Vector symmetry description ===
+If all quarks had non-zero but equal masses, then this chiral symmetry is broken to the vector symmetry of the "diagonal flavour group" SU(Nf), which applies the same transformation to both helicities of the quarks. This reduction of symmetry is a form of explicit symmetry breaking. The strength of explicit symmetry breaking is controlled by the current quark masses in QCD.
+Even if quarks are massless, chiral flavour symmetry can be spontaneously broken if the vacuum of the theory contains a chiral condensate (as it does in low-energy QCD). This gives rise to an effective mass for the quarks, often identified with the valence quark mass in QCD.
+
+
+=== Symmetries of QCD ===
+Analysis of experiments indicate that the current quark masses of the lighter flavours of quarks are much smaller than the QCD scale, ΛQCD, hence chiral flavour symmetry is a good approximation to QCD for the up, down and strange quarks. The success of chiral perturbation theory and the even more naive chiral models spring from this fact. The valence quark masses extracted from the quark model are much larger than the current quark mass. This indicates that QCD has spontaneous chiral symmetry breaking with the formation of a chiral condensate. Other phases of QCD may break the chiral flavour symmetries in other ways.
+
+
+== History ==
+
+
+=== Isospin ===
+Isospin, strangeness and hypercharge predate the quark model. The first of those quantum numbers, Isospin, was introduced as a concept in 1932 by Werner Heisenberg, to explain symmetries of the then newly discovered neutron (symbol n):
+
+The mass of the neutron and the proton (symbol p) are almost identical: They are nearly degenerate, and both are thus often referred to as “nucleons”, a term that ignores their differences. Although the proton has a positive electric charge, and the neutron is neutral, they are almost identical in all other aspects, and their nuclear binding-force interactions (old name for the residual color force) are so strong compared to the electrical force between some, that there is very little point in paying much attention to their differences.
+The strength of the strong interaction between any pair of nucleons is the same, independent of whether they are interacting as protons or as neutrons.
+Protons and neutrons were grouped together as nucleons and treated as different states of the same particle, because they both have nearly the same mass and interact in nearly the same way, if the (much weaker) electromagnetic interaction is neglected.
+Heisenberg noted that the mathematical formulation of this symmetry was in certain respects similar to the mathematical formulation of non-relativistic spin, whence the name "isospin" derives. The neutron and the proton are assigned to the doublet (the spin-1⁄2, 2, or fundamental representation) of SU(2), with the proton and neutron being then associated with different isospin projections I3 = ++1⁄2 and −+1⁄2 respectively. The pions are assigned to the triplet (the spin-1, 3, or adjoint representation) of SU(2). Though there is a difference from the theory of spin: The group action does not preserve flavor (in fact, the group action is specifically an exchange of flavour).
+When constructing a physical theory of nuclear forces, one could simply assume that it does not depend on isospin, although the total isospin should be conserved. The concept of isospin proved useful in classifying hadrons discovered in the 1950s and 1960s (see particle zoo), where particles with similar mass are assigned an SU(2) isospin multiplet.
+
+
+=== Strangeness and hypercharge ===
+The discovery of strange particles like the kaon led to a new quantum number that was conserved by the strong interaction: strangeness (or equivalently hypercharge). The Gell-Mann–Nishijima formula was identified in 1953, which relates strangeness and hypercharge with isospin and electric charge.
+
+
+=== The eightfold way and quark model ===
+Once the kaons and their property of strangeness became better understood, it started to become clear that these, too, seemed to be a part of an enlarged symmetry that contained isospin as a subgroup. The larger symmetry was named the Eightfold Way by Murray Gell-Mann, and was promptly recognized to correspond to the adjoint representation of SU(3). To better understand the origin of this symmetry, Gell-Mann proposed the existence of up, down and strange quarks which would belong to the fundamental representation of the SU(3) flavor symmetry.
+
+
+=== GIM-Mechanism and charm ===
+To explain the observed absence of flavor-changing neutral currents, the GIM mechanism was proposed in 1970, which introduced the charm quark and predicted the J/psi meson. The J/psi meson was indeed found in 1974, which confirmed the existence of charm quarks. This discovery is known as the November Revolution. The flavor quantum number associated with the charm quark became known as charm.
+
+
+=== Bottomness and topness ===
+The bottom and top quarks were predicted in 1973 in order to explain CP violation, which also implied two new flavor quantum numbers: bottomness and topness.
+
+
+== See also ==
+Standard Model (mathematical formulation)
+Cabibbo–Kobayashi–Maskawa matrix
+Strong CP problem and chirality (physics)
+Chiral symmetry breaking and quark matter
+Quark flavour tagging, such as B-tagging, is an example of particle identification in experimental particle physics.
+
+
+== References ==
+
+
+== Further reading ==
+Lessons in Particle Physics Luis Anchordoqui and Francis Halzen, University of Wisconsin, 18th Dec. 2009
+
+
+== External links ==
+The particle data group.

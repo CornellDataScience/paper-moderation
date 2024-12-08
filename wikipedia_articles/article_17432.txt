@@ -1,0 +1,58 @@
+The Kimball lifecycle is a methodology for developing data warehouses, and has been developed by Ralph Kimball and a variety of colleagues. The methodology "covers a sequence of high level tasks for the effective design, development and deployment" of a data warehouse or business intelligence system. It is considered a "bottom-up" approach to data warehousing as pioneered by Ralph Kimball, in contrast to the older "top-down" approach pioneered by Bill Inmon.
+
+
+== Program or project planning phase ==
+According to Ralph Kimball et al., the planning phase is the start of the lifecycle. It is a planning phase in which project is a single iteration of the lifecycle while program is the broader coordination of resources. When launching a project or program Kimball et al. suggests following three focus areas:
+
+Defining and scoping the project
+Plan the project
+Manage the project
+
+
+== Program and project management ==
+This is an ongoing discipline in the project. The purpose is to keep the project/program on course, develop a communication plan and manage expectations.
+
+
+== Business requirements definition ==
+This phase or milestone of the project is about making the project team understand the business requirements. Its purpose is to establish a foundation for all the following activities in the lifecycle. Kimball et al. makes it clear that it is important for the project team to talk with the business users, and team members should be prepared to focus on listening and to document the user interviews. An output of this step is the enterprise bus matrix.
+
+
+== Technology track ==
+The top track holds two milestones:
+
+Technical architecture design is supposed to create a framework for the data warehouse or business intelligence system. The main focus in this phase is to create a plan for the application architecture, while considering business requirements, technical environment and the planned strategic technical directions.
+Product selection and installation use the architecture plan to identify what components are needed to complete the data warehouse or business intelligence project. This phase then selects, installs and tests the products.
+
+
+== Data track ==
+Dimensional modeling is a process in which the business requirements are used to design dimensional models for the system.
+Physical design is the phase where the database is designed. It involves the database environment as well as security.
+Extract, transform, load (ETL) design and development is the design of some of the heavy procedures in the data warehouse and business intelligence system. Kimball et al. suggests four parts to this process, which are further divided into 34 subsystems :
+
+Extracting data
+Cleaning and conforming data
+Delivering data for presentation
+Managing the ETL system
+
+
+== Business intelligence application track ==
+
+Business intelligence application design deals with designing and selecting some applications to support the business requirements. Business intelligence application development use the design to develop and validate applications to support the business requirements.
+
+
+== Deployment ==
+
+When the three tracks are complete they all end up in the final deployment. This phase requires planning and should include pre-deployment testing, documentation, training and maintenance and support.
+
+
+== Maintenance ==
+
+When the deployment has finished the system will need proper maintenance to stay alive. This includes data reconciliation, execution and monitoring and performance tuning.
+
+
+== Growth ==
+
+As the project can be seen as part of the larger iterative program, it is likely that the system will want to expand. There will be projects to add new data as well as reaching new segments of the business areas. The lifecycle then starts over again.
+
+
+== References ==

@@ -1,0 +1,918 @@
+In mathematics, a harmonic morphism is a (smooth) map 
+  
+    
+      
+        ϕ
+        :
+        (
+        
+          M
+          
+            m
+          
+        
+        ,
+        g
+        )
+        →
+        (
+        
+          N
+          
+            n
+          
+        
+        ,
+        h
+        )
+      
+    
+    {\displaystyle \phi :(M^{m},g)\to (N^{n},h)}
+  
+ between Riemannian manifolds that pulls back real-valued harmonic functions on the codomain to harmonic functions on the domain. Harmonic morphisms form a special class of harmonic maps, namely those that are horizontally (weakly) conformal.
+In local coordinates, 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ on 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ on 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+, the harmonicity of 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ is expressed by the non-linear system
+
+  
+    
+      
+        τ
+        (
+        ϕ
+        )
+        =
+        
+          ∑
+          
+            i
+            ,
+            j
+            =
+            1
+          
+          
+            m
+          
+        
+        
+          g
+          
+            i
+            j
+          
+        
+        
+          (
+          
+            
+              
+                
+                  
+                    ∂
+                    
+                      2
+                    
+                  
+                  
+                    ϕ
+                    
+                      γ
+                    
+                  
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      i
+                    
+                  
+                  ∂
+                  
+                    x
+                    
+                      j
+                    
+                  
+                
+              
+            
+            −
+            
+              ∑
+              
+                k
+                =
+                1
+              
+              
+                m
+              
+            
+            
+              
+                
+                  
+                    Γ
+                    ^
+                  
+                
+              
+              
+                i
+                j
+              
+              
+                k
+              
+            
+            
+              
+                
+                  ∂
+                  
+                    ϕ
+                    
+                      γ
+                    
+                  
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      k
+                    
+                  
+                
+              
+            
+            +
+            
+              ∑
+              
+                α
+                ,
+                β
+                =
+                1
+              
+              
+                n
+              
+            
+            
+              Γ
+              
+                α
+                β
+              
+              
+                γ
+              
+            
+            ∘
+            ϕ
+            
+              
+                
+                  ∂
+                  
+                    ϕ
+                    
+                      α
+                    
+                  
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      i
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  ∂
+                  
+                    ϕ
+                    
+                      β
+                    
+                  
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      j
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle \tau (\phi )=\sum _{i,j=1}^{m}g^{ij}\left({\frac {\partial ^{2}\phi ^{\gamma }}{\partial x_{i}\partial x_{j}}}-\sum _{k=1}^{m}{\hat {\Gamma }}_{ij}^{k}{\frac {\partial \phi ^{\gamma }}{\partial x_{k}}}+\sum _{\alpha ,\beta =1}^{n}\Gamma _{\alpha \beta }^{\gamma }\circ \phi {\frac {\partial \phi ^{\alpha }}{\partial x_{i}}}{\frac {\partial \phi ^{\beta }}{\partial x_{j}}}\right)=0,}
+  
+
+where 
+  
+    
+      
+        
+          ϕ
+          
+            α
+          
+        
+        =
+        
+          y
+          
+            α
+          
+        
+        ∘
+        ϕ
+      
+    
+    {\displaystyle \phi ^{\alpha }=y_{\alpha }\circ \phi }
+  
+ and 
+  
+    
+      
+        
+          
+            
+              Γ
+              ^
+            
+          
+        
+        ,
+        Γ
+      
+    
+    {\displaystyle {\hat {\Gamma }},\Gamma }
+  
+ are the Christoffel symbols on 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ and 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+, respectively.  The horizontal conformality is given by 
+
+  
+    
+      
+        
+          ∑
+          
+            i
+            ,
+            j
+            =
+            1
+          
+          
+            m
+          
+        
+        
+          g
+          
+            i
+            j
+          
+        
+        (
+        x
+        )
+        
+          
+            
+              ∂
+              
+                ϕ
+                
+                  α
+                
+              
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+            
+          
+        
+        (
+        x
+        )
+        
+          
+            
+              ∂
+              
+                ϕ
+                
+                  β
+                
+              
+            
+            
+              ∂
+              
+                x
+                
+                  j
+                
+              
+            
+          
+        
+        (
+        x
+        )
+        =
+        
+          λ
+          
+            2
+          
+        
+        (
+        x
+        )
+        
+          h
+          
+            α
+            β
+          
+        
+        (
+        ϕ
+        (
+        x
+        )
+        )
+        ,
+      
+    
+    {\displaystyle \sum _{i,j=1}^{m}g^{ij}(x){\frac {\partial \phi ^{\alpha }}{\partial x_{i}}}(x){\frac {\partial \phi ^{\beta }}{\partial x_{j}}}(x)=\lambda ^{2}(x)h^{\alpha \beta }(\phi (x)),}
+  
+
+where the conformal factor 
+  
+    
+      
+        λ
+        :
+        M
+        →
+        
+          
+            R
+          
+          
+            0
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \lambda :M\to \mathbb {R} _{0}^{+}}
+  
+ is a continuous function called the dilation. Harmonic morphisms are therefore solutions to non-linear over-determined systems of partial differential equations, determined by the geometric data of the manifolds involved.  For this reason, they  are difficult to find and have no general existence theory, not even locally.  
+
+
+== Complex analysis ==
+When the codomain of 
+  
+    
+      
+        ϕ
+        :
+        (
+        M
+        ,
+        g
+        )
+        →
+        (
+        
+          N
+          
+            2
+          
+        
+        ,
+        h
+        )
+      
+    
+    {\displaystyle \phi :(M,g)\to (N^{2},h)}
+  
+ is a surface, the system of partial differential equations that we are dealing with, is invariant under conformal changes of the metric 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+.  This means that, at least for local studies, the codomain can be chosen to be the complex plane with its standard flat metric.  In this situation a complex-valued function  
+  
+    
+      
+        ϕ
+        =
+        u
+        +
+        i
+        v
+        :
+        (
+        M
+        ,
+        g
+        )
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle \phi =u+iv:(M,g)\to \mathbb {C} }
+  
+ is a harmonic morphisms if and only if 
+
+  
+    
+      
+        
+          Δ
+          
+            M
+          
+        
+        (
+        ϕ
+        )
+        =
+        
+          Δ
+          
+            M
+          
+        
+        (
+        u
+        )
+        +
+        i
+        
+          Δ
+          
+            M
+          
+        
+        (
+        v
+        )
+        =
+        0
+      
+    
+    {\displaystyle \Delta _{M}(\phi )=\Delta _{M}(u)+i\Delta _{M}(v)=0}
+  
+
+and
+
+  
+    
+      
+        g
+        (
+        ∇
+        ϕ
+        ,
+        ∇
+        ϕ
+        )
+        =
+        ‖
+        ∇
+        u
+        
+          ‖
+          
+            2
+          
+        
+        −
+        ‖
+        ∇
+        v
+        
+          ‖
+          
+            2
+          
+        
+        +
+        2
+        i
+        g
+        (
+        ∇
+        u
+        ,
+        ∇
+        v
+        )
+        =
+        0.
+      
+    
+    {\displaystyle g(\nabla \phi ,\nabla \phi )=\|\nabla u\|^{2}-\|\nabla v\|^{2}+2ig(\nabla u,\nabla v)=0.}
+  
+
+This means that we look for two real-valued harmonic functions 
+  
+    
+      
+        u
+        ,
+        v
+        :
+        (
+        M
+        ,
+        g
+        )
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle u,v:(M,g)\to \mathbb {R} }
+  
+ with gradients 
+  
+    
+      
+        ∇
+        u
+        ,
+        ∇
+        v
+      
+    
+    {\displaystyle \nabla u,\nabla v}
+  
+ that are orthogonal and of the same norm at each point.  This shows that complex-valued harmonic morphisms 
+  
+    
+      
+        ϕ
+        :
+        (
+        M
+        ,
+        g
+        )
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle \phi :(M,g)\to \mathbb {C} }
+  
+ from Riemannian manifolds generalise holomorphic functions 
+  
+    
+      
+        f
+        :
+        (
+        M
+        ,
+        g
+        ,
+        J
+        )
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle f:(M,g,J)\to \mathbb {C} }
+  
+ from Kähler manifolds and possess many of their highly interesting properties. The theory of harmonic morphisms can therefore be seen as a generalisation of complex analysis.
+
+
+== Minimal surfaces ==
+In differential geometry, one is interested in constructing minimal submanifolds of a given ambient space 
+  
+    
+      
+        (
+        M
+        ,
+        g
+        )
+      
+    
+    {\displaystyle (M,g)}
+  
+.  Harmonic morphisms are useful tools for this purpose.  This is due to the fact that every regular fibre 
+  
+    
+      
+        
+          ϕ
+          
+            −
+            1
+          
+        
+        (
+        {
+        
+          z
+          
+            0
+          
+        
+        }
+        )
+      
+    
+    {\displaystyle \phi ^{-1}(\{z_{0}\})}
+  
+ of such a map 
+  
+    
+      
+        ϕ
+        :
+        (
+        M
+        ,
+        g
+        )
+        →
+        (
+        
+          N
+          
+            2
+          
+        
+        ,
+        h
+        )
+      
+    
+    {\displaystyle \phi :(M,g)\to (N^{2},h)}
+  
+ with values in a surface is a minimal submanifold of the domain with codimension 2. This gives an attractive method for manufacturing whole families of minimal surfaces in 4-dimensional manifolds 
+  
+    
+      
+        (
+        
+          M
+          
+            4
+          
+        
+        ,
+        g
+        )
+      
+    
+    {\displaystyle (M^{4},g)}
+  
+, in particular,   homogeneous spaces, such as Lie groups and symmetric spaces.
+
+
+== Examples ==
+Identity and constant maps are harmonic morphisms.
+Holomorphic functions in the complex plane are harmonic morphisms.
+Holomorphic functions in the complex vector space 
+  
+    
+      
+        
+          
+            C
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} ^{n}}
+  
+ are harmonic morphisms.
+Holomorphic maps from Kähler manifolds with values in a Riemann surface are harmonic morphisms.
+The Hopf maps 
+  
+    
+      
+        ϕ
+        :
+        
+          S
+          
+            3
+          
+        
+        →
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \phi :S^{3}\to S^{2}}
+  
+, 
+  
+    
+      
+        ϕ
+        :
+        
+          S
+          
+            7
+          
+        
+        →
+        
+          S
+          
+            4
+          
+        
+      
+    
+    {\displaystyle \phi :S^{7}\to S^{4}}
+  
+ and 
+  
+    
+      
+        ϕ
+        :
+        
+          S
+          
+            15
+          
+        
+        →
+        
+          S
+          
+            8
+          
+        
+      
+    
+    {\displaystyle \phi :S^{15}\to S^{8}}
+  
+ are harmonic morphisms.
+For compact Lie groups 
+  
+    
+      
+        K
+        ⊂
+        H
+        ⊂
+        G
+      
+    
+    {\displaystyle K\subset H\subset G}
+  
+ the standard Riemannian fibration 
+  
+    
+      
+        ϕ
+        :
+        G
+        
+          /
+        
+        H
+        →
+        G
+        
+          /
+        
+        K
+      
+    
+    {\displaystyle \phi :G/H\to G/K}
+  
+ is a harmonic morphism.
+Riemannian submersions with minimal fibres are harmonic morphisms.
+
+
+== References ==
+
+
+== External links ==
+The Bibliography of Harmonic Morphisms, offered by Sigmundur Gudmundsson

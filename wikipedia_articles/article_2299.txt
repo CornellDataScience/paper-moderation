@@ -1,0 +1,430 @@
+In mathematical physics, Gleason's theorem shows that the rule one uses to calculate probabilities in quantum physics, the Born rule, can be derived from the usual mathematical representation of measurements in quantum physics together with the assumption of non-contextuality. Andrew M. Gleason first proved the theorem in 1957, answering a question posed by George W. Mackey, an accomplishment that was historically significant for the role it played in showing that wide classes of hidden-variable theories are inconsistent with quantum physics. Multiple variations have been proven in the years since. Gleason's theorem is of particular importance for the field of quantum logic and its attempt to find a minimal set of mathematical axioms for quantum theory.
+
+
+== Statement of the theorem ==
+
+
+=== Conceptual background ===
+In quantum mechanics, each physical system is associated with a Hilbert space. For the purposes of this overview, the Hilbert space is assumed to be finite-dimensional. In the approach codified by John von Neumann, a measurement upon a physical system is represented by a self-adjoint operator on that Hilbert space sometimes termed an "observable". The eigenvectors of such an operator form an orthonormal basis for the Hilbert space, and each possible outcome of that measurement corresponds to one of the vectors comprising the basis. A density operator is a positive-semidefinite operator on the Hilbert space whose trace is equal to 1. In the language of von Weizsäcker, a density operator is a "catalogue of probabilities": for each measurement that can be defined, the probability distribution over the outcomes of that measurement can be computed from the density operator. The procedure for doing so is the Born rule, which states that
+
+  
+    
+      
+        P
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        =
+        Tr
+        ⁡
+        (
+        
+          Π
+          
+            i
+          
+        
+        ρ
+        )
+        ,
+      
+    
+    {\displaystyle P(x_{i})=\operatorname {Tr} (\Pi _{i}\rho ),}
+  
+
+where 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ is the density operator, and 
+  
+    
+      
+        
+          Π
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \Pi _{i}}
+  
+ is the projection operator onto the basis vector corresponding to the measurement outcome 
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x_{i}}
+  
+.
+The Born rule associates a probability with each unit vector in the Hilbert space, in such a way that these probabilities sum to 1 for any set of unit vectors comprising an orthonormal basis. Moreover, the probability associated with a unit vector is a function of the density operator and the unit vector, and not of additional information like a choice of basis for that vector to be embedded in. Gleason's theorem establishes the converse: all assignments of probabilities to unit vectors (or, equivalently, to the operators that project onto them) that satisfy these conditions take the form of applying the Born rule to some density operator. Gleason's theorem holds if the dimension of the Hilbert space is 3 or greater; counterexamples exist for dimension 2.
+
+
+=== Deriving the state space and the Born rule ===
+The probability of any outcome of a measurement upon a quantum system must be a real number between 0 and 1 inclusive, and in order to be consistent, for any individual measurement the probabilities of the different possible outcomes must add up to 1.  Gleason's theorem shows that any function that assigns probabilities to measurement outcomes, as identified by projection operators, must be expressible in terms of a density operator and the Born rule. This gives not only the rule for calculating probabilities, but also determines the set of possible quantum states.
+Let 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ be a function from projection operators to the unit interval with the property that, if a set 
+  
+    
+      
+        {
+        
+          Π
+          
+            i
+          
+        
+        }
+      
+    
+    {\displaystyle \{\Pi _{i}\}}
+  
+ of projection operators sum to the identity matrix (that is, if they correspond to an orthonormal basis), then
+
+  
+    
+      
+        
+          ∑
+          
+            i
+          
+        
+        f
+        (
+        
+          Π
+          
+            i
+          
+        
+        )
+        =
+        1.
+      
+    
+    {\displaystyle \sum _{i}f(\Pi _{i})=1.}
+  
+
+Such a function expresses an assignment of probability values to the outcomes of measurements, an assignment that is "noncontextual" in the sense that the probability for an outcome does not depend upon which measurement that outcome is embedded within, but only upon the mathematical representation of that specific outcome, i.e., its projection operator.: §1.3 : §2.1  Gleason's theorem states that for any such function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, there exists a positive-semidefinite operator 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ with unit trace such that
+
+  
+    
+      
+        f
+        (
+        
+          Π
+          
+            i
+          
+        
+        )
+        =
+        Tr
+        ⁡
+        (
+        
+          Π
+          
+            i
+          
+        
+        ρ
+        )
+        .
+      
+    
+    {\displaystyle f(\Pi _{i})=\operatorname {Tr} (\Pi _{i}\rho ).}
+  
+
+Both the Born rule and the fact that "catalogues of probability" are positive-semidefinite operators of unit trace follow from the assumptions that measurements are represented by orthonormal bases, and that probability assignments are "noncontextual". In order for Gleason's theorem to be applicable, the space on which measurements are defined must be a real or complex Hilbert space, or a quaternionic module. (Gleason's argument is inapplicable if, for example, one tries to construct an analogue of quantum mechanics using p-adic numbers.)
+
+
+== History and outline of Gleason's proof ==
+
+In 1932, John von Neumann also managed to derive the Born rule in his textbook Mathematical Foundations of Quantum Mechanics. However, the assumptions on which von Neumann built his no hidden variables proof were rather strong and eventually regarded to not be well-motivated. Specifically, von Neumann assumed that the probability function must be linear on all observables, commuting or non-commuting. His proof was derided by John Bell as "not merely false but foolish!". Gleason, on the other hand, did not assume linearity, but merely additivity for commuting projectors together with noncontextuality, assumptions seen as better motivated and more physically meaningful.
+By the late 1940s, George Mackey had grown interested in the mathematical foundations of quantum physics, wondering in particular whether the Born rule was the only possible rule for calculating probabilities in a theory that represented measurements as orthonormal bases on a Hilbert space. Mackey discussed this problem with Irving Segal at the University of Chicago, who in turn raised it with Richard Kadison, then a graduate student. Kadison showed that for 2-dimensional Hilbert spaces there exists a probability measure that does not correspond to quantum states and the Born rule. Gleason's result implies that this only happens in dimension 2.
+Gleason's original proof proceeds in three stages.: §2  In Gleason's terminology, a frame function is a real-valued function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ on the unit sphere of a Hilbert space such that
+
+  
+    
+      
+        
+          ∑
+          
+            i
+          
+        
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        =
+        1
+      
+    
+    {\displaystyle \sum _{i}f(x_{i})=1}
+  
+
+whenever the vectors 
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x_{i}}
+  
+ comprise an orthonormal basis. A noncontextual probability assignment as defined in the previous section is equivalent to a frame function. Any such measure that can be written in the standard way, that is, by applying the Born rule to a quantum state, is termed a regular frame function. Gleason derives a sequence of lemmas concerning when a frame function is necessarily regular, culminating in the final theorem. First, he establishes that every continuous frame function on the Hilbert space 
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{3}}
+  
+ is regular. This step makes use of the theory of spherical harmonics. Then, he proves that frame functions on 
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{3}}
+  
+ have to be continuous, which establishes the theorem for the special case of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{3}}
+  
+. This step is regarded as the most difficult of the proof. Finally, he shows that the general problem can be reduced to this special case. Gleason credits one lemma used in this last stage of the proof to his doctoral student Richard Palais.: fn 3 
+Robin Lyth Hudson described Gleason's theorem as "celebrated and notoriously difficult". Cooke, Keane and Moran later produced a proof that is longer than Gleason's but requires fewer prerequisites.
+
+
+== Implications ==
+Gleason's theorem highlights a number of fundamental issues in quantum measurement theory. As Fuchs argues, the theorem "is an extremely powerful result", because "it indicates the extent to which the Born probability rule and even the state-space structure of density operators are dependent upon the theory's other postulates". In consequence, quantum theory is "a tighter package than one might have first thought".: 94–95  Various approaches to rederiving the quantum formalism from alternative axioms have, accordingly, employed Gleason's theorem as a key step, bridging the gap between the structure of Hilbert space and the Born rule.
+
+
+=== Hidden variables ===
+Moreover, the theorem is historically significant for the role it played in ruling out the possibility of certain classes of hidden variables in quantum mechanics. A hidden-variable theory that is deterministic implies that the probability of a given outcome is always either 0 or 1. For example, a Stern–Gerlach measurement on a spin-1 atom will report that the atom's angular momentum along the chosen axis is one of three possible values, which can be designated 
+  
+    
+      
+        −
+      
+    
+    {\displaystyle -}
+  
+, 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+ and 
+  
+    
+      
+        +
+      
+    
+    {\displaystyle +}
+  
+. In a deterministic hidden-variable theory, there exists an underlying physical property that fixes the result found in the measurement. Conditional on the value of the underlying physical property, any given outcome (for example, a result of 
+  
+    
+      
+        +
+      
+    
+    {\displaystyle +}
+  
+) must be either impossible or guaranteed. But Gleason's theorem implies that there can be no such deterministic probability measure. The mapping 
+  
+    
+      
+        u
+        →
+        ⟨
+        ρ
+        u
+        ,
+        u
+        ⟩
+      
+    
+    {\displaystyle u\to \langle \rho u,u\rangle }
+  
+ is continuous on the unit sphere of the Hilbert space for any density operator 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+. Since this unit sphere is connected, no continuous probability measure on it can be deterministic.: §1.3  Gleason's theorem therefore suggests that quantum theory represents a deep and fundamental departure from the classical intuition that uncertainty is due to ignorance about hidden degrees of freedom. More specifically, Gleason's theorem rules out hidden-variable models that are "noncontextual". Any hidden-variable model for quantum mechanics must, in order to avoid the implications of Gleason's theorem, involve hidden variables that are not properties belonging to the measured system alone but also dependent upon the external context in which the measurement is made. This type of dependence is often seen as contrived or undesirable; in some settings, it is inconsistent with special relativity.
+
+To construct a counterexample for 2-dimensional Hilbert space, known as a qubit, let the hidden variable be a unit vector 
+  
+    
+      
+        
+          
+            
+              λ
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\lambda }}}
+  
+ in 3-dimensional Euclidean space. Using the Bloch sphere, each possible measurement on a qubit can be represented as a pair of antipodal points on the unit sphere. Defining the probability of a measurement outcome to be 1 if the point representing that outcome lies in the same hemisphere as 
+  
+    
+      
+        
+          
+            
+              λ
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\lambda }}}
+  
+ and 0 otherwise yields an assignment of probabilities to measurement outcomes that obeys Gleason's assumptions. However, this probability assignment does not correspond to any valid density operator. By introducing a probability distribution over the possible values of 
+  
+    
+      
+        
+          
+            
+              λ
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\lambda }}}
+  
+, a hidden-variable model for a qubit that reproduces the predictions of quantum theory can be constructed.
+Gleason's theorem motivated later work by John Bell, Ernst Specker and Simon Kochen that led to the result often called the Kochen–Specker theorem, which likewise shows that noncontextual hidden-variable models are incompatible with quantum mechanics. As noted above, Gleason's theorem shows that there is no probability measure over the rays of a Hilbert space that only takes the values 0 and 1 (as long as the dimension of that space exceeds 2). The Kochen–Specker theorem refines this statement by constructing a specific finite subset of rays on which no such probability measure can be defined. The fact that such a finite subset of rays must exist follows from Gleason's theorem by way of a logical compactness argument, but this method does not construct the desired set explicitly.: §1  In the related no-hidden-variables result known as Bell's theorem, the assumption that the hidden-variable theory is noncontextual instead is replaced by the assumption that it is local. The same sets of rays used in Kochen–Specker constructions can also be employed to derive Bell-type proofs.
+Pitowsky uses Gleason's theorem to argue that quantum mechanics represents a new theory of probability, one in which the structure of the space of possible events is modified from the classical, Boolean algebra thereof. He regards this as analogous to the way that special relativity modifies the kinematics of Newtonian mechanics.
+The Gleason and Kochen–Specker theorems have been cited in support of various philosophies, including perspectivism, constructive empiricism and agential realism.
+
+
+=== Quantum logic ===
+Gleason's theorem finds application in quantum logic, which makes heavy use of lattice theory.  Quantum logic treats the outcome of a quantum measurement as a logical proposition and studies the relationships and structures formed by these logical propositions. They are organized into a lattice, in which the distributive law, valid in classical logic, is weakened, to reflect the fact that in quantum physics, not all pairs of quantities can be measured simultaneously. The representation theorem in quantum logic shows that such a lattice is isomorphic to the lattice of subspaces of a vector space with a scalar product.: §2   Using Solèr's theorem, the (skew) field K over which the vector space is defined can be proven, with additional hypotheses, to be either the real numbers, complex numbers, or the quaternions, as is needed for Gleason's theorem to hold.: §3 
+By invoking Gleason's theorem, the form of a probability function on lattice elements can be restricted. Assuming that the mapping from lattice elements to probabilities is noncontextual, Gleason's theorem establishes that it must be expressible with the Born rule.
+
+
+== Generalizations ==
+Gleason originally proved the theorem assuming that the measurements applied to the system are of the von Neumann type, i.e., that each possible measurement corresponds to an orthonormal basis of the Hilbert space. Later, Busch and independently Caves et al.: 116  proved an analogous result for a more general class of measurements, known as positive-operator-valued measures (POVMs). The set of all POVMs includes the set of von Neumann measurements, and so the assumptions of this theorem are significantly stronger than Gleason's. This made the proof of this result simpler than Gleason's, and the conclusions stronger. Unlike the original theorem of Gleason, the generalized version using POVMs also applies to the case of a single qubit. Assuming noncontextuality for POVMs is, however, controversial, as POVMs are not fundamental, and some authors defend that noncontextuality should be assumed only for the underlying von Neumann measurements. Gleason's theorem, in its original version, does not hold if the Hilbert space is defined over the rational numbers, i.e., if the components of vectors in the Hilbert space are restricted to be rational numbers, or complex numbers with rational parts. However, when the set of allowed measurements is the set of all POVMs, the theorem holds.: §3.D 
+The original proof by Gleason was not constructive: one of the ideas on which it depends is the fact that every continuous function defined on a compact space attains its minimum. Because one cannot in all cases explicitly show where the minimum occurs, a proof that relies upon this principle will not be a constructive proof. However, the theorem can be reformulated in such a way that a constructive proof can be found.
+Gleason's theorem can be extended to some cases where the observables of the theory form a von Neumann algebra. Specifically, an analogue of Gleason's result can be shown to hold if the algebra of observables has no direct summand that is representable as the algebra of 2×2 matrices over a commutative von Neumann algebra (i.e., no direct summand of type I2). In essence, the only barrier to proving the theorem is the fact that Gleason's original result does not hold when the Hilbert space is that of a qubit.
+
+
+== Notes ==
+
+
+== References ==

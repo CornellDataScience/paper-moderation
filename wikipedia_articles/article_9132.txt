@@ -1,0 +1,74 @@
+Information Logistics (IL) deals with the flow of information between human and / or machine actors within or between any number of organizations that in turn form a value creating network (see, e.g.). IL is closely related to information management, information operations and information technology.
+
+
+== Definition ==
+The term Information Logistics (IL) may be used in either of two ways:
+
+Firstly, it can be defined as "managing and controlling information handling processes optimally with respect to time (flow time and capacity), storage, distribution and presentation in such a way that it contributes to company results in concurrence with the costs of capturing (creation, searching, maintenance etc)." (Petri,2017) Thus IL utilizes logistic principles to optimize information handling.
+Secondly, IL can be seen as a concept using information technology to optimize logistics.
+A term which is closely related to the first meaning of Information Logistics is  Data Logistics, a concept used in Computer Networking.
+"The study of solutions to problems in Computer Systems that flexibly span resources and services relating to Data Movement, Data Storage and Data Processing." [ref?]
+Systems that support general Data Logistics solutions thus must span the traditionally separate fields of Networking, File/Database Systems and Process Management.
+Data Logistics is a more general form of the term Logistical Networking, used as the name of a particular network storage architecture and software stack.
+
+
+== Goal ==
+The goal of Information Logistics is to deliver the right product, consisting of the right information element, in the right format, at the right place at the right time for the right people at the right price and all of  this is  customer demand driven.
+If this goal is to be achieved, knowledge workers are best equipped with information for the task at hand for improved interaction with its customers and machines are enabled to respond automatically to meaningful information.
+Methods for achieving the goal are:
+
+the analysis of information demand
+intelligent information storage
+the optimization of the flow of information
+maintaining both security and organizational flexibility
+integrated information and billing solutions 
+The expression was formed by the Indian mathematician and librarian S. R. Ranganathan .
+The supply of a product is part of the discipline Logistics. The purpose of this discipline is described as follows:
+Logistics is the teachings of the plans and the effective and efficient run of supply. The contemporary logistics focuses on the organization, planning, control and implementation of the flow of goods, money, information and people.
+Information Logistics focusses on information. Information (from Latin informare: "shape, shapes, instruct") means in a general sense everything that adds knowledge and thus reduce ignorance or lack of precision. In a stricter sense, raw data only becomes information to those who can interpret it. Interpreting relevant, related information produces insight that either leads to existing, or eventually builds new, knowledge.
+
+
+== Information element ==
+An information element (IE) is an information component that is located in the organizational value chain.
+The combination of certain IEs leads to an information product (IP), which is any final product in the form of information that a person needs to have.
+When a higher number of different IEs are required, it often results in more planning problems in capacity and inherently leads to a non-delivery of the IP.
+To illustrate the concept of an IP, an example is shown of a bottleneck analysis in HR (by J. Willems 2008). Here, the illustration shows how the information elements (e.g. qualifications) build up the information product (e.g. HR file).
+
+
+== Data logistics ==
+Data logistics is a concept that developed independently of information logistics in the 1990s, in response to the explosion of Internet content and traffic due to the invention of the World Wide Web (WWW).
+Some motivations for the emergence of interest in Data Logistics included:
+
+The incorporation of network hyperlinks into content encoded in HTML encouraged  users to freely dereference those links without regard to, or in many cases without even having any knowledge of, the identity (much less the geographical or network topological location of) the target Web server.
+The growth in the volume of Web hits, combined with the steady increase in the size of Web-delivered objects such as images, audio and video clips resulted in the localized overloading of the bandwidth and processing resources of the local and/or wide area network and/or the Web server infrastructure.
+The resulting Internet bottleneck can cause Web clients to experience poor performance or complete denial of access to servers that host high volume sites (the so-called Slashdot effect).
+
+The growth in all Internet traffic, especially across international telecommunication links, resulted in stress to institutional infrastructure and high costs on networks that billed Internet traffic on a per-use basis.
+Much of this traffic was redundant, the results of repeated requests by many independent users to access the same stored files and content.
+Large files and content retrieved from distant Web servers was often delayed due to high delays experienced over long and complex Internet paths.
+These factors led to interest in the use of large scale storage (and to a lesser extent, processing) resources to cache the response to network requests, first at the Internet endpoint using a Web browser cache and later at intermediate network locations using shared network caches.
+This line of development also gave rise to Web server replication and other techniques for offloading and distributing the work of delivering large volume Web services to widely dispersed client communities, ultimately resulting in the creation of modern Content delivery networks.
+At the same time, research efforts in server replication and content delivery gave rise to a number of related projects and strategies, including Logistical Networking (LN).
+The name LN was intended as an analogy to physical supply chain logistics, in which goods are not only carried from source to destination on networks of roads, but are also stored at warehouses located throughout the transportation infrastructure.
+This led to a nomenclature in which LN network storage resources are termed "storage depots".
+The principles that underpin LN have been abstracted into the more general study of scheduling and optimization across the traditional infrastructure silos of Storage, Networking and Processing which was named Data Logistics.
+
+
+=== Illustrative examples of data logistics ===
+Data Caching and Replication are classic examples of Data Logistics solutions to problems in Computer Systems and Networking with high data access latencies or data transfer resource limitations. It works mainly across the areas of data transfer and data storage.
+Dynamic Compression in data transfer is another example which uses computational resources to minimize the bandwidth requirements of data transfer.
+
+
+== See also ==
+Data warehousing
+Information lifecycle management
+Transformational outsourcing
+
+
+== Sources ==
+"IL quadrants for information access technology" by Olthof and Willems 2008
+"Information Logistics Research Report:Framework in the healthcare industry" by Willems, Willems and Hajdasinski 2009
+"From Having to Using" by Willems 2008 Information Logistics Working Paper Nyenrode
+
+
+== References ==

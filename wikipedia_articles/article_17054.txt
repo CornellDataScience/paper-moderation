@@ -1,0 +1,2104 @@
+In the mathematical field of numerical analysis, De Casteljau's algorithm is a recursive method to evaluate polynomials in Bernstein form or Bézier curves, named after its inventor Paul de Casteljau. De Casteljau's algorithm can also be used to split a single Bézier curve into two Bézier curves at an arbitrary parameter value.
+The algorithm is numerically stable when compared to direct evaluation of polynomials. The computational complexity of this algorithm is 
+  
+    
+      
+        O
+        (
+        d
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle O(dn^{2})}
+  
+, where d is the number of dimensions, and n is the number of control points. There exist faster alternatives.
+
+
+== Definition ==
+A Bézier curve 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ (of degree 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, with control points 
+  
+    
+      
+        
+          β
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          β
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \beta _{0},\ldots ,\beta _{n}}
+  
+) can be written in Bernstein form as follows
+
+  
+    
+      
+        B
+        (
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          β
+          
+            i
+          
+        
+        
+          b
+          
+            i
+            ,
+            n
+          
+        
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle B(t)=\sum _{i=0}^{n}\beta _{i}b_{i,n}(t),}
+  
+
+where 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ is a Bernstein basis polynomial
+
+  
+    
+      
+        
+          b
+          
+            i
+            ,
+            n
+          
+        
+        (
+        t
+        )
+        =
+        
+          
+            
+              (
+            
+            
+              n
+              i
+            
+            
+              )
+            
+          
+        
+        (
+        1
+        −
+        t
+        
+          )
+          
+            n
+            −
+            i
+          
+        
+        
+          t
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle b_{i,n}(t)={n \choose i}(1-t)^{n-i}t^{i}.}
+  
+
+The curve at point 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\displaystyle t_{0}}
+  
+ can be evaluated with the recurrence relation
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  β
+                  
+                    i
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+                
+                :=
+                
+                  β
+                  
+                    i
+                  
+                
+                ,
+              
+              
+              
+                i
+                =
+                0
+                ,
+                …
+                ,
+                n
+              
+            
+            
+              
+                
+                  β
+                  
+                    i
+                  
+                  
+                    (
+                    j
+                    )
+                  
+                
+              
+              
+                
+                :=
+                
+                  β
+                  
+                    i
+                  
+                  
+                    (
+                    j
+                    −
+                    1
+                    )
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    i
+                    +
+                    1
+                  
+                  
+                    (
+                    j
+                    −
+                    1
+                    )
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+                ,
+              
+              
+              
+                i
+                =
+                0
+                ,
+                …
+                ,
+                n
+                −
+                j
+                ,
+                 
+                 
+                j
+                =
+                1
+                ,
+                …
+                ,
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\beta _{i}^{(0)}&:=\beta _{i},&&i=0,\ldots ,n\\\beta _{i}^{(j)}&:=\beta _{i}^{(j-1)}(1-t_{0})+\beta _{i+1}^{(j-1)}t_{0},&&i=0,\ldots ,n-j,\ \ j=1,\ldots ,n\end{aligned}}}
+  
+
+Then, the evaluation of 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ at point 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\displaystyle t_{0}}
+  
+ can be evaluated in 
+  
+    
+      
+        
+          
+            
+              (
+            
+            
+              n
+              2
+            
+            
+              )
+            
+          
+        
+      
+    
+    {\textstyle {\binom {n}{2}}}
+  
+ operations. The result 
+  
+    
+      
+        B
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle B(t_{0})}
+  
+ is given by
+
+  
+    
+      
+        B
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+        =
+        
+          β
+          
+            0
+          
+          
+            (
+            n
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle B(t_{0})=\beta _{0}^{(n)}.}
+  
+
+Moreover, the Bézier curve 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ can be split at point 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\displaystyle t_{0}}
+  
+ into two curves with respective control points:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+                ,
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+                ,
+                …
+                ,
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    n
+                    )
+                  
+                
+              
+            
+            
+              
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    n
+                    )
+                  
+                
+                ,
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    n
+                    −
+                    1
+                    )
+                  
+                
+                ,
+                …
+                ,
+                
+                  β
+                  
+                    n
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&\beta _{0}^{(0)},\beta _{0}^{(1)},\ldots ,\beta _{0}^{(n)}\\[1ex]&\beta _{0}^{(n)},\beta _{1}^{(n-1)},\ldots ,\beta _{n}^{(0)}\end{aligned}}}
+  
+
+
+=== Geometric interpretation ===
+The geometric interpretation of De Casteljau's algorithm is straightforward. 
+
+Consider a Bézier curve with control points 
+  
+    
+      
+        
+          P
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          P
+          
+            n
+          
+        
+      
+    
+    {\displaystyle P_{0},\dots ,P_{n}}
+  
+. Connecting the consecutive points we create the control polygon of the curve.
+Subdivide now each line segment of this polygon with the ratio 
+  
+    
+      
+        t
+        :
+        (
+        1
+        −
+        t
+        )
+      
+    
+    {\displaystyle t:(1-t)}
+  
+ and connect the points you get. This way you arrive at the new polygon having one fewer segment.
+Repeat the process until you arrive at the single point – this is the point of the curve corresponding to the parameter 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+.
+The following picture shows this process for a cubic Bézier curve:
+
+Note that the intermediate points that were constructed are in fact the control points for two new Bézier curves, both exactly coincident with the old one. This algorithm not only evaluates the curve at 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+, but splits the curve into two pieces at 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+, and provides the equations of the two sub-curves in Bézier form.
+The interpretation given above is valid for a nonrational Bézier curve. To evaluate a rational Bézier curve in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbf {R} ^{n}}
+  
+, we may project the point into 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle \mathbf {R} ^{n+1}}
+  
+; for example, a curve in three dimensions may have its control points 
+  
+    
+      
+        {
+        (
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          y
+          
+            i
+          
+        
+        ,
+        
+          z
+          
+            i
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle \{(x_{i},y_{i},z_{i})\}}
+  
+ and weights 
+  
+    
+      
+        {
+        
+          w
+          
+            i
+          
+        
+        }
+      
+    
+    {\displaystyle \{w_{i}\}}
+  
+ projected to the weighted control points 
+  
+    
+      
+        {
+        (
+        
+          w
+          
+            i
+          
+        
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          w
+          
+            i
+          
+        
+        
+          y
+          
+            i
+          
+        
+        ,
+        
+          w
+          
+            i
+          
+        
+        
+          z
+          
+            i
+          
+        
+        ,
+        
+          w
+          
+            i
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle \{(w_{i}x_{i},w_{i}y_{i},w_{i}z_{i},w_{i})\}}
+  
+. The algorithm then proceeds as usual, interpolating in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            4
+          
+        
+      
+    
+    {\displaystyle \mathbf {R} ^{4}}
+  
+. The resulting four-dimensional points may be projected back into three-space with a perspective divide.
+In general, operations on a rational curve (or surface) are equivalent to operations on a nonrational curve in a projective space. This representation as the "weighted control points" and weights is often convenient when evaluating rational curves.
+
+
+=== Notation ===
+When doing the calculation by hand it is useful to write down the coefficients in a triangle scheme as
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  β
+                  
+                    0
+                  
+                
+              
+              
+                =
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+              
+              
+            
+            
+              
+              
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+              
+              
+              
+            
+            
+              
+                
+                  β
+                  
+                    1
+                  
+                
+              
+              
+                =
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+              
+              
+            
+            
+              
+              
+              
+              
+                ⋱
+              
+              
+            
+            
+              
+                ⋮
+              
+              
+              
+                ⋮
+              
+              
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    n
+                    )
+                  
+                
+              
+            
+            
+              
+              
+              
+              
+              
+            
+            
+              
+                
+                  β
+                  
+                    n
+                    −
+                    1
+                  
+                
+              
+              
+                =
+                
+                  β
+                  
+                    n
+                    −
+                    1
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+              
+              
+            
+            
+              
+              
+              
+                
+                  β
+                  
+                    n
+                    −
+                    1
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+              
+              
+              
+            
+            
+              
+                
+                  β
+                  
+                    n
+                  
+                
+              
+              
+                =
+                
+                  β
+                  
+                    n
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}\beta _{0}&=\beta _{0}^{(0)}&&&\\&&\beta _{0}^{(1)}&&\\\beta _{1}&=\beta _{1}^{(0)}&&&\\&&&\ddots &\\\vdots &&\vdots &&\beta _{0}^{(n)}\\&&&&\\\beta _{n-1}&=\beta _{n-1}^{(0)}&&&\\&&\beta _{n-1}^{(1)}&&\\\beta _{n}&=\beta _{n}^{(0)}&&&\\\end{matrix}}}
+  
+
+When choosing a point t0 to evaluate a Bernstein polynomial we can use the two diagonals of the triangle scheme to construct a division of the polynomial
+
+  
+    
+      
+        B
+        (
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          β
+          
+            i
+          
+          
+            (
+            0
+            )
+          
+        
+        
+          b
+          
+            i
+            ,
+            n
+          
+        
+        (
+        t
+        )
+        ,
+        
+        t
+        ∈
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle B(t)=\sum _{i=0}^{n}\beta _{i}^{(0)}b_{i,n}(t),\quad t\in [0,1]}
+  
+
+into
+
+  
+    
+      
+        
+          B
+          
+            1
+          
+        
+        (
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          β
+          
+            0
+          
+          
+            (
+            i
+            )
+          
+        
+        
+          b
+          
+            i
+            ,
+            n
+          
+        
+        
+          (
+          
+            
+              t
+              
+                t
+                
+                  0
+                
+              
+            
+          
+          )
+        
+        
+        ,
+        
+        t
+        ∈
+        [
+        0
+        ,
+        
+          t
+          
+            0
+          
+        
+        ]
+      
+    
+    {\displaystyle B_{1}(t)=\sum _{i=0}^{n}\beta _{0}^{(i)}b_{i,n}\left({\frac {t}{t_{0}}}\right)\!,\quad t\in [0,t_{0}]}
+  
+
+and
+
+  
+    
+      
+        
+          B
+          
+            2
+          
+        
+        (
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          β
+          
+            i
+          
+          
+            (
+            n
+            −
+            i
+            )
+          
+        
+        
+          b
+          
+            i
+            ,
+            n
+          
+        
+        
+          (
+          
+            
+              
+                t
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+              
+              
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+              
+            
+          
+          )
+        
+        
+        ,
+        
+        t
+        ∈
+        [
+        
+          t
+          
+            0
+          
+        
+        ,
+        1
+        ]
+        .
+      
+    
+    {\displaystyle B_{2}(t)=\sum _{i=0}^{n}\beta _{i}^{(n-i)}b_{i,n}\left({\frac {t-t_{0}}{1-t_{0}}}\right)\!,\quad t\in [t_{0},1].}
+  
+
+
+== Bézier curve ==
+
+When evaluating a Bézier curve of degree n in 3-dimensional space with n + 1 control points Pi
+
+  
+    
+      
+        
+          B
+        
+        (
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          
+            P
+          
+          
+            i
+          
+        
+        
+          b
+          
+            i
+            ,
+            n
+          
+        
+        (
+        t
+        )
+        ,
+         
+        t
+        ∈
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle \mathbf {B} (t)=\sum _{i=0}^{n}\mathbf {P} _{i}b_{i,n}(t),\ t\in [0,1]}
+  
+
+with
+
+  
+    
+      
+        
+          
+            P
+          
+          
+            i
+          
+        
+        :=
+        
+          
+            (
+            
+              
+                
+                  
+                    x
+                    
+                      i
+                    
+                  
+                
+              
+              
+                
+                  
+                    y
+                    
+                      i
+                    
+                  
+                
+              
+              
+                
+                  
+                    z
+                    
+                      i
+                    
+                  
+                
+              
+            
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {P} _{i}:={\begin{pmatrix}x_{i}\\y_{i}\\z_{i}\end{pmatrix}},}
+  
+
+we split the Bézier curve into three separate equations
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  B
+                  
+                    1
+                  
+                
+                (
+                t
+                )
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                    =
+                    0
+                  
+                  
+                    n
+                  
+                
+                
+                  x
+                  
+                    i
+                  
+                
+                
+                  b
+                  
+                    i
+                    ,
+                    n
+                  
+                
+                (
+                t
+                )
+                ,
+              
+              
+                t
+                ∈
+                [
+                0
+                ,
+                1
+                ]
+              
+            
+            
+              
+                
+                  B
+                  
+                    2
+                  
+                
+                (
+                t
+                )
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                    =
+                    0
+                  
+                  
+                    n
+                  
+                
+                
+                  y
+                  
+                    i
+                  
+                
+                
+                  b
+                  
+                    i
+                    ,
+                    n
+                  
+                
+                (
+                t
+                )
+                ,
+              
+              
+                t
+                ∈
+                [
+                0
+                ,
+                1
+                ]
+              
+            
+            
+              
+                
+                  B
+                  
+                    3
+                  
+                
+                (
+                t
+                )
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                    =
+                    0
+                  
+                  
+                    n
+                  
+                
+                
+                  z
+                  
+                    i
+                  
+                
+                
+                  b
+                  
+                    i
+                    ,
+                    n
+                  
+                
+                (
+                t
+                )
+                ,
+              
+              
+                t
+                ∈
+                [
+                0
+                ,
+                1
+                ]
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}B_{1}(t)&=\sum _{i=0}^{n}x_{i}b_{i,n}(t),&t\in [0,1]\\[1ex]B_{2}(t)&=\sum _{i=0}^{n}y_{i}b_{i,n}(t),&t\in [0,1]\\[1ex]B_{3}(t)&=\sum _{i=0}^{n}z_{i}b_{i,n}(t),&t\in [0,1]\end{aligned}}}
+  
+
+which we evaluate individually using De Casteljau's algorithm.
+
+
+== Example ==
+We want to evaluate the Bernstein polynomial of degree 2 with the Bernstein coefficients
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+                
+                =
+                
+                  β
+                  
+                    0
+                  
+                
+              
+            
+            
+              
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+                
+                =
+                
+                  β
+                  
+                    1
+                  
+                
+              
+            
+            
+              
+                
+                  β
+                  
+                    2
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+              
+              
+                
+                =
+                
+                  β
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\beta _{0}^{(0)}&=\beta _{0}\\[1ex]\beta _{1}^{(0)}&=\beta _{1}\\[1ex]\beta _{2}^{(0)}&=\beta _{2}\end{aligned}}}
+  
+
+at the point t0.
+We start the recursion with
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+              
+              
+              
+                =
+              
+              
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+              
+              
+              
+                =
+              
+              
+              
+                
+                  β
+                  
+                    0
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    1
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+              
+            
+            
+              
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+              
+              
+              
+                =
+              
+              
+              
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    2
+                  
+                  
+                    (
+                    0
+                    )
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+              
+              
+              
+                =
+              
+              
+              
+                
+                  β
+                  
+                    1
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    2
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\beta _{0}^{(1)}&&=&&\beta _{0}^{(0)}(1-t_{0})+\beta _{1}^{(0)}t_{0}&&=&&\beta _{0}(1-t_{0})+\beta _{1}t_{0}\\[1ex]\beta _{1}^{(1)}&&=&&\beta _{1}^{(0)}(1-t_{0})+\beta _{2}^{(0)}t_{0}&&=&&\beta _{1}(1-t_{0})+\beta _{2}t_{0}\end{aligned}}}
+  
+
+and with the second iteration the recursion stops with
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    2
+                    )
+                  
+                
+              
+              
+                
+                =
+                
+                  β
+                  
+                    0
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    1
+                  
+                  
+                    (
+                    1
+                    )
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+              
+            
+            
+              
+                 
+              
+              
+                
+                =
+                
+                  β
+                  
+                    0
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    1
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    1
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                
+                  t
+                  
+                    0
+                  
+                
+                +
+                
+                  β
+                  
+                    2
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                
+              
+            
+            
+              
+                 
+              
+              
+                
+                =
+                
+                  β
+                  
+                    0
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                
+                  )
+                  
+                    2
+                  
+                
+                +
+                
+                  β
+                  
+                    1
+                  
+                
+                2
+                
+                  t
+                  
+                    0
+                  
+                
+                (
+                1
+                −
+                
+                  t
+                  
+                    0
+                  
+                
+                )
+                +
+                
+                  β
+                  
+                    2
+                  
+                
+                
+                  t
+                  
+                    0
+                  
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\beta _{0}^{(2)}&=\beta _{0}^{(1)}(1-t_{0})+\beta _{1}^{(1)}t_{0}\\\ &=\beta _{0}(1-t_{0})(1-t_{0})+\beta _{1}t_{0}(1-t_{0})+\beta _{1}(1-t_{0})t_{0}+\beta _{2}t_{0}t_{0}\\\ &=\beta _{0}(1-t_{0})^{2}+\beta _{1}2t_{0}(1-t_{0})+\beta _{2}t_{0}^{2}\end{aligned}}}
+  
+
+which is the expected Bernstein polynomial of degree 2.
+
+
+== Implementations ==
+Here are example implementations of De Casteljau's algorithm in various programming languages.
+
+
+=== Haskell ===
+
+
+=== Python ===
+
+
+=== Java ===
+
+
+=== Code Example in JavaScript ===
+The following JavaScript function applies De Casteljau's algorithm to an array of control points or poles as originally named by De Casteljau to reduce them one by one until reaching a point in the curve for a given t between 0 for the first point of the curve and 1 for the last one
+
+For example,
+
+       var poles = [ [0, 128], [128, 0], [256, 0], [384, 128] ] 
+       crlPtReduceDeCasteljau (poles, .5)
+
+returns the array
+
+       [ [ [0, 128], [128, 0], [256, 0], [384, 128 ] ], 
+         [ [64, 64], [192, 0], [320, 64] ], 
+         [ [128, 32], [256, 32]], 
+         [ [192, 32]], 
+       ]
+
+Which points and segments joining them are plotted below
+
+
+== See also ==
+Bézier curves
+De Boor's algorithm
+Horner scheme to evaluate polynomials in monomial form
+Clenshaw algorithm to evaluate polynomials in Chebyshev form
+
+
+== References ==
+
+Farin, Gerald E.; Hansford, Dianne (2000). The Essentials of CAGD. Natick, MA: A.K. Peters. ISBN 978-1-56881-123-9.
+
+
+== External links ==
+Piecewise linear approximation of Bézier curves – description of De Casteljau's algorithm, including a criterion to determine when to stop the recursion
+Bézier Curves and Picasso  — Description and illustration of De Casteljau's algorithm applied to cubic Bézier curves.
+de Casteljau's algorithm - Implementation help and interactive demonstration of the algorithm.

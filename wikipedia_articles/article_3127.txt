@@ -1,0 +1,832 @@
+Many-sorted logic can reflect formally our intention not to handle the universe as a homogeneous collection of objects, but to partition it in a way that is similar to types in typeful programming. Both functional and assertive "parts of speech" in the language of the logic reflect this typeful partitioning of the universe, even on the syntax level: substitution and argument passing can be done only accordingly, respecting the "sorts".
+There are various ways to formalize the intention mentioned above; a many-sorted logic is any package of information which fulfils it. In most cases, the following are given:
+
+a set of sorts, S
+an appropriate generalization of the notion of signature to be able to handle the additional information that comes with the sorts.
+The domain of discourse of any structure of that signature is then fragmented into disjoint subsets, one for every sort.
+
+
+== Example ==
+When reasoning about biological organisms, it is useful to distinguish two sorts: 
+  
+    
+      
+        
+          p
+          l
+          a
+          n
+          t
+        
+      
+    
+    {\displaystyle \mathrm {plant} }
+  
+ and 
+  
+    
+      
+        
+          a
+          n
+          i
+          m
+          a
+          l
+        
+      
+    
+    {\displaystyle \mathrm {animal} }
+  
+. While a function 
+  
+    
+      
+        
+          m
+          o
+          t
+          h
+          e
+          r
+        
+        :
+        
+          a
+          n
+          i
+          m
+          a
+          l
+        
+        →
+        
+          a
+          n
+          i
+          m
+          a
+          l
+        
+      
+    
+    {\displaystyle \mathrm {mother} \colon \mathrm {animal} \to \mathrm {animal} }
+  
+ makes sense, a similar function 
+  
+    
+      
+        
+          m
+          o
+          t
+          h
+          e
+          r
+        
+        :
+        
+          p
+          l
+          a
+          n
+          t
+        
+        →
+        
+          p
+          l
+          a
+          n
+          t
+        
+      
+    
+    {\displaystyle \mathrm {mother} \colon \mathrm {plant} \to \mathrm {plant} }
+  
+ usually does not. Many-sorted logic allows one to have terms like 
+  
+    
+      
+        
+          m
+          o
+          t
+          h
+          e
+          r
+        
+        (
+        
+          l
+          a
+          s
+          s
+          i
+          e
+        
+        )
+      
+    
+    {\displaystyle \mathrm {mother} (\mathrm {lassie} )}
+  
+, but to discard terms like 
+  
+    
+      
+        
+          m
+          o
+          t
+          h
+          e
+          r
+        
+        (
+        
+          m
+          y
+          _
+          f
+          a
+          v
+          o
+          r
+          i
+          t
+          e
+          _
+          o
+          a
+          k
+        
+        )
+      
+    
+    {\displaystyle \mathrm {mother} (\mathrm {my\_favorite\_oak} )}
+  
+ as syntactically ill-formed.
+
+
+== Algebraization ==
+The algebraization of many-sorted logic is explained in an article by Caleiro and Gonçalves, which generalizes abstract algebraic logic to the many-sorted case, but can also be used as introductory material.
+
+
+== Order-sorted logic ==
+
+While many-sorted logic requires two distinct sorts to have disjoint universe sets, order-sorted logic allows one sort 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+      
+    
+    {\displaystyle s_{1}}
+  
+ to be declared a subsort of another sort 
+  
+    
+      
+        
+          s
+          
+            2
+          
+        
+      
+    
+    {\displaystyle s_{2}}
+  
+, usually by writing 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+        ⊆
+        
+          s
+          
+            2
+          
+        
+      
+    
+    {\displaystyle s_{1}\subseteq s_{2}}
+  
+ or similar syntax. In the above biology example, it is desirable to declare 
+
+  
+    
+      
+        
+          dog
+        
+        ⊆
+        
+          carnivore
+        
+      
+    
+    {\displaystyle {\text{dog}}\subseteq {\text{carnivore}}}
+  
+,
+
+  
+    
+      
+        
+          dog
+        
+        ⊆
+        
+          mammal
+        
+      
+    
+    {\displaystyle {\text{dog}}\subseteq {\text{mammal}}}
+  
+,
+
+  
+    
+      
+        
+          carnivore
+        
+        ⊆
+        
+          animal
+        
+      
+    
+    {\displaystyle {\text{carnivore}}\subseteq {\text{animal}}}
+  
+,
+
+  
+    
+      
+        
+          mammal
+        
+        ⊆
+        
+          animal
+        
+      
+    
+    {\displaystyle {\text{mammal}}\subseteq {\text{animal}}}
+  
+,
+
+  
+    
+      
+        
+          animal
+        
+        ⊆
+        
+          organism
+        
+      
+    
+    {\displaystyle {\text{animal}}\subseteq {\text{organism}}}
+  
+,
+
+  
+    
+      
+        
+          plant
+        
+        ⊆
+        
+          organism
+        
+      
+    
+    {\displaystyle {\text{plant}}\subseteq {\text{organism}}}
+  
+,
+and so on; cf. picture.
+Wherever a term of some sort 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ is required, a term of any subsort of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ may be supplied instead (Liskov substitution principle). For example, assuming a function declaration 
+  
+    
+      
+        
+          mother
+        
+        :
+        
+          animal
+        
+        ⟶
+        
+          animal
+        
+      
+    
+    {\displaystyle {\text{mother}}:{\text{animal}}\longrightarrow {\text{animal}}}
+  
+, and a constant declaration 
+  
+    
+      
+        
+          lassie
+        
+        :
+        
+          dog
+        
+      
+    
+    {\displaystyle {\text{lassie}}:{\text{dog}}}
+  
+, the term  
+  
+    
+      
+        
+          mother
+        
+        (
+        
+          lassie
+        
+        )
+      
+    
+    {\displaystyle {\text{mother}}({\text{lassie}})}
+  
+ is perfectly valid and has the sort 
+  
+    
+      
+        
+          animal
+        
+      
+    
+    {\displaystyle {\text{animal}}}
+  
+. In order to supply the information that the mother of a dog is a dog in turn, another declaration  
+  
+    
+      
+        
+          mother
+        
+        :
+        
+          dog
+        
+        ⟶
+        
+          dog
+        
+      
+    
+    {\displaystyle {\text{mother}}:{\text{dog}}\longrightarrow {\text{dog}}}
+  
+ may be issued; this is called function overloading, similar to overloading in programming languages.
+Order-sorted logic can be translated into unsorted logic, using a unary predicate 
+  
+    
+      
+        
+          p
+          
+            i
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle p_{i}(x)}
+  
+ for each sort 
+  
+    
+      
+        
+          s
+          
+            i
+          
+        
+      
+    
+    {\displaystyle s_{i}}
+  
+, and an axiom 
+  
+    
+      
+        ∀
+        x
+        (
+        
+          p
+          
+            i
+          
+        
+        (
+        x
+        )
+        →
+        
+          p
+          
+            j
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle \forall x(p_{i}(x)\rightarrow p_{j}(x))}
+  
+ for each subsort declaration 
+  
+    
+      
+        
+          s
+          
+            i
+          
+        
+        ⊆
+        
+          s
+          
+            j
+          
+        
+      
+    
+    {\displaystyle s_{i}\subseteq s_{j}}
+  
+. The reverse approach was successful in automated theorem proving: in 1985, Christoph Walther could solve a then benchmark problem by translating it into order-sorted logic, thereby boiling it down an order of magnitude, as many unary predicates turned into sorts.
+In order to incorporate order-sorted logic into a clause-based automated theorem prover, a corresponding order-sorted unification algorithm is necessary, which requires for any two declared sorts 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+        ,
+        
+          s
+          
+            2
+          
+        
+      
+    
+    {\displaystyle s_{1},s_{2}}
+  
+ their intersection 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+        ∩
+        
+          s
+          
+            2
+          
+        
+      
+    
+    {\displaystyle s_{1}\cap s_{2}}
+  
+ to be declared, too: if 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x_{1}}
+  
+ and 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{2}}
+  
+ are variables of sort 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+      
+    
+    {\displaystyle s_{1}}
+  
+ and 
+  
+    
+      
+        
+          s
+          
+            2
+          
+        
+      
+    
+    {\displaystyle s_{2}}
+  
+, respectively, the equation 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        
+          
+            
+              
+                =
+              
+              
+                ?
+              
+            
+          
+        
+        
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{1}{\stackrel {?}{=}}\,x_{2}}
+  
+ has the solution 
+  
+    
+      
+        {
+        
+          x
+          
+            1
+          
+        
+        =
+        x
+        ,
+        
+        
+          x
+          
+            2
+          
+        
+        =
+        x
+        }
+      
+    
+    {\displaystyle \{x_{1}=x,\;x_{2}=x\}}
+  
+, where 
+  
+    
+      
+        x
+        :
+        
+          s
+          
+            1
+          
+        
+        ∩
+        
+          s
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x:s_{1}\cap s_{2}}
+  
+.
+Smolka generalized order-sorted logic to allow for parametric polymorphism.
+In his framework, subsort declarations are propagated to complex type expressions.
+As a programming example, a parametric sort 
+  
+    
+      
+        
+          list
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle {\text{list}}(X)}
+  
+ may be declared (with 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ being a type parameter as in a C++ template), and from a subsort declaration 
+  
+    
+      
+        
+          int
+        
+        ⊆
+        
+          float
+        
+      
+    
+    {\displaystyle {\text{int}}\subseteq {\text{float}}}
+  
+ the relation 
+  
+    
+      
+        
+          list
+        
+        (
+        
+          int
+        
+        )
+        ⊆
+        
+          list
+        
+        (
+        
+          float
+        
+        )
+      
+    
+    {\displaystyle {\text{list}}({\text{int}})\subseteq {\text{list}}({\text{float}})}
+  
+ is automatically inferred, meaning that each list of integers is also a list of floats.
+Schmidt-Schauß generalized order-sorted logic to allow for term declarations.
+As an example, assuming subsort declarations 
+  
+    
+      
+        
+          even
+        
+        ⊆
+        
+          int
+        
+      
+    
+    {\displaystyle {\text{even}}\subseteq {\text{int}}}
+  
+ and 
+  
+    
+      
+        
+          odd
+        
+        ⊆
+        
+          int
+        
+      
+    
+    {\displaystyle {\text{odd}}\subseteq {\text{int}}}
+  
+, a term declaration like 
+  
+    
+      
+        ∀
+        i
+        :
+        
+          int
+        
+        .
+        
+        (
+        i
+        +
+        i
+        )
+        :
+        
+          even
+        
+      
+    
+    {\displaystyle \forall i:{\text{int}}.\;(i+i):{\text{even}}}
+  
+ allows to declare a property of integer addition that could not be expressed by ordinary overloading.
+
+
+== See also ==
+
+Categorical logic
+First-order_logic#Many-sorted_logic
+
+
+== References ==
+
+Early papers on many-sorted logic include:
+
+Wang, Hao (1952). "Logic of many-sorted theories". Journal of Symbolic Logic. 17 (2): 105–116. doi:10.2307/2266241. JSTOR 2266241., collected in the author's Computation, Logic, Philosophy. A Collection of Essays, Beijing: Science Press; Dordrecht: Kluwer Academic, 1990.
+Gilmore, P.C. (1958). "An addition to "Logic of many-sorted theories"" (PDF). Compositio Mathematica. 13: 277–281.
+A. Oberschelp (1962). "Untersuchungen zur mehrsortigen Quantorenlogik". Mathematische Annalen. 145 (4): 297–333. doi:10.1007/bf01396685. S2CID 123363080. Archived from the original on 2015-02-20. Retrieved 2013-09-11.
+F. Jeffry Pelletier (1972). "Sortal Quantification and Restricted Quantification" (PDF). Philosophical Studies. 23 (6): 400–404. doi:10.1007/bf00355532. S2CID 170303654.
+
+
+== External links ==
+"Many-sorted Logic", the first chapter in Lecture Notes on Decision Procedures by Calogero G. Zarba

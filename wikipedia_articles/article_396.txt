@@ -1,0 +1,311 @@
+In mathematical logic and theoretical computer science, a register machine is a generic class of abstract machines, analogous to a Turing machine and thus Turing complete. Unlike a Turing machine that uses a tape and head, a register machine utilizes multiple uniquely addressed registers to store non-negative integers. There are several sub-classes of register machines, including counter machines, pointer machines, random-access machines (RAM), and Random-Access Stored-Program Machine (RASP), each varying in complexity. These machines, particularly in theoretical studies, help in understanding computational processes. The concept of register machines can also be applied to virtual machines in practical computer science, for educational purposes and reducing dependency on specific hardware architectures.
+
+
+== Overview ==
+The register machine gets its name from its use of one or more "registers". In contrast to the tape and head used by a Turing machine, the model uses multiple uniquely addressed registers, each of which holds a single non-negative integer.
+There are at least four sub-classes found in the literature. In ascending order of complexity:
+
+Counter machine – the most primitive and reduced theoretical model of computer hardware. This machine lacks indirect addressing, and instructions are in the finite state machine in the manner of the Harvard architecture.
+Pointer machine – a blend of the counter machine and RAM models with less common and more abstract than either model. Instructions are in the finite state machine in the manner of Harvard architecture.
+Random-access machine (RAM) – a counter machine with indirect addressing and, usually, an augmented instruction set. Instructions are in the finite state machine in the manner of the Harvard architecture.
+Random-access stored-program machine model (RASP) – a RAM with instructions in its registers analogous to the Universal Turing machine, making it an example of the von Neumann architecture. But unlike a computer, the model is idealized with effectively infinite registers (and if used, effectively infinite special registers such as accumulators). As compared to a modern computer, however, the instruction set is still reduced in number and complexity.
+Any properly defined register machine model is Turing complete. Computational speed is very dependent on the model specifics.
+In practical computer science, a related concept known as a virtual machine is occasionally employed to reduce reliance on underlying machine architectures. These virtual machines are also utilized in educational settings. In textbooks, the term "register machine" is sometimes used interchangeably to describe a virtual machine.
+
+
+== Formal Definition ==
+A register machine consists of:
+
+An unbounded number of labelled, discrete, unbounded registers unbounded in extent (capacity): a finite (or infinite in some models) set of registers 
+  
+    
+      
+        
+          r
+          
+            0
+          
+        
+        …
+        
+          r
+          
+            n
+          
+        
+      
+    
+    {\displaystyle r_{0}\ldots r_{n}}
+  
+ each considered to be of infinite extent and each holding a single non-negative integer (0, 1, 2, ...). The registers may do their own arithmetic, or there may be one or more special registers that do the arithmetic (e.g. an "accumulator" and/or "address register"). See also Random-access machine.
+Tally counters or marks: discrete, indistinguishable objects or marks of only one sort suitable for the model. In the most-reduced counter machine model, per each arithmetic operation only one object/mark is either added to or removed from its location/tape. In some counter machine models (e.g. Melzak, Minsky) and most RAM and RASP models more than one object/mark can be added or removed in one operation with "addition" and usually "subtraction"; sometimes with "multiplication" and/or "division". Some models have control operations such as "copy" (or alternatively: "move", "load", "store") that move "clumps" of objects/marks from register to register in one action.
+A limited set of instructions: the instructions tend to divide into two classes: arithmetic and control. The instructions are drawn from the two classes to form "instruction sets", such that an instruction set must allow the model to be Turing equivalent (it must be able to compute any partial recursive function).
+Arithmetic: Arithmetic instructions may operate on all registers or on a specific register, such as an accumulator. Typically, they are selected from the following sets, though exceptions exist: Counter machine: { Increment (r), Decrement (r), Clear-to-zero (r) }  Reduced RAM, RASP: { Increment (r), Decrement (r), Clear-to-zero (r), Load-immediate-constant k, Add (
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        ,
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r_{1},r_{2}}
+  
+), Proper-Subtract (
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        ,
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r_{1},r_{2}}
+  
+), Increment accumulator, Decrement accumulator, Clear accumulator, Add the contents of register 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ to the accumulator, Proper-Subtract the contents of register 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ from the accumulator }  Augmented RAM, RASP: Includes all of the reduced instructions as well as: { Multiply, Divide, various Boolean bit-wise operations (left-shift, bit test, etc.) }.
+Control: Counter machine models: Optionally include { Copy (
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        ,
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r_{1},r_{2}}
+  
+) }.  RAM and RASP models: Most include { Copy (
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        ,
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r_{1},r_{2}}
+  
+) }, or { Load Accumulator from 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+, Store accumulator into 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+, Load Accumulator with an immediate constant }.  All models: Include at least one conditional "jump" (branch, goto) following the test of a register, such as { Jump-if-zero, Jump-if-not-zero (i.e., Jump-if-positive), Jump-if-equal, Jump-if-not-equal }.  All models optionally include: { unconditional program jump (goto) }.
+Register-addressing method:
+Counter machine: no indirect addressing, immediate operands possible in highly atomized models
+RAM and RASP: indirect addressing available, immediate operands typical
+Input-output: optional in all models
+State register: A special Instruction Register (IR), distinct from the registers mentioned earlier, stores the current instruction to be executed along with its address in the instruction table. This register, along with its associated table, is located within the finite state machine. The IR is inaccessible in all models. In the case of RAM and RASP, for determining the "address" of a register, the model can choose either (i) the address specified by the table and temporarily stored in the IR for direct addressing, or (ii) the contents of the register specified by the instruction in the IR for indirect addressing.  It's important to note that the IR is not the "program counter" (PC) of the RASP (or conventional computer). The PC is merely another register akin to an accumulator but specifically reserved for holding the number of the RASP's current register-based instruction. Thus, a RASP possesses two "instruction/program" registers: (i) the IR (finite state machine's Instruction Register), and (ii) a PC (Program Counter) for the program stored in the registers. Additionally, aside from the PC, a RASP may also dedicate another register to the "Program-Instruction Register" (referred to by various names such as "PIR," "IR," "PR," etc.).
+List of labelled instructions, usually in sequential order: A finite list of instructions 
+  
+    
+      
+        
+          I
+          
+            1
+          
+        
+        …
+        
+          I
+          
+            m
+          
+        
+      
+    
+    {\displaystyle I_{1}\ldots I_{m}}
+  
+. In the case of the counter machine, random-access machine (RAM), and pointer machine, the instruction store is in the "TABLE" of the finite state machine, thus these models are examples of the Harvard architecture. In the case of the RASP, the program store is in the registers, thus this is an example of the Von Neumann architecture. See also Random-access machine and Random-access stored-program machine.The instructions are usually listed in sequential order, like computer programs, unless a jump is successful. In this case, the default sequence continues in numerical order. An exception to this is the abacus counter machine models—every instruction has at least one "next" instruction identifier "z", and the conditional branch has two.
+Observe also that the abacus model combines two instructions, JZ then DEC: e.g. { INC ( r, z ), JZDEC ( r, ztrue, zfalse ) }.
+See McCarthy Formalism for more about the conditional expression "IF r=0 THEN ztrue ELSE  zfalse"
+
+
+== Historical development of the register machine model ==
+Two trends appeared in the early 1950s. The first was to characterize the computer as a Turing machine. The second was to define computer-like models—models with sequential instruction sequences and conditional jumps—with the power of a Turing machine, a so-called Turing equivalence. Need for this work was carried out in the context of two "hard" problems: the unsolvable word problem posed by Emil Post—his problem of "tag"—and the very "hard" problem of Hilbert's problems—the 10th question around Diophantine equations. Researchers were questing for Turing-equivalent models that were less "logical" in nature and more "arithmetic.": 281 : 218 
+The first step towards characterizing computers originated with Hans Hermes (1954), Rózsa Péter (1958), and Heinz Kaphengst (1959), the second step with Hao Wang (1954, 1957) and, as noted above, furthered along by Zdzislaw Alexander Melzak (1961), Joachim Lambek (1961) and Marvin Minsky (1961, 1967).
+The last five names are listed explicitly in that order by Yuri Matiyasevich. He follows up with:
+
+"Register machines [some authors use "register machine" synonymous with "counter-machine"] are particularly suitable for constructing Diophantine equations. Like Turing machines, they have very primitive instructions and, in addition, they deal with numbers".
+Lambek, Melzak, Minsky, Shepherdson and Sturgis independently discovered the same idea at the same time. See note on precedence below.
+The history begins with Wang's model.
+
+
+=== Wang's (1954, 1957) model: Post–Turing machine ===
+Wang's work followed from Emil Post's (1936) paper and led Wang to his definition of his Wang B-machine—a two-symbol Post–Turing machine computation model with only four atomic instructions:
+
+{ LEFT, RIGHT, PRINT, JUMP_if_marked_to_instruction_z }
+
+To these four both Wang (1954, 1957) and then C. Y. Lee (1961) added another instruction from the Post set { ERASE }, and then a Post's unconditional jump { JUMP_to_ instruction_z } (or to make things easier, the conditional jump JUMP_IF_blank_to_instruction_z, or both. Lee named this a "W-machine" model:
+
+{ LEFT, RIGHT, PRINT, ERASE, JUMP_if_marked, [maybe JUMP or JUMP_IF_blank] }
+
+Wang expressed hope that his model would be "a rapprochement": 63  between the theory of Turing machines and the practical world of the computer.
+Wang's work was highly influential. We find him referenced by Minsky (1961) and (1967), Melzak (1961), Shepherdson and Sturgis (1963). Indeed, Shepherdson and Sturgis (1963) remark that:
+
+"...we have tried to carry a step further the 'rapprochement' between the practical and theoretical aspects of computation suggested by Wang,": 218 
+Martin Davis eventually evolved this model into the (2-symbol) Post–Turing machine.
+Difficulties with the Wang/Post–Turing model:
+Except there was a problem: the Wang model (the six instructions of the 7-instruction Post–Turing machine) was still a single-tape Turing-like device, however nice its sequential program instruction-flow might be. Both Melzak (1961) and Shepherdson and Sturgis (1963) observed this (in the context of certain proofs and investigations):
+
+"...a Turing machine has a certain opacity... a Turing machine is slow in (hypothetical) operation and, usually, complicated. This makes it rather hard to design it, and even harder to investigate such matters as time or storage optimization or a comparison between the efficiency of two algorithms.: 281  "...although not difficult... proofs are complicated and tedious to follow for two reasons: (1) A Turing machine has only a head so that one is obliged to break down the computation into very small steps of operations on a single digit. (2) It has only one tape so that one has to go to some trouble to find the number one wishes to work on and keep it separate from other numbers": 218 
+Indeed, as examples in Turing machine examples, Post–Turing machine and partial functions show, the work can be "complicated".
+
+
+=== Minsky, Melzak–Lambek and Shepherdson–Sturgis models "cut the tape" into many ===
+
+Initial thought leads to 'cutting the tape' so that each is infinitely long (to accommodate any size integer) but left-ended. These three tapes are called "Post–Turing (i.e. Wang-like) tapes". The individual heads move to the left (for decrementing) and to the right (for incrementing). In a sense, the heads indicate "the top of the stack" of concatenated marks. Or in Minsky (1961) and Hopcroft and Ullman (1979),: 171ff  the tape is always blank except for a mark at the left end—at no time does a head ever print or erase.
+Care must be taken to write the instructions so that a test for zero and a jump occur before decrementing, otherwise the machine will "fall off the end" or "bump against the end"—creating an instance of a partial function. 
+Minsky (1961) and Shepherdson–Sturgis (1963) prove that only a few tapes—as few as one—still allow the machine to be Turing equivalent if the data on the tape is represented as a Gödel number (or some other uniquely encodable Encodable-decodable number); this number will evolve as the computation proceeds. In the one tape version with Gödel number encoding the counter machine must be able to (i) multiply the Gödel number by a constant (numbers "2" or "3"), and (ii) divide by a constant (numbers "2" or "3") and jump if the remainder is zero. Minsky (1967) shows that the need for this bizarre instruction set can be relaxed to { INC (r), JZDEC (r, z) } and the convenience instructions { CLR (r), J (r) } if two tapes are available. However, a simple Gödelization is still required. A similar result appears in Elgot–Robinson (1964) with respect to their RASP model.
+
+
+=== Melzak's (1961) model is different: clumps of pebbles go into and out of holes ===
+Melzak's (1961) model is significantly different. He took his own model, flipped the tapes vertically, called them "holes in the ground" to be filled with "pebble counters". Unlike Minsky's "increment" and "decrement", Melzak allowed for proper subtraction of any count of pebbles and "adds" of any count of pebbles.
+He defines indirect addressing for his model: 288  and provides two examples of its use;: 89  his "proof": 290–292  that his model is Turing equivalent is so sketchy that the reader cannot tell whether or not he intended the indirect addressing to be a requirement for the proof.
+Legacy of Melzak's model is Lambek's simplification and the reappearance of his mnemonic conventions in Cook and Reckhow 1973.
+
+
+=== Lambek (1961) atomizes Melzak's model into the Minsky (1961) model: INC and DEC-with-test ===
+Lambek (1961) took Melzak's ternary model and atomized it down to the two unary instructions—X+, X− if possible else jump—exactly the same two that Minsky (1961) had come up with.
+However, like the Minsky (1961) model, the Lambek model does execute its instructions in a default-sequential manner—both X+ and X− carry the identifier of the next instruction, and X− also carries the jump-to instruction if the zero-test is successful.
+
+
+=== Elgot–Robinson (1964) and the problem of the RASP without indirect addressing ===
+A RASP or random-access stored-program machine begins as a counter machine with its "program of instruction" placed in its "registers". Analogous to, but independent of, the finite state machine's "Instruction Register", at least one of the registers (nicknamed the "program counter" (PC)) and one or more "temporary" registers maintain a record of, and operate on, the current instruction's number. The finite state machine's TABLE of instructions is responsible for (i) fetching the current program instruction from the proper register, (ii) parsing the program instruction, (iii) fetching operands specified by the program instruction, and (iv) executing the program instruction.
+Except there is a problem: If based on the counter machine chassis this computer-like, von Neumann machine will not be Turing equivalent. It cannot compute everything that is computable. Intrinsically the model is bounded by the size of its (very-) finite state machine's instructions. The counter machine based RASP can compute any primitive recursive function (e.g. multiplication) but not all mu recursive functions (e.g. the Ackermann function).
+Elgot–Robinson investigate the possibility of allowing their RASP model to "self modify" its program instructions. The idea was an old one, proposed by Burks–Goldstine–von Neumann (1946–1947), and sometimes called "the computed goto". Melzak (1961) specifically mentions the "computed goto" by name but instead provides his model with indirect addressing.
+Computed goto: A RASP program of instructions that modifies the "goto address" in a conditional- or unconditional-jump program instruction.
+But this does not solve the problem (unless one resorts to Gödel numbers). What is necessary is a method to fetch the address of a program instruction that lies (far) "beyond/above" the upper bound of the finite state machine instruction register and TABLE.
+
+Example: A counter machine equipped with only four unbounded registers can e.g. multiply any two numbers ( m, n ) together to yield p—and thus be a primitive recursive function—no matter how large the numbers m and n; moreover, less than 20 instructions are required to do this! e.g. { 1: CLR ( p ), 2: JZ ( m, done ), 3 outer_loop: JZ ( n, done ), 4: CPY ( m, temp ), 5: inner_loop: JZ ( m, outer_loop ), 6: DEC ( m ), 7: INC ( p ), 8: J ( inner_loop ), 9: outer_loop: DEC ( n ), 10 J ( outer_loop ), HALT } However, with only 4 registers, this machine has not nearly big enough to build a RASP that can execute the multiply algorithm as a program. No matter how big we build our finite state machine there will always be a program (including its parameters) which is larger. So by definition the bounded program machine that does not use unbounded encoding tricks such as Gödel numbers cannot be universal.
+Minsky (1967) hints at the issue in his investigation of a counter machine (he calls them "program computer models") equipped with the instructions { CLR (r), INC (r), and RPT ("a" times the instructions m to n) }. He doesn't tell us how to fix the problem, but he does observe that:
+
+"... the program computer has to have some way to keep track of how many RPT's remain to be done, and this might exhaust any particular amount of storage allowed in the finite part of the computer. RPT operations require infinite registers of their own, in general, and they must be treated differently from the other kinds of operations we have considered.": 214 
+But Elgot and Robinson solve the problem: They augment their P0 RASP with an indexed set of instructions—a somewhat more complicated (but more flexible) form of indirect addressing. Their P'0 model addresses the registers by adding the contents of the "base" register (specified in the instruction) to the "index" specified explicitly in the instruction (or vice versa, swapping "base" and "index"). Thus the indexing P'0 instructions have one more parameter than the non-indexing P0 instructions:
+
+Example: INC ( rbase, index ) ; effective address will be [rbase] + index, where the natural number "index" is derived from the finite-state machine instruction itself.
+
+
+=== Hartmanis (1971) ===
+By 1971, Hartmanis has simplified the indexing to indirection for use in his RASP model.
+Indirect addressing: A pointer-register supplies the finite state machine with the address of the target register required for the instruction. Said another way: The contents of the pointer-register is the address of the "target" register to be used by the instruction. If the pointer-register is unbounded, the RAM, and a suitable RASP built on its chassis, will be Turing equivalent. The target register can serve either as a source or destination register, as specified by the instruction.
+Note that the finite state machine does not have to explicitly specify this target register's address. It just says to the rest of the machine: Get me the contents of the register pointed to by my pointer-register and then do xyz with it. It must specify explicitly by name, via its instruction, this pointer-register (e.g. "N", or "72" or "PC", etc.) but it doesn't have to know what number the pointer-register actually contains (perhaps 279,431).
+
+
+=== Cook and Reckhow (1973) describe the RAM ===
+Cook and Reckhow (1973) cite Hartmanis (1971) and simplify his model to what they call a random-access machine (RAM—i.e. a machine with indirection and the Harvard architecture). In a sense we are back to Melzak (1961) but with a much simpler model than Melzak's.
+
+
+== Precedence ==
+Minsky was working at the MIT Lincoln Laboratory and published his work there; his paper was received for publishing in the Annals of Mathematics on 15 August 1960, but not published until November 1961. While receipt occurred a full year before the work of Melzak and Lambek was received and published (received, respectively, May and 15 June 1961, and published side-by-side September 1961). That (i) both were Canadians and published in the Canadian Mathematical Bulletin, (ii) neither would have had reference to Minsky's work because it was not yet published in a peer-reviewed journal, but (iii) Melzak references Wang, and Lambek references Melzak, leads one to hypothesize that their work occurred simultaneously and independently.
+Almost exactly the same thing happened to Shepherdson and Sturgis. Their paper was received in December 1961—just a few months after Melzak and Lambek's work was received. Again, they had little (at most 1 month) or no benefit of reviewing the work of Minsky. They were careful to observe in footnotes that papers by Ershov, Kaphengst and Péter had "recently appeared": 219  These were published much earlier but appeared in the German language in German journals so issues of accessibility present themselves.
+The final paper of Shepherdson and Sturgis did not appear in a peer-reviewed journal until 1963. And as they note in their Appendix A, the 'systems' of Kaphengst (1959), Ershov (1958), and Péter (1958) are all so similar to what results were obtained later as to be indistinguishable to a set of the following:
+
+produce 0 i.e. 0 → n
+increment a number i.e. n+1 → n
+"i.e. of performing the operations which generate the natural numbers": 246 
+copy a number i.e. n → m
+to "change the course of a computation", either comparing two numbers or decrementing until 0
+Indeed, Shepherson and Sturgis conclude:
+
+"The various minimal systems are very similar": 246 
+By order of publishing date the work of Kaphengst (1959), Ershov (1958), Péter (1958) were first.
+
+
+== See also ==
+
+
+== Bibliography ==
+Background texts: The following bibliography of source papers includes a number of texts to be used as background. The mathematics that led to the flurry of papers about abstract machines in the 1950s and 1960s can be found in van Heijenoort (1967)—an assemblage of original papers spanning the 50 years from Frege (1879) to Gödel (1931). Davis (ed.) The Undecidable (1965) carries the torch onward beginning with Gödel (1931) through Gödel's (1964) postscriptum;: 71  the original papers of Alan Turing (1936–1937) and Emil Post (1936) are included in The Undecidable. The mathematics of Church, Rosser, and Kleene that appear as reprints of original papers in The Undecidable is carried further in Kleene (1952), a mandatory text for anyone pursuing a deeper understanding of the mathematics behind the machines. Both Kleene (1952) and Davis (1958) are referenced by a number of the papers.
+For a good treatment of the counter machine see Minsky (1967) Chapter 11 "Models similar to Digital Computers"—he calls the counter machine a "program computer". A recent overview is found at van Emde Boas (1990). A recent treatment of the Minsky (1961)/Lambek (1961) model can be found Boolos–Burgess–Jeffrey (2002); they reincarnate Lambek's "abacus model" to demonstrate equivalence of Turing machines and partial recursive functions, and they provide a graduate-level introduction to both abstract machine models (counter- and Turing-) and the mathematics of recursion theory. Beginning with the first edition Boolos–Burgess (1970) this model appeared with virtually the same treatment.
+The papers: The papers begin with Wang (1957) and his dramatic simplification of the Turing machine. Turing (1936), Kleene (1952), Davis (1958), and in particular Post (1936) are cited in Wang (1957); in turn, Wang is referenced by Melzak (1961), Minsky (1961), and Shepherdson–Sturgis (1961–1963) as they independently reduce the Turing tapes to "counters". Melzak (1961) provides his pebble-in-holes counter machine model with indirection but doesn't carry the treatment further. The work of Elgot–Robinson (1964) define the RASP—the computer-like random-access stored-program machines—and appear to be the first to investigate the failure of the bounded counter machine to calculate the mu-recursive functions. This failure—except with the draconian use of Gödel numbers in the manner of Minsky (1961)—leads to their definition of "indexed" instructions (i.e. indirect addressing) for their RASP model. Elgot–Robinson (1964) and more so Hartmanis (1971) investigate RASPs with self-modifying programs. Hartmanis (1971) specifies an instruction set with indirection, citing lecture notes of Cook (1970). For use in investigations of computational complexity Cook and his graduate student Reckhow (1973) provide the definition of a RAM (their model and mnemonic convention are similar to Melzak's, but offer him no reference in the paper). The pointer machines are an offshoot of Knuth (1968, 1973) and independently Schönhage (1980).
+For the most part the papers contain mathematics beyond the undergraduate level—in particular the primitive recursive functions and mu recursive functions presented elegantly in Kleene (1952) and less in depth, but useful nonetheless, in Boolos–Burgess–Jeffrey (2002). 
+All texts and papers excepting the four starred have been witnessed. These four are written in German and appear as references in Shepherdson–Sturgis (1963) and Elgot–Robinson (1964); Shepherdson–Sturgis (1963) offer a brief discussion of their results in Shepherdson–Sturgis' Appendix A. The terminology of at least one paper (Kaphengst (1959) seems to hark back to the Burke–Goldstine–von Neumann (1946–1947) analysis of computer architecture.
+
+
+== Notes ==
+
+
+== References ==
+
+
+== Further reading ==
+Wolfram, Stephen (2002). A New Kind of Science. Wolfram Media, Inc. pp. 97–102. ISBN 1-57955-008-8.
+
+
+== External links ==
+
+Weisstein, Eric W. "Register machine". MathWorld.
+Igblan - Minsky Register Machines

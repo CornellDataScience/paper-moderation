@@ -1,0 +1,74 @@
+The term is used for two different things:
+
+In computer science, in-memory processing (PIM) is a computer architecture in which data operations are available directly on the data memory, rather than having to be transferred to CPU registers first.  This may improve the power usage and performance of moving data between the processor and the main memory.
+In software engineering, in-memory processing is a software architecture where a database is kept entirely in random-access memory (RAM) or flash memory so that usual accesses, in particular read or query operations, do not require access to disk storage. This may allow faster data operations such as "joins", and faster reporting and decision-making in business.
+Extremely large datasets may be divided between co-operating systems as  in-memory data grids.
+
+
+== Hardware (PIM) ==
+PIM could be implemented by:
+
+Processing-using-Memory (PuM)
+Adding limited processing capability (e.g., floating point multiplication units, 4K row operations such as copy or zero, bitwise operations on two rows) to conventional memory modules (e.g., DIMM modules); or
+Adding processing capability to memory controllers so that the data that is accessed does not need to be forwarded to the CPU or affect the CPU' cache, but is dealt with immediately.
+Processing-near-Memory (PnM)
+New 3D arrangements of silicon with memory layers and processing layers.
+
+
+=== Application of in-memory technology in everyday life ===
+In-memory processing techniques are frequently used by modern smartphones and tablets to improve application performance. This can result in speedier app loading times and more enjoyable user experiences. 
+
+In-memory processing may be used by gaming consoles such as the PlayStation and Xbox to improve game speed. Rapid data access is critical for providing a smooth game experience.
+Certain wearable devices, like smartwatches and fitness trackers, may incorporate in-memory processing to swiftly process sensor data and provide real-time feedback to users. Several commonplace gadgets use in-memory processing to improve performance and responsiveness.
+In-memory processing is used by smart TVs to enhance interface navigation and content delivery. It is used in digital cameras for real-time image processing, filtering, and effects. Voice-activated assistants and other home automation systems may benefit from faster understanding and response to user orders.
+In-memory processing is also used by embedded systems in appliances and high-end digital cameras for efficient data handling. Through in-memory processing techniques, certain IoT devices prioritize fast data processing and response times.
+
+
+== Software ==
+
+
+=== Disk-based data access ===
+
+
+==== Data structures ====
+With disk-based technology, data is loaded on to the computer's hard disk in the form of multiple tables and multi-dimensional structures against which queries are run. Disk-based technologies are often relational database management systems (RDBMS), often based on the structured query language (SQL), such as SQL Server, MySQL, Oracle and many others. RDBMS are designed for the requirements of transactional processing. Using a database that supports insertions and updates as well as performing aggregations, joins (typical in BI solutions) are typically very slow. Another drawback is that SQL is designed to efficiently fetch rows of data, while BI queries usually involve fetching of partial rows of data involving heavy calculations.
+To improve query performance, multidimensional databases or OLAP cubes - also called multidimensional online analytical processing (MOLAP) - may be constructed. Designing a cube may be an elaborate and lengthy process, and changing the cube's structure to adapt to dynamically changing business needs may be cumbersome. Cubes are pre-populated with data to answer specific queries and although they increase performance, they are still not optimal for answering all ad-hoc queries.
+Information technology (IT) staff may spend substantial development time on optimizing databases, constructing indexes and aggregates, designing cubes and star schemas, data modeling, and query analysis.
+
+
+==== Processing speed ====
+Reading data from the hard disk is much slower (possibly hundreds of times) when compared to reading the same data from RAM. Especially when analyzing large volumes of data, performance is severely degraded. Though SQL is a very powerful tool, arbitrary complex queries with a disk-based implementation take a relatively long time to execute and often result in bringing down the performance of transactional processing. In order to obtain results within an acceptable response time, many data warehouses have been designed to pre-calculate summaries and answer specific queries only. Optimized aggregation algorithms are needed to increase performance.
+
+
+=== In-memory data access ===
+With both in-memory database and data grid, all information is initially loaded into memory RAM or flash memory instead of hard disks. With a data grid processing occurs at three order of magnitude faster than relational databases which have advanced functionality such as ACID which degrade performance in compensation for the additional functionality. The arrival of column centric databases, which store similar information together, allow data to be stored more efficiently and with greater compression ratios. This allows huge amounts of data to be stored in the same physical space, reducing the amount of memory needed to perform a query and increasing processing speed. Many users and software vendors have integrated flash memory into their systems to allow systems to scale to larger data sets more economically. 
+Users query the data loaded into the system's memory, thereby avoiding slower database access and performance bottlenecks. This differs from caching, a very widely used method to speed up query performance, in that caches are subsets of very specific pre-defined organized data. With in-memory tools, data available for analysis can be as large as a data mart or small data warehouse which is entirely in memory. This can be accessed quickly by multiple concurrent users or applications at a detailed level and offers the potential for enhanced analytics and for scaling and increasing the speed of an application. Theoretically, the improvement in data access speed is 10,000 to 1,000,000 times compared to the disk. It also minimizes the need for performance tuning by IT staff and provides faster service for end users.
+
+
+==== Advantages of in-memory processing technology ====
+Certain developments in computer technology and business needs have tended to increase the relative advantages of in-memory technology.
+
+Following Moore's law, the number of transistors per square unit doubles every two or so years. This is reflected in changes to price, performance, packaging and capabilities of the components. Random-access memory price and CPU computing power in particular have improved over the decades.  CPU processing, memory and disk storage are all subject to some variation of this law. As well, hardware innovations such as multi-core architecture, NAND flash memory, parallel servers, and increased memory processing capability, have contributed to the technical and economic feasibility of in-memory approaches.
+In turn, software innovations such as column centric databases, compression techniques and handling aggregate tables, enable efficient in-memory products.
+The advent of 64-bit operating systems, which allow access to far more RAM (up to 100 GB or more) than the 2 or 4 GB accessible on 32-bit systems. By providing Terabytes (1 TB = 1,024 GB) of space for storage and analysis, 64-bit operating systems make in-memory processing scalable. The use of flash memory enables systems to scale to many Terabytes more economically.
+Increasing volumes of data have meant that traditional data warehouses may be less able to process the data in a timely and accurate way. The extract, transform, load (ETL) process that periodically updates disk-based data warehouses with operational data may result in lags and stale data. In-memory processing may enable faster access to terabytes of data for better real time reporting.
+In-memory processing may be available at a lower cost compared to disk-based processing, and can be more easily deployed and maintained. According to Gartner survey, deploying traditional BI tools can take as long as 17 months.
+Decreases in power consumption and increases in throughput due to a lower access latency, and greater memory bandwidth and hardware parallelism.
+
+
+==== Application in business ====
+A range of in-memory products provide ability to connect to existing data sources and access to visually rich interactive dashboards. This allows business analysts and end users to create custom reports and queries without much training or expertise. Easy navigation and ability to modify queries on the fly is of benefit to many users. Since these dashboards can be populated with fresh data, users have access to real time data and can create reports within minutes. In-memory processing may be of particular benefit in call centers and warehouse management.
+With in-memory processing, the source database is queried only once instead of accessing the database every time a query is run, thereby eliminating repetitive processing and reducing the burden on database servers. By scheduling to populate the in-memory database overnight, the database servers can be used for operational purposes during peak hours.
+
+
+==== Adoption of in-memory technology ====
+With a large number of users, a large amount of RAM is needed for an in-memory configuration, which in turn affects the hardware costs. The investment is more likely to be suitable in situations where speed of query response is a high priority, and where there is significant growth in data volume and increase in demand for reporting facilities; it may still not be cost-effective where information is not subject to rapid change. Security is another consideration, as in-memory tools expose huge amounts of data to end users. Makers advise ensuring that only  authorized users are given access to the data.
+
+
+== See also ==
+Computational RAM
+System on a chip
+Network on a chip
+
+
+== References ==

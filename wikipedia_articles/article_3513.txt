@@ -1,0 +1,38 @@
+An offline root certificate authority is a certificate authority (as defined in the X.509 standard and RFC 5280) which has been isolated from network access, and is often kept in a powered-down state.
+In a public key infrastructure, the chain of trusted authorities begins with the root certificate authority (root CA). Once the root CA is installed and its root certificate is created, the next action taken by the administrator of the root CA is to issue certificates authorizing intermediate (or subordinate) CAs. This creates the ability to issue, distribute and revoke digital certificates without the direct action of the root CA.
+Because the consequences of a compromised root CA are so great (up to and including the need to re-issue each and every certificate in the PKI), all root CAs must be kept safe from unauthorized access. A common method to ensure the security and integrity of a root CA is to keep it in an offline state. It is only brought online when needed for specific, infrequent tasks, typically limited to the issuance or re-issuance of certificates authorizing intermediate CAs.
+A drawback to offline operation is that hosting of a certificate revocation list by the root CA is not possible (as it is unable to respond to CRL requests via protocols such as HTTP, LDAP or OCSP). However, it is possible to move certificate validation functionality into a dedicated validation authority authorized by the offline root CA.
+To better understand how an offline root CA can greatly improve the security and integrity of a PKI, it is important to realize that a CRL is specific to the CA which issued the certificates on the list. Therefore, each CA (root or intermediate) is only responsible for tracking the revocation of certificates it alone has issued.
+Consider the scenario where a root CA issues certificates to three intermediate CAs: A, B, and C:
+
+The root CA has issued a total of three certificates.
+The newly created intermediate CAs then issue their own certificates:
+
+Intermediate CA "A" issues 10,000 certificates
+Intermediate CA "B" issues 20,000 certificates
+Intermediate CA "C" issues 30,000 certificates
+If each intermediate CA were to revoke all certificates issue by it, the maximum size of the CRL specific to each Intermediate CA would be:
+
+Intermediate CA "A": 10,000 CRL entries
+Intermediate CA "B": 20,000 CRL entries
+Intermediate CA "C": 30,000 CRL entries
+However, because the root CA has only issued three certificates (to each of the intermediate CAs), the maximum size of its CRL is:
+
+Root CA: 3 CRL entries
+Therefore, the overall burden of maintaining and hosting a CRL specific to the root CA is minimized by the use of intermediate CAs, as well as the burden of maintaining an associated validation authority.
+
+
+== See also ==
+X.509
+Certificate server
+Extended Validation Certificate
+Intermediate certificate authority
+Validation authority
+Key ceremony
+Online Certificate Status Protocol
+Certificate revocation list
+Self-signed certificate
+Web of trust
+
+
+== References ==

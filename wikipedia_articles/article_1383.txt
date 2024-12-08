@@ -1,0 +1,1632 @@
+The Grad–Shafranov equation (H. Grad and H. Rubin (1958); Vitalii Dmitrievich Shafranov (1966)) is the equilibrium equation in ideal magnetohydrodynamics (MHD) for a two dimensional plasma, for example the axisymmetric toroidal plasma in a tokamak. This equation takes the same form as the Hicks equation from fluid dynamics. This equation is a two-dimensional, nonlinear, elliptic partial differential equation obtained from the reduction of the ideal MHD equations to two dimensions, often for the case of toroidal axisymmetry (the case relevant in a tokamak). Taking 
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        ,
+        z
+        )
+      
+    
+    {\displaystyle (r,\theta ,z)}
+  
+ as the cylindrical coordinates, the flux function 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ is governed by the equation,where 
+  
+    
+      
+        
+          μ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \mu _{0}}
+  
+ is the magnetic permeability, 
+  
+    
+      
+        p
+        (
+        ψ
+        )
+      
+    
+    {\displaystyle p(\psi )}
+  
+ is the pressure, 
+  
+    
+      
+        F
+        (
+        ψ
+        )
+        =
+        r
+        
+          B
+          
+            θ
+          
+        
+      
+    
+    {\displaystyle F(\psi )=rB_{\theta }}
+  
+ and the magnetic field and current are, respectively, given by
+  
+    
+      
+        
+          
+            
+              
+                
+                  B
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    r
+                  
+                
+                ∇
+                ψ
+                ×
+                
+                  
+                    
+                      
+                        
+                          e
+                        
+                        ^
+                      
+                    
+                  
+                  
+                    θ
+                  
+                
+                +
+                
+                  
+                    F
+                    r
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          e
+                        
+                        ^
+                      
+                    
+                  
+                  
+                    θ
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  μ
+                  
+                    0
+                  
+                
+                
+                  J
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    r
+                  
+                
+                
+                  
+                    
+                      d
+                      F
+                    
+                    
+                      d
+                      ψ
+                    
+                  
+                
+                ∇
+                ψ
+                ×
+                
+                  
+                    
+                      
+                        
+                          e
+                        
+                        ^
+                      
+                    
+                  
+                  
+                    θ
+                  
+                
+                −
+                
+                  [
+                  
+                    
+                      
+                        ∂
+                        
+                          ∂
+                          r
+                        
+                      
+                    
+                    
+                      (
+                      
+                        
+                          
+                            1
+                            r
+                          
+                        
+                        
+                          
+                            
+                              ∂
+                              ψ
+                            
+                            
+                              ∂
+                              r
+                            
+                          
+                        
+                      
+                      )
+                    
+                    +
+                    
+                      
+                        1
+                        r
+                      
+                    
+                    
+                      
+                        
+                          
+                            ∂
+                            
+                              2
+                            
+                          
+                          ψ
+                        
+                        
+                          ∂
+                          
+                            z
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                  ]
+                
+                
+                  
+                    
+                      
+                        
+                          e
+                        
+                        ^
+                      
+                    
+                  
+                  
+                    θ
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\mathbf {B} &={\frac {1}{r}}\nabla \psi \times {\hat {\mathbf {e} }}_{\theta }+{\frac {F}{r}}{\hat {\mathbf {e} }}_{\theta },\\\mu _{0}\mathbf {J} &={\frac {1}{r}}{\frac {dF}{d\psi }}\nabla \psi \times {\hat {\mathbf {e} }}_{\theta }-\left[{\frac {\partial }{\partial r}}\left({\frac {1}{r}}{\frac {\partial \psi }{\partial r}}\right)+{\frac {1}{r}}{\frac {\partial ^{2}\psi }{\partial z^{2}}}\right]{\hat {\mathbf {e} }}_{\theta }.\end{aligned}}}
+  
+
+The nature of the equilibrium, whether it be a tokamak, reversed field pinch, etc. is largely determined by the choices of the two functions 
+  
+    
+      
+        F
+        (
+        ψ
+        )
+      
+    
+    {\displaystyle F(\psi )}
+  
+ and 
+  
+    
+      
+        p
+        (
+        ψ
+        )
+      
+    
+    {\displaystyle p(\psi )}
+  
+ as well as the boundary conditions.
+
+
+== Derivation (in Cartesian coordinates) ==
+In the following, it is assumed that the system is 2-dimensional with 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ as the invariant axis, i.e. 
+  
+    
+      
+        
+          
+            ∂
+            
+              ∂
+              z
+            
+          
+        
+      
+    
+    {\textstyle {\frac {\partial }{\partial z}}}
+  
+ produces 0 for any quantity. Then the magnetic field can be written in cartesian coordinates as
+
+  
+    
+      
+        
+          B
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  ∂
+                  A
+                
+                
+                  ∂
+                  y
+                
+              
+            
+            ,
+            −
+            
+              
+                
+                  ∂
+                  A
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            ,
+            
+              B
+              
+                z
+              
+            
+            (
+            x
+            ,
+            y
+            )
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {B} =\left({\frac {\partial A}{\partial y}},-{\frac {\partial A}{\partial x}},B_{z}(x,y)\right),}
+  
+
+or more compactly,
+
+  
+    
+      
+        
+          B
+        
+        =
+        ∇
+        A
+        ×
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        +
+        
+          B
+          
+            z
+          
+        
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {B} =\nabla A\times {\hat {\mathbf {z} }}+B_{z}{\hat {\mathbf {z} }},}
+  
+
+where 
+  
+    
+      
+        A
+        (
+        x
+        ,
+        y
+        )
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle A(x,y){\hat {\mathbf {z} }}}
+  
+ is the vector potential for the in-plane (x and y components) magnetic field. Note that based on this form for B we can see that A is constant along any given magnetic field line, since 
+  
+    
+      
+        ∇
+        A
+      
+    
+    {\displaystyle \nabla A}
+  
+ is everywhere perpendicular to B. (Also note that -A is the flux function 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ mentioned above.)
+Two dimensional, stationary, magnetic structures are described by the balance of pressure forces and magnetic forces, i.e.:
+
+  
+    
+      
+        ∇
+        p
+        =
+        
+          j
+        
+        ×
+        
+          B
+        
+        ,
+      
+    
+    {\displaystyle \nabla p=\mathbf {j} \times \mathbf {B} ,}
+  
+
+where p is the plasma pressure and j is the electric current. It is known that p is a constant along any field line, (again since 
+  
+    
+      
+        ∇
+        p
+      
+    
+    {\displaystyle \nabla p}
+  
+ is everywhere perpendicular to B). Additionally, the two-dimensional assumption (
+  
+    
+      
+        
+          
+            ∂
+            
+              ∂
+              z
+            
+          
+        
+        =
+        0
+      
+    
+    {\textstyle {\frac {\partial }{\partial z}}=0}
+  
+) means that the z- component of the left hand side must be zero, so the z-component of the magnetic force on the right hand side must also be zero. This means that 
+  
+    
+      
+        
+          
+            j
+          
+          
+            ⊥
+          
+        
+        ×
+        
+          
+            B
+          
+          
+            ⊥
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \mathbf {j} _{\perp }\times \mathbf {B} _{\perp }=0}
+  
+, i.e. 
+  
+    
+      
+        
+          
+            j
+          
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \mathbf {j} _{\perp }}
+  
+ is parallel to 
+  
+    
+      
+        
+          
+            B
+          
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \mathbf {B} _{\perp }}
+  
+.
+The right hand side of the previous equation can be considered in two parts:
+
+  
+    
+      
+        
+          j
+        
+        ×
+        
+          B
+        
+        =
+        
+          j
+          
+            z
+          
+        
+        (
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        ×
+        
+          
+            B
+            
+              ⊥
+            
+          
+        
+        )
+        +
+        
+          
+            j
+            
+              ⊥
+            
+          
+        
+        ×
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        
+          B
+          
+            z
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {j} \times \mathbf {B} =j_{z}({\hat {\mathbf {z} }}\times \mathbf {B_{\perp }} )+\mathbf {j_{\perp }} \times {\hat {\mathbf {z} }}B_{z},}
+  
+
+where the 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \perp }
+  
+ subscript denotes the component in the plane perpendicular to the 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+-axis. The 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ component of the current in the above equation can be written in terms of the one-dimensional vector potential as
+
+  
+    
+      
+        
+          j
+          
+            z
+          
+        
+        =
+        −
+        
+          
+            1
+            
+              μ
+              
+                0
+              
+            
+          
+        
+        
+          ∇
+          
+            2
+          
+        
+        A
+        .
+      
+    
+    {\displaystyle j_{z}=-{\frac {1}{\mu _{0}}}\nabla ^{2}A.}
+  
+
+The in plane field is
+
+  
+    
+      
+        
+          
+            B
+          
+          
+            ⊥
+          
+        
+        =
+        ∇
+        A
+        ×
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {B} _{\perp }=\nabla A\times {\hat {\mathbf {z} }},}
+  
+
+and using Maxwell–Ampère's equation, the in plane current is given by
+
+  
+    
+      
+        
+          
+            j
+          
+          
+            ⊥
+          
+        
+        =
+        
+          
+            1
+            
+              μ
+              
+                0
+              
+            
+          
+        
+        ∇
+        
+          B
+          
+            z
+          
+        
+        ×
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {j} _{\perp }={\frac {1}{\mu _{0}}}\nabla B_{z}\times {\hat {\mathbf {z} }}.}
+  
+
+In order for this vector to be parallel to 
+  
+    
+      
+        
+          
+            B
+          
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \mathbf {B} _{\perp }}
+  
+ as required, the vector 
+  
+    
+      
+        ∇
+        
+          B
+          
+            z
+          
+        
+      
+    
+    {\displaystyle \nabla B_{z}}
+  
+ must be perpendicular to 
+  
+    
+      
+        
+          
+            B
+          
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \mathbf {B} _{\perp }}
+  
+, and 
+  
+    
+      
+        
+          B
+          
+            z
+          
+        
+      
+    
+    {\displaystyle B_{z}}
+  
+ must therefore, like 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+, be a field-line invariant.
+Rearranging the cross products above leads to
+
+  
+    
+      
+        
+          
+            
+              
+                z
+              
+              ^
+            
+          
+        
+        ×
+        
+          
+            B
+          
+          
+            ⊥
+          
+        
+        =
+        ∇
+        A
+        −
+        (
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        ⋅
+        ∇
+        A
+        )
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        =
+        ∇
+        A
+        ,
+      
+    
+    {\displaystyle {\hat {\mathbf {z} }}\times \mathbf {B} _{\perp }=\nabla A-(\mathbf {\hat {z}} \cdot \nabla A)\mathbf {\hat {z}} =\nabla A,}
+  
+
+and
+
+  
+    
+      
+        
+          
+            j
+          
+          
+            ⊥
+          
+        
+        ×
+        
+          B
+          
+            z
+          
+        
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              B
+              
+                z
+              
+            
+            
+              μ
+              
+                0
+              
+            
+          
+        
+        (
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        ⋅
+        ∇
+        
+          B
+          
+            z
+          
+        
+        )
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        −
+        
+          
+            1
+            
+              μ
+              
+                0
+              
+            
+          
+        
+        
+          B
+          
+            z
+          
+        
+        ∇
+        
+          B
+          
+            z
+          
+        
+        =
+        −
+        
+          
+            1
+            
+              μ
+              
+                0
+              
+            
+          
+        
+        
+          B
+          
+            z
+          
+        
+        ∇
+        
+          B
+          
+            z
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {j} _{\perp }\times B_{z}\mathbf {\hat {z}} ={\frac {B_{z}}{\mu _{0}}}(\mathbf {\hat {z}} \cdot \nabla B_{z})\mathbf {\hat {z}} -{\frac {1}{\mu _{0}}}B_{z}\nabla B_{z}=-{\frac {1}{\mu _{0}}}B_{z}\nabla B_{z}.}
+  
+
+These results can be substituted into the expression for 
+  
+    
+      
+        ∇
+        p
+      
+    
+    {\displaystyle \nabla p}
+  
+ to yield:
+
+  
+    
+      
+        ∇
+        p
+        =
+        −
+        
+          [
+          
+            
+              
+                1
+                
+                  μ
+                  
+                    0
+                  
+                
+              
+            
+            
+              ∇
+              
+                2
+              
+            
+            A
+          
+          ]
+        
+        ∇
+        A
+        −
+        
+          
+            1
+            
+              μ
+              
+                0
+              
+            
+          
+        
+        
+          B
+          
+            z
+          
+        
+        ∇
+        
+          B
+          
+            z
+          
+        
+        .
+      
+    
+    {\displaystyle \nabla p=-\left[{\frac {1}{\mu _{0}}}\nabla ^{2}A\right]\nabla A-{\frac {1}{\mu _{0}}}B_{z}\nabla B_{z}.}
+  
+
+Since 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ and 
+  
+    
+      
+        
+          B
+          
+            z
+          
+        
+      
+    
+    {\displaystyle B_{z}}
+  
+ are constants along a field line, and functions only of 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, hence 
+  
+    
+      
+        ∇
+        p
+        =
+        
+          
+            
+              d
+              p
+            
+            
+              d
+              A
+            
+          
+        
+        ∇
+        A
+      
+    
+    {\displaystyle \nabla p={\frac {dp}{dA}}\nabla A}
+  
+ and 
+  
+    
+      
+        ∇
+        
+          B
+          
+            z
+          
+        
+        =
+        
+          
+            
+              d
+              
+                B
+                
+                  z
+                
+              
+            
+            
+              d
+              A
+            
+          
+        
+        ∇
+        A
+      
+    
+    {\displaystyle \nabla B_{z}={\frac {dB_{z}}{dA}}\nabla A}
+  
+. Thus, factoring out 
+  
+    
+      
+        ∇
+        A
+      
+    
+    {\displaystyle \nabla A}
+  
+ and rearranging terms yields the Grad–Shafranov equation:
+
+  
+    
+      
+        
+          ∇
+          
+            2
+          
+        
+        A
+        =
+        −
+        
+          μ
+          
+            0
+          
+        
+        
+          
+            d
+            
+              d
+              A
+            
+          
+        
+        
+          (
+          
+            p
+            +
+            
+              
+                
+                  B
+                  
+                    z
+                  
+                  
+                    2
+                  
+                
+                
+                  2
+                  
+                    μ
+                    
+                      0
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \nabla ^{2}A=-\mu _{0}{\frac {d}{dA}}\left(p+{\frac {B_{z}^{2}}{2\mu _{0}}}\right).}
+  
+
+
+== Derivation in contravariant representation ==
+This derivation is only used for Tokamaks, but it can be enlightening. Using the definition of 'The Theory of Toroidally Confined Plasmas 1:3'(Roscoe White), Writing 
+  
+    
+      
+        
+          
+            
+              B
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {B}}}
+  
+ by contravariant basis 
+  
+    
+      
+        (
+        ∇
+        Ψ
+        ,
+        ∇
+        ϕ
+        ,
+        ∇
+        ζ
+        )
+      
+    
+    {\displaystyle (\nabla \Psi ,\nabla \phi ,\nabla \zeta )}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              B
+              →
+            
+          
+        
+        =
+        ∇
+        Ψ
+        ×
+        ∇
+        ϕ
+        +
+        
+          
+            
+              F
+              ¯
+            
+          
+        
+        ∇
+        ϕ
+        ,
+      
+    
+    {\displaystyle {\vec {B}}=\nabla \Psi \times \nabla \phi +{\bar {F}}\nabla \phi ,}
+  
+
+we have 
+  
+    
+      
+        
+          
+            
+              j
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {j}}}
+  
+:
+
+  
+    
+      
+        
+          μ
+          
+            0
+          
+        
+        
+          
+            
+              j
+              →
+            
+          
+        
+        =
+        ∇
+        ×
+        
+          
+            
+              B
+              →
+            
+          
+        
+        =
+        −
+        
+          Δ
+          
+            ∗
+          
+        
+        Ψ
+        ∇
+        ϕ
+        +
+        ∇
+        
+          
+            
+              F
+              ¯
+            
+          
+        
+        ×
+        ∇
+        ϕ
+        
+        
+          , where
+        
+         
+        
+          Δ
+          
+            ∗
+          
+        
+        =
+        r
+        
+          ∂
+          
+            r
+          
+        
+        (
+        
+          r
+          
+            −
+            1
+          
+        
+        
+          ∂
+          
+            r
+          
+        
+        )
+        +
+        
+          ∂
+          
+            ϕ
+          
+          
+            2
+          
+        
+        
+          ;
+        
+      
+    
+    {\displaystyle \mu _{0}{\vec {j}}=\nabla \times {\vec {B}}=-\Delta ^{*}\Psi \nabla \phi +\nabla {\bar {F}}\times \nabla \phi \quad {\text{, where}}\ \Delta ^{*}=r\partial _{r}(r^{-1}\partial _{r})+\partial _{\phi }^{2}{\text{;}}}
+  
+
+then force balance equation:
+
+  
+    
+      
+        
+          μ
+          
+            0
+          
+        
+        
+          
+            
+              j
+              →
+            
+          
+        
+        ×
+        
+          
+            
+              B
+              →
+            
+          
+        
+        =
+        
+          μ
+          
+            0
+          
+        
+        ∇
+        p
+        
+          .
+        
+      
+    
+    {\displaystyle \mu _{0}{\vec {j}}\times {\vec {B}}=\mu _{0}\nabla p{\text{.}}}
+  
+
+Working out, we have:
+
+  
+    
+      
+        −
+        
+          Δ
+          
+            ∗
+          
+        
+        Ψ
+        =
+        
+          
+            
+              F
+              ¯
+            
+          
+        
+        
+          
+            
+              d
+              
+                
+                  
+                    F
+                    ¯
+                  
+                
+              
+            
+            
+              d
+              Ψ
+            
+          
+        
+        +
+        
+          μ
+          
+            0
+          
+        
+        
+          R
+          
+            2
+          
+        
+        
+          
+            
+              d
+              p
+            
+            
+              d
+              Ψ
+            
+          
+        
+        
+          .
+        
+      
+    
+    {\displaystyle -\Delta ^{*}\Psi ={\bar {F}}{\frac {d{\bar {F}}}{d\Psi }}+\mu _{0}R^{2}{\frac {dp}{d\Psi }}{\text{.}}}
+  
+
+
+== References ==
+
+
+== Further reading ==
+Grad, H., and Rubin, H. (1958) Hydromagnetic Equilibria and Force-Free Fields Archived 2023-06-21 at the Wayback Machine. Proceedings of the 2nd UN Conf. on the Peaceful Uses of Atomic Energy, Vol. 31, Geneva: IAEA p. 190.
+Shafranov, V.D. (1966) Plasma equilibrium in a magnetic field, Reviews of Plasma Physics, Vol. 2, New York: Consultants Bureau, p. 103.
+Woods, Leslie C. (2004) Physics of plasmas, Weinheim: WILEY-VCH Verlag GmbH & Co. KGaA, chapter 2.5.4
+Haverkort, J.W. (2009) Axisymmetric Ideal MHD Tokamak Equilibria. Notes about the Grad–Shafranov equation, selected aspects of the equation and its analytical solutions.
+Haverkort, J.W. (2009) Axisymmetric Ideal MHD equilibria with Toroidal Flow. Incorporation of toroidal flow, relation to kinetic and two-fluid models, and discussion of specific analytical solutions.

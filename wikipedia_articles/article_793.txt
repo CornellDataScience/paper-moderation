@@ -1,0 +1,406 @@
+Cash flow matching is a process of hedging in which a company or other entity matches its cash outflows (i.e., financial obligations) with its cash inflows over a given time horizon. It is a subset of immunization strategies in finance. Cash flow matching is of particular importance to defined benefit pension plans.
+
+
+== Solution with linear programming ==
+It is possible to solve the simple cash flow matching problem using linear programming. Suppose that we have a choice of 
+  
+    
+      
+        j
+        =
+        1
+        ,
+        .
+        .
+        .
+        ,
+        n
+      
+    
+    {\displaystyle j=1,...,n}
+  
+ bonds with which to receive cash flows over 
+  
+    
+      
+        t
+        =
+        1
+        ,
+        .
+        .
+        .
+        ,
+        T
+      
+    
+    {\displaystyle t=1,...,T}
+  
+ time periods in order to cover liabilities 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          L
+          
+            T
+          
+        
+      
+    
+    {\displaystyle L_{1},...,L_{T}}
+  
+ for each time period.  The 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+  
+th bond in time period 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ is assumed to have known cash flows 
+  
+    
+      
+        
+          F
+          
+            t
+            j
+          
+        
+      
+    
+    {\displaystyle F_{tj}}
+  
+ and initial price 
+  
+    
+      
+        
+          p
+          
+            j
+          
+        
+      
+    
+    {\displaystyle p_{j}}
+  
+. It possible to buy 
+  
+    
+      
+        
+          x
+          
+            j
+          
+        
+      
+    
+    {\displaystyle x_{j}}
+  
+ bonds and to run a surplus 
+  
+    
+      
+        
+          s
+          
+            t
+          
+        
+      
+    
+    {\displaystyle s_{t}}
+  
+ in a given time period, both of which must be non-negative, and leads to the set of constraints:
+  
+    
+      
+        
+          
+            
+              
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  F
+                  
+                    1
+                    j
+                  
+                
+                
+                  x
+                  
+                    j
+                  
+                
+                −
+                
+                  s
+                  
+                    1
+                  
+                
+              
+              
+                
+                =
+                
+                  L
+                  
+                    1
+                  
+                
+              
+            
+            
+              
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  F
+                  
+                    t
+                    j
+                  
+                
+                
+                  x
+                  
+                    j
+                  
+                
+                +
+                
+                  s
+                  
+                    t
+                    −
+                    1
+                  
+                
+                −
+                
+                  s
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  L
+                  
+                    t
+                  
+                
+                ,
+                
+                t
+                =
+                2
+                ,
+                .
+                .
+                .
+                ,
+                T
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\sum _{j=1}^{n}F_{1j}x_{j}-s_{1}&=L_{1}\\\sum _{j=1}^{n}F_{tj}x_{j}+s_{t-1}-s_{t}&=L_{t},\quad t=2,...,T\end{aligned}}}
+  
+Our goal is to minimize the initial cost of purchasing bonds to meet the liabilities in each time period, given by 
+  
+    
+      
+        
+          p
+          
+            T
+          
+        
+        x
+      
+    
+    {\displaystyle p^{T}x}
+  
+. Together, these requirements give rise to the associated linear programming problem:
+  
+    
+      
+        
+          min
+          
+            x
+            ,
+            s
+          
+        
+        
+        
+          p
+          
+            T
+          
+        
+        x
+        ,
+        
+        
+          s.t.
+        
+        
+        F
+        x
+        +
+        R
+        s
+        =
+        L
+        ,
+        
+        x
+        ,
+        s
+        ≥
+        0
+      
+    
+    {\displaystyle \min _{x,s}\;p^{T}x,\quad {\text{s.t.}}\;Fx+Rs=L,\;x,s\geq 0}
+  
+where 
+  
+    
+      
+        F
+        ∈
+        
+          
+            R
+          
+          
+            T
+            ×
+            n
+          
+        
+      
+    
+    {\displaystyle F\in \mathbb {R} ^{T\times n}}
+  
+ and 
+  
+    
+      
+        R
+        ∈
+        
+          
+            R
+          
+          
+            T
+            ×
+            T
+          
+        
+      
+    
+    {\displaystyle R\in \mathbb {R} ^{T\times T}}
+  
+, with entries:
+  
+    
+      
+        
+          R
+          
+            t
+            ,
+            t
+          
+        
+        =
+        −
+        1
+        ,
+        
+        
+          R
+          
+            t
+            +
+            1
+            ,
+            t
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle R_{t,t}=-1,\quad R_{t+1,t}=1}
+  
+In the instance when fixed income instruments (not necessarily bonds) are used to provide the dedicated cash flows, it is unlikely to be the case that fractional components are available for purchase. Therefore, a more realistic approach to cash flow matching is to employ mixed-integer linear programming to select a discrete number of instruments with which to match liabilities.
+
+
+== See also ==
+Cash flow hedging
+Debt sculpting
+Duration gap
+Dedicated portfolio theory
+Fannie Mae
+Immunization (finance)
+Financial risk management § Investment management
+
+
+== References ==

@@ -1,0 +1,365 @@
+In color theory, hue is one of the main properties (called color appearance parameters) of a color, defined technically in the CIECAM02 model as "the degree to which a stimulus can be described as similar to or different from stimuli that are described as red, orange, yellow, green, blue, violet," within certain theories of color vision.
+Hue can typically be represented quantitatively by a single number, often corresponding to an angular position around a central or neutral point or axis on a color space coordinate diagram (such as a chromaticity diagram) or color wheel, or by its dominant wavelength or by that of its complementary color. The other color appearance parameters are colorfulness,  saturation (also known as intensity or chroma), lightness, and brightness. Usually, colors with the same hue are distinguished with adjectives referring to their lightness or colorfulness - for example: "light blue", "pastel blue", "vivid blue", and "cobalt blue". Exceptions include brown, which is a dark orange.
+In painting, a hue is a pure pigment—one without tint or shade (added white or black pigment, respectively).
+The human brain first processes hues in areas in the extended  V4 called globs.
+
+
+== Deriving a hue ==
+The concept of a color system with a hue was explored as early as 1830 with Philipp Otto Runge's color sphere. The Munsell color system from the 1930s was a great step forward, as it was realized that perceptual uniformity means the color space can no longer be a sphere.
+As a convention, the hue for red is set to 0° for most color spaces with a hue.
+
+
+=== Opponent color spaces ===
+In opponent color spaces in which two of the axes are perceptually orthogonal to lightness, such as the CIE 1976 (L*, a*, b*) (CIELAB) and 1976 (L*, u*, v*) (CIELUV) color spaces, hue may be computed together with chroma by converting these coordinates from rectangular form to polar form. Hue is the angular component of the polar representation, while chroma is the radial component.
+Specifically, in CIELAB
+
+  
+    
+      
+        
+          h
+          
+            a
+            b
+          
+        
+        =
+        
+          a
+          t
+          a
+          n
+          2
+        
+        (
+        
+          b
+          
+            ∗
+          
+        
+        ,
+        
+          a
+          
+            ∗
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle h_{ab}=\mathrm {atan2} (b^{*},a^{*}),}
+  
+
+while, analogously, in CIELUV
+
+  
+    
+      
+        
+          h
+          
+            u
+            v
+          
+        
+        =
+        
+          a
+          t
+          a
+          n
+          2
+        
+        (
+        
+          v
+          
+            ∗
+          
+        
+        ,
+        
+          u
+          
+            ∗
+          
+        
+        )
+        =
+        
+          a
+          t
+          a
+          n
+          2
+        
+        (
+        
+          v
+          ′
+        
+        ,
+        
+          u
+          ′
+        
+        )
+        ,
+      
+    
+    {\displaystyle h_{uv}=\mathrm {atan2} (v^{*},u^{*})=\mathrm {atan2} (v',u'),}
+  
+
+where, atan2 is a two-argument inverse tangent.
+
+
+=== Defining hue in terms of RGB ===
+
+Preucil describes a color hexagon, similar to a trilinear plot described by Evans, Hanson, and Brewer, which may be used to compute hue from RGB. To place red at 0°, green at 120°, and blue at 240°,
+
+  
+    
+      
+        
+          h
+          
+            r
+            g
+            b
+          
+        
+        =
+        
+          a
+          t
+          a
+          n
+          2
+        
+        
+          (
+          
+            
+              
+                3
+              
+            
+            ⋅
+            (
+            G
+            −
+            B
+            )
+            ,
+            2
+            ⋅
+            R
+            −
+            G
+            −
+            B
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle h_{rgb}=\mathrm {atan2} \left({\sqrt {3}}\cdot (G-B),2\cdot R-G-B\right).}
+  
+
+Equivalently, one may solve
+
+  
+    
+      
+        tan
+        ⁡
+        (
+        
+          h
+          
+            r
+            g
+            b
+          
+        
+        )
+        =
+        
+          
+            
+              
+                
+                  3
+                
+              
+              ⋅
+              (
+              G
+              −
+              B
+              )
+            
+            
+              2
+              ⋅
+              R
+              −
+              G
+              −
+              B
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \tan(h_{rgb})={\frac {{\sqrt {3}}\cdot (G-B)}{2\cdot R-G-B}}.}
+  
+
+Preucil used a polar plot, which he termed a color circle. Using R, G, and B, one may compute hue angle using the following scheme: determine which of the six possible orderings of R, G, and B prevail, then apply the formula given in the table below.
+
+In each case the formula contains the fraction 
+  
+    
+      
+        
+          
+            
+              M
+              −
+              L
+            
+            
+              H
+              −
+              L
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {M-L}{H-L}}}
+  
+, where H is the highest of R, G, and B; L is the lowest, and M is the mid one between the other two. This is referred to as the "Preucil hue error" and was used in the computation of mask strength in photomechanical color reproduction.
+Hue angles computed for the Preucil circle agree with the hue angle computed for the Preucil hexagon at integer multiples of 30° (red, yellow, green, cyan, blue, magenta, and the colors midway between contiguous pairs) and differ by approximately 1.2° at odd integer multiples of 15° (based on the circle formula), the maximal divergence between the two.
+The process of converting an RGB color into an HSL color space or HSV color space is usually based on a 6-piece piecewise mapping, treating the HSV cone as a hexacone, or the HSL double cone as a double hexacone.  The formulae used are those in the table above.
+
+	Additional images for hue in the HSL and HSV systems
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+One might notice that the HSL/HSV hue "circle" do not appear to all be of the same brightness. This is a known issue of this RGB-based derivation of hue.
+
+
+== Usage in art ==
+Manufacturers of pigments use the word hue, for example, "cadmium yellow (hue)" to indicate that the original pigmentation ingredient, often toxic, has been replaced by safer (or cheaper) alternatives whilst retaining the hue of the original.  Replacements are often used for chromium, cadmium and alizarin.
+
+
+== Hue vs. dominant wavelength ==
+Dominant wavelength (or sometimes equivalent wavelength) is a physical analog to the perceptual attribute hue. On a chromaticity diagram, a line is drawn from a white point through the coordinates of the color in question, until it intersects the spectral locus. The wavelength at which the line intersects the spectrum locus is identified as the color's dominant wavelength if the point is on the same side of the white point as the spectral locus, and as the color's complementary wavelength if the point is on the opposite side.
+
+
+== Hue difference notation ==
+There are two main ways in which hue difference is quantified. The first is the simple difference between the two hue angles. The symbol for this expression of hue difference is 
+  
+    
+      
+        Δ
+        
+          h
+          
+            a
+            b
+          
+        
+      
+    
+    {\displaystyle \Delta h_{ab}}
+  
+ in CIELAB and 
+  
+    
+      
+        Δ
+        
+          h
+          
+            u
+            v
+          
+        
+      
+    
+    {\displaystyle \Delta h_{uv}}
+  
+ in CIELUV. The other is computed as the residual total color difference after Lightness and Chroma differences have been accounted for; its symbol is 
+  
+    
+      
+        Δ
+        
+          H
+          
+            a
+            b
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \Delta H_{ab}^{*}}
+  
+ in CIELAB and 
+  
+    
+      
+        Δ
+        
+          H
+          
+            u
+            v
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \Delta H_{uv}^{*}}
+  
+ in CIELUV.
+
+
+== Names and other notations ==
+There exists some correspondence, more or less precise, between hue values and color terms (names). One approach in color science is to use traditional color terms but try to give them more precise definitions. See spectral color#Spectral color terms for names of highly saturated colors with the hue from ≈ 0° (red) up to ≈ 275° (violet), and line of purples#Table of highly-saturated purple colors for color terms of the remaining part of the color wheel.
+Alternative approach is to use a systematic notation. It can be a standard angle notation for certain color model such as HSL/HSV mentioned above, CIELUV, or CIECAM02. Alphanumeric notations such as of Munsell color system, NCS, and Pantone Matching System are also used.
+
+
+== See also ==
+Lightness (color)
+Chromaticity
+Munsell color system
+Bezold–Brücke shift
+
+
+== References ==
+
+
+== External links ==
+Editing of hue in photography

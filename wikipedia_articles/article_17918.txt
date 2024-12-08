@@ -1,0 +1,22 @@
+San Francisco Canyon Company was a software development company that was contracted by Apple Computer in 1992 to port the QuickTime technology to Microsoft Windows.  They made their first release of QuickTime for Windows in November 1992.
+In July 1993, Intel contracted the San Francisco Canyon Company to improve the performance of Microsoft's Video for Windows technology on Intel processors.  By the end of 1993, Intel and Microsoft had combined their efforts to improve Video for Windows by creating a joint technology called Display Control Interface that was included in version 1.1d of Video for Windows (released in late 1994). As with WinG, the main problem this technology fixed was that Windows 3.x video drivers implemented all GDI routines including for drawing bitmaps in the video drivers themselves, and performance of these routines varied across drivers.
+The lawsuit "Apple Computer v. San Francisco Canyon Co.", filed on December 6, 1994, alleged that the San Francisco Canyon Company used some of the code developed under contract to Apple in their additions to Video for Windows.  Apple expanded the lawsuit to include Intel and Microsoft on February 10, 1995, alleging that Microsoft and Intel knowingly used the software company to aid them in stealing several thousand lines of Apple's QuickTime code in their effort to improve the performance of Video for Windows.
+On March 3, 1995, a Federal judge issued a temporary restraining order that prohibited Microsoft from distributing its current version of Video for Windows.  Microsoft subsequently released version 1.1e of Video for Windows, which removed all of the code contributed by the San Francisco Canyon Company, stating in the release notes "does not include the low-level driver code that was licensed from Intel Corporation".
+Later testimony in the United States v. Microsoft Corp. case revealed that, at the time, Apple was threatening Microsoft with a multibillion-dollar lawsuit over the allegedly stolen code, and in return Bill Gates was threatening the cancellation of Microsoft Office for Mac.  In August 1997, Apple and Microsoft announced a settlement deal.  Apple would drop all current lawsuits, including all lingering issues from the "Look & Feel" lawsuit and the "QuickTime source code" lawsuit, and agree to make Internet Explorer for Mac the default browser on the Macintosh unless the user explicitly chose the bundled Netscape browser.  In return, Microsoft agreed to continue developing Office, Internet Explorer, and various developer tools and software for the Mac for the next 5 years, and purchase $150 million of non-voting Apple stock.  The companies also agreed to mutual collaboration on Java technologies, and to cross-license all existing patents, and patents obtained during the five-year deal, with one another.
+
+
+== References ==
+
+
+== Further reading ==
+Carlton, Jim (1997). Apple: The Inside Story of Intrigue, Egomania, and Business Blunders. Random House. ISBN 0-88730-965-8.
+
+
+== External links ==
+"Intel and Microsoft Added to Apple Lawsuit", The New York Times article by John Markoff on February 10, 1995.
+"Apple Sues Intel, Microsoft - Again', TidBITS on February 13, 1995.
+An Open Letter to the Computing Community - letter from Apple Director Michael Mace regarding the issue (February 9, 1995)
+Second open letter from Apple - follow-up letter from Apple Director Michael Mace regarding the issue (original sources for some of Rick Segal's postings be found on Google Groups, including Rick Segal's responses to this open letter as well)
+"Have you ever heard of VfW (Video for Windows)?" at MacKiDo, May 6, 1997.
+"Inside iTunes: Part II: The QuickTime Media Layer: Apple's Best Kept Secret" at RoughlyDrafted, February 2, 2004.
+"Notes on similarities between QTVHDW.DLL (Apple QuickTime for Windows) and DCISVGA.DRV (Microsoft/Intel Video for Windows)" by Andrew Schulman, February 22, 1995 (analysis of identical code).

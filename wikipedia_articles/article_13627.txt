@@ -1,0 +1,41 @@
+GNU MediaGoblin (also shortened to MediaGoblin or GMG) is a free, decentralized Web platform (server software) for hosting and sharing many forms of digital media. It strives to provide an extensible, federated, and freedom-respectful software alternative to major media publishing services such as Flickr, DeviantArt, and YouTube.
+
+
+== History ==
+The origins of GNU MediaGoblin date back to 2008, when a gathering was held at the Free Software Foundation in order to discuss the path that Internet communities should take.
+The answer was that restrictive and centralized structures were both technically and ethically doubtful, and may harm the typical fairness and availability of the Internet.
+Several projects have since appeared to prevent this, including Identi.ca, Libre.fm, Diaspora, among others.
+The MediaGoblin project remains in active development.
+
+
+== Design and features ==
+MediaGoblin is part of GNU, and its code is released under the terms of the GNU Affero General Public License; meaning that it adheres to the principles of free and open-source software. The licensing of other elements (e.g. design, logo) is under the public domain. Christine Lemmer-Webber, the core developer, came up with the name "MediaGoblin" which also makes a pun with the pronunciation of "gobbling".
+The main page displays an upper banner with MediaGoblin's typeface and an authentication section for users. The remaining space is left to show thumbnails of the latest posted works. Each user owns a personal profile comprised by two vertical sections – one for uploads arranged as a gallery and another with a customizable text box. For displaying media, the platform focuses on the work itself rather than overstocking with options and buttons; nonetheless, comments can be added under the artwork description. Some other features like tags, metadata, theming, Creative Commons licensing and GPS support can be enabled as separate plug-ins to enrich the usage of GNU MediaGoblin.
+
+The platform successfully hosts and displays many sorts of media:
+
+As of version 0.3.1 it includes support for plain text (ASCII art), images (PNG and JPEG).
+HTML5 capabilities are widely used to play video and/or audio contained in WebM format; while FLAC, WAV and MP3 uploads are automatically transcoded to Vorbis audio and then encapsulated into WebM.
+3D models support (preview and renderization) was added on 22 October 2012 and is achieved by means of HTML5 Canvas, Thingiview, WebGL and Blender.
+
+
+== Mascot ==
+
+The project mascot is a purple goblin called Gavroche wearing clothing that resembles a stereotypical artist costume.
+
+
+== See also ==
+PeerTube
+Plumi
+Creative Commons
+Free culture movement
+List of software under the GNU AGPL
+List of computing mascots
+
+
+== References ==
+
+
+== External links ==
+
+GNU MediaGoblin website

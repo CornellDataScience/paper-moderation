@@ -1,0 +1,44 @@
+High-performance computing (HPC) uses supercomputers and computer clusters to solve advanced computation problems.
+
+
+== Overview ==
+HPC integrates systems administration (including network and security knowledge) and parallel programming into a multidisciplinary field that combines digital electronics, computer architecture, system software, programming languages, algorithms and computational techniques.
+HPC technologies are the tools and systems used to implement and create high performance computing systems. Recently, HPC systems have shifted from supercomputing to computing clusters and grids. Because of the need of networking in clusters and grids, High Performance Computing Technologies are being promoted by the use of a collapsed network backbone, because the collapsed backbone architecture is simple to troubleshoot and upgrades can be applied to a single router as opposed to multiple ones.
+The term is most commonly associated with computing used for scientific research or computational science. A related term, high-performance technical computing (HPTC), generally refers to the engineering applications of cluster-based computing (such as computational fluid dynamics and the building and testing of virtual prototypes). HPC has also been applied to business uses such as data warehouses, line of business (LOB) applications, and transaction processing.
+High-performance computing (HPC) as a term arose after the term "supercomputing". HPC is sometimes used as a synonym for supercomputing; but, in other contexts, "supercomputer" is used to refer to a more powerful subset of "high-performance computers", and the term "supercomputing" becomes a subset of "high-performance computing". The potential for confusion over the use of these terms is apparent.
+Because most current applications are not designed for HPC technologies but are retrofitted, they are not designed or tested for scaling to more powerful processors or machines. Since networking clusters and grids use multiple processors and computers, these scaling problems can cripple critical systems in future supercomputing systems. Therefore, either the existing tools do not address the needs of the high performance computing community or the HPC community is unaware of these tools. A few examples of commercial HPC technologies include:
+
+the simulation of car crashes for structural design
+molecular interaction for new drug design
+the airflow over automobiles or airplanes
+In government and research institutions, scientists simulate galaxy creation, fusion energy, and global warming, as well as work to create more accurate short- and long-term weather forecasts. The world's tenth most powerful supercomputer in 2008, IBM Roadrunner (located at the United States Department of Energy's Los Alamos National Laboratory) simulated the performance, safety, and reliability of nuclear weapons and certifies their functionality.
+
+
+== TOP500 ==
+
+TOP500 ranks the world's 500 fastest high-performance computers, as measured by the High Performance LINPACK (HPL) benchmark. Not all existing computers are ranked, either because they are ineligible (e.g., they cannot run the HPL benchmark) or because their owners have not submitted an HPL score (e.g., because they do not wish the size of their system to become public information, for defense reasons). In addition, the use of the single LINPACK benchmark is controversial, in that no single measure can test all aspects of a high-performance computer. To help overcome the limitations of the LINPACK test, the U.S. government commissioned one of its originators, Jack Dongarra of the University of Tennessee, to create a suite of benchmark tests that includes LINPACK and others, called the HPC Challenge benchmark suite. This evolving suite has been used in some HPC procurements, but, because it is not reducible to a single number, it has been unable to overcome the publicity advantage of the less useful TOP500 LINPACK test. The TOP500 list is updated twice a year, once in June at the ISC European Supercomputing Conference and again at a US Supercomputing Conference in November.
+Many ideas for the new wave of grid computing were originally borrowed from HPC.
+
+
+== High performance computing in the cloud ==
+
+Traditionally, HPC has involved an on-premises infrastructure, investing in supercomputers or computer clusters. Over the last decade, cloud computing has grown in popularity for offering computer resources in the commercial sector regardless of their investment capabilities. Some characteristics like scalability and containerization also have raised interest in academia. However security in the cloud concerns such as data confidentiality are still considered when deciding between cloud or on-premise HPC resources.
+
+
+== See also ==
+
+
+== References ==
+
+
+== External links ==
+HPCwire
+Top 500 supercomputers
+Rocks Clusters Open-Source High Performance Linux Clusters
+News Articles & Policy Reports on High-Performance Scientific Computing
+The Center for Modeling Immunity to Enteric Pathogens (MIEP)
+The Art of HPC: Textbooks by Victor Eijkhout of TACC
+Vol.1: The Science of Computing
+Vol.2: Parallel Programming for Science Engineering
+Vol.3: Introduction to Scientific Programming in C++17/Fortran2008
+Vol.4: Tutorials for High Performance Scientific Computing

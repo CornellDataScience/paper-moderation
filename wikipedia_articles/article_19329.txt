@@ -1,0 +1,588 @@
+In mathematics, Fredholm's theorems are a set of celebrated results of Ivar Fredholm in the Fredholm theory of integral equations. There are several closely related theorems, which may be stated in terms of integral equations, in terms of linear algebra, or in terms of the Fredholm operator on Banach spaces.
+The Fredholm alternative is one of the Fredholm theorems.
+
+
+== Linear algebra ==
+Fredholm's theorem in linear algebra is as follows: if M is a matrix, then the orthogonal complement of the row space of M is the null space of M:
+
+  
+    
+      
+        (
+        row
+        ⁡
+        M
+        
+          )
+          
+            ⊥
+          
+        
+        =
+        ker
+        ⁡
+        M
+        .
+      
+    
+    {\displaystyle (\operatorname {row} M)^{\bot }=\ker M.}
+  
+
+Similarly, the orthogonal complement of the column space of M is the null space of the adjoint:
+
+  
+    
+      
+        (
+        col
+        ⁡
+        M
+        
+          )
+          
+            ⊥
+          
+        
+        =
+        ker
+        ⁡
+        
+          M
+          
+            ∗
+          
+        
+        .
+      
+    
+    {\displaystyle (\operatorname {col} M)^{\bot }=\ker M^{*}.}
+  
+
+
+== Integral equations ==
+Fredholm's theorem for integral equations is expressed as follows. Let 
+  
+    
+      
+        K
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle K(x,y)}
+  
+ be an integral kernel, and consider the homogeneous equations
+
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        K
+        (
+        x
+        ,
+        y
+        )
+        ϕ
+        (
+        y
+        )
+        
+        d
+        y
+        =
+        λ
+        ϕ
+        (
+        x
+        )
+      
+    
+    {\displaystyle \int _{a}^{b}K(x,y)\phi (y)\,dy=\lambda \phi (x)}
+  
+
+and its complex adjoint
+
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        ψ
+        (
+        x
+        )
+        
+          
+            
+              K
+              (
+              x
+              ,
+              y
+              )
+            
+            ¯
+          
+        
+        
+        d
+        x
+        =
+        
+          
+            λ
+            ¯
+          
+        
+        ψ
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle \int _{a}^{b}\psi (x){\overline {K(x,y)}}\,dx={\overline {\lambda }}\psi (y).}
+  
+
+Here, 
+  
+    
+      
+        
+          
+            λ
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {\lambda }}}
+  
+ denotes the complex conjugate of the complex number 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+, and similarly for 
+  
+    
+      
+        
+          
+            
+              K
+              (
+              x
+              ,
+              y
+              )
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {K(x,y)}}}
+  
+.  Then, Fredholm's theorem is that, for any fixed value of 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+, these equations have either the trivial solution 
+  
+    
+      
+        ψ
+        (
+        x
+        )
+        =
+        ϕ
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle \psi (x)=\phi (x)=0}
+  
+ or have the same number of linearly independent solutions 
+  
+    
+      
+        
+          ϕ
+          
+            1
+          
+        
+        (
+        x
+        )
+        ,
+        ⋯
+        ,
+        
+          ϕ
+          
+            n
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle \phi _{1}(x),\cdots ,\phi _{n}(x)}
+  
+, 
+  
+    
+      
+        
+          ψ
+          
+            1
+          
+        
+        (
+        y
+        )
+        ,
+        ⋯
+        ,
+        
+          ψ
+          
+            n
+          
+        
+        (
+        y
+        )
+      
+    
+    {\displaystyle \psi _{1}(y),\cdots ,\psi _{n}(y)}
+  
+.
+A sufficient condition for this theorem to hold is for 
+  
+    
+      
+        K
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle K(x,y)}
+  
+ to be square integrable on the rectangle 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+        ×
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]\times [a,b]}
+  
+ (where a and/or b may be minus or plus infinity).
+Here, the integral is expressed as a one-dimensional integral on the real number line. In Fredholm theory, this result generalizes to integral operators on multi-dimensional spaces, including, for example, Riemannian manifolds.
+
+
+== Existence of solutions ==
+One of Fredholm's theorems, closely related to the Fredholm alternative, concerns the existence of solutions to the inhomogeneous Fredholm equation
+
+  
+    
+      
+        λ
+        ϕ
+        (
+        x
+        )
+        −
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        K
+        (
+        x
+        ,
+        y
+        )
+        ϕ
+        (
+        y
+        )
+        
+        d
+        y
+        =
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle \lambda \phi (x)-\int _{a}^{b}K(x,y)\phi (y)\,dy=f(x).}
+  
+
+Solutions to this equation exist if and only if the function 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ is orthogonal to the complete set of solutions 
+  
+    
+      
+        {
+        
+          ψ
+          
+            n
+          
+        
+        (
+        x
+        )
+        }
+      
+    
+    {\displaystyle \{\psi _{n}(x)\}}
+  
+ of the corresponding homogeneous adjoint equation:
+
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+          
+            
+              
+                ψ
+                
+                  n
+                
+              
+              (
+              x
+              )
+            
+            ¯
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+        =
+        0
+      
+    
+    {\displaystyle \int _{a}^{b}{\overline {\psi _{n}(x)}}f(x)\,dx=0}
+  
+
+where 
+  
+    
+      
+        
+          
+            
+              
+                ψ
+                
+                  n
+                
+              
+              (
+              x
+              )
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {\psi _{n}(x)}}}
+  
+ is the complex conjugate of 
+  
+    
+      
+        
+          ψ
+          
+            n
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle \psi _{n}(x)}
+  
+ and the former is one of the complete set of solutions to
+
+  
+    
+      
+        λ
+        
+          
+            
+              ψ
+              (
+              y
+              )
+            
+            ¯
+          
+        
+        −
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+          
+            
+              ψ
+              (
+              x
+              )
+            
+            ¯
+          
+        
+        K
+        (
+        x
+        ,
+        y
+        )
+        
+        d
+        x
+        =
+        0.
+      
+    
+    {\displaystyle \lambda {\overline {\psi (y)}}-\int _{a}^{b}{\overline {\psi (x)}}K(x,y)\,dx=0.}
+  
+
+A sufficient condition for this theorem to hold is for 
+  
+    
+      
+        K
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle K(x,y)}
+  
+ to be square integrable on the rectangle 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+        ×
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]\times [a,b]}
+  
+.
+
+
+== References ==
+E.I. Fredholm, "Sur une classe d'equations fonctionnelles", Acta Math., 27  (1903)  pp. 365–390.
+Weisstein, Eric W. "Fredholm's Theorem". MathWorld.
+B.V. Khvedelidze (2001) [1994], "Fredholm theorems", Encyclopedia of Mathematics, EMS Press

@@ -1,0 +1,72 @@
+Teeworlds (formerly TeeWars) is a free, open-source sidescrolling multiplayer shooting game originally created by the Swedish developer Magnus Auvinen and now maintained by the community. It features simple cartoon-themed graphics and physics and relies heavily on classic shooter weaponry and gameplay. Currently there are official versions for Microsoft Windows, Linux, macOS as well as being available via the digital distributor Steam since 2015. The source code is publicly available.
+
+
+== Gameplay ==
+Teeworlds presents itself as a crossover between classic sprite-based shoot-em-up games of the arcade era and modern-day first-person shooters. It is played on two-dimensional, side-scrolling maps typical of the platformer genre, but uses FPS-style keyboard controls for moving, switching weapons and chatting. The game also sports a grappling hook and double jump mechanics for maneuvering. Grappling hooks can also be used to hook other tees and pull them towards the player. Map landscape themes include grass, cave, winter, desert, and jungle, which feature map elements such as spikes, pitfalls, and non-hook-able metal and rock in vanilla gametypes. Teeworlds works as a client-server system and the player can choose from a list of available game servers for multiplayer gaming.
+The player maneuvers a "Tee", a ball-shaped 2D character using the keyboard and aims and shoots at other players or objects using the mouse. Health and shields (acting as armor) are spread througout the map, which can be collected by players when needed. The only powerup in the game is a katana, which increases player 
+Therepons inspired by FPS games such as the Quake and Unreal series. Advanced weapons, such as the grenade-launcher, shotgun and laser, deal more damage than both the spawn weapons (Pistol) put only havited ammunition. The grenade launcher is a powerful weapon with a quirk that allows players to shoot themselves up walls or higher in the air, enabling them to reach higher points in maps quicker,more quicklyalso harming the player.
+
+
+=== Gametypes ===
+Currently, there are the following vanilla game types:
+
+Deathmatch: The aim is to kill as many enemy players as possible, until a certain score is reached or the time runs out.
+Team Deathmatch: The same game type as Deathmatch, except that the players now fight in 2 teams and aim for a higher, combined kill score.
+Capture The Flag: Two teams try to capture and score the enemy flag to reach a certain score (combined with team kills), or to have the higher score when the time runs out.
+Last-Man-Standing: All-vs-all survival fight with limited weapons.
+Last-Team-Standing: Team-vs-team survival fight with limited weapons.
+There are also unofficial game types, for example:
+
+DDraceNetwork: Teams of tees complete maps, or races, together in order to climb up the leaderboard.
+FNG: Tees use lasers to freeze other tees so they cannot move, then kill the frozen tee by throwing it into spikes using the grappling hook and hammer.
+infClass: Like the game "Infection", two "Tees" are selected to be zombies, and their objective is to infect all the remaining players, each with a special class, using their hammer and hook.
+zCatch: You watch the game when you get caught and are freed again when the catcher is caught. The one who catches all players wins the game.
+Nodes: Teams fight against each other and can defend themselves against enemies with the help of several buildings your team can build on the map. The goal is to eliminate all enemy spawn points.
+Block: The goal is to fight against other tees, but instead of lowering their HP with weapons, you force them in freeze tiles (from DDrace) or/and kill them in spikes.
+
+
+== History ==
+In December 2007, the source code was made available to the public under the terms of a Zlib like license.
+In March 2008 with the 0.4.0 release, the original name "Teewars" was changed to Teeworlds by the developers for legal reasons.
+Also in 2008, a non-commercial clause was added to the software license of Teeworlds which made it incompatible with the Free Software Definition and the Open Source Definition.
+Since August 29, 2012, the creator and developer, Magnus Auvinen made development and forum moderation public to a community of selected volunteers.
+With the 0.6.x release in 2011 the non-commercial clause was dropped what made Teeworlds free and open-source software again; additionally improved character encoding support with UTF-8 and introduced localization support for multiple languages was added. In August 2012 the game's content and assets were released under the Creative Commons license CC-SA 3.0.
+Teeworlds was released on Steam on August 24, 2015.
+The latest version 0.7.5 was released on 19 April 2020, and was under continued development on GitHub. The last commit from the Github repository were from July 2024.
+
+
+== Development ==
+Because Teeworlds is open-source, a community actively develops it, using GitHub with the main developer known as Oy. Teeworlds is mainly programmed in the programming languages C and C++.
+
+
+=== Code modifications ===
+As Teeworlds source code is public, many fan programmers can create their own versions of the game ("forks"), which generally has a strong influence on the game and its further development. Many players are attracted to the endless possibilities of changing the game to suit their own benefits. Slightly modified game servers are accepted by the official game, as long as they broadcast that they are. Most of the modified server versions feature new gametypes. Modified game clients are commonly used by the community.
+
+
+=== User-created content ===
+The game includes a map editor, which is a simple tool to create own maps with. Many user created maps include their own tilesets that are downloaded with the maps from the game server Teeworlds uses simple image files for most of the games's graphical content. As a result, this content may be modified and extended. Customized game character skins can be seen by other clients, as long as the skins have the same name. Teeworlds can take screenshots and record demos that can then be viewed in the game. This has led to many Teeworlds videos on web platforms, such as YouTube.
+
+
+== Distribution ==
+Teeworlds has achieved broad usage in the open source game community, and it is available in many Linux distributions. Teeworlds itself lists 2.3 million players and 630 servers in July 2016. Teeworlds has been compared to the Worms series of turn-based strategy games, and was noted in several gaming news outlets over the years.
+After the 2015 release on Steam, Steamspy reported in 2016 over 450,000 game installations and around 17,000 active players over the last two weeks.
+Chip.de listed in July 2016 Teeworlds as most downloaded Jump and Run game per week from their site (1900 downloads), accumulating 700,000 downloads.
+
+
+== Reception ==
+It blends two unique gameplay styles. Teeworlds was praised for its innovative, surprising and an addictive gameplay that's easy to learn and real fun to play. There is a lot of third-party content available with custom game mods making Teeworlds more worthwhile.
+
+
+== See also ==
+List of open source games
+
+
+== References ==
+
+
+== External links ==
+
+Official website
+Official forum
+Official statistics
+teeworlds on GitHub

@@ -1,0 +1,8070 @@
+Alternatives to general relativity are physical theories that attempt to describe the phenomenon of gravitation in competition with Einstein's theory of general relativity. There have been many different attempts at constructing an ideal theory of gravity.
+These attempts can be split into four broad categories based on their scope. In this article, straightforward alternatives to general relativity are discussed, which do not involve quantum mechanics or force unification. Other theories which do attempt to construct a theory using the principles of quantum mechanics are known as theories of quantized gravity. Thirdly, there are theories which attempt to explain gravity and other forces at the same time; these are known as classical unified field theories. Finally, the most ambitious theories attempt to both put gravity in quantum mechanical terms and unify forces; these are called theories of everything.
+None of these alternatives to general relativity have gained wide acceptance. General relativity has withstood many tests, remaining consistent with all observations so far. In contrast, many of the early alternatives have been definitively disproven. However, some of the alternative theories of gravity are supported by a minority of physicists, and the topic remains the subject of intense study in theoretical physics.
+
+
+== Notation in this article ==
+
+  
+    
+      
+        c
+        
+      
+    
+    {\displaystyle c\;}
+  
+ is the speed of light, 
+  
+    
+      
+        G
+        
+      
+    
+    {\displaystyle G\;}
+  
+ is the gravitational constant. "Geometric variables" are not used.
+Latin indices go from 1 to 3, Greek indices go from 0 to 3. The Einstein summation convention is used.
+
+  
+    
+      
+        
+          η
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle \eta _{\mu \nu }\;}
+  
+ is the Minkowski metric. 
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle g_{\mu \nu }\;}
+  
+ is a tensor, usually the metric tensor. These have signature (−,+,+,+).
+Partial differentiation is written 
+  
+    
+      
+        
+          ∂
+          
+            μ
+          
+        
+        φ
+        
+      
+    
+    {\displaystyle \partial _{\mu }\varphi \;}
+  
+ or 
+  
+    
+      
+        
+          φ
+          
+            ,
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle \varphi _{,\mu }\;}
+  
+. Covariant differentiation is written 
+  
+    
+      
+        
+          ∇
+          
+            μ
+          
+        
+        φ
+        
+      
+    
+    {\displaystyle \nabla _{\mu }\varphi \;}
+  
+ or 
+  
+    
+      
+        
+          φ
+          
+            ;
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle \varphi _{;\mu }\;}
+  
+.
+
+
+== General relativity ==
+
+For comparison with alternatives, the formulas of General Relativity are:
+
+  
+    
+      
+        δ
+        ∫
+        d
+        s
+        =
+        0
+        
+      
+    
+    {\displaystyle \delta \int ds=0\,}
+  
+
+  
+    
+      
+        
+          
+            d
+            s
+          
+          
+            2
+          
+        
+        =
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+        d
+        
+          x
+          
+            μ
+          
+        
+        
+        d
+        
+          x
+          
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle {ds}^{2}=g_{\mu \nu }\,dx^{\mu }\,dx^{\nu }\,}
+  
+
+  
+    
+      
+        
+          R
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            
+              8
+              π
+              G
+            
+            
+              c
+              
+                4
+              
+            
+          
+        
+        
+          (
+          
+            
+              T
+              
+                μ
+                ν
+              
+            
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            T
+          
+          )
+        
+        
+      
+    
+    {\displaystyle R_{\mu \nu }={\frac {8\pi G}{c^{4}}}\left(T_{\mu \nu }-{\frac {1}{2}}g_{\mu \nu }T\right)\,}
+  
+
+which can also be written
+
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            
+              c
+              
+                4
+              
+            
+            
+              8
+              π
+              G
+            
+          
+        
+        
+          (
+          
+            
+              R
+              
+                μ
+                ν
+              
+            
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            R
+          
+          )
+        
+        
+        .
+      
+    
+    {\displaystyle T^{\mu \nu }={c^{4} \over 8\pi G}\left(R^{\mu \nu }-{\frac {1}{2}}g^{\mu \nu }R\right)\,.}
+  
+
+The Einstein–Hilbert action for general relativity is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            
+              c
+              
+                4
+              
+            
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        R
+        
+          
+            −
+            g
+          
+        
+         
+        
+          d
+          
+            4
+          
+        
+        x
+        +
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S={c^{4} \over 16\pi G}\int R{\sqrt {-g}}\ d^{4}x+S_{m}\,}
+  
+
+where 
+  
+    
+      
+        G
+        
+      
+    
+    {\displaystyle G\,}
+  
+ is Newton's gravitational constant, 
+  
+    
+      
+        R
+        =
+        
+          R
+          
+            μ
+          
+          
+             
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle R=R_{\mu }^{~\mu }\,}
+  
+ is the Ricci curvature of space, 
+  
+    
+      
+        g
+        =
+        det
+        (
+        
+          g
+          
+            μ
+            ν
+          
+        
+        )
+        
+      
+    
+    {\displaystyle g=\det(g_{\mu \nu })\,}
+  
+ and 
+  
+    
+      
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S_{m}\,}
+  
+ is the action due to mass.
+General relativity is a tensor theory, the equations all contain tensors. Nordström's theories, on the other hand, are scalar theories because the gravitational field is a scalar. Other proposed alternatives include scalar–tensor theories that contain a scalar field in addition to the tensors of general relativity, and other variants containing vector fields as well have been developed recently.
+
+
+== Classification of theories ==
+Theories of gravity can be classified, loosely, into several categories. Most of the theories described here have:
+
+an 'action' (see the principle of least action, a variational principle based on the concept of action)
+a Lagrangian density
+a metric
+If a theory has a Lagrangian density for gravity, say 
+  
+    
+      
+        L
+        
+      
+    
+    {\displaystyle L\,}
+  
+, then the gravitational part of the action 
+  
+    
+      
+        S
+        
+      
+    
+    {\displaystyle S\,}
+  
+ is the integral of that:
+
+  
+    
+      
+        S
+        =
+        ∫
+        L
+        
+          
+            −
+            g
+          
+        
+        
+        
+          
+            d
+          
+          
+            4
+          
+        
+        x
+      
+    
+    {\displaystyle S=\int L{\sqrt {-g}}\,\mathrm {d} ^{4}x}
+  
+.
+In this equation it is usual, though not essential, to have 
+  
+    
+      
+        g
+        =
+        −
+        1
+        
+      
+    
+    {\displaystyle g=-1\,}
+  
+ at spatial infinity when using Cartesian coordinates. For example, the Einstein–Hilbert action uses
+
+  
+    
+      
+        L
+        
+        ∝
+        
+        R
+      
+    
+    {\displaystyle L\,\propto \,R}
+  
+
+where R is the scalar curvature, a measure of the curvature of space.
+Almost every theory described in this article has an action. It is the most efficient known way to guarantee that the necessary conservation laws of energy, momentum and angular momentum are incorporated automatically; although it is easy to construct an action where those conservation laws are violated. Canonical methods provide another way to construct systems that have the required conservation laws, but this approach is more cumbersome to implement. The original 1983 version of MOND did not have an action.
+A few theories have an action but not a Lagrangian density. A good example is Whitehead, the action there is termed non-local.
+A theory of gravity is a "metric theory" if and only if it can be given a mathematical representation in which two conditions hold:
+Condition 1: There exists a symmetric metric tensor 
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle g_{\mu \nu }\,}
+  
+ of signature (−, +, +, +), which governs proper-length and proper-time measurements in the usual manner of special and general relativity:
+
+  
+    
+      
+        
+          
+            d
+            τ
+          
+          
+            2
+          
+        
+        =
+        −
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+        d
+        
+          x
+          
+            μ
+          
+        
+        
+        d
+        
+          x
+          
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle {d\tau }^{2}=-g_{\mu \nu }\,dx^{\mu }\,dx^{\nu }\,}
+  
+
+where there is a summation over indices 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ and 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+.
+Condition 2: Stressed matter and fields being acted upon by gravity respond in accordance with the equation:
+
+  
+    
+      
+        0
+        =
+        
+          ∇
+          
+            ν
+          
+        
+        
+          T
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            
+              T
+              
+                μ
+                ν
+              
+            
+          
+          
+            ,
+            ν
+          
+        
+        +
+        
+          Γ
+          
+            σ
+            ν
+          
+          
+            μ
+          
+        
+        
+          T
+          
+            σ
+            ν
+          
+        
+        +
+        
+          Γ
+          
+            σ
+            ν
+          
+          
+            ν
+          
+        
+        
+          T
+          
+            μ
+            σ
+          
+        
+        
+      
+    
+    {\displaystyle 0=\nabla _{\nu }T^{\mu \nu }={T^{\mu \nu }}_{,\nu }+\Gamma _{\sigma \nu }^{\mu }T^{\sigma \nu }+\Gamma _{\sigma \nu }^{\nu }T^{\mu \sigma }\,}
+  
+
+where 
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle T^{\mu \nu }\,}
+  
+ is the stress–energy tensor for all matter and non-gravitational fields, and where 
+  
+    
+      
+        
+          ∇
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle \nabla _{\nu }}
+  
+ is the covariant derivative with respect to the metric and 
+  
+    
+      
+        
+          Γ
+          
+            σ
+            ν
+          
+          
+            α
+          
+        
+        
+      
+    
+    {\displaystyle \Gamma _{\sigma \nu }^{\alpha }\,}
+  
+ is the Christoffel symbol. The stress–energy tensor should also satisfy an energy condition.
+Metric theories include (from simplest to most complex):
+
+Scalar field theories (includes conformally flat theories & Stratified theories with conformally flat space slices)
+Bergman
+Coleman
+Einstein (1912)
+Einstein–Fokker theory
+Lee–Lightman–Ni
+Littlewood
+Ni
+Nordström's theory of gravitation (first metric theory of gravity to be developed)
+Page–Tupper
+Papapetrou
+Rosen (1971)
+Whitrow–Morduch
+Yilmaz theory of gravitation (attempted to eliminate event horizons from the theory.)
+Quasilinear theories (includes Linear fixed gauge)
+Bollini–Giambiagi–Tiomno
+Deser–Laurent
+Whitehead's theory of gravity (intended to use only retarded potentials)
+Tensor theories
+Einstein's general relativity
+Fourth-order gravity (allows the Lagrangian to depend on second-order contractions of the Riemann curvature tensor)
+f(R) gravity (allows the Lagrangian to depend on higher powers of the Ricci scalar)
+Gauss–Bonnet gravity
+Lovelock theory of gravity (allows the Lagrangian to depend on higher-order contractions of the Riemann curvature tensor)
+Infinite derivative gravity
+Scalar–tensor theories
+Bekenstein
+Bergmann–Wagoner
+Brans–Dicke theory (the most well-known alternative to general relativity, intended to be better at applying Mach's principle)
+Jordan
+Nordtvedt
+Thiry
+Chameleon
+Pressuron
+Vector–tensor theories
+Hellings–Nordtvedt
+Will–Nordtvedt
+Bimetric theories
+Lightman–Lee
+Rastall
+Rosen (1975)
+Other metric theories
+(see section Modern theories below)
+Non-metric theories include
+
+Belinfante–Swihart
+Einstein–Cartan theory (intended to handle spin-orbital angular momentum interchange)
+Kustaanheimo (1967)
+Teleparallelism
+Gauge theory gravity
+A word here about Mach's principle is appropriate because a few of these theories rely on Mach's principle (e.g. Whitehead), and many mention it in passing (e.g. Einstein–Grossmann, Brans–Dicke). Mach's principle can be thought of a half-way-house between Newton and Einstein. It goes this way:
+
+Newton: Absolute space and time.
+Mach: The reference frame comes from the distribution of matter in the universe.
+Einstein: There is no reference frame.
+
+
+== Theories from 1917 to the 1980s ==
+
+At the time it was published in the 17th century, Isaac Newton's theory of gravity was the most accurate theory of gravity. Since then, a number of alternatives were proposed. The theories which predate the formulation of general relativity in 1915 are discussed in history of gravitational theory.
+This section includes alternatives to general relativity published after general relativity but before the observations of galaxy rotation that led to the hypothesis of "dark matter". Those considered here include (see Will Lang):
+
+These theories are presented here without a cosmological constant or added scalar or vector potential unless specifically noted, for the simple reason that the need for one or both of these was not recognized before the supernova observations by the Supernova Cosmology Project and High-Z Supernova Search Team. How to add a cosmological constant or quintessence to a theory is discussed under Modern Theories (see also Einstein–Hilbert action).
+
+
+=== Scalar field theories ===
+
+The scalar field theories of Nordström have already been discussed. Those of Littlewood, Bergman, Yilmaz, Whitrow and Morduch and Page and Tupper follow the general formula give by Page and Tupper.
+According to Page and Tupper, who discuss all these except Nordström, the general scalar field theory comes from the principle of least action:
+
+  
+    
+      
+        δ
+        ∫
+        f
+        
+          (
+          
+            
+              
+                φ
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        
+        d
+        s
+        =
+        0
+      
+    
+    {\displaystyle \delta \int f\left({\tfrac {\varphi }{c^{2}}}\right)\,ds=0}
+  
+
+where the scalar field is,
+
+  
+    
+      
+        φ
+        =
+        
+          
+            
+              G
+              M
+            
+            r
+          
+        
+      
+    
+    {\displaystyle \varphi ={\frac {GM}{r}}}
+  
+
+and c may or may not depend on 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+.
+In Nordström,
+
+  
+    
+      
+        f
+        (
+        φ
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+        )
+        =
+        exp
+        ⁡
+        (
+        −
+        φ
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+        )
+        ,
+        
+        c
+        =
+        
+          c
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle f(\varphi /c^{2})=\exp(-\varphi /c^{2}),\qquad c=c_{\infty }}
+  
+
+In Littlewood and Bergmann,
+
+  
+    
+      
+        f
+        
+          (
+          
+            
+              φ
+              
+                c
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        =
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              
+                φ
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+            −
+            
+              
+                
+                  (
+                  c
+                  
+                    /
+                  
+                  
+                    φ
+                    
+                      2
+                    
+                  
+                  
+                    )
+                    
+                      2
+                    
+                  
+                
+                2
+              
+            
+          
+          )
+        
+        
+        c
+        =
+        
+          c
+          
+            ∞
+          
+        
+        
+      
+    
+    {\displaystyle f\left({\frac {\varphi }{c^{2}}}\right)=\exp \left(-{\frac {\varphi }{c^{2}}}-{\frac {(c/\varphi ^{2})^{2}}{2}}\right)\qquad c=c_{\infty }\,}
+  
+
+In Whitrow and Morduch,
+
+  
+    
+      
+        f
+        
+          (
+          
+            
+              φ
+              
+                c
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        =
+        1
+        ,
+        
+        
+          c
+          
+            2
+          
+        
+        =
+        
+          c
+          
+            ∞
+          
+          
+            2
+          
+        
+        −
+        2
+        φ
+        
+      
+    
+    {\displaystyle f\left({\frac {\varphi }{c^{2}}}\right)=1,\qquad c^{2}=c_{\infty }^{2}-2\varphi \,}
+  
+
+In Whitrow and Morduch,
+
+  
+    
+      
+        f
+        
+          (
+          
+            
+              φ
+              
+                c
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        =
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              
+                φ
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        ,
+        
+        
+          c
+          
+            2
+          
+        
+        =
+        
+          c
+          
+            ∞
+          
+          
+            2
+          
+        
+        −
+        2
+        φ
+        
+      
+    
+    {\displaystyle f\left({\frac {\varphi }{c^{2}}}\right)=\exp \left(-{\frac {\varphi }{c^{2}}}\right),\qquad c^{2}=c_{\infty }^{2}-2\varphi \,}
+  
+
+In Page and Tupper,
+
+  
+    
+      
+        f
+        
+          (
+          
+            
+              φ
+              
+                c
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        =
+        
+          
+            φ
+            
+              c
+              
+                2
+              
+            
+          
+        
+        +
+        α
+        
+          
+            (
+            
+              
+                φ
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+            )
+          
+          
+            2
+          
+        
+        ,
+        
+        
+          
+            
+              c
+              
+                ∞
+              
+              
+                2
+              
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        =
+        1
+        +
+        4
+        
+          (
+          
+            
+              φ
+              
+                c
+                
+                  ∞
+                
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        +
+        (
+        15
+        +
+        2
+        α
+        )
+        
+          
+            (
+            
+              
+                φ
+                
+                  c
+                  
+                    ∞
+                  
+                  
+                    2
+                  
+                
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f\left({\frac {\varphi }{c^{2}}}\right)={\frac {\varphi }{c^{2}}}+\alpha \left({\frac {\varphi }{c^{2}}}\right)^{2},\qquad {\frac {c_{\infty }^{2}}{c^{2}}}=1+4\left({\frac {\varphi }{c_{\infty }^{2}}}\right)+(15+2\alpha )\left({\frac {\varphi }{c_{\infty }^{2}}}\right)^{2}}
+  
+
+Page and Tupper matches Yilmaz's theory to second order when 
+  
+    
+      
+        α
+        =
+        −
+        7
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \alpha =-7/2}
+  
+.
+The gravitational deflection of light has to be zero when c is constant. Given that variable c and zero deflection of light are both in conflict with experiment, the prospect for a successful scalar theory of gravity looks very unlikely. Further, if the parameters of a scalar theory are adjusted so that the deflection of light is correct then the gravitational redshift is likely to be wrong.
+Ni summarized some theories and also created two more. In the first, a pre-existing special relativity space-time and universal time coordinate acts with matter and non-gravitational fields to generate a scalar field.  This scalar field acts together with all the rest to generate the metric.
+The action is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+          
+            −
+            g
+          
+        
+        
+          L
+          
+            φ
+          
+        
+        +
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int d^{4}x{\sqrt {-g}}L_{\varphi }+S_{m}}
+  
+
+  
+    
+      
+        
+          L
+          
+            φ
+          
+        
+        =
+        φ
+        R
+        −
+        2
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+        
+          ∂
+          
+            μ
+          
+        
+        φ
+        
+        
+          ∂
+          
+            ν
+          
+        
+        φ
+      
+    
+    {\displaystyle L_{\varphi }=\varphi R-2g^{\mu \nu }\,\partial _{\mu }\varphi \,\partial _{\nu }\varphi }
+  
+
+Misner et al. gives this without the 
+  
+    
+      
+        φ
+        R
+      
+    
+    {\displaystyle \varphi R}
+  
+ term. 
+  
+    
+      
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S_{m}}
+  
+ is the matter action.
+
+  
+    
+      
+        ◻
+        φ
+        =
+        4
+        π
+        
+          T
+          
+            μ
+            ν
+          
+        
+        
+          [
+          
+            
+              η
+              
+                μ
+                ν
+              
+            
+            
+              e
+              
+                −
+                2
+                φ
+              
+            
+            +
+            
+              (
+              
+                
+                  e
+                  
+                    2
+                    φ
+                  
+                
+                +
+                
+                  e
+                  
+                    −
+                    2
+                    φ
+                  
+                
+              
+              )
+            
+            
+            
+              ∂
+              
+                μ
+              
+            
+            t
+            
+            
+              ∂
+              
+                ν
+              
+            
+            t
+          
+          ]
+        
+      
+    
+    {\displaystyle \Box \varphi =4\pi T^{\mu \nu }\left[\eta _{\mu \nu }e^{-2\varphi }+\left(e^{2\varphi }+e^{-2\varphi }\right)\,\partial _{\mu }t\,\partial _{\nu }t\right]}
+  
+
+t is the universal time coordinate. This theory is self-consistent and complete. But the motion of the solar system through the universe leads to serious disagreement with experiment.
+In the second theory of Ni there are two arbitrary functions 
+  
+    
+      
+        f
+        (
+        φ
+        )
+      
+    
+    {\displaystyle f(\varphi )}
+  
+ and 
+  
+    
+      
+        k
+        (
+        φ
+        )
+      
+    
+    {\displaystyle k(\varphi )}
+  
+ that are related to the metric by:
+
+  
+    
+      
+        d
+        
+          s
+          
+            2
+          
+        
+        =
+        
+          e
+          
+            −
+            2
+            f
+            (
+            φ
+            )
+          
+        
+        d
+        
+          t
+          
+            2
+          
+        
+        −
+        
+          e
+          
+            2
+            f
+            (
+            φ
+            )
+          
+        
+        
+          [
+          
+            d
+            
+              x
+              
+                2
+              
+            
+            +
+            d
+            
+              y
+              
+                2
+              
+            
+            +
+            d
+            
+              z
+              
+                2
+              
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle ds^{2}=e^{-2f(\varphi )}dt^{2}-e^{2f(\varphi )}\left[dx^{2}+dy^{2}+dz^{2}\right]}
+  
+
+  
+    
+      
+        
+          η
+          
+            μ
+            ν
+          
+        
+        
+          ∂
+          
+            μ
+          
+        
+        
+          ∂
+          
+            ν
+          
+        
+        φ
+        =
+        4
+        π
+        
+          ρ
+          
+            ∗
+          
+        
+        k
+        (
+        φ
+        )
+      
+    
+    {\displaystyle \eta ^{\mu \nu }\partial _{\mu }\partial _{\nu }\varphi =4\pi \rho ^{*}k(\varphi )}
+  
+
+Ni quotes Rosen as having two scalar fields 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ and 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ that are related to the metric by:
+
+  
+    
+      
+        d
+        
+          s
+          
+            2
+          
+        
+        =
+        
+          φ
+          
+            2
+          
+        
+        
+        d
+        
+          t
+          
+            2
+          
+        
+        −
+        
+          ψ
+          
+            2
+          
+        
+        
+          [
+          
+            d
+            
+              x
+              
+                2
+              
+            
+            +
+            d
+            
+              y
+              
+                2
+              
+            
+            +
+            d
+            
+              z
+              
+                2
+              
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle ds^{2}=\varphi ^{2}\,dt^{2}-\psi ^{2}\left[dx^{2}+dy^{2}+dz^{2}\right]}
+  
+
+In Papapetrou the gravitational part of the Lagrangian is:
+
+  
+    
+      
+        
+          L
+          
+            φ
+          
+        
+        =
+        
+          e
+          
+            φ
+          
+        
+        
+          (
+          
+            
+              
+                
+                  1
+                  2
+                
+              
+            
+            
+              e
+              
+                −
+                φ
+              
+            
+            
+            
+              ∂
+              
+                α
+              
+            
+            φ
+            
+            
+              ∂
+              
+                α
+              
+            
+            φ
+            +
+            
+              
+                
+                  3
+                  2
+                
+              
+            
+            
+              e
+              
+                φ
+              
+            
+            
+            
+              ∂
+              
+                0
+              
+            
+            φ
+            
+            
+              ∂
+              
+                0
+              
+            
+            φ
+          
+          )
+        
+      
+    
+    {\displaystyle L_{\varphi }=e^{\varphi }\left({\tfrac {1}{2}}e^{-\varphi }\,\partial _{\alpha }\varphi \,\partial _{\alpha }\varphi +{\tfrac {3}{2}}e^{\varphi }\,\partial _{0}\varphi \,\partial _{0}\varphi \right)}
+  
+
+In Papapetrou there is a second scalar field 
+  
+    
+      
+        χ
+      
+    
+    {\displaystyle \chi }
+  
+. The gravitational part of the Lagrangian is now:
+
+  
+    
+      
+        
+          L
+          
+            φ
+          
+        
+        =
+        
+          e
+          
+            
+              
+                1
+                2
+              
+            
+            (
+            3
+            φ
+            +
+            χ
+            )
+          
+        
+        
+          (
+          
+            −
+            
+              
+                
+                  1
+                  2
+                
+              
+            
+            
+              e
+              
+                −
+                φ
+              
+            
+            
+            
+              ∂
+              
+                α
+              
+            
+            φ
+            
+            
+              ∂
+              
+                α
+              
+            
+            φ
+            −
+            
+              e
+              
+                −
+                φ
+              
+            
+            
+            
+              ∂
+              
+                α
+              
+            
+            φ
+            
+            
+              ∂
+              
+                χ
+              
+            
+            φ
+            +
+            
+              
+                
+                  3
+                  2
+                
+              
+            
+            
+              e
+              
+                −
+                χ
+              
+            
+            
+            
+              ∂
+              
+                0
+              
+            
+            φ
+            
+            
+              ∂
+              
+                0
+              
+            
+            φ
+          
+          )
+        
+        
+      
+    
+    {\displaystyle L_{\varphi }=e^{{\frac {1}{2}}(3\varphi +\chi )}\left(-{\tfrac {1}{2}}e^{-\varphi }\,\partial _{\alpha }\varphi \,\partial _{\alpha }\varphi -e^{-\varphi }\,\partial _{\alpha }\varphi \,\partial _{\chi }\varphi +{\tfrac {3}{2}}e^{-\chi }\,\partial _{0}\varphi \,\partial _{0}\varphi \right)\,}
+  
+
+
+=== Bimetric theories ===
+
+Bimetric theories contain both the normal tensor metric and the Minkowski metric (or a metric of constant curvature), and may contain other scalar or vector fields.
+Rosen (1975) bimetric theory
+The action is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              64
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            −
+            η
+          
+        
+        
+          η
+          
+            μ
+            ν
+          
+        
+        
+          g
+          
+            α
+            β
+          
+        
+        
+          g
+          
+            γ
+            δ
+          
+        
+        (
+        
+          g
+          
+            α
+            γ
+            
+              |
+            
+            μ
+          
+        
+        
+          g
+          
+            α
+            δ
+            
+              |
+            
+            ν
+          
+        
+        −
+        
+          
+            
+              1
+              2
+            
+          
+          
+            g
+            
+              α
+              β
+              
+                |
+              
+              μ
+            
+          
+          
+            g
+            
+              γ
+              δ
+              
+                |
+              
+              ν
+            
+          
+          )
+          +
+          
+            S
+            
+              m
+            
+          
+        
+      
+    
+    {\displaystyle S={1 \over 64\pi G}\int d^{4}x\,{\sqrt {-\eta }}\eta ^{\mu \nu }g^{\alpha \beta }g^{\gamma \delta }(g_{\alpha \gamma |\mu }g_{\alpha \delta |\nu }-\textstyle {\frac {1}{2}}g_{\alpha \beta |\mu }g_{\gamma \delta |\nu })+S_{m}}
+  
+
+  
+    
+      
+        
+          ◻
+          
+            η
+          
+        
+        
+          g
+          
+            μ
+            ν
+          
+        
+        −
+        
+          g
+          
+            α
+            β
+          
+        
+        
+          η
+          
+            γ
+            δ
+          
+        
+        
+          g
+          
+            μ
+            α
+            
+              |
+            
+            γ
+          
+        
+        
+          g
+          
+            ν
+            β
+            
+              |
+            
+            δ
+          
+        
+        =
+        −
+        16
+        π
+        G
+        
+          
+            g
+            
+              /
+            
+            η
+          
+        
+        (
+        
+          T
+          
+            μ
+            ν
+          
+        
+        −
+        
+          
+            
+              1
+              2
+            
+          
+          
+            g
+            
+              μ
+              ν
+            
+          
+          T
+          )
+          
+        
+      
+    
+    {\displaystyle \Box _{\eta }g_{\mu \nu }-g^{\alpha \beta }\eta ^{\gamma \delta }g_{\mu \alpha |\gamma }g_{\nu \beta |\delta }=-16\pi G{\sqrt {g/\eta }}(T_{\mu \nu }-\textstyle {\frac {1}{2}}g_{\mu \nu }T)\,}
+  
+
+Lightman–Lee developed a metric theory based on the non-metric theory of Belinfante and Swihart. The result is known as BSLL theory. Given a tensor field 
+  
+    
+      
+        
+          B
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle B_{\mu \nu }\,}
+  
+, 
+  
+    
+      
+        B
+        =
+        
+          B
+          
+            μ
+            ν
+          
+        
+        
+          η
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle B=B_{\mu \nu }\eta ^{\mu \nu }\,}
+  
+, and two constants 
+  
+    
+      
+        a
+        
+      
+    
+    {\displaystyle a\,}
+  
+ and 
+  
+    
+      
+        f
+        
+      
+    
+    {\displaystyle f\,}
+  
+ the action is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+          
+            −
+            η
+          
+        
+        (
+        a
+        
+          B
+          
+            μ
+            ν
+            
+              |
+            
+            α
+          
+        
+        
+          B
+          
+            μ
+            ν
+            
+              |
+            
+            α
+          
+        
+        +
+        f
+        
+          B
+          
+            ,
+            α
+          
+        
+        
+          B
+          
+            ,
+            α
+          
+        
+        )
+        +
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int d^{4}x{\sqrt {-\eta }}(aB^{\mu \nu |\alpha }B_{\mu \nu |\alpha }+fB_{,\alpha }B^{,\alpha })+S_{m}}
+  
+
+and the stress–energy tensor comes from:
+
+  
+    
+      
+        a
+        
+          ◻
+          
+            η
+          
+        
+        
+          B
+          
+            μ
+            ν
+          
+        
+        +
+        f
+        
+          η
+          
+            μ
+            ν
+          
+        
+        
+          ◻
+          
+            η
+          
+        
+        B
+        =
+        −
+        4
+        π
+        G
+        
+          
+            g
+            
+              /
+            
+            η
+          
+        
+        
+        
+          T
+          
+            α
+            β
+          
+        
+        
+          (
+          
+            
+              
+                ∂
+                
+                  g
+                  
+                    α
+                    β
+                  
+                
+              
+              
+                ∂
+                
+                  B
+                  
+                    μ
+                  
+                
+                ν
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle a\Box _{\eta }B^{\mu \nu }+f\eta ^{\mu \nu }\Box _{\eta }B=-4\pi G{\sqrt {g/\eta }}\,T^{\alpha \beta }\left({\frac {\partial g_{\alpha \beta }}{\partial B_{\mu }\nu }}\right)}
+  
+
+In Rastall, the metric is an algebraic function of the Minkowski metric and a Vector field.  The Action is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            −
+            g
+          
+        
+        F
+        (
+        N
+        )
+        
+          K
+          
+            μ
+            ;
+            ν
+          
+        
+        
+          K
+          
+            μ
+            ;
+            ν
+          
+        
+        +
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int d^{4}x\,{\sqrt {-g}}F(N)K^{\mu ;\nu }K_{\mu ;\nu }+S_{m}}
+  
+
+where
+
+  
+    
+      
+        F
+        (
+        N
+        )
+        =
+        −
+        
+          
+            N
+            
+              2
+              +
+              N
+            
+          
+        
+      
+    
+    {\displaystyle F(N)=-{\frac {N}{2+N}}}
+  
+  and  
+  
+    
+      
+        N
+        =
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+          K
+          
+            μ
+          
+        
+        
+          K
+          
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle N=g^{\mu \nu }K_{\mu }K_{\nu }\;}
+  
+
+(see Will for the field equation for 
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle T^{\mu \nu }\;}
+  
+ and 
+  
+    
+      
+        
+          K
+          
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle K_{\mu }\;}
+  
+).
+
+
+=== Quasilinear theories ===
+In Whitehead, the physical metric 
+  
+    
+      
+        g
+        
+      
+    
+    {\displaystyle g\;}
+  
+ is constructed (by Synge) algebraically from the Minkowski metric 
+  
+    
+      
+        η
+        
+      
+    
+    {\displaystyle \eta \;}
+  
+ and matter variables, so it doesn't even have a scalar field. The construction is:
+
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        (
+        
+          x
+          
+            α
+          
+        
+        )
+        =
+        
+          η
+          
+            μ
+            ν
+          
+        
+        −
+        2
+        
+          ∫
+          
+            
+              Σ
+              
+                −
+              
+            
+          
+        
+        
+          
+            
+              
+                y
+                
+                  μ
+                
+                
+                  −
+                
+              
+              
+                y
+                
+                  ν
+                
+                
+                  −
+                
+              
+            
+            
+              (
+              
+                w
+                
+                  −
+                
+              
+              
+                )
+                
+                  3
+                
+              
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  −
+                  g
+                
+              
+              ρ
+              
+                u
+                
+                  α
+                
+              
+              
+              d
+              
+                Σ
+                
+                  α
+                
+              
+            
+            ]
+          
+          
+            −
+          
+        
+      
+    
+    {\displaystyle g_{\mu \nu }(x^{\alpha })=\eta _{\mu \nu }-2\int _{\Sigma ^{-}}{y_{\mu }^{-}y_{\nu }^{-} \over (w^{-})^{3}}\left[{\sqrt {-g}}\rho u^{\alpha }\,d\Sigma _{\alpha }\right]^{-}}
+  
+
+where the superscript (−) indicates quantities evaluated along the past 
+  
+    
+      
+        η
+        
+      
+    
+    {\displaystyle \eta \;}
+  
+ light cone of the field point 
+  
+    
+      
+        
+          x
+          
+            α
+          
+        
+        
+      
+    
+    {\displaystyle x^{\alpha }\;}
+  
+ and
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                
+                  y
+                  
+                    μ
+                  
+                
+                
+                  )
+                  
+                    −
+                  
+                
+              
+              
+                
+                =
+                
+                  x
+                  
+                    μ
+                  
+                
+                −
+                (
+                
+                  x
+                  
+                    μ
+                  
+                
+                
+                  )
+                  
+                    −
+                  
+                
+                ,
+                
+                (
+                
+                  y
+                  
+                    μ
+                  
+                
+                
+                  )
+                  
+                    −
+                  
+                
+                (
+                
+                  y
+                  
+                    μ
+                  
+                
+                
+                  )
+                  
+                    −
+                  
+                
+                =
+                0
+                ,
+              
+            
+            
+              
+                
+                  w
+                  
+                    −
+                  
+                
+              
+              
+                
+                =
+                (
+                
+                  y
+                  
+                    μ
+                  
+                
+                
+                  )
+                  
+                    −
+                  
+                
+                (
+                
+                  u
+                  
+                    μ
+                  
+                
+                
+                  )
+                  
+                    −
+                  
+                
+                ,
+                
+                (
+                
+                  u
+                  
+                    μ
+                  
+                
+                )
+                =
+                
+                  
+                    
+                      d
+                      
+                        x
+                        
+                          μ
+                        
+                      
+                    
+                    
+                      d
+                      σ
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                d
+                
+                  σ
+                  
+                    2
+                  
+                
+              
+              
+                
+                =
+                
+                  η
+                  
+                    μ
+                    ν
+                  
+                
+                
+                d
+                
+                  x
+                  
+                    μ
+                  
+                
+                
+                d
+                
+                  x
+                  
+                    ν
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(y^{\mu })^{-}&=x^{\mu }-(x^{\mu })^{-},\qquad (y^{\mu })^{-}(y_{\mu })^{-}=0,\\[5pt]w^{-}&=(y^{\mu })^{-}(u_{\mu })^{-},\qquad (u_{\mu })={\frac {dx^{\mu }}{d\sigma }},\\[5pt]d\sigma ^{2}&=\eta _{\mu \nu }\,dx^{\mu }\,dx^{\nu }\end{aligned}}}
+  
+
+Nevertheless, the metric construction (from a non-metric theory) using the "length contraction" ansatz is criticised.
+Deser and Laurent and Bollini–Giambiagi–Tiomno are Linear Fixed Gauge theories. Taking an approach from quantum field theory, combine a Minkowski spacetime with the gauge invariant action of a spin-two tensor field (i.e. graviton) 
+  
+    
+      
+        
+          h
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle h_{\mu \nu }\;}
+  
+ to define
+
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        =
+        
+          η
+          
+            μ
+            ν
+          
+        
+        +
+        
+          h
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle g_{\mu \nu }=\eta _{\mu \nu }+h_{\mu \nu }\;}
+  
+
+The action is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+          
+            −
+            η
+          
+        
+        
+          [
+          
+            2
+            
+              h
+              
+                
+                  |
+                
+                ν
+              
+              
+                μ
+                ν
+              
+            
+            
+              h
+              
+                μ
+                λ
+              
+              
+                
+                  |
+                
+                λ
+              
+            
+            −
+            2
+            
+              h
+              
+                
+                  |
+                
+                ν
+              
+              
+                μ
+                ν
+              
+            
+            
+              h
+              
+                λ
+                
+                  |
+                
+                μ
+              
+              
+                λ
+              
+            
+            +
+            
+              h
+              
+                ν
+                
+                  |
+                
+                μ
+              
+              
+                ν
+              
+            
+            
+              h
+              
+                λ
+              
+              
+                λ
+                
+                  |
+                
+                μ
+              
+            
+            −
+            
+              h
+              
+                μ
+                ν
+                
+                  |
+                
+                λ
+              
+            
+            
+              h
+              
+                μ
+                ν
+                
+                  |
+                
+                λ
+              
+            
+          
+          ]
+        
+        +
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int d^{4}x{\sqrt {-\eta }}\left[2h_{|\nu }^{\mu \nu }h_{\mu \lambda }^{|\lambda }-2h_{|\nu }^{\mu \nu }h_{\lambda |\mu }^{\lambda }+h_{\nu |\mu }^{\nu }h_{\lambda }^{\lambda |\mu }-h^{\mu \nu |\lambda }h_{\mu \nu |\lambda }\right]+S_{m}\;}
+  
+
+The Bianchi identity associated with this partial gauge invariance is wrong. Linear Fixed Gauge theories seek to remedy this by breaking the gauge invariance of the gravitational action through the introduction of auxiliary gravitational fields that couple to 
+  
+    
+      
+        
+          h
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle h_{\mu \nu }\;}
+  
+.
+A cosmological constant can be introduced into a quasilinear theory by the simple expedient of changing the Minkowski background to a de Sitter or anti-de Sitter spacetime, as suggested by G. Temple in 1923. Temple's suggestions on how to do this were criticized by C. B. Rayner in 1955.
+
+
+=== Tensor theories ===
+Einstein's general relativity is the simplest plausible theory of gravity that can be based on just one symmetric tensor field (the metric tensor). Others include: Starobinsky (R+R^2) gravity, Gauss–Bonnet gravity, f(R) gravity, and Lovelock theory of gravity.
+
+
+==== Starobinsky ====
+
+Starobinsky gravity, proposed by Alexei Starobinsky has the Lagrangian
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        
+          [
+          
+            R
+            +
+            
+              
+                
+                  R
+                  
+                    2
+                  
+                
+                
+                  6
+                  
+                    M
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle {\mathcal {L}}={\sqrt {-g}}\left[R+{\frac {R^{2}}{6M^{2}}}\right]}
+  
+
+and has been used to explain inflation, in the form of Starobinsky inflation. Here 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is a constant.
+
+
+==== Gauss–Bonnet ====
+Gauss–Bonnet gravity has the action
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        
+          [
+          
+            R
+            +
+            
+              R
+              
+                2
+              
+            
+            −
+            4
+            
+              R
+              
+                μ
+                ν
+              
+            
+            
+              R
+              
+                μ
+                ν
+              
+            
+            +
+            
+              R
+              
+                μ
+                ν
+                ρ
+                σ
+              
+            
+            
+              R
+              
+                μ
+                ν
+                ρ
+                σ
+              
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {L}}={\sqrt {-g}}\left[R+R^{2}-4R^{\mu \nu }R_{\mu \nu }+R^{\mu \nu \rho \sigma }R_{\mu \nu \rho \sigma }\right].}
+  
+
+where the coefficients of the extra terms are chosen so that the action reduces to general relativity in 4 spacetime dimensions and the extra terms are only non-trivial when more dimensions are introduced.
+
+
+==== Stelle's 4th derivative gravity ====
+Stelle's 4th derivative gravity, which is a generalization of Gauss–Bonnet gravity, has the action
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        
+          [
+          
+            R
+            +
+            
+              f
+              
+                1
+              
+            
+            
+              R
+              
+                2
+              
+            
+            +
+            
+              f
+              
+                2
+              
+            
+            
+              R
+              
+                μ
+                ν
+              
+            
+            
+              R
+              
+                μ
+                ν
+              
+            
+            +
+            
+              f
+              
+                3
+              
+            
+            
+              R
+              
+                μ
+                ν
+                ρ
+                σ
+              
+            
+            
+              R
+              
+                μ
+                ν
+                ρ
+                σ
+              
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {L}}={\sqrt {-g}}\left[R+f_{1}R^{2}+f_{2}R^{\mu \nu }R_{\mu \nu }+f_{3}R^{\mu \nu \rho \sigma }R_{\mu \nu \rho \sigma }\right].}
+  
+
+
+==== f(R) ====
+f(R) gravity has the action
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        f
+        (
+        R
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}={\sqrt {-g}}f(R)}
+  
+
+and is a family of theories, each defined by a different function of the Ricci scalar. Starobinsky gravity is actually an 
+  
+    
+      
+        f
+        (
+        R
+        )
+      
+    
+    {\displaystyle f(R)}
+  
+ theory.
+
+
+==== Infinite derivative gravity ====
+Infinite derivative gravity is a covariant theory of gravity, quadratic in curvature, torsion free and parity invariant,
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        
+          [
+          
+            
+              M
+              
+                p
+              
+              
+                2
+              
+            
+            R
+            +
+            R
+            
+              f
+              
+                1
+              
+            
+            
+              (
+              
+                
+                  ◻
+                  
+                    M
+                    
+                      s
+                    
+                    
+                      2
+                    
+                  
+                
+              
+              )
+            
+            R
+            +
+            
+              R
+              
+                μ
+                ν
+              
+            
+            
+              f
+              
+                2
+              
+            
+            
+              (
+              
+                
+                  ◻
+                  
+                    M
+                    
+                      s
+                    
+                    
+                      2
+                    
+                  
+                
+              
+              )
+            
+            
+              R
+              
+                μ
+                ν
+              
+            
+            +
+            
+              R
+              
+                μ
+                ν
+                ρ
+                σ
+              
+            
+            
+              f
+              
+                3
+              
+            
+            
+              (
+              
+                
+                  ◻
+                  
+                    M
+                    
+                      s
+                    
+                    
+                      2
+                    
+                  
+                
+              
+              )
+            
+            
+              R
+              
+                μ
+                ν
+                ρ
+                σ
+              
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {L}}={\sqrt {-g}}\left[M_{p}^{2}R+Rf_{1}\left({\frac {\Box }{M_{s}^{2}}}\right)R+R^{\mu \nu }f_{2}\left({\frac {\Box }{M_{s}^{2}}}\right)R_{\mu \nu }+R^{\mu \nu \rho \sigma }f_{3}\left({\frac {\Box }{M_{s}^{2}}}\right)R_{\mu \nu \rho \sigma }\right].}
+  
+
+and 
+
+  
+    
+      
+        2
+        
+          f
+          
+            1
+          
+        
+        
+          (
+          
+            
+              ◻
+              
+                M
+                
+                  s
+                
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        +
+        
+          f
+          
+            2
+          
+        
+        
+          (
+          
+            
+              ◻
+              
+                M
+                
+                  s
+                
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        +
+        2
+        
+          f
+          
+            3
+          
+        
+        
+          (
+          
+            
+              ◻
+              
+                M
+                
+                  s
+                
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle 2f_{1}\left({\frac {\Box }{M_{s}^{2}}}\right)+f_{2}\left({\frac {\Box }{M_{s}^{2}}}\right)+2f_{3}\left({\frac {\Box }{M_{s}^{2}}}\right)=0,}
+  
+
+in order to make sure that only massless spin −2 and spin −0 components propagate in the graviton propagator around Minkowski background. The action becomes non-local beyond the scale 
+  
+    
+      
+        
+          M
+          
+            s
+          
+        
+      
+    
+    {\displaystyle M_{s}}
+  
+, and recovers to general relativity in the infrared, for energies below the non-local scale 
+  
+    
+      
+        
+          M
+          
+            s
+          
+        
+      
+    
+    {\displaystyle M_{s}}
+  
+. In the ultraviolet regime, at distances and time scales below non-local scale, 
+  
+    
+      
+        
+          M
+          
+            s
+          
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle M_{s}^{-1}}
+  
+, the gravitational interaction weakens enough to resolve point-like singularity, which means Schwarzschild's singularity can be potentially resolved in infinite derivative theories of gravity.
+
+
+==== Lovelock ====
+Lovelock gravity has the action
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+         
+        (
+        
+          α
+          
+            0
+          
+        
+        +
+        
+          α
+          
+            1
+          
+        
+        R
+        +
+        
+          α
+          
+            2
+          
+        
+        
+          (
+          
+            
+              R
+              
+                2
+              
+            
+            +
+            
+              R
+              
+                α
+                β
+                μ
+                ν
+              
+            
+            
+              R
+              
+                α
+                β
+                μ
+                ν
+              
+            
+            −
+            4
+            
+              R
+              
+                μ
+                ν
+              
+            
+            
+              R
+              
+                μ
+                ν
+              
+            
+          
+          )
+        
+        +
+        
+          α
+          
+            3
+          
+        
+        
+          
+            O
+          
+        
+        (
+        
+          R
+          
+            3
+          
+        
+        )
+        )
+        ,
+      
+    
+    {\displaystyle {\mathcal {L}}={\sqrt {-g}}\ (\alpha _{0}+\alpha _{1}R+\alpha _{2}\left(R^{2}+R_{\alpha \beta \mu \nu }R^{\alpha \beta \mu \nu }-4R_{\mu \nu }R^{\mu \nu }\right)+\alpha _{3}{\mathcal {O}}(R^{3})),}
+  
+
+and can be thought of as a generalization of general relativity.
+
+
+=== Scalar–tensor theories ===
+
+These all contain at least one free parameter, as opposed to general relativity which has no free parameters.
+Although not normally considered a Scalar–Tensor theory of gravity, the 5 by 5 metric of Kaluza–Klein reduces to a 4 by 4 metric and a single scalar. So if the 5th element is treated as a scalar gravitational field instead of an electromagnetic field then Kaluza–Klein can be considered the progenitor of Scalar–Tensor theories of gravity. This was recognized by Thiry.
+Scalar–Tensor theories include Thiry, Jordan, Brans and Dicke, Bergman, Nordtveldt (1970), Wagoner, Bekenstein and Barker.
+The action 
+  
+    
+      
+        S
+        
+      
+    
+    {\displaystyle S\;}
+  
+ is based on the integral of the Lagrangian 
+  
+    
+      
+        
+          L
+          
+            φ
+          
+        
+        
+      
+    
+    {\displaystyle L_{\varphi }\;}
+  
+.
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+          
+            −
+            g
+          
+        
+        
+          L
+          
+            φ
+          
+        
+        +
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int d^{4}x{\sqrt {-g}}L_{\varphi }+S_{m}\;}
+  
+
+  
+    
+      
+        
+          L
+          
+            φ
+          
+        
+        =
+        φ
+        R
+        −
+        
+          
+            
+              ω
+              (
+              φ
+              )
+            
+            φ
+          
+        
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+        
+          ∂
+          
+            μ
+          
+        
+        φ
+        
+        
+          ∂
+          
+            ν
+          
+        
+        φ
+        +
+        2
+        φ
+        λ
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle L_{\varphi }=\varphi R-{\omega (\varphi ) \over \varphi }g^{\mu \nu }\,\partial _{\mu }\varphi \,\partial _{\nu }\varphi +2\varphi \lambda (\varphi )\;}
+  
+
+  
+    
+      
+        
+          S
+          
+            m
+          
+        
+        =
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            g
+          
+        
+        
+        
+          G
+          
+            N
+          
+        
+        
+          L
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S_{m}=\int d^{4}x\,{\sqrt {g}}\,G_{N}L_{m}\;}
+  
+
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+         
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+         
+        
+          
+            2
+            
+              
+                g
+              
+            
+          
+        
+        
+          
+            
+              δ
+              
+                S
+                
+                  m
+                
+              
+            
+            
+              δ
+              
+                g
+                
+                  μ
+                  ν
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle T^{\mu \nu }\ {\stackrel {\mathrm {def} }{=}}\ {2 \over {\sqrt {g}}}{\delta S_{m} \over \delta g_{\mu \nu }}}
+  
+
+where 
+  
+    
+      
+        ω
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle \omega (\varphi )\;}
+  
+ is a different dimensionless function for each different scalar–tensor theory. The function 
+  
+    
+      
+        λ
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle \lambda (\varphi )\;}
+  
+ plays the same role as the cosmological constant in general relativity. 
+  
+    
+      
+        
+          G
+          
+            N
+          
+        
+        
+      
+    
+    {\displaystyle G_{N}\;}
+  
+ is a dimensionless normalization constant that fixes the present-day value of 
+  
+    
+      
+        G
+        
+      
+    
+    {\displaystyle G\;}
+  
+. An arbitrary potential can be added for the scalar.
+The full version is retained in Bergman and Wagoner. Special cases are:
+Nordtvedt, 
+  
+    
+      
+        λ
+        =
+        0
+        
+      
+    
+    {\displaystyle \lambda =0\;}
+  
+
+Since 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ was thought to be zero at the time anyway, this would not have been considered a significant difference. The role of the cosmological constant in more modern work is discussed under Cosmological constant.
+Brans–Dicke, 
+  
+    
+      
+        ω
+        
+      
+    
+    {\displaystyle \omega \;}
+  
+ is constant
+Bekenstein variable mass theory
+Starting with parameters 
+  
+    
+      
+        r
+        
+      
+    
+    {\displaystyle r\;}
+  
+ and 
+  
+    
+      
+        q
+        
+      
+    
+    {\displaystyle q\;}
+  
+, found from a cosmological solution,
+
+  
+    
+      
+        φ
+        =
+        [
+        1
+        −
+        q
+        f
+        (
+        φ
+        )
+        ]
+        f
+        (
+        φ
+        
+          )
+          
+            −
+            r
+          
+        
+        
+      
+    
+    {\displaystyle \varphi =[1-qf(\varphi )]f(\varphi )^{-r}\;}
+  
+ determines function 
+  
+    
+      
+        f
+        
+      
+    
+    {\displaystyle f\;}
+  
+ then
+
+  
+    
+      
+        ω
+        (
+        φ
+        )
+        =
+        −
+        
+          
+            
+              3
+              2
+            
+          
+          −
+          
+            
+              
+                1
+                4
+              
+            
+            f
+            (
+            φ
+            )
+            [
+            (
+            1
+            −
+            6
+            q
+            )
+            q
+            f
+            (
+            φ
+            )
+            −
+            1
+            ]
+            [
+            r
+            +
+            (
+            1
+            −
+            r
+            )
+            q
+            f
+            (
+            φ
+            )
+            
+              ]
+              
+                −
+                2
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \omega (\varphi )=-\textstyle {\frac {3}{2}}-\textstyle {\frac {1}{4}}f(\varphi )[(1-6q)qf(\varphi )-1][r+(1-r)qf(\varphi )]^{-2}\;}
+  
+
+Barker constant G theory
+
+  
+    
+      
+        ω
+        (
+        φ
+        )
+        =
+        
+          
+            
+              4
+              −
+              3
+              φ
+            
+            
+              2
+              φ
+              −
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \omega (\varphi )={\frac {4-3\varphi }{2\varphi -2}}}
+  
+
+Adjustment of 
+  
+    
+      
+        ω
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle \omega (\varphi )\;}
+  
+ allows Scalar Tensor Theories to tend to general relativity in the limit of 
+  
+    
+      
+        ω
+        →
+        ∞
+        
+      
+    
+    {\displaystyle \omega \rightarrow \infty \;}
+  
+ in the current epoch. However, there could be significant differences from general relativity in the early universe.
+So long as general relativity is confirmed by experiment, general Scalar–Tensor theories (including Brans–Dicke) can never be ruled out entirely, but as experiments continue to confirm general relativity more precisely and the parameters have to be fine-tuned so that the predictions more closely match those of general relativity.
+The above examples are particular cases of Horndeski's theory, the most general Lagrangian constructed out of the metric tensor and a scalar field leading to second order equations of motion in 4-dimensional space.  Viable theories beyond Horndeski (with higher order equations of motion) have been shown to exist.
+
+
+=== Vector–tensor theories ===
+Before we start, Will (2001) has said: "Many alternative metric theories developed during the 1970s and 1980s could be viewed as "straw-man" theories, invented to prove that such theories exist or to illustrate particular properties. Few of these could be regarded as well-motivated theories from the point of view, say, of field theory or particle physics. Examples are the vector–tensor theories studied by Will, Nordtvedt and Hellings."
+Hellings and Nordtvedt and Will and Nordtvedt are both vector–tensor theories. In addition to the metric tensor there is a timelike vector field 
+  
+    
+      
+        
+          K
+          
+            μ
+          
+        
+        .
+      
+    
+    {\displaystyle K_{\mu }.}
+  
+ The gravitational action is:
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+          
+            −
+            g
+          
+        
+        
+          [
+          
+            R
+            +
+            ω
+            
+              K
+              
+                μ
+              
+            
+            
+              K
+              
+                μ
+              
+            
+            R
+            +
+            η
+            
+              K
+              
+                μ
+              
+            
+            
+              K
+              
+                ν
+              
+            
+            
+              R
+              
+                μ
+                ν
+              
+            
+            −
+            ϵ
+            
+              F
+              
+                μ
+                ν
+              
+            
+            
+              F
+              
+                μ
+                ν
+              
+            
+            +
+            τ
+            
+              K
+              
+                μ
+                ;
+                ν
+              
+            
+            
+              K
+              
+                μ
+                ;
+                ν
+              
+            
+          
+          ]
+        
+        +
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S={\frac {1}{16\pi G}}\int d^{4}x{\sqrt {-g}}\left[R+\omega K_{\mu }K^{\mu }R+\eta K^{\mu }K^{\nu }R_{\mu \nu }-\epsilon F_{\mu \nu }F^{\mu \nu }+\tau K_{\mu ;\nu }K^{\mu ;\nu }\right]+S_{m}}
+  
+
+where 
+  
+    
+      
+        ω
+        ,
+        η
+        ,
+        ϵ
+        ,
+        τ
+      
+    
+    {\displaystyle \omega ,\eta ,\epsilon ,\tau }
+  
+ are constants and
+
+  
+    
+      
+        
+          F
+          
+            μ
+            ν
+          
+        
+        =
+        
+          K
+          
+            ν
+            ;
+            μ
+          
+        
+        −
+        
+          K
+          
+            μ
+            ;
+            ν
+          
+        
+        .
+      
+    
+    {\displaystyle F_{\mu \nu }=K_{\nu ;\mu }-K_{\mu ;\nu }.}
+  
+ (See Will for the field equations for 
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+      
+    
+    {\displaystyle T^{\mu \nu }}
+  
+ and 
+  
+    
+      
+        
+          K
+          
+            μ
+          
+        
+        .
+      
+    
+    {\displaystyle K_{\mu }.}
+  
+)
+Will and Nordtvedt is a special case where
+
+  
+    
+      
+        ω
+        =
+        η
+        =
+        ϵ
+        =
+        0
+        ;
+        
+        τ
+        =
+        1
+      
+    
+    {\displaystyle \omega =\eta =\epsilon =0;\quad \tau =1}
+  
+
+Hellings and Nordtvedt is a special case where
+
+  
+    
+      
+        τ
+        =
+        0
+        ;
+        
+        ϵ
+        =
+        1
+        ;
+        
+        η
+        =
+        −
+        2
+        ω
+      
+    
+    {\displaystyle \tau =0;\quad \epsilon =1;\quad \eta =-2\omega }
+  
+
+These vector–tensor theories are semi-conservative, which means that they satisfy the laws of conservation of momentum and angular momentum but can have preferred frame effects. When 
+  
+    
+      
+        ω
+        =
+        η
+        =
+        ϵ
+        =
+        τ
+        =
+        0
+      
+    
+    {\displaystyle \omega =\eta =\epsilon =\tau =0}
+  
+ they reduce to general relativity so, so long as general relativity is confirmed by experiment, general vector–tensor theories can never be ruled out.
+
+
+=== Other metric theories ===
+Others metric theories have been proposed; that of Bekenstein is discussed under Modern Theories.
+
+
+=== Non-metric theories ===
+
+Cartan's theory is particularly interesting both because it is a non-metric theory and because it is so old. The status of Cartan's theory is uncertain. Will claims that all non-metric theories are eliminated by Einstein's Equivalence Principle. Will (2001) tempers that by explaining experimental criteria for testing non-metric theories against Einstein's Equivalence Principle. Misner et al. claims that Cartan's theory is the only non-metric theory to survive all experimental tests up to that date and Turyshev lists Cartan's theory among the few that have survived all experimental tests up to that date. The following is a quick sketch of Cartan's theory as restated by Trautman.
+Cartan suggested a simple generalization of Einstein's theory of gravitation. He proposed a model of space time with a metric tensor and a linear "connection" compatible with the metric but not necessarily symmetric. The torsion tensor of the connection is related to the density of intrinsic angular momentum. Independently of Cartan, similar ideas were put forward by Sciama, by Kibble in the years 1958 to 1966, culminating in a 1976 review by Hehl et al.
+The original description is in terms of differential forms, but for the present article that is replaced by the more familiar language of tensors (risking loss of accuracy). As in general relativity, the Lagrangian is made up of a massless and a mass part. The Lagrangian for the massless part is:
+
+  
+    
+      
+        
+          
+            
+              
+                L
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      32
+                      π
+                      G
+                    
+                  
+                
+                
+                  Ω
+                  
+                    ν
+                  
+                  
+                    μ
+                  
+                
+                
+                  g
+                  
+                    ν
+                    ξ
+                  
+                
+                
+                  x
+                  
+                    η
+                  
+                
+                
+                  x
+                  
+                    ζ
+                  
+                
+                
+                  ε
+                  
+                    ξ
+                    μ
+                    η
+                    ζ
+                  
+                
+              
+            
+            
+              
+                
+                  Ω
+                  
+                    ν
+                  
+                  
+                    μ
+                  
+                
+              
+              
+                
+                =
+                d
+                
+                  ω
+                  
+                    ν
+                  
+                  
+                    μ
+                  
+                
+                +
+                
+                  ω
+                  
+                    ξ
+                  
+                  
+                    η
+                  
+                
+              
+            
+            
+              
+                ∇
+                
+                  x
+                  
+                    μ
+                  
+                
+              
+              
+                
+                =
+                −
+                
+                  ω
+                  
+                    ν
+                  
+                  
+                    μ
+                  
+                
+                
+                  x
+                  
+                    ν
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}L&={1 \over 32\pi G}\Omega _{\nu }^{\mu }g^{\nu \xi }x^{\eta }x^{\zeta }\varepsilon _{\xi \mu \eta \zeta }\\[5pt]\Omega _{\nu }^{\mu }&=d\omega _{\nu }^{\mu }+\omega _{\xi }^{\eta }\\[5pt]\nabla x^{\mu }&=-\omega _{\nu }^{\mu }x^{\nu }\end{aligned}}}
+  
+
+The 
+  
+    
+      
+        
+          ω
+          
+            ν
+          
+          
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle \omega _{\nu }^{\mu }\;}
+  
+ is the linear connection. 
+  
+    
+      
+        
+          ε
+          
+            ξ
+            μ
+            η
+            ζ
+          
+        
+        
+      
+    
+    {\displaystyle \varepsilon _{\xi \mu \eta \zeta }\;}
+  
+ is the completely antisymmetric pseudo-tensor (Levi-Civita symbol) with 
+  
+    
+      
+        
+          ε
+          
+            0123
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        
+      
+    
+    {\displaystyle \varepsilon _{0123}={\sqrt {-g}}\;}
+  
+, and 
+  
+    
+      
+        
+          g
+          
+            ν
+            ξ
+          
+        
+        
+      
+    
+    {\displaystyle g^{\nu \xi }\,}
+  
+ is the metric tensor as usual. By assuming that the linear connection is metric, it is possible to remove the unwanted freedom inherent in the non-metric theory. The stress–energy tensor is calculated from:
+
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        (
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+          η
+          
+            η
+          
+          
+            ξ
+          
+        
+        −
+        
+          g
+          
+            ξ
+            μ
+          
+        
+        
+          η
+          
+            η
+          
+          
+            ν
+          
+        
+        −
+        
+          g
+          
+            ξ
+            ν
+          
+        
+        
+          η
+          
+            η
+          
+          
+            μ
+          
+        
+        )
+        
+          Ω
+          
+            ξ
+          
+          
+            η
+          
+        
+        
+      
+    
+    {\displaystyle T^{\mu \nu }={1 \over 16\pi G}(g^{\mu \nu }\eta _{\eta }^{\xi }-g^{\xi \mu }\eta _{\eta }^{\nu }-g^{\xi \nu }\eta _{\eta }^{\mu })\Omega _{\xi }^{\eta }\;}
+  
+
+The space curvature is not Riemannian, but on a Riemannian space-time the Lagrangian would reduce to the Lagrangian of general relativity.
+Some equations of the non-metric theory of Belinfante and Swihart have already been discussed in the section on bimetric theories.
+A distinctively non-metric theory is given by gauge theory gravity, which replaces the metric in its field equations with a pair of gauge fields in flat spacetime.  On the one hand, the theory is quite conservative because it is substantially equivalent to Einstein–Cartan theory (or general relativity in the limit of vanishing spin), differing mostly in the nature of its global solutions.  On the other hand, it is radical because it replaces differential geometry with geometric algebra.
+
+
+== Modern theories 1980s to present ==
+This section includes alternatives to general relativity published after the observations of galaxy rotation that led to the hypothesis of "dark matter". There is no known reliable list of comparison of these theories. Those considered here include: Bekenstein, Moffat, Moffat, Moffat. These theories are presented with a cosmological constant or added scalar or vector potential.
+
+
+=== Motivations ===
+Motivations for the more recent alternatives to general relativity are almost all cosmological, associated with or replacing such constructs as "inflation", "dark matter" and "dark energy". The basic idea is that gravity agrees with general relativity at the present epoch but may have been quite different in the early universe.
+In the 1980s, there was a slowly dawning realisation in the physics world that there were several problems inherent in the then-current big-bang scenario, including the horizon problem and the observation that at early times when quarks were first forming there was not enough space on the universe to contain even one quark. Inflation theory was developed to overcome these difficulties. Another alternative was constructing an alternative to general relativity in which the speed of light was higher in the early universe. The discovery of unexpected rotation curves for galaxies took everyone by surprise. Could there be more mass in the universe than we are aware of, or is the theory of gravity itself wrong? The consensus now is that the missing mass is "cold dark matter", but that consensus was only reached after trying alternatives to general relativity, and some physicists still believe that alternative models of gravity may hold the answer.
+In the 1990s, supernova surveys discovered the accelerated expansion of the universe, now usually attributed to dark energy. This led to the rapid reinstatement of Einstein's cosmological constant, and quintessence arrived as an alternative to the cosmological constant. At least one new alternative to general relativity attempted to explain the supernova surveys' results in a completely different way. The measurement of the speed of gravity with the gravitational wave event GW170817 ruled out many alternative theories of gravity as explanations for the accelerated expansion. Another observation that sparked recent interest in alternatives to General Relativity is the Pioneer anomaly. It was quickly discovered that alternatives to general relativity could explain this anomaly. This is now believed to be accounted for by non-uniform thermal radiation.
+
+
+=== Cosmological constant and quintessence ===
+
+The cosmological constant 
+  
+    
+      
+        Λ
+        
+      
+    
+    {\displaystyle \Lambda \;}
+  
+ is a very old idea, going back to Einstein in 1917. The success of the Friedmann model of the universe in which 
+  
+    
+      
+        Λ
+        =
+        0
+        
+      
+    
+    {\displaystyle \Lambda =0\;}
+  
+ led to the general acceptance that it is zero, but the use of a non-zero value came back when data from supernovae indicated that the expansion of the universe is accelerating.
+In Newtonian gravity, the addition of the cosmological constant changes the Newton–Poisson equation from:
+
+  
+    
+      
+        
+          ∇
+          
+            2
+          
+        
+        φ
+        =
+        4
+        π
+        ρ
+         
+        G
+        ;
+      
+    
+    {\displaystyle \nabla ^{2}\varphi =4\pi \rho \ G;}
+  
+
+to
+
+  
+    
+      
+        
+          ∇
+          
+            2
+          
+        
+        φ
+        +
+        
+          
+            1
+            2
+          
+        
+        Λ
+        
+          c
+          
+            2
+          
+        
+        =
+        4
+        π
+        ρ
+         
+        G
+        ;
+      
+    
+    {\displaystyle \nabla ^{2}\varphi +{\frac {1}{2}}\Lambda c^{2}=4\pi \rho \ G;}
+  
+
+In general relativity, it changes the Einstein–Hilbert action from
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        R
+        
+          
+            −
+            g
+          
+        
+        
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        +
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int R{\sqrt {-g}}\,d^{4}x\,+S_{m}\;}
+  
+
+to
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        (
+        R
+        −
+        2
+        Λ
+        )
+        
+          
+            −
+            g
+          
+        
+        
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        +
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int (R-2\Lambda ){\sqrt {-g}}\,d^{4}x\,+S_{m}\;}
+  
+
+which changes the field equation from:
+
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            1
+            
+              8
+              π
+              G
+            
+          
+        
+        
+          (
+          
+            
+              R
+              
+                μ
+                ν
+              
+            
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            R
+          
+          )
+        
+        
+      
+    
+    {\displaystyle T^{\mu \nu }={1 \over 8\pi G}\left(R^{\mu \nu }-{\frac {1}{2}}g^{\mu \nu }R\right)\;}
+  
+
+to:
+
+  
+    
+      
+        
+          T
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            1
+            
+              8
+              π
+              G
+            
+          
+        
+        
+          (
+          
+            
+              R
+              
+                μ
+                ν
+              
+            
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            R
+            +
+            
+              g
+              
+                μ
+                ν
+              
+            
+            Λ
+          
+          )
+        
+        
+      
+    
+    {\displaystyle T^{\mu \nu }={1 \over 8\pi G}\left(R^{\mu \nu }-{\frac {1}{2}}g^{\mu \nu }R+g^{\mu \nu }\Lambda \right)\;}
+  
+
+In alternative theories of gravity, a cosmological constant can be added to the action in the same way.
+More generally a scalar potential 
+  
+    
+      
+        λ
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle \lambda (\varphi )\;}
+  
+ can be added to scalar tensor theories. This can be done in every alternative the general relativity that contains a scalar field 
+  
+    
+      
+        φ
+        
+      
+    
+    {\displaystyle \varphi \;}
+  
+ by adding the term 
+  
+    
+      
+        λ
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle \lambda (\varphi )\;}
+  
+ inside the Lagrangian for the gravitational part of the action, the 
+  
+    
+      
+        
+          L
+          
+            φ
+          
+        
+        
+      
+    
+    {\displaystyle L_{\varphi }\;}
+  
+ part of
+
+  
+    
+      
+        S
+        =
+        
+          
+            1
+            
+              16
+              π
+              G
+            
+          
+        
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            −
+            g
+          
+        
+        
+        
+          L
+          
+            φ
+          
+        
+        +
+        
+          S
+          
+            m
+          
+        
+        
+      
+    
+    {\displaystyle S={1 \over 16\pi G}\int d^{4}x\,{\sqrt {-g}}\,L_{\varphi }+S_{m}\;}
+  
+
+Because 
+  
+    
+      
+        λ
+        (
+        φ
+        )
+        
+      
+    
+    {\displaystyle \lambda (\varphi )\;}
+  
+ is an arbitrary function of the scalar field rather than a constant, it can be set to give an acceleration that is large in the early universe and small at the present epoch. This is known as quintessence.
+A similar method can be used in alternatives to general relativity that use vector fields, including Rastall and vector–tensor theories. A term proportional to
+
+  
+    
+      
+        
+          K
+          
+            μ
+          
+        
+        
+          K
+          
+            ν
+          
+        
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle K^{\mu }K^{\nu }g_{\mu \nu }\;}
+  
+
+is added to the Lagrangian for the gravitational part of the action.
+
+
+=== Farnes' theories ===
+In December 2018, the astrophysicist Jamie Farnes from the University of Oxford proposed a dark fluid theory, related to notions of gravitationally repulsive negative masses that were presented earlier by Albert Einstein. The theory may help to better understand the considerable amounts of unknown dark matter and dark energy in the universe.
+The theory relies on the concept of negative mass and reintroduces Fred Hoyle's creation tensor in order to allow matter creation for only negative mass particles. In this way, the negative mass particles surround galaxies and apply a pressure onto them, thereby resembling dark matter. As these hypothesised particles mutually repel one another, they push apart the Universe, thereby resembling dark energy. The creation of matter allows the density of the exotic negative mass particles to remain constant as a function of time, and so appears like a cosmological constant. Einstein's field equations are modified to:
+
+  
+    
+      
+        
+          R
+          
+            μ
+            ν
+          
+        
+        −
+        
+          
+            1
+            2
+          
+        
+        R
+        
+          g
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            
+              8
+              π
+              G
+            
+            
+              c
+              
+                4
+              
+            
+          
+        
+        
+          (
+          
+            
+              T
+              
+                μ
+                ν
+              
+              
+                +
+              
+            
+            +
+            
+              T
+              
+                μ
+                ν
+              
+              
+                −
+              
+            
+            +
+            
+              C
+              
+                μ
+                ν
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle R_{\mu \nu }-{\frac {1}{2}}Rg_{\mu \nu }={\frac {8\pi G}{c^{4}}}\left(T_{\mu \nu }^{+}+T_{\mu \nu }^{-}+C_{\mu \nu }\right)}
+  
+
+According to Occam's razor, Farnes' theory is a simpler alternative to the conventional LambdaCDM model, as both dark energy and dark matter (two hypotheses) are solved using a single negative mass fluid (one hypothesis). The theory will be directly testable using the world's largest radio telescope, the Square Kilometre Array which should come online in 2022.
+
+
+=== Relativistic MOND ===
+
+The original theory of MOND by Milgrom was developed in 1983 as an alternative to "dark matter". Departures from Newton's law of gravitation are governed by an acceleration scale, not a distance scale. MOND successfully explains the Tully–Fisher observation that the luminosity of a galaxy should scale as the fourth power of the rotation speed. It also explains why the rotation discrepancy in dwarf galaxies is particularly large.
+There were several problems with MOND in the beginning.
+
+It did not include relativistic effects
+It violated the conservation of energy, momentum and angular momentum
+It was inconsistent in that it gives different galactic orbits for gas and for stars
+It did not state how to calculate gravitational lensing from galaxy clusters.
+By 1984, problems 2 and 3 had been solved by introducing a Lagrangian (AQUAL). A relativistic version of this based on scalar–tensor theory was rejected because it allowed waves in the scalar field to propagate faster than light. The Lagrangian of the non-relativistic form is:
+
+  
+    
+      
+        L
+        =
+        −
+        
+          
+            
+              a
+              
+                0
+              
+              
+                2
+              
+            
+            
+              8
+              π
+              G
+            
+          
+        
+        f
+        
+          [
+          
+            
+              
+                
+                  |
+                
+                ∇
+                φ
+                
+                  
+                    |
+                  
+                  
+                    2
+                  
+                
+              
+              
+                a
+                
+                  0
+                
+                
+                  2
+                
+              
+            
+          
+          ]
+        
+        −
+        ρ
+        φ
+      
+    
+    {\displaystyle L=-{a_{0}^{2} \over 8\pi G}f\left\lbrack {\frac {|\nabla \varphi |^{2}}{a_{0}^{2}}}\right\rbrack -\rho \varphi }
+  
+
+The relativistic version of this has:
+
+  
+    
+      
+        L
+        =
+        −
+        
+          
+            
+              a
+              
+                0
+              
+              
+                2
+              
+            
+            
+              8
+              π
+              G
+            
+          
+        
+        
+          
+            
+              f
+              ~
+            
+          
+        
+        
+          (
+          
+            
+              ℓ
+              
+                0
+              
+              
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            
+            
+              ∂
+              
+                μ
+              
+            
+            φ
+            
+            
+              ∂
+              
+                ν
+              
+            
+            φ
+          
+          )
+        
+      
+    
+    {\displaystyle L=-{a_{0}^{2} \over 8\pi G}{\tilde {f}}\left(\ell _{0}^{2}g^{\mu \nu }\,\partial _{\mu }\varphi \,\partial _{\nu }\varphi \right)}
+  
+
+with a nonstandard mass action. Here 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              f
+              ~
+            
+          
+        
+      
+    
+    {\displaystyle {\tilde {f}}}
+  
+ are arbitrary functions selected to give Newtonian and MOND behaviour in the correct limits, and 
+  
+    
+      
+        
+          l
+          
+            0
+          
+        
+        =
+        
+          c
+          
+            2
+          
+        
+        
+          /
+        
+        
+          a
+          
+            0
+          
+        
+        
+      
+    
+    {\displaystyle l_{0}=c^{2}/a_{0}\;}
+  
+ is the MOND length scale. By 1988, a second scalar field (PCC) fixed problems with the earlier scalar–tensor version but is in conflict with the perihelion precession of Mercury and gravitational lensing by galaxies and clusters. By 1997, MOND had been successfully incorporated in a stratified relativistic theory [Sanders], but as this is a preferred frame theory it has problems of its own. Bekenstein introduced a tensor–vector–scalar model (TeVeS). This has two scalar fields 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+  and 
+  
+    
+      
+        σ
+        
+      
+    
+    {\displaystyle \sigma \;}
+  
+ and vector field 
+  
+    
+      
+        
+          U
+          
+            α
+          
+        
+      
+    
+    {\displaystyle U_{\alpha }}
+  
+. The action is split into parts for gravity, scalars, vector and mass.
+
+  
+    
+      
+        S
+        =
+        
+          S
+          
+            g
+          
+        
+        +
+        
+          S
+          
+            s
+          
+        
+        +
+        
+          S
+          
+            v
+          
+        
+        +
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S=S_{g}+S_{s}+S_{v}+S_{m}}
+  
+
+The gravity part is the same as in general relativity.
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  S
+                  
+                    s
+                  
+                
+              
+              
+                
+                =
+                −
+                
+                  
+                    1
+                    2
+                  
+                
+                ∫
+                
+                  [
+                  
+                    
+                      σ
+                      
+                        2
+                      
+                    
+                    
+                      h
+                      
+                        α
+                        β
+                      
+                    
+                    
+                      φ
+                      
+                        ,
+                        α
+                      
+                    
+                    
+                      φ
+                      
+                        ,
+                        β
+                      
+                    
+                    +
+                    
+                      
+                        1
+                        2
+                      
+                    
+                    G
+                    
+                      ℓ
+                      
+                        0
+                      
+                      
+                        −
+                        2
+                      
+                    
+                    
+                      σ
+                      
+                        4
+                      
+                    
+                    F
+                    (
+                    k
+                    G
+                    
+                      σ
+                      
+                        2
+                      
+                    
+                    )
+                  
+                  ]
+                
+                
+                  
+                    −
+                    g
+                  
+                
+                
+                
+                  d
+                  
+                    4
+                  
+                
+                x
+              
+            
+            
+              
+                
+                  S
+                  
+                    v
+                  
+                
+              
+              
+                
+                =
+                −
+                
+                  
+                    K
+                    
+                      32
+                      π
+                      G
+                    
+                  
+                
+                ∫
+                
+                  [
+                  
+                    
+                      g
+                      
+                        α
+                        β
+                      
+                    
+                    
+                      g
+                      
+                        μ
+                        ν
+                      
+                    
+                    
+                      U
+                      
+                        [
+                        α
+                        ,
+                        μ
+                        ]
+                      
+                    
+                    
+                      U
+                      
+                        [
+                        β
+                        ,
+                        ν
+                        ]
+                      
+                    
+                    −
+                    
+                      
+                        
+                          2
+                          λ
+                        
+                        K
+                      
+                    
+                    
+                      (
+                      
+                        
+                          g
+                          
+                            μ
+                            ν
+                          
+                        
+                        
+                          U
+                          
+                            μ
+                          
+                        
+                        
+                          U
+                          
+                            ν
+                          
+                        
+                        +
+                        1
+                      
+                      )
+                    
+                  
+                  ]
+                
+                
+                  
+                    −
+                    g
+                  
+                
+                
+                
+                  d
+                  
+                    4
+                  
+                
+                x
+              
+            
+            
+              
+                
+                  S
+                  
+                    m
+                  
+                
+              
+              
+                
+                =
+                ∫
+                L
+                
+                  (
+                  
+                    
+                      
+                        
+                          
+                            g
+                            ~
+                          
+                        
+                      
+                      
+                        μ
+                        ν
+                      
+                    
+                    ,
+                    
+                      f
+                      
+                        α
+                      
+                    
+                    ,
+                    
+                      f
+                      
+                        
+                          |
+                        
+                        μ
+                      
+                      
+                        α
+                      
+                    
+                    ,
+                    …
+                  
+                  )
+                
+                
+                  
+                    −
+                    g
+                  
+                
+                
+                
+                  d
+                  
+                    4
+                  
+                
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}S_{s}&=-{\frac {1}{2}}\int \left[\sigma ^{2}h^{\alpha \beta }\varphi _{,\alpha }\varphi _{,\beta }+{\frac {1}{2}}G\ell _{0}^{-2}\sigma ^{4}F(kG\sigma ^{2})\right]{\sqrt {-g}}\,d^{4}x\\[5pt]S_{v}&=-{\frac {K}{32\pi G}}\int \left[g^{\alpha \beta }g^{\mu \nu }U_{[\alpha ,\mu ]}U_{[\beta ,\nu ]}-{\frac {2\lambda }{K}}\left(g^{\mu \nu }U_{\mu }U_{\nu }+1\right)\right]{\sqrt {-g}}\,d^{4}x\\[5pt]S_{m}&=\int L\left({\tilde {g}}_{\mu \nu },f^{\alpha },f_{|\mu }^{\alpha },\ldots \right){\sqrt {-g}}\,d^{4}x\end{aligned}}}
+  
+
+where
+
+  
+    
+      
+        
+          h
+          
+            α
+            β
+          
+        
+        =
+        
+          g
+          
+            α
+            β
+          
+        
+        −
+        
+          U
+          
+            α
+          
+        
+        
+          U
+          
+            β
+          
+        
+      
+    
+    {\displaystyle h^{\alpha \beta }=g^{\alpha \beta }-U^{\alpha }U^{\beta }}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                g
+                ~
+              
+            
+          
+          
+            α
+            β
+          
+        
+        =
+        
+          e
+          
+            2
+            φ
+          
+        
+        
+          g
+          
+            α
+            β
+          
+        
+        +
+        2
+        
+          U
+          
+            α
+          
+        
+        
+          U
+          
+            β
+          
+        
+        sinh
+        ⁡
+        (
+        2
+        φ
+        )
+      
+    
+    {\displaystyle {\tilde {g}}^{\alpha \beta }=e^{2\varphi }g^{\alpha \beta }+2U^{\alpha }U^{\beta }\sinh(2\varphi )}
+  
+
+  
+    
+      
+        k
+        ,
+        K
+      
+    
+    {\displaystyle k,K}
+  
+ are constants, square brackets in indices 
+  
+    
+      
+        
+          U
+          
+            [
+            α
+            ,
+            μ
+            ]
+          
+        
+      
+    
+    {\displaystyle U_{[\alpha ,\mu ]}}
+  
+ represent anti-symmetrization, 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is a Lagrange multiplier (calculated elsewhere), and L is a Lagrangian translated from flat spacetime onto the metric 
+  
+    
+      
+        
+          
+            
+              
+                g
+                ~
+              
+            
+          
+          
+            α
+            β
+          
+        
+      
+    
+    {\displaystyle {\tilde {g}}^{\alpha \beta }}
+  
+. Note that G need not equal the observed gravitational constant 
+  
+    
+      
+        
+          G
+          
+            N
+            e
+            w
+            t
+            o
+            n
+          
+        
+      
+    
+    {\displaystyle G_{Newton}}
+  
+. F is an arbitrary function, and
+
+  
+    
+      
+        F
+        (
+        μ
+        )
+        =
+        
+          
+            3
+            4
+          
+        
+        
+          
+            
+              
+                μ
+                
+                  2
+                
+              
+              (
+              μ
+              −
+              2
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              1
+              −
+              μ
+            
+          
+        
+      
+    
+    {\displaystyle F(\mu )={\frac {3}{4}}{\mu ^{2}(\mu -2)^{2} \over 1-\mu }}
+  
+
+is given as an example with the right asymptotic behaviour; note how it becomes undefined when 
+  
+    
+      
+        μ
+        =
+        1
+      
+    
+    {\displaystyle \mu =1}
+  
+
+The Parametric post-Newtonian parameters of this theory are calculated in, which shows that all its parameters are equal to general relativity's, except for
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  α
+                  
+                    1
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      4
+                      G
+                    
+                    K
+                  
+                
+                
+                  (
+                  
+                    (
+                    2
+                    K
+                    −
+                    1
+                    )
+                    
+                      e
+                      
+                        −
+                        4
+                        
+                          φ
+                          
+                            0
+                          
+                        
+                      
+                    
+                    −
+                    
+                      e
+                      
+                        4
+                        
+                          φ
+                          
+                            0
+                          
+                        
+                      
+                    
+                    +
+                    8
+                  
+                  )
+                
+                −
+                8
+              
+            
+            
+              
+                
+                  α
+                  
+                    2
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      6
+                      G
+                    
+                    
+                      2
+                      −
+                      K
+                    
+                  
+                
+                −
+                
+                  
+                    
+                      2
+                      G
+                      (
+                      K
+                      +
+                      4
+                      )
+                      
+                        e
+                        
+                          4
+                          
+                            φ
+                            
+                              0
+                            
+                          
+                        
+                      
+                    
+                    
+                      (
+                      2
+                      −
+                      K
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                −
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\alpha _{1}&={\frac {4G}{K}}\left((2K-1)e^{-4\varphi _{0}}-e^{4\varphi _{0}}+8\right)-8\\[5pt]\alpha _{2}&={\frac {6G}{2-K}}-{\frac {2G(K+4)e^{4\varphi _{0}}}{(2-K)^{2}}}-1\end{aligned}}}
+  
+
+both of which expressed in geometric units where 
+  
+    
+      
+        c
+        =
+        
+          G
+          
+            N
+            e
+            w
+            t
+            o
+            n
+            i
+            a
+            n
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle c=G_{Newtonian}=1}
+  
+; so
+
+  
+    
+      
+        
+          G
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            2
+            
+              2
+              −
+              K
+            
+          
+        
+        +
+        
+          
+            k
+            
+              4
+              π
+            
+          
+        
+        .
+      
+    
+    {\displaystyle G^{-1}={\frac {2}{2-K}}+{\frac {k}{4\pi }}.}
+  
+
+
+=== Moffat's theories ===
+J. W. Moffat developed a non-symmetric gravitation theory. This is not a metric theory. It was first claimed that it does not contain a black hole horizon, but Burko and Ori have found that nonsymmetric gravitational theory can contain black holes. Later, Moffat claimed that it has also been applied to explain rotation curves of galaxies without invoking "dark matter". Damour, Deser & MaCarthy have criticised nonsymmetric gravitational theory, saying that it has unacceptable asymptotic behaviour.
+The mathematics is not difficult but is intertwined so the following is only a brief sketch. Starting with a non-symmetric tensor 
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle g_{\mu \nu }\;}
+  
+, the Lagrangian density is split into
+
+  
+    
+      
+        L
+        =
+        
+          L
+          
+            R
+          
+        
+        +
+        
+          L
+          
+            M
+          
+        
+        
+      
+    
+    {\displaystyle L=L_{R}+L_{M}\;}
+  
+
+where 
+  
+    
+      
+        
+          L
+          
+            M
+          
+        
+        
+      
+    
+    {\displaystyle L_{M}\;}
+  
+ is the same as for matter in general relativity.
+
+  
+    
+      
+        
+          L
+          
+            R
+          
+        
+        =
+        
+          
+            −
+            g
+          
+        
+        
+          [
+          
+            R
+            (
+            W
+            )
+            −
+            2
+            λ
+            −
+            
+              
+                1
+                4
+              
+            
+            
+              μ
+              
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            
+              g
+              
+                [
+                μ
+                ν
+                ]
+              
+            
+          
+          ]
+        
+        −
+        
+          
+            1
+            6
+          
+        
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+          W
+          
+            μ
+          
+        
+        
+          W
+          
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle L_{R}={\sqrt {-g}}\left[R(W)-2\lambda -{\frac {1}{4}}\mu ^{2}g^{\mu \nu }g_{[\mu \nu ]}\right]-{\frac {1}{6}}g^{\mu \nu }W_{\mu }W_{\nu }\;}
+  
+
+where 
+  
+    
+      
+        R
+        (
+        W
+        )
+        
+      
+    
+    {\displaystyle R(W)\;}
+  
+ is a curvature term analogous to but not equal to the Ricci curvature in general relativity, 
+  
+    
+      
+        λ
+        
+      
+    
+    {\displaystyle \lambda \;}
+  
+ and 
+  
+    
+      
+        
+          μ
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle \mu ^{2}\;}
+  
+ are cosmological constants, 
+  
+    
+      
+        
+          g
+          
+            [
+            ν
+            μ
+            ]
+          
+        
+        
+      
+    
+    {\displaystyle g_{[\nu \mu ]}\;}
+  
+ is the antisymmetric part of 
+  
+    
+      
+        
+          g
+          
+            ν
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle g_{\nu \mu }\;}
+  
+.
+
+  
+    
+      
+        
+          W
+          
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle W_{\mu }\;}
+  
+ is a connection, and is a bit difficult to explain because it's defined recursively. However, 
+  
+    
+      
+        
+          W
+          
+            μ
+          
+        
+        ≈
+        −
+        2
+        
+          g
+          
+            [
+            μ
+            ν
+            ]
+          
+          
+            ,
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle W_{\mu }\approx -2g_{[\mu \nu ]}^{,\nu }\;}
+  
+
+Haugan and Kauffmann used polarization measurements of the light emitted by galaxies to impose sharp constraints on the magnitude of some of nonsymmetric gravitational theory's parameters. They also used Hughes-Drever experiments to constrain the remaining degrees of freedom. Their constraint is eight orders of magnitude sharper than previous estimates.
+Moffat's metric-skew-tensor-gravity (MSTG) theory is able to predict rotation curves for galaxies without either dark matter or MOND, and claims that it can also explain gravitational lensing of galaxy clusters without dark matter. It has variable 
+  
+    
+      
+        G
+        
+      
+    
+    {\displaystyle G\;}
+  
+, increasing to a final constant value about a million years after the big bang.
+The theory seems to contain an asymmetric tensor 
+  
+    
+      
+        
+          A
+          
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle A_{\mu \nu }\;}
+  
+ field and a source current 
+  
+    
+      
+        
+          J
+          
+            μ
+          
+        
+        
+      
+    
+    {\displaystyle J_{\mu }\;}
+  
+ vector. The action is split into:
+
+  
+    
+      
+        S
+        =
+        
+          S
+          
+            G
+          
+        
+        +
+        
+          S
+          
+            F
+          
+        
+        +
+        
+          S
+          
+            F
+            M
+          
+        
+        +
+        
+          S
+          
+            M
+          
+        
+        
+      
+    
+    {\displaystyle S=S_{G}+S_{F}+S_{FM}+S_{M}\;}
+  
+
+Both the gravity and mass terms match those of general relativity with cosmological constant. The skew field action and the skew field matter coupling are:
+
+  
+    
+      
+        
+          S
+          
+            F
+          
+        
+        =
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            −
+            g
+          
+        
+        
+          (
+          
+            
+              
+                1
+                12
+              
+            
+            
+              F
+              
+                μ
+                ν
+                ρ
+              
+            
+            
+              F
+              
+                μ
+                ν
+                ρ
+              
+            
+            −
+            
+              
+                1
+                4
+              
+            
+            
+              μ
+              
+                2
+              
+            
+            
+              A
+              
+                μ
+                ν
+              
+            
+            
+              A
+              
+                μ
+                ν
+              
+            
+          
+          )
+        
+        
+      
+    
+    {\displaystyle S_{F}=\int d^{4}x\,{\sqrt {-g}}\left({\frac {1}{12}}F_{\mu \nu \rho }F^{\mu \nu \rho }-{\frac {1}{4}}\mu ^{2}A_{\mu \nu }A^{\mu \nu }\right)\;}
+  
+
+  
+    
+      
+        
+          S
+          
+            F
+            M
+          
+        
+        =
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          ϵ
+          
+            α
+            β
+            μ
+            ν
+          
+        
+        
+          A
+          
+            α
+            β
+          
+        
+        
+          ∂
+          
+            μ
+          
+        
+        
+          J
+          
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle S_{FM}=\int d^{4}x\,\epsilon ^{\alpha \beta \mu \nu }A_{\alpha \beta }\partial _{\mu }J_{\nu }\;}
+  
+
+where
+
+  
+    
+      
+        
+          F
+          
+            μ
+            ν
+            ρ
+          
+        
+        =
+        
+          ∂
+          
+            μ
+          
+        
+        
+          A
+          
+            ν
+            ρ
+          
+        
+        +
+        
+          ∂
+          
+            ρ
+          
+        
+        
+          A
+          
+            μ
+            ν
+          
+        
+      
+    
+    {\displaystyle F_{\mu \nu \rho }=\partial _{\mu }A_{\nu \rho }+\partial _{\rho }A_{\mu \nu }}
+  
+
+and 
+  
+    
+      
+        
+          ϵ
+          
+            α
+            β
+            μ
+            ν
+          
+        
+        
+      
+    
+    {\displaystyle \epsilon ^{\alpha \beta \mu \nu }\;}
+  
+ is the Levi-Civita symbol. The skew field coupling is a Pauli coupling and is gauge invariant for any source current. The source current looks like a matter fermion field associated with baryon and lepton number.
+
+
+==== Scalar–tensor–vector gravity ====
+
+Moffat's Scalar–tensor–vector gravity contains a tensor, vector and three scalar fields. But the equations are quite straightforward. The action is split into: 
+  
+    
+      
+        S
+        =
+        
+          S
+          
+            G
+          
+        
+        +
+        
+          S
+          
+            K
+          
+        
+        +
+        
+          S
+          
+            S
+          
+        
+        +
+        
+          S
+          
+            M
+          
+        
+      
+    
+    {\displaystyle S=S_{G}+S_{K}+S_{S}+S_{M}}
+  
+ with terms for gravity, vector field 
+  
+    
+      
+        
+          K
+          
+            μ
+          
+        
+        ,
+      
+    
+    {\displaystyle K_{\mu },}
+  
+ scalar fields 
+  
+    
+      
+        G
+        ,
+        ω
+        ,
+        μ
+      
+    
+    {\displaystyle G,\omega ,\mu }
+  
+ and mass. 
+  
+    
+      
+        
+          S
+          
+            G
+          
+        
+      
+    
+    {\displaystyle S_{G}}
+  
+ is the standard gravity term with the exception that 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is moved inside the integral.
+
+  
+    
+      
+        
+          S
+          
+            K
+          
+        
+        =
+        −
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            −
+            g
+          
+        
+        ω
+        
+          (
+          
+            
+              
+                1
+                4
+              
+            
+            
+              B
+              
+                μ
+                ν
+              
+            
+            
+              B
+              
+                μ
+                ν
+              
+            
+            +
+            V
+            (
+            K
+            )
+          
+          )
+        
+        ,
+        
+        
+          where 
+        
+        
+        
+          B
+          
+            μ
+            ν
+          
+        
+        =
+        
+          ∂
+          
+            μ
+          
+        
+        
+          K
+          
+            ν
+          
+        
+        −
+        
+          ∂
+          
+            ν
+          
+        
+        
+          K
+          
+            μ
+          
+        
+        .
+      
+    
+    {\displaystyle S_{K}=-\int d^{4}x\,{\sqrt {-g}}\omega \left({\frac {1}{4}}B_{\mu \nu }B^{\mu \nu }+V(K)\right),\qquad {\text{where }}\quad B_{\mu \nu }=\partial _{\mu }K_{\nu }-\partial _{\nu }K_{\mu }.}
+  
+
+  
+    
+      
+        
+          S
+          
+            S
+          
+        
+        =
+        −
+        ∫
+        
+          d
+          
+            4
+          
+        
+        x
+        
+        
+          
+            −
+            g
+          
+        
+        
+          
+            1
+            
+              G
+              
+                3
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            
+            
+              ∇
+              
+                μ
+              
+            
+            G
+            
+            
+              ∇
+              
+                ν
+              
+            
+            G
+            −
+            V
+            (
+            G
+            )
+          
+          )
+        
+        +
+        
+          
+            1
+            G
+          
+        
+        
+          (
+          
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            
+            
+              ∇
+              
+                μ
+              
+            
+            ω
+            
+            
+              ∇
+              
+                ν
+              
+            
+            ω
+            −
+            V
+            (
+            ω
+            )
+          
+          )
+        
+        +
+        
+          
+            1
+            
+              
+                μ
+                
+                  2
+                
+              
+              G
+            
+          
+        
+        
+          (
+          
+            
+              
+                1
+                2
+              
+            
+            
+              g
+              
+                μ
+                ν
+              
+            
+            
+            
+              ∇
+              
+                μ
+              
+            
+            μ
+            
+            
+              ∇
+              
+                ν
+              
+            
+            μ
+            −
+            V
+            (
+            μ
+            )
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle S_{S}=-\int d^{4}x\,{\sqrt {-g}}{\frac {1}{G^{3}}}\left({\frac {1}{2}}g^{\mu \nu }\,\nabla _{\mu }G\,\nabla _{\nu }G-V(G)\right)+{\frac {1}{G}}\left({\frac {1}{2}}g^{\mu \nu }\,\nabla _{\mu }\omega \,\nabla _{\nu }\omega -V(\omega )\right)+{1 \over \mu ^{2}G}\left({\frac {1}{2}}g^{\mu \nu }\,\nabla _{\mu }\mu \,\nabla _{\nu }\mu -V(\mu )\right).}
+  
+
+The potential function for the vector field is chosen to be:
+
+  
+    
+      
+        V
+        (
+        K
+        )
+        =
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          μ
+          
+            2
+          
+        
+        
+          φ
+          
+            μ
+          
+        
+        
+          φ
+          
+            μ
+          
+        
+        −
+        
+          
+            1
+            4
+          
+        
+        g
+        
+          
+            (
+            
+              
+                φ
+                
+                  μ
+                
+              
+              
+                φ
+                
+                  μ
+                
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle V(K)=-{\frac {1}{2}}\mu ^{2}\varphi ^{\mu }\varphi _{\mu }-{\frac {1}{4}}g\left(\varphi ^{\mu }\varphi _{\mu }\right)^{2}}
+  
+
+where 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ is a coupling constant. The functions assumed for the scalar potentials are not stated.
+
+
+=== Infinite derivative gravity ===
+
+In order to remove ghosts in the modified propagator, as well as to obtain asymptotic freedom, Biswas, Mazumdar and Siegel (2005) considered a string-inspired infinite set of higher derivative terms
+
+  
+    
+      
+        S
+        =
+        ∫
+        
+          
+            d
+          
+          
+            4
+          
+        
+        x
+        
+          
+            −
+            g
+          
+        
+        
+          (
+          
+            
+              
+                R
+                2
+              
+            
+            +
+            R
+            F
+            (
+            ◻
+            )
+            R
+          
+          )
+        
+      
+    
+    {\displaystyle S=\int \mathrm {d} ^{4}x{\sqrt {-g}}\left({\frac {R}{2}}+RF(\Box )R\right)}
+  
+
+where 
+  
+    
+      
+        F
+        (
+        ◻
+        )
+      
+    
+    {\displaystyle F(\Box )}
+  
+ is the exponential of an entire function of the D'Alembertian operator. This avoids a black hole singularity near the origin, while recovering the 1/r fall of the general relativity potential at large distances. Lousto and Mazzitelli (1997) found an exact solution to this theories representing a gravitational shock-wave.
+
+
+=== General relativity self-interaction (GRSI) ===
+The General Relativity Self-interaction or GRSI model is an attempt to explain astrophysical and cosmological observations without dark matter, dark energy by adding self-interaction terms when calculating the gravitational effects in general relativity, analogous to the self-interaction terms in quantum chromodynamics.
+Additionally, the model explains the Tully-Fisher relation,
+the radial acceleration relation, observations that are currently challenging to understand within Lambda-CDM.
+The model was proposed in a series of articles, the first dating from 2003. The basic point is that since within General Relativity, gravitational fields couple to each other, this can effectively increase the gravitational interaction between massive objects. The additional gravitational strength then avoid the need for dark matter. This field coupling is the origin of General Relativity's non-linear behavior. It can be understood, in particle language, as gravitons interacting with each other (despite being massless) because they carry energy-momentum.
+A natural implication of this model is its explanation of the accelerating expansion of the universe without resorting to dark energy. The increased binding energy within a galaxy requires, by energy conservation, a weakening of gravitational attraction outside said galaxy. This mimics the repulsion of dark energy.
+The GRSI model is inspired from the Strong Nuclear Force, where a comparable phenomenon occurs. The interaction between gluons emitted by static or nearly static quarks dramatically strengthens quark-quark interaction, ultimately leading to quark confinement on the one hand (analogous to the need of stronger gravity to explain away dark matter) and the suppression of the Strong Nuclear Force outside hadrons (analogous to the repulsion of dark energy that balances gravitational attraction at large scales.) Two other parallel phenomena are the Tully-Fisher relation in galaxy dynamics that is analogous to the Regge trajectories emerging from the strong force. In both cases, the phenomenological formulas describing these observations are similar, albeit with different numerical factors.
+These parallels are expected from a theoretical point of view: General Relativity and the Strong Interaction Lagrangians have the same form. The validity of the GRSI model then simply hinges on whether the coupling of the gravitational fields is large enough so that the same effects that occur in hadrons also occur in very massive systems. This coupling is effectively given by 
+  
+    
+      
+        
+          
+            G
+            M
+            
+              /
+            
+            L
+          
+        
+      
+    
+    {\displaystyle {\sqrt {GM/L}}}
+  
+, where 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is the gravitational constant, 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is the mass of the system, and 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ is a characteristic length of the system. The claim of the GRSI proponents, based either on lattice calculations, a background-field model. or the coincidental phenomenologies in galactic or hadronic dynamics mentioned in the previous paragraph, is that 
+  
+    
+      
+        
+          
+            G
+            M
+            
+              /
+            
+            L
+          
+        
+      
+    
+    {\displaystyle {\sqrt {GM/L}}}
+  
+ is indeed sufficiently large for large systems such as galaxies.
+
+
+==== List of topics studied in the Model ====
+The main observations that appear to require dark matter and/or dark energy can be explained within this model. Namely,
+
+The flat rotation curves of galaxies. These results, however, have been challenged.
+The Cosmic Microwave Background anisotropies.
+The fainter luminosities of distant supernovae and their consequence on the accelerating expansion of the universe.
+The formation of the Universe's large structures.
+The matter power spectrum.
+The internal dynamics of galaxy clusters, including that of the Bullet Cluster.
+Additionally, the model explains observations that are currently challenging to understand within Lambda-CDM:
+
+The Tully-Fisher relation.
+The radial acceleration relation.
+The Hubble tension.
+The cosmic coincidence, that is the fact that at present time, the purported repulsion of dark energy nearly exactly cancels the action of gravity in the overall dynamics of the universe.
+Finally, the model made a prediction that the amount of missing mass (i.e., the dark mass in dark matter approaches) in elliptical galaxies correlates with the ellipticity of the galaxies. This was tested and verified.
+
+
+== Testing of alternatives to general relativity ==
+
+Any putative alternative to general relativity would need to meet a variety of tests for it to become accepted.  For in-depth coverage of these tests, see Misner et al. Ch.39, Will Table 2.1, and Ni.  Most such tests can be categorized as in the following subsections.
+
+
+=== Self-consistency ===
+Self-consistency among non-metric theories includes eliminating theories allowing tachyons, ghost poles and higher order poles, and those that have problems with behaviour at infinity. Among metric theories, self-consistency is best illustrated by describing several theories that fail this test. The classic example is the spin-two field theory of Fierz and Pauli; the field equations imply that gravitating bodies move in straight lines, whereas the equations of motion insist that gravity deflects bodies away from straight line motion. Yilmaz (1971) contains a tensor gravitational field used to construct a metric; it is mathematically inconsistent because the functional dependence of the metric on the tensor field is not well defined.
+
+
+=== Completeness ===
+To be complete, a theory of gravity must be capable of analysing the outcome of every experiment of interest. It must therefore mesh with electromagnetism and all other physics. For instance, any theory that cannot predict from first principles the movement of planets or the behaviour of atomic clocks is incomplete.
+Many early theories are incomplete in that it is unclear whether the density 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ used by the theory should be calculated from the stress–energy tensor 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ as 
+  
+    
+      
+        ρ
+        =
+        
+          T
+          
+            μ
+            ν
+          
+        
+        
+          u
+          
+            μ
+          
+        
+        
+          u
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle \rho =T_{\mu \nu }u^{\mu }u^{\nu }}
+  
+ or as 
+  
+    
+      
+        ρ
+        =
+        
+          T
+          
+            μ
+            ν
+          
+        
+        
+          δ
+          
+            μ
+            ν
+          
+        
+      
+    
+    {\displaystyle \rho =T_{\mu \nu }\delta ^{\mu \nu }}
+  
+, where 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ is the four-velocity, and 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+ is the Kronecker delta. The theories of Thirry (1948) and Jordan are incomplete unless Jordan's parameter 
+  
+    
+      
+        η
+        
+      
+    
+    {\displaystyle \eta \;}
+  
+ is set to -1, in which case they match the theory of Brans–Dicke and so are worthy of further consideration. Milne is incomplete because it makes no gravitational red-shift prediction. The theories of Whitrow and Morduch, Kustaanheimo and Kustaanheimo and Nuotio are either incomplete or inconsistent. The incorporation of Maxwell's equations is incomplete unless it is assumed that they are imposed on the flat background space-time, and when that is done they are inconsistent, because they predict zero gravitational redshift when the wave version of light (Maxwell theory) is used, and nonzero redshift when the particle version (photon) is used. Another more obvious example is Newtonian gravity with Maxwell's equations; light as photons is deflected by gravitational fields (by half that of general relativity) but light as waves is not.
+
+
+=== Classical tests ===
+
+There are three "classical" tests (dating back to the 1910s or earlier) of the ability of gravity theories to handle relativistic effects; they are gravitational redshift, gravitational lensing (generally tested around the Sun), and anomalous perihelion advance of the planets. Each theory should reproduce the observed results in these areas, which have to date always aligned with the predictions of general relativity. In 1964, Irwin I. Shapiro found a fourth test, called the Shapiro delay. It is usually regarded as a "classical" test as well.
+
+
+=== Agreement with Newtonian mechanics and special relativity ===
+As an example of disagreement with Newtonian experiments, Birkhoff theory predicts relativistic effects fairly reliably but demands that sound waves travel at the speed of light. This was the consequence of an assumption made to simplify handling the collision of masses.
+
+
+=== The Einstein equivalence principle ===
+
+Einstein's Equivalence Principle has three components. The first is the uniqueness of free fall, also known as the Weak Equivalence Principle. This is satisfied if inertial mass is equal to gravitational mass. η is a parameter used to test the maximum allowable violation of the Weak Equivalence Principle. The first tests of the Weak Equivalence Principle were done by Eötvös before 1900 and limited η to less than 5×10−9. Modern tests have reduced that to less than 5×10−13. The second is Lorentz invariance. In the absence of gravitational effects the speed of light is constant. The test parameter for this is δ. The first tests of Lorentz invariance were done by Michelson and Morley before 1890 and limited δ to less than 5×10−3. Modern tests have reduced this to less than 1×10−21. The third is local position invariance, which includes spatial and temporal invariance. The outcome of any local non-gravitational experiment is independent of where and when it is performed. Spatial local position invariance is tested using gravitational redshift measurements. The test parameter for this is α. Upper limits on this found by Pound and Rebka in 1960 limited α to less than 0.1. Modern tests have reduced this to less than 1×10−4.
+Schiff's conjecture states that any complete, self-consistent theory of gravity that embodies the Weak Equivalence Principle necessarily embodies Einstein's Equivalence Principle. This is likely to be true if the theory has full energy conservation. Metric theories satisfy the Einstein Equivalence Principle. Extremely few non-metric theories satisfy this. For example, the non-metric theory of Belinfante & Swihart is eliminated by the THεμ formalism for testing Einstein's Equivalence Principle.  Gauge theory gravity is a notable exception, where the strong equivalence principle is essentially the minimal coupling of the gauge covariant derivative.
+
+
+=== Parametric post-Newtonian formalism ===
+
+See also Tests of general relativity, Misner et al. and Will for more information.
+Work on developing a standardized rather than ad hoc set of tests for evaluating alternative gravitation models began with Eddington in 1922 and resulted in a standard set of Parametric post-Newtonian numbers in Nordtvedt and Will and Will and Nordtvedt. Each parameter measures a different aspect of how much a theory departs from Newtonian gravity. Because we are talking about deviation from Newtonian theory here, these only measure weak-field effects. The effects of strong gravitational fields are examined later.
+These ten are: 
+  
+    
+      
+        γ
+        ,
+        β
+        ,
+        η
+        ,
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            2
+          
+        
+        ,
+        
+          α
+          
+            3
+          
+        
+        ,
+        
+          ζ
+          
+            1
+          
+        
+        ,
+        
+          ζ
+          
+            2
+          
+        
+        ,
+        
+          ζ
+          
+            3
+          
+        
+        ,
+        
+          ζ
+          
+            4
+          
+        
+        .
+      
+    
+    {\displaystyle \gamma ,\beta ,\eta ,\alpha _{1},\alpha _{2},\alpha _{3},\zeta _{1},\zeta _{2},\zeta _{3},\zeta _{4}.}
+  
+
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ is a measure of space curvature, being zero for Newtonian gravity and one for general relativity.
+
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+ is a measure of nonlinearity in the addition of gravitational fields, one for general relativity.
+
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+  
+ is a check for preferred location effects.
+
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            2
+          
+        
+        ,
+        
+          α
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \alpha _{1},\alpha _{2},\alpha _{3}}
+  
+ measure the extent and nature of "preferred-frame effects". Any theory of gravity in which at least one of the three is nonzero is called a preferred-frame theory.
+
+  
+    
+      
+        
+          ζ
+          
+            1
+          
+        
+        ,
+        
+          ζ
+          
+            2
+          
+        
+        ,
+        
+          ζ
+          
+            3
+          
+        
+        ,
+        
+          ζ
+          
+            4
+          
+        
+        ,
+        
+          α
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \zeta _{1},\zeta _{2},\zeta _{3},\zeta _{4},\alpha _{3}}
+  
+ measure the extent and nature of breakdowns in global conservation laws. A theory of gravity possesses 4 conservation laws for energy-momentum and 6 for angular momentum only if all five are zero.
+
+
+=== Strong gravity and gravitational waves ===
+
+Parametric post-Newtonian is only a measure of weak field effects. Strong gravity effects can be seen in compact objects such as white dwarfs, neutron stars, and black holes. Experimental tests such as the stability of white dwarfs, spin-down rate of pulsars, orbits of binary pulsars and the existence of a black hole horizon can be used as tests of alternative to general relativity. General relativity predicts that gravitational waves travel at the speed of light. Many alternatives to general relativity say that gravitational waves travel faster than light, possibly breaking causality. After the multi-messaging detection of the GW170817 coalescence of neutron stars, where light and gravitational waves were measured to travel at the same speed with an error of 1/1015, many of those modified theories of gravity were excluded.
+
+
+=== Cosmological tests ===
+Useful cosmological scale tests are just beginning to become available.: 88  Given the limited astronomical data and the complexity of the theories, comparisons involve complex parameters. For example, Reyes et al., analyzed 70,205 luminous red galaxies with a cross-correlation involving galaxy velocity estimates and gravitational potentials estimated from lensing and yet results are still tentative.: 164 
+For those theories that aim to replace dark matter, observations like the galaxy rotation curve, the Tully–Fisher relation, the faster rotation rate of dwarf galaxies, and the gravitational lensing due to galactic clusters act as constraints. For those theories that aim to replace inflation, the size of ripples in the spectrum of the cosmic microwave background radiation is the strictest test. For those theories that incorporate or aim to replace dark energy, the supernova brightness results and the age of the universe can be used as tests. Another test is the flatness of the universe. With general relativity, the combination of baryonic matter, dark matter and dark energy add up to make the universe exactly flat.
+
+
+== Results of testing theories ==
+
+
+=== Parametric post-Newtonian parameters for a range of theories ===
+(See Will and Ni for more details. Misner et al. gives a table for translating parameters from the notation of Ni to that of Will)
+General Relativity is now more than 100 years old, during which one alternative theory of gravity after another has failed to agree with ever more accurate observations. One illustrative example is Parameterized post-Newtonian formalism. The following table lists Parametric post-Newtonian values for a large number of theories. If the value in a cell matches that in the column heading then the full formula is too complicated to include here.
+
+† The theory is incomplete, and 
+  
+    
+      
+        
+          ζ
+          
+            4
+          
+        
+      
+    
+    {\displaystyle \zeta _{4}}
+  
+ can take one of two values. The value closest to zero is listed.
+All experimental tests agree with general relativity so far, and so Parametric post-Newtonian analysis immediately eliminates all the scalar field theories in the table. A full list of Parametric post-Newtonian parameters is not available for Whitehead, Deser-Laurent, Bollini–Giambiagi–Tiomino, but in these three cases 
+  
+    
+      
+        β
+        =
+        ξ
+      
+    
+    {\displaystyle \beta =\xi }
+  
+, which is in strong conflict with general relativity and experimental results. In particular, these theories predict incorrect amplitudes for the Earth's tides.  (A minor modification of Whitehead's theory avoids this problem.  However, the modification predicts the Nordtvedt effect, which has been experimentally constrained.)
+
+
+=== Theories that fail other tests ===
+The stratified theories of Ni, Lee Lightman and Ni are non-starters because they all fail to explain the perihelion advance of Mercury. The bimetric theories of Lightman and Lee, Rosen, Rastall all fail some of the tests associated with strong gravitational fields. The scalar–tensor theories include general relativity as a special case, but only agree with the Parametric post-Newtonian values of general relativity when they are equal to general relativity to within experimental error. As experimental tests get more accurate, the deviation of the scalar–tensor theories from general relativity is being squashed to zero. The same is true of vector–tensor theories, the deviation of the vector–tensor theories from general relativity is being squashed to zero. Further, vector–tensor theories are semi-conservative; they have a nonzero value for 
+  
+    
+      
+        
+          α
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \alpha _{2}}
+  
+ which can have a measurable effect on the Earth's tides. Non-metric theories, such as Belinfante and Swihart, usually fail to agree with experimental tests of Einstein's equivalence principle. And that leaves, as a likely valid alternative to general relativity, nothing except possibly Cartan. That was the situation until cosmological discoveries pushed the development of modern alternatives.
+
+
+== References ==
+
+
+== External links ==

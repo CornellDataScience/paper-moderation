@@ -1,0 +1,50 @@
+Lysozyme PEGylation is the covalent attachment of Polyethylene glycol (PEG) to Lysozyme, which is one of the most widely investigated PEGylated proteins. 
+The PEGylation of proteins has become a common practice of modern therapeutic drugs, as the process is capable of enhancing solubility, thermal stability, enzymatic degradation resistance, and serum half-life of the proteins of interest. Lysozyme, as a natural bactericidal enzyme, lyses the cell wall of various gram-positive bacteria and offers protection against microbial infections. Lysozyme has six lysine residues which are accessible for PEGylation reactions. Thus, the PEGylation of lysozyme, or lysozyme PEGylation, can be a good model system for the PEGylation of other proteins with enzymatic activities by showing the enhancement of its physical and thermal stability while retaining its activity.  
+Previous works on lysozyme PEGylation showed various chromatographic schemes in order to purify PEGylated lysozyme, which included ion exchange chromatography, hydrophobic interaction chromatography, and size-exclusion chromatography (fast protein liquid chromatography), and proved its stable conformation via circular dichroism and improved thermal stability by enzymatic activity assays, SDS-PAGE, and size-exclusion chromatography (high-performance liquid chromatography).
+
+
+== Methodology ==
+
+
+=== PEGylation ===
+The chemical modification of lysozyme by PEGylation involves the addition of methoxy-PEG-aldehyde (mPEG-aldehyde) with varying molecular sizes, ranging from 2 kDa to 40 kDa, to the protein. The protein and mPEG-aldehyde are dissolved using a sodium phosphate buffer with sodium cyanoborohydride, which acts as a reducing agent and conditions the aldehyde group of mPEG-aldehyde to have a strong affinity towards the lysine residue on the N-terminal of lysozyme. The commonly used molar ratio of lysozyme and mPEG-aldehyde is 1:6 or 1:6.67. When sufficient PEGylation is reached, the reaction can be terminated by addition of lysine to the solution or boiling of the solution. Various profiles can result in the PEGylation of the protein, which includes intact mono-PEGylated, di-PEGylated, tri-PEGylated, and also possibly their isoforms.
+
+
+=== Purification ===
+
+
+==== Ion exchange chromatography ====
+Ion exchange chromatography is often employed in the first step, or capturing step, for the separation of PEGylated proteins as PEGylation may affect the charges of target proteins by neutralizing electrostatic interaction, changing the isoelectric point (pI), and increasing the pKa value. Due to the high pI of lysozyme (pI = 10.7), cation exchange chromatography is used. As the increased degree of PEGylation decreases the ion strength of the protein, the poly-PEGylated proteins tend to bind to the cation resin weaker than the mono-PEGylated protein or the intact form does. Thus, the poly-PEGylated proteins elute faster and the intact protein eludes last in the cation exchange chromatography. As mono-PEGylated is widely investigated and described as a protection of target proteins, the target eluate in the cation exchange chromatography is usually the mono-PEGylated proteins.
+
+
+==== Hydrophobic interaction chromatography ====
+Despite the capability of the cation exchange chromatography in purification process, hydrophobic interaction chromatography is also employed, usually at the second step as a polishing step. By using relatively small bead-sized cation resin, the cation exchange chromatography can identify and separate between isoforms by the apparent charges in the condition, but hydrophobic interaction chromatography is capable of identification and separation of the isoforms by their hydrophobicity. 
+
+
+==== Size-exclusion chromatography (FPLC) ====
+Due to the apparent size differences by the degree of PEGylation of the protein, size-exclusion chromatography (fast protein liquid chromatography or FPLC) can be used. There is a negative correlation between molecular weight  and the retention time  of the PEGylated protein in the chromatogram; larger protein, or more PEGylated protein elutes first, and smaller protein, or intact protein the latest.
+
+
+== Characterization ==
+
+
+=== Identification ===
+The most common analyses for identifying intact and PEGylated lysozyme can be achieved via size-exclusion chromatography (high-performance liquid chromatography or HPLC), SDS-PAGE and Matrix-assisted laser desorption/ionization (MALDI).
+
+
+=== Conformation ===
+The secondary structure of intact and PEGylated lysozyme can be characterized by circular dichroism (CD)  spectroscopy. The CD spectra range from 189 - 260 nm with a pitch of 0.1 nm showed no significant change in the secondary structure of the intact and PEGylated lysozyme.
+
+
+=== Enzymatic activity assay ===
+
+
+==== Glycol chitosan ====
+Enzymatic activity of intact and PEGylated lysozyme can be evaluated using glycol chitosan by reacting  1 mL of 0.05% (w/v) glycol chitosan in 100 mM of pH 5.5 acetate buffer and 100 μL of the intact or PEGylated protein at 40 °C for 30 min and subsequently adding 2 mL of 0.5 M sodium carbonate  with 1 μg of potassium ferricyanide. The mixture is immediately heated, boiled for 15 minutes, and cooled for spectral analysis at 420 nm. As the enzymatic activity to hydrolyze β-1,4- N-acetylglucosamine linkage was retained after PEGylation, there was no decay in the enzymatic activity by increasing the degree of PEGylation.
+
+
+==== Micrococcus lysodeikticus ====
+By the measurement of decrease in turbidity of M. lysodeikticus by incubating it with lysozyme, enzymatic activity can be evaluated. 7.5 μL of 0.1 - 1 mg/mL proteins is added to 200 μL of  M. lysodeikticus at its optical density (OD) of 1.7 AU, and the mixture is measured at 450 nm periodically for reaction rate calculation. On the contrary to the result from glycol chitosan enzymatic activity, the increasing degree of PEGylation decreased the enzymatic activity. This difference in the trend of the enzymatic activity can be due to PEGylation to free lysine causing steric hindrance and subsequently preventing from forming enzyme-substrate complex in the case of reacting with macromolecule, such as M. lysodeikticus.
+
+
+== References ==

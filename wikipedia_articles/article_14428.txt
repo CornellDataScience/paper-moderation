@@ -1,0 +1,105 @@
+Bionics or biologically inspired engineering is the application of biological methods and systems found in nature to the study and design of engineering systems and modern technology.
+The word bionic, coined by Jack E. Steele in August 1958, is a portmanteau from biology and electronics which was popularized by the 1970s U.S. television series The Six Million Dollar Man and The Bionic Woman, both based on the novel Cyborg by Martin Caidin. All three stories feature humans given various superhuman powers by their electromechanical implants.
+According to proponents of bionic technology, the transfer of technology between lifeforms and manufactured objects is desirable because evolutionary pressure typically forces living organisms—fauna and flora—to become optimized and efficient. For example, dirt- and water-repellent paint (coating) was inspired by the hydrophobic properties of the lotus flower plant (the lotus effect).
+The term "biomimetic" is preferred for references to chemical reactions, such as reactions that, in nature, involve biological macromolecules (e.g., enzymes or nucleic acids) whose chemistry can be replicated in vitro using much smaller molecules. 
+Examples of bionics in engineering include the hulls of boats imitating the thick skin of dolphins or sonar, radar, and medical ultrasound imaging imitating animal echolocation.
+In the field of computer science, the study of bionics has produced artificial neurons, artificial neural networks, and swarm intelligence. Bionics also influenced Evolutionary computation but took the idea further by simulating evolution in silico and producing optimized solutions that had never appeared in nature.
+A 2006 research article estimated that "at present there is only a 12% overlap between biology and technology in terms of the mechanisms used".
+
+
+== History ==
+The name "biomimetics" was coined by Otto Schmitt in the 1950s. The term "bionics" was later introduced by Jack E. Steele in August 1958 while working at the Aeronautics Division House at Wright-Patterson Air Force Base in Dayton, Ohio. However, terms like biomimicry or biomimetics are preferred in order to avoid confusion with the medical term "bionics." Coincidentally, Martin Caidin used the word for his 1972 novel Cyborg, which was adapted into the television film and subsequent series The Six Million Dollar Man. Caidin was a long-time aviation industry writer before turning to fiction full-time.
+
+
+== Methods ==
+
+The study of bionics often emphasizes implementing a function found in nature rather than imitating biological structures. For example, in computer science, cybernetics models the feedback and control mechanisms that are inherent in intelligent behavior, while artificial intelligence models the intelligent function regardless of the particular way it can be achieved.
+The conscious copying of examples and mechanisms from natural organisms and ecologies is a form of applied case-based reasoning, treating nature itself as a database of solutions that already work. Proponents argue that the selective pressure placed on all natural life forms minimizes and removes failures.
+Although almost all engineering could be said to be a form of biomimicry, the modern origins of this field are usually attributed to Buckminster Fuller and its later codification as a house or field of study to Janine Benyus.
+There are generally three biological levels in the fauna or flora after which technology can be modeled:
+
+Mimicking natural methods of manufacture
+Imitating mechanisms found in nature (e.g. velcro)
+Studying organizational principles from the social behavior of organisms, such as the flocking behavior of birds, optimization of ant foraging and bee foraging, and the swarm intelligence (SI)-based behavior of a school of fish.
+
+
+== Examples ==
+In robotics, bionics and biomimetics are used to apply the way animals move to the design of robots. BionicKangaroo was based on the movements and physiology of kangaroos.
+Velcro is the most famous example of biomimetics. In 1948, the Swiss engineer George de Mestral was cleaning his dog of burrs picked up on a walk when he realized how the hooks of the burrs clung to the fur.
+The horn-shaped, saw-tooth design for lumberjack blades used at the turn of the 19th century to cut down trees when it was still done by hand was modeled after observations of a wood-burrowing beetle. The blades were significantly more efficient and thus revolutionized the timber industry.
+Cat's eye reflectors were invented by Percy Shaw in 1935 after studying the mechanism of cat eyes. He had found that cats had a system of reflecting cells, known as tapetum lucidum, which was capable of reflecting the tiniest bit of light.
+Leonardo da Vinci's flying machines and ships are early examples of drawing from nature in engineering.
+Resilin is a replacement for rubber that has been created by studying the material also found in arthropods.
+Julian Vincent drew from the study of pinecones when he developed in 2004 "smart" clothing that adapts to changing temperatures. "I wanted a nonliving system which would respond to changes in moisture by changing shape," he said. "There are several such systems in plants, but most are very small—the pinecone is the largest and therefore the easiest to work on." Pinecones respond to higher humidity by opening their scales (to disperse their seeds). The "smart" fabric does the same thing, opening up when the wearer is warm and sweating and shutting tight when cold.
+"Morphing aircraft wings" that change shape according to the speed and duration of flight were designed in 2004 by biomimetic scientists from Penn State University. The morphing wings were inspired by different bird species that have differently shaped wings according to the speed at which they fly. In order to change the shape and underlying structure of the aircraft wings, the researchers needed to make the overlying skin also be able to change, which their design does by covering the wings with fish-inspired scales that could slide over each other. In some respects this is a refinement of the swing-wing design.
+
+Some paints and roof tiles have been engineered to be self-cleaning by copying the mechanism from the Nelumbo lotus.
+Cholesteric liquid crystals (CLCs) are the thin-film material often used to fabricate fish tank thermometers or mood rings that change color with temperature changes. They change color because their molecules are arranged in a helical or chiral arrangement and with temperature the pitch of that helical structure changes, reflecting different wavelengths of light. Chiral Photonics, Inc. has abstracted the self-assembled structure of the organic CLCs to produce analogous optical devices using tiny lengths of inorganic, twisted glass fiber.
+Nanostructures and physical mechanisms that produce the shining color of butterfly wings were reproduced in silico by Greg Parker, professor of Electronics and Computer Science at the University of Southampton, and research student Luca Plattner in the field of photonics, which is electronics using photons as the information carrier instead of electrons.
+The wing structure of the blue morpho butterfly was studied and the way it reflects light was mimicked to create an RFID tag that can be read through water and on metal.
+The wing structure of butterflies has also inspired the creation of new nanosensors to detect explosives.
+Neuromorphic chips and silicon retinae have wiring that is modeled after real neural networks.
+Techno Ecosystems or 'Eco Cyborg' systems involve the coupling of natural ecological processes to technological ones which mimic ecological functions. This results in the creation of a self-regulating hybrid system. Research into this field was initiated by Howard T. Odum, who perceived the structure and energy dynamics of ecosystems as being analogous to energy flow between components of an electrical circuit.
+Medical adhesives involving glue and tiny nano-hairs are being developed based on the physical structures found in the feet of geckos.
+Computer viruses also show similarities with biological viruses, attacking program-oriented information towards self-reproduction and dissemination.
+The cooling system of the Eastgate Centre building in Harare was modeled after a termite mound to achieve very efficient passive cooling.
+Adhesive which allows mussels to stick to rocks, piers, and boat hulls inspired bioadhesive gel for blood vessels.
+The field of bionics has inspired new aircraft designs which offer greater agility along with other advantages. This has been described by Geoff Spedding, Måns Rosén, and Anders Hedenström in an article in Journal of Experimental Biology. Similar statements were also made by John Videler and Eize Stamhuis in their book Avian Flight,  and in the article they present in Science about LEVs. This research in bionics may also be used to create more efficient helicopters or miniature UAVs, as stated by Bret Tobalske in an article in Science about Hummingbirds. UC Berkeley as well as ESA have been working in a similar direction and created the Robofly (a miniature UAV) and the Entomopter (a UAV which can walk, crawl and fly).
+A bio-inspired mechanical device can generate plasma in water via cavitation using the morphological accurate snapping shrimp claw. This was described in detail by Xin Tang and David Staack in an article published in Science Advances.
+
+
+== Specific uses of the term ==
+
+
+=== In medicine ===
+Bionics refers to the flow of concepts from biology to engineering and vice versa. Hence, there are two slightly different points of view regarding the meaning of the word.
+In medicine, bionics means the replacement or enhancement of organs or other body parts by mechanical versions. Bionic implants differ from mere prostheses by mimicking the original function very closely, or even surpassing it.
+The German equivalent of bionics, Bionik, always adheres to the broader meaning, in that it tries to develop engineering solutions from biological models. This approach is motivated by the fact that biological solutions will usually be optimized by evolutionary forces.
+While the technologies that make bionic implants possible are developing gradually, a few successful bionic devices already exist, a well known one being the Australian-invented multi-channel cochlear implant (bionic ear), a device for deaf people. Since the bionic ear, many bionic devices have emerged and work is progressing on bionics solutions for other sensory disorders (e.g. vision and balance). Bionic research has recently provided treatments for medical problems such as neurological and psychiatric conditions, for example Parkinson's disease and epilepsy.
+In 1997, Colombian researcher Alvaro Rios Poveda developed an upper limb and hand prosthesis with sensory feedback. This technology allows amputee patients to handle prosthetic hand systems in a more natural way.
+By 2004 fully functional artificial hearts were developed. Significant progress is expected with the advent of nanotechnology. A well-known example of a proposed nanodevice is a respirocyte, an artificial red cell designed (though not yet built) by Robert Freitas.
+During his eight years in the Department of Bioengineering at the University of Pennsylvania, Kwabena Boahen developed a silicon retina that was able to process images in the same manner as a living retina. He confirmed the results by comparing the electrical signals from his silicon retina to the electrical signals produced by a salamander eye while the two retinas were looking at the same image.
+On July 21, 2015, the BBC's medical correspondent Fergus Walsh reported, "surgeons in Manchester have performed the first bionic eye implant in a patient with the most common cause of sight loss in the developed world. Ray Flynn, 80, has dry age-related macular degeneration which has led to the total loss of his central vision. He is using a retinal implant that converts video images from a miniature video camera worn on his glasses. He can now make out the direction of white lines on a computer screen using the retinal implant." The implant, known as the Argus II and manufactured in the US by the company Second Sight Medical Products, had been used previously in patients who were blind as the result of the rare inherited degenerative eye disease retinitis pigmentosa.
+In 2016,Tilly Lockey (born October 7, 2005) was fitted with a pair of bionic "Hero Arms" manufactured by OpenBionics, a UK bionics enterprise. The Hero Arm is a lightweight myoelectric prosthesis for below-elbow amputee adults and children aged eight and above. Tilly Lockey, who at 15 months had both her arms amputated after being diagnosed with meningococcal sepsis strain B, describes the Hero Arms as “really realistic, to the point where it was quite creepy how realistic they were.” 
+On February 17, 2020, Darren Fuller, a military veteran, became the first person to receive a bionic arm under a public healthcare system. Fuller lost the lower section of his right arm while serving term in Afghanistan during an incident that involved mortar ammunition in 2008.
+
+
+=== Other uses ===
+Business biomimetics is the latest development in the application of biomimetics. Specifically it applies principles and practice from biological systems to business strategy, process, organization design, and strategic thinking. It has been successfully used by a range of industries in FMCG, defense, central government, packaging, and business services. Based on the work by Phil Richardson at the University of Bath the approach was launched at the House of Lords in May 2009.
+Generally, biometrics is used as a creativity technique that studies biological prototypes to get ideas for engineering solutions. 
+In chemistry, a biomimetic synthesis is a chemical synthesis inspired by biochemical processes.
+Another, more recent meaning of the term bionics refers to merging organism and machine. This approach results in a hybrid system combining biological and engineering parts, which can also be referred as a cybernetic organism (cyborg). Practical realization of this was demonstrated in Kevin Warwick's implant experiments bringing about ultrasound input via his own nervous system.
+
+
+== See also ==
+
+
+== References ==
+
+
+== Sources ==
+Biomimicry: Innovation Inspired by Nature. 1997. Janine Benyus.
+Biomimicry for Optimization, Control, and Automation, Springer-Verlag, London, 2005, Kevin M. Passino
+"Ideas Stolen Right from Nature" (Wired)
+Bionics and Engineering: The Relevance of Biology to Engineering, presented at Society of Women Engineers Convention, Seattle, WA, 1983, Jill E. Steele
+Bionics: Nature as a Model. 1993. PRO FUTURA Verlag GmbH, München, Umweltstiftung WWF Deutschland
+Lipov A.N. "At the origins of modern bionics. Bio-morphological formation in an artificial environment" Polygnosis. No. 1–2. 2010. Ch. 1–2. pp. 126–136.
+Lipov A.N. "At the origins of modern bionics. Bio-morphological formation in an artificial environment." Polygnosis. No. 3. 2010. Part 3. pр. 80–91.
+
+
+== External links ==
+
+Bionics Queensland
+Centre for Nature Inspired Engineering at UCL (University College London)
+Biological Robotics at the University of Tulsa Archived 20 December 2018 at the Wayback Machine
+Wyss Institute for Biologically Inspired Engineering
+The Biomimicry Institute
+Center for Biologically Inspired Design
+Biologically Inspired Design group at the Design and Intelligence Lab, Georgia Tech
+Center for Biologically Inspired Materials & Material Systems
+Biologically Inspired Product Development at the University of Maryland
+The Biologically Inspired Materials Institute
+Center for Biologically Inspired Robotics Research at Case Western Reserve University
+Biologically Inspired Materials Institute
+Bio Inspired Engineering at the Applied University Kufstein, Austria Archived 20 December 2018 at the Wayback Machine
+Laboratory for Nature Inspired Engineering at The Pennsylvania State University

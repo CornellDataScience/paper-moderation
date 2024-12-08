@@ -1,0 +1,30 @@
+The Public Suffix List (PSL) is a community-maintained list of rules that describe the internet domain name suffixes under which independent organisations can register their own sites. Entries on the list are referred to as effective top-level domains (eTLDs), and contain commonly used suffixes like com, net and co.uk, as well as private suffixes like appspot.com and github.io.
+The Mozilla Foundation created the PSL for the security and privacy policies of the Firefox web browser, but it is widely used in many different internet technologies with varying success, under the Mozilla Public License (MPL). The list has been shown to have numerous issues to do with privacy and security, mostly caused by applications using outdated versions. 
+
+
+== List ==
+A copy of the list is stored by all modern browsers, including Firefox, Chrome and Opera. They use it for features such as allowing cookie registration, detecting domain names in the address bar and site grouping. It is also used in many other tools such as CURL. Services like Let's Encrypt and Cloudflare are known to use it for per-site rate limiting.
+According to Mozilla,
+
+A "public suffix" is one under which Internet users can directly register names. Some examples of public suffixes are ".com", ".co.uk" and "pvt.k12.ma.us".
+While com, uk, and us are top-level domains (TLDs), Internet users cannot always register the next level of domain, such as "co.uk" or "wy.us", because these may be controlled by domain registrars. By contrast, users can register second level domains within com, such as example.com, because registrars control only the top level. The Public Suffix List is intended to enumerate all domain suffixes controlled by registrars, as well as those controlled privately such as github.io.
+An internet site consists of the online resources which can be controlled by the registrant of a domain name. That includes resources available via the domain and all its sub-domains. Two domains are related if they are in the same site, i.e. they share a suffix that is not included in the Public Suffix List.
+Security issues like a same-site attack can arise if the Public Suffix List is incorrect, or if browsers or sites are not properly configured.
+Some uses for the list are:
+
+Avoiding "supercookies", HTTP cookies set by related-domain attackers for high-level domain name suffixes. In other words, a page at foo.example.co.uk might normally have access to cookies at bar.example.co.uk, but example.co.uk should be walled off from cookies at example2.co.uk, to prevent a same-site attack, since the latter two domains could be registered by different owners.
+Finding DMARC policy records for email subdomains.
+Highlighting the most important part of a domain name in the user interface.
+Improving the sorting of browser history entries by site.
+
+
+== Issues ==
+The PSL has been seen as a tool for a variety of goals related to security, privacy, usability and resource management which can be in tension with each other, leading to maintenance difficulties and operational challenges. Ideas for effective approaches such as dbound, HTTP State Tokens and First Party Sets have been explored without consensus yet on good alternatives.
+In 2021, privacy enhancements in iOS 14.5 related to Apple's Identifier for Advertisers and unclear guidance from Facebook led to a flood of inappropriate requests for domains to be added to the Public Suffix List.
+
+
+== References ==
+
+
+== External links ==
+Official website

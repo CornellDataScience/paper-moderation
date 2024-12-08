@@ -1,0 +1,120 @@
+Saponification value or saponification number (SV or SN)  represents the number of milligrams of  potassium hydroxide (KOH) or sodium hydroxide (NaOH) required to saponify one gram of fat under the conditions specified. It is a measure of the average molecular weight (or chain length) of all the fatty acids present in the sample in form of triglycerides. The higher the saponification value, the lower the fatty acids average length, the lighter the mean molecular weight of triglycerides and vice versa. Practically, fats or oils with high saponification value (such as coconut and palm oil) are more suitable for soap making.
+
+
+== Determination ==
+To determine saponification value, the sample is treated with an excess of alkali (usually an  ethanolic solution of potassium hydroxide) for half an hour under reflux. The KOH is consumed by reaction with triglycerides, which consume three equivalents of base. Diglycerides consume two equivalents of KOH.  Monoglycerides and free fatty acids, as well as by other esters such as lactones consume one equivalent of base: 98  At the end of the reaction the quantity of KOH is determined by titration using standard solution of hydrochloric acid (HCl).  Key to the method is the use of phenolphthalein indicator, which indicates the consumption of strong base (KOH) by the acid, not the weak base (potassium carboxylates). The SV (mg KOH/ g of sample) is calculated as following:
+
+Eq. 1 
+where:
+
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\textrm {B}}}
+  
+ is the volume of HCl solution used for the blank run, in mL;
+
+  
+    
+      
+        
+          
+            S
+          
+        
+      
+    
+    {\displaystyle {\textrm {S}}}
+  
+ is the volume of HCl solution used for the tested sample, in mL;
+
+  
+    
+      
+        
+          
+            M
+          
+        
+      
+    
+    {\displaystyle {\textrm {M}}}
+  
+ is the molarity of HCl solution, in mol / L;
+56.1 is the molecular weight of KOH, in g / mol;
+
+  
+    
+      
+        
+          
+            
+              
+                W
+              
+            
+            
+              
+                oil/fat
+              
+            
+          
+        
+      
+    
+    {\displaystyle {{\textrm {W}}_{\textrm {oil/fat}}}}
+  
+ is the weight of sample, in g.
+For example, standard methods for determination of SV of vegetable and animal fats are as follows:
+
+The SV can also be calculated from the fatty acid composition as determined by gas chromatography (AOCS Cd 3a-94).
+Handmade soap makers who aim for bar soap use sodium hydroxide (NaOH), commonly known as lye, rather than KOH (caustic potash) which produces soft paste, gel or liquid soaps. In order to calculate the lye amount needed to make bar soap, KOH values of SV can be converted to NaOH values by dividing KOH values by the ratio of the molecular weights of KOH and NaOH (1.403).
+
+
+== Calculation of average molecular weight of fats and oils ==
+The theoretical SV of a pure triglyceride molecule can be calculated by the following equation (where MW is its molecular weight):
+
+Eq. 2 
+where:
+3 is the number of fatty acids residues per triglyceride
+1000 is the conversion factor for milligrams to grams
+56.1 is the molar mass of KOH.
+38.049 is the molecular mass of glycerol backbone
+For instance, triolein, a triglyceride occurring in many fats and oils, has three oleic acid residues esterified to a molecule of glycerol with a total MW of 885.4 (g / mol). Therefore, its SV equals 190 mg KOH / g sample. In comparison, trilaurin with three shorter fatty acid residues (lauric acid) has a MW of 639 and an SV of 263.
+As it can be seen from equation (2), the SV of a given fat is inversely proportional to its molecular weight. Actually, as fats and oils contain a mix of different triglycerides species, the average MW can be calculated according to the following relation:
+
+Eq. 3 
+This means that coconut oil with an abundance of medium chain fatty acids (mainly lauric acid) contain more fatty acids per unit of weight than, for example, olive oil (mainly oleic acid). Consequently, more ester saponifiable functions were present per g of coconut oil, which means more KOH is required to saponify the same amount of matter, and thus a higher SV. The calculated molecular weight (Eq. 3) is not applicable to fats and oils containing high amounts of unsaponifiable material, free fatty acids (> 0.1%), or mono- and diacylglycerols (> 0.1%).
+
+
+== Unsaponifiables ==
+Unsaponifiables are components of a fatty substance (oil, fat, wax) that fail to form soaps when treated with alkali and remain insoluble in water but soluble in organic solvents. For instance, typical soybean oil contains, by weight, 1.5 – 2.5% of unsaponifiable matter. Unsaponifiables include nonvolatile components : alkanes, sterols, triterpenes, fatty alcohols, tocopherols and carotenoids as well as those that mainly result from the saponification of fatty esters (sterols esters, wax esters, tocopherols esters, ...). This fraction may also contain environmental contaminants and residues of plasticizers, pesticides, mineral oil hydrocarbons and aromatics.
+Unsaponifiable constituents are an important consideration when selecting oil mixtures for the manufacture of soaps. Unsaponifiables can be beneficial to a soap formula because they may have properties such as moisturization, conditioning, antioxidant, texturing etc. On the other hand, when proportion of unsaponifiables is too high (> 3%), or the specific unsaponifiables present do not provide significant benefits, a defective or inferior soap product can result. For example, shark oil is not suitable for soap making as it may contain more than 10% of unsaponifiable matter.
+For edible oils, the tolerated limit of unsaponifiable matter is 1.5% (olive, refined soybean), while inferior quality crude or pomace oil could reach 3%.
+Determination of unsaponifiables involves a saponification step of the sample followed by extraction of the unsaponifiable using an organic solvent (i.e. diethyl ether). Official methods for animal and vegetable fats and oils are described by ASTM D1065 - 18, ISO 3596: 2000 or 18609: 2000, AOCS method Ca 6a-40.
+
+
+== Saponification values and unsaponifiables of various oils and fats ==
+
+
+== See also ==
+Acid value – Milligrams of a base needed to neutralize 1 gram of a given acid
+Amine value – Measure of an organic compound's nitrogen content
+Bromine number – Mass of bromine absorbed by 100 grams of a given substance
+EN 14214 – Fuel standard for biodiesel
+Epoxy value – Measure of the epoxy content of a substance
+Hydroxyl value – Mass of KOH needed to neutralize 1 gram of acetylized substance
+Iodine value – Mass of iodine absorbed by 100 grams of a given substance
+Peroxide value – Measure of peroxide content of a fat or oil
+Saponification – Process that converts fat, oil, or lipid into soap and alcohol
+Soapmaking — Small scale process of producing soap
+
+
+== References ==

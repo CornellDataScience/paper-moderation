@@ -1,0 +1,24 @@
+Briar is an open-source software communication technology, intended to provide secure and resilient peer-to-peer communications with no centralized servers and minimal reliance on external infrastructure. Messages can be transmitted through Bluetooth, Wi-Fi, over the internet via Tor or removable storage, such as USB sticks. All communication is end-to-end encrypted. Relevant content is stored in encrypted form on participating devices. Long-term plans for the project include support for distributed applications such as crisis mapping and collaborative document editing.
+The initial target audience for Briar includes "activists, journalists and civil society" with plans to make the system "simple enough to help anyone keep their data safe." As the ability to function in the absence of internet infrastructure may also make the project valuable to disaster response and aid organizations, the developers are working with the Open Humanitarian Initiative and Taarifa. Ultimately, the developers aim to create a system which is "as simple to use as WhatsApp, as secure as PGP, and that keeps working if somebody breaks the Internet." It is possible for an Android device to download Briar from another Android device which already has Briar installed.
+Briar's source code is published as free software and the Android app is distributed under the terms of the GNU GPL-3.0-or-later license, while the desktop version is released under the Affero General Public License. Briar Desktop runs on Windows, macOS and Linux. Briar Desktop will also run on true Linux (non-Android) mobile phones, running operating systems like Manjaro, PureOS and postmarketOS, once it has been adapted to mobile form-factors.
+Briar’s core protocol, threat model, development process, and user experience design began development in 2011 by Michael Rogers and Eleanor Saitta.
+Briar was audited by Cure53 and spoken highly of in a report delivered 20 March 2017, and was recommended to be given a second audit after development completes. As of 2018 the project received $361,100 of funding from the Open Technology Fund.
+Briar uses the Bramble protocol suite (Bramble Handshake Protocol, Bramble QR Code Protocol, Bramble Rendezvous Protocol, Bramble Synchronisation Protocol, Bramble Transport Protocol) that is specifically designed for delay-tolerant networks. As of January 2023, these protocols are not implemented by other messengers; Briar can only talk to Briar.
+
+
+== See also ==
+Mesh networking
+Smartphone ad hoc network
+Specific projects/protocols
+B.A.T.M.A.N.
+Jami (software)
+Serval Project
+Tox (protocol)
+Bridgefy
+
+
+== References ==
+
+
+== External links ==
+Official website

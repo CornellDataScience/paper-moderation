@@ -1,0 +1,154 @@
+Sexagesimal, also known as base 60, is a numeral system with sixty as its base. It originated with the ancient Sumerians in the 3rd millennium BC, was passed down to the ancient Babylonians, and is still used—in a modified form—for measuring time, angles, and geographic coordinates.
+The number 60, a superior highly composite number, has twelve divisors, namely 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, and 60, of which 2, 3, and 5 are prime numbers. With so many factors, many fractions involving sexagesimal numbers are simplified. For example, one hour can be divided evenly into sections of 30 minutes, 20 minutes, 15 minutes, 12 minutes, 10 minutes, 6 minutes, 5 minutes, 4 minutes, 3 minutes, 2 minutes, and 1 minute. 60 is the smallest number that is divisible by every number from 1 to 6; that is, it is the lowest common multiple of 1, 2, 3, 4, 5, and 6.
+In this article, all sexagesimal digits are represented as decimal numbers, except where otherwise noted. For example, the largest sexagesimal digit is "59".
+
+
+== Origin ==
+According to Otto Neugebauer, the origins of sexagesimal are not as simple, consistent, or singular in time as they are often portrayed. Throughout their many centuries of use, which continues today for specialized topics such as time, angles, and astronomical coordinate systems, sexagesimal notations have always contained a strong undercurrent of decimal notation, such as in how sexagesimal digits are written. Their use has also always included (and continues to include) inconsistencies in where and how various bases are to represent numbers even within a single text.
+
+The most powerful driver for rigorous, fully self-consistent use of sexagesimal has always been its mathematical advantages for writing and calculating fractions. In ancient texts this shows up in the fact that sexagesimal is used most uniformly and consistently in mathematical tables of data. Another practical factor that helped expand the use of sexagesimal in the past even if less consistently than in mathematical tables, was its decided advantages to merchants and buyers for making everyday financial transactions easier when they involved bargaining for and dividing up larger quantities of goods. In the late 3rd millennium BC, Sumerian/Akkadian units of weight included the kakkaru (talent, approximately 30 kg) divided into 60 manû (mina), which was further subdivided into 60 šiqlu (shekel); the descendants of these units persisted for millennia, though the Greeks later coerced this relationship into the more base-10 compatible ratio of a shekel being one 50th of a mina.
+Apart from mathematical tables, the inconsistencies in how numbers were represented within most texts extended all the way down to the most basic cuneiform symbols used to represent numeric quantities. For example, the cuneiform symbol for 1 was an ellipse made by applying the rounded end of the stylus at an angle to the clay, while the sexagesimal symbol for 60 was a larger oval or "big 1". But within the same texts in which these symbols were used, the number 10 was represented as a circle made by applying the round end of the style perpendicular to the clay, and a larger circle or "big 10" was used to represent 100. Such multi-base numeric quantity symbols could be mixed with each other and with abbreviations, even within a single number. The details and even the magnitudes implied (since zero was not used consistently) were idiomatic to the particular time periods, cultures, and quantities or concepts being represented. While such context-dependent representations of numeric quantities are easy to critique in retrospect, in modern times we still have dozens of regularly used examples of topic-dependent base mixing, including the recent innovation of adding decimal fractions to sexagesimal astronomical coordinates.
+
+
+== Usage ==
+
+
+=== Babylonian mathematics ===
+
+The sexagesimal system as used in ancient Mesopotamia was not a pure base-60 system, in the sense that it did not use 60 distinct symbols for its digits. Instead, the cuneiform digits used ten as a sub-base in the fashion of a sign-value notation: a sexagesimal digit was composed of a group of narrow, wedge-shaped marks representing units up to nine (, , , , ..., ) and a group of wide, wedge-shaped marks representing up to five tens (, , , , ). The value of the digit was the sum of the values of its component parts:
+
+Numbers larger than 59 were indicated by multiple symbol blocks of this form in place value notation. Because there was no symbol for zero it is not always immediately obvious how a number should be interpreted, and its true value must sometimes have been determined by its context. For example, the symbols for 1 and 60 are identical. Later Babylonian texts used a placeholder () to represent zero, but only in the medial positions, and not on the right-hand side of the number, as in numbers like 13200.
+
+
+=== Other historical usages ===
+
+In the Chinese calendar, a system is commonly used in which days or years are named by positions in a sequence of ten stems and in another sequence of 12 branches. The same stem and branch repeat every 60 steps through this cycle.
+Book VIII of Plato's Republic involves an allegory of marriage centered on the number 604 = 12960000 and its divisors. This number has the particularly simple sexagesimal representation 1,0,0,0,0. Later scholars have invoked both Babylonian mathematics and music theory in an attempt to explain this passage.
+Ptolemy's Almagest, a treatise on mathematical astronomy written in the second century AD, uses base 60 to express the fractional parts of numbers. In particular, his table of chords, which was essentially the only extensive trigonometric table for more than a millennium, has fractional parts of a degree in base 60, and was practically equivalent to a modern-day table of values of the sine function.
+Medieval astronomers also used sexagesimal numbers to note time. Al-Biruni first subdivided the hour sexagesimally into minutes, seconds, thirds and fourths in 1000 while discussing Jewish months. Around 1235 John of Sacrobosco continued this tradition, although Nothaft thought Sacrobosco was the first to do so. The Parisian version of the Alfonsine tables (ca. 1320) used the day as the basic unit of time, recording multiples and fractions of a day in base-60 notation.
+The sexagesimal number system continued to be frequently used by European astronomers for performing calculations as late as 1671. For instance, Jost Bürgi in Fundamentum Astronomiae (presented to Emperor Rudolf II in 1592), his colleague Ursus in Fundamentum Astronomicum, and possibly also Henry Briggs, used multiplication tables based on the sexagesimal system in the late 16th century, to calculate sines.
+In the late 18th and early 19th centuries, Tamil astronomers were found to make astronomical calculations, reckoning with shells using a mixture of decimal and sexagesimal notations developed by Hellenistic astronomers.
+Base-60 number systems have also been used in some other cultures that are unrelated to the Sumerians, for example by the Ekari people of Western New Guinea.
+
+
+=== Modern usage ===
+
+Modern uses for the sexagesimal system include measuring angles, geographic coordinates, electronic navigation, and time.
+One hour of time is divided into 60 minutes, and one minute is divided into 60 seconds. Thus, a measurement of time such as 3:23:17 (3 hours, 23 minutes, and 17 seconds) can be interpreted as a whole sexagesimal number (no sexagesimal point), meaning 3 × 602 + 23 × 601 + 17 × 600 seconds. However, each of the three sexagesimal digits in this number (3, 23, and 17) is written using the decimal system.
+Similarly, the practical unit of angular measure is the degree, of which there are 360 (six sixties) in a circle. There are 60 minutes of arc in a degree, and 60 arcseconds in a minute.
+
+
+==== YAML ====
+In version 1.1 of the YAML data storage format, sexagesimals are supported for plain scalars, and formally specified both for integers and floating point numbers. This has led to confusion, as e.g. some MAC addresses would be recognised as sexagesimals and loaded as integers, where others were not and loaded as strings. In YAML 1.2 support for sexagesimals was dropped.
+
+
+== Notations ==
+
+In Hellenistic Greek astronomical texts, such as the writings of Ptolemy, sexagesimal numbers were written using Greek alphabetic numerals, with each sexagesimal digit being treated as a distinct number. Hellenistic astronomers adopted a new symbol for zero, —°, which morphed over the centuries into other forms, including the Greek letter omicron, ο, normally meaning 70, but permissible in a sexagesimal system where the maximum value in any position is 59. The Greeks limited their use of sexagesimal numbers to the fractional part of a number.
+In medieval Latin texts, sexagesimal numbers were written using Arabic numerals; the different levels of fractions were denoted minuta (i.e., fraction), minuta secunda, minuta tertia, etc. By the 17th century it became common to denote the integer part of sexagesimal numbers by a superscripted zero, and the various fractional parts by one or more accent marks. John Wallis, in his Mathesis universalis, generalized this notation to include higher multiples of 60; giving as an example the number 49‵‵‵‵36‵‵‵25‵‵15‵1°15′2″36‴49⁗; where the numbers to the left are multiplied by higher powers of 60, the numbers to the right are divided by powers of 60, and the number marked with the superscripted zero is multiplied by 1. This notation leads to the modern signs for degrees, minutes, and seconds. The same minute and second nomenclature is also used for units of time, and the modern notation for time with hours, minutes, and seconds written in decimal and separated from each other by colons may be interpreted as a form of sexagesimal notation.
+In some usage systems, each position past the sexagesimal point was numbered, using Latin or French roots: prime or primus, seconde or secundus, tierce, quatre, quinte, etc. To this day we call the second-order part of an hour or of a degree a "second". Until at least the 18th century, ⁠1/60⁠ of a second was called a "tierce" or "third".
+In the 1930s, Otto Neugebauer introduced a modern notational system for Babylonian and Hellenistic numbers that substitutes modern decimal notation from 0 to 59 in each position, while using a semicolon (;) to separate the integer and fractional portions of the number and using a comma (,) to separate the positions within each portion. For example, the mean synodic month used by both Babylonian and Hellenistic astronomers and still used in the Hebrew calendar is 29;31,50,8,20 days. This notation is used in this article.
+
+
+== Fractions and irrational numbers ==
+
+
+=== Fractions ===
+In the sexagesimal system, any fraction in which the denominator is a regular number (having only 2, 3, and 5 in its prime factorization) may be expressed exactly. Shown here are all fractions of this type in which the denominator is less than or equal to 60:
+
+However numbers that are not regular form more complicated repeating fractions. For example:
+
+1⁄7 = 0;8,34,17 (the bar indicates the sequence of sexagesimal digits 8,34,17 repeats infinitely many times)
+1⁄11 = 0;5,27,16,21,49
+1⁄13 = 0;4,36,55,23
+1⁄14 = 0;4,17,8,34
+1⁄17 = 0;3,31,45,52,56,28,14,7
+1⁄19 = 0;3,9,28,25,15,47,22,6,18,56,50,31,34,44,12,37,53,41
+1⁄59 = 0;1
+1⁄61 = 0;0,59
+The fact that the two numbers that are adjacent to sixty, 59 and 61, are both prime numbers implies that fractions that repeat with a period of one or two sexagesimal digits can only have regular number multiples of 59 or 61 as their denominators, and that other non-regular numbers have fractions that repeat with a longer period.
+
+
+=== Irrational numbers ===
+
+The representations of irrational numbers in any positional number system (including decimal and sexagesimal) neither terminate nor repeat.
+The square root of 2, the length of the diagonal of a unit square, was approximated by the Babylonians of the Old Babylonian Period (1900 BC – 1650 BC) as
+
+  
+    
+      
+        1
+        ;
+        24
+        ,
+        51
+        ,
+        10
+        =
+        1
+        +
+        
+          
+            24
+            60
+          
+        
+        +
+        
+          
+            51
+            
+              60
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            10
+            
+              60
+              
+                3
+              
+            
+          
+        
+        =
+        
+          
+            30547
+            21600
+          
+        
+        ≈
+        1.41421296
+        …
+      
+    
+    {\displaystyle 1;24,51,10=1+{\frac {24}{60}}+{\frac {51}{60^{2}}}+{\frac {10}{60^{3}}}={\frac {30547}{21600}}\approx 1.41421296\ldots }
+  
+
+Because √2 ≈ 1.41421356... is an irrational number, it cannot be expressed exactly in sexagesimal (or indeed any integer-base system), but its sexagesimal expansion does begin 1;24,51,10,7,46,6,4,44... (OEIS: A070197)
+The value of π as used by the Greek mathematician and scientist Ptolemy was 3;8,30 = 3 + ⁠8/60⁠ + ⁠30/602⁠ = ⁠377/120⁠ ≈ 3.141666.... Jamshīd al-Kāshī, a 15th-century Persian mathematician, calculated 2π as a sexagesimal expression to its correct value when rounded to nine subdigits (thus to ⁠1/609⁠); his value for 2π was 6;16,59,28,1,34,51,46,14,50. Like √2 above, 2π is an irrational number and cannot be expressed exactly in sexagesimal. Its sexagesimal expansion begins 6;16,59,28,1,34,51,46,14,49,55,12,35... (OEIS: A091649)
+
+
+== See also ==
+Clock
+Latitude
+Trigonometry
+
+
+== References ==
+
+
+== Further reading ==
+Ifrah, Georges (1999), The Universal History of Numbers: From Prehistory to the Invention of the Computer, Wiley, ISBN 0-471-37568-3.
+Nissen, Hans J.; Damerow, P.; Englund, R. (1993), Archaic Bookkeeping, University of Chicago Press, ISBN 0-226-58659-6
+
+
+== External links ==
+"Facts on the Calculation of Degrees and Minutes" is an Arabic language book by Sibṭ al-Māridīnī, Badr al-Dīn Muḥammad ibn Muḥammad (b. 1423). This work offers a very detailed treatment of sexagesimal mathematics and includes what appears to be the first mention of the periodicity of sexagesimal fractions.

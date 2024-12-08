@@ -1,0 +1,3823 @@
+In the context of the physical and mathematical theory of percolation, a percolation transition is characterized by a set of universal critical exponents, which describe the fractal properties of the percolating medium at large scales and sufficiently close to the transition. The exponents are universal in the sense that they only depend on the type of percolation model and on the space dimension. They are expected to not depend on microscopic details such as the lattice structure, or whether site or bond percolation is considered. This article deals with the critical exponents of random percolation.
+Percolating systems have a parameter 
+  
+    
+      
+        p
+        
+        
+      
+    
+    {\displaystyle p\,\!}
+  
+ which controls the occupancy of sites or bonds in the system. At a critical value 
+  
+    
+      
+        
+          p
+          
+            c
+          
+        
+        
+        
+      
+    
+    {\displaystyle p_{c}\,\!}
+  
+, the mean cluster size goes to infinity and the percolation transition takes place. As one approaches 
+  
+    
+      
+        
+          p
+          
+            c
+          
+        
+        
+        
+      
+    
+    {\displaystyle p_{c}\,\!}
+  
+, various quantities either diverge or go to a constant value by a power law in 
+  
+    
+      
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          |
+        
+        
+        
+      
+    
+    {\displaystyle |p-p_{c}|\,\!}
+  
+, and the exponent of that power law is the critical exponent. While the exponent of that power law is generally the same on both sides of the threshold, the coefficient or "amplitude" is generally different, leading to a universal amplitude ratio.
+
+
+== Description ==
+Thermodynamic or configurational systems near a critical point or a continuous phase transition become fractal, and the behavior of many quantities in such circumstances is described by universal critical exponents. Percolation theory is a particularly simple and fundamental model in statistical mechanics which has a critical point, and a great deal of work has been done in finding its critical exponents, both theoretically (limited to two dimensions) and numerically.
+Critical exponents exist for a variety of observables, but most of them are linked to each other by exponent (or scaling) relations. Only a few of them are independent, and the choice of the fundamental exponents depends on the focus of the study at hand. One choice is the set 
+  
+    
+      
+        {
+        σ
+        ,
+        
+        τ
+        }
+        
+        
+      
+    
+    {\displaystyle \{\sigma ,\,\tau \}\,\!}
+  
+ motivated by the cluster size distribution, another choice is 
+  
+    
+      
+        {
+        
+          d
+          
+            f
+          
+        
+        ,
+        
+        ν
+        }
+        
+        
+      
+    
+    {\displaystyle \{d_{\text{f}},\,\nu \}\,\!}
+  
+ motivated by the structure of the infinite cluster. So-called correction exponents extend these sets, they refer to higher orders of the asymptotic expansion around the critical point.
+
+
+== Definitions of exponents ==
+
+
+=== Self-similarity at the percolation threshold ===
+Percolation clusters become self-similar precisely at the threshold density 
+  
+    
+      
+        
+          p
+          
+            c
+          
+        
+        
+        
+      
+    
+    {\displaystyle p_{c}\,\!}
+  
+ for sufficiently large length scales, entailing the following asymptotic power laws:
+The fractal dimension 
+  
+    
+      
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle d_{\text{f}}\,\!}
+  
+ relates how the mass of the incipient infinite cluster depends on the radius or another length measure, 
+  
+    
+      
+        M
+        (
+        L
+        )
+        ∼
+        
+          L
+          
+            
+              d
+              
+                f
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle M(L)\sim L^{d_{\text{f}}}\,\!}
+  
+ at 
+  
+    
+      
+        p
+        =
+        
+          p
+          
+            c
+          
+        
+        
+        
+      
+    
+    {\displaystyle p=p_{c}\,\!}
+  
+ and for large probe sizes, 
+  
+    
+      
+        L
+        →
+        ∞
+        
+        
+      
+    
+    {\displaystyle L\to \infty \,\!}
+  
+. Other notation: magnetic exponent 
+  
+    
+      
+        
+          y
+          
+            h
+          
+        
+        =
+        D
+        =
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle y_{h}=D=d_{f}\,\!}
+  
+ and co-dimension 
+  
+    
+      
+        
+          Δ
+          
+            σ
+          
+        
+        =
+        d
+        −
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle \Delta _{\sigma }=d-d_{f}\,\!}
+  
+.
+The Fisher exponent 
+  
+    
+      
+        τ
+        
+        
+      
+    
+    {\displaystyle \tau \,\!}
+  
+ characterizes the cluster-size distribution 
+  
+    
+      
+        
+          n
+          
+            s
+          
+        
+        
+        
+      
+    
+    {\displaystyle n_{s}\,\!}
+  
+, which is often determined in computer simulations. The latter counts the number of clusters with a given size (volume) 
+  
+    
+      
+        s
+        
+        
+      
+    
+    {\displaystyle s\,\!}
+  
+, normalized by the total volume (number of lattice sites). The distribution obeys a power law at the threshold, 
+  
+    
+      
+        
+          n
+          
+            s
+          
+        
+        ∼
+        
+          s
+          
+            −
+            τ
+          
+        
+        
+        
+      
+    
+    {\displaystyle n_{s}\sim s^{-\tau }\,\!}
+  
+ asymptotically as 
+  
+    
+      
+        s
+        →
+        ∞
+        
+        
+      
+    
+    {\displaystyle s\to \infty \,\!}
+  
+.
+The probability for two sites separated by a distance 
+  
+    
+      
+        
+          
+            
+              r
+              →
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {r}}\,\!}
+  
+ to belong to the same cluster decays as 
+  
+    
+      
+        g
+        (
+        
+          
+            
+              r
+              →
+            
+          
+        
+        )
+        ∼
+        
+          |
+        
+        
+          
+            
+              r
+              →
+            
+          
+        
+        
+          
+            |
+          
+          
+            −
+            2
+            (
+            d
+            −
+            
+              d
+              
+                f
+              
+            
+            )
+          
+        
+        
+        
+      
+    
+    {\displaystyle g({\vec {r}})\sim |{\vec {r}}|^{-2(d-d_{\text{f}})}\,\!}
+  
+ or 
+  
+    
+      
+        g
+        (
+        
+          
+            
+              r
+              →
+            
+          
+        
+        )
+        ∼
+        
+          |
+        
+        
+          
+            
+              r
+              →
+            
+          
+        
+        
+          
+            |
+          
+          
+            −
+            d
+            +
+            (
+            2
+            −
+            η
+            )
+          
+        
+        
+        
+      
+    
+    {\displaystyle g({\vec {r}})\sim |{\vec {r}}|^{-d+(2-\eta )}\,\!}
+  
+ for large distances, which introduces the anomalous dimension 
+  
+    
+      
+        η
+        
+        
+      
+    
+    {\displaystyle \eta \,\!}
+  
+. Also, 
+  
+    
+      
+        δ
+        =
+        (
+        d
+        +
+        2
+        −
+        η
+        )
+        
+          /
+        
+        (
+        d
+        −
+        2
+        +
+        η
+        )
+      
+    
+    {\displaystyle \delta =(d+2-\eta )/(d-2+\eta )}
+  
+ and 
+  
+    
+      
+        η
+        =
+        2
+        −
+        γ
+        
+          /
+        
+        ν
+      
+    
+    {\displaystyle \eta =2-\gamma /\nu }
+  
+.
+The exponent 
+  
+    
+      
+        Ω
+        
+        
+      
+    
+    {\displaystyle \Omega \,\!}
+  
+ is connected with the leading correction to scaling, which appears, e.g., in the asymptotic expansion of the cluster-size distribution,
+
+  
+    
+      
+        
+          n
+          
+            s
+          
+        
+        ∼
+        
+          s
+          
+            −
+            τ
+          
+        
+        (
+        1
+        +
+        
+          const
+        
+        ×
+        
+          s
+          
+            −
+            Ω
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle n_{s}\sim s^{-\tau }(1+{\text{const}}\times s^{-\Omega })\,\!}
+  
+ for 
+  
+    
+      
+        s
+        →
+        ∞
+        
+        
+      
+    
+    {\displaystyle s\to \infty \,\!}
+  
+. Also, 
+  
+    
+      
+        ω
+        =
+        Ω
+        
+          /
+        
+        (
+        σ
+        ν
+        )
+        =
+        Ω
+        
+          d
+          
+            f
+          
+        
+      
+    
+    {\displaystyle \omega =\Omega /(\sigma \nu )=\Omega d_{f}}
+  
+.
+For quantities like the mean cluster size 
+  
+    
+      
+        S
+        ∼
+        
+          a
+          
+            0
+          
+        
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            −
+            γ
+          
+        
+        (
+        1
+        +
+        
+          a
+          
+            1
+          
+        
+        (
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          )
+          
+            
+              Δ
+              
+                1
+              
+            
+          
+        
+        +
+        …
+        )
+      
+    
+    {\displaystyle S\sim a_{0}|p-p_{c}|^{-\gamma }(1+a_{1}(p-p_{c})^{\Delta _{1}}+\ldots )}
+  
+, the corrections are controlled by the exponent 
+  
+    
+      
+        
+          Δ
+          
+            1
+          
+        
+        =
+        Ω
+        β
+        δ
+        =
+        ω
+        ν
+      
+    
+    {\displaystyle \Delta _{1}=\Omega \beta \delta =\omega \nu }
+  
+.
+The minimum or chemical distance or shortest-path exponent 
+  
+    
+      
+        
+          d
+          
+            
+              m
+              i
+              n
+            
+          
+        
+      
+    
+    {\displaystyle d_{\mathrm {min} }}
+  
+ describes how the average minimum distance 
+  
+    
+      
+        ⟨
+        ℓ
+        ⟩
+      
+    
+    {\displaystyle \langle \ell \rangle }
+  
+ relates to the Euclidean distance 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+, namely 
+  
+    
+      
+        ⟨
+        ℓ
+        ⟩
+        ∼
+        
+          r
+          
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \langle \ell \rangle \sim r^{d_{\mathrm {min} }}}
+  
+ Note, it is more appropriate  and practical to measure average 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+, <
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+> for a given 
+  
+    
+      
+        ℓ
+      
+    
+    {\displaystyle \ell }
+  
+. The elastic backbone  has the same fractal dimension as the shortest path. A related quantity is the spreading dimension 
+  
+    
+      
+        
+          d
+          
+            ℓ
+          
+        
+      
+    
+    {\displaystyle d_{\ell }}
+  
+, which describes the scaling of the mass M of a critical cluster within a chemical distance 
+  
+    
+      
+        ℓ
+      
+    
+    {\displaystyle \ell }
+  
+ as 
+  
+    
+      
+        M
+        ∼
+        
+          ℓ
+          
+            
+              d
+              
+                ℓ
+              
+            
+          
+        
+      
+    
+    {\displaystyle M\sim \ell ^{d_{\ell }}}
+  
+, and is related to the fractal dimension 
+  
+    
+      
+        
+          d
+          
+            f
+          
+        
+      
+    
+    {\displaystyle d_{f}}
+  
+ of the cluster by 
+  
+    
+      
+        
+          d
+          
+            ℓ
+          
+        
+        =
+        
+          d
+          
+            f
+          
+        
+        
+          /
+        
+        
+          d
+          
+            
+              m
+              i
+              n
+            
+          
+        
+      
+    
+    {\displaystyle d_{\ell }=d_{f}/d_{\mathrm {min} }}
+  
+. The chemical distance can also be thought of as a time in an epidemic growth process, and one also defines 
+  
+    
+      
+        
+          ν
+          
+            t
+          
+        
+      
+    
+    {\displaystyle \nu _{t}}
+  
+ where 
+  
+    
+      
+        
+          d
+          
+            
+              m
+              i
+              n
+            
+          
+        
+        =
+        
+          ν
+          
+            t
+          
+        
+        
+          /
+        
+        ν
+        =
+        z
+      
+    
+    {\displaystyle d_{\mathrm {min} }=\nu _{t}/\nu =z}
+  
+, and 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ is the dynamical exponent. One also writes 
+  
+    
+      
+        
+          ν
+          
+            ∥
+          
+        
+        =
+        
+          ν
+          
+            t
+          
+        
+      
+    
+    {\displaystyle \nu _{\parallel }=\nu _{t}}
+  
+.
+Also related to the minimum dimension is the simultaneous growth of two nearby clusters. The probability that the two clusters coalesce exactly in time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ scales as 
+  
+    
+      
+        p
+        (
+        t
+        )
+        ∼
+        
+          t
+          
+            −
+            λ
+          
+        
+      
+    
+    {\displaystyle p(t)\sim t^{-\lambda }}
+  
+ with 
+  
+    
+      
+        λ
+        =
+        1
+        +
+        5
+        
+          /
+        
+        (
+        4
+        
+          d
+          
+            
+              m
+              i
+              n
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \lambda =1+5/(4d_{\mathrm {min} })}
+  
+.
+The dimension of the backbone, which is defined as the subset of cluster sites
+carrying the current when a voltage difference is applied between two sites far apart, is 
+  
+    
+      
+        
+          d
+          
+            b
+          
+        
+      
+    
+    {\displaystyle d_{\text{b}}}
+  
+ (or 
+  
+    
+      
+        
+          d
+          
+            BB
+          
+        
+      
+    
+    {\displaystyle d_{\text{BB}}}
+  
+).  One also defines 
+  
+    
+      
+        ξ
+        =
+        d
+        −
+        
+          d
+          
+            b
+          
+        
+      
+    
+    {\displaystyle \xi =d-d_{\text{b}}}
+  
+.
+The fractal dimension of the random walk on an infinite incipient percolation cluster is given by 
+  
+    
+      
+        
+          d
+          
+            w
+          
+        
+      
+    
+    {\displaystyle d_{w}}
+  
+.
+The spectral dimension 
+  
+    
+      
+        
+          
+            
+              d
+              ~
+            
+          
+        
+      
+    
+    {\displaystyle {\tilde {d}}}
+  
+ such that the average number of distinct sites visited in an 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+-step random walk scales as 
+  
+    
+      
+        
+          N
+          
+            
+              
+                d
+                ~
+              
+            
+          
+        
+      
+    
+    {\displaystyle N^{\tilde {d}}}
+  
+.
+
+
+=== Critical behavior close to the percolation threshold ===
+The approach to the percolation threshold is governed by power laws again, which hold asymptotically close to 
+  
+    
+      
+        
+          p
+          
+            c
+          
+        
+        
+        
+      
+    
+    {\displaystyle p_{c}\,\!}
+  
+:
+The exponent 
+  
+    
+      
+        ν
+        
+        
+      
+    
+    {\displaystyle \nu \,\!}
+  
+ describes the divergence of the correlation length 
+  
+    
+      
+        ξ
+        
+        
+      
+    
+    {\displaystyle \xi \,\!}
+  
+ as the percolation transition is approached, 
+  
+    
+      
+        ξ
+        ∼
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            −
+            ν
+          
+        
+        
+        
+      
+    
+    {\displaystyle \xi \sim |p-p_{c}|^{-\nu }\,\!}
+  
+. The infinite cluster becomes homogeneous at length scales beyond the correlation length; further, it is a measure for the linear extent of the largest finite cluster. Other notation: Thermal exponent 
+  
+    
+      
+        
+          y
+          
+            t
+          
+        
+        =
+        1
+        
+          /
+        
+        ν
+      
+    
+    {\displaystyle y_{t}=1/\nu }
+  
+ and dimension 
+  
+    
+      
+        
+          Δ
+          
+            ϵ
+          
+        
+        =
+        d
+        −
+        1
+        
+          /
+        
+        ν
+      
+    
+    {\displaystyle \Delta _{\epsilon }=d-1/\nu }
+  
+.
+Off criticality, only finite clusters exist up to a largest cluster size 
+  
+    
+      
+        
+          s
+          
+            max
+          
+        
+        
+        
+      
+    
+    {\displaystyle s_{\max }\,\!}
+  
+, and the cluster-size distribution is smoothly cut off by a rapidly decaying function, 
+  
+    
+      
+        
+          n
+          
+            s
+          
+        
+        ∼
+        
+          s
+          
+            −
+            τ
+          
+        
+        f
+        (
+        s
+        
+          /
+        
+        
+          s
+          
+            max
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle n_{s}\sim s^{-\tau }f(s/s_{\max })\,\!}
+  
+. The exponent 
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+ characterizes the divergence of the cutoff parameter, 
+  
+    
+      
+        
+          s
+          
+            max
+          
+        
+        ∼
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            −
+            1
+            
+              /
+            
+            σ
+          
+        
+        
+        
+      
+    
+    {\displaystyle s_{\max }\sim |p-p_{c}|^{-1/\sigma }\,\!}
+  
+. From the fractal relation we have 
+  
+    
+      
+        
+          s
+          
+            max
+          
+        
+        ∼
+        
+          ξ
+          
+            
+              d
+              
+                f
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle s_{\max }\sim \xi ^{d_{\text{f}}}\,\!}
+  
+, yielding 
+  
+    
+      
+        σ
+        =
+        1
+        
+          /
+        
+        ν
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle \sigma =1/\nu d_{\text{f}}\,\!}
+  
+.
+The density of clusters (number of clusters per site) 
+  
+    
+      
+        
+          n
+          
+            c
+          
+        
+      
+    
+    {\displaystyle n_{c}}
+  
+ is continuous at the threshold but its third derivative goes to infinity as determined by the exponent 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+: 
+  
+    
+      
+        
+          n
+          
+            c
+          
+        
+        ∼
+        A
+        +
+        B
+        (
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        )
+        +
+        C
+        (
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          )
+          
+            2
+          
+        
+        +
+        
+          D
+          
+            ±
+          
+        
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            2
+            −
+            α
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle n_{c}\sim A+B(p-p_{c})+C(p-p_{c})^{2}+D_{\pm }|p-p_{c}|^{2-\alpha }+\cdots }
+  
+, where 
+  
+    
+      
+        
+          D
+          
+            ±
+          
+        
+      
+    
+    {\displaystyle D_{\pm }}
+  
+ represents the coefficient above and below the transition point.
+The strength or weight of the percolating cluster, 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ or 
+  
+    
+      
+        
+          P
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle P_{\infty }}
+  
+, is the probability that a site belongs to an infinite cluster. 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ is zero below the transition and is non-analytic. Just above the transition, 
+  
+    
+      
+        P
+        ∼
+        (
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          )
+          
+            β
+          
+        
+        
+        
+      
+    
+    {\displaystyle P\sim (p-p_{c})^{\beta }\,\!}
+  
+, defining the exponent 
+  
+    
+      
+        β
+        
+        
+      
+    
+    {\displaystyle \beta \,\!}
+  
+. 
+  
+    
+      
+         
+        P
+      
+    
+    {\displaystyle \ P}
+  
+ plays the role of an order parameter.
+The divergence of the mean cluster size 
+  
+    
+      
+        S
+        =
+        
+          ∑
+          
+            s
+          
+        
+        
+          s
+          
+            2
+          
+        
+        
+          n
+          
+            s
+          
+        
+        
+          /
+        
+        
+          p
+          
+            c
+          
+        
+        ∼
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            −
+            γ
+          
+        
+        
+        
+      
+    
+    {\displaystyle S=\sum _{s}s^{2}n_{s}/p_{c}\sim |p-p_{c}|^{-\gamma }\,\!}
+  
+ introduces the exponent 
+  
+    
+      
+        γ
+        
+        
+      
+    
+    {\displaystyle \gamma \,\!}
+  
+.
+The gap exponent Δ is defined as Δ = 1/(β+γ) = 1/σ and represents the "gap" in critical exponent values from one moment 
+  
+    
+      
+        
+          M
+          
+            n
+          
+        
+      
+    
+    {\displaystyle M_{n}}
+  
+ to the next 
+  
+    
+      
+        
+          M
+          
+            n
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle M_{n+1}}
+  
+ for 
+  
+    
+      
+        n
+        >
+        2
+      
+    
+    {\displaystyle n>2}
+  
+.
+The conductivity exponent 
+  
+    
+      
+        t
+        =
+        ν
+        
+          t
+          ′
+        
+      
+    
+    {\displaystyle t=\nu t'}
+  
+ describes how the electrical conductivity 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ goes to zero in a conductor-insulator mixture, 
+  
+    
+      
+        C
+        ∼
+        (
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          )
+          
+            t
+          
+        
+        
+        
+      
+    
+    {\displaystyle C\sim (p-p_{c})^{t}\,\!}
+  
+. Also, 
+  
+    
+      
+        
+          t
+          ′
+        
+        =
+        ζ
+      
+    
+    {\displaystyle t'=\zeta }
+  
+.
+
+
+=== Surface critical exponents ===
+The probability a point at a surface belongs to the percolating or infinite cluster for 
+  
+    
+      
+        p
+        ≥
+        
+          p
+          
+            c
+          
+        
+      
+    
+    {\displaystyle p\geq p_{c}}
+  
+ is 
+  
+    
+      
+        
+          P
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        ∼
+        (
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          )
+          
+            
+              β
+              
+                
+                  s
+                  u
+                  r
+                  f
+                
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle P_{\mathrm {surf} }\sim (p-p_{c})^{\beta _{\mathrm {surf} }}\,\!}
+  
+.
+The surface fractal dimension is given by 
+  
+    
+      
+        
+          d
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        =
+        d
+        −
+        1
+        −
+        
+          β
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        
+          /
+        
+        ν
+      
+    
+    {\displaystyle d_{\mathrm {surf} }=d-1-\beta _{\mathrm {surf} }/\nu }
+  
+.
+Correlations parallel and perpendicular to the surface decay as 
+  
+    
+      
+        
+          g
+          
+            ∥
+          
+        
+        (
+        
+          
+            
+              r
+              →
+            
+          
+        
+        )
+        ∼
+        
+          |
+        
+        
+          
+            
+              r
+              →
+            
+          
+        
+        
+          
+            |
+          
+          
+            2
+            −
+            d
+            −
+            
+              η
+              
+                ∥
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle g_{\parallel }({\vec {r}})\sim |{\vec {r}}|^{2-d-\eta _{\parallel }}\,\!}
+  
+ and 
+  
+    
+      
+        
+          g
+          
+            ⊥
+          
+        
+        (
+        
+          
+            
+              r
+              →
+            
+          
+        
+        )
+        ∼
+        
+          |
+        
+        
+          
+            
+              r
+              →
+            
+          
+        
+        
+          
+            |
+          
+          
+            2
+            −
+            d
+            −
+            
+              η
+              
+                ⊥
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle g_{\perp }({\vec {r}})\sim |{\vec {r}}|^{2-d-\eta _{\perp }}\,\!}
+  
+.
+The mean size of finite clusters connected to a site in the surface is 
+  
+    
+      
+        
+          χ
+          
+            1
+          
+        
+        ∼
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            −
+            
+              γ
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle \chi _{1}\sim |p-p_{c}|^{-\gamma _{1}}}
+  
+.
+The mean number of surface sites connected to a site in the surface is 
+  
+    
+      
+        
+          χ
+          
+            1
+            ,
+            1
+          
+        
+        ∼
+        
+          |
+        
+        p
+        −
+        
+          p
+          
+            c
+          
+        
+        
+          
+            |
+          
+          
+            −
+            
+              γ
+              
+                1
+                ,
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle \chi _{1,1}\sim |p-p_{c}|^{-\gamma _{1,1}}}
+  
+.
+
+
+== Scaling relations ==
+
+
+=== Hyperscaling relations ===
+
+  
+    
+      
+        τ
+        =
+        
+          
+            d
+            
+              d
+              
+                f
+              
+            
+          
+        
+        +
+        1
+        
+        
+      
+    
+    {\displaystyle \tau ={\frac {d}{d_{\text{f}}}}+1\,\!}
+  
+
+  
+    
+      
+        
+          d
+          
+            f
+          
+        
+        =
+        d
+        −
+        
+          
+            β
+            ν
+          
+        
+        
+        
+      
+    
+    {\displaystyle d_{\text{f}}=d-{\frac {\beta }{\nu }}\,\!}
+  
+
+  
+    
+      
+        η
+        =
+        2
+        +
+        d
+        −
+        2
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle \eta =2+d-2d_{\text{f}}\,\!}
+  
+
+
+=== Relations based on ===
+  
+    
+      
+        {
+        σ
+        ,
+        τ
+        }
+      
+    
+    {\displaystyle \{\sigma ,\tau \}}
+  
+
+  
+    
+      
+        α
+        =
+        2
+        −
+        
+          
+            
+              τ
+              −
+              1
+            
+            σ
+          
+        
+        
+        
+      
+    
+    {\displaystyle \alpha =2-{\frac {\tau -1}{\sigma }}\,\!}
+  
+
+  
+    
+      
+        β
+        =
+        
+          
+            
+              τ
+              −
+              2
+            
+            σ
+          
+        
+        
+        
+      
+    
+    {\displaystyle \beta ={\frac {\tau -2}{\sigma }}\,\!}
+  
+
+  
+    
+      
+        γ
+        =
+        
+          
+            
+              3
+              −
+              τ
+            
+            σ
+          
+        
+        
+        
+      
+    
+    {\displaystyle \gamma ={\frac {3-\tau }{\sigma }}\,\!}
+  
+
+  
+    
+      
+        β
+        +
+        γ
+        =
+        
+          
+            1
+            σ
+          
+        
+        =
+        ν
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle \beta +\gamma ={\frac {1}{\sigma }}=\nu d_{f}\,\!}
+  
+
+  
+    
+      
+        ν
+        =
+        
+          
+            
+              τ
+              −
+              1
+            
+            
+              σ
+              d
+            
+          
+        
+        =
+        
+          
+            
+              2
+              β
+              +
+              γ
+            
+            d
+          
+        
+        
+        
+      
+    
+    {\displaystyle \nu ={\frac {\tau -1}{\sigma d}}={\frac {2\beta +\gamma }{d}}\,\!}
+  
+
+  
+    
+      
+        δ
+        =
+        
+          
+            1
+            
+              τ
+              −
+              2
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle \delta ={\frac {1}{\tau -2}}\,\!}
+  
+
+
+=== Relations based on ===
+  
+    
+      
+        {
+        
+          d
+          
+            f
+          
+        
+        ,
+        ν
+        }
+      
+    
+    {\displaystyle \{d_{\text{f}},\nu \}}
+  
+
+  
+    
+      
+        α
+        =
+        2
+        −
+        ν
+        d
+        
+        
+      
+    
+    {\displaystyle \alpha =2-\nu d\,\!}
+  
+
+  
+    
+      
+        β
+        =
+        ν
+        (
+        d
+        −
+        
+          d
+          
+            f
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle \beta =\nu (d-d_{\text{f}})\,\!}
+  
+
+  
+    
+      
+        γ
+        =
+        ν
+        (
+        2
+        
+          d
+          
+            f
+          
+        
+        −
+        d
+        )
+        
+        
+      
+    
+    {\displaystyle \gamma =\nu (2d_{\text{f}}-d)\,\!}
+  
+
+  
+    
+      
+        σ
+        =
+        
+          
+            1
+            
+              ν
+              
+                d
+                
+                  f
+                
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle \sigma ={\frac {1}{\nu d_{\text{f}}}}\,\!}
+  
+
+
+=== Conductivity scaling relations ===
+
+  
+    
+      
+        
+          d
+          
+            w
+          
+        
+        =
+        d
+        +
+        
+          
+            
+              t
+              −
+              β
+            
+            ν
+          
+        
+        
+        
+      
+    
+    {\displaystyle d_{w}=d+{\frac {t-\beta }{\nu }}\,\!}
+  
+
+  
+    
+      
+        
+          t
+          ′
+        
+        =
+        
+          d
+          
+            w
+          
+        
+        −
+        
+          d
+          
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle t'=d_{w}-d_{f}\,\!}
+  
+
+  
+    
+      
+        
+          
+            
+              d
+              ~
+            
+          
+        
+        =
+        2
+        
+          d
+          
+            f
+          
+        
+        
+          /
+        
+        
+          d
+          
+            w
+          
+        
+      
+    
+    {\displaystyle {\tilde {d}}=2d_{f}/d_{w}}
+  
+
+
+=== Surface scaling relations ===
+
+  
+    
+      
+        
+          η
+          
+            ∥
+          
+        
+        =
+        2
+        −
+        d
+        +
+        2
+        
+          β
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        
+          /
+        
+        ν
+        
+        
+      
+    
+    {\displaystyle \eta _{\parallel }=2-d+2\beta _{\mathrm {surf} }/\nu \,\!}
+  
+
+  
+    
+      
+        
+          d
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        =
+        d
+        −
+        1
+        −
+        
+          β
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        
+          /
+        
+        ν
+        
+        
+      
+    
+    {\displaystyle d_{\mathrm {surf} }=d-1-\beta _{\mathrm {surf} }/\nu \,\!}
+  
+
+  
+    
+      
+        
+          η
+          
+            ∥
+          
+        
+        =
+        2
+        
+          η
+          
+            ⊥
+          
+        
+        −
+        η
+        
+      
+    
+    {\displaystyle \eta _{\parallel }=2\eta _{\perp }-\eta \,}
+  
+
+  
+    
+      
+        
+          γ
+          
+            1
+          
+        
+        =
+        ν
+        (
+        2
+        −
+        
+          η
+          
+            ⊥
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle \gamma _{1}=\nu (2-\eta _{\perp })\,\!}
+  
+
+  
+    
+      
+        
+          γ
+          
+            1
+            ,
+            1
+          
+        
+        =
+        ν
+        (
+        d
+        −
+        1
+        −
+        2
+        
+          β
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        
+          /
+        
+        ν
+        )
+        =
+        ν
+        (
+        1
+        −
+        
+          η
+          
+            ∥
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle \gamma _{1,1}=\nu (d-1-2\beta _{\mathrm {surf} }/\nu )=\nu (1-\eta _{\parallel })\,\!}
+  
+
+  
+    
+      
+        γ
+        +
+        ν
+        =
+        2
+        
+          γ
+          
+            1
+          
+        
+        −
+        
+          γ
+          
+            1
+            ,
+            1
+          
+        
+        
+        
+      
+    
+    {\displaystyle \gamma +\nu =2\gamma _{1}-\gamma _{1,1}\,\!}
+  
+
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        =
+        
+          β
+          
+            
+              s
+              u
+              r
+              f
+            
+          
+        
+        
+          /
+        
+        ν
+        
+        
+      
+    
+    {\displaystyle x_{1}=\beta _{\mathrm {surf} }/\nu \,\!}
+  
+
+
+== Exponents for standard percolation ==
+
+For 
+  
+    
+      
+        d
+        =
+        2
+      
+    
+    {\displaystyle d=2}
+  
+, 
+  
+    
+      
+        
+          d
+          
+            
+              b
+            
+          
+        
+        =
+        2
+        −
+        (
+        
+          z
+          
+            2
+          
+        
+        −
+        1
+        )
+        
+          /
+        
+        12
+      
+    
+    {\displaystyle d_{\mathrm {b} }=2-(z^{2}-1)/12}
+  
+ where 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ satisfies 
+  
+    
+      
+        
+          
+            3
+          
+        
+        z
+        
+          /
+        
+        4
+        +
+        sin
+        ⁡
+        (
+        2
+        π
+        z
+        
+          /
+        
+        3
+        )
+        =
+        0
+      
+    
+    {\displaystyle {\sqrt {3}}z/4+\sin(2\pi z/3)=0}
+  
+ near 
+  
+    
+      
+        z
+        =
+        2.3
+      
+    
+    {\displaystyle z=2.3}
+  
+.
+
+
+== Exponents for protected percolation ==
+In protected percolation, bonds are removed one at a time only from the percolating cluster.  Isolated clusters are no longer modified.  Scaling relations:  
+  
+    
+      
+        
+          β
+          ′
+        
+        =
+        β
+        
+          /
+        
+        (
+        1
+        +
+        β
+        )
+      
+    
+    {\displaystyle \beta '=\beta /(1+\beta )}
+  
+, 
+  
+    
+      
+        
+          γ
+          ′
+        
+        =
+        γ
+        
+          /
+        
+        (
+        1
+        +
+        β
+        )
+      
+    
+    {\displaystyle \gamma '=\gamma /(1+\beta )}
+  
+, 
+  
+    
+      
+        
+          ν
+          ′
+        
+        =
+        ν
+        
+          /
+        
+        (
+        1
+        +
+        β
+        )
+      
+    
+    {\displaystyle \nu '=\nu /(1+\beta )}
+  
+, 
+  
+    
+      
+        
+          τ
+          ′
+        
+        =
+        τ
+      
+    
+    {\displaystyle \tau '=\tau }
+  
+ where the primed quantities indicated protected percolation 
+
+
+== Exponents for standard percolation on a non-trivial planar lattice (Weighted planar stochastic lattice (WPSL)) ==
+
+Note that it has been claimed that the numerical values of exponents of percolation depend only on the dimension of lattice. However, percolation on WPSL is an exception in the sense that albeit it is two dimensional yet it does not belong to the same universality where all the planar lattices belong.
+
+
+== Exponents for directed percolation ==
+Directed percolation (DP) refers to percolation in which the fluid can flow only in one direction along bonds—such as only in the downward direction on a square lattice rotated by 45 degrees. This system is referred to as "1 + 1 dimensional DP" where the two dimensions are thought of as space and time.
+
+  
+    
+      
+        
+          ν
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \nu _{\perp }}
+  
+ and 
+  
+    
+      
+        
+          ν
+          
+            ∥
+          
+        
+      
+    
+    {\displaystyle \nu _{\parallel }}
+  
+ are the transverse (perpendicular) and longitudinal (parallel) correlation length exponents, respectively. Also 
+  
+    
+      
+        ζ
+        =
+        1
+        
+          /
+        
+        z
+        =
+        
+          ν
+          
+            ⊥
+          
+        
+        
+          /
+        
+        
+          ν
+          
+            ∥
+          
+        
+      
+    
+    {\displaystyle \zeta =1/z=\nu _{\perp }/\nu _{\parallel }}
+  
+.   It satisfies the hyperscaling relation 
+  
+    
+      
+        d
+        
+          /
+        
+        z
+        =
+        η
+        +
+        2
+        δ
+      
+    
+    {\displaystyle d/z=\eta +2\delta }
+  
+.
+Another convention has been used for the exponent 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+, which here we call 
+  
+    
+      
+        
+          z
+          ′
+        
+      
+    
+    {\displaystyle z'}
+  
+, is defined through the relation 
+  
+    
+      
+        ⟨
+        
+          R
+          
+            2
+          
+        
+        ⟩
+        ∼
+        
+          t
+          
+            
+              z
+              ′
+            
+          
+        
+      
+    
+    {\displaystyle \langle R^{2}\rangle \sim t^{z'}}
+  
+, so that 
+  
+    
+      
+        
+          z
+          ′
+        
+        =
+        
+          ν
+          
+            ∥
+          
+        
+        
+          /
+        
+        
+          ν
+          
+            ⊥
+          
+        
+        =
+        2
+        
+          /
+        
+        z
+      
+    
+    {\displaystyle z'=\nu _{\parallel }/\nu _{\perp }=2/z}
+  
+.    It satisfies the hyperscaling relation 
+  
+    
+      
+        d
+        
+          z
+          ′
+        
+        =
+        2
+        η
+        +
+        4
+        δ
+      
+    
+    {\displaystyle dz'=2\eta +4\delta }
+  
+.
+
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+ is the exponent corresponding to the behavior of the survival probability as a function of time: 
+  
+    
+      
+        P
+        (
+        t
+        )
+        ∼
+        
+          t
+          
+            −
+            δ
+          
+        
+      
+    
+    {\displaystyle P(t)\sim t^{-\delta }}
+  
+.
+
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+  
+ (sometimes called 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+) is the exponent corresponding to the behavior of the average number of visited sites at time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ (averaged over all samples including ones that have stopped spreading): 
+  
+    
+      
+        N
+        (
+        t
+        )
+        ∼
+        
+          t
+          
+            −
+            η
+          
+        
+      
+    
+    {\displaystyle N(t)\sim t^{-\eta }}
+  
+.
+The d(space)+1(time) dimensional exponents are given below.
+
+Scaling relations for directed percolation
+
+  
+    
+      
+        β
+        =
+        
+          
+            
+              τ
+              −
+              2
+            
+            σ
+          
+        
+      
+    
+    {\displaystyle \beta ={\frac {\tau -2}{\sigma }}}
+  
+
+  
+    
+      
+        γ
+        =
+        
+          
+            
+              3
+              −
+              τ
+            
+            σ
+          
+        
+      
+    
+    {\displaystyle \gamma ={\frac {3-\tau }{\sigma }}}
+  
+
+  
+    
+      
+        τ
+        =
+        2
+        +
+        
+          
+            2
+            
+              1
+              +
+              γ
+              
+                /
+              
+              β
+            
+          
+        
+      
+    
+    {\displaystyle \tau =2+{\frac {2}{1+\gamma /\beta }}}
+  
+ 
+
+  
+    
+      
+        
+          
+            
+              τ
+              ~
+            
+          
+        
+        =
+        
+          ν
+          
+            ∥
+          
+        
+        −
+        β
+      
+    
+    {\displaystyle {\tilde {\tau }}=\nu _{\parallel }-\beta }
+  
+ 
+
+  
+    
+      
+        η
+        =
+        γ
+        
+          /
+        
+        
+          ν
+          
+            ∥
+          
+        
+        −
+        1
+      
+    
+    {\displaystyle \eta =\gamma /\nu _{\parallel }-1}
+  
+
+  
+    
+      
+        
+          d
+          
+            
+              D
+              P
+            
+          
+        
+        =
+        2
+        −
+        β
+        
+          /
+        
+        
+          ν
+          
+            ∥
+          
+        
+      
+    
+    {\displaystyle d_{\mathrm {DP} }=2-\beta /\nu _{\parallel }}
+  
+  
+
+  
+    
+      
+        
+          d
+          
+            b
+            ,
+            
+              D
+              P
+            
+          
+        
+        =
+        2
+        −
+        2
+        β
+        
+          /
+        
+        
+          ν
+          
+            ∥
+          
+        
+      
+    
+    {\displaystyle d_{b,\mathrm {DP} }=2-2\beta /\nu _{\parallel }}
+  
+
+  
+    
+      
+        Δ
+        =
+        β
+        +
+        γ
+      
+    
+    {\displaystyle \Delta =\beta +\gamma }
+  
+
+  
+    
+      
+        d
+        
+          z
+          ′
+        
+        =
+        2
+        η
+        +
+        4
+        δ
+      
+    
+    {\displaystyle dz'=2\eta +4\delta }
+  
+
+  
+    
+      
+        d
+        
+          /
+        
+        z
+        =
+        η
+        +
+        2
+        δ
+      
+    
+    {\displaystyle d/z=\eta +2\delta }
+  
+
+
+== Exponents for dynamic percolation ==
+For dynamic percolation (epidemic growth of ordinary percolation clusters), we have
+
+  
+    
+      
+        P
+        (
+        t
+        )
+        ∼
+        
+          L
+          
+            −
+            β
+            
+              /
+            
+            ν
+          
+        
+        ∼
+        (
+        
+          t
+          
+            1
+            
+              /
+            
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+          
+        
+        
+          )
+          
+            −
+            β
+            
+              /
+            
+            ν
+          
+        
+        =
+        
+          t
+          
+            −
+            δ
+          
+        
+      
+    
+    {\displaystyle P(t)\sim L^{-\beta /\nu }\sim (t^{1/d_{\mathrm {min} }})^{-\beta /\nu }=t^{-\delta }}
+  
+,  implying 
+
+  
+    
+      
+        δ
+        =
+        
+          
+            β
+            
+              ν
+              
+                d
+                
+                  
+                    m
+                    i
+                    n
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              d
+              −
+              
+                d
+                
+                  f
+                
+              
+            
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \delta ={\frac {\beta }{\nu d_{\mathrm {min} }}}={\frac {d-d_{f}}{d_{\mathrm {min} }}}}
+  
+ 
+For 
+  
+    
+      
+        N
+        (
+        t
+        )
+        ∼
+        
+          t
+          
+            η
+          
+        
+      
+    
+    {\displaystyle N(t)\sim t^{\eta }}
+  
+, consider 
+  
+    
+      
+        N
+        (
+        ≤
+        s
+        )
+        ∼
+        
+          s
+          
+            3
+            −
+            τ
+          
+        
+        ∼
+        
+          R
+          
+            
+              d
+              
+                f
+              
+            
+            (
+            3
+            −
+            τ
+            )
+          
+        
+        ∼
+        
+          t
+          
+            
+              d
+              
+                f
+              
+            
+            (
+            3
+            −
+            τ
+            )
+            
+              /
+            
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle N(\leq s)\sim s^{3-\tau }\sim R^{d_{f}(3-\tau )}\sim t^{d_{f}(3-\tau )/d_{\mathrm {min} }}}
+  
+, and taking the derivative with respect to 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+  yields  
+  
+    
+      
+        N
+        (
+        t
+        )
+        ∼
+        
+          t
+          
+            
+              d
+              
+                f
+              
+            
+            (
+            3
+            −
+            τ
+            )
+            
+              /
+            
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle N(t)\sim t^{d_{f}(3-\tau )/d_{\mathrm {min} }-1}}
+  
+, implying
+
+  
+    
+      
+        η
+        =
+        
+          
+            
+              
+                d
+                
+                  f
+                
+              
+              (
+              3
+              −
+              τ
+              )
+            
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+          
+        
+        −
+        1
+        =
+        
+          
+            
+              2
+              
+                d
+                
+                  f
+                
+              
+              −
+              d
+            
+            
+              d
+              
+                
+                  m
+                  i
+                  n
+                
+              
+            
+          
+        
+        −
+        1
+      
+    
+    {\displaystyle \eta ={\frac {d_{f}(3-\tau )}{d_{\mathrm {min} }}}-1={\frac {2d_{f}-d}{d_{\mathrm {min} }}}-1}
+  
+ 
+Also, 
+  
+    
+      
+        z
+        =
+        
+          d
+          
+            
+              m
+              i
+              n
+            
+          
+        
+      
+    
+    {\displaystyle z=d_{\mathrm {min} }}
+  
+
+Using exponents above, we find
+
+
+== See also ==
+Critical exponent
+Percolation theory
+Percolation threshold
+Percolation surface critical behavior
+Conductivity near the percolation threshold
+
+
+== Notes ==
+
+
+== References ==
+
+
+=== Further reading ===
+Stauffer, D.; Aharony, A. (1994), Introduction to Percolation Theory (2nd ed.), CRC Press, ISBN 978-0-7484-0253-3

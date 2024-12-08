@@ -1,0 +1,80 @@
+AMD CrossFire (also known as CrossFireX) is a brand name for the multi-GPU technology by Advanced Micro Devices, originally developed by ATI Technologies. The technology allows up to four GPUs to be used in a single computer to improve graphics performance.
+Associated technology used in mobile computers with external graphics cards, such as in laptops or notebooks, is called AMD Hybrid Graphics.
+The CrossFire brand name was retired by AMD in September 2017, however the company continues to develop and support the technology for DirectX 11 applications. For DirectX 12 applications, AMD has the mGPU (also known as multi-GPU) branding, with the difference being that software developers must create mGPU compatible profiles for their applications where before AMD created the profiles for DirectX 11 applications.
+
+
+== Configurations ==
+
+
+=== First-generation ===
+CrossFire was first made available to the public on September 27, 2005. The system required a CrossFire-compliant motherboard with a pair of ATI Radeon PCI Express (PCIe) graphics cards. Radeon x800s, x850s, x1800s and x1900s came in a regular edition, and a "CrossFire Edition" which has "master" capability built into the hardware. "Master" capability is a term used for 5 extra image compositing chips, which combine the output of both cards. One had to buy a Master card, and pair it with a regular card from the same series. The Master card shipped with a proprietary DVI Y-dongle, which plugged into the primary DVI ports on both cards, and into the monitor cable. This dongle serves as the main link between both cards, sending incomplete images between them, and complete images to the monitor. Low-end Radeon x1300 and x1600 cards have no "CrossFire Edition" but are enabled via software, with communication forwarded via the standard PCI Express slots on the motherboard. ATI currently has not created the infrastructure to allow FireGL cards to be set up in a CrossFire configuration. The "slave" graphics card needed to be from the same family as the "master".
+An example of a limitation in regard to a Master-card configuration would be the first-generation CrossFire implementation in the Radeon X850 XT Master Card. Because it used a compositing chip from Silicon Image (SiI 163B TMDS), the maximum resolution on an X850 CrossFire setup was limited to 1600×1200 at 60 Hz, or 1920×1440 at 52 Hz. This was considered a problem for CRT owners wishing to use CrossFire to play games at high resolutions, or owners of Widescreen LCD monitors. As many people found a 60 Hz refresh rate with a CRT to strain one's eyes, the practical resolution limit became 1280×1024, which did not push CrossFire enough to justify the cost. The next generation of CrossFire, as employed by the X1800 Master cards, used two sets of compositing chips and a custom double density dual-link DVI Y-dongle to double the bandwidth between cards, raising the maximum resolution and refresh rate to far higher levels.
+
+
+=== Second-generation (Software CrossFire) ===
+When used with ATI's "CrossFire Xpress 3200" motherboard chipset, the "master" card is no longer required for every "CrossFire Ready" card (with the exception of the Radeon X1900 series). With the CrossFire Xpress 3200, two normal cards can be run in a Crossfire setup, using the PCI Express bus for communications. This is similar to X1300 CrossFire, which also uses PCI Express, except that the Xpress 3200 had been built for low-latency and high-speed communication between graphics cards. While performance was impacted, this move was viewed as an overall improvement in market strategy, because Crossfire Master cards were expensive, in high demand, and largely unavailable at the retail level.
+Although the CrossFire Xpress 3200 chipset is indeed capable of CrossFire through the PCI Express bus for every Radeon series below the X1900s, the driver accommodations for this CrossFire method have not yet materialized for the X1800 series. ATI has said that future revisions of the Catalyst driver suite will contain what is required for X1800 dongleless CrossFire, but has not yet mentioned a specific date.
+
+
+=== Third-generation (CrossFireX) ===
+
+ 
+With the release of the Radeon X1950 Pro (RV570 GPU), ATI has completely revised CrossFire's connection infrastructure to further eliminate the need for past Y-dongle/Master card and slave card configurations for CrossFire to operate. ATI's CrossFire connector (CrossFire Bridge Interconnect, or CFBI link) is now a ribbon-like connector attached to the top of each graphics adapter, similar to nVidia's SLI bridges, but different in physical and logical natures. As such, Master Cards no longer exist, and are not required for maximum performance.  Two dongles can be used per card; these were put to full use with the release of CrossFireX. Radeon HD 2900 and HD 3000 series cards use the same ribbon connectors, but the HD 3800 series of cards only require one ribbon connector, to facilitate CrossFireX. Unlike older series of Radeon cards, different HD 3800 series cards can be combined in CrossFireX, each with separate clock control.
+Since the release of the codenamed Spider desktop platform from AMD on November 19, 2007, the CrossFire setup has been updated with support for a maximum of four video cards with the 790FX chipset; the CrossFire branding was then changed to "ATI CrossFireX". The setup, which, according to internal testing by AMD, will bring at least 3.2x performance increase in several games and applications which required massive graphics capabilities of the computer system, is targeted to the enthusiast market.
+A later development to the CrossFire infrastructure includes a dual GPUs with on-board PCI Express bridge that was released in early 2008, the Radeon HD 3870 X2 and later in Radeon HD 4870 X2 graphics cards, featuring only one CrossFire connector for dual card, four GPU scalability. When using two GPUs on board the same system, the HDMI ports on the GPUs cannot both work at the same time.
+An earlier CrossFireX and chipset compatibility chart is shown here:
+The latest compatibility charts, as of April 2014, shows AMD 890, 990 and A75 chipsets—and many Intel chipsets including Z68 and X79 chipsets—as being compatible with CrossFireX; they also show which GPU cards may be paired with an external bridge (HD 7750,  HD 5750, HD 4350, HD 4550, HD 4650, HD 4670 cards may be paired without an external bridge, though the charts also indicate that some models manufactured by other than AMD may still require the bridge).
+
+
+=== Fourth generation (XDMA) ===
+
+The Radeon R9 290 and R9 290X graphics cards (released on October 24, 2013 and based on Graphics Core Next 1.1 "Volcanic Islands") as well as GPUs using newer versions of GCN no longer have bridging ports. Instead, they use XDMA to open a direct channel of communication between the multiple GPUs in a system, operating over the same PCI Express bus which is used by AMD Radeon graphics cards.
+PCI Express 3.0 lanes provide up to 17.5 times higher bandwidth (15.754 GB/s for a ×16 slot) when compared to current external bridges (900 MB/s), rendering the use of a CrossFire bridge unnecessary.  Thus, XDMA was selected for greater GPU interconnection bandwidth demands generated by AMD Eyefinity, and more recently by 4K resolution monitors.  Bandwidth of the data channel opened by XDMA is fully dynamic, scaling itself together with the demands of the game being played, as well as adapting to advanced user settings such as vertical synchronization (vsync).
+Additionally, some newer cards are capable of pairing with 7000-series cards based on the Graphics Core Next 1.0 "Southern Islands" architecture. For example, an R9-280X card can be used in a CrossFireX setup together with a HD 7970 card, largely due to them being the same product at different clock rates.
+GPUOpen offers some MIT-licensed source-code for DirectGMA applications with multiple AMD GPUs in conjunction with Direct3D 11, OpenGL and OpenCL: https://github.com/GPUOpen-LibrariesAndSDKs/DirectGMA_P2P
+
+
+== Hybrid CrossFireX (dual graphics) ==
+
+There is also a "hybrid" mode of CrossFireX that combines on-board graphics using the AMD northbridge architecture with select graphic cards, for increased performance.  The current generation is called Hybrid CrossFireX and is available for motherboards with integrated AMD chipsets in the 7 and 8 series GPUs, referred to as Hybrid CrossFireX.
+This combination results in power-savings when simple or 2D graphics are used and performance increases of 25% to over 200% in 3D graphics over using a non CrossFire option. As of March 2012, it appears that this is now called "AMD Radeon Dual Graphics" and means using A-series APUs together with video cards.
+
+
+== Comparisons to Nvidia SLI ==
+
+
+=== Similarities ===
+In some cases CrossFire doesn't improve 3D performance – in some extreme cases, it can lower the framerate due to the particulars of an application's coding. This is also true for Nvidia's SLI, as the problem is inherent in multi-GPU systems. This is often witnessed when running an application at low resolutions.
+When using CrossFire with AFR, the subjective framerate can often be lower than the framerate reported by benchmarking applications, and may even be poorer than the frame rate of its single-GPU equivalent. This phenomenon is known as micro stuttering and also applies to SLI since it is inherent to multi-GPU configurations. AMD CrossFireX, and NVIDIA SLI setups both require bridges, and a power supply unit (PSU) capable of supplying enough power to the GPUs. 6 pin (75 watt 3+3, becoming rare now), 8 pin (150 watt 4+4), and 16 pin (300 watt 8+8) power plugs are all common in today's graphics cards.
+
+
+=== Advantages ===
+CrossFire can be implemented with GPU cards of the same generation, and manufacture (this is compared to Nvidia's SLI, which generally only works if all cards have the same GPU, and brand). This allows buyers who have varying budgets over time to purchase different cards and still get the benefits of increased performance. With the latest generation cards, they will only crossfire with other cards in their sub series. For example, GPU in the same series can be crossfired with each other. So a 5800 series GPU (e.g. a 5830) can run together with another 5800 series GPU (e.g. 5870).  However, GPUs not in the same hundred series cannot be crossfired successfully (e.g. a 5770 cannot run with a 5870). The only exception is that the HD 7870 XT cards can be used with a HD 7900 series GPU (e.g., a 7950) in a crossfire configuration because they feature the same GPU.
+AMD CrossFire, and SLI configurations can run many monitors of varying size and resolutions. Both SLI, and CrossFire setups only allow up to four 8K (7680x4320) monitors, or eight 4K monitors (3840x2160). Each monitor requires its own dedicated graphics card (except for 4K, and standard HD), in that case up to two monitors can be on one dedicated graphics card.
+
+
+=== Disadvantages ===
+Major downside of CrossFire is that it works only in fullscreen mode, requiring extrinsic support for software or games when run in borderless/windowed mode.
+The first generation CrossFire implementations (the Radeon X800 to X1900 series) require an external y-cable/dongle to operate in CrossFire mode due to the PCI Express bus not being able to provide enough bandwidth to run CrossFire without losing a significant amount of performance.
+
+
+== See also ==
+
+ATI Multi Rendering
+Scalable Link Interface
+Intel Xe Link
+MultiChrome
+Comparison of ATI chipsets
+Comparison of AMD chipsets
+Micro stuttering
+Hybrid CrossFireX
+Multi-chip module (MCM)
+
+
+== References ==
+
+
+== External links ==
+Official website
+Hardocp.com's CrossFire preview
+Slashdot coverage on the release of the system

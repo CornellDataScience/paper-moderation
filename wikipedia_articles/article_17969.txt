@@ -1,0 +1,246 @@
+In number theory, a balanced prime is a prime number with equal-sized prime gaps above and below it, so that it is equal to the arithmetic mean of the nearest primes above and below. Or to put it algebraically, the 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+th prime number 
+  
+    
+      
+        
+          p
+          
+            n
+          
+        
+      
+    
+    {\displaystyle p_{n}}
+  
+ is a balanced prime if
+
+  
+    
+      
+        
+          p
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                p
+                
+                  n
+                  −
+                  1
+                
+              
+              +
+              
+                p
+                
+                  n
+                  +
+                  1
+                
+              
+            
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle p_{n}={{p_{n-1}+p_{n+1}} \over 2}.}
+  
+
+For example, 53 is the sixteenth prime; the fifteenth and seventeenth primes, 47 and 59, add up to 106, and half of that is 53; thus 53 is a balanced prime.
+
+
+== Examples ==
+The first few balanced primes are
+5, 53, 157, 173, 211, 257, 263, 373, 563, 593, 607, 653, 733, 947, 977, 1103, 1123, 1187, 1223, 1367, 1511, 1747, 1753, 1907, 2287, 2417, 2677, 2903 (sequence A006562 in the OEIS).
+
+
+== Infinitude ==
+
+It is conjectured that there are infinitely many balanced primes.
+Three consecutive primes in arithmetic progression is sometimes called a CPAP-3. A balanced prime is by definition the second prime in a CPAP-3. As of 2023 the largest known CPAP-3 has 15004 decimal digits and was found by Serge Batalov. It is:
+
+  
+    
+      
+        
+          p
+          
+            n
+          
+        
+        =
+        2494779036241
+        ×
+        
+          2
+          
+            49800
+          
+        
+        +
+        7
+        ,
+        
+        
+          p
+          
+            n
+            −
+            1
+          
+        
+        =
+        
+          p
+          
+            n
+          
+        
+        −
+        6
+        ,
+        
+        
+          p
+          
+            n
+            +
+            1
+          
+        
+        =
+        
+          p
+          
+            n
+          
+        
+        +
+        6.
+      
+    
+    {\displaystyle p_{n}=2494779036241\times 2^{49800}+7,\quad p_{n-1}=p_{n}-6,\quad p_{n+1}=p_{n}+6.}
+  
+
+(The value of n, i.e. its position in the sequence of all primes, is not known.)
+
+
+== Generalization ==
+The balanced primes may be generalized to the balanced primes of order n. A balanced prime of order n is a prime number that is equal to the arithmetic mean of the nearest n primes above and below. Algebraically, the 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+th prime number 
+  
+    
+      
+        
+          p
+          
+            k
+          
+        
+      
+    
+    {\displaystyle p_{k}}
+  
+ is a balanced prime of order 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ if
+
+  
+    
+      
+        
+          p
+          
+            k
+          
+        
+        =
+        
+          
+            
+              
+                ∑
+                
+                  i
+                  =
+                  1
+                
+                
+                  n
+                
+              
+              (
+              
+                
+                  p
+                  
+                    k
+                    −
+                    i
+                  
+                
+                +
+                
+                  p
+                  
+                    k
+                    +
+                    i
+                  
+                
+                )
+              
+            
+            
+              2
+              n
+            
+          
+        
+        .
+      
+    
+    {\displaystyle p_{k}={\sum _{i=1}^{n}({p_{k-i}+p_{k+i})} \over 2n}.}
+  
+
+Thus, an ordinary balanced prime is a balanced prime of order 1. The sequences of balanced primes of orders 2, 3, and 4 are A082077, A082078, and A082079 in the OEIS respectively.
+
+
+== See also ==
+Strong prime, a prime that is greater than the arithmetic mean of its two neighboring primes
+Interprime, a composite number balanced between two prime neighbours
+
+
+== References ==

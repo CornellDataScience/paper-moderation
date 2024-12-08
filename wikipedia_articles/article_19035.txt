@@ -1,0 +1,80 @@
+Value-stream mapping,  also known as material- and information-flow mapping, is a lean-management method for analyzing the current state and designing a future state for the series of events that take a product or service from the beginning of the specific process until it reaches the customer. A value stream map is a visual tool that displays all critical steps in a specific process and easily quantifies the time and volume taken at each stage. Value stream maps show the flow of both materials and information as they progress through the process.
+Whereas a value stream map represents a core business process that adds value to a material product, a value chain diagram shows an overview of all activities within a company. Other business activities may be represented in "value stream diagrams" and/or other kinds of diagram that represent business processes that create and use business data.
+
+
+== Purpose ==
+The purpose of value-stream mapping is to identify and remove or reduce "waste" in value streams, thereby increasing the efficiency of a given value stream. Waste removal is intended to increase productivity by creating leaner operations which in turn make waste and quality problems easier to identify.
+
+
+=== Applications ===
+Value-stream mapping has supporting methods that are often used in lean environments to analyze and design flows at the system level (across multiple processes).
+Although value-stream mapping is often associated with manufacturing, it is also used in logistics, supply chain, service related industries, healthcare, software development, product development, project management, and administrative and office processes.
+
+
+== Identifying waste ==
+
+
+=== Types of waste ===
+Daniel T. Jones (1995) identifies seven commonly accepted types of waste. These terms are updated from Toyota's operating model "The Toyota Way" (Toyota Production System, TPS) original nomenclature (muda):
+
+Faster-than-necessary pace: creating too much of a good or service that damages production flow, quality, and productivity. Previously referred to as overproduction, and leads to storage and lead time waste.
+Waiting: any time goods are not being transported or worked on.
+Conveyance: the process by which goods are moved around. Previously referred to as transport, and includes double-handling and excessive movement.
+Processing: an overly complex solution for a simple procedure. Previously referred to as inappropriate processing, and includes unsafe production. This typically leads to poor layout and communication, and unnecessary motion.
+Excess stock: an overabundance of inventory which results in greater lead times, increased difficulty identifying problems, and significant storage costs. Previously referred to as unnecessary inventory.
+Unnecessary motion: ergonomic waste that requires employees to use excess energy such as picking up objects, bending, or stretching. Previously referred to as unnecessary movements, and usually avoidable.
+Correction of mistakes: any cost associated with defects or the resources required to correct them.
+
+
+=== Waste removal operations ===
+Yasuhiro Monden (1994) identifies three types of operations:
+
+Non-value adding operations (NVA): actions that should be eliminated, such as waiting.
+Necessary but non-value adding (NNVA): actions that are wasteful but necessary under current operating procedures.
+Value-adding (VA): conversion or processing of raw materials via manual labor.
+NNVA activities may also be referred to as "sustaining non-value adding", i.e. they have to be done, or they are necessary to sustain the business but do not contribute to customer requirements.
+For additional views on waste, see Lean manufacturing.
+
+
+== Using the method ==
+There are two kinds of value stream maps, current state and future state. The current state value stream map is used to determine what the process currently looks like, the future state value stream map focuses on what the process will ideally look like after process improvements have occurred to the value stream.
+
+The current state value stream map must be created before the future state map and is created by observing the process and tracking the information and material flow. The value stream map is then created using the following symbols:
+In a build-to-the-standard form, Shigeo Shingo suggests that the value-adding steps be drawn across the centre of the map and the non–value-adding steps be represented in vertical lines at right angles to the value stream. Thus, the activities become easily separated into the value stream, which is the focus of one type of attention, and the "waste" steps, another type. He calls the value stream the process and the non-value streams the operations. The thinking here is that the non–value-adding steps are often preparatory or tidying up to the value-adding step and are closely associated with the person or machine/workstation that executes that value-adding step. Therefore, each vertical line is the "story" of a person or workstation whilst the horizontal line represents the "story" of the product being created.
+Value-stream mapping is a recognised method used as part of Lean Six Sigma methodologies.
+Value-stream mapping analyzes both material (artifact) and information flow. The following two resources exemplify the use of VSM in the context of software process improvement in industrial settings:
+
+"Artifact analysis": analysis of software artifacts like requirements, use case, change request or defect report through the development process
+"Information flow analysis": analysis of information flows in the development process
+
+
+== Associated analysis methods ==
+Hines and Rich (1997) defined seven value-stream mapping tools. These are:
+
+Process activity mapping: the initial step of constructing a map which consists of a study of process flows, waste identification, and business process re-engineering.
+Supply chain response matrix: identifying critical bottlenecks for processes in a simple diagram.
+Production variety funnel: helps draw connections to other industries that may have solutions to existing problems.
+Forrester effect mapping: line graphs showing the customer demand and production, allowing visualisation of supply and demand and potential delays.
+Quality filter mapping: locates product and service defects in the supply chain.
+Decision point analysis: determines inflection points for push-and-pull demand in the supply chain.
+Physical structure mapping: combined model that overviews supply chain from an industry level.
+
+
+== See also ==
+Business process mapping
+Lean manufacturing
+Value chain
+Value stream
+Value-stream-mapping software
+
+
+== Citations ==
+
+
+== References ==
+Project Management Institute (2021). A guide to the project management body of knowledge (PMBOK guide). Project Management Institute (7th ed.). Newtown Square, PA. ISBN 978-1-62825-664-2.{{cite book}}:  CS1 maint: location missing publisher (link)
+
+
+== External links ==
+ Media related to Value stream mapping at Wikimedia Commons
+Value-stream mapping – Lexicon term at the Lean Enterprise Institute website

@@ -1,0 +1,624 @@
+The International Geomagnetic Reference Field (IGRF) is a standard mathematical description of the large-scale structure of the Earth's main magnetic field and its secular variation. It was created by fitting parameters of a mathematical model of the magnetic field to measured magnetic field data from surveys, observatories and satellites across the globe. The IGRF has been produced and updated under the direction of the International Association of Geomagnetism and Aeronomy (IAGA) since 1965.
+The IGRF model covers a significant time span, and so is useful for interpreting historical data.  (This is unlike the World Magnetic Model, which is intended for navigation in the next few years.)  It is updated at 5-year intervals, reflecting the most accurate measurements available at that time.  The current 13th edition of the IGRF model (IGRF-13) was released in December 2019 and is valid from 1900 until 2025.  For the interval from 1945 to 2015, it is "definitive" (a "DGRF"), meaning that future updates are unlikely to improve the model in any significant way.
+
+
+== Spherical Harmonics ==
+The IGRF models the geomagnetic field 
+  
+    
+      
+        
+          
+            
+              B
+              →
+            
+          
+        
+        (
+        r
+        ,
+        ϕ
+        ,
+        θ
+        ,
+        t
+        )
+      
+    
+    {\displaystyle {\vec {B}}(r,\phi ,\theta ,t)}
+  
+ as a gradient of a magnetic scalar potential 
+  
+    
+      
+        V
+        (
+        r
+        ,
+        ϕ
+        ,
+        θ
+        ,
+        t
+        )
+      
+    
+    {\displaystyle V(r,\phi ,\theta ,t)}
+  
+
+  
+    
+      
+        
+          
+            
+              B
+              →
+            
+          
+        
+        (
+        r
+        ,
+        ϕ
+        ,
+        θ
+        ,
+        t
+        )
+        =
+        −
+        ∇
+        V
+        (
+        r
+        ,
+        ϕ
+        ,
+        θ
+        ,
+        t
+        )
+        =
+        −
+        
+          (
+          
+            
+              
+                
+                  
+                    ∂
+                    V
+                  
+                  
+                    ∂
+                    r
+                  
+                
+              
+            
+            ,
+            
+              
+                
+                  1
+                  r
+                
+              
+            
+            
+              
+                
+                  
+                    ∂
+                    V
+                  
+                  
+                    ∂
+                    θ
+                  
+                
+              
+            
+            ,
+            
+              
+                
+                  1
+                  
+                    r
+                    sin
+                    ⁡
+                    θ
+                  
+                
+              
+            
+            
+              
+                
+                  
+                    ∂
+                    V
+                  
+                  
+                    ∂
+                    ϕ
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\vec {B}}(r,\phi ,\theta ,t)=-\nabla V(r,\phi ,\theta ,t)=-\left({\dfrac {\partial V}{\partial r}},{\dfrac {1}{r}}{\dfrac {\partial V}{\partial \theta }},{\dfrac {1}{r\sin \theta }}{\dfrac {\partial V}{\partial \phi }}\right)}
+  
+
+The magnetic scalar potential model consists of the Gauss coefficients which define a spherical harmonic expansion of 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+
+  
+    
+      
+        V
+        (
+        r
+        ,
+        ϕ
+        ,
+        θ
+        ,
+        t
+        )
+        =
+        a
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          ∑
+          
+            m
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          
+            (
+            
+              
+                a
+                r
+              
+            
+            )
+          
+          
+            n
+            +
+            1
+          
+        
+        
+          (
+          
+            
+              g
+              
+                n
+              
+              
+                m
+              
+            
+            (
+            t
+            )
+            cos
+            ⁡
+            m
+            ϕ
+            +
+            
+              h
+              
+                n
+              
+              
+                m
+              
+            
+            (
+            t
+            )
+            sin
+            ⁡
+            m
+            ϕ
+          
+          )
+        
+        
+          P
+          
+            n
+          
+          
+            m
+          
+        
+        
+          (
+          
+            cos
+            ⁡
+            θ
+          
+          )
+        
+      
+    
+    {\displaystyle V(r,\phi ,\theta ,t)=a\sum _{n=1}^{N}\sum _{m=0}^{n}\left({\frac {a}{r}}\right)^{n+1}\left(g_{n}^{m}(t)\cos m\phi +h_{n}^{m}(t)\sin m\phi \right)P_{n}^{m}\left(\cos \theta \right)}
+  
+
+where 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ is radial distance from the Earth's center, 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ is the maximum degree of the expansion, 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ is East longitude,
+
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ is colatitude (the polar angle), 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ is the Earth's radius,
+
+  
+    
+      
+        
+          g
+          
+            n
+          
+          
+            m
+          
+        
+      
+    
+    {\displaystyle g_{n}^{m}}
+  
+ and 
+  
+    
+      
+        
+          h
+          
+            n
+          
+          
+            m
+          
+        
+      
+    
+    {\displaystyle h_{n}^{m}}
+  
+ are Gauss coefficients, and 
+  
+    
+      
+        
+          P
+          
+            n
+          
+          
+            m
+          
+        
+        
+          (
+          
+            cos
+            ⁡
+            θ
+          
+          )
+        
+      
+    
+    {\displaystyle P_{n}^{m}\left(\cos \theta \right)}
+  
+
+are the Schmidt quasi-normalized associated Legendre functions of degree 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ and order 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+
+  
+    
+      
+        
+          P
+          
+            n
+          
+          
+            m
+          
+        
+        (
+        cos
+        ⁡
+        θ
+        )
+        =
+        
+          K
+          
+            n
+          
+        
+        
+          sin
+          
+            m
+          
+        
+        ⁡
+        θ
+         
+        
+          
+            
+              d
+              
+                m
+                +
+                n
+              
+            
+            
+              d
+              (
+              cos
+              ⁡
+              θ
+              
+                )
+                
+                  m
+                  +
+                  n
+                
+              
+            
+          
+        
+        (
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        θ
+        −
+        1
+        
+          )
+          
+            n
+          
+        
+      
+    
+    {\displaystyle P_{n}^{m}(\cos \theta )=K_{n}\sin ^{m}\theta \ {\frac {d^{m+n}}{d(\cos \theta )^{m+n}}}(\cos ^{2}\theta -1)^{n}}
+  
+
+where
+
+  
+    
+      
+        
+          K
+          
+            n
+          
+        
+        =
+        
+          
+            {
+            
+              
+                
+                  
+                    
+                      1
+                      
+                        2
+                        
+                          n
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    ; 
+                  
+                  m
+                  =
+                  0
+                
+              
+              
+                
+                  
+                    
+                      1
+                      
+                        2
+                        
+                          n
+                        
+                      
+                    
+                  
+                  
+                    
+                      
+                        
+                          2
+                          (
+                          n
+                          −
+                          m
+                          )
+                          !
+                        
+                        
+                          (
+                          n
+                          +
+                          m
+                          )
+                          !
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    ; 
+                  
+                  m
+                  >
+                  0
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle K_{n}={\begin{cases}{\frac {1}{2^{n}}}&{\text{; }}m=0\\{\frac {1}{2^{n}}}{\sqrt {\frac {2(n-m)!}{(n+m)!}}}&{\text{; }}m>0\end{cases}}}
+  
+
+is the normalization coefficient for the Schmidt quasi-normalized formulation.
+The 
+  
+    
+      
+        (
+        −
+        1
+        
+          )
+          
+            m
+          
+        
+      
+    
+    {\displaystyle (-1)^{m}}
+  
+ term usually present in the associated Legendre functions is omitted in this formulation and is instead accounted for in the Gauss coefficients.
+The Gauss coefficients are modelled as a piecewise-linear function of time with a 5-year step size.
+
+
+== See also ==
+Geomagnetic latitude
+Magsat
+Ørsted (satellite)
+CHAMP (satellite)
+
+
+== References ==
+
+
+== External links ==
+IGRF Model Description by IAGA
+Notes concerning correct use and limitations of IGRF

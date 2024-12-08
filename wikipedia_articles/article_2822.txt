@@ -1,0 +1,29 @@
+KAK (Kagou Anti Kro$oft) is a 1999 JavaScript worm that uses a bug in Outlook Express to spread itself.
+
+
+== Behavior ==
+On the first day of every month, at 6:00 pm, the worm uses SHUTDOWN.EXE to initiate a shutdown and show a popup with text "Kagou-anti-Kro$oft says not today!". A minimized window often appears on startup with the title "Driver Memory Error". Another message saying "S3 Driver Memory Alloc Failed!" occasionally pops up. The worm also adds a registry key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\cAg0u and edits AUTOEXEC.BAT to make Windows launch it on startup.
+The worm adds these commands to AUTOEXEC.BAT:
+
+@ECHO off C:\Windows\Start Menu\Programs\StartUp\kak.hta
+ DEL C:\Windows\Start Menu\Programs\StartUp\kak.hta
+
+
+== Approach ==
+KAK works by exploiting a vulnerability in Microsoft Internet Explorer, which Outlook Express uses to render HTML email. The vulnerability concerns the ActiveX control "Scriptlet.Typelib" which is usually used to create new type libraries (".tlb" files). However, the control does not set any restrictions on what content goes into the type library file or what file extension it should have. Therefore, the control can be abused to create a file with any content and with any extension.
+Since Microsoft did not foresee the ability to abuse the control in this way, they marked it as "safe for scripting" in Internet Explorer's default security settings. This means that scripts including this control don't need the user's permission in order to run. KAK embeds such abusive code in the signature of an email message, so that the code runs when the email is viewed or previewed in Outlook Express (because Outlook Express uses Internet Explorer to provide this view/preview functionality for HTML emails).
+KAK uses "Scriptlet.Typelib" to create a file called "kak.hta" in the StartUp folder. This file contains further code that will be run the next time the machine starts up. Since the HTA is not rendered in Internet Explorer but executed using Windows Scripting Host, code placed by KAK in this file has even more privileges than the code it put into the email signature.
+Next time the machine starts up and "kak.hta" runs, KAK performs a number of actions such as:
+
+Setting the user's email signature to contain the code to infect other systems, so the worm can spread
+Adding lines to AUTOEXEC.BAT to delete the original "kak.hta" so that the virus is more difficult to track
+Creating a new "kak.hta" which runs on startup and will shut down the machine between 6pm and midnight on the first day of the month
+
+
+== References ==
+
+
+== External links ==
+VBS.KAK kak writeup and info at pchell.com
+Wscript.KakWorm on Symantec.com
+JS/Kak@M on McAfee

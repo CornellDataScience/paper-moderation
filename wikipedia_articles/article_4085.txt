@@ -1,0 +1,385 @@
+The smallest-circle problem (also known as minimum covering circle problem, bounding circle problem, least bounding circle problem, smallest enclosing circle problem) is a computational geometry problem of computing the smallest circle that contains all of a given set of points in the Euclidean plane. The corresponding problem in n-dimensional space, the smallest bounding sphere problem, is to compute the smallest n-sphere that contains all of a given set of points. The smallest-circle problem was initially proposed by the English mathematician James Joseph Sylvester in 1857.
+The smallest-circle problem in the plane is an example of a facility location problem (the 1-center problem) in which the location of a new facility must be chosen to provide service to a number of customers, minimizing the farthest distance that any customer must travel to reach the new facility. Both the smallest circle problem in the plane, and the smallest bounding sphere problem in any higher-dimensional space of bounded dimension are solvable in worst-case linear time.
+
+
+== Characterization ==
+Most of the geometric approaches for the problem look for points that lie on the boundary of the minimum circle and are based on the following simple facts:
+
+The minimum covering circle is unique.
+The minimum covering circle of a set S can be determined by at most three points in S which lie on the boundary of the circle. If it is determined by only two points, then the line segment joining those two points must be a diameter of the minimum circle. If it is determined by three points, then the triangle consisting of those three points is not obtuse.
+
+
+== Linear-time solutions ==
+As Nimrod Megiddo showed, the minimum enclosing circle can be found in linear time, and the same linear time bound also applies to the smallest enclosing sphere in Euclidean spaces of any constant dimension. His article also gives a brief overview of earlier 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{3})}
+  
+ and 
+  
+    
+      
+        O
+        (
+        n
+        log
+        ⁡
+        n
+        )
+      
+    
+    {\displaystyle O(n\log n)}
+  
+ algorithms; in doing so, Megiddo demonstrated that Shamos and Hoey's conjecture – that a solution to the smallest-circle problem was computable in 
+  
+    
+      
+        Ω
+        (
+        n
+        log
+        ⁡
+        n
+        )
+      
+    
+    {\displaystyle \Omega (n\log n)}
+  
+ at best – was false.
+Emo Welzl proposed a simple randomized algorithm for the
+minimum covering circle problem that runs in expected time 
+  
+    
+      
+        O
+        (
+        n
+        )
+      
+    
+    {\displaystyle O(n)}
+  
+, based on a linear programming algorithm of Raimund Seidel.
+Subsequently, the smallest-circle problem was included in a general class of LP-type problems that can be solved by algorithms like Welzl's based on linear programming. As a consequence of membership in this class, it was shown that the dependence on the dimension of the constant factor in the 
+  
+    
+      
+        O
+        (
+        n
+        )
+      
+    
+    {\displaystyle O(n)}
+  
+ time bound, which was factorial for Seidel's method, could be reduced to subexponential.
+Welzl's minidisk algorithm has been extended to handle Bregman divergences which include the squared Euclidean distance.
+
+
+=== Megiddo's algorithm ===
+
+Megiddo's algorithm is based on the technique called prune and search, reducing the size of the problem by removing 
+  
+    
+      
+        
+          
+            n
+            16
+          
+        
+      
+    
+    {\textstyle {\frac {n}{16}}}
+  
+ unnecessary points.
+That leads to the recurrence 
+  
+    
+      
+        t
+        (
+        n
+        )
+        ≤
+        t
+        
+          (
+          
+            
+              
+                15
+                n
+              
+              16
+            
+          
+          )
+        
+        +
+        c
+        n
+      
+    
+    {\displaystyle t(n)\leq t\left({\frac {15n}{16}}\right)+cn}
+  
+ giving 
+  
+    
+      
+        t
+        (
+        n
+        )
+        =
+        16
+        c
+        n
+      
+    
+    {\displaystyle t(n)=16cn}
+  
+.
+The algorithm is rather complicated and it is reflected by its big multiplicative constant. 
+The reduction needs to solve twice the similar problem where the center of the sought-after enclosing circle is constrained to lie on a given line.
+The solution of the subproblem is either the solution of the unconstrained problem or it is used to determine the half-plane where the unconstrained solution center is located.
+The 
+  
+    
+      
+        
+          
+            n
+            16
+          
+        
+      
+    
+    {\textstyle {\frac {n}{16}}}
+  
+ points to be discarded are found as follows:
+The points Pi are arranged into pairs which defines 
+  
+    
+      
+        
+          
+            n
+            2
+          
+        
+      
+    
+    {\textstyle {\frac {n}{2}}}
+  
+ lines pj as their bisectors.
+The median average pm of bisectors in order by their directions (oriented to the same half-plane determined by bisector p1) is found and pairs of bisectors are made, such that in each pair one bisector has direction at most pm and the other at least pm
+(direction p1 could be considered as −
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+ or +
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+ according our needs.) Let Qk be the intersection of the bisectors in the k-th pair.
+The line q in the p1 direction is placed to go through an intersection Qx such that there are 
+  
+    
+      
+        
+          
+            n
+            8
+          
+        
+      
+    
+    {\textstyle {\frac {n}{8}}}
+  
+ intersections in each half-plane defined by the line (median position).
+The constrained version of the enclosing problem is run on the line q' which determines half-plane where the center is located.
+The line q′ in the pm direction is placed to go through an intersection Qx' such that there are 
+  
+    
+      
+        
+          
+            n
+            16
+          
+        
+      
+    
+    {\textstyle {\frac {n}{16}}}
+  
+ intersections in each half of the half-plane not containing the solution.
+The constrained version of the enclosing problem is run on line q′ which together with q determines the quadrant where the center is located. 
+We consider the points Qk in the quadrant not contained in a half-plane containing the solution. 
+One of the bisectors of the pair defining Qk has the direction ensuring which of points Pi defining the bisector is closer to each point in the quadrant containing the center of the enclosing circle. This point could be discarded.
+The constrained version of the algorithm is also solved by the prune and search technique, but reducing the problem size by removal of 
+  
+    
+      
+        
+          
+            n
+            4
+          
+        
+      
+    
+    {\textstyle {\frac {n}{4}}}
+  
+ points leading to recurrence
+
+  
+    
+      
+        t
+        (
+        n
+        )
+        ≤
+        t
+        
+          (
+          
+            
+              
+                3
+                n
+              
+              4
+            
+          
+          )
+        
+        +
+        c
+        n
+      
+    
+    {\displaystyle t(n)\leq t\left({\frac {3n}{4}}\right)+cn}
+  
+
+giving 
+  
+    
+      
+        t
+        (
+        n
+        )
+        =
+        4
+        c
+        n
+      
+    
+    {\displaystyle t(n)=4cn}
+  
+.
+The 
+  
+    
+      
+        
+          
+            n
+            4
+          
+        
+      
+    
+    {\textstyle {\frac {n}{4}}}
+  
+ points to be discarded are found as follows:
+Points Pi are arranged into pairs.
+For each pair, the intersection Qj of its bisector with the constraining line q is found (If this intersection does not exist we could remove one point from the pair immediately).
+The median M of points Qj on the line q is found and in O(n) time is determined which halfline of q starting in M 
+contains the solution of the constrained problem.
+We consider points Qj from the other half.
+We know which of the points Pi defining Qj is closer to the each point of the halfline containing center of the enclosing circle of the constrained problem solution. This point could be discarded.
+The half-plane where the unconstrained solution lies could be determined by the points Pi on the boundary of the constrained circle solution. (The first and last point on the circle in each half-plane suffice. If the center belongs to their convex hull, it is unconstrained solution, otherwise the direction to the nearest edge determines the half-plane of the unconstrained solution.)
+
+
+=== Welzl's algorithm ===
+The algorithm is recursive.
+The initial input is a set P of points.  The algorithm selects one point p randomly and uniformly from P, and recursively finds the minimal circle containing P – {p}, i.e. all of the other points in P except p.  If the returned circle also encloses p, it is the minimal circle for the whole of P and is returned.
+Otherwise, point p must lie on the boundary of the result circle.  It recurses, but with the set R of points known to be on the boundary as an additional parameter.
+The recursion terminates when P is empty, and a solution can be found from the points in R: for 0 or 1 points the solution is trivial, for 2 points the minimal circle has its center at the midpoint between the two points, and for 3 points the circle is the circumcircle of the triangle described by the points.  (In three dimensions, 4 points require the calculation of the circumsphere of a tetrahedron.)
+Recursion can also terminate when R has size 3 (in 2D, or 4 in 3D) because the remaining points in P must lie within the circle described by R.
+
+algorithm welzl is
+    input: Finite sets P and R of points in the plane |R| ≤ 3.
+    output: Minimal disk enclosing P with R on the boundary.
+
+    if P is empty or |R| = 3 then
+        return trivial(R)
+    choose p in P (randomly and uniformly)
+    D := welzl(P − {p}, R)
+    if p is in D then
+        return D
+
+    return welzl(P − {p}, R ∪ {p})
+
+Welzl's paper states that it is sufficient to randomly permute the input at the start, rather than performing independently random choices of p on each recursion.
+It also states that performance is improved by dynamically re-ordering the points so that those that are found to be outside a circle are subsequently considered earlier, but this requires a change in the structure of the algorithm to store P as a "global".
+
+
+== Other algorithms ==
+Prior to Megiddo's result showing that  the smallest-circle problem may be solved in linear time,  several algorithms of higher complexity appeared in the literature. A naive algorithm solves the problem in time O(n4) by testing the circles determined by all pairs and triples of points.
+
+An algorithm of Chrystal and Peirce applies a local optimization strategy that maintains two points on the boundary of an enclosing circle and repeatedly shrinks the circle, replacing the pair of boundary points, until an optimal circle is found. Chakraborty and Chaudhuri propose a linear-time method for selecting a suitable initial circle and a pair of boundary points on that circle. Each step of the algorithm includes as one of the two boundary points a new vertex of the convex hull, so if the hull has h vertices this method can be implemented to run in time O(nh).
+Elzinga and Hearn described an algorithm which maintains a covering circle for a subset of the points. At each step, a point not covered by the current sphere is used to find a larger sphere that covers a new subset of points, including the point found. Although its worst case running time is O(h3n), the authors report that it ran in linear time in their experiments.  The complexity of the method has been analyzed by Drezner and Shelah. Both Fortran and C codes are available from Hearn, Vijay & Nickel (1995).
+The smallest sphere problem can be formulated as a quadratic program defined by a system of linear constraints with a convex quadratic objective function. Therefore, any feasible direction algorithm can give the solution of the problem. Hearn and Vijay proved that the feasible direction approach chosen by Jacobsen is equivalent to the Chrystal–Peirce algorithm.
+The dual to this quadratic program may also be formulated explicitly; an algorithm of Lawson can be described in this way as a primal dual algorithm.
+Shamos and Hoey proposed an O(n log n) time algorithm for the problem based on the observation that the center of the smallest enclosing circle must be a vertex of the farthest-point Voronoi diagram of the input point set.
+
+
+== Weighted variants of the problem ==
+The weighted version of the minimum covering circle problem takes as input a set of points in a Euclidean space, each with weights; the goal is to find a single point that minimizes the maximum weighted distance (i.e., distance multiplied by the corresponding weight) to any point. The original (unweighted) minimum covering circle problem corresponds to the case when all weights are equal to 1. As with the unweighted problem, the weighted problem may be solved in linear time in any space of bounded dimension, using approaches closely related to bounded dimension linear programming algorithms, although slower algorithms are again frequent in the literature.
+
+
+== Smallest enclosing balls in non-Euclidean geometry ==
+The smallest enclosing ball of a finite point set has been studied in Riemannian geometry including Cartan-Hadamard manifolds.
+
+
+== See also ==
+Bounding sphere
+1-center problem
+Circumscribed circle
+Closest string
+Jung's Theorem
+
+
+== References ==
+
+
+== External links ==
+Bernd Gärtner's smallest enclosing ball code
+CGAL the Min_sphere_of_spheres package of the Computational Geometry Algorithms Library (CGAL)
+Miniball an open-source implementation of an algorithm for the smallest enclosing ball problem for low and moderately high dimensions

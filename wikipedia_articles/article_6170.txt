@@ -1,0 +1,503 @@
+A Ritchey–Chrétien telescope (RCT or simply RC) is a specialized variant of the Cassegrain telescope that has a hyperbolic primary mirror and a hyperbolic secondary mirror designed to eliminate off-axis optical errors (coma). The RCT has a wider field of view free of optical errors compared to a more traditional reflecting telescope configuration. Since the mid 20th century, a majority of large professional research telescopes have been Ritchey–Chrétien configurations; some well-known examples are the Hubble Space Telescope, the Keck telescopes and the ESO Very Large Telescope.
+
+
+== History ==
+
+The Ritchey–Chrétien telescope was invented in the early 1910s by American astronomer George Willis Ritchey and French astronomer Henri Chrétien. Ritchey constructed the first successful RCT, which had an aperture diameter of 60 cm (24 in) in 1927 (Ritchey 24-inch reflector). The second RCT was a 102 cm (40 in) instrument constructed by Ritchey for the United States Naval Observatory; that telescope is still in operation at the Naval Observatory Flagstaff Station.
+
+
+== Design ==
+As with the other Cassegrain-configuration reflectors, the Ritchey–Chrétien telescope (RCT) has a very short optical tube assembly and compact design for a given focal length. The RCT offers good off-axis optical performance, but its mirrors require sophisticated techniques to manufacture and test.  Hence the Ritchey–Chrétien configuration is most commonly found on high-performance professional telescopes.
+
+
+=== Two-mirror foundation ===
+A telescope with only one curved mirror, such as a Newtonian telescope, will always have aberrations. If the mirror is spherical, it will suffer primarily from spherical aberration. If the mirror is made parabolic, to correct the spherical aberration, then it still suffers from coma and astigmatism, since there are no additional design parameters one can vary to eliminate them. With two non-spherical mirrors, such as the Ritchey–Chrétien telescope, coma can be eliminated as well, by making the two mirrors' contribution to total coma cancel. This allows a larger useful field of view. However, such designs still suffer from astigmatism.
+The basic Ritchey–Chrétien two-surface design is free of third-order coma and spherical aberration. However, the two-surface design does suffer from fifth-order coma, severe large-angle astigmatism, and comparatively severe field curvature.
+
+
+=== Further corrections by a third element ===
+When focused midway between the sagittal and tangential focusing planes, stars appear as circles, making the Ritchey–Chrétien well suited for wide field and photographic observations.
+The remaining aberrations of the two-element basic design may be improved with the addition of smaller optical elements near the focal plane. 
+Astigmatism can be cancelled by including a third curved optical element. When this element is a mirror, the result is a three-mirror anastigmat. Alternatively, a RCT may use one or several low-power lenses in front of the focal plane as a field-corrector to correct astigmatism and flatten the focal surface, as for example the SDSS telescope and the VISTA telescope; this can allow a field-of-view up to around 3° diameter.
+The Schmidt camera can deliver even wider fields up to about 7°.  However, the Schmidt requires a full-aperture corrector plate, which restricts it to apertures below 1.2 meters, while a Ritchey–Chrétien can be much larger. Other telescope designs with front-correcting elements are not limited by the practical problems of making a multiply-curved Schmidt corrector plate, such as the Lurie–Houghton design.
+
+
+=== Aperture obstruction ===
+In a Ritchey–Chrétien design, as in most Cassegrain systems, the secondary mirror blocks a central portion of the aperture. This ring-shaped entrance aperture significantly reduces a portion of the modulation transfer function (MTF) over a range of low spatial frequencies, compared to a full-aperture design such as a refractor. This MTF notch has the effect of lowering image contrast when imaging broad features. In addition, the support for the secondary (the spider) may introduce diffraction spikes in images.
+
+
+=== Mirrors ===
+
+The radii of curvature of the primary and secondary mirrors, respectively, in a two-mirror Cassegrain configuration are:
+
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+        =
+        −
+        
+          
+            
+              2
+              D
+              F
+            
+            
+              F
+              −
+              B
+            
+          
+        
+        =
+        −
+        
+          
+            
+              2
+              F
+            
+            M
+          
+        
+      
+    
+    {\displaystyle R_{1}=-{\frac {2DF}{F-B}}=-{\frac {2F}{M}}}
+  
+
+and
+
+  
+    
+      
+        
+          R
+          
+            2
+          
+        
+        =
+        −
+        
+          
+            
+              2
+              D
+              B
+            
+            
+              F
+              −
+              B
+              −
+              D
+            
+          
+        
+        =
+        −
+        
+          
+            
+              2
+              B
+            
+            
+              M
+              −
+              1
+            
+          
+        
+      
+    
+    {\displaystyle R_{2}=-{\frac {2DB}{F-B-D}}=-{\frac {2B}{M-1}}}
+  
+,
+where
+
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ is the effective focal length of the system,
+
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ is the back focal length (the distance from the secondary to the focus),
+
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is the distance between the two mirrors and
+
+  
+    
+      
+        M
+        =
+        (
+        F
+        −
+        B
+        )
+        
+          /
+        
+        D
+      
+    
+    {\displaystyle M=(F-B)/D}
+  
+ is the secondary magnification.
+If, instead of 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ and 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, the known quantities are the focal length of the primary mirror, 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+      
+    
+    {\displaystyle f_{1}}
+  
+, and the distance to the focus behind the primary mirror, 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+, then 
+  
+    
+      
+        D
+        =
+        
+          f
+          
+            1
+          
+        
+        (
+        F
+        −
+        b
+        )
+        
+          /
+        
+        (
+        F
+        +
+        
+          f
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle D=f_{1}(F-b)/(F+f_{1})}
+  
+ and 
+  
+    
+      
+        B
+        =
+        D
+        +
+        b
+      
+    
+    {\displaystyle B=D+b}
+  
+.
+For a Ritchey–Chrétien system, the conic constants 
+  
+    
+      
+        
+          K
+          
+            1
+          
+        
+      
+    
+    {\displaystyle K_{1}}
+  
+ and 
+  
+    
+      
+        
+          K
+          
+            2
+          
+        
+      
+    
+    {\displaystyle K_{2}}
+  
+ of the two mirrors are chosen so as to eliminate third-order spherical aberration and coma; the solution is:
+
+  
+    
+      
+        
+          K
+          
+            1
+          
+        
+        =
+        −
+        1
+        −
+        
+          
+            2
+            
+              M
+              
+                3
+              
+            
+          
+        
+        ⋅
+        
+          
+            B
+            D
+          
+        
+      
+    
+    {\displaystyle K_{1}=-1-{\frac {2}{M^{3}}}\cdot {\frac {B}{D}}}
+  
+
+and
+
+  
+    
+      
+        
+          K
+          
+            2
+          
+        
+        =
+        −
+        1
+        −
+        
+          
+            2
+            
+              (
+              M
+              −
+              1
+              
+                )
+                
+                  3
+                
+              
+            
+          
+        
+        
+          [
+          
+            M
+            (
+            2
+            M
+            −
+            1
+            )
+            +
+            
+              
+                B
+                D
+              
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle K_{2}=-1-{\frac {2}{(M-1)^{3}}}\left[M(2M-1)+{\frac {B}{D}}\right]}
+  
+.
+Note that 
+  
+    
+      
+        
+          K
+          
+            1
+          
+        
+      
+    
+    {\displaystyle K_{1}}
+  
+ and 
+  
+    
+      
+        
+          K
+          
+            2
+          
+        
+      
+    
+    {\displaystyle K_{2}}
+  
+ are less than 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+ (since 
+  
+    
+      
+        M
+        >
+        1
+      
+    
+    {\displaystyle M>1}
+  
+), so both mirrors are hyperbolic. (The primary mirror is typically quite close to being parabolic, however.)
+The hyperbolic curvatures are difficult to test, especially with equipment typically available to amateur telescope makers or laboratory-scale fabricators; thus, older telescope layouts predominate in these applications. However, professional optics fabricators and large research groups test their mirrors with interferometers. A Ritchey–Chrétien then requires minimal additional equipment, typically a small optical device called a null corrector that makes the hyperbolic primary look spherical for the interferometric test. On the Hubble Space Telescope, this device was built incorrectly (a reflection from an un-intended surface leading to an incorrect measurement of lens position) leading to the error in the Hubble primary mirror.
+Incorrect null correctors have led to other mirror fabrication errors as well, such as in the New Technology Telescope.
+
+
+=== Additional flat mirrors ===
+In practice, each of these designs may also include any number of flat fold mirrors, used to bend the optical path into more convenient configurations. This article only discusses the mirrors required for forming an image, not those for placing it in a convenient location.
+
+
+== Examples of large Ritchey–Chrétien telescopes ==
+Ritchey intended the 100-inch Mount Wilson Hooker telescope (1917) and the 200-inch (5 m) Hale Telescope to be RCTs. His designs would have provided sharper images over a larger usable field of view compared to the parabolic designs actually used. However, Ritchey and Hale had a falling-out. With the 100-inch project already late and over budget, Hale refused to adopt the new design, with its hard-to-test curvatures, and Ritchey left the project. Both projects were then built with traditional optics. Since then, advances in optical measurement and fabrication have allowed the RCT design to take over – the Hale telescope, dedicated in 1948, turned out to be the last world-leading telescope to have a parabolic primary mirror.
+
+The 10.4 m Gran Telescopio Canarias at Roque de los Muchachos Observatory on La Palma, Canary Islands, (Spain).
+The two 10.0 m telescopes of the Keck Observatory at Mauna Kea Observatory, (United States).
+The four 8.2 m telescopes comprising the Very Large Telescope, (Chile).
+The 8.2 m Subaru telescope at Mauna Kea Observatory, (United States).
+The two 8.0 m telescopes comprising the Gemini Observatory at Mauna Kea Observatory, (United States) and Chile.
+The 4.1 m Visible and Infrared Survey Telescope for Astronomy at the Paranal Observatory, (Chile).
+The 4.1 m Southern Astrophysical Research Telescope at Cerro Pachón, (Chile).
+The 4.0 m Mayall Telescope at Kitt Peak National Observatory, (United States).
+The 4.0 m Blanco telescope at the Cerro Tololo Inter-American Observatory, (Chile).
+The 3.94 m telescope at Eastern Anatolia Observatory (DAG) in Erzurum, Turkey.
+The 3.9 m Anglo-Australian Telescope at Siding Spring Observatory, (Australia).
+The 3.6 m Devasthal Optical Telescope of Aryabhatta Research Institute of Observational Sciences, Nainital, (India).
+The 3.58 m Telescopio Nazionale Galileo at Roque de los Muchachos Observatory on La Palma, Canary Islands, (Spain).
+The 3.58 m New Technology Telescope at the European Southern Observatory, (Chile).
+The 3.5 m ARC telescope at Apache Point Observatory, New Mexico, (United States).
+The 3.5 m Calar Alto Observatory telescope at mount Calar Alto, (Spain).
+The 3.50 m WIYN Observatory at Kitt Peak National Observatory, (United States).
+The 3.4 m INO340 Telescope at Iranian National Observatory, (Iran).
+The 2.65 m VLT Survey Telescope at ESO’s Paranal Observatory, (Chile).
+The 2.56 m effective f/11 Nordic Optical Telescope  on La Palma, Canary Islands, (Spain).
+The 2.50 m Sloan Digital Sky Survey telescope (modified design) at Apache Point Observatory, New Mexico, U.S.
+The 2.4 m Hubble Space Telescope currently in orbit around the Earth.
+The 2.4 m Thai National Observatory telescope on Doi Inthanon, (Thailand).
+The 2.3 m Aristarchos Telescope at Chelmos Observatory, Greece.
+The 2.2 m Calar Alto Observatory telescope at mount Calar Alto, (Spain).
+The 2.15 m Leoncito Astronomical Complex telescope on San Juan, Argentina.
+The 2.12 m telescope at San Pedro Martir, National Astronomical Observatory (Mexico).
+The 2.1 m telescope at Kitt Peak National Observatory, (United States).
+The 2.08 m Otto Struve Telescope at McDonald Observatory, (United States).
+The 2.0 m Liverpool Telescope (robotic telescope) on La Palma, Canary Islands, (Spain).
+The 2.0 m telescope at Rozhen Observatory, Bulgaria.
+The 2.0 m Himalayan Chandra Telescope of the Indian Astronomical Observatory, Hanle, (India).
+The 1.8 m Pan-STARRS telescopes at Haleakala on Maui, Hawaii.
+The 1.65 m telescope at Molėtai Astronomical Observatory, (Lithuania).
+The 1.6 m Mont-Mégantic Observatory telescope on Mont-Mégantic in Quebec, Canada.
+The 1.6 m Perkin-Elmer telescope on Pico dos Dias Observatory in Minas Gerais, Brazil.
+The 1.3 m telescope at Skinakas Observatory, in the island of Crete, Greece.
+The 1.0 m Ritchey Telescope at the United States Naval Observatory Flagstaff Station (the final telescope made by G. Ritchey before his death).
+The 1.0 m DFM Engineering f/8 at Embry-Riddle Observatory in Daytona Beach, Florida, (United States).
+The four 1.0 m SPECULOOS telescopes at the Paranal Observatory in Chile dedicated to the search for Earth-sized exoplanets.
+The 0.85 m Spitzer Space Telescope, infrared space telescope in an Earth-trailing orbit (retired by NASA on 30 January 2020).
+The 0.8 m Astelco Systems design Perren Telescope at the University College London Observatory in Mill Hill, London, (UK).
+The 0.8 m DFM Engineering CCT-32 telescope at the University of Victoria in Victoria, British Columbia
+The 0.208 m LOng Range Reconnaissance Imager (LORRI) camera on board the New Horizons space craft, currently beyond Pluto.
+
+
+== See also ==
+
+List of largest optical reflecting telescopes
+List of telescope types
+Lurie–Houghton telescope
+Maksutov telescope
+Reflecting telescope
+Schmidt–Cassegrain telescope
+
+
+== References ==

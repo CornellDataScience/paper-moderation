@@ -1,0 +1,47 @@
+The Open Smart Grid Protocol (OSGP) is a family of specifications published by the European Telecommunications Standards Institute (ETSI) used in conjunction with the ISO/IEC 14908 control networking standard for smart grid applications. OSGP is optimized to provide reliable and efficient delivery of command and control information for smart meters, direct load control modules, solar panels, gateways, and other smart grid devices. With over 5 million OSGP based smart meters and devices deployed worldwide it is one of the most widely used smart meter and smart grid device networking standards.
+
+
+== Protocol layers and features ==
+OSGP follows a modern, structured approach based on the OSI protocol model to meet the evolving challenges of the smart grid.
+At the application layer, ETSI TS 104 001 provides a table-oriented data storage based, in part, on the ANSI C12.19 / MC12.19 / 2012 / IEEE Std 1377 standards for Utility Industry End Device Data Tables and ANSI C12.18 / MC12.18 /  IEEE Std 1701, standard Protocol Specification for ANSI Type 2 Optical Port for its services and payload encapsulation.  This standard and command system that provides for not only smart meters and related data but for general purpose extension to other smart grid devices.
+ETSI TS 104 001 is an updated version of the application layer specification that incorporates enhanced security features, including AES 128 encryption, and replaces the previously ETSI GS OSG 001 version. OSGP is designed to be very bandwidth efficient, enabling it to offer high performance and low cost using bandwidth constrained media such as the power line.  For example, just as SQL provides an efficient and flexible database query language for enterprise applications, OSGP provides an efficient and flexible query language for smart grid devices. As with SQL, OSGP supports reading and writing of single attributes, multiple elements, or even entire tables. As another example, OSGP includes capabilities for an adaptive, directed meshing system that enables any OSGP device to serve as a message repeater, further optimizing bandwidth use by repeating only those packets that need to be repeated.  OSGP also includes authentication and encryption for all exchanges to protect the integrity and privacy of data as is required in the smart grid.
+The intermediate layers of the OSGP stack leverage the ISO/IEC 14908 control networking standard, a field-proven multi-application widely used in smart grid, smart city, and smart building applications with more than 100 million devices deployed worldwide. ISO/IEC 14908 is highly optimized for efficient, reliable, and scalable control networking applications. The low overhead of ISO/IEC 14908 enables it to deliver high performance without requiring high bandwidth.
+Since it builds on ISO/IEC 14908, which is media independent, OSGP has the possibility to be used with any current or future physical media. OSGP today uses ETSI TS 103 908 (PowerLine Telecommunications) as its physical layer.  Although a new standard, products that conform to ETSI TS 103 908 prior to its formal adoption have been on the market for many years, with over 40 million smart meter and grid devices deployed.
+In 2020, IEC approved and published an International Standard (IEC 62056-8-8) defining the OSGP Communication Profile for the DLMS/COSEM suite of standards.
+In addition, CEN/CENELEC approved and published a standard (CLC/TS 50586) for OSGP that describes its data interface model, application-level communication, management functionalities, and security mechanism for the exchange of data with smart-grid devices.
+Both of these standards were part of the outcomes of the EU Smart Metering Mandate M/441 and its decision identifying OSGP as one of the protocols that can be used for Smart Metering deployments in Europe.
+It is also important to define interoperability between information systems and applications, and this needs to be ensured independent of the physical layers. This is achieved using NTA 8150, which defines APIs higher level web services protocols (e.g. SOAP and xml).  The NTA 8150 consists of two parts; 1) System Software API, description of the architecture and the API for AMI; 2) API usage per use case, description for specific AMI use cases, as examples.
+
+
+== Standards ==
+OSGP is built upon the following open standards.
+
+ETSI Technical specification TS 104 001: Open Smart Grid Protocol. Produced by the ETSI Technical Committee for Powerline Telecommunications (TC PLT ), this application layer protocol can be used with multiple communication media.
+ISO/IEC 14908-1: Information technology—Control network protocol—Part 1: Protocol stack.  Published through  ISO/IEC JTC 1/SC 6, this standard specifies a multi-purpose control network protocol stack optimized for smart grid, smart building, and smart city applications.
+ETSI Technical specification TS 103 908: Powerline Telecommunications (PLT); BPSK Narrow Band Power Line Channel for Smart Metering Applications. This specification defines a high-performance narrow band powerline channel for control networking in the smart grid that can be used with multiple smart grid devices. It was produced by the ETSI Technical Committee for Powerline Telecommunications (TC PLT ).
+IEC 62056-8-8: This standard specifies an OSGP and ISO/IEC 14908 communication profile based on the OSGP lower layer stacks as part of the IEC 62056 DLMS/COSEM Suite series.
+CLC/TS 50586: This standard describes the OSGP data interface model, application-level communication, management functionalities, and security mechanism for the exchange of data with smart-grid devices.
+ANSI C12.19: This standard (as are its companions MC12.19  and IEEE Std 1377™ standards) concepts, data types, and basic tables and procedures were mapped into Clause 6, "OSGP Device data representation" and  Normative Annex A, "Basic Tables" in ETSI Technical specification TS 104 001.
+ANSI C12.18: (as are its companions MC12.18  and IEEE Std 1701™ standards) services and payload encapsulation were mapped into clause "Basic OSGP services" in ETSI Technical specification TS 104 001.
+NTA 8150 Part 1: This standard specifies the System Software API, description of the architecture and the API for AMI
+NTA 8150 Part 2  This standard specifies the API usage per use case, description for specific AMI use cases, as examples.
+OSGP is supported and maintained by the OSGP Alliance (formerly known as Energy Services Network Association), a non-profit corporation composed of utilities, manufacturers and system integrators.
+
+
+== See also ==
+Distributed generation
+Smart grid
+Smart meter
+Virtual power plant
+
+
+== References ==
+
+
+== External links ==
+OSGP Alliance
+European Telecommunications Standards Institute
+Energy Services Network Association
+LonWorks - Echelon's connection with OSGP
+International Organization for Standardization
+Frost & Sullivan Recognizes OSGP market share

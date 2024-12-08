@@ -1,0 +1,3273 @@
+In mathematics, Pontryagin duality is a duality between locally compact abelian groups that allows generalizing Fourier transform to all such groups, which include the circle group (the multiplicative group of complex numbers of modulus one), the finite abelian groups (with the discrete topology), and the additive group of the integers (also with the discrete topology), the real numbers, and every finite-dimensional vector space over the reals or a p-adic field.
+The Pontryagin dual of a locally compact abelian group is the locally compact abelian topological group formed by the continuous group homomorphisms from the group to the circle group with the operation of pointwise multiplication and the topology of uniform convergence on compact sets. The Pontryagin duality theorem establishes Pontryagin duality by stating that any locally compact abelian group is naturally isomorphic with its bidual (the dual of its dual). The Fourier inversion theorem is a special case of this theorem.
+The subject is named after Lev Pontryagin who laid down the foundations for the theory of locally compact abelian groups and their duality during his early mathematical works in 1934. Pontryagin's treatment relied on the groups being second-countable and either compact or discrete. This was improved to cover the general locally compact abelian groups by Egbert van Kampen in 1935 and André Weil in 1940.
+
+
+== Introduction ==
+Pontryagin duality places in a unified context a number of observations about functions on the real line or on finite abelian groups:
+
+Suitably regular complex-valued periodic functions on the real line have Fourier series and these functions can be recovered from their Fourier series;
+Suitably regular complex-valued functions on the real line have Fourier transforms that are also functions on the real line and, just as for periodic functions, these functions can be recovered from their Fourier transforms; and
+Complex-valued functions on a finite abelian group have discrete Fourier transforms, which are functions on the dual group, which is a (non-canonically) isomorphic group. Moreover, any function on a finite abelian group can be recovered from its discrete Fourier transform.
+The theory, introduced by Lev Pontryagin and combined with the Haar measure introduced by John von Neumann, André Weil and others depends on the theory of the dual group of a locally compact abelian group.
+It is analogous to the dual vector space of a vector space: a finite-dimensional vector space 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ and its dual vector space 
+  
+    
+      
+        
+          V
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle V^{*}}
+  
+ are not naturally isomorphic, but the endomorphism algebra (matrix algebra) of one is isomorphic to the opposite of the endomorphism algebra of the other: 
+  
+    
+      
+        
+          End
+        
+        (
+        V
+        )
+        ≅
+        
+          
+            
+              End
+            
+            (
+            
+              V
+              
+                ∗
+              
+            
+            )
+          
+          
+            op
+          
+        
+        ,
+      
+    
+    {\displaystyle {\text{End}}(V)\cong {{\text{End}}(V^{*})}^{\text{op}},}
+  
+ via the transpose. Similarly, a group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ and its dual group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ are not in general isomorphic, but their endomorphism rings are opposite to each other: 
+  
+    
+      
+        
+          End
+        
+        (
+        G
+        )
+        ≅
+        
+          End
+        
+        (
+        
+          
+            
+              G
+              ^
+            
+          
+        
+        
+          )
+          
+            op
+          
+        
+      
+    
+    {\displaystyle {\text{End}}(G)\cong {\text{End}}({\widehat {G}})^{\text{op}}}
+  
+. More categorically, this is not just an isomorphism of endomorphism algebras, but a contravariant equivalence of categories – see § Categorical considerations.
+
+
+== Definition ==
+
+A topological group is a locally compact group if the underlying topological space is locally compact and Hausdorff; a topological group is abelian if the underlying group is abelian.
+Examples of locally compact abelian groups include finite abelian groups, the integers (both for the discrete topology, which is also induced by the usual metric), the real numbers, the circle group T (both with their usual metric topology), and also the p-adic numbers (with their usual p-adic topology).
+For a locally compact abelian group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, the Pontryagin dual is the group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ of continuous group homomorphisms from 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ to the circle group 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+. That is,
+
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+        :=
+        Hom
+        ⁡
+        (
+        G
+        ,
+        T
+        )
+        .
+      
+    
+    {\displaystyle {\widehat {G}}:=\operatorname {Hom} (G,T).}
+  
+
+The Pontryagin dual 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is usually endowed with the topology given by uniform convergence on compact sets (that is, the topology induced by the compact-open topology on the space of all continuous functions from 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ to 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+).
+For example,
+  
+    
+      
+        
+          
+            
+              
+                
+                  Z
+                
+                
+                  /
+                
+                n
+                
+                  Z
+                
+              
+              ^
+            
+          
+        
+        =
+        
+          Z
+        
+        
+          /
+        
+        n
+        
+          Z
+        
+        ,
+         
+        
+          
+            
+              
+                Z
+              
+              ^
+            
+          
+        
+        =
+        T
+        ,
+         
+        
+          
+            
+              
+                R
+              
+              ^
+            
+          
+        
+        =
+        
+          R
+        
+        ,
+         
+        
+          
+            
+              T
+              ^
+            
+          
+        
+        =
+        
+          Z
+        
+        .
+      
+    
+    {\displaystyle {\widehat {\mathbb {Z} /n\mathbb {Z} }}=\mathbb {Z} /n\mathbb {Z} ,\ {\widehat {\mathbb {Z} }}=T,\ {\widehat {\mathbb {R} }}=\mathbb {R} ,\ {\widehat {T}}=\mathbb {Z} .}
+  
+
+
+== Pontryagin duality theorem ==
+
+Canonical means that there is a naturally defined map 
+  
+    
+      
+        
+          ev
+          
+            G
+          
+        
+        :
+        G
+        →
+        
+          
+            
+              
+                
+                  G
+                  ^
+                
+              
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {ev} _{G}\colon G\to {\widehat {\widehat {G}}}}
+  
+ ; more importantly, the map should be functorial in 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+. For the multiplicative character 
+  
+    
+      
+        χ
+      
+    
+    {\displaystyle \chi }
+  
+ of the group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, the canonical isomorphism 
+  
+    
+      
+        
+          ev
+          
+            G
+          
+        
+      
+    
+    {\displaystyle \operatorname {ev} _{G}}
+  
+ is defined on 
+  
+    
+      
+        x
+        ∈
+        G
+      
+    
+    {\displaystyle x\in G}
+  
+ as follows:
+
+  
+    
+      
+        
+          ev
+          
+            G
+          
+        
+        ⁡
+        (
+        x
+        )
+        (
+        χ
+        )
+        =
+        χ
+        (
+        x
+        )
+        ∈
+        
+          T
+        
+        .
+      
+    
+    {\displaystyle \operatorname {ev} _{G}(x)(\chi )=\chi (x)\in \mathbb {T} .}
+  
+
+That is, 
+  
+    
+      
+        
+          ev
+          
+            G
+          
+        
+        ⁡
+        (
+        x
+        )
+        :
+        (
+        χ
+        ↦
+        χ
+        (
+        x
+        )
+        )
+        .
+      
+    
+    {\displaystyle \operatorname {ev} _{G}(x):(\chi \mapsto \chi (x)).}
+  
+
+In other words, each group element 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ is identified to the evaluation character on the dual. This is strongly analogous to the canonical isomorphism between a finite-dimensional vector space and its double dual, 
+  
+    
+      
+        V
+        ≅
+        
+          V
+          
+            ∗
+            ∗
+          
+        
+      
+    
+    {\displaystyle V\cong V^{**}}
+  
+, and it is worth mentioning that any vector space 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ is an abelian group. If 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a finite abelian group, then 
+  
+    
+      
+        G
+        ≅
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle G\cong {\widehat {G}}}
+  
+ but this isomorphism is not canonical. Making this statement precise (in general) requires thinking about dualizing not only on groups, but also on maps  between the groups, in order to treat dualization as a functor and prove the identity functor and the dualization functor are not naturally equivalent. Also the duality theorem implies that for any group (not necessarily finite) the dualization functor is an exact functor.
+
+
+== Pontryagin duality and the Fourier transform ==
+
+
+=== Haar measure ===
+
+One of the most remarkable facts about a locally compact group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is that it carries an essentially unique natural measure, the Haar measure, which allows one to consistently measure the "size" of sufficiently regular subsets of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+.  "Sufficiently regular subset" here means a Borel set; that is, an element of the σ-algebra generated by the compact sets. More precisely, a right Haar measure on a locally compact group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a countably additive measure μ defined on the Borel sets of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ which is right invariant in the sense that 
+  
+    
+      
+        μ
+        (
+        A
+        x
+        )
+        =
+        μ
+        (
+        A
+        )
+      
+    
+    {\displaystyle \mu (Ax)=\mu (A)}
+  
+ for 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ an element of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ and 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ a Borel subset of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ and  also satisfies some regularity conditions (spelled out in detail in the article on Haar measure). Except for positive scaling factors, a Haar measure on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is unique.
+The Haar measure on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ allows us to define the notion of integral for (complex-valued) Borel functions defined on the group.  In particular, one may consider various Lp spaces associated to the Haar measure 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+. Specifically,
+
+  
+    
+      
+        
+          
+            
+              L
+            
+          
+          
+            μ
+          
+          
+            p
+          
+        
+        (
+        G
+        )
+        =
+        
+          {
+          
+            (
+            f
+            :
+            G
+            →
+            
+              C
+            
+            )
+             
+            
+              
+                |
+              
+            
+             
+            
+              ∫
+              
+                G
+              
+            
+            
+              |
+            
+            f
+            (
+            x
+            )
+            
+              
+                |
+              
+              
+                p
+              
+            
+             
+            d
+            μ
+            (
+            x
+            )
+            <
+            ∞
+          
+          }
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {L}}_{\mu }^{p}(G)=\left\{(f:G\to \mathbb {C} )\ {\Big |}\ \int _{G}|f(x)|^{p}\ d\mu (x)<\infty \right\}.}
+  
+
+Note that, since any two Haar measures on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ are equal up to a scaling factor, this 
+  
+    
+      
+        
+          L
+          
+            p
+          
+        
+      
+    
+    {\displaystyle L^{p}}
+  
+-space is independent of the choice  of Haar measure and thus perhaps could be written as 
+  
+    
+      
+        
+          L
+          
+            p
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{p}(G)}
+  
+.  However, the 
+  
+    
+      
+        
+          L
+          
+            p
+          
+        
+      
+    
+    {\displaystyle L^{p}}
+  
+-norm on this space depends on the choice of Haar measure, so if one wants to talk about isometries it is important to keep track of the Haar measure being used.
+
+
+=== Fourier transform and Fourier inversion formula for L1-functions ===
+The dual group of a locally compact abelian group is used as the underlying space for an abstract version of the Fourier transform.  If 
+  
+    
+      
+        f
+        ∈
+        
+          L
+          
+            1
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle f\in L^{1}(G)}
+  
+, then the Fourier transform  is the function 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {f}}}
+  
+ on 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ defined by
+
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        χ
+        )
+        =
+        
+          ∫
+          
+            G
+          
+        
+        f
+        (
+        x
+        )
+        
+          
+            
+              χ
+              (
+              x
+              )
+            
+            ¯
+          
+        
+         
+        d
+        μ
+        (
+        x
+        )
+        ,
+      
+    
+    {\displaystyle {\widehat {f}}(\chi )=\int _{G}f(x){\overline {\chi (x)}}\ d\mu (x),}
+  
+
+where the integral is relative to Haar measure 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+.  This is also denoted 
+  
+    
+      
+        (
+        
+          
+            F
+          
+        
+        f
+        )
+        (
+        χ
+        )
+      
+    
+    {\displaystyle ({\mathcal {F}}f)(\chi )}
+  
+. Note the Fourier transform depends on the choice of Haar measure. It is not too difficult to show that the Fourier transform of an 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L^{1}}
+  
+ function on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a bounded continuous function on 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ which vanishes at infinity.
+
+The inverse Fourier transform of an integrable function on 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is given by
+
+  
+    
+      
+        
+          
+            
+              g
+              ˇ
+            
+          
+        
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            
+              
+                G
+                ^
+              
+            
+          
+        
+        g
+        (
+        χ
+        )
+        χ
+        (
+        x
+        )
+         
+        d
+        ν
+        (
+        χ
+        )
+        ,
+      
+    
+    {\displaystyle {\check {g}}(x)=\int _{\widehat {G}}g(\chi )\chi (x)\ d\nu (\chi ),}
+  
+
+where the integral is relative to the Haar measure 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ on the dual group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+. The measure 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ on 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ that appears in the Fourier inversion formula is called the dual measure to 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ and may be denoted 
+  
+    
+      
+        
+          
+            
+              μ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {\mu }}}
+  
+.
+The various Fourier transforms can be classified in terms of their domain and transform domain (the group and dual group) as follows (note that 
+  
+    
+      
+        
+          T
+        
+      
+    
+    {\displaystyle \mathbb {T} }
+  
+ is Circle group):
+
+As an example, suppose 
+  
+    
+      
+        G
+        =
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle G=\mathbb {R} ^{n}}
+  
+, so we can think about 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ as 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ by the pairing 
+  
+    
+      
+        (
+        
+          v
+        
+        ,
+        
+          w
+        
+        )
+        ↦
+        
+          e
+          
+            i
+            
+              v
+            
+            ⋅
+            
+              w
+            
+          
+        
+        .
+      
+    
+    {\displaystyle (\mathbf {v} ,\mathbf {w} )\mapsto e^{i\mathbf {v} \cdot \mathbf {w} }.}
+  
+ If 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ is the Lebesgue measure on Euclidean space, we obtain the ordinary Fourier transform on 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ and the dual measure needed for the Fourier inversion formula is 
+  
+    
+      
+        
+          
+            
+              μ
+              ^
+            
+          
+        
+        =
+        (
+        2
+        π
+        
+          )
+          
+            −
+            n
+          
+        
+        μ
+      
+    
+    {\displaystyle {\widehat {\mu }}=(2\pi )^{-n}\mu }
+  
+. If we want to get a Fourier inversion formula with the same measure on both sides (that is, since we can think about 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ as its own dual space we can ask for 
+  
+    
+      
+        
+          
+            
+              μ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {\mu }}}
+  
+ to equal 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+) then we need to use
+
+  
+    
+      
+        
+          
+            
+              
+                μ
+              
+              
+                
+                =
+                (
+                2
+                π
+                
+                  )
+                  
+                    −
+                    
+                      
+                        n
+                        2
+                      
+                    
+                  
+                
+                ×
+                
+                  Lebesgue measure
+                
+              
+            
+            
+              
+                
+                  
+                    
+                      μ
+                      ^
+                    
+                  
+                
+              
+              
+                
+                =
+                (
+                2
+                π
+                
+                  )
+                  
+                    −
+                    
+                      
+                        n
+                        2
+                      
+                    
+                  
+                
+                ×
+                
+                  Lebesgue measure
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\mu &=(2\pi )^{-{\frac {n}{2}}}\times {\text{Lebesgue measure}}\\{\widehat {\mu }}&=(2\pi )^{-{\frac {n}{2}}}\times {\text{Lebesgue measure}}\end{aligned}}}
+  
+
+However, if we change the way we identify 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ with its dual group, by using the pairing
+
+  
+    
+      
+        (
+        
+          v
+        
+        ,
+        
+          w
+        
+        )
+        ↦
+        
+          e
+          
+            2
+            π
+            i
+            
+              v
+            
+            ⋅
+            
+              w
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle (\mathbf {v} ,\mathbf {w} )\mapsto e^{2\pi i\mathbf {v} \cdot \mathbf {w} },}
+  
+
+then Lebesgue measure on 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ is equal to its own dual measure.  This convention minimizes the number of factors of 
+  
+    
+      
+        2
+        π
+      
+    
+    {\displaystyle 2\pi }
+  
+ that show up in various places when computing Fourier transforms or inverse Fourier transforms on Euclidean space. (In effect it limits the 
+  
+    
+      
+        2
+        π
+      
+    
+    {\displaystyle 2\pi }
+  
+ only to the exponent rather than as a pre-factor outside the integral sign.)  Note that the choice of how to identify 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ with its dual group affects the meaning of the term "self-dual function", which is a function on 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ equal to its own Fourier transform: using the classical pairing 
+  
+    
+      
+        (
+        
+          v
+        
+        ,
+        
+          w
+        
+        )
+        ↦
+        
+          e
+          
+            i
+            
+              v
+            
+            ⋅
+            
+              w
+            
+          
+        
+      
+    
+    {\displaystyle (\mathbf {v} ,\mathbf {w} )\mapsto e^{i\mathbf {v} \cdot \mathbf {w} }}
+  
+ the function 
+  
+    
+      
+        
+          e
+          
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              x
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle e^{-{\frac {1}{2}}x^{2}}}
+  
+ is self-dual. But using the pairing, which keeps the pre-factor as unity, 
+  
+    
+      
+        (
+        
+          v
+        
+        ,
+        
+          w
+        
+        )
+        ↦
+        
+          e
+          
+            2
+            π
+            i
+            
+              v
+            
+            ⋅
+            
+              w
+            
+          
+        
+      
+    
+    {\displaystyle (\mathbf {v} ,\mathbf {w} )\mapsto e^{2\pi i\mathbf {v} \cdot \mathbf {w} }}
+  
+ makes 
+  
+    
+      
+        
+          e
+          
+            −
+            π
+            
+              x
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle e^{-\pi x^{2}}}
+  
+ self-dual instead. This second definition for the Fourier transform has the advantage that it maps the multiplicative identity to the convolution identity, which is useful as 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L^{1}}
+  
+ is a convolution algebra. See the next section on the group algebra. In addition, this form is also necessarily isometric on 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+ spaces. See below at Plancherel and L2 Fourier inversion theorems.
+
+
+=== Group algebra ===
+
+The space of integrable functions on  a locally compact abelian group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is an algebra, where multiplication is convolution: the convolution of two integrable functions 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ is defined as
+
+  
+    
+      
+        (
+        f
+        ∗
+        g
+        )
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            G
+          
+        
+        f
+        (
+        x
+        −
+        y
+        )
+        g
+        (
+        y
+        )
+         
+        d
+        μ
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle (f*g)(x)=\int _{G}f(x-y)g(y)\ d\mu (y).}
+  
+
+This algebra is referred to as the Group Algebra of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+. By the Fubini–Tonelli theorem, the convolution is submultiplicative with respect to the 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L^{1}}
+  
+ norm, making 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{1}(G)}
+  
+ a Banach algebra. The Banach algebra 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{1}(G)}
+  
+ has a multiplicative identity element if and only if 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a discrete group, namely the function that is 1 at the identity and zero elsewhere. In general, however, it has an approximate identity which is a net (or generalized sequence) 
+  
+    
+      
+        {
+        
+          e
+          
+            i
+          
+        
+        
+          }
+          
+            i
+            ∈
+            I
+          
+        
+      
+    
+    {\displaystyle \{e_{i}\}_{i\in I}}
+  
+ indexed on a directed set 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ such that 
+  
+    
+      
+        f
+        ∗
+        
+          e
+          
+            i
+          
+        
+        →
+        f
+        .
+      
+    
+    {\displaystyle f*e_{i}\to f.}
+  
+
+The Fourier transform takes convolution to multiplication, i.e. it is a homomorphism of abelian Banach algebras 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        G
+        )
+        →
+        
+          C
+          
+            0
+          
+        
+        
+          (
+          
+            
+              
+                G
+                ^
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle L^{1}(G)\to C_{0}\left({\widehat {G}}\right)}
+  
+ (of norm ≤ 1):
+
+  
+    
+      
+        
+          
+            F
+          
+        
+        (
+        f
+        ∗
+        g
+        )
+        (
+        χ
+        )
+        =
+        
+          
+            F
+          
+        
+        (
+        f
+        )
+        (
+        χ
+        )
+        ⋅
+        
+          
+            F
+          
+        
+        (
+        g
+        )
+        (
+        χ
+        )
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}(f*g)(\chi )={\mathcal {F}}(f)(\chi )\cdot {\mathcal {F}}(g)(\chi ).}
+  
+
+In particular, to every group character on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ corresponds a unique multiplicative linear functional on the group algebra defined by
+
+  
+    
+      
+        f
+        ↦
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        χ
+        )
+        .
+      
+    
+    {\displaystyle f\mapsto {\widehat {f}}(\chi ).}
+  
+
+It is an important property of the group algebra that these exhaust the set of non-trivial (that is, not identically zero) multiplicative linear functionals on the group algebra; see section 34 of (Loomis 1953). This means the Fourier transform is a special case of the Gelfand transform.
+
+
+=== Plancherel and L2 Fourier inversion theorems ===
+As we have stated, the dual group of a locally compact abelian group is a locally compact abelian group in its own right and thus has a Haar measure, or more precisely a whole family of scale-related Haar measures.
+
+Since the complex-valued continuous functions of compact support on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ are 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+-dense, there is a unique extension of the Fourier transform from that space to a unitary operator
+
+  
+    
+      
+        
+          
+            F
+          
+        
+        :
+        
+          L
+          
+            μ
+          
+          
+            2
+          
+        
+        (
+        G
+        )
+        →
+        
+          L
+          
+            ν
+          
+          
+            2
+          
+        
+        
+          (
+          
+            
+              
+                G
+                ^
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}:L_{\mu }^{2}(G)\to L_{\nu }^{2}\left({\widehat {G}}\right).}
+  
+
+and we have the formula
+
+  
+    
+      
+        ∀
+        f
+        ∈
+        
+          L
+          
+            2
+          
+        
+        (
+        G
+        )
+        :
+        
+        
+          ∫
+          
+            G
+          
+        
+        
+          |
+        
+        f
+        (
+        x
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+         
+        d
+        μ
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            
+              
+                G
+                ^
+              
+            
+          
+        
+        
+          
+            |
+            
+              
+                
+                  
+                    f
+                    ^
+                  
+                
+              
+              (
+              χ
+              )
+            
+            |
+          
+          
+            2
+          
+        
+         
+        d
+        ν
+        (
+        χ
+        )
+        .
+      
+    
+    {\displaystyle \forall f\in L^{2}(G):\quad \int _{G}|f(x)|^{2}\ d\mu (x)=\int _{\widehat {G}}\left|{\widehat {f}}(\chi )\right|^{2}\ d\nu (\chi ).}
+  
+
+Note that for non-compact locally compact groups 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ the space 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{1}(G)}
+  
+ does not contain 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{2}(G)}
+  
+, so the Fourier transform of general 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+-functions on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is "not" given by any kind of integration formula (or really any explicit formula). To define the 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+ Fourier transform one has to resort to some technical trick such as starting on a dense subspace like the continuous functions with compact support and then extending the isometry by continuity to the whole space. This unitary extension of the Fourier transform is what we mean by the Fourier transform on the space of square integrable functions.
+The dual group also has an inverse Fourier transform in its own right; it can be characterized as the inverse (or adjoint, since it is unitary) of the 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+ Fourier transform. This is the content of the 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+ Fourier inversion formula which follows.
+
+In the case 
+  
+    
+      
+        G
+        =
+        
+          T
+        
+      
+    
+    {\displaystyle G=\mathbb {T} }
+  
+ the dual group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is naturally isomorphic to the group of integers 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ and the Fourier transform specializes to the computation of coefficients of Fourier series of periodic functions.
+If 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a finite group, we recover the discrete Fourier transform.  Note that this case is very easy to prove directly.
+
+
+== Bohr compactification and almost-periodicity ==
+One important application of Pontryagin duality is the following characterization of compact abelian topological groups:
+
+That 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ being compact implies 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is discrete or that 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ being discrete implies that 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is compact is an elementary consequence of the definition of the compact-open topology on 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ and does not need Pontryagin duality. One uses Pontryagin duality to prove the converses.
+The Bohr compactification is defined for any topological group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, regardless of whether 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is locally compact or abelian. One use made of Pontryagin duality between compact abelian groups and discrete abelian groups is to characterize the  Bohr compactification of an arbitrary abelian locally compact topological group. The Bohr compactification 
+  
+    
+      
+        B
+        (
+        G
+        )
+      
+    
+    {\displaystyle B(G)}
+  
+ of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is 
+  
+    
+      
+        
+          
+            
+              H
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {H}}}
+  
+, where H has the group structure 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+, but given the discrete topology. Since the inclusion map
+
+  
+    
+      
+        ι
+        :
+        H
+        →
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \iota :H\to {\widehat {G}}}
+  
+
+is continuous and a homomorphism, the dual morphism
+
+  
+    
+      
+        G
+        ∼
+        
+          
+            
+              
+                
+                  G
+                  ^
+                
+              
+              ^
+            
+          
+        
+        →
+        
+          
+            
+              H
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle G\sim {\widehat {\widehat {G}}}\to {\widehat {H}}}
+  
+			
+is a morphism into a compact group which is easily shown to satisfy the requisite universal property.
+
+
+== Categorical considerations ==
+Pontryagin duality can also profitably be considered functorially.  In what follows, LCA is the category of locally compact abelian groups and continuous group homomorphisms. The dual group construction of 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is a contravariant functor LCA → LCA, represented (in the sense of representable functors) by the circle group 
+  
+    
+      
+        
+          T
+        
+      
+    
+    {\displaystyle \mathbb {T} }
+  
+ as 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+        =
+        
+          Hom
+        
+        (
+        G
+        ,
+        
+          T
+        
+        )
+        .
+      
+    
+    {\displaystyle {\widehat {G}}={\text{Hom}}(G,\mathbb {T} ).}
+  
+  In particular, the double dual functor 
+  
+    
+      
+        G
+        →
+        
+          
+            
+              
+                
+                  G
+                  ^
+                
+              
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle G\to {\widehat {\widehat {G}}}}
+  
+ is covariant.
+A categorical formulation of Pontryagin duality then states that the natural transformation between the identity functor on LCA and the double dual functor is an isomorphism. Unwinding the notion of a natural transformation, this means that the maps 
+  
+    
+      
+        G
+        →
+        Hom
+        ⁡
+        (
+        Hom
+        ⁡
+        (
+        G
+        ,
+        T
+        )
+        ,
+        T
+        )
+      
+    
+    {\displaystyle G\to \operatorname {Hom} (\operatorname {Hom} (G,T),T)}
+  
+ are isomorphisms for any locally compact abelian group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, and these isomorphisms are functorial in 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+. This isomorphism is analogous to the double dual of finite-dimensional vector spaces (a special case, for real and complex vector spaces).
+An immediate consequence of this formulation is another common categorical formulation of Pontryagin duality: the dual group functor is an equivalence of categories from LCA to LCAop.
+The duality interchanges the subcategories of discrete groups and compact groups. If 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ is a ring and 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a left 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+–module, the dual group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ will become a right 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+–module; in this way we can also see that discrete left 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+–modules will be Pontryagin dual to compact right 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+–modules. The ring 
+  
+    
+      
+        
+          End
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle {\text{End}}(G)}
+  
+ of endomorphisms in LCA is changed by duality into its opposite ring (change the multiplication to the other order). For example, if 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is an infinite cyclic discrete group, 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ is a circle group: the former has 
+  
+    
+      
+        
+          End
+        
+        (
+        G
+        )
+        =
+        
+          Z
+        
+      
+    
+    {\displaystyle {\text{End}}(G)=\mathbb {Z} }
+  
+ so this is true also of the latter.
+
+
+== Generalizations ==
+Generalizations of Pontryagin duality are constructed in two main directions: for commutative topological groups that are not locally compact, and for noncommutative topological groups. The theories in these two cases are very different.
+
+
+=== Dualities for commutative topological groups ===
+When 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a Hausdorff abelian topological group, the group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ with the compact-open topology is a Hausdorff abelian topological group and the natural mapping from 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ to its double-dual 
+  
+    
+      
+        
+          
+            
+              
+                
+                  G
+                  ^
+                
+              
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {\widehat {G}}}}
+  
+  makes sense.  If this mapping is an isomorphism, it is said that 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ satisfies Pontryagin duality (or that 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a reflexive group, or a reflective group). This has been extended in a number of directions beyond the case that 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is locally compact.
+In particular, Samuel Kaplan showed in 1948 and 1950 that arbitrary products and countable inverse limits of locally compact (Hausdorff) abelian groups satisfy Pontryagin duality. Note that an infinite product of locally compact non-compact spaces is not locally compact.
+Later, in 1975, Rangachari Venkataraman showed, among other facts, that every open subgroup of an abelian topological group which satisfies Pontryagin duality itself satisfies Pontryagin duality.
+More recently, Sergio Ardanza-Trevijano and María Jesús Chasco have extended the results of Kaplan mentioned above. They showed that direct and inverse limits of sequences of abelian groups satisfying Pontryagin duality also satisfy Pontryagin duality if the groups are metrizable or 
+  
+    
+      
+        
+          k
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle k_{\omega }}
+  
+-spaces but not necessarily locally compact, provided some extra conditions are satisfied by the sequences.
+However, there is a fundamental aspect that changes if we want to consider Pontryagin duality beyond the locally compact case. Elena Martín-Peinador proved in 1995 that if 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is a Hausdorff abelian topological group that satisfies Pontryagin duality, and the natural evaluation pairing
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  G
+                  ×
+                  
+                    
+                      
+                        G
+                        ^
+                      
+                    
+                  
+                  →
+                  
+                    T
+                  
+                
+              
+              
+                
+                  (
+                  x
+                  ,
+                  χ
+                  )
+                  ↦
+                  χ
+                  (
+                  x
+                  )
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}G\times {\widehat {G}}\to \mathbb {T} \\(x,\chi )\mapsto \chi (x)\end{cases}}}
+  
+
+is (jointly) continuous, then 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is locally compact. As a corollary, all non-locally compact examples of Pontryagin duality are groups where the pairing 
+  
+    
+      
+        G
+        ×
+        
+          
+            
+              G
+              ^
+            
+          
+        
+        →
+        
+          T
+        
+      
+    
+    {\displaystyle G\times {\widehat {G}}\to \mathbb {T} }
+  
+ is not (jointly) continuous.
+Another way to generalize Pontryagin duality to wider classes of commutative topological groups is to endow the dual group 
+  
+    
+      
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\widehat {G}}}
+  
+ with a bit different topology, namely the topology of uniform convergence on totally bounded sets. The groups satisfying the identity 
+  
+    
+      
+        G
+        ≅
+        
+          
+            
+              
+                
+                  G
+                  ^
+                
+              
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle G\cong {\widehat {\widehat {G}}}}
+  
+ under this assumption are called stereotype groups. This class is also very wide (and it contains locally compact abelian groups), but it is narrower than the class of reflective groups.
+
+
+=== Pontryagin duality for topological vector spaces ===
+In 1952 Marianne F. Smith noticed that Banach spaces and reflexive spaces, being considered as topological groups (with the additive group operation), satisfy Pontryagin duality. Later B. S. Brudovskiĭ, William C. Waterhouse and K. Brauner showed that this result can be extended to the class of all quasi-complete barreled spaces (in particular, to all Fréchet spaces). In the 1990s Sergei Akbarov gave a description of the class of the topological vector spaces that satisfy a stronger property than the classical Pontryagin reflexivity, namely, the identity
+
+  
+    
+      
+        (
+        
+          X
+          
+            ⋆
+          
+        
+        
+          )
+          
+            ⋆
+          
+        
+        ≅
+        X
+      
+    
+    {\displaystyle (X^{\star })^{\star }\cong X}
+  
+ 
+where 
+  
+    
+      
+        
+          X
+          
+            ⋆
+          
+        
+      
+    
+    {\displaystyle X^{\star }}
+  
+ means the space of all linear continuous functionals 
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle f\colon X\to \mathbb {C} }
+  
+ endowed with the topology of uniform convergence on totally bounded sets in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ (and 
+  
+    
+      
+        (
+        
+          X
+          
+            ⋆
+          
+        
+        
+          )
+          
+            ⋆
+          
+        
+      
+    
+    {\displaystyle (X^{\star })^{\star }}
+  
+ means the dual to 
+  
+    
+      
+        
+          X
+          
+            ⋆
+          
+        
+      
+    
+    {\displaystyle X^{\star }}
+  
+ in the same sense). The spaces of this class are called stereotype spaces, and the corresponding theory found a series of applications in Functional analysis and Geometry, including the generalization of Pontryagin duality for non-commutative topological groups.
+
+
+=== Dualities for non-commutative topological groups ===
+For non-commutative locally compact groups 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ the classical Pontryagin construction stops working for various reasons, in particular, because the characters don't always separate the points of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, and the irreducible representations of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ are not always one-dimensional. At the same time it is not clear how to introduce multiplication on the set of irreducible unitary representations of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, and it is even not clear whether this set is a good choice for the role of the dual object for 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+. So the problem of constructing duality in this situation requires complete rethinking.
+Theories built to date are divided into two main groups: the theories where the dual object has the same nature as the source one (like in the Pontryagin duality itself), and the theories where the source object and its dual differ from each other so radically that it is impossible to count them as objects of one class.
+The second type theories were historically the first: soon after Pontryagin's work Tadao Tannaka (1938) and Mark Krein (1949) constructed a duality theory for arbitrary compact groups known now as the Tannaka–Krein duality. In this theory the dual object for a group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is not a group but a category of its representations 
+  
+    
+      
+        Π
+        (
+        G
+        )
+      
+    
+    {\displaystyle \Pi (G)}
+  
+.
+
+The theories of first type appeared later and the key example for them was the duality theory for finite groups. In this theory the category of finite groups is embedded by the operation 
+  
+    
+      
+        G
+        ↦
+        
+          
+            C
+          
+          
+            G
+          
+        
+      
+    
+    {\displaystyle G\mapsto \mathbb {C} _{G}}
+  
+ of taking group algebra 
+  
+    
+      
+        
+          
+            C
+          
+          
+            G
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} _{G}}
+  
+ (over 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+) into the category of finite dimensional Hopf algebras, so that the Pontryagin duality functor 
+  
+    
+      
+        G
+        ↦
+        
+          
+            
+              G
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle G\mapsto {\widehat {G}}}
+  
+ turns into the operation 
+  
+    
+      
+        H
+        ↦
+        
+          H
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle H\mapsto H^{*}}
+  
+ of taking the dual vector space (which is a duality functor in the category of finite dimensional Hopf algebras).
+In 1973 Leonid I. Vainerman, George I. Kac, Michel Enock, and Jean-Marie Schwartz built a general theory of this type for all locally compact groups. From the 1980s the research in this area was resumed after the discovery of quantum groups, to which the constructed theories began to be actively transferred. These theories are formulated in the language of C*-algebras, or Von Neumann algebras, and one of its variants is the recent theory of locally compact quantum groups.
+One of the drawbacks of these general theories, however, is that in them the objects generalizing the concept of a group are not Hopf algebras in the usual algebraic sense. This deficiency can be corrected (for some classes of groups) within the framework of duality theories constructed on the basis of the notion of envelope of topological algebra.
+
+
+== See also ==
+Peter–Weyl theorem
+Cartier duality
+Stereotype space
+
+
+== Notes ==
+
+
+== Citations ==
+
+
+== References ==
+Akbarov, S.S. (2003). "Pontryagin duality in the theory of topological vector spaces and in topological algebra". Journal of Mathematical Sciences. 113 (2): 179–349. doi:10.1023/A:1020929201133. S2CID 115297067.
+Akbarov, Sergei S.; Shavgulidze, Evgeniy T. (2003). "On two classes of spaces reflexive in the sense of Pontryagin". Matematicheskii Sbornik. 194 (10): 3–26.
+Akbarov, Sergei S. (2009). "Holomorphic functions of exponential type and duality for Stein groups with algebraic connected component of identity". Journal of Mathematical Sciences. 162 (4): 459–586. arXiv:0806.3205. doi:10.1007/s10958-009-9646-1. S2CID 115153766.
+Akbarov, Sergei S. (2017a). "Continuous and smooth envelopes of topological algebras. Part 1". Journal of Mathematical Sciences. 227 (5): 531–668. arXiv:1303.2424. doi:10.1007/s10958-017-3599-6. MR 3790317. S2CID 126018582.
+Akbarov, Sergei S. (2017b). "Continuous and smooth envelopes of topological algebras. Part 2". Journal of Mathematical Sciences. 227 (6): 669–789. arXiv:1303.2424. doi:10.1007/s10958-017-3600-4. MR 3796205. S2CID 128246373.
+Brauner, Kalman (1973). "Duals of Fréchet spaces and a generalization of the Banach–Dieudonné theorem". Duke Mathematical Journal. 40 (4): 845–855. doi:10.1215/S0012-7094-73-04078-7.
+Brudovskiĭ, B. S. (1967). "On k- and c-reflexivity of locally convex vector spaces". Lithuanian Mathematical Journal. 7 (1): 17–21. doi:10.15388/LMJ.1967.19927.
+Dixmier, Jacques (1969). Les C*-algèbres et leurs Représentations. Gauthier-Villars. ISBN 978-2-87647-013-2.
+Enock, Michel; Schwartz, Jean-Marie (1992). Kac Algebras and Duality of Locally Compact Groups. With a preface by Alain Connes. With a postface by Adrian Ocneanu. Berlin: Springer-Verlag. doi:10.1007/978-3-662-02813-1. ISBN 978-3-540-54745-7. MR 1215933.
+Hewitt, Edwin; Ross, Kenneth A. (1963). Abstract Harmonic Analysis. Vol. I: Structure of topological groups. Integration theory, group representations. Die Grundlehren der mathematischen Wissenschaften. Vol. 115. Berlin-Göttingen-Heidelberg: Springer-Verlag. ISBN 978-0-387-94190-5. MR 0156915.
+Hewitt, Edwin; Ross, Kenneth A. (1970). Abstract Harmonic Analysis. Vol. 2. Springer. ISBN 978-3-662-24595-8. MR 0262773.
+Kirillov, Alexandre A. (1976) [1972]. Elements of the theory of representations. Grundlehren der Mathematischen Wissenschaften. Vol. 220. Berlin, New York: Springer-Verlag. ISBN 978-0-387-07476-4. MR 0412321.
+Loomis, Lynn H. (1953). An Introduction to Abstract Harmonic Analysis. D. van Nostrand Co. ISBN 978-0486481234.
+Morris, S.A. (1977). Pontryagin duality and the structure of locally compact Abelian groups. Cambridge University Press. ISBN 978-0521215435.
+Onishchik, A.L. (1984), "Pontrjagin duality", Encyclopedia of Mathematics, 4: 481–482, ISBN 978-1402006098
+Reiter, Hans (1968). Classical Harmonic Analysis and Locally Compact Groups. Clarendon Press. ISBN 978-0198511892.
+Rudin, Walter (1962). Fourier Analysis on Groups. D. van Nostrand Co. ISBN 978-0471523642.
+Timmermann, T. (2008). An Invitation to Quantum Groups and Duality - From Hopf Algebras to Multiplicative Unitaries and Beyond. EMS Textbooks in Mathematics, European Mathematical Society. ISBN 978-3-03719-043-2.
+Kustermans, J.; Vaes, S. (2000). "Locally Compact Quantum Groups". Annales Scientifiques de l'École Normale Supérieure. 33 (6): 837–934. doi:10.1016/s0012-9593(00)01055-7.
+Ardanza-Trevijano, Sergio; Chasco, María Jesús (2005). "The Pontryagin duality of sequential limits of topological Abelian groups". Journal of Pure and Applied Algebra. 202 (1–3): 11–21. doi:10.1016/j.jpaa.2005.02.006. hdl:10171/1586. MR 2163398.
+Chasco, María Jesús; Dikranjan, Dikran; Martín-Peinador, Elena (2012). "A survey on reflexivity of abelian topological groups". Topology and Its Applications. 159 (9): 2290–2309. doi:10.1016/j.topol.2012.04.012. MR 2921819.
+Kaplan, Samuel (1948). "Extensions of the Pontrjagin duality. Part I: infinite products". Duke Mathematical Journal. 15: 649–658. doi:10.1215/S0012-7094-48-01557-9. MR 0026999.
+Kaplan, Samuel (1950). "Extensions of the Pontrjagin duality. Part II: direct and inverse limits". Duke Mathematical Journal. 17: 419–435. doi:10.1215/S0012-7094-50-01737-6. MR 0049906.
+Venkataraman, Rangachari (1975). "Extensions of Pontryagin Duality". Mathematische Zeitschrift. 143 (2): 105–112. doi:10.1007/BF01187051. S2CID 123627326.
+Martín-Peinador, Elena (1995). "A reflexible admissible topological group must be locally compact". Proceedings of the American Mathematical Society. 123 (11): 3563–3566. doi:10.2307/2161108. hdl:10338.dmlcz/127641. JSTOR 2161108.
+Roeder, David W. (1974). "Category theory applied to Pontryagin duality". Pacific Journal of Mathematics. 52 (2): 519–527. doi:10.2140/pjm.1974.52.519.
+Smith, Marianne F. (1952). "The Pontrjagin duality theorem in linear spaces". Annals of Mathematics. 56 (2): 248–253. doi:10.2307/1969798. JSTOR 1969798. MR 0049479.
+Waterhouse, William C. (1968). "Dual groups of vector spaces". Pacific Journal of Mathematics. 26 (1): 193–196. doi:10.2140/pjm.1968.26.193.

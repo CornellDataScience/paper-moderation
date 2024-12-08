@@ -1,0 +1,43 @@
+Automatic equipment identification (AEI) is an electronic recognition system in use with the North American railroad industry. Consisting of passive tags mounted on each side of rolling stock and active trackside readers, AEI uses RF technology to identify railroad equipment while en route.
+
+
+== History ==
+
+
+=== Predecessor systems ===
+In the late 1960s, railroads in North America began searching for a system that would allow them to automatically identify rail cars and other rolling stock. Through the efforts of the Association of American Railroads (AAR), a number of companies developed automatic car identification (ACI) systems. The AAR selected four systems for extensive field tests. General Electric developed an RFID system, ABEX a microwave system, Wabco a black and white barcode system, and General Telephone and Electronics (GTE) a color barcode system called KarTrak. The RFID system used a tag mounted under the rail car and an interrogator installed between the rails. The other three systems had labels that were mounted on each side of the rail car and a trackside scanner.
+
+After the initial field tests, the ABEX, Wabco, and the GTE KarTrak ACI systems were selected for a head-to-head accuracy test on the Pennsylvania Railroad, at Spruce Creek PA. The KarTrak system was declared the winner and selected by the AAR as the standard.
+
+The KarTrak system was abandoned by the late 1970s. Following this failure, the railroad industry did not seriously search for another system to identify rail cars until the mid-1980s.
+
+
+=== Development ===
+
+Burlington Northern was the first railroad in North America to renew the search for an effective identification system. BN had been closely following the efforts of various maritime shipping companies, such as American President Lines, in their efforts to find a system to automatically identify containers. Based on the maritime companies' success with RF-based identification systems, Burlington Northern began a testing program in 1986.
+Burlington Northern initially asked nine vendors to present their identification systems. From this group of nine, Burlington Northern selected two systems for full-scale testing. The two vendors selected were General Railway Signal (GRS) and Union Switch & Signal (US&S). The US&S system is manufactured by Amtech Corporation of Dallas, Texas.
+In January 1988, Burlington Northern equipped 1,500 taconite (iron ore pellets) rail cars in northern Minnesota each with a GRS and an Amtech transponder. Each vendor also installed three wayside reader sites. All tags were mounted on the sides of the rail cars.
+In August 1988, the Burlington Northern Railroad presented a report on the results of their testing at the AAR Communication and Signal Annual Meeting. They stated that the accuracy of both systems over a six-month period was in excess of 99.99%. Based on the spectacular results from both systems, the Burlington Northern asked the AAR to form a committee to write an AEI standard for the North American rail industry, and suggested that the AAR use the current draft ISO standard for container identification as a starting point.
+A committee was formed by the AAR, charged with the development of an AEI standard. Railroads such as Norfolk Southern Railway, Union Pacific Railroad, CSX Transportation and Canadian National Railway began their own testing programs and reported the results to the AAR's AEI Committee.
+In August 1989, the AAR informed various identification system vendors that Amtech's identification technology had been selected as the AEI standard.
+By the fall of 1989, the AAR's AEI Committee had selected a technology and defined the tag's data format. The only major question still unresolved was whether to place tags on the sides of the rail cars or underneath, each approach having advantages and disadvantages in cost and maintainability. It was finally decided by the AEI Committee in the summer of 1990 that a tag would be mounted on each side of each car.
+
+In July 1990, the AAR Committee on Car Service sent a resolution to the O-T General Committee of the AAR to set a mandatory implementation date when all rail cars in interchange service would be tagged. The O-T General Committee is the highest operating committee within the AAR. The O-T General Committee requested that the AEI Committee perform a cost/benefit analysis on mandatory AEI implementation and recommend an implementation schedule. In October 1990, the O-T General Committee approved the recommended AEI voluntary standard.
+With these recommendations, in August 1991, the O-T General Committee of the Association of American Railroads voted to make the AEI standard mandatory. The mandatory vote was ratified by the AAR Board of Directors at their meeting in September 1991. The mandatory period started on 1 March 1992, and ended on 31 December 1994. By the end of this period all 1.4 million rail cars in North American interchange service were to be tagged.
+As part of the AAR's adoption of a standard based on Amtech technology, AAR required that Amtech license that technology. At the time of the AAR's 1991 mandate, six vendors sold AEI site equipment. Those vendors were US&S, Safetran, Harmon, VideoMasters, CCTC International in partnership with IBM, and Southern Technologies.  As of August 2007, only two of these vendors remain, SAIC (formerly Video Masters), now owned by Comet Industries, as of 2007 and Southern Technologies.
+
+
+== Usage ==
+As of 31 December 1994, Amtech had shipped over 3.1 million tags to railways in North America. The AAR reported that over 95% of the North American rail car fleet was tagged. Over 3,000 readers have been installed by the railways in North America as of the end of 2000. Amtech was bought by TransCore. TransCore is today the most important producer of RFID tags for rail in the world.
+The AAR's S-918 specifications outline ten recommended frequencies ranging from 902.250 to 921.500 MHz, depending on the location of the reading device (in a yard or trackside), with a nominal transmitting power of 2.0 watts (measured at the transmitter).
+
+
+== References ==
+Keith Thompson (May 1, 2006). "AEI data tags and readers". TRAINS Magazine. www.trains.com. Retrieved 2016-04-18.
+
+
+== External links ==
+ACI A description of the earlier ACI barcode system
+Intertech Rail
+Transcore
+Epix

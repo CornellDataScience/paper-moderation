@@ -1,0 +1,360 @@
+In mathematics, Serre's multiplicity conjectures, named after Jean-Pierre Serre, are certain problems in commutative algebra, motivated by the needs of algebraic geometry. Since André Weil's initial definition of intersection numbers, around 1949, there had been a question of how to provide a more flexible and computable theory, which Serre sought to address. In 1958, Serre realized that classical algebraic-geometric ideas of multiplicity could be generalized using the concepts of homological algebra.
+Let R be a Noetherian, commutative, regular local ring and let P and Q be prime ideals of R. Serre defined the intersection multiplicity of R/P and R/Q by means of their Tor functors. Below, 
+  
+    
+      
+        
+          ℓ
+          
+            R
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle \ell _{R}(M)}
+  
+ denotes the length of the module 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+, and we assume for the remainder of the article that 
+
+  
+    
+      
+        
+          ℓ
+          
+            R
+          
+        
+        (
+        (
+        R
+        
+          /
+        
+        P
+        )
+        
+          ⊗
+          
+            R
+          
+        
+        (
+        R
+        
+          /
+        
+        Q
+        )
+        )
+        <
+        ∞
+        .
+      
+    
+    {\displaystyle \ell _{R}((R/P)\otimes _{R}(R/Q))<\infty .}
+  
+
+Serre defined the intersection multiplicity of R/P and R/Q by the Euler characteristic-like formula:
+
+  
+    
+      
+        χ
+        (
+        R
+        
+          /
+        
+        P
+        ,
+        R
+        
+          /
+        
+        Q
+        )
+        :=
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            ∞
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            i
+          
+        
+        
+          ℓ
+          
+            R
+          
+        
+        (
+        
+          Tor
+          
+            i
+          
+          
+            R
+          
+        
+        ⁡
+        (
+        R
+        
+          /
+        
+        P
+        ,
+        R
+        
+          /
+        
+        Q
+        )
+        )
+        .
+      
+    
+    {\displaystyle \chi (R/P,R/Q):=\sum _{i=0}^{\infty }(-1)^{i}\ell _{R}(\operatorname {Tor} _{i}^{R}(R/P,R/Q)).}
+  
+
+In order for this definition to provide a good generalization of the classical intersection multiplicity, one would want that certain classical relationships would continue to hold. Serre singled out four important properties, which became the multiplicity conjectures, and are challenging to prove in the general case. (The statements of these conjectures can be generalized so that R/P and R/Q are replaced by arbitrary finitely generated modules: see Serre's Local Algebra for more details.)
+
+
+== Dimension inequality ==
+
+  
+    
+      
+        dim
+        ⁡
+        (
+        R
+        
+          /
+        
+        P
+        )
+        +
+        dim
+        ⁡
+        (
+        R
+        
+          /
+        
+        Q
+        )
+        ≤
+        dim
+        ⁡
+        (
+        R
+        )
+      
+    
+    {\displaystyle \dim(R/P)+\dim(R/Q)\leq \dim(R)}
+  
+
+Serre proved this for all regular local rings. He established the following three properties when R is either of equal characteristic or of mixed characteristic and unramified (which in this case means that characteristic of the residue field is not an element of the square of the maximal ideal of the local ring), and conjectured that they hold in general.
+
+
+== Nonnegativity ==
+
+  
+    
+      
+        χ
+        (
+        R
+        
+          /
+        
+        P
+        ,
+        R
+        
+          /
+        
+        Q
+        )
+        ≥
+        0
+      
+    
+    {\displaystyle \chi (R/P,R/Q)\geq 0}
+  
+
+This was proven by Ofer Gabber in 1995.
+
+
+== Vanishing ==
+If
+
+  
+    
+      
+        dim
+        ⁡
+        (
+        R
+        
+          /
+        
+        P
+        )
+        +
+        dim
+        ⁡
+        (
+        R
+        
+          /
+        
+        Q
+        )
+        <
+        dim
+        ⁡
+        (
+        R
+        )
+         
+      
+    
+    {\displaystyle \dim(R/P)+\dim(R/Q)<\dim(R)\ }
+  
+
+then
+
+  
+    
+      
+        χ
+        (
+        R
+        
+          /
+        
+        P
+        ,
+        R
+        
+          /
+        
+        Q
+        )
+        =
+        0.
+         
+      
+    
+    {\displaystyle \chi (R/P,R/Q)=0.\ }
+  
+
+This was proven in 1985 by Paul C. Roberts, and independently by Henri Gillet and Christophe Soulé.
+
+
+== Positivity ==
+If
+
+  
+    
+      
+        dim
+        ⁡
+        (
+        R
+        
+          /
+        
+        P
+        )
+        +
+        dim
+        ⁡
+        (
+        R
+        
+          /
+        
+        Q
+        )
+        =
+        dim
+        ⁡
+        (
+        R
+        )
+         
+      
+    
+    {\displaystyle \dim(R/P)+\dim(R/Q)=\dim(R)\ }
+  
+
+then
+
+  
+    
+      
+        χ
+        (
+        R
+        
+          /
+        
+        P
+        ,
+        R
+        
+          /
+        
+        Q
+        )
+        >
+        0.
+         
+      
+    
+    {\displaystyle \chi (R/P,R/Q)>0.\ }
+  
+
+This remains open.
+
+
+== See also ==
+Homological conjectures in commutative algebra
+
+
+== References ==
+Serre, Jean-Pierre (2000), Local algebra, Springer Monographs in Mathematics, Berlin: Springer, pp. 106–110, doi:10.1007/978-3-662-04203-8, ISBN 978-3-642-08590-1, MR 1771925
+Roberts, Paul (1985), "The vanishing of intersection multiplicities of perfect complexes", Bulletin of the American Mathematical Society, 13 (2), Bull. Amer. Math. Soc. 13, no. 2: 127–130, doi:10.1090/S0273-0979-1985-15394-7, MR 0799793
+Roberts, Paul (1998), Recent developments on Serre's multiplicity conjectures: Gabber's proof of the nonnegativity conjecture, L' Enseign. Math. (2) 44, no. 3-4, pp. 305–324, MR 1659224
+Berthelot, Pierre (1997), Altérations de variétés algébriques (d'après A. J. de Jong), Séminaire Bourbaki, Vol. 1995/96, Astérisque No. 241, pp. 273–311, MR 1472543
+Gillet, H.; Soulé, C. (1987), "Intersection theory using Adams operations.", Inventiones Mathematicae, 90 (2), Invent. Math. 90, no. 2: 243–277, Bibcode:1987InMat..90..243G, doi:10.1007/BF01388705, MR 0910201, S2CID 120635826
+Gabber, O. (1995), Non-negativity of serre's intersection multiplicities, Exposé à L’IHES

@@ -1,0 +1,54 @@
+The metre (or meter) sea water (msw) is a metric unit of pressure used in underwater diving. It is defined as one tenth of a bar.
+The unit used in the US is the foot sea water (fsw), based on standard gravity and a sea-water density of 64 lb/ft3. According to the US Navy Diving Manual, one fsw equals 0.30643 msw, 0.030643 bar, or 0.44444 psi, though elsewhere it states that 33 fsw is 14.7 psi (one atmosphere), which gives one fsw equal to about 0.445 psi.
+The msw and fsw are the conventional units for measurement of diver pressure exposure used in decompression tables and the unit of calibration for pneumofathometers and hyperbaric chamber pressure gauges.
+
+
+== Feet of sea water ==
+One atmosphere is approximately equal to 33 feet of sea water or 14.7 psi, which gives 4.9/11 or about 0.445 psi per foot. Atmospheric pressure may be considered constant at sea level, and minor fluctuations caused by the weather are usually ignored. Pressures measured in fsw and msw are gauge pressure, relative to the surface pressure of 1 atm absolute, except when a pressure difference is measured between the locks of a hyperbaric chamber, which is also generally measured in fsw and msw.
+The pressure of seawater at a depth of 33 feet equals one atmosphere. The absolute pressure at 33 feet depth in sea water is the sum of atmospheric and hydrostatic pressure for that depth, and is 66 fsw, or two atmospheres absolute.  For every additional 33 feet of depth, another atmosphere of pressure accumulates. Therefore at the surface the gauge pressure of 0 fsw is equivalent to an absolute pressure of 1 standard atmosphere (14.7 psi), and the gauge pressure in fsw at any depth is incremented by 1 ata to provide absolute pressure. (Pressure in ata = Depth in feet/33 + 1) 
+
+
+== Usage ==
+
+In diving the absolute pressure is used in most computations, particularly for decompression and breathing gas consumption but depth is measured by way of hydrostatic pressure. In metric units the ambient pressure is usually measured in metres sea water (msw), and converted to bar for calculations. In US customary units ambient pressure is normally measured in feet of sea water (fsw), and converted to atmospheres absolute or pounds per square inch absolute (psia) for decompression computation. Feet and metres sea water are convenient measures which approximate closely to depth and are intuitively simple to grasp for the diver, compared to the options of more conventional units of pressure which give no direct indication of depth. The distinction between gauge and absolute pressure is important for calculation of gas properties and pressure must be identified as either gauge or absolute. Gauge pressure in msw or fsw is converted to absolute pressure in bar or atm for decompression and gas consumption calculation, but decompression tables are usually provided ready for use directly with the gauge pressure in msw and fsw. Depth gauges and dive computers with readouts calibrated in feet and metres are actually displaying a pressure measurement, usually in feet or metres sea water, as most diving is done in the sea. If ambient pressure in fresh water and hyperbaric chambers is measured in feet and metres sea water, the same decompression algorithms and tables can be used, which eliminates the need to use calibration factors when diving in these environments.
+
+
+== Conversions ==
+In the metric system, a pressure of 10 msw is defined as 1 bar. Pressure conversion between msw and fsw is slightly different from length conversion between metres and feet; 10 msw = 32.6336 fsw and 10 m = 32.8083 ft.
+The US Navy Diving Manual gives conversion factors for "fw" (feet water) based on a fresh water density of 62.4 lb/ft3 and for fsw based on a sea water density of 64.0 lb/ft3.
+One standard metre sea water equals:
+
+3.26336 fsw
+102.018 cmH2O at 15 °C
+0.1 bar by definition
+10.0 kPa, in SI units
+100000 Ba, in cgs units
+One standard metre sea water is also approximately equal to:
+
+0.0986923 atm
+1.45038 psi
+75.0062 mmHg
+75.0062 Torr
+2.95299 inHg
+One standard foot sea water is approximately equal to:
+
+0.30643 msw
+3.0643 kPa, in SI units
+30643 Ba, in cgs units
+0.030242 atm
+0.44444 psi
+22.984 mmHg
+22.984 Torr
+0.904884 inHg
+31.24616 cmH2O
+
+
+== Similar units ==
+Feet fresh water (ffw) or Feet water (fw), equivalent to 1/34 atm.
+
+
+== References ==
+
+
+=== Sources ===
+US Navy (1 December 2016). U.S. Navy Diving Manual Revision 7 SS521-AG-PRO-010 0910-LP-115-1921 (PDF). Washington, DC.: US Naval Sea Systems Command. Archived (PDF) from the original on December 28, 2016.

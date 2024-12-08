@@ -1,0 +1,59 @@
+The Arca Musarithmica (also Arca Musurgia or Musical Ark) is an information device that was invented by Jesuit scholar Athanasius Kircher in the mid 17th century.   Its purpose was to enable non musicians to compose church music.  Through simple combinatoric techniques it is capable of producing millions of pieces of 4-part polyphonic music.  Like other calculating aids of the period, the Arca prefigures modern computing technology.  It is among the earliest examples of "Artificial Creativity".  The device anticipates aleatoric and computer compositional techniques of the 20th century (such as the "chance music" of John Cage), and can be thought of as a kind of music composition algorithm in physical form.
+
+
+== Description and mechanism ==
+
+Mechanical music-making is nothing more than a particular system invented by us whereby anyone, even the ἀμουσος [unmusical] may, through various applications of compositional instruments compose melodies according to a desired style. We shall briefly relate how this mechanical music-making is done and, lest we waste time with prefatory remarks, we shall begin with the construction of the Musarithmic Ark.
+The arca is a box containing a set of wooden rods or slats (or "tariffa" as Kircher called them).  Each slat contains a set of numbers, which correspond to notes in a scale or mode,  as well as an assortment of rhythmic treatments for those notes.  
+There are different sets of slats which contain musical phrases expressed in a variety of poetic meters (“Euripedaean”, “Anancreonic”, “Archilochan”, “Sapphic” and so on).  Some of the rods are used for counterpoint in the "simple style" (or first-species counterpoint) in which all 4 parts have the same rhythm, and others are used for what Kircher calls the "florid style" (or fifth-species counterpoint), in which the 4 voices move independently.
+
+
+== History ==
+Kircher first described the Arca in his book "Musurgia Universalis" (1650).  Book 8 of this work (Musurgia Mirifica) is a longer treatise on using combinatoric techniques to construct music.  Like the previous writings of Marin Mersenne, this work utilizes the ideas of Ramon Llull to show how a small amount of musical material can be combined to produce a prodigious number of melodies.  Kircher goes on to describe the Arca itself, which employs this technique, and includes a fold-out illustration of the device as well as a tables indicating the content of all the rods contained inside.
+
+
+== Similar devices ==
+The Arca was followed by, and closely related to, another Kircher invention, the Organum Mathematicum, described by Kircher's pupil Gaspar Schott.  The Organum is a similar kind of cabinet which can perform more general calculations (arithmetical, astronomical, and so on), in addition to creating music compositions.  The musical portion of the Organum Mathematicum is essentially the same as the Arca, although there are fewer rods.
+
+
+== Surviving models ==
+There are very few Arcas which date from the Baroque period.  The known surviving ones are listed here.
+
+
+=== Pepys Library, Magdalene College, Cambridge ===
+Samual Pepys described purchasing a copy of Kircher's Musurgia Universalis in his famous diary.
+
+Up, and by coach through Ducke Lane, and there did buy Kircher’s Musurgia, cost me 35s., a book I am mighty glad of, expecting to find great satisfaction in it.
+Years later, his belongings, bequeathed to Cambridge, included an Arca. It is unclear if Pepys constructed or commissioned this, based on the instructions in the book, or if he purchased it or received it as a gift.  His diary makes no mention of it (he stopped recording entries in 1669).  It has been speculated that Pepy's music teacher John Birchensha was influenced by Kircher's combinatorial techniques, as his own "Rules of Composition" bear some similarities.  The Pepysian library does not currently keep their Arca out on display, and there are few photographs available of its contents.
+
+
+=== Herzog August Library, Wolfenbüttel, Germany ===
+This arca has been extensively photographed.  A complete set of photos of its contents have been made and are available from the University of Würzburg.  The handwriting on its rods resembles the handwriting in the plates in Musurgia Universalis, although there are a few differences in transcription.
+
+
+=== Braunschweig, Germany ===
+Photographs of this arca were sent to David Levy for his book "Robots Unlimited".  It appears different, in construction, from the Wolfenbuttel arca.
+There are likely a few other Arcas in existence, but they are not well documented.
+
+
+=== National Library of Florence, Italy ===
+A fourth item of the arca has been found in the National Library of Florence.
+
+
+== Reconstructions and simulations ==
+Jim Bumgardner has created a data transcription and software simulation of the algorithms employed by the Arca which produces both MIDI files as well as PDF scores.  The data was transcribed from the tables in Musurgia Universalis, the illustrations in "Organum Mathematicum", and photographs of the Wolfenbüttel Arca.
+A digital implementation of Kircher's 'Arca musarithmica' by Andrew A. Cashner, 2023.
+
+
+== Literature ==
+Levy, David: Robots Unlimited - Life in a virtual Age, A.K. Peters, 2006
+Boni, Erik: L'arca musurgica di Athanasius Kircher alla Biblioteca nazionale centrale di Firenze, from Accademie & biblioteche d'Italia, 15, 2020.
+Bohnert, Agnes Cäcilie: Die arca musarithmica Athanasius Kirchers (Musikwissenschaft an der Technischen Universität Berlin, Bd. 10). Mensch und Buch Verlag: Berlin 2010. ISBN 978-3866647954.
+
+
+== References ==
+
+Kircher, Athanasius: Musurgia Universalis, 1650
+Schott, Gaspar: Organum Mathematicum, 1668
+Bumgardner, Jim: Kircher’s Mechanical Composer: A Software Implementation, from Proceedings of Bridges 2009: Mathematics, Music, Art, Architecture, Culture, 2009
+[2] Birchensha, John: Writings on Music] Field and Wardhaugh, editors, 2010

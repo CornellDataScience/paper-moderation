@@ -1,0 +1,163 @@
+A  bare noun is a noun that is used without a surface determiner or quantifier. In natural languages, the distribution of bare nouns is subject to various language-specific constraints. Under the DP hypothesis a noun in an argument position must have a determiner or quantifier that introduces the noun, warranting special treatment of the bare nouns that seemingly contradict this. As a result, bare nouns have attracted extensive study in the fields of both semantics and syntax.
+In English, vocatives and mass nouns are felicitous in any position in which they semantically make sense. Bare plurals are usually restricted to outside predicate positions, though exceptions to this do arise ("the reason is uncommon sentences").
+
+
+== Theoretical significance of bare nouns ==
+
+
+=== Bare nouns and the semantic analysis of quantification ===
+Bare nouns, especially bare plurals, have significant implications on the theory of quantification in semantics. Consider the following examples:
+
+     (1) Cats are animals.
+     (2) Cats like fish.
+     (3) Cats are everywhere.
+     (4) Cats are common.
+
+Example (1) takes a universal reading: the sentence is true for all cats, and so can be paraphrased as All cats are animals (1'). Example (2) is a general statement that holds for most cats; it can be paraphrased as Most cats like fish (2'). Example (3) is a statement that holds of some cats; it can be paraphrased as There are some cats everywhere (3'). Example (4) is a statement that refers to the cat species as a whole; in other words, The cat species is common (4'); even though that there is no single individual cat that has the attribute of being common.
+
+     (1') All cats are animals.
+     (2') Most cats like fish.
+     (3') There are some cats everywhere.
+     (4') The cat species is common.
+
+
+==== Null quantifier analysis ====
+Under the naïve hypothesis that there exist phonologically null quantifiers (annotated as [QSubscript 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+]), then each of the examples in (1) through (4) would be represented as follows:
+
+     (1) [Q.ALL 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+] cats are animals.
+     (2) [Q.MOST 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+] cats like fish.
+     (3) [Q.SOME 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+] cats are everywhere.
+     (4) [Q.SPECIES 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+] cats are common.
+
+It must immediately be reconciled that there can be any number of meanings to the null component. Additionally, the interpretation of each sentence is unambiguous, despite the choice of multiple well-formed quantifiers:
+
+     (2a)  All cats like fish.
+     (2b) Some cats like fish.
+
+The sentence in (3) poses an even greater problem, as the explicit meaning should be:
+
+     (3a) Some cats are everywhere.
+
+This, however, takes an entirely different scope from (3). As in (3a) a necessarily distinct set of cats is everywhere in the domain of discourse, whereas in (3) the set at each place is not necessarily unique. Finally (4) seems to completely resist traditional quantificational analysis, acting on the entire set of objects, not on any individual member.
+Several theories have been put forth to explain this discrepancy. These involve treating bare plurals as plural indefinites, or as a separate class of objects referred to as kinds.
+
+
+==== Kind-denoting analysis: Carlson 1977 ====
+One explanation put forth by Gregory N. Carlson is the treatment of bare plurals as names of a semantic type called "kinds" that is distinct from typical individuals. 
+ With individuals being the topic of traditional semantic discourse, kinds represent the "sort" of individual. "A dog" is an indefinite instantiation of the kind "dogs", "the man" is a definite instantiation of the kind "men". This suffices to explain all of the above sentences except (3), as each are true in a possible world if and only if the ascribed attribute is a property of the kind inputted into the predicate. For example, (4) is true if and only if the kind "cats" possess the attribute "common" in the domain of discourse. The perceived difference in what level of generic quantification applies is then a pragmatic property of the predicate, determined by what is perceived to be necessary for the statement to hold true.
+In order for the existential readings in sentences like (3) to hold, another semantic object is defined called "stages". These represent locations in time and space, and are created to reconcile the fact that sentences like (3) only hold true if there exists a specific spatio-temporal place in which the predicate applies. This contrasts with kinds possessing an attribute determined by the predicate. So "cats are everywhere" holds true if and only if a stage exists of individuals of the kind "cat" who are everywhere relevant in the domain of discourse. Crucially, it is not the case that "cats" as a kind possess the property of being "everywhere". This creates an ontological distinction between the two predicate types, i(ndividual)-level and s(tage)-level.
+
+
+=== Syntax ===
+Bare nouns are of great interest in the field of syntax, as their existence must be reconciled with the hypothesis that all noun phrases in argument positions must be embedded in a determiner phrase. An approach to explain the case of bare plurals is to employ the empty category principle. Consider the Spanish sentences:
+
+Under government and binding theory, the verb "quiero" properly governs "tortillas". On the other hand, no governor of "Los esclavos" is found in (6). This makes eliding "Los" from (6) infelicitous, and the resulting sentence ungrammatical. This analysis excludes bare plurals from the subject and indirect object positions, which is mainly representative of sentences in Spanish and Italian (though further restrictions apply in much the same way indefinite nouns are treated in both languages). To explain English's lack of restrictions on placement of bare plurals, a more general treatment of bare nouns is employed. Consider the Italian sentence:
+
+In the Italian reading, the proper noun "John" comes before the adjective "vecchio". This is noteworthy, as it contrasts with phrases in which a determiner is present, "il vecchio cane" directly translating to "the old dog". This is taken as evidence that in Italian and Spanish, an overt movement of the noun phrase "John" to the determiner head is undergone. In English, this would take place "covertly", i.e. at the logical form level. This allows the empty category restriction to be fulfilled in the logical form in English. In Italian or Spanish, if an empty category is not governed in the overt syntax then the sentence will remain ungrammatical.
+A further distinction exists from languages like Chinese or Japanese which allow bare nouns in any position of a sentence, and languages like Modern French which allow bare nouns in no positions. These can be interpreted as having different constraints on what constitutes an argument. Research into this field is still active, however, and no widespread consensus has been reached.
+
+
+== Bare nouns in specific languages ==
+
+
+=== English bare nouns ===
+
+
+==== English bare singulars ====
+Bare singulars are a form of count noun. Bare singulars cannot appear as arguments to a verb, as opposed to bare plurals and bare mass nouns. Bare singulars in English are comparatively rare in respect to other languages, however they exist in constricted constructions. They may appear in predication, the object position of particular verbs, prepositions, coordination, and reduplications.
+The most common of which are bare locations, which occur with nouns that reference certain spaces:
+
+John is at sea. (geographical locations)
+Mary is at church. (social locations)
+Mary is on television. (media locations)
+Other constructions are more rare but exist in English:
+
+John ate with knife and fork. (bare coordination)
+Mary is head of the department. (bare predication)
+John was cheek to cheek with Mary. (bare reduplication)
+Mary plays piano well. (bare incorporation)
+
+
+==== English bare plurals ====
+Bare plurals are count nouns, and can appear in argument position freely. For example:
+
+The dog barked. (Singular noun in argument position with determiner)
+*Dog barked. (Singular noun without a determiner, ungrammatical)
+Dogs barked. (Bare plural count noun without a determiner)
+
+
+==== English bare mass nouns ====
+Mass nouns are uncountable, i.e. no number can be assigned to them. In English, the difference between mass nouns and count nouns is distinct, contrary to other languages where the mass vs count distinctions may be neutralized. In Gennaro Chierchia's theory, mass nouns are inherently plural. 
+
+Water is good. (mass noun as verb argument)
+This is water. (mass noun as predicate)
+
+
+=== French coordinated bare nouns ===
+Bare-nouns in argument positions in French are almost universally infelicitous, though not entirely non-existent. They are available in very specific constructions, such as idiomatic expressions, and coordination:
+Examples of bare nouns in N-et-N construction:
+
+Dans cette classe, garçons et filles sont intelligents. (Coordinated bare plurals)
+"In that class, boys and girls are intelligent."
+J'ai rencontré ami et collègue à l'aéroport. (Coordinated bare singulars)
+"I met friend and colleague at the airport."
+
+
+=== Bare nouns in East Asian languages ===
+Mass and count distinctions are said to be neutralized in languages such as Chinese, Japanese, and Korean. The distinction between singular and plural nouns does not exist either:
+
+haksayng-un chayk-ul ilk-ess-ta [Korean]
+"(A) student(s) read (a) book(s)."
+gakusei-wa hon-o yomimashita [Japanese]
+"(A) student(s) read (a) book(s)."
+xue sheng du shu [Chinese]
+"(A) student(s) read (a) book(s)."
+Here, it is illustrated that both "students" and "books" act as bare neutral nouns that can behave as singular, plural, or a mass noun depending on the context. This allows for each sentence to have up to nine interpretations (any pair of three possibilities). This being said, a mass vs count distinction can exist when a classifier is added.
+
+
+== References ==

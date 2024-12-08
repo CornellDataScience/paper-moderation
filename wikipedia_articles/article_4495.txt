@@ -1,0 +1,616 @@
+In mathematics, the Gromov boundary of a δ-hyperbolic space (especially a hyperbolic group) is an abstract concept generalizing the boundary sphere of hyperbolic space. Conceptually, the Gromov boundary is the set of all points at infinity. For instance, the Gromov boundary of the real line is two points, corresponding to positive and negative infinity.
+
+
+== Definition ==
+There are several equivalent definitions of the Gromov boundary of a geodesic and proper δ-hyperbolic space. One of the most common uses equivalence classes of geodesic rays.
+Pick some point 
+  
+    
+      
+        O
+      
+    
+    {\displaystyle O}
+  
+ of a hyperbolic metric space 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ to be the origin. A geodesic ray is a path given by an isometry 
+  
+    
+      
+        γ
+        :
+        [
+        0
+        ,
+        ∞
+        )
+        →
+        X
+      
+    
+    {\displaystyle \gamma :[0,\infty )\rightarrow X}
+  
+ such that each segment 
+  
+    
+      
+        γ
+        (
+        [
+        0
+        ,
+        t
+        ]
+        )
+      
+    
+    {\displaystyle \gamma ([0,t])}
+  
+ is a path of shortest length from 
+  
+    
+      
+        O
+      
+    
+    {\displaystyle O}
+  
+ to 
+  
+    
+      
+        γ
+        (
+        t
+        )
+      
+    
+    {\displaystyle \gamma (t)}
+  
+.
+Two geodesics 
+  
+    
+      
+        
+          γ
+          
+            1
+          
+        
+        ,
+        
+          γ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \gamma _{1},\gamma _{2}}
+  
+ are defined to be equivalent if there is a constant 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+ such that 
+  
+    
+      
+        d
+        (
+        
+          γ
+          
+            1
+          
+        
+        (
+        t
+        )
+        ,
+        
+          γ
+          
+            2
+          
+        
+        (
+        t
+        )
+        )
+        ≤
+        K
+      
+    
+    {\displaystyle d(\gamma _{1}(t),\gamma _{2}(t))\leq K}
+  
+ for all 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+. The equivalence class of 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ is denoted 
+  
+    
+      
+        [
+        γ
+        ]
+      
+    
+    {\displaystyle [\gamma ]}
+  
+.
+The Gromov boundary of a geodesic and proper hyperbolic metric space 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is the set 
+  
+    
+      
+        ∂
+        X
+        =
+        {
+        [
+        γ
+        ]
+        
+          |
+        
+        γ
+      
+    
+    {\displaystyle \partial X=\{[\gamma ]|\gamma }
+  
+ is a geodesic ray in 
+  
+    
+      
+        X
+        }
+      
+    
+    {\displaystyle X\}}
+  
+.
+
+
+=== Topology ===
+It is useful to use the Gromov product of three points. The Gromov product of three points 
+  
+    
+      
+        x
+        ,
+        y
+        ,
+        z
+      
+    
+    {\displaystyle x,y,z}
+  
+ in a metric space is
+
+  
+    
+      
+        (
+        x
+        ,
+        y
+        
+          )
+          
+            z
+          
+        
+        =
+        1
+        
+          /
+        
+        2
+        (
+        d
+        (
+        x
+        ,
+        z
+        )
+        +
+        d
+        (
+        y
+        ,
+        z
+        )
+        −
+        d
+        (
+        x
+        ,
+        y
+        )
+        )
+      
+    
+    {\displaystyle (x,y)_{z}=1/2(d(x,z)+d(y,z)-d(x,y))}
+  
+. In a tree (graph theory), this measures how long the paths from 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ to 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ stay together before diverging. Since hyperbolic spaces are tree-like, the Gromov product measures how long geodesics from 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ to 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ stay close before diverging.
+Given a point 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ in the Gromov boundary, we define the sets 
+  
+    
+      
+        V
+        (
+        p
+        ,
+        r
+        )
+        =
+        {
+        q
+        ∈
+        ∂
+        X
+        
+          |
+        
+      
+    
+    {\displaystyle V(p,r)=\{q\in \partial X|}
+  
+ there are geodesic rays 
+  
+    
+      
+        
+          γ
+          
+            1
+          
+        
+        ,
+        
+          γ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \gamma _{1},\gamma _{2}}
+  
+ with 
+  
+    
+      
+        [
+        
+          γ
+          
+            1
+          
+        
+        ]
+        =
+        p
+        ,
+        [
+        
+          γ
+          
+            2
+          
+        
+        ]
+        =
+        q
+      
+    
+    {\displaystyle [\gamma _{1}]=p,[\gamma _{2}]=q}
+  
+ and 
+  
+    
+      
+        lim
+        
+          inf
+          
+            s
+            ,
+            t
+            →
+            ∞
+          
+        
+        (
+        
+          γ
+          
+            1
+          
+        
+        (
+        s
+        )
+        ,
+        
+          γ
+          
+            2
+          
+        
+        (
+        t
+        )
+        
+          )
+          
+            O
+          
+        
+        ≥
+        r
+        }
+      
+    
+    {\displaystyle \lim \inf _{s,t\rightarrow \infty }(\gamma _{1}(s),\gamma _{2}(t))_{O}\geq r\}}
+  
+. These open sets form a basis for the topology of the Gromov boundary.
+These open sets are just the set of geodesic rays which follow one fixed geodesic ray up to a distance 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ before diverging.
+This topology makes the Gromov boundary into a compact metrizable space.
+The number of ends of a hyperbolic group is the number of components of the Gromov boundary.
+
+
+== Gromov boundary of a group ==
+The Gromov boundary is a quasi-isometry invariant; that is, if two Gromov-hyperbolic metric spaces are quasi-isometric, then the quasi-isometry between them induces a homeomorphism between their boundaries. This is important because homeomorphisms of compact spaces are much easier to understand than quasi-isometries of spaces.
+This invariance allows to define the Gromov boundary of a Gromov-hyperbolic group: if 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is such a group, its Gromov boundary is by definition that of any proper geodesic space space on which 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ acts properly discontinuously and cocompactly (for instance   its Cayley graph). This is well-defined as a topological space by the invariance under quasi-isometry and the Milnor-Schwarz lemma.
+
+
+== Examples ==
+The Gromov boundary of a regular tree of degree d≥3 is a Cantor space.
+The Gromov boundary of hyperbolic n-space is an (n-1)-dimensional sphere.
+The Gromov boundary of the fundamental group of a compact hyperbolic Riemann surface is the unit circle.
+The Gromov boundary of most hyperbolic groups is a Menger sponge.
+
+
+== Variations ==
+
+
+=== Visual boundary of CAT(0) space ===
+For a complete CAT(0) space X, the visual boundary of X, like the Gromov boundary of  δ-hyperbolic space, consists of equivalence class of asymptotic geodesic rays. However, the Gromov product cannot be used to define a topology on it. For example, in the case of a flat plane, any two geodesic rays issuing from a point not heading in opposite directions will have infinite Gromov product with respect to that point. The visual boundary is instead endowed with the cone topology. Fix a point o in X. Any boundary point can be represented by a unique geodesic ray issuing from o. Given a ray 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ issuing from o, and positive numbers t > 0 and r > 0, a neighborhood basis at the boundary point 
+  
+    
+      
+        [
+        γ
+        ]
+      
+    
+    {\displaystyle [\gamma ]}
+  
+ is given by sets of the form
+
+  
+    
+      
+        U
+        (
+        γ
+        ,
+        t
+        ,
+        r
+        )
+        =
+        {
+        [
+        
+          γ
+          
+            1
+          
+        
+        ]
+        ∈
+        ∂
+        X
+        
+          |
+        
+        
+          γ
+          
+            1
+          
+        
+        (
+        0
+        )
+        =
+        o
+        ,
+        d
+        (
+        
+          γ
+          
+            1
+          
+        
+        (
+        t
+        )
+        ,
+        γ
+        (
+        t
+        )
+        )
+        <
+        r
+        }
+        .
+      
+    
+    {\displaystyle U(\gamma ,t,r)=\{[\gamma _{1}]\in \partial X|\gamma _{1}(0)=o,d(\gamma _{1}(t),\gamma (t))<r\}.}
+  
+
+The cone topology as defined above is independent of the choice of o.
+If X is proper, then the visual boundary with the cone topology is compact. When X is both CAT(0) and proper geodesic δ-hyperbolic space, the cone topology coincides with the topology of Gromov boundary.
+
+
+== Cannon's Conjecture ==
+
+Cannon's conjecture concerns the classification of groups with a 2-sphere at infinity:
+Cannon's conjecture: Every Gromov hyperbolic group with a 2-sphere at infinity acts geometrically on hyperbolic 3-space.
+The analog to this conjecture is known to be true for 1-spheres and false for spheres of all dimension greater than 2.
+
+
+== Notes ==
+
+
+== References ==
+Bridson, Martin R.; Haefliger, André (1999), Metric spaces of non-positive curvature, Grundlehren der Mathematischen Wissenschaften, vol. 319, Springer-Verlag, ISBN 3-540-64324-9, MR 1744486
+Cannon, James W. (1994), "The combinatorial Riemann mapping theorem", Acta Mathematica, 173 (2): 155–234, doi:10.1007/bf02398434
+Champetier, C. (1995), "Propriétés statistiques des groupes de presentation finie", Advances in Mathematics, 116: 197–262, doi:10.1006/aima.1995.1067
+Coornaert, M.; Delzant, T.; Papadopoulos, A. (1990), Géométrie et théorie des groupes. Les groupes hyperboliques de Gromov, Lecture Notes in Mathematics (in French), vol. 1441, Springer-Verlag, ISBN 3-540-52977-2
+de la Harpe, Pierre; Ghys, Etienne (1990), Sur les groupes hyperboliques d'après Mikhael Gromov (in French), Birkhäuser
+Gromov, M. (1987), "Hyperbolic groups", in S. Gersten (ed.), Essays in group theory, Math. Sci. Res. Inst. Publ., vol. 8, Springer, pp. 75–263
+Kapovich, Ilya; Benakli, Nadia (2002), "Boundaries of hyperbolic groups", Combinatorial and geometric group theory, Contemporary Mathematics, vol. 296, pp. 39–93
+Roe, John (2003), Lectures on Coarse Geometry, University Lecture Series, vol. 31, American Mathematical Society, ISBN 978-0-8218-3332-2

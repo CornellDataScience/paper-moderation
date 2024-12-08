@@ -1,0 +1,2852 @@
+In computational physics and chemistry, the Hartree–Fock (HF) method is a method of approximation for the determination of the wave function and the energy of a quantum many-body system in a stationary state.
+The Hartree–Fock method often assumes that the exact N-body wave function of the system can be approximated by a single Slater determinant (in the case where the particles are fermions) or by a single permanent (in the case of bosons) of N spin-orbitals. By invoking the variational method, one can derive a set of N-coupled equations for the N spin orbitals. A solution of these equations yields the Hartree–Fock wave function and energy of the system. Hartree–Fock approximation is an instance of mean-field theory, where neglecting higher-order fluctuations in order parameter allows interaction terms to be replaced with quadratic terms, obtaining exactly solvable Hamiltonians.
+Especially in the older literature, the Hartree–Fock method is also called the self-consistent field method (SCF). In deriving what is now called the Hartree equation as an approximate solution of the Schrödinger equation, Hartree required the final field as computed from the charge distribution to be "self-consistent" with the assumed initial field. Thus, self-consistency was a requirement of the solution. The solutions to the non-linear Hartree–Fock equations also behave as if each particle is subjected to the mean field created by all other particles (see the Fock operator below), and hence the terminology continued. The equations are almost universally solved by means of an iterative method, although the fixed-point iteration algorithm does not always converge.
+This solution scheme is not the only one possible and is not an essential feature of the Hartree–Fock method.
+The Hartree–Fock method finds its typical application in the solution of the Schrödinger equation for atoms, molecules, nanostructures and solids but it has also found widespread use in nuclear physics. (See Hartree–Fock–Bogoliubov method for a discussion of its application in nuclear structure theory).  In atomic structure theory, calculations may be for a spectrum with many excited energy levels, and consequently, the Hartree–Fock method for atoms assumes the wave function is a single configuration state function with well-defined quantum numbers and that the energy level is not necessarily the ground state.
+For both atoms and molecules, the Hartree–Fock solution is the central starting point for most methods that describe the many-electron system more accurately.
+The rest of this article will focus on applications in electronic structure theory suitable for molecules with the atom as a special case.
+The discussion here is only for the restricted Hartree–Fock method, where the atom or molecule is a closed-shell system with all orbitals (atomic or molecular) doubly occupied. Open-shell systems, where some of the electrons are not paired, can be dealt with by either the restricted open-shell or the unrestricted Hartree–Fock methods.
+
+
+== Brief history ==
+
+
+=== Early semi-empirical methods ===
+The origin of the Hartree–Fock method dates back to the end of the 1920s, soon after the discovery of the Schrödinger equation in 1926. Douglas Hartree's methods were guided by some earlier, semi-empirical methods of the early 1920s (by E. Fues, R. B. Lindsay, and himself) set in the old quantum theory of Bohr.
+In the Bohr model of the atom, the energy of a state with principal quantum number n is given in atomic units as 
+  
+    
+      
+        E
+        =
+        −
+        1
+        
+          /
+        
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E=-1/n^{2}}
+  
+. It was observed from atomic spectra that the energy levels of many-electron atoms are well described by applying a modified version of Bohr's formula. By introducing the quantum defect d as an empirical parameter, the energy levels of a generic atom were well approximated by the formula 
+  
+    
+      
+        E
+        =
+        −
+        1
+        
+          /
+        
+        (
+        n
+        +
+        d
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E=-1/(n+d)^{2}}
+  
+, in the sense that one could reproduce fairly well the observed transitions levels observed in the X-ray region (for example, see the empirical discussion and derivation in Moseley's law). The existence of a non-zero quantum defect was attributed to electron–electron repulsion, which clearly does not exist in the isolated hydrogen atom. This repulsion resulted in partial screening of the bare nuclear charge. These early researchers later introduced other potentials containing additional empirical parameters with the hope of better reproducing the experimental data.
+
+
+=== Hartree method ===
+
+In 1927, D. R. Hartree introduced a procedure, which he called the self-consistent field method, to calculate approximate wave functions and energies for atoms and ions. Hartree sought to do away with empirical parameters and solve the many-body time-independent Schrödinger equation from fundamental physical principles, i.e., ab initio. His first proposed method of solution became known as the Hartree method, or Hartree product. However, many of Hartree's contemporaries did not understand the physical reasoning behind the Hartree method: it appeared to many people to contain empirical elements, and its connection to the solution of the many-body Schrödinger equation was unclear. However, in 1928 J. C. Slater and J. A. Gaunt independently showed that the Hartree method could be couched on a sounder theoretical basis by applying the variational principle to an ansatz (trial wave function) as a product of single-particle functions.
+In 1930, Slater and V. A. Fock independently pointed out that the Hartree method did not respect the principle of antisymmetry of the wave function.
+ The Hartree method used the Pauli exclusion principle in its older formulation, forbidding the presence of two electrons in the same quantum state. However, this was shown to be fundamentally incomplete in its neglect of quantum statistics.
+
+
+=== Hartree–Fock ===
+A solution to the lack of anti-symmetry in the Hartree method came when it was shown that a Slater determinant, a determinant of one-particle orbitals first used by Heisenberg and Dirac in 1926, trivially satisfies the antisymmetric property of the exact solution and hence is a suitable ansatz for applying the variational principle. The original Hartree method can then be viewed as an approximation to the Hartree–Fock method by neglecting exchange. Fock's original method relied heavily on group theory and was too abstract for contemporary physicists to understand and implement. In 1935, Hartree reformulated the method to be more suitable for the purposes of calculation.
+The Hartree–Fock method, despite its physically more accurate picture, was little used until the advent of electronic computers in the 1950s due to the much greater computational demands over the early Hartree method and empirical models. Initially, both the Hartree method and the Hartree–Fock method were applied exclusively to atoms, where the spherical symmetry of the system allowed one to greatly simplify the problem. These approximate methods were (and are) often used together with the central field approximation to impose the condition that electrons in the same shell have the same radial part and to restrict the variational solution to be a spin eigenfunction. Even so, calculating a solution by hand using the Hartree–Fock equations for a medium-sized atom was laborious; small molecules required computational resources far beyond what was available before 1950.
+
+
+== Hartree–Fock algorithm ==
+The Hartree–Fock method is typically used to solve the time-independent Schrödinger equation for a multi-electron atom or molecule as described in the Born–Oppenheimer approximation. Since there are no known analytic solutions for many-electron systems (there are solutions for one-electron systems such as hydrogenic atoms and the diatomic hydrogen cation), the problem is solved numerically. Due to the nonlinearities introduced by the Hartree–Fock approximation, the equations are solved using a nonlinear method such as iteration, which gives rise to the name "self-consistent field method."
+
+
+=== Approximations ===
+The Hartree–Fock method makes five major simplifications to deal with this task:
+
+The Born–Oppenheimer approximation is inherently assumed.  The full molecular wave function is actually a function of the coordinates of each of the nuclei, in addition to those of the electrons.
+Typically, relativistic effects are completely neglected.  The momentum operator is assumed to be completely non-relativistic.
+The variational solution is assumed to be a linear combination of a finite number of basis functions, which are usually (but not always) chosen to be orthogonal. The finite basis set is assumed to be approximately complete.
+Each energy eigenfunction is assumed to be describable by a single Slater determinant, an antisymmetrized product of one-electron wave functions (i.e., orbitals).
+The mean-field approximation is implied. Effects arising from deviations from this assumption are neglected. These effects are often collectively used as a definition of the term electron correlation. However, the label "electron correlation" strictly spoken encompasses both the Coulomb correlation and Fermi correlation, and the latter is an effect of electron exchange, which is fully accounted for in the Hartree–Fock method. Stated in this terminology, the method only neglects the Coulomb correlation. However, this is an important flaw, accounting for (among others) Hartree–Fock's inability to capture London dispersion.
+Relaxation of the last two approximations give rise to many so-called post-Hartree–Fock methods.
+
+
+=== Variational optimization of orbitals ===
+
+The variational theorem states that for a time-independent Hamiltonian operator, any trial wave function will have an energy expectation value that is greater than or equal to the true ground-state wave function corresponding to the given Hamiltonian.  Because of this, the Hartree–Fock energy is an upper bound to the true ground-state energy of a given molecule. In the context of the Hartree–Fock method, the best possible solution is at the Hartree–Fock limit; i.e., the limit of the Hartree–Fock energy as the basis set approaches completeness. (The other is the full-CI limit, where the last two approximations of the Hartree–Fock theory as described above are completely undone. It is only when both limits are attained that the exact solution, up to the Born–Oppenheimer approximation, is obtained.) The Hartree–Fock energy is the minimal energy for a single Slater determinant.
+The starting point for the Hartree–Fock method is a set of approximate one-electron wave functions known as spin-orbitals. For an atomic orbital calculation, these are typically the orbitals for a hydrogen-like atom (an atom with only one electron, but the appropriate nuclear charge).  For a molecular orbital or crystalline calculation, the initial approximate one-electron wave functions are typically a linear combination of atomic orbitals (LCAO).
+The orbitals above only account for the presence of other electrons in an average manner. In the Hartree–Fock method, the effect of other electrons are accounted for in a mean-field theory context. The orbitals are optimized by requiring them to minimize the energy of the respective Slater determinant. The resultant variational conditions on the orbitals lead to a new one-electron operator, the Fock operator. At the minimum, the occupied orbitals are eigensolutions to the Fock operator via a unitary transformation between themselves. The Fock operator is an effective one-electron Hamiltonian operator being the sum of two terms. The first is a sum of kinetic-energy operators for each electron, the internuclear repulsion energy, and a sum of nuclear–electronic Coulombic attraction terms. The second are Coulombic repulsion terms between electrons in a mean-field theory description; a net repulsion energy for each electron in the system, which is calculated by treating all of the other electrons within the molecule as a smooth distribution of negative charge.  This is the major simplification inherent in the Hartree–Fock method and is equivalent to the fifth simplification in the above list.
+Since the Fock operator depends on the orbitals used to construct the corresponding Fock matrix, the eigenfunctions of the Fock operator are in turn new orbitals, which can be used to construct a new Fock operator. In this way, the Hartree–Fock orbitals are optimized iteratively until the change in total electronic energy falls below a predefined threshold. In this way, a set of self-consistent one-electron orbitals is calculated.  The Hartree–Fock electronic wave function is then the Slater determinant constructed from these orbitals. Following the basic postulates of quantum mechanics, the Hartree–Fock wave function can then be used to compute any desired chemical or physical property within the framework of the Hartree–Fock method and the approximations employed.
+
+
+== Mathematical formulation ==
+
+
+=== Derivation ===
+According to the Slater–Condon rules, the energy expectation value of the molecular electronic Hamiltonian 
+  
+    
+      
+        
+          
+            
+              
+                H
+                ^
+              
+            
+          
+          
+            e
+          
+        
+      
+    
+    {\displaystyle {\hat {H}}^{e}}
+  
+ for a Slater determinant is
+
+  
+    
+      
+        
+          
+            
+              
+                E
+                [
+                
+                  ψ
+                  
+                    H
+                    F
+                  
+                
+                ]
+              
+              
+                
+                =
+                
+                  ⟨
+                  
+                    
+                      ψ
+                      
+                        H
+                        F
+                      
+                    
+                    
+                      |
+                    
+                    
+                      
+                        
+                          
+                            H
+                            ^
+                          
+                        
+                      
+                      
+                        e
+                      
+                    
+                    
+                      |
+                    
+                    
+                      ψ
+                      
+                        H
+                        F
+                      
+                    
+                  
+                  ⟩
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  
+                    
+                      h
+                      ^
+                    
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                +
+                
+                  
+                    1
+                    2
+                  
+                
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  
+                    1
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          i
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                −
+                
+                  
+                    1
+                    2
+                  
+                
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  
+                    1
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          i
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\textstyle {\begin{aligned}E[\psi ^{HF}]&=\left\langle \psi ^{HF}|{\hat {H}}^{e}|\psi ^{HF}\right\rangle \\&=\sum _{i=1}^{N}\int {\text{d}}\mathbf {x} _{i}\,\phi _{i}^{*}(\mathbf {x} _{i}){\hat {h}}(\mathbf {x} _{i})\phi _{i}(\mathbf {x} _{i})\\&+{\frac {1}{2}}\sum _{i=1}^{N}\sum _{j=1}^{N}\int \mathrm {d} \mathbf {x} _{i}\int {\text{d}}\mathbf {x} _{j}\phi _{i}^{*}(\mathbf {x} _{i})\phi _{j}^{*}(\mathbf {x} _{j}){\frac {1}{|\mathbf {x} _{i}-\mathbf {x} _{j}|}}\phi _{i}(\mathbf {x} _{i})\phi _{j}(\mathbf {x} _{j})\\&-{\frac {1}{2}}\sum _{i=1}^{N}\sum _{j=1}^{N}\int {\text{d}}\mathbf {x} _{i}\int {\text{d}}\mathbf {x} _{j}\phi _{i}^{*}(\mathbf {x} _{i})\phi _{j}^{*}(\mathbf {x} _{j}){\frac {1}{|\mathbf {x} _{i}-\mathbf {x} _{j}|}}\phi _{i}(\mathbf {x} _{j})\phi _{j}(\mathbf {x} _{i})\end{aligned}}}
+  
+
+where 
+  
+    
+      
+        
+          
+            
+              h
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {h}}}
+  
+ is the one electron operator including electronic kinetic energy and electron-nucleus Coulombic interaction, and
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  ψ
+                  
+                    H
+                    F
+                  
+                
+                =
+                ψ
+                (
+                
+                  
+                    x
+                  
+                  
+                    1
+                  
+                
+                ,
+                
+                  
+                    x
+                  
+                  
+                    2
+                  
+                
+                ,
+                …
+                ,
+                
+                  
+                    x
+                  
+                  
+                    N
+                  
+                
+                )
+                =
+                
+                  
+                    1
+                    
+                      N
+                      !
+                    
+                  
+                
+                
+                  
+                    |
+                    
+                      
+                        
+                          
+                            ϕ
+                            
+                              1
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              1
+                            
+                          
+                          )
+                        
+                        
+                          
+                            ϕ
+                            
+                              2
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              1
+                            
+                          
+                          )
+                        
+                        
+                          ⋯
+                        
+                        
+                          
+                            ϕ
+                            
+                              N
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              1
+                            
+                          
+                          )
+                        
+                      
+                      
+                        
+                          
+                            ϕ
+                            
+                              1
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              2
+                            
+                          
+                          )
+                        
+                        
+                          
+                            ϕ
+                            
+                              2
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              2
+                            
+                          
+                          )
+                        
+                        
+                          ⋯
+                        
+                        
+                          
+                            ϕ
+                            
+                              N
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              2
+                            
+                          
+                          )
+                        
+                      
+                      
+                        
+                          ⋮
+                        
+                        
+                          ⋮
+                        
+                        
+                          ⋱
+                        
+                        
+                          ⋮
+                        
+                      
+                      
+                        
+                          
+                            ϕ
+                            
+                              1
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              N
+                            
+                          
+                          )
+                        
+                        
+                          
+                            ϕ
+                            
+                              2
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              N
+                            
+                          
+                          )
+                        
+                        
+                          ⋯
+                        
+                        
+                          
+                            ϕ
+                            
+                              N
+                            
+                          
+                          (
+                          
+                            
+                              x
+                            
+                            
+                              N
+                            
+                          
+                          )
+                        
+                      
+                    
+                    |
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\psi ^{HF}=\psi (\mathbf {x} _{1},\mathbf {x} _{2},\ldots ,\mathbf {x} _{N})={\frac {1}{\sqrt {N!}}}{\begin{vmatrix}\phi _{1}(\mathbf {x} _{1})&\phi _{2}(\mathbf {x} _{1})&\cdots &\phi _{N}(\mathbf {x} _{1})\\\phi _{1}(\mathbf {x} _{2})&\phi _{2}(\mathbf {x} _{2})&\cdots &\phi _{N}(\mathbf {x} _{2})\\\vdots &\vdots &\ddots &\vdots \\\phi _{1}(\mathbf {x} _{N})&\phi _{2}(\mathbf {x} _{N})&\cdots &\phi _{N}(\mathbf {x} _{N})\end{vmatrix}}.\end{aligned}}}
+  
+
+To derive the Hartree-Fock equation we minimize the energy functional for N electrons with orthonormal constraints.
+
+  
+    
+      
+        δ
+        E
+        [
+        
+          ϕ
+          
+            k
+          
+          
+            ∗
+          
+        
+        (
+        
+          x
+          
+            k
+          
+        
+        )
+        ]
+        =
+        δ
+        
+          ⟨
+          
+            
+              ψ
+              
+                H
+                F
+              
+            
+            
+              |
+            
+            
+              
+                
+                  
+                    H
+                    ^
+                  
+                
+              
+              
+                e
+              
+            
+            
+              |
+            
+            
+              ψ
+              
+                H
+                F
+              
+            
+          
+          ⟩
+        
+        −
+        δ
+        
+          [
+          
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                N
+              
+            
+            
+              ∑
+              
+                j
+                =
+                1
+              
+              
+                N
+              
+            
+            
+              λ
+              
+                i
+                j
+              
+            
+            
+              (
+              
+                
+                  ⟨
+                  
+                    
+                      ϕ
+                      
+                        i
+                      
+                    
+                    ,
+                    
+                      ϕ
+                      
+                        j
+                      
+                    
+                  
+                  ⟩
+                
+                −
+                
+                  δ
+                  
+                    i
+                    j
+                  
+                
+              
+              )
+            
+          
+          ]
+        
+        
+          
+            
+              
+                =
+              
+              
+                !
+              
+            
+          
+        
+        
+        0
+        ,
+      
+    
+    {\displaystyle \delta E[\phi _{k}^{*}(x_{k})]=\delta \left\langle \psi ^{HF}|{\hat {H}}^{e}|\psi ^{HF}\right\rangle -\delta \left[\sum _{i=1}^{N}\sum _{j=1}^{N}\lambda _{ij}\left(\left\langle \phi _{i},\phi _{j}\right\rangle -\delta _{ij}\right)\right]{\stackrel {!}{=}}\,0,}
+  
+
+We choose a basis set 
+  
+    
+      
+        
+          ϕ
+          
+            i
+          
+        
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle \phi _{i}(x_{i})}
+  
+ in which the Lagrange multiplier matrix 
+  
+    
+      
+        
+          λ
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle \lambda _{ij}}
+  
+ becomes diagonal, i.e. 
+  
+    
+      
+        
+          λ
+          
+            i
+            j
+          
+        
+        =
+        
+          ϵ
+          
+            i
+          
+        
+        
+          δ
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle \lambda _{ij}=\epsilon _{i}\delta _{ij}}
+  
+. Performing the variation, we obtain
+
+  
+    
+      
+        
+          
+            
+              
+                δ
+                E
+                [
+                
+                  ϕ
+                  
+                    k
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  x
+                  
+                    k
+                  
+                
+                )
+                ]
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                
+                
+                  
+                    
+                      h
+                      ^
+                    
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                δ
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                −
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                
+                  δ
+                  
+                    i
+                    k
+                  
+                
+              
+            
+            
+              
+              
+                
+                +
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  ϕ
+                  
+                    j
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  
+                    1
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          i
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                δ
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                −
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                
+                  δ
+                  
+                    i
+                    k
+                  
+                
+              
+            
+            
+              
+              
+                
+                −
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  ϕ
+                  
+                    j
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  
+                    1
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          i
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                δ
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                −
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                
+                  δ
+                  
+                    i
+                    k
+                  
+                
+              
+            
+            
+              
+              
+                
+                −
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  ϵ
+                  
+                    i
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                
+                
+                  ϕ
+                  
+                    i
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                )
+                δ
+                (
+                
+                  
+                    x
+                  
+                  
+                    i
+                  
+                
+                −
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                
+                  δ
+                  
+                    i
+                    k
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    
+                      h
+                      ^
+                    
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    k
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                +
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  ϕ
+                  
+                    j
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  
+                    1
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          k
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                
+                  ϕ
+                  
+                    k
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                −
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  ϕ
+                  
+                    j
+                  
+                  
+                    ∗
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  
+                    1
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          k
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                
+                  ϕ
+                  
+                    k
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                −
+                
+                  ϵ
+                  
+                    k
+                  
+                
+                
+                  ϕ
+                  
+                    k
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                =
+                0.
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\delta E[\phi _{k}^{*}(x_{k})]&=\sum _{i=1}^{N}\int {\text{d}}\mathbf {x} _{i}\,{\hat {h}}(\mathbf {x} _{i})\phi _{i}(\mathbf {x} _{i})\delta (\mathbf {x} _{i}-\mathbf {x} _{k})\delta _{ik}\\&+\sum _{i=1}^{N}\sum _{j=1}^{N}\int \mathrm {d} \mathbf {x} _{i}\int {\text{d}}\mathbf {x} _{j}\phi _{j}^{*}(\mathbf {x} _{j}){\frac {1}{|\mathbf {x} _{i}-\mathbf {x} _{j}|}}\phi _{i}(\mathbf {x} _{i})\phi _{j}(\mathbf {x} _{j})\delta (\mathbf {x} _{i}-\mathbf {x} _{k})\delta _{ik}\\&-\sum _{i=1}^{N}\sum _{j=1}^{N}\int {\text{d}}\mathbf {x} _{i}\int {\text{d}}\mathbf {x} _{j}\phi _{j}^{*}(\mathbf {x} _{j}){\frac {1}{|\mathbf {x} _{i}-\mathbf {x} _{j}|}}\phi _{i}(\mathbf {x} _{j})\phi _{j}(\mathbf {x} _{i})\delta (\mathbf {x} _{i}-\mathbf {x} _{k})\delta _{ik}\\&-\sum _{i=1}^{N}\epsilon _{i}\int {\text{d}}\mathbf {x} _{i}\,\phi _{i}(\mathbf {x} _{i})\delta (\mathbf {x} _{i}-\mathbf {x} _{k})\delta _{ik}\\&={\hat {h}}(\mathbf {x} _{k})\phi _{k}(\mathbf {x} _{k})\\&+\sum _{j=1}^{N}\int {\text{d}}\mathbf {x} _{j}\phi _{j}^{*}(\mathbf {x} _{j}){\frac {1}{|\mathbf {x} _{k}-\mathbf {x} _{j}|}}\phi _{k}(\mathbf {x} _{k})\phi _{j}(\mathbf {x} _{j})\\&-\sum _{j=1}^{N}\int {\text{d}}\mathbf {x} _{j}\phi _{j}^{*}(\mathbf {x} _{j}){\frac {1}{|\mathbf {x} _{k}-\mathbf {x} _{j}|}}\phi _{k}(\mathbf {x} _{j})\phi _{j}(\mathbf {x} _{k})\\&-\epsilon _{k}\phi _{k}(\mathbf {x} _{k})=0.\\\end{aligned}}}
+  
+
+The factor 1/2 before the double integrals in the molecular Hamiltonian drops out  due to symmetry and the product rule. We may define the Fock operator to rewrite the equation
+
+  
+    
+      
+        
+          
+            
+              F
+              ^
+            
+          
+        
+        (
+        
+          
+            x
+          
+          
+            k
+          
+        
+        )
+        
+          ϕ
+          
+            k
+          
+        
+        (
+        
+          
+            x
+          
+          
+            k
+          
+        
+        )
+        ≡
+        
+          [
+          
+            
+              
+                
+                  h
+                  ^
+                
+              
+            
+            (
+            
+              
+                x
+              
+              
+                k
+              
+            
+            )
+            +
+            
+              
+                
+                  J
+                  ^
+                
+              
+            
+            (
+            
+              
+                x
+              
+              
+                k
+              
+            
+            )
+            −
+            
+              
+                
+                  K
+                  ^
+                
+              
+            
+            (
+            
+              
+                x
+              
+              
+                k
+              
+            
+            )
+          
+          ]
+        
+        
+          ϕ
+          
+            k
+          
+        
+        (
+        
+          
+            x
+          
+          
+            k
+          
+        
+        )
+        =
+        
+          ϵ
+          
+            k
+          
+        
+        
+          ϕ
+          
+            k
+          
+        
+        (
+        
+          
+            x
+          
+          
+            k
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle {\hat {F}}(\mathbf {x} _{k})\phi _{k}(\mathbf {x} _{k})\equiv \left[{\hat {h}}(\mathbf {x} _{k})+{\hat {J}}(\mathbf {x} _{k})-{\hat {K}}(\mathbf {x} _{k})\right]\phi _{k}(\mathbf {x} _{k})=\epsilon _{k}\phi _{k}(\mathbf {x} _{k}),}
+  
+
+where the Coulomb operator 
+  
+    
+      
+        
+          
+            
+              J
+              ^
+            
+          
+        
+        (
+        
+          
+            x
+          
+          
+            k
+          
+        
+        )
+      
+    
+    {\displaystyle {\hat {J}}(\mathbf {x} _{k})}
+  
+ and the exchange operator 
+  
+    
+      
+        
+          
+            
+              K
+              ^
+            
+          
+        
+        (
+        
+          
+            x
+          
+          
+            k
+          
+        
+        )
+      
+    
+    {\displaystyle {\hat {K}}(\mathbf {x} _{k})}
+  
+ are defined as follows
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      J
+                      ^
+                    
+                  
+                
+                (
+                
+                  
+                    x
+                    
+                      k
+                    
+                  
+                
+                )
+              
+              
+                
+                ≡
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  
+                    
+                      
+                        ϕ
+                        
+                          j
+                        
+                        
+                          ∗
+                        
+                      
+                      (
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      )
+                      
+                        ϕ
+                        
+                          j
+                        
+                      
+                      (
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      )
+                    
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          k
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                =
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  
+                    
+                      ρ
+                      (
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      )
+                    
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          k
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  
+                    
+                      K
+                      ^
+                    
+                  
+                
+                (
+                
+                  
+                    x
+                    
+                      k
+                    
+                  
+                
+                )
+                
+                  ϕ
+                  
+                    k
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+              
+              
+                
+                ≡
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  ϕ
+                  
+                    j
+                  
+                
+                (
+                
+                  
+                    x
+                  
+                  
+                    k
+                  
+                
+                )
+                ∫
+                
+                  d
+                
+                
+                  
+                    x
+                  
+                  
+                    j
+                  
+                
+                
+                  
+                    
+                      
+                        ϕ
+                        
+                          j
+                        
+                        
+                          ∗
+                        
+                      
+                      (
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      )
+                      
+                        ϕ
+                        
+                          k
+                        
+                      
+                      (
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      )
+                    
+                    
+                      
+                        |
+                      
+                      
+                        
+                          x
+                        
+                        
+                          k
+                        
+                      
+                      −
+                      
+                        
+                          x
+                        
+                        
+                          j
+                        
+                      
+                      
+                        |
+                      
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\hat {J}}(\mathbf {x_{k}} )&\equiv \sum _{j=1}^{N}\int \mathrm {d} \mathbf {x} _{j}{\frac {\phi _{j}^{*}(\mathbf {x} _{j})\phi _{j}(\mathbf {x} _{j})}{|\mathbf {x} _{k}-\mathbf {x} _{j}|}}=\sum _{j=1}^{N}\int \mathrm {d} \mathbf {x} _{j}{\frac {\rho (\mathbf {x} _{j})}{|\mathbf {x} _{k}-\mathbf {x} _{j}|}},\\{\hat {K}}(\mathbf {x_{k}} )\phi _{k}(\mathbf {x} _{k})&\equiv \sum _{j=1}^{N}\phi _{j}(\mathbf {x} _{k})\int {\text{d}}\mathbf {x} _{j}{\frac {\phi _{j}^{*}(\mathbf {x} _{j})\phi _{k}(\mathbf {x} _{j})}{|\mathbf {x} _{k}-\mathbf {x} _{j}|}}.\\\end{aligned}}}
+  
+
+The exchange operator has no classical analogue and can only be defined as an integral operator.
+The solution 
+  
+    
+      
+        
+          ϕ
+          
+            k
+          
+        
+      
+    
+    {\displaystyle \phi _{k}}
+  
+ and 
+  
+    
+      
+        
+          ϵ
+          
+            k
+          
+        
+      
+    
+    {\displaystyle \epsilon _{k}}
+  
+ are called molecular orbital and orbital energy respectively.
+Although Hartree-Fock equation appears in the form of a eigenvalue problem, the Fock operator itself depends on 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ and must be solved by a different technique.
+
+
+=== Total energy ===
+The optimal total energy 
+  
+    
+      
+        
+          E
+          
+            H
+            F
+          
+        
+      
+    
+    {\displaystyle E_{HF}}
+  
+ can be written in terms of molecular orbitals.
+
+  
+    
+      
+        
+          E
+          
+            H
+            F
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          
+            
+              
+                h
+                ^
+              
+            
+          
+          
+            i
+            i
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            N
+            
+              /
+            
+            2
+          
+        
+        [
+        2
+        
+          
+            
+              
+                J
+                ^
+              
+            
+          
+          
+            i
+            j
+          
+        
+        −
+        
+          
+            
+              
+                K
+                ^
+              
+            
+          
+          
+            i
+            j
+          
+        
+        ]
+        +
+        
+          V
+          
+            nucl
+          
+        
+      
+    
+    {\displaystyle E_{HF}=\sum _{i=1}^{N}{\hat {h}}_{ii}+\sum _{i=1}^{N}\sum _{j=1}^{N/2}[2{\hat {J}}_{ij}-{\hat {K}}_{ij}]+V_{\text{nucl}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                J
+                ^
+              
+            
+          
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle {\hat {J}}_{ij}}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              
+                K
+                ^
+              
+            
+          
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle {\hat {K}}_{ij}}
+  
+ are matrix elements of the Coulomb and exchange operators respectively, and 
+  
+    
+      
+        
+          V
+          
+            nucl
+          
+        
+      
+    
+    {\displaystyle V_{\text{nucl}}}
+  
+ is the total electrostatic repulsion between all the nuclei in the molecule.
+The total energy is not equal to the sum of orbital energies.
+If the atom or molecule is closed shell, the total energy according to the Hartree-Fock method is
+
+  
+    
+      
+        
+          E
+          
+            H
+            F
+          
+        
+        =
+        2
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+            
+              /
+            
+            2
+          
+        
+        
+          
+            
+              
+                h
+                ^
+              
+            
+          
+          
+            i
+            i
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+            
+              /
+            
+            2
+          
+        
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            N
+            
+              /
+            
+            2
+          
+        
+        [
+        2
+        
+          
+            
+              
+                J
+                ^
+              
+            
+          
+          
+            i
+            j
+          
+        
+        −
+        
+          
+            
+              
+                K
+                ^
+              
+            
+          
+          
+            i
+            j
+          
+        
+        ]
+        +
+        
+          V
+          
+            nucl
+          
+        
+        .
+      
+    
+    {\displaystyle E_{HF}=2\sum _{i=1}^{N/2}{\hat {h}}_{ii}+\sum _{i=1}^{N/2}\sum _{j=1}^{N/2}[2{\hat {J}}_{ij}-{\hat {K}}_{ij}]+V_{\text{nucl}}.}
+  
+
+
+=== Linear combination of atomic orbitals ===
+
+Typically, in modern Hartree–Fock calculations, the one-electron wave functions are approximated by a linear combination of atomic orbitals.  These atomic orbitals are called Slater-type orbitals.  Furthermore, it is very common for the "atomic orbitals" in use to actually be composed of a linear combination of one or more Gaussian-type orbitals, rather than Slater-type orbitals, in the interests of saving large amounts of computation time.
+Various basis sets are used in practice, most of which are composed of Gaussian functions.  In some applications, an orthogonalization method such as the Gram–Schmidt process is performed in order to produce a set of orthogonal basis functions.  This can in principle save computational time when the computer is solving the Roothaan–Hall equations by converting the overlap matrix effectively to an identity matrix. However, in most modern computer programs for molecular Hartree–Fock calculations this procedure is not followed due to the high numerical cost of orthogonalization and the advent of more efficient, often sparse, algorithms for solving the generalized eigenvalue problem, of which the Roothaan–Hall equations are an example.
+
+
+== Numerical stability ==
+Numerical stability can be a problem with this procedure and there are various ways of combatting this instability.  One of the most basic and generally applicable is called F-mixing or damping.  With F-mixing, once a single-electron wave function is calculated, it is not used directly.  Instead, some combination of that calculated wave function and the previous wave functions for that electron is used, the most common being a simple linear combination of the calculated and immediately preceding wave function.  A clever dodge, employed by Hartree, for atomic calculations was to increase the nuclear charge, thus pulling all the electrons closer together.  As the system stabilised, this was gradually reduced to the correct charge. In molecular calculations a similar approach is sometimes used by first calculating the wave function for a positive ion and then to use these orbitals as the starting point for the neutral molecule. Modern molecular Hartree–Fock computer programs use a variety of methods to ensure convergence of the Roothaan–Hall equations.
+
+
+== Weaknesses, extensions, and alternatives ==
+Of the five simplifications outlined in the section "Hartree–Fock algorithm", the fifth is typically the most important. Neglect of electron correlation can lead to large deviations from experimental results. A number of approaches to this weakness, collectively called post-Hartree–Fock methods, have been devised to include electron correlation to the multi-electron wave function. One of these approaches, Møller–Plesset perturbation theory, treats correlation as a perturbation of the Fock operator. Others expand the true multi-electron wave function in terms of a linear combination of Slater determinants—such as multi-configurational self-consistent field, configuration interaction, quadratic configuration interaction, and complete active space SCF (CASSCF).  Still others (such as variational quantum Monte Carlo) modify the Hartree–Fock wave function by multiplying it by a correlation function ("Jastrow" factor), a term which is explicitly a function of multiple electrons that cannot be decomposed into independent single-particle functions.
+An alternative to Hartree–Fock calculations used in some cases is density functional theory, which treats both exchange and correlation energies, albeit approximately. Indeed, it is common to use calculations that are a hybrid of the two methods—the popular B3LYP scheme is one such hybrid functional method.
+Another option is to use modern valence bond methods.
+
+
+== Software packages ==
+For a list of software packages known to handle Hartree–Fock calculations, particularly for molecules and solids, see the list of quantum chemistry and solid state physics software.
+
+
+== See also ==
+
+
+== References ==
+
+
+== Sources ==
+Levine, Ira N. (1991). Quantum Chemistry (4th ed.). Englewood Cliffs, New Jersey: Prentice Hall. pp. 455–544. ISBN 0-205-12770-3.
+Cramer, Christopher J. (2002). Essentials of Computational Chemistry. Chichester: John Wiley & Sons, Ltd. pp. 153–189. ISBN 0-471-48552-7.
+Szabo, A.; Ostlund, N. S. (1996). Modern Quantum Chemistry. Mineola, New York: Dover Publishing. ISBN 0-486-69186-1.
+
+
+== External links ==
+Hartree, D. R. (January 1928). "The Wave Mechanics of an Atom with a Non-Coulomb Central Field. Part II. Some Results and Discussion". Mathematical Proceedings of the Cambridge Philosophical Society. 24: 111–132. doi:10.1017/S0305004100011920.
+An Introduction to Hartree-Fock Molecular Orbital Theory  by C. David Sherrill (June 2000)
+Mean-Field Theory: Hartree-Fock and BCS in E. Pavarini, E. Koch, J. van den Brink, and G. Sawatzky: Quantum materials: Experiments and Theory, Jülich 2016, ISBN 978-3-95806-159-0

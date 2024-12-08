@@ -1,0 +1,446 @@
+In probability theory, Popoviciu's inequality, named after Tiberiu Popoviciu, is an upper bound on the variance σ2 of any bounded probability distribution.  Let M and m be upper and lower bounds on the values of any random variable with a particular probability distribution.  Then Popoviciu's inequality states:
+
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        ≤
+        
+          
+            1
+            4
+          
+        
+        (
+        M
+        −
+        m
+        
+          )
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \sigma ^{2}\leq {\frac {1}{4}}(M-m)^{2}.}
+  
+
+This equality holds precisely when half of the probability is concentrated at each of the two bounds.
+Sharma et al. have sharpened Popoviciu's inequality:
+
+  
+    
+      
+        
+          
+            σ
+            
+              2
+            
+          
+          +
+          
+            
+              (
+              
+                
+                  Third central moment
+                  
+                    2
+                    
+                      σ
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              )
+            
+            
+              2
+            
+          
+        
+        ≤
+        
+          
+            1
+            4
+          
+        
+        (
+        M
+        −
+        m
+        
+          )
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\sigma ^{2}+\left({\frac {\text{Third central moment}}{2\sigma ^{2}}}\right)^{2}}\leq {\frac {1}{4}}(M-m)^{2}.}
+  
+
+If one additionally assumes knowledge of the expectation, then the stronger Bhatia–Davis inequality holds
+
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        ≤
+        (
+        M
+        −
+        μ
+        )
+        (
+        μ
+        −
+        m
+        )
+      
+    
+    {\displaystyle \sigma ^{2}\leq (M-\mu )(\mu -m)}
+  
+
+where μ is the expectation of the random variable.
+In the case of an independent sample of n observations from a bounded probability distribution, the von Szokefalvi Nagy inequality gives a lower bound to the variance of the sample mean:
+
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        ≥
+        
+          
+            
+              (
+              M
+              −
+              m
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              2
+              n
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \sigma ^{2}\geq {\frac {(M-m)^{2}}{2n}}.}
+  
+
+
+== Proof via the Bhatia–Davis inequality ==
+Let 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ be a random variable with mean 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+, variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+  
+, and  
+  
+    
+      
+        Pr
+        (
+        m
+        ≤
+        A
+        ≤
+        M
+        )
+        =
+        1
+      
+    
+    {\displaystyle \Pr(m\leq A\leq M)=1}
+  
+. Then, since 
+  
+    
+      
+        m
+        ≤
+        A
+        ≤
+        M
+      
+    
+    {\displaystyle m\leq A\leq M}
+  
+, 
+
+  
+    
+      
+        0
+        ≤
+        
+          E
+        
+        [
+        (
+        M
+        −
+        A
+        )
+        (
+        A
+        −
+        m
+        )
+        ]
+        =
+        −
+        
+          E
+        
+        [
+        
+          A
+          
+            2
+          
+        
+        ]
+        −
+        m
+        M
+        +
+        (
+        m
+        +
+        M
+        )
+        μ
+      
+    
+    {\displaystyle 0\leq \mathbb {E} [(M-A)(A-m)]=-\mathbb {E} [A^{2}]-mM+(m+M)\mu }
+  
+.
+Thus, 
+
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        =
+        
+          E
+        
+        [
+        
+          A
+          
+            2
+          
+        
+        ]
+        −
+        
+          μ
+          
+            2
+          
+        
+        ≤
+        −
+        m
+        M
+        +
+        (
+        m
+        +
+        M
+        )
+        μ
+        −
+        
+          μ
+          
+            2
+          
+        
+        =
+        (
+        M
+        −
+        μ
+        )
+        (
+        μ
+        −
+        m
+        )
+      
+    
+    {\displaystyle \sigma ^{2}=\mathbb {E} [A^{2}]-\mu ^{2}\leq -mM+(m+M)\mu -\mu ^{2}=(M-\mu )(\mu -m)}
+  
+.
+Now, applying the Inequality of arithmetic and geometric means, 
+  
+    
+      
+        a
+        b
+        ≤
+        
+          
+            (
+            
+              
+                
+                  a
+                  +
+                  b
+                
+                2
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle ab\leq \left({\frac {a+b}{2}}\right)^{2}}
+  
+, with 
+  
+    
+      
+        a
+        =
+        M
+        −
+        μ
+      
+    
+    {\displaystyle a=M-\mu }
+  
+ and 
+  
+    
+      
+        b
+        =
+        μ
+        −
+        m
+      
+    
+    {\displaystyle b=\mu -m}
+  
+, yields the desired result:
+
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        ≤
+        (
+        M
+        −
+        μ
+        )
+        (
+        μ
+        −
+        m
+        )
+        ≤
+        
+          
+            
+              
+                (
+                
+                  M
+                  −
+                  m
+                
+                )
+              
+              
+                2
+              
+            
+            4
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}\leq (M-\mu )(\mu -m)\leq {\frac {\left(M-m\right)^{2}}{4}}}
+  
+.
+
+
+== References ==

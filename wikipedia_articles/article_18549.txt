@@ -1,0 +1,1242 @@
+Paleostress inversion refers to the determination of paleostress history from evidence found in rocks, based on the principle that past tectonic stress should have left traces in the rocks. Such relationships have been discovered from field studies for years: qualitative and quantitative analyses of deformation structures are useful for understanding the distribution and transformation of paleostress fields controlled by sequential tectonic events. Deformation ranges from microscopic to regional scale, and from brittle to ductile behaviour, depending on the rheology of the rock, orientation and magnitude of the stress, etc. Therefore, detailed observations in outcrops, as well as in thin sections, are important in reconstructing the paleostress trajectories.
+Inversions require assumptions in order to simplify the complex geological processes. The stress field is assumed to be spatially uniform for a faulted rock mass and temporally stable over the concerned period of time when faulting occurred in that region. In other words, the effect of local fault slip is ignored in the variation in small-scale stress field. Moreover, the maximum shear stress resolved on the fault surface from the known stress field and the slip on each of the fault surface has the same direction and magnitude. Since the first introduction of the methods by Wallace and Bott in the 1950s, similar assumptions have been used throughout the decades.
+
+
+== Fault slip analysis ==
+
+
+=== Conjugate fault system ===
+
+Anderson was the first to utilize conjugate fault systems in interpreting paleostress, including all kinds of conjugate faults (normal, reverse and strike-slip). Regional conjugate fault can be better understood by comparison to a familiar rock mechanics experiment, i.e. the Uniaxial Compressive Strength (UCS) Test. Basics of their mechanisms are similar except the principal stress orientation applied is rotated from perpendicular to parallel to the ground. The conjugate fault model is a simple way to obtain approximate orientations of stress axes, due to the abundance of such structure in the upper brittle crust.  Therefore, a number of studies have been carried out by other researchers in assorted structural settings and by correlating with other deformation structures.
+Nonetheless, further development revealed the deficiency of the model:
+
+1. Important geometrical properties absent in practical situation
+The geometrical properties of conjugate faults are indicative of the sense of stress, but they may not appear in the actual fault patterns.
+
+Slickenside lineations normal to fault plane intersection
+Symmetrical sense of motion that gives the obtuse angle in the direction of lengthening
+Relation between the intersecting angle of fault planes and mechanical properties, with reference to information from rock mechanics experiments in lab
+2. Observed fault patterns are far more sophisticated
+There are often oblique pre-existing faults, planes of weaknesses or striations to the fault slip, which do not belong to the conjugate fault sets. Neglecting this considerable amount of data would cause error in analysis.
+
+3. Neglecting the stress ratio (Φ)
+This ratio provides the relative magnitude of the intermediate stress (σ2) and thus determines the shape of the stress ellipsoid. However, this model does not give an account on the ratio, save for some specific cases.
+
+
+=== Reduced stress tensor ===
+This method was established by Bott in 1959, based on the assumption that direction and sense of slip occurs on the fault plane are the same with those of the maximum resolved shear stress, hence, with known orientations and senses of movements on abundant faults, a particular solution T (the reduce stress tensor) is attained. It gives more comprehensive and accurate results in reconstructing paleostress axes and determining the stress ratio (Φ) than the conjugate fault system. The tensor works by solving for four independent unknowns (three principal axes and Φ) through mathematical computation of observations of faults (i.e. attitude of faults and lineations on fault planes, direction and sense of slip, and other tension fractures).
+This method follows four rigorous steps:
+
+Data Analysis
+Computation of Reduced Stress Tensor
+Minimization
+Check of Results
+
+
+==== Data analysis ====
+Reconstruction of paleostress requires large amount of data to attain accuracy, so it is essential to organize the data in comprehensible format prior to any analysis.
+
+1) Fault Population Geometry
+Attitude of fault planes and slickensides is plotted on rose diagrams, such that the geometry is visible. This is particularly useful when the sample size is enormous, it provides the full picture of the region of interest.
+
+2) Fault Motion
+Fault movement is resolved into three components (as in 3D), which are vertical transverse, horizontal transverse and lateral components, by trigonometric relation with the measured dips and trends. Net slip is  shown more clearly which paves the way to understanding the deformation.
+
+3) Individual Fault Geometry
+Fault planes are represented by lines in stereonets (equal area lower hemisphere projection), while rakes on them are indicated by dots sitting on the lines. It helps to visualize the geometrical distribution and possible symmetry among individual faults.
+
+4) P (pressure) and T (tension) Dihedra
+This is a concluding step of compiling all the data and check their mechanical compatibility, also could be seen a preliminary step in determining major paleostress orientations. As this is a simple graphical representation of the fault geometry (being the boundaries of dihedra) and sense of slip (shortening direction indicated by black and extension depicted by grey), while it is able to provide good constraints on the orientation of principal stress axes.
+The approximation is built upon the assumption that the orientation of maximum principal stress (σ1) most probably passes through the greatest number of P-quadrants. Since fault plane and auxiliary plane perpendicular to striations are considered the same in this method, the model can be directly applied to focal mechanisms of earthquakes. Nonetheless, due to the same reason, this method cannot provide accurate determination of paleostress, as well as the stress ratio.
+
+
+==== Determination of paleostress ====
+
+
+===== Reduced stress tensor =====
+
+Stress tensor can be considered as a matrix with nine components being the nine stress vectors acting on a point, in which the three vectors along the diagonal (highlighted in brown) represent the principal axes.
+ 
+  
+    
+      
+        
+          σ
+          
+            i
+            j
+          
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      
+                        σ
+                        
+                          11
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    σ
+                    
+                      12
+                    
+                  
+                
+                
+                  
+                    σ
+                    
+                      13
+                    
+                  
+                
+              
+              
+                
+                  
+                    σ
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        σ
+                        
+                          22
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    σ
+                    
+                      23
+                    
+                  
+                
+              
+              
+                
+                  
+                    σ
+                    
+                      31
+                    
+                  
+                
+                
+                  
+                    σ
+                    
+                      32
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        σ
+                        
+                          33
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \sigma _{ij}=\left({\begin{matrix}\color {Brown}{\sigma _{11}}&\sigma _{12}&\sigma _{13}\\\sigma _{21}&\color {Brown}{\sigma _{22}}&\sigma _{23}\\\sigma _{31}&\sigma _{32}&\color {Brown}{\sigma _{33}}\end{matrix}}\right)}
+  
+
+The reduced stress tensor is a mathematical computation approach to determining the three principal axes and the stress ratio, totally four independent unknowns, calculated as eigenvectors and eigenvalue respectively, so that this method is more complete and accurate than the mentioned graphical approaches.
+There are a number formulations that can reach the same final results but with distinctive features:
+(1)  
+  
+    
+      
+        
+          T
+          
+            ϕ
+          
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+                
+                  
+                    x
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    x
+                    
+                      3
+                    
+                  
+                
+              
+              
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                
+                
+                  
+                    y
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    y
+                    
+                      3
+                    
+                  
+                
+              
+              
+                
+                  
+                    z
+                    
+                      1
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      3
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      1
+                    
+                  
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    
+                      Φ
+                    
+                  
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    
+                      0
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        
+          (
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    x
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    y
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    x
+                    
+                      3
+                    
+                  
+                
+                
+                  
+                    y
+                    
+                      3
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      3
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle T_{\phi }=\left({\begin{matrix}x_{1}&x_{2}&x_{3}\\y_{1}&y_{2}&y_{3}\\z_{1}&z_{2}&z_{3}\end{matrix}}\right)\left({\begin{matrix}\color {RubineRed}{1}&0&0\\0&\color {RubineRed}{\Phi }&0\\0&0&\color {RubineRed}{0}\end{matrix}}\right)\left({\begin{matrix}x_{1}&y_{1}&z_{1}\\x_{2}&y_{2}&z_{2}\\x_{3}&y_{3}&z_{3}\end{matrix}}\right)}
+  
+,
+where 
+  
+    
+      
+        
+          stress ratio: 
+        
+        Φ
+        =
+        
+          
+            
+              
+                σ
+                
+                  2
+                
+              
+              −
+              
+                σ
+                
+                  3
+                
+              
+            
+            
+              
+                σ
+                
+                  1
+                
+              
+              −
+              
+                σ
+                
+                  3
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\text{stress ratio: }}\Phi ={\frac {\sigma _{2}-\sigma _{3}}{\sigma _{1}-\sigma _{3}}}}
+  
+, such that 
+  
+    
+      
+        0
+        ≤
+        ϕ
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq \phi \leq 1}
+  
+. This tensor is defined by setting σ1, σ2 and σ3 as 1, Φ and 0 (highlighted in pink) respectively, due to choosing 
+  
+    
+      
+        m
+        =
+        (
+        
+          σ
+          
+            1
+          
+        
+        −
+        
+          σ
+          
+            3
+          
+        
+        
+          )
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle m=(\sigma _{1}-\sigma _{3})^{-1}}
+  
+ and 
+  
+    
+      
+        n
+        =
+        −
+        m
+        
+          σ
+          
+            3
+          
+        
+      
+    
+    {\displaystyle n=-m\sigma _{3}}
+  
+ as the mode of reduction. The advantage of this formulation is the direct correspondence to stress orientation, thus the stress ellipsoid, and the stress ratio.
+(2) 
+  
+    
+      
+        
+          T
+          
+            ψ
+          
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  c
+                  o
+                  s
+                  ψ
+                
+                
+                  α
+                
+                
+                  γ
+                
+              
+              
+                
+                  α
+                
+                
+                  c
+                  o
+                  s
+                  (
+                  ψ
+                  +
+                  
+                    
+                      
+                        2
+                        π
+                      
+                      3
+                    
+                  
+                  )
+                
+                
+                  β
+                
+              
+              
+                
+                  γ
+                
+                
+                  β
+                
+                
+                  c
+                  o
+                  s
+                  (
+                  ψ
+                  +
+                  
+                    
+                      
+                        4
+                        π
+                      
+                      3
+                    
+                  
+                  )
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle T_{\psi }=\left({\begin{matrix}cos\psi &\alpha &\gamma \\\alpha &cos(\psi +{\frac {2\pi }{3}})&\beta \\\gamma &\beta &cos(\psi +{\frac {4\pi }{3}})\end{matrix}}\right)}
+  
+
+This formulation is a deviator, which requires more computation to obtain information of the stress ellipsoid despite maintaining a symmetry in mathematical context.
+
+
+===== Minimization =====
+Minimization aims to reduce the differences between the computed and observed slip directions of fault planes by choosing a function to proceed the least square minimization. Here are a few examples of the functions:
+
+(1) 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        =
+        ∑
+        (
+        
+          
+            
+              
+                s
+                →
+              
+            
+          
+          
+            k
+          
+        
+        ,
+        
+          
+            
+              
+                τ
+                →
+              
+            
+          
+          
+            k
+          
+        
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{1}=\sum ({\vec {s}}_{k},{\vec {\tau }}_{k})^{2}}
+  
+
+The very first function used in fault slip analysis does not account on the sense of individual slip, which means altering the sense of a single slip does not affect the result. However, individual sense of motion is an effective reflection of orientation of stress axes in real situation. Hence, S1 is the simplest function but include the importance of sense of individual slip.
+(2) 
+  
+    
+      
+        
+          
+            
+              
+                
+                  S
+                  
+                    2
+                  
+                
+              
+              
+                
+                =
+                ∑
+                
+                  sin
+                  
+                    2
+                  
+                
+                ⁡
+                
+                  
+                    
+                      (
+                      
+                        
+                          
+                            
+                              s
+                              →
+                            
+                          
+                        
+                        
+                          k
+                        
+                      
+                      ,
+                      
+                        
+                          
+                            
+                              τ
+                              →
+                            
+                          
+                        
+                        
+                          k
+                        
+                      
+                      )
+                    
+                    2
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    4
+                  
+                
+                ∑
+                
+                  
+                    
+                      |
+                      
+                        
+                          
+                            
+                              
+                                s
+                                →
+                              
+                            
+                          
+                          
+                            k
+                          
+                        
+                        −
+                        
+                          
+                            
+                              
+                                
+                                  
+                                    τ
+                                    →
+                                  
+                                
+                              
+                              
+                                k
+                              
+                            
+                            
+                              
+                                |
+                                
+                                  
+                                    
+                                      
+                                        τ
+                                        →
+                                      
+                                    
+                                  
+                                  
+                                    k
+                                  
+                                
+                                |
+                              
+                              
+                            
+                          
+                        
+                      
+                      |
+                    
+                  
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}S_{2}&=\sum \sin ^{2}{\frac {({\vec {s}}_{k},{\vec {\tau }}_{k})}{2}}\\&={\frac {1}{4}}\sum {\left|{\vec {s}}_{k}-{\frac {{\vec {\tau }}_{k}}{\left|{\vec {\tau }}_{k}\right\vert \quad }}\right\vert }^{2}\\\end{alignedat}}}
+  
+
+S2 is derived from S1 based on variation in computational process.
+(3) 
+  
+    
+      
+        
+          S
+          
+            3
+          
+        
+        =
+        ∑
+        min
+        [
+        
+          tan
+          
+            2
+          
+        
+        ⁡
+        (
+        
+          
+            
+              
+                s
+                →
+              
+            
+          
+          
+            k
+          
+        
+        ,
+        
+          
+            
+              
+                τ
+                →
+              
+            
+          
+          
+            k
+          
+        
+        
+          )
+          
+            2
+          
+        
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle S_{3}=\sum \min[\tan ^{2}({\vec {s}}_{k},{\vec {\tau }}_{k})^{2},1]}
+  
+
+S3 is an improved version of the previous model in two aspects. Regarding the efficiency in computation, which is particularly significant in long iterative processes like this, tangent of angles is preferred to cosine. Moreover, to deal with anomalous data (e.g. faults initiated by another event, error in data collection etc.), an upper limit of the value of the functions of angle could be set to filter deviated data.
+(4) 
+  
+    
+      
+        
+          S
+          
+            4
+          
+        
+        =
+        ∑
+        
+          
+            
+              |
+              
+                
+                  
+                    
+                      
+                        s
+                        →
+                      
+                    
+                  
+                  
+                    k
+                  
+                
+                ,
+                
+                  
+                    
+                      
+                        τ
+                        →
+                      
+                    
+                  
+                  
+                    k
+                  
+                
+              
+              |
+            
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{4}=\sum {\left|{\vec {s}}_{k},{\vec {\tau }}_{k}\right\vert }^{2}}
+  
+
+S4 resembles S2 except the unit vector parallel to shear stress is substituted by the predicted shear stress. Therefore, it still produces similar results as other methods, although its physical meaning is less well justified.
+
+
+==== Checking results ====
+The reduced stress tensor should best (hardly perfectly) describe the observed orientations and senses of movement on diversified fault planes in a rock mass. Therefore, by reviewing the fundamental principle of interpreting paleostress from the reduced stress tensor, an assumption is recognized: every fault slip in the rock mass is induced homogeneously by a common stress tensor. This implies the variation in stress orientation and ratio Φ within a rock mass is overlooked yet always present in practical case, due to  interaction between discontinuities at any scale.
+Hence, the significance of this effect has to be examined to test the validity of the method, by considering the parameter: the difference between the measured slickenside lineation and the theoretical shear stress. The average angular deviation is insignificant when compared with the total of instrumental (measuring tools) and observation (unevenness of fault surfaces and striae) errors in majority of the cases.
+In conclusion, the reduced stress tensor method is validated when
+
+sample size is large and representative (homogeneous data sets with a range of fault orientations),
+sense of motion of is noted,
+minimization of angular difference is emphasized when choosing functions (mentioned in section above), and
+rigorous computation takes place.
+
+
+==== Limitation ====
+Quantitative analyses cannot stand alone without careful qualitative field observations. The above described analyses are to be carried out after the overall geologic framework is understood e.g. number of paleostress systems, chronological order of successive stress patterns. Also, consistency with other stress markers e.g. stylolites and tension fractures, is required to justify the result.
+
+
+=== Examples of application ===
+Cambrian Eriboll Formation sandstones west of the Moine Thrust Zone, NW Scotland
+Baikal region, Central Asia
+Alpine foreland, Central Northern Switzerland
+
+
+== Grain boundary piezometer ==
+A piezometer is an instrument used in the measurement of pressure (non-directional) or stress (directional) from strain in rocks at any scale. Referring to the paleostress inversion principle, rock masses under stress should exhibit strain at both macroscopic and microscopic scale, while the latter is found at the grain boundaries (interface between crystal grains at the magnitude below 102μm). Strain is revealed from the change in grain size, orientation of grains or migration of crystal defects, through a number of mechanisms e.g. dynamic recrystallization (DRX).
+Since these mechanisms primarily depend on flow stress and their resulted deformation is stable, the strained grain size or grain boundary are often used as an indicator of paleostress in tectonically active regions such as crustal shear zones, orogenic belts and the upper mantle.
+
+
+=== Dynamic recrystallization (DRX) ===
+Dynamic recrystallization is one of the crucial mechanisms in reducing grain size in shear setting. DRX is defined as a nucleation-and-growth process because
+
+local grain boundary bulging (BLG) (mechanisms of nucleation)
+subgrain rotation (SGR) (mechanisms of nucleation)
+grain boundary migration (GBM) (mechanisms of grain growth),
+are all present in the deformation. This evidence is commonly found in quartz, a typical piezometer, from ductile shear zones. Optical microscope and transmission electron microscope (TEM) are usually utilized in observing the sequential occurrence of subgrain rotation and local grain boundary bulging, and measuring recrystallized grain size. The nucleation process is triggered at boundaries of existing grains only when materials have been deformed to particular critical values.
+
+
+==== Grain boundary bulging (BLG) ====
+
+Grain boundary bulging is the process involving the growth of nuclei at the expense of existing grains and then formation of a 'necklace' structure.
+
+
+==== Subgrain rotation (SGR) ====
+Subgrain rotation is also known as in-situ recrystallization without considerable grain growth. This process happens steadily over the strain history, thus the change in orientation is progressive but not abrupt as grain boundary bulging.
+Therefore, grain boundary bulging and subgrain rotation are differentiated as discontinuous and continuous dynamic recrystallization respectively.
+
+
+=== Theoretical models ===
+
+
+==== Static energy-balance model ====
+The theoretical basis of grain size piezometry was first established by Robert J. Twiss in late 1970s. By comparing free dislocation energy and grain boundary energy, he derived a static energy balance model applicable to subgrain size . Such relation has been represented by an empirical equation between normalized value of grain size and flow stress, which is universal for various materials:
+
+  
+    
+      
+        
+          
+            d
+            b
+          
+        
+        =
+        K
+        
+          
+            (
+            
+              
+                σ
+                μ
+              
+            
+            )
+          
+          
+            −
+            p
+          
+        
+      
+    
+    {\displaystyle {\frac {d}{b}}=K\left({\frac {\sigma }{\mu }}\right)^{-p}}
+  
+,
+d is the average grain size;
+b is the length of the Burgers vector;
+K is a non-dimensional temperature-dependent constant, which is typically in the order of 10;
+μ is the shear modulus;
+σ is the flow stress.
+This model does not account for the persistently transforming nature of microstructures seen in dynamic recrystallization, so its inability in determination of recrystallized grain size has led to the latter models.
+
+
+==== Nucleation-and-growth models ====
+Unlike the previous model, these models consider the sizes of individual grains vary temporally and spatially, therefore, they derive an average grain size from an equilibrium between nucleation and grain growth. The scaling relation of the grain size is as follows:
+
+  
+    
+      
+        
+          
+            
+              d
+              ^
+            
+          
+        
+        =
+        a
+        
+          
+            (
+            
+              
+                
+                  
+                    R
+                    ˙
+                  
+                
+                I
+              
+            
+            )
+          
+          
+            1
+            
+              /
+            
+            4
+          
+        
+      
+    
+    {\displaystyle {\hat {d}}=a\left({\frac {\dot {R}}{I}}\right)^{1/4}}
+  
+,
+where d is the mode of logarithmic grain size, I is the nucleation rate per unit volume, and a is a scaling factor.
+Upon this basic theory, there are still plenty of arguments on the details, which are reflected in the assumptions of the models, so there are various modifications.
+
+Derby–Ashby model
+Derby and Ashby considered boundary bulging nucleation at grain boundary in determining the nucleation rate (Igb), which opposes to the intracrystalline nucleation suggested by the prior model. Thus this model describes the microstructures of discontinuous DRX (DDRX):
+
+  
+    
+      
+        
+          
+            d
+            b
+          
+        
+        =
+        B
+        
+          
+            (
+            
+              
+                σ
+                μ
+              
+            
+            )
+          
+          
+            −
+            p
+          
+        
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              
+                
+                  Δ
+                  Q
+                
+                
+                  m
+                  R
+                  T
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {d}{b}}=B\left({\frac {\sigma }{\mu }}\right)^{-p}\exp \left(-{\frac {\Delta Q}{mRT}}\right)}
+  
+.
+Shimizu model
+Because of a contrasting assumption that subgrain rotation nucleation in continuous DRX (CDRX) should be considered for the nucleation rate, Shimizu has come up with another model, which has also been tested in laboratory:
+
+  
+    
+      
+        
+          
+            d
+            b
+          
+        
+        =
+        
+          
+            
+              B
+              ~
+            
+          
+        
+        
+          
+            (
+            
+              
+                σ
+                μ
+              
+            
+            )
+          
+          
+            −
+            p
+          
+        
+        
+          
+            (
+            
+              
+                
+                  w
+                  
+                    D
+                    
+                      g
+                      b
+                    
+                  
+                
+                
+                  b
+                  
+                    D
+                    
+                      v
+                    
+                  
+                
+              
+            
+            )
+          
+          
+            
+              1
+              m
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {d}{b}}={\tilde {B}}\left({\frac {\sigma }{\mu }}\right)^{-p}\left({\frac {wD_{gb}}{bD_{v}}}\right)^{\frac {1}{m}}}
+  
+.
+
+
+==== Simultaneous operation of dislocation and diffusion creeps ====
+Field boundary model
+In the above models, one of the vital factors, especially when the grain size is reduced substantially through dynamic recrystallization, is neglected. The surface energy becomes more significant when grains are sufficiently small, which converts the creep mechanism from dislocation creep to diffusion creep, thus the grains start to grow. Therefore, the determination of the boundary zone between fields of these two creep mechanisms matter to know when the recrystallized grain size tends to stabilize, as to supplement the above model. The difference between this model and the previous nucleation-and-growth models lies within the assumptions: the field boundary model assumes that grain size reduces in the dislocation creep field, and enlarges in the diffusion creep field, but it is not the case in the previous models.
+
+
+=== Common piezometers ===
+Quartz is abundant in the crust and contains creep microstructures that are sensitive to deformation conditions in deeper crust. Before starting to infer flow stress magnitude, the mineral has to be calibrated carefully in laboratory. Quartz has been found to exhibit different piezometer relations during different recrystallization mechanisms, which are local grain boundary migration (dislocation creep), subgrain rotation (SGR) and the combination of these two, as well as at different grain size.
+Other common minerals used for grain size piezometers are calcite and halite, that have gone through syn-tectonic deformation or manual high-temperature creep, which also demonstrate difference in piezometer relation for distinct recrystallization mechanisms.
+
+
+== References ==
+
+
+== Further reading ==
+Angelier, J., 1994, Fault slip analysis and paleostress reconstruction. In: Hancock, P.L. (ed.), Continental Deformation. Pergamon, Oxford, p. 101–120.
+Célérier, B., Etchecopar, A., Bergerat, F., Vergely, P., Arthaud, F., Laurent, P., 2012. Inferring stress from faulting: From early concepts to inverse methods. Tectonophysics, Crustal Stresses, Fractures, and Fault Zones: The Legacy of Jacques Angelier 581, 206–219.
+Pascal, C., 2021. Paleostress Inversion Techniques: Methods and Applications for Tectonics, Elsevier, 400 p. https://www.elsevier.com/books/paleostress-inversion-techniques/pascal/978-0-12-811910-5
+Ramsay, J.G., Lisle, R.J., 2000. The Techniques of Modern Structural Geology. Volume 3: Applications of continuum mechanics in structural geology (Session 32: Fault Slip Analysis and Stress Tensor Calculations), Academic Press, London.
+Yamaji, A., 2007. An Introduction to Tectonophysics: Theoretical Aspects of Structural Geology (Chapter 11: Determination of Stress from Faults), Terrapub, Tokyo. http://www.terrapub.co.jp/e-library/yamaji/

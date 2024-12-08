@@ -1,0 +1,1472 @@
+In mathematics, a cuspidal cubic or semicubical parabola is an algebraic plane curve that has an implicit equation of the form
+
+  
+    
+      
+        
+          y
+          
+            2
+          
+        
+        −
+        
+          a
+          
+            2
+          
+        
+        
+          x
+          
+            3
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle y^{2}-a^{2}x^{3}=0}
+  
+
+(with a ≠ 0) in some Cartesian coordinate system.
+Solving for y leads to the explicit form
+
+  
+    
+      
+        y
+        =
+        ±
+        a
+        
+          x
+          
+            
+              3
+              2
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle y=\pm ax^{\frac {3}{2}},}
+  
+
+which imply that every real point satisfies x ≥ 0. The exponent explains the term semicubical parabola. (A parabola can be described by the equation y = ax2.)
+Solving the implicit equation for x yields a second explicit form
+
+  
+    
+      
+        x
+        =
+        
+          
+            (
+            
+              
+                y
+                a
+              
+            
+            )
+          
+          
+            
+              2
+              3
+            
+          
+        
+        .
+      
+    
+    {\displaystyle x=\left({\frac {y}{a}}\right)^{\frac {2}{3}}.}
+  
+
+The parametric equation
+
+  
+    
+      
+        
+        x
+        =
+        
+          t
+          
+            2
+          
+        
+        ,
+        
+        y
+        =
+        a
+        
+          t
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \quad x=t^{2},\quad y=at^{3}}
+  
+
+can also be deduced from the implicit equation by putting 
+  
+    
+      
+        t
+        =
+        
+          
+            y
+            
+              a
+              x
+            
+          
+        
+        .
+      
+    
+    {\textstyle t={\frac {y}{ax}}.}
+  
+ 
+The semicubical parabolas have a cuspidal singularity; hence the name of cuspidal cubic.
+The arc length of the curve was calculated by the English mathematician William Neile and published in 1657 (see section History).
+
+
+== Properties of semicubical parabolas ==
+
+
+=== Similarity ===
+Any semicubical parabola 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        a
+        
+          t
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (t^{2},at^{3})}
+  
+ is similar to the semicubical unit parabola 
+  
+    
+      
+        (
+        
+          u
+          
+            2
+          
+        
+        ,
+        
+          u
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (u^{2},u^{3})}
+  
+.
+Proof: The similarity 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        →
+        (
+        
+          a
+          
+            2
+          
+        
+        x
+        ,
+        
+          a
+          
+            2
+          
+        
+        y
+        )
+      
+    
+    {\displaystyle (x,y)\rightarrow (a^{2}x,a^{2}y)}
+  
+ (uniform scaling) maps the semicubical parabola 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        a
+        
+          t
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (t^{2},at^{3})}
+  
+ onto the curve 
+  
+    
+      
+        (
+        (
+        a
+        t
+        
+          )
+          
+            2
+          
+        
+        ,
+        (
+        a
+        t
+        
+          )
+          
+            3
+          
+        
+        )
+        =
+        (
+        
+          u
+          
+            2
+          
+        
+        ,
+        
+          u
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle ((at)^{2},(at)^{3})=(u^{2},u^{3})}
+  
+ with 
+  
+    
+      
+        u
+        =
+        a
+        t
+      
+    
+    {\displaystyle u=at}
+  
+.
+
+
+=== Singularity ===
+The parametric representation 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        a
+        
+          t
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (t^{2},at^{3})}
+  
+ is regular except at point 
+  
+    
+      
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,0)}
+  
+. At point 
+  
+    
+      
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,0)}
+  
+ the curve has a singularity (cusp). The proof follows from the tangent vector 
+  
+    
+      
+        (
+        2
+        t
+        ,
+        3
+        
+          t
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle (2t,3t^{2})}
+  
+. Only for 
+  
+    
+      
+        t
+        =
+        0
+      
+    
+    {\displaystyle t=0}
+  
+ this vector has zero length.
+
+
+=== Tangents ===
+Differentiating the semicubical unit parabola 
+  
+    
+      
+        y
+        =
+        ±
+        
+          x
+          
+            3
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\displaystyle y=\pm x^{3/2}}
+  
+ one gets at point 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{0},y_{0})}
+  
+ of the upper branch the equation of the tangent:
+
+  
+    
+      
+        y
+        =
+        
+          
+            
+              
+                x
+                
+                  0
+                
+              
+            
+            2
+          
+        
+        
+          (
+          
+            3
+            x
+            −
+            
+              x
+              
+                0
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle y={\frac {\sqrt {x_{0}}}{2}}\left(3x-x_{0}\right).}
+  
+
+This tangent intersects the lower branch at exactly one further point with coordinates  
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  x
+                  
+                    0
+                  
+                
+                4
+              
+            
+            ,
+            −
+            
+              
+                
+                  y
+                  
+                    0
+                  
+                
+                8
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \left({\frac {x_{0}}{4}},-{\frac {y_{0}}{8}}\right).}
+  
+
+(Proving this statement one should use the fact, that the tangent meets the curve at 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{0},y_{0})}
+  
+ twice.)
+
+
+=== Arclength ===
+Determining the arclength of a curve 
+  
+    
+      
+        (
+        x
+        (
+        t
+        )
+        ,
+        y
+        (
+        t
+        )
+        )
+      
+    
+    {\displaystyle (x(t),y(t))}
+  
+ one has to solve the integral 
+  
+    
+      
+        ∫
+        
+          
+            
+              x
+              ′
+            
+            (
+            t
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              y
+              ′
+            
+            (
+            t
+            
+              )
+              
+                2
+              
+            
+          
+        
+        
+        d
+        t
+        .
+      
+    
+    {\textstyle \int {\sqrt {x'(t)^{2}+y'(t)^{2}}}\;dt.}
+  
+ For the semicubical parabola 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        a
+        
+          t
+          
+            3
+          
+        
+        )
+        ,
+        
+        0
+        ≤
+        t
+        ≤
+        b
+        ,
+      
+    
+    {\displaystyle (t^{2},at^{3}),\;0\leq t\leq b,}
+  
+ one gets 
+
+  
+    
+      
+        
+          ∫
+          
+            0
+          
+          
+            b
+          
+        
+        
+          
+            
+              x
+              ′
+            
+            (
+            t
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              y
+              ′
+            
+            (
+            t
+            
+              )
+              
+                2
+              
+            
+          
+        
+        
+        d
+        t
+        =
+        
+          ∫
+          
+            0
+          
+          
+            b
+          
+        
+        t
+        
+          
+            4
+            +
+            9
+            
+              a
+              
+                2
+              
+            
+            
+              t
+              
+                2
+              
+            
+          
+        
+        
+        d
+        t
+        =
+        ⋯
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                  
+                    27
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              
+                
+                  (
+                  
+                    4
+                    +
+                    9
+                    
+                      a
+                      
+                        2
+                      
+                    
+                    
+                      t
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    3
+                    2
+                  
+                
+              
+            
+            ]
+          
+          
+            0
+          
+          
+            b
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \int _{0}^{b}{\sqrt {x'(t)^{2}+y'(t)^{2}}}\;dt=\int _{0}^{b}t{\sqrt {4+9a^{2}t^{2}}}\;dt=\cdots =\left[{\frac {1}{27a^{2}}}\left(4+9a^{2}t^{2}\right)^{\frac {3}{2}}\right]_{0}^{b}\;.}
+  
+
+(The integral can be solved by the substitution 
+  
+    
+      
+        u
+        =
+        4
+        +
+        9
+        
+          a
+          
+            2
+          
+        
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle u=4+9a^{2}t^{2}}
+  
+.)
+Example: For a = 1 (semicubical unit parabola) and b = 2, which means the length of the arc between the origin and point (4,8), one gets the arc length 9.073.
+
+
+=== Evolute of the unit parabola ===
+The evolute of the parabola 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\displaystyle (t^{2},t)}
+  
+ is a semicubical parabola shifted by 1/2 along the x-axis: 
+  
+    
+      
+        
+          (
+          
+            
+              
+                1
+                2
+              
+            
+            +
+            
+              t
+              
+                2
+              
+            
+            ,
+            
+              
+                4
+                
+                  
+                    
+                      3
+                    
+                  
+                  
+                    3
+                  
+                
+              
+            
+            
+              t
+              
+                3
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\textstyle \left({\frac {1}{2}}+t^{2},{\frac {4}{{\sqrt {3}}^{3}}}t^{3}\right).}
+  
+
+
+=== Polar coordinates ===
+In order to get the representation of the semicubical parabola 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        a
+        
+          t
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (t^{2},at^{3})}
+  
+ in polar coordinates, one determines the intersection point of the line 
+  
+    
+      
+        y
+        =
+        m
+        x
+      
+    
+    {\displaystyle y=mx}
+  
+ with the curve. For 
+  
+    
+      
+        m
+        ≠
+        0
+      
+    
+    {\displaystyle m\neq 0}
+  
+ there is one point different from the origin: 
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  m
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            ,
+            
+              
+                
+                  m
+                  
+                    3
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\textstyle \left({\frac {m^{2}}{a^{2}}},{\frac {m^{3}}{a^{2}}}\right).}
+  
+ This point has distance 
+  
+    
+      
+        
+          
+            
+              m
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        
+          
+            1
+            +
+            
+              m
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\textstyle {\frac {m^{2}}{a^{2}}}{\sqrt {1+m^{2}}}}
+  
+ from the origin. With 
+  
+    
+      
+        m
+        =
+        tan
+        ⁡
+        φ
+      
+    
+    {\displaystyle m=\tan \varphi }
+  
+ and 
+  
+    
+      
+        
+          sec
+          
+            2
+          
+        
+        ⁡
+        φ
+        =
+        1
+        +
+        
+          tan
+          
+            2
+          
+        
+        ⁡
+        φ
+      
+    
+    {\displaystyle \sec ^{2}\varphi =1+\tan ^{2}\varphi }
+  
+ ( see List of identities) one gets 
+
+  
+    
+      
+        r
+        =
+        
+          
+            (
+            
+              
+                
+                  tan
+                  ⁡
+                  φ
+                
+                a
+              
+            
+            )
+          
+          
+            2
+          
+        
+        sec
+        ⁡
+        φ
+        
+        ,
+        
+        −
+        
+          
+            π
+            2
+          
+        
+        <
+        φ
+        <
+        
+          
+            π
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle r=\left({\frac {\tan \varphi }{a}}\right)^{2}\sec \varphi \;,\quad -{\frac {\pi }{2}}<\varphi <{\frac {\pi }{2}}.}
+  
+
+
+=== Relation between a semicubical parabola and a cubic function ===
+Mapping the semicubical parabola 
+  
+    
+      
+        (
+        
+          t
+          
+            2
+          
+        
+        ,
+        
+          t
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (t^{2},t^{3})}
+  
+ by the projective map 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        →
+        
+          (
+          
+            
+              
+                x
+                y
+              
+            
+            ,
+            
+              
+                1
+                y
+              
+            
+          
+          )
+        
+      
+    
+    {\textstyle (x,y)\rightarrow \left({\frac {x}{y}},{\frac {1}{y}}\right)}
+  
+ (involutory perspectivity with axis 
+  
+    
+      
+        y
+        =
+        1
+      
+    
+    {\displaystyle y=1}
+  
+ and center 
+  
+    
+      
+        (
+        0
+        ,
+        −
+        1
+        )
+      
+    
+    {\displaystyle (0,-1)}
+  
+) yields 
+  
+    
+      
+        
+          (
+          
+            
+              
+                1
+                t
+              
+            
+            ,
+            
+              
+                1
+                
+                  t
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\textstyle \left({\frac {1}{t}},{\frac {1}{t^{3}}}\right),}
+  
+ hence the cubic function 
+  
+    
+      
+        y
+        =
+        
+          x
+          
+            3
+          
+        
+        .
+      
+    
+    {\displaystyle y=x^{3}.}
+  
+ The cusp (origin) of the semicubical parabola is exchanged with the point at infinity of the y-axis.
+This property can be derived, too, if one represents the semicubical parabola by homogeneous coordinates: In equation (A) the replacement 
+  
+    
+      
+        x
+        =
+        
+          
+            
+              
+                x
+                
+                  1
+                
+              
+              
+                x
+                
+                  3
+                
+              
+            
+          
+        
+        ,
+        
+        y
+        =
+        
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              
+                x
+                
+                  3
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle x={\tfrac {x_{1}}{x_{3}}},\;y={\tfrac {x_{2}}{x_{3}}}}
+  
+ (the line at infinity has equation 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle x_{3}=0}
+  
+.) and the multiplication by 
+  
+    
+      
+        
+          x
+          
+            3
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle x_{3}^{3}}
+  
+ is performed. One gets the equation of the curve 
+
+in homogeneous coordinates: 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+        
+          x
+          
+            2
+          
+          
+            2
+          
+        
+        −
+        
+          x
+          
+            1
+          
+          
+            3
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle x_{3}x_{2}^{2}-x_{1}^{3}=0.}
+  
+
+Choosing line 
+  
+    
+      
+        
+          x
+          
+            
+              2
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle x_{\color {red}2}=0}
+  
+ as line at infinity and introducing 
+  
+    
+      
+        x
+        =
+        
+          
+            
+              
+                x
+                
+                  1
+                
+              
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+        
+        y
+        =
+        
+          
+            
+              
+                x
+                
+                  3
+                
+              
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle x={\tfrac {x_{1}}{x_{2}}},\;y={\tfrac {x_{3}}{x_{2}}}}
+  
+ yields the (affine) curve 
+  
+    
+      
+        y
+        =
+        
+          x
+          
+            3
+          
+        
+        .
+      
+    
+    {\displaystyle y=x^{3}.}
+  
+
+
+=== Isochrone curve ===
+An additional defining property of the semicubical parabola is that it is an isochrone curve, meaning that a particle following its path while being pulled down by gravity travels equal vertical intervals in equal time periods. In this way it is related to the tautochrone curve, for which particles at different starting points always take equal time to reach the bottom, and the brachistochrone curve, the curve that minimizes the time it takes for a falling particle to travel from its start to its end.
+
+
+== History ==
+The semicubical parabola was discovered in 1657 by William Neile who computed its arc length. Although the lengths of some other non-algebraic curves including the logarithmic spiral and cycloid had already been computed (that is, those curves had been rectified), the semicubical parabola was the first algebraic curve (excluding the line and circle) to be rectified.
+
+
+== References ==
+
+August Pein: Die semicubische oder Neil'sche Parabel, ihre Sekanten und Tangenten , 1875, Dissertation
+Clifford A. Pickover: The Length of Neile's Semicubical Parabola
+
+
+== External links ==
+O'Connor, John J.; Robertson, Edmund F., "Neile's Semi-cubical Parabola", MacTutor History of Mathematics Archive, University of St Andrews

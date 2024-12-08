@@ -1,0 +1,60 @@
+Game Editor is a 2D game authoring package. It supports multi-platform development to iPhone, iPad, Mac OS X, Windows (Windows 95-Windows 10), Android, Linux, Windows Mobile-based Smartphones, GP2X, Pocket PCs, and Handheld PCs. Compatibility with these platforms is mentioned on Game Discovery, a popular site for game developers, among other software like The 3D Gamemaker, DarkBASIC, and GameMaker.
+Game Editor was created by Makslane Rodrigues, who has been developing it since 2002. The current version is 1.4.0 from 2010, with the latest beta 1.4.1 being from 2013; it is still considered to be a work in progress. On February 2, 2021, work on a proprietary Game-Editor 2 was announced, reimplementing it atop of GTK and ORX.
+
+
+== Features ==
+
+
+=== Interface ===
+The interface itself is relatively basic and is the same for Mac OS X, Linux and Windows. Navigating the editor map (where the level is designed and executed) involves panning. The interface is composed of a main menu at the top, which shows the current position on the map, and icons indicating the mode(s) the user is in. The interface is window based. Each action and event has its own window, along with several settings windows.
+
+
+=== Target platforms ===
+Target platforms include Mac OS X, Windows, Linux, iPhone, iPad, Windows Mobile based Smartphones, GP2X and Handhelds. It is possible to make builds, or export game data only, so that designers can store the game or its parts in non-executable files. The editor itself runs on Mac OS X, Windows and Linux.
+
+
+=== Scripting language ===
+Game Editor uses a scripting language that bears similarities to the C programming language. Scripts are created through the script editor, defined as an action triggered by an event.
+The script editor window gives access to the built-in names of objects (actors), variables and functions. It is capable of syntax coloring to make code easier to distinguish.
+
+
+=== Actor concept ===
+The objects in Game Editor are known as actors. Notably, this doesn't mean every actor has to be a character. The user can add multiple graphics and animations to an actor from supported formats (listed below).
+Game Editor recognizes alpha channels, to enable animation transparencies. In the case of all images, it recognizes the top-left pixel's color as the transparent color, and finally, there's a user-modifiable transparency value, which sets literally how transparent the actor will be overall; this gives various possibilities for adding visual effects to the game, such as fog.
+Actors can have either animations or text, which is handy for help sections, menu descriptions, and RPG talk. With actors, the developer can also play sounds, sound effects and add music to the game. Again there are several file formats to choose from. The developer can check your actor's position by clicking on game mod.
+
+A very important aspect of actors is that there are four types of them. The normal actor type is what the above talks about. The additional types of actors are Wire-frame, Filled Regions, and Canvas actors.
+Wire Framed regions can serve as borders for some collision, but they're not visible in-game, and cannot receive mouse click events. Filled Regions are also invisible, the difference being they can receive actions from mouse clicks.
+Canvas actors let the developer draw any line, image or other elements on them. Additionally, it allows the rotation and scaling of other images on other actors, as well as just a file on disk. Scripting knowledge is needed to perform these effects.
+
+
+=== Events ===
+The Game Editor engine is event driven. For something to happen in the game, Game Editor handles events create by the developer using the interaction of actors, and other game elements, the mouse and the keyboard. The actions that are triggered by an event can be customized extensively.
+
+
+=== Level creation ===
+Game Editor provides two ways for dividing the levels of the game. One is creating separate files for each level, and then linking them with 1 or 2 functions. But if the levels are small anyway, and the developer doesn't want to separate them so much, all leverls can be stored into one file, and the levels can be surrounded with activation regions which define the surrounded part of the file loaded in and out of the memory together. This loads and unloads actors and regions depending on whether the activation region is touching the view. If the developer has already created a separate level file, then projects can be merged into one file, as long as the actor names merged are different.
+
+
+=== Non-actor objects ===
+Game Editor also allows the developer to create Paths, and activation events. Paths are marked as nodes in Game Editor interface, and can specify a route the actor will move on. The speed of the path can also be modified, and the path can be made up of Bézier curves and linear lines too.
+Activation events are another important aspect. When one actor receives an event, then if there's an activation event on that actor for that event, then it triggers an activation event on the specified actor. Example:
+If two cars crash, during game play and there's a hintbox actor which comments in-game events, and the developer wants the hintbox to say: "2 cars crashed" when they do, then an activation event one of the cars can be created, and the triggering event of a collision with another car actor can be made; then the activation event receiver can be set to Hintbox, and finally, an action can be created for the activation event on hintbox, which is a Set Text. Then the color and font of the displayed text can be specified.
+
+
+== File extension ==
+Game Editor projects can be saved into .ged files before exporting/building into an executable. All versions of Game Editor are backwards compatible. Game Editor also adds a folder named "data" into the directory in which the user saved the .ged to store the related graphics, animations, sounds, and music files. A .ged.undo file is also created to store undo/redo possibilities.
+
+
+== Reference and help ==
+When using game editor, a documentation is accessible reached from the main menu's Help section. This documentation explains the basics of the editor to the concept of individual script functions. The game editor website supports a forum that answers more complex questions involving game design and demos to experiment from. The editor forum also gives access to additional files for the amateur to use.
+
+
+== Game Editor source code ==
+The source code of Game Editor was made available to the public in October 2008. It was subsequently dual-licensed as of October 2009 under the terms of the GPL v3 and a commercial license for use with proprietary projects.
+The revenues are shared with all developers that have accepted contributions, and it was hoped this would increase the rate of Game Editor's development.
+
+
+== References ==
+5. ..
+.[1]

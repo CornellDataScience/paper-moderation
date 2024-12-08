@@ -1,0 +1,643 @@
+In the branches of abstract algebra known as ring theory and module theory, each right (resp. left) R-module M has a singular submodule consisting of elements whose annihilators are essential right (resp. left) ideals in R.  In set notation it is usually denoted as 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+        =
+        {
+        m
+        ∈
+        M
+        ∣
+        
+          a
+          n
+          n
+        
+        (
+        m
+        )
+        
+          ⊆
+          
+            e
+          
+        
+        R
+        }
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(M)=\{m\in M\mid \mathrm {ann} (m)\subseteq _{e}R\}\,}
+  
+.  For general rings, 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle {\mathcal {Z}}(M)}
+  
+ is a good generalization of the torsion submodule tors(M) which is most often defined for domains.  In the case that R is a commutative domain, 
+  
+    
+      
+        tors
+        ⁡
+        (
+        M
+        )
+        =
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle \operatorname {tors} (M)={\mathcal {Z}}(M)}
+  
+.
+If R is any ring, 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+      
+    
+    {\displaystyle {\mathcal {Z}}(R_{R})}
+  
+ is defined considering R as a right module, and in this case 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+      
+    
+    {\displaystyle {\mathcal {Z}}(R_{R})}
+  
+ is a two-sided ideal of R called the right singular ideal of R. The left handed analogue 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        
+          (
+          
+            R
+          
+        
+        R
+        )
+      
+    
+    {\displaystyle {\mathcal {Z}}(_{R}R)}
+  
+ is defined similarly.  It is possible for 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+        ≠
+        
+          
+            Z
+          
+        
+        
+          (
+          
+            R
+          
+        
+        R
+        )
+      
+    
+    {\displaystyle {\mathcal {Z}}(R_{R})\neq {\mathcal {Z}}(_{R}R)}
+  
+.
+
+
+== Definitions ==
+Here are several definitions used when studying singular submodules and singular ideals. 
+In the following, M is an R-module:
+
+M is called a singular module if 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+        =
+        M
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(M)=M\,}
+  
+.
+M is called a nonsingular module if 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+        =
+        {
+        0
+        }
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(M)=\{0\}\,}
+  
+.
+R is called right nonsingular if 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+        =
+        {
+        0
+        }
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(R_{R})=\{0\}\,}
+  
+.  A left nonsingular ring is defined similarly, using the left singular ideal, and it is entirely possible for a ring to be right-but-not-left nonsingular.
+In rings with unity it is always the case that 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+        ⊊
+        R
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(R_{R})\subsetneq R\,}
+  
+, and so "right singular ring" is not usually defined the same way as singular modules are.  Some authors have used "singular ring" to mean "has a nonzero singular ideal", however this usage is not consistent with the usage of the adjectives for modules.
+
+
+== Properties ==
+Some general properties of the singular submodule include:
+
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          M
+          
+            R
+          
+        
+        )
+        ⋅
+        
+          s
+          o
+          c
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+        =
+        {
+        0
+        }
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(M_{R})\cdot \mathrm {soc} (R_{R})=\{0\}\,}
+  
+ where 
+  
+    
+      
+        
+          s
+          o
+          c
+        
+        (
+        
+          M
+          
+            R
+          
+        
+        )
+        
+      
+    
+    {\displaystyle \mathrm {soc} (M_{R})\,}
+  
+ denotes the socle of 
+  
+    
+      
+        
+          R
+          
+            R
+          
+        
+      
+    
+    {\displaystyle R_{R}}
+  
+.
+If f is a homomorphism of R-modules from M to N, then 
+  
+    
+      
+        f
+        (
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+        )
+        ⊆
+        
+          
+            Z
+          
+        
+        (
+        N
+        )
+        
+      
+    
+    {\displaystyle f({\mathcal {Z}}(M))\subseteq {\mathcal {Z}}(N)\,}
+  
+.
+If N is a submodule of M, then 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        N
+        )
+        =
+        N
+        ∩
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(N)=N\cap {\mathcal {Z}}(M)\,}
+  
+.
+The properties "singular" and "nonsingular" are Morita invariant properties.
+The singular ideals of a ring contain central nilpotent elements of the ring. Consequently, the singular ideal of a commutative ring contains the nilradical of the ring.
+A general property of the torsion submodule is that 
+  
+    
+      
+        t
+        (
+        M
+        
+          /
+        
+        t
+        (
+        M
+        )
+        )
+        =
+        {
+        0
+        }
+        
+      
+    
+    {\displaystyle t(M/t(M))=\{0\}\,}
+  
+, but this does not necessarily hold for the singular submodule.  However, if R is a right nonsingular ring, then 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        M
+        
+          /
+        
+        
+          
+            Z
+          
+        
+        (
+        M
+        )
+        )
+        =
+        {
+        0
+        }
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(M/{\mathcal {Z}}(M))=\{0\}\,}
+  
+.
+If N is an essential submodule of M (both right modules) then M/N is singular.  If M is a free module, or if R is right nonsingular, then the converse is true.
+A semisimple module is nonsingular if and only if it is a projective module.
+If R is a right self-injective ring, then 
+  
+    
+      
+        
+          
+            Z
+          
+        
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+        =
+        J
+        (
+        R
+        )
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}(R_{R})=J(R)\,}
+  
+, where J(R) is the Jacobson radical of R.
+
+
+== Examples ==
+Right nonsingular rings are a very broad class, including reduced rings, right (semi)hereditary rings, von Neumann regular rings, domains, semisimple rings, Baer rings and right Rickart rings.
+For commutative rings, being nonsingular is equivalent to being a reduced ring.
+
+
+== Important theorems ==
+Johnson's Theorem (due to R. E. Johnson (Lam 1999, p. 376)) contains several important equivalences.  For any ring R, the following are equivalent:
+
+R is right nonsingular.
+The injective hull E(RR) is a nonsingular right R-module.
+The endomorphism ring 
+  
+    
+      
+        S
+        =
+        
+          E
+          n
+          d
+        
+        (
+        E
+        (
+        
+          R
+          
+            R
+          
+        
+        )
+        )
+        
+      
+    
+    {\displaystyle S=\mathrm {End} (E(R_{R}))\,}
+  
+ is a semiprimitive ring (that is, 
+  
+    
+      
+        J
+        (
+        S
+        )
+        =
+        {
+        0
+        }
+        
+      
+    
+    {\displaystyle J(S)=\{0\}\,}
+  
+).
+The maximal right ring of quotients 
+  
+    
+      
+        
+          Q
+          
+            m
+            a
+            x
+          
+          
+            r
+          
+        
+        (
+        R
+        )
+      
+    
+    {\displaystyle Q_{max}^{r}(R)}
+  
+ is von Neumann regular.
+Right nonsingularity has a strong interaction with right self injective rings as well.
+Theorem: If R is a right self injective ring, then the following conditions on R are equivalent: right nonsingular, von Neumann regular, right semihereditary, right Rickart, Baer, semiprimitive. (Lam 1999, p. 262)
+The paper (Zelmanowitz 1983) used nonsingular modules to characterize the class of rings whose maximal right ring of quotients have a certain structure.
+Theorem: If R is a ring, then 
+  
+    
+      
+        
+          Q
+          
+            m
+            a
+            x
+          
+          
+            r
+          
+        
+        (
+        R
+        )
+      
+    
+    {\displaystyle Q_{max}^{r}(R)}
+  
+ is a right full linear ring if and only if R has a nonsingular, faithful, uniform module.  Moreover, 
+  
+    
+      
+        
+          Q
+          
+            m
+            a
+            x
+          
+          
+            r
+          
+        
+        (
+        R
+        )
+      
+    
+    {\displaystyle Q_{max}^{r}(R)}
+  
+ is a finite direct product of full linear rings if and only if R has a nonsingular, faithful module with finite uniform dimension.
+
+
+== Textbooks ==
+Goodearl, K. R. (1976), Ring theory: Nonsingular rings and modules, Pure and Applied Mathematics, No. 33, New York: Marcel Dekker Inc., pp. viii+206, MR 0429962
+Lam, Tsit-Yuen (1999), Lectures on modules and rings, Graduate Texts in Mathematics No. 189, Berlin, New York: Springer-Verlag, doi:10.1007/978-1-4612-0525-8, ISBN 978-0-387-98428-5, MR 1653294
+
+
+== Primary sources ==
+Zelmanowitz, J. M. (1983), "The structure of rings with faithful nonsingular modules", Trans. Amer. Math. Soc., 278 (1): 347–359, doi:10.2307/1999320, ISSN 0002-9947, MR 0697079

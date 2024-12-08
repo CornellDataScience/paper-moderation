@@ -1,0 +1,580 @@
+In mathematics, a Rosati involution, named after Carlo Rosati,  is an involution of the rational endomorphism ring of an abelian variety induced by a polarisation.
+Let 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ be an abelian variety, let 
+  
+    
+      
+        
+          
+            
+              A
+              ^
+            
+          
+        
+        =
+        
+          
+            P
+            i
+            c
+          
+          
+            0
+          
+        
+        (
+        A
+        )
+      
+    
+    {\displaystyle {\hat {A}}=\mathrm {Pic} ^{0}(A)}
+  
+ be the dual abelian variety, and for 
+  
+    
+      
+        a
+        ∈
+        A
+      
+    
+    {\displaystyle a\in A}
+  
+, let 
+  
+    
+      
+        
+          T
+          
+            a
+          
+        
+        :
+        A
+        →
+        A
+      
+    
+    {\displaystyle T_{a}:A\to A}
+  
+ be the translation-by-
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ map, 
+  
+    
+      
+        
+          T
+          
+            a
+          
+        
+        (
+        x
+        )
+        =
+        x
+        +
+        a
+      
+    
+    {\displaystyle T_{a}(x)=x+a}
+  
+. Then each divisor 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ on 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ defines a map 
+  
+    
+      
+        
+          ϕ
+          
+            D
+          
+        
+        :
+        A
+        →
+        
+          
+            
+              A
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \phi _{D}:A\to {\hat {A}}}
+  
+ via 
+  
+    
+      
+        
+          ϕ
+          
+            D
+          
+        
+        (
+        a
+        )
+        =
+        [
+        
+          T
+          
+            a
+          
+          
+            ∗
+          
+        
+        D
+        −
+        D
+        ]
+      
+    
+    {\displaystyle \phi _{D}(a)=[T_{a}^{*}D-D]}
+  
+.  The map 
+  
+    
+      
+        
+          ϕ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \phi _{D}}
+  
+ is a polarisation if 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is ample.  The Rosati involution of 
+  
+    
+      
+        
+          E
+          n
+          d
+        
+        (
+        A
+        )
+        ⊗
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathrm {End} (A)\otimes \mathbb {Q} }
+  
+ relative to the polarisation  
+  
+    
+      
+        
+          ϕ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \phi _{D}}
+  
+ sends a map 
+  
+    
+      
+        ψ
+        ∈
+        
+          E
+          n
+          d
+        
+        (
+        A
+        )
+        ⊗
+        
+          Q
+        
+      
+    
+    {\displaystyle \psi \in \mathrm {End} (A)\otimes \mathbb {Q} }
+  
+ to the map 
+  
+    
+      
+        
+          ψ
+          ′
+        
+        =
+        
+          ϕ
+          
+            D
+          
+          
+            −
+            1
+          
+        
+        ∘
+        
+          
+            
+              ψ
+              ^
+            
+          
+        
+        ∘
+        
+          ϕ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \psi '=\phi _{D}^{-1}\circ {\hat {\psi }}\circ \phi _{D}}
+  
+, where 
+  
+    
+      
+        
+          
+            
+              ψ
+              ^
+            
+          
+        
+        :
+        
+          
+            
+              A
+              ^
+            
+          
+        
+        →
+        
+          
+            
+              A
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {\psi }}:{\hat {A}}\to {\hat {A}}}
+  
+ is the dual map induced by the action of 
+  
+    
+      
+        
+          ψ
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \psi ^{*}}
+  
+ on 
+  
+    
+      
+        
+          P
+          i
+          c
+        
+        (
+        A
+        )
+      
+    
+    {\displaystyle \mathrm {Pic} (A)}
+  
+.
+Let 
+  
+    
+      
+        
+          N
+          S
+        
+        (
+        A
+        )
+      
+    
+    {\displaystyle \mathrm {NS} (A)}
+  
+ denote the Néron–Severi group of 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+. The polarisation 
+  
+    
+      
+        
+          ϕ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \phi _{D}}
+  
+ also induces an inclusion 
+  
+    
+      
+        Φ
+        :
+        
+          N
+          S
+        
+        (
+        A
+        )
+        ⊗
+        
+          Q
+        
+        →
+        
+          E
+          n
+          d
+        
+        (
+        A
+        )
+        ⊗
+        
+          Q
+        
+      
+    
+    {\displaystyle \Phi :\mathrm {NS} (A)\otimes \mathbb {Q} \to \mathrm {End} (A)\otimes \mathbb {Q} }
+  
+ via 
+  
+    
+      
+        
+          Φ
+          
+            E
+          
+        
+        =
+        
+          ϕ
+          
+            D
+          
+          
+            −
+            1
+          
+        
+        ∘
+        
+          ϕ
+          
+            E
+          
+        
+      
+    
+    {\displaystyle \Phi _{E}=\phi _{D}^{-1}\circ \phi _{E}}
+  
+. The image of 
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+ is equal to 
+  
+    
+      
+        {
+        ψ
+        ∈
+        
+          E
+          n
+          d
+        
+        (
+        A
+        )
+        ⊗
+        
+          Q
+        
+        :
+        
+          ψ
+          ′
+        
+        =
+        ψ
+        }
+      
+    
+    {\displaystyle \{\psi \in \mathrm {End} (A)\otimes \mathbb {Q} :\psi '=\psi \}}
+  
+, i.e., the set of endomorphisms fixed by the Rosati involution.  The operation 
+  
+    
+      
+        E
+        ⋆
+        F
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          Φ
+          
+            −
+            1
+          
+        
+        (
+        
+          Φ
+          
+            E
+          
+        
+        ∘
+        
+          Φ
+          
+            F
+          
+        
+        +
+        
+          Φ
+          
+            F
+          
+        
+        ∘
+        
+          Φ
+          
+            E
+          
+        
+        )
+      
+    
+    {\displaystyle E\star F={\frac {1}{2}}\Phi ^{-1}(\Phi _{E}\circ \Phi _{F}+\Phi _{F}\circ \Phi _{E})}
+  
+ then gives 
+  
+    
+      
+        
+          N
+          S
+        
+        (
+        A
+        )
+        ⊗
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathrm {NS} (A)\otimes \mathbb {Q} }
+  
+ the structure of a formally real Jordan algebra.
+
+
+== References ==
+Mumford, David (2008) [1970], Abelian varieties, Tata Institute of Fundamental Research Studies in Mathematics, vol. 5, Providence, R.I.: American Mathematical Society, ISBN 978-81-85931-86-9, MR 0282985, OCLC 138290
+Rosati, Carlo (1918), "Sulle corrispondenze algebriche fra i punti di due curve algebriche.", Annali di Matematica Pura ed Applicata (in Italian), 3 (28): 35–60, doi:10.1007/BF02419717, S2CID 121620469

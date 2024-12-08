@@ -1,0 +1,52 @@
+The Internationalization Tag Set (ITS) is a set of attributes and elements designed to provide internationalization and localization support in XML documents.
+The ITS specification identifies concepts (called "ITS data categories") which are important for internationalization and localization. It also defines implementation of these concepts through a set of elements and attributes grouped in the ITS namespace. XML developers can use this namespace to integrate internationalization features directly into their own XML schemas and documents.
+
+
+== Overview ==
+ITS v1.0 includes seven data categories:
+
+Translate: Defines what parts of a document are translatable or not.
+Localization Note: Provides alerts, hints, instructions, or other information to help the localizers or the translators.
+Terminology: Indicates which parts of the documents are terms and optionally points to information about these terms.
+Directionality: Indicates what type of display directionality should be applied to parts of the document.
+Ruby: Indicates what parts of the document should be displayed as ruby text. (Ruby is a short run of text alongside a base text, typically used in East Asian documents to indicate pronunciation or to provide a brief annotation).
+Language Information: Identifies the language of the different parts of the document.
+Elements Within Text: Indicates how elements should be treated with regard to linguistic segmentation.
+The vocabulary is designed to address two different aspects: First by providing markup usable directly in the XML documents. Second, by offering a way to indicate if there are parts of a given markup that correspond to some of the ITS data categories and should be treated as such by ITS processors.
+ITS applies to both new document types as well as existing ones. It also applies to both markups without any internationalization features as well documents already supporting internationalization or localization-related functions.
+ITS can be specified using global rules and local rules.
+
+The global rules are expressed anywhere in the document (embedded global rules), or even outside the document (external global rules), using the its:rules element.
+The local rules are expressed by specialized attributes (and sometimes elements) specified inside the document instance, at the location where they apply.
+
+
+== Examples ==
+
+
+=== Translate data category ===
+In the following ITS markup example, the elements and attributes with the its prefix are part of the ITS namespace. The its:rules element lists the different rules to apply to this file. There is one its:translateRule rule that indicates that any content inside the head element should not be translated.
+The its:translate attributes used in some elements are utilized to override the global rule. Here, to make translatable the content of title and to make non-translatable the text "faux pas".
+
+
+=== Localization Note data category ===
+In the following ITS markup example, the its:locNote element specifies that any node corresponding to the XPath expression "//msg/data" has an associated note. The location of that note is expressed by the locNotePointer attribute, which holds a relative XPath expression  pointing to the node where the note is, here ="../notes".
+Note also the use of the its:translate attribute to mark the notes elements as non-translatable.
+
+
+== ITS limitations ==
+ITS does not have a solution to all XML internationalization and localization issues.
+One reason is that version 1.0 does not have data categories for everything. For example, there is currently no way to indicate a relation source/target in bilingual files where some parts of a document store the source text and some other parts the corresponding translation.
+The other reason is that many aspects of internationalization cannot be resolved with markup. This is due to the design of the DTD or the schema itself. There are best practices, design and authoring guidelines help make documents are correctly internationalized and easy to localize. For example, using attributes to store translatable text is a bad idea for many different reasons, but ITS cannot prevent an XML developer from making such choice.
+Some of the ITS 1.0 limitations are being addressed in the version 2.0: See http://www.w3.org/TR/its20/ for more details.
+
+
+== References ==
+
+
+== External links ==
+Internationalization Tag Set (ITS) Version 1.0
+Internationalization Tag Set (ITS) Version 2.0
+W3C Internationalization Home
+Best Practices for XML Internationalization
+List of ITS 1.0 implementations and articles about ITS
+List of ITS 2.0 implementations

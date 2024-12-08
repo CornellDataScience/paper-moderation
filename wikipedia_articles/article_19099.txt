@@ -1,0 +1,125 @@
+Astroinformatics is an interdisciplinary field of study involving the combination of astronomy, data science, machine learning, informatics, and information/communications technologies. The field is closely related to astrostatistics.
+Data-driven astronomy (DDA) refers to the use of data science in astronomy. Several outputs of telescopic observations and sky surveys are taken into consideration and approaches related to data mining and big data management are used to analyze, filter, and normalize the data set that are further used for making Classifications, Predictions, and Anomaly detections by advanced Statistical approaches, digital image processing and machine learning. The output of these processes is used by astronomers and space scientists to study and identify patterns, anomalies, and movements in outer space and conclude theories and discoveries in the cosmos.
+
+
+== Background ==
+Astroinformatics is primarily focused on developing the tools, methods, and applications of computational science, data science, machine learning, and statistics for research and education in data-oriented astronomy. Early efforts in this direction included data discovery, metadata standards development, data modeling, astronomical data dictionary development, data access, information retrieval, data integration, and data mining in the astronomical Virtual Observatory initiatives. Further development of the field, along with astronomy community endorsement, was presented to the National Research Council (United States) in 2009 in the astroinformatics "state of the profession" position paper for the 2010 Astronomy and Astrophysics Decadal Survey. That position paper provided the basis for the subsequent more detailed exposition of the field in the Informatics Journal paper Astroinformatics: Data-Oriented Astronomy Research and Education.
+Astroinformatics as a distinct field of research was inspired by work in the fields of Geoinformatics, Cheminformatics, Bioinformatics, and through the eScience work of Jim Gray (computer scientist) at Microsoft Research, whose legacy was remembered and continued through the Jim Gray eScience Awards.
+Although the primary focus of astroinformatics is on the large worldwide distributed collection of digital astronomical databases, image archives, and research tools, the field recognizes the importance of legacy data sets as well—using modern technologies to preserve and analyze historical astronomical observations. Some Astroinformatics practitioners help to digitize historical and recent astronomical observations and images in a large database for efficient retrieval through web-based interfaces. Another aim is to help develop new methods and software for astronomers, as well as to help facilitate the process and analysis of the rapidly growing amount of data in the field of astronomy.
+Astroinformatics is described as the "fourth paradigm" of astronomical research. There are many research areas involved with astroinformatics, such as data mining, machine learning, statistics, visualization, scientific data management, and semantic science. Data mining and machine learning play significant roles in astroinformatics as a scientific research discipline due to their focus on "knowledge discovery from data" (KDD) and "learning from data".
+The amount of data collected from astronomical sky surveys has grown from gigabytes to terabytes throughout the past decade and is predicted to grow in the next decade into hundreds of petabytes with the Large Synoptic Survey Telescope and into the exabytes with the Square Kilometre Array. This plethora of new data both enables and challenges effective astronomical research. Therefore, new approaches are required. In part due to this, data-driven science is becoming a recognized academic discipline. Consequently, astronomy (and other scientific disciplines) are developing information-intensive and data-intensive sub-disciplines to an extent that these sub-disciplines are now becoming (or have already become) standalone research disciplines and full-fledged academic programs. While many institutes of education do not boast an astroinformatics program, such programs most likely will be developed in the near future.
+Informatics has been recently defined as "the use of digital data, information, and related services for research and knowledge generation". However the usual, or commonly used definition is "informatics is the discipline of organizing, accessing, integrating, and mining data from multiple sources for discovery and decision support." Therefore, the discipline of astroinformatics includes many naturally-related specialties including data modeling, data organization, etc. It may also include transformation and normalization methods for data integration and information visualization, as well as knowledge extraction, indexing techniques, information retrieval and data mining methods. Classification schemes (e.g., taxonomies, ontologies, folksonomies, and/or collaborative tagging) plus Astrostatistics will also be heavily involved. Citizen science projects (such as Galaxy Zoo) also contribute highly valued novelty discovery, feature meta-tagging, and object characterization within large astronomy data sets. All of these specialties enable scientific discovery across varied massive data collections, collaborative research, and data re-use, in both research and learning environments.
+In 2007, the Galaxy Zoo project was launched for morphological classification of a large number of galaxies. In this project, 900,000 images were considered for classification that were taken from the Sloan Digital Sky Survey (SDSS) for the past 7 years. The task was to study each picture of a galaxy, classify it as elliptical or spiral, and determine whether it was spinning or not. The team of Astrophysicists led by Kevin Schawinski in Oxford University were in charge of this project and Kevin and his colleague Chris Linlott figured out that it would take a period of 3–5 years for such a team to complete the work. There they came up with the idea of using Machine Learning and Data Science techniques for analyzing the images and classifying them.
+In 2012, two position papers were presented to the Council of the American Astronomical Society that led to the establishment of formal working groups in astroinformatics and Astrostatistics for the profession of astronomy within the US and elsewhere.
+Astroinformatics provides a natural context for the integration of education and research. The experience of research can now be implemented within the classroom to establish and grow data literacy through the easy re-use of data. It also has many other uses, such as repurposing archival data for new projects, literature-data links, intelligent retrieval of information, and many others.
+
+
+== Methodology ==
+The data retrieved from the sky surveys are first brought for data preprocessing. In this, redundancies are removed and filtrated. Further, feature extraction is performed on this filtered data set, which is further taken for processes. Some of the renowned sky surveys are listed below:
+
+The Palomar Digital Sky Survey (DPOSS)
+The Two-Micron All Sky Survey (2MASS)
+Green Bank Telescope (GBT)
+The Galaxy Evolution Explorer (GALEX)
+The Sloan Digital Sky Survey (SDSS)
+SkyMapper Southern Sky Survey (SMSS)
+The Panoramic Survey Telescope and Rapid Response System (PanSTARRS)
+The Large Synoptic Survey Telescope (LSST)
+The Square Kilometer Array (SKA)
+The size of data from the above-mentioned sky surveys ranges from 3 TB to almost 4.6 EB. Further, data mining tasks that are involved in the management and manipulation of the data involve methods like classification, regression, clustering, anomaly detection, and time-series analysis. Several approaches and applications for each of these methods are involved in the task accomplishments.
+
+
+=== Classification ===
+Classification is used for specific identifications and categorizations of astronomical data such as Spectral classification, Photometric classification, Morphological classification, and classification of solar activity. The approaches of classification techniques are listed below:
+
+Artificial neural network (ANN)
+Support vector machine (SVM)
+Learning vector quantization (LVQ)
+Decision tree
+Random forest
+k-nearest neighbors
+Naïve Bayesian networks
+Radial basis function network
+Gaussian process
+Decision table
+Alternating decision tree (ADTree)
+
+
+=== Regression ===
+Regression is used to make predictions based on the retrieved data through statistical trends and statistical modeling. Different uses of this technique are used for fetching Photometric redshifts and measurements of physical parameters of stars. The approaches are listed below:
+
+Artificial neural network (ANN)
+Support vector regression (SVR)
+Decision tree
+Random forest
+k-nearest neighbors regression
+Kernel regression
+Principal component regression (PCR)
+Gaussian process
+Least squared regression (LSR)
+Partial least squares regression
+
+
+=== Clustering ===
+Clustering is classifying objects based on a similarity measure metric. It is used in Astronomy for Classification as well as Special/rare object detection. The approaches are listed below:
+
+Principal component analysis (PCA)
+DBSCAN
+k-means clustering
+OPTICS
+Cobweb model
+Self-organizing map (SOM)
+Expectation Maximization
+Hierarchical Clustering
+AutoClass
+Gaussian Mixture Modeling (GMM)
+
+
+=== Anomaly detection ===
+Anomaly detection is used for detecting irregularities in the dataset. However, this technique is used here to detect rare/special objects. The following approaches are used:
+
+Principal Component Analysis (PCA)
+k-means clustering
+Expectation Maximization
+Hierarchical clustering
+One-class SVM
+
+
+=== Time-series analysis ===
+Time-Series analysis helps in analyzing trends and predicting outputs over time. It is used for trend prediction and novel detection (detection of unknown data). The approaches used here are:
+
+Artificial neural network (ANN)
+Support vector regression (SVR)
+Decision tree
+
+
+== Conferences ==
+
+Additional conferences and conference lists:
+
+
+== See also ==
+Astronomy and Computing
+Astrophysics Data System
+Astrophysics Source Code Library
+Astrostatistics
+Committee on Data for Science and Technology
+Data-driven astronomy
+Galaxy Zoo
+International Astrostatistics Association
+International Virtual Observatory Alliance (IVOA)
+MilkyWay@home
+Virtual Observatory
+WorldWide Telescope
+Zooniverse
+
+
+== References ==
+
+
+== External links ==
+International AstroInformatics Association (IAIA)
+Astronomical Data Analysis Software and Systems (ADASS)
+Astrostatistics and Astroinformatics Portal
+Cosmostatistics Initiative (COIN)
+Astroinformatics and Astrostatistics Commission of the International Astronomical Union

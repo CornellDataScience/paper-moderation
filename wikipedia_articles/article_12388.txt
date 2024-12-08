@@ -1,0 +1,922 @@
+In analytic geometry, the direction cosines (or directional cosines) of a vector are the cosines of the angles between the vector and the three positive coordinate axes. Equivalently, they are the contributions of each component of the basis to a unit vector in that direction.
+
+
+== Three-dimensional Cartesian coordinates ==
+
+If v is a Euclidean vector in three-dimensional Euclidean space, ⁠
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ^{3},}
+  
+⁠
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          v
+          
+            x
+          
+        
+        
+          
+            e
+          
+          
+            x
+          
+        
+        +
+        
+          v
+          
+            y
+          
+        
+        
+          
+            e
+          
+          
+            y
+          
+        
+        +
+        
+          v
+          
+            z
+          
+        
+        
+          
+            e
+          
+          
+            z
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {v} =v_{x}\mathbf {e} _{x}+v_{y}\mathbf {e} _{y}+v_{z}\mathbf {e} _{z},}
+  
+
+where ex, ey, ez are the standard basis in Cartesian notation, then the direction cosines are
+
+  
+    
+      
+        
+          
+            
+              
+                α
+              
+              
+                
+                
+
+                
+                =
+                cos
+                ⁡
+                a
+                =
+                
+                  
+                    
+                      
+                        v
+                      
+                      ⋅
+                      
+                        
+                          e
+                        
+                        
+                          x
+                        
+                      
+                    
+                    
+                      ‖
+                      
+                        v
+                      
+                      ‖
+                    
+                  
+                
+              
+              
+              
+                
+                
+
+                
+                =
+                
+                  
+                    
+                      v
+                      
+                        x
+                      
+                    
+                    
+                      
+                        v
+                        
+                          x
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          y
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          z
+                        
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                β
+              
+              
+                
+                
+
+                
+                =
+                cos
+                ⁡
+                b
+                =
+                
+                  
+                    
+                      
+                        v
+                      
+                      ⋅
+                      
+                        
+                          e
+                        
+                        
+                          y
+                        
+                      
+                    
+                    
+                      ‖
+                      
+                        v
+                      
+                      ‖
+                    
+                  
+                
+              
+              
+              
+                
+                
+
+                
+                =
+                
+                  
+                    
+                      v
+                      
+                        y
+                      
+                    
+                    
+                      
+                        v
+                        
+                          x
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          y
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          z
+                        
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                γ
+              
+              
+                
+                
+
+                
+                =
+                cos
+                ⁡
+                c
+                =
+                
+                  
+                    
+                      
+                        v
+                      
+                      ⋅
+                      
+                        
+                          e
+                        
+                        
+                          z
+                        
+                      
+                    
+                    
+                      ‖
+                      
+                        v
+                      
+                      ‖
+                    
+                  
+                
+              
+              
+              
+                
+                
+
+                
+                =
+                
+                  
+                    
+                      v
+                      
+                        z
+                      
+                    
+                    
+                      
+                        v
+                        
+                          x
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          y
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          z
+                        
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}\alpha &{}=\cos a={\frac {\mathbf {v} \cdot \mathbf {e} _{x}}{\Vert \mathbf {v} \Vert }}&&{}={\frac {v_{x}}{\sqrt {v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}},\\\beta &{}=\cos b={\frac {\mathbf {v} \cdot \mathbf {e} _{y}}{\Vert \mathbf {v} \Vert }}&&{}={\frac {v_{y}}{\sqrt {v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}},\\\gamma &{}=\cos c={\frac {\mathbf {v} \cdot \mathbf {e} _{z}}{\Vert \mathbf {v} \Vert }}&&{}={\frac {v_{z}}{\sqrt {v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}}.\end{alignedat}}}
+  
+
+It follows that by squaring each equation and adding the results
+
+  
+    
+      
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        a
+        +
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        b
+        +
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        c
+        =
+        
+          α
+          
+            2
+          
+        
+        +
+        
+          β
+          
+            2
+          
+        
+        +
+        
+          γ
+          
+            2
+          
+        
+        =
+        1.
+      
+    
+    {\displaystyle \cos ^{2}a+\cos ^{2}b+\cos ^{2}c=\alpha ^{2}+\beta ^{2}+\gamma ^{2}=1.}
+  
+
+Here α, β, γ are the direction cosines and the Cartesian coordinates of the unit vector 
+  
+    
+      
+        
+          
+            
+              
+                v
+              
+              
+                
+                  |
+                
+                
+                  v
+                
+                
+                  |
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\tfrac {\mathbf {v} }{|\mathbf {v} |}},}
+  
+ and a, b, c are the direction angles of the vector v.
+The direction angles a, b, c are acute or obtuse angles, i.e., 0 ≤ a ≤ π, 0 ≤ b ≤ π and 0 ≤ c ≤ π, and they denote the angles formed between v and the unit basis vectors ex, ey, ez.
+
+
+== General meaning ==
+More generally, direction cosine refers to the cosine of the angle between any two vectors. They are useful for forming direction cosine matrices that express one set of orthonormal basis vectors in terms of another set, or for expressing a known vector in a different basis. Simply put, direction cosines provide an easy method of representing the direction of a vector in a Cartesian coordinate system.
+
+
+== Applications ==
+
+
+=== Determining angles between two vectors ===
+If vectors u and v have direction cosines (αu, βu, γu) and (αv, βv, γv) respectively, with an angle θ between them, their units vectors are
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      u
+                      ^
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        u
+                        
+                          x
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        u
+                        
+                          y
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        u
+                        
+                          z
+                        
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      u
+                      
+                        x
+                      
+                    
+                    
+                      
+                        e
+                      
+                      
+                        x
+                      
+                    
+                    +
+                    
+                      u
+                      
+                        y
+                      
+                    
+                    
+                      
+                        e
+                      
+                      
+                        y
+                      
+                    
+                    +
+                    
+                      u
+                      
+                        z
+                      
+                    
+                    
+                      
+                        e
+                      
+                      
+                        z
+                      
+                    
+                  
+                  )
+                
+                =
+                
+                  α
+                  
+                    u
+                  
+                
+                
+                  
+                    e
+                  
+                  
+                    x
+                  
+                
+                +
+                
+                  β
+                  
+                    u
+                  
+                
+                
+                  
+                    e
+                  
+                  
+                    y
+                  
+                
+                +
+                
+                  γ
+                  
+                    u
+                  
+                
+                
+                  
+                    e
+                  
+                  
+                    z
+                  
+                
+              
+            
+            
+              
+                
+                  
+                    
+                      v
+                      ^
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        v
+                        
+                          x
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          y
+                        
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        v
+                        
+                          z
+                        
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      v
+                      
+                        x
+                      
+                    
+                    
+                      
+                        e
+                      
+                      
+                        x
+                      
+                    
+                    +
+                    
+                      v
+                      
+                        y
+                      
+                    
+                    
+                      
+                        e
+                      
+                      
+                        y
+                      
+                    
+                    +
+                    
+                      v
+                      
+                        z
+                      
+                    
+                    
+                      
+                        e
+                      
+                      
+                        z
+                      
+                    
+                  
+                  )
+                
+                =
+                
+                  α
+                  
+                    v
+                  
+                
+                
+                  
+                    e
+                  
+                  
+                    x
+                  
+                
+                +
+                
+                  β
+                  
+                    v
+                  
+                
+                
+                  
+                    e
+                  
+                  
+                    y
+                  
+                
+                +
+                
+                  γ
+                  
+                    v
+                  
+                
+                
+                  
+                    e
+                  
+                  
+                    z
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\mathbf {\hat {u}} &={\frac {1}{\sqrt {u_{x}^{2}+u_{y}^{2}+u_{z}^{2}}}}\left(u_{x}\mathbf {e} _{x}+u_{y}\mathbf {e} _{y}+u_{z}\mathbf {e} _{z}\right)=\alpha _{u}\mathbf {e} _{x}+\beta _{u}\mathbf {e} _{y}+\gamma _{u}\mathbf {e} _{z}\\\mathbf {\hat {v}} &={\frac {1}{\sqrt {v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}}\left(v_{x}\mathbf {e} _{x}+v_{y}\mathbf {e} _{y}+v_{z}\mathbf {e} _{z}\right)=\alpha _{v}\mathbf {e} _{x}+\beta _{v}\mathbf {e} _{y}+\gamma _{v}\mathbf {e} _{z}.\end{aligned}}}
+  
+
+Taking the dot product of these two unit vectors yield,
+
+  
+    
+      
+        
+          
+            
+              
+                u
+                ^
+              
+            
+          
+          ⋅
+          
+            
+              
+                v
+                ^
+              
+            
+          
+        
+        =
+        
+          α
+          
+            u
+          
+        
+        
+          α
+          
+            v
+          
+        
+        +
+        
+          β
+          
+            u
+          
+        
+        
+          β
+          
+            v
+          
+        
+        +
+        
+          γ
+          
+            u
+          
+        
+        
+          γ
+          
+            v
+          
+        
+        =
+        cos
+        ⁡
+        θ
+        ,
+      
+    
+    {\displaystyle \mathbf {{\hat {u}}\cdot {\hat {v}}} =\alpha _{u}\alpha _{v}+\beta _{u}\beta _{v}+\gamma _{u}\gamma _{v}=\cos \theta ,}
+  
+
+where θ is the angle between the two unit vectors, and is also the angle between u and v.
+Since θ is a geometric angle, and is never negative. Therefore only the positive value of the dot product is taken, yielding us the final result,
+
+  
+    
+      
+        θ
+        =
+        arccos
+        ⁡
+        
+          (
+          
+            
+              α
+              
+                u
+              
+            
+            
+              α
+              
+                v
+              
+            
+            +
+            
+              β
+              
+                u
+              
+            
+            
+              β
+              
+                v
+              
+            
+            +
+            
+              γ
+              
+                u
+              
+            
+            
+              γ
+              
+                v
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \theta =\arccos \left(\alpha _{u}\alpha _{v}+\beta _{u}\beta _{v}+\gamma _{u}\gamma _{v}\right).}
+  
+
+
+== See also ==
+Cartesian tensor
+Euler angles
+
+
+== References ==
+Kay, D. C. (1988). Tensor Calculus. Schaum’s Outlines. McGraw Hill. pp. 18–19. ISBN 0-07-033484-6.
+Spiegel, M. R.; Lipschutz, S.; Spellman, D. (2009). Vector analysis. Schaum’s Outlines (2nd ed.). McGraw Hill. pp. 15, 25. ISBN 978-0-07-161545-7.
+Tyldesley, J. R. (1975). An introduction to tensor analysis for engineers and applied scientists. Longman. p. 5. ISBN 0-582-44355-5.
+Tang, K. T. (2006). Mathematical Methods for Engineers and Scientists. Vol. 2. Springer. p. 13. ISBN 3-540-30268-9.
+Weisstein, Eric W. "Direction Cosine". MathWorld.

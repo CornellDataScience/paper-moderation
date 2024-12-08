@@ -1,0 +1,649 @@
+In a hydraulic circuit, net positive suction head (NPSH) may refer to one of two quantities in the analysis of cavitation:
+
+The Available NPSH (NPSHA): a measure of how close the fluid at a given point is to flashing, and so to cavitation. Technically it is the absolute pressure head minus the vapour pressure of the liquid.
+The Required NPSH (NPSHR): the head value at the suction side (e.g. the inlet of a pump) required to keep the fluid away from cavitating (provided by the manufacturer).
+NPSH is particularly relevant inside centrifugal pumps and turbines, which are parts of a hydraulic system that are most vulnerable to cavitation. If cavitation occurs, the drag coefficient of the impeller vanes will increase drastically—possibly stopping flow altogether—and prolonged exposure will damage the impeller.
+
+
+== NPSH in a pump ==
+
+In a pump, cavitation will first occur at the inlet of the impeller. Denoting the inlet by i, the NPSHA at this point is defined as:
+
+  
+    
+      
+        
+          
+            NPSH
+          
+          
+            A
+          
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  p
+                  
+                    i
+                  
+                
+                
+                  ρ
+                  g
+                
+              
+            
+            +
+            
+              
+                
+                  V
+                  
+                    i
+                  
+                  
+                    2
+                  
+                
+                
+                  2
+                  g
+                
+              
+            
+          
+          )
+        
+        −
+        
+          
+            
+              p
+              
+                v
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+      
+    
+    {\displaystyle {\text{NPSH}}_{A}=\left({\frac {p_{i}}{\rho g}}+{\frac {V_{i}^{2}}{2g}}\right)-{\frac {p_{v}}{\rho g}}}
+  
+
+where 
+  
+    
+      
+        
+          p
+          
+            i
+          
+        
+      
+    
+    {\displaystyle p_{i}}
+  
+ is the absolute pressure at the inlet, 
+  
+    
+      
+        
+          V
+          
+            i
+          
+        
+      
+    
+    {\displaystyle V_{i}}
+  
+ is the average velocity at the inlet, 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ is the fluid density, 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ is the acceleration of gravity and 
+  
+    
+      
+        
+          p
+          
+            v
+          
+        
+      
+    
+    {\displaystyle p_{v}}
+  
+ is the vapor pressure of the fluid. Note that NPSH is equivalent to the sum of both the static and dynamic heads – that is, the stagnation head – minus the equilibrium vapor pressure head, hence "net positive suction head".
+Applying the Bernoulli's equation for the control volume enclosing the suction free surface 0 and the pump inlet i, under the assumption that the kinetic energy at 0 is negligible, that the fluid is inviscid, and that the fluid density is constant:
+
+  
+    
+      
+        
+          
+            
+              p
+              
+                0
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        +
+        
+          z
+          
+            0
+          
+        
+        =
+        
+          
+            
+              p
+              
+                i
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        +
+        
+          
+            
+              V
+              
+                i
+              
+              
+                2
+              
+            
+            
+              2
+              g
+            
+          
+        
+        +
+        
+          z
+          
+            i
+          
+        
+        +
+        
+          h
+          
+            f
+          
+        
+      
+    
+    {\displaystyle {\frac {p_{0}}{\rho g}}+z_{0}={\frac {p_{i}}{\rho g}}+{\frac {V_{i}^{2}}{2g}}+z_{i}+h_{f}}
+  
+
+Using the above application of Bernoulli to eliminate the velocity term and local pressure terms in the definition of NPSHA:
+
+  
+    
+      
+        
+          
+            Net Positive Suction Head
+          
+          
+            A
+          
+        
+        =
+        
+          
+            
+              p
+              
+                0
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        −
+        
+          
+            
+              p
+              
+                v
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        −
+        (
+        
+          z
+          
+            i
+          
+        
+        −
+        
+          z
+          
+            0
+          
+        
+        )
+        −
+        
+          h
+          
+            f
+          
+        
+      
+    
+    {\displaystyle {\text{Net Positive Suction Head}}_{A}={\frac {p_{0}}{\rho g}}-{\frac {p_{v}}{\rho g}}-(z_{i}-z_{0})-h_{f}}
+  
+
+This is the standard expression for the available NPSH at a point. Cavitation will occur at the point i when the available NPSH is less than the NPSH required to prevent cavitation (NPSHR). For simple impeller systems, NPSHR can be derived theoretically, but very often it is determined empirically. Note NPSHAand NPSHR are in absolute units and usually expressed in "m" or "ft," not "psia".
+Experimentally, NPSHR is often defined as the NPSH3, the point at which the head output of the pump decreases by 3 % at a given flow due to reduced hydraulic performance. On multi-stage pumps this is limited to a 3 % drop in the first stage head.
+
+
+== NPSH in a turbine ==
+The calculation of NPSH in a reaction turbine is different to the calculation of NPSH in a pump, because the point at which cavitation will first occur is in a different place. In a reaction turbine, cavitation will first occur at the outlet of the impeller, at the entrance of the draft tube. Denoting the entrance of the draft tube by e, the NPSHA is defined in the same way as for pumps:
+
+  
+    
+      
+        
+          
+            NPSH
+          
+          
+            A
+          
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  p
+                  
+                    e
+                  
+                
+                
+                  ρ
+                  g
+                
+              
+            
+            +
+            
+              
+                
+                  V
+                  
+                    e
+                  
+                  
+                    2
+                  
+                
+                
+                  2
+                  g
+                
+              
+            
+          
+          )
+        
+        −
+        
+          
+            
+              p
+              
+                v
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+      
+    
+    {\displaystyle {\text{NPSH}}_{A}=\left({\frac {p_{e}}{\rho g}}+{\frac {V_{e}^{2}}{2g}}\right)-{\frac {p_{v}}{\rho g}}}
+  
+
+Applying Bernoulli's principle from the draft tube entrance e to the lower free surface 0, under the assumption that the kinetic energy at 0 is negligible, that the fluid is inviscid, and that the fluid density is constant:
+
+  
+    
+      
+        
+          
+            
+              p
+              
+                e
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        +
+        
+          
+            
+              V
+              
+                e
+              
+              
+                2
+              
+            
+            
+              2
+              g
+            
+          
+        
+        +
+        
+          z
+          
+            e
+          
+        
+        =
+        
+          
+            
+              p
+              
+                0
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        +
+        
+          z
+          
+            0
+          
+        
+        +
+        
+          h
+          
+            f
+          
+        
+      
+    
+    {\displaystyle {\frac {p_{e}}{\rho g}}+{\frac {V_{e}^{2}}{2g}}+z_{e}={\frac {p_{0}}{\rho g}}+z_{0}+h_{f}}
+  
+
+Using the above application of Bernoulli to eliminate the velocity term and local pressure terms in the definition of NPSHA:
+
+  
+    
+      
+        
+          
+            NPSH
+          
+          
+            A
+          
+        
+        =
+        
+          
+            
+              p
+              
+                0
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        −
+        
+          
+            
+              p
+              
+                v
+              
+            
+            
+              ρ
+              g
+            
+          
+        
+        −
+        (
+        
+          z
+          
+            e
+          
+        
+        −
+        
+          z
+          
+            0
+          
+        
+        )
+        +
+        
+          h
+          
+            f
+          
+        
+      
+    
+    {\displaystyle {\text{NPSH}}_{A}={\frac {p_{0}}{\rho g}}-{\frac {p_{v}}{\rho g}}-(z_{e}-z_{0})+h_{f}}
+  
+
+Note that, in turbines minor friction losses (
+  
+    
+      
+        
+          h
+          
+            f
+          
+        
+      
+    
+    {\displaystyle h_{f}}
+  
+) alleviate the effect of cavitation - opposite to what happens in pumps.
+
+
+== NPSH design considerations ==
+Vapour pressure is strongly dependent on temperature, and thus so will both NPSHR and NPSHA. Centrifugal pumps are particularly vulnerable especially when pumping heated solution near the vapor pressure, whereas positive displacement pumps are less affected by cavitation, as they are better able to pump two-phase flow (the mixture of gas and liquid), however, the resultant flow rate of the pump will be diminished because of the gas volumetrically displacing a disproportion of liquid. Careful design is required to pump high temperature liquids with a centrifugal pump when the liquid is near its boiling point.
+The violent collapse of the cavitation bubble creates a shock wave that can carve material from internal pump components (usually the leading edge of the impeller) and creates noise often described as "pumping gravel".  Additionally, the inevitable increase in vibration can cause other mechanical faults in the pump and associated equipment.
+
+
+== Relationship to other cavitation parameters ==
+The NPSH appears in a number of other cavitation-relevant parameters. The suction head coefficient is a dimensionless measure of NPSH:
+
+  
+    
+      
+        
+          C
+          
+            NPSH
+          
+        
+        =
+        
+          
+            
+              g
+              ⋅
+              
+                NPSH
+              
+            
+            
+              
+                n
+                
+                  2
+                
+              
+              
+                D
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle C_{\text{NPSH}}={\frac {g\cdot {\text{NPSH}}}{n^{2}D^{2}}}}
+  
+
+Where 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is the angular velocity (in rad/s) of the turbo-machine shaft, and 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is the turbo-machine impeller diameter. Thoma's cavitation number is defined as:
+
+  
+    
+      
+        σ
+        =
+        
+          
+            NPSH
+            H
+          
+        
+      
+    
+    {\displaystyle \sigma ={\frac {\text{NPSH}}{H}}}
+  
+
+Where 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ is the head across the turbo-machine.
+
+
+== Some general NPSH examples ==
+(based on sea level).
+Example Number 1:   A tank with a liquid level 2 metres above the pump intake, plus the atmospheric pressure of 10 metres, minus a 2 metre friction loss into the pump (say for pipe & valve loss), minus the NPSHR curve (say 2.5 metres) of the pre-designed pump (see the manufacturers curve) = an NPSHA (available) of 7.5 metres. (not forgetting the flow duty). This equates to 3 times the NPSH required. This pump will operate well so long as all other parameters are correct.
+Remember that positive or negative flow duty will change the reading on the pump manufacture NPSHR curve.  The lower the flow, the lower the NPSHR, and vice versa.
+Lifting out of a well will also create negative NPSH; however remember that atmospheric pressure at sea level is 10 metres! This helps us, as it gives us a bonus boost or “push” into the pump intake. (Remember that you only have 10 metres of atmospheric pressure as a bonus and nothing more!).
+Example Number 2:   A well or bore with an operating level of 5 metres below the intake, minus a 2 metre friction loss into pump (pipe loss), minus the NPSHR curve (say 2.4 metres) of the pre-designed pump = an NPSHA (available) of (negative) -9.4 metres.   Adding the atmospheric pressure of 10 metres gives a positive NPSHA of 0.6 metres. The minimum requirement is 0.6 metres above NPSHR), so the pump should lift from the well.
+Using the situation from example 2 above, but pumping 70 degrees Celsius (158F) water from a hot spring, creating negative NPSH, yields the following:
+Example Number 3:   A well or bore running at 70 degrees Celsius (158F) with an operating level of 5 metres below the intake, minus a 2 metre friction loss into pump (pipe loss), minus the NPSHR curve (say 2.4 metres) of the pre-designed pump, minus a temperature loss of 3 metres/10 feet = an NPSHA (available) of (negative) -12.4 metres.   Adding the atmospheric pressure of 10 metres and gives a negative NPSHA of -2.4 metres remaining.
+Remembering that the minimum requirement is 600 mm above the NPSHR therefore this pump will not be able to pump the 70 degree Celsius liquid and will cavitate and lose performance and cause damage.  To work efficiently, the pump must be buried in the ground at a depth of 2.4 metres plus the required 600 mm minimum, totalling a total depth of 3 metres into the pit. (3.5 metres to be completely safe).
+A minimum of 600 mm (0.06 bar) and a recommended 1.5 metre (0.15 bar) head pressure “higher” than the NPSHR pressure value required by the manufacturer is required to allow the pump to operate properly.
+Serious damage may occur if a large pump has been sited incorrectly with an incorrect NPSHR value and this may result in a very expensive pump or installation repair.
+NPSH problems may be able to be solved by changing the NPSHR or by re-siting the pump.
+If an NPSHA is say 10 bar then the pump you are using will deliver exactly 10 bar more over the entire operational curve of a pump than its listed operational curve.
+Example:  A pump with a max. pressure head of 8 bar (80 metres) will actually run at 18 bar if the NPSHA is 10 bar.
+i.e.:    8 bar (pump curve) plus 10 bar NPSHA = 18 bar.
+This phenomenon is what manufacturers use when they design multistage pumps, (Pumps with more than one impeller).  Each multi stacked impeller boosts the succeeding impeller to raise the pressure head.  Some pumps can have up to 150 stages or more, in order to boost heads up to hundreds of metres.
+
+
+== References ==

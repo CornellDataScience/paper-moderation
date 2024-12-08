@@ -1,0 +1,845 @@
+The gyroradius (also known as radius of gyration, Larmor radius or cyclotron radius) is the radius of the circular motion of a charged particle in the presence of a uniform magnetic field. In SI units, the non-relativistic gyroradius is given by
+
+  
+    
+      
+        
+          r
+          
+            g
+          
+        
+        =
+        
+          
+            
+              m
+              
+                v
+                
+                  ⊥
+                
+              
+            
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+          
+        
+      
+    
+    {\displaystyle r_{g}={\frac {mv_{\perp }}{|q|B}}}
+  
+
+where 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ is the mass of the particle, 
+  
+    
+      
+        
+          v
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle v_{\perp }}
+  
+ is the component of the velocity perpendicular to the direction of the magnetic field, 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ is the electric charge of the particle, and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ is the  magnetic field flux density.
+The angular frequency of this circular motion is known as the gyrofrequency, or cyclotron frequency, and can be expressed as
+
+  
+    
+      
+        
+          ω
+          
+            g
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+            m
+          
+        
+      
+    
+    {\displaystyle \omega _{g}={\frac {|q|B}{m}}}
+  
+
+in units of radians/second.
+
+
+== Variants ==
+It is often useful to give the gyrofrequency a sign with the definition
+
+  
+    
+      
+        
+          ω
+          
+            g
+          
+        
+        =
+        
+          
+            
+              q
+              B
+            
+            m
+          
+        
+      
+    
+    {\displaystyle \omega _{g}={\frac {qB}{m}}}
+  
+
+or express it in units of hertz with
+
+  
+    
+      
+        
+          f
+          
+            g
+          
+        
+        =
+        
+          
+            
+              q
+              B
+            
+            
+              2
+              π
+              m
+            
+          
+        
+        .
+      
+    
+    {\displaystyle f_{g}={\frac {qB}{2\pi m}}.}
+  
+
+For electrons, this frequency can be reduced to
+
+  
+    
+      
+        
+          f
+          
+            g
+            ,
+            e
+          
+        
+        =
+        (
+        2.8
+        ×
+        
+          10
+          
+            10
+          
+        
+        
+        
+          h
+          e
+          r
+          t
+          z
+        
+        
+          /
+        
+        
+          t
+          e
+          s
+          l
+          a
+        
+        )
+        ×
+        B
+        .
+      
+    
+    {\displaystyle f_{g,e}=(2.8\times 10^{10}\,\mathrm {hertz} /\mathrm {tesla} )\times B.}
+  
+
+In cgs-units the gyroradius
+
+  
+    
+      
+        
+          r
+          
+            g
+          
+        
+        =
+        
+          
+            
+              m
+              c
+              
+                v
+                
+                  ⊥
+                
+              
+            
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+          
+        
+      
+    
+    {\displaystyle r_{g}={\frac {mcv_{\perp }}{|q|B}}}
+  
+
+and the corresponding gyrofrequency
+
+  
+    
+      
+        
+          ω
+          
+            g
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+            
+              m
+              c
+            
+          
+        
+      
+    
+    {\displaystyle \omega _{g}={\frac {|q|B}{mc}}}
+  
+
+include a factor 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, that is the velocity of light, because the magnetic field is expressed in units 
+  
+    
+      
+        [
+        B
+        ]
+        =
+        
+          
+            g
+            
+              1
+              
+                /
+              
+              2
+            
+          
+          c
+          
+            m
+            
+              −
+              1
+              
+                /
+              
+              2
+            
+          
+          
+            s
+            
+              −
+              1
+            
+          
+        
+      
+    
+    {\displaystyle [B]=\mathrm {g^{1/2}cm^{-1/2}s^{-1}} }
+  
+.
+
+
+== Relativistic case ==
+For relativistic particles the classical equation needs to be interpreted in terms of particle momentum 
+  
+    
+      
+        p
+        =
+        γ
+        m
+        v
+      
+    
+    {\displaystyle p=\gamma mv}
+  
+:
+
+  
+    
+      
+        
+          r
+          
+            g
+          
+        
+        =
+        
+          
+            
+              p
+              
+                ⊥
+              
+            
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+          
+        
+        =
+        
+          
+            
+              γ
+              m
+              
+                v
+                
+                  ⊥
+                
+              
+            
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+          
+        
+      
+    
+    {\displaystyle r_{g}={\frac {p_{\perp }}{|q|B}}={\frac {\gamma mv_{\perp }}{|q|B}}}
+  
+
+where 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ is the Lorentz factor. This equation is correct also in the non-relativistic case.
+For calculations in accelerator and astroparticle physics, the formula for the gyroradius can be rearranged to give
+
+  
+    
+      
+        
+          r
+          
+            g
+          
+        
+        =
+        
+          3.3
+           
+          m
+        
+        ×
+        
+          
+            
+              (
+              γ
+              m
+              
+                c
+                
+                  2
+                
+              
+              
+                /
+              
+              
+                G
+                e
+                V
+              
+              )
+              ⋅
+              (
+              
+                v
+                
+                  ⊥
+                
+              
+              
+                /
+              
+              c
+              )
+            
+            
+              (
+              
+                |
+              
+              q
+              
+                |
+              
+              
+                /
+              
+              e
+              )
+              ⋅
+              (
+              B
+              
+                /
+              
+              
+                T
+              
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle r_{g}=\mathrm {3.3~m} \times {\frac {(\gamma mc^{2}/\mathrm {GeV} )\cdot (v_{\perp }/c)}{(|q|/e)\cdot (B/\mathrm {T} )}},}
+  
+
+where m denotes metres, c is the speed of light, GeV is the unit of Giga-electronVolts, 
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+ is the elementary charge, and T is the unit of tesla.
+
+
+== Derivation ==
+If the charged particle is moving, then it will experience a Lorentz force given by
+
+  
+    
+      
+        
+          
+            
+              F
+              →
+            
+          
+        
+        =
+        q
+        (
+        
+          
+            
+              v
+              →
+            
+          
+        
+        ×
+        
+          
+            
+              B
+              →
+            
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle {\vec {F}}=q({\vec {v}}\times {\vec {B}}),}
+  
+
+where 
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {v}}}
+  
+ is the velocity vector and 
+  
+    
+      
+        
+          
+            
+              B
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {B}}}
+  
+ is the magnetic field vector.
+Notice that the direction of the force is given by the cross product of the velocity and magnetic field. Thus, the Lorentz force will always act perpendicular to the direction of motion, causing the particle to gyrate, or move in a circle. The radius of this circle, 
+  
+    
+      
+        
+          r
+          
+            g
+          
+        
+      
+    
+    {\displaystyle r_{g}}
+  
+, can be determined by equating the magnitude of the Lorentz force to the centripetal force as
+
+  
+    
+      
+        
+          
+            
+              m
+              
+                v
+                
+                  ⊥
+                
+                
+                  2
+                
+              
+            
+            
+              r
+              
+                g
+              
+            
+          
+        
+        =
+        
+          |
+        
+        q
+        
+          |
+        
+        
+          v
+          
+            ⊥
+          
+        
+        B
+        .
+      
+    
+    {\displaystyle {\frac {mv_{\perp }^{2}}{r_{g}}}=|q|v_{\perp }B.}
+  
+
+Rearranging, the gyroradius can be expressed as
+
+  
+    
+      
+        
+          r
+          
+            g
+          
+        
+        =
+        
+          
+            
+              m
+              
+                v
+                
+                  ⊥
+                
+              
+            
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+          
+        
+        .
+      
+    
+    {\displaystyle r_{g}={\frac {mv_{\perp }}{|q|B}}.}
+  
+
+Thus, the gyroradius is directly proportional to the particle mass and perpendicular velocity, while it is inversely proportional to the particle electric charge and the magnetic field strength. The time it takes the particle to complete one revolution, called the period, can be calculated to be
+
+  
+    
+      
+        
+          T
+          
+            g
+          
+        
+        =
+        
+          
+            
+              2
+              π
+              
+                r
+                
+                  g
+                
+              
+            
+            
+              v
+              
+                ⊥
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle T_{g}={\frac {2\pi r_{g}}{v_{\perp }}}.}
+  
+
+Since the period is the reciprocal of the frequency we have found
+
+  
+    
+      
+        
+          f
+          
+            g
+          
+        
+        =
+        
+          
+            1
+            
+              T
+              
+                g
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+            
+              2
+              π
+              m
+            
+          
+        
+      
+    
+    {\displaystyle f_{g}={\frac {1}{T_{g}}}={\frac {|q|B}{2\pi m}}}
+  
+
+and therefore
+
+  
+    
+      
+        
+          ω
+          
+            g
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              q
+              
+                |
+              
+              B
+            
+            m
+          
+        
+        .
+      
+    
+    {\displaystyle \omega _{g}={\frac {|q|B}{m}}.}
+  
+
+
+== See also ==
+Beam rigidity
+Cyclotron
+Magnetosphere particle motion
+Gyrokinetics
+
+
+== References ==

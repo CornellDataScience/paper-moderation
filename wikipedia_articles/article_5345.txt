@@ -1,0 +1,467 @@
+Tarski–Grothendieck set theory (TG, named after mathematicians Alfred Tarski and Alexander Grothendieck) is an axiomatic set theory.  It is a non-conservative extension of Zermelo–Fraenkel set theory (ZFC) and is distinguished from other axiomatic set theories by the inclusion of Tarski's axiom, which states that for each set there is a "Tarski universe" it belongs to (see below). Tarski's axiom implies the existence of inaccessible cardinals, providing a richer ontology than ZFC.  For example, adding this axiom supports category theory.
+The Mizar system and Metamath use Tarski–Grothendieck set theory for formal verification of proofs.
+
+
+== Axioms ==
+Tarski–Grothendieck set theory starts with conventional Zermelo–Fraenkel set theory and then adds “Tarski's axiom”.  We will use the axioms, definitions, and notation of Mizar to describe it.  Mizar's basic objects and processes are fully formal; they are described informally below.  First, let us assume that:
+
+Given any set 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, the singleton 
+  
+    
+      
+        {
+        A
+        }
+      
+    
+    {\displaystyle \{A\}}
+  
+ exists.
+Given any two sets, their unordered and ordered pairs exist.
+Given any set of sets, its union exists.
+TG includes the following axioms, which are conventional because they are also part of ZFC:
+
+Set axiom:  Quantified variables range over sets alone; everything is a set (the same ontology as ZFC).
+Axiom of extensionality:  Two sets are identical if they have the same members.
+Axiom of regularity:  No set is a member of itself, and circular chains of membership are impossible.
+Axiom schema of replacement: Let the domain of the class function 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ be the set 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+. Then the range of 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ (the values of 
+  
+    
+      
+        F
+        (
+        x
+        )
+      
+    
+    {\displaystyle F(x)}
+  
+ for all members 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ of 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+) is also a set.
+It is Tarski's axiom that distinguishes TG from other axiomatic set theories. Tarski's axiom also implies the axioms of infinity, choice, and power set. It also implies the existence of inaccessible cardinals, thanks to which the ontology of TG is much richer than that of conventional set theories such as ZFC.
+
+Tarski's axiom (adapted from Tarski 1939). For every set 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, there exists a set 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ (a "universe") such that
+
+  
+    
+      
+        s
+        ∈
+        u
+      
+    
+    {\displaystyle s\in u}
+  
+: it contains 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+
+  
+    
+      
+        (
+        ∀
+        x
+        ∈
+        u
+        )
+        (
+        ∀
+        y
+        ⊆
+        x
+        )
+        (
+        y
+        ∈
+        u
+        )
+      
+    
+    {\displaystyle (\forall x\in u)(\forall y\subseteq x)(y\in u)}
+  
+: it contains every subset of every member
+
+  
+    
+      
+        (
+        ∀
+        x
+        ∈
+        u
+        )
+        (
+        
+          
+            P
+          
+        
+        (
+        x
+        )
+        ∈
+        u
+        )
+      
+    
+    {\displaystyle (\forall x\in u)({\mathcal {P}}(x)\in u)}
+  
+: it contains the powerset of every member
+
+  
+    
+      
+        (
+        ∀
+        x
+        ⊆
+        u
+        )
+        (
+        
+          |
+        
+        x
+        
+          |
+        
+        <
+        
+          |
+        
+        u
+        
+          |
+        
+        →
+        x
+        ∈
+        u
+        )
+      
+    
+    {\displaystyle (\forall x\subseteq u)(|x|<|u|\to x\in u)}
+  
+: it contains every subset of itself that has smaller cardinality
+More formally:
+
+  
+    
+      
+        ∀
+        s
+        ∃
+        u
+        [
+        s
+        ∈
+        u
+        ∧
+        (
+        ∀
+        x
+        ∈
+        u
+        )
+        (
+        
+          
+            P
+          
+        
+        (
+        x
+        )
+        ⊆
+        u
+        ∧
+        
+          
+            P
+          
+        
+        (
+        x
+        )
+        ∈
+        u
+        )
+        ∧
+        (
+        ∀
+        x
+        ⊆
+        u
+        )
+        (
+        
+          |
+        
+        x
+        
+          |
+        
+        <
+        
+          |
+        
+        u
+        
+          |
+        
+        →
+        x
+        ∈
+        u
+        )
+        ]
+      
+    
+    {\displaystyle \forall s\exists u[s\in u\land (\forall x\in u)({\mathcal {P}}(x)\subseteq u\land {\mathcal {P}}(x)\in u)\land (\forall x\subseteq u)(|x|<|u|\to x\in u)]}
+  
+
+where 
+  
+    
+      
+        
+          |
+        
+        ⋅
+        
+          |
+        
+      
+    
+    {\displaystyle |\cdot |}
+  
+ denotes the cardinality of a set. In short, Tarski's axiom states that every set belongs to a Tarski universe. If a Tarski universe is transitive, it is also a Grothendieck universe. Conversely, assuming the axiom of choice, every Grothendieck universe is a Tarski universe (i.e. satisfies Tarski's axiom).
+That 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ looks much like a “universal set” for 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ – it not only has as members the powerset of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, and all subsets of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, it also has the powerset of that powerset and so on – its members are closed under the operations of taking powerset or taking a subset. It's like a “universal set” except that of course it is not a member of itself and is not a set of all sets. That's the guaranteed universe it belongs to. And then any such 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ is itself a member of an even larger “almost universal set” and so on. It's an axiom that guarantees vastly more sets than ZFC does.
+
+
+== Implementation in the Mizar system ==
+The Mizar language, underlying the implementation of TG and providing its logical syntax, is typed and the types are assumed to be non-empty. Hence, the theory is implicitly taken to be non-empty. The existence axioms, e.g. the existence of the unordered pair, is also implemented indirectly by the definition of term constructors.
+The system includes equality, the membership predicate and the following standard definitions:
+
+Singleton:  A set with one member;
+Unordered pair:  A set with two distinct members. 
+  
+    
+      
+        {
+        a
+        ,
+        b
+        }
+        =
+        {
+        b
+        ,
+        a
+        }
+      
+    
+    {\displaystyle \{a,b\}=\{b,a\}}
+  
+;
+Ordered pair:  The set 
+  
+    
+      
+        {
+        {
+        a
+        ,
+        b
+        }
+        ,
+        {
+        a
+        }
+        }
+        =
+        (
+        a
+        ,
+        b
+        )
+        ≠
+        (
+        b
+        ,
+        a
+        )
+      
+    
+    {\displaystyle \{\{a,b\},\{a\}\}=(a,b)\neq (b,a)}
+  
+;
+Subset:  A set all of whose members are members of another given set;
+The union of a set of sets 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+:   The set of all members of any member of 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+.
+
+
+== Implementation in Metamath ==
+The Metamath system supports arbitrary higher-order logics, but it is typically used with the "set.mm" definitions of axioms.  The ax-groth axiom adds Tarski's axiom, which in Metamath is defined as follows:
+⊢ ∃y(x ∈ y ∧ ∀z ∈ y (∀w(w ⊆ z → w ∈ y) ∧ ∃w ∈ y ∀v(v ⊆ z → v ∈ w)) ∧ ∀z(z ⊆ y → (z ≈ y ∨ z ∈ y)))
+
+
+== See also ==
+Axiom of limitation of size
+
+
+== Notes ==
+
+
+== References ==
+Andreas Blass, I.M. Dimitriou, and Benedikt Löwe (2007) "Inaccessible Cardinals without the Axiom of Choice," Fundamenta Mathematicae 194: 179-89.
+Bourbaki, Nicolas (1972). "Univers". In Michael Artin; Alexandre Grothendieck; Jean-Louis Verdier (eds.). Séminaire de Géométrie Algébrique du Bois Marie – 1963-64 – Théorie des topos et cohomologie étale des schémas – (SGA 4) – vol. 1 (Lecture Notes in Mathematics 269) (in French). Berlin; New York: Springer-Verlag. pp. 185–217. Archived from the original on 2003-08-26.
+Patrick Suppes (1960) Axiomatic Set Theory. Van Nostrand. Dover reprint, 1972.
+Tarski, Alfred (1938). "Über unerreichbare Kardinalzahlen" (PDF). Fundamenta Mathematicae. 30: 68–89. doi:10.4064/fm-30-1-68-89.
+Tarski, Alfred (1939). "On the well-ordered subsets of any set" (PDF). Fundamenta Mathematicae. 32: 176–183. doi:10.4064/fm-32-1-176-783.
+
+
+== External links ==
+Trybulec, Andrzej, 1989, "Tarski–Grothendieck Set Theory", Journal of Formalized Mathematics.
+Metamath: "Proof Explorer Home Page." Scroll down to "Grothendieck's Axiom."
+PlanetMath: "Tarski's Axiom"

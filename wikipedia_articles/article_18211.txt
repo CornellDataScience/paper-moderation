@@ -1,0 +1,1091 @@
+The atomic units are a system of natural units of measurement that is especially convenient for calculations in atomic physics and related scientific fields, such as computational chemistry and atomic spectroscopy. They were originally suggested and named by the physicist Douglas Hartree.
+Atomic units are often abbreviated "a.u." or "au", not to be confused with similar abbreviations used for astronomical units, arbitrary units, and absorbance units in other contexts.
+
+
+== Motivation ==
+In the context of atomic physics, using the atomic units system can be a convenient shortcut, eliminating symbols and numbers and reducing the order of magnitude of most numbers involved.
+For example, the Hamiltonian operator in the Schrödinger equation for the helium atom with standard quantities, such as when using SI units, is 
+
+  
+    
+      
+        
+          
+            
+              H
+              ^
+            
+          
+        
+        =
+        −
+        
+          
+            
+              ℏ
+              
+                2
+              
+            
+            
+              2
+              
+                m
+                
+                  e
+                
+              
+            
+          
+        
+        
+          ∇
+          
+            1
+          
+          
+            2
+          
+        
+        −
+        
+          
+            
+              ℏ
+              
+                2
+              
+            
+            
+              2
+              
+                m
+                
+                  e
+                
+              
+            
+          
+        
+        
+          ∇
+          
+            2
+          
+          
+            2
+          
+        
+        −
+        
+          
+            
+              2
+              
+                e
+                
+                  2
+                
+              
+            
+            
+              4
+              π
+              
+                ϵ
+                
+                  0
+                
+              
+              
+                r
+                
+                  1
+                
+              
+            
+          
+        
+        −
+        
+          
+            
+              2
+              
+                e
+                
+                  2
+                
+              
+            
+            
+              4
+              π
+              
+                ϵ
+                
+                  0
+                
+              
+              
+                r
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              e
+              
+                2
+              
+            
+            
+              4
+              π
+              
+                ϵ
+                
+                  0
+                
+              
+              
+                r
+                
+                  12
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\hat {H}}=-{\frac {\hbar ^{2}}{2m_{\text{e}}}}\nabla _{1}^{2}-{\frac {\hbar ^{2}}{2m_{\text{e}}}}\nabla _{2}^{2}-{\frac {2e^{2}}{4\pi \epsilon _{0}r_{1}}}-{\frac {2e^{2}}{4\pi \epsilon _{0}r_{2}}}+{\frac {e^{2}}{4\pi \epsilon _{0}r_{12}}},}
+  
+
+but adopting the convention associated with atomic units that transforms quantities into dimensionless equivalents, it becomes
+
+  
+    
+      
+        
+          
+            
+              H
+              ^
+            
+          
+        
+        =
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          ∇
+          
+            1
+          
+          
+            2
+          
+        
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          ∇
+          
+            2
+          
+          
+            2
+          
+        
+        −
+        
+          
+            2
+            
+              r
+              
+                1
+              
+            
+          
+        
+        −
+        
+          
+            2
+            
+              r
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              r
+              
+                12
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\hat {H}}=-{\frac {1}{2}}\nabla _{1}^{2}-{\frac {1}{2}}\nabla _{2}^{2}-{\frac {2}{r_{1}}}-{\frac {2}{r_{2}}}+{\frac {1}{r_{12}}}.}
+  
+
+In this convention, the constants ⁠
+  
+    
+      
+        ℏ
+      
+    
+    {\displaystyle \hbar }
+  
+⁠, ⁠
+  
+    
+      
+        
+          m
+          
+            e
+          
+        
+      
+    
+    {\displaystyle m_{\text{e}}}
+  
+⁠, ⁠
+  
+    
+      
+        4
+        π
+        
+          ϵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle 4\pi \epsilon _{0}}
+  
+⁠, and ⁠
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+⁠ all correspond to the value ⁠
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+⁠ (see § Definition below). 
+The distances relevant to the physics expressed in SI units are naturally on the order of ⁠
+  
+    
+      
+        
+          10
+          
+            −
+            10
+          
+        
+        
+        
+          m
+        
+      
+    
+    {\displaystyle 10^{-10}\,\mathrm {m} }
+  
+⁠, while expressed in atomic units distances are on the order of ⁠
+  
+    
+      
+        1
+        
+          a
+          
+            0
+          
+        
+      
+    
+    {\displaystyle 1a_{0}}
+  
+⁠ (one Bohr radius, the atomic unit of length). An additional benefit of expressing quantities using atomic units is that their values calculated and reported in atomic units do not change when values of fundamental constants are revised, since the fundamental constants are built into the conversion factors between atomic units and SI.
+
+
+== History ==
+Hartree defined units based on three physical constants:: 91 
+
+Both in order to eliminate various universal constants from the equations and also to avoid high powers of 10 in numerical work, it is convenient to express quantities in terms of units, which may be called 'atomic units', defined as follows:
+Unit of length, ⁠
+  
+    
+      
+        
+          a
+          
+            H
+          
+        
+        =
+        
+          h
+          
+            2
+          
+        
+        
+        
+          /
+        
+        
+        4
+        
+          π
+          
+            2
+          
+        
+        m
+        
+          e
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a_{\text{H}}=h^{2}\,/\,4\pi ^{2}me^{2}}
+  
+⁠, on the orbital mechanics the radius of the 1-quantum circular orbit of the H-atom with fixed nucleus.
+Unit of charge, ⁠
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+⁠, the magnitude of the charge on the electron.
+Unit of mass, ⁠
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+⁠, the mass of the electron.
+Consistent with these are:
+
+Unit of action, ⁠
+  
+    
+      
+        h
+        
+        
+          /
+        
+        
+        2
+        π
+      
+    
+    {\displaystyle h\,/\,2\pi }
+  
+⁠.
+Unit of energy, ⁠
+  
+    
+      
+        
+          e
+          
+            2
+          
+        
+        
+          /
+        
+        
+          a
+          
+            H
+          
+        
+        =
+        2
+        h
+        c
+        R
+        =
+      
+    
+    {\displaystyle e^{2}/a_{\text{H}}=2hcR=}
+  
+⁠ [...]
+Unit of time, ⁠
+  
+    
+      
+        1
+        
+        
+          /
+        
+        
+        4
+        π
+        c
+        R
+      
+    
+    {\displaystyle 1\,/\,4\pi cR}
+  
+⁠. 
+Here, the modern equivalent of ⁠
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+⁠ is the Rydberg constant ⁠
+  
+    
+      
+        
+          R
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle R_{\infty }}
+  
+⁠, of ⁠
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+⁠ is the electron mass ⁠
+  
+    
+      
+        
+          m
+          
+            e
+          
+        
+      
+    
+    {\displaystyle m_{\text{e}}}
+  
+⁠, of ⁠
+  
+    
+      
+        
+          a
+          
+            H
+          
+        
+      
+    
+    {\displaystyle a_{\text{H}}}
+  
+⁠ is the Bohr radius ⁠
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+      
+    
+    {\displaystyle a_{0}}
+  
+⁠, and of ⁠
+  
+    
+      
+        h
+        
+          /
+        
+        2
+        π
+      
+    
+    {\displaystyle h/2\pi }
+  
+⁠ is the reduced Planck constant ⁠
+  
+    
+      
+        ℏ
+      
+    
+    {\displaystyle \hbar }
+  
+⁠. Hartree's expressions that contain ⁠
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+⁠ differ from the modern form due to a change in the definition of ⁠
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+⁠, as explained below.
+In 1957, Bethe and Salpeter's book Quantum mechanics of one-and two-electron atoms built on Hartree's units, which they called atomic units abbreviated "a.u.". They chose to use ⁠
+  
+    
+      
+        ℏ
+      
+    
+    {\displaystyle \hbar }
+  
+⁠, their unit of action and angular momentum in place of Hartree's length as the base units. They noted that the unit of length in this system is the radius of the first Bohr orbit and their velocity is the electron velocity in Bohr's model of the first orbit.
+In 1959, Shull and Hall advocated atomic units based on Hartree's model but again chose to use ⁠
+  
+    
+      
+        ℏ
+      
+    
+    {\displaystyle \hbar }
+  
+⁠ as the defining unit. They explicitly named the distance unit a "Bohr radius"; in addition, they wrote the unit of energy as ⁠
+  
+    
+      
+        H
+        =
+        m
+        
+          e
+          
+            4
+          
+        
+        
+          /
+        
+        
+          ℏ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle H=me^{4}/\hbar ^{2}}
+  
+⁠ and called it a Hartree. These terms came to be used widely in quantum chemistry.: 349 
+In 1973 McWeeny extended the system of Shull and Hall by adding permittivity in the form of ⁠
+  
+    
+      
+        
+          κ
+          
+            0
+          
+        
+        =
+        4
+        π
+        
+          ϵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \kappa _{0}=4\pi \epsilon _{0}}
+  
+⁠ as a defining or base unit. Simultaneously he adopted the SI definition of ⁠
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+⁠ so that his expression for energy in atomic units is ⁠
+  
+    
+      
+        
+          e
+          
+            2
+          
+        
+        
+          /
+        
+        (
+        4
+        π
+        
+          ϵ
+          
+            0
+          
+        
+        
+          a
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle e^{2}/(4\pi \epsilon _{0}a_{0})}
+  
+⁠, matching the expression in the 8th SI brochure.
+
+
+== Definition ==
+A set of base units in the atomic system as in one proposal are the electron rest mass, the magnitude of the electronic charge, the Planck constant, and the permittivity. In the atomic units system, each of these takes the value 1; the corresponding values in the International System of Units: 132  are given in the table.
+
+
+=== Table notes ===
+^ *: This arbitrary choice of base units was proposed by McWeeny.
+^ †: See Dimensional analysis. W represents the dimension of energy, ML2T−2.
+^ ‡: In the 'atomic units' column, the convention that uses dimensionless equivalents has been applied.
+
+
+== Units ==
+Three of the defining constants (reduced Planck constant, elementary charge, and electron rest mass) are atomic units themselves – of action, electric charge, and mass, respectively. Two named units are those of length (Bohr radius ⁠
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        ≡
+        4
+        π
+        
+          ϵ
+          
+            0
+          
+        
+        
+          ℏ
+          
+            2
+          
+        
+        
+          /
+        
+        
+          m
+          
+            e
+          
+        
+        
+          e
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a_{0}\equiv 4\pi \epsilon _{0}\hbar ^{2}/m_{\text{e}}e^{2}}
+  
+⁠) and energy (hartree ⁠
+  
+    
+      
+        
+          E
+          
+            h
+          
+        
+        ≡
+        
+          ℏ
+          
+            2
+          
+        
+        
+          /
+        
+        
+          m
+          
+            e
+          
+        
+        
+          a
+          
+            0
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E_{\text{h}}\equiv \hbar ^{2}/m_{\text{e}}a_{0}^{2}}
+  
+⁠).
+
+
+== Conventions ==
+Different conventions are adopted in the use of atomic units, which vary in presentation, formality and convenience.
+
+
+=== Explicit units ===
+Many texts (e.g. Jerrard & McNiell, Shull & Hall) define the atomic units as quantities, without a transformation of the equations in use.  As such, they do not suggest treating either quantities as dimensionless or changing the form of any equations.  This is consistent with expressing quantities in terms of dimensional quantities, where the atomic unit is included explicitly as a symbol (e.g. ⁠
+  
+    
+      
+        m
+        =
+        3.4
+         
+        
+          m
+          
+            e
+          
+        
+      
+    
+    {\displaystyle m=3.4~m_{\text{e}}}
+  
+⁠, ⁠
+  
+    
+      
+        m
+        =
+        3.4
+         
+        
+          a.u. of mass
+        
+      
+    
+    {\displaystyle m=3.4~{\text{a.u. of mass}}}
+  
+⁠, or more ambiguously, ⁠
+  
+    
+      
+        m
+        =
+        3.4
+         
+        
+          a.u.
+        
+      
+    
+    {\displaystyle m=3.4~{\text{a.u.}}}
+  
+⁠), and keeping equations unaltered with explicit constants.
+Provision for choosing more convenient closely related quantities that are more suited to the problem as units than universal fixed units are is also suggested, for example based on the reduced mass of an electron, albeit with careful definition thereof where used (for example, a unit ⁠
+  
+    
+      
+        
+          H
+          
+            M
+          
+        
+        =
+        μ
+        
+          e
+          
+            4
+          
+        
+        
+          /
+        
+        
+          ℏ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle H_{M}=\mu e^{4}/\hbar ^{2}}
+  
+⁠, where ⁠
+  
+    
+      
+        μ
+        =
+        
+          m
+          
+            e
+          
+        
+        M
+        
+          /
+        
+        (
+        
+          m
+          
+            e
+          
+        
+        +
+        M
+        )
+      
+    
+    {\displaystyle \mu =m_{\text{e}}M/(m_{\text{e}}+M)}
+  
+⁠ for a specified mass ⁠
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+⁠).
+
+
+=== A convention that eliminates units ===
+In atomic physics, it is common to simplify mathematical expressions by a transformation of all quantities: 
+
+Hartree suggested that expression in terms of atomic units allows us "to eliminate various universal constants from the equations", which amounts to informally suggesting a transformation of quantities and equations such that all quantities are replaced by corresponding dimensionless quantities.: 91   He does not elaborate beyond examples.
+McWeeny suggests that "... their adoption permits all the fundamental equations to be written in a dimensionless form in which constants such as ⁠
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+⁠, ⁠
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+⁠ and ⁠
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+⁠ are absent and need not be considered at all during mathematical derivations or the processes of numerical solution; the units in which any calculated quantity must appear are implicit in its physical dimensions and may be supplied at the end."  He also states that "An alternative convention is to interpret the symbols as the numerical measures of the quantities they represent, referred to some specified system of units: in this case the equations contain only pure numbers or dimensionless variables; ... the appropriate units are supplied at the end of a calculation, by reference to the physical dimensions of the quantity calculated. [This] convention has much to recommend it and is tacitly accepted in atomic and molecular physics whenever atomic units are introduced, for example for convenience in computation."
+An informal approach is often taken, in which "equations are expressed in terms of atomic units simply by setting ⁠
+  
+    
+      
+        ℏ
+        =
+        
+          m
+          
+            e
+          
+        
+        =
+        e
+        =
+        4
+        π
+        
+          ϵ
+          
+            0
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle \hbar =m_{\text{e}}=e=4\pi \epsilon _{0}=1}
+  
+⁠".  This is a form of shorthand for the more formal process of transformation between quantities that is suggested by others, such as McWeeny.
+
+
+== Physical constants ==
+Dimensionless physical constants retain their values in any system of units. Of note is the fine-structure constant ⁠
+  
+    
+      
+        α
+        =
+        
+          
+            e
+            
+              2
+            
+          
+        
+        
+          /
+        
+        
+          (
+          4
+          π
+          
+            ϵ
+            
+              0
+            
+          
+          )
+          ℏ
+          c
+        
+        ≈
+        1
+        
+          /
+        
+        137
+      
+    
+    {\displaystyle \alpha ={e^{2}}/{(4\pi \epsilon _{0})\hbar c}\approx 1/137}
+  
+⁠, which appears in expressions as a consequence of the choice of units. For example, the numeric value of the speed of light, expressed in atomic units, is ⁠
+  
+    
+      
+        c
+        =
+        1
+        
+          /
+        
+        α
+        
+        
+          a.u.
+        
+        ≈
+        137
+        
+        
+          a.u.
+        
+      
+    
+    {\displaystyle c=1/\alpha \,{\text{a.u.}}\approx 137\,{\text{a.u.}}}
+  
+⁠: 597 
+
+
+== Bohr model in atomic units ==
+Atomic units are chosen to reflect the properties of electrons in atoms, which is particularly clear in the classical Bohr model of the hydrogen atom for the bound electron in its ground state:
+
+Mass = 1 a.u. of mass
+Charge = −1 a.u. of charge
+Orbital radius = 1 a.u. of length
+Orbital velocity = 1 a.u. of velocity: 597 
+Orbital period = 2π a.u. of time
+Orbital angular velocity = 1 radian per a.u. of time
+Orbital momentum = 1 a.u. of momentum
+Ionization energy = ⁠1/2⁠ a.u. of energy
+Electric field (due to nucleus) = 1 a.u. of electric field
+Lorentz force (due to nucleus) = 1 a.u. of force
+
+
+== References ==

@@ -1,0 +1,40 @@
+The Graphical Kernel System (GKS) was the first ISO standard for low-level computer graphics, introduced in 1977. A draft international standard was circulated for review in September 1983.
+Final ratification of the standard was achieved in 1985.
+
+
+== Overview ==
+GKS provides a set of drawing features for two-dimensional vector graphics suitable for charting and similar duties. The calls are designed to be portable across different programming languages, graphics devices and hardware, so that applications written to use GKS will be readily portable to many platforms and devices.
+GKS was fairly common on computer workstations in the 1980s and early 1990s.
+GKS formed the basis of Digital Research's GSX which evolved into VDI, one of the core components of GEM. GEM was the native GUI on the Atari ST and was occasionally seen on PCs, particularly in conjunction with Ventura Publisher. GKS was little used commercially outside these markets, but remains in use in some scientific visualization packages. It is also the underlying API defining the Computer Graphics Metafile. A descendant of GKS was PHIGS. One popular application based on an implementation of GKS is the GR Framework, a C library for high-performance scientific visualization that has become a common plotting backend among Julia users.
+A main developer and promoter of the GKS was José Luis Encarnação, formerly director of the Fraunhofer Institute for Computer Graphics (IGD) in Darmstadt, Germany.
+GKS has been standardized in the following documents:
+
+ANSI standard ANSI X3.124 of 1985.
+ISO 7942:1985 standard, revised as ISO 7942:1985/Amd 1:1991 and ISO/IEC 7942-1:1994, as well as ISO/IEC 7942-2:1997, ISO/IEC 7942-3:1999 and ISO/IEC 7942-4:1998
+The language bindings are ISO standard ISO 8651.
+GKS-3D (Graphical Kernel System for Three Dimensions) functional definition is ISO standard ISO 8805, and the corresponding C bindings are ISO/IEC 8806.
+The functionality of GKS is wrapped up as a data model standard in the STEP standard, section ISO 10303-46.
+
+
+== See also ==
+General Graphics Interface
+GSS-KERNEL
+IGES (Initial Graphics Exchange Specification)
+NAPLPS
+
+
+== References ==
+
+
+== Further reading ==
+Hopgood, F. R. A. (1983). Introduction to the Graphical Kernel System (GKS). London: Academic Press. ISBN 0-12-355570-1.
+Laflin, Susan (August 1999). "The Graphical Kernel System". SEM307 Computer Graphics II. School of Computer Science, University of Birmingham. Archived from the original on 2015-09-23. Retrieved 2007-02-18.
+Encarnação, José L.; Encarnação, L. M.; Herzner, Wolfgang R. (1987). Graphische Datenverarbeitung mit GKS (in German) (1 ed.). München / Wien: Carl Hanser Verlag. ISBN 3446149783.
+Bechlars, Jörg; Buhtz, Rainer (1994). GKS in der Praxis (in German) (2 ed.). Heidelberg: Springer Verlag. ISBN 3540567852.
+Fellner, Wolf-Dietrich (1992). Computergrafik (in German) (2 ed.). Mannheim: BI Wissenschaftsverlag. ISBN 3411151226.
+Gawehn, Wilfried (1991). Grafikprogrammierung mit C und GKS (in German). Mannheim: BI Wissenschaftsverlag. ISBN 3-411-14981-7.
+
+
+== External links ==
+Unofficial source of current implementation information
+GKS at FOLDOC

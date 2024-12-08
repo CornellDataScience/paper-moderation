@@ -1,0 +1,4241 @@
+In fluid dynamics, eddy diffusion, eddy dispersion, or turbulent diffusion is a process by which fluid substances mix together due to eddy motion. These eddies can vary widely in size, from subtropical ocean gyres down to the small Kolmogorov microscales, and occur as a result of turbulence (or turbulent flow). The theory of eddy diffusion was first developed by Sir Geoffrey Ingram Taylor.
+In laminar flows, material properties (salt, heat, humidity, aerosols etc.) are mixed by random motion of individual molecules. By a purely probabilistic argument, the net flux of molecules from high concentration area to low concentration area is higher than the flux in the opposite direction. This down-gradient flux equilibrates the concentration profile over time. This phenomenon is called molecular diffusion, and its mathematical aspect is captured by the diffusion equation.
+In turbulent flows, on top of mixing by molecular diffusion, eddies stir (Eddy diffusion § Note on stirring and mixing) the fluid. This causes fluid parcels from various initial positions, and thus various associated concentrations, to penetrate into fluid regions with different initial concentrations. This causes the fluid properties to homogenize on scale larger than that of eddies responsible for stirring, in a very efficient way compared to individual molecular motion. In most macroscopic flows in nature, eddy diffusion is several orders of magnitude stronger than molecular diffusion. This sometimes leads to the latter being neglected when studying turbulent flows.
+The problem with turbulent diffusion in the atmosphere and beyond is that there is no single model drawn from fundamental physics that explains all its significant aspects. There are two alternative approaches with non-overlapping areas of utility. According to the gradient transport theory, the diffusion flux at a fixed point in the fluid is proportional to the local concentration gradient. This theory is Eulerian in its nature, i.e. it describes fluid properties in a spatially fixed coordinate system (see Lagrangian and Eulerian specification of a fluid). In contrast, statistical diffusion theories follow the motion of fluid particles, and are thus Lagrangian. In addition, computational approaches may be classified as continuous-motion or discontinuous-motion theories, depending on whether they assume that particles move continuously or in discrete steps.
+
+
+== Historical developments ==
+The theory of eddy diffusion was originally developed, around the end of the 1910s, by G. I. Taylor and L. F. Richardson in England and by W. Schmidt in Austria as a direct generalization of the classical theory of molecular diffusion. They proposed the idea that the mass effect of the eddies is entirely similar to that of molecules except for a scale difference. This is described as the "gradient model" in a later section, the name derived from the fact that diffusion fluxes are proportional to the local gradient in concentration, just as for molecular diffusion.
+Later research (1930s), mainly by O. G. Sutton, pointed out some problems of the original approach and put forward the idea that the difference between the eddy structure of a turbulent fluid and the molecular structure of a fluid at rest is more than one of scale.
+During the following decades, a number of studies were carried out to experimentally probe the established theory on eddy diffusion, both for the atmosphere and the ocean/lake bodies, mostly finding agreement with the original theory. In particular, experiments on the diffusion of foreign material in a turbulent water stream, vertical structure of water in lake bodies, and lowest part of the atmosphere found experimental evidence that eddy diffusion is indeed stronger than molecular diffusion and generally obeys the theory originally developed by G. I. Taylor. Some counter-examples to the original gradient theory are given later in the article.
+Active research is now focused on the contributions of eddy diffusion to both atmospheric and oceanic known processes. New models and theories were built on the foundation of the original theory to fully describe these processes. In particular, these studies include eddy diffusion mechanisms to explain processes from aerosols deposition to internal gravity waves in the upper atmosphere, from deep sea eddy diffusion and buoyancy to nutrient supply to the surface of the mixed layer in the Antarctic Circumpolar Current.
+
+
+== Mathematical formulation of eddy diffusion ==
+Source:
+In this section a mathematical framework based on continuity equation is developed to describe the evolution of concentration profile over time, under action of eddy diffusion. Velocity and concentration field are decomposed into mean and fluctuating (eddy) components. It is then derived that the concentration flux due to eddies is given by covariance of fluctuations in velocity and concentration. This covariance is in principle unknown, which means that the evolution equation for concentration profile cannot be solved without making additional assumptions about the covariance. The next section then provides one such assumption (the gradient model) and thus links to the main result of this section. The one after that describes an entirely different statistical (and Lagrangian) approach to problem.
+Consider a scalar field 
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\textstyle \phi ({\vec {x}},t)}
+  
+, 
+  
+    
+      
+        
+          
+            
+              x
+              →
+            
+          
+        
+      
+    
+    {\textstyle {\vec {x}}}
+  
+ being a position in a fixed Cartesian coordinate system. The field measures the concentration of a passive conserved tracer species (could be a coloured dye in an experiment, salt in the sea, or water vapour in the air). The adjective "passive" means that, at least within some approximation, the tracer does not alter dynamic properties such as density or pressure in any way. It just moves with the flow without modifying it. This is not strictly true for many "tracers" in nature, such as water vapour or salt. "Conserved" means that there are no absolute sources or sinks, the tracer is only moved around by diffusion and advection.
+Consider the conservation equation for 
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\textstyle \phi ({\vec {x}},t)}
+  
+. This is the generalized fluid continuity equation with a source term on the right hand side. The source corresponds to molecular diffusion (and not to any net creation/destruction of the tracer). The equation is written in Eulerian view (it contains partial time derivate):
+
+  
+    
+      
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        (
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ϕ
+        )
+        =
+        
+          K
+          
+            0
+          
+        
+        
+          ∇
+          
+            2
+          
+        
+        ϕ
+      
+    
+    {\displaystyle {\frac {\partial \phi }{\partial t}}+\nabla \cdot ({\vec {u}}\phi )=K_{0}\nabla ^{2}\phi }
+  
+
+  
+    
+      
+        
+          K
+          
+            0
+          
+        
+      
+    
+    {\textstyle K_{0}}
+  
+ is the coefficient of molecular diffusivity (mass diffusivity).
+The objective is to find out how the laminar mean flow interacts with turbulent eddies, in particular what effect this has on transport of the tracer. In line with standard Reynolds decomposition, the concentration field can be divided into its mean and fluctuating components:
+
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+        =
+        ⟨
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+        ⟩
+        +
+        
+          ϕ
+          ′
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\displaystyle \phi ({\vec {x}},t)=\langle \phi ({\vec {x}},t)\rangle +\phi '({\vec {x}},t)}
+  
+
+Likewise for the velocity field:
+
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+        =
+        ⟨
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+        ⟩
+        +
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          ′
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\displaystyle {\vec {u}}({\vec {x}},t)=\langle {\vec {u}}({\vec {x}},t)\rangle +{\vec {u}}'({\vec {x}},t)}
+  
+
+The mean term (in angular brackets) represents a laminar component of the flow. Note that the mean field is in general a function of space and time, and not just a constant. Average in this sense does not suggest averaging over all available data in space and time, but merely filtering out the turbulent motion. This means that averaging domain is restricted to an extent that still smoothens the turbulence, but does not erase information about the mean flow itself. This assumes that the scales of eddies and mean flow can be separated, which is not always the case. One can get as close as possible to this by suitably choosing the range of averaging, or ideally doing an ensemble average if the experiment can be repeated. In short, the averaging procedure is not trivial in practice. In this section, the topic is treated theoretically, and it is assumed that such suitable averaging procedure exists. 
+The fluctuating (primed) term has the defining property that it averages out, i.e. 
+  
+    
+      
+        ⟨
+        
+          ϕ
+          ′
+        
+        ⟩
+        =
+        0
+      
+    
+    {\textstyle \langle \phi '\rangle =0}
+  
+. It is used to describe the turbulence (eddies) that, among other things, stirs the fluid.
+One can now proceed with Reynolds decomposition. Using the fact that 
+  
+    
+      
+        ⟨
+        
+          ϕ
+          ′
+        
+        ⟩
+        =
+        0
+      
+    
+    {\textstyle \langle \phi '\rangle =0}
+  
+ by definition, one can average the entire equation to eliminate all the turbulent fluctuations 
+  
+    
+      
+        
+          ϕ
+          ′
+        
+      
+    
+    {\textstyle \phi '}
+  
+, except in non-linear terms (see Reynolds decomposition, Reynolds stress and Reynolds-averaged Navier–Stokes equations). The non-linear advective term becomes:
+
+  
+    
+      
+        
+          
+            
+              
+                ⟨
+                
+                  
+                    
+                      u
+                      →
+                    
+                  
+                
+                ϕ
+                ⟩
+              
+              
+                
+                =
+                ⟨
+                
+                  (
+                  
+                    ⟨
+                    
+                      
+                        
+                          u
+                          →
+                        
+                      
+                    
+                    ⟩
+                    +
+                    
+                      
+                        
+                          
+                            u
+                            →
+                          
+                        
+                      
+                      ′
+                    
+                  
+                  )
+                
+                
+                  (
+                  
+                    ⟨
+                    ϕ
+                    ⟩
+                    +
+                    
+                      ϕ
+                      ′
+                    
+                  
+                  )
+                
+                ⟩
+              
+            
+            
+              
+              
+                
+                =
+                ⟨
+                
+                  
+                    
+                      u
+                      →
+                    
+                  
+                
+                ⟩
+                ⟨
+                ϕ
+                ⟩
+                 
+                +
+                ⟨
+                
+                  
+                    
+                      
+                        u
+                        →
+                      
+                    
+                  
+                  ′
+                
+                
+                  ϕ
+                  ′
+                
+                ⟩
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\langle {\vec {u}}\phi \rangle &=\langle \left(\langle {\vec {u}}\rangle +{\vec {u}}'\right)\left(\langle \phi \rangle +\phi '\right)\rangle \\&=\langle {\vec {u}}\rangle \langle \phi \rangle \ +\langle {\vec {u}}'\phi '\rangle \end{aligned}}}
+  
+ Upon substitution into the conservation equation: 
+  
+    
+      
+        
+          
+            
+              ∂
+              ⟨
+              ϕ
+              ⟩
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        
+          (
+          
+            ⟨
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            ⟩
+            ⟨
+            ϕ
+            ⟩
+             
+            +
+            ⟨
+            
+              
+                
+                  
+                    u
+                    →
+                  
+                
+              
+              ′
+            
+            
+              ϕ
+              ′
+            
+            ⟩
+          
+          )
+        
+        =
+        
+          K
+          
+            0
+          
+        
+        
+          ∇
+          
+            2
+          
+        
+        ⟨
+        ϕ
+        ⟩
+      
+    
+    {\displaystyle {\frac {\partial \langle \phi \rangle }{\partial t}}+\nabla \cdot \left(\langle {\vec {u}}\rangle \langle \phi \rangle \ +\langle {\vec {u}}'\phi '\rangle \right)=K_{0}\nabla ^{2}\langle \phi \rangle }
+  
+
+If one pushes the third (turbulent) term of the left hand side to right hand side (into 
+  
+    
+      
+        
+          ∇
+          
+            2
+          
+        
+        =
+        ∇
+        ⋅
+        ∇
+      
+    
+    {\textstyle \nabla ^{2}=\nabla \cdot \nabla }
+  
+), the result is: 
+  
+    
+      
+        
+          
+            
+              ∂
+              ⟨
+              ϕ
+              ⟩
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        
+          (
+          
+            ⟨
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            ⟩
+            ⟨
+            ϕ
+            ⟩
+          
+          )
+        
+        =
+        ∇
+        ⋅
+        
+          (
+          
+            
+              K
+              
+                0
+              
+            
+            ∇
+            ⟨
+            ϕ
+            ⟩
+            −
+            ⟨
+            
+              
+                
+                  
+                    u
+                    →
+                  
+                
+              
+              ′
+            
+            
+              ϕ
+              ′
+            
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\partial \langle \phi \rangle }{\partial t}}+\nabla \cdot \left(\langle {\vec {u}}\rangle \langle \phi \rangle \right)=\nabla \cdot \left(K_{0}\nabla \langle \phi \rangle -\langle {\vec {u}}'\phi '\rangle \right)}
+  
+ This equation looks like the equation we started with, apart from (i) 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+      
+    
+    {\textstyle {\vec {u}}}
+  
+ and 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+ became their laminar components, and (ii) the appearance of a new second term on right hand side. This second term has analogous function to the Reynolds stress term in the Reynolds-averaged Navier–Stokes equations.
+This was the Eulerian treatment. One can also study this problem in a Lagrangian point of view (absorbing some terms into the material derivative):
+
+  
+    
+      
+        
+          
+            
+              D
+              ϕ
+            
+            
+              D
+              t
+            
+          
+        
+        +
+        ϕ
+        ∇
+        ⋅
+        
+          
+            
+              u
+              →
+            
+          
+        
+        =
+        
+          K
+          
+            0
+          
+        
+        
+          ∇
+          
+            2
+          
+        
+        ϕ
+      
+    
+    {\displaystyle {\frac {D\phi }{Dt}}+\phi \nabla \cdot {\vec {u}}=K_{0}\nabla ^{2}\phi }
+  
+
+Define a mean material derivative by:
+
+  
+    
+      
+        
+          
+            
+              D
+              ¯
+            
+            
+              
+                
+                  D
+                  ¯
+                
+              
+              t
+            
+          
+        
+        =
+        
+          
+            ∂
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ⟨
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ⟩
+        ⋅
+        ∇
+      
+    
+    {\displaystyle {\frac {\overline {D}}{{\overline {D}}t}}={\frac {\partial }{\partial t}}+\langle {\vec {u}}\rangle \cdot \nabla }
+  
+
+This is the material derivative associated with the mean flow (advective term only contains the laminar part of 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+      
+    
+    {\textstyle {\vec {u}}}
+  
+). One can distribute the divergence term on right hand side and use this definition of material derivative: 
+  
+    
+      
+        
+          
+            
+              
+                
+                  D
+                  ¯
+                
+              
+              ⟨
+              ϕ
+              ⟩
+            
+            
+              
+                
+                  D
+                  ¯
+                
+              
+              t
+            
+          
+        
+        +
+        ⟨
+        ϕ
+        ⟩
+        ∇
+        ⋅
+        ⟨
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ⟩
+        =
+        ∇
+        ⋅
+        
+          (
+          
+            
+              K
+              
+                0
+              
+            
+            ∇
+            ⟨
+            ϕ
+            ⟩
+            −
+            ⟨
+            
+              
+                
+                  
+                    u
+                    →
+                  
+                
+              
+              ′
+            
+            
+              ϕ
+              ′
+            
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {{\overline {D}}\langle \phi \rangle }{{\overline {D}}t}}+\langle \phi \rangle \nabla \cdot \langle {\vec {u}}\rangle =\nabla \cdot \left(K_{0}\nabla \langle \phi \rangle -\langle {\vec {u}}'\phi '\rangle \right)}
+  
+ This equation looks again like the Lagrangian equation that we started with, with the same caveats (i) and (ii) as in Eulerian case, and the definition of the mean-flow quantity also for the derivative operator. The analysis that follows will return to Eulerian picture.
+The interpretation of eddy diffusivity is as follows. 
+  
+    
+      
+        
+          K
+          
+            0
+          
+        
+        ∇
+        ⟨
+        ϕ
+        ⟩
+      
+    
+    {\textstyle K_{0}\nabla \langle \phi \rangle }
+  
+ is the flux of the passive tracer due to molecular diffusion. It is always down-gradient. Its divergence corresponds to the accumulation (if negative) or depletion (if positive) of the tracer concentration due to this effect. One can interpret the 
+  
+    
+      
+        −
+        ⟨
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          ′
+        
+        
+          ϕ
+          ′
+        
+        ⟩
+      
+    
+    {\textstyle -\langle {\vec {u}}'\phi '\rangle }
+  
+ term like a flux due to turbulent eddies stirring the fluid. Likewise, its divergence would give the accumulation/depletion of tracer due to turbulent eddies. It is not yet specified whether this eddy flux should be down-gradient, see later sections.
+One can also examine the concentration budget for a small fluid parcel of volume 
+  
+    
+      
+        V
+      
+    
+    {\textstyle V}
+  
+. Start from Eulerian formulation and use the divergence theorem: 
+  
+    
+      
+        
+          
+            ∂
+            
+              ∂
+              t
+            
+          
+        
+        
+          ∫
+          
+            V
+          
+        
+        ⟨
+        ϕ
+        ⟩
+        
+          d
+        
+        V
+        =
+        ∮
+        
+          K
+          
+            0
+          
+        
+        ∇
+        ⟨
+        ϕ
+        ⟩
+        ⋅
+        
+          
+            
+              n
+              →
+            
+          
+        
+        
+          d
+        
+        A
+        −
+        ∮
+        ⟨
+        
+          ϕ
+          ′
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          ′
+        
+        ⟩
+        ⋅
+        
+          
+            
+              n
+              →
+            
+          
+        
+        
+          d
+        
+        A
+        −
+        ∮
+        ⟨
+        ϕ
+        ⟩
+        ⟨
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ⟩
+        ⋅
+        
+          
+            
+              n
+              →
+            
+          
+        
+        
+          d
+        
+        A
+      
+    
+    {\displaystyle {\frac {\partial }{\partial t}}\int _{V}\langle \phi \rangle {\text{d}}V=\oint K_{0}\nabla \langle \phi \rangle \cdot {\vec {n}}{\text{d}}A-\oint \langle \phi '{\vec {u}}'\rangle \cdot {\vec {n}}{\text{d}}A-\oint \langle \phi \rangle \langle {\vec {u}}\rangle \cdot {\vec {n}}{\text{d}}A}
+  
+ The three terms on the right hand side represent molecular diffusion, eddy diffusion, and advection with the mean flow, respectively. An issue arises that there is no separate equation for the 
+  
+    
+      
+        ⟨
+        
+          ϕ
+          ′
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          ′
+        
+        ⟩
+      
+    
+    {\textstyle \langle \phi '{\vec {u}}'\rangle }
+  
+. It is not possible to close the system of equations without coming up with a model for this term. The simplest way how it can be achieved is to assume that, just like the molecular diffusion term, it is also proportional to the gradient in concentration 
+  
+    
+      
+        ⟨
+        ϕ
+        ⟩
+      
+    
+    {\textstyle \langle \phi \rangle }
+  
+ (see the section on Gradient based theories). See turbulence modeling for more.
+
+
+== Gradient diffusion theory ==
+
+The simplest model of turbulent diffusion can be constructed by drawing an analogy with the probabilistic effect causing the down-gradient flow as a result of motion of individual molecules (molecular diffusion). Consider an inert, passive tracer dispersed in the fluid with an initial spatial concentration 
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        =
+        0
+        )
+      
+    
+    {\textstyle \phi ({\vec {x}},t=0)}
+  
+. Let there be a small fluid region with higher concentration of the tracer than its surroundings in every direction. It exchanges fluid (and with it the tracer) with its surroundings via turbulent eddies, which are fluctuating currents going back and forth in a seemingly random way. The eddies flowing to the region from its surroundings are statistically the same as those flowing from the region to its surroundings. This is because the tracer is "passive", so a fluid parcel with higher concentration has similar dynamical behaviour as a fluid parcel with lower concentration.  The key difference is that those flowing outwards carry much more tracer than those flowing inwards, since the concentration inside the region is initially higher than outside. This can be quantified with a tracer flux. Flux has units of tracer amount per area per time, which is the same as tracer concentration times velocity. Local tracer accumulation rate 
+  
+    
+      
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              t
+            
+          
+        
+      
+    
+    {\textstyle {\frac {\partial \phi }{\partial t}}}
+  
+ would then depend on the difference of outgoing and incoming fluxes. In our example, outgoing fluxes are larger than ingoing fluxes, producing a negative local accumulation (i.e. depletion) of the tracer. This effect would in general result  in an equilibration of the initial profile 
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        )
+      
+    
+    {\textstyle \phi ({\vec {x}})}
+  
+ over time, regardless of what the initial profile might be. To be able to calculate this time evolution, one needs to know how to calculate the flux. This section explores the simplest hypothesis: flux is linearly related to the concentration difference (just as for molecular diffusion). This also comes as the most intuitive guess from the analysis just made. Flux is in principle a vector. This vector points in the direction of tracer transport, and in this case it would be parallel to  
+  
+    
+      
+        −
+        ∇
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        )
+      
+    
+    {\textstyle -\nabla \phi ({\vec {x}})}
+  
+. Hence the model is typically called gradient diffusion (or equivalently down-gradient diffusion).
+
+
+=== A rough argument for gradient diffusion ===
+Source:
+
+The subsection aims for a simple, rough and heuristic argument explaining how the mathematics of gradient diffusion arises. A more rigorous and general treatment of gradient model is offered in the next subsection, which builds directly on the section on general mathematical treatment (which was not yet assuming gradient model at that early stage and left the covariance of fluctuations as it was). Means are for now not indicated explicitly for maximal simplicity of notation.  Also for now neglect the molecular diffusivity 
+  
+    
+      
+        
+          K
+          
+            0
+          
+        
+      
+    
+    {\textstyle K_{0}}
+  
+, since it is usually significantly smaller than eddy diffusivity, and would steer attention away from the eddy mechanism.
+Consider two neighbouring fluid parcels with their centers 
+  
+    
+      
+        Δ
+        x
+      
+    
+    {\textstyle \Delta x}
+  
+ apart. They contain volume concentrations 
+  
+    
+      
+        
+          ϕ
+          
+            1
+          
+        
+      
+    
+    {\textstyle \phi _{1}}
+  
+ and 
+  
+    
+      
+        
+          ϕ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \phi _{2}}
+  
+ of an inert, passive tracer. Without loss of generality, let 
+  
+    
+      
+        
+          ϕ
+          
+            2
+          
+        
+        >
+        
+          ϕ
+          
+            1
+          
+        
+      
+    
+    {\textstyle \phi _{2}>\phi _{1}}
+  
+. Imagine that a single eddy of length scale 
+  
+    
+      
+        Δ
+        x
+      
+    
+    {\textstyle \Delta x}
+  
+ and velocity scale 
+  
+    
+      
+        U
+      
+    
+    {\textstyle U}
+  
+ is responsible for a continuous stirring of material among the two parcels. The tracer flux exchanged through the lateral boundary of the two parcels is labelled 
+  
+    
+      
+        J
+      
+    
+    {\textstyle J}
+  
+. The boundary is perpendicular to the 
+  
+    
+      
+        x
+      
+    
+    {\textstyle x}
+  
+-axis. The flux from parcel 1 to parcel 2 is then, at least by order of magnitude:
+
+  
+    
+      
+        
+          
+            
+              
+                J
+              
+              
+                
+                =
+                
+                  ϕ
+                  
+                    1
+                  
+                
+                U
+                −
+                
+                  ϕ
+                  
+                    2
+                  
+                
+                U
+              
+            
+            
+              
+              
+                
+                =
+                −
+                U
+                Δ
+                ϕ
+              
+            
+            
+              
+              
+                
+                =
+                −
+                (
+                U
+                Δ
+                x
+                )
+                
+                  
+                    
+                      Δ
+                      ϕ
+                    
+                    
+                      Δ
+                      x
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}J&=\phi _{1}U-\phi _{2}U\\&=-U\Delta \phi \\&=-(U\Delta x){\frac {\Delta \phi }{\Delta x}}\end{aligned}}}
+  
+
+This argument can be seen as a physically motivated dimensional analysis, since it uses solely the length and velocity scales of an eddy to estimate the tracer flux that it generates. If the entire studied domain (thought to contain a large number of such pairs 
+  
+    
+      
+        
+          ϕ
+          
+            1
+          
+        
+      
+    
+    {\textstyle \phi _{1}}
+  
+ and 
+  
+    
+      
+        
+          ϕ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \phi _{2}}
+  
+) is much larger than the eddy length scale 
+  
+    
+      
+        Δ
+        x
+      
+    
+    {\textstyle \Delta x}
+  
+, one can approximate 
+  
+    
+      
+        Δ
+        ϕ
+      
+    
+    {\textstyle \Delta \phi }
+  
+ over 
+  
+    
+      
+        Δ
+        x
+      
+    
+    {\textstyle \Delta x}
+  
+ as the derivative of concentration in a continuously varying medium:
+
+  
+    
+      
+        J
+        =
+        −
+        (
+        U
+        Δ
+        x
+        )
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              x
+            
+          
+        
+      
+    
+    {\displaystyle J=-(U\Delta x){\frac {\partial \phi }{\partial x}}}
+  
+
+Based on similarity with Fick's law of diffusion one can interpret the term in parentheses as a diffusion coefficient 
+  
+    
+      
+        K
+      
+    
+    {\textstyle K}
+  
+ associated with this turbulent eddy, given by a product of its length and velocity scales.
+
+  
+    
+      
+        J
+        =
+        −
+        K
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              x
+            
+          
+        
+      
+    
+    {\displaystyle J=-K{\frac {\partial \phi }{\partial x}}}
+  
+
+using a one-dimensional form of continuity equation 
+  
+    
+      
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        
+          
+            
+              ∂
+              J
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0
+      
+    
+    {\textstyle {\frac {\partial \phi }{\partial t}}+{\frac {\partial J}{\partial x}}=0}
+  
+, we can write:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        
+          
+            ∂
+            
+              ∂
+              x
+            
+          
+        
+        
+          (
+          
+            K
+            
+              
+                
+                  ∂
+                  ϕ
+                
+                
+                  ∂
+                  x
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\partial \phi }{\partial t}}={\frac {\partial }{\partial x}}\left(K{\frac {\partial \phi }{\partial x}}\right)}
+  
+
+If 
+  
+    
+      
+        K
+      
+    
+    {\textstyle K}
+  
+ is assumed to be spatially homogeneous, it can be pulled out of the derivative and one gets a diffusion equation of the form:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        K
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              ϕ
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial \phi }{\partial t}}=K{\frac {\partial ^{2}\phi }{\partial x^{2}}}}
+  
+
+This is a prototypical example of parabolic partial differential equation. It is also known as heat equation. Its fundamental solution for a point source at 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\textstyle x=0}
+  
+ is:
+
+  
+    
+      
+        ϕ
+        (
+        x
+        ,
+        t
+        )
+        =
+        
+          
+            1
+            
+              4
+              π
+              K
+              t
+            
+          
+        
+        exp
+        ⁡
+        
+          
+            (
+            
+              −
+              
+                
+                  
+                    x
+                    
+                      2
+                    
+                  
+                  
+                    4
+                    K
+                    t
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle \phi (x,t)={\frac {1}{\sqrt {4\pi Kt}}}\exp {\left(-{\frac {x^{2}}{4Kt}}\right)}}
+  
+
+By comparison with Gaussian distribution, one can identify the variance as 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        (
+        t
+        )
+        =
+        2
+        K
+        t
+      
+    
+    {\textstyle \sigma ^{2}(t)=2Kt}
+  
+ and standard deviation as 
+  
+    
+      
+        σ
+        (
+        t
+        )
+        =
+        
+          
+            2
+            K
+            t
+          
+        
+        ∼
+        
+          t
+          
+            1
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\textstyle \sigma (t)={\sqrt {2Kt}}\sim t^{1/2}}
+  
+, a very typical time dependence for molecular diffusion or random walk.
+To conclude this subsection, it described how an eddy can stir two surrounding regions of a fluid and how this behaviour gives rise to mathematics described as "gradient model", meaning that diffusive fluxes are aligned with a negative spatial gradient in concentration. It considered a very simple geometry, in which all variations happen along one axis. The argument used only order-of-magnitude scales of spatial separation and eddy velocity, therefore it was very rough. The next section offers a more rigorous treatment.
+
+
+=== Interpretation from general equations ===
+Source:
+This subsection builds on the section on general mathematical treatment, and observes what happens when a gradient assumption is inserted.
+Recall the Reynolds-averaged concentration equation: 
+  
+    
+      
+        
+          
+            
+              ∂
+              ⟨
+              ϕ
+              ⟩
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        
+          (
+          
+            ⟨
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            ⟩
+            ⟨
+            ϕ
+            ⟩
+          
+          )
+        
+        =
+        ∇
+        ⋅
+        
+          (
+          
+            
+              K
+              
+                0
+              
+            
+            ∇
+            ⟨
+            ϕ
+            ⟩
+            −
+            ⟨
+            
+              
+                
+                  
+                    u
+                    →
+                  
+                
+              
+              ′
+            
+            
+              ϕ
+              ′
+            
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\partial \langle \phi \rangle }{\partial t}}+\nabla \cdot \left(\langle {\vec {u}}\rangle \langle \phi \rangle \right)=\nabla \cdot \left(K_{0}\nabla \langle \phi \rangle -\langle {\vec {u}}'\phi '\rangle \right)}
+  
+ We make a similar gradient assumption to that which was motivated in the subsection above with tracer length and velocity scales. However the coefficient value needs not be the same as in the above subsection (which was only specified by order of magnitude). The gradient hypothesis reads: 
+  
+    
+      
+        ⟨
+        
+          ϕ
+          ′
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          ′
+        
+        ⟩
+        =
+        −
+        K
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+        ∇
+        ⟨
+        ϕ
+        ⟩
+      
+    
+    {\displaystyle \langle \phi '{\vec {u}}'\rangle =-K({\vec {x}},t)\nabla \langle \phi \rangle }
+  
+ 
+This allows the concentration equation to be rewritten as 
+  
+    
+      
+        
+          
+            
+              ∂
+              ⟨
+              ϕ
+              ⟩
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        
+          (
+          
+            ⟨
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            ⟩
+            ⟨
+            ϕ
+            ⟩
+          
+          )
+        
+        =
+        ∇
+        ⋅
+        
+          (
+          
+            (
+            
+              K
+              
+                0
+              
+            
+            +
+            K
+            )
+            ∇
+            ⟨
+            ϕ
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\partial \langle \phi \rangle }{\partial t}}+\nabla \cdot \left(\langle {\vec {u}}\rangle \langle \phi \rangle \right)=\nabla \cdot \left((K_{0}+K)\nabla \langle \phi \rangle \right)}
+  
+ This is again similar to the initial concentration equation, with transformations 
+  
+    
+      
+        ϕ
+        →
+        ⟨
+        ϕ
+        ⟩
+        ,
+        
+          
+            
+              u
+              →
+            
+          
+        
+        →
+        ⟨
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ⟩
+      
+    
+    {\textstyle \phi \rightarrow \langle \phi \rangle ,{\vec {u}}\rightarrow \langle {\vec {u}}\rangle }
+  
+ and 
+  
+    
+      
+        
+          K
+          
+            0
+          
+        
+        →
+        
+          K
+          
+            0
+          
+        
+        +
+        K
+      
+    
+    {\textstyle K_{0}\rightarrow K_{0}+K}
+  
+. It represents a generalization to Fick's second law (see Fick's laws of diffusion), in presence of turbulent diffusion and advection by the mean flow. That is the reason why down-gradient eddy diffusion models are often referred to as "Fickian", emphasizing this mathematical similarity. Note that the eddy diffusivity 
+  
+    
+      
+        K
+      
+    
+    {\textstyle K}
+  
+ can in general be a function of space and time, since its value is given by the pattern of eddies that can evolve in time and vary from place to place. Different assumptions made about 
+  
+    
+      
+        K
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\textstyle K({\vec {x}},t)}
+  
+ can lead to different models, with various trade-offs between observations and theory.
+Sometimes, the term Fickian diffusion is reserved solely for the case when 
+  
+    
+      
+        K
+      
+    
+    {\textstyle K}
+  
+ is a true constant. 
+  
+    
+      
+        K
+      
+    
+    {\textstyle K}
+  
+ needs to be at least spatially uniform for it to be possible to write: 
+  
+    
+      
+        
+          
+            
+              ∂
+              ⟨
+              ϕ
+              ⟩
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        
+          (
+          
+            ⟨
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            ⟩
+            ⟨
+            ϕ
+            ⟩
+          
+          )
+        
+        =
+        (
+        
+          K
+          
+            0
+          
+        
+        +
+        K
+        )
+        
+          ∇
+          
+            2
+          
+        
+        ⟨
+        ϕ
+        ⟩
+      
+    
+    {\displaystyle {\frac {\partial \langle \phi \rangle }{\partial t}}+\nabla \cdot \left(\langle {\vec {u}}\rangle \langle \phi \rangle \right)=(K_{0}+K)\nabla ^{2}\langle \phi \rangle }
+  
+ 
+In this case, the sum of molecular and eddy diffusivity can be considered as a new effective viscosity, acting in qualitatively similar way to molecular diffusivity, but significantly increased in magnitude.
+In the context of this article, the adjective"Fickian" can also be used as an equivalent to a gradient model, so a more general form like 
+  
+    
+      
+        K
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\textstyle K({\vec {x}},t)}
+  
+ is permissible. The terminology in scientific articles is not always consistent in this respect.
+
+
+=== Shortcomings and counterexamples of the gradient model ===
+Gradient models were historically the first models of eddy diffusion. They are simple and mathematically convenient, but the underlying assumption on purely down-gradient diffusive flux is not universally valid. Here are a few experimental counter-examples:
+
+For a simple case of homogeneous turbulent shear flow  the angle between 
+  
+    
+      
+        −
+        ∇
+        ⟨
+        ϕ
+        ⟩
+      
+    
+    {\textstyle -\nabla \langle \phi \rangle }
+  
+ and 
+  
+    
+      
+        ⟨
+        
+          ϕ
+          ′
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          ′
+        
+        ⟩
+      
+    
+    {\textstyle \langle \phi '{\vec {u}}'\rangle }
+  
+ was found to be 65 degrees. Fickian diffusion predicts 0 degrees.
+On the sea, surface drifters initially farther apart have higher probability of increasing their physical distance by large amounts than those initially closer. In contrast Fickian diffusion predicts that the change in mutual distance (i.e. initial distance subtracted from the final distance) of the two drifters is independent of their initial or final distances themselves. This was observed by Stommel in 1949.
+Near a point source (e.g. a chimmey), time-evolution of the envelope of diffusing cloud of water vapour is typically observed to be linear in time. Fickian diffusion would predict a square root dependence in time,.
+These observations indicate that there exist mechanisms different from purely down-gradient diffusion, and that the qualitative analogy between molecular and eddy diffusion is not perfect. In the coming section on statistical models, a different way of looking at eddy diffusion is presented.
+
+
+== Statistical diffusion theory ==
+
+The statistical theory of fluid turbulence comprises a large body of literature and its results are applied in many areas of research, from meteorology to oceanography.
+Statistical diffusion theory originated with G. I. Taylor's (1921) paper titled "Diffusion by continuous movements" and later developed in his paper "Statistical theory of turbulence". The statistical approach to diffusion is different from gradient based theories as, instead of studying the spacial transport at a fixed point in space, one makes use of the Lagrangian reference system and follows the particles in their motion through the fluid and tries to determine from these the statistical proprieties in order to represent diffusion.
+Taylor in particular argued that, at high Reynolds number, the spatial transport due to molecular diffusion can be neglected compared to the convective transport by the mean flow and turbulent motions. Neglecting the molecular diffusion, 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+ is then conserved following a fluid particle and consequently the evolution of the mean field 
+  
+    
+      
+        
+          ⟨
+          ϕ
+          ⟩
+        
+      
+    
+    {\textstyle \left\langle \phi \right\rangle }
+  
+ can be determined from the statistics of the motion of fluid particles.
+
+
+=== Lagrangian formulation ===
+Source:
+Consider an unbounded turbulent flow in which a source at the time 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\textstyle t_{0}}
+  
+ determines the scalar field to some value:
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        
+          t
+          
+            0
+          
+        
+        )
+        =
+        
+          ϕ
+          
+            0
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \phi ({\vec {x}},t_{0})=\phi _{0}({\vec {x}})}
+  
+
+  
+    
+      
+        
+          
+            
+              X
+              →
+            
+          
+        
+        (
+        t
+        ,
+        
+          
+            
+              Y
+              →
+            
+          
+        
+        )
+      
+    
+    {\textstyle {\vec {X}}(t,{\vec {Y}})}
+  
+ is the position at time 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\textstyle t_{0}}
+  
+ of the fluid particle originating from position 
+  
+    
+      
+        
+          
+            
+              Y
+              →
+            
+          
+        
+      
+    
+    {\textstyle {\vec {Y}}}
+  
+ at time t.
+If molecular diffusion is neglected, 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+ is conserved following a fluid particle. Then, the value of 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+ at the initial and final points of the fluid particle trajectory are the same:
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              X
+              →
+            
+          
+        
+        (
+        t
+        ,
+        
+          
+            
+              Y
+              →
+            
+          
+        
+        )
+        ,
+        t
+        )
+        =
+        ϕ
+        (
+        
+          
+            
+              Y
+              →
+            
+          
+        
+        ,
+        
+          t
+          
+            0
+          
+        
+        )
+        =
+        
+          ϕ
+          
+            0
+          
+        
+        (
+        
+          
+            
+              Y
+              →
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \phi ({\vec {X}}(t,{\vec {Y}}),t)=\phi ({\vec {Y}},t_{0})=\phi _{0}({\vec {Y}})}
+  
+Calculating the expectation of the last equation yields
+
+  
+    
+      
+        
+          ⟨
+          
+            ϕ
+            (
+            
+              
+                
+                  x
+                  →
+                
+              
+            
+            ,
+            t
+            )
+          
+          ⟩
+        
+        =
+        
+          ⟨
+          
+            
+              ϕ
+              
+                0
+              
+            
+            (
+            
+              
+                
+                  Y
+                  →
+                
+              
+            
+            (
+            t
+            ,
+            
+              
+                
+                  x
+                  →
+                
+              
+            
+            )
+          
+          ⟩
+        
+        =
+        ∫
+        
+          f
+          
+            X
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ;
+        t
+        
+          |
+        
+        
+          
+            
+              Y
+              →
+            
+          
+        
+        )
+        
+          ϕ
+          
+            0
+          
+        
+        (
+        
+          
+            
+              Y
+              →
+            
+          
+        
+        )
+        d
+        
+          
+            
+              Y
+              →
+            
+          
+        
+      
+    
+    {\displaystyle \left\langle \phi ({\vec {x}},t)\right\rangle =\left\langle \phi _{0}({\vec {Y}}(t,{\vec {x}})\right\rangle =\int f_{X}({\vec {x}};t|{\vec {Y}})\phi _{0}({\vec {Y}})d{\vec {Y}}}
+  
+
+where 
+  
+    
+      
+        
+          f
+          
+            X
+          
+        
+      
+    
+    {\textstyle f_{X}}
+  
+ is the forward probability density function of particle position.
+
+
+==== Dispersion from a point source ====
+For the case of a unit point source fixed at location 
+  
+    
+      
+        
+          
+            
+              
+                Y
+                
+                  0
+                
+              
+              →
+            
+          
+        
+      
+    
+    {\textstyle {\vec {Y_{0}}}}
+  
+, i.e., 
+  
+    
+      
+        
+          ϕ
+          
+            0
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        )
+        =
+        δ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        −
+        
+          
+            
+              
+                Y
+                
+                  0
+                
+              
+              →
+            
+          
+        
+        )
+      
+    
+    {\textstyle \phi _{0}({\vec {x}})=\delta ({\vec {x}}-{\vec {Y_{0}}})}
+  
+, the expectation value of 
+  
+    
+      
+        ϕ
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\textstyle \phi ({\vec {x}},t)}
+  
+ is
+  
+    
+      
+        
+          ⟨
+          
+            ϕ
+            (
+            
+              
+                
+                  x
+                  →
+                
+              
+            
+            ,
+            t
+            )
+          
+          ⟩
+        
+        =
+        
+          f
+          
+            X
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ;
+        t
+        
+          |
+        
+        
+          Y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle \left\langle \phi ({\vec {x}},t)\right\rangle =f_{X}({\vec {x}};t|Y_{0})}
+  
+This means that the mean conserved scalar field resulting from a point source is given by the probability density function of the particle position 
+  
+    
+      
+        
+          f
+          
+            X
+          
+        
+      
+    
+    {\textstyle f_{X}}
+  
+ of the fluid particles that originate at the source.
+The simplest case to consider is dispersion from a point source, positioned at the origin (
+  
+    
+      
+        
+          Y
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\textstyle Y_{0}=0}
+  
+), in statistically stationary isotropic turbulence. In particular, consider an experiment where the isotropic turbulent velocity field has zero mean.
+In this setting, one can derive the following results:
+
+Given that the isotropic turbulent velocity field has zero mean, fluid particles disperse from the origin isotropically, meaning that mean and covariance of the fluid parcel position are respectively 
+  
+    
+      
+        
+          ⟨
+          
+            
+              
+                
+                  X
+                  →
+                
+              
+            
+            (
+            t
+            ,
+            0
+            )
+          
+          ⟩
+        
+        =
+        
+          ∫
+          
+            0
+          
+          
+            t
+          
+        
+        
+          ⟨
+          
+            
+              
+                
+                  U
+                  →
+                
+              
+            
+            (
+            s
+            ,
+            0
+            )
+          
+          ⟩
+        
+        d
+        s
+        =
+        0
+      
+    
+    {\displaystyle \left\langle {\vec {X}}(t,0)\right\rangle =\int _{0}^{t}\left\langle {\vec {U}}(s,0)\right\rangle ds=0}
+  
+
+  
+    
+      
+        
+          ⟨
+          
+            
+              X
+              
+                i
+              
+            
+            (
+            t
+            ,
+            0
+            )
+            
+              X
+              
+                j
+              
+            
+            (
+            t
+            ,
+            0
+            )
+          
+          ⟩
+        
+        =
+        
+          σ
+          
+            X
+          
+          
+            2
+          
+        
+        (
+        t
+        )
+        
+          δ
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle \left\langle X_{i}(t,0)X_{j}(t,0)\right\rangle =\sigma _{X}^{2}(t)\delta _{ij}}
+  
+ where 
+  
+    
+      
+        
+          σ
+          
+            x
+          
+        
+        (
+        t
+        )
+      
+    
+    {\textstyle \sigma _{x}(t)}
+  
+ is the standard deviation and 
+  
+    
+      
+        
+          δ
+          
+            i
+            j
+          
+        
+      
+    
+    {\textstyle \delta _{ij}}
+  
+ the Kronecker delta.
+The standard deviation of the particle displacement is given in terms of the Lagrangian velocity autocorrelation 
+  
+    
+      
+        ρ
+        (
+        s
+        )
+      
+    
+    {\textstyle \rho (s)}
+  
+ following by 
+  
+    
+      
+        
+          σ
+          
+            X
+          
+          
+            2
+          
+        
+        (
+        t
+        )
+        =
+        2
+        
+          u
+          
+            ′
+            
+              2
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            t
+          
+        
+        (
+        t
+        −
+        s
+        )
+        ρ
+        (
+        s
+        )
+        d
+        s
+      
+    
+    {\displaystyle \sigma _{X}^{2}(t)=2u'^{2}\int _{0}^{t}(t-s)\rho (s)ds}
+  
+where 
+  
+    
+      
+        
+          u
+          ′
+        
+      
+    
+    {\textstyle u'}
+  
+ is the root mean square velocity. This result corresponds with the result originally obtained by Taylor.
+For all times, the dispersion can be expressed in terms of a diffusivity 
+  
+    
+      
+        
+          
+            
+              
+                Γ
+                ^
+              
+            
+          
+          
+            T
+          
+        
+        (
+        t
+        )
+      
+    
+    {\textstyle {\hat {\Gamma }}_{T}(t)}
+  
+ as
+
+  
+    
+      
+        
+          
+            
+              
+                Γ
+                ^
+              
+            
+          
+          
+            T
+          
+        
+        (
+        t
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            d
+            
+              d
+              t
+            
+          
+        
+        
+          σ
+          
+            X
+          
+          
+            2
+          
+        
+        =
+        
+          u
+          
+            ′
+            
+              2
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            t
+          
+        
+        ρ
+        (
+        s
+        )
+        d
+        s
+      
+    
+    {\displaystyle {\hat {\Gamma }}_{T}(t)={\frac {1}{2}}{\frac {d}{dt}}\sigma _{X}^{2}=u'^{2}\int _{0}^{t}\rho (s)ds}
+  
+
+The quantity 
+  
+    
+      
+        
+          T
+          
+            L
+          
+        
+        =
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        ρ
+        (
+        s
+        )
+        d
+        s
+      
+    
+    {\displaystyle T_{L}=\int _{0}^{\infty }\rho (s)ds}
+  
+  defines a time-scale characteristic of the turbulence called the Lagrangian integral time scale.
+For small enough times (
+  
+    
+      
+        t
+        ≪
+        
+          T
+          
+            L
+          
+        
+      
+    
+    {\textstyle t\ll T_{L}}
+  
+), so that 
+  
+    
+      
+        ρ
+        (
+        s
+        )
+      
+    
+    {\textstyle \rho (s)}
+  
+ can be approximated with 
+  
+    
+      
+        ρ
+        (
+        0
+        )
+        =
+        1
+      
+    
+    {\textstyle \rho (0)=1}
+  
+, straight-line fluid motion leads to a linear increase of the standard deviation 
+  
+    
+      
+        
+          σ
+          
+            X
+          
+        
+        ≈
+        
+          u
+          ′
+        
+        t
+      
+    
+    {\textstyle \sigma _{X}\approx u't}
+  
+ which, in term, corresponds to a time-dependent diffusivity 
+  
+    
+      
+        
+          
+            
+              
+                Γ
+                ^
+              
+            
+          
+          
+            T
+          
+        
+        (
+        t
+        )
+        ≈
+        
+          u
+          
+            ′
+            
+              2
+            
+          
+        
+        t
+      
+    
+    {\textstyle {\hat {\Gamma }}_{T}(t)\approx u'^{2}t}
+  
+. This sheds light onto one of the above stated experimental counterexamples to gradient diffusion, namely the observation of linear spreading rate for smoke near chimney.
+For large enough times (
+  
+    
+      
+        t
+        ≫
+        
+          T
+          
+            L
+          
+        
+      
+    
+    {\textstyle t\gg T_{L}}
+  
+), the dispersion corresponds to diffusion with a constant diffusivity 
+  
+    
+      
+        
+          Γ
+          
+            T
+          
+        
+        =
+        
+          u
+          
+            ′
+            
+              2
+            
+          
+        
+        
+          T
+          
+            L
+          
+        
+      
+    
+    {\textstyle \Gamma _{T}=u'^{2}T_{L}}
+  
+ so that the standard deviation increases as the square root of time following
+  
+    
+      
+        
+          σ
+          
+            X
+          
+        
+        (
+        t
+        )
+        ≈
+        
+          
+            2
+            
+              u
+              
+                ′
+                
+                  2
+                
+              
+            
+            
+              T
+              
+                L
+              
+            
+            t
+          
+        
+      
+    
+    {\displaystyle \sigma _{X}(t)\approx {\sqrt {2u'^{2}T_{L}t}}}
+  
+
+This is the same type of dependence as was derived for a simple case of gradient diffusion. This agreement between the two approaches suggests that for large enough times, the gradient model is working well and instead fails to predict the behavior of particles recently ejected from their source.
+
+
+===== Langevin equation =====
+The simplest stochastic Lagrangian model is the Langevin equation, which provides a model for the velocity following the fluid particle. In particular, the Langevin equation for the fluid-particle velocity yields a complete prediction for turbulent dispersion. According to the equation, the Lagrangian velocity autocorrelation function is the exponential 
+  
+    
+      
+        ρ
+        (
+        s
+        )
+        =
+        exp
+        ⁡
+        (
+        −
+        
+          |
+        
+        s
+        
+          |
+        
+        
+          /
+        
+        
+          T
+          
+            L
+          
+        
+        )
+      
+    
+    {\displaystyle \rho (s)=\exp(-|s|/T_{L})}
+  
+. With this expression for 
+  
+    
+      
+        ρ
+        (
+        s
+        )
+      
+    
+    {\displaystyle \rho (s)}
+  
+, the standard deviation of the particle displacement can be integrated to yield
+  
+    
+      
+        
+          σ
+          
+            X
+          
+          
+            2
+          
+        
+        (
+        t
+        )
+        =
+        2
+        
+          u
+          
+            2
+          
+        
+        
+          T
+          
+            L
+          
+        
+        [
+        t
+        −
+        
+          T
+          
+            L
+          
+        
+        (
+        1
+        −
+        exp
+        ⁡
+        (
+        −
+        t
+        
+          /
+        
+        
+          T
+          
+            L
+          
+        
+        )
+        )
+        ]
+      
+    
+    {\displaystyle \sigma _{X}^{2}(t)=2u^{2}T_{L}[t-T_{L}(1-\exp(-t/T_{L}))]}
+  
+According to the Langevin equation, each component of the fiuid particle velocity is an Ornstein-Uhlenbeck process. It follows that the fluid particle position (ie., the integral of the Ornstein-Uhlenbeck process) is also a Gaussian process. Thus, the mean scalar field predicted by the Langevin equation is the Gaussian distribution
+  
+    
+      
+        
+          ⟨
+          
+            ϕ
+            (
+            
+              
+                
+                  x
+                  →
+                
+              
+            
+            ,
+            t
+            )
+          
+          ⟩
+        
+        =
+        (
+        
+          σ
+          
+            X
+          
+        
+        
+          
+            2
+            π
+          
+        
+        
+          )
+          
+            −
+            3
+          
+        
+        exp
+        ⁡
+        (
+        −
+        
+          x
+          
+            i
+          
+        
+        
+          x
+          
+            i
+          
+        
+        
+          /
+        
+        2
+        
+          σ
+          
+            X
+          
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \left\langle \phi ({\vec {x}},t)\right\rangle =(\sigma _{X}{\sqrt {2\pi }})^{-3}\exp(-x_{i}x_{i}/2\sigma _{X}^{2})}
+  
+with 
+  
+    
+      
+        
+          σ
+          
+            X
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle \sigma _{X}(t)}
+  
+ given by the previous equation.
+
+
+== Eddy diffusion in natural sciences ==
+
+
+=== Eddy diffusion in the ocean ===
+Molecular diffusion is negligible for the purposes of material transport across ocean basins. However, observations indicate that the oceans are under constant mixing. This is enabled by ocean eddies that range from Kolmogorov microscales to gyres spanning entire basins. Eddy activity that enables this mixing continuously dissipates energy, which it lost to smallest scales of motion. This is balanced mainly by tides and wind stress, which act as energy sources that continuously compensate for the dissipated energy.
+
+
+==== Vertical transport: overturning circulation and eddy-upwelling ====
+Apart from the layers in immediate vicinity of the surface most of the bulk of the ocean is stably stratified. In a few narrow, sporadic regions at high latitudes surface water becomes unstable enough to sink deeply and constitute the deep, southward branch of the overturning circulation  (see e.g. AMOC). Eddy diffusion, mainly in the Antarctic Circumpolar Current, then enables the return upward flow of these water masses. Upwelling has also a coastal component owing to the Ekman transport, but Antarctic Circumpolar Current is considered to be the dominant source of upwelling, responsible for roughly 80% of its overall intensity. Hence the efficiency of turbulent mixing in sub-Antarctic regions is the key element which sets the rate of the overturning circulation, and thus the transport of heat and salt across the global ocean.
+Eddy diffusion also controls the upwelling of atmospheric carbon dissolved in upper ocean thousands of years prior, and thus plays an important role in Earth's climate system. In the context of global warming caused by increased atmospheric carbon dioxide, upwelling of these ancient (hence less carbon-rich) water masses while simultaneously dissolving and downwelling present carbon-rich air, causes a net accumulation of carbon emissions in the ocean. This in turn moderates the climate change, but causes issues such as ocean acidification.
+
+
+==== Horizontal transport: plastics ====
+An example of horizontal transport that has received significant research interest in the 21st century is the transport of floating plastics. Over large distances, the most efficient transport mechanism is the wind-driven circulation. Convergent Ekman transport in subtropical gyres turns these into regions of increased floating plastic concentration (e.g. Great Pacific Garbage Patch).
+In addition to the large-scale (deterministic) circulations, many smaller scale processes blur the overall picture of plastic transport. Sub-grid turbulent diffusion adds a stochastic nature to the movement. Numerical studies are often done involving large ensemble of floating particles to overcome this inherent stochasticity.
+In addition, there are also more macroscopic eddies that are resolved in simulations and are better understood. For example, mesoscale eddies play an important role. Mesoscale eddies are slowly rotating vortices with diameters of hundreds of kilometers, characterized by Rossby numbers much smaller than unity. Anticyclonic eddies (counterclockwise in the Northern hemisphere) have an inward surface radial flow component, that causes net accumulation of floating particles in their centre. Mesoscale eddies are not only able to hold debris, but to also transport it across large distances owing to their westward drift. This has been shown for surface drifters, radioactive isotope markers, plankton, jellyfish, heat and salt. Sub-mesoscale vortices and ocean fronts are also important, but they are typically unresolved in numerical models, and contribute to the above-mentioned stochastic component of the transport.
+
+
+=== Atmosphere ===
+Source:
+The problem of diffusion in the atmosphere is often reduced to that of solving the original gradient based diffusion equation under the appropriate boundary conditions. This theory is often called the K theory, where the name comes from the diffusivity coefficient K introduced in the gradient based theory.
+If K is considered to be constant, for example, it can be thought of as measuring the flux of a passive scalar quantity 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+, such as smoke through the atmosphere.
+For a stationary medium 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+, in which the diffusion coefficients, which are not necessarily equal, can vary with the three spatial coordinates, the more general gradient based diffusion equation states, 
+  
+    
+      
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        
+          
+            ∂
+            
+              ∂
+              x
+            
+          
+        
+        
+          (
+          
+            
+              K
+              
+                x
+              
+            
+            
+              
+                
+                  ∂
+                  ϕ
+                
+                
+                  ∂
+                  x
+                
+              
+            
+          
+          )
+        
+        +
+        
+          
+            ∂
+            
+              ∂
+              y
+            
+          
+        
+        
+          (
+          
+            
+              K
+              
+                y
+              
+            
+            
+              
+                
+                  ∂
+                  ϕ
+                
+                
+                  ∂
+                  y
+                
+              
+            
+          
+          )
+        
+        +
+        
+          
+            ∂
+            
+              ∂
+              z
+            
+          
+        
+        
+          (
+          
+            
+              K
+              
+                z
+              
+            
+            
+              
+                
+                  ∂
+                  ϕ
+                
+                
+                  ∂
+                  z
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\partial \phi }{\partial t}}={\frac {\partial }{\partial x}}\left(K_{x}{\frac {\partial \phi }{\partial x}}\right)+{\frac {\partial }{\partial y}}\left(K_{y}{\frac {\partial \phi }{\partial y}}\right)+{\frac {\partial }{\partial z}}\left(K_{z}{\frac {\partial \phi }{\partial z}}\right)}
+  
+Considering a point source, the boundary conditions are
+  
+    
+      
+        
+          
+            
+              
+                (
+                1
+                )
+                
+              
+              
+                ϕ
+                →
+                0
+                
+                
+                  as
+                
+                
+                t
+                →
+                ∞
+                
+                
+                  for
+                
+                
+                −
+                ∞
+                <
+                x
+                <
+                ∞
+              
+            
+            
+              
+                (
+                2
+                )
+                
+              
+              
+                ϕ
+                →
+                0
+                
+                
+                  as
+                
+                
+                t
+                →
+                0
+                
+                
+                  for
+                
+                
+                x
+                ≠
+                0
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(1)\quad &\phi \rightarrow 0\quad {\text{as}}\quad t\rightarrow \infty \quad {\text{for}}\quad -\infty <x<\infty \\(2)\quad &\phi \rightarrow 0\quad {\text{as}}\quad t\rightarrow 0\quad {\text{for}}\quad x\neq 0\end{aligned}}}
+  
+where 
+  
+    
+      
+        ϕ
+        →
+        ∞
+      
+    
+    {\textstyle \phi \rightarrow \infty }
+  
+ such that 
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        ϕ
+        d
+        x
+        =
+        Φ
+      
+    
+    {\textstyle \int _{-\infty }^{\infty }\phi dx=\Phi }
+  
+, where 
+  
+    
+      
+        Φ
+      
+    
+    {\textstyle \Phi }
+  
+ is the source strength (total amount of 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ released).
+The solution of this problem is a Gaussian function. In particular, the solution for an instantaneous point source of 
+  
+    
+      
+        ϕ
+      
+    
+    {\textstyle \phi }
+  
+, with strength 
+  
+    
+      
+        Φ
+      
+    
+    {\textstyle \Phi }
+  
+, of an atmosphere in which 
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+      
+    
+    {\textstyle {\overline {u}}}
+  
+ is constant, 
+  
+    
+      
+        v
+        =
+        w
+        =
+        0
+      
+    
+    {\textstyle v=w=0}
+  
+ and for which we consider a Lagrangian system of reference that moves with the mean wind 
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+      
+    
+    {\textstyle {\overline {u}}}
+  
+:
+  
+    
+      
+        
+          
+            ϕ
+            Φ
+          
+        
+        =
+        
+          
+            1
+            
+              (
+              4
+              π
+              K
+              t
+              
+                )
+                
+                  1
+                  
+                    /
+                  
+                  2
+                
+              
+            
+          
+        
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                
+                  4
+                  K
+                  t
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\phi }{\Phi }}={\frac {1}{(4\pi Kt)^{1/2}}}\exp \left(-{\frac {x^{2}}{4Kt}}\right)}
+  
+Integration of this instantaneous-point-source solution with respect to space yields equations for instantaneous volume sources (bomb bursts, for example). Integration of the instantaneous-point source equation with respect to time gives the continuous-point-source solutions.
+
+
+==== Atmospheric Boundary Layer ====
+K theory has been applied when studying the dynamics of a scalar quantity 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ through the atmospheric boundary layer. The assumption of constant eddy diffusivity can rarely be applied here and for this reason it's not possible to simply apply K theory as previously introduced.
+
+Without losing generality, consider a steady state, i.e. 
+  
+    
+      
+        ∂
+        ϕ
+        
+          /
+        
+        ∂
+        t
+        =
+        0
+      
+    
+    {\textstyle \partial \phi /\partial t=0}
+  
+, and an infinite crosswind line source, for which, at 
+  
+    
+      
+        z
+        =
+        0
+      
+    
+    {\textstyle z=0}
+  
+
+  
+    
+      
+        
+          
+            ∂
+            
+              ∂
+              y
+            
+          
+        
+        
+          (
+          
+            
+              K
+              
+                y
+              
+            
+            
+              
+                
+                  ∂
+                  ϕ
+                
+                
+                  ∂
+                  y
+                
+              
+            
+          
+          )
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial }{\partial y}}\left(K_{y}{\frac {\partial \phi }{\partial y}}\right)=0}
+  
+Assuming that 
+  
+    
+      
+        ∂
+        (
+        
+          K
+          
+            x
+          
+        
+        ∂
+        ϕ
+        
+          /
+        
+        ∂
+        x
+        )
+        
+          /
+        
+        ∂
+        x
+        ≪
+        
+          
+            u
+            ¯
+          
+        
+        ∂
+        ϕ
+        
+          /
+        
+        ∂
+        x
+      
+    
+    {\textstyle \partial (K_{x}\partial \phi /\partial x)/\partial x\ll {\overline {u}}\partial \phi /\partial x}
+  
+, i.e., the x-transport by mean flow greatly outweighs the eddy flux in that direction, the gradient based diffusion equation for the flux of a stationary medium 
+  
+    
+      
+        q
+      
+    
+    {\textstyle q}
+  
+ becomes
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+        
+          
+            
+              ∂
+              ϕ
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        
+          
+            ∂
+            
+              ∂
+              z
+            
+          
+        
+        
+          (
+          
+            
+              K
+              
+                z
+              
+            
+            
+              
+                
+                  ∂
+                  ϕ
+                
+                
+                  ∂
+                  z
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\overline {u}}{\frac {\partial \phi }{\partial x}}={\frac {\partial }{\partial z}}\left(K_{z}{\frac {\partial \phi }{\partial z}}\right)}
+  
+This equation, together with the following boundary conditions
+  
+    
+      
+        
+          
+            
+              
+                (
+                1
+                )
+                
+              
+              
+                ϕ
+                →
+                0
+                
+                
+                  as
+                
+                
+                z
+                →
+                ∞
+              
+            
+            
+              
+                (
+                2
+                )
+                
+              
+              
+                ϕ
+                →
+                0
+                
+                
+                  as
+                
+                
+                x
+                →
+                0
+                
+                
+                  for all
+                
+                
+                z
+                >
+                0
+                
+                
+                  but
+                
+                
+                ϕ
+                →
+                ∞
+                
+                
+                  as
+                
+                
+                x
+                →
+                0
+                ,
+                
+                z
+                →
+                0
+                
+                
+                  such that
+                
+                
+                
+                  lim
+                  
+                    x
+                    →
+                    0
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    u
+                    ¯
+                  
+                
+                ϕ
+                d
+                z
+                =
+                Φ
+              
+            
+            
+              
+                (
+                3
+                )
+                
+              
+              
+                
+                  K
+                  
+                    z
+                  
+                
+                
+                  
+                    
+                      ∂
+                      ϕ
+                    
+                    
+                      ∂
+                      z
+                    
+                  
+                
+                
+                
+                  as
+                
+                
+                z
+                →
+                0
+                
+                
+                  for all
+                
+                
+                x
+                >
+                0
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(1)\quad &\phi \rightarrow 0\quad {\text{as}}\quad z\rightarrow \infty \\(2)\quad &\phi \rightarrow 0\quad {\text{as}}\quad x\rightarrow 0\quad {\text{for all}}\quad z>0\quad {\text{but}}\quad \phi \rightarrow \infty \quad {\text{as}}\quad x\rightarrow 0,\quad z\rightarrow 0\quad {\text{such that}}\quad \lim _{x\rightarrow 0}\int _{0}^{\infty }{\overline {u}}\phi dz=\Phi \\(3)\quad &K_{z}{\frac {\partial \phi }{\partial z}}\quad {\text{as}}\quad z\rightarrow 0\quad {\text{for all}}\quad x>0\end{aligned}}}
+  
+where, in particular, the last condition implies zero flux at the ground. This equation has been the basis for many investigations. Different assumptions on the form of 
+  
+    
+      
+        
+          K
+          
+            z
+          
+        
+      
+    
+    {\textstyle K_{z}}
+  
+ yield different solutions.As an example, K theory is widely used in atmospheric turbulent diffusion (heat conduction from the earth's surface, momentum distribution) because the fundamental differential equation involved can be considerably simplified by eliminating one or more of the space coordinates. Having said that, in planetary-boundary-layer heat conduction, the source is a sinusoidal time function and so the mathematical complexity of some of these solutions is considerable.
+
+
+==== Shortcomings and advantages ====
+In general, K theory comes with some shortcomings. Calder studied the applicability of the diffusion equation to the atmospheric case and concluded that the standard K theory form cannot be generally valid. Monin refers to K theory as a semi-empirical theory of diffusion and points out that the basic nature of K theory must be kept in mind as the chain of deductions from the original equation grows longer and more involved.
+That being said, K theory provides many useful, practical results. One of them is the study by Barad where he a K theory of the complicated problem of diffusion of a bent-over stack plume in very stable atmospheres.
+
+
+== Note on stirring and mixing ==
+The verb "stirring" has a meaning distinct from "mixing". The former stands for a more large scale phenomenon, such as eddy diffusion, while the latter is sometimes used for more microscopic processes, such as molecular diffusion. They are often used interchangeably, including some scientific literature. "Mixing" is often used for the outcome of both, especially in less formal narration. It can be seen in the animation in the introductory section that eddy-induced stirring breaks down the black area to smaller and more chaotic spatial patterns, but nowhere does any shade of grey appear. Two fluids become more and more intertwined, but they do not mix due to eddy diffusion. In reality, as their interface becomes larger, molecular diffusion becomes more and more efficient and finishes the homogenization by actually mixing the molecules across the boundaries. This is a truly microscopically irreversible process. But even without molecular diffusion taking care of the last step, one can reasonably claim that spatial concentration is altered due to eddy diffusion. In practice, concentration is defined using a very small but finite control volume in which particles of the relevant species are counted. Averaging over such small control volume yields a useful measure of concentration. This procedure captures well the action of all eddies smaller than the size of the control volume. This allows to formulate equations describing eddy diffusion and its effect on concentration without the need to explicitly consider molecular diffusion.
+
+
+== References ==

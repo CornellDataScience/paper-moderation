@@ -1,0 +1,39 @@
+In electronics, an electronic switch is a switch controlled by an active electronic component or device. Without using moving parts, they are called solid state switches, which distinguishes them from mechanical switches.
+Electronic switches are considered binary devices because they dramatically change the conductivity of a path in electrical circuit between two extremes when switching between their two states of on and off.
+
+
+== History ==
+Many people use metonymy to call a variety of devices that conceptually connect or disconnect signals and communication paths between electrical devices as "switches", analogous to the way mechanical switches connect and disconnect paths for electrons to flow between two conductors.  
+The traditional relay is an electromechanical switch that uses an electromagnet controlled by a current to operate a mechanical switching mechanism. Other operating principles are also used (for instance, solid-state relays invented in 1971 control power circuits with no moving parts, instead using a semiconductor device to perform switching—often a silicon-controlled rectifier or triac).
+Early telephone systems used an electromagnetically operated Strowger switch to connect telephone callers; later telephone exchanges contain one or more electromechanical crossbar switches. Thus the term 'switched' is applied to telecommunications networks, and signifies a network that is circuit switched, providing dedicated circuits for communication between end nodes, such as the public switched telephone network.
+The term switch has since spread to a variety of digital active devices such as transistors and logic gates whose function is to change their output state between logic states or connect different signal lines.
+The common feature of all these usages is they refer to devices that control a binary state of either on or off, closed or open, connected or not connected, conducting or not conducting, low impedance or high impedance.
+
+
+== Types ==
+The diode can be treated as switch that conducts significantly only when forward biased and is otherwise effectively disconnected (high impedance). Specific diode types that can change switching state quickly, such as the Schottky diode and the 1N4148, are called "switching diodes".
+Vacuum tubes can be used in high voltage applications.
+The transistor can be operated as a switch. The bipolar junction transistor (BJT) cutoff and saturation regions of operation can respectively be treated as a closed and open switch.
+The most widely used electronic switch in digital circuits is the metal–oxide–semiconductor field-effect transistor (MOSFET).
+The analogue switch uses two MOSFET transistors in a transmission gate arrangement as a switch that works much like a relay, with some advantages and several limitations compared to an electromechanical relay.
+The power transistor(s) in a switching voltage regulator, such as a power supply unit, are used like a switch to alternately let power flow and block power from flowing.
+Hall switches are a type of Hall sensor that combine the analog Hall effect with threshold detection to produce a magnetically-operated switch.
+The opto-isolator uses light from an LED controlled by a current which is received by a phototransistor to switch a galvanically-isolated circuit.
+The insulated-gate bipolar transistor (IGBT) combines advantages of BJTs and power MOSFETs.
+A silicon controlled rectifier (SCR) can be used for high speed switching for power control application.
+A TRIAC (TRIode AC), equivalent to two back-to-back SCRs, is a bidirectional switching device.
+A DIAC stands for DIode AC Switch.
+A gate turn-off thyristor (GTO) is a bipolar switching device.
+Electronic switches may also consist of complex configurations that are assisted by physical contact, for instance resistive or capacitive sensing touchscreens.
+Network switches reconfigure connections between different ports of computers in a computer network.
+
+
+== Applications ==
+Electronic switches are used in all kinds of common and industrial applications.
+
+
+== See also ==
+Relay
+
+
+== References ==

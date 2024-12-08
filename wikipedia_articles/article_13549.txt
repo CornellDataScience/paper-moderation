@@ -1,0 +1,25 @@
+Radical S-adenosyl methionine domain-containing protein 2 is a protein that in humans is encoded by the RSAD2 gene. RSAD2 is a multifunctional protein in viral processes that is an interferon stimulated gene. It has been reported that viperin could be induced by either IFN-dependent or IFN-independent pathways and certain viruses may use viperin to increase their infectivity.
+The protein was previously called Virus inhibitory protein, endoplasmic reticulum-associated, interferon-inducible (Viperin). The name viperin has been rectified due to inappropriate use of it to describe homologous prokaryotic enzymes producing nucleotide analogues. The enzymes across all domains of life are renamed SAM-dependent nucleotide dehydratase (SAND) using NC-IUBMB recommendations.
+
+
+== Function ==
+Viperin is an interferon-stimulated gene whose expression inhibits many DNA and RNA viruses including CHIKV, HCMV, HCV, DENV, WNV, SINV, influenza, and HIV. Initially identified as an IFN-γ induced antiviral protein in human cytomegalovirus (HCMV) infected macrophages, it was reported that viperin could be induced by HCMV glycoprotein B in fibroblasts, but inhibits HCMV viral infection and down-regulates viral structural proteins. The reason why virus protein would induce viperin against itself is still not clear; however, the viral induced redistribution of viperin may reflect the mechanism of virus evading its antiviral activities. Viperin may also be induced and interact with HCMV viral proteins and relocate to mitochondria in HCMV viral infected cells to enhance viral infectivity by disrupting cellular metabolism.
+Viperin is a radical SAM enzyme which is capable of producing the chain terminator ddhCTP (3ʹ-deoxy-3′,4ʹdidehydro-CTP), which inhibits the viral RNA dependent RNA polymerase (RdRp). ddhCTP also appears to abolish metabolism of amino acids and mitochondrial respiration.
+In the inhibition of influenza virus budding and release, viperin is suggested to disrupt the lipid rafts on the cell's plasma membrane by binding to and decreasing the enzyme activities of farnesyl diphosphate synthase (FPPS), an essential enzyme in isoprenoid biosynthesis pathway. Viperin was suggested to inhibit the viral replication of HCV via its interaction with host hVAP-33 and viral NS5A and disrupting the formation of the replication complex.
+
+
+== Structure ==
+Human viperin is a single polypeptide of 361 amino acids with a predicted molecular weight of 42 kDa. The N-terminal 42 amino acids of viperin forms amphipathic alpha-helix, which is relatively less conserved in different species and has a minor effect on the antiviral activity of viperin. The N-terminal domain of viperin is required for its localization to the ER and lipid droplets. Amino acids 77-209 of viperin constitute the radical S-adenosyl methionine (SAM) domain, containing four conserved motifs. Motif 1 has three conserved cysteine residues, CxxCxxC, which is the Fe-S binding motif and also essential for antiviral activity. The C-terminal 218-361 amino acids of viperin are highly conserved in different species and essential for viperin dimerization. The C-terminal tail appears to be critical for the antiviral activities against HCV since a C-terminal flag tagged of viperin lost its antiviral activity.
+When viperin is bound to SAM and Cytidine triphosphate (CTP) or uridine triphosphate (UTP) is used as a substrate, different kinetic parameters are achieved. It is predicted that the CTP substrate binds much more tightly with viperin because of the low Km value of the substrate. However, the overall structure of both UTP- and CTP-bound compounds are similar. The difference being that the uracil moiety is less effective than the cytosine moiety at binding and ordering turns A and B. Nucleotide-free viperin contains a (βα)6 partial barrel and has a disordered N-terminal extension and a partially ordered C-terminal extension. When the C-terminal tail is ordered, a six-residue α-helix, an eight-residue P-loop (that binds the γ-phosphate of CTP), and a 310-helix are revealed.
+
+
+== Cellular localization ==
+Viperin is normally localized to the endoplasmic reticulum (ER) via its N-terminal domain, and also localized to lipid droplet, which are derived from the ER. However, it is also found in mitochondria in the HCMV infected fibroblasts.
+
+
+== References ==
+
+
+== External links ==
+Overview of all the structural information available in the PDB for UniProt: Q8CBB9 (Mouse Radical S-adenosyl methionine domain-containing protein 2) at the PDBe-KB.
+Bernheim A, Millman A, Ofir G, Meitav G, Avraham C, Shomar H, et al. (January 2021). "Prokaryotic viperins produce diverse antiviral molecules". Nature. 589 (7840): 120–124. Bibcode:2021Natur.589..120B. doi:10.1038/s41586-020-2762-2. PMC 7610908. PMID 32937646. S2CID 221769131.

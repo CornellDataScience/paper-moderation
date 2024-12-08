@@ -1,0 +1,57 @@
+The JEDEC memory standards are the specifications for semiconductor memory circuits and similar storage devices promulgated by the Joint Electron Device Engineering Council (JEDEC) Solid State Technology Association, a semiconductor trade and engineering standardization organization.
+JEDEC Standard 100B.01 specifies common terms, units, and other definitions in use in the semiconductor industry. JESC21-C specifies semiconductor memories from the 256 bit static RAM to DDR4 SDRAM modules.
+
+
+== JEDEC standardization goals ==
+The Joint Electron Device Engineering Council characterizes its standardization efforts as follows: JEDEC standards and publications are designed to serve the public interest through eliminating misunderstandings between manufacturers and purchasers, facilitating interchangeability and improvement of products, and assisting the purchaser in selecting and obtaining with minimum delay the proper product for use by those other than JEDEC members, whether the standard is to be used either domestically or internationally.
+
+
+== JEDEC Standard 100B.01 ==
+The December 2002 JEDEC Standard 100B.01 is entitled Terms, Definitions, and Letter Symbols for Microcomputers, Microprocessors, and Memory Integrated Circuits. The purpose of the standard is to promote the uniform use of symbols, abbreviations, terms, and definitions throughout the semiconductor industry.
+
+
+=== Units of information ===
+The specification defines the two common units of information:
+
+The bit (b) is the smallest unit of information in the binary numeration system and is represented by the digits 0 and 1.
+The byte (B) is a binary character string typically operated upon as one unit. It is usually shorter than a computer word.
+
+
+=== Unit prefixes for semiconductor storage capacity ===
+The specification contains citations of the commonly used prefixes kilo, mega, and giga "as a prefix to units of semiconductor storage capacity" to designate multiples of the units. 
+The specification cites three prefixes as follows, with the note that these prefixes are included in the document only to reflect common usage.
+
+kilo (K): A multiplier equal to 1024 (210).
+mega (M): A multiplier equal to 1048576 (220 or K2, where K = 1024).
+giga (G): A multiplier equal to 1073741824 (230 or K3, where K = 1024).
+It refers to the IEEE/ASTM SI 10-1997 standard as stating that "this practice frequently leads to confusion and is deprecated". The document further refers to the description of the IEC binary prefixes in Amendment 2 of IEC 60027-2, "Letter symbols to be used in electrical technology", for an alternate system of prefixes and includes a table of the IEC prefixes in the note. However the JEDEC specification does not explicitly include the IEC prefixes in the list of general terms and definitions.
+The document notes that these prefixes are used in their decimal sense for serial communication data rates measured in bits.
+The JEDEC terms dictionary further includes definitions for the binary prefixes kibi (Ki), mebi (Mi), gibi (Gi), and tebi (Ti) as powers of 2, and kilo, mega, giga, and tera as powers of 10.  For example,
+
+240 tebi Ti tera + binary: (210)4 = 1099511627776 tera: (103)4
+The JEDEC DDR3 SDRAM standard JESD-79-3f uses Mb and Gb to specify binary memory capacity: "The purpose of this Standard is to define the minimum set of requirements for JEDEC compliant 512 Mb through 8 Gb for x4, x8, and x16 DDR3 SDRAM devices."
+
+
+== JESD21-C ==
+The standard JESD21-C: Configurations for Solid State Memories is maintained by JEDEC committee JC41. This committee consists of members from manufacturers of microprocessors, memory ICs, memory modules, and other components, as well as component integrators, such as video card and personal computer makers. Standard 21 is published in loose-leaf binder format to accommodate frequent updates.
+The documentation of modern memory modules, such as the standards for the memory ICs and a reference design of the module requires over one hundred pages. The standards specify the physical and electrical characteristics of the modules, and include the data for computer simulations of the memory module operating in a system.
+Memory modules of the DDR2-SDRAM type are available for laptop, desktop, and server computers in a wide selection of capacities and access speeds. The standards specify memory module label formats for end-user markets. For example:
+
+ 1GB 2Rx4 PC2-3200P-333-11-D2 is a 1 GB DDR2 Registered DIMM, with address/command parity function, using 2 ranks of x4 SDRAMs operational to PC2-3200 performance with CAS Latency = 3, tRCD = 3, tRP = 3, using JEDEC SPD revision 1.1, raw card reference design file D revision 2 used for the assembly.
+
+
+== See also ==
+IEC 60027
+ISO/IEC 80000
+Timeline of binary prefixes
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Online JEDEC documents
+JESD218

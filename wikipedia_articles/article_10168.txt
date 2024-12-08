@@ -1,0 +1,18 @@
+Forecasting is a method of controlling building heating by calculating demand for heating energy that should be supplied to the building in each time unit. By combining physics of structures with meteorology, properties of the building, weather conditions including outdoor temperature, wind power and direction, as well as solar radiation can be taken into account. In the case of conventional heating control, only current outdoor temperature is considered.
+The starting point for developing the method of forecasting was the ENLOSS mathematical energy balance model developed by Prof. Roger Taesler
+ from Swedish Meteorological and Hydrological Institute in cooperation with Thorbjörn Geiser and Stefan Berglund, who are currently both employed at eGain Sweden AB. Forecasting method began to be introduced to use in the late 1980s.
+Until 2010 inclusive, forecasting method has been introduced in nearly seven million square metres of floorage of residential buildings and commercial premises. Forecasting method is offered and developed by many companies and organizations. Estimated data indicate 10 - 15 kWh/m2  reduction of average annual heat energy consumption. Since forecasting method contains information about future demand and is not in conflict with other methods of increasing energy efficiency, it is always a good foreground solution.
+
+
+== Forecasting in practice ==
+As far as practical use of forecasting method is concerned, usually remote control forecasting receivers are used to send and receive data by means of GPRS or GSM network. Then, the forecasting receivers manage the operation of control panels installed in buildings which adjust distribution of heat energy in the heating system of a given property.
+Recently, special remote control weather loggers have started to be used in combination with forecasting receivers. The weather loggers measure air temperature and humidity with high accuracy and the measurements are sent in real time to forecasting receivers to which they are connected. Such a turning point in technology indicates even higher precision of forecasting method.
+
+
+== Notes ==
+
+
+== References ==
+Sasic Kaligasidis, A et al. (2006) "Upgraded weather forecast control of building heating systems". p. 951 ff in Research in Building Physics and Building Engineering. Paul Fazio (Editorial Staff), ISBN 0-415-41675-2
+Taesler, R. (1990/91) "Climate and Building Energy Management". Energy and Buildings, Vol. 15-16, pp 599 – 608.
+United States Patent 6098893 "Comfort control system incorporating weather forecast data and a method for operating such a system" (Inventor Stefan Berglund)

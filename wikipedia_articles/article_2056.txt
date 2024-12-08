@@ -1,0 +1,16 @@
+In computational complexity theory, a log-space reduction is a reduction computable by a deterministic Turing machine using logarithmic space. Conceptually, this means it can keep a constant number of pointers into the input, along with a logarithmic number of fixed-size integers.  It is possible that such a machine may not have space to write down its own output, so the only requirement is that any given bit of the output be computable in log-space. Formally, this reduction is executed via a log-space transducer.
+Such a machine has polynomially-many configurations, so log-space reductions are also polynomial-time reductions.  However, log-space reductions are probably weaker than polynomial-time reductions; while any non-empty, non-full language in P is polynomial-time reducible to any other non-empty, non-full language in P, a log-space reduction from an NL-complete language to a language in L, both of which would be languages in P, would imply the unlikely L = NL. It is an open question if the NP-complete problems are different with respect to log-space and polynomial-time reductions.
+Log-space reductions are normally used on languages in P, in which case it usually does not matter whether many-one reductions or Turing reductions are used, since it has been verified that L, SL, NL, and P are all closed under Turing reductions, meaning that Turing reductions can be used to show a problem is in any of these classes. However, other subclasses of P such as NC may not be closed under Turing reductions, and so many-one reductions must be used.
+Just as polynomial-time reductions are useless within P and its subclasses, log-space reductions are useless to distinguish problems in L and its subclasses; in particular, every non-empty, non-full problem in L is trivially L-complete under log-space reductions. While even weaker reductions exist, they are not often used in practice, because complexity classes smaller than L (that is, strictly contained or thought to be strictly contained in L) receive relatively little attention.
+The tools available to designers of log-space reductions have been greatly expanded by the result that L = SL; see SL for a list of some SL-complete problems that can now be used as subroutines in log-space reductions.
+
+
+== Notes ==
+
+
+== References ==
+Arora, Sanjeev; Barak, Boaz (2009). Computational complexity. A modern approach. Cambridge University Press. ISBN 978-0-521-42426-4. Zbl 1193.68112.
+
+
+== Further reading ==
+Papadimitriou, Christos (1994). "Chapter 8: Reductions And Completeness". Computational Complexity (1st ed.). Addison Wesley. pp. 159–180. ISBN 0-201-53082-1. Zbl 0833.68049.

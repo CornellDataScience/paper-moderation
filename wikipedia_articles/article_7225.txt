@@ -1,0 +1,36 @@
+In a computer system or network, a runbook is a compilation of routine procedures and operations that the system administrator or operator carries out. System administrators in IT departments and NOCs use runbooks as a reference. 
+Runbooks can be in either electronic or in physical book form. Typically, a runbook contains procedures to begin, stop, supervise, and debug the system. It may also describe procedures for handling special requests and contingencies. An effective runbook allows other operators, with prerequisite expertise, to effectively manage and troubleshoot a system. 
+Through runbook automation, these processes can be carried out using software tools in a predetermined manner.  In addition to automating IT specific processes, the results of the runbook can be presented on-screen back to the user or Service Desk engineer.  Multiple runbooks can be linked together using a Decision Tree to provide users with interactive troubleshooting and guided procedures.
+
+
+== Runbook applied to operations ==
+Operational runbooks may be tied to ITIL incidents to allow repeatable processes supporting specific aspects of the service catalog.   The runbook is typically divided into routine automated processes and routine manual processes.  The runbook catalog begins with an index of processes covered and may be broken down in outline form to align the processes to the major elements they support in the service catalog. A runbook is a compilation of routine procedures and operations that the system administrator or operator carries out.
+
+
+=== Computer operator documentation ===
+The documentation for running a task, whether in electronic or paper form, is
+called a runbook. Sometimes written as "run book," it may supplement bullet-pointed steps with error messages (and what to do) and flowcharts.
+
+
+== Runbook automation ==
+Runbook automation (RBA) is the ability to define, build, orchestrate, manage, and report on workflows that support system and network operational processes. Areas of a business ideal for IT automation are Operations Teams, Service Desk, Network Operations Center's (NOC's), Cloud Operations, Integrations, and Automation Center of Excellence (CoE).
+A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware - using a variety of communication methods such as command-line interfaces (CLI), HTTP REST and SOAP API's, SSH sessions, scripts, utilities, and code libraries.
+According to Gartner, the growth of RBA has coincided with the need for IT operations executives to enhance IT operations efficiency measures—including reducing mean time to repair (MTTR), increasing mean time between failures (MTBF), and automating the provisioning of IT resources. In addition, it is necessary to have the mechanisms to implement best practices (for example, implement and manage IT operations processes in line with the ITIL), increase the effectiveness of IT personnel (for example, automate repetitive tasks associated with IT operations processes), and have the tools to report on how well the processes are executed in line with established policies and service levels. Patents have been granted for various aspects of producing, improving, and using runbooks.
+Some tools can incorporate a front-end or presentation layer (to the runbook) so that the results of the automated tasks are presented on-screen, sometimes even with red/amber/green traffic lights to visualise if a specific task completed successfully, or failed to execute correctly. More advanced runbook automation platforms incorporate dashboards, analytics and audit trails for regulatory reporting.
+
+
+== See also ==
+Automation
+Support automation
+Prompt book
+Observability (software)
+Security orchestration § Playbooks and runbooks
+
+
+== References ==
+
+IT Operations Run Book Automation, by David Williams, Gartner. May 4, 2007.
+
+
+== Further reading ==
+Mark C. Langston; Hal Skelly (2003). Documentation Writing for System Administrators. SAGE Short Topics in System Administration. USENIX. p. 61.

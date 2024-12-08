@@ -1,0 +1,51 @@
+The hyphen-minus symbol - is the form of hyphen most commonly used in digital documents. On most keyboards, it is the only character that resembles a minus sign or a dash so it is also used for these. The name hyphen-minus derives from the original ASCII standard, where it was called hyphen (minus). The character is referred to as a hyphen, a minus sign, or a dash according to the context where it is being used.
+
+
+== Description ==
+
+In early typewriters and character encodings, a single key/code was almost always used for hyphen, minus, various dashes, and strikethrough, since they all have a roughly similar appearance. The current Unicode Standard specifies distinct characters for several different dashes, an unambiguous minus sign (sometimes called the Unicode minus) at code point U+2212, an unambiguous hyphen (sometimes called the Unicode hyphen) at U+2010, the hyphen-minus at U+002D and a variety of other hyphen symbols for various uses. When a hyphen is called for, the hyphen-minus is a common choice as it is well known, easy to enter on keyboards, and still the only form recognized by many data formats and computer languages. Though the Unicode Standard states that the U+2010 hyphen is "preferred" over the hyphen-minus, the standard itself uses the hyphen-minus as its hyphen character.
+In most modern computer fonts, the hyphen-minus is either identical or very similar to the Unicode hyphen.
+In mathematical texts that include the plus sign, the Unicode minus is preferred to the hyphen-minus, because its metrics match the plus sign in level and length.
+
+
+== Uses ==
+
+
+=== Typing ===
+
+This character is typed when a hyphen or a minus sign is wanted. Based on old typewriter conventions, it is common to use a pair -- to represent an em dash —, and to put spaces around it  -  to represent a spaced en dash  – ; this practice is deprecated in professional typography.  Some word processors automatically convert these to the correct dash. The character can also be typed multiple times to simulate a horizontal line (though in most cases, repeated entry of the underscore will produce a solid line). Alternating the hyphen-minus with spaces produces a "dashed" line, often to indicate where paper is to be cut. On a typewriter, over-striking a section of text with this is used for strikethrough.
+
+
+=== Programming languages ===
+Most programming languages use the hyphen-minus for denoting subtraction and negation. It is rarely used to indicate a range, due to ambiguity with subtraction. Generally, other characters, such as the Unicode U+2212 − MINUS SIGN are not recognized as an operator.
+In some programming languages (for example MySQL) -- (two hyphen-minus) mark the beginning of a comment. It can be used to start the signature block in Usenet news system. YAML uses --- (three hyphen-minuses) to end a section.
+
+
+=== Command line ===
+The hyphen-minus character is often used when specifying command-line options, a convention popularized by Unix. Examples of the "short" form are -R or -q. A user can specify both by using -Rq. Some implementations allow two hyphen-minuses to specify "long" option names as --recursive or --quiet. These are easier to understand when reading commands (some software does not care about the number of hyphen-minuses, and either does not allow combinations of single-letter options, or requires the user to rearrange them, so they do not match a long option). A double hyphen-minus by itself (followed by a space) indicates that there are no more options, which is useful when one needs to specify a filename that starts with a hyphen-minus. An option of just a hyphen-minus (followed by a space) may be recognized in lieu of a filename and indicates that stdin is to be read.
+
+
+=== diff output ===
+- is used to denote deleted lines in diff output in the context format or the unified format.
+
+
+== Encoding ==
+The glyph has a code point in Unicode as U+002D - HYPHEN-MINUS. It is also in ASCII with the same value.
+
+
+== See also ==
+-- (disambiguation)
+Dash (—)
+Box-drawing characters including ─ (U+2500), useful for drawing horizontal lines
+Hyphen
+Soft hyphen
+
+
+== Explanatory notes ==
+
+
+== References ==
+
+
+== External links ==
+ The dictionary definition of - at Wiktionary

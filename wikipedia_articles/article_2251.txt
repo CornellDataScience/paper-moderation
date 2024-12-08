@@ -1,0 +1,1388 @@
+In physics, Wien's displacement law states that the black-body radiation curve for different temperatures will peak at different wavelengths that are inversely proportional to the temperature. The shift of that peak is a direct consequence of the Planck radiation law, which describes the spectral brightness or intensity of black-body radiation as a function of wavelength at any given temperature. However, it had been discovered by German physicist Wilhelm Wien several years before Max Planck developed that more general equation, and describes the entire shift of the spectrum of black-body radiation toward shorter wavelengths as temperature increases.
+Formally, the wavelength version of Wien's displacement law states that the spectral radiance of black-body radiation per unit wavelength, peaks at the wavelength 
+  
+    
+      
+        
+          λ
+          
+            peak
+          
+        
+      
+    
+    {\displaystyle \lambda _{\text{peak}}}
+  
+ given by:
+
+  
+    
+      
+        
+          λ
+          
+            peak
+          
+        
+        =
+        
+          
+            b
+            T
+          
+        
+      
+    
+    {\displaystyle \lambda _{\text{peak}}={\frac {b}{T}}}
+  
+
+where T is the absolute temperature and b is a constant of proportionality called Wien's displacement constant, equal to 2.897771955...×10−3 m⋅K, or b ≈ 2898 μm⋅K.
+This is an inverse relationship between wavelength and temperature. So the higher the temperature, the shorter or smaller the wavelength of the thermal radiation. The lower the temperature, the longer or larger the wavelength of the thermal radiation. For visible radiation, hot objects emit bluer light than cool objects. If one is considering the peak of black body emission per unit frequency or per proportional bandwidth, one must use a different proportionality constant. However, the form of the law remains the same: the peak wavelength is inversely proportional to temperature, and the peak frequency is directly proportional to temperature.
+There are other formulations of Wien's displacement law, which are parameterized relative to other quantities. For these alternate formulations, the form of the relationship is similar, but the proportionality constant, b, differs.
+Wien's displacement law may be referred to as "Wien's law", a term which is also used for the Wien approximation.
+In "Wien's displacement law", the word displacement refers to how the intensity-wavelength graphs appear shifted (displaced) for different temperatures.
+
+
+== Examples ==
+
+Wien's displacement law is relevant to some everyday experiences:
+
+A piece of metal heated by a blow torch first becomes "red hot" as the very longest visible wavelengths appear red, then becomes more orange-red as the temperature is increased, and at very high temperatures would be described as "white hot" as shorter and shorter wavelengths come to predominate the black body emission spectrum. Before it had even reached the red hot temperature, the thermal emission was mainly at longer infrared wavelengths, which are not visible; nevertheless, that radiation could be felt as it warms one's nearby skin.
+One easily observes changes in the color of an incandescent light bulb (which produces light through thermal radiation) as the temperature of its filament is varied by a light dimmer. As the light is dimmed and the filament temperature decreases, the distribution of color shifts toward longer wavelengths and the light appears redder, as well as dimmer.
+A wood fire at 1500 K puts out peak radiation at about 2000 nanometers. 98% of its radiation is at wavelengths longer than 1000 nm, and only a tiny proportion at visible wavelengths (390–700 nanometers). Consequently, a campfire can keep one warm but is a poor source of visible light.
+The effective temperature of the Sun is 5778 Kelvin. Using Wien's law, one finds a peak emission per nanometer (of wavelength) at a wavelength of about 500 nm, in the green portion of the spectrum near the peak sensitivity of the human eye. On the other hand, in terms of power per unit optical frequency, the Sun's peak emission is at 343 THz or a wavelength of 883 nm in the near infrared. In terms of power per percentage bandwidth, the peak is at about 635 nm, a red wavelength. About half of the Sun's radiation is at wavelengths shorter than 710 nm, about the limit of the human vision. Of that, about 12% is at wavelengths shorter than 400 nm, ultraviolet wavelengths, which is invisible to an unaided human eye. A large amount of the Sun's radiation falls in the fairly small visible spectrum and passes through the atmosphere.
+The preponderance of emission in the visible range, however, is not the case in most stars. The hot supergiant Rigel emits 60% of its light in the ultraviolet, while the cool supergiant Betelgeuse emits 85% of its light at infrared wavelengths. With both stars prominent in the constellation of Orion, one can easily appreciate the color difference between the blue-white Rigel (T = 12100 K) and the red Betelgeuse (T ≈ 3800 K). While few stars are as hot as Rigel, stars cooler than the Sun or even as cool as Betelgeuse are very commonplace.
+Mammals with a skin temperature of about 300 K emit peak radiation at around 10 μm in the far infrared. This is therefore the range of infrared wavelengths that pit viper snakes and passive IR cameras must sense.
+When comparing the apparent color of lighting sources (including fluorescent lights, LED lighting, computer monitors, and photoflash), it is customary to cite the color temperature. Although the spectra of such lights are not accurately described by the black-body radiation curve, a color temperature (the correlated color temperature) is quoted for which black-body radiation would most closely match the subjective color of that source. For instance, the blue-white fluorescent light sometimes used in an office may have a color temperature of 6500 K, whereas the reddish tint of a dimmed incandescent light may have a color temperature (and an actual filament temperature) of 2000 K. Note that the informal description of the former (bluish) color as "cool" and the latter (reddish) as "warm" is exactly opposite the actual temperature change involved in black-body radiation.
+
+
+== Discovery ==
+The law is named for Wilhelm Wien, who derived it in 1893 based on a thermodynamic argument. Wien considered adiabatic expansion of a cavity containing waves of light in thermal equilibrium. Using Doppler's principle, he showed that, under slow expansion or contraction, the energy of light reflecting off the walls changes in exactly the same way as the frequency. A general principle of thermodynamics is that a thermal equilibrium state, when expanded very slowly, stays in thermal equilibrium.
+Wien himself deduced this law theoretically in 1893, following Boltzmann's thermodynamic reasoning. It had previously been observed, at least semi-quantitatively, by an American astronomer, Langley. This upward shift in 
+  
+    
+      
+        
+          ν
+          
+            
+              p
+              e
+              a
+              k
+            
+          
+        
+      
+    
+    {\displaystyle \nu _{\mathrm {peak} }}
+  
+ with 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ is familiar to everyone—when an iron is heated in a fire, the first visible radiation (at around 900 K) is deep red, the lowest frequency visible light. Further increase in 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ causes the color to change to orange then yellow, and finally blue at very high temperatures (10,000 K or more) for which the peak in radiation intensity has moved beyond the visible into the ultraviolet.
+The adiabatic principle allowed Wien to conclude that for each mode, the adiabatic invariant energy/frequency is only a function of the other adiabatic invariant, the frequency/temperature. From this, he derived the "strong version" of Wien's displacement law: the statement that the blackbody spectral radiance is proportional to 
+  
+    
+      
+        
+          ν
+          
+            3
+          
+        
+        F
+        (
+        ν
+        
+          /
+        
+        T
+        )
+      
+    
+    {\displaystyle \nu ^{3}F(\nu /T)}
+  
+ for some function F of a single variable. A modern variant of Wien's derivation can be found in the textbook by Wannier and in a paper by E. Buckingham
+The consequence is that the shape of the black-body radiation function (which was not yet understood) would shift proportionally in frequency (or inversely proportionally in wavelength) with temperature. When Max Planck later formulated the correct black-body radiation function it did not explicitly include Wien's constant 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+. Rather, the Planck constant 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ was created and introduced into his new formula. From the Planck constant 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ and the Boltzmann constant 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+, Wien's constant 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ can be obtained.
+
+
+== Peak differs according to parameterization ==
+
+The results in the tables above summarize results from other sections of this article. Percentiles are percentiles of the Planck blackbody spectrum. Only 25 percent of the energy in the black-body spectrum is associated with wavelengths shorter than the value given by the peak-wavelength version of Wien's law.
+
+Notice that for a given temperature, different parameterizations imply different maximal wavelengths. In particular, the curve of intensity per unit frequency peaks at a different wavelength than the curve of intensity per unit wavelength.
+For example, using 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ = 6,000 K (5,730 °C; 10,340 °F) and parameterization by wavelength, the wavelength for maximal spectral radiance is 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ = 482.962 nm with corresponding frequency 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ = 620.737 THz.  For the same temperature, but parameterizing by frequency, the frequency for maximal spectral radiance is 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ = 352.735 THz with corresponding wavelength 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ = 849.907 nm.
+These functions are radiance density functions, which are probability density functions scaled to give units of radiance. The density function has different shapes for different parameterizations, depending on relative stretching or compression of the abscissa, which measures the change in probability density relative to a linear change in a given parameter. Since wavelength and frequency have a reciprocal relation, they represent significantly non-linear shifts in probability density relative to one another.
+The total radiance is the integral of the distribution over all positive values, and that is invariant for a given temperature under any parameterization.  Additionally, for a given temperature the radiance consisting of all photons between two wavelengths must be the same regardless of which distribution you use.  That is to say, integrating the wavelength distribution from 
+  
+    
+      
+        
+          λ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \lambda _{1}}
+  
+ to 
+  
+    
+      
+        
+          λ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \lambda _{2}}
+  
+ will result in the same value as integrating the frequency distribution between the two frequencies that correspond to 
+  
+    
+      
+        
+          λ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \lambda _{1}}
+  
+ and 
+  
+    
+      
+        
+          λ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \lambda _{2}}
+  
+, namely from 
+  
+    
+      
+        c
+        
+          /
+        
+        
+          λ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle c/\lambda _{2}}
+  
+ to 
+  
+    
+      
+        c
+        
+          /
+        
+        
+          λ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle c/\lambda _{1}}
+  
+. However, the distribution shape depends on the parameterization, and for a different parameterization the distribution will typically have a different peak density, as these calculations demonstrate.
+The important point of Wien's law, however, is that any such wavelength marker, including the median wavelength (or, alternatively, the wavelength below which any specified percentage of the emission occurs) is proportional to the reciprocal of temperature.  That is, the shape of the distribution for a given parameterization scales with and translates according to temperature, and can be calculated once for a canonical temperature, then appropriately shifted and scaled to obtain the distribution for another temperature.  This is a consequence of the strong statement of Wien's law.
+
+
+== Frequency-dependent formulation ==
+For spectral flux considered per unit frequency 
+  
+    
+      
+        d
+        ν
+      
+    
+    {\displaystyle d\nu }
+  
+ (in hertz), Wien's displacement law describes a peak emission at the optical frequency 
+  
+    
+      
+        
+          ν
+          
+            peak
+          
+        
+      
+    
+    {\displaystyle \nu _{\text{peak}}}
+  
+ given by:
+
+  
+    
+      
+        
+          ν
+          
+            peak
+          
+        
+        =
+        
+          
+            x
+            h
+          
+        
+        k
+        
+        T
+        ≈
+        (
+        5.879
+        ×
+        
+          10
+          
+            10
+          
+        
+         
+        
+          H
+          z
+          
+            /
+          
+          K
+        
+        )
+        ⋅
+        T
+      
+    
+    {\displaystyle \nu _{\text{peak}}={x \over h}k\,T\approx (5.879\times 10^{10}\ \mathrm {Hz/K} )\cdot T}
+  
+
+or equivalently
+
+  
+    
+      
+        h
+        
+          ν
+          
+            peak
+          
+        
+        =
+        x
+        
+        k
+        
+        T
+        ≈
+        (
+        2.431
+        ×
+        
+          10
+          
+            −
+            4
+          
+        
+         
+        
+          e
+          V
+          
+            /
+          
+          K
+        
+        )
+        ⋅
+        T
+      
+    
+    {\displaystyle h\nu _{\text{peak}}=x\,k\,T\approx (2.431\times 10^{-4}\ \mathrm {eV/K} )\cdot T}
+  
+
+where 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ = 2.821439372122078893... is a constant resulting from the maximization equation, k is the Boltzmann constant, h is the Planck constant, and T is the absolute temperature. With the emission now considered per unit frequency, this peak now corresponds to a wavelength about 76% longer than the peak considered per unit wavelength. The relevant math is detailed in the next section.
+
+
+== Derivation from Planck's law ==
+
+
+=== Parameterization by wavelength ===
+Planck's law for the spectrum of black-body radiation predicts the Wien displacement law and may be used to numerically evaluate the constant relating temperature and the peak parameter value for any particular parameterization. Commonly a wavelength parameterization is used and in that case the black body spectral radiance (power per emitting area per solid angle) is:
+
+  
+    
+      
+        
+          u
+          
+            λ
+          
+        
+        (
+        λ
+        ,
+        T
+        )
+        =
+        
+          
+            
+              2
+              h
+              
+                c
+                
+                  2
+                
+              
+            
+            
+              λ
+              
+                5
+              
+            
+          
+        
+        
+          
+            1
+            
+              
+                e
+                
+                  h
+                  c
+                  
+                    /
+                  
+                  λ
+                  k
+                  T
+                
+              
+              −
+              1
+            
+          
+        
+        .
+      
+    
+    {\displaystyle u_{\lambda }(\lambda ,T)={2hc^{2} \over \lambda ^{5}}{1 \over e^{hc/\lambda kT}-1}.}
+  
+
+Differentiating 
+  
+    
+      
+        u
+        (
+        λ
+        ,
+        T
+        )
+      
+    
+    {\displaystyle u(\lambda ,T)}
+  
+ with respect to 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ and setting the derivative equal to zero gives:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              λ
+            
+          
+        
+        =
+        2
+        h
+        
+          c
+          
+            2
+          
+        
+        
+          (
+          
+            
+              
+                
+                  h
+                  c
+                
+                
+                  k
+                  T
+                  
+                    λ
+                    
+                      7
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  e
+                  
+                    h
+                    c
+                    
+                      /
+                    
+                    λ
+                    k
+                    T
+                  
+                
+                
+                  
+                    (
+                    
+                      
+                        e
+                        
+                          h
+                          c
+                          
+                            /
+                          
+                          λ
+                          k
+                          T
+                        
+                      
+                      −
+                      1
+                    
+                    )
+                  
+                  
+                    2
+                  
+                
+              
+            
+            −
+            
+              
+                1
+                
+                  λ
+                  
+                    6
+                  
+                
+              
+            
+            
+              
+                5
+                
+                  
+                    e
+                    
+                      h
+                      c
+                      
+                        /
+                      
+                      λ
+                      k
+                      T
+                    
+                  
+                  −
+                  1
+                
+              
+            
+          
+          )
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle {\partial u \over \partial \lambda }=2hc^{2}\left({hc \over kT\lambda ^{7}}{e^{hc/\lambda kT} \over \left(e^{hc/\lambda kT}-1\right)^{2}}-{1 \over \lambda ^{6}}{5 \over e^{hc/\lambda kT}-1}\right)=0,}
+  
+
+which can be simplified to give:
+
+  
+    
+      
+        
+          
+            
+              h
+              c
+            
+            
+              λ
+              k
+              T
+            
+          
+        
+        
+          
+            
+              e
+              
+                h
+                c
+                
+                  /
+                
+                λ
+                k
+                T
+              
+            
+            
+              
+                e
+                
+                  h
+                  c
+                  
+                    /
+                  
+                  λ
+                  k
+                  T
+                
+              
+              −
+              1
+            
+          
+        
+        −
+        5
+        =
+        0.
+      
+    
+    {\displaystyle {hc \over \lambda kT}{e^{hc/\lambda kT} \over e^{hc/\lambda kT}-1}-5=0.}
+  
+
+By defining:
+
+  
+    
+      
+        x
+        ≡
+        
+          
+            
+              h
+              c
+            
+            
+              λ
+              k
+              T
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle x\equiv {hc \over \lambda kT},}
+  
+
+the equation becomes one in the single variable x:
+
+  
+    
+      
+        
+          
+            
+              x
+              
+                e
+                
+                  x
+                
+              
+            
+            
+              
+                e
+                
+                  x
+                
+              
+              −
+              1
+            
+          
+        
+        −
+        5
+        =
+        0.
+      
+    
+    {\displaystyle {xe^{x} \over e^{x}-1}-5=0.}
+  
+
+which is equivalent to:
+
+  
+    
+      
+        x
+        =
+        5
+        (
+        1
+        −
+        
+          e
+          
+            −
+            x
+          
+        
+        )
+        
+        .
+      
+    
+    {\displaystyle x=5(1-e^{-x})\,.}
+  
+
+This equation is solved by
+
+  
+    
+      
+        x
+        =
+        5
+        +
+        
+          W
+          
+            0
+          
+        
+        (
+        −
+        5
+        
+          e
+          
+            −
+            5
+          
+        
+        )
+      
+    
+    {\displaystyle x=5+W_{0}(-5e^{-5})}
+  
+
+where 
+  
+    
+      
+        
+          W
+          
+            0
+          
+        
+      
+    
+    {\displaystyle W_{0}}
+  
+ is the principal branch of the Lambert W function, and gives 
+  
+    
+      
+        x
+        =
+      
+    
+    {\displaystyle x=}
+  
+ 4.965114231744276303....  Solving for the wavelength 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ in millimetres, and using kelvins for the temperature yields:
+
+  
+    
+      
+        
+          λ
+          
+            
+              p
+              e
+              a
+              k
+            
+          
+        
+        =
+        h
+        c
+        
+          /
+        
+        x
+        k
+        T
+        =
+        
+      
+    
+    {\displaystyle \lambda _{\mathrm {peak} }=hc/xkT=\;}
+  
+(2.897771955185172661... mm⋅K)
+  
+    
+      
+        
+          /
+        
+        T
+      
+    
+    {\displaystyle /T}
+  
+.
+
+
+=== Parameterization by frequency ===
+Another common parameterization is by frequency. The derivation yielding peak parameter value is similar, but starts with the form of Planck's law as a function of frequency 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+:
+
+  
+    
+      
+        
+          u
+          
+            ν
+          
+        
+        (
+        ν
+        ,
+        T
+        )
+        =
+        
+          
+            
+              2
+              h
+              
+                ν
+                
+                  3
+                
+              
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        
+          
+            1
+            
+              
+                e
+                
+                  h
+                  ν
+                  
+                    /
+                  
+                  k
+                  T
+                
+              
+              −
+              1
+            
+          
+        
+        .
+      
+    
+    {\displaystyle u_{\nu }(\nu ,T)={2h\nu ^{3} \over c^{2}}{1 \over e^{h\nu /kT}-1}.}
+  
+
+The preceding process using this equation yields:
+
+  
+    
+      
+        −
+        
+          
+            
+              h
+              ν
+            
+            
+              k
+              T
+            
+          
+        
+        
+          
+            
+              e
+              
+                h
+                ν
+                
+                  /
+                
+                k
+                T
+              
+            
+            
+              
+                e
+                
+                  h
+                  ν
+                  
+                    /
+                  
+                  k
+                  T
+                
+              
+              −
+              1
+            
+          
+        
+        +
+        3
+        =
+        0.
+      
+    
+    {\displaystyle -{h\nu  \over kT}{e^{h\nu /kT} \over e^{h\nu /kT}-1}+3=0.}
+  
+
+The net result is:
+
+  
+    
+      
+        x
+        =
+        3
+        (
+        1
+        −
+        
+          e
+          
+            −
+            x
+          
+        
+        )
+        
+        .
+      
+    
+    {\displaystyle x=3(1-e^{-x})\,.}
+  
+
+This is similarly solved with the Lambert W function:
+
+  
+    
+      
+        x
+        =
+        3
+        +
+        
+          W
+          
+            0
+          
+        
+        (
+        −
+        3
+        
+          e
+          
+            −
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle x=3+W_{0}(-3e^{-3})}
+  
+
+giving 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ = 2.821439372122078893....
+Solving for 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ produces:
+
+  
+    
+      
+        
+          ν
+          
+            
+              p
+              e
+              a
+              k
+            
+          
+        
+        =
+        x
+        k
+        T
+        
+          /
+        
+        h
+        =
+      
+    
+    {\displaystyle \nu _{\mathrm {peak} }=xkT/h=}
+  
+ (0.05878925757646824946... THz⋅K−1)
+  
+    
+      
+        ⋅
+        T
+      
+    
+    {\displaystyle \cdot T}
+  
+.
+
+
+=== Parameterization by the logarithm of wavelength or frequency ===
+Using the implicit equation 
+  
+    
+      
+        x
+        =
+        4
+        (
+        1
+        −
+        
+          e
+          
+            −
+            x
+          
+        
+        )
+      
+    
+    {\displaystyle x=4(1-e^{-x})}
+  
+ yields the peak in the spectral radiance density function expressed in the parameter radiance per proportional bandwidth. (That is, the density of irradiance per frequency bandwidth proportional to the frequency itself, which can be calculated by considering infinitesimal intervals of 
+  
+    
+      
+        ln
+        ⁡
+        ν
+      
+    
+    {\displaystyle \ln \nu }
+  
+ (or equivalently 
+  
+    
+      
+        ln
+        ⁡
+        λ
+      
+    
+    {\displaystyle \ln \lambda }
+  
+) rather of frequency itself.) This is perhaps a more intuitive way of presenting "wavelength of peak emission". That yields 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ = 3.920690394872886343....
+
+
+== Mean photon energy as an alternate characterization ==
+Another way of characterizing the radiance distribution is via the mean photon energy
+
+  
+    
+      
+        ⟨
+        
+          E
+          
+            
+              phot
+            
+          
+        
+        ⟩
+        =
+        
+          
+            
+              π
+              
+                4
+              
+            
+            
+              30
+              
+              ζ
+              (
+              3
+              )
+            
+          
+        
+        k
+        
+        T
+        ≈
+        (
+        
+          3.7294
+          ×
+          
+            10
+            
+              −
+              23
+            
+          
+          
+          J
+          
+            /
+          
+          K
+        
+        )
+        ⋅
+        T
+        
+        ,
+      
+    
+    {\displaystyle \langle E_{\textrm {phot}}\rangle ={\frac {\pi ^{4}}{30\,\zeta (3)}}k\,T\approx (\mathrm {3.7294\times 10^{-23}\,J/K} )\cdot T\;,}
+  
+
+where 
+  
+    
+      
+        ζ
+      
+    
+    {\displaystyle \zeta }
+  
+ is the Riemann zeta function.
+The wavelength corresponding to the mean photon energy is given by 
+
+  
+    
+      
+        
+          λ
+          
+            ⟨
+            E
+            ⟩
+          
+        
+        ≈
+        (
+        
+          0.532
+          
+          65
+          
+          c
+          m
+          
+            ⋅
+          
+          K
+        
+        )
+        
+          /
+        
+        T
+        
+        .
+      
+    
+    {\displaystyle \lambda _{\langle E\rangle }\approx (\mathrm {0.532\,65\,cm{\cdot }K} )/T\,.}
+  
+
+
+== Criticism ==
+Marr and Wilkin (2012) contend that the widespread teaching of Wien's displacement law in introductory courses is undesirable, and it would be better replaced by alternate material. They argue that teaching the law is problematic because:
+
+the Planck curve is too broad for the peak to stand out or be regarded as significant;
+the location of the peak depends on the parameterization, and they cite several sources as concurring that "that the designation of any peak of the function is not meaningful and should, therefore, be de-emphasized";
+the law is not used for determining temperatures in actual practice, direct use of the Planck function being relied upon instead.
+They suggest that the average photon energy be presented in place of Wien's displacement law, as being a more physically meaningful indicator of changes that occur with changing temperature. In connection with this, they recommend that the average number of photons per second be discussed in connection with the Stefan–Boltzmann law. They recommend that the Planck spectrum be plotted as a "spectral energy density per fractional bandwidth distribution," using a logarithmic scale for the wavelength or frequency.
+
+
+== See also ==
+Wien approximation
+Emissivity
+Sakuma–Hattori equation
+Stefan–Boltzmann law
+Thermometer
+Ultraviolet catastrophe
+
+
+== References ==
+
+
+== Further reading ==
+Soffer, B. H.; Lynch, D. K. (1999). "Some paradoxes, errors, and resolutions concerning the spectral optimization of human vision". American Journal of Physics. 67 (11): 946–953. Bibcode:1999AmJPh..67..946S. doi:10.1119/1.19170. S2CID 16025855.
+Heald, M. A. (2003). "Where is the 'Wien peak'?". American Journal of Physics. 71 (12): 1322–1323. Bibcode:2003AmJPh..71.1322H. doi:10.1119/1.1604387.
+
+
+== External links ==
+Eric Weisstein's World of Physics

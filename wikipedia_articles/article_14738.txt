@@ -1,0 +1,44 @@
+A Protection Profile (PP) is a document used as part of the certification process according to ISO/IEC 15408 and the Common Criteria (CC). As the generic form of a Security Target (ST), it is typically created by a user or user community and provides an implementation independent specification of information assurance security requirements. A PP is a combination of threats, security objectives, assumptions, security functional requirements (SFRs), security assurance requirements (SARs) and rationales.
+A PP specifies generic security evaluation criteria to substantiate vendors' claims of a given family of information system products. Among others, it typically specifies the Evaluation Assurance Level (EAL), a number 1 through 7, indicating the depth and rigor of the security evaluation, usually in the form of supporting documentation and testing, that a product meets the security requirements specified in the PP.
+The National Institute of Standards and Technology (NIST) and the National Security Agency (NSA) have agreed to cooperate on the development of validated U.S. government PPs.
+
+
+== Purpose ==
+A PP states a security problem rigorously for a given collection of system or products, known as the Target of Evaluation (TOE) and to specify security requirements to address that problem without dictating how these requirements will be implemented. A PP may inherit requirements from one or more other PPs.
+In order to get a product evaluated and certified according to the CC, the product vendor has to define a Security Target (ST) which may comply with one or more PPs.
+In this way a PP may serve as a template for the product's ST.
+
+
+== Problem areas ==
+Although the EAL is easiest for laymen to compare, its simplicity is deceptive because this number is rather meaningless without an understanding the security implications of the PP(s) and ST used for the evaluation.  Technically, comparing evaluated products requires assessing both the EAL and the functional requirements.  Unfortunately, interpreting the security implications of the PP for the intended application requires very strong IT security expertise.  Evaluating a product is one thing, but deciding if some product's CC evaluation is adequate for a particular application is quite another. It is not obvious what trusted agency possesses the depth in IT security expertise needed to evaluate systems applicability of Common Criteria evaluated products.
+The problem of applying evaluations is not new.  This problem was addressed decades ago by a massive research project that defined software features that could protect information, evaluated their strength, and mapped security features needed for specific operating environment risks.  The results were documented in the Rainbow Series.  Rather than separating the EAL and functional requirements, the Orange Book followed a less advanced approach defining functional protection capabilities and appropriate assurance requirements as single category.  Seven such categories were defined in this way.  Further, the Yellow Book defined a matrix of security environments and assessed the risk of each.  It then established precisely what security environment was valid for each of the Orange Book categories.  This approach produced an unambiguous layman's cookbook for how to determine whether a product was usable in a particular application.  Loss of this application technology seems to have been an unintended consequence of the superseding of the Orange Book by the Common Criteria.
+
+
+== Security devices with PPs ==
+
+
+=== Validated U.S. government PP ===
+Anti-Virus (Sunset Date: 2011.06.01)
+Key Recovery
+
+Certification Authorities
+Tokens
+DBMS
+Firewalls
+Operating System
+IDS/h
+
+
+=== Validated non-U.S. government PP ===
+Smart Cards
+Remote electronic voting systems
+Trusted execution environment
+
+
+== External links ==
+International Protection Profiles
+NIAP Protection Profiles
+Computer Security Act of 1987
+
+
+== References ==

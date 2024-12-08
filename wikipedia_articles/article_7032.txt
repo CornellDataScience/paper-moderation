@@ -1,0 +1,377 @@
+In functional programming, the concept of catamorphism (from the Ancient Greek: κατά "downwards" and μορφή "form, shape") denotes the unique homomorphism from an initial algebra into some other algebra.
+Catamorphisms provide generalizations of folds of lists to arbitrary algebraic data types, which can be described as initial algebras. 
+The dual concept is that of anamorphism that generalize unfolds. A hylomorphism is the composition of an anamorphism followed by a catamorphism.
+
+
+== Definition ==
+Consider an initial 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-algebra 
+  
+    
+      
+        (
+        A
+        ,
+        i
+        n
+        )
+      
+    
+    {\displaystyle (A,in)}
+  
+ for some endofunctor 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ of some category into itself. Here 
+  
+    
+      
+        i
+        n
+      
+    
+    {\displaystyle in}
+  
+ is a morphism from 
+  
+    
+      
+        F
+        A
+      
+    
+    {\displaystyle FA}
+  
+ to 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+. Since it is initial, we know that whenever 
+  
+    
+      
+        (
+        X
+        ,
+        f
+        )
+      
+    
+    {\displaystyle (X,f)}
+  
+ is another 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-algebra, i.e. a morphism 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ from 
+  
+    
+      
+        F
+        X
+      
+    
+    {\displaystyle FX}
+  
+ to 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, there is a unique homomorphism 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ from 
+  
+    
+      
+        (
+        A
+        ,
+        i
+        n
+        )
+      
+    
+    {\displaystyle (A,in)}
+  
+ to 
+  
+    
+      
+        (
+        X
+        ,
+        f
+        )
+      
+    
+    {\displaystyle (X,f)}
+  
+. By the definition of the category of 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-algebra, this 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ corresponds to a morphism from 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ to 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, conventionally also denoted 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+, such that 
+  
+    
+      
+        h
+        ∘
+        i
+        n
+        =
+        f
+        ∘
+        F
+        h
+      
+    
+    {\displaystyle h\circ in=f\circ Fh}
+  
+. In the context of 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-algebra, the uniquely specified morphism from the initial object is denoted by 
+  
+    
+      
+        
+          c
+          a
+          t
+          a
+        
+         
+        f
+      
+    
+    {\displaystyle \mathrm {cata} \ f}
+  
+ and hence characterized by the following relationship:
+
+  
+    
+      
+        h
+        =
+        
+          c
+          a
+          t
+          a
+        
+         
+        f
+      
+    
+    {\displaystyle h=\mathrm {cata} \ f}
+  
+
+  
+    
+      
+        h
+        ∘
+        i
+        n
+        =
+        f
+        ∘
+        F
+        h
+      
+    
+    {\displaystyle h\circ in=f\circ Fh}
+  
+
+
+== Terminology and history ==
+Another notation found in the literature is 
+  
+    
+      
+        (
+        
+        
+          |
+        
+        f
+        
+          |
+        
+        
+        )
+      
+    
+    {\displaystyle (\!|f|\!)}
+  
+. The open brackets used are known as banana brackets, after which catamorphisms are sometimes referred to as bananas, as mentioned in Erik Meijer et al. One of the first publications to introduce the notion of a catamorphism in the context of programming was the paper “Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire”, by Erik Meijer et al., which was in the context of the Squiggol formalism.
+The general categorical definition was given by Grant Malcolm.
+
+
+== Examples ==
+We give a series of examples, and then a more global approach to catamorphisms, in the Haskell programming language.
+
+
+=== Catamorphism for Maybe-algebra ===
+Consider the functor Maybe defined in the below Haskell code:
+
+The initial object of the Maybe-Algebra is the set of all objects of natural number type Nat together with the morphism ini defined below:
+
+The cata map can be defined as follows:
+
+As an example consider the following morphism:
+
+Then cata g ((Succ. Succ . Succ) Zero) will evaluate to "wait... wait... wait... go!".
+
+
+=== List fold ===
+For a fixed type a consider the functor MaybeProd a defined by the following:
+
+The initial algebra of MaybeProd a is given by the lists of elements with type a together with the morphism ini defined below:
+
+The cata map can be defined by:
+
+Notice also that cata g (Cons s l) = g (Just (s, cata g l)).
+As an example consider the following morphism:
+
+cata g (Cons 10 EmptyList) evaluates to 30. This can be seen by expanding
+cata g (Cons 10 EmptyList)=g (Just (10,cata g EmptyList)) = 10* cata g EmptyList=10* g Nothing=10*3.
+In the same way it can be shown, that
+cata g (Cons 10 (Cons 100 (Cons 1000 EmptyList))) will evaluate to 10*(100*(1000*3))=3.000.000.
+The cata map is closely related to the right fold (see Fold (higher-order function)) of lists foldrList.
+The morphism lift defined by
+
+relates cata to the right fold foldrList of lists via:
+
+The definition of cata implies, that foldrList is the right fold and not the left fold.
+As an example: foldrList (+) 1 (Cons 10 ( Cons 100 ( Cons 1000 EmptyList))) will evaluate to 1111 and foldrList (*) 3 (Cons 10 ( Cons 100 ( Cons 1000 EmptyList))) to 3.000.000.
+
+
+=== Tree fold ===
+For a fixed type a, consider the functor mapping types b to a type that contains a copy of each term of a as well as all pairs of b's (terms of the product type of two instances of the type b). An algebra consists of a function to b, which either acts on an a term or two b terms. This merging of a pair can be encoded as two functions of type a -> b resp. b -> b -> b.
+
+
+=== General case ===
+Deeper category theoretical studies of initial algebras reveal that the F-algebra obtained from applying the functor to its own initial algebra is isomorphic to it.
+Strong type systems enable us to abstractly specify the initial algebra of a functor f as its fixed point a = f a. The recursively defined catamorphisms can now be coded in single line, where the case analysis (like in the different examples above) is encapsulated by the fmap. Since the domain of the latter are objects in the image of f, the evaluation of the catamorphisms jumps back and forth between a and f a.
+
+Now again the first example, but now via passing the Maybe functor to Fix. Repeated application of the Maybe functor generates a chain of types, which, however, can be united by the isomorphism from the fixed point theorem. We introduce the term zero, which arises from Maybe's Nothing and identify a successor function with repeated application of the Just. This way the natural numbers arise.
+
+Again, the following will evaluate to "wait.. wait.. wait.. wait.. go!": cata pleaseWait (successor.successor.successor.successor $ zero)
+And now again the tree example. For this we must provide the tree container data type so that we can set up the fmap (we didn't have to do it for the Maybe functor, as it's part of the standard prelude).
+
+The following will evaluate to 4: cata treeDepth $ meet (end "X") (meet (meet (end "YXX") (end "YXY")) (end "YY"))
+
+
+== See also ==
+Morphism
+Morphisms of F-algebras
+From a coalgebra to a final coalgebra: Anamorphism
+An anamorphism followed by an catamorphism: Hylomorphism
+Extension of the idea of catamorphisms: Paramorphism
+Extension of the idea of anamorphisms: Apomorphism
+
+
+== References ==
+
+
+=== Further reading ===
+
+
+== External links ==
+Catamorphisms at HaskellWiki
+Catamorphisms by Edward Kmett
+Catamorphisms in F# (Part 1, 2, 3, 4, 5, 6, 7) by Brian McNamara
+Catamorphisms in Haskell

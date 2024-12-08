@@ -1,0 +1,604 @@
+The Hasse–Davenport relations, introduced by Davenport and  Hasse (1935), are two related identities for Gauss sums, one called the Hasse–Davenport lifting relation, and the other called the Hasse–Davenport product relation. The Hasse–Davenport lifting relation is an equality in number theory relating Gauss sums over different fields. Weil (1949) used it to calculate the zeta function of a Fermat hypersurface over a finite field, which motivated the Weil conjectures.
+Gauss sums are analogues of the gamma function over finite fields, and the Hasse–Davenport product relation is the analogue of Gauss's multiplication formula
+
+  
+    
+      
+        Γ
+        (
+        z
+        )
+        
+        Γ
+        
+          (
+          
+            z
+            +
+            
+              
+                1
+                k
+              
+            
+          
+          )
+        
+        
+        Γ
+        
+          (
+          
+            z
+            +
+            
+              
+                2
+                k
+              
+            
+          
+          )
+        
+        ⋯
+        Γ
+        
+          (
+          
+            z
+            +
+            
+              
+                
+                  k
+                  −
+                  1
+                
+                k
+              
+            
+          
+          )
+        
+        =
+        (
+        2
+        π
+        
+          )
+          
+            
+              
+                k
+                −
+                1
+              
+              2
+            
+          
+        
+        
+        
+          k
+          
+            1
+            
+              /
+            
+            2
+            −
+            k
+            z
+          
+        
+        
+        Γ
+        (
+        k
+        z
+        )
+        .
+        
+        
+      
+    
+    {\displaystyle \Gamma (z)\;\Gamma \left(z+{\frac {1}{k}}\right)\;\Gamma \left(z+{\frac {2}{k}}\right)\cdots \Gamma \left(z+{\frac {k-1}{k}}\right)=(2\pi )^{\frac {k-1}{2}}\;k^{1/2-kz}\;\Gamma (kz).\,\!}
+  
+
+In fact the Hasse–Davenport product relation follows from the analogous multiplication formula for p-adic gamma functions together with the Gross–Koblitz formula  of Gross & Koblitz (1979).
+
+
+== Hasse–Davenport lifting relation ==
+Let F be a finite field with q elements, and Fs be the field such that [Fs:F] = s, that is, s is the dimension of the vector space Fs over F.
+Let 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ be an element of 
+  
+    
+      
+        
+          F
+          
+            s
+          
+        
+      
+    
+    {\displaystyle F_{s}}
+  
+.
+Let 
+  
+    
+      
+        χ
+      
+    
+    {\displaystyle \chi }
+  
+ be a multiplicative character from F to the complex numbers.
+Let 
+  
+    
+      
+        
+          N
+          
+            
+              F
+              
+                s
+              
+            
+            
+              /
+            
+            F
+          
+        
+        (
+        α
+        )
+      
+    
+    {\displaystyle N_{F_{s}/F}(\alpha )}
+  
+ be the norm from 
+  
+    
+      
+        
+          F
+          
+            s
+          
+        
+      
+    
+    {\displaystyle F_{s}}
+  
+ to 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ defined by
+
+  
+    
+      
+        
+          N
+          
+            
+              F
+              
+                s
+              
+            
+            
+              /
+            
+            F
+          
+        
+        (
+        α
+        )
+        :=
+        α
+        ⋅
+        
+          α
+          
+            q
+          
+        
+        ⋯
+        
+          α
+          
+            
+              q
+              
+                s
+                −
+                1
+              
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle N_{F_{s}/F}(\alpha ):=\alpha \cdot \alpha ^{q}\cdots \alpha ^{q^{s-1}}.\,}
+  
+
+Let 
+
+  
+    
+      
+        
+          χ
+          ′
+        
+      
+    
+    {\displaystyle \chi '}
+  
+ be the multiplicative character on 
+  
+    
+      
+        
+          F
+          
+            s
+          
+        
+      
+    
+    {\displaystyle F_{s}}
+  
+ which is the composition of 
+  
+    
+      
+        χ
+      
+    
+    {\displaystyle \chi }
+  
+ with the norm from Fs to F, that is
+
+  
+    
+      
+        
+          χ
+          ′
+        
+        (
+        α
+        )
+        :=
+        χ
+        (
+        
+          N
+          
+            
+              F
+              
+                s
+              
+            
+            
+              /
+            
+            F
+          
+        
+        (
+        α
+        )
+        )
+      
+    
+    {\displaystyle \chi '(\alpha ):=\chi (N_{F_{s}/F}(\alpha ))}
+  
+
+Let ψ be some nontrivial additive character of F, and let 
+
+  
+    
+      
+        
+          ψ
+          ′
+        
+      
+    
+    {\displaystyle \psi '}
+  
+ be the additive character on 
+  
+    
+      
+        
+          F
+          
+            s
+          
+        
+      
+    
+    {\displaystyle F_{s}}
+  
+ which is the composition of 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ with the trace from Fs to F, that is
+
+  
+    
+      
+        
+          ψ
+          ′
+        
+        (
+        α
+        )
+        :=
+        ψ
+        (
+        T
+        
+          r
+          
+            
+              F
+              
+                s
+              
+            
+            
+              /
+            
+            F
+          
+        
+        (
+        α
+        )
+        )
+      
+    
+    {\displaystyle \psi '(\alpha ):=\psi (Tr_{F_{s}/F}(\alpha ))}
+  
+
+Let 
+
+  
+    
+      
+        τ
+        (
+        χ
+        ,
+        ψ
+        )
+        =
+        
+          ∑
+          
+            x
+            ∈
+            F
+          
+        
+        χ
+        (
+        x
+        )
+        ψ
+        (
+        x
+        )
+      
+    
+    {\displaystyle \tau (\chi ,\psi )=\sum _{x\in F}\chi (x)\psi (x)}
+  
+
+be the Gauss sum over F, and let
+
+  
+    
+      
+        τ
+        (
+        
+          χ
+          ′
+        
+        ,
+        
+          ψ
+          ′
+        
+        )
+      
+    
+    {\displaystyle \tau (\chi ',\psi ')}
+  
+ be the Gauss sum over 
+  
+    
+      
+        
+          F
+          
+            s
+          
+        
+      
+    
+    {\displaystyle F_{s}}
+  
+.
+Then the Hasse–Davenport lifting relation states that
+
+  
+    
+      
+        (
+        −
+        1
+        
+          )
+          
+            s
+          
+        
+        ⋅
+        τ
+        (
+        χ
+        ,
+        ψ
+        
+          )
+          
+            s
+          
+        
+        =
+        −
+        τ
+        (
+        
+          χ
+          ′
+        
+        ,
+        
+          ψ
+          ′
+        
+        )
+        .
+      
+    
+    {\displaystyle (-1)^{s}\cdot \tau (\chi ,\psi )^{s}=-\tau (\chi ',\psi ').}
+  
+
+
+== Hasse–Davenport product relation ==
+The Hasse–Davenport product relation states that
+
+  
+    
+      
+        
+          ∏
+          
+            a
+            
+              mod
+              
+                m
+              
+            
+          
+        
+        τ
+        (
+        χ
+        
+          ρ
+          
+            a
+          
+        
+        ,
+        ψ
+        )
+        =
+        −
+        
+          χ
+          
+            −
+            m
+          
+        
+        (
+        m
+        )
+        τ
+        (
+        
+          χ
+          
+            m
+          
+        
+        ,
+        ψ
+        )
+        
+          ∏
+          
+            a
+            
+              mod
+              
+                m
+              
+            
+          
+        
+        τ
+        (
+        
+          ρ
+          
+            a
+          
+        
+        ,
+        ψ
+        )
+      
+    
+    {\displaystyle \prod _{a{\bmod {m}}}\tau (\chi \rho ^{a},\psi )=-\chi ^{-m}(m)\tau (\chi ^{m},\psi )\prod _{a{\bmod {m}}}\tau (\rho ^{a},\psi )}
+  
+
+where ρ is a multiplicative character of exact order m dividing q–1 and χ is any multiplicative character and ψ is a non-trivial additive character.
+
+
+== References ==
+Davenport, Harold; Hasse, Helmut (1935), "Die Nullstellen der Kongruenzzetafunktionen in gewissen zyklischen Fällen. (On the zeros of the congruence zeta-functions in some cyclic cases)", Journal für die Reine und Angewandte Mathematik (in German), 172: 151–182, ISSN 0075-4102, Zbl 0010.33803
+Gross, Benedict H.; Koblitz, Neal (1979), "Gauss sums and the p-adic Γ-function", Annals of Mathematics, Second Series, 109 (3): 569–581, doi:10.2307/1971226, ISSN 0003-486X, JSTOR 1971226, MR 0534763
+Ireland, Kenneth; Rosen, Michael (1990). A Classical Introduction to Modern Number Theory. Springer. pp. 158–162. ISBN 978-0-387-97329-6.
+Weil, André (1949), "Numbers of solutions of equations in finite fields" (PDF), Bulletin of the American Mathematical Society, 55 (5): 497–508, doi:10.1090/S0002-9904-1949-09219-4, ISSN 0002-9904, MR 0029393 Reprinted in Oeuvres Scientifiques/Collected Papers by André Weil ISBN 0-387-90330-5

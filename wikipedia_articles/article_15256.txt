@@ -1,0 +1,86 @@
+In computer science and the study of combinatorics on words, a partial word is a string that may contain a number of "do not know" or "do not care" symbols i.e. placeholders in the string where the symbol value is not known or not specified.  More formally, a partial word is a partial function 
+  
+    
+      
+        u
+        :
+        {
+        0
+        ,
+        …
+        ,
+        n
+        −
+        1
+        }
+        →
+        A
+      
+    
+    {\displaystyle u:\{0,\ldots ,n-1\}\rightarrow A}
+  
+ where 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ is some finite alphabet.  If u(k) is not defined for some 
+  
+    
+      
+        k
+        ∈
+        {
+        0
+        ,
+        …
+        ,
+        n
+        −
+        1
+        }
+      
+    
+    {\displaystyle k\in \{0,\ldots ,n-1\}}
+  
+ then the unknown element at place k in the string is called a "hole". In regular expressions (following the POSIX standard) a hole is represented by the metacharacter ".". For example, aab.ab.b is a partial word of length 8 over the alphabet A ={a,b} in which the fourth and seventh characters are holes.
+
+
+== Algorithms ==
+Several algorithms have been developed for the problem of "string matching with don't cares", in which the input is a long text and a shorter partial word and the goal is to find all strings in the text that match the given partial word.
+
+
+== Applications ==
+
+Two partial words are said to be compatible when they have the same length and when every position that is a non-wildcard in both of them has the same character in both. If one forms an undirected graph with a vertex for each partial word in a collection of partial words, and an edge for each compatible pair, then the cliques of this graph come from sets of partial words that all match at least one common string. This graph-theoretical interpretation of compatibility of partial words plays a key role in the proof of hardness of approximation of the clique problem, in which a collection of partial words representing successful runs of a probabilistically checkable proof verifier has a large clique if and only if there exists a valid proof of an underlying NP-complete problem.
+The faces (subcubes) of an 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-dimensional hypercube can be described by partial words of length 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ over a binary alphabet, whose
+symbols are the Cartesian coordinates of the hypercube vertices (e.g., 0 or 1 for a unit cube). The dimension of a subcube, in this representation, equals the number of don't-care symbols it contains. The same representation may also be used to describe the implicants of Boolean functions.
+
+
+== Related concepts ==
+Partial words may be generalized to parameter words, in which some of the "do not know" symbols are marked as being equal to each other. A partial word is a special case of a parameter word in which each do not know symbol may be substituted by a character independently of all of the other ones.
+
+
+== References ==

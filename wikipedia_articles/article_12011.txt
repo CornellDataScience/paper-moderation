@@ -1,0 +1,2351 @@
+Cylindrical multipole moments are the coefficients in a series expansion of a potential that varies logarithmically with the distance to a source, i.e., as 
+  
+    
+      
+        ln
+        ⁡
+         
+        R
+      
+    
+    {\displaystyle \ln \ R}
+  
+. Such potentials arise in the electric potential of long line charges, and the analogous sources for the magnetic potential and gravitational potential.
+For clarity, we illustrate the expansion for a single line charge, then generalize to an arbitrary distribution of line charges.  Through this article, the primed coordinates such 
+as 
+  
+    
+      
+        (
+        
+          ρ
+          
+            ′
+          
+        
+        ,
+        
+          θ
+          
+            ′
+          
+        
+        )
+      
+    
+    {\displaystyle (\rho ^{\prime },\theta ^{\prime })}
+  
+ refer to the position of the line charge(s), whereas the unprimed coordinates such as 
+  
+    
+      
+        (
+        ρ
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle (\rho ,\theta )}
+  
+ refer to the point at which the potential is being observed.  We use cylindrical coordinates throughout, e.g., an arbitrary vector 
+  
+    
+      
+        
+          r
+        
+      
+    
+    {\displaystyle \mathbf {r} }
+  
+ has coordinates 
+  
+    
+      
+        (
+        ρ
+        ,
+        θ
+        ,
+        z
+        )
+      
+    
+    {\displaystyle (\rho ,\theta ,z)}
+  
+
+where 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ is the radius from the 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ axis, 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ is the azimuthal angle and 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ is the normal Cartesian coordinate. By assumption, the line charges are infinitely long and aligned with the 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ axis.
+
+
+== Cylindrical multipole moments of a line charge ==
+
+The electric potential of a line charge 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ located at 
+  
+    
+      
+        (
+        
+          ρ
+          ′
+        
+        ,
+        
+          θ
+          ′
+        
+        )
+      
+    
+    {\displaystyle (\rho ',\theta ')}
+  
+ is given by
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              λ
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ln
+        ⁡
+        R
+        =
+        
+          
+            
+              −
+              λ
+            
+            
+              4
+              π
+              ϵ
+            
+          
+        
+        ln
+        ⁡
+        
+          |
+          
+            
+              ρ
+              
+                2
+              
+            
+            +
+            
+              
+                (
+                
+                  ρ
+                  ′
+                
+                )
+              
+              
+                2
+              
+            
+            −
+            2
+            ρ
+            
+              ρ
+              ′
+            
+            cos
+            ⁡
+            (
+            θ
+            −
+            
+              θ
+              ′
+            
+            )
+          
+          |
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-\lambda }{2\pi \epsilon }}\ln R={\frac {-\lambda }{4\pi \epsilon }}\ln \left|\rho ^{2}+\left(\rho '\right)^{2}-2\rho \rho '\cos(\theta -\theta ')\right|}
+  
+
+where 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ is the shortest distance between the line charge and the observation point. 
+By symmetry, the electric potential of an infinite line charge has no 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+-dependence. The line charge 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is the charge per unit length in the 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+-direction, and has units of (charge/length). If the radius 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ of the observation point is greater than the radius 
+  
+    
+      
+        
+          ρ
+          ′
+        
+      
+    
+    {\displaystyle \rho '}
+  
+ of the line charge, we may factor out 
+  
+    
+      
+        
+          ρ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \rho ^{2}}
+  
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              λ
+            
+            
+              4
+              π
+              ϵ
+            
+          
+        
+        
+          {
+          
+            2
+            ln
+            ⁡
+            ρ
+            +
+            ln
+            ⁡
+            
+              (
+              
+                1
+                −
+                
+                  
+                    
+                      ρ
+                      
+                        ′
+                      
+                    
+                    ρ
+                  
+                
+                
+                  e
+                  
+                    i
+                    
+                      (
+                      
+                        θ
+                        −
+                        
+                          θ
+                          
+                            ′
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+              )
+            
+            
+              (
+              
+                1
+                −
+                
+                  
+                    
+                      ρ
+                      
+                        ′
+                      
+                    
+                    ρ
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    
+                      (
+                      
+                        θ
+                        −
+                        
+                          θ
+                          
+                            ′
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+              )
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-\lambda }{4\pi \epsilon }}\left\{2\ln \rho +\ln \left(1-{\frac {\rho ^{\prime }}{\rho }}e^{i\left(\theta -\theta ^{\prime }\right)}\right)\left(1-{\frac {\rho ^{\prime }}{\rho }}e^{-i\left(\theta -\theta ^{\prime }\right)}\right)\right\}}
+  
+
+and expand the logarithms in powers of 
+  
+    
+      
+        (
+        
+          ρ
+          ′
+        
+        
+          /
+        
+        ρ
+        )
+        <
+        1
+      
+    
+    {\displaystyle (\rho '/\rho )<1}
+  
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              λ
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          {
+          
+            ln
+            ⁡
+            ρ
+            −
+            
+              ∑
+              
+                k
+                =
+                1
+              
+              
+                ∞
+              
+            
+            
+              
+                1
+                k
+              
+            
+            
+              
+                (
+                
+                  
+                    
+                      ρ
+                      ′
+                    
+                    ρ
+                  
+                
+                )
+              
+              
+                k
+              
+            
+            
+              [
+              
+                cos
+                ⁡
+                k
+                θ
+                cos
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+                +
+                sin
+                ⁡
+                k
+                θ
+                sin
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+              
+              ]
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-\lambda }{2\pi \epsilon }}\left\{\ln \rho -\sum _{k=1}^{\infty }{\frac {1}{k}}\left({\frac {\rho '}{\rho }}\right)^{k}\left[\cos k\theta \cos k\theta '+\sin k\theta \sin k\theta '\right]\right\}}
+  
+
+which may be written as
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              Q
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ln
+        ⁡
+        ρ
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              
+                C
+                
+                  k
+                
+              
+              cos
+              ⁡
+              k
+              θ
+              +
+              
+                S
+                
+                  k
+                
+              
+              sin
+              ⁡
+              k
+              θ
+            
+            
+              ρ
+              
+                k
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-Q}{2\pi \epsilon }}\ln \rho +{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }{\frac {C_{k}\cos k\theta +S_{k}\sin k\theta }{\rho ^{k}}}}
+  
+
+where the multipole moments are defined as
+
+  
+    
+      
+        
+          
+            
+              
+                Q
+              
+              
+                
+                =
+                λ
+                ,
+              
+            
+            
+              
+                
+                  C
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    λ
+                    k
+                  
+                
+                
+                  
+                    (
+                    
+                      ρ
+                      ′
+                    
+                    )
+                  
+                  
+                    k
+                  
+                
+                cos
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+                ,
+              
+            
+            
+              
+                
+                  S
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    λ
+                    k
+                  
+                
+                
+                  
+                    (
+                    
+                      ρ
+                      ′
+                    
+                    )
+                  
+                  
+                    k
+                  
+                
+                sin
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}Q&=\lambda ,\\C_{k}&={\frac {\lambda }{k}}\left(\rho '\right)^{k}\cos k\theta ',\\S_{k}&={\frac {\lambda }{k}}\left(\rho '\right)^{k}\sin k\theta '.\end{aligned}}}
+  
+
+Conversely, if the radius 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ of the observation point is less than  the radius 
+  
+    
+      
+        
+          ρ
+          ′
+        
+      
+    
+    {\displaystyle \rho '}
+  
+ of the line charge, we may factor out 
+  
+    
+      
+        
+          
+            (
+            
+              ρ
+              ′
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \left(\rho '\right)^{2}}
+  
+ and expand the logarithms in powers of 
+  
+    
+      
+        (
+        ρ
+        
+          /
+        
+        
+          ρ
+          ′
+        
+        )
+        <
+        1
+      
+    
+    {\displaystyle (\rho /\rho ')<1}
+  
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              λ
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          {
+          
+            ln
+            ⁡
+            
+              ρ
+              ′
+            
+            −
+            
+              ∑
+              
+                k
+                =
+                1
+              
+              
+                ∞
+              
+            
+            
+              (
+              
+                
+                  1
+                  k
+                
+              
+              )
+            
+            
+              
+                (
+                
+                  
+                    ρ
+                    
+                      ρ
+                      ′
+                    
+                  
+                
+                )
+              
+              
+                k
+              
+            
+            
+              [
+              
+                cos
+                ⁡
+                k
+                θ
+                cos
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+                +
+                sin
+                ⁡
+                k
+                θ
+                sin
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+              
+              ]
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-\lambda }{2\pi \epsilon }}\left\{\ln \rho '-\sum _{k=1}^{\infty }\left({\frac {1}{k}}\right)\left({\frac {\rho }{\rho '}}\right)^{k}\left[\cos k\theta \cos k\theta '+\sin k\theta \sin k\theta '\right]\right\}}
+  
+
+which may be written as
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              Q
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ln
+        ⁡
+        
+          ρ
+          ′
+        
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          ρ
+          
+            k
+          
+        
+        
+          [
+          
+            
+              I
+              
+                k
+              
+            
+            cos
+            ⁡
+            k
+            θ
+            +
+            
+              J
+              
+                k
+              
+            
+            sin
+            ⁡
+            k
+            θ
+          
+          ]
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-Q}{2\pi \epsilon }}\ln \rho '+{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }\rho ^{k}\left[I_{k}\cos k\theta +J_{k}\sin k\theta \right]}
+  
+
+where the interior multipole moments are defined as
+
+  
+    
+      
+        
+          
+            
+              
+                Q
+              
+              
+                
+                =
+                λ
+                ln
+                ⁡
+                
+                  ρ
+                  ′
+                
+                ,
+              
+            
+            
+              
+                
+                  I
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    λ
+                    k
+                  
+                
+                
+                  
+                    
+                      cos
+                      ⁡
+                      k
+                      
+                        θ
+                        ′
+                      
+                    
+                    
+                      
+                        (
+                        
+                          ρ
+                          ′
+                        
+                        )
+                      
+                      
+                        k
+                      
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  J
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    λ
+                    k
+                  
+                
+                
+                  
+                    
+                      sin
+                      ⁡
+                      k
+                      
+                        θ
+                        ′
+                      
+                    
+                    
+                      
+                        (
+                        
+                          ρ
+                          ′
+                        
+                        )
+                      
+                      
+                        k
+                      
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}Q&=\lambda \ln \rho ',\\I_{k}&={\frac {\lambda }{k}}{\frac {\cos k\theta '}{\left(\rho '\right)^{k}}},\\J_{k}&={\frac {\lambda }{k}}{\frac {\sin k\theta '}{\left(\rho '\right)^{k}}}.\end{aligned}}}
+  
+
+
+== General cylindrical multipole moments ==
+The generalization to an arbitrary distribution of line charges 
+  
+    
+      
+        λ
+        (
+        
+          ρ
+          ′
+        
+        ,
+        
+          θ
+          ′
+        
+        )
+      
+    
+    {\displaystyle \lambda (\rho ',\theta ')}
+  
+ is straightforward. The functional form is the same 
+
+  
+    
+      
+        Φ
+        (
+        
+          r
+        
+        )
+        =
+        
+          
+            
+              −
+              Q
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ln
+        ⁡
+        ρ
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              
+                C
+                
+                  k
+                
+              
+              cos
+              ⁡
+              k
+              θ
+              +
+              
+                S
+                
+                  k
+                
+              
+              sin
+              ⁡
+              k
+              θ
+            
+            
+              ρ
+              
+                k
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Phi (\mathbf {r} )={\frac {-Q}{2\pi \epsilon }}\ln \rho +{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }{\frac {C_{k}\cos k\theta +S_{k}\sin k\theta }{\rho ^{k}}}}
+  
+
+and the moments can be written
+
+  
+    
+      
+        
+          
+            
+              
+                Q
+              
+              
+                
+                =
+                ∫
+                d
+                
+                  θ
+                  ′
+                
+                
+                d
+                
+                  ρ
+                  ′
+                
+                
+                
+                  ρ
+                  ′
+                
+                λ
+                (
+                
+                  ρ
+                  ′
+                
+                ,
+                
+                  θ
+                  ′
+                
+                )
+              
+            
+            
+              
+                
+                  C
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    k
+                  
+                
+                ∫
+                d
+                
+                  θ
+                  ′
+                
+                
+                d
+                
+                  ρ
+                  ′
+                
+                
+                  
+                    (
+                    
+                      ρ
+                      ′
+                    
+                    )
+                  
+                  
+                    k
+                    +
+                    1
+                  
+                
+                λ
+                (
+                
+                  ρ
+                  ′
+                
+                ,
+                
+                  θ
+                  ′
+                
+                )
+                cos
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+              
+            
+            
+              
+                
+                  S
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    k
+                  
+                
+                ∫
+                d
+                
+                  θ
+                  ′
+                
+                
+                d
+                
+                  ρ
+                  ′
+                
+                
+                  
+                    (
+                    
+                      ρ
+                      ′
+                    
+                    )
+                  
+                  
+                    k
+                    +
+                    1
+                  
+                
+                λ
+                (
+                
+                  ρ
+                  ′
+                
+                ,
+                
+                  θ
+                  ′
+                
+                )
+                sin
+                ⁡
+                k
+                
+                  θ
+                  ′
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}Q&=\int d\theta '\,d\rho '\,\rho '\lambda (\rho ',\theta ')\\C_{k}&={\frac {1}{k}}\int d\theta '\,d\rho '\left(\rho '\right)^{k+1}\lambda (\rho ',\theta ')\cos k\theta '\\S_{k}&={\frac {1}{k}}\int d\theta '\,d\rho '\left(\rho '\right)^{k+1}\lambda (\rho ',\theta ')\sin k\theta '\end{aligned}}}
+  
+
+Note that the 
+  
+    
+      
+        λ
+        (
+        
+          ρ
+          ′
+        
+        ,
+        
+          θ
+          ′
+        
+        )
+      
+    
+    {\displaystyle \lambda (\rho ',\theta ')}
+  
+ represents the line charge per unit area in the 
+  
+    
+      
+        (
+        ρ
+        −
+        θ
+        )
+      
+    
+    {\displaystyle (\rho -\theta )}
+  
+ plane.
+
+
+== Interior cylindrical multipole moments ==
+Similarly, the interior cylindrical multipole expansion has the functional form
+
+  
+    
+      
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        
+          
+            
+              −
+              Q
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ln
+        ⁡
+        
+          ρ
+          ′
+        
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          ρ
+          
+            k
+          
+        
+        
+          [
+          
+            
+              I
+              
+                k
+              
+            
+            cos
+            ⁡
+            k
+            θ
+            +
+            
+              J
+              
+                k
+              
+            
+            sin
+            ⁡
+            k
+            θ
+          
+          ]
+        
+      
+    
+    {\displaystyle \Phi (\rho ,\theta )={\frac {-Q}{2\pi \epsilon }}\ln \rho '+{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }\rho ^{k}\left[I_{k}\cos k\theta +J_{k}\sin k\theta \right]}
+  
+
+where the moments are defined
+
+  
+    
+      
+        
+          
+            
+              
+                Q
+              
+              
+                
+                =
+                ∫
+                d
+                
+                  θ
+                  ′
+                
+                
+                d
+                
+                  ρ
+                  ′
+                
+                
+                
+                  ρ
+                  ′
+                
+                λ
+                (
+                
+                  ρ
+                  ′
+                
+                ,
+                
+                  θ
+                  ′
+                
+                )
+              
+            
+            
+              
+                
+                  I
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    k
+                  
+                
+                ∫
+                d
+                
+                  θ
+                  ′
+                
+                
+                d
+                
+                  ρ
+                  ′
+                
+                
+                  
+                    
+                      cos
+                      ⁡
+                      k
+                      
+                        θ
+                        ′
+                      
+                    
+                    
+                      
+                        (
+                        
+                          ρ
+                          ′
+                        
+                        )
+                      
+                      
+                        k
+                        −
+                        1
+                      
+                    
+                  
+                
+                λ
+                (
+                
+                  ρ
+                  ′
+                
+                ,
+                
+                  θ
+                  ′
+                
+                )
+              
+            
+            
+              
+                
+                  J
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    k
+                  
+                
+                ∫
+                d
+                
+                  θ
+                  ′
+                
+                
+                d
+                
+                  ρ
+                  ′
+                
+                
+                  
+                    
+                      sin
+                      ⁡
+                      k
+                      
+                        θ
+                        ′
+                      
+                    
+                    
+                      
+                        (
+                        
+                          ρ
+                          ′
+                        
+                        )
+                      
+                      
+                        k
+                        −
+                        1
+                      
+                    
+                  
+                
+                λ
+                (
+                
+                  ρ
+                  ′
+                
+                ,
+                
+                  θ
+                  ′
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}Q&=\int d\theta '\,d\rho '\,\rho '\lambda (\rho ',\theta ')\\I_{k}&={\frac {1}{k}}\int d\theta '\,d\rho '{\frac {\cos k\theta '}{\left(\rho '\right)^{k-1}}}\lambda (\rho ',\theta ')\\J_{k}&={\frac {1}{k}}\int d\theta '\,d\rho '{\frac {\sin k\theta '}{\left(\rho '\right)^{k-1}}}\lambda (\rho ',\theta ')\end{aligned}}}
+  
+
+
+== Interaction energies of cylindrical multipoles ==
+A simple formula for the interaction energy of cylindrical multipoles (charge density 1) with a second charge density can be derived. Let 
+  
+    
+      
+        f
+        (
+        
+          
+            r
+          
+          
+            ′
+          
+        
+        )
+      
+    
+    {\displaystyle f(\mathbf {r} ^{\prime })}
+  
+ be the second charge density, and define 
+  
+    
+      
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle \lambda (\rho ,\theta )}
+  
+ as its integral over z
+
+  
+    
+      
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+        =
+        ∫
+        d
+        z
+        
+        f
+        (
+        ρ
+        ,
+        θ
+        ,
+        z
+        )
+      
+    
+    {\displaystyle \lambda (\rho ,\theta )=\int dz\,f(\rho ,\theta ,z)}
+  
+
+The electrostatic energy is given by the integral of the charge multiplied by the potential due to the cylindrical multipoles
+
+  
+    
+      
+        U
+        =
+        ∫
+        d
+        θ
+        
+        d
+        ρ
+        
+        ρ
+        
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+        Φ
+        (
+        ρ
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle U=\int d\theta \,d\rho \,\rho \,\lambda (\rho ,\theta )\Phi (\rho ,\theta )}
+  
+
+If the cylindrical multipoles are exterior, this equation becomes
+
+  
+    
+      
+        U
+        =
+        
+          
+            
+              −
+              
+                Q
+                
+                  1
+                
+              
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ∫
+        d
+        ρ
+        
+        ρ
+        
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+        ln
+        ⁡
+        ρ
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        ∫
+        d
+        θ
+        
+        d
+        ρ
+        
+          [
+          
+            
+              C
+              
+                1
+                k
+              
+            
+            
+              
+                
+                  cos
+                  ⁡
+                  k
+                  θ
+                
+                
+                  ρ
+                  
+                    k
+                    −
+                    1
+                  
+                
+              
+            
+            +
+            
+              S
+              
+                1
+                k
+              
+            
+            
+              
+                
+                  sin
+                  ⁡
+                  k
+                  θ
+                
+                
+                  ρ
+                  
+                    k
+                    −
+                    1
+                  
+                
+              
+            
+          
+          ]
+        
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle U={\frac {-Q_{1}}{2\pi \epsilon }}\int d\rho \,\rho \,\lambda (\rho ,\theta )\ln \rho +{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }\int d\theta \,d\rho \left[C_{1k}{\frac {\cos k\theta }{\rho ^{k-1}}}+S_{1k}{\frac {\sin k\theta }{\rho ^{k-1}}}\right]\lambda (\rho ,\theta )}
+  
+
+where 
+  
+    
+      
+        
+          Q
+          
+            1
+          
+        
+      
+    
+    {\displaystyle Q_{1}}
+  
+, 
+  
+    
+      
+        
+          C
+          
+            1
+            k
+          
+        
+      
+    
+    {\displaystyle C_{1k}}
+  
+ and 
+  
+    
+      
+        
+          S
+          
+            1
+            k
+          
+        
+      
+    
+    {\displaystyle S_{1k}}
+  
+ are the cylindrical multipole moments of charge distribution 1. This energy formula can be reduced to a remarkably simple form
+
+  
+    
+      
+        U
+        =
+        
+          
+            
+              −
+              
+                Q
+                
+                  1
+                
+              
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ∫
+        d
+        ρ
+        
+        ρ
+        
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+        ln
+        ⁡
+        ρ
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        k
+        
+          (
+          
+            
+              C
+              
+                1
+                k
+              
+            
+            
+              I
+              
+                2
+                k
+              
+            
+            +
+            
+              S
+              
+                1
+                k
+              
+            
+            
+              J
+              
+                2
+                k
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle U={\frac {-Q_{1}}{2\pi \epsilon }}\int d\rho \,\rho \,\lambda (\rho ,\theta )\ln \rho +{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }k\left(C_{1k}I_{2k}+S_{1k}J_{2k}\right)}
+  
+
+where 
+  
+    
+      
+        
+          I
+          
+            2
+            k
+          
+        
+      
+    
+    {\displaystyle I_{2k}}
+  
+ and 
+  
+    
+      
+        
+          J
+          
+            2
+            k
+          
+        
+      
+    
+    {\displaystyle J_{2k}}
+  
+ are the interior cylindrical multipoles of the second charge density.  
+The analogous formula holds if charge density 1 is composed of interior cylindrical multipoles
+
+  
+    
+      
+        U
+        =
+        
+          
+            
+              −
+              
+                Q
+                
+                  1
+                
+              
+              ln
+              ⁡
+              
+                ρ
+                ′
+              
+            
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        ∫
+        d
+        ρ
+        
+        ρ
+        
+        λ
+        (
+        ρ
+        ,
+        θ
+        )
+        +
+        
+          
+            1
+            
+              2
+              π
+              ϵ
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        k
+        
+          (
+          
+            
+              C
+              
+                2
+                k
+              
+            
+            
+              I
+              
+                1
+                k
+              
+            
+            +
+            
+              S
+              
+                2
+                k
+              
+            
+            
+              J
+              
+                1
+                k
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle U={\frac {-Q_{1}\ln \rho '}{2\pi \epsilon }}\int d\rho \,\rho \,\lambda (\rho ,\theta )+{\frac {1}{2\pi \epsilon }}\sum _{k=1}^{\infty }k\left(C_{2k}I_{1k}+S_{2k}J_{1k}\right)}
+  
+
+where 
+  
+    
+      
+        
+          I
+          
+            1
+            k
+          
+        
+      
+    
+    {\displaystyle I_{1k}}
+  
+ and 
+  
+    
+      
+        
+          J
+          
+            1
+            k
+          
+        
+      
+    
+    {\displaystyle J_{1k}}
+  
+ are the interior cylindrical multipole moments of charge distribution 1, and 
+  
+    
+      
+        
+          C
+          
+            2
+            k
+          
+        
+      
+    
+    {\displaystyle C_{2k}}
+  
+ and 
+  
+    
+      
+        
+          S
+          
+            2
+            k
+          
+        
+      
+    
+    {\displaystyle S_{2k}}
+  
+ are the exterior cylindrical multipoles of the second charge density.
+As an example, these formulae could be used to determine the interaction energy of a small protein in the electrostatic field of a double-stranded DNA molecule; the latter is relatively straight and bears a constant linear charge density due to the phosphate groups of its backbone.
+
+
+== See also ==
+Axial multipole moments
+Potential theory
+Quantum cylindrical quadrupole
+Multipole expansion
+Spherical multipole moments

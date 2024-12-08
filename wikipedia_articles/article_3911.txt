@@ -1,0 +1,64 @@
+SMILES arbitrary target specification (SMARTS) is a language for specifying substructural patterns in molecules. The SMARTS line notation is expressive and allows extremely precise and transparent substructural specification and atom typing.
+SMARTS is related to the SMILES line notation that is used to encode molecular structures and like SMILES was originally developed by David Weininger and colleagues at The Pomona College Medicinal Chemistry Project (MedChem).  A SMARTS software search engine named GENIE was used as an additional user-specified search filter in the MedChem database searching tool MERLIN. GENIE was also used in the MedChem interpreted language GCL (GENIE Control Language), where input was a list of structures. In GCL, a SMARTS specification was used as an expression that could be used in control flow statements. For example "for (SMARTS) {...}" would loop over each substructure (of the currently examined structure) that matched a SMARTS specification.  Additional SMARTS development was made at Daylight Chemical Information Systems, Inc, which is a private company that was spun out of the software side of MedChem.
+The most comprehensive descriptions of the SMARTS language can be found in Daylight's SMARTS theory manual, tutorial  and examples. OpenEye Scientific Software has developed their own version of SMARTS which differs from the original Daylight version in how the R descriptor (see cyclicity below) is defined.
+
+
+== SMARTS syntax ==
+
+
+=== Atomic properties ===
+Atoms can be specified by symbol or atomic number.  Aliphatic carbon is matched by [C], aromatic carbon by [c] and any carbon by [#6] or [C,c].  The wild card symbols *, A and a match any atom, any aliphatic atom and any aromatic atom respectively.  Implicit hydrogens are considered to be a characteristic of atoms and the SMARTS for an amino group can be written as [NH2]. Charge is specified by the descriptors + and - as exemplified by the SMARTS [nH+] (protonated aromatic nitrogen atom) and [O-]C(=O)c (deprotonated aromatic carboxylic acid).
+
+
+=== Bonds ===
+A number of bond types can be specified: - (single), = (double), # (triple), : (aromatic) and ~ (any).
+
+
+=== Connectivity ===
+The X and D descriptors are used to specify the total numbers of connections (including implicit hydrogen atoms) and connections to explicit atoms, respectively.  Thus [CX4] matches carbon atoms with bonds to any four other atoms while [CD4] matches quaternary carbon.
+
+
+=== Cyclicity ===
+As originally defined by Daylight, the R descriptor is used to specify ring membership. In the Daylight model for cyclic systems, the smallest set of smallest rings (SSSR) is used as a basis for ring membership.  For example, indole is perceived as a 5-membered ring fused with a 6-membered ring rather than a 9-membered ring.  The two carbon atoms that make up the ring fusion would match [cR2] and the other carbon atoms would match [cR1].
+The SSSR model has been criticised by OpenEye who, in their implementation of SMARTS, use R to denote the number of ring bonds for an atom. The two carbon atoms in the ring fusion match [cR3] and the other carbons match [cR2] in the OpenEye implementation of SMARTS.  Used without a number, R specifies an atom in a ring in both implementations, for example [CR] (aliphatic carbon atom in ring). 
+Lower case r specifies the size of the smallest ring of which the atom is a member.  The carbon atoms of the ring fusion would both match [cr5]. Bonds can be specified as cyclic, for example C@C matches directly bonded atoms in a ring.
+
+
+=== Logical operators ===
+Four logical operators allow atom and bond descriptors to be combined.  The 'and' operator ; can be used to define a protonated primary amine as [N;H3;+][C;X4]. The 'or' operator , has a higher priority so [c,n;H] defines (aromatic carbon or aromatic nitrogen) with implicit hydrogen.  The 'and' operator & has higher priority than , so [c,n&H] defines aromatic carbon or (aromatic nitrogen with implicit hydrogen).
+The 'not' operator ! can be used to define unsaturated aliphatic carbon as [C;!X4] and acyclic bonds as *-!@*.
+
+
+=== Recursive SMARTS ===
+Recursive SMARTS allow detailed specification of an atom's environment.  For example, the more reactive (with respect to electrophilic aromatic substitution) ortho and para carbon atoms of phenol can be defined as [$(c1c([OH])cccc1),$(c1ccc([OH])cc1)].
+
+
+== Examples of SMARTS ==
+A number of illustrative examples of SMARTS have been assembled by Daylight.
+The definitions of hydrogen bond donors and acceptors used to apply Lipinski's Rule of Five are easily coded in SMARTS.  Donors are defined as nitrogen or oxygen atoms that have at least one directly bonded hydrogen atom:
+
+[N,n,O;!H0] or [#7,#8;!H0] (aromatic oxygen cannot have a bonded hydrogen)
+Acceptors are defined as nitrogen or oxygen:
+
+[N,n,O,o] or [#7,#8]
+A simple definition of aliphatic amines that are likely to protonate at physiological pH can be written as the following recursive SMARTS:
+
+[$([NH2][CX4]),$([NH]([CX4])[CX4]),$([NX3]([CX4])([CX4])[CX4])]
+In real applications the CX4 atoms would need to be defined more precisely to prevent matching against electron withdrawing groups such as CF3 that would render the amine insufficiently basic to protonate at physiological pH.  
+SMARTS can be used to encode pharmacophore elements such as anionic centers.  In the following example, recursive SMARTS notation is used to combine acid oxygen and tetrazole nitrogen in a definition of oxygen atoms that are likely to be anionic under normal physiological conditions.
+
+[$([OH][C,S,P]=O),$([nH]1nnnc1)]
+The SMARTS above would only match the acid hydroxyl and the tetrazole N−H. When a carboxylic acid deprotonates the negative charge is delocalised over both oxygen atoms and it may be desirable to designate both as anionic.  This can be achieved using the following SMARTS.
+
+[$([OH])C=O),$(O=C[OH])]
+
+
+== Applications of SMARTS ==
+The precise and transparent substructural specification that SMARTS allows has been exploited in a number of applications.
+Substructural filters defined in SMARTS have been used  to identify undesirable compounds when performing strategic pooling of compounds for high-throughput screening.  The REOS (rapid elimination of swill)  procedure uses SMARTS to filter out reactive, toxic and otherwise undesirable moieties from databases of chemical structures.  
+RECAP (Retrosynthetic Combinatorial Analysis Procedure) uses SMARTS to define bond types.  RECAP is a molecule editor which generates fragments of structures by breaking bonds of defined types and the original link points in these are specified using isotopic labels.  Searching databases of biologically active compounds for occurrences of fragments allows privileged structural motifs to be identified.  The Molecular Slicer  is similar to RECAP and has been used to identify fragments that are commonly found in marketed oral drugs. 
+The Leatherface program is a general purpose molecule editor which allows automated modification of a number of substructural features of molecules in databases, including protonation state, hydrogen count, formal charge, isotopic weight and bond order.  The molecular editing rules used by Leatherface are defined in SMARTS.  Leatherface can be used to standardise tautomeric and ionization states and to set and enumerate these in preparation of databases for virtual screening.  Leatherface has been used in Matched molecular pair analysis, which enables the effects of structural changes (e.g. substitution of hydrogen with chlorine) to be quantified, over a range of structural types.         
+ALADDIN is a pharmacophore matching program that uses SMARTS to define recognition points (e.g. neutral hydrogen bond acceptor) of pharmacophores. A key problem in pharmacophore matching is that functional groups that are likely to be ionised at physiological pH are typically registered in their neutral forms in structural databases. The ROCS shape matching program allows atom types to be defined using SMARTS.
+
+
+== Notes and references ==

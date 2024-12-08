@@ -1,0 +1,1814 @@
+In number theory, the study of Diophantine approximation deals with the approximation of real numbers by rational numbers.  It is named after Diophantus of Alexandria.
+The first problem was to know how well a real number can be approximated by rational numbers. For this problem, a rational number p/q is a "good" approximation of a real number α if the absolute value of the difference between p/q and α may not decrease if p/q is replaced by another rational number with a smaller denominator. This problem was solved during the 18th century by means of simple continued fractions.
+Knowing the "best" approximations of a given number, the main problem of the field is to find sharp upper and lower bounds of the above difference, expressed as a function of the denominator. It appears that these bounds depend on the nature of the real numbers to be approximated: the lower bound for the approximation of a rational number by another rational number is larger than the lower bound for algebraic numbers, which is itself larger than the lower bound for all real numbers. Thus a real number that may be better approximated than the bound for algebraic numbers is certainly a transcendental number. 
+This knowledge enabled Liouville, in 1844, to produce the first explicit transcendental number. Later, the proofs that π and e are transcendental were obtained by a similar method. 
+Diophantine approximations and transcendental number theory are very close areas that share many theorems and methods. Diophantine approximations also have important applications in the study of Diophantine equations.
+The 2022 Fields Medal was awarded to James Maynard for his work on Diophantine approximation.
+
+
+== Best Diophantine approximations of a real number ==
+
+Given a real number α, there are two ways to define a best Diophantine approximation of α. For the first definition, the rational number p/q is a best Diophantine approximation of α if
+
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          |
+          
+            α
+            −
+            
+              
+                
+                  p
+                  ′
+                
+                
+                  q
+                  ′
+                
+              
+            
+          
+          |
+        
+        ,
+      
+    
+    {\displaystyle \left|\alpha -{\frac {p}{q}}\right|<\left|\alpha -{\frac {p'}{q'}}\right|,}
+  
+
+for every rational number p'/q'  different from p/q such that 0 < q′ ≤ q.
+For the second definition, the above inequality is replaced by
+
+  
+    
+      
+        
+          |
+          
+            q
+            α
+            −
+            p
+          
+          |
+        
+        <
+        
+          |
+          
+            
+              q
+              
+                ′
+              
+            
+            α
+            −
+            
+              p
+              
+                ′
+              
+            
+          
+          |
+        
+        .
+      
+    
+    {\displaystyle \left|q\alpha -p\right|<\left|q^{\prime }\alpha -p^{\prime }\right|.}
+  
+
+A best approximation for the second definition is also a best approximation for the first one, but the converse is not true in general.
+The theory of continued fractions allows us to compute the best approximations of a real number: for the second definition, they are the convergents of its expression as a regular continued fraction.  For the first definition, one has to consider also the semiconvergents.
+For example, the constant e = 2.718281828459045235... has the (regular) continued fraction representation
+
+  
+    
+      
+        [
+        2
+        ;
+        1
+        ,
+        2
+        ,
+        1
+        ,
+        1
+        ,
+        4
+        ,
+        1
+        ,
+        1
+        ,
+        6
+        ,
+        1
+        ,
+        1
+        ,
+        8
+        ,
+        1
+        ,
+        …
+        
+        ]
+        .
+      
+    
+    {\displaystyle [2;1,2,1,1,4,1,1,6,1,1,8,1,\ldots \;].}
+  
+
+Its best approximations for the second definition are
+
+  
+    
+      
+        3
+        ,
+        
+          
+            
+              8
+              3
+            
+          
+        
+        ,
+        
+          
+            
+              11
+              4
+            
+          
+        
+        ,
+        
+          
+            
+              19
+              7
+            
+          
+        
+        ,
+        
+          
+            
+              87
+              32
+            
+          
+        
+        ,
+        …
+        
+        ,
+      
+    
+    {\displaystyle 3,{\tfrac {8}{3}},{\tfrac {11}{4}},{\tfrac {19}{7}},{\tfrac {87}{32}},\ldots \,,}
+  
+
+while, for the first definition, they are
+
+  
+    
+      
+        3
+        ,
+        
+          
+            
+              5
+              2
+            
+          
+        
+        ,
+        
+          
+            
+              8
+              3
+            
+          
+        
+        ,
+        
+          
+            
+              11
+              4
+            
+          
+        
+        ,
+        
+          
+            
+              19
+              7
+            
+          
+        
+        ,
+        
+          
+            
+              49
+              18
+            
+          
+        
+        ,
+        
+          
+            
+              68
+              25
+            
+          
+        
+        ,
+        
+          
+            
+              87
+              32
+            
+          
+        
+        ,
+        
+          
+            
+              106
+              39
+            
+          
+        
+        ,
+        …
+        
+        .
+      
+    
+    {\displaystyle 3,{\tfrac {5}{2}},{\tfrac {8}{3}},{\tfrac {11}{4}},{\tfrac {19}{7}},{\tfrac {49}{18}},{\tfrac {68}{25}},{\tfrac {87}{32}},{\tfrac {106}{39}},\ldots \,.}
+  
+
+
+== Measure of the accuracy of approximations ==
+The obvious measure of the accuracy of a Diophantine approximation of a real number α by a rational number p/q is 
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        .
+      
+    
+    {\textstyle \left|\alpha -{\frac {p}{q}}\right|.}
+  
+ However, this quantity can always be made arbitrarily small by increasing the absolute values of p and q; thus the accuracy of the approximation is usually estimated by comparing this quantity to some function φ of the denominator q, typically a negative power of it.
+For such a comparison, one may want upper bounds or lower bounds of the accuracy. A lower bound is typically described by a theorem like "for every element α of some subset of the real numbers and every rational number p/q, we have 
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        >
+        ϕ
+        (
+        q
+        )
+      
+    
+    {\textstyle \left|\alpha -{\frac {p}{q}}\right|>\phi (q)}
+  
+ ". In some cases, "every rational number" may be replaced by "all rational numbers except a finite number of them", which amounts to multiplying φ by some constant depending on α.
+For upper bounds, one has to take into account that not all the "best" Diophantine approximations provided by the convergents may have the desired accuracy. Therefore, the theorems take the form "for every element α of some subset of the real numbers, there are infinitely many rational numbers p/q such that 
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        ϕ
+        (
+        q
+        )
+      
+    
+    {\textstyle \left|\alpha -{\frac {p}{q}}\right|<\phi (q)}
+  
+ ".
+
+
+=== Badly approximable numbers ===
+A badly approximable number is an x for which there is a positive constant c such that for all rational p/q we have
+
+  
+    
+      
+        
+          |
+          
+            x
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        >
+        
+          
+            c
+            
+              q
+              
+                2
+              
+            
+          
+        
+         
+        .
+      
+    
+    {\displaystyle \left|{x-{\frac {p}{q}}}\right|>{\frac {c}{q^{2}}}\ .}
+  
+
+The badly approximable numbers are precisely those with bounded partial quotients.
+Equivalently, a number is badly approximable if and only if its Markov constant is finite and its simple continued fraction is bounded.
+
+
+== Lower bounds for Diophantine approximations ==
+
+
+=== Approximation of a rational by other rationals ===
+A rational number 
+  
+    
+      
+        α
+        =
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\textstyle \alpha ={\frac {a}{b}}}
+  
+ may be obviously and perfectly approximated by 
+  
+    
+      
+        
+          
+            
+              p
+              
+                i
+              
+            
+            
+              q
+              
+                i
+              
+            
+          
+        
+        =
+        
+          
+            
+              i
+              
+              a
+            
+            
+              i
+              
+              b
+            
+          
+        
+      
+    
+    {\textstyle {\frac {p_{i}}{q_{i}}}={\frac {i\,a}{i\,b}}}
+  
+ for every positive integer i.
+If 
+  
+    
+      
+        
+          
+            p
+            q
+          
+        
+        ≠
+        α
+        =
+        
+          
+            a
+            b
+          
+        
+        
+        ,
+      
+    
+    {\textstyle {\frac {p}{q}}\not =\alpha ={\frac {a}{b}}\,,}
+  
+ we have
+
+  
+    
+      
+        
+          |
+          
+            
+              
+                a
+                b
+              
+            
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        =
+        
+          |
+          
+            
+              
+                a
+                q
+                −
+                b
+                p
+              
+              
+                b
+                q
+              
+            
+          
+          |
+        
+        ≥
+        
+          
+            1
+            
+              b
+              q
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \left|{\frac {a}{b}}-{\frac {p}{q}}\right|=\left|{\frac {aq-bp}{bq}}\right|\geq {\frac {1}{bq}},}
+  
+
+because 
+  
+    
+      
+        
+          |
+        
+        a
+        q
+        −
+        b
+        p
+        
+          |
+        
+      
+    
+    {\displaystyle |aq-bp|}
+  
+ is a positive integer and is thus not lower than 1. Thus the accuracy of the approximation is bad relative to irrational numbers (see next sections).
+It may be remarked that the preceding proof uses a variant of the pigeonhole principle: a non-negative integer that is not 0 is not smaller than 1. This apparently trivial remark is used in almost every proof of lower bounds for Diophantine approximations, even the most sophisticated ones.
+In summary, a rational number is perfectly approximated by itself, but is badly approximated by any other rational number.
+
+
+=== Approximation of algebraic numbers, Liouville's result ===
+
+In the 1840s, Joseph Liouville obtained the first lower bound for the approximation of algebraic numbers: If x is an irrational algebraic number of degree n over the rational numbers, then there exists a constant c(x) > 0 such that
+
+  
+    
+      
+        
+          |
+          
+            x
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        >
+        
+          
+            
+              c
+              (
+              x
+              )
+            
+            
+              q
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle \left|x-{\frac {p}{q}}\right|>{\frac {c(x)}{q^{n}}}}
+  
+
+holds for all integers p and q where q > 0.
+This result allowed him to produce the first proven example of a transcendental number, the Liouville constant
+
+  
+    
+      
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          10
+          
+            −
+            j
+            !
+          
+        
+        =
+        0.110001000000000000000001000
+        …
+        
+        ,
+      
+    
+    {\displaystyle \sum _{j=1}^{\infty }10^{-j!}=0.110001000000000000000001000\ldots \,,}
+  
+
+which does not satisfy Liouville's theorem, whichever degree n is chosen.
+This link between Diophantine approximations and transcendental number theory continues to the present day. Many of the proof techniques are shared between the two areas.
+
+
+=== Approximation of algebraic numbers, Thue–Siegel–Roth theorem ===
+
+Over more than a century, there were many efforts to improve Liouville's theorem: every improvement of the bound enables us to prove that more numbers are transcendental. The main improvements are due to Axel Thue (1909), Siegel (1921), Freeman Dyson (1947), and Klaus Roth (1955), leading finally to the Thue–Siegel–Roth theorem: If x is an irrational algebraic number and ε > 0, then there exists a positive real number c(x, ε) such that
+
+  
+    
+      
+        
+          |
+          
+            x
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        >
+        
+          
+            
+              c
+              (
+              x
+              ,
+              ε
+              )
+            
+            
+              q
+              
+                2
+                +
+                ε
+              
+            
+          
+        
+      
+    
+    {\displaystyle \left|x-{\frac {p}{q}}\right|>{\frac {c(x,\varepsilon )}{q^{2+\varepsilon }}}}
+  
+
+holds for every integer p and q such that q > 0.
+In some sense, this result is optimal, as the theorem would be false with ε = 0. This is an immediate consequence of the upper bounds described below.
+
+
+=== Simultaneous approximations of algebraic numbers ===
+
+Subsequently, Wolfgang M. Schmidt generalized this to the case of simultaneous approximations, proving that: If x1, ..., xn are algebraic numbers such that 1, x1, ..., xn are linearly independent over the rational numbers and ε is any given positive real number, then there are only finitely many rational n-tuples (p1/q, ..., pn/q) such that
+
+  
+    
+      
+        
+          |
+          
+            
+              x
+              
+                i
+              
+            
+            −
+            
+              
+                
+                  p
+                  
+                    i
+                  
+                
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          q
+          
+            −
+            (
+            1
+            +
+            1
+            
+              /
+            
+            n
+            +
+            ε
+            )
+          
+        
+        ,
+        
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+        .
+      
+    
+    {\displaystyle \left|x_{i}-{\frac {p_{i}}{q}}\right|<q^{-(1+1/n+\varepsilon )},\quad i=1,\ldots ,n.}
+  
+
+Again, this result is optimal in the sense that one may not remove ε from the exponent.
+
+
+=== Effective bounds ===
+All preceding lower bounds are not effective, in the sense that the proofs do not provide any way to compute the constant implied in the statements. This means that one cannot use the results or their proofs to obtain bounds on the size of solutions of related Diophantine equations. However, these techniques and results can often be used to bound the number of solutions of such equations.
+Nevertheless, a refinement of Baker's theorem by Feldman provides an effective bound: if x is an algebraic number of degree n over the rational numbers, then there exist effectively computable constants c(x) > 0 and 0 < d(x) < n such that
+
+  
+    
+      
+        
+          |
+          
+            x
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        >
+        
+          
+            
+              c
+              (
+              x
+              )
+            
+            
+              
+                |
+              
+              q
+              
+                
+                  |
+                
+                
+                  d
+                  (
+                  x
+                  )
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \left|x-{\frac {p}{q}}\right|>{\frac {c(x)}{|q|^{d(x)}}}}
+  
+
+holds for all rational integers.
+However, as for every effective version of Baker's theorem, the constants d and 1/c are so large that this effective result cannot be used in practice.
+
+
+== Upper bounds for Diophantine approximations ==
+
+
+=== General upper bound ===
+
+The first important result about upper bounds for Diophantine approximations is Dirichlet's approximation theorem, which implies that, for every irrational number α, there are infinitely many fractions 
+  
+    
+      
+        
+          
+            
+              p
+              q
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\tfrac {p}{q}}\;}
+  
+ such that
+
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          
+            1
+            
+              q
+              
+                2
+              
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \left|\alpha -{\frac {p}{q}}\right|<{\frac {1}{q^{2}}}\,.}
+  
+
+This implies immediately that one cannot suppress the ε in the statement of Thue-Siegel-Roth theorem.
+Adolf Hurwitz (1891) strengthened this result, proving that for every irrational number α, there are infinitely many fractions 
+  
+    
+      
+        
+          
+            
+              p
+              q
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\tfrac {p}{q}}\;}
+  
+ such that
+
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          
+            1
+            
+              
+                
+                  5
+                
+              
+              
+                q
+                
+                  2
+                
+              
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \left|\alpha -{\frac {p}{q}}\right|<{\frac {1}{{\sqrt {5}}q^{2}}}\,.}
+  
+
+Therefore, 
+  
+    
+      
+        
+          
+            1
+            
+              
+                
+                  5
+                
+              
+              
+              
+                q
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{{\sqrt {5}}\,q^{2}}}}
+  
+ is an upper bound for the Diophantine approximations of any irrational number.
+The constant in this result may not be further improved without excluding some irrational numbers (see below).
+Émile Borel (1903) showed that, in fact, given any irrational number α, and given three consecutive convergents of α, at least one must satisfy the inequality given in Hurwitz's Theorem.
+
+
+=== Equivalent real numbers ===
+Definition: Two real numbers 
+  
+    
+      
+        x
+        ,
+        y
+      
+    
+    {\displaystyle x,y}
+  
+ are called equivalent if there are integers 
+  
+    
+      
+        a
+        ,
+        b
+        ,
+        c
+        ,
+        d
+        
+      
+    
+    {\displaystyle a,b,c,d\;}
+  
+ with 
+  
+    
+      
+        a
+        d
+        −
+        b
+        c
+        =
+        ±
+        1
+        
+      
+    
+    {\displaystyle ad-bc=\pm 1\;}
+  
+ such that:
+
+  
+    
+      
+        y
+        =
+        
+          
+            
+              a
+              x
+              +
+              b
+            
+            
+              c
+              x
+              +
+              d
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle y={\frac {ax+b}{cx+d}}\,.}
+  
+
+So equivalence is defined by an integer Möbius transformation on the real numbers, or by a member of the Modular group 
+  
+    
+      
+        
+          
+            SL
+          
+          
+            2
+          
+          
+            ±
+          
+        
+        (
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle {\text{SL}}_{2}^{\pm }(\mathbb {Z} )}
+  
+, the set of invertible 2 × 2 matrices over the integers. Each rational number is equivalent to 0; thus the rational numbers are an equivalence class for this relation.
+The equivalence may be read on the regular continued fraction representation, as shown by the following theorem of Serret:
+Theorem: Two irrational numbers x and y are equivalent if and only if there exist two positive integers h and k such that the regular continued fraction representations of x and y
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                [
+                
+                  u
+                  
+                    0
+                  
+                
+                ;
+                
+                  u
+                  
+                    1
+                  
+                
+                ,
+                
+                  u
+                  
+                    2
+                  
+                
+                ,
+                …
+                ]
+                
+                ,
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                [
+                
+                  v
+                  
+                    0
+                  
+                
+                ;
+                
+                  v
+                  
+                    1
+                  
+                
+                ,
+                
+                  v
+                  
+                    2
+                  
+                
+                ,
+                …
+                ]
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=[u_{0};u_{1},u_{2},\ldots ]\,,\\y&=[v_{0};v_{1},v_{2},\ldots ]\,,\end{aligned}}}
+  
+
+satisfy
+
+  
+    
+      
+        
+          u
+          
+            h
+            +
+            i
+          
+        
+        =
+        
+          v
+          
+            k
+            +
+            i
+          
+        
+      
+    
+    {\displaystyle u_{h+i}=v_{k+i}}
+  
+
+for every non negative integer i.
+Thus, except for a finite initial sequence, equivalent numbers have the same continued fraction representation.
+Equivalent numbers are approximable to the same degree, in the sense that they have the same Markov constant.
+
+
+=== Lagrange spectrum ===
+
+As said above, the constant in Borel's theorem may not be improved, as shown by Adolf Hurwitz in 1891.
+Let 
+  
+    
+      
+        ϕ
+        =
+        
+          
+            
+              
+                1
+                +
+                
+                  
+                    5
+                  
+                
+              
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \phi ={\tfrac {1+{\sqrt {5}}}{2}}}
+  
+ be the golden ratio.
+Then for any real constant c with 
+  
+    
+      
+        c
+        >
+        
+          
+            5
+          
+        
+        
+      
+    
+    {\displaystyle c>{\sqrt {5}}\;}
+  
+ there are only a finite number of rational numbers p/q such that 
+
+  
+    
+      
+        
+          |
+          
+            ϕ
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          
+            1
+            
+              c
+              
+              
+                q
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \left|\phi -{\frac {p}{q}}\right|<{\frac {1}{c\,q^{2}}}.}
+  
+
+Hence an improvement can only be achieved, if the numbers which are equivalent to 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ are excluded. More precisely:
+For every irrational number 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, which is not equivalent to 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+, there are infinite many fractions 
+  
+    
+      
+        
+          
+            
+              p
+              q
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\tfrac {p}{q}}\;}
+  
+ such that
+
+  
+    
+      
+        
+          |
+          
+            α
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          
+            1
+            
+              
+                
+                  8
+                
+              
+              
+                q
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \left|\alpha -{\frac {p}{q}}\right|<{\frac {1}{{\sqrt {8}}q^{2}}}.}
+  
+
+By successive exclusions — next one must exclude the numbers equivalent to 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ — of more and more classes of equivalence, the lower bound can be further enlarged.
+The values which may be generated in this way are Lagrange numbers, which are part of the Lagrange spectrum. 
+They converge to the number 3 and are related to the Markov numbers.
+
+
+== Khinchin's theorem on metric Diophantine approximation and extensions ==
+Let 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ be a positive real-valued function on positive integers  (i.e., a positive sequence) such that 
+  
+    
+      
+        q
+        ψ
+        (
+        q
+        )
+      
+    
+    {\displaystyle q\psi (q)}
+  
+ is non-increasing. A real number x (not necessarily algebraic) is called 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+-approximable if there exist infinitely many rational numbers  p/q such that
+
+  
+    
+      
+        
+          |
+          
+            x
+            −
+            
+              
+                p
+                q
+              
+            
+          
+          |
+        
+        <
+        
+          
+            
+              ψ
+              (
+              q
+              )
+            
+            
+              
+                |
+              
+              q
+              
+                |
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \left|x-{\frac {p}{q}}\right|<{\frac {\psi (q)}{|q|}}.}
+  
+
+Aleksandr Khinchin proved in 1926 that if the series 
+  
+    
+      
+        
+          ∑
+          
+            q
+          
+        
+        ψ
+        (
+        q
+        )
+      
+    
+    {\textstyle \sum _{q}\psi (q)}
+  
+ diverges, then almost every real number (in the sense of Lebesgue measure) is 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+-approximable, and if the series converges, then almost every real number is not 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+-approximable.  The circle of ideas surrounding this theorem and its relatives is known as metric Diophantine approximation or the metric theory of Diophantine approximation (not to be confused with height "metrics" in Diophantine geometry) or metric number theory.
+Duffin & Schaeffer (1941) proved a generalization of Khinchin's result, and posed what is now known as the Duffin–Schaeffer conjecture on the analogue of  Khinchin's dichotomy for general, not necessarily decreasing, sequences 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ . Beresnevich & Velani (2006) proved that a Hausdorff measure analogue of the Duffin–Schaeffer conjecture is equivalent to the original Duffin–Schaeffer conjecture, which is a priori weaker.
+In July 2019, Dimitris Koukoulopoulos and James Maynard announced a proof of the conjecture.
+
+
+=== Hausdorff dimension of exceptional sets ===
+An important example of a function 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ to which Khinchin's theorem can be applied is the function 
+  
+    
+      
+        
+          ψ
+          
+            c
+          
+        
+        (
+        q
+        )
+        =
+        
+          q
+          
+            −
+            c
+          
+        
+      
+    
+    {\displaystyle \psi _{c}(q)=q^{-c}}
+  
+, where c > 1 is a real number. For this function, the relevant series converges and so Khinchin's theorem tells us that almost every point is not 
+  
+    
+      
+        
+          ψ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \psi _{c}}
+  
+-approximable. Thus, the set of numbers which are 
+  
+    
+      
+        
+          ψ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \psi _{c}}
+  
+-approximable forms a subset of the real line of Lebesgue measure zero. The Jarník-Besicovitch theorem, due to V. Jarník and A. S. Besicovitch, states that the Hausdorff dimension of this set is equal to 
+  
+    
+      
+        1
+        
+          /
+        
+        c
+      
+    
+    {\displaystyle 1/c}
+  
+. In particular, the set of numbers which are 
+  
+    
+      
+        
+          ψ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \psi _{c}}
+  
+-approximable for some 
+  
+    
+      
+        c
+        >
+        1
+      
+    
+    {\displaystyle c>1}
+  
+ (known as the set of very well approximable numbers) has Hausdorff dimension one, while the set of numbers which are 
+  
+    
+      
+        
+          ψ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \psi _{c}}
+  
+-approximable for all 
+  
+    
+      
+        c
+        >
+        1
+      
+    
+    {\displaystyle c>1}
+  
+ (known as the set of Liouville numbers) has Hausdorff dimension zero.
+Another important example is the function 
+  
+    
+      
+        
+          ψ
+          
+            ε
+          
+        
+        (
+        q
+        )
+        =
+        ε
+        
+          q
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle \psi _{\varepsilon }(q)=\varepsilon q^{-1}}
+  
+, where 
+  
+    
+      
+        ε
+        >
+        0
+      
+    
+    {\displaystyle \varepsilon >0}
+  
+ is a real number. For this function, the relevant series diverges and so Khinchin's theorem tells us that almost every number is 
+  
+    
+      
+        
+          ψ
+          
+            ε
+          
+        
+      
+    
+    {\displaystyle \psi _{\varepsilon }}
+  
+-approximable. This is the same as saying that every such number is well approximable, where a number is called well approximable if it is not badly approximable. So an appropriate analogue of the Jarník-Besicovitch theorem should concern the Hausdorff dimension of the set of badly approximable numbers. And indeed, V. Jarník proved that the Hausdorff dimension of this set is equal to one. This result was improved by W. M. Schmidt, who showed that the set of badly approximable numbers is incompressible, meaning that if 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        ,
+        
+          f
+          
+            2
+          
+        
+        ,
+        …
+      
+    
+    {\displaystyle f_{1},f_{2},\ldots }
+  
+ is a sequence of bi-Lipschitz maps, then the set of numbers x for which 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        (
+        x
+        )
+        ,
+        
+          f
+          
+            2
+          
+        
+        (
+        x
+        )
+        ,
+        …
+      
+    
+    {\displaystyle f_{1}(x),f_{2}(x),\ldots }
+  
+ are all badly approximable has Hausdorff dimension one. Schmidt also generalized Jarník's theorem to higher dimensions, a significant achievement because Jarník's argument is essentially one-dimensional, depending on the apparatus of continued fractions.
+
+
+== Uniform distribution ==
+
+Another topic that has seen a thorough development is the theory of uniform distribution mod 1. Take a sequence a1, a2, ... of real numbers and consider their fractional parts. That is, more abstractly, look at the sequence in 
+  
+    
+      
+        
+          R
+        
+        
+          /
+        
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {R} /\mathbb {Z} }
+  
+, which is a circle. For any interval I on the circle we look at the proportion of the sequence's elements that lie in it, up to some integer N, and compare it to the proportion of the circumference occupied by I. Uniform distribution means that in the limit, as N grows, the proportion of hits on the interval tends to the 'expected' value. Hermann Weyl proved a basic result showing that this was equivalent to bounds for exponential sums formed from the sequence. This showed that Diophantine approximation results were closely related to the general problem of cancellation in exponential sums, which occurs throughout analytic number theory in the bounding of error terms.
+Related to uniform distribution is the topic of irregularities of distribution, which is of a combinatorial nature.
+
+
+== Algorithms ==
+Grotschel, Lovasz and Schrijver describe algorithms for finding approximately-best diophantine approximations, both for individual real numbers and for set of real numbers. The latter problem is called simultaneous diophantine approximation.: Sec. 5.2 
+
+
+== Unsolved problems ==
+
+There are still simply stated unsolved problems remaining in Diophantine approximation, for example the Littlewood conjecture and the lonely runner conjecture.
+It is also unknown if there are algebraic numbers with unbounded coefficients in their continued fraction expansion.
+
+
+== Recent developments ==
+
+In his plenary address at the International Mathematical Congress in Kyoto (1990), Grigory Margulis outlined a broad program rooted in ergodic theory that allows one to prove number-theoretic results using the dynamical and ergodic properties of actions of subgroups of semisimple Lie groups. The work of D. Kleinbock, G. Margulis and their collaborators demonstrated the power of this novel approach to classical problems in Diophantine approximation. Among its notable successes are the proof of the decades-old Oppenheim conjecture by Margulis, with later extensions by Dani and Margulis and Eskin–Margulis–Mozes, and the proof of Baker and Sprindzhuk conjectures in the Diophantine approximations on manifolds by Kleinbock and Margulis. Various generalizations of the above results of Aleksandr Khinchin in metric Diophantine approximation have also been obtained within this framework.
+
+
+== See also ==
+Davenport–Schmidt theorem
+Duffin–Schaeffer theorem
+Heilbronn set
+Low-discrepancy sequence
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Diophantine Approximation: historical survey Archived 2012-02-14 at the Wayback Machine. From Introduction to Diophantine methods course by Michel Waldschmidt.
+"Diophantine approximations", Encyclopedia of Mathematics, EMS Press, 2001 [1994]

@@ -1,0 +1,42 @@
+C-Bus is a communications protocol based on a seven-layer OSI model for home and building automation that can handle cable lengths up to 1000 metres using Cat-5 cable.  It is used in Australia, New Zealand, Asia, the Middle East, Russia, United States, South Africa, the UK and, other parts of Europe including Greece and Romania.  C-Bus was created by Clipsal Australia's Clipsal Integrated Systems division (now part of Schneider Electric) for use with its brand of home automation and building lighting control system. C-Bus has been briefly available in the United States but Schneider Electric has now discontinued sales in the United States.
+C-Bus is used in the control of domotics, or home automation systems, as well as commercial building lighting control systems.
+Unlike the more common X10 protocol which uses a signal imposed upon the AC power line, C-Bus uses a dedicated low-voltage cable or two-way wireless network to carry command and control signals. This improves the reliability of command transmission and makes C-Bus far more suitable for large, commercial applications than X10.
+
+
+== C-Bus system ==
+The C-Bus system can be used to control lighting and other electrical systems and products automatically or via remote control and can also be interfaced to a home security system, AV products or other electrical items. The C-Bus system is available in a wired version and a wireless version, with a gateway available to allow messages to be sent between wired and wireless networks.
+The wired C-Bus system uses a standard category 5 UTP (Unshielded Twisted Pair) cable as its network communications cable and does not require end-of-line termination.  Clipsal manufactures a specific category 5 cable for use within electrical distribution panels.  This cable has a pink outer sheath which is rated to ensure adequate electrical isolation between the mains voltages found in distribution panels and the extra low voltage C-Bus.  Outside of distribution panels standard category 5 UTP cable can be used.
+The category 5 C-Bus network wiring uses a free topology architecture. The maximum length of cable used on a C-Bus network is 1000 metres; however, this is easily extended using C-Bus Network Bridges.  Up to 100 units can be installed on a C-Bus network and this can also be extended using Network Bridges.
+The maximum number of C-Bus networks in one installation is 255 (note that this limitation does not apply if a C-Bus Ethernet Interface is used, the system size is then limited to IP Addressing only).  The maximum number of networks connected in series to the local network via Network Bridges is seven (i.e. using six network bridges).
+Each standard C-Bus unit requires 18mA @ 15-36Vdc to operate, however some C-Bus units require up to 40mA.
+More than one C-Bus power supply can be connected to a C-Bus network to provide sufficient power to the C-Bus units, the C-Bus power supplies will share the load evenly.
+Each C-Bus network requires a network burden if there are insufficient C-Bus units on the network. A network burden decreases impedance on the C-Bus network. This can be enabled on C-Bus output units through software or a hardware burden can be connected to the network.
+Each C-Bus network requires at least one system clock-generating unit for data synchronization.
+The isolation between the main supply circuitry and the 36 V DC C-Bus circuitry is greater than 3.5 kV. This is achieved using double wound transformers and opto isolators. This means the C-Bus wiring, connections and circuitry can be considered Extra Low Voltage.
+
+
+== Wiring design of C-Bus systems ==
+With conventional wiring, the mains power (120 / 230 V) is wired from the distribution board (DB) to the load (for example, a ceiling light) via a wall switch.
+
+In C-Bus systems, the connections between the DB and (for example) the ceiling lights, and between the DB and the junction box (wall switch) are completely separate. In addition, there are no connections between the junction box and the respective ceiling lights.
+
+The power control in a C-Bus system lies in a “Dimmer” or “Relay” which is installed in the DB and replaces the traditional switch used in conventional wiring. This Dimmer (or Relay) has a 120/230 V Line interconnection directly to the ceiling light and a neutral connection back from the ceiling light to the Dimmer. The Dimmer will control the light directly and will receive its commands from another device on the C-Bus network (for example, a wall-mounted light switch/keypad). This wall-mounted light switch would not be connected to any load whatsoever; it would be directly connected with the Dimmer with a control/signaling cable. The Dimmers normally come as 4-, 8- or 12-channel DIN-rail mounted devices.
+
+
+== C-Bus interoperability ==
+As of 9 December 2008, Clipsal opened its C-Bus protocols to anyone who wants to interact with it programmatically.
+Using one of Clipsal's C-Bus interface modules (PCI for RS232 or USB and CNI for Ethernet TCP/IP), you can interact with other home automation systems, or with applications on devices like Android, iPad or iPhone.
+The C-Bus protocol was developed using the OSI 7-layer reference model. C-Bus supports several interfaces such as RS232 and TCP/IP and makes these protocols available to third-party companies.
+C-Bus interface specifications are available through the C-Bus Enabled Program, however it is necessary to agree to a license agreement.
+
+
+== Geographic use of C-Bus and compatibility ==
+C-Bus as a home automation and commercial building lighting control system is used primarily in Australia, China and New Zealand. C-Bus is currently available in Asia, the United Kingdom (installed in Number 10 Downing Street, Wembley Stadium and Manchester City Football Club), Russia and a number of other countries are now using this system. The C-Bus wireless (RF) system and wired C-Bus Occupancy Controllers can be retrofitted using the existing mains wiring.
+C-Bus is compatible with Translink C-Bus Gateway, OPC, DALI, DSI, BACnet, TCP/IP, Control4, Crestron, AMX, RTI, LonWorks, ModBus, Charmed Quark Controller, the Comfort Intelligent Home System and some other protocols through interfaces.
+
+
+== References ==
+
+
+== External links ==
+C-Bus Enabled Program — Program for accessing the C-Bus protocol.

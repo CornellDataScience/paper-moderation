@@ -1,0 +1,1208 @@
+Cronbach's alpha (Cronbach's 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+), also known as tau-equivalent reliability (
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+) or coefficient alpha (coefficient 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+), is a reliability coefficient and a measure of the internal consistency of tests and measures. It was named after the American psychologist Lee Cronbach. 
+Numerous studies warn against using Cronbach's alpha unconditionally. Statisticians regard reliability coefficients based on structural equation modeling (SEM) or generalizability theory as superior alternatives in many situations.
+
+
+== History ==
+In his initial 1951 publication, Lee Cronbach described the coefficient as Coefficient alpha and included an additional derivation. Coefficient alpha had been used implicitly in previous studies, but his interpretation was thought to be more intuitively attractive relative to previous studies and it became quite popular. 
+
+In 1967, Melvin Novick and Charles Lewis proved that it was equal to reliability if the true scores of the compared tests or measures vary by a constant, which is independent of the people measured. In this case, the tests or measurements were said to be "essentially tau-equivalent."
+In 1978, Cronbach asserted that the reason the initial 1951 publication was widely cited was "mostly because [he] put a brand name on a common-place coefficient.": 263  He explained that he had originally planned to name other types of reliability coefficients, such as those used in inter-rater reliability and test-retest reliability, after consecutive Greek letters (i.e., 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+, 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+, etc.), but later changed his mind.
+Later, in 2004, Cronbach and Richard Shavelson encouraged readers to use generalizability theory rather than 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+. Cronbach opposed the use of the name "Cronbach's alpha" and explicitly denied the existence of studies that had published the general formula of KR-20 before Cronbach's 1951 publication of the same name.
+
+
+== Prerequisites for using Cronbach's alpha ==
+To use Cronbach's alpha as a reliability coefficient, the following conditions must be met:
+
+The data is normally distributed and linear;
+The compared tests or measures are essentially tau-equivalent;
+Errors in the measurements are independent.
+
+
+== Formula and calculation ==
+Cronbach's alpha is calculated by taking a score from each scale item and correlating it with the total score for each observation. The resulting correlations are then compared with the variance for all individual item scores. Cronbach's alpha is best understood as a function of the number of questions or items in a measure, the average covariance between pairs of items, and the overall variance of the total measured score.
+  
+    
+      
+        α
+        =
+        
+          
+            k
+            
+              k
+              −
+              1
+            
+          
+        
+        
+          (
+          
+            1
+            −
+            
+              
+                
+                  
+                    ∑
+                    
+                      i
+                      =
+                      1
+                    
+                    
+                      k
+                    
+                  
+                  
+                    σ
+                    
+                      
+                        y
+                        
+                          i
+                        
+                      
+                    
+                    
+                      2
+                    
+                  
+                
+                
+                  σ
+                  
+                    y
+                  
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \alpha ={k \over k-1}\left(1-{\sum _{i=1}^{k}\sigma _{y_{i}}^{2} \over \sigma _{y}^{2}}\right)}
+  
+where:
+
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ represents the number of items in the measure
+
+  
+    
+      
+        
+          σ
+          
+            
+              y
+              
+                i
+              
+            
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma _{y_{i}}^{2}}
+  
+ the variance associated with each item i
+
+  
+    
+      
+        
+          σ
+          
+            y
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma _{y}^{2}}
+  
+ the variance associated with the total scores 
+  
+    
+      
+        
+          
+            (
+          
+        
+        y
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            k
+          
+        
+        
+          y
+          
+            i
+          
+        
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\Bigg (}y=\sum _{i=1}^{k}y_{i}{\Bigg )}}
+  
+
+Alternatively, it can be calculated through the following formula:
+
+  
+    
+      
+        α
+        =
+        
+          
+            
+              k
+              
+                
+                  
+                    c
+                    ¯
+                  
+                
+              
+            
+            
+              
+                
+                  
+                    v
+                    ¯
+                  
+                
+              
+              +
+              (
+              k
+              −
+              1
+              )
+              
+                
+                  
+                    c
+                    ¯
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \alpha ={k{\bar {c}} \over {\bar {v}}+(k-1){\bar {c}}}}
+  
+
+where:
+
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {v}}}
+  
+ represents the average variance
+
+  
+    
+      
+        
+          
+            
+              c
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {c}}}
+  
+ represents the average inter-item covariance.
+
+
+== Common misconceptions ==
+
+
+=== The value of Cronbach's alpha ranges between zero and one ===
+By definition, reliability cannot be less than zero and cannot be greater than one. Many textbooks mistakenly equate 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ with reliability and give an inaccurate explanation of its range. 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ can be less than reliability when applied to data that are not essentially tau-equivalent. Suppose that 
+  
+    
+      
+        
+          X
+          
+            2
+          
+        
+      
+    
+    {\displaystyle X_{2}}
+  
+ copied the value of 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+      
+    
+    {\displaystyle X_{1}}
+  
+ as it is, and 
+  
+    
+      
+        
+          X
+          
+            3
+          
+        
+      
+    
+    {\displaystyle X_{3}}
+  
+ copied by multiplying the value of 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+      
+    
+    {\displaystyle X_{1}}
+  
+ by -1.
+The covariance matrix between items is as follows, 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+        =
+        −
+        3
+      
+    
+    {\displaystyle \rho _{T}=-3}
+  
+.
+
+Negative 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ can occur for reasons such as negative discrimination or mistakes in processing reversely scored items.
+Unlike 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+, SEM-based reliability coefficients (e.g., 
+  
+    
+      
+        
+          ρ
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \rho _{C}}
+  
+) are always greater than or equal to zero.
+This anomaly was first pointed out by Cronbach (1943) to criticize 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+, but Cronbach (1951) did not comment on this problem in his article that otherwise discussed potentially problematic issues related 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+.: 396 
+
+
+=== If there is no measurement error, the value of Cronbach's alpha is one. ===
+This anomaly also originates from the fact that 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ underestimates reliability. 
+Suppose that 
+  
+    
+      
+        
+          X
+          
+            2
+          
+        
+      
+    
+    {\displaystyle X_{2}}
+  
+ copied the value of 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+      
+    
+    {\displaystyle X_{1}}
+  
+ as it is, and 
+  
+    
+      
+        
+          X
+          
+            3
+          
+        
+      
+    
+    {\displaystyle X_{3}}
+  
+ copied by multiplying the value of 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+      
+    
+    {\displaystyle X_{1}}
+  
+ by two. 
+The covariance matrix between items is as follows, 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+        =
+        0.9375
+      
+    
+    {\displaystyle \rho _{T}=0.9375}
+  
+.
+
+For the above data, both 
+  
+    
+      
+        
+          ρ
+          
+            P
+          
+        
+      
+    
+    {\displaystyle \rho _{P}}
+  
+ and 
+  
+    
+      
+        
+          ρ
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \rho _{C}}
+  
+ have a value of one.
+The above example is presented by Cho and Kim (2015).
+
+
+=== A high value of Cronbach's alpha indicates homogeneity between the items ===
+Many textbooks refer to 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ as an indicator of homogeneity between items. This misconception stems from the inaccurate explanation of Cronbach (1951) that high 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ values show homogeneity between the items. Homogeneity is a term that is rarely used in modern literature, and related studies interpret the term as referring to uni-dimensionality. Several studies have provided proofs or counterexamples that high 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ values do not indicate uni-dimensionality. See counterexamples below.
+
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+        =
+        0.72
+      
+    
+    {\displaystyle \rho _{T}=0.72}
+  
+ in the uni-dimensional data above.
+
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+        =
+        0.72
+      
+    
+    {\displaystyle \rho _{T}=0.72}
+  
+ in the multidimensional data above.
+
+The above data have 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+        =
+        0.9692
+      
+    
+    {\displaystyle \rho _{T}=0.9692}
+  
+, but are multidimensional.
+
+The above data have 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+        =
+        0.4
+      
+    
+    {\displaystyle \rho _{T}=0.4}
+  
+, but are uni-dimensional.
+Uni-dimensionality is a prerequisite for 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+. One should check uni-dimensionality before calculating 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ rather than calculating 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ to check uni-dimensionality.
+
+
+=== A high value of Cronbach's alpha indicates internal consistency ===
+The term "internal consistency" is commonly used in the reliability literature, but its meaning is not clearly defined. The term is sometimes used to refer to a certain kind of reliability (e.g., internal consistency reliability), but it is unclear exactly which reliability coefficients are included here, in addition to 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+. Cronbach (1951) used the term in several senses without an explicit definition. Cho and Kim (2015) showed that 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ is not an indicator of any of these.
+
+
+=== Removing items using "alpha if item deleted" always increases reliability ===
+Removing an item using "alpha if item deleted" may result in 'alpha inflation,' where sample-level reliability is reported to be higher than population-level reliability. It may also reduce population-level reliability. The elimination of less-reliable items should be based not only on a statistical basis but also on a theoretical and logical basis. It is also recommended that the whole sample be divided into two and cross-validated.
+
+
+== Ideal reliability level and how to increase reliability ==
+
+
+=== Nunnally's recommendations for the level of reliability ===
+Nunnally's book is often mentioned as the primary source for determining the appropriate level of dependability coefficients. However, his proposals contradict his aims as he suggests that different criteria should be used depending on the goal or stage of the investigation. Regardless of the type of study, whether it is exploratory research, applied research, or scale development research, a criterion of 0.7 is universally employed. He advocated 0.7 as a criterion for the early stages of a study, most studies published in the journal do not fall under that category. Rather than 0.7, Nunnally's applied research criterion of 0.8 is more suited for most empirical studies.
+
+His recommendation level did not imply a cutoff point. If a criterion means a cutoff point, it is important whether or not it is met, but it is unimportant how much it is over or under. He did not mean that it should be strictly 0.8 when referring to the criteria of 0.8. If the reliability has a value near 0.8 (e.g., 0.78), it can be considered that his recommendation has been met.
+
+
+=== Cost to obtain a high level of reliability ===
+Nunnally's idea was that there is a cost to increasing reliability, so there is no need to try to obtain maximum reliability in every situation.
+
+
+==== Trade-off with validity ====
+Measurements with perfect reliability lack validity. For example, a person who takes the test with a reliability of one will either receive a perfect score or a zero score, because if they answer one item correctly or incorrectly, they will answer all other items in the same manner. The phenomenon where validity is sacrificed to increase reliability is known as the attenuation paradox.
+A high value of reliability can conflict with content validity. To achieve high content validity, each item should comprehensively represent the content to be measured. However, a strategy of repeatedly measuring essentially the same question in different ways is often used solely to increase reliability.
+
+
+==== Trade-off with efficiency ====
+When the other conditions are equal, reliability increases as the number of items increases. However, the increase in the number of items hinders the efficiency of measurements.
+
+
+=== Methods to increase reliability ===
+Despite the costs associated with increasing reliability discussed above, a high level of reliability may be required. The following methods can be considered to increase reliability.
+Before data collection:
+
+Eliminate the ambiguity of the measurement item.
+Do not measure what the respondents do not know.
+Increase the number of items. However, care should be taken not to excessively inhibit the efficiency of the measurement.
+Use a scale that is known to be highly reliable.
+Conduct a pretest - discover in advance the problem of reliability.
+Exclude or modify items that are different in content or form from other items (e.g., reverse-scored items).
+After data collection:
+
+Remove the problematic items using "alpha if item deleted". However, this deletion should be accompanied by a theoretical rationale.
+Use a more accurate reliability coefficient than 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+. For example, 
+  
+    
+      
+        
+          ρ
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \rho _{C}}
+  
+ is 0.02 larger than 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ on average.
+
+
+== Which reliability coefficient to use ==
+
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ is used in an overwhelming proportion. A study estimates that approximately 97% of studies use 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ as a reliability coefficient.
+However, simulation studies comparing the accuracy of several reliability coefficients have led to the common result that 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ is an inaccurate reliability coefficient.
+Methodological studies are critical of the use of 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+. Simplifying and classifying the conclusions of existing studies are as follows.
+
+Conditional use: Use 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ only when certain conditions are met.
+Opposition to use: 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ is inferior and should not be used.
+
+
+=== Alternatives to Cronbach's alpha ===
+Existing studies are practically unanimous in that they oppose the widespread practice of using 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ unconditionally for all data. However, different opinions are given on which reliability coefficient should be used instead of 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+.
+Different reliability coefficients ranked first in each simulation study comparing the accuracy of several reliability coefficients.
+The majority opinion is to use structural equation modeling or SEM-based reliability coefficients as an alternative to 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+.
+However, there is no consensus on which of the several SEM-based reliability coefficients (e.g., uni-dimensional or multidimensional models) is the best to use.
+Some people suggest 
+  
+    
+      
+        
+          ω
+          
+            H
+          
+        
+      
+    
+    {\displaystyle \omega _{H}}
+  
+ as an alternative, but 
+  
+    
+      
+        
+          ω
+          
+            H
+          
+        
+      
+    
+    {\displaystyle \omega _{H}}
+  
+ shows information that is completely different from reliability. 
+  
+    
+      
+        
+          ω
+          
+            H
+          
+        
+      
+    
+    {\displaystyle \omega _{H}}
+  
+ is a type of coefficient comparable to Reveille's 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+. They do not substitute, but complement reliability.
+Among SEM-based reliability coefficients, multidimensional reliability coefficients are rarely used, and the most commonly used is 
+  
+    
+      
+        
+          ρ
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \rho _{C}}
+  
+, also known as composite or congeneric reliability.
+
+
+==== Software for SEM-based reliability coefficients ====
+General-purpose statistical software such as SPSS and SAS include a function to calculate 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+. Users who don't know the formula 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ have no problem in obtaining the estimates with just a few mouse clicks.
+SEM software such as AMOS, LISREL, and MPLUS does not have a function to calculate SEM-based reliability coefficients. Users need to calculate the result by inputting it to the formula. To avoid this inconvenience and possible error, even studies reporting the use of SEM rely on 
+  
+    
+      
+        
+          ρ
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \rho _{T}}
+  
+ instead of SEM-based reliability coefficients. There are a few alternatives to automatically calculate SEM-based reliability coefficients.
+
+R (free): The psych package calculates various reliability coefficients.
+EQS (paid): This SEM software has a function to calculate reliability coefficients.
+RelCalc (free): Available with Microsoft Excel. 
+  
+    
+      
+        
+          ρ
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \rho _{C}}
+  
+ can be obtained without the need for SEM software. Various multidimensional SEM reliability coefficients and various types of 
+  
+    
+      
+        
+          ω
+          
+            H
+          
+        
+      
+    
+    {\displaystyle \omega _{H}}
+  
+ can be calculated based on the results of SEM software.
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Cronbach's alpha SPSS tutorial
+The free web interface and R package cocoon allow us to statistically compare two or more dependent or independent Cronbach alpha coefficients.

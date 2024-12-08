@@ -1,0 +1,63 @@
+Database scalability is the ability of a database to handle changing demands by adding/removing resources. Databases use a host of techniques to cope. According to Marc Brooker: "a system is scalable in the range where marginal cost of additional workload is nearly constant." Serverless technologies fit this definition but you need to consider total cost of ownership not just the infra cost. 
+
+
+== History ==
+The initial history of database scalability was to provide service on ever smaller computers. The first database management systems such as IMS ran on mainframe computers. The second generation, including Ingres, Informix, Sybase, RDB and Oracle emerged on minicomputers. The third generation, including dBase and Oracle (again), ran on personal computers.
+During the same period, attention turned to handling more data and more demanding workloads. One key software innovation in the late 1980s was to reduce update locking granularity from tables and disk blocks to individual rows. This eliminated a critical scalability bottleneck, as coarser locks could delay access to rows even though they were not directly involved in a transaction. Earlier systems were completely insensitive to increasing resources.
+Once software limitations had been addressed, attention turned to hardware. Innovation occurred in many areas. The first was to support multiprocessor computers. This involved allowing multiple processors to handle database requests simultaneously, without blocking each other. This evolved into support for multi-core processors.
+A much more significant change involved allowing distributed transactions to affect data stored on separate computers, using the two-phase commit protocol, establishing the shared-nothing architecture.
+Still later, Oracle introduced the shared-everything architecture, which provided full functionality on multi-server clusters.
+Another innovation was storing copies of tables on multiple computers (database replication), which both improved availability (processing could continue on a copy even if the main system was unavailable) and scalability particularly for query/analysis, in that requests could be routed to the copy if the primary reached its capacity.
+In the early twenty-first century, NoSQL systems gained favor over relational databases for some workloads. Motivations included still greater scalability and support for documents and other "non-relational" data types. Often sacrificed was the strict ACID consistency protocols that guaranteed perfect consistency at all times in favor of eventual consistency that ensured that all nodes would eventually return the latest data. Some even allowed for transactions to occasionally be lost, as long as the system could handle sufficiently many requests. The most prominent early system was Google's BigTable/MapReduce, developed in 2004. It achieved near-linear scalability across multiple server farms, at the cost of features such as multi-row transactions and joins.
+In 2007, the first NewSQL system, H-Store, was developed. NewSQL systems attempt to combine NoSQL scalability with ACID transactions and SQL interfaces.
+
+
+== Dimensions ==
+Database scalability has three basic dimensions: amount of data, volume of requests and size of requests. Requests come in many sizes: transactions generally affect small amounts of data, but may approach thousands per second; analytic queries are generally fewer, but may access more data. A related concept is elasticity, the ability of a system to transparently add and subtract capacity to meet changing workloads.
+
+
+=== Vertical ===
+Vertical database scaling implies that the database system can fully exploit maximally configured systems, including typically multiprocessors with large memories and vast storage capacity. Such systems are relatively simple to administer, but may offer reduced availability. However, any single computer has a maximum configuration. If workloads expand beyond that limit, the choices are either to migrate to a different, still larger system, or to rearchitect the system to achieve horizontal scalability.
+
+
+=== Horizontal ===
+Horizontal database scaling involves adding more servers to work on a single workload. Most horizontally scalable systems come with functionality compromises. If an application requires more functionality, migration to a vertically scaled system may be preferable.
+
+
+== Techniques ==
+
+
+=== Hardware ===
+Databases run on individual hardware ranging in capacity from smartwatches to supercomputers to multiple transparently reconfigurable server farms. Databases also scaled vertically to run on 64-bit microprocessors, multi-core CPUs, and large SMP multiprocessors, using multi-threaded implementations.
+
+
+=== Contention ===
+Fully exploiting a hardware configuration requires a variety of locking techniques, ranging from locking an entire database to entire tables to disk blocks to individual table rows. The appropriate lock granularity depends on the workload. The smaller the object that is locked, the less the chance of database requests blocking each other, while the hardware idles. Typically row locks are necessary to support high volume transaction processing applications at the cost of processing overhead to manage the larger number of locks.
+Further, some systems ensure that a query sees a time-consistent view of the database by locking data that a query is examining to prevent an update from modifying it, stalling work. Alternatively, some databases use multi-version read consistency to avoid (blocking) read locks while still providing consistent query results.
+Another potential bottleneck can occur in some systems when many requests attempt to access the same data at the same time. For example, in OLTP systems, many transactions may attempt to insert data into the same table at the same time. In a shared nothing system, at any given moment, all such inserts are processed by the single server that manages that partition (shard) of the table, possibly overwhelming it, while the rest of the system has little to do. Many such tables use a sequence number as their primary key that increases for each new inserted row. The index for that key can also experience contention (overheat) as it processes those inserts. One solution for this is to reverse the digits of the primary key. This spreads the inserts into both the table and the key across multiple parts of the database.
+
+
+=== Partitioning ===
+A basic technique is to split large tables into multiple partitions based on ranges of values in a key field. For example, the data for each year could be held on a separate disk drive or on a separate computer. Partitioning removes limits on the sizes of a single table.
+
+
+=== Replication ===
+Replicated databases maintain copies of tables or databases on multiple computers. This scaling technique is particularly convenient for seldom or never-updated data, such as transaction history or tax tables.
+
+
+=== Clustered computers ===
+A variety of approaches are used to scale beyond the limits of a single computer. HP Enterprise's NonStop SQL uses the shared nothing architecture in which neither data nor memory are shared across server boundaries. A coordinator routes database requests to the correct server. This architecture provides near-linear scalability.
+The widely supported X/Open XA standard employs a global transaction monitor to coordinate distributed transactions among semi-autonomous XA-compliant transaction resources.
+Oracle RAC uses a different model to achieve scalability, based on a "shared-everything" architecture. This approach incorporates the shared disk approach that allows multiple computers to access any disk in the cluster. Network-attached storage (NAS) and Storage area networks (SANs) coupled with local area networks and Fibre Channel technology enable such configurations. The approach includes a "shared" logical cache in which data that has been cached in memory on server is made available to other servers without requiring them to again read the data from disk. Each page is moved from server to server to satisfy requests. Updates generally happen very quickly so that a "popular" page can be updated by multiple transactions with little delay. This approach is claimed to support clusters containing up to 100 servers.
+Some researchers question the inherent limitations of relational database management systems. GigaSpaces, for example, contends that space-based architecture is required to achieve performance and scalability. Base One makes the case for extreme scalability within mainstream relational database technology.
+
+
+== See also ==
+Relational database
+Scalability
+
+
+== References ==
+
+
+== External links ==

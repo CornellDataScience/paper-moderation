@@ -1,0 +1,507 @@
+Loop-level parallelism is a form of parallelism in software programming that is concerned with extracting parallel tasks from loops. The opportunity for loop-level parallelism often arises in computing programs where data is stored in random access data structures. Where a sequential program will iterate over the data structure and operate on indices one at a time, a program exploiting loop-level parallelism will use multiple threads or processes which operate on some or all of the indices at the same time. Such parallelism provides a speedup to overall execution time of the program, typically in line with Amdahl's law.
+
+
+== Description ==
+For simple loops, where each iteration is independent of the others, loop-level parallelism can be embarrassingly parallel, as parallelizing only requires assigning a process to handle each iteration. However, many algorithms are designed to run sequentially, and fail when parallel processes race due to dependence within the code. Sequential algorithms are sometimes applicable to parallel contexts with slight modification. Usually, though, they require process synchronization. Synchronization can be either implicit, via message passing, or explicit, via synchronization primitives like semaphores.
+
+
+== Example ==
+Consider the following code operating on a list L of length n.
+
+Each iteration of the loop takes the value from the current index of L, and increments it by 10. If statement S1 takes T time to execute, then the loop takes time n * T to execute sequentially, ignoring time taken by loop constructs. Now, consider a system with p processors where p > n. If n threads run in parallel, the time to execute all n steps is reduced to T.
+Less simple cases produce inconsistent, i.e. non-serializable outcomes. Consider the following loop operating on the same list L.
+
+Each iteration sets the current index to be the value of the previous plus ten. When run sequentially, each iteration is guaranteed that the previous iteration will already have the correct value. With multiple threads, process scheduling and other considerations prevent the execution order from guaranteeing an iteration will execute only after its dependence is met. It very well may happen before, leading to unexpected results. Serializability can be restored by adding synchronization to preserve the dependence on previous iterations.
+
+
+== Dependencies in code ==
+There are several types of dependences that can be found within code.
+
+In order to preserve the sequential behaviour of a loop when run in parallel, True Dependence must be preserved. Anti-Dependence and Output Dependence can be dealt with by giving each process its own copy of variables (known as privatization).
+
+
+=== Example of true dependence ===
+
+S2 ->T S3, meaning that S2 has a true dependence on S3 because S2 writes to the variable a, which S3 reads from.
+
+
+=== Example of anti-dependence ===
+
+S2 ->A S3, meaning that S2 has an anti-dependence on S3 because S2 reads from the variable b before S3 writes to it.
+
+
+=== Example of output-dependence ===
+
+S2 ->O S3, meaning that S2 has an output dependence on S3 because both write to the variable a.
+
+
+=== Example of input-dependence ===
+
+S2 ->I S3, meaning that S2 has an input dependence on S3 because S2 and S3 both read from variable c.
+
+
+== Dependence in loops ==
+
+
+=== Loop-carried vs loop-independent dependence ===
+Loops can have two types of dependence:
+
+Loop-carried dependence
+Loop-independent dependence
+In loop-independent dependence, loops have inter-iteration dependence, but do not have dependence between iterations. Each iteration may be treated as a block and performed in parallel without other synchronization efforts.
+In the following example code used for swapping the values of two array of length n, there is a loop-independent dependence of S1 ->T S3.
+
+In loop-carried dependence, statements in an iteration of a loop depend on statements in another iteration of the loop. Loop-Carried Dependence uses a modified version of the dependence notation seen earlier.
+Example of loop-carried dependence where S1[i] ->T S1[i + 1], where i indicates the current iteration, and i + 1 indicates the next iteration.
+
+
+=== Loop carried dependence graph ===
+A Loop-carried dependence graph graphically shows the loop-carried dependencies between iterations. Each iteration is listed as a node on the graph, and directed edges show the true, anti, and output dependencies between each iteration.
+
+
+== Types ==
+There are a variety of methodologies for parallelizing loops.
+
+DISTRIBUTED Loop
+DOALL Parallelism
+DOACROSS Parallelism
+HELIX 
+DOPIPE Parallelism
+Each implementation varies slightly in how threads synchronize, if at all. In addition, parallel tasks must somehow be mapped to a process. These tasks can either be allocated statically or dynamically. Research has shown that load-balancing can be better achieved through some dynamic allocation algorithms than when done statically.
+The process of parallelizing a sequential program can be broken down into the following discrete steps. Each concrete loop-parallelization below implicitly performs them.
+
+
+=== DISTRIBUTED loop ===
+When a loop has a loop-carried dependence, one way to parallelize it is to distribute the loop into several different loops. Statements that are not dependent on each other are separated so that these distributed loops can be executed in parallel. For example, consider the following code. 
+
+The loop has  a loop carried dependence S1[i] ->T S1[i+1] but S2 and S1 do not have a loop-independent dependence so we can rewrite the code as follows. 
+
+Note that now loop1 and loop2 can be executed in parallel. Instead of single instruction being performed in parallel on different data as in data level parallelism, here different loops perform different tasks on different data. Let's say the time of execution of S1 and S2 be 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{1}}}
+  
+ and 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{2}}}
+  
+ then the execution time for sequential form of above code is 
+  
+    
+      
+        n
+        ∗
+        (
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        +
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle n*(T_{S_{1}}+T_{S_{2}})}
+  
+, Now because we split the two statements and put them in two different loops, gives us an execution time of 
+  
+    
+      
+        n
+        ∗
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        +
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle n*T_{S_{1}}+T_{S_{2}}}
+  
+. We call this type of parallelism either function or task parallelism.
+
+
+=== DOALL parallelism ===
+DOALL parallelism exists when statements within a loop can be executed independently (situations where there is no loop-carried dependence). For example, the following code does not read from the array a, and does not update the arrays b, c. No iterations have a dependence on any other iteration.
+
+Let's say the time of one execution of S1 be 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{1}}}
+  
+ then the execution time for sequential form of above code is 
+  
+    
+      
+        n
+        ∗
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle n*T_{S_{1}}}
+  
+, Now because DOALL Parallelism exists when all iterations are independent, speed-up may be achieved by executing all iterations in parallel which gives us an execution time of 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{1}}}
+  
+, which is the time taken for one iteration in sequential execution.
+The following example, using a simplified pseudo code, shows how a loop might be parallelized to execute each iteration independently.
+
+
+=== DOACROSS parallelism ===
+DOACROSS Parallelism exists where iterations of a loop are parallelized by extracting calculations that can be performed independently and running them simultaneously.
+Synchronization exists to enforce loop-carried dependence.
+Consider the following, synchronous loop with dependence S1[i] ->T S1[i+1].
+
+Each loop iteration performs two actions
+
+Calculate a[i-1] + b[i] + 1
+Assign the value to a[i]
+Calculating the value a[i-1] + b[i] + 1, and then performing the assignment can be decomposed into two lines(statements S1 and S2):
+
+The first line, int tmp = b[i] + 1;, has no loop-carried dependence. The loop can then be parallelized by computing the temp value in parallel, and then synchronizing the assignment to a[i].
+
+Let's say the time of execution of S1 and S2 be 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{1}}}
+  
+ and 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{2}}}
+  
+ then the execution time for sequential form of above code is 
+  
+    
+      
+        n
+        ∗
+        (
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        +
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle n*(T_{S_{1}}+T_{S_{2}})}
+  
+, Now because DOACROSS Parallelism exists, speed-up may be achieved by executing iterations in a pipelined fashion which gives us an execution time of 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        +
+        n
+        ∗
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{1}}+n*T_{S_{2}}}
+  
+.
+
+
+=== DOPIPE parallelism ===
+DOPIPE Parallelism implements pipelined parallelism for loop-carried dependence where a loop iteration is distributed over multiple, synchronized loops. The goal of DOPIPE is to act like an assembly line, where one stage is started as soon as there is sufficient data available for it from the previous stage.
+Consider the following, synchronous code with dependence S1[i] ->T S1[i+1].
+
+S1 must be executed sequentially, but S2 has no loop-carried dependence. S2 could be executed in parallel using DOALL Parallelism after performing all calculations needed by S1 in series. However, the speedup is limited if this is done. A better approach is to parallelize such that the S2 corresponding to each S1 executes when said S1 is finished.
+Implementing pipelined parallelism results in the following set of loops, where the second loop may execute for an index as soon as the first loop has finished its corresponding index.
+
+Let's say the time of execution of S1 and S2 be 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{1}}}
+  
+ and 
+  
+    
+      
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle T_{S_{2}}}
+  
+ then the execution time for sequential form of above code is 
+  
+    
+      
+        n
+        ∗
+        (
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        +
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle n*(T_{S_{1}}+T_{S_{2}})}
+  
+, Now because DOPIPE Parallelism exists, speed-up may be achieved by executing iterations in a pipelined fashion which gives us an execution time of 
+  
+    
+      
+        n
+        ∗
+        
+          T
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        +
+        (
+        n
+        
+          /
+        
+        p
+        )
+        ∗
+        
+          T
+          
+            
+              S
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle n*T_{S_{1}}+(n/p)*T_{S_{2}}}
+  
+, where p is the number of processor in parallel.
+
+
+== See also ==
+Data parallelism
+DOACROSS parallelism
+Task parallelism
+Parallelism using different types of memory models like shared and distributed and Message Passing
+
+
+== References ==

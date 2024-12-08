@@ -1,0 +1,254 @@
+In geometry, a triacontagon or 30-gon  is a thirty-sided polygon. The sum of any triacontagon's interior angles is 5040 degrees.
+
+
+== Regular triacontagon ==
+The regular triacontagon is a constructible polygon, by an edge-bisection of a regular pentadecagon, and can also be constructed as a truncated pentadecagon, t{15}. A truncated triacontagon, t{30}, is a hexacontagon, {60}.
+One interior angle in a regular triacontagon is 168 degrees, meaning that one exterior angle would be 12°. The triacontagon is the largest regular polygon whose interior angle is the sum of the interior angles of smaller polygons: 168° is the sum of the interior angles of the equilateral triangle (60°) and the regular pentagon (108°).
+The area of a regular triacontagon is (with t = edge length)
+
+  
+    
+      
+        A
+        =
+        
+          
+            15
+            2
+          
+        
+        
+          t
+          
+            2
+          
+        
+        cot
+        ⁡
+        
+          
+            π
+            30
+          
+        
+        =
+        
+          
+            15
+            4
+          
+        
+        
+          t
+          
+            2
+          
+        
+        
+          (
+          
+            
+              
+                15
+              
+            
+            +
+            3
+            
+              
+                3
+              
+            
+            +
+            
+              
+                2
+              
+            
+            
+              
+                25
+                +
+                11
+                
+                  
+                    5
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle A={\frac {15}{2}}t^{2}\cot {\frac {\pi }{30}}={\frac {15}{4}}t^{2}\left({\sqrt {15}}+3{\sqrt {3}}+{\sqrt {2}}{\sqrt {25+11{\sqrt {5}}}}\right)}
+  
+
+The inradius of a regular triacontagon is
+
+  
+    
+      
+        r
+        =
+        
+          
+            1
+            2
+          
+        
+        t
+        cot
+        ⁡
+        
+          
+            π
+            30
+          
+        
+        =
+        
+          
+            1
+            4
+          
+        
+        t
+        
+          (
+          
+            
+              
+                15
+              
+            
+            +
+            3
+            
+              
+                3
+              
+            
+            +
+            
+              
+                2
+              
+            
+            
+              
+                25
+                +
+                11
+                
+                  
+                    5
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle r={\frac {1}{2}}t\cot {\frac {\pi }{30}}={\frac {1}{4}}t\left({\sqrt {15}}+3{\sqrt {3}}+{\sqrt {2}}{\sqrt {25+11{\sqrt {5}}}}\right)}
+  
+
+The circumradius of a regular triacontagon is
+
+  
+    
+      
+        R
+        =
+        
+          
+            1
+            2
+          
+        
+        t
+        csc
+        ⁡
+        
+          
+            π
+            30
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        t
+        
+          (
+          
+            2
+            +
+            
+              
+                5
+              
+            
+            +
+            
+              
+                15
+                +
+                6
+                
+                  
+                    5
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle R={\frac {1}{2}}t\csc {\frac {\pi }{30}}={\frac {1}{2}}t\left(2+{\sqrt {5}}+{\sqrt {15+6{\sqrt {5}}}}\right)}
+  
+
+
+=== Construction ===
+
+As 30 = 2 × 3 × 5 , a regular triacontagon is constructible using a compass and straightedge.
+
+
+== Symmetry ==
+
+The regular triacontagon has Dih30 dihedral symmetry, order 60, represented by 30 lines of reflection. Dih30 has 7 dihedral subgroups: Dih15, (Dih10, Dih5), (Dih6, Dih3), and (Dih2, Dih1). It also has eight more cyclic symmetries as subgroups: (Z30, Z15), (Z10, Z5), (Z6, Z3), and (Z2, Z1), with Zn representing π/n radian rotational symmetry.
+John Conway labels these lower symmetries with a letter and order of the symmetry follows the letter. He gives d (diagonal) with mirror lines through vertices, p with mirror lines through edges (perpendicular), i with mirror lines through both vertices and edges, and g for rotational symmetry. a1 labels no symmetry.
+These lower symmetries allows degrees of freedoms in defining irregular triacontagons. Only the g30 subgroup has no degrees of freedom but can be seen as directed edges.
+
+
+== Dissection ==
+
+Coxeter states that every zonogon (a 2m-gon whose opposite sides are parallel and of equal length) can be dissected into m(m-1)/2 parallelograms.
+In particular this is true for regular polygons with evenly many sides, in which case the parallelograms are all rhombi.  For the regular triacontagon, m=15, it can be divided into 105: 7 sets of 15 rhombs. This decomposition is based on a Petrie polygon projection of a 15-cube.
+
+
+== Triacontagram ==
+A triacontagram is a 30-sided star polygon (though the word is extremely rare). There are 3 regular forms given by Schläfli symbols {30/7}, {30/11}, and {30/13}, and 11 compound star figures with the same vertex configuration.
+
+There are also isogonal triacontagrams constructed as deeper truncations of the regular pentadecagon {15} and pentadecagram {15/7}, and inverted pentadecagrams {15/11}, and {15/13}. Other truncations form double coverings: t{15/14}={30/14}=2{15/7}, t{15/8}={30/8}=2{15/4}, t{15/4}={30/4}=2{15/4}, and t{15/2}={30/2}=2{15}.
+
+
+== Petrie polygons ==
+The regular triacontagon is the Petrie polygon for three 8-dimensional polytopes with E8 symmetry, shown in orthogonal projections in the E8 Coxeter plane. It is also the Petrie polygon for two 4-dimensional polytopes, shown in the H4 Coxeter plane.
+
+The regular triacontagram {30/7} is also the Petrie polygon for the great grand stellated 120-cell and grand 600-cell.
+
+
+== References ==
+
+Naming Polygons and Polyhedra
+triacontagon

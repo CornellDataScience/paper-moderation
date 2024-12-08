@@ -1,0 +1,33 @@
+In computing, a programmable interrupt controller (PIC) is an integrated circuit that helps a microprocessor (or CPU) handle interrupt requests (IRQs) coming from multiple different sources (like external I/O devices) which may occur simultaneously. It helps prioritize IRQs so that the CPU switches execution to the most appropriate interrupt handler (ISR) after the PIC assesses the IRQs' relative priorities. Common modes of interrupt priority include hard priorities, rotating priorities, and cascading priorities.  PICs often allow mapping input to outputs in a configurable way. On the PC architecture PIC are typically embedded into a southbridge chip whose internal architecture is defined by the chipset vendor's standards.
+
+
+== Common features ==
+PICs typically have a common set of registers: interrupt request register (IRR), in-service register (ISR), and interrupt mask register (IMR). The IRR specifies which interrupts are pending acknowledgement, and is typically a symbolic register which can not be directly accessed. The ISR register specifies which interrupts have been acknowledged, but are still waiting for an end of interrupt (EOI). The IMR specifies which interrupts are to be ignored and not acknowledged. A simple register schema such as this allows up to two distinct interrupt requests to be outstanding at one time, one waiting for acknowledgement, and one waiting for EOI.
+There are a number of common priority schemas in PICs including hard priorities, specific priorities, and rotating priorities.
+Interrupts may be either edge triggered or level triggered.
+There are a number of common ways of acknowledging an interrupt has completed when an EOI is issued. These include specifying which interrupt completed, using an implied interrupt which has completed (usually the highest priority pending in the ISR), and treating interrupt acknowledgement as the EOI.
+
+
+== Well-known types ==
+One of the best known PICs, the 8259A, was included in the x86 PC. In modern times, this is not included as a separate chip in an x86 PC, but rather as part of the motherboard's southbridge chipset. In other cases, it has been replaced by the newer Advanced Programmable Interrupt Controllers which support more interrupt outputs and more flexible priority schemas.
+
+
+== See also ==
+Intel 8259 – notable PIC from Intel
+OpenPIC and IBM MPIC
+Inter-processor interrupt (IPI)
+Interrupt latency
+Non-maskable interrupt (NMI)
+IRQL (Windows)
+
+
+== Further reading ==
+More information on the Intel APIC can be found in the IA-32 Intel Architecture Software Developer's Manual, Volume 3A: System Programming Guide, Part 1, Chapter 10, freely available on the Intel website.
+
+
+== References ==
+
+
+== External links ==
+IA-32 Intel Architecture Software Developer's Manual, Volume 3A
+Interrupt controller and associated registers.

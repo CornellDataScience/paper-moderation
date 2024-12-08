@@ -1,0 +1,17 @@
+The SpaceOrb 360 is a 6DOF computer input device that is designed to be operated with two hands. Each of the 6 axes have 10-bit precision each when measuring the amount of force or torque applied. It has two right-index-finger buttons and four right-thumb buttons. It interfaces with a computer through an RS-232 serial port using a custom binary protocol. Drivers for the device exist for Mac OS, Microsoft Windows and Linux. Logitech had similar 6DOF devices during the same time period called the Cyberman and Cyberman II.
+The device was released in 1996, the same year as popular 3D games such as Descent II and Quake. It was originally called the Spaceball Avenger II, a sequel to SpaceTec's Spaceball Avenger. The SpaceOrb was especially suited for the gameplay of Descent because of the complete freedom-of-motion afforded by its rendering engine. There was strong support for the device in both Quake and Quake II, but the WASD-type keyboard-and-mouse controls eventually became more popular. As of the Half-Life engine (based on the original Quake source), there was specific support for the SpaceOrb's capabilities. Developers later started to drop variable movement speed support, which reduced the 10bit translation force measurement to 1bit per direction.
+It was originally manufactured and sold by the SpaceTec IMC company (first bought by Labtec, which itself was later bought by Logitech). The device is no longer sold nor supported by Logitech. It has been supplanted by more modern devices sold under Logitech's 3Dconnexion brand, which are all one-handed 3DMice that afford the other hand the freedom to interact with the keyboard/mouse.
+In 2009, a SpaceOrb fan with the username "vputz" has designed Arduino add ons (OrbDuino, OrbShield, Orbotron) to make SpaceOrbs available over USB, making it compatible with modern operating systems by emulating joystick, mouse, and/or keyboard.
+
+
+== ASCII Sphere 360 ==
+ASCII Entertainment (later Agetec) bought the SpaceOrb 360 design and technology license to manufacture the ASCII Sphere 360 model for the original Sony PlayStation.
+
+
+== References ==
+
+
+== External links ==
+www.jaycrowe.com is Birdman's SpaceOrb Messageboard.
+[1] AGETEC ASCII Sphere 360 product page.
+[2] LGR Oddware: SpaceOrb 360 RealLife 3D Game Controller

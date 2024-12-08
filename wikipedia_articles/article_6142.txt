@@ -1,0 +1,68 @@
+Trinity (or ATS-1) is a United States supercomputer built by the National Nuclear Security Administration (NNSA) for the Advanced Simulation and Computing Program (ASC). The aim of the ASC program is to simulate, test, and maintain the United States nuclear stockpile. 
+
+
+== History ==
+Trinity succeeded Cielo
+December 2013, The National Energy Research Scientific Computing Center (NERSC) and The Alliance for Computing at Extreme Scale (ACES) releases a joint RFP with technical requirements for Trinity.
+July 2014, Cray announces that they were awarded the $174 Million contract by the National Nuclear Security Administration to provide a next generation supercomputer to Los Alamos National Laboratory.
+June 2015, Haswell Partition installation begins.
+November 2015, Trinity appears on the Supercomputing Top500 list at #6.
+June 2016, Knights Landing Partition installation begins.
+November 2016, Trinity falls to #10 on the Top500 list.
+July 2017, The Haswell and KNL partitions are merged.
+November 2018, Trinity regains #6 spot on the Top500 list.
+December 2020, Trinity falls to #13 on the Top500 list.
+Trinity's successor will be Crossroads.
+
+
+== Trinity technical specifications ==
+
+
+== Compute Tier ==
+Trinity was built in 2 stages. The first stage incorporated the Intel Xeon Haswell processor while the second stage added a significant performance increase using the Intel Xeon Phi Knights Landing Processor.
+There are 301,952 Haswell and  678,912 Knights Landing processors in the combined system, yielding a total peak performance of over 40 PF/s (petaflops)
+
+
+== Storage Tiers ==
+There are 5 primary storage tiers; Memory, Burst Buffer, Parallel File System, Campaign Storage, and Archive.
+
+
+=== Memory ===
+2 PiB of DDR4 DRAM provide physical memory for the machine. Each processor also has DRAM built on to the tile, providing additional memory capacity. The data in this tier is highly transient and is typically in residence for only a few seconds, being overwritten continuously.
+
+
+=== Burst Buffer ===
+Cray supplies the three hundred XC40 Data Warp blades that each contain 2 Burst Buffer nodes and 4 SSD drives.  There is a total of 3.78 PB of storage in this tier, capable of moving data at a rate of up to 2 TB/s. In this tier, data is typically resident for a few hours, with data being overwritten in approximately that same time frame.
+
+
+=== Parallel File System ===
+Trinity uses a Sonexion based Lustre file system with a total capacity of 78 PB. Throughput on this tier is about 1.8 TB/s (1.6 TiB/s). It is used to stage data in preparation for HPC operations.
+Data residence in this tier is typically several weeks.
+
+
+=== Campaign Storage ===
+The MarFS Filesystem fits into the Campaign Storage tier and combines properties of POSIX and Object storage models.
+The capacity of this tier is growing at a rate of about 30 PB/year, with a current capacity of over 100 PB.
+In testing, LANL scientists were able to create 968 billion files in a single directory at a rate of 835 million file creations per second.
+This storage is designed to be more robust than typical object storage, while sacrificing some of the end user functionality that you would get from a POSIX system.
+Performance of this tier is between 100-300 GB/s of throughput.
+Data residence in this tier is longer term, typically lasting several months.
+
+
+==== Key Design goals ====
+Transparency
+Data protection
+Recoverability
+Ease of administration
+MarFS is an open source filesystem.
+
+
+=== Archive ===
+The final layer of storage is the Archive. This is a HPSS tape file system that holds approximately 100 PB of data.
+
+
+== See also ==
+Sierra (supercomputer) - ATS-2, the second Advanced Technology System
+
+
+== References ==

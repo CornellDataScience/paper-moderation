@@ -1,0 +1,75 @@
+The Text Encoding Initiative (TEI) is a text-centric community of practice in the academic field of digital humanities, operating continuously since the 1980s. The community currently runs a mailing list, meetings and conference series, and maintains the TEI technical standard, a journal, a wiki, a GitHub repository and a toolchain.
+
+
+== TEI guidelines ==
+The TEI Guidelines collectively define a type of XML format, and are the defining output of the community of practice. The format differs from other well-known open formats for text (such as HTML and OpenDocument) in that it is primarily semantic rather than presentational: the semantics and interpretation of every tag and attribute are specified. There are some 500 different textual components and concepts: word, sentence, character, glyph, person,
+etc. Each is grounded in one or more academic disciplines and examples are given.
+
+
+=== Technical details ===
+The standard is split into two parts, a discursive textual description with extended examples and discussion and set of tag-by-tag definitions. Schemata in most of the modern formats (DTD, RELAX NG and XML Schema (W3C)) are generated automatically from the tag-by-tag definitions. A number of tools support the production of the guidelines and the application of the guidelines to specific projects.
+A number of special tags are used to circumvent restrictions imposed by the underlying Unicode; glyph to allow representation of characters that do not qualify for Unicode inclusion and choice to allow overcome the required strict linearity.
+Most users of the format do not use the complete range of tags, but produce a customisation using a project-specific subset of the tags and attributes defined by the Guidelines. The TEI defines a sophisticated customization mechanism known as ODD for this purpose. In addition to documenting and describing each TEI tag, an ODD specification specifies its content model and other usage constraints, which may be expressed using schematron.
+TEI Lite is an  example of such a customization. It defines an XML-based file format for exchanging texts.  It is a manageable selection from the extensive set of elements available in the full TEI Guidelines.
+As an XML-based format, TEI cannot directly deal with overlapping markup and non-hierarchical structures. A variety of options to represent this sort of data is suggested by the guidelines.
+
+
+=== Examples ===
+The text of the TEI guidelines is rich in examples. There is also a samples page on the TEI wiki, which gives examples of real-world projects that expose their underlying TEI.
+
+
+==== Prose tags ====
+TEI allows texts to be marked up syntactically at any level of granularity, or mixture of granularities. For example, this paragraph (p) has been marked up into sentences (s) and clauses (cl).
+
+
+==== Verse ====
+TEI has tags for marking up verse. This example (taken from the French translation of the TEI Guidelines) shows a sonnet.
+
+
+==== Choice tag ====
+The choice tag is used to represent sections of text that might be encoded or tagged in more than one possible way. In the following example, based on one in the standard, choice is used twice, once to indicate an original and a corrected number, and once to indicate an original and regularised spelling.
+
+
+== ODD ==
+One Document Does it all ("ODD") is a literate programming language for XML schemas.
+In literate-programming style, ODD documents combine human-readable documentation and machine-readable models using the  Documentation Elements module of the Text Encoding Initiative. Tools generate localised and internationalised HTML, ePub, or PDF human-readable output and DTDs, W3C XML Schema, Relax NG Compact Syntax, or Relax NG XML Syntax machine-readable output.
+The Roma web application is built around the ODD format and can use it to  generate schemas in DTD, W3C XML Schema, Relax NG Compact Syntax, or Relax NG XML Syntax formats, as used by many XML validation tools and services.
+ODD is the format used internally by the Text Encoding Initiative for the TEI technical standard. Although ODD files generally describe the difference between a customized XML format and the full TEI model, ODD also can be used to describe XML formats that are entirely separate from the TEI.  One example of this is the  W3C's Internationalization Tag Set which uses the ODD format to generate schemas and document its vocabulary.
+
+
+== TEI customizations ==
+TEI customizations are specializations of the TEI XML specification for use in particular fields or by specific communities.
+
+EpiDoc (Epigraphic Documents)
+Charters Encoding Initiative
+Medieval Nordic Text Archive (Menota)
+Customization in the TEI is done through the ODD mechanism mentioned above. In truth since its P5 version, all so-called 'TEI Conformant' uses of the TEI Guidelines are based on a TEI customization documented in a TEI ODD file. Even when users choose one of the off-the-shelf pre-generated schemas to validate against, these have been created from freely available customization files.
+
+
+== Projects ==
+The format is used by many projects worldwide. Practically all projects are associated with one or more universities. Some well-known projects that encode texts using TEI include:
+
+
+== History ==
+Prior to the creation of TEI, humanities scholars had no common standards for encoding electronic texts in a manner that would serve their academic goals (Hockey 1993, p. 41).  In 1987, a group of scholars representing fields in humanities, linguistics, and computing convened at Vassar College to put forth a set of guidelines known as the “Poughkeepsie Principles”. These guidelines directed the development of the first TEI standard, "P1".
+
+1987 – Work started by the Association for Computers and the Humanities, the Association for Computational Linguistics, and the Association for Literary and Linguistic Computing on what would become the TEI. This culminated in the Closing statement of the Vassar Planning Conference.
+1994 – TEI P3 released,  co-edited by  Lou Burnard (at Oxford University) and Michael Sperberg-McQueen (then at the University of Illinois at Chicago, later at the W3C).
+1999 – TEI P3 updated.
+2002 – TEI P4 released, moving from SGML to XML; adoption of Unicode, which XML parsers are required to support.
+2007 – TEI P5 released, including integration with the xml:lang and xml:id attributes from the W3C (these had previously been attributes in the TEI namespace), regularization of local pointing attributes to use the hash (as used in HTML) and unification of the ptr and xptr tags. Together these changes with many more new additions make P5 more regular and bring it closer to current xml practice as promoted by the W3C and as used by other XML variants. Maintenance and feature update versions of TEI P5 have been released at least twice a year since 2007.
+2011 – TEI P5 v2.0.1 released with support for genetic editing (among many other additions, the genetic-editing features allow encoding of texts without interpretation as to their specific semantics).
+2017 – TEI was awarded the Antonio Zampolli Prize from the Alliance of Digital Humanities Organizations.
+
+
+== References ==
+
+
+== External links ==
+TEI Consortium Web site  with a list of TEI projects, a form for adding your project Archived 2017-03-05 at the Wayback Machine and wiki
+Journal of the TEI Archived 2019-01-18 at the Wayback Machine
+TEI Lite: An Introduction to Text Encoding for Interchange
+TEI @ Oxford Archived 2021-04-13 at the Wayback Machine (hosted at Oxford University) with development and backup versions of much of the core content.
+TEI GitHub site (hosted at GitHub) with repository and issue tracker
+Larger list of TEI Projects
+What is the TEI? (Introductory overview by Lou Burnard)

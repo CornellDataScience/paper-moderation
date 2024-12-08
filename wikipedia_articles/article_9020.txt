@@ -1,0 +1,159 @@
+Animal opsins are G-protein-coupled receptors and a group of proteins made light-sensitive via a chromophore, typically retinal. When bound to retinal, opsins become retinylidene proteins, but are usually still called opsins regardless. Most prominently, they are found in photoreceptor cells of the retina. Five classical groups of opsins are involved in vision, mediating the conversion of a photon of light into an electrochemical signal, the first step in the visual transduction cascade. Another opsin found in the mammalian retina, melanopsin, is involved in circadian rhythms and pupillary reflex but not in vision. Humans have in total nine opsins. Beside vision and light perception, opsins may also sense temperature, sound, or chemicals.
+
+
+== Structure and function ==
+Animal opsins detect light and are the molecules that allow us to see. Opsins are G-protein-coupled receptors (GPCRs), which are chemoreceptors and have seven transmembrane domains forming a binding pocket for a ligand. The ligand for opsins is the vitamin A-based chromophore 11-cis-retinal, which is covalently bound to a lysine residue in the seventh transmembrane domain through a Schiff-base. However, 11-cis-retinal only blocks the binding pocket and does not activate the opsin. The opsin is only activated when 11-cis-retinal absorbs a photon of light and isomerizes to all-trans-retinal, the receptor activating form, causing conformal changes in the opsin, which activate a phototransduction cascade. Thus, a chemoreceptor is converted to a light or photo(n)receptor.
+In the vertebrate photoreceptor cells, all-trans-retinal is released and replaced by a newly synthesized 11-cis-retinal provided from the retinal epithelial cells. 
+Beside 11-cis-retinal (A1), 11-cis-3,4-didehydroretinal (A2) is also found in vertebrates as ligand such as in freshwater fishes. A2-bound opsins have a shifted λmax and absorption spectrum compared to A1-bound opsins.
+
+
+== Functionally conserved residues and motifs ==
+The seven transmembrane α-helical domains in opsins are connected by three extra-cellular and three cytoplasmic loops. Along the α-helices and the loops, many amino acid residues are highly conserved between all opsin groups, indicating that they serve important functions and thus are called functionally conserved residues. Actually, insertions and deletions in the α-helices are very rare and should preferentially occur in the loops. Therefore, different G-protein-coupled receptors have different length and homologous residues may be in different positions. To make such positions comparable between different receptors, Ballesteros and Weinstein introduced a common numbering scheme for G-protein-coupled receptors. The number before the period is the number of the transmembrane domain. The number after the period is set arbitrarily to 50 for the most conserved residue in that transmembrane domain among GPCRs known in 1995. For instance in the seventh transmembrane domain, the proline in the highly conserved NPxxY7.53 motif is Pro7.50, the asparagine before is then Asp7.49, and the tyrosine three residues after is then Tyr7.53. Another numbering scheme is based on cattle rhodopsin. Cattle rhodopsin has 348 amino acids and is the first opsin whose amino acid sequence and whose 3D-structure were determined. The cattle rhodopsin numbering scheme is widespread in the opsin literature. Therefore, it is useful to use both schemes.
+
+
+=== The retinal binding lysine ===
+Opsins without the retinal binding lysine are not light sensitive. In cattle rhodopsin, this lysine is the 296th amino acid and thus according to both numbering schemes Lys2967.43. It is well conserved among opsins, so well conserved that sequences without it were not even considered opsins and thus excluded from large scale phylogenetic reconstructions. Even so, most opsins have Lys2967.43, some have lost it during evolution: In the nemopsins from nematodes, Lys2967.43 is replaced by Arginine. In the astropsins from sea urchins and in the gluopsins, Lys2967.43 is replaced by glutamic acid. A nemopsin is expressed in chemosensory cells in Caenorhabditis elegans. Therefore, the nemopsins are thought to be chemoreceptors. The gluopsins are found in insects such as beetles, scorpionflies, dragonflies, and butterflies and moths including model organisms such as the silk moth and the tobacco hawk moth. However, the gluopsins have no known function.
+Such function does not need to be light detection, as some opsins are also involved in thermosensation, mechanoreception such as hearing detecting phospholipids, chemosensation, and other functions. In particular, the Drosophila rhabdomeric opsins (rhabopsins, r-opsins) Rh1, Rh4, and Rh7 function not only as photoreceptors, but also as chemoreceptors for aristolochic acid. These opsins still have Lys2967.43 like other opsins. However, if this lysine is replaced by an arginine in Rh1, then Rh1 loses light sensitivity but still responds to aristolochic acid. Thus, Lys2967.43 is not needed for Rh1 to function as chemoreceptor. Also the Drosophila rhabopsins Rh1 and Rh6 are involved in mechanoreception, again for mechanoreception Lys2967.43 is not needed, but needed for proper function in the photoreceptor cells.
+Beside these functions, an opsin without Lys2967.43, such as a gluopsin, could still be light sensitive, since in cattle rhodopsin, the retinal binding lysine can be shifted from position 296 to other positions, even into other transmembrane domains, without changing light sensitivity.
+
+In the phylogeny above, each clade contains sequences from opsins and other G protein-coupled receptors. The number of sequences and two pie charts are shown next to the clade. The first pie chart shows the percentage of a certain amino acid at the position in the sequences corresponding Lys2967.43 in cattle rhodopsin. The amino acids are color-coded. The colors are red for lysine (K), purple for glutamic acid (E), orange for argenine (R), dark and mid-gray for other amino acids, and light gray for sequences that have no data at that position. The second pie chart gives the taxon composition for each clade, green stands for craniates, dark green for cephalochordates, mid green for echinoderms, brown for nematodes, pale pink for annelids, dark blue for arthropods, light blue for mollusks, and purple for cnidarians. The branches to the clades have pie charts, which give support values for the branches. The values are from right to left SH-aLRT/aBayes/UFBoot. The branches are considered supported when SH-aLRT ≥ 80%, aBayes ≥ 0.95, and UFBoot ≥ 95%. If a support value is above its threshold the pie chart is black otherwise gray.
+
+
+=== The NPxxY motif ===
+The NPxxY7.53 motif is well-conserved among opsins and G-protein-coupled receptors. This motif is important for G-protein binding and receptor activation. For instance, if it is mutated to DPxxY7.53 (Asn7.49 → Asp7.49) in the human m3 muscarinic receptor, activation is not affected, but it is abolished if it is mutated to APxxY7.53 (Asn7.49 → Ala7.49). Such a mutation to APxxY7.53 (Asn7.49 → Ala7.49) reduces the G-protein activation of cattle rhodopsin to 45% compared to wild type. Also in cattle rhodopsin, if the motif is mutated to NPxxA7.53 (Tyr7.53 → Ala7.53), cattle rhodopsin does not activate the G-protein. Such a mutation also reduces the activation of the vasopressin V2 receptor. In fact in G-protein-coupled receptors, only loss of function disease mutations are known for Tyr7.53⁠.
+Also mutations of Pro7.50 influence G-protein activation, if the motif is mutated to NAxxY7.53 (Pro7.50 → Ala7.50) in the rat m3 muscarinic receptor, the receptor can still be activated but less efficiently, this mutation even abolishes activation in the cholecystokinin B receptor completely.⁠ In fact, the RGR-opsins have NAxxY7.53 and retinochromes have VPxxY7.53 for annelids or YPxxY7.53 for mollusks, natively. Both RGR-opsins and retinochromes, belong to the chromopsins. RGR-opsins and retinochromes also bind unlike most opsins all-trans-retinal in the dark and convert it to 11-cis-retinal when illuminated. Therefore, RGR-opsins and retinochromes are thought to neither signal nor activate a phototransduction cascade but to work as photoisomerases to produce 11-cis-retinal for other opsins. This view is considered established in the opsin literature, even so it has not been shown, conclusively. In fact, the human MT2 melatonin receptor signals via a G-protein and has an NAxxY7.53 motif natively. If this motif is mutated to NPxxY7.53 (Ala7.50 → Pro7.50), the receptor cannot be activated, but can be rescued partially if the motif is mutated to NVxxY7.53 (Ala7.50 → Val7.50). Furthermore, when the motif is mutated to NAxxY7.53 (Pro7.50 → Ala7.50) in cattle rhodopsin, the mutant has 141% of wild type activity. This evidence shows that a GPCR does not need a standard NPxxY7.53 motif for signaling.
+
+
+=== Other residues and motifs ===
+Cys138 and Cys110 form a highly conserved disulfide bridge. Glu113 serves as the counterion, stabilizing the protonation of the Schiff linkage between Lys296 and the ligand retinal. The Glu134-Arg135-Tyr136 is another highly conserved motif, involved in the propagation of the transduction signal once a photon has been absorbed.
+
+
+== Spectral tuning sites ==
+Certain amino acid residues, termed spectral tuning sites, have a strong effect on λmax values. Using site-directed mutagenesis, it is possible to selectively mutate these residues and investigate the resulting changes in light absorption properties of the opsin. It is important to differentiate spectral tuning sites, residues that affect the wavelength at which the opsin absorbs light, from functionally conserved sites, residues important for the proper functioning of the opsin. They are not mutually exclusive, but, for practical reasons, it is easier to investigate spectral tuning sites that do not affect opsin functionality. For a comprehensive review of spectral tuning sites see Yokoyama and Deeb. The impact of spectral tuning sites on λmax differs between different opsin groups and between opsin groups of different species.
+
+
+== Opsins in the human eye, brain, and skin ==
+
+RPE, retinal pigment epithelium; ipRGC, intrinsically photosensitive retinal ganglion cells; OPL, outer plexiform layer; IPL, inner plexiform layer; GCL, ganglion cell layer
+
+
+== Cuttlefish ==
+Cuttlefish and octopuses contain opsin in their skin as part of the chromophores. The opsin is part of the sensing network detecting the colour and shape of the cuttlefish's surroundings.
+
+
+== Frogs (Order Anura) ==
+Frogs have evolved unique visual systems to adapt to their diverse habitats, from brightly lit forests to dimly lit ponds. Frogs are distinct among vertebrates because they lack the RH2 opsin, typically used for detecting middle wavelengths of light in other species. This loss likely reflects their evolutionary focus on low-light vision, with RH1, a rod-specific opsin, taking the lead in supporting nocturnal and crepuscular (dawn and dusk) activity. 
+Despite the loss of RH2, frogs retain three cone opsins—SWS1, SWS2, and LWS—that allow for color vision during daylight. The SWS2 opsin, for instance, is tuned to detect blue and green light, which is especially useful in aquatic environments or shaded areas. This tuning is enhanced by specific mutations which increases sensitivity to low-light conditions and stabilizes the protein for better performance in dim environments. However, some frog species, such as poison dart frogs in the family Dendrobatidae, have lost the SWS2 opsin entirely. This change aligns with their reliance on longer wavelengths, like red and yellow, for tasks such as mate selection and predator deterrence, often linked to their vibrant aposematic (warning) coloration.
+
+
+== Phylogeny ==
+Animal opsins (also known as type 2 opsins) are members of the seven-transmembrane-domain proteins  of the G protein-coupled receptor (GPCR) superfamily.
+Animal opsins fall phylogenetically into five groups: The ciliary opsins (cilopsins, c-opsins), the rhabdomeric opsins (r-opsins, rhabopsins), the xenopsins, the nessopsins, and the tetraopsins. Four of these subclades occur in Bilateria (all but the nessopsins). However, the bilaterian clades constitute a paraphyletic taxon without the opsins from the cnidarians. The nessopsins are also known as anthozoan opsins II or simply as the cnidarian opsins. The tetraopsins are also known as RGR/Go or Group 4 opsins and contain three subgroups: the neuropsins, the Go-opsins, and the chromopsins. The chromopsins have seven subgroups: the RGR-opsins, the retinochromes, the peropsins, the varropsins, the astropsins, the nemopsins, and the gluopsins.
+Animal visual opsins are traditionally classified as either ciliary or rhabdomeric. Ciliary opsins, found in vertebrates and cnidarians, attach to ciliary structures such as rods and cones. Rhabdomeric opsins are attached to light-gathering organelles called rhabdomeres. This classification cuts across phylogenetic categories (clades) so that both the terms "ciliary" and "rhabdomeric" can be ambiguous. Here, "C-opsins (ciliary)" refers to a clade found exclusively in Bilateria and excludes cnidarian ciliary opsins such as those found in the box jellyfish. Similarly, "R-opsin (rhabdomeric)" includes melanopsin even though it does not occur on rhabdomeres in vertebrates.
+
+
+== Ciliary opsins ==
+Ciliary opsins (cilopsins, c-opsins) are expressed in ciliary photoreceptor cells, and include the vertebrate visual opsins and encephalopsins.  They convert light signals to nerve impulses via cyclic nucleotide gated ion channels, which work by increasing the charge differential across the cell membrane (i.e. hyperpolarization.)
+
+
+=== Vertebrate visual opsins ===
+
+Vertebrate visual opsins are a subclass of ciliary opsins that express in the vertebrate retina and mediate vision. They are further subdivided into:
+
+Photopsins - those responsible for photopic vision (daylight), which are expressed in cone cells; hence also cone opsins. Photopsins are further subdivided according to their spectral sensitivity, namely the wavelength at which the highest light absorption is observed (λmax). Vertebrates generally have four (SWS1, SWS2, RH2, LWS) classes of photopsins. Mammals lost Rh2 and SWS2 classes during the nocturnal bottleneck, so are generally dichromatic. Primate ancestors later developed two distinct LWS opsins (LWS and MWS), leaving humans with 3 photopsins in 2 classes: SWS1 (OPN1SW) and two forms of LWS (OPN1LW, OPN1MW).
+Scotopsins - those responsible for scotopic vision (dim light), which are expressed in rod cells; hence also rod opsins. The most common form of scotopsin is rhodopsin, thus usually denoted Rh1.
+
+
+=== Extraretinal (or extra-ocular) Rhodopsin-Like Opsins (Exo-Rh) ===
+These pineal opsins, found in the  Actinopterygii (ray-finned fish) apparently arose as a result of gene duplication from Rh1 (rhodopsin). These opsins appear to serve functions similar to those of pinopsin found in birds and reptiles.
+
+
+=== Pinopsins ===
+The first Pineal Opsin (Pinopsin) was found in the chicken pineal gland. It is a blue sensitive opsin (λmax = 470 nm).
+Pineal opsins have a wide range of expression in the brain, most notably in the pineal region.
+
+
+=== Vertebrate Ancient (VA) opsin ===
+Vertebrate Ancient (VA) opsin has three isoforms VA short (VAS), VA medium (VAM), and VA long (VAL). It is expressed in the inner retina, within the horizontal and amacrine cells, as well as the pineal organ and habenular region of the brain. It is sensitive to approximately 500 nm [14], found in most vertebrate classes, but not in mammals.
+
+
+=== Parapinopsins ===
+The first parapinopsin (PP) was found in the parapineal organ of the catfish. The parapinopsin of lamprey is a UV-sensitive opsin (λmax = 370 nm). The teleosts have two groups of parapinopsins, one is sensitive to UV (λmax = 360-370 nm), the other is sensitive to blue  (λmax = 460-480 nm) light.
+
+
+=== Parietopsins ===
+The first parietopsin was found in the photoreceptor cells of the lizard parietal eye. The lizard parietopsin is green-sensitive (λmax = 522 nm), and despite it is a c-opsin, like the vertebrate visual opsins, it does not induce hyperpolarization via a Gt-protein, but induces depolarization via a Go-protein.
+
+
+=== Encephalopsin or Panopsin ===
+The panopsins are found in many tissues (skin, brain, testes, heart, liver, kidney, skeletal muscle, lung, pancreas and retina). They were originally found in the human and mouse brain and thus called encephalopsin.
+The first invertebrate panopsin was found in the ciliary photoreceptor cells of the annelid Platynereis dumerilii and is called c(iliary)-opsin. This c-opsin is UV-sensitive (λmax = 383 nm) and can be tuned by 125 nm at a single amino-acid (range λmax = 377 - 502 nm). Thus, not unsurprisingly, a second but cyan sensitive c-opsin (λmax = 490 nm) exists in Platynereis dumerilii. The first c-opsin mediates in the larva UV induced gravitaxis. The gravitaxis forms with phototaxis a ratio-chromatic depth-gauge. In different depths, the light in water is composed of different wavelengths: First the red (> 600 nm) and the UV and violet (< 420 nm) wavelengths disappear. The higher the depth the narrower the spectrum so that only cyan light (480 nm) is left. Thus, the larvae can determine their depth by color. The color unlike brightness stays almost constant independent of time of day or the weather, for instance if it is cloudy.
+Panopsins are also expressed in the brains of some insects. The panopsins of mosquito and pufferfish absorb maximally at 500 nm and 460 nm, respectively. Both activate in vitro Gi and Go proteins.
+The panopsins are sister to the TMT-opsins.
+
+
+=== Teleost Multiple Tissue (TMT) Opsin ===
+The first TMT-opsin was found in many tissues in Teleost fish and therefore they are called Teleost Multiple Tissue (TMT) opsins. TMT-opsins form three groups which are most closely related to a fourth group the panopsins, which thus are paralogous to the TMT-opsins. TMT-opsins and panopsins also share the same introns, which confirms that they belong together.
+
+
+== Opsins in cnidarians ==
+Cnidaria, which include jellyfish, corals, and sea anemones, are the most basal animals to possess complex eyes. Jellyfish opsins in the rhopalia couple to Gs-proteins raising the intracellular cAMP level. Coral opsins can couple to Gq-proteins and Gc-proteins. Gc-proteins are a subtype of G-proteins specific to cnidarians. The cnidarian opsins belong to two groups the xenopsins and the nessopsins. The xenopsins contain also bilaterian opsins, while the nessopsins are restricted to the cnidarians. However, earlier studies have found that some cnidarian opsins belong to the cilopsins, rhabopsins, and the tetraopsins of the bilaterians.
+
+
+== Rhabdomeric opsins ==
+Rhabdomeric opsins (rhabopsins, r-opsins) are also known as Gq-opsins, because they couple to a Gq-protein. Rhabopsins are used by molluscs and arthropods. Arthropods appear to attain colour vision in a similar fashion to the vertebrates, by using three (or more) distinct groups of opsins, distinct both in terms of phylogeny and spectral sensitivity.  The rhabopsin melanopsin is also expressed in vertebrates, where it regulates circadian rhythms and mediates the pupillary reflex.
+Unlike cilopsins, rhabopsins are associated with canonical transient receptor potential ion channels; these lead to the electric potential difference across a cell membrane being eradicated (i.e. depolarization).
+The identification of the crystal structure of squid rhodopsin is likely to further our understanding of its function in this group.
+Arthropods use different opsins in their different eye types, but at least in Limulus the opsins expressed in the lateral and the compound eyes are 99% identical and presumably diverged recently.
+
+
+=== Melanopsin ===
+Melanopsin (OPN4) is involved in circadian rhythms, the pupillary reflex, and color correction in high-brightness situations. Phylogenetically, it is a member of the rhabdomeric opsins (rhabopsins, r-opsins) and functionally and structurally a rhabopsin, but does not occur in rhabdomeres.
+
+
+== Tetraopsins ==
+The tetraopsins include the neuropsins, the Go-opsins, and the chromopsins. The chromopsins consist of seven subgroups: the RGR-opsins, the retinochromes, the peropsins, the varropsins, the astropsins, the nemopsins, and the gluopsins.
+
+
+=== Neuropsins ===
+Neuropsins are sensitive to UVA, typically at 380 nm. They are found in the brain, testes, skin, and retina of humans and rodents, as well as in the brain and retina of birds. In birds and rodents they mediate ultraviolet vision. They couple to Gi-proteins. In humans, Neuropsin is encoded by the OPN5 gene. In the human retina, its function is unknown. In the mouse, it photo-entrains the retina and cornea at least ex vivo.
+
+
+=== Go-opsins ===
+Go-opsins are absent from higher vertebrates and ecdysozoans. They are found in the ciliary photoreceptor cells of the scallop eye and the basal chordate amphioxus. In Platynereis dumerilii however, a Go-opsin is expressed in the rhabdomeric photoreceptor cells of the eyes.
+
+
+=== RGR-opsins ===
+RGR-opsins, also known as Retinal G protein coupled receptors are expressed in the retinal pigment epithelium (RPE) and Müller cells. They preferentially bind all-trans-retinal in the dark instead of 11-cis-retinal. RGR-opsins were thought to be photoisomerases but instead, they regulate retinoid traffic and production. In particular, they speed up light-independently the production of 11-cis-retinol (a precursor of 11-cis-retinal) from all-trans-retinyl-esters. However, the all-trans-retinyl-esters are made available light-dependently by RGR-opsins. Whether RGR-opsins regulate this via a G-protein or another signaling mechanism is unknown. The cattle RGR-opsin absorbs maximally at different wavelengths depending on the pH-value. At high pH it absorbs maximally blue (469 nm) light and at low pH it absorbs maximally UV (370 nm) light.
+
+
+=== Peropsin ===
+Peropsin, a visual pigment-like receptor, is a protein that in humans is encoded by the RRH gene.
+
+
+== Other proteins called opsins ==
+
+Photoreceptors can be classified several ways, including function (vision, phototaxis, photoperiodism, etc.), type of chromophore (retinal, flavine, bilin), molecular structure (tertiary, quaternary), signal output (phosphorylation, reduction, oxidation), etc.
+Beside animal opsins, which are G protein-coupled receptors, there is another group of photoreceptor proteins called opsins. These are the  microbial opsin, they are used by prokaryotes and by some algae (as a component of channelrhodopsins) and fungi, whereas animals use animal opsins, exclusively. No opsins have been found outside these groups (for instance in plants, or placozoans).
+Microbial and animal opsins are also called type 1 and type 2 opsins respectively. Both types are called opsins, because at one time it was thought that they were related: Both are seven-transmembrane receptors and bind covalently retinal as chromophore, which turns them into photoreceptors sensing light. However, both types are not related on the sequence level.
+In fact, the sequence identity between animal and mirobial opsins is no greater than could be accounted for by random chance. However, in recent years new methods have been developed specific to deep phylogeny. As a result, several studies have found evidence of a possible phylogenetic relationship between the two. However, this does not necessarily mean that the last common ancestor of microbial and animal opsins was itself light sensitive: All animal opsins arose (by gene duplication and divergence) late in the history of the large G-protein coupled receptor (GPCR) gene family, which itself arose after the divergence of plants, fungi, choanflagellates and sponges from the earliest animals. The retinal chromophore is found solely in the opsin branch of this large gene family, meaning its occurrence elsewhere represents convergent evolution, not homology. Microbial rhodopsins are, by sequence, very different from any of the GPCR families. According to one hypothesis, both microbial and animal opsins belong to the transporter-opsin-G protein-coupled receptor (TOG) superfamily, a proposed clade that includes G protein-coupled receptor (GPCR), Ion-translocating microbial rhodopsin (MR), and seven others.
+Most microbial opsins are ion channels or pumps instead of proper receptors and do not bind to a G protein. Microbial opsins are found in all three domains of life: Archaea, Bacteria, and Eukaryota. In Eukaryota, microbial opsins are found mainly in unicellular organisms such as green algae, and in fungi. In most complex multicellular eukaryotes, microbial opsins have been replaced with other light-sensitive molecules such as cryptochrome and phytochrome in plants, and animal opsins in animals.
+Microbial opsins are often known by the rhodopsin form of the molecule, i.e., rhodopsin (in the broad sense) = opsin + chromophore. Among the many kinds of microbial opsins are the proton pumps bacteriorhodopsin (BR) and xanthorhodopsin (xR), the chloride pump halorhodopsin (HR), the photosensors sensory rhodopsin I (SRI) and sensory rhodopsin II (SRII), as well as proteorhodopsin (PR), Neurospora opsin I (NOPI), Chlamydomonas sensory rhodopsins A (CSRA), Chlamydomonas sensory rhodopsins B (CSRB), channelrhodopsin (ChR), and archaerhodopsin (Arch).
+Several microbal opsins, such as proteo- and bacteriorhodopsin, are used by various bacterial groups to harvest energy from light to carry out metabolic processes using a non-chlorophyll-based pathway. Beside that, halorhodopsins of Halobacteria and channelrhodopsins of some algae, e.g. Volvox, serve them as light-gated ion channels, amongst others also for phototactic purposes. Sensory rhodopsins exist in Halobacteria that induce a phototactic response by interacting with transducer membrane-embedded proteins that have no relation to G proteins.
+Microbal opsins (like channelrhodopsin, halorhodopsin, and archaerhodopsin) are used in optogenetics to switch on or off neuronal activity. Microbal opsins are preferred if the neuronal activity should be modulated at higher frequency, because they respond faster than animal opsins. This is because microbal opsins are ion channels or proton/ion pumps and thus are activated by light directly, while animal opsins activate G-proteins, which then activate effector enzymes that produce metabolites to open ion channels.
+
+
+== See also ==
+Retinylidene protein
+Visual cycle
+Visual phototransduction
+Microbial rhodopsin
+Channelrhodopsins
+
+
+== External links ==
+Illustration Archived 2020-01-09 at the Wayback Machine at Baldwin-Wallace College
+Opsin at the U.S. National Library of Medicine Medical Subject Headings (MeSH)
+
+
+== References ==

@@ -1,0 +1,83 @@
+Ion milling is a specialized physical etching technique that is a crucial step in the preparation of material analysis techniques. After a specimen goes through ion milling, the surface becomes much smoother and more defined, which allows scientists to study the material much easier. The ion mill generates high-energy particles to remove material off the surface of a specimen, similar to how sand and dust particles wear away at rocks in a canyon to create a smooth surface. Relative to other techniques, ion milling creates much less surface damage, which makes it perfect for surface-sensitive analytical techniques. This article discusses the principle, equipment, applications, and significance of ion milling.
+
+
+== Principles ==
+Ion milling operates on the principles of sputtering and erosion. Sputtering occurs as the high-energy ions bombard the sample surface. Ions collide with the atoms and molecules on the surface and knock off surface atoms. As the high-energy ions are directed onto the material's surface, a collision cascade occurs. Ions bombard the surface of the specimen, and energy is transferred from the ions onto the surface atoms. If the transferred energy surpasses the binding energy of the target atoms, they are dislodged from the surface. Material that juts out has less surface binding energy and is more likely to be ejected through sputtering. As the ion milling process continues, the sample surface is slowly eroded away, resulting in a thin, flat, and damage-free surface. Specific results can be achieved by changing the angle of incidence of ions, the ion energy, and the type of ions used.
+
+
+== Equipment ==
+
+
+=== Ion source ===
+Ion sources are fundamental to ion milling. Their design and operation are crucial to producing accurate results. The most commonly used ion source relies on radiofrequency (RF) ion sources and direct current (DC) electric fields to generate and accelerate ions from a gas, typically a noble gas like argon or xenon. RF fields are used for ionization because they allow for a high degree of control and efficiency. RF ion sources can efficiently produce ions by creating an alternating radiofrequency electric field in a resonant cavity. RF uses a frequency of several megahertz, which works best for most gases used. The RF field causes the gas to repeat cycles of ionization and electron detachment, which creates plasma. The alternating electric field ionizes the gas by ripping off the electrons and leaving the positive ions. The ions are then accelerated away from the plasma using a DC electric field. An extraction electrode with a DC electric field accelerates the ions towards the specimen due to the voltage difference between the electrode and plasma region. The synergy between RF and DC fields is crucial for optimizing the ion source's performance. The precise combination between these fields gives the ion beam the specific characteristics it needs, such as energy and current.
+
+
+=== Sample holder ===
+To guarantee that the surface is eroded uniformly, the specimen must be held in place while the ion mill operates. The specimen itself needs to have a surface that is mostly level and clean. Prior to ion milling, the surface should be fairly flat because the process does not remove much material. If the specimen's surface is dirty or has other particles on top of it, the ion mill will operate on the layer on top rather than the actual specimen surface.
+
+
+=== Vacuum system ===
+The specimen should be in a high-vacuum environment for optimal milling results. The vacuum makes sure that there are few air particles that could interfere with the ion beam. This way, all the energy in the energy beam can be transferred to the surface with much less energy loss.
+
+
+== Analysis ==
+Analyzing and monitoring the ion milling process is crucial for achieving desired outcomes and ensuring the quality of the results. There are many techniques and instruments that view key parameters during ion milling.
+
+
+=== Scanning electron Microscopy (SEM) ===
+SEM is used to analyze the surface morphology of samples after ion milling. SEM imaging is used to assess material removal, surface roughness, and cross-sectional features.
+
+
+=== Secondary ion mass spectrometry (SIMS) ===
+After the samples are milled, elemental and isotopic analysis is performed using SIMS. After the primary ions hit the surface, secondary ions and particles are released during the bombardment of the surface. Scientists can gather comprehensive data regarding the material's composition by understanding which ions are utilized for milling and which secondary ions are released. [90]
+
+
+=== X-ray photoelectron spectroscopy (XPS) ===
+XPS is utilized to analyze the chemical composition of the surface. X-rays are used to irradiate the sample and measure the energies of the emitted photoelectrons. XPS assesses the surface chemistry and can detect any chemical changes induced by ion milling. This process can tell how much damage ion milling has caused to the surface after ion bombardment.
+
+
+=== In-situ monitoring techniques ===
+In-situ monitoring techniques observe the ion milling process in real-time. One type of in-situ monitoring is optical emission spectroscopy (OES). OES monitors the emission of light during ion milling and gives information about the plasma.
+
+
+== Applications ==
+
+
+=== Electron microscopy ===
+Ion milling can be used for thinning specimens until electron transparency in transmission electron microscopy (TEM).
+
+
+=== Microelectronics ===
+The accurate and damage-free surface ion milling provides makes it perfect for the precise fabrication of semiconductors. Using ion milling for microelectronics can create well-defined features and patterns on semiconductor wafers.
+
+
+=== Cross-sectional analysis ===
+Ion milling can be used to create cross-sectional samples for materials. Cross-sectional shows interfaces, layer structures, and defects of the material.
+
+
+=== Surface smoothing and polishing ===
+Ion milling is able to take off a few atoms at a time, which allows it to create smooth and polished surfaces on certain materials. Enhancing surface quality is crucial in anything that requires precision, such as optics or semiconductors.
+
+
+== Advantages and limitations ==
+
+
+=== Advantages ===
+Ion milling gives precise control over material removal
+Low amount of specimen damage
+Improved surfaces for further processes
+
+
+=== Limitations ===
+Long processing times for thicker samples.
+Possibility of ion-induced damage
+The need for specialized equipment and expertise
+
+
+== Conclusion ==
+Ion milling revolutionized the fields of material engineering and mechanical engineering, allowing researchers and scientists to obtain high-quality specimens for advanced material analysis. Its applications in various industries and its role in advancing microelectronics make it an indispensable tool for modern research and development.
+
+
+== References ==
+
+J. Goldstein et al., Scanning Electron Microscopy and X-Ray Microanalysis. New York, NY: Springer, 2018.

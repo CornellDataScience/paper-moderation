@@ -1,0 +1,63 @@
+Nikola Kirilov Kasabov also known as Nikola Kirilov Kassabov (Bulgarian: Никола Кирилов Касабов) is a Bulgarian and New Zealand computer scientist, academic and author. He is a professor emeritus of Knowledge Engineering at Auckland University of Technology, Founding Director of the Knowledge Engineering and Discovery Research Institute (KEDRI), George Moore Chair of Data Analytics at Ulster University, as well as visiting professor at both the Institute for Information and Communication Technologies (IICT) at the Bulgarian Academy of Sciences and Dalian University in China. He is also the Founder and Director of Knowledge Engineering Consulting.
+Kasabov's research is primarily focused on computational intelligence, neuro-computing, bioinformatics, neuroinformatics, speech and image processing, data mining, knowledge representation and knowledge discovery. He has published research articles and books such as Foundations of Neural Networks, Fuzzy Systems, and Knowledge Engineering and Evolving Connectionist Systems: The Knowledge Engineering Approach. He is the recipient of multiple best paper awards along with the Asia Pacific Neural Network Assembly (APNNA) Excellent Service Award (2005), the Bayer Science Innovator Award (2007), the International Neural Network Society (INNS) Gabor Award (2012), the APNNA Outstanding Achievements Award (2012), the INNS Ada Lovelace Meritorious Service Award (2018), and the Research.com Computer Science in New Zealand Leader Award (2022 and 2023).
+Kasabov is a Life Fellow of the Institute of Electrical and Electronics Engineers (IEEE), and a Fellow of the Royal Society of New Zealand, the INNS College of Fellows, the Asia-Pacific Artificial Intelligence Association (AAIA), as well as the Institute of IT Professionals. He is the co-founder and Co-Editor-in-Chief of Evolving Systems and an Editor of the Springer Series on Bio-/Neuro Systems.
+
+
+== Education ==
+Kasabov earned an MSc in Electrical Engineering with a specialization in Computer Science in 1971, receiving his PostGrad Diploma in Applied Math in 1972 and a PhD in Mathematical Sciences in 1975, all from the Technical University, Sofia. In 2018, he was awarded a Doctor Honoris Causa from Obuda University, Budapest.
+
+
+== Career ==
+Kasabov began his academic career at the Technical University, Sofia, initially as a Research Fellow in the Department of Computer Science, later becoming a lecturer in 1978 and associate professor in 1988. In 1989, he joined the University of Essex Department of Computer Science as a Research Fellow and Senior Lecturer. Subsequently, he assumed the role of Senior Lecturer at the University of Otago Department of Information Science, where he was appointed Professor and Personal Chair from 1999 to 2002. He has been serving as a professor of Knowledge Engineering at Auckland University of Technology since 2002, as well as visiting professor at both the Institute for Information and Communication Technologies (IICT) at the Bulgarian Academy of Sciences and Dalian University in China since 2022.
+In 2001, Kasabov founded Knowledge Engineering Consulting. He was President of the APNNA in 2007–2008 and of the INNS in 2009 and 2010, concurrently serving as Vice President of the INNS in 2006, President-Elect in 2008 and as a Governor Board Member from 2011 to 2017. In 2019, he assumed the presidency of the APNNA and has been a Founding Member of the Governing Board since 1993.
+
+
+== Research ==
+Kasabov has contributed to the field of computer science by conducting research on evolving connectionist systems (ECOS) and the spiking neural network architecture NeuCube.
+
+
+== Works ==
+Kasabov has published books on knowledge engineering and neural networks. His seminal work Foundations of Neural Networks, Fuzzy Systems, and Knowledge Engineering integrated neural networks, fuzzy systems, and symbolic AI for AI solutions in various fields, which led to the development of the ECOS theoretical framework. He further discussed its potential applications in the monograph, Evolving Connectionist Systems: The Knowledge Engineering Approach, such as the discovery of diagnostic markers for early detection of cancer. Later on, in 2019, he authored Time-Space, Spiking Neural Networks and Brain-Inspired Artificial Intelligence, exploring spiking neural networks (SNN), looking into classical theory, while also introducing brain-inspired AI (BI-AI) systems and their applications across various domains.
+
+
+=== Evolving connectionist systems ===
+Kasabov has researched ECOS throughout his career. He implemented the ECOS framework by introducing the Dynamic Evolving Neuro-Fuzzy Inference System (DENFIS), an online learning neuro-fuzzy method and the Evolving Fuzzy Neural Network (EFuNN), a model for online supervised/unsupervised learning and fuzzy rule extraction, both utilized in the software development environment NeuCom, earning him several patents.
+
+
+=== Spiking neural networks ===
+Kasabov's work on spiking neural networks (SNN) led to the development of new methodologies like the NeuCube theoretical framework for brain-inspired computation. He extended ECOS principles to comprehend spatio-temporal brain data via spike representation, featuring a 3D SNN structure trained with brain-inspired rules, facilitating interpretable connectivity models and offering fast, low-power processing ideal for real-time applications like human prosthetic control. He also presented deSNN, a dynamic evolving spiking neural network (SNN) method, for incremental learning of spatio-temporal streaming data, utilized in the NeuCube system, and employed the NeuCube brain-inspired SNN architecture for moving object recognition, utilizing dynamic vision sensors (DVS) to convert object data into spikes and achieving superior accuracy on benchmark data. Furthermore, alongside colleagues, he introduced SPAN (Spike Pattern Association Neurons) algorithms to train spiking neurons for precise spike sequence generation in response to specific input patterns.
+In a paper that received the 2016 Neural Networks Best Paper Award, Kasabov proposed novel algorithms for deep learning of spatio-temporal data. He devised a personalized modeling method using SNN, which was later patented, integrating static and dynamic data, demonstrated in air pollution and drug addiction treatment prediction, outperforming other machine learning methods with a 94% accuracy. Additionally, he developed personalized modeling methods with brain-inspired SNN, achieving accurate prediction in EEG data and high predictive accuracy for dementia and AD onset using MRI longitudinal data, as well as proposed an original method for fMRI data learning and visualization with brain-inspired SNN.
+With Simei Gomes Wysoski  and Lubica Benuskova, Kasabov developed an SNN method integrating audio and visual data, surpassing other methods in decision-making tasks. He presented a quantum interpretation of spikes and a probabilistic spiking neuron model, alongside a quantum-inspired evolutionary optimization method for SNN, enabling faster convergence of solutions. His team also pioneered SNN models for understanding brain processes through ERP data, predicting treatment responses in schizophrenic patients, and learning EEG data for building brain-computer interfaces, by introducing SNN integration of time, space, and orientation data with oiSTDP.
+
+
+== Awards and honors ==
+2005 – Excellent Service Award, APNNA
+2007 – Bayer Science Innovator Award
+2012 – Outstanding Achievements Award, APNNA
+2012 – Dennis Gabor Award, INNS
+2017 – Ada Lovelace Meritorious Service Award
+2022 – Life Fellow, IEEE
+2022, 2023 – Computer Science in New Zealand Leader Award, Research.com
+
+
+== Bibliography ==
+
+
+=== Selected books ===
+Foundations of Neural Networks, Fuzzy Systems, and Knowledge Engineering (1996) ISBN 978-0262112123
+Evolving Connectionist Systems: The Knowledge Engineering Approach (2007) ISBN 978-1846283451
+Computational Neuro-genetic Modelling (2007) ISBN 978-0387483535
+Artificial Neural Networks Methods and Applications in Bio-/Neuroinformatics (2015) ISBN 978-3319349503
+Time-Space, Spiking Neural Networks and Brain-Inspired Artificial Intelligence (2019) ISBN 978-3662577134
+
+
+=== Selected articles ===
+Kim, J., & Kasabov, N. (1999). HyFIS: adaptive neuro-fuzzy inference systems and their application to nonlinear dynamical systems. Neural networks, 12(9), 1301–1319.
+Kasabov, N. (2001). Evolving fuzzy neural networks for supervised/unsupervised online knowledge-based learning. IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics), 31(6), 902–918.
+Kasabov, N. K., & Song, Q. (2002). DENFIS: dynamic evolving neural-fuzzy inference system and its application for time-series prediction. IEEE transactions on Fuzzy Systems, 10(2), 144–154.
+Pang, S., Ozawa, S., & Kasabov, N. (2005). Incremental linear discriminant analysis for classification of data streams. IEEE transactions on Systems, Man, and Cybernetics, part B (Cybernetics), 35(5), 905–914.
+Kasabov, N. K. (2014). NeuCube: A spiking neural network architecture for mapping, learning and understanding of spatio-temporal brain data. Neural Networks, 52, 62–76.
+Kasabov, N. K., Tan, Y., Doborjeh, M., Tu, E., Yang, J., Goh, W., & Lee, J. (2023). Transfer Learning of Fuzzy Spatio-Temporal Rules in a Brain-Inspired Spiking Neural Network Architecture: A Case Study on Spatio-Temporal Brain Data. IEEE Transactions on Fuzzy Systems, 31(12), 4542–4552.
+
+
+== References ==

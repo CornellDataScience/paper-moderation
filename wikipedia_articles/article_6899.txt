@@ -1,0 +1,42 @@
+Clarifai is a leader in AI orchestration and development, helping organizations, teams, and developers build, deploy, orchestrate, and operationalize AI at scale. Clarifai’s cutting-edge AI workflow orchestration platform leverages today's modern AI technologies like Large Language Model(LLMs), Large Vision Model (LVMs), and Retrieval Augmented Generation (RAG), data labeling, inference, and more, and is available in cloud, on-premises, or hybrid environments. Founded in 2013, Clarifai has been used to build more than 1.5 million AI models with more than 400,000 users in 170 countries. 
+
+
+== History ==
+Clarifai was founded in 2013 by Matthew Zeiler after taking the top five places in the image classification at the 2013 ImageNet Challenge. Initially, the company offered free and paid versions of image and video recognition and six pre-built models (processing blocks that convert images or videos to predictions) via their API and a consumer-facing iPhone app called Forevery. In 2014 Style Me Pretty, a wedding lifestyle website which used the technology to provide images that are personally adapted to the user, became Clarifai's first customer.
+In 2016, Clarifai released Version 2 (v2) of their API, adding Custom Training and Visual Search to its platform. In 2017 the company moved all research work to a San Francisco office and all government-related endeavors to an office in Washington D.C. Later that year, the company announced a mobile SDK, which allowed users to run their platform without an internet connection. In 2018 Clarifai rebranded following a shift towards focusing on enterprise customers and the release of an on-premise solution. In 2019, Clarifai opened a new office in Estonia's capital city Tallinn.  In July 2022, Clarifai announced the launch of a new free service – Clarifai Community. In May 2023, Clarifai released a completely new user interface on the Community, and in June 2023 entered the generative AI space with open source generative models and API wrappers for popular third-party  large language models like ChatGPT.
+
+
+== Funding ==
+In 2015, Clarifai raised $10 million in its Series A funding round, led by Union Square Ventures (USV). After the 2016 launch of their v2 API, Menlo Ventures led their $30 million Series B round, with participation from USV, Lux Capital, and Osage University Partners. In October 2021, Clarifai closed a $60 million Series C funding round led by New Enterprise Associates (NEA), with participation from existing investors Menlo Ventures, Union Square Ventures, Lux Capital, LDV Capital, Corazon Capital, NYU Innovation Venture Fund, and new investors CPP Investment Board, NextEquity Partners, SineWave Ventures, and Trousdale Capital. The amount raised brings the company's total funding to $100 million.
+Board members
+
+Matt Murphy of Menlo Ventures
+Albert Wenger of USV
+Andrew Schoen – NEA
+Board Observers
+
+Yanev Suissa – Sinewave Ventures
+Grace Isford – Lux Capital
+Iliyan Kaytazov – CPPIB
+
+
+== Technology ==
+
+Clarifai's technology integrates various artificial intelligence methodologies to achieve its functionalities. A notable aspect of its approach is the application of transformers, which were initially developed for natural language processing (NLP) tasks. In Clarifai’s context, transformers assist in providing a deeper understanding of context across different media, including text, images, and videos.
+Beyond NLP, Clarifai has also incorporated vision transformers into its image recognition process. Vision transformers divide an image into fixed-size patches, linearly embed these patches, and subsequently process them in a sequential manner. This method captures long-range dependencies within an image, presenting a merger of traditional computer vision techniques with sequence processing methods.
+Additionally, convolutional neural networks (CNNs) play a significant role in Clarifai's image and video recognition processes. CNNs, a foundational machine learning technique for image processing, operate by analyzing images on a pixel-by-pixel basis. The architecture of CNNs comprises multiple layers, each aiming to draw out progressively detailed features from the image. This structured processing aims to emulate certain aspects of how the human brain interprets visual stimuli, enabling the system to learn and predict tags for various visual inputs.
+The Clarifai platform offers tools that span the breadth of AI development, including data preparation, model development, and deployment. It features a range of pre-trained models available for use. For users seeking more specific solutions, the platform also supports the creation of custom models using techniques such as supervised learning, deep learning, and transfer learning. This modular approach aims to cater to diverse AI needs across different applications and industries.
+
+
+== Clients ==
+Clarifai serves clients in commercial and government organizations. 
+
+
+== Awards ==
+Gartner named Clarifai a niche player in the Magic Quadrant for Cloud AI Developer Services for the third year in a row in 2023.
+Tracxn named Clarifai as an Emerging Startups 2023: Top Security and Surveillance Technology Startup in 2023. 
+IDC MarketScape named Clarifai as a leader in Computer Vision AI Software Platforms in 2022.
+Inc 5000 2021 named Clarifai as one of the fastest-growing private companies for the second year in a row.
+
+
+== References ==

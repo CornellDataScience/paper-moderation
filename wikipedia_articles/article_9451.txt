@@ -1,0 +1,1978 @@
+The radius of gyration or gyradius of a body about the axis of rotation is defined as the radial distance to a point which would have a moment of inertia the same as the body's actual distribution of mass, if the total mass of the body were concentrated there. The radius of gyration has dimensions of distance [L] or [M0LT0] and the SI unit is the metre (m).
+
+
+== Formulation ==
+Mathematically the radius of gyration is the root mean square distance of the object's parts from either its center of mass or a given axis, depending on the relevant application. It is actually the perpendicular distance from point mass to the axis of rotation. One can represent a trajectory of a moving point as a body. Then radius of gyration can be used to characterize the typical distance travelled by this point.
+Suppose a body consists of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ particles each of mass 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+. Let 
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        ,
+        
+          r
+          
+            2
+          
+        
+        ,
+        
+          r
+          
+            3
+          
+        
+        ,
+        …
+        ,
+        
+          r
+          
+            n
+          
+        
+      
+    
+    {\displaystyle r_{1},r_{2},r_{3},\dots ,r_{n}}
+  
+ be their perpendicular distances from the axis of rotation. Then, the moment of inertia 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ of the body about the axis of rotation is
+
+  
+    
+      
+        I
+        =
+        
+          m
+          
+            1
+          
+        
+        
+          r
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        
+          m
+          
+            2
+          
+        
+        
+          r
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          m
+          
+            n
+          
+        
+        
+          r
+          
+            n
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle I=m_{1}r_{1}^{2}+m_{2}r_{2}^{2}+\cdots +m_{n}r_{n}^{2}}
+  
+
+If all the masses are the same (
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+), then the moment of inertia is 
+  
+    
+      
+        I
+        =
+        m
+        (
+        
+          r
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        
+          r
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          r
+          
+            n
+          
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle I=m(r_{1}^{2}+r_{2}^{2}+\cdots +r_{n}^{2})}
+  
+.
+Since 
+  
+    
+      
+        m
+        =
+        M
+        
+          /
+        
+        n
+      
+    
+    {\displaystyle m=M/n}
+  
+ (
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ being the total mass of the body), 
+
+  
+    
+      
+        I
+        =
+        M
+        (
+        
+          r
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        
+          r
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          r
+          
+            n
+          
+          
+            2
+          
+        
+        )
+        
+          /
+        
+        n
+      
+    
+    {\displaystyle I=M(r_{1}^{2}+r_{2}^{2}+\cdots +r_{n}^{2})/n}
+  
+
+From the above equations, we have 
+
+  
+    
+      
+        M
+        
+          R
+          
+            g
+          
+          
+            2
+          
+        
+        =
+        M
+        (
+        
+          r
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        
+          r
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          r
+          
+            n
+          
+          
+            2
+          
+        
+        )
+        
+          /
+        
+        n
+      
+    
+    {\displaystyle MR_{g}^{2}=M(r_{1}^{2}+r_{2}^{2}+\cdots +r_{n}^{2})/n}
+  
+
+Radius of gyration is the root mean square distance of particles from axis formula 
+
+  
+    
+      
+        
+          R
+          
+            g
+          
+          
+            2
+          
+        
+        =
+        (
+        
+          r
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        
+          r
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          r
+          
+            n
+          
+          
+            2
+          
+        
+        )
+        
+          /
+        
+        n
+      
+    
+    {\displaystyle R_{g}^{2}=(r_{1}^{2}+r_{2}^{2}+\cdots +r_{n}^{2})/n}
+  
+
+Therefore, the radius of gyration of a body about a given axis may also be defined as the root mean square distance of the various particles of the body from the axis of rotation. It is also known as a measure of the way in which the mass of a rotating rigid body is distributed about its axis of rotation.
+
+
+== Applications in structural engineering ==
+In structural engineering, the two-dimensional radius of gyration is used to describe the distribution of cross sectional area in a column around its centroidal axis with the mass of the body. The radius of gyration is given by the following formula:
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+        
+        =
+        
+          
+            
+              I
+              A
+            
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }={\sqrt {\frac {I}{A}}}}
+  
+
+Where 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ is the second moment of area and 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ is the total cross-sectional area.
+The gyration radius is useful in estimating the stiffness of a column. If the principal moments of the two-dimensional gyration tensor are not equal, the column will tend to buckle around the axis with the smaller principal moment. For example, a column with an elliptical cross-section will tend to buckle in the direction of the smaller semiaxis.
+In engineering, where continuous bodies of matter are generally the objects of study, the radius of gyration is usually calculated as an integral.
+
+
+== Applications in mechanics ==
+The radius of gyration about a given axis (
+  
+    
+      
+        
+          r
+          
+            
+              g
+            
+            
+               axis
+            
+          
+        
+      
+    
+    {\displaystyle r_{\mathrm {g} {\text{ axis}}}}
+  
+) can be calculated in terms of the mass moment of inertia 
+  
+    
+      
+        
+          I
+          
+            axis
+          
+        
+      
+    
+    {\displaystyle I_{\text{axis}}}
+  
+ around that axis, and the total mass m;
+
+  
+    
+      
+        
+          r
+          
+            
+              g
+            
+            
+               axis
+            
+          
+        
+        =
+        
+          
+            
+              
+                I
+                
+                  axis
+                
+              
+              m
+            
+          
+        
+      
+    
+    {\displaystyle r_{\mathrm {g} {\text{ axis}}}={\sqrt {\frac {I_{\text{axis}}}{m}}}}
+  
+
+  
+    
+      
+        
+          I
+          
+            axis
+          
+        
+      
+    
+    {\displaystyle I_{\text{axis}}}
+  
+ is a scalar, and is not the moment of inertia tensor.
+
+
+== Molecular applications ==
+
+In polymer physics, the radius of gyration is used to describe the dimensions of a polymer chain.  The radius of gyration of an individual homopolymer with degree of polymerization N at a given time is defined as: 
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+          
+            2
+          
+        
+         
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+         
+        
+          
+            1
+            N
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          
+            |
+            
+              
+                
+                  r
+                
+                
+                  k
+                
+              
+              −
+              
+                
+                  r
+                
+                
+                  
+                    m
+                    e
+                    a
+                    n
+                  
+                
+              
+            
+            |
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }^{2}\ {\stackrel {\mathrm {def} }{=}}\ {\frac {1}{N}}\sum _{k=1}^{N}\left|\mathbf {r} _{k}-\mathbf {r} _{\mathrm {mean} }\right|^{2}}
+  
+
+where 
+  
+    
+      
+        
+          
+            r
+          
+          
+            
+              m
+              e
+              a
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {r} _{\mathrm {mean} }}
+  
+ is the mean position of the monomers.
+As detailed below, the radius of gyration is also proportional to the root mean square distance between the monomers:
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+          
+            2
+          
+        
+         
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+         
+        
+          
+            1
+            
+              2
+              
+                N
+                
+                  2
+                
+              
+            
+          
+        
+        
+          ∑
+          
+            i
+            ≠
+            j
+          
+        
+        
+          
+            |
+            
+              
+                
+                  r
+                
+                
+                  i
+                
+              
+              −
+              
+                
+                  r
+                
+                
+                  j
+                
+              
+            
+            |
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }^{2}\ {\stackrel {\mathrm {def} }{=}}\ {\frac {1}{2N^{2}}}\sum _{i\neq j}\left|\mathbf {r} _{i}-\mathbf {r} _{j}\right|^{2}}
+  
+
+As a third method, the radius of gyration can also be computed by summing the principal moments of the gyration tensor.
+Since the chain conformations of a polymer sample are quasi infinite in number and constantly change over time, the "radius of gyration" discussed in polymer physics must usually be understood as a mean over all polymer molecules of the sample and over time.  That is, the radius of gyration which is measured as an average over time or ensemble:
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+          
+            2
+          
+        
+         
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+         
+        
+          
+            1
+            N
+          
+        
+        
+          ⟨
+          
+            
+              ∑
+              
+                k
+                =
+                1
+              
+              
+                N
+              
+            
+            
+              
+                |
+                
+                  
+                    
+                      r
+                    
+                    
+                      k
+                    
+                  
+                  −
+                  
+                    
+                      r
+                    
+                    
+                      
+                        m
+                        e
+                        a
+                        n
+                      
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+          ⟩
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }^{2}\ {\stackrel {\mathrm {def} }{=}}\ {\frac {1}{N}}\left\langle \sum _{k=1}^{N}\left|\mathbf {r} _{k}-\mathbf {r} _{\mathrm {mean} }\right|^{2}\right\rangle }
+  
+
+where the angular brackets 
+  
+    
+      
+        ⟨
+        …
+        ⟩
+      
+    
+    {\displaystyle \langle \ldots \rangle }
+  
+ denote the ensemble average.
+An entropically governed polymer chain (i.e. in so called theta conditions) follows a random walk in three dimensions. The radius of gyration for this case is given by
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+        
+        =
+        
+          
+            1
+            
+              
+                
+                  6
+                
+              
+               
+            
+          
+        
+         
+        
+          
+            N
+          
+        
+         
+        a
+      
+    
+    {\displaystyle R_{\mathrm {g} }={\frac {1}{{\sqrt {6}}\ }}\ {\sqrt {N}}\ a}
+  
+
+Note that although 
+  
+    
+      
+        a
+        N
+      
+    
+    {\displaystyle aN}
+  
+ represents the contour length of the polymer, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ is strongly dependent of polymer stiffness and can vary over orders of magnitude. 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ is reduced accordingly.
+One reason that the radius of gyration is an interesting property is that it can be determined experimentally with static light scattering as well as with small angle neutron- and x-ray scattering. This allows theoretical polymer physicists to check their models against reality.
+The hydrodynamic radius is numerically similar, and can be measured with Dynamic Light Scattering (DLS).
+
+
+=== Derivation of identity ===
+To show that the two definitions of 
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }^{2}}
+  
+ are identical, 
+we first multiply out the summand in the first definition:
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+          
+            2
+          
+        
+         
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+         
+        
+          
+            1
+            N
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          
+            (
+            
+              
+                
+                  r
+                
+                
+                  k
+                
+              
+              −
+              
+                
+                  r
+                
+                
+                  
+                    m
+                    e
+                    a
+                    n
+                  
+                
+              
+            
+            )
+          
+          
+            2
+          
+        
+        =
+        
+          
+            1
+            N
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          [
+          
+            
+              
+                r
+              
+              
+                k
+              
+            
+            ⋅
+            
+              
+                r
+              
+              
+                k
+              
+            
+            +
+            
+              
+                r
+              
+              
+                
+                  m
+                  e
+                  a
+                  n
+                
+              
+            
+            ⋅
+            
+              
+                r
+              
+              
+                
+                  m
+                  e
+                  a
+                  n
+                
+              
+            
+            −
+            2
+            
+              
+                r
+              
+              
+                k
+              
+            
+            ⋅
+            
+              
+                r
+              
+              
+                
+                  m
+                  e
+                  a
+                  n
+                
+              
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }^{2}\ {\stackrel {\mathrm {def} }{=}}\ {\frac {1}{N}}\sum _{k=1}^{N}\left(\mathbf {r} _{k}-\mathbf {r} _{\mathrm {mean} }\right)^{2}={\frac {1}{N}}\sum _{k=1}^{N}\left[\mathbf {r} _{k}\cdot \mathbf {r} _{k}+\mathbf {r} _{\mathrm {mean} }\cdot \mathbf {r} _{\mathrm {mean} }-2\mathbf {r} _{k}\cdot \mathbf {r} _{\mathrm {mean} }\right]}
+  
+
+Carrying out the summation over the last two terms and using the definition of 
+  
+    
+      
+        
+          
+            r
+          
+          
+            
+              m
+              e
+              a
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {r} _{\mathrm {mean} }}
+  
+ gives the formula
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+          
+            2
+          
+        
+         
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+         
+        −
+        
+          
+            r
+          
+          
+            
+              m
+              e
+              a
+              n
+            
+          
+        
+        ⋅
+        
+          
+            r
+          
+          
+            
+              m
+              e
+              a
+              n
+            
+          
+        
+        +
+        
+          
+            1
+            N
+          
+        
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          (
+          
+            
+              
+                r
+              
+              
+                k
+              
+            
+            ⋅
+            
+              
+                r
+              
+              
+                k
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }^{2}\ {\stackrel {\mathrm {def} }{=}}\ -\mathbf {r} _{\mathrm {mean} }\cdot \mathbf {r} _{\mathrm {mean} }+{\frac {1}{N}}\sum _{k=1}^{N}\left(\mathbf {r} _{k}\cdot \mathbf {r} _{k}\right)}
+  
+
+On the other hand, the second definition can be calculated in the same way as follows. 
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  R
+                  
+                    
+                      g
+                    
+                  
+                  
+                    2
+                  
+                
+                 
+              
+              
+                
+                
+                  
+                    
+                      
+                        =
+                      
+                      
+                        
+                          d
+                          e
+                          f
+                        
+                      
+                    
+                  
+                
+                 
+                
+                  
+                    1
+                    
+                      2
+                      
+                        N
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    i
+                    ,
+                    j
+                  
+                
+                
+                  
+                    |
+                    
+                      
+                        
+                          r
+                        
+                        
+                          i
+                        
+                      
+                      −
+                      
+                        
+                          r
+                        
+                        
+                          j
+                        
+                      
+                    
+                    |
+                  
+                  
+                    2
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      2
+                      
+                        N
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    i
+                    ,
+                    j
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        r
+                      
+                      
+                        i
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        i
+                      
+                    
+                    −
+                    2
+                    
+                      
+                        r
+                      
+                      
+                        i
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        j
+                      
+                    
+                    +
+                    
+                      
+                        r
+                      
+                      
+                        j
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        j
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      2
+                      
+                        N
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  [
+                  
+                    N
+                    
+                      ∑
+                      
+                        i
+                      
+                    
+                    
+                      (
+                      
+                        
+                          
+                            r
+                          
+                          
+                            i
+                          
+                        
+                        ⋅
+                        
+                          
+                            r
+                          
+                          
+                            I
+                          
+                        
+                      
+                      )
+                    
+                    −
+                    2
+                    
+                      ∑
+                      
+                        i
+                        ,
+                        j
+                      
+                    
+                    
+                      (
+                      
+                        
+                          
+                            r
+                          
+                          
+                            i
+                          
+                        
+                        ⋅
+                        
+                          
+                            r
+                          
+                          
+                            j
+                          
+                        
+                      
+                      )
+                    
+                    +
+                    N
+                    
+                      ∑
+                      
+                        j
+                      
+                    
+                    
+                      (
+                      
+                        
+                          
+                            r
+                          
+                          
+                            j
+                          
+                        
+                        ⋅
+                        
+                          
+                            r
+                          
+                          
+                            j
+                          
+                        
+                      
+                      )
+                    
+                  
+                  ]
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    k
+                  
+                  
+                    N
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        r
+                      
+                      
+                        k
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        k
+                      
+                    
+                  
+                  )
+                
+                −
+                
+                  
+                    1
+                    
+                      N
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    i
+                    ,
+                    j
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        r
+                      
+                      
+                        i
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        j
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    k
+                  
+                  
+                    N
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        r
+                      
+                      
+                        k
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        k
+                      
+                    
+                  
+                  )
+                
+                −
+                
+                  
+                    r
+                  
+                  
+                    
+                      m
+                      e
+                      a
+                      n
+                    
+                  
+                
+                ⋅
+                
+                  
+                    r
+                  
+                  
+                    
+                      m
+                      e
+                      a
+                      n
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}R_{\mathrm {g} }^{2}\ &{\stackrel {\mathrm {def} }{=}}\ {\frac {1}{2N^{2}}}\sum _{i,j}\left|\mathbf {r} _{i}-\mathbf {r} _{j}\right|^{2}\\&={\frac {1}{2N^{2}}}\sum _{i,j}\left(\mathbf {r} _{i}\cdot \mathbf {r} _{i}-2\mathbf {r} _{i}\cdot \mathbf {r} _{j}+\mathbf {r} _{j}\cdot \mathbf {r} _{j}\right)\\&={\frac {1}{2N^{2}}}\left[N\sum _{i}\left(\mathbf {r} _{i}\cdot \mathbf {r} _{I}\right)-2\sum _{i,j}\left(\mathbf {r} _{i}\cdot \mathbf {r} _{j}\right)+N\sum _{j}\left(\mathbf {r} _{j}\cdot \mathbf {r} _{j}\right)\right]\\&={\frac {1}{N}}\sum _{k}^{N}\left(\mathbf {r} _{k}\cdot \mathbf {r} _{k}\right)-{\frac {1}{N^{2}}}\sum _{i,j}\left(\mathbf {r} _{i}\cdot \mathbf {r} _{j}\right)\\&={\frac {1}{N}}\sum _{k}^{N}\left(\mathbf {r} _{k}\cdot \mathbf {r} _{k}\right)-\mathbf {r} _{\mathrm {mean} }\cdot \mathbf {r} _{\mathrm {mean} }\end{aligned}}}
+  
+
+Thus, the two definitions are the same. 
+The last transformation uses the relationship 
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    1
+                    
+                      N
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    i
+                    ,
+                    j
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        r
+                      
+                      
+                        i
+                      
+                    
+                    ⋅
+                    
+                      
+                        r
+                      
+                      
+                        j
+                      
+                    
+                  
+                  )
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      N
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    i
+                  
+                
+                
+                  
+                    r
+                  
+                  
+                    i
+                  
+                
+                ⋅
+                
+                  (
+                  
+                    
+                      ∑
+                      
+                        j
+                      
+                    
+                    
+                      
+                        r
+                      
+                      
+                        j
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    N
+                  
+                
+                
+                  ∑
+                  
+                    i
+                  
+                
+                
+                  
+                    r
+                  
+                  
+                    i
+                  
+                
+                ⋅
+                
+                  
+                    r
+                  
+                  
+                    
+                      m
+                      e
+                      a
+                      n
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    r
+                  
+                  
+                    
+                      m
+                      e
+                      a
+                      n
+                    
+                  
+                
+                ⋅
+                
+                  
+                    r
+                  
+                  
+                    
+                      m
+                      e
+                      a
+                      n
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\frac {1}{N^{2}}}\sum _{i,j}\left(\mathbf {r} _{i}\cdot \mathbf {r} _{j}\right)&={\frac {1}{N^{2}}}\sum _{i}\mathbf {r} _{i}\cdot \left(\sum _{j}\mathbf {r} _{j}\right)\\&={\frac {1}{N}}\sum _{i}\mathbf {r} _{i}\cdot \mathbf {r} _{\mathrm {mean} }\\&=\mathbf {r} _{\mathrm {mean} }\cdot \mathbf {r} _{\mathrm {mean} }.\end{aligned}}}
+  
+
+
+== Applications in geographical data analysis ==
+In data analysis, the radius of gyration is used to calculate many different statistics including the spread of geographical locations. These locations have recently been collected from social media users to investigate the typical mentions of a user. This can be useful for understanding how a certain group  of users on social media use the platform.
+
+  
+    
+      
+        
+          R
+          
+            
+              g
+            
+          
+        
+        =
+        
+          
+            
+              
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  m
+                  
+                    i
+                  
+                
+                (
+                
+                  r
+                  
+                    i
+                  
+                
+                −
+                
+                  r
+                  
+                    C
+                  
+                
+                
+                  )
+                  
+                    2
+                  
+                
+              
+              
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    N
+                  
+                
+                
+                  m
+                  
+                    i
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {g} }={\sqrt {\frac {\sum _{i=1}^{N}m_{i}(r_{i}-r_{C})^{2}}{\sum _{i=1}^{N}m_{i}}}}}
+  
+
+
+== Notes ==
+
+
+== References ==
+Grosberg AY and Khokhlov AR. (1994) Statistical Physics of Macromolecules (translated by Atanov YA), AIP Press. ISBN 1-56396-071-0
+Flory PJ. (1953) Principles of Polymer Chemistry, Cornell University, pp. 428–429 (Appendix C of Chapter X).

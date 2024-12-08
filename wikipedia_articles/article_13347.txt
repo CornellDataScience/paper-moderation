@@ -1,0 +1,98 @@
+The four-tube television camera,  intended for color television studio use, was first developed by RCA in the early 1960s.: 96    In this camera, in addition to the usual complement of three tubes for the red, green and blue images, a fourth tube was included to provide luminance (black and white) detail of a scene.    With such a camera, a sharp black and white picture was always assured, as it was not necessary to combine signals from the three colour tubes to provide the luminance detail.
+In the early days of colour television (from the mid 1950s to the early 1960s) studio cameras were heavy and hot-running because of the vacuum tube (thermionic valve) circuitry that they contained, in addition to three large image orthicon pick-up tubes.
+With these cameras there was always a tendency for the three coloured images to drift out of registration, over time, giving a consequential loss of picture sharpness.
+In 1962, in order to address these stability problems, RCA announced their prototype four-tube camera.   The aims of the designers of the camera were, firstly, to produce a camera that was more tolerant to mis-registration and, secondly, to achieve a lighter camera by using smaller vidicon tubes to replace some of the large heavy IO tubes.   The camera had an image orthicon tube for the luminance channel and three vidicon tubes for the colour channels.  In addition, the camera was fully transistorized, apart from the four pick-up tubes.   The camera went into full production in 1963 and sales of several hundred of the model were achieved over the next few years.
+In the mid 1960s, following RCA’s lead, other versions of the 4-tube cameras were produced (see below for details).    In many cases, advantage was taken of a newly available pick-up tube (the Plumbicon).   This new tube allowed cameras to be smaller and lighter than before.
+However, by the end of the decade, 4-tube cameras had fallen out of favour with most manufactures and customers.  The picture quality and stability of pictures from 3-tube cameras had improved markedly, thanks to solid state circuitry, improvements in the Plumbicon tubes and the use of picture enhancement techniques.    In addition, 3-tube cameras were smaller, lighter and cheaper than the 4-tube versions.   By the early 1970s, only a very few manufacturers still made cameras using the 4-tube format.
+
+
+== Advantages of the four-tube configuration ==
+Source:
+In a 3-tube colour camera, the luminance (black and white) signal is derived from a combination of the three colour signals, so severe demands are placed on the registration accuracy of the three images, if sharp pictures are to be achieved.  With a four tube camera, however, this registration problem is avoided because the transient edges in the luminance signal all originate from a single tube.  Although achieving sharp pictures had always been a desirable aim, it was of particular concern in the early days of colour television when the majority of viewers still had black and white sets.   It was considered essential that these viewers should see no degradation in picture quality when viewing colour transmissions.
+In addition to allowing the registration accuracy between the colour images to be relaxed, the 4-tube camera allows additional mis-registration of these three images relative to the luminance image.   This is because the presence of a sharp black and white image allows significant displacement of the colour content to be tolerated by the viewer; a feature long exploited by the publishers of cheap colour comics and magazines.
+RCA engineers in 1964 considered that registration tolerances could be relaxed by three times, relative to a 3-tube camera.   A later study by the BBC, comparing 3 and 4-tube arrangements   concluded that tolerances could be relaxed by at least 2:1 in the 4-tube case.
+A further advantage of the 4-tube system concerned noise in the picture.  As the composite signals in NTSC, PAL and SECAM systems all used band-limited colour information, so the colour channels in a 4-tube camera could be band-limited, appropriately.  This ensured that there was no contamination of the luminance picture by high frequency noise from those channels.
+Disadvantages of a four tube system were increased costs, a larger and heavier camera, and reduced light levels on the colour tubes (light was ‘stolen’ by the luminance tube),  making such a camera less suitable for outside broadcasts in low ambient lighting.
+(An alternative way of producing a sharp luminance image was the three tube luminance-red-blue camera (the 'YRB' camera).   However, this system was not favoured by most manufacturers, because it was deficient in colour hue fidelity.: 473    Even so, a 3-tube camera of this type was produced by Bosch/Fernseh, their type KCU40 ).
+
+
+== Historical background ==
+
+
+=== Early three-tube cameras ===
+Up to 1962, television studios used 3-tube image orthicon cameras for programmes in colour.   For example, RCA offered the TK-41, GE the PC-15 and PC-25, Marconi the BD848/B3200.    They were all big, heavy, cameras (for example, the TK-41 with zoom lens was 5 ft long and it weighed 500 lbs).   However, when properly set up, these image orthicon cameras could give pleasing pictures, which had the sharp crisp look that was a characteristic of the I.O. pick-up tubes (see Video camera tube - Image orthicon).
+
+
+=== The first four-tube camera ===
+In March 1962, RCA demonstrated the first 4-tube camera, the TK-42X (‘X’ for experimental), which incorporated a 4.5” image orthicon tube, as the luminance tube, together with three vidicon tubes to provide the colour information.: 96    This new camera had a conventional box- shaped housing, but it was  lighter and shorter and had a 5:1 zoom lens integrated within it.   The following year, with various technical issues resolved, the camera went into production.  It now had a profile similar to the TK-41, but was considerably lighter and shorter.
+
+
+=== British four-tube cameras ===
+In 1963 engineers from Marconi and EMI visited RCA in order to inspect this new concept camera.   BBC engineers also visited RCA with a view to using the camera in the forthcoming UK colour service.
+Following their visit, EMI quickly made an experimental 4-tube camera by cobbling together parts from an EMI Type 203 image orthicon studio camera with parts from an EMI Type 204 three-vidicon industrial colour camera   This camera was demonstrated to the BBC and received a lukewarm reception there.  It produced sharp pictures, as expected, but there were problems with colorimetry.  Pictures of this camera can be found on various websites (it is not a pretty camera!).  A production version of this camera, the EMI 2000, contained a similar complement of pick-up tubes, but was never built.
+Marconi, following their visit to RCA, also promptly set about the development of a new 4-tube camera, similar in concept to the RCA one.   However, this work was soon abandoned in favour of an all Plumbicon camera (the Mark VII camera), using the newly available Plumbicon camera tubes from Philips.   The camera was completed in 9 months and was the first all-Plumbicon 4-tube camera to be available worldwide.   It was marketed in the US from February 1966 and achieved substantial sales there.: 111 
+Lagging behind by over a year, EMI completed and demonstrated their type 2001 4-tube Plumbicon camera.   This camera was ready only just in time for the launch of the colour television service by the BBC, but then proved to be very popular in Britain, with cameras installed in most studios, nationwide.   However, its late arrival, compounded by all the early sales going into the British market, resulted in the camera missing out on sales opportunities in the USA when, in the mid 1960s, a rapid expansion of the market took place.  Furthermore, it made little impact in European markets which were either not ready or already dominated by Philips' 3-tube cameras.
+
+
+=== Other developments ===
+Following on from the TK-42, RCA produced several more cameras with a similar format.  The TK-43 was a version of the TK-42, but with an external lens, The TK-44 had an Isocon tube in the luminance channel and three Plumbicons for the colour channels.: 116  (The Isocon tube was more sensitive than the image orthicon so enabling the camera to operate at very low light levels, in outside broadcast use.    However, it was a short-lived tube: 119 ).    There was also a version of the TK-42 in which selenicon tubes replaced the vidicons.    None of these cameras sold in anything like the quantities of the TK-42.   RCA also produced a four vidicon film camera, the TK-27.
+The advent of the Plumbicon tube brought about the end for the image orthicon type tubes: 124  and from the middle of the 1960s onwards, virtually all television cameras contained Plumbicons, regardless of the number of tubes used in a camera.  (This tube had first been announced ten years previously, initially for medical use,: 61  but much time and effort had been invested in making it suitable for broadcast TV use).
+G.E. ceased production of its 3 x I.O., the type PC-25 in 1966.   Meanwhile, the company had brought out, in 1965, a 4-tube vidicon camera, the GE PE-24, for film scanner use.   This was followed by an all-Plumbicon 4-tube camera, the type PE250, which used conventional relay optics, rather than the prism optics of some other colour cameras.   This camera was later followed by the PE350 and PE400, which continued to use the 4-tube format.    (G.E. maintained, at that time, that 4-tube cameras gave the best pictures: 124 ).
+Philips Research Lab., following RCA's lead, also contemplated the construction of a four-tube camera.   Their new camera was to include an experimental 2" Plumbicon tube which was being developed for use in the luminance channel of this camera. The work was discontinued.
+A Russian camera, the type KT-166M, used 4 plumbicons and prism optics.
+
+
+=== Demise ===
+The 4-tube concept was developed in 1962, but the benefits it offered were not accepted by everyone.  Even in 1967, at the Montreux TV Symposium, the pros and cons of the three and four tube system were still being hotly debated.    However, by the end of the decade, 4-tube cameras were out of fashion.: 124   A combination of high quality Plumbicon tubes, improved registration techniques and electronic picture enhancement methods: 123  made the pictures from the 3-tube cameras completely acceptable while 4-tube cameras were perceived to be big, heavy and expensive to run.    Such an outcome had  been predicted by BBC engineers
+RCA ceased production of the TK-42 in 1966 and by 1968 was offering the TK-44A (a 3-plumbicon camera, similar in concept to the Norelco PC60.: 124    In 1968 Marconi brought out their new Mark VIII camera, which was a light, neat, three tube design with integral zoom and auto-registration capability.   Philips continued to improve their Norelco cameras. (now offering their “third generation” camera).   Other suppliers of 3-tube cameras were Ampex with the BC-230,: 133  Visual Electronics: 125  in the US, and the Bosch-Fernseh KCU40, in Germany.     Only a few manufacturers continued with the 4-tube concept beyond the end of the decade.  GE continued with the 4-tube configuration, next bringing out the PE350,  followed later by the PE400, as mentioned earlier.   For a while, Thomson CSF, in France, offered the 4-tube TH.T 2001  (a camera that was basically the EMI 2001) but by the early 1970s was offering the 3-tube TTV 1515
+Initially, EMI continued the 4-tube concept by producing a 4-tube film camera (the EMI 2002), but by 1969 decided to follow the trend in studio cameras by introducing a 3-tube version of the Type 2001 (the Type 2001C), specifically for the American market, in partnership with IVC.    This venture was not successful; the camera was almost as big and heavy as the 4-tube design on which it was based, whereas the competition now had smaller, lighter, purpose-built, 3-tube designs.    After that, EMI abandoned the 4-tube concept completely and in 1970 introduced the Type 2005.   This was a conventional 3-tube design, somewhat similar in appearance to the 2001, but with an external zoom lens.     It achieved modest sales in the UK.
+
+
+== Colour processing ==
+There are three components in the composite waveforms for the NTSC,  PAL and SECAM broadcast television systems a wideband luminance signal (Y) and two narrow band colour-difference signals, containing (R – Y) and (B – Y).   These components are combined to give a waveform suitable for transmission.   After reception and demodulation, the composite waveform is decoded to give red, green and blue signals which are applied to the three guns of a display tube.
+(The luminance signal used in this process was assumed to originate from a combination of signals from the red, green and blue images in a three tube camera, where Y is given by (here ignoring issues with gamma correction, for simplicity):
+
+  
+    
+      
+        Y
+        =
+        0.30
+        ×
+        R
+        +
+        0.59
+        ×
+        G
+        +
+        0.11
+        ×
+        B
+      
+    
+    {\displaystyle Y=0.30\times R+0.59\times G+0.11\times B}
+  
+
+and the processing in a colour receiver assumes that the luminance signal has this form, when the decoding of the composite signal into the individual colour components takes place.   (The spectral sensitivity of the red, green and blue channels had pre-defined characteristics: 478  which were achieved, in practice, by a combination of (a) the characteristics of dichroic reflection surfaces, (b) optical filters ahead of the pick-up tubes and (c) the spectral characteristics of the pick-up tubes).
+In the case of a four-tube camera, there is a problem with colorimetry if the signal from the luminance tube is used in unmodified form to represent ‘Y’,  because that signal is likely to be panchromatic, rather than having a characteristic similar to the luminance signal given by the equation above.    Consequently, if the colour difference signals use this unmodified version of 'Y', the decoded colour display in the receiver will have saturation and hue errors.
+The various manufacturers  of 4-tube cameras used different methods to  resolve this problem.    RCA, in their TK-42, placed an optical filter in front of the luminance tube which transmitted light according to the required luminosity function.   Marconi, in the Mk VII, used a dichroic mirror to reflect light to the luminance tube which had the required luminosity function.    EMI, in their 2001 camera, formed a low frequency luminance signal from the band-limited colour channels, according to 3-tube practice.  The wideband luminance signal was corrected by this so as to achieve the required luminance characteristic at low frequencies.   This process was referred to as the delta-L correction method. 
+In the GE four-tube cameras a neutral splitting prism, with a semi-silvered surface, was used to provide the image for the luminance tube, so no spectral shaping was used in the luminance channel.  Instead, the cameras possessed an eight-position filter wheel, located just after the zoom lens, so that a filter could be chosen to give optimum colorimetry in the tv picture, according to the lighting conditions encountered in a scene
+
+
+== Camera data ==
+Notes:
+
+Some 3-tube cameras are included for comparison
+The all-up weight is given (camera + V/finder + lens) unless otherwise stated
+The length normally excludes the lens
+The table is incomplete.
+Abbreviations used:  L = length; W = width; H = height; vf =viewfinder; zm = zoom; I.O. = image orthicon; Iso = Isocon; vid = vidicon; Pl = Plumbicon; cam. = camera; Manuf. = Manufacturer; RCA = Radio Corporation of America; GE = General Electric Co.; EMI = Electrical and Musical Industries;
+
+
+== See also ==
+Professional video camera
+Video camera tube
+EMI 2001
+
+
+== References ==

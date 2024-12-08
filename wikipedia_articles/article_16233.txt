@@ -1,0 +1,254 @@
+In engineering, shear strength is the strength of a material or component against the type of yield or structural failure when the material or component fails in shear. A shear load is a force that tends to produce a sliding failure on a material along a plane that is parallel to the direction of the force. When a paper is cut with scissors, the paper fails in shear.
+In structural and  mechanical engineering, the shear strength of a component is important for designing the dimensions and materials to be used for the manufacture or construction of the component (e.g. beams, plates, or bolts). In a reinforced concrete beam, the main purpose of reinforcing bar (rebar) stirrups is to increase the shear strength.
+
+
+== Equations ==
+
+For shear stress 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+ applies
+
+  
+    
+      
+        τ
+        =
+        
+          
+            
+              
+                σ
+                
+                  1
+                
+              
+              −
+              
+                σ
+                
+                  3
+                
+              
+            
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle \tau ={\frac {\sigma _{1}-\sigma _{3}}{2}},}
+  
+
+where
+
+  
+    
+      
+        
+          σ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \sigma _{1}}
+  
+ is major principal stress and
+
+  
+    
+      
+        
+          σ
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \sigma _{3}}
+  
+ is minor principal stress.
+In general: ductile materials (e.g. aluminum) fail in shear, whereas brittle materials (e.g. cast iron) fail in tension (see: Tensile strength).
+To calculate:
+Given total force at failure (F) and the force-resisting area (e.g. the cross-section of a bolt loaded in shear), ultimate shear strength (
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+) is:
+
+  
+    
+      
+        τ
+        =
+        
+          
+            F
+            A
+          
+        
+        =
+        
+          
+            F
+            
+              π
+              
+                r
+                
+                  bolt
+                
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              4
+              F
+            
+            
+              π
+              
+                d
+                
+                  bolt
+                
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \tau ={\frac {F}{A}}={\frac {F}{\pi r_{\text{bolt}}^{2}}}={\frac {4F}{\pi d_{\text{bolt}}^{2}}}}
+  
+
+For average shear stress
+
+  
+    
+      
+        
+          τ
+          
+            avg
+          
+        
+        =
+        
+          
+            V
+            A
+          
+        
+      
+    
+    {\displaystyle \tau _{\text{avg}}={\frac {V}{A}}}
+  
+
+where
+
+  
+    
+      
+        
+          τ
+          
+            avg
+          
+        
+      
+    
+    {\displaystyle \tau _{\text{avg}}}
+  
+ is the average shear stress,
+
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ is the shear force applied to each section of the part, and
+
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ is the area of the section.
+Average shear stress can also be defined as the total force of 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ as
+
+  
+    
+      
+        V
+        =
+        ∫
+        τ
+        d
+        A
+      
+    
+    {\displaystyle V=\int \tau dA}
+  
+
+This is only the average stress, actual stress distribution is not uniform. In real world applications, this equation only gives an approximation and the maximum shear stress would be higher. Stress is not often equally distributed across a part so the shear strength would need to be higher to account for the estimate.
+
+
+== Comparison ==
+As a very rough guide relating tensile, yield, and shear strengths:
+
+USS: Ultimate Shear Strength, UTS: Ultimate Tensile Strength, SYS: Shear Yield Stress, TYS: Tensile Yield Stress
+There are no published standard values for shear strength like with tensile and yield strength. Instead, it is common for it to be estimated as 60% of the ultimate tensile strength. Shear strength can be measured by a torsion test where it is equal to their torsional strength.
+
+When values measured from physical samples are desired, a number of testing standards are available, covering different material categories and testing conditions. In the US, ASTM standards for measuring shear strength include ASTM B769, B831, D732, D4255, D5379, and D7078. Internationally, ISO testing standards for shear strength include ISO 3597, 12579, and 14130.
+
+
+== See also ==
+Shear modulus
+Shear stress
+Shear strain
+Shear strength (soil)
+Shear strength (Discontinuity)
+Strength of materials
+Tensile strength
+
+
+== References ==

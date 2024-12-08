@@ -1,0 +1,49 @@
+In mathematics, the category of measurable spaces, often denoted Meas, is the category whose objects are measurable spaces and whose morphisms are measurable maps.
+This is a category because the composition of two measurable maps is again measurable, and the identity function is measurable. 
+N.B. Some authors reserve the name Meas for categories whose objects are measure spaces, and denote the category of measurable spaces as Mble, or other notations. Some authors also restrict the category only to particular well-behaved measurable spaces, such as standard Borel spaces.
+
+
+== As a concrete category ==
+Like many categories, the category Meas is a concrete category, meaning its objects are sets with additional structure (i.e. sigma-algebras) and its morphisms are functions preserving this structure. There is a natural forgetful functor
+
+U : Meas → Set
+to the category of sets which assigns to each measurable space the underlying set and to each measurable map the underlying function.
+The forgetful functor U has both a left adjoint
+
+D : Set → Meas
+which equips a given set with the discrete sigma-algebra, and a right adjoint
+
+I : Set → Meas
+which equips a given set with the indiscrete or trivial sigma-algebra. Both of these functors are, in fact, right inverses to U (meaning that UD and UI are equal to the identity functor on Set). Moreover, since any function between discrete or between indiscrete spaces is measurable, both of these functors give full embeddings of Set into Meas.
+
+
+== Limits and colimits ==
+The category Meas is both complete and cocomplete, which means that all small limits and colimits exist in Meas. In fact, the forgetful functor U : Meas → Set uniquely lifts both limits and colimits and preserves them as well. Therefore, (co)limits in Meas are given by placing particular sigma-algebras on the corresponding (co)limits in Set.
+Examples of limits and colimits in Meas include:
+
+The empty set (considered as a measurable space) is the initial object of Meas; any singleton measurable space is a terminal object. There are thus no zero objects in Meas.
+The product in Meas is given by the product sigma-algebra on the Cartesian product. The coproduct is given by the disjoint union of measurable spaces.
+The equalizer of a pair of morphisms is given by placing the induced sigma-algebra on the subset given by the set-theoretic equalizer. Dually, the coequalizer is given by placing the quotient sigma-algebra on the set-theoretic coequalizer.
+Direct limits and inverse limits are the set-theoretic limits with the final and initial sigma-algebra respectively. Canonical examples of direct and inverse systems are the ones arising from filtrations in probability theory, and the limits and colimits of such systems are, respectively, the join and the intersection of sigma-algebras.
+
+
+== Other properties ==
+The monomorphisms in Meas are the injective measurable maps, the epimorphisms are the surjective measurable maps, and the isomorphisms are the isomorphisms of measurable spaces.
+The split monomorphisms are (essentially) the inclusions of measurable retracts into their ambient space.
+The split epimorphisms are (up to isomorphism) the measurable surjective maps of a measurable space onto one of its retracts.
+Meas is not cartesian closed (and therefore also not a topos) since it does not have exponential objects for all spaces.
+
+
+== See also ==
+Category of topological spaces – category whose objects are topological spaces and whose morphisms are continuous mapsPages displaying wikidata descriptions as a fallback
+Category of sets – Category in mathematics where the objects are sets
+Category of measure spaces
+Category of Markov kernels – Definition and properties of the category of Markov kernels, in more detail than at "Markov kernel".
+Measurable space – Basic object in measure theory; set and a sigma-algebra
+Measurable function – Kind of mathematical function
+
+
+== Citations ==
+
+
+== References ==

@@ -1,0 +1,1010 @@
+In probability and statistics, a circular distribution or polar distribution is a probability distribution of a random variable whose values are angles, usually taken to be in the range [0, 2π). A circular distribution is often a continuous probability distribution, and hence has a probability density, but such distributions can also be discrete, in which case they are called circular lattice distributions. Circular distributions can be used even when the variables concerned are not explicitly angles: the main consideration is that there is not usually any real distinction between events occurring at the opposite ends of the range, and the division of the range could notionally be made at any point.
+
+
+== Graphical representation ==
+If a circular distribution has a density
+
+  
+    
+      
+        p
+        (
+        ϕ
+        )
+        
+        
+        (
+        0
+        ≤
+        ϕ
+        <
+        2
+        π
+        )
+        ,
+        
+      
+    
+    {\displaystyle p(\phi )\qquad \qquad (0\leq \phi <2\pi ),\,}
+  
+
+it can be graphically represented as a closed curve
+
+  
+    
+      
+        [
+        x
+        (
+        ϕ
+        )
+        ,
+        y
+        (
+        ϕ
+        )
+        ]
+        =
+        [
+        r
+        (
+        ϕ
+        )
+        cos
+        ⁡
+        ϕ
+        ,
+        
+        r
+        (
+        ϕ
+        )
+        sin
+        ⁡
+        ϕ
+        ]
+        ,
+        
+      
+    
+    {\displaystyle [x(\phi ),y(\phi )]=[r(\phi )\cos \phi ,\,r(\phi )\sin \phi ],\,}
+  
+
+where the radius 
+  
+    
+      
+        r
+        (
+        ϕ
+        )
+        
+      
+    
+    {\displaystyle r(\phi )\,}
+  
+ is set equal to
+
+  
+    
+      
+        r
+        (
+        ϕ
+        )
+        =
+        a
+        +
+        b
+        p
+        (
+        ϕ
+        )
+        ,
+        
+      
+    
+    {\displaystyle r(\phi )=a+bp(\phi ),\,}
+  
+
+and where a and b are chosen on the basis of appearance.
+
+
+== Examples ==
+By computing the probability distribution of angles along a handwritten ink trace,
+a lobe-shaped polar distribution emerges. The main direction of the lobe in the
+first quadrant corresponds to the slant of handwriting (see: graphonomics).
+An example of a circular lattice distribution would be the probability of being born in a given month of the year, with each calendar month being thought of as arranged round a circle, so that "January" is next to "December".
+
+Any probability density function (pdf) 
+  
+    
+      
+         
+        p
+        (
+        x
+        )
+      
+    
+    {\displaystyle \ p(x)}
+  
+ on the line can be "wrapped" around the circumference of a circle of unit radius. That is, the pdf of the wrapped variable 
+
+  
+    
+      
+        θ
+        =
+        
+          x
+          
+            w
+          
+        
+        =
+        x
+        
+          mod
+          
+            2
+          
+        
+        π
+         
+         
+        ∈
+        (
+        −
+        π
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle \theta =x_{w}=x{\bmod {2}}\pi \ \ \in (-\pi ,\pi ]}
+  
+
+is
+
+  
+    
+      
+        
+          p
+          
+            w
+          
+        
+        (
+        θ
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          p
+          (
+          θ
+          +
+          2
+          π
+          k
+          )
+        
+        .
+      
+    
+    {\displaystyle p_{w}(\theta )=\sum _{k=-\infty }^{\infty }{p(\theta +2\pi k)}.}
+  
+
+This concept can be extended to the multivariate context by an extension of the simple sum to a number of 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ sums that cover all dimensions in the feature space:
+
+  
+    
+      
+        
+          p
+          
+            w
+          
+        
+        (
+        
+          θ
+        
+        )
+        =
+        
+          ∑
+          
+            
+              k
+              
+                1
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        ⋯
+        
+          ∑
+          
+            
+              k
+              
+                F
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          p
+          (
+          
+            θ
+          
+          +
+          2
+          π
+          
+            k
+            
+              1
+            
+          
+          
+            
+              e
+            
+            
+              1
+            
+          
+          +
+          ⋯
+          +
+          2
+          π
+          
+            k
+            
+              F
+            
+          
+          
+            
+              e
+            
+            
+              F
+            
+          
+          )
+        
+      
+    
+    {\displaystyle p_{w}({\boldsymbol {\theta }})=\sum _{k_{1}=-\infty }^{\infty }\cdots \sum _{k_{F}=-\infty }^{\infty }{p({\boldsymbol {\theta }}+2\pi k_{1}\mathbf {e} _{1}+\dots +2\pi k_{F}\mathbf {e} _{F})}}
+  
+
+where 
+  
+    
+      
+        
+          
+            e
+          
+          
+            k
+          
+        
+        =
+        (
+        0
+        ,
+        …
+        ,
+        0
+        ,
+        1
+        ,
+        0
+        ,
+        …
+        ,
+        0
+        
+          )
+          
+            
+              T
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {e} _{k}=(0,\dots ,0,1,0,\dots ,0)^{\mathsf {T}}}
+  
+ is the 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+-th Euclidean basis vector.
+The following sections show some relevant circular distributions.
+
+
+=== von Mises circular distribution ===
+
+The von Mises distribution is a circular distribution which, like any other circular distribution, may be thought of as a wrapping of a certain linear probability distribution around the circle. The underlying linear probability distribution for the von Mises distribution is mathematically intractable; however, for statistical purposes, there is no need to deal with the underlying linear distribution. The usefulness of the von Mises distribution is twofold: it is the most mathematically tractable of all circular distributions, allowing simpler statistical analysis, and it is a close approximation to the wrapped normal distribution, which, analogously to the linear normal distribution, is important because it is the limiting case for the sum of a large number of small angular deviations. In fact, the von Mises distribution is often known as the "circular normal" distribution because of its ease of use and its close relationship to the wrapped normal distribution.
+The pdf of the von Mises distribution is: 
+  
+    
+      
+        f
+        (
+        θ
+        ;
+        μ
+        ,
+        κ
+        )
+        =
+        
+          
+            
+              e
+              
+                κ
+                cos
+                ⁡
+                (
+                θ
+                −
+                μ
+                )
+              
+            
+            
+              2
+              π
+              
+                I
+                
+                  0
+                
+              
+              (
+              κ
+              )
+            
+          
+        
+      
+    
+    {\displaystyle f(\theta ;\mu ,\kappa )={\frac {e^{\kappa \cos(\theta -\mu )}}{2\pi I_{0}(\kappa )}}}
+  
+ where 
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+      
+    
+    {\displaystyle I_{0}}
+  
+ is the modified Bessel function of order 0.
+
+
+=== Circular uniform distribution ===
+
+The probability density function (pdf) of the circular uniform distribution is given by
+
+  
+    
+      
+        U
+        (
+        θ
+        )
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        .
+      
+    
+    {\displaystyle U(\theta )={\frac {1}{2\pi }}.}
+  
+
+It can also be thought of as 
+  
+    
+      
+        κ
+        =
+        0
+      
+    
+    {\displaystyle \kappa =0}
+  
+ of the von Mises above.
+
+
+=== Wrapped normal distribution ===
+
+The pdf of the wrapped normal distribution (WN) is:
+
+  
+    
+      
+        W
+        N
+        (
+        θ
+        ;
+        μ
+        ,
+        σ
+        )
+        =
+        
+          
+            1
+            
+              σ
+              
+                
+                  2
+                  π
+                
+              
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        exp
+        ⁡
+        
+          [
+          
+            
+              
+                −
+                (
+                θ
+                −
+                μ
+                −
+                2
+                π
+                k
+                
+                  )
+                  
+                    2
+                  
+                
+              
+              
+                2
+                
+                  σ
+                  
+                    2
+                  
+                
+              
+            
+          
+          ]
+        
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        ϑ
+        
+          (
+          
+            
+              
+                
+                  θ
+                  −
+                  μ
+                
+                
+                  2
+                  π
+                
+              
+            
+            ,
+            
+              
+                
+                  i
+                  
+                    σ
+                    
+                      2
+                    
+                  
+                
+                
+                  2
+                  π
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle WN(\theta ;\mu ,\sigma )={\frac {1}{\sigma {\sqrt {2\pi }}}}\sum _{k=-\infty }^{\infty }\exp \left[{\frac {-(\theta -\mu -2\pi k)^{2}}{2\sigma ^{2}}}\right]={\frac {1}{2\pi }}\vartheta \left({\frac {\theta -\mu }{2\pi }},{\frac {i\sigma ^{2}}{2\pi }}\right)}
+  
+
+where μ and σ are the mean and standard deviation of the unwrapped distribution, respectively and  
+  
+    
+      
+        ϑ
+        (
+        θ
+        ,
+        τ
+        )
+      
+    
+    {\displaystyle \vartheta (\theta ,\tau )}
+  
+ is the Jacobi theta function:
+
+  
+    
+      
+        ϑ
+        (
+        θ
+        ,
+        τ
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        (
+        
+          w
+          
+            2
+          
+        
+        
+          )
+          
+            n
+          
+        
+        
+          q
+          
+            
+              n
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \vartheta (\theta ,\tau )=\sum _{n=-\infty }^{\infty }(w^{2})^{n}q^{n^{2}}}
+  
+ where 
+  
+    
+      
+        w
+        ≡
+        
+          e
+          
+            i
+            π
+            θ
+          
+        
+      
+    
+    {\displaystyle w\equiv e^{i\pi \theta }}
+  
+ and 
+  
+    
+      
+        q
+        ≡
+        
+          e
+          
+            i
+            π
+            τ
+          
+        
+        .
+      
+    
+    {\displaystyle q\equiv e^{i\pi \tau }.}
+  
+
+
+=== Wrapped Cauchy distribution ===
+
+The pdf of the wrapped Cauchy distribution (WC) is:
+
+  
+    
+      
+        W
+        C
+        (
+        θ
+        ;
+        
+          θ
+          
+            0
+          
+        
+        ,
+        γ
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          
+            γ
+            
+              π
+              (
+              
+                γ
+                
+                  2
+                
+              
+              +
+              (
+              θ
+              +
+              2
+              π
+              n
+              −
+              
+                θ
+                
+                  0
+                
+              
+              
+                )
+                
+                  2
+                
+              
+              )
+            
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+        
+        
+          
+            
+              sinh
+              ⁡
+              γ
+            
+            
+              cosh
+              ⁡
+              γ
+              −
+              cos
+              ⁡
+              (
+              θ
+              −
+              
+                θ
+                
+                  0
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle WC(\theta ;\theta _{0},\gamma )=\sum _{n=-\infty }^{\infty }{\frac {\gamma }{\pi (\gamma ^{2}+(\theta +2\pi n-\theta _{0})^{2})}}={\frac {1}{2\pi }}\,\,{\frac {\sinh \gamma }{\cosh \gamma -\cos(\theta -\theta _{0})}}}
+  
+
+where 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ is the scale factor and 
+  
+    
+      
+        
+          θ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \theta _{0}}
+  
+ is the peak position.
+
+
+=== Wrapped Lévy distribution ===
+
+The pdf of the wrapped Lévy distribution (WL) is:
+
+  
+    
+      
+        
+          f
+          
+            W
+            L
+          
+        
+        (
+        θ
+        ;
+        μ
+        ,
+        c
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              c
+              
+                2
+                π
+              
+            
+          
+        
+        
+        
+          
+            
+              e
+              
+                −
+                c
+                
+                  /
+                
+                2
+                (
+                θ
+                +
+                2
+                π
+                n
+                −
+                μ
+                )
+              
+            
+            
+              (
+              θ
+              +
+              2
+              π
+              n
+              −
+              μ
+              
+                )
+                
+                  3
+                  
+                    /
+                  
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle f_{WL}(\theta ;\mu ,c)=\sum _{n=-\infty }^{\infty }{\sqrt {\frac {c}{2\pi }}}\,{\frac {e^{-c/2(\theta +2\pi n-\mu )}}{(\theta +2\pi n-\mu )^{3/2}}}}
+  
+
+where the value of the summand is taken to be zero when 
+  
+    
+      
+        θ
+        +
+        2
+        π
+        n
+        −
+        μ
+        ≤
+        0
+      
+    
+    {\displaystyle \theta +2\pi n-\mu \leq 0}
+  
+, 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ is the scale factor and 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ is the location parameter.
+
+
+=== Projected normal distribution ===
+
+The projected normal distribution is a circular distribution representing the direction of a random variable with multivariate normal distribution, obtained by radial projection of the variable over the unit (n-1)-sphere. Due to this, and unlike other commonly used circular distributions, it is not symmetric nor unimodal.
+
+
+== See also ==
+Circular mean
+Circular uniform distribution
+von Mises distribution
+
+
+== References ==
+
+
+== Sources ==
+Fisher, N. I. (1993). Statistical Analysis of Circular Data. Cambridge University Press. ISBN 0-521-35018-2.
+
+
+== External links ==
+Circular Values Math and Statistics with C++11, A C++11 infrastructure for circular values (angles, time-of-day, etc.) mathematics and statistics

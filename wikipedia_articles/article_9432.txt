@@ -1,0 +1,128 @@
+In set theory, 
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+ (pronounced like the letter theta) is the least nonzero ordinal 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ such that there is no surjection from the reals onto 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+. 
+
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+ has been studied in connection with strong partition cardinals and the axiom of determinacy. The axiom of determinacy is equivalent to the existence of unboundedly many strong partition cardinals below 
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+, in the sense that every cardinal below 
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+ has a strong partition cardinal above it. This does not preclude the possibility that a single strong partition cardinal, above 
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+, suffices for all cardinals below 
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+, but the existence of such a cardinal would have additional consequences.
+If the reals can be well-ordered, then 
+
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+ is simply 
+  
+    
+      
+        (
+        
+          2
+          
+            
+              ℵ
+              
+                0
+              
+            
+          
+        
+        
+          )
+          
+            +
+          
+        
+      
+    
+    {\displaystyle (2^{\aleph _{0}})^{+}}
+  
+, the cardinal successor of the cardinality of the continuum. Any set may be well-ordered assuming the axiom of choice (AC). However, Θ is often studied in contexts where the axiom of choice fails, such as models of the axiom of determinacy.
+
+  
+    
+      
+        Θ
+      
+    
+    {\displaystyle \varTheta }
+  
+ is also the supremum of the order types of all prewellorderings of the reals.
+
+
+== Proof of existence ==
+It may not be obvious that it can be proven, without using AC, that there even exists a nonzero ordinal onto which there is no surjection from the reals (if there is such an ordinal, then there must be a least one because the ordinals are wellordered). However, suppose there were no such ordinal. Then to every ordinal α we could associate the set of all prewellorderings of the reals having order type α. This would give an injection from the class of all ordinals into the set of all sets of orderings on the reals (which can to be seen to be a set via repeated application of the powerset axiom). Now the axiom of replacement shows that the class of all ordinals is in fact a set. But that is impossible, by the Burali-Forti paradox.
+
+
+== References ==

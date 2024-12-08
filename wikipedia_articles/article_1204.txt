@@ -1,0 +1,50 @@
+In computing, a memory barrier, also known as a membar, memory fence or fence instruction, is a type of barrier instruction that causes a central processing unit (CPU) or compiler to enforce an ordering constraint on memory operations issued before and after the barrier instruction. This typically means that operations issued prior to the barrier are guaranteed to be performed before operations issued after the barrier.
+Memory barriers are necessary because most modern CPUs employ performance optimizations that can result in out-of-order execution. This reordering of memory operations (loads and stores) normally goes unnoticed within a single thread of execution, but can cause unpredictable behavior in concurrent programs and device drivers unless carefully controlled. The exact nature of an ordering constraint is hardware dependent and defined by the architecture's memory ordering model. Some architectures provide multiple barriers for enforcing different ordering constraints.
+Memory barriers are typically used when implementing low-level machine code that operates on memory shared by multiple devices. Such code includes synchronization primitives and lock-free data structures on multiprocessor systems, and device drivers that communicate with computer hardware.
+
+
+== Example ==
+When a program runs on a single-CPU machine, the hardware performs the necessary bookkeeping to ensure that the program executes as if all memory operations were performed in the order specified by the programmer (program order), so memory barriers are not necessary. However, when the memory is shared with multiple devices, such as other CPUs in a multiprocessor system, or memory-mapped peripherals, out-of-order access may affect program behavior. For example, a second CPU may see memory changes made by the first CPU in a sequence that differs from program order.
+A program is run via a process which can be multi-threaded (i.e. a software thread such as pthreads as opposed to a hardware thread).  Different processes do not share a memory space so this discussion does not apply to two programs, each one running in a different process (hence a different memory space).  It applies to two or more (software) threads running in a single process (i.e. a single memory space where multiple software threads share a single memory space).  Multiple software threads, within a single process, may run concurrently on a multi-core processor.
+The following multi-threaded program, running on a multi-core processor gives an example of how such out-of-order execution can affect program behavior:
+Initially, memory locations x and f both hold the value 0. The software thread running on processor #1 loops while the value of f is zero, then it prints the value of x. The software thread running on processor #2 stores the value 42 into x and then stores the value 1 into f. Pseudo-code for the two program fragments is shown below.
+The steps of the program correspond to individual processor instructions.
+In the case of the PowerPC processor, the eioio instruction ensures, as memory fence, that any load or store operations previously initiated by the processor are fully completed with respect to the main memory before any subsequent load or store operations initiated by the processor access the main memory.
+Thread #1  Core #1:
+
+Thread #2  Core #2:
+
+One might expect the print statement to always print the number "42"; however, if thread #2's store operations are executed out-of-order, it is possible for f to be updated before x, and the print statement might therefore print "0". Similarly, thread #1's load operations may be executed out-of-order and it is possible for x to be read before f is checked, and again the print statement might therefore print an unexpected value.  For most programs neither of these situations is acceptable. A memory barrier must be inserted before thread #2's assignment to f to ensure that the new value of x is visible to other processors at or prior to the change in the value of f.  Another important point is a memory barrier must also be inserted before thread #1's access to x to ensure the value of x is not read prior to seeing the change in the value of f.
+
+Another example is when a driver performs the following sequence:
+If the processor's store operations are executed out-of-order, the hardware module may be triggered before data is ready in memory.
+For another illustrative example (a non-trivial one that arises in actual practice), see double-checked locking.
+
+
+== Multithreaded programming and memory visibility ==
+
+Multithreaded programs usually use synchronization primitives provided by a high-level programming environment—such as Java or .NET—or an application programming interface (API) such as POSIX Threads or Windows API. Synchronization primitives such as mutexes and semaphores are provided to synchronize access to resources from parallel threads of execution. These primitives are usually implemented with the memory barriers required to provide the expected memory visibility semantics. In such environments explicit use of memory barriers is not generally necessary.
+
+
+== Out-of-order execution versus compiler reordering optimizations ==
+Memory barrier instructions address reordering effects only at the hardware level. Compilers may also reorder instructions as part of the program optimization process. Although the effects on parallel program behavior can be similar in both cases, in general it is necessary to take separate measures to inhibit compiler reordering optimizations for data that may be shared by multiple threads of execution.
+In C and C++, the volatile keyword was intended to allow C and C++ programs to directly access memory-mapped I/O. Memory-mapped I/O generally requires that the reads and writes specified in source code happen in the exact order specified with no omissions. Omissions or reorderings of reads and writes by the compiler would break the communication between the program and the device accessed by memory-mapped I/O. A C or C++ compiler may not omit reads from and writes to volatile memory locations, nor may it reorder read/writes relative to other such actions for the same volatile location (variable). The keyword volatile does not guarantee a memory barrier to enforce cache-consistency. Therefore, the use of volatile alone is not sufficient to use a variable for inter-thread communication on all systems and processors.
+The C and C++ standards prior to C11 and C++11 do not address multiple threads (or multiple processors), and as such, the usefulness of volatile depends on the compiler and hardware. Although volatile guarantees that the volatile reads and volatile writes will happen in the exact order specified in the source code, the compiler may generate code (or the CPU may re-order execution) such that a volatile read or write is reordered with regard to non-volatile reads or writes, thus limiting its usefulness as an inter-thread flag or mutex.
+
+
+== See also ==
+
+Lock-free and wait-free algorithms
+Meltdown (security vulnerability)
+
+
+== References ==
+
+
+== External links ==
+Memory Barriers: a Hardware View for Software Hackers
+Linux kernel memory barrier issues on multiple types of CPUs
+Documentation on memory barriers in the Linux kernel
+Handling Memory Ordering in Multithreaded Applications with Oracle Solaris Studio 12 Update 2: Part 1, Compiler Barriers
+Handling Memory Ordering in Multithreaded Applications with Oracle Solaris Studio 12 Update 2: Part 2, Memory Barriers and Memory Fences
+User-space RCU: Memory-barrier menagerie

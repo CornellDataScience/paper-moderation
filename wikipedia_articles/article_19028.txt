@@ -1,0 +1,38 @@
+An air-start system is a power source used to provide the initial rotation to start large diesel engines and gas turbines.
+
+
+== Diesel engines ==
+
+
+=== Direct starting ===
+Compared to a gasoline (petrol) engine, a diesel engine has a very high compression ratio, an essential design feature, as it is the heat of compression that ignites the fuel. An electric starter with sufficient power to turn a large diesel engine would itself be so large as to be impractical so there is a need for an alternative system.
+An air start system has three main components along with various safety components, namely the air start injector, the distributor and the air receivers. When the system is initiated, starting air from the receivers is distributed by the distributor unit to each respective air start valve according to the firing order of the engine’s cylinders. Safety components include flame traps, to prevent air line explosions, a turning gear interlock which ensures that air-start cannot be initiated when the turning gear is engaged, relief valves and isolation valves, as well as drain valves at certain points along the system. Control components include the control valves and remote air-start valves. A direct start system as used on a marine slow-speed diesel is required to have up to 12 starts on a non-reversing engine or 6 starts on a reversible, or geared, engine.
+When starting the engine, compressed air is admitted to whichever cylinder has a piston just over top dead center, forcing it downward. As the engine starts to turn, the air-start valve on the next cylinder in line opens to continue the rotation. After several rotations, fuel is injected into the cylinders, the engine starts running and the air is cut off.
+To further complicate matters, a large engine is usually "blown over" first with zero fuel settings and the indicator cocks open, to prove that the engine is clear of any water build up and that everything is free to turn. After a successful blow ahead and a blow astern, the indicator cocks are closed on all the cylinders, and then the engine can be started on fuel. Significant complexity is added to the engine by using an air-start system, as the cylinder head must have an extra valve in each cylinder to admit the air in for starting, plus the required control systems. This added complexity and cost limits the use of air-starters to very large and expensive reciprocating engines.
+
+
+=== Starter motor ===
+Another method of air-starting an internal combustion engine is by using compressed air or gas to drive a fluid motor in place of an electric motor. They can be used to start engines from 5 to 320 liters in size and if more starting power is necessary two or more motors can be used. Starters of this type are used in place of electric motors because of their lighter weight and higher reliability. They can also outlast an electric starter by a factor of three and are easier to rebuild. Engines operating in underground mining activities tend to operate on this type of starter system to reduce the risk of an electrical system igniting flammable material.
+All vane type air starters should have a lubricator installed to insure long-life and maximum performance. Lubricators give the moving parts a needed friction barrier, reduce metal corrosion and keep vanes sealed properly against the cylinder walls. Even the so-called lube-free air starters require lubrication to prolong trouble free life. Two basic lubricator devices are typically employed. One is an in-line or reservoir type that typically stores up to 2 quarts of lubricant, and is installed along the air supply line. The second style of lubricator is a small one shot device that dispenses a measured amount of lubricant every time the starter is engaged. Installed directly onto the air inlet of the starter, the in-line lubricators are self priming pneumatic pumps that require a 1/4″ lubrication line piped from as far away as 4 feet. Air Starter lubricators perform best using misting type, non-detergent oils such as diesel fuel or Marvel Mystery oil. If emissions are a concern, there are environmentally friendly type lubricants available on the market.
+Not all air starters require lubrication.  Turbine type air starters do not require air motor lubrication, although some turbine air starters do use an oil filled transmission that may require periodic inspections and maintenance.
+
+
+== Gas turbines ==
+
+Compressed air has been used to start gas turbine engines using air impingement starting (in which air is directed at the engine turbine blades through nozzles in the turbine casing, used on US Navy General Electric J79 engines). It is much more efficient to use an air turbine starter (ATS) which is usually mounted on an accessory gearbox. An early axial compressor turbojet had an ATS located in the compressor nose cone (eg particular variants of the J79).
+Air impingement starting was not used for US military aircraft after the F-4B, A-5A and F-5 as the pneumatic energy requirement was several times greater than when using an air turbine starter. The gas turbine compressor required to start a J79 with impingement starting was sufficient to start two J79 engines simultaneously in a B-58 when using air turbine starters.
+An ATS has its own turbine and gears to change its low torque and high speed to low speed and high torque at the engine mounting pad. Further gears in the engine gearbox connect to the engine shaft (high pressure spool on multi-spool engines). Compressed air is sent to the ATS turbine from the aircraft auxiliary power unit ( bleed air from the gas generator or from a free-turbine load compressor, eg PW901 APU), from an already-running engine (bleed air) on a multi-engined aircraft or, for early jet aircraft, from an air compressor mounted on ground support equipment.
+Compared with electric starters, air-starters have a higher power-to-weight ratio so are used on large engines as an electric starter would be too big and, with its cables, too heavy and expensive. However, for smaller engines, which don't need as much starter power, an electric starter is more suitable. It has a dual function as a generator (is known as a starter/generator) at speeds above which the engine no longer requires starter assistance.
+
+
+== See also ==
+Index of aviation articles
+Air Start Unit
+AVPIN - A monofuel used to power turbojet starter motors.
+Coffman engine starter - A similar system which uses an explosive cartridge to supply gas pressure.
+Aircraft engine starting
+Components of jet engines
+Flame holder
+
+
+== References ==

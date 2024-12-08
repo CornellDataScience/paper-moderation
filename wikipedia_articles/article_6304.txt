@@ -1,0 +1,54 @@
+Lispkit Lisp is a lexically scoped, purely functional subset of Lisp ("Pure Lisp") developed as a testbed for functional programming concepts. It was first used for early experimentation with lazy evaluation. An SECD machine-based implementation written in an ALGOL variant was published by the developer Peter Henderson in 1980. The compiler and virtual machine are highly portable and as a result have been implemented on many machines.
+
+
+== Base language ==
+The base language provides the following functions only but extensions are discussed in Henderson's book for the explicit support of lazy evaluation and non-deterministic programming.
+
+atom
+given an expression returns True if its value is atomic; False if not.
+add
+given two expressions returns the sum of their numeric values.
+car
+given an expression whose value is a pair, returns the pair's first value.
+cdr
+given an expression whose value is a pair, returns the pair's second value.
+cons
+given two expressions returns a value pair consisting of their values.
+div
+given two expressions returns the quotient of their numeric values.
+eq
+given two expressions returns True if their values are equal; False if not.
+if
+given three expressions returns the value of the second if the value of the first is True, otherwise returns the value of the third.
+lambda
+given an argument list and an expression, returns them as a function.
+let
+given an expression with declarations (as named expressions visible in the expression) returns its value.
+letrec
+like let, except the declared names are also visible in the declarations themselves.
+leq
+given two expressions, returns True if the value of the first is numerically less than or equal to the value of the second; False if not.
+mod (or rem)
+given two expressions, returns the modulus (also known as the remainder) of their numeric values.
+mul
+given two expressions, returns the product of their numeric values.
+quote
+given an expression, returns that expression as a value.
+sub
+given two expressions, returns the difference of their numeric values.
+The functions, lambda, let, and letrec, are similar but have subtle differences in the way that they treat named variables which make them useful in different ways. lambda defines and returns a function, let binds expressions to variable names, and letrec is essentially similar to let except it allows for the definition of recursive functions and values, e.g., infinite series.
+
+
+== References ==
+
+
+== Further reading ==
+Henderson, Peter; Jones, Geraint A.; Jones, Simon B. (1983). The LispKit Manual. University of Oxford Computing Lab. ISBN 0-902928-18-X.
+
+
+== External links ==
+The LispKit Manual, Volume 1, Volume 2
+Implementation of Lispkit
+GNU Pascal LispKit port
+Archive of old LispKit LISP code and files, plus C implementation of SECD machine
+Paper about a LispKit LISP implementation in Java, and the implementation itself

@@ -1,0 +1,148 @@
+My Health Record (MHR) is the national digital health record platform for Australia, and is managed by the Australian Digital Health Agency. It was originally established as the Personally Controlled Electronic Health Record (PCEHR), a shared electronic health summary set up by the Australian government with implementation overseen by the National Electronic Health Transition Authority (NEHTA). The purpose of the MHR is to provide a secure electronic summary of people's medical history which will eventually include information such as current medications, adverse drug reactions, allergies and immunisation history in an easily accessible format. This MHR is stored in a network of connected systems with the ability to improve the sharing of information amongst health care providers to improve patient outcomes no matter where in Australia a patient presents for treatment. PCEHR was an opt-in system with a unique individual healthcare identifier (IHI) being assigned to participants and the option of masking and limiting information available for viewing controlled by the patient or a nominated representative; MHR uses an opt-out system.
+
+
+== History ==
+
+
+=== Background ===
+In 2013 it was reported that on average, each Australian has 22 health system interactions annually. This includes General practitioner (GP) visits, specialists, or prescriptions. All of these interactions are held in individual, separate, paper-based records making the entire health picture of an individual difficult to ascertain. It is also reported that up to 10% of hospital admissions are due to adverse drug events, 18% are due to medical errors relating to lack of adequate available patient information, and an estimated 25% of clinicians time is spent collecting information regarding the patient than actually treating them. These facts combined with the ageing Australian population, vast geographic expanse, and ever increasing population, drove the implementation of an electronic health record in an effort to bring the medical record into the 21st century.
+
+
+=== PCEHR ===
+As part of the 2010/11 Australian federal budget the Hon. Nicola Roxon (Minister for Health and Ageing) announced the PCEHR as a "key building block of the National Health and Hospitals Network". The system went live on 1 July 2012
+The Australian Government had a policy to develop a lifetime electronic health record for all its citizens. PCEHR was the major national EHR initiative in Australia, being delivered through territory, state, and federal governments. This electronic health record was initially deployed in July 2012, and underwent active development and extension by the Australian Digital Health Agency.
+It was budgeted to cost $466.7m but had surpassed this to $766m before the actual launch date with the final figure still to be calculated.
+In contrast a recent study published by Deloitte projected the PCEHR to save approximately $11.5 billion over the 2010 to 2025 period. This consists of approximately $9.5 billion in net direct benefits to the Australian Government and $2.0 billion in net direct benefits to the private sector.
+As of 17 February 2013, 1233 healthcare organisations had registered for the PCEHR with NEHTA CEO Peter Fleming estimating 98% of GP-specific software was PCEHR compatible.
+At the 7-month mark 56,761 patients had registered with the 12-month target at 500,000 patients. The target figure was still considered achievable according to the DoHA deputy secretary Rosemary Huxtable who had released this information to a Senate Estimates committee.
+
+
+=== My Health Record ===
+The name of PCEHR has changed to My Health Record in 2015 with an opt-out model. The Australian government budgeted around $485million for this system which potentially could save nearly 5,000 lives per year when functional.
+
+
+=== e-health ===
+The Australian standards organisation, Standards Australia, and federal Department of Health have created an electronic health website, "e-health" relating to information not only about Australia and what is currently going on about EHRs but also globally. Many key stakeholders contribute to the process of integrating EHRs within Australia. They range from each States Departments of Health to Universities around Australia and National E-Health Transition Authority to name a few.
+
+
+== Registration ==
+Patients were able to opt into the PCEHR by providing personal details such as full name, date of birth, Medicare/Department of Veteran Affairs number, and sex. Currently there are several mediums for consumers to register via:
+
+Online
+By telephone
+In writing
+In person (by visiting a Department of Human Services centre offering Medicare services)
+
+
+=== Identity Verification Code (IVC) ===
+If a consumer registered over the phone, in writing, or in person an identity verification code IVC is issued to enable access to the e-Health record online for the first time. After this first log, or post 30 days from issuance the IVC becomes obsolete. There are four steps in the registration process:
+
+Read the essential information
+Create a new or log into your australia.gov.au account
+Verify your identity
+Set up your e-Health record 
+
+
+=== Healthcare Identifiers Service (HI Service) ===
+The Healthcare Identifiers Service (HI Service) was established by the federal, state and territory governments to create unique identifiers for healthcare providers and individuals seeking healthcare. It was designed and implemented by Medicare Australia under the control of the NEHTA.
+The HI Service allocates three types of Healthcare Identifiers:
+
+Individual healthcare identifier (i.e., who received the service)
+The Individual Healthcare Identifier (IHI) is a unique 16 digit reference number that is used to identify individuals within the healthcare system.
+The healthcare provider can retrieve a registered patients IHI via the Healthcare Identifier Service by entering in the correct name, DOB, and Medicare number which will automatically retrieve the patients unique IHI from the system. This then links the patients with their PCEHR, allowing the healthcare provider to view all the uploaded material.
+Health Provider Identifier-Individual (i.e., who provided the service)
+The Health Provider Identifier-Individual (HPI-I) is allocated to healthcare providers involved in providing patient care. Healthcare providers belonging to the Australian Health Practitioner Regulation Agency (AHPRA) have automatically been registered for their HPI-I. This unique number allows healthcare providers to access patients PCEHR and also acts as a tracking tool of who has accessed what, what edits were made etc.
+Health Provider Identifier-Organisation (i.e., where the service was provided)
+The Health Provider Identifier-Organisation (HPI-O) is a unique code for organisations that provide healthcare services. An HPI-O may be linked to several HPI-I's, but an organisation can not have more than one HPI-O.
+
+
+=== eHealth Practice Incentives Program (ePIP) ===
+The eHealth Practice Incentives Program (ePIP) aims to encourage GP's to adopt and embrace the latest technology and developments within the eHealth industry as they occur. 
+GP's are only eligible for ePIP if they are already registered in the Practice Incentives Program (PIP) administered by the Australian Government Department of Human Services (Human Services) on behalf of the Department of Health and Ageing(DoHA). There are five further requirements for this incentive:
+
+Integrating Healthcare Identifiers into Electronic Practice Records
+Secure Messaging Capability
+Data Records and Coding
+Electronic Transfer of Prescriptions
+Personally Controlled Electronic Health (eHealth) Record System
+The benefits of participation in this incentive is practices can receive a maximum of $12,500 per quarter, based on $6.50 per Standardised Whole Patient Equivalent (SWPE) per year.
+
+
+=== System Operator ===
+The System Operator is the entity that is responsible for creating and operating the PCEHR. This position was held by the Secretary of the Department of Health and Ageing. The System Operator during their duties must have regard to the advice and recommendations (if any) given by the PCEHR Jurisdictional Advisory Committee and the PCEHR Independent Advisory Council.
+
+
+== Software ==
+PCEHC was based on the XDS (Cross Enterprise Document Sharing) Profile published by Integrating the Healthcare Enterprise (IHE). However, the usual IHE Patient Management system (PIX/PDQ) has been replaced by the National Health Identity (HI) Service. In addition the usual authentication and security IHE profiles have been replaced by, or significantly modified to work with, existing infrastructure. HL7 CDA format is used to transfer information between different healthcare clinical systems whilst still allowing information to be accessed and viewed.
+
+
+=== National Authentication Service for Health Public Key Infrastructure (NASH PKI) ===
+National Authentication Service for Health Public Key Infrastructure (PKI) is a certificate that authenticates healthcare professionals accessing the eHealth records system. These certificates can be loaded onto smart cards which are then used in combination with the healthcare professionals HPI-I to log on to patients who have a PCEHR using the patients IHI. This system also facilitates secure electronic communications with other healthcare provider organisations.
+The PKI allows users to know:
+
+who sent the message
+the message hasn't been altered between sending and receiving it.
+the sender can't dispute the message they created and sent
+that only the person the message is directed to can open it
+These benefits allow users to securely and confidently relay patient information to trustworthy sources.
+For the PKI to work there must be a Chain of Trust on your computer. This Chain of Trust is composed of three certificates, namely:
+
+Medicare Australia Root CA
+Medicare Australia Organisation CA
+Medicare Australia Organisation CA2
+The PKI Certificates are based on the Australian Gatekeeper framework and met the International Organization for Standardization (ISO) Health Informatics-Public Key Infrastructure technical specification (ISO/TS 17090).
+
+
+=== Vendors ===
+The six GP Desktop Vendor Panel members are :-
+
+Best Practice Software Pty Ltd
+Communicare System
+Genie Solutions
+iSoft
+Medtech Global
+Zedmed
+
+
+== Legality ==
+On 16 August 2012 the Hon. Tanya Plibersek, the then Minister for Health announced the Personally Controlled Electronic Health Records Act 2012 (PCEHR)  The legislation was amended in late 2015 to be known as the My Health Records Act 2012 (Cth)
+Patients can read in full everything that is added to their eHealth record. They may choose to include additional information in their own local clinical information system that is not included in the eHealth record. In any event, patients have a right under the Privacy Act 1988 (Cth) to access the personal information that healthcare professionals hold about them.
+From November 2015 the My Health Records Act 2012 (Cth) was amended to reflect that  representatives  of  persons  who  require  decision-making  support related to the Act must support   the   person   to   make   decisions,  or   make   decisions   on   their   behalf, reflecting the individual's "will and preferences". This reflects the principle that people with disability or varied capacity have an equal right to have their decisions respected.
+Healthcare Identifiers Act 2010  This Act outlines how unique identifying numbers are allocated to each health provider and individuals as healthcare recipients to provide a way of ensuring that health information is correctly matched to the individual that received healthcare or the entity that provides healthcare.
+Healthcare Identifiers Regulations 2010 regulates the collection, use and disclosure of healthcare record identifiers and information.
+
+
+=== PCEHR Jurisdictional Advisory Committee (PCEHR JAC) ===
+The PCEHR Act established the PCEHR Jurisdictional Advisory Committee (PCEHR JAC) to advise the System Operator on matters relating to the interests of the Commonwealth, States and Territories in the PCEHR system. The PCEHR JAC meets at least four times per year, or more frequently as agreed between the System Operator and the Chair.
+The PCEHR JAC has nine members, a member to represent the Commonwealth and a member to represent each State and Territory.
+
+
+=== PCEHR Independent Advisory Council (PCEHR IAC) ===
+The PCEHR Independent Advisory Council (PCEHR IAC) was established under the PCEHR Act to advise on the operation and participation in the PCEHR system, clinical, privacy and security matters relating to PCEHR system operations. The PCEHR IAC meets at least four times per year.
+
+
+== Criticism ==
+Security and privacy concerns have been raised about the platform. Originally, participation of the system was to opt-in by each person giving consent, however due to low participation rates, the platform moved to become opt-out instead. Each Australian had until 31st of Jan 2019 to opt-out. After 31st of Jan 2019, however, any user can delete their My Health Record, as well as restrict access to providers. In a life-threatening emergency, certain providers (like hospital emergency departments) can access a patient's My Health Record without being given explicit access. There are 13,000 health providers involved, from specialists and general practice doctors to pharmacies and hospitals.
+Additional concerns have been raised around warrant-less law enforcement access to health data. The health minister Greg Hunt requested the deletion of advice indicating that police would have access to health record data, before promising a redraft of the legislation to explicitly curtail warrant-less access.
+Additionally cybersecurity audits have remained incomplete.
+Further concerns have surrounded the inappropriate access of health record data.
+Additionally uptake amongst health care providers has remained low with half of all records standing empty, and with poor uptake and usage by health care providers.
+
+
+== Similar initiatives ==
+MediConnect was an early program that provides an electronic medication record to keep track of patient prescriptions and provide stakeholders with drug alerts to avoid errors in prescribing.
+
+
+== Patent Issues ==
+MyMedicalRecords.com, a subsidiary of MMRGlobal began investigations about the PCEHR use of its intellectual property.
+
+
+== See also ==
+Electronic Health Record Confidentiality
+
+
+== References ==
+
+
+== External links ==
+Official website

@@ -1,0 +1,24 @@
+AppLocale was a tool for Windows XP and Windows Server 2003 by Microsoft. It was a launcher application that makes it possible to run non-Unicode (code page-based) applications in a locale of the user's choice. Since changing the locale normally requires a restart of Windows, AppLocale is especially popular with western users of Asian applications. The program installs itself in a subfolder of the Windows directory called "AppPatch", and when launched prompts the user for an executable to run and the desired codepage. It can also create a shortcut in the start menu, located under Microsoft AppLocale, however you will be prompted by AppLocale before the program's launch.
+AppLocale works with many, but not all non-Unicode applications, and as such is still inferior to really setting the particular locale systemwide. In particular, it requires fonts for the particular locale to be installed on the system it runs on, and Administrator privileges to be installed (though not to be used). It is not officially supported for use with Windows Vista or Windows 7; a person who is using Vista or 7 must either alter the system locale manually, or use an available unofficial workaround to install the AppLocale utility (see below).
+AppLocale is not included in normal retail versions of Windows, but is available for free download from Microsoft's website.
+
+
+== Bugs ==
+
+
+=== Compatibility ===
+Running AppLocale on Windows Vista or Windows 7 is not officially supported and it fails to install on default configurations of these OS if attempted; however there is a workaround to install it (which requires starting apploc.msi file from command prompt under administrative privileges). This workaround also works for Windows 8 and Windows 8.1. However, it no longer works on Windows 10.
+AppLocale cannot run on Windows 2000 platforms.
+In September 2016, Microsoft removed all pages referring to Applocale, including the official download, from the Microsoft website, thereby officially discontinuing all support (since it was only ever supported officially on Windows XP and Windows Server 2003). However, it can still be retrieved from the Internet Archive.
+
+
+=== Mojibake issue ===
+AppLoc.tmp in the AppPatch folder (%windir%\apppatch) causes a Mojibake issue of Windows Installer. Unofficial solutions of this problems include a modified version of the program, called pAppLocale provided by Hung-Te Lin (林弘德 piaip) for free, or blanking the AppLoc.tmp file, then setting it to read only.
+
+
+== References ==
+
+
+== External links ==
+Microsoft's official download page for AppLocale (broken link)
+Workaround to Install Microsoft AppLocale Utility in Windows Vista

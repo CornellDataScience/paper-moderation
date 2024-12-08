@@ -1,0 +1,80 @@
+A bookmarklet is a bookmark stored in a web browser that contains JavaScript commands that add new features to the browser. They are stored as the URL of a bookmark in a web browser or as a hyperlink on a web page. Bookmarklets are usually small snippets of JavaScript executed when user clicks on them. When clicked, bookmarklets can perform a wide variety of operations, such as running a search query from selected text or extracting data from a table.
+Another name for bookmarklet is favelet or favlet, derived from favorites (synonym of bookmark).
+
+
+== History ==
+Steve Kangas of bookmarklets.com coined the word bookmarklet when he started to create short scripts based on a suggestion in Netscape's JavaScript guide. Before that, Tantek Çelik called these scripts favelets and used that word as early as on 6 September 2001 (personal email). Brendan Eich, who developed JavaScript at Netscape, gave this account of the origin of bookmarklets:
+
+They were a deliberate feature in this sense: I invented the javascript: URL along with JavaScript in 1995, and intended that javascript: URLs could be used as any other kind of URL, including being bookmark-able.
+In particular, I made it possible to generate a new document by loading, e.g. javascript:'hello, world', but also (key for bookmarklets) to run arbitrary script against the DOM of the current document, e.g. javascript:alert(document.links[0].href). The difference is that the latter kind of URL uses an expression that evaluates to the undefined type in JS. I added the void operator to JS before Netscape 2 shipped to make it easy to discard any non-undefined value in a javascript: URL.
+The increased implementation of Content Security Policy (CSP) in websites has caused problems with bookmarklet execution and usage (2013-2015), with some suggesting that this hails the end or death of bookmarklets. William Donnelly created a work-around solution for this problem (in the specific instance of loading, referencing and using JavaScript library code) in early 2015 using a Greasemonkey userscript (Firefox / Pale Moon browser add-on extension) and a simple bookmarklet-userscript communication protocol. It allows (library-based) bookmarklets to be executed on any and all websites, including those using CSP and having an https:// URI scheme. Note, however, that if/when browsers support disabling/disallowing inline script execution using CSP, and if/when websites begin to implement that feature, it will "break" this "fix".
+
+
+== Concept ==
+Web browsers use URIs for the href attribute of the <a> tag and for bookmarks.  The URI scheme, such as http or ftp, and which generally specifies the protocol, determines the format of the rest of the string.  Browsers also implement javascript: URIs that to a parser is just like any other URI. The browser recognizes the specified javascript scheme and treats the rest of the string as a JavaScript program which is then executed.  The expression result, if any, is treated as the HTML source code for a new page displayed in place of the original.
+The executing script has access to the current page, which it may inspect and change. If the script returns an undefined type (rather than, for example, a string), the browser will not load a new page, with the result that the script simply runs against the current page content. This permits changes such as in-place font size and color changes without a page reload.
+An immediately invoked function that returns no value or an expression preceded by the void operator will prevent the browser from attempting to parse the result of the evaluation as a snippet of HTML markup:
+
+
+== Usage ==
+
+Bookmarklets are saved and used as normal bookmarks. As such, they are simple "one-click" tools which add functionality to the browser. For example, they can:
+
+Modify the appearance of a web page within the browser (e.g., change font size, background color, etc.)
+Extract data from a web page (e.g., hyperlinks, images, text, etc.)
+Remove redirects from (e.g. Google) search results, to show the actual target URL
+Submit the current page to a blogging service such as Posterous, link-shortening service such as bit.ly, or bookmarking service such as Delicious
+Query a search engine or online encyclopedia with highlighted text or by a dialog box
+Submit the current page to a link validation service or translation service
+Set commonly chosen configuration options when the page itself provides no way to do this
+Control HTML5 audio and video playback parameters such as speed, position, toggling looping, and showing/hiding playback controls, the first of which can be adjusted beyond HTML5 players' typical range setting.
+
+
+=== Installation ===
+"Installing" a bookmarklet allows you to quickly access and run JavaScript programs with a single click from your browser's bookmarks bar. Follow these detailed steps to install a bookmarklet:
+
+
+==== Method 1: Creating a New Bookmark ====
+Open Your Browser: Launch the browser where you want to add the bookmarklet.
+Add a New Bookmark:
+Navigate to the bookmarks manager. In most browsers, this can be accessed by pressing Ctrl+Shift+O or by selecting 'Bookmarks' from the browser menu and then choosing 'Bookmark manager'.
+Right-click in the bookmarks bar or the folder where you want to add the bookmarklet and select 'Add new bookmark' or 'Add page'.
+Configure the Bookmark:
+In the 'Name' field, enter a descriptive name for your bookmarklet to help you identify its function.
+In the 'URL' field, paste the JavaScript code provided for the bookmarklet. Ensure that it starts with javascript: followed by the code snippet.
+Save the Bookmark: Click 'Save' or 'Done' to add the bookmarklet to your bookmarks bar or folder.
+
+
+==== Method 2: Dragging and Dropping ====
+Locate the Bookmarklet Link: Find the bookmarklet link provided on a webpage. This link will typically appear as a clickable button or link labeled with the function of the bookmarklet.
+Drag the Bookmarklet to Your Bookmarks Bar:
+Click and hold the bookmarklet link.
+Drag it directly onto your bookmarks bar. Some browsers might show a placeholder or highlight where the bookmarklet will be placed.
+Release the mouse button to drop the bookmarklet into place.
+Confirmation: The bookmarklet should now appear on your bookmarks bar, ready for use.
+
+
+=== Running the Bookmarklet ===
+To use the bookmarklet, simply click on its icon or name in your bookmarks bar. The JavaScript code will execute immediately on the current webpage you are viewing. Make sure the webpage is fully loaded before using the bookmarklet for optimal performance.
+
+
+==== Tips ====
+Security Warning: Be cautious about adding bookmarklets from untrusted sources as they run JavaScript code that could potentially affect your browsing security or privacy.
+Compatibility: While most modern browsers support bookmarklets, the functionality may vary. Check your browser’s documentation for any specific instructions or limitations.
+
+
+=== Example ===
+This example bookmarklet performs a Wikipedia search on any highlighted text in the web browser window. In normal use, the following JavaScript code would be installed to a bookmark in a browser bookmarks toolbar. From then on, after selecting any text, clicking the bookmarklet performs the search.
+
+Bookmarklets can modify the location, e.g. to save a web page to the Wayback Machine,
+
+Open a new web browser window or tab, e.g. to show the source of a web resource if the web browser supports the view-source URI scheme,
+
+Show info related to the current URL, e.g.,
+
+
+== References ==
+
+
+== External links ==
+Calishain, Tara (Feb 3, 2004). "Bookmarklets Boost Web Surfing". PC Magazine. Retrieved Aug 31, 2007.

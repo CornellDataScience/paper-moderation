@@ -1,0 +1,239 @@
+An acoustic metamaterial, sonic crystal, or phononic crystal is a material designed to control, direct, and manipulate sound waves or phonons in gases, liquids, and solids (crystal lattices). Sound wave control is accomplished through manipulating parameters such as the bulk modulus β, density ρ, and chirality. They can be engineered to either transmit, or trap and amplify sound waves at certain frequencies. In the latter case, the material is an acoustic resonator. Acoustic metamaterials are used to model and research extremely large-scale acoustic phenomena like seismic waves and earthquakes, but also extremely small-scale phenomena like atoms. The latter is possible due to band gap engineering: acoustic metamaterials can be designed such that they exhibit band gaps for phonons, similar to the existence of band gaps for electrons in solids or electron orbitals in atoms. That has also made the phononic crystal an increasingly widely researched component in quantum technologies and experiments that probe quantum mechanics. Important branches of physics and technology that rely heavily on acoustic metamaterials are negative refractive index material research, and (quantum) optomechanics. 
+
+
+== History ==
+
+Acoustic metamaterials have developed from the research and findings in metamaterials. A novel material was originally proposed by Victor Veselago in 1967, but not realized until some 33 years later. John Pendry produced the basic elements of metamaterials in the late 1990s. His materials were combined, with negative index materials first realized in 2000, broadening the possible optical and material responses. Research in acoustic metamaterials has the same goal of broader material responses with sound waves.
+Research employing acoustic metamaterials began in 2000 with the fabrication and demonstration of sonic crystals in a liquid. This was followed by transposing the behavior of the split-ring resonator to research in acoustic metamaterials. After this, double negative parameters (negative bulk modulus βeff and negative density ρeff) were produced by this type of medium. Then a group of researchers presented the design and test results of an ultrasonic metamaterial lens for focusing 60 kHz.
+Acoustical engineering is typically concerned with noise control, medical ultrasound, sonar, sound reproduction,  and how to measure some other physical properties using sound. With acoustic metamaterials the direction of sound through the medium can be controlled by manipulating the acoustic refractive index. Therefore, the capabilities of traditional acoustic technologies are extended, for example, eventually being able to cloak certain objects from acoustic detection.
+The first successful industrial applications of acoustic metamaterials were tested for aircraft insulation.
+
+
+== Basic principles ==
+Properties of acoustic metamaterials usually arise from structure rather than composition, with techniques such as the controlled fabrication of small inhomogeneities to enact effective macroscopic behavior.
+
+
+=== Bulk modulus and mass density ===
+
+The bulk modulus β is a measure of a substance's resistance to uniform compression. It is defined as the ratio of pressure increase needed to cause a given relative decrease in volume.
+The mass density (or just "density") of a material is defined as mass per unit volume and is expressed in grams per cubic centimeter (g/cm3). In all three classic states of matter—gas, liquid, or solid—the density varies with a change in temperature or pressure, with gases being the most susceptible to those changes. The spectrum of densities is wide-ranging: from 1015 g/cm3 for neutron stars, 1.00 g/cm3 for water, to 1.2×10−3 g/cm3 for air. Other relevant parameters are area density which is mass over a (two-dimensional) area, linear density - mass over a one-dimensional line, and relative density, which is a density divided by the density of a reference material, such as water.
+For acoustic materials and acoustic metamaterials, both bulk modulus and density are component parameters, which define their refractive index. The acoustic refractive index is similar to the concept used in optics, but it concerns pressure or shear waves, instead of electromagnetic waves.
+
+
+=== Theoretical model ===
+Acoustic metamaterials or phononic crystals can be understood as the acoustic analog of photonic crystals: instead of electromagnetic waves (photons) propagating through a material with a periodically modified optical refractive index (resulting in a modified speed of light), the phononic crystal comprises pressure waves (phonons) propagating through a material with a periodically modified acoustic refractive index, resulting in a modified speed of sound.
+In addition to the parallel concepts of refractive index and crystal structure, electromagnetic waves and acoustic waves are both mathematically described by the wave equation.
+The simplest realization of an acoustic metamaterial would constitute the propagation of a pressure wave through a slab with a periodically modified refractive index in one dimension. In that case, the behavior of the wave through the slab or 'stack' can be predicted and analyzed using transfer matrices. This method is ubiquitous in optics, where it is used for the description of light waves propagating through a distributed Bragg reflector. 
+
+
+=== Negative refractive index acoustic metamaterials ===
+In certain frequency bands, the effective mass density and bulk modulus may become negative. This results in a negative refractive index. Flat slab focusing, which can result in super resolution, is similar to electromagnetic metamaterials. The double negative parameters are a result of low-frequency resonances. In combination with a well-defined polarization during wave propagation; k = |n|ω, is an equation for refractive index as sound waves interact with acoustic metamaterials (below):
+
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+        =
+        
+          
+            ρ
+            β
+          
+        
+      
+    
+    {\displaystyle n^{2}={\frac {\rho }{\beta }}}
+  
+
+The inherent parameters of the medium are the mass density ρ, bulk modulus β, and chirality k. Chirality, or handedness, determines the polarity of wave propagation (wave vector). Hence within the last equation, Veselago-type solutions (n2 = u*ε) are possible for wave propagation as the negative or positive state of ρ and β determine the forward or backward wave propagation.
+In electromagnetic metamaterials negative permittivity can be found in natural materials. However, negative permeability has to be intentionally created in the artificial transmission medium. For acoustic materials neither negative ρ nor negative β are found in naturally occurring materials; they are derived from the resonant frequencies of an artificially fabricated transmission medium, and such negative values are an anomalous response. Negative ρ or β means that at certain frequencies the medium expands when experiencing compression (negative modulus), and accelerates to the left when being pushed to the right (negative density).
+
+
+=== Electromagnetic field vs acoustic field ===
+The electromagnetic spectrum extends from low frequencies used for modern radio to gamma radiation at the short-wavelength end, covering wavelengths from thousands of kilometers down to a fraction of the size of an atom. In comparison, infrasonic frequencies range from 20 Hz down to 0.001 Hz, audible frequencies are 20 Hz to 20 kHz and the ultrasonic range is above 20 kHz.
+While electromagnetic waves can travel in vacuum, acoustic wave propagation requires a medium.
+
+
+=== Mechanics of lattice waves ===
+
+In a rigid lattice structure, atoms exert force on each other, maintaining equilibrium. Most of these atomic forces, such as covalent or ionic bonds, are of electric nature. The magnetic force, and the force of gravity are negligible. Because of the bonding between them, the displacement of one or more atoms from their equilibrium positions gives rise to a set of vibration waves propagating through the lattice. One such wave is shown in the figure to the right. The amplitude of the wave is given by the displacements of the atoms from their equilibrium positions. The wavelength λ is marked.
+There is a minimum possible wavelength, given by the equilibrium separation a between atoms. Any wavelength shorter than this can be mapped onto a long wavelength, due to effects similar to aliasing.
+
+
+== Research and applications ==
+Applications of acoustic metamaterial research include seismic wave reflection and vibration control technologies related to earthquakes, as well as precision sensing. Phononic crystals can be engineered to exhibit band gaps for phonons, similar to the existence of band gaps for electrons in solids and to the existence of electron orbitals in atoms. However, unlike atoms and natural materials, the properties of metamaterials can be fine-tuned (for example through microfabrication). For that reason, they constitute a potential testbed for fundamental physics and quantum technologies. They also have a variety of engineering applications, for example they are widely used as a mechanical component in optomechanical systems.
+
+
+=== Sonic crystals ===
+In 2000, the research of Liu et al. paved the way to acoustic metamaterials through sonic crystals, which exhibit spectral gaps two orders of magnitude smaller than the wavelength of sound. The spectral gaps prevent the transmission of waves at prescribed frequencies. The frequency can be tuned to desired parameters by varying the size and geometry.
+The fabricated material consisted of high-density solid lead balls as the core, one centimeter in size and coated with a 2.5-mm layer of rubber silicone. These were arranged in an 8 × 8 × 8 cube crystal lattice structure. The balls were cemented into the cubic structure with an epoxy. Transmission was measured as a function of frequency from 250 to 1600 Hz for a four-layer sonic crystal. A two-centimeter slab absorbed sound that normally would require a much thicker material, at 400 Hz. A drop in amplitude was observed at 400 and 1100 Hz.
+The amplitudes of the sound waves entering the surface were compared with the sound waves at the center of the structure. The oscillations of the coated spheres absorbed sonic energy, which created the frequency gap; the sound energy was absorbed exponentially as the thickness of the material increased. The key result was the negative elastic constant created from resonant frequencies of the material.
+Projected applications of sonic crystals are seismic wave reflection and ultrasonics.
+
+
+=== Split-ring resonators for acoustic metamaterials ===
+
+In 2004 split-ring resonators (SRR) became the object of acoustic metamaterial research. An analysis of the frequency band gap characteristics, derived from the inherent limiting properties of artificially created SRRs, paralleled an analysis of sonic crystals. The band gap properties of SRRs were related to sonic crystal band gap properties. Inherent in this inquiry is a description of mechanical properties and problems of continuum mechanics for sonic crystals, as a macroscopically homogeneous substance.
+The correlation in band gap capabilities includes locally resonant elements and elastic moduli which operate in a certain frequency range. Elements which interact and resonate in their respective localized area are embedded throughout the material. In acoustic metamaterials, locally resonant elements would be the interaction of a single 1-cm rubber sphere with the surrounding liquid. The values of the stopband and band-gap frequencies can be controlled by choosing the size, types of materials, and the integration of microscopic structures which control the modulation of the frequencies. These materials are then able to shield acoustic signals and attenuate the effects of anti-plane shear waves. By extrapolating these properties to larger scales it could be possible to create seismic wave filters (see Seismic metamaterials).
+Arrayed metamaterials can create filters or polarizers of either electromagnetic or elastic waves. Methods which can be applied to two-dimensional stopband and band gap control with either photonic or sonic structures have been developed. Similar to photonic and electromagnetic metamaterial fabrication, a sonic metamaterial is embedded with localized sources of mass density ρ and the bulk modulus β parameters, which are analogous to permittivity and permeability, respectively. The sonic (or phononic) metamaterials are sonic crystals. These crystals have a solid lead core and a softer, more elastic silicone coating. The sonic crystals had built-in localized resonances due to the coated spheres which result in almost flat dispersion curves. Movchan and Guenneau analyzed and presented low-frequency band gaps and localized wave interactions of the coated spheres.
+This method can be used to tune band gaps inherent in the material, and to create new low-frequency band gaps. It is also applicable for designing low-frequency phononic crystal waveguides.
+
+
+=== Phononic crystals ===
+Phononic crystals are synthetic materials formed by periodic variation of the acoustic properties of the material (i.e., elasticity and mass). One of their main properties is the possibility of having a phononic band gap. A phononic crystal with phononic band gap prevents phonons of selected ranges of frequencies from being transmitted through the material.
+To obtain the frequency band structure of a phononic crystal, Bloch's theorem is applied on a single unit cell in the reciprocal lattice space (Brillouin zone). Several numerical methods are available for this problem, such as the planewave expansion method, the finite element method, and the finite difference method.
+In order to speed up the calculation of the frequency band structure, the Reduced Bloch Mode Expansion (RBME) method can be used. The RBME applies "on top" of any of the primary expansion numerical methods mentioned above. For large unit cell models, the RBME method can reduce the time for computing the band structure by up to two orders of magnitude.
+The basis of phononic crystals dates back to Isaac Newton who imagined that sound waves propagated through air in the same way that an elastic wave would propagate along a lattice of point masses connected by springs with an elastic force constant E. This force constant is identical to the modulus of the material. With phononic crystals of materials with differing modulus the calculations are more complicated than this simple model.
+A key factor for acoustic band gap engineering is the impedance mismatch between periodic elements comprising the crystal and the surrounding medium. When an advancing wave-front meets a material with very high impedance it will tend to increase its phase velocity through that medium. Likewise, when the advancing wave-front meets a low impedance medium it will slow down. This concept can be exploited with periodic arrangements of impedance-mismatched elements to affect acoustic waves in the crystal.
+The position of the band gap in frequency space for a phononic crystal is controlled by the size and arrangement of the elements comprising the crystal. The width of the band gap is generally related to the difference in the speed of sound (due to impedance differences) through the materials that form the composite. Phononic crystals effectively reduce low-frequency noise, since their locally resonant systems act as spatial frequency filters. However, they have narrow band gaps, impose additional weight on the primary system, and work only at the adjusted frequency range. For widening band gaps, the unit cells must be large in size or contain dense materials. As a solution to the disadvantages mentioned above of phononic crystals, proposes a novel three-dimensional lightweight re-entrant meta-structure composed of a cross-shaped beam scatterer embedded in a host plate with holes based on the square lattice metamaterial. By combining the re-entry networks mechanism and the Floquet–Bloch theory, on the basis of cross-shaped beam theory and perforation mechanism, it was demonstrated that such a lightweight phononic structure can filter elastic waves across a broad frequency range (not just a specific narrow region) while simultaneously reducing structure weight to a significant degree.
+
+
+=== Double-negative acoustic metamaterial ===
+
+Electromagnetic (isotropic) metamaterials have built-in resonant structures that exhibit effective negative permittivity and negative permeability for some frequency ranges. In contrast, it is difficult to build composite acoustic materials with built-in resonances such that the two effective response functions are negative within the capability or range of the transmission medium.
+The mass density ρ and bulk modulus β are position dependent. Using the formulation of a plane wave the wave vector is:
+
+  
+    
+      
+        
+          
+            
+              k
+              →
+            
+          
+        
+        =
+        
+          
+            
+               
+              
+                |
+              
+              n
+              
+                |
+              
+              ω
+            
+            c
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\vec {k}}={\frac {\ |n|\omega }{c}}.\,}
+  
+
+With angular frequency represented by ω, and c being the propagation speed of acoustic signal through the homogeneous medium. With constant density and bulk modulus as constituents of the medium, the refractive index is expressed as n2 = ρ / β. In order to develop a propagating plane wave through the material, it is necessary for both ρ and β to be either positive or negative.
+When the negative parameters are achieved, the mathematical result of the Poynting vector 
+  
+    
+      
+        
+          
+            
+              s
+              ←
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\overleftarrow {s}}}
+  
+ is in the opposite direction of the wave vector 
+  
+    
+      
+        
+          
+            
+              k
+              →
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\overrightarrow {k}}}
+  
+. This requires negativity in bulk modulus and density. Natural materials do not have a negative density or a negative bulk modulus, but, negative values are mathematically possible, and can be demonstrated when dispersing soft rubber in a liquid.
+Even for composite materials, the effective bulk modulus and density should be normally bounded by the values of the constituents, i.e., the derivation of lower and upper bounds for the elastic moduli of the medium. The expectation for positive bulk modulus and positive density is intrinsic. For example, dispersing spherical solid particles in a fluid result in the ratio governed by the specific gravity when interacting with the long acoustic wavelength (sound). Mathematically, it can be proven that βeff and ρeff are definitely positive for natural materials. The exception occurs at low resonant frequencies.
+As an example, acoustic double negativity is theoretically demonstrated with a composite of soft, silicone rubber spheres suspended in water. In soft rubber, sound travels much slower than through the water. The high velocity contrast of sound speeds between the rubber spheres and the water allows for the transmission of very low monopolar and dipolar frequencies. This is an analogue to analytical solution for the scattering of electromagnetic radiation, or electromagnetic plane wave scattering, by spherical particles - dielectric spheres.
+Hence, there is a narrow range of normalized frequencies 0.035 < ωa/(2πc) < 0.04 where the bulk modulus and negative density are both negative. Here a is the lattice constant if the spheres are arranged in a face-centered cubic (fcc) lattice; ω is angular frequency and c is speed of the acoustic signal. The effective bulk modulus and density near the static limit are positive as predicted. The monopolar resonance creates a negative bulk modulus above the normalized frequency at about 0.035 while the dipolar resonance creates a negative density above the normalized frequency at about 0.04.
+This behavior is analogous to low-frequency resonances produced in SRRs (electromagnetic metamaterial). The wires and split rings create intrinsic electric dipolar and magnetic dipolar response. With this artificially constructed acoustic metamaterial of rubber spheres and water, only one structure (instead of two) creates the low-frequency resonances to achieve double negativity. With monopolar resonance, the spheres expand, which produces a phase shift between the waves passing through rubber and water. This creates a negative response. The dipolar resonance creates a negative response such that the frequency of the center of mass of the spheres is out of phase with the wave vector of the sound wave (acoustic signal). If these negative responses are large enough to compensate the background fluid, one can have both negative effective bulk modulus and negative effective density.
+Both the mass density and the reciprocal of the bulk modulus decrease in magnitude fast enough for the group velocity to become negative (double negativity). This gives rise to the desired results of negative refraction. The double negativity is a consequence of resonance and the resulting negative refraction properties.
+
+
+=== Metamaterial with simultaneously negative bulk modulus and mass density ===
+In 2007 a metamaterial was reported which simultaneously possesses a negative bulk modulus and negative mass density. This metamaterial is a zinc blende structure consisting of one fcc array of bubble-contained-water spheres (BWSs) and another relatively shifted fcc array of rubber-coated-gold spheres (RGSs) in special epoxy.
+Negative bulk modulus is achieved through monopolar resonances of the BWS series. Negative mass density is achieved with dipolar resonances of the gold sphere series. Rather than rubber spheres in liquid, this is a solid based material. This is also as yet a realization of simultaneously negative bulk modulus and mass density in a solid based material, which is an important distinction.
+
+
+=== Double C resonators ===
+Double C resonators (DCRs) are rings cut in half, which can be arranged in multiple cell configurations, similarly to the SRRS. Each cell consists of a large rigid disk and two thin ligaments, and acts as a tiny oscillator connected by springs. One spring anchors the oscillator, and the other connects to the mass. It is analogous to an LC resonator of capacitance, C, and inductance, L, and resonant frequency √1/(LC). The speed of sound in the matrix is expressed as c = √ρ/μ with density ρ and shear modulus μ. Although linear elasticity is considered, the problem is mainly defined by shear waves directed at angles to the plane of the cylinders.
+A phononic band gap occurs in association with the resonance of the split cylinder ring. There is a phononic band gap within a range of normalized frequencies. This is when the inclusion moves as a rigid body. The DCR design produced a suitable band with a negative slope in a range of frequencies. This band was obtained by hybridizing the modes of a DCR with the modes of thin stiff bars. Calculations have shown that at these frequencies:
+
+a beam of sound negatively refracts across a slab of such a medium,
+the phase vector in the medium possesses real and imaginary parts with opposite signs,
+the medium is well impedance-matched with the surrounding medium,
+a flat slab of the metamaterial can image a source across the slab like a Veselago lens,
+the image formed by the flat slab has considerable sub-wavelength image resolution, and
+a double corner of the metamaterial can act as an open resonator for sound.
+
+
+=== Acoustic metamaterial superlens ===
+In 2009 Shu Zhang et al. presented the design and test results of an ultrasonic metamaterial lens for focusing 60 kHz (~2 cm wavelength) sound waves under water. The lens was made of sub-wavelength elements, potentially more compact than phononic lenses operating in the same frequency range.
+The lens consists of a network of fluid-filled cavities called Helmholtz resonators that oscillate at certain frequencies. Similar to a network of inductors and capacitors in an electromagnetic metamaterial, the arrangement of Helmholtz cavities designed by Zhang et al. have a negative dynamic modulus for ultrasound waves. A point source of 60.5 kHz sound was focused to a spot roughly the width of half a wavelength, and there is potential of improving the spatial resolution even further. Result  were in agreement with the transmission line model, which derived the effective mass density and compressibility. This metamaterial lens also displays variable focal length at different frequencies.
+This lens could improve acoustic imaging techniques, since the spatial resolution of the conventional methods is restricted by the incident ultrasound wavelength. This is due to the quickly fading evanescent fields which carry the sub-wavelength features of objects.
+
+
+=== Acoustic diode ===
+An acoustic diode was introduced in 2009, which converts sound to a different frequency and blocks backward flow of the original frequency. This device could provide more flexibility for designing ultrasonic sources like those used in medical imaging. The proposed structure combines two components: The first is a sheet of nonlinear acoustic material—one whose sound speed varies with air pressure. An example of such a material is a collection of grains or beads, which becomes stiffer as it is squeezed. The second component is a filter that allows the doubled frequency to pass through but reflects the original.
+
+
+=== Acoustic cloaking ===
+
+An acoustic cloak is a hypothetical device that would make objects impervious to sound waves. This could be used to build sound proof homes, advanced concert halls, or stealth warships. The idea of acoustic cloaking is simply to deviate the sounds waves around the object that has to be cloaked, but realizing has been difficult since mechanical metamaterials are needed. Making such a metamaterial for a sound means modifying the acoustic analogues to permittivity and permeability in light waves, which are the material's mass density and its elastic constant. Researchers from Wuhan University, China in a 2007 paper reported a metamaterial which simultaneously possessed a negative bulk modulus and mass density.
+A laboratory metamaterial device that is applicable to ultrasound waves was demonstrated in 2011 for frequencies from 40 to 80 kHz. The metamaterial acoustic cloak was designed to hide objects submerged in water, bending and twists sound waves. The cloaking mechanism consists of 16 concentric rings in a cylindrical configuration, each ring having acoustic circuits and a different index of refraction. This causes sound waves to vary their speed from ring to ring. The sound waves propagate around the outer ring, guided by the channels in the circuits, which bend the waves to wrap them around the outer layers. This device has been described as an array of cavities which actually slow the speed of the propagating sound waves. An experimental cylinder was submerged in a tank, and made to disappear from sonar detection. Other objects of various shapes and densities were also hidden from sonar.
+
+
+=== Phononic metamaterials for thermal management ===
+As phonons are responsible for thermal conduction in solids, acoustic metamaterials may be designed to control heat transfer.
+
+
+=== Quantum-like computing with acoustic metamaterials ===
+Researchers have demonstrated a quantum-like computing method using acoustic metamaterials.  Recently  operations similar to the Controlled-NOT (CNOT) gate, a key component in quantum computing, have been demonstrated. By employing a nonlinear acoustic metamaterial, consisting of three elastically coupled waveguides, the team created classical qubit analogues called logical phi-bits. This approach allows for scalable, systematic, and predictable CNOT gate operations using a simple physical manipulation. This innovation brings promise to the field of quantum-like computing using acoustic metamaterials.
+
+
+== See also ==
+
+Books
+
+Metamaterials scientists
+
+
+== References ==
+
+
+== Further reading ==
+Leonhardt, Ulf; Smith, David R (2008). "Focus on Cloaking and Transformation Optics". New Journal of Physics. 10 (11): 115019. Bibcode:2008NJPh...10k5019L. doi:10.1088/1367-2630/10/11/115019.
+Fang, Nicholas; Xi, Dongjuan; Xu, Jianyi; Ambati, Muralidhar; Srituravanich, Werayut; Sun, Cheng; Zhang, Xiang (2006). "Ultrasonic metamaterials with negative modulus" (PDF). Nature Materials. 5 (6): 452–6. Bibcode:2006NatMa...5..452F. doi:10.1038/nmat1644. PMID 16648856. S2CID 11216648. Archived from the original (PDF) on June 23, 2010.
+Zhang, Shu; Xia, Chunguang; Fang, Nicholas (2011). "Broadband Acoustic Cloak for Ultrasound Waves". Physical Review Letters. 106 (2): 024301. arXiv:1009.3310. Bibcode:2011PhRvL.106b4301Z. doi:10.1103/PhysRevLett.106.024301. PMID 21405230. S2CID 13748310.
+Pendry, J B; Li, Jensen (2008). "An acoustic metafluid: realizing a broadband acoustic cloak". New Journal of Physics. 10 (11): 115032. Bibcode:2008NJPh...10k5032P. doi:10.1088/1367-2630/10/11/115032.
+Richard V. Craster, et al.: Acoustic metamaterials: negative refraction, imaging, lensing and cloaking. Springer, Dordrecht 2013, ISBN 978-94-007-4812-5.
+
+
+== External links ==
+Phononic crystals
+Negative refractive index materials
+Acoustic cloaking

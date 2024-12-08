@@ -1,0 +1,781 @@
+In mathematics, specifically in order theory and functional analysis, if 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ is a cone at 0 in a vector space 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ such that 
+  
+    
+      
+        0
+        ∈
+        C
+        ,
+      
+    
+    {\displaystyle 0\in C,}
+  
+ then a subset 
+  
+    
+      
+        S
+        ⊆
+        X
+      
+    
+    {\displaystyle S\subseteq X}
+  
+ is said to be 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+-saturated if 
+  
+    
+      
+        S
+        =
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+        ,
+      
+    
+    {\displaystyle S=[S]_{C},}
+  
+ where 
+  
+    
+      
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+        :=
+        (
+        S
+        +
+        C
+        )
+        ∩
+        (
+        S
+        −
+        C
+        )
+        .
+      
+    
+    {\displaystyle [S]_{C}:=(S+C)\cap (S-C).}
+  
+ 
+Given a subset 
+  
+    
+      
+        S
+        ⊆
+        X
+        ,
+      
+    
+    {\displaystyle S\subseteq X,}
+  
+ the 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+-saturated hull of 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is the smallest 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+-saturated subset of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ that contains 
+  
+    
+      
+        S
+        .
+      
+    
+    {\displaystyle S.}
+  
+ 
+If 
+  
+    
+      
+        
+          
+            F
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}}
+  
+ is a collection of subsets of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ then 
+  
+    
+      
+        
+          
+            [
+            
+              
+                F
+              
+            
+            ]
+          
+          
+            C
+          
+        
+        :=
+        
+          {
+          
+            [
+            F
+            
+              ]
+              
+                C
+              
+            
+            :
+            F
+            ∈
+            
+              
+                F
+              
+            
+          
+          }
+        
+        .
+      
+    
+    {\displaystyle \left[{\mathcal {F}}\right]_{C}:=\left\{[F]_{C}:F\in {\mathcal {F}}\right\}.}
+  
+
+If 
+  
+    
+      
+        
+          
+            T
+          
+        
+      
+    
+    {\displaystyle {\mathcal {T}}}
+  
+ is a collection of subsets of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ and if 
+  
+    
+      
+        
+          
+            F
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}}
+  
+ is a subset of 
+  
+    
+      
+        
+          
+            T
+          
+        
+      
+    
+    {\displaystyle {\mathcal {T}}}
+  
+ then 
+  
+    
+      
+        
+          
+            F
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}}
+  
+ is a fundamental subfamily of 
+  
+    
+      
+        
+          
+            T
+          
+        
+      
+    
+    {\displaystyle {\mathcal {T}}}
+  
+ if every 
+  
+    
+      
+        T
+        ∈
+        
+          
+            T
+          
+        
+      
+    
+    {\displaystyle T\in {\mathcal {T}}}
+  
+ is contained as a subset of some element of 
+  
+    
+      
+        
+          
+            F
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}.}
+  
+ 
+If 
+  
+    
+      
+        
+          
+            G
+          
+        
+      
+    
+    {\displaystyle {\mathcal {G}}}
+  
+ is a family of subsets of a TVS 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ then a cone 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is called a 
+  
+    
+      
+        
+          
+            G
+          
+        
+      
+    
+    {\displaystyle {\mathcal {G}}}
+  
+-cone if 
+  
+    
+      
+        
+          {
+          
+            
+              
+                
+                  [
+                  G
+                  
+                    ]
+                    
+                      C
+                    
+                  
+                
+                ¯
+              
+            
+            :
+            G
+            ∈
+            
+              
+                G
+              
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{{\overline {[G]_{C}}}:G\in {\mathcal {G}}\right\}}
+  
+ is a fundamental subfamily of 
+  
+    
+      
+        
+          
+            G
+          
+        
+      
+    
+    {\displaystyle {\mathcal {G}}}
+  
+ and 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ is a strict 
+  
+    
+      
+        
+          
+            G
+          
+        
+      
+    
+    {\displaystyle {\mathcal {G}}}
+  
+-cone if 
+  
+    
+      
+        
+          {
+          
+            [
+            B
+            
+              ]
+              
+                C
+              
+            
+            :
+            B
+            ∈
+            
+              
+                B
+              
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{[B]_{C}:B\in {\mathcal {B}}\right\}}
+  
+ is a fundamental subfamily of 
+  
+    
+      
+        
+          
+            B
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {B}}.}
+  
+
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+-saturated sets play an important role in the theory of ordered topological vector spaces and topological vector lattices.
+
+
+== Properties ==
+If 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is an ordered vector space with positive cone 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ then 
+  
+    
+      
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+        =
+        ⋃
+        
+          {
+          
+            [
+            x
+            ,
+            y
+            ]
+            :
+            x
+            ,
+            y
+            ∈
+            S
+          
+          }
+        
+        .
+      
+    
+    {\displaystyle [S]_{C}=\bigcup \left\{[x,y]:x,y\in S\right\}.}
+  
+
+The map 
+  
+    
+      
+        S
+        ↦
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+      
+    
+    {\displaystyle S\mapsto [S]_{C}}
+  
+ is increasing; that is, if 
+  
+    
+      
+        R
+        ⊆
+        S
+      
+    
+    {\displaystyle R\subseteq S}
+  
+ then 
+  
+    
+      
+        [
+        R
+        
+          ]
+          
+            C
+          
+        
+        ⊆
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+        .
+      
+    
+    {\displaystyle [R]_{C}\subseteq [S]_{C}.}
+  
+ 
+If 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is convex then so is 
+  
+    
+      
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+        .
+      
+    
+    {\displaystyle [S]_{C}.}
+  
+ When 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is considered as a vector field over 
+  
+    
+      
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ,}
+  
+ then if 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is balanced then so is 
+  
+    
+      
+        [
+        S
+        
+          ]
+          
+            C
+          
+        
+        .
+      
+    
+    {\displaystyle [S]_{C}.}
+  
+
+If 
+  
+    
+      
+        
+          
+            F
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}}
+  
+ is a filter base (resp. a filter) in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ then the same is true of 
+  
+    
+      
+        
+          
+            [
+            
+              
+                F
+              
+            
+            ]
+          
+          
+            C
+          
+        
+        :=
+        
+          {
+          
+            [
+            F
+            
+              ]
+              
+                C
+              
+            
+            :
+            F
+            ∈
+            
+              
+                F
+              
+            
+          
+          }
+        
+        .
+      
+    
+    {\displaystyle \left[{\mathcal {F}}\right]_{C}:=\left\{[F]_{C}:F\in {\mathcal {F}}\right\}.}
+  
+
+
+== See also ==
+Banach lattice – Banach space with a compatible structure of a lattice
+Fréchet lattice – Topological vector lattice
+Locally convex vector lattice
+Vector lattice – Partially ordered vector space, ordered as a latticePages displaying short descriptions of redirect targets
+
+
+== References ==
+
+
+== Bibliography ==
+Narici, Lawrence; Beckenstein, Edward (2011). Topological Vector Spaces. Pure and applied mathematics (Second ed.). Boca Raton, FL: CRC Press. ISBN 978-1584888666. OCLC 144216834.
+Schaefer, Helmut H.; Wolff, Manfred P. (1999). Topological Vector Spaces. GTM. Vol. 8 (Second ed.). New York, NY: Springer New York Imprint Springer. ISBN 978-1-4612-7155-0. OCLC 840278135.

@@ -1,0 +1,57 @@
+An Edge Emitting LED (ELED) fulfills the requirement of high brightness LED, which provides high-efficiency coupling to optical fibers.
+
+
+== History ==
+After the evolution of laser in 1960, implementation of LED in the optical communication systems could take place in 1970. Edge emitters were evolved in the mid-1970s.
+
+
+== Structure ==
+The structure is seemingly similar to that of the injection laser diode. Their structure consists of an optical waveguide region, which acts as a guide for the light emitted along the waveguide by total internal reflection.
+The structure of this LED uses a structure of a modified injection laser. It also possesses a high active region, with a sufficient difference, such that the waveguide around the active area channels radiation to the emitting face of the devices.
+
+
+== Material used ==
+Circular-shaped active area present in the middle of the active layer is formed by GaAs. The length of the active region ranges from 100 to 150 μm. optical confinement or light guiding layers are formed by AlGaAs. The other materials used are AlGaAsSb/GaSb and InGaAsP/InP alloy.
+
+
+== Working ==
+The feedback mechanism is suppressed to prevent the device to go into a saturated emission mode. At the heterojunction (extrinsic semiconductor layers used as interfaces between two homojunction materials), the guiding principle for optical power is total internal reflection, which guides the power out at the emitting facet of LED via a path that is parallel to the junction. The core region of the waveguide guides the light. The core layer has more refractive index than that of the cladding in this case. At the boundaries of the core region and the upper and lower boundaries of cladding layers, total internal reflection occurs. When provided with forward biasing using a DC source, recombination of electrons and holes at the thin n-AlGaAs would occur. At the edge of the active layer, few photons would escape. The voltage-current characteristic curve represents that beyond the threshold biasing voltage, current increases exponentially. Small incident angle photons will be guided by the waveguide. The intensity of the light emitted is linearly proportional to the length of the waveguide. The emitted beam is half the power and in 30-degree plane of the junction. Emitted Beam Radiance is given by the equation Bθ = B0 cos θ, where radiance at the center of the beam is represented by B0
+
+
+== Coupling sensitivity ==
+An ELED, when coupled to a single-mode fiber, would display an improved coupling sensitivity to fiber displacement compared with multi-mode fiber. Sensitivity to lateral misalignment in the acute direction to the junction plane of the LED rises by at least a factor of three, regardless of the coupling scheme used. A reciprocal relationship between peak coupling efficiency and sensitivity to misalignment could also be observed.
+
+
+== Other variants ==
+
+
+=== Superradiant LED ===
+They are the hybrids between LED and LASER. They possess internal optical gain and have a high power density. The power spectra is 1-2% of the central wavelength.
+Used in optic gyroscopes.
+
+
+=== Superluminicent LED ===
+SLED emissions are broad band and of high intensity in nature. They are suitable for use with single-mode fibers. These find their application in optical components for analysis.
+
+
+== Advantages ==
+Reduced self-absorption in active layers because of a transparent guiding layer with a thin active layer.
+With small beam divergence, launch of more optical power into the given fiber.
+Higher data rates of more than 20 Mbit/s.
+
+
+=== Advantages over Surface Emitters LED ===
+More directional emission pattern
+Better modulation bandwidth
+High coupling efficiency with the usage of lens coupling
+5 to 6 times more optical power could be coupled into the numerical aperture of step and graded index fibers.
+
+
+== Disadvantages ==
+Complicated structure
+Difficulty in heat sink
+Issues to handle mechanically
+Expensive
+
+
+== References ==

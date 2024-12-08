@@ -1,0 +1,1018 @@
+In graph theory and graph algorithms, a feedback arc set or feedback edge set in a directed graph is a subset of the edges of the graph that contains at least one edge out of every cycle in the graph. Removing these edges from the graph breaks all of the cycles, producing an acyclic subgraph of the given graph, often called a directed acyclic graph. A feedback arc set with the fewest possible edges is a minimum feedback arc set and its removal leaves a maximum acyclic subgraph; weighted versions of these optimization problems are also used. If a feedback arc set is minimal, meaning that removing any edge from it produces a subset that is not a feedback arc set, then it has an additional property: reversing all of its edges, rather than removing them, produces a directed acyclic graph.
+Feedback arc sets have applications in circuit analysis, chemical engineering, deadlock resolution, ranked voting, ranking competitors in sporting events, mathematical psychology, ethology, and graph drawing. Finding minimum feedback arc sets and maximum acyclic subgraphs is NP-hard; it can be solved exactly in exponential time, or in fixed-parameter tractable time. In polynomial time, the minimum feedback arc set can be approximated to within a polylogarithmic approximation ratio, and maximum acyclic subgraphs can be approximated to within a constant factor. Both are hard to approximate closer than some constant factor, an inapproximability result that can be strengthened under the unique games conjecture. For tournament graphs, the minimum feedback arc set can be approximated more accurately, and for planar graphs both problems can be solved exactly in polynomial time.
+A closely related problem, the feedback vertex set, is a set of vertices containing at least one vertex from every cycle in a directed or undirected graph. In undirected graphs, the spanning trees are the largest acyclic subgraphs, and the number of edges removed in forming a spanning tree is the circuit rank.
+
+
+== Applications ==
+
+Several problems involving finding rankings or orderings can be solved by finding a feedback arc set on a tournament graph, a directed graph with one edge between each pair of vertices. Reversing the edges of the feedback arc set produces a directed acyclic graph whose unique topological order can be used as the desired ranking. Applications of this method include the following:
+
+In sporting competitions with round-robin play, the outcomes of each game can be recorded by directing an edge from the loser to the winner of each game. Finding a minimum feedback arc set in the resulting graph, reversing its edges, and topological ordering, produces a ranking on all of the competitors. Among all of the different ways of choosing a ranking, it minimizes the total number of upsets, games in which a lower-ranked competitor beat a higher-ranked competitor. Many sports use simpler methods for group tournament ranking systems based on points awarded for each game; these methods can provide a constant approximation to the minimum-upset ranking.
+In primatology and more generally in ethology, dominance hierarchies are often determined by searching for an ordering with the fewest reversals in observed dominance behavior, another form of the minimum feedback arc set problem.
+In mathematical psychology, it is of interest to determine subjects' rankings of sets of objects according to a given criterion, such as their preference or their perception of size, based on pairwise comparisons between all pairs of objects. The minimum feedback arc set in a tournament graph provides a ranking that disagrees with as few pairwise outcomes as possible. Alternatively, if these comparisons result in independent probabilities for each pairwise ordering, then the maximum likelihood estimation of the overall ranking can be obtained by converting these probabilities into log-likelihoods and finding a minimum-weight feedback arc set in the resulting tournament.
+The same maximum-likelihood ordering can be used for seriation, the problem in statistics and exploratory data analysis of arranging elements into a linear ordering, in cases where data is available that provides pairwise comparisons between the elements.
+In ranked voting, the Kemeny–Young method can be described as seeking an ordering that minimizes the sum, over pairs of candidates, of the number of voters who prefer the opposite ordering for that pair. This can be formulated and solved as a minimum-weight feedback arc set problem, in which the vertices represent candidates, edges are directed to represent the winner of each head-to-head contest, and the cost of each edge represents the number of voters who would be made unhappy by giving a higher ranking to the head-to-head loser.
+Another early application of feedback arc sets concerned the design of sequential logic circuits, in which signals can propagate in cycles through the circuit instead of always progressing from inputs to outputs. In such circuits, a minimum feedback arc set characterizes the number of points at which amplification is necessary to allow the signals to propagate without loss of information. In synchronous circuits made from asynchronous components, synchronization can be achieved by placing clocked gates on the edges of a feedback arc set. Additionally, cutting a circuit on a feedback arc a set reduces the remaining circuit to combinational logic, simplifying its analysis, and the size of the feedback arc set controls how much additional analysis is needed to understand the behavior of the circuit across the cut. Similarly, in process flowsheeting in chemical engineering, breaking edges of a process flow diagram on a feedback arc set, and guessing or trying all possibilities for the values on those edges, allows the rest of the process to be analyzed in a systematic way because of its acyclicity. In this application, the idea of breaking edges in this way is called "tearing".
+In layered graph drawing, the vertices of a given directed graph are partitioned into an ordered sequence of subsets (the layers of the drawing), and each subset is placed along a horizontal line of this drawing, with the edges extending upwards and downwards between these layers. In this type of drawing, it is desirable for most or all of the edges to be oriented consistently downwards, rather than mixing upwards and downwards edges, in order for the reachability relations in the drawing to be more visually apparent. This is achieved by finding a minimum or minimal feedback arc set, reversing the edges in that set, and then choosing the partition into layers in a way that is consistent with a topological order of the resulting acyclic graph. Feedback arc sets have also been used for a different subproblem of layered graph drawing, the ordering of vertices within consecutive pairs of layers.
+In deadlock resolution in operating systems, the problem of removing the smallest number of dependencies to break a deadlock can be modeled as one of finding a minimum feedback arc set. However, because of the computational difficulty of finding this set, and the need for speed within operating system components, heuristics rather than exact algorithms are often used in this application.
+
+
+== Algorithms ==
+
+
+=== Equivalences ===
+The minimum feedback arc set and maximum acyclic subgraph are equivalent for the purposes of exact optimization, as one is the complement set of the other. However, for parameterized complexity and approximation, they differ, because the analysis used for those kinds of algorithms depends on the size of the solution and not just on the size of the input graph, and the minimum feedback arc set and maximum acyclic subgraph have different sizes from each other.
+A feedback arc set of a given graph 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is the same as a feedback vertex set of a directed line graph of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+. Here, a feedback vertex set is defined analogously to a feedback arc set, as a subset of the vertices of the graph whose deletion would eliminate all cycles. The line graph of a directed graph 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ has a vertex for each edge of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, and an edge for each two-edge path in 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+. In the other direction, the minimum feedback vertex set of a given graph 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ can be obtained from the solution to a minimum feedback arc set problem on a graph obtained by splitting every vertex of 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ into two vertices, one for incoming edges and one for outgoing edges. These transformations allow exact algorithms for feedback arc sets and for feedback vertex sets to be converted into each other, with an appropriate translation of their complexity bounds. However, this transformation does not preserve approximation quality for the maximum acyclic subgraph problem.
+
+In both exact and approximate solutions to the feedback arc set problem, it is sufficient to solve separately each strongly connected component of the given graph, and to break these strongly connected components down even farther to their biconnected components by splitting them at articulation vertices. The choice of solution within any one of these subproblems does not affect the others, and the edges that do not appear in any of these components are useless for inclusion in the feedback arc set. When one of these components can be separated into two disconnected subgraphs by removing two vertices, a more complicated decomposition applies, allowing the problem to be split into subproblems derived from the triconnected components of its strongly connected components.
+
+
+=== Exact ===
+One way to find the minimum feedback arc set is to search for an ordering of the vertices such that as few edges as possible are directed from later vertices to earlier vertices in the ordering. Searching all permutations of an 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-vertex graph would take time 
+  
+    
+      
+        O
+        (
+        n
+        !
+        )
+      
+    
+    {\displaystyle O(n!)}
+  
+, but a dynamic programming method based on the Held–Karp algorithm can find the optimal permutation in time 
+  
+    
+      
+        O
+        (
+        n
+        
+          2
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle O(n2^{n})}
+  
+, also using an exponential amount of space. A divide-and-conquer algorithm that tests all partitions of the vertices into two equal subsets and recurses within each subset can solve the problem in time 
+  
+    
+      
+        O
+        (
+        
+          4
+          
+            n
+          
+        
+        
+          /
+        
+        
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle O(4^{n}/{\sqrt {n}})}
+  
+, using polynomial space.
+In parameterized complexity, the time for algorithms is measured not just in terms of the size of the input graph, but also in terms of a separate parameter of the graph. In particular, for the minimum feedback arc set problem, the so-called natural parameter is the size of the minimum feedback arc set. On graphs with 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ vertices, with natural parameter 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+, the feedback arc set problem can be solved in time 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            4
+          
+        
+        
+          4
+          
+            k
+          
+        
+        
+          k
+          
+            3
+          
+        
+        k
+        !
+        )
+      
+    
+    {\displaystyle O(n^{4}4^{k}k^{3}k!)}
+  
+, by transforming it into an equivalent feedback vertex set problem and applying a parameterized feedback vertex set algorithm. Because the exponent of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ in this algorithm is the constant 
+  
+    
+      
+        4
+      
+    
+    {\displaystyle 4}
+  
+, independent of 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+, this algorithm is said to be fixed-parameter tractable.
+Other parameters than the natural parameter have also been studied. A fixed-parameter tractable algorithm using dynamic programming can find minimum feedback arc sets in time 
+  
+    
+      
+        O
+        (
+        
+          2
+          
+            r
+          
+        
+        
+          m
+          
+            4
+          
+        
+        log
+        ⁡
+        m
+        )
+      
+    
+    {\displaystyle O(2^{r}m^{4}\log m)}
+  
+, where 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ is the circuit rank of the underlying undirected graph. The circuit rank is an undirected analogue of the feedback arc set, the minimum number of edges that need to be removed from a connected graph to reduce it to a spanning tree; it is much easier to compute than the minimum feedback arc set. For graphs of treewidth 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+, dynamic programming on a tree decomposition of the graph can find the minimum feedback arc set in time polynomial in the graph size and exponential in 
+  
+    
+      
+        O
+        (
+        t
+        log
+        ⁡
+        t
+        )
+      
+    
+    {\displaystyle O(t\log t)}
+  
+. Under the exponential time hypothesis, no better dependence on 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ is possible.
+Instead of minimizing the size of the feedback arc set, researchers have also looked at minimizing the maximum number of edges removed from any vertex. This variation of the problem can be solved in linear time. All minimal feedback arc sets can be listed by an algorithm with polynomial delay per set.
+
+
+=== Approximate ===
+
+The best known polynomial-time approximation algorithm for the feedback arc set has the non-constant approximation ratio 
+  
+    
+      
+        O
+        (
+        log
+        ⁡
+        n
+        log
+        ⁡
+        log
+        ⁡
+        n
+        )
+      
+    
+    {\displaystyle O(\log n\log \log n)}
+  
+. This means that the size of the feedback arc set that it finds is at most this factor larger than the optimum. Determining whether feedback arc set has a constant-ratio approximation algorithm, or whether a non-constant ratio is necessary, remains an open problem.
+The maximum acyclic subgraph problem has an easy approximation algorithm that achieves an approximation ratio of 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{2}}}
+  
+:
+
+Fix an arbitrary ordering of the vertices
+Partition the edges into two acyclic subgraphs, one consisting of the edges directed consistently with the ordering, and the other consisting of edges directed oppositely to the ordering.
+Return the larger of the two subgraphs.
+This can be improved by using a greedy algorithm to choose the ordering. This algorithm finds and deletes a vertex whose numbers of incoming and outgoing edges are as far apart as possible, recursively orders the remaining graph, and then places the deleted vertex at one end of the resulting order. For graphs with 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ edges and 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ vertices, this produces an acyclic subgraph with 
+  
+    
+      
+        m
+        
+          /
+        
+        2
+        +
+        n
+        
+          /
+        
+        6
+      
+    
+    {\displaystyle m/2+n/6}
+  
+ edges, in linear time, giving an approximation ratio of 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+        +
+        Ω
+        (
+        n
+        
+          /
+        
+        m
+        )
+      
+    
+    {\displaystyle {\tfrac {1}{2}}+\Omega (n/m)}
+  
+. Another, more complicated, polynomial time approximation algorithm applies to graphs with maximum degree 
+  
+    
+      
+        Δ
+      
+    
+    {\displaystyle \Delta }
+  
+, and finds an acyclic subgraph with 
+  
+    
+      
+        m
+        
+          /
+        
+        2
+        +
+        Ω
+        (
+        m
+        
+          /
+        
+        
+          
+            Δ
+          
+        
+        )
+      
+    
+    {\displaystyle m/2+\Omega (m/{\sqrt {\Delta }})}
+  
+ edges, giving an approximation ratio of the form 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+        +
+        Ω
+        (
+        1
+        
+          /
+        
+        
+          
+            Δ
+          
+        
+        )
+      
+    
+    {\displaystyle {\tfrac {1}{2}}+\Omega (1/{\sqrt {\Delta }})}
+  
+. When 
+  
+    
+      
+        Δ
+        =
+        3
+      
+    
+    {\displaystyle \Delta =3}
+  
+, the approximation ratio 
+  
+    
+      
+        8
+        
+          /
+        
+        9
+      
+    
+    {\displaystyle 8/9}
+  
+ can be achieved.
+
+
+=== Restricted inputs ===
+In directed planar graphs, the feedback arc set problem is dual to the problem of contracting a set of edges (a dijoin) to make the resulting graph strongly connected. This dual problem is polynomially solvable,  and therefore the planar minimum feedback arc set problem is as well. It can be solved in time 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            5
+            
+              /
+            
+            2
+          
+        
+        log
+        ⁡
+        n
+        )
+      
+    
+    {\displaystyle O(n^{5/2}\log n)}
+  
+. A weighted version of the problem can be solved in time 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{3})}
+  
+, or when the weights are positive integers that are at most a number 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+, in time 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            5
+            
+              /
+            
+            2
+          
+        
+        log
+        ⁡
+        n
+        N
+        )
+      
+    
+    {\displaystyle O(n^{5/2}\log nN)}
+  
+. These planar algorithms can be extended to the graphs that do not have the utility graph 
+  
+    
+      
+        
+          K
+          
+            3
+            ,
+            3
+          
+        
+      
+    
+    {\displaystyle K_{3,3}}
+  
+ as a graph minor, using the fact that the triconnected components of these graphs are either planar or of bounded size. Planar graphs have also been generalized in a different way to a class of directed graphs called weakly acyclic digraphs, defined by the integrality of a certain polytope associated with their feedback arc sets. Every planar directed graph is weakly acyclic in this sense, and the feedback arc set problem can be solved in polynomial time for all weakly acyclic digraphs.
+The reducible flow graphs are another class of directed graphs on which the feedback arc set problem may be solved in polynomial time. These graphs describe the flow of control in structured programs for many programming languages. Although structured programs often produce planar directed flow graphs, the definition of reducibility does not require the graph to be planar.
+When the minimum feedback arc set problem is restricted to tournaments, it has a polynomial-time approximation scheme, which generalizes to a weighted version of the problem. A subexponential parameterized algorithm for weighted feedback arc sets on tournaments is also known. The maximum acyclic subgraph problem for dense graphs also has a polynomial-time approximation scheme. Its main ideas are to apply randomized rounding to a linear programming relaxation of the problem, and to derandomize the resulting algorithm using walks on expander graphs.
+
+
+== Hardness ==
+
+
+=== NP-hardness ===
+
+In order to apply the theory of NP-completeness to the minimum feedback arc set, it is necessary to modify the problem from being an optimization problem (how few edges can be removed to break all cycles) to an equivalent decision version, with a yes or no answer (is it possible to remove 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ edges). Thus, the decision version of the feedback arc set problem takes as input both a directed graph and a number 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+. It asks whether all cycles can be broken by removing at most 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ edges, or equivalently whether there is an acyclic subgraph with at least 
+  
+    
+      
+        
+          |
+        
+        E
+        (
+        G
+        )
+        
+          |
+        
+        −
+        k
+      
+    
+    {\displaystyle |E(G)|-k}
+  
+ edges. This problem is NP-complete, implying that neither it nor the optimization problem are expected to have polynomial time algorithms. It was one of Richard M. Karp's original set of 21 NP-complete problems; its NP-completeness was proved by Karp and Eugene Lawler by showing that inputs for another hard problem, the vertex cover problem, could be transformed ("reduced") into equivalent inputs to the feedback arc set decision problem.
+Some NP-complete problems can become easier when their inputs are restricted to special cases. But for the most important special case of the feedback arc set problem, the case of tournaments, the problem remains NP-complete.
+
+
+=== Inapproximability ===
+The complexity class APX is defined as consisting of optimization problems that have a polynomial time approximation algorithm that achieves a constant approximation ratio. Although such approximations are not known for the feedback arc set problem, the problem is known to be APX-hard, meaning that accurate approximations for it could be used to achieve similarly accurate approximations for all other problems in APX. As a consequence of its hardness proof, unless P = NP, it has no polynomial time approximation ratio better than 1.3606. This is the same threshold for hardness of approximation that is known for vertex cover, and the proof uses the Karp–Lawler reduction from vertex cover to feedback arc set, which preserves the quality of approximations. By a different reduction, the maximum acyclic subgraph problem is also APX-hard, and NP-hard to approximate to within a factor of 65/66 of optimal.
+The hardness of approximation of these problems has also been studied under unproven computational hardness assumptions that are standard in computational complexity theory but stronger than P ≠ NP. If the unique games conjecture is true, then the minimum feedback arc set problem is hard to approximate in polynomial time to within any constant factor, and the maximum feedback arc set problem is hard to approximate to within a factor of 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+        +
+        ε
+      
+    
+    {\displaystyle {\tfrac {1}{2}}+\varepsilon }
+  
+, for every 
+  
+    
+      
+        ε
+        >
+        0
+      
+    
+    {\displaystyle \varepsilon >0}
+  
+. Beyond polynomial time for approximation algorithms, if the exponential time hypothesis is true, then for every 
+  
+    
+      
+        ε
+        >
+        0
+      
+    
+    {\displaystyle \varepsilon >0}
+  
+ the minimum feedback arc set does not have an approximation within a factor 
+  
+    
+      
+        
+          
+            
+              7
+              6
+            
+          
+        
+        −
+        ε
+      
+    
+    {\displaystyle {\tfrac {7}{6}}-\varepsilon }
+  
+ that can be computed in the subexponential time bound 
+  
+    
+      
+        O
+        (
+        
+          2
+          
+            
+              n
+              
+                1
+                −
+                ε
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle O(2^{n^{1-\varepsilon }})}
+  
+.
+
+
+== Theory ==
+In planar directed graphs, the feedback arc set problem obeys a min-max theorem: the minimum size of a feedback arc set equals the maximum number of edge-disjoint directed cycles that can be found in the graph. This is not true for some other graphs; for instance the first illustration shows a directed version of the non-planar graph 
+  
+    
+      
+        
+          K
+          
+            3
+            ,
+            3
+          
+        
+      
+    
+    {\displaystyle K_{3,3}}
+  
+ in which the minimum size of a feedback arc set is two, while the maximum number of edge-disjoint directed cycles is only one.
+Every tournament graph has a Hamiltonian path, and the Hamiltonian paths correspond one-for-one with minimal feedback arc sets, disjoint from the corresponding path. The Hamiltonian path for a feedback arc set is found by reversing its arcs and finding a topological order of the resulting acyclic tournament. Every consecutive pair of the order must be disjoint from the feedback arc sets, because otherwise one could find a smaller feedback arc set by reversing that pair. Therefore, this ordering gives a path through arcs of the original tournament, covering all vertices. Conversely, from any Hamiltonian path, the set of edges that connect later vertices in the path to earlier ones forms a feedback arc set. It is minimal, because each of its edges belongs to a cycle with the Hamiltonian path edges that is disjoint from all other such cycles. In a tournament, it may be the case that the minimum feedback arc set and maximum acyclic subgraph are both close to half the edges. More precisely, every tournament graph has a feedback arc set of size 
+  
+    
+      
+        
+          
+            
+              
+                (
+              
+              
+                n
+                2
+              
+              
+                )
+              
+            
+          
+        
+        
+          /
+        
+        2
+        −
+        Ω
+        (
+        
+          n
+          
+            3
+            
+              /
+            
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle {\tbinom {n}{2}}/2-\Omega (n^{3/2})}
+  
+, and some tournaments require size 
+  
+    
+      
+        
+          
+            
+              
+                (
+              
+              
+                n
+                2
+              
+              
+                )
+              
+            
+          
+        
+        
+          /
+        
+        2
+        −
+        O
+        (
+        
+          n
+          
+            3
+            
+              /
+            
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle {\tbinom {n}{2}}/2-O(n^{3/2})}
+  
+. For almost all tournaments, the size is at least 
+  
+    
+      
+        
+          
+            
+              
+                (
+              
+              
+                n
+                2
+              
+              
+                )
+              
+            
+          
+        
+        
+          /
+        
+        2
+        −
+        1.73
+        
+          n
+          
+            3
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\tbinom {n}{2}}/2-1.73n^{3/2}}
+  
+. Every directed acyclic graph 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ can be embedded as a subgraph of a larger tournament graph, in such a way that 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is the unique minimum feedback arc set of the tournament. The size of this tournament has been defined as the "reversing number" of 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, and among directed acyclic graphs with the same number of vertices it is largest when 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is itself an (acyclic) tournament.
+A directed graph has an Euler tour whenever it is strongly connected and each vertex has equal numbers of incoming and outgoing edges. For such a graph, with 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ edges and 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ vertices, the size of a minimum feedback arc set is always at least 
+  
+    
+      
+        (
+        
+          m
+          
+            2
+          
+        
+        +
+        m
+        n
+        )
+        
+          /
+        
+        2
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (m^{2}+mn)/2n^{2}}
+  
+. There are infinitely many Eulerian directed graphs for which this bound is tight. If a directed graph has 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ vertices, with at most three edges per vertex, then it has a feedback arc set of at most 
+  
+    
+      
+        n
+        
+          /
+        
+        3
+      
+    
+    {\displaystyle n/3}
+  
+ edges, and some graphs require this many. If a directed graph has 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ edges, with at most four edges per vertex, then it has a feedback arc set of at most 
+  
+    
+      
+        m
+        
+          /
+        
+        3
+      
+    
+    {\displaystyle m/3}
+  
+ edges, and some graphs require this many.
+
+
+== References ==

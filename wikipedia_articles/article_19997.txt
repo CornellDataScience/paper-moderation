@@ -1,0 +1,78 @@
+CDNA (Compute DNA) is a compute-centered graphics processing unit (GPU) microarchitecture designed by AMD for datacenters. Mostly used in the AMD Instinct line of data center graphics cards, CDNA is a successor to the Graphics Core Next (GCN) microarchitecture; the other successor being RDNA (Radeon DNA), a consumer graphics focused microarchitecture. 
+The first generation of CDNA was announced on March 5th, 2020, and was featured in the AMD Instinct MI100, launched November 16th, 2020. This is CDNA 1's only produced product, manufactured on TSMC's N7 FinFET process. 
+The second iteration of the CDNA line implemented a multi-chip module (MCM) approach, differing from its predecessor's monolithic approach. Featured in the AMD Instinct MI250X and MI250, this MCM design used an elevated fanout bridge (EFB) to connect the dies. These two products were announced November 8th, 2021, and launched November 11th. The CDNA 2 line includes an additional latecomer using a monolithic design, the MI210. The MI250X and MI250 were the first AMD products to use the Open Compute Project (OCP)'s OCP Accelerator Module (OAM) socket form factor. Lower wattage PCIe versions are available. 
+The third iteration of CDNA switches to a MCM design utilizing different chiplets manufactured on multiple nodes. Currently consisting of the MI300X and MI300A, this product contains 15 unique dies and is connected with advanced 3D packaging techniques. The MI300 series was announced on January 5, 2023, and launched in H2 2023.
+
+
+== CDNA 1 ==
+
+The CDNA family consists of one die, named Arcturus. The die is 750 millimeters squared, contains 25.6 billion transistors and is manufactured on TSMC's N7 node. The Arcturus die possesses 120 compute units and a 4096-bit memory bus, connected to four HBM2 placements, giving the die 32 GB of memory, and just over 1200 GB/s of memory bandwidth. Compared to its predecessor, CDNA has removed all hardware related to graphics acceleration. This removal includes but is not limited to: graphics caches, tessellation hardware, render output units (ROPs), and the display engine. CDNA retains the VCN media engine for HEVC, H.264, and VP9 decoding. CDNA has also added dedicated matrix compute hardware, similar to those added in Nvidia's Volta Architecure.
+
+
+=== Architecture ===
+The 120 compute units (CUs) are organized into 4 asynchronous compute engines (ACEs), each ACE maintaining its own independent command execution and dispatch. At the CU level, CDNA compute units are organized similarly to GCN units. Each CU contains four SIMD16, that each execute their 64-thread wavefront (Wave64) over four cycles.
+
+
+==== Memory system ====
+CDNA has a 20% clock bump for the HBM, resulting in a roughly 200 GB/s bandwidth increase vs. Vega 20 (GCN 5.0). The die has a shared 4 MB L2 cache that puts out 2 KB per clock to the CUs. At the CU level, each CU has its own L1 cache, a local data store (LDS) with 64 KB per CU and a 4 KB global data store (GDS), shared by all CUs. This GDS can be used to store control data, reduction operations or act as a small global shared surface.
+
+
+===== Experimental PIM implementation =====
+In October 2022, Samsung demonstrated a Processing-In-Memory (PIM) specialized version of the MI100. In December 2022 Samsung showed off a cluster of 96 modified MI100s, boasting large increases in processing throughput for various workloads and significant reduction in power consumption.
+
+
+=== Changes from GCN ===
+The individual compute units remain highly similar to GCN but with the addition of 4 matrix units per CU. Support for more datatypes were added, with BF16, INT8 and INT4 being added. For an extensive list of operations utilizing the matrix units and new datatypes, please reference the CDNA ISA Reference Guide.
+
+
+=== Products ===
+
+
+== CDNA 2 ==
+
+Like CDNA, CDNA 2 also consists of one die, named Aldebaran. This die is estimated to be 790 millimeters squared, and contains 28 billion transistors while being manufactured on TSMC's N6 node. The Aldebaran die contains only 112 compute units, a 6.67% decrease from Arcturus. Like the previous generation, this die contains a 4096-bit memory bus, now using HBM2e with a doubling in capacity, up to 64 GB. The largest change in CDNA 2 is the ability for two dies to be placed on the same package. The MI250X consists of 2 Aldebaran dies, 220 CUs (110 per die) and 128 GB of HBM2e. These dies are connected with 4 Infinity Fabric links, and addressed as independent GPUs by the host system.
+
+
+=== Architecture ===
+The 112 CUs are organized similarly to CDNA, into 4 asynchronous compute engines, each with 28 CUs, instead of the prior generations 30. Like CDNA, each CU contains four SIMD16 units executing a 64-thread wavefront across 4 cycles. The 4 matrix engines and vector units have added support for full rate FP64, enabling significant uplift over the prior generation. CDNA 2 also revises multiple internal caches, doubling bandwidth across the board.
+
+
+==== Memory system ====
+The memory system in CDNA 2 sports across the board improvements. Starting with the move to HBM2e, doubling the quantity to 64 GB, and increasing bandwidth by roughly one third (from ~1200 GB/s to 1600 GB/s).  At the cache level. Each GCD has a 16-way, 8 MB L2 cache that is partitioned into 32 slices. This cache puts out 4 KB per clock, 128 B per clock per slice, which is a doubling of the bandwidth from CDNA.  Additionally, the 4 KB Global Data Store was removed. All caches, including the L2 and LDS have support added for FP64 data.
+
+
+==== Interconnect ====
+CDNA 2 brings forth the first product with multiple GPUs on the same package. The two GPU dies are connected by 4 Infinity Fabric links, with a total bidirectional bandwidth of 400 GB/s. Each die contains 8 Infinity Fabric links, each physically implemented with a 16-lane Infinity Link. When paired with an AMD processor, this will act as Infinity Fabric. if paired with any other x86 processor, this will fallback to 16 lanes of PCIe 4.0.
+
+
+=== Changes from CDNA ===
+The largest up front change is the additional of full rate FP64 support across all compute elements. This results in a 4x increase FP64 matrix calculations, with large increases in FP64 vector calculations. Additionally support for packed FP32 operations were added, with opcodes like 'V_PK_FMA_F32' and 'V_PK_MUL_F32'. Packed FP32 operations can enable up to 2x throughput, but do require code modification. As with CDNA, for further information on CDNA 2 operations, please reference the CDNA 2 ISA Reference Guide.
+
+
+=== Products ===
+
+
+== CDNA 3 ==
+
+Unlike its predecessors, CDNA 3 consists of multiple dies, used in a multi-chip system, similar to AMD's Zen 2, 3 and 4 line of products. The MI300 package is comparatively massive, with nine chiplets produced on 5 nm, placed on top of four 6 nm chiplets. This is all combined with 128 GB of HBM3, using eight HBM placements. This package contains an estimated 146 billion transistors. It comes in the form of the Instinct MI300X and MI300A, the latter being an APU. These products were launched on December 6, 2023.
+
+
+=== Products ===
+
+
+== Product Comparisons ==
+
+
+== See also ==
+AMD Instinct
+Radeon Pro
+
+
+== References ==
+
+
+== External links ==
+Official webpage
+AMD CDNA Architecture whitepaper
+AMD CDNA 2 Architecture whitepaper
+AMD CDNA 3 Architecture whitepaper

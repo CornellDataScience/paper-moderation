@@ -1,0 +1,5201 @@
+In probability theory and statistics, the Conway–Maxwell–Poisson (CMP or COM–Poisson) distribution is a discrete probability distribution named after Richard W. Conway, William L. Maxwell, and Siméon Denis Poisson that generalizes the Poisson distribution by adding a parameter to model overdispersion and underdispersion. It is a member of the exponential family, has the Poisson distribution and geometric distribution as special cases and the Bernoulli distribution as a limiting case.
+
+
+== Background ==
+The CMP distribution was originally proposed by Conway and Maxwell in 1962  as a solution to handling queueing systems with state-dependent service rates.  The CMP distribution was introduced into the statistics literature by Boatwright et al. 2003  and Shmueli et al. (2005).  The first detailed investigation into the
+probabilistic and statistical properties of the distribution was published by Shmueli et al. (2005). Some theoretical probability results of COM-Poisson distribution is studied and reviewed by Li et al. (2019), especially the characterizations of COM-Poisson distribution.
+
+
+== Probability mass function and basic properties ==
+The CMP distribution is defined to be the distribution with probability mass function
+
+  
+    
+      
+        P
+        (
+        X
+        =
+        x
+        )
+        =
+        f
+        (
+        x
+        ;
+        λ
+        ,
+        ν
+        )
+        =
+        
+          
+            
+              λ
+              
+                x
+              
+            
+            
+              (
+              x
+              !
+              
+                )
+                
+                  ν
+                
+              
+            
+          
+        
+        
+          
+            1
+            
+              Z
+              (
+              λ
+              ,
+              ν
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle P(X=x)=f(x;\lambda ,\nu )={\frac {\lambda ^{x}}{(x!)^{\nu }}}{\frac {1}{Z(\lambda ,\nu )}}.}
+  
+
+where :
+
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        =
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              λ
+              
+                j
+              
+            
+            
+              (
+              j
+              !
+              
+                )
+                
+                  ν
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle Z(\lambda ,\nu )=\sum _{j=0}^{\infty }{\frac {\lambda ^{j}}{(j!)^{\nu }}}.}
+  
+
+The function 
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle Z(\lambda ,\nu )}
+  
+ serves as a normalization constant so the probability mass function sums to one. Note that 
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle Z(\lambda ,\nu )}
+  
+ does not have a closed form.
+The domain of admissible parameters is 
+  
+    
+      
+        λ
+        ,
+        ν
+        >
+        0
+      
+    
+    {\displaystyle \lambda ,\nu >0}
+  
+, and 
+  
+    
+      
+        0
+        <
+        λ
+        <
+        1
+      
+    
+    {\displaystyle 0<\lambda <1}
+  
+, 
+  
+    
+      
+        ν
+        =
+        0
+      
+    
+    {\displaystyle \nu =0}
+  
+.
+The additional parameter 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ which does not appear in the Poisson distribution allows for adjustment of the rate of decay. This rate of decay is a non-linear decrease in ratios of successive probabilities, specifically
+
+  
+    
+      
+        
+          
+            
+              P
+              (
+              X
+              =
+              x
+              −
+              1
+              )
+            
+            
+              P
+              (
+              X
+              =
+              x
+              )
+            
+          
+        
+        =
+        
+          
+            
+              x
+              
+                ν
+              
+            
+            λ
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {P(X=x-1)}{P(X=x)}}={\frac {x^{\nu }}{\lambda }}.}
+  
+
+When 
+  
+    
+      
+        ν
+        =
+        1
+      
+    
+    {\displaystyle \nu =1}
+  
+, the CMP distribution becomes the standard Poisson distribution and as 
+  
+    
+      
+        ν
+        →
+        ∞
+      
+    
+    {\displaystyle \nu \to \infty }
+  
+, the distribution approaches a Bernoulli distribution with parameter 
+  
+    
+      
+        λ
+        
+          /
+        
+        (
+        1
+        +
+        λ
+        )
+      
+    
+    {\displaystyle \lambda /(1+\lambda )}
+  
+. When 
+  
+    
+      
+        ν
+        =
+        0
+      
+    
+    {\displaystyle \nu =0}
+  
+ the CMP distribution reduces to a geometric distribution with probability of success 
+  
+    
+      
+        1
+        −
+        λ
+      
+    
+    {\displaystyle 1-\lambda }
+  
+ provided 
+  
+    
+      
+        λ
+        <
+        1
+      
+    
+    {\displaystyle \lambda <1}
+  
+.
+For the CMP distribution, moments can be found through the recursive formula 
+
+  
+    
+      
+        E
+        ⁡
+        [
+        
+          X
+          
+            r
+            +
+            1
+          
+        
+        ]
+        =
+        
+          
+            {
+            
+              
+                
+                  λ
+                  
+                  E
+                  ⁡
+                  [
+                  X
+                  +
+                  1
+                  
+                    ]
+                    
+                      1
+                      −
+                      ν
+                    
+                  
+                
+                
+                  
+                    if 
+                  
+                  r
+                  =
+                  0
+                
+              
+              
+                
+                  λ
+                  
+                  
+                    
+                      d
+                      
+                        d
+                        λ
+                      
+                    
+                  
+                  E
+                  ⁡
+                  [
+                  
+                    X
+                    
+                      r
+                    
+                  
+                  ]
+                  +
+                  E
+                  ⁡
+                  [
+                  X
+                  ]
+                  E
+                  ⁡
+                  [
+                  
+                    X
+                    
+                      r
+                    
+                  
+                  ]
+                
+                
+                  
+                    if 
+                  
+                  r
+                  >
+                  0.
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {E} [X^{r+1}]={\begin{cases}\lambda \,\operatorname {E} [X+1]^{1-\nu }&{\text{if }}r=0\\\lambda \,{\frac {d}{d\lambda }}\operatorname {E} [X^{r}]+\operatorname {E} [X]\operatorname {E} [X^{r}]&{\text{if }}r>0.\\\end{cases}}}
+  
+
+
+== Cumulative distribution function ==
+For general 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+, there does not exist a closed form formula for the cumulative distribution function of 
+  
+    
+      
+        X
+        ∼
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X\sim \mathrm {CMP} (\lambda ,\nu )}
+  
+.  If 
+  
+    
+      
+        ν
+        ≥
+        1
+      
+    
+    {\displaystyle \nu \geq 1}
+  
+ is an integer, we can, however, obtain the following formula in terms of the generalized hypergeometric function:
+
+  
+    
+      
+        F
+        (
+        n
+        )
+        =
+        P
+        (
+        X
+        ≤
+        n
+        )
+        =
+        1
+        −
+        
+          
+            
+              
+                
+                
+                  1
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              n
+              +
+              2
+              ,
+              …
+              ,
+              n
+              +
+              2
+              ;
+              λ
+              )
+            
+            
+              
+                
+                  {
+                  (
+                  n
+                  +
+                  1
+                  )
+                  !
+                  
+                    }
+                    
+                      ν
+                      −
+                      1
+                    
+                  
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              1
+              ,
+              …
+              ,
+              1
+              ;
+              λ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle F(n)=P(X\leq n)=1-{\frac {_{1}F_{\nu -1}(;n+2,\ldots ,n+2;\lambda )}{{\{(n+1)!\}^{\nu -1}}_{0}F_{\nu -1}(;1,\ldots ,1;\lambda )}}.}
+  
+
+
+== The normalizing constant ==
+Many important summary statistics, such as moments and cumulants, of the CMP distribution can be expressed in terms of the normalizing constant 
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle Z(\lambda ,\nu )}
+  
+.  Indeed, The probability generating function is 
+  
+    
+      
+        E
+        ⁡
+        
+          s
+          
+            X
+          
+        
+        =
+        Z
+        (
+        s
+        λ
+        ,
+        ν
+        )
+        
+          /
+        
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle \operatorname {E} s^{X}=Z(s\lambda ,\nu )/Z(\lambda ,\nu )}
+  
+, and the mean and variance are given by
+
+  
+    
+      
+        E
+        ⁡
+        X
+        =
+        λ
+        
+          
+            d
+            
+              d
+              λ
+            
+          
+        
+        
+          
+            {
+          
+        
+        ln
+        ⁡
+        (
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        )
+        
+          
+            }
+          
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} X=\lambda {\frac {d}{d\lambda }}{\big \{}\ln(Z(\lambda ,\nu )){\big \}},}
+  
+
+  
+    
+      
+        var
+        ⁡
+        (
+        X
+        )
+        =
+        λ
+        
+          
+            d
+            
+              d
+              λ
+            
+          
+        
+        E
+        ⁡
+        X
+        .
+      
+    
+    {\displaystyle \operatorname {var} (X)=\lambda {\frac {d}{d\lambda }}\operatorname {E} X.}
+  
+
+The cumulant generating function is
+
+  
+    
+      
+        g
+        (
+        t
+        )
+        =
+        ln
+        ⁡
+        (
+        E
+        ⁡
+        [
+        
+          e
+          
+            t
+            X
+          
+        
+        ]
+        )
+        =
+        ln
+        ⁡
+        (
+        Z
+        (
+        λ
+        
+          e
+          
+            t
+          
+        
+        ,
+        ν
+        )
+        )
+        −
+        ln
+        ⁡
+        (
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        )
+        ,
+      
+    
+    {\displaystyle g(t)=\ln(\operatorname {E} [e^{tX}])=\ln(Z(\lambda e^{t},\nu ))-\ln(Z(\lambda ,\nu )),}
+  
+
+and the cumulants are given by
+
+  
+    
+      
+        
+          κ
+          
+            n
+          
+        
+        =
+        
+          g
+          
+            (
+            n
+            )
+          
+        
+        (
+        0
+        )
+        =
+        
+          
+            
+              ∂
+              
+                n
+              
+            
+            
+              ∂
+              
+                t
+                
+                  n
+                
+              
+            
+          
+        
+        ln
+        ⁡
+        (
+        Z
+        (
+        λ
+        
+          e
+          
+            t
+          
+        
+        ,
+        ν
+        )
+        )
+        
+          
+            
+              |
+            
+          
+          
+            t
+            =
+            0
+          
+        
+        ,
+        
+        n
+        ≥
+        1.
+      
+    
+    {\displaystyle \kappa _{n}=g^{(n)}(0)={\frac {\partial ^{n}}{\partial t^{n}}}\ln(Z(\lambda e^{t},\nu )){\bigg |}_{t=0},\quad n\geq 1.}
+  
+
+Whilst the normalizing constant 
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              λ
+              
+                i
+              
+            
+            
+              (
+              i
+              !
+              
+                )
+                
+                  ν
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle Z(\lambda ,\nu )=\sum _{i=0}^{\infty }{\frac {\lambda ^{i}}{(i!)^{\nu }}}}
+  
+ does not in general have a closed form, there are some noteworthy special cases:
+
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        1
+        )
+        =
+        
+          
+            e
+          
+          
+            λ
+          
+        
+      
+    
+    {\displaystyle Z(\lambda ,1)=\mathrm {e} ^{\lambda }}
+  
+
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        0
+        )
+        =
+        (
+        1
+        −
+        λ
+        
+          )
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle Z(\lambda ,0)=(1-\lambda )^{-1}}
+  
+
+  
+    
+      
+        
+          lim
+          
+            ν
+            →
+            ∞
+          
+        
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        =
+        1
+        +
+        λ
+      
+    
+    {\displaystyle \lim _{\nu \rightarrow \infty }Z(\lambda ,\nu )=1+\lambda }
+  
+
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        2
+        )
+        =
+        
+          I
+          
+            0
+          
+        
+        (
+        2
+        
+          
+            λ
+          
+        
+        )
+      
+    
+    {\displaystyle Z(\lambda ,2)=I_{0}(2{\sqrt {\lambda }})}
+  
+, where 
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              (
+              k
+              !
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        
+          
+            (
+          
+        
+        
+          
+            x
+            2
+          
+        
+        
+          
+            
+              )
+            
+          
+          
+            2
+            k
+          
+        
+      
+    
+    {\displaystyle I_{0}(x)=\sum _{k=0}^{\infty }{\frac {1}{(k!)^{2}}}{\big (}{\frac {x}{2}}{\big )}^{2k}}
+  
+ is a modified Bessel function of the first kind.
+For integer 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+, the normalizing constant can expressed  as a generalized hypergeometric function: 
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        
+          =
+          
+            0
+          
+        
+        
+          F
+          
+            ν
+            −
+            1
+          
+        
+        (
+        ;
+        1
+        ,
+        …
+        ,
+        1
+        ;
+        λ
+        )
+      
+    
+    {\displaystyle Z(\lambda ,\nu )=_{0}F_{\nu -1}(;1,\ldots ,1;\lambda )}
+  
+.
+Because the normalizing constant does not in general have a closed form, the following asymptotic expansion is of interest.  Fix 
+  
+    
+      
+        ν
+        >
+        0
+      
+    
+    {\displaystyle \nu >0}
+  
+.  Then, as 
+  
+    
+      
+        λ
+        →
+        ∞
+      
+    
+    {\displaystyle \lambda \rightarrow \infty }
+  
+,
+
+  
+    
+      
+        Z
+        (
+        λ
+        ,
+        ν
+        )
+        =
+        
+          
+            
+              exp
+              ⁡
+              
+                {
+                
+                  ν
+                  
+                    λ
+                    
+                      1
+                      
+                        /
+                      
+                      ν
+                    
+                  
+                
+                }
+              
+            
+            
+              
+                λ
+                
+                  (
+                  ν
+                  −
+                  1
+                  )
+                  
+                    /
+                  
+                  2
+                  ν
+                
+              
+              (
+              2
+              π
+              
+                )
+                
+                  (
+                  ν
+                  −
+                  1
+                  )
+                  
+                    /
+                  
+                  2
+                
+              
+              
+                
+                  ν
+                
+              
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          c
+          
+            k
+          
+        
+        
+          
+            (
+          
+        
+        ν
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+        
+          
+            
+              )
+            
+          
+          
+            −
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle Z(\lambda ,\nu )={\frac {\exp \left\{\nu \lambda ^{1/\nu }\right\}}{\lambda ^{(\nu -1)/2\nu }(2\pi )^{(\nu -1)/2}{\sqrt {\nu }}}}\sum _{k=0}^{\infty }c_{k}{\big (}\nu \lambda ^{1/\nu }{\big )}^{-k},}
+  
+
+where the 
+  
+    
+      
+        
+          c
+          
+            j
+          
+        
+      
+    
+    {\displaystyle c_{j}}
+  
+ are uniquely determined by the expansion
+
+  
+    
+      
+        
+          
+            (
+            
+              Γ
+              (
+              t
+              +
+              1
+              )
+            
+            )
+          
+          
+            −
+            ν
+          
+        
+        =
+        
+          
+            
+              ν
+              
+                ν
+                (
+                t
+                +
+                1
+                
+                  /
+                
+                2
+                )
+              
+            
+            
+              
+                (
+                
+                  2
+                  π
+                
+                )
+              
+              
+                (
+                ν
+                −
+                1
+                )
+                
+                  /
+                
+                2
+              
+            
+          
+        
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              c
+              
+                j
+              
+            
+            
+              Γ
+              (
+              ν
+              t
+              +
+              (
+              1
+              +
+              ν
+              )
+              
+                /
+              
+              2
+              +
+              j
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \left(\Gamma (t+1)\right)^{-\nu }={\frac {\nu ^{\nu (t+1/2)}}{\left(2\pi \right)^{(\nu -1)/2}}}\sum _{j=0}^{\infty }{\frac {c_{j}}{\Gamma (\nu t+(1+\nu )/2+j)}}.}
+  
+
+In particular, 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle c_{0}=1}
+  
+, 
+  
+    
+      
+        
+          c
+          
+            1
+          
+        
+        =
+        
+          
+            
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+            
+            24
+          
+        
+      
+    
+    {\displaystyle c_{1}={\frac {\nu ^{2}-1}{24}}}
+  
+, 
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+            
+            1152
+          
+        
+        
+          (
+          
+            
+              ν
+              
+                2
+              
+            
+            +
+            23
+          
+          )
+        
+      
+    
+    {\displaystyle c_{2}={\frac {\nu ^{2}-1}{1152}}\left(\nu ^{2}+23\right)}
+  
+.  Further coefficients are given in.
+
+
+== Moments, cumulants and related results ==
+For general values of 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+, there does not exist closed form formulas for the mean, variance and moments of the CMP distribution.  We do, however, have the following neat formula.  Let 
+  
+    
+      
+        (
+        j
+        
+          )
+          
+            r
+          
+        
+        =
+        j
+        (
+        j
+        −
+        1
+        )
+        ⋯
+        (
+        j
+        −
+        r
+        +
+        1
+        )
+      
+    
+    {\displaystyle (j)_{r}=j(j-1)\cdots (j-r+1)}
+  
+ denote the falling factorial.  Let 
+  
+    
+      
+        X
+        ∼
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X\sim \mathrm {CMP} (\lambda ,\nu )}
+  
+, 
+  
+    
+      
+        λ
+        ,
+        ν
+        >
+        0
+      
+    
+    {\displaystyle \lambda ,\nu >0}
+  
+.  Then
+
+  
+    
+      
+        E
+        ⁡
+        [
+        (
+        (
+        X
+        
+          )
+          
+            r
+          
+        
+        
+          )
+          
+            ν
+          
+        
+        ]
+        =
+        
+          λ
+          
+            r
+          
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} [((X)_{r})^{\nu }]=\lambda ^{r},}
+  
+
+for 
+  
+    
+      
+        r
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle r\in \mathbb {N} }
+  
+.
+Since in general closed form formulas are not available for moments and cumulants of the CMP distribution, the following asymptotic formulas are of interest.  Let 
+  
+    
+      
+        X
+        ∼
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X\sim \mathrm {CMP} (\lambda ,\nu )}
+  
+, where 
+  
+    
+      
+        ν
+        >
+        0
+      
+    
+    {\displaystyle \nu >0}
+  
+.  Denote the skewness 
+  
+    
+      
+        
+          γ
+          
+            1
+          
+        
+        =
+        
+          
+            
+              κ
+              
+                3
+              
+            
+            
+              σ
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle \gamma _{1}={\frac {\kappa _{3}}{\sigma ^{3}}}}
+  
+ and excess kurtosis 
+  
+    
+      
+        
+          γ
+          
+            2
+          
+        
+        =
+        
+          
+            
+              κ
+              
+                4
+              
+            
+            
+              σ
+              
+                4
+              
+            
+          
+        
+      
+    
+    {\displaystyle \gamma _{2}={\frac {\kappa _{4}}{\sigma ^{4}}}}
+  
+, where 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        =
+        
+          V
+          a
+          r
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle \sigma ^{2}=\mathrm {Var} (X)}
+  
+.  Then, as 
+  
+    
+      
+        λ
+        →
+        ∞
+      
+    
+    {\displaystyle \lambda \rightarrow \infty }
+  
+,
+
+  
+    
+      
+        E
+        ⁡
+        X
+        =
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+        
+          (
+          
+            1
+            −
+            
+              
+                
+                  ν
+                  −
+                  1
+                
+                
+                  2
+                  ν
+                
+              
+            
+            
+              λ
+              
+                −
+                1
+                
+                  /
+                
+                ν
+              
+            
+            −
+            
+              
+                
+                  
+                    ν
+                    
+                      2
+                    
+                  
+                  −
+                  1
+                
+                
+                  24
+                  
+                    ν
+                    
+                      2
+                    
+                  
+                
+              
+            
+            
+              λ
+              
+                −
+                2
+                
+                  /
+                
+                ν
+              
+            
+            −
+            
+              
+                
+                  
+                    ν
+                    
+                      2
+                    
+                  
+                  −
+                  1
+                
+                
+                  24
+                  
+                    ν
+                    
+                      3
+                    
+                  
+                
+              
+            
+            
+              λ
+              
+                −
+                3
+                
+                  /
+                
+                ν
+              
+            
+            +
+            
+              
+                O
+              
+            
+            (
+            
+              λ
+              
+                −
+                4
+                
+                  /
+                
+                ν
+              
+            
+            )
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} X=\lambda ^{1/\nu }\left(1-{\frac {\nu -1}{2\nu }}\lambda ^{-1/\nu }-{\frac {\nu ^{2}-1}{24\nu ^{2}}}\lambda ^{-2/\nu }-{\frac {\nu ^{2}-1}{24\nu ^{3}}}\lambda ^{-3/\nu }+{\mathcal {O}}(\lambda ^{-4/\nu })\right),}
+  
+
+  
+    
+      
+        
+          V
+          a
+          r
+        
+        (
+        X
+        )
+        =
+        
+          
+            
+              λ
+              
+                1
+                
+                  /
+                
+                ν
+              
+            
+            ν
+          
+        
+        
+          
+            (
+          
+        
+        1
+        +
+        
+          
+            
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+            
+            
+              24
+              
+                ν
+                
+                  2
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            2
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+            
+            
+              12
+              
+                ν
+                
+                  3
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            3
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            O
+          
+        
+        (
+        
+          λ
+          
+            −
+            4
+            
+              /
+            
+            ν
+          
+        
+        )
+        
+          
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathrm {Var} (X)={\frac {\lambda ^{1/\nu }}{\nu }}{\bigg (}1+{\frac {\nu ^{2}-1}{24\nu ^{2}}}\lambda ^{-2/\nu }+{\frac {\nu ^{2}-1}{12\nu ^{3}}}\lambda ^{-3/\nu }+{\mathcal {O}}(\lambda ^{-4/\nu }){\bigg )},}
+  
+
+  
+    
+      
+        
+          κ
+          
+            n
+          
+        
+        =
+        
+          
+            
+              λ
+              
+                1
+                
+                  /
+                
+                ν
+              
+            
+            
+              ν
+              
+                n
+                −
+                1
+              
+            
+          
+        
+        
+          
+            (
+          
+        
+        1
+        +
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              (
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+              )
+            
+            
+              24
+              
+                ν
+                
+                  2
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            2
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            
+              (
+              −
+              2
+              
+                )
+                
+                  n
+                
+              
+              (
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+              )
+            
+            
+              48
+              
+                ν
+                
+                  3
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            3
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            O
+          
+        
+        (
+        
+          λ
+          
+            −
+            4
+            
+              /
+            
+            ν
+          
+        
+        )
+        
+          
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \kappa _{n}={\frac {\lambda ^{1/\nu }}{\nu ^{n-1}}}{\bigg (}1+{\frac {(-1)^{n}(\nu ^{2}-1)}{24\nu ^{2}}}\lambda ^{-2/\nu }+{\frac {(-2)^{n}(\nu ^{2}-1)}{48\nu ^{3}}}\lambda ^{-3/\nu }+{\mathcal {O}}(\lambda ^{-4/\nu }){\bigg )},}
+  
+
+  
+    
+      
+        
+          γ
+          
+            1
+          
+        
+        =
+        
+          
+            
+              λ
+              
+                −
+                1
+                
+                  /
+                
+                2
+                ν
+              
+            
+            
+              ν
+            
+          
+        
+        
+          
+            (
+          
+        
+        1
+        −
+        
+          
+            
+              5
+              (
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+              )
+            
+            
+              48
+              
+                ν
+                
+                  2
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            2
+            
+              /
+            
+            ν
+          
+        
+        −
+        
+          
+            
+              7
+              (
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+              )
+            
+            
+              24
+              
+                ν
+                
+                  3
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            3
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            O
+          
+        
+        (
+        
+          λ
+          
+            −
+            4
+            
+              /
+            
+            ν
+          
+        
+        )
+        
+          
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \gamma _{1}={\frac {\lambda ^{-1/2\nu }}{\sqrt {\nu }}}{\bigg (}1-{\frac {5(\nu ^{2}-1)}{48\nu ^{2}}}\lambda ^{-2/\nu }-{\frac {7(\nu ^{2}-1)}{24\nu ^{3}}}\lambda ^{-3/\nu }+{\mathcal {O}}(\lambda ^{-4/\nu }){\bigg )},}
+  
+
+  
+    
+      
+        
+          γ
+          
+            2
+          
+        
+        =
+        
+          
+            
+              λ
+              
+                −
+                1
+                
+                  /
+                
+                ν
+              
+            
+            ν
+          
+        
+        
+          
+            (
+          
+        
+        1
+        −
+        
+          
+            
+              (
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+              )
+            
+            
+              24
+              
+                ν
+                
+                  2
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            2
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            
+              (
+              
+                ν
+                
+                  2
+                
+              
+              −
+              1
+              )
+            
+            
+              6
+              
+                ν
+                
+                  3
+                
+              
+            
+          
+        
+        
+          λ
+          
+            −
+            3
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            O
+          
+        
+        (
+        
+          λ
+          
+            −
+            4
+            
+              /
+            
+            ν
+          
+        
+        )
+        
+          
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \gamma _{2}={\frac {\lambda ^{-1/\nu }}{\nu }}{\bigg (}1-{\frac {(\nu ^{2}-1)}{24\nu ^{2}}}\lambda ^{-2/\nu }+{\frac {(\nu ^{2}-1)}{6\nu ^{3}}}\lambda ^{-3/\nu }+{\mathcal {O}}(\lambda ^{-4/\nu }){\bigg )},}
+  
+
+  
+    
+      
+        E
+        ⁡
+        [
+        
+          X
+          
+            n
+          
+        
+        ]
+        =
+        
+          λ
+          
+            n
+            
+              /
+            
+            ν
+          
+        
+        
+          
+            (
+          
+        
+        1
+        +
+        
+          
+            
+              n
+              (
+              n
+              −
+              ν
+              )
+            
+            
+              2
+              ν
+            
+          
+        
+        
+          λ
+          
+            −
+            1
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          λ
+          
+            −
+            2
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            O
+          
+        
+        (
+        
+          λ
+          
+            −
+            3
+            
+              /
+            
+            ν
+          
+        
+        )
+        
+          
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} [X^{n}]=\lambda ^{n/\nu }{\bigg (}1+{\frac {n(n-\nu )}{2\nu }}\lambda ^{-1/\nu }+a_{2}\lambda ^{-2/\nu }+{\mathcal {O}}(\lambda ^{-3/\nu }){\bigg )},}
+  
+
+where
+
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        =
+        −
+        
+          
+            
+              n
+              (
+              ν
+              −
+              1
+              )
+              (
+              6
+              n
+              
+                ν
+                
+                  2
+                
+              
+              −
+              3
+              n
+              ν
+              −
+              15
+              n
+              +
+              4
+              ν
+              +
+              10
+              )
+            
+            
+              24
+              
+                ν
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              ν
+              
+                2
+              
+            
+          
+        
+        
+          
+            {
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              3
+            
+            
+              )
+            
+          
+        
+        +
+        3
+        
+          
+            
+              (
+            
+            
+              n
+              4
+            
+            
+              )
+            
+          
+        
+        
+          
+            }
+          
+        
+        .
+      
+    
+    {\displaystyle a_{2}=-{\frac {n(\nu -1)(6n\nu ^{2}-3n\nu -15n+4\nu +10)}{24\nu ^{2}}}+{\frac {1}{\nu ^{2}}}{\bigg \{}{\binom {n}{3}}+3{\binom {n}{4}}{\bigg \}}.}
+  
+
+The asymptotic series for 
+  
+    
+      
+        
+          κ
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \kappa _{n}}
+  
+ holds for all 
+  
+    
+      
+        n
+        ≥
+        2
+      
+    
+    {\displaystyle n\geq 2}
+  
+, and 
+  
+    
+      
+        
+          κ
+          
+            1
+          
+        
+        =
+        E
+        ⁡
+        X
+      
+    
+    {\displaystyle \kappa _{1}=\operatorname {E} X}
+  
+.
+
+
+== Moments for the case of integer ==
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+
+When 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ is an integer explicit formulas for moments can be obtained.  The case 
+  
+    
+      
+        ν
+        =
+        1
+      
+    
+    {\displaystyle \nu =1}
+  
+ corresponds to the Poisson distribution.  Suppose now that 
+  
+    
+      
+        ν
+        =
+        2
+      
+    
+    {\displaystyle \nu =2}
+  
+.  For 
+  
+    
+      
+        m
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle m\in \mathbb {N} }
+  
+,
+
+  
+    
+      
+        E
+        ⁡
+        [
+        (
+        X
+        
+          )
+          
+            m
+          
+        
+        ]
+        =
+        
+          
+            
+              
+                λ
+                
+                  m
+                  
+                    /
+                  
+                  2
+                
+              
+              
+                I
+                
+                  m
+                
+              
+              (
+              2
+              
+                
+                  λ
+                
+              
+              )
+            
+            
+              
+                I
+                
+                  0
+                
+              
+              (
+              2
+              
+                
+                  λ
+                
+              
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} [(X)_{m}]={\frac {\lambda ^{m/2}I_{m}(2{\sqrt {\lambda }})}{I_{0}(2{\sqrt {\lambda }})}},}
+  
+
+where 
+  
+    
+      
+        
+          I
+          
+            r
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle I_{r}(x)}
+  
+ is the modified Bessel function of the first kind.
+Using the connecting formula for moments and factorial moments gives
+
+  
+    
+      
+        E
+        ⁡
+        
+          X
+          
+            m
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            m
+          
+        
+        
+          {
+          
+            
+              m
+              k
+            
+          
+          }
+        
+        
+          
+            
+              
+                λ
+                
+                  k
+                  
+                    /
+                  
+                  2
+                
+              
+              
+                I
+                
+                  k
+                
+              
+              (
+              2
+              
+                
+                  λ
+                
+              
+              )
+            
+            
+              
+                I
+                
+                  0
+                
+              
+              (
+              2
+              
+                
+                  λ
+                
+              
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {E} X^{m}=\sum _{k=1}^{m}\left\{{m \atop k}\right\}{\frac {\lambda ^{k/2}I_{k}(2{\sqrt {\lambda }})}{I_{0}(2{\sqrt {\lambda }})}}.}
+  
+
+In particular, the mean of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is given by
+
+  
+    
+      
+        E
+        ⁡
+        X
+        =
+        
+          
+            
+              
+                
+                  λ
+                
+              
+              
+                I
+                
+                  1
+                
+              
+              (
+              2
+              
+                
+                  λ
+                
+              
+              )
+            
+            
+              
+                I
+                
+                  0
+                
+              
+              (
+              2
+              
+                
+                  λ
+                
+              
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {E} X={\frac {{\sqrt {\lambda }}I_{1}(2{\sqrt {\lambda }})}{I_{0}(2{\sqrt {\lambda }})}}.}
+  
+
+Also, since 
+  
+    
+      
+        E
+        ⁡
+        
+          X
+          
+            2
+          
+        
+        =
+        λ
+      
+    
+    {\displaystyle \operatorname {E} X^{2}=\lambda }
+  
+, the variance is given by
+
+  
+    
+      
+        
+          V
+          a
+          r
+        
+        (
+        X
+        )
+        =
+        λ
+        
+          (
+          
+            1
+            −
+            
+              
+                
+                  
+                    I
+                    
+                      1
+                    
+                  
+                  (
+                  2
+                  
+                    
+                      λ
+                    
+                  
+                  
+                    )
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    I
+                    
+                      0
+                    
+                  
+                  (
+                  2
+                  
+                    
+                      λ
+                    
+                  
+                  
+                    )
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \mathrm {Var} (X)=\lambda \left(1-{\frac {I_{1}(2{\sqrt {\lambda }})^{2}}{I_{0}(2{\sqrt {\lambda }})^{2}}}\right).}
+  
+
+Suppose now that 
+  
+    
+      
+        ν
+        ≥
+        1
+      
+    
+    {\displaystyle \nu \geq 1}
+  
+ is an integer.  Then 
+
+  
+    
+      
+        E
+        ⁡
+        [
+        (
+        X
+        
+          )
+          
+            m
+          
+        
+        ]
+        =
+        
+          
+            
+              λ
+              
+                m
+              
+            
+            
+              (
+              m
+              !
+              
+                )
+                
+                  ν
+                  −
+                  1
+                
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              m
+              +
+              1
+              ,
+              …
+              ,
+              m
+              +
+              1
+              ;
+              λ
+              )
+            
+            
+              
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              1
+              ,
+              …
+              ,
+              1
+              ;
+              λ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {E} [(X)_{m}]={\frac {\lambda ^{m}}{(m!)^{\nu -1}}}{\frac {_{0}F_{\nu -1}(;m+1,\ldots ,m+1;\lambda )}{_{0}F_{\nu -1}(;1,\ldots ,1;\lambda )}}.}
+  
+
+In particular,
+
+  
+    
+      
+        E
+        ⁡
+        [
+        X
+        ]
+        =
+        λ
+        
+          
+            
+              
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              2
+              ,
+              …
+              ,
+              2
+              ;
+              λ
+              )
+            
+            
+              
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              1
+              ,
+              …
+              ,
+              1
+              ;
+              λ
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} [X]=\lambda {\frac {_{0}F_{\nu -1}(;2,\ldots ,2;\lambda )}{_{0}F_{\nu -1}(;1,\ldots ,1;\lambda )}},}
+  
+
+and
+
+  
+    
+      
+        
+          V
+          a
+          r
+        
+        (
+        X
+        )
+        =
+        
+          
+            
+              λ
+              
+                2
+              
+            
+            
+              2
+              
+                ν
+                −
+                1
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              3
+              ,
+              …
+              ,
+              3
+              ;
+              λ
+              )
+            
+            
+              
+                
+                
+                  0
+                
+              
+              
+                F
+                
+                  ν
+                  −
+                  1
+                
+              
+              (
+              ;
+              1
+              ,
+              …
+              ,
+              1
+              ;
+              λ
+              )
+            
+          
+        
+        +
+        E
+        ⁡
+        [
+        X
+        ]
+        −
+        (
+        E
+        ⁡
+        [
+        X
+        ]
+        
+          )
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \mathrm {Var} (X)={\frac {\lambda ^{2}}{2^{\nu -1}}}{\frac {_{0}F_{\nu -1}(;3,\ldots ,3;\lambda )}{_{0}F_{\nu -1}(;1,\ldots ,1;\lambda )}}+\operatorname {E} [X]-(\operatorname {E} [X])^{2}.}
+  
+
+
+== Median, mode and mean deviation ==
+Let 
+  
+    
+      
+        X
+        ∼
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X\sim \mathrm {CMP} (\lambda ,\nu )}
+  
+.  Then the mode of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is 
+  
+    
+      
+        ⌊
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+        ⌋
+      
+    
+    {\displaystyle \lfloor \lambda ^{1/\nu }\rfloor }
+  
+ if 
+  
+    
+      
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+        <
+        m
+      
+    
+    {\displaystyle \lambda ^{1/\nu }<m}
+  
+ is not an integer.  Otherwise, the modes of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ are 
+  
+    
+      
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+      
+    
+    {\displaystyle \lambda ^{1/\nu }}
+  
+ and 
+  
+    
+      
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+        −
+        1
+      
+    
+    {\displaystyle \lambda ^{1/\nu }-1}
+  
+.
+The mean deviation of 
+  
+    
+      
+        
+          X
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle X^{\nu }}
+  
+ about its mean 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is given by 
+
+  
+    
+      
+        E
+        ⁡
+        
+          |
+        
+        
+          X
+          
+            ν
+          
+        
+        −
+        λ
+        
+          |
+        
+        =
+        2
+        Z
+        (
+        λ
+        ,
+        ν
+        
+          )
+          
+            −
+            1
+          
+        
+        
+          
+            
+              λ
+              
+                ⌊
+                
+                  λ
+                  
+                    1
+                    
+                      /
+                    
+                    ν
+                  
+                
+                ⌋
+                +
+                1
+              
+            
+            
+              ⌊
+              
+                λ
+                
+                  1
+                  
+                    /
+                  
+                  ν
+                
+              
+              ⌋
+              !
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {E} |X^{\nu }-\lambda |=2Z(\lambda ,\nu )^{-1}{\frac {\lambda ^{\lfloor \lambda ^{1/\nu }\rfloor +1}}{\lfloor \lambda ^{1/\nu }\rfloor !}}.}
+  
+
+No explicit formula is known for the median of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, but the following asymptotic result is available.  Let 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ be the median of 
+  
+    
+      
+        X
+        ∼
+        
+          
+            CMP
+          
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X\sim {\mbox{CMP}}(\lambda ,\nu )}
+  
+.  Then
+
+  
+    
+      
+        m
+        =
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+        +
+        
+          
+            O
+          
+        
+        
+          (
+          
+            λ
+            
+              1
+              
+                /
+              
+              2
+              ν
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle m=\lambda ^{1/\nu }+{\mathcal {O}}\left(\lambda ^{1/2\nu }\right),}
+  
+
+as 
+  
+    
+      
+        λ
+        →
+        ∞
+      
+    
+    {\displaystyle \lambda \rightarrow \infty }
+  
+.
+
+
+== Stein characterisation ==
+Let 
+  
+    
+      
+        X
+        ∼
+        
+          
+            CMP
+          
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X\sim {\mbox{CMP}}(\lambda ,\nu )}
+  
+, and suppose that 
+  
+    
+      
+        f
+        :
+        
+          
+            Z
+          
+          
+            +
+          
+        
+        ↦
+        
+          R
+        
+      
+    
+    {\displaystyle f:\mathbb {Z} ^{+}\mapsto \mathbb {R} }
+  
+ is such that 
+  
+    
+      
+        E
+        ⁡
+        
+          |
+        
+        f
+        (
+        X
+        +
+        1
+        )
+        
+          |
+        
+        <
+        ∞
+      
+    
+    {\displaystyle \operatorname {E} |f(X+1)|<\infty }
+  
+ and 
+  
+    
+      
+        E
+        ⁡
+        
+          |
+        
+        
+          X
+          
+            ν
+          
+        
+        f
+        (
+        X
+        )
+        
+          |
+        
+        <
+        ∞
+      
+    
+    {\displaystyle \operatorname {E} |X^{\nu }f(X)|<\infty }
+  
+.  Then
+
+  
+    
+      
+        E
+        ⁡
+        [
+        λ
+        f
+        (
+        X
+        +
+        1
+        )
+        −
+        
+          X
+          
+            ν
+          
+        
+        f
+        (
+        X
+        )
+        ]
+        =
+        0.
+      
+    
+    {\displaystyle \operatorname {E} [\lambda f(X+1)-X^{\nu }f(X)]=0.}
+  
+
+Conversely, suppose now that 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ is a real-valued random variable supported on 
+  
+    
+      
+        
+          
+            Z
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \mathbb {Z} ^{+}}
+  
+ such that 
+  
+    
+      
+        E
+        ⁡
+        [
+        λ
+        f
+        (
+        W
+        +
+        1
+        )
+        −
+        
+          W
+          
+            ν
+          
+        
+        f
+        (
+        W
+        )
+        ]
+        =
+        0
+      
+    
+    {\displaystyle \operatorname {E} [\lambda f(W+1)-W^{\nu }f(W)]=0}
+  
+ for all bounded 
+  
+    
+      
+        f
+        :
+        
+          
+            Z
+          
+          
+            +
+          
+        
+        ↦
+        
+          R
+        
+      
+    
+    {\displaystyle f:\mathbb {Z} ^{+}\mapsto \mathbb {R} }
+  
+.  Then 
+  
+    
+      
+        W
+        ∼
+        
+          
+            CMP
+          
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle W\sim {\mbox{CMP}}(\lambda ,\nu )}
+  
+.
+
+
+== Use as a limiting distribution ==
+Let 
+  
+    
+      
+        
+          Y
+          
+            n
+          
+        
+      
+    
+    {\displaystyle Y_{n}}
+  
+ have the Conway–Maxwell–binomial distribution with parameters 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, 
+  
+    
+      
+        p
+        =
+        λ
+        
+          /
+        
+        
+          n
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle p=\lambda /n^{\nu }}
+  
+ and 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+.  Fix 
+  
+    
+      
+        λ
+        >
+        0
+      
+    
+    {\displaystyle \lambda >0}
+  
+ and 
+  
+    
+      
+        ν
+        >
+        0
+      
+    
+    {\displaystyle \nu >0}
+  
+.  Then, 
+  
+    
+      
+        
+          Y
+          
+            n
+          
+        
+      
+    
+    {\displaystyle Y_{n}}
+  
+ converges in distribution to the 
+  
+    
+      
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle \mathrm {CMP} (\lambda ,\nu )}
+  
+ distribution as 
+  
+    
+      
+        n
+        →
+        ∞
+      
+    
+    {\displaystyle n\rightarrow \infty }
+  
+.  This result generalises the classical Poisson approximation of the binomial distribution.   More generally, the CMP distribution arises as a limiting distribution of Conway–Maxwell–Poisson binomial distribution. Apart from the fact that COM-binomial approximates to COM-Poisson, Zhang et al. (2018) illustrates that COM-negative binomial distribution with probability mass function
+
+  
+    
+      
+        
+          P
+        
+        (
+        X
+        =
+        k
+        )
+        =
+        
+          
+            
+              
+                
+                  
+                    (
+                    
+                      
+                        
+                          Γ
+                          (
+                          r
+                          +
+                          k
+                          )
+                        
+                        
+                          k
+                          !
+                          Γ
+                          (
+                          r
+                          )
+                        
+                      
+                    
+                    )
+                  
+                  
+                    ν
+                  
+                
+              
+              
+                
+                  p
+                  
+                    k
+                  
+                
+              
+              
+                
+                  
+                    (
+                    1
+                    −
+                    p
+                    )
+                  
+                  
+                    r
+                  
+                
+              
+            
+            
+              
+                ∑
+                
+                  i
+                  =
+                  0
+                
+                
+                  ∞
+                
+              
+              
+                
+                  
+                    (
+                    
+                      
+                        
+                          Γ
+                          (
+                          r
+                          +
+                          i
+                          )
+                        
+                        
+                          i
+                          !
+                          Γ
+                          (
+                          r
+                          )
+                        
+                      
+                    
+                    )
+                  
+                  
+                    ν
+                  
+                
+              
+              
+                
+                  p
+                  
+                    i
+                  
+                
+              
+              
+                
+                  
+                    (
+                    1
+                    −
+                    p
+                    )
+                  
+                  
+                    r
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                (
+                
+                  
+                    
+                      Γ
+                      (
+                      r
+                      +
+                      k
+                      )
+                    
+                    
+                      k
+                      !
+                      Γ
+                      (
+                      r
+                      )
+                    
+                  
+                
+                )
+              
+            
+            
+              ν
+            
+          
+        
+        
+          
+            
+              p
+              
+                k
+              
+            
+          
+          
+            
+              
+                (
+                1
+                −
+                p
+                )
+              
+              
+                r
+              
+            
+          
+        
+        
+          
+            1
+            
+              C
+              (
+              r
+              ,
+              ν
+              ,
+              p
+              )
+            
+          
+        
+        ,
+        
+        (
+        k
+        =
+        0
+        ,
+        1
+        ,
+        2
+        ,
+        …
+        )
+        ,
+      
+    
+    {\displaystyle \mathrm {P} (X=k)={\frac {{{({\frac {\Gamma (r+k)}{k!\Gamma (r)}})}^{\nu }}{p^{k}}{{(1-p)}^{r}}}{\sum \limits _{i=0}^{\infty }{{({\frac {\Gamma (r+i)}{i!\Gamma (r)}})}^{\nu }}{p^{i}}{{(1-p)}^{r}}}}={{\left({\frac {\Gamma (r+k)}{k!\Gamma (r)}}\right)}^{\nu }}{{p^{k}}{{(1-p)}^{r}}}{\frac {1}{C(r,\nu ,p)}},\quad (k=0,1,2,\ldots ),}
+  
+
+convergents to a limiting distribution which is the COM-Poisson, as 
+  
+    
+      
+        
+          r
+          →
+          +
+          ∞
+        
+      
+    
+    {\displaystyle {r\to +\infty }}
+  
+ .
+
+
+== Related distributions ==
+
+  
+    
+      
+        X
+        ∼
+        CMP
+        ⁡
+        (
+        λ
+        ,
+        1
+        )
+      
+    
+    {\displaystyle X\sim \operatorname {CMP} (\lambda ,1)}
+  
+, then 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ follows the Poisson distribution with parameter 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+.
+Suppose 
+  
+    
+      
+        λ
+        <
+        1
+      
+    
+    {\displaystyle \lambda <1}
+  
+.  Then if 
+  
+    
+      
+        X
+        ∼
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        0
+        )
+      
+    
+    {\displaystyle X\sim \mathrm {CMP} (\lambda ,0)}
+  
+, we have that 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ follows the geometric distribution with probability mass function 
+  
+    
+      
+        P
+        (
+        X
+        =
+        k
+        )
+        =
+        
+          λ
+          
+            k
+          
+        
+        (
+        1
+        −
+        λ
+        )
+      
+    
+    {\displaystyle P(X=k)=\lambda ^{k}(1-\lambda )}
+  
+, 
+  
+    
+      
+        k
+        ≥
+        0
+      
+    
+    {\displaystyle k\geq 0}
+  
+.
+The sequence of random variable 
+  
+    
+      
+        
+          X
+          
+            ν
+          
+        
+        ∼
+        
+          C
+          M
+          P
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle X_{\nu }\sim \mathrm {CMP} (\lambda ,\nu )}
+  
+ converges in distribution as 
+  
+    
+      
+        ν
+        →
+        ∞
+      
+    
+    {\displaystyle \nu \rightarrow \infty }
+  
+ to the Bernoulli distribution with mean 
+  
+    
+      
+        λ
+        (
+        1
+        +
+        λ
+        
+          )
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle \lambda (1+\lambda )^{-1}}
+  
+.
+
+
+== Parameter estimation ==
+There are a few methods of estimating the parameters of the CMP distribution from the data. Two methods will be discussed: weighted least squares and maximum likelihood. The weighted least squares approach is simple and efficient but lacks precision. Maximum likelihood, on the other hand, is precise, but is more complex and computationally intensive.
+
+
+=== Weighted least squares ===
+The weighted least squares provides a simple, efficient method to derive rough estimates of the parameters of the CMP distribution and determine if the distribution would be an appropriate model. Following the use of this method, an alternative method should be employed to compute more accurate estimates of the parameters if the model is deemed appropriate.
+This method uses the relationship of successive probabilities as discussed above. By taking logarithms of both sides of this equation, the following linear relationship arises
+
+  
+    
+      
+        log
+        ⁡
+        
+          
+            
+              p
+              
+                x
+                −
+                1
+              
+            
+            
+              p
+              
+                x
+              
+            
+          
+        
+        =
+        −
+        log
+        ⁡
+        λ
+        +
+        ν
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle \log {\frac {p_{x-1}}{p_{x}}}=-\log \lambda +\nu \log x}
+  
+
+where 
+  
+    
+      
+        
+          p
+          
+            x
+          
+        
+      
+    
+    {\displaystyle p_{x}}
+  
+ denotes 
+  
+    
+      
+        Pr
+        (
+        X
+        =
+        x
+        )
+      
+    
+    {\displaystyle \Pr(X=x)}
+  
+. When estimating the parameters, the probabilities can be replaced by the relative frequencies of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        x
+        −
+        1
+      
+    
+    {\displaystyle x-1}
+  
+. To determine if the CMP distribution is an appropriate model, these values should be plotted against 
+  
+    
+      
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle \log x}
+  
+ for all ratios without zero counts. If the data appear to be linear, then the model is likely to be a good fit.
+Once the appropriateness of the model is determined, the parameters can be estimated by fitting a regression of 
+  
+    
+      
+        log
+        ⁡
+        (
+        
+          
+            
+              
+                p
+                ^
+              
+            
+          
+          
+            x
+            −
+            1
+          
+        
+        
+          /
+        
+        
+          
+            
+              
+                p
+                ^
+              
+            
+          
+          
+            x
+          
+        
+        )
+      
+    
+    {\displaystyle \log({\hat {p}}_{x-1}/{\hat {p}}_{x})}
+  
+ on 
+  
+    
+      
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle \log x}
+  
+. However, the basic assumption of homoscedasticity is violated, so a weighted least squares regression must be used. The inverse weight matrix will have the variances of each ratio on the diagonal with the one-step covariances on the first off-diagonal, both given below.
+
+  
+    
+      
+        var
+        ⁡
+        
+          [
+          
+            log
+            ⁡
+            
+              
+                
+                  
+                    
+                      
+                        p
+                        ^
+                      
+                    
+                  
+                  
+                    x
+                    −
+                    1
+                  
+                
+                
+                  
+                    
+                      
+                        p
+                        ^
+                      
+                    
+                  
+                  
+                    x
+                  
+                
+              
+            
+          
+          ]
+        
+        ≈
+        
+          
+            1
+            
+              n
+              
+                p
+                
+                  x
+                
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              n
+              
+                p
+                
+                  x
+                  −
+                  1
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {var} \left[\log {\frac {{\hat {p}}_{x-1}}{{\hat {p}}_{x}}}\right]\approx {\frac {1}{np_{x}}}+{\frac {1}{np_{x-1}}}}
+  
+
+  
+    
+      
+        
+          cov
+        
+        
+          (
+          
+            log
+            ⁡
+            
+              
+                
+                  
+                    
+                      
+                        p
+                        ^
+                      
+                    
+                  
+                  
+                    x
+                    −
+                    1
+                  
+                
+                
+                  
+                    
+                      
+                        p
+                        ^
+                      
+                    
+                  
+                  
+                    x
+                  
+                
+              
+            
+            ,
+            log
+            ⁡
+            
+              
+                
+                  
+                    
+                      
+                        p
+                        ^
+                      
+                    
+                  
+                  
+                    x
+                  
+                
+                
+                  
+                    
+                      
+                        p
+                        ^
+                      
+                    
+                  
+                  
+                    x
+                    +
+                    1
+                  
+                
+              
+            
+          
+          )
+        
+        ≈
+        −
+        
+          
+            1
+            
+              n
+              
+                p
+                
+                  x
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\text{cov}}\left(\log {\frac {{\hat {p}}_{x-1}}{{\hat {p}}_{x}}},\log {\frac {{\hat {p}}_{x}}{{\hat {p}}_{x+1}}}\right)\approx -{\frac {1}{np_{x}}}}
+  
+
+
+=== Maximum likelihood ===
+The CMP likelihood function is
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        λ
+        ,
+        ν
+        ∣
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        =
+        
+          λ
+          
+            
+              S
+              
+                1
+              
+            
+          
+        
+        exp
+        ⁡
+        (
+        −
+        ν
+        
+          S
+          
+            2
+          
+        
+        )
+        
+          Z
+          
+            −
+            n
+          
+        
+        (
+        λ
+        ,
+        ν
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(\lambda ,\nu \mid x_{1},\dots ,x_{n})=\lambda ^{S_{1}}\exp(-\nu S_{2})Z^{-n}(\lambda ,\nu )}
+  
+
+where 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle S_{1}=\sum _{i=1}^{n}x_{i}}
+  
+ and 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        log
+        ⁡
+        
+          x
+          
+            i
+          
+        
+        !
+      
+    
+    {\displaystyle S_{2}=\sum _{i=1}^{n}\log x_{i}!}
+  
+. Maximizing the likelihood yields the following two equations
+
+  
+    
+      
+        E
+        ⁡
+        [
+        X
+        ]
+        =
+        
+          
+            
+              X
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {E} [X]={\bar {X}}}
+  
+
+  
+    
+      
+        E
+        ⁡
+        [
+        log
+        ⁡
+        X
+        !
+        ]
+        =
+        
+          
+            
+              log
+              ⁡
+              X
+              !
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle \operatorname {E} [\log X!]={\overline {\log X!}}}
+  
+
+which do not have an analytic solution.
+Instead, the maximum likelihood estimates are approximated numerically by the Newton–Raphson method. In each iteration, the expectations, variances, and covariance of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ and 
+  
+    
+      
+        log
+        ⁡
+        X
+        !
+      
+    
+    {\displaystyle \log X!}
+  
+ are approximated by using the estimates for 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ and 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ from the previous iteration in the expression
+
+  
+    
+      
+        E
+        ⁡
+        [
+        f
+        (
+        x
+        )
+        ]
+        =
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            ∞
+          
+        
+        f
+        (
+        j
+        )
+        
+          
+            
+              λ
+              
+                j
+              
+            
+            
+              (
+              j
+              !
+              
+                )
+                
+                  ν
+                
+              
+              Z
+              (
+              λ
+              ,
+              ν
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {E} [f(x)]=\sum _{j=0}^{\infty }f(j){\frac {\lambda ^{j}}{(j!)^{\nu }Z(\lambda ,\nu )}}.}
+  
+
+This is continued until convergence of 
+  
+    
+      
+        
+          
+            
+              λ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {\lambda }}}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              ν
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {\nu }}}
+  
+.
+
+
+== Generalized linear model ==
+The basic CMP distribution discussed above has also been used as the basis for a generalized linear model (GLM) using a Bayesian formulation. A dual-link GLM based on the CMP distribution has been developed,
+and this model has been used to evaluate traffic accident data. The CMP GLM developed by Guikema and Coffelt (2008) is based on a reformulation of the CMP distribution above, replacing 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ with 
+  
+    
+      
+        μ
+        =
+        
+          λ
+          
+            1
+            
+              /
+            
+            ν
+          
+        
+      
+    
+    {\displaystyle \mu =\lambda ^{1/\nu }}
+  
+. The integral part of 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ is then the mode of the distribution. A full Bayesian estimation approach has been used with MCMC sampling implemented in WinBugs with non-informative priors for the regression parameters. This approach is computationally expensive, but it yields the full posterior distributions for the regression parameters and allows expert knowledge to be incorporated through the use of informative priors.
+A classical GLM formulation for a CMP regression has been developed which generalizes Poisson regression and logistic regression. This takes advantage of the exponential family properties of the CMP distribution to obtain elegant model estimation (via maximum likelihood), inference, diagnostics, and interpretation. This approach requires substantially less computational time than the Bayesian approach, at the cost of not allowing expert knowledge to be incorporated into the model. In addition it yields standard errors for the regression parameters (via the Fisher Information matrix) compared to the full posterior distributions obtainable via the Bayesian formulation. It also provides a statistical test for the level of dispersion compared to a Poisson model. Code for fitting a CMP regression, testing for dispersion, and evaluating fit is available.
+The two GLM frameworks developed for the CMP distribution significantly extend the usefulness of this distribution for data analysis problems.
+
+
+== References ==
+
+
+== External links ==
+Conway–Maxwell–Poisson distribution package for R (compoisson) by Jeffrey Dunn, part of Comprehensive R Archive Network (CRAN)
+Conway–Maxwell–Poisson distribution package for R (compoisson) by Tom Minka, third party package

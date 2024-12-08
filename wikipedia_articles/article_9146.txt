@@ -1,0 +1,2670 @@
+Céa's lemma is a lemma in mathematics. Introduced by Jean Céa in his Ph.D. dissertation, it is an important tool for proving error estimates for the finite element method applied to elliptic partial differential equations.
+
+
+== Lemma statement ==
+Let 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ be a real Hilbert space with the norm 
+  
+    
+      
+        ‖
+        ⋅
+        ‖
+        .
+      
+    
+    {\displaystyle \|\cdot \|.}
+  
+ Let 
+  
+    
+      
+        a
+        :
+        V
+        ×
+        V
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle a:V\times V\to \mathbb {R} }
+  
+ be a bilinear form with the  properties
+
+  
+    
+      
+        
+          |
+        
+        a
+        (
+        v
+        ,
+        w
+        )
+        
+          |
+        
+        ≤
+        γ
+        ‖
+        v
+        ‖
+        
+        ‖
+        w
+        ‖
+      
+    
+    {\displaystyle |a(v,w)|\leq \gamma \|v\|\,\|w\|}
+  
+ for some constant 
+  
+    
+      
+        γ
+        >
+        0
+      
+    
+    {\displaystyle \gamma >0}
+  
+  and all 
+  
+    
+      
+        v
+        ,
+        w
+      
+    
+    {\displaystyle v,w}
+  
+ in 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ (continuity)
+
+  
+    
+      
+        a
+        (
+        v
+        ,
+        v
+        )
+        ≥
+        α
+        ‖
+        v
+        
+          ‖
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a(v,v)\geq \alpha \|v\|^{2}}
+  
+ for some constant 
+  
+    
+      
+        α
+        >
+        0
+      
+    
+    {\displaystyle \alpha >0}
+  
+ and all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ (coercivity or 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ellipticity).
+Let 
+  
+    
+      
+        L
+        :
+        V
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle L:V\to \mathbb {R} }
+  
+ be a bounded linear operator. Consider the problem of finding an element 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ in 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ such that
+
+  
+    
+      
+        a
+        (
+        u
+        ,
+        v
+        )
+        =
+        L
+        (
+        v
+        )
+      
+    
+    {\displaystyle a(u,v)=L(v)}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        V
+        .
+      
+    
+    {\displaystyle V.}
+  
+
+Consider the same problem on a finite-dimensional subspace 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ of 
+  
+    
+      
+        V
+        ,
+      
+    
+    {\displaystyle V,}
+  
+ so, 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u_{h}}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ satisfies
+
+  
+    
+      
+        a
+        (
+        
+          u
+          
+            h
+          
+        
+        ,
+        v
+        )
+        =
+        L
+        (
+        v
+        )
+      
+    
+    {\displaystyle a(u_{h},v)=L(v)}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle V_{h}.}
+  
+
+By the Lax–Milgram theorem, each of these problems has exactly one solution. Céa's lemma states that
+
+  
+    
+      
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ‖
+        ≤
+        
+          
+            γ
+            α
+          
+        
+        ‖
+        u
+        −
+        v
+        ‖
+      
+    
+    {\displaystyle \|u-u_{h}\|\leq {\frac {\gamma }{\alpha }}\|u-v\|}
+  
+  for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle V_{h}.}
+  
+
+That is to say, the subspace solution 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u_{h}}
+  
+ is "the best" approximation of  
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        ,
+      
+    
+    {\displaystyle V_{h},}
+  
+ up to the constant 
+  
+    
+      
+        γ
+        
+          /
+        
+        α
+        .
+      
+    
+    {\displaystyle \gamma /\alpha .}
+  
+
+The proof is straightforward 
+
+  
+    
+      
+        α
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        
+          ‖
+          
+            2
+          
+        
+        ≤
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        )
+        =
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        u
+        −
+        v
+        )
+        +
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        v
+        −
+        
+          u
+          
+            h
+          
+        
+        )
+        =
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        u
+        −
+        v
+        )
+        ≤
+        γ
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ‖
+        ‖
+        u
+        −
+        v
+        ‖
+      
+    
+    {\displaystyle \alpha \|u-u_{h}\|^{2}\leq a(u-u_{h},u-u_{h})=a(u-u_{h},u-v)+a(u-u_{h},v-u_{h})=a(u-u_{h},u-v)\leq \gamma \|u-u_{h}\|\|u-v\|}
+  
+  for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle V_{h}.}
+  
+
+We used the 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+-orthogonality of 
+  
+    
+      
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u-u_{h}}
+  
+ and 
+  
+    
+      
+        v
+        −
+        
+          u
+          
+            h
+          
+        
+        ∈
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle v-u_{h}\in V_{h}}
+  
+
+  
+    
+      
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        v
+        )
+        =
+        0
+        ,
+         
+        ∀
+         
+        v
+        ∈
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle a(u-u_{h},v)=0,\ \forall \ v\in V_{h}}
+  
+
+which follows directly from 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        ⊂
+        V
+      
+    
+    {\displaystyle V_{h}\subset V}
+  
+ 
+
+  
+    
+      
+        a
+        (
+        u
+        ,
+        v
+        )
+        =
+        L
+        (
+        v
+        )
+        =
+        a
+        (
+        
+          u
+          
+            h
+          
+        
+        ,
+        v
+        )
+      
+    
+    {\displaystyle a(u,v)=L(v)=a(u_{h},v)}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+.
+Note: Céa's lemma holds on complex Hilbert spaces also, one then uses a  sesquilinear form 
+  
+    
+      
+        a
+        (
+        ⋅
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle a(\cdot ,\cdot )}
+  
+ instead of a bilinear one. The coercivity assumption then becomes 
+  
+    
+      
+        
+          |
+        
+        a
+        (
+        v
+        ,
+        v
+        )
+        
+          |
+        
+        ≥
+        α
+        ‖
+        v
+        
+          ‖
+          
+            2
+          
+        
+      
+    
+    {\displaystyle |a(v,v)|\geq \alpha \|v\|^{2}}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ (notice the absolute value sign around 
+  
+    
+      
+        a
+        (
+        v
+        ,
+        v
+        )
+      
+    
+    {\displaystyle a(v,v)}
+  
+).
+
+
+== Error estimate in the energy norm ==
+
+In many applications, the bilinear form 
+  
+    
+      
+        a
+        :
+        V
+        ×
+        V
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle a:V\times V\to \mathbb {R} }
+  
+ is symmetric, so
+
+  
+    
+      
+        a
+        (
+        v
+        ,
+        w
+        )
+        =
+        a
+        (
+        w
+        ,
+        v
+        )
+      
+    
+    {\displaystyle a(v,w)=a(w,v)}
+  
+ for all 
+  
+    
+      
+        v
+        ,
+        w
+      
+    
+    {\displaystyle v,w}
+  
+ in 
+  
+    
+      
+        V
+        .
+      
+    
+    {\displaystyle V.}
+  
+
+This, together with the above properties of this form, implies that  
+  
+    
+      
+        a
+        (
+        ⋅
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle a(\cdot ,\cdot )}
+  
+ is an inner product on 
+  
+    
+      
+        V
+        .
+      
+    
+    {\displaystyle V.}
+  
+ The resulting norm
+
+  
+    
+      
+        ‖
+        v
+        
+          ‖
+          
+            a
+          
+        
+        =
+        
+          
+            a
+            (
+            v
+            ,
+            v
+            )
+          
+        
+      
+    
+    {\displaystyle \|v\|_{a}={\sqrt {a(v,v)}}}
+  
+
+is called the energy norm, since it corresponds to a physical energy in many problems. This norm is equivalent to the original norm 
+  
+    
+      
+        ‖
+        ⋅
+        ‖
+        .
+      
+    
+    {\displaystyle \|\cdot \|.}
+  
+
+Using the 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+-orthogonality of 
+  
+    
+      
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u-u_{h}}
+  
+ and 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ and the Cauchy–Schwarz inequality
+
+  
+    
+      
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        
+          ‖
+          
+            a
+          
+          
+            2
+          
+        
+        =
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        )
+        =
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        u
+        −
+        v
+        )
+        ≤
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        
+          ‖
+          
+            a
+          
+        
+        ⋅
+        ‖
+        u
+        −
+        v
+        
+          ‖
+          
+            a
+          
+        
+      
+    
+    {\displaystyle \|u-u_{h}\|_{a}^{2}=a(u-u_{h},u-u_{h})=a(u-u_{h},u-v)\leq \|u-u_{h}\|_{a}\cdot \|u-v\|_{a}}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+.
+Hence, in the energy norm, the inequality in Céa's lemma becomes
+
+  
+    
+      
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        
+          ‖
+          
+            a
+          
+        
+        ≤
+        ‖
+        u
+        −
+        v
+        
+          ‖
+          
+            a
+          
+        
+      
+    
+    {\displaystyle \|u-u_{h}\|_{a}\leq \|u-v\|_{a}}
+  
+  for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+
+(notice that the constant 
+  
+    
+      
+        γ
+        
+          /
+        
+        α
+      
+    
+    {\displaystyle \gamma /\alpha }
+  
+ on the right-hand side is no longer present).
+This states that the subspace solution 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u_{h}}
+  
+ is the best approximation to the full-space solution 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ in respect to the energy norm. Geometrically, this means that 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u_{h}}
+  
+ is the projection of the solution 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ onto the subspace 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ in respect to the inner product 
+  
+    
+      
+        a
+        (
+        ⋅
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle a(\cdot ,\cdot )}
+  
+ (see the adjacent picture).
+Using this result, one can also derive a sharper estimate in the norm 
+  
+    
+      
+        ‖
+        ⋅
+        ‖
+      
+    
+    {\displaystyle \|\cdot \|}
+  
+. Since
+
+  
+    
+      
+        α
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        
+          ‖
+          
+            2
+          
+        
+        ≤
+        a
+        (
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ,
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        )
+        =
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        
+          ‖
+          
+            a
+          
+          
+            2
+          
+        
+        ≤
+        ‖
+        u
+        −
+        v
+        
+          ‖
+          
+            a
+          
+          
+            2
+          
+        
+        ≤
+        γ
+        ‖
+        u
+        −
+        v
+        
+          ‖
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \alpha \|u-u_{h}\|^{2}\leq a(u-u_{h},u-u_{h})=\|u-u_{h}\|_{a}^{2}\leq \|u-v\|_{a}^{2}\leq \gamma \|u-v\|^{2}}
+  
+  for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+,
+it follows that
+
+  
+    
+      
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ‖
+        ≤
+        
+          
+            
+              γ
+              α
+            
+          
+        
+        ‖
+        u
+        −
+        v
+        ‖
+      
+    
+    {\displaystyle \|u-u_{h}\|\leq {\sqrt {\frac {\gamma }{\alpha }}}\|u-v\|}
+  
+  for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+.
+
+
+== An application of Céa's lemma ==
+We will apply Céa's lemma to estimate the error of calculating the solution to an elliptic differential equation by the finite element method.
+
+Consider the problem of finding a function 
+  
+    
+      
+        u
+        :
+        [
+        a
+        ,
+        b
+        ]
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle u:[a,b]\to \mathbb {R} }
+  
+ satisfying the conditions 
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  −
+                  
+                    u
+                    ″
+                  
+                  =
+                  f
+                  
+                    
+                       in 
+                    
+                  
+                  [
+                  a
+                  ,
+                  b
+                  ]
+                
+              
+              
+                
+                  u
+                  (
+                  a
+                  )
+                  =
+                  u
+                  (
+                  b
+                  )
+                  =
+                  0
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}-u''=f{\mbox{ in }}[a,b]\\u(a)=u(b)=0\end{cases}}}
+  
+
+where 
+  
+    
+      
+        f
+        :
+        [
+        a
+        ,
+        b
+        ]
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f:[a,b]\to \mathbb {R} }
+  
+ is a given continuous function.
+Physically, the solution 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ to this two-point boundary value problem represents the shape taken by a string under the influence of a force such that at every point 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+  between 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ and 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ the force density is 
+  
+    
+      
+        f
+        (
+        x
+        )
+        
+          e
+        
+      
+    
+    {\displaystyle f(x)\mathbf {e} }
+  
+ (where  
+  
+    
+      
+        
+          e
+        
+      
+    
+    {\displaystyle \mathbf {e} }
+  
+ is a unit vector pointing vertically, while the endpoints of the string are on a horizontal line, see the adjacent picture). For example, that force may be the gravity, when 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ is a constant function (since the gravitational force is the same at all points).
+Let the Hilbert space 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ be the Sobolev space 
+  
+    
+      
+        
+          H
+          
+            0
+          
+          
+            1
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        ,
+      
+    
+    {\displaystyle H_{0}^{1}(a,b),}
+  
+ which is the space of all square-integrable functions 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ defined on 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ that have a weak derivative on 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ with 
+  
+    
+      
+        
+          v
+          ′
+        
+      
+    
+    {\displaystyle v'}
+  
+ also being square integrable, and 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ satisfies the conditions 
+  
+    
+      
+        v
+        (
+        a
+        )
+        =
+        v
+        (
+        b
+        )
+        =
+        0.
+      
+    
+    {\displaystyle v(a)=v(b)=0.}
+  
+ The inner product on this space is
+
+  
+    
+      
+        (
+        v
+        ,
+        w
+        )
+        =
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+        
+          (
+          
+            v
+            (
+            x
+            )
+            w
+            (
+            w
+            )
+            +
+            
+              v
+              ′
+            
+            (
+            x
+            )
+            
+              w
+              ′
+            
+            (
+            x
+            )
+          
+          )
+        
+        
+        d
+        x
+      
+    
+    {\displaystyle (v,w)=\int _{a}^{b}\!\left(v(x)w(w)+v'(x)w'(x)\right)\,dx}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ and 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ in 
+  
+    
+      
+        V
+        .
+      
+    
+    {\displaystyle V.}
+  
+
+After multiplying the original boundary value problem by 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in this space and performing an integration by parts, one obtains the equivalent problem
+
+  
+    
+      
+        a
+        (
+        u
+        ,
+        v
+        )
+        =
+        L
+        (
+        v
+        )
+      
+    
+    {\displaystyle a(u,v)=L(v)}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+,
+with
+
+  
+    
+      
+        a
+        (
+        u
+        ,
+        v
+        )
+        =
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+        
+          u
+          ′
+        
+        (
+        x
+        )
+        
+          v
+          ′
+        
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle a(u,v)=\int _{a}^{b}\!u'(x)v'(x)\,dx}
+  
+,
+and
+
+  
+    
+      
+        L
+        (
+        v
+        )
+        =
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+        f
+        (
+        x
+        )
+        v
+        (
+        x
+        )
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle L(v)=\int _{a}^{b}\!f(x)v(x)\,dx.}
+  
+
+It can be shown that the bilinear form 
+  
+    
+      
+        a
+        (
+        ⋅
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle a(\cdot ,\cdot )}
+  
+ and the operator 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ satisfy the assumptions of Céa's lemma.
+
+In order to determine a finite-dimensional subspace 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ of 
+  
+    
+      
+        V
+        ,
+      
+    
+    {\displaystyle V,}
+  
+ consider a partition
+
+  
+    
+      
+        a
+        =
+        
+          x
+          
+            0
+          
+        
+        <
+        
+          x
+          
+            1
+          
+        
+        <
+        ⋯
+        <
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        <
+        
+          x
+          
+            n
+          
+        
+        =
+        b
+      
+    
+    {\displaystyle a=x_{0}<x_{1}<\cdots <x_{n-1}<x_{n}=b}
+  
+
+of the interval 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+        ,
+      
+    
+    {\displaystyle [a,b],}
+  
+ and let 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ be the space of all continuous functions that are affine on each subinterval in the partition (such functions are called piecewise-linear). In addition, assume that any function in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ takes the value 0 at the endpoints of 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+        .
+      
+    
+    {\displaystyle [a,b].}
+  
+ It follows that 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ is a vector subspace of 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ whose dimension is 
+  
+    
+      
+        n
+        −
+        1
+      
+    
+    {\displaystyle n-1}
+  
+ (the number of points in the partition that are not endpoints).
+Let 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u_{h}}
+  
+ be the solution to the subspace problem
+
+  
+    
+      
+        a
+        (
+        
+          u
+          
+            h
+          
+        
+        ,
+        v
+        )
+        =
+        L
+        (
+        v
+        )
+      
+    
+    {\displaystyle a(u_{h},v)=L(v)}
+  
+ for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        ,
+      
+    
+    {\displaystyle V_{h},}
+  
+
+so one can think of 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+      
+    
+    {\displaystyle u_{h}}
+  
+ as of a piecewise-linear approximation to the exact solution 
+  
+    
+      
+        u
+        .
+      
+    
+    {\displaystyle u.}
+  
+ By Céa's lemma, there exists a constant 
+  
+    
+      
+        C
+        >
+        0
+      
+    
+    {\displaystyle C>0}
+  
+ dependent only on the bilinear form 
+  
+    
+      
+        a
+        (
+        ⋅
+        ,
+        ⋅
+        )
+        ,
+      
+    
+    {\displaystyle a(\cdot ,\cdot ),}
+  
+ such that
+
+  
+    
+      
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ‖
+        ≤
+        C
+        ‖
+        u
+        −
+        v
+        ‖
+      
+    
+    {\displaystyle \|u-u_{h}\|\leq C\|u-v\|}
+  
+  for all 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle V_{h}.}
+  
+
+To explicitly calculate the error between 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ and 
+  
+    
+      
+        
+          u
+          
+            h
+          
+        
+        ,
+      
+    
+    {\displaystyle u_{h},}
+  
+ consider the function 
+  
+    
+      
+        π
+        u
+      
+    
+    {\displaystyle \pi u}
+  
+ in 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+      
+    
+    {\displaystyle V_{h}}
+  
+ that has the same values as 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ at the nodes of the partition (so 
+  
+    
+      
+        π
+        u
+      
+    
+    {\displaystyle \pi u}
+  
+ is obtained by linear interpolation on each interval 
+  
+    
+      
+        [
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          x
+          
+            i
+            +
+            1
+          
+        
+        ]
+      
+    
+    {\displaystyle [x_{i},x_{i+1}]}
+  
+ from the values of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ at interval's endpoints). It can be shown using Taylor's theorem that there exists a constant 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+ that depends only on the endpoints 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ and 
+  
+    
+      
+        b
+        ,
+      
+    
+    {\displaystyle b,}
+  
+ such that
+
+  
+    
+      
+        
+          |
+        
+        
+          u
+          ′
+        
+        (
+        x
+        )
+        −
+        (
+        π
+        u
+        
+          )
+          ′
+        
+        (
+        x
+        )
+        
+          |
+        
+        ≤
+        K
+        h
+        ‖
+        
+          u
+          ″
+        
+        
+          ‖
+          
+            
+              L
+              
+                2
+              
+            
+            (
+            a
+            ,
+            b
+            )
+          
+        
+      
+    
+    {\displaystyle |u'(x)-(\pi u)'(x)|\leq Kh\|u''\|_{L^{2}(a,b)}}
+  
+
+for all 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ in 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+        ,
+      
+    
+    {\displaystyle [a,b],}
+  
+ where 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ is the largest length of the subintervals 
+  
+    
+      
+        [
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          x
+          
+            i
+            +
+            1
+          
+        
+        ]
+      
+    
+    {\displaystyle [x_{i},x_{i+1}]}
+  
+ in the partition, and the norm on the right-hand side is the L2 norm.
+This inequality then yields an estimate for the error
+
+  
+    
+      
+        ‖
+        u
+        −
+        π
+        u
+        ‖
+        .
+      
+    
+    {\displaystyle \|u-\pi u\|.}
+  
+
+Then, by substituting 
+  
+    
+      
+        v
+        =
+        π
+        u
+      
+    
+    {\displaystyle v=\pi u}
+  
+ in Céa's lemma it follows that
+
+  
+    
+      
+        ‖
+        u
+        −
+        
+          u
+          
+            h
+          
+        
+        ‖
+        ≤
+        C
+        h
+        ‖
+        
+          u
+          ″
+        
+        
+          ‖
+          
+            
+              L
+              
+                2
+              
+            
+            (
+            a
+            ,
+            b
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \|u-u_{h}\|\leq Ch\|u''\|_{L^{2}(a,b)},}
+  
+
+where 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ is a different constant from the above (it depends only on the bilinear form, which implicitly depends on the interval 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+).
+This result is of a fundamental importance, as it states that the finite element method can be used to approximately calculate the solution of our problem, and that the error in the computed solution decreases proportionately to the partition size 
+  
+    
+      
+        h
+        .
+      
+    
+    {\displaystyle h.}
+  
+  Céa's lemma can be applied along the same lines to derive error estimates for finite element problems in higher dimensions (here the domain of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ was in one dimension), and while using higher order polynomials for the subspace 
+  
+    
+      
+        
+          V
+          
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle V_{h}.}
+  
+
+
+== References ==
+Céa, Jean (1964). Approximation variationnelle des problèmes aux limites (PDF) (PhD thesis). Annales de l'Institut Fourier 14. Vol. 2. pp. 345–444. Retrieved 2010-11-27. (Original work from J. Céa)
+Johnson, Claes (1987). Numerical solution of partial differential equations by the finite element method. Cambridge University Press. ISBN 0-521-34514-6.
+Monk, Peter (2003). Finite element methods for Maxwell's equations. Oxford University Press. ISBN 0-19-850888-3.
+Roos, H.-G.; Stynes, M.; Tobiska, L. (1996). Numerical methods for singularly perturbed differential equations: convection-diffusion and flow problems. Berlin; New York: Springer-Verlag. ISBN 3-540-60718-8.
+Eriksson, K.; Estep, D.; Hansbo, P.; Johnson, C. (1996). Computational differential equations. Cambridge; New York: Cambridge University Press. ISBN 0-521-56738-6.
+Zeidler, Eberhard (1995). Applied functional analysis: applications to mathematical physics. New York: Springer-Verlag. ISBN 0-387-94442-7.
+Brenner, Susanne C.; L. Ridgeway Scott (2002). The mathematical theory of finite element methods (2nd ed.). Springer. ISBN 0-387-95451-1. OCLC 48892839.
+Ciarlet, Philippe G. (2002). The finite element method for elliptic problems ((SIAM Classics reprint) ed.). ISBN 0-89871-514-8. OCLC 48892573.

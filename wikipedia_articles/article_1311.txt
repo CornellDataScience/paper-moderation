@@ -1,0 +1,223 @@
+This is a list of notable applications that use GTK and/or Clutter for their GUI widgets. Such applications blend well with desktop environments that are GTK-based as well, such as GNOME, Cinnamon, LXDE, MATE, Pantheon, Sugar, Xfce or ROX Desktop.
+
+
+== Official GNOME applications ==
+The GNOME Project, i.e. all the people involved with the development of the GNOME desktop environment, is the biggest contributor to GTK, and the GNOME Core Applications as well as the GNOME Games employ the newest GUI widgets from the cutting-edge version of GTK and demonstrates their capabilities.
+
+
+== Shells, user interfaces, application launchers ==
+GNOME Shell – the desktop graphical GUI shell introduced with GNOME version 3.0
+Cinnamon fork of the GNOME Shell
+GNOME Panel and forks – applications launcher
+Maynard, a shell for Weston by Collabora originally for the Raspberry Pi
+Budgie is a distro-agnostic desktop environment
+
+
+== Education software ==
+Tux Typing – typing tutor for children
+DrGeo – geometry software
+GCompris – educational entertainment for children (legacy version only)
+
+
+== Utility software ==
+
+
+=== Operating system administration ===
+Disk Usage Analyzer – Disk-usage analyzer
+GNOME Disks – utility for the hard disk; partition editor, S.M.A.R.T. monitoring, formerly known as Gnome Disk Utility or palimpsest
+GParted – utility for the hard disk; partition editor
+GDM – X display manager
+GNOME Keyring Manager – Password manager
+GNOME Screensaver – Simple screensaver configuration
+Alacarte – Menu editor
+
+
+=== End-user utilities ===
+Archive Manager – archive manager
+Cheese –  webcam application
+Conduit Synchronizer – Photo/music/notes/files etc. synchronization
+Eye of GNOME – official image-viewer for GNOME
+Getting Things GNOME! – Personal tasks management software
+gnee – A GNOME GUI and a panel applet that can be used to record and replay test cases.
+Hardinfo2 - System information and benchmarking
+GNOME Boxes – Application to access remote or virtual systems
+GNOME Screenshot – take screenshots of desktop and windows
+GNOME Calculator – calculator
+GNOME Commander – Two-panel graphical file manager
+GNOME Files – File manager, formerly called Nautilus
+GNOME Terminal – Terminal emulator
+Gnote – Note-taking software in C++
+Guake – drop-down terminal emulator
+Gucharmap – Character map
+Guvcview –  webcam application
+Orca – Scriptable screen-reader
+Scribes – Text editor
+Seahorse – PGP and SSH key-manager
+Sushi – File previewer
+Terminator - Terminal emulator
+Tilda – drop-down terminal emulator
+Tomboy – Note-taking software in C#
+Vinagre – VNC client
+Vino – VNC server (deprecated)
+
+
+== Games ==
+GNOME Games – collection of games in Vala and C, now archived
+Lutris - video game manager/launcher
+
+
+=== Abstract strategy games ===
+GNOME Chess – new 2d graphical front-end written in Vala
+PyChess – Chess implementation
+
+
+=== Puzzle games ===
+GNOME Mines – Minesweeper-clone
+gbrainy – Brain teaser game
+
+
+== Graphics ==
+
+
+=== Graphics editors ===
+GIMP – an extensive raster graphics editor
+Inkscape – an extensive vector graphics editor
+MyPaint – an extensive raster graphics editor, for digital painters
+Pinta – a minimalist raster graphics editor
+
+
+=== Image viewers ===
+Shotwell – Photo manager
+F-Spot – Photo manager
+gThumb – Image viewer
+
+
+== Internet software ==
+
+
+=== Web browsers ===
+
+Web – default GNOME web-browser
+Midori – default Xfce web-browser
+Uzbl – minimalist web-browser
+xombrero – minimalist web-browser
+
+
+=== Email clients ===
+
+Balsa – Email client
+Claws Mail
+Evolution (software)
+Geary
+Modest (email client)
+Pantheon Mail
+Sylpheed
+
+
+=== Software for inter-person communication ===
+
+Empathy – instant-messaging client, VoIP and videoconferencing
+Pidgin – Instant messenger
+Smuxi – User-friendly IRC Client
+HexChat – IRC client
+Gajim – Instant messenger
+
+
+=== File sharing ===
+Deluge — BitTorrent client
+Transmission – BitTorrent client
+Gwget – Download manager framework
+Gwibber – Microblogging client
+Liferea – RSS feed reader
+Pan – Usenet news reader
+
+
+== Office software ==
+AbiWord – word processor
+GnuCash – Personal and small business finance manager
+Gnumeric – Spreadsheet
+BOND – Database frontend
+Evince – pdf viewer
+GNOME Dictionary – Dictionary
+Evolution – Integrated mail, contacts, and calendar
+OCRFeeder – a graphical front-end for the Optical character recognition engines CuneiForm, GOCR, Ocrad and Tesseract
+
+
+== Tools for programming and development ==
+GNOME Builder – Integrated development environment
+Anjuta – Integrated development environment
+Bluefish – Text / code editor suitable for programming
+Glade Interface Designer – a Graphical user interface builder
+Cambalache Interface Designer - a Graphical user interface builder, a successor to Glade
+Gedit – Text editor
+Leafpad – Lightweight text editor
+Lazarus - cross-platform visual IDE for RAD using the Free Pascal compiler
+Devhelp – API documentation browser
+Nemiver – C and C++ debugger
+Geany – text editor suitable for programming
+Meld – diff-viewer
+PIDA – IDE
+Xojo – IDE
+Zenity – execute GTK dialog boxes from shell scripts
+MonoDevelop – Integrated development environment
+ActiveState Komodo – Integrated development environment
+Gtranslator – uses gettext
+poedit – gettext
+Scala (software)
+
+
+== Optical disc software ==
+
+
+=== Optical disc authoring software ===
+Brasero – optical disc authoring software, graphical front-end to burn CDs/DVDs
+
+
+=== Optical disc ripping software ===
+Grip – CD ripper and player
+Thoggen – DVD backup utility
+
+
+== Audio ==
+Software audio players (free and open-source)
+SoundConverter (software)
+GNOME Sound Juicer
+
+
+== Video ==
+
+
+=== Video players ===
+GNOME Videos – the GNOME default video player
+
+
+=== Video editors ===
+Gnome Subtitles – Video subtitling
+Pitivi – Video editor
+Cinelerra - Video editor
+
+
+== Science software ==
+
+
+=== Chemistry ===
+Despite the immense popularity of Qt, there continues to be science software using the GUI widgets of version 2 of GTK toolkit. Whether this is going to remain that way, or whether the software will be ported to some current version of GTK (maybe GTK 4) remains to be seen. 
+
+Ghemical – computational chemistry software package
+
+
+=== Statistics ===
+gretl — an open-source statistical package, mainly for econometrics
+
+
+== Various ==
+Beagle – search tool
+Gramps – Genealogy software
+
+
+== See also ==
+
+List of free electronics circuit simulators
+
+
+== References ==
