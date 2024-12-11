@@ -1,760 +1,0 @@
-Main problems in constructing quantum
-theory based on nite mathematics
-Felix M. Lev
-Email: felixlev314@gmail.com
-Abstract
-As shown in our publications, quantum theory based on a nite ring of
-characteristic p(FQT) is more general than standard quantum theory (SQT)
-because the latter is a degenerate case of the former in the formal limit p!1 .
-One of the main dierences between SQT and FQT is the following. In SQT,
-elementary objects are described by irreducible representations (IRs) of a sym-
-metry algebra in which energies are either only positive or only negative and
-there are no IRs where there are states with dierent signs of energy. In the rst
-case, objects are called particles, and in the second - antiparticles. As a conse-
-quence, in SQT it is possible to introduce conserved quantum numbers (electric
-charge, baryon number, etc.) so that particles and antiparticles dier in the
-signs of these numbers. However, in FQT, all IRs necessarily contain states
-with both signs of energy. The symmetry in FQT is higher than the symmetry
-in SQT because one IR in FQT splits into two IRs in SQT with positive and
-negative energies at p!1 . Consequently, most fundamental quantum the-
-ory will not contain the concepts of particle-antiparticle and additive quantum
-numbers. These concepts are only good approximations at present since at this
-stage of the universe the value pis very large but it was not so large at earlier
-stages. The above properties of IRs in SQT and FQT have been discussed in
-our publications with detailed technical proofs. The purpose of this paper is to
-consider models where these properties can be derived in a much simpler way.
-Keywords: nite mathematics; standard mathematics; nite quantum theory;
-standard quantum theory
-MSC 2020: 11Axx, 11Txx, 13Mxx, 16Gxx, 81R05
-List of Abbreviations
-FM: nite mathematics
-SM: standard mathematics
-SR: special relativity
-NM: nonrelativistic mechanics
-QT: quantum theory
-1CT: classical theory
-FQT: Quantum theory based on nite mathematics
-SQT: Standard quantum theory
-IR: irreducible representation
-QFT: Quantum Field Theory
-NQT: Nonrelativistic Quantum Theory
-RQT: Relativistic Quantum Theory
-dS: de Sitter
-AdS: Anti de Sitter
-dSQT: de Sitter Quantum Theory
-AdSQT: Anti de Sitter Quantum Theory
-1 The main goal of this paper
-One of the key problems of QFT is the problem of divergences: the theory gives di-
-vergent expressions for the S-matrix. While in renormalized theories, the divergences
-can be eliminated by renormalization, in non-renormalized QFTs, they cannot be
-eliminated and this is a great obstacle for constructing quantum gravity based on
-QFT.
-The problem of divergences has been considered by many physicists, and
-there has long been an idea in the air that this problem can only be solved within the
-framework of a discrete and nite quantum theory. It would seem natural to think
-that such a theory should proceed from discrete and nite mathematics. However,
-most mathematicians and physicists believe that SM (with innities and continuities)
-is fundamental while discrete and nite mathematics is a science of a lower rank which
-is only needed for applications in some models. This point of view has developed for
-historical reasons (because more than 300 years ago Newton and Leibniz proposed the
-calculus of innitesimals) and due to the fact that SM has achieved many impressive
-successes in describing experimental data.
-The calculus of innitesimals seemed natural when people did not know
-about elementary particles and thought that any substance could be divided into any
-arbitrarily large number of arbitrarily small objects. But now we know that at the
-level of elementary particles there are no arbitrarily small parts and no continuity.
-Also, history tells us that if a theory successfully describes many experi-
-mental data, this is not yet a guarantee that this theory is the most fundamental. For
-2example, NM successfully describes a lot of experimental data and before the creation
-of SR it was believed that NM was a fundamental theory. SR did not refute NM, but
-showed that the latter is a degenerate case of the former in formal limit c!1 where
-cis usually treated as the speed of light. As shown in our works [1, 2, 3, 4], FM is
-more general (fundamental) than SM: the latter is a degenerate case of the former in
-formal limit p!1 wherepis a characteristic of a ring in FM.
-Several famous physicists (e.g., Gross, Nambu, Schwinger and Weyl) dis-
-cussed approaches when QT involves FM (see e.g., [5]). They are called hybrid quan-
-tum systems and described in [6]. The reason is that here physical quantities belong
-to a nite ring but quantum states are elements of standard Hilbert spaces. On the
-other hand, in [1, 2, 3], we have proposed an approach called nite quantum theory
-(FQT) where not only physical quantities but also quantum states are described by
-nite rings. We have shown that FQT is more general (fundamental) than SQT: SQT
-is a degenerate case of FQT in formal limit p!1 wherepis the characteristic of
-the ring in FQT.
-In SQT, elementary objects are described by IRs of symmetry algebras
-in which energies can be either 0 or0 and there are no IRs with both posi-
-tive and negative energies. In the rst case, objects are called particles and in the
-second - antiparticles, and after secondary quantization, the energies of antiparticles
-also become positive. In SQT, particles and antiparticles are characterized by ad-
-ditive quantum number, e.g., the electric charge, the baryon number and others. If
-particle A is characterized by some additive quantum numbers and antiparticle B
-has the same mass and spin as A, but additive quantum numbers of B are equal to
-the corresponding additive quantum numbers of A with the opposite sign, then B
-is called the antiparticle for A. In SQT there are superselection rules that prohibit
-the superposition of a particle and its antiparticle. For example, electron-positron or
-proton-antiproton superpositions are prohibited, and this is interpreted as a conse-
-quence of the conservation of electric charge and baryon quantum number.
-However, in FQT, one IR necessarily contains states with both positive
-and negative energies. Since such states belong to the same IR, their superpositions
-are allowed and there are no superselection rules. One can formally call states with
-positive energies particles and assign some additive quantum numbers to them, and
-call states with negative energies antiparticles and assign opposite quantum numbers
-to them. Then it turns out that there are no conservation laws for such quantum
-numbers, and, for example, electron-positron or proton-antiproton superpositions are
-allowed. It is clear that this completely contradicts the basic concepts of SQT. In other
-words, in FQT, the standard concepts of electric charge, baryon quantum number and
-other additive quantum numbers do not work.
-This situation may prompt physicists to declare that FQT is not a physical
-theory and should be rejected. However, symmetry in FQT is higher than symmetry
-in SQT since one IR in FQT splits into two IRs in SQT with positive and negative
-energies in the formal limit p!1 when FM goes to SM. At the popular level, this
-situation can be described as follows.
-Suppose there are two theories, Theory 1 and Theory 2. In Theory 1,
-3energies in IRs are represented by points on a circle so that the energies on the right
-semicircle are called positive, and on the left semicircle negative. Since states with
-positive and negative energies belong to the same IR, their superpositions are allowed.
-Now let's suppose that in Theory 2 there are two types of IRs: in IRs of the rst type,
-energies can only be positive, and in IRs of the second type - only negative. Then
-superpositions of states with positive and negative energies are prohibited since such
-states belong to dierent IRs. Then Theory 1 in which there is one IR describing the
-entire circle has higher symmetry than Theory 2 in which there are two IRs describing
-the right and left semicircles independently.
-In such a scenario, the fact that at the present stage of the evolution of the
-universe, SQT describes experiments with very high accuracy follows the fact that at
-this stage, the quantity pis very large. As shown in [1, 2], within the framework of
-semiclassical approximation to FQT, it is possible to derive the law of universal grav-
-itation where the gravitational constant Gis proportional to 1 =ln(p). By comparing
-this result with the experimental value of G, one gets that ln(p) is of the order of 1080
-or more, and therefore pis a huge number of the order of exp(1080) or more. However,
-pcannot be treated as an innite number because, since ln(p) is "only" of the order
-of 1080, gravity is observable. At the same time, in [1, 2] we have made arguments
-that in early stages of the universe, the value of pwas much smaller than now and so
-in these stages only FQT may be reliable for describing dierent experimental data.
-In [1, 2] we considered several other phenomena where it is important that pis nite
-and not innitely large.
-There is an analogy here with the fact that when speeds are much less than
-cone can consider cinnitely large and then NM describes these phenomena with
-great accuracy. However, when speeds are comparable to c,ccannot be considered
-an innitely large value and then only SR can be reliable.
-These remarks indicate that the construction of a fundamental quantum
-theory based on a nite pwill be a problem based on fundamentally new concepts:
-since the concepts of particle-antiparticle, electric charge and baryon quantum number
-have a physical meaning only for very large values of p, then in such a theory, in the
-most general case, there should be no such concepts. However, from the point of view
-of the development of science, the fundamental quantum theory at nite pmust be
-constructed.
-When we compare two theories A and B, a question arises what criteria
-should be used to prove that, for example, theory A is more general than theory B
-and B is a degenerate case of A. In [1, 2, 3] we have proposed the following criteria
-Denition: Let theory A contain a nite nonzero parameter and theory
-B be obtained from theory A in the formal limit when the parameter goes to zero or
-innity. Suppose that, with any desired accuracy, A can reproduce any result of B by
-choosing a value of the parameter. On the contrary, when, the limit is already taken,
-one cannot return to A and reproduce all results of A. Then A is more general than
-B and B is a degenerate case of A .
-The proofs in [1, 2] of fundamental facts that FM is more general (funda-
-mental) than SM and FQT is more general (fundamental) than SQT contain a lot
-4of technical details and, as a result, these works are quite long (291 and 293 pages,
-respectively). In this paper, we present two simple examples that require a mini-
-mum of prior knowledge and which we hope will stimulate readers to explore these
-fundamental facts in more depth.
-The paper is organized as follows. In Secs. 2 and 4 we describe basic facts
-about nite rings and quantum theory based on nite mathematics. In Secs. 5 and
-6 we describe supersymmetry in AdS theory and consider a simple model example
-demonstrating the dierence between SQT and FQT. In Secs. 7 and 8 this dierence
-is demonstrated on the example of Dirac supersingletons.
-2 Basic facts about nite rings
-In contrast to SM which starts from the innite ring Z= ( 1;::: 2; 1;0;1;2;:::1),
-FM starts from the nite ring Rp= (0;1;2;:::p 1) where addition, subtraction and
-multiplication are dened as usual but modulo p. We believe that the notation Z=p
-forRpis not adequate because it may give a wrong impression that FM starts from
-the innite set Zand thatZis more general than Rp. However, although Zhas more
-elements than Rp,Zcannot be more general than RpbecauseZdoes not contain
-operations modulo a number. If pis prime then Rpbecomes the Galois eld Fpbut
-in this paper we consider only nite rings. The theory of such rings is described in
-textbooks (see e.g., [7, 8, 9]). The number pis called the characteristic of the ring
-Rp. For example, if p= 5 then 3+1=4 as usual but 3 2=1, 43=2, 44=1 and 3+2=0.
-Therefore -2=3, -4=1 etc.
-One might say that the above examples have nothing to do with reality
-since 3+2 always equals 5 and not zero. However, since operations in Rpare modulo
-p, one can represent Rpas a setf0;1;2;:::;(p 1)=2)gifpis odd or as a set
-f0;1;2;:::;(p=2 1);p=2gifpis even. Let fbe a function from RptoZsuch
-thatf(a) has the same notation in ZasainRp.
-If elements of Zare depicted as integer points on the xaxis of thexyplane
-then, ifpis odd, the elements of Rpcan be depicted as points of the circumference
-in Figure 1 and analogously if pis even.
-Formally, we can call the element a2Rppositive iff(a)>0 and negative
-iff(a)<0. In other words, the element a2Rpis positive if it is in the right half-
-plane of Figure 1 and negative if in the left half-plane. While in SM, a sum of two
-positive numbers is always positive and greater than both original numbers, in FM
-(where calculations are carried out modulo p), it is even possible that a sum of two
-positive numbers is negative. For example, ( p 1)=2 + 1 = (p+ 1)=2 = (p 1)=2.
-However, for numbers asuch thatjf(a)jis much less than p, the results of all the
-operations are the same as in Z, i.e., for such numbers we do not notice the existence
-ofp.
-Whenp!1 , a vicinity of zero in Rpbecomes the innite set Z. There-
-fore even from pure mathematical point of view , the concept of innity cannot be
-fundamental because, as soon as we replace RpbyZ, we automatically obtain a
-5Figure 1: Relation between RpandZ
-degenerate theory because in Zthere are no operations modulo a number.
-In FQT, states are elements of linear spaces over Rp. One might think
-that SQT is more general than FQT because in SQT one can work not only with
-integers but also with rational and real numbers. However, as noted in [1, 2, 3, 4]
-and Sec. 4, since in SQT the states are projective, for describing wave functions with
-any desired accuracy it suces to use only integers.
-3 Do we need spacetime background in quantum
-theory?
-Historically, the concepts of background space and elds in this space arose from
-classical electrodynamics and then they were further developed in General Relativity
-which is also a classical (i.e., non-quantum) theory. For example, now we know that
-the electromagnetic eld consists of photons but, at the classical level, the theory
-does not describe the state of each photon. The classical electromagnetic elds E(r;t)
-andB(r;t) describe the eective contribution of all photons at the point x= (r;t)
-of Minkowski space, and in classical (non-quantum) theory it is assumed that the
-parameters x= (r;t) can be measured with any desired accuracy. This is similar to
-the situation in statistical physics, where systems of many particles are considered, but
-the theory does not describe each particle individually, but introduces concepts that
-make sense only for ensembles of a large number of particles (for example, temperature
-and pressure).
-In quantum theory, every physical quantity must be described by an op-
-erator. For example, one can talk about coordinates of a certain particle only if the
-position operator for this particle is dened. In QFT, particles are described by eld
-operators 	( x) wherexis a point in the background space (e.g., in Minkowski space).
-When there are many particles, it may seem that they are in some space. However,
-such space is only a mathematical and not a physical object. It is not related to
-6certain particles and there are no operators for the coordinates in this space. The
-goal of QFT is to construct the S-matrix and when the theory is already constructed
-one can forget about Minkowski space because xis only an integration parameter in
-the expression for the S-matrix and no physical quantity depends on x. This is in the
-spirit of the Heisenberg S-matrix program according to which in RQT it is impossi-
-ble to describe the state of the system at each moment in time and it is possible to
-describe only transitions of states from the innite past when t! 1 to the distant
-future when t!+1.
-Note that the fact that the S-matrix is the operator in momentum space
-does not exclude a possibility that in some situations it is possible to have a spacetime
-description with some accuracy but not with absolute accuracy. First of all, as noted
-by Pauli [10], the problem of time is one of the most important unsolved problems
-of quantum theory because there is no time operator. Also, the position operator
-in momentum representation usually exists not only in nonrelativistic theory but in
-relativistic theory as well. In this case it is known as the Newton- Wigner position
-operator [11] or its modication. However, the coordinate description of elementary
-particles can be only approximate. For example, coordinates of a particle with the
-massmcannot be measured with the accuracy better than the particle Compton
-wave length  h=(mc) [12].
-As noted in the extensive literature on QFT (see, e.g., [13]), the use of
-eld functions 	( x) also leads to the following mathematical problem. Quantum
-interacting local elds can be treated only as operator distributions. A known fact
-from the theory of distributions is that their product at the same point is not a correct
-mathematical operation. Hence if 	 1(x) and 	 2(x) are two local operator elds then
-the product 	 1(x)	2(x) is not well dened. Physicists often ignore this problem: they
-think that such products are needed to preserve locality (although the operator of the
-quantityxdoes not exist). As a consequence, representation operators of interacting
-systems constructed in QFT are not well dened and the theory contains anomalies
-and innities. A detailed discussion of other problems of QFT can be found, for
-example, in [14].
-Let us also note that so far the approaches to the spacetime background
-come from SM in which, as is known from G odel's incompleteness theorems and other
-results, there are foundational problems. There is an extensive literature which con-
-jectures that foundational problem of quantum theory will be solved in the framework
-of approaches with fundamental length (see e.g., [15] and references therein) because
-here it will be possible to circumvent innitesimals. However, since this literature is
-based on SM, it involves innitesimals implicitly.
-Despite the noted mathematical problems, QFT is very popular among
-physicists due to the following. In renormalizable theories, divergences can be elimi-
-nated and, although from a mathematical point of view, renormalization (when oper-
-ations with singularities yield non-singular expressions) is not a correct mathematical
-operation, in some cases it leads to very impressive agreements between theory and
-experiment. However, in non-renormalizable theories, singularities cannot be elimi-
-nated, and this is the main obstacle to the construction of quantum gravity.
-74 Quantum theory based on nite mathematics
-In this section, following [1, 2, 4], we briey describe why SQT is a degenerate case
-of FQT in the limit p!1 .
-In SQT, physical states are described by elements of complex Hilbert
-spaces, and operators of physical quantities are self-adjoint operators in such spaces.
-By analogy, in FQT, physical states are elements of linear spaces over the ring Rp2
-which is a quadratic generalization of Rpand contains p2elements: any element of
-Rp2can be represented as a+biwherea;b2Rpandiis a formal element such that
-i2= 1. Then the denition of addition, subtraction and multiplication in Rp2is
-obvious and Rp2is a ring regardless whether pis prime or not.
-In both, SQT and FQT, dS symmetry is dened by the operators Mab
-(a;b= 0;1;2;3;4,Mab= Mba) satisfying the commutation relations
-[Mab;Mcd] = i(acMbd+bdMac adMbc bcMad) (1)
-whereabis the diagonal tensor such that 00= 11= 22= 33= 44= 1.
-As discussed in detail in [1, 2, 4, 16], this denition does not involve the fact that the
-dS group is the group of motions of dS space.
-The denition of AdS symmetry is given by the same expressions but 44=
-1. By analogy with the dS case, this denition does not involve the fact that the AdS
-group is the group of motions of AdS space. At the same time, there is an extensive
-literature on AdS/CFT correspondence in which AdS symmetry essentially involves
-the properties of classical AdS space (see e.g. [17, 18, 19] and references therein).
-This literature yields interesting results but currently AdS/CFT correspondence is a
-conjectured relationship between two kinds of physical theories. As argued in [1, 2, 4],
-at the most fundamental level, quantum theory should not involve such classical
-concepts as AdS space and, in this paper, following [1, 2, 3] and other our publications,
-we argue that quantum theory should be based on FM.
-In SQT, operators of physical quantities act in Hilbert spaces supplied
-by a scalar product (...,...), and these operators are selfadjoint. In particular, the
-operators in Eqs. (1) are selfadjoint. However, in spaces over Rp2it is impossible to
-introduce a scalar product that satises the condition that ( x;x)>0 for all non-zero
-elementsxin such spaces. The matter is that, as explained in Sec. 2, in FM, the
-concepts>and<have their usual meaning only for those elements a2Rpfor which
-jf(a)jis much less than p. Therefore, in spaces over Rp2the concept of Hermitian
-conjugation has limited applicability: it makes sense only for the actions of operators
-on elements of spaces for which the expansion coecients with respect to the basis
-elements are much less than p.
-Let us dene ~Mab=Mabifa;b6= 4 and ~Mab=iMabifa6= 4; b= 4.
-Then a direct check shows that the set of operators ~Mabsatises Eq. (1) if 44is
-replaced by 44. Therefore, if the set of operators Mabsatises the conditions (1)
-for the dS algebra, then the set of operators ~Mabsatises the conditions (1) for the
-AdS algebra and vice versa .
-8Therefore in FQT, the dS and AdS theories are equivalent. However,
-in SQT they are not equivalent for the following reason. Here it is required that
-the operators Mabshould not only satisfy Eq. (1) but additionally they should be
-selfadjoint (as explained above, in FQT such a requirement cannot be imposed).
-However, if the operators Ma4are Hermitian then the operators ~Ma4=iMabare
-anti-Hermitian.
-When in SQT the operators in Eq. (1) are selfadjoint then, as described
-in a wide literature, IRs of the dS and AdS algebras are innite-dimensional. Rep-
-resentations in spaces over a ring of nonzero characteristic are called modular repre-
-sentations. According to the Zassenhaus theorem (see e.g., [20, 21]), all modular IRs
-are nite-dimensional. In [22, 23] we constructed modular IRs of the algebras dened
-by Eq. (1).
-In SQT, all Hilbert spaces are separable, i.e., they contain a countable
-dense subset. In such spaces it is always possible to choose a basis ( e1;e2;:::e n;:::)
-such that the norm of each ejis an integer. The elements of such spaces can be
-denoted as ( c1;c2;:::c n;:::) where all the expansion coecients cjfor such a basis are
-complex numbers and can be represented as cj=aj+ibj. As explained in [4], since
-spaces in quantum theory are projective, it follows from the results of the textbook
-[24] that:
-In SQT, each element of a separable Hilbert space can be approximated
-with any desired accuracy by a nite linear combination
-x=nX
-j=1cjej (2)
-where all the numbers ajandbjare integers, i.e., belong to Z.
-In FQT, quantum states also can be represented in the form (2) but here
-thecj=aj+ibjare elements of Rp2. As shown in [1, 2, 3, 4], by using Denition and
-the above results one can prove that FQT is more general (fundamental) than SQT
-and the latter is a special degenerate case of the former in the formal limit p!1 :
-when the numbers ( aj;bj) are such that8j,jf(aj)jandjf(bj)jare much less than
-pthen FQT reproduces all results of SQT but SQT cannot reproduce all results of
-FQT if some of the numbers ( aj;bj) are comparable to p.
-5 Supersymmetry
-In SQT, supersymmetry is valid in the AdS case but is not valid in the dS one. As
-shown in [25], in SQT, dS symmetry is more general than AdS one, and it may be
-a reason why supersymmetry has not been discovered yet. However, as shown in
-[1, 2, 3, 4], SQT is a degenerate case of FQT in the formal limit p!1 , and, as
-shown in Sec. 4, in FQT, dS and AdS symmetries are equivalent.
-Representations of the osp(1,4) superalgebra are described by 14 opera-
-tors, as well as representations of the Poincare superalgebra. However, eectively,
-representations of the osp(1,4) superalgebra can be described only by four fermionic
-9operators. The matter is that ten bosonic operators of the osp(1,4) superalgebra are
-the anticommutators of the four fermionic operators. This is not the case for the
-Poincare superalgebra since the Poincare algebra operators are obtained from the
-so(2,3) ones by contraction. One can say that the representation of the osp(1,4) su-
-peralgebra is the implementation of the idea that supersymmetry is the extraction
-of the square root from the usual symmetry (by analogy with the treatment of the
-Dirac equation as a square root from the Klein-Gordon equation).
-Let (d0
-1;d0
-2;d00
-1;d00
-2) be the fermionic operators of the osp(1,4) superalgebra.
-They should satisfy the following relations. If ( A;B;C ) are any fermionic operators,
-[...,...] is used to denote a commutator and f:::;:::gto denote an anticommutator then
-[A;fB;Cg] =F(A;B)C+F(A;C)B (3)
-where the form F(A;B) is skew symmetric, F(d0
-j;dj") = 1 (j= 1;2) and the other
-independent values of F(A;B) are equal to zero.
-As shown by various authors (see e.g., [1, 2, 26]), the operators Mabin
-Eqs. (1) can be expressed through bilinear combinations of the fermionic operators
-as follows:
-h1=fd0
-1;d00
-1g; h 2=fd0
-2;d00
-2g; M 04=h1+h2; M 12=Lz=h1 h2
-L+=fd0
-2;d00
-1g; L =fd0
-1;d00
-2g; M 23=Lx=L++L 
-M31=Ly= i(L+ L ); M 14= (d00
-2)2+ (d0
-2)2 (d00
-1)2 (d0
-1)2
-M24=i[(d00
-1)2+ (d00
-2)2 (d0
-1)2 (d0
-2)2]
-M34=fd0
-1;d0
-2g+fd00
-1;d00
-2g; M 30= i[fd00
-1;d00
-2g fd0
-1;d0
-2g]
-M10=i[(d00
-1)2 (d0
-1)2 (d00
-2)2+ (d0
-2)2]
-M20= (d00
-1)2+ (d00
-2)2+ (d0
-1)2+ (d0
-2)2(4)
-where L= (Lx;Ly;Lz) is the standard operator of three-dimensional rotations.
-We require the existence of the generating vector e0satisfying the condi-
-tions :
-d0
-je0=d0
-2d00
-1e0= 0; d0
-jd00
-je0=qje0(j= 1;2) (5)
-The full representation space can be obtained by successively acting by the fermionic
-operators on e0and taking all possible linear combinations of such vectors. The theory
-of self-adjoint IRs of the osp(1,4) algebra has been developed by several authors (see
-e.g., [26]), and in [1, 2] this theory has been generalized to the case of FQT.
-6 Model example
-In this section we consider a simple model example when in Eq. (5) there are only
-two fermionic operators ( d0;d") and one bosonic operator hsuch that
-h=fd0;d00g;[h;d0] = d0;[h;d00] =d00(6)
-10Here the rst expression shows that the relations (6) can be formulated only in terms
-of the fermionic operators. We will consider IRs of the superalgebra (6) in SQT and
-FQT.
-6.1 IRs of the superalgebra (6) in SQT
-Consider an IR of the algebra (6) generated by a vector e0such that
-d0e0= 0; he 0=q0e0;(q0>1=2) (7)
-and dene en= (d00)ne0(n= 1;2;:::). Thend0en=a(n)en 1where, as follows from
-Eq. (7),a(0) = 0; a(1) =q0and
-a(n) =q0+n 1 a(n 1) (8)
-The solution of this equation is
-a(n) =n=2 + (q0 1=2)[1 ( 1)n]=2 (9)
-Therefore,a(n)>08nand, as follows from Eq. (6), hen= (n+q0)en. So, we have
-obtained an innite-dimensional IR of the algebra (6) with the basis ( e0;e1;e2:::)
-where all basis vectors are eigenvectors of the operator hwith positive eigenvalues.
-Consider now an IR of the algebra (6) generated by a vector f0such that
-d00f0= 0; hf 0= q0e0;(q0>1=2) (10)
-and dene fn= (d0)nf0(n= 1;2;:::). Thend00fn=b(n)fn 1where, as follows from
-Eq. (10),b(0) = 0; b(1) = q0and
-b(n) = ( n q0+ 1) b(n 1) (11)
-The solution of this equation is
-b(n) = n=2 (q0 1=2)[1 ( 1)n]=2 (12)
-Therefore, b(n)<08nand, as follows from Eq. (6), hfn= (n+q0)fn. So, we
-have obtained an innite-dimensional IR of the algebra (6) with the basis ( f0;f1;f2:::)
-where all basis vectors are the eigenvectors of the operator hwith negative eigenvalues.
-6.2 IRs of the superalgebra (6) in FQT
-In FQT we can also consider an IR of the algebra (6) generated by a vector e0such
-that
-d0e0= 0; d0d00e0=q0e0 (13)
-where now q02Rp. As in SQT, we dene en= (d00)ne0. Thend0en=a(n)en 1where,
-as follows from Eq. (13), a(0) = 0; a(1) =q0and fora(n) we have the same equation
-as in (8):
-a(n) =q0+n 1 a(n 1) (14)
-11We assume that pis odd and then, instead of the solution (9), the solution is
-a(n) =p+ 1
-2n+p+ 1
-2(q0 p+ 1
-2)[1 ( 1)n] (15)
-Then, unlike the situation in SQT where a(n)>0 at (n= 1;2;:::1), we have
-that, since in Rpthe results should be taken modulo p,a(n) = 0 ifn= 2p+ 1 
-2q0. Therefore, the IR under consideration is nite-dimensional, the basis of this IR
-consists of vectors ( e0;e1;:::e N) whereN=nmax= 2p 2q0and the dimension of the
-IR is 2p+ 1 2q0.
-Just like in SQT, we have that hen= (n+q0)enatn= 0;1;:::N , i.e., the
-basis vectors enare eigenvectors of the operator hwith the eigenvalues n=n+q0.
-Since all the nshould be dierent in Rp, it should be N(p 1).
-We chooseq0= (p+ 1)=2 +awherea2Rpandacan be one of the values
-(0;1;::(p 3)=2). Thenf(q0)<0, i.e.,q0is in the left half-plane of Figure 1. Then,
-unlike the situation in SQT where n>0 at alln= 0;1;:::1, we have that in FQT
-f(n)<0 atn= (0;1:::;(p 3)=2 a),f(n) = 0 atn= (p 1)=2 aand nally
-f(n)>0 atn= ((p+ 1)=2) a;:::;n max).
-Thus, the construction of the basis begins with the basis vector e0with
-the eigenvalue of hequal to0=q0and ends with the basis vector eNwith the
-eigenvalueN= q0.Thus, in contrast to SQT where there are two dierent
-IRs with positive and negative eigenvalues of h, respectively, in FQT there
-is only one IR which contains the analogs of negative and positive IRs in
-SQT and contains a basis vector with the eigenvalue of hequal to zero.
-In addition, if in SQT, negative and positive IRs are innite-dimensional,
-then in FQT, the only IR is nite-dimensional with dimension p 2a.
-7 Dirac supersingleton
-When describing elementary particles within the framework of AdS symmetry, the
-following problems arise.
-Ifmis the mass of a particle in Poincare invariant theory then its mass 
-in AdS theory is dimensionless and the relation between andmis=mRwhere
-Ris the contraction parameter for the transition from AdS to Poincare symmetry.
-As explained in [25], the data on cosmological acceleration show that, at the present
-stage of the universe, Ris of the order of 1026m[25]. Therefore, even for elementary
-particles, the AdS masses are very large. For example, the AdS masses of the electron,
-the Earth and the Sun are of the order of 1039, 1093and 1099, respectively. The fact
-that even the AdS mass of the electron is so large might be an indication that the
-electron is not a true elementary particle. In addition, the present upper level for the
-photon mass is 10 17evor less. This value seems to be an extremely tiny quantity.
-However, the corresponding AdS mass is of the order of 1016and so, even the mass
-which is treated as extremely small in Poincare invariant theory might be very large
-in AdS invariant theory.
-12As shown in [25], in SQT, dS symmetry is more general than AdS one but
-in the framework of dS symmetry it is not possible to describe neutral elementary
-particles, i.e., particles which are equivalent to the their antiparticles. As shown in
-Sec. 4, in FQT, dS and AdS symmetries are equivalent and, as shown in [1, 2], in this
-theory also there are no neutral elementary particles. In particular, even the photon
-is not elementary.
-This problem has been discussed by several authors. In Standard Model
-(based on Poincare invariance) only massless particles are treated as elementary.
-However, as shown in the seminal paper by Flato and Fronsdal [27] (see also [28]), in
-standard AdS theory, each massless IR can be constructed from the tensor product
-of two singleton IRs discovered by Dirac in his paper [29] titled "A Remarkable
-Representation of the 3 + 2 de Sitter group", and the authors of [27] believe that this
-is indeed a truly remarkable property.
-The IR describing the supersingleton is constructed as follows. In Eq. (5),
-we chooseq1andq2the same and equal q0whereq0= 1=2 in standard theory over
-complex numbers and q0= (p+ 1)=2 in FQT, where pis the characteristic of the ring
-andpis odd.
-The authors of [27] and other publications treat singletons as true ele-
-mentary particles because their weight diagrams has only a single trajectory (that's
-why the corresponding IRs are called singletons). However, one should answer the
-following questions:
-a) Why singletons have not been observed yet.
-b) Why such massless particles as photons and others are stable and their decays
-into singletons have not been observed.
-There exists a wide literature (see e.g., [30, 31] and references therein) where this
-problem is investigated from the point of view of standard AdS QFT. For example, in
-AdS QFT, singleton elds live on the boundary at innity of the AdS bulk (boundary
-which has one dimension less than the bulk). However, as noted in Sec. 4, the
-explanation in the framework of quantum theory should not involve classical spaces.
-On the other hand, as argued in [1, 2], in FQT, the properties of Dirac
-singletons are even more remarkable than in standard theory and here the properties
-a)-b) have a natural explanation.
-In standard AdS theory, there exist four Dirac singletons which in the
-literature are called Di singleton, Rac singleton and their antiparticles. In the case
-of supersymmetry, Di and Rac singletons are combined into one superparticle - the
-Dirac supersingleton, so that there are two supersingletons - the Dirac supersingleton
-and its antiparticle. However, in FQT those supersingletons are combined into one
-object and so there is only one supersingleton. Here, one of the remarkable properties
-of supersingletons is the following. The physical meaning of division comes from
-classical physics, which assumes that every object can be divided into any arbitrarily
-large number of arbitrarily small parts. However, standard division loses its standard
-physical meaning when we reach the level of elementary particles since, for example,
-13the electron cannot be divided into two, three, and so on parts. As shown in [1, 2], in
-FQT, the theory of singletons can be built over a ring in which there is no division,
-but only addition, subtraction and multiplication.
-As shown in [1, 2, 4], the important property of supersingletons is that
-the above results can be immediately generalized to the case of higher dimensions,
-and in this case it is interesting to explore the possibility that spatial and internal
-quantum numbers are on equal footing. The fact that singleton physics can be directly
-generalized to the case of higher dimensions has been indicated by several authors
-(see e.g., [30] and references therein).
-8 Supersingleton IRs in SQT and FQT
-As shown in [1, 2], [ d00
-1;d00
-2] = 0 in the space of the supersingleton IR. For this reason,
-the results for supersingleton IRs can be obtained by directly generalizing the results
-of Subsecs. 6.1 and 6.2.
-8.1 Supersingleton IRs in SQT
-In this subsection it will be shown that in SQT, there is only one supersingleton IR
-with positive energies and only one supersingleton IR with negative energies.
-Consider rst the representation generated by a vector e0such that
-d0
-je0= 0; h je0=1
-2e0; j = 1;2: (16)
-The basis of the IR consists of the vectors ejk= (d00
-1)j(d00
-2)ke0. Then, as follows from
-Eq. (9)
-h1ejk= (j+1
-2)ejk; h 2ejk= (k+1
-2)ejk; d0
-1ejk=j
-2ej 1;k; d0
-2ejk=k
-2ej;k 1 (17)
-wherej;k= 0;1;2;:::1. As shown in [1, 2], M04is the AdS analog of the energy
-operator because M04becomes the Poincare energy upon contraction of the AdS
-algebra to the Poincare algebra. Then, as follows from Eqs. (4) and (17),
-M04ejk= (1 +j+k)ejk (18)
-and therefore, the positive energy IR is innite-dimensional.
-Consider now the representation generated by a vector f0such that
-d00
-jf0= 0; h jf0= 1
-2e0; j = 1;2: (19)
-The basis of the IR consists of the vectors fjk= (d0
-1)j(d0
-2)kf0. Then, as follows from
-Eq. (12)
-h1fjk= (1
-2+j)fjk; h 2jk= (1
-2+k)fjk; d00
-1fjk= j
-2fj 1;k; d00
-2fjk= k
-2fj;k 1(20)
-14wherej;k= 0;1;2;:::1. As follows from Eqs. (4) and (20),
-M04fjk= (1 +j+k)ejk (21)
-and therefore, the negative energy IR is innite-dimensional.
-8.2 Supersingleton IRs in FQT
-In this subsection, it will be shown that, in contrast to the situation in SQT, in FQT
-there exists only one supersingleton IR. For deniteness, we assume that pis odd.
-Then the FM analog of Eq. (16) is
-d0
-je0= 0; h je0=p+ 1
-2e0; j = 1;2: (22)
-and the FQT analog of Eq. (17) is
-h1ejk= (j+p+ 1
-2)ejk; h 2ejk= (k+p+ 1
-2)ejk
-d0
-1ejk=j(p+ 1)
-2ej 1;k; d0
-2ejk=k(p+ 1)
-2ej;k 1 (23)
-Since now the results should be taken modulo p, it follows from these expressions that
-d0
-1ejk= 0 atj=pandd0
-2ejk= 0 atk=p. Therefore ejk6= 0 atj;k= 0;1;::p 1.
-We conclude that, in contrast to the situation in SQT, where
-there are two innite-dimensional IRs (one positive-energy IR and one
-negative-energy IR), in FQT there is only one IR which is nite-dimensional
-with the dimension p2.
-As follows from Eq. (23), since now the results should be taken modulo
-p, we have for the eigenvalues of the operator M04formally the same result as in Eq.
-(18) that the elements ejkare the eigenvectors of the operator M04=h1+h2with the
-eigenvalues ( j+k+ 1). Therefore when j;kpwe have an analog of positive energy
-IR. On the other hand, if j=p 1 j0andk=p 1 k0then, since the results
-should be taken modulo p, we have that in terms of j0andk0the eigenvalues of M04
-are equal to (1 +j0+k0) by analogy with Eq. (21). Therefore when j0;k0pwe
-have an analog of negative energy IR.
-9 Conclusion
-In this paper we note that, as shown in our previous works, fundamental quantum
-theory should be based on nite mathematics in which it is not assumed that the
-characteristic pof the ring used in this mathematics is anomalously large. In this
-theory there are no concepts of particle-antiparticle and conserved additive quantum
-numbers such as electric charge, baryon quantum number etc.
-The above properties have been discussed in our publications with detailed
-technical proofs. The purpose of this paper is to consider models where dierences
-15between SQT and FQT can be described in a much simpler way. In Sec. 6 we
-consider a model where a superalgebra is dened by only two operators and in Sec.
-8 we consider the model of Dirac supersingleton.
-Our publications and this paper illustrate that the standard concepts of
-particle-antiparticle and conserved additive quantum numbers are not fundamental.
-As noted in [1, 2, 3, 4], our results on universal law of gravity indicate that at the
-present state of the universe the value pis very large (of the order of exp(1080) or
-more) and that is why these concepts work approximately with very high accuracy.
-However, there is no reason to think that pis a fundamental quantity that had the
-same value at all stages of the universe.
-Each computer can carry out calculations only modulo a certain number,
-which depends on the maximum number of bits with which this computer can work.
-The literature discusses the possibility that the universe can be treated as a computer
-(see e.g., [32]). From this point of view, the value pis not some fundamental constant
-but is determined by the state of the universe at a given stage. And, since the state of
-the universe is changing, it is natural to expect that the number pdescribing physics
-at dierent stages of the evolution of the universe will be dierent at dierent stages.
-There are several reasons to think that at early stages of the universe
-the valuepwas much less than now. One of the reasons is the problem of the
-baryon asymmetry of the universe (BAU). Modern cosmological theories state that
-the numbers of baryons and antibaryons in the early stages of the universe were
-the same. Then, since the baryon number is the conserved quantum number, those
-numbers should be the same at the present stage. However, at this stage the number
-of baryons is much greater than the number of antibaryons. However, if the value p
-at early stages of the universe was much less than now then the statement that the
-numbers of baryons and antibaryons were the same, does not have a physical meaning
-and the BAU problem does not arise (see e.g., [1, 2, 4] for more details).
-Another reason is the problem of time in quantum theory. As noted in
-Sec. 3, this problem was posed by Pauli in view of the fact that in this theory there
-is no time operator. In [1, 2] we discussed a conjecture that standard classical time
-tmanifests itself because the value pchanges, i.e., tis a function of p. We do not
-say thatpchanges over time because classical time tcannot be present in quantum
-theory; we say that we feel changing time because pchanges. In [33] we discussed a
-model where, in semiclassical approximation, the variations of tandpat the present
-stage of the universe, are related as
-t=R
-cln(p)
-ln(p)
-whereRis the contraction parameter from the dS to the Poincare algebra. In this
-model, the quantities tandpincrease during the evolution of the universe. However,
-since we do not know how the states of the universe were described in its early stages,
-we cannot say what the magnitudes of pwere at these stages.
-In summary, the concepts of particle-antiparticle and additive quantum
-numbers should not be present in the ultimate quantum theory which should not
-16assume that pis necessarily very large. Thus, the main problem is what principles
-this theory should be based on.
-Acknowledgements: I am grateful to Vladimir Karmanov and to the
-reviewers of this paper for important remarks.
-Data Availability Statement : No new data were created or analyzed
-in this study. Data sharing is not applicable to this article.
-Funding : This research received no external funding.
-Conicts of Interest : The author declares no conicts of interest.
-References
-[1] F. Lev, Finite mathematics as the foundation of classical mathematics and quan-
-tum theory. With application to gravity and particle theory . ISBN 978-3-030-
-61101-9. Springer, Cham, Switzerland (2020).
-[2] F. Lev, Finite Mathematics, Finite Quantum Theory and Applications to Gravity
-and Particle Theory . arXiv:1104.4647v7 (2020).
-[3] F. Lev, Symmetries in Foundation of Quantum Theory and Mathematics. Sym-
-metry 12, 409 (2020).
-[4] F. Lev, Finite mathematics as the most general (fundamental) mathematics .
-Symmetry 16, 1340 (2024).
-[5] Y. Nambu, Field Theory of Galois Fields , inQuantum Field Theory and Quan-
-tum Statistics . I.A. Batalin et. al. eds. Adam Hilger, Bristol, 625-636 (1987).
-[6] A. Vourdas, Finite and Pronite Quantum Systems. In series \Quantum Science
-and Technology" Springer Nature, Berlin/Heidelberg, Germany (2017).
-[7] B.L. Van der Waerden, Algebra I . Springer, Berlin (1967).
-[8] K. Ireland and M. Rosen, A Classical Introduction to Modern Number Theory .
-Graduate Texts in Mathematics 87, Springer, New York (1987).
-[9] H. Davenport, The Higher Arithmetic . Cambridge University Press, Cambridge
-(1999).
-[10] W. Pauli, General Principles of Quantum Mechanics . Springer, Berlin (1980).
-The original German edition: Handbuch der Physik 5,Prinzipien der Quanten-
-theorie . Springer, Berlin (1958).
-[11] T.D. Newton and E.P. Wigner, Localized States for Elementary Systems. Rev.
-Mod. Phys. 21, 400-405 (1949).
-[12] V.B. Berestetskii, E.M. Lifshitz and L.P. Pitaevskii, Quantum Electrodynamics.
-Pergamon, Oxford (1982).
-17[13] N.N. Bogolubov, A.A. Logunov, A.I. Oksak and I.T. Todorov, General Princi-
-ples of Quantum Field Theory . Kluwer Academic Publishers, Dordrecht-Boston-
-London (1990).
-[14] Tian Ya Cao, editor. Conceptual Foundations of Quantum Field Theory . Cam-
-bridge University Press, Cambridge (1999).
-[15] M.A. Soloviev, Quantum eld theory with a fundamental length: A general math-
-ematical framework. J.Math.Phys. 50, 123519 (2009).
-[16] F.M. Lev, de Sitter Symmetry and Quantum Theory . Physical Review, D85,
-065003 (2012).
-[17] J. Maldacena, The large N limit of superconformal eld theories and supergravity.
-Advances in Theoretical and Mathematical Physics 2, 231{252 (1998).
-[18] I. Klebanov and J. Maldacena, Solving Quantum Field Theories via Curved
-Spacetimes . Physics Today. 62, 28{33 (2009).
-[19] D.A. Lowe and L. Thorlacius, Post AdS/CFT. arXiv:2407.06860v1 (2024).
-[20] H. Zassenhaus, The representations of Lie Algebras of Prime Characteristic.
-Proc. Glasgow Math. Assoc. 2, 1{36 (1954).
-[21] J.C. Jantzen, Representations of Lie Algebras in Prime Characteristic. NATO
-ASI Series, Series C, Math. Phys. Sci. \Representation Theories and Algebraic
-Geometry", 514, 185{235 (1998).
-[22] F. Lev, Modular Representations as a Possible Basis of Finite Physics. J. Math.
-Phys. 30, 1985-1998 (1989).
-[23] F. Lev, Finiteness of Physics and Its Possible Consequences. J. Math. Phys. 34,
-490{527 (1993).
-[24] A.N. Kolmogorov and S.V. Fomin, Introductory Real Analysis . Dover Publication
-Inc., New York (1975).
-[25] F. Lev, Solving Particle-antiparticle and Cosmological Constant Problems. Ax-
-ioms13, 138 (2024).
-[26] W. Heidenreich, All Linear Unitary Irreducible Representations of de Sitter Su-
-persymmetry with Positive Energy . Phys. Lett. B110 , 461-464 (1982).
-[27] M. Flato and C. Fronsdal, One Massles Particle Equals two Dirac Singletons .
-Lett. Math. Phys. 2, 421-426 (1978).
-[28] W. Heidenreich, Tensor Product of Positive Energy Representations of ~S(3;2)
-and ~S(4;2). J. Math. Phys. 22, 1566-1574 (1981).
-18[29] P.A.M. Dirac, A Remarkable Representation of the 3 + 2 de Sitter group . J.
-Math. Phys. 4, 901-909 (1963).
-[30] M. Flato, C. Fronsdal and D. Sternheimer, Singleton Physics . hep-th/9901043
-(1999).
-[31] X. Bekaert, Singletons and Their Maximal Symmetry Algebras . arXiv:1111.4554
-(2011).
-[32] S. Wolfram, A Class of Models with the Potential to Represent Fundamental
-Physics. Complex Systems 29, 107-536 (2020).
-[33] F.M. Lev, Finite Mathematics, Finite Quantum Theory And A Conjecture On
-The Nature Of Time . Physics of Particles and Nuclei, 50, 443-469 (2019), pub-
-lished by Springer.
-19
