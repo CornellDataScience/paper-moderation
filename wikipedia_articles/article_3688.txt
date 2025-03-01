@@ -1,0 +1,61 @@
+These tables provide a comparison of operating systems, of computer devices, as listing general and technical information for a number of widely used and currently available PC or handheld (including smartphone and tablet computer) operating systems. The article "Usage share of operating systems" provides a broader, and more general, comparison of operating systems that includes servers, mainframes and supercomputers.
+Because of the large number and variety of available Linux distributions, they are all grouped under a single entry; see comparison of Linux distributions for a detailed comparison. There is also a variety of BSD and DOS operating systems, covered in comparison of BSD operating systems and comparison of DOS operating systems.
+
+
+== Nomenclature ==
+The nomenclature for operating systems varies among providers and sometimes within providers.
+For purposes of this article the terms used are;
+
+kernel
+In some operating systems, the OS is split into a low level region called the kernel and higher level code that relies on the kernel. Typically the kernel implements processes but its code does not run as part of a process.
+hybrid kernel
+monolithic kernel
+Nucleus
+In some operating systems there is OS code permanently present in a contiguous region of memory addressable by unprivileged code; in IBM systems this is typically referred to as the nucleus. The nucleus typically contains both code that requires special privileges and code that can run in an unprivileged state.  Typically some code in the nucleus runs in the context of a dispatching unit, e.g., address space, process, task, thread, while other code runs independent of any dispatching unit.  In contemporary operating systems unprivileged applications cannot alter the nucleus.
+License and pricing policies also vary among different systems. The tables below use the following terms:
+
+BSD
+BSD licenses are a family of permissive free software licenses, imposing minimal restrictions on the use and distribution of covered software.
+bundled
+The fee is included in the price of the hardware
+bundled initially
+The fee is included in the price of the hardware but upgrades require an additional fee.
+GPL2
+GPL3
+Per user
+The fee depends on the maximum number of users concurrently logged on.
+MSU
+The fee depends on the resources consumed by the user
+MULC
+Measured Usage License Charges
+PSLC
+Parallel Sysplex Software Pricing
+
+
+== General information ==
+
+
+== Technical information ==
+
+
+== Security ==
+
+
+== Commands ==
+For POSIX compliant (or partly compliant) systems like FreeBSD, Linux, macOS or Solaris, the basic commands are the same because they are standardized.
+
+NOTE: Linux systems may vary by distribution which specific program, or even 'command' is called, via the POSIX alias function.  For example, if you wanted to use the DOS dir to give you a directory listing with one detailed file listing per line you could use {{{1}}} (e.g. in a session configuration file).
+
+
+== See also ==
+
+
+=== Operating system comparisons ===
+
+
+== References ==
+
+
+== External links ==
+
+"Operating System Technological Comparison". Retrieved May 9, 2005.

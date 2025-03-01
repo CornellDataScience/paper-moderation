@@ -1,0 +1,53 @@
+Professional Graphics Controller (PGC, often called Professional Graphics Adapter and sometimes Professional Graphics Array) is a graphics card manufactured by IBM for PCs. It consists of three interconnected PCBs, and contains its own processor and memory. The PGC was, at the time of its release, the most advanced graphics card for the IBM XT and aimed for tasks such as CAD.
+Introduced in 1984, the Professional Graphics Controller offered a maximum resolution of 640 × 480 with 256 colors on an analog RGB monitor, at a refresh rate of 60 hertz—a higher resolution and color depth than CGA and EGA supported. This mode is not BIOS-supported. It was intended for the computer-aided design market and included 320 KB of display RAM and an on-board Intel 8088 microprocessor. The 8088 ran software routines such as "draw polygon" and "fill area" from an on-board 64 KB ROM so that the host CPU didn't need to load and run these routines itself. While never widespread in consumer-class personal computers, its US$2,995 (equivalent to $8,800 in 2023) list price, plus $1,295 display, compared favorably to US$50,000 dedicated CAD workstations of the time (even when the $4,995 price of a PC XT Model 87 was included). It was discontinued in 1987 with the arrival of VGA and 8514.
+
+
+== Software support ==
+The board was targeted at the CAD market, therefore limited software support is to be expected. The only softwares known to support the PGC are IBM's Graphical Kernel System, P-CAD 4.5, Canyon State Systems CompuShow and AutoCAD 2.5.
+
+
+== Output capabilities ==
+
+PGC supports:
+
+640 × 480 with 256 colors from a palette of 4,096 (12-bit RGB palette, or 4 bits per color component).
+Color Graphics Adapter text and graphics modes. Text modes use a font with 8×16-pixel character cells and have 400 rows of pixels.
+There are six possible color arrangements:
+
+Default 256-colour palette -  Low 4 bits intensity, high 4 bits colour;
+16-colour palette - Makes the PGC behave as two 16-colour planes. If high 4 bits are 0, low 4 bits are colour; otherwise, high 4 bits are colour.
+2-3-3 palette (Palette 2) -  Bits 0-2 blue; bits 3-5 green; bits 6-7 red.
+3-2-3 palette (Palette 3) -  Bits 0-2 blue; bits 3-4 green; bits 5-7 red.
+3-3-2 palette (Palette 4) -  Bits 0-1 blue; bits 2-4 green; bits 5-7 red.
+6x6x6 colour cube - six equally spaced shades of red, green, and blue
+
+
+== Operation ==
+The display adapter was composed of three physical circuit boards (one with the on-board microprocessor, firmware ROMs and video output connector, one providing CGA emulation, and the third mostly carrying RAM) and occupied two adjacent expansion slots on the XT or AT motherboard or the Expansion Unit; the third card was located in between the two slots. The PGC could not be used in the original IBM PC without the 5161 Expansion Unit due to the different spacing of its slots.
+In addition to its native 640 × 480 mode, the PGC optionally supported the documented text and graphics modes of the Color Graphics Adapter, which could be enabled using an onboard jumper. However, it was only partly register-compatible with CGA.
+
+
+== Related monitor ==
+The PGC's matching display was the IBM 5175, an analog RGB monitor that is unique to it and not compatible with any other video card without modification.  With hardware modification, the 5175 can be used with VGA, Macintosh, and various other analog RGB video sources.  Some surplus 5175s in VGA-converted form were still sold by catalog retailers such as COMB (Close Out Merchant Buyers) as late as the early 1990s.
+
+
+== Hardware clones ==
+Matrox PG-640, PG-1280 and QG-640 (for the DEC MicroVAX)
+Dell NEC MVA-1024 card
+Everex EPGA
+Orchid Technology TurboPGA
+Vermont Microsystems IM-640, IM-1024
+
+
+== See also ==
+PC/GX
+List of defunct graphics chips and card companies
+
+
+== References ==
+
+Notes
+
+
+== External links ==
+Professional Graphics Controller: Notes - Pictures and programming information

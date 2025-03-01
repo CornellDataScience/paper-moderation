@@ -1,0 +1,79 @@
+The scaled agile framework (SAFe) is a set of organization and workflow patterns intended to guide enterprises in scaling lean and agile practices. Along with disciplined agile delivery (DAD) and S@S (Scrum@Scale), SAFe is one of a growing number of frameworks that seek to address the problems encountered when scaling beyond a single team. 
+SAFe promotes alignment, collaboration, and delivery across large numbers of agile teams. It was developed by and for practitioners, by leveraging three primary bodies of knowledge: agile software development, lean product development, and systems thinking.
+The primary reference for the scaled agile framework was originally the development of a big picture view of how work flowed from product management (or other stakeholders), through governance, program, and development teams, out to customers. With the collaboration of others in the agile community, this was progressively refined and then first formally described in a 2007 book. The framework continues to be developed and shared publicly; with an academy and an accreditation scheme supporting those who seek to implement, support, or train others in the adoption of SAFe.
+Starting at its first release in 2011, six major versions have been released while the latest edition, version 6.0, was released in March 2023.
+While SAFe continues to be recognised as the most common approach to scaling agile practices (at 30 percent and growing),, it also has received criticism for being too hierarchical and inflexible. It also receives criticism for giving organizations the illusion of adopting Agile, while keeping familiar processes intact.
+
+
+== Challenges of scaling agile principles and practices ==
+
+
+=== Coping with longer planning horizons ===
+Development teams typically refine their backlog up to two to three iterations ahead, but in larger organizations the product marketing team needs to plan further ahead for their commitments to market and discussions with customers. They will often work with a very high level, 12 to 18-month roadmap, then plan collaboratively with the teams for three months of work. The development teams will still get into detailed refinement 2-3 iterations ahead, only getting into detailed task plans for the next iteration.
+
+
+=== Keeping agile at abstract levels of responsibility ===
+While development teams have a number of frameworks that define how they should be agile, there is very little that describes this for management. SAFe delivers many of the same principles, such as cross-functional teams, to the groups that handle the more abstract levels of responsibility and planning (product and portfolio).
+
+
+=== Dealing with delegated authority ===
+In Scrum, the product owner is expected  to assume responsibility for the full product life-cycle, including the return on investment of development decisions, as well as performance in market. On large-scale developments, the organization wants a view across multiple team backlogs, such as provided by a product manager. Although SAFe assumes the product owner role sits with product management, it has nonetheless been criticized for separating product owners into the development organization.
+
+
+=== Synchronizing deliverables ===
+Agile frameworks are designed to enable the development team to be autonomous and free to design how they work. SAFe acknowledges that, at the scale of many tens or hundreds of development teams, it becomes increasingly chaotic for teams to fully self-organize. It therefore puts some constraints on this, so that where teams are working on the same product, their deliverables can be better synchronized for releasing together, although this has been one area in which SAFe has been criticized.
+
+
+=== Allowing time for innovation and planning ===
+
+The SAFe planning cycle recommends including an additional iteration after a release, allowing teams to improve their practices and are ready for the next planning increment. Earlier editions of SAFe also designed this to be a hardening iteration, namely to stabilize or harden the product before releasing it. This was predicated on the complications of working with large integration environments where dependencies prevented several matters from being tested until the very end. SAFe was criticized for this because it represented an anti-agile or waterfall element, but was in line with lean 90-day increments which make 13 weeks, and if doing two-week sprints you need six of them plus a one-week planning or hardening cycle. This is not included in recent editions of SAFe.
+
+
+== Implementation ==
+
+
+=== Underlying principles of SAFe ===
+According to its authors, SAFe is based upon ten underlying concepts, which are derived from existing lean and agile principles, as well as observation:
+
+Take an economic view
+Apply systems thinking
+Assume variability; preserve options
+Build incrementally with fast integrated learning cycles
+Base milestones on objective evaluation of working systems
+Visualize and limit work-in-progress, reduce batch sizes, and manage queue lengths
+Apply cadence (timing), synchronize with cross-domain planning
+Unlock the intrinsic motivation of knowledge workers
+Decentralize decision-making
+Organize around value
+SAFe has been criticized for aggregating too many disparate practices.
+
+
+=== The SAFe framework ===
+In SAFe version 5.1, there are four configurations: essential, portfolio, large solution and full:
+
+Essential SAFe is the most basic configuration. It describes the most critical elements needed and is intended to provide the majority of the framework's benefits. It includes the team and program level (which it calls agile release trains or ARTs).
+Large Solution SAFe allows for coordination and synchronization across multiple programs, but without the portfolio considerations. In earlier versions of SAFe, this level was referred to as value stream.
+Portfolio SAFe includes concerns for strategic direction, investment funding, and lean governance.
+Full SAFe combines the other three levels.
+
+
+=== Certifications ===
+Scaled Agile provides certifications that cover different areas and knowledge levels.
+
+
+== See also ==
+Scrum of scrums
+
+
+== References ==
+
+
+== Further reading ==
+Dingsøyr, Torgeir; Falessi, David; Power, Ken (February 2019), "Agile Development at Scale: The Next Frontier", IEEE Software, 36 (2): 30–38, arXiv:1901.00324, doi:10.1109/MS.2018.2884884, S2CID 57373760
+Heusser, Matthew (17 June 2015), Introducing the scaled agile framework, CIO, pp. 1–2 — contains a review of the pros and cons of the methodology and concludes it is a half-way-house to a fully agile system.
+Leffingwell, Dean (2011), Lean Requirements Practices for Teams, Programs, and the Enterprise, Addison-Wesley Professional, ISBN 978-0321635846
+Linders, Ben (15 January 2015), Lean and Agile Leadership with the Scaled Agile Framework (SAFe), InfoQ
+
+
+== External links ==
+Official website

@@ -1,0 +1,280 @@
+In mathematics, a sum-free sequence is an increasing sequence of positive integers,
+
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+        ,
+        
+          a
+          
+            3
+          
+        
+        ,
+        …
+        ,
+      
+    
+    {\displaystyle a_{1},a_{2},a_{3},\ldots ,}
+  
+
+such that no term 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{n}}
+  
+ can be represented as a sum of any subset of the preceding elements of the sequence. 
+This differs from a sum-free set, where only pairs of sums must be avoided, but where those sums may come from the whole set rather than just the preceding terms.
+
+
+== Example ==
+The powers of two,
+
+1, 2, 4, 8, 16, ...
+form a sum-free sequence: each term in the sequence is one more than the sum of all preceding terms, and so cannot be represented as a sum of preceding terms.
+
+
+== Sums of reciprocals ==
+A set of integers is said to be small if the sum of its reciprocals converges to a finite value. For instance, by the prime number theorem, the prime numbers are not small. Paul Erdős (1962) proved that every sum-free sequence is small, and asked how large the sum of reciprocals could be. For instance, the sum of the reciprocals of the powers of two (a geometric series) is two.
+If 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ denotes the maximum sum of reciprocals of a sum-free sequence, then through subsequent research it is known that 
+  
+    
+      
+        2.0654
+        <
+        R
+        <
+        2.8570
+      
+    
+    {\displaystyle 2.0654<R<2.8570}
+  
+.
+
+
+== Density ==
+It follows from the fact that sum-free sequences are small that they have zero Schnirelmann density; that is, if 
+  
+    
+      
+        A
+        (
+        x
+        )
+      
+    
+    {\displaystyle A(x)}
+  
+ is defined to be the number of sequence elements that are less than or equal to 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, then 
+  
+    
+      
+        A
+        (
+        x
+        )
+        =
+        o
+        (
+        x
+        )
+      
+    
+    {\displaystyle A(x)=o(x)}
+  
+. Erdős (1962) showed that for every sum-free sequence there exists an unbounded sequence of numbers 
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x_{i}}
+  
+ for which 
+  
+    
+      
+        A
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        =
+        O
+        (
+        
+          x
+          
+            φ
+            −
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle A(x_{i})=O(x^{\varphi -1})}
+  
+ where 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ is the golden ratio, and he exhibited a sum-free sequence for which, for all values of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, 
+  
+    
+      
+        A
+        (
+        x
+        )
+        =
+        Ω
+        (
+        
+          x
+          
+            2
+            
+              /
+            
+            7
+          
+        
+        )
+      
+    
+    {\displaystyle A(x)=\Omega (x^{2/7})}
+  
+, subsequently improved to 
+  
+    
+      
+        A
+        (
+        x
+        )
+        =
+        Ω
+        (
+        
+          x
+          
+            1
+            
+              /
+            
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle A(x)=\Omega (x^{1/3})}
+  
+ by Deshouillers, Erdős and Melfi in 1999 and to 
+  
+    
+      
+        A
+        (
+        x
+        )
+        =
+        Ω
+        (
+        
+          x
+          
+            1
+            
+              /
+            
+            2
+            −
+            ε
+          
+        
+        )
+      
+    
+    {\displaystyle A(x)=\Omega (x^{1/2-\varepsilon })}
+  
+ by Luczak and Schoen in 2000, who also proved that the exponent 1/2 cannot be further improved.
+
+
+== Notes ==
+
+
+== References ==
+Abbott, H. L. (1987), "On sum-free sequences", Acta Arithmetica, 48 (1): 93–96, doi:10.4064/aa-48-1-93-96, MR 0893466.
+Chen, Yong Gao (2013), "On the reciprocal sum of a sum-free sequence", Science China Mathematics, 56 (5): 951–966, Bibcode:2013ScChA..56..951C, doi:10.1007/s11425-012-4540-6, S2CID 124005748.
+Deshouillers, Jean-Marc; Erdős, Pál; Melfi, Giuseppe (1999), "On a question about sum-free sequences", Discrete Mathematics, 200 (1–3): 49–54, doi:10.1016/s0012-365x(98)00322-7, MR 1692278.
+Erdős, Pál (1962), "Számelméleti megjegyzések, III. Néhány additív számelméleti problémáról" [Some remarks on number theory, III] (PDF), Matematikai Lapok (in Hungarian), 13: 28–38, MR 0144871.
+Levine, Eugene; O'Sullivan, Joseph (1977), "An upper estimate for the reciprocal sum of a sum-free sequence", Acta Arithmetica, 34 (1): 9–24, doi:10.4064/aa-34-1-9-24, MR 0466016.
+Luczak, Tomasz; Schoen, Tomasz (2000), "On the maximal density of sum-free sets", Acta Arithmetica, 95 (3): 225–229, doi:10.4064/aa-95-3-225-229, MR 1793162.
+Yang, Shi Chun (2009), "Note on the reciprocal sum of a sum-free sequence", Journal of Mathematical Research and Exposition, 29 (4): 753–755, MR 2549677.
+Yang, Shi Chun (2015), "An upper bound for Erdös reciprocal sum of the sum-free sequence", Scientia Sinica Mathematica, 45 (3): 213–232, doi:10.1360/N012014-00121.

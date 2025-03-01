@@ -1,0 +1,48 @@
+On March 22, 2016, software engineer Azer Koçulu took down the left-pad package that he had published to npm (a JavaScript package manager). Koçulu deleted the package after a dispute with Kik Messenger, in which the company forcibly took control of the package name kik. As a result, thousands of software projects that used left-pad as a dependency, including the Babel transcompiler and the React web framework, were unable to be built or installed. This caused widespread disruption, as technology corporations small and large, including Facebook, PayPal, Netflix and Spotify, used left-pad in their software products. 
+Several hours after the package was removed from npm, the company behind the platform, npm, Inc, manually restored the package. Later, npm disabled the ability to remove a package if more than 24 hours have elapsed since its publishing date and at least one other project depends on it. The incident drew widespread media attention and reactions from people in the software industry. The removal of left-pad has prompted discussion regarding the intentional self-sabotage of software to promote social justice and brought attention to the elevated possibility of supply chain attacks in modular programming.
+
+
+== Background ==
+
+left-pad was a free and open-source JavaScript package published by Azer Koçulu, an independent software engineer based in Oakland, California. The package repetitively prepends characters to a string using a loop. left-pad has been characterized as being extremely simple, consisting of only 11 lines of code (when empty lines are discounted) in the final version authored by Koçulu.
+Koçulu published left-pad on npm, the default package manager for Node.js, a JavaScript runtime environment. Despite its relative obscurity, left-pad was heavily used; the package was used as a dependency by thousands of other software projects and reached over 15 million downloads prior to its removal. Some of the projects that required left-pad to function were critical to the JavaScript ecosystem at the time. This included Babel, a transcompiler that enables backwards-compatible JavaScript code, Webpack, a module bundling system, and both React and React Native, which are frameworks widely used for the development of websites and mobile apps, respectively.
+In addition to left-pad, Koçulu also owned kik on npm, which was a tool that allowed developers to set up templates for their projects. On March 11, 2016, Kik Interactive, a Canadian company owning the instant messaging platform Kik Messenger, contacted Koçulu, requesting that he relinquish control of the kik package due to the company's ownership of the "Kik" trademark. Part of the correspondence included the following message from Kik:
+
+We don’t mean to be a dick about [the kik package], but it’s a registered Trademark in most countries around the world and if you actually release an open source project called kik, our trademark lawyers are going to be banging on your door and taking down your accounts and stuff like that — and we’d have no choice but to do all that because you have to enforce trademarks or you lose them. Can we not come to some sort of a compromise to get you to change the name without involving lawyers? Is there something we could do for you in compensation to get you to change the name?
+Koçulu responded shortly after, refusing to change the name of his project, saying:
+
+hahah, you’re actually being a dick. so, fuck you. don’t e-mail me back.
+Koçulu also requested US$30,000 as compensation "for the hassle of giving up with my pet project for [sic] bunch of corporate dicks". On March 18, 2016, Isaac Z. Schlueter, the chief executive officer of npm, Inc., wrote to both Kik Interactive and Koçulu, stating that the ownership of the kik package would be manually transferred to Kik Interactive.
+
+
+== Removal ==
+After Koçulu expressed his disappointment with npm, Inc.'s decision and stated that he no longer wished to be part of the platform, Schlueter provided him with a command to delete all 273 modules that he had registered. Koçulu executed the command on March 22, 2016, removing every package he had previously released. left-pad was one of the packages that was "unpublished", rendering it no longer publicly accessible on npm. The left-pad software project and contents remained available on GitHub.
+Users attempting to build or install any JavaScript project that used left-pad as a dependency (including dependents such as Babel or Webpack) received a 404 error that caused the process to fail. Notable software technology corporations used the package, including Meta Platforms, PayPal, Netflix and Spotify. Kik Interactive's developers themselves faced build problems as a result of the package's removal.
+
+
+== Aftermath ==
+
+
+=== Immediate effects ===
+An hour after he deleted the packages, Koçulu published a post on Medium ("I've Just Liberated My Modules"), explaining that he had unpublished his software projects from npm to protest corporate interests in free and open-source software.
+Soon after the deletion, other software developers began to post a flood of complaints, reactions, and workarounds on the project's Git issue tracking system. 
+Maintainers of open-source projects, including Babel, released hotfixes to remove the dependencies that Koçulu had unpublished. Several of Koçulu's other package names were quickly taken over by newly published packages. For example, another developer recreated the left-pad package—but released it as version 1.0.0. Since Koçulu published his as version 0.0.3, users continued to encounter problems. 
+Around two hours after the original left-pad package was removed, npm manually "un-un-published" the original 0.0.3 version by restoring a backup. Laurie Voss, chief technology officer of npm, wrote that the company "picked the needs of the many" despite internal disagreements about whether the action was "the right call".
+
+
+=== Reactions ===
+npm changed its policy on the removal of published packages to prevent deletion if more than 24 hours have elapsed since its release date and at least one other project requires it as a dependency. On behalf of npm, community manager Ashley Williams apologized for the disruption caused by the incident, stating that the platform "[failed] to protect the community". Kik Interactive also apologized for the incident, with the company's head of messaging Mike Roberts publishing the email chain with Koçulu on Medium and characterizing his interaction as a "polite request". Roberts wrote that they had initially reached out to Koçulu because they wished to publish an open-source package on npm with the name Koçulu was using. Koçulu stated that he was sorry for disrupting other's work, but he believed he did it "for the benefit of the community in [sic] long term".
+The incident drew varied reactions from users on Twitter, GitHub, Reddit and Hacker News, with many claiming that it briefly "broke the Internet". Many commented on the "move fast and break things" culture of JavaScript development, the unpredictable nature of open-source software, and a perceived over-reliance on modular programming. Users also expressed disappointment regarding npm's decision to forcefully transfer Koçulu's package to Kik Interactive over a legal threat.
+
+
+=== Impact ===
+The incident showed how the disruption of an npm package could lead to a supply chain attack. In addition to the widely publicized left-pad incident, a number of individuals had immediately hijacked Koçulu's other packages with unknown code after they were removed. npm released a new policy to prevent malicious takeovers in similar disputes, but the left-pad incident is still cited as an example of over-reliance on external contributors leading to an increased attack surface for software products. Koçulu's intentional self-sabotage of left-pad to highlight a social issue has also been described as a precursor to incidences of protestware being published on platforms like npm.
+
+
+== See also ==
+peacenotwar
+Hacktivism
+Software repository
+
+
+== References ==

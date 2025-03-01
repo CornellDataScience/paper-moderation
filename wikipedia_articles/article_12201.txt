@@ -1,0 +1,52 @@
+Daydream is a discontinued virtual reality (VR) platform which was developed by Google, primarily for use with a headset into which a smartphone is inserted. It is available for select phones running the Android mobile operating system (versions "Nougat" 7.1 and later) that meet the platform's software and hardware requirements. Daydream was announced at the Google I/O developer conference in May 2016, and the first headset, the Daydream View, was released on November 10, 2016. To use the platform, users place their phone into the back of a headset, run Daydream-compatible mobile apps, and view content through the viewer's lenses.
+Daydream was Google's second foray into VR following Cardboard, a low-cost platform intended to encourage interest in VR. Compared to Cardboard, which was built into compatible apps and offered limited features, Daydream was built into Android itself and included enhanced features, including support for controllers. Daydream was not widely adopted by consumers or developers, and in October 2019, Google announced that the Daydream View headset had been discontinued and that they would no longer certify new devices for Daydream.
+
+
+== History ==
+At the Google I/O developer conference in May 2016, Google announced that a new virtual reality (VR) platform called "Daydream" would be built into the next release of their Android mobile operating system (OS)—Nougat (7.1). Daydream was Google's second foray into VR following Cardboard, which was a low-cost standard that utilized a cardboard viewer with plastic lenses that could hold a smartphone. Whereas Cardboard was used by running compatible apps and was accessible on most smartphones, Daydream was built into the Android OS itself and only worked on select phones that met the platform's standards, such as having specific hardware components. In January 2017, Google opened the Daydream program for all third-party developers.
+
+
+== Software ==
+Android Nougat introduced VR Mode, a low-latency, "sustained performance mode" to optimize the VR experience for Daydream. It dedicated a CPU core to the user interface thread to reduce visual issues that could induce nausea. Whereas the GPU normally sends frames to the device display in a "double buffering" mode on Android, VR Mode switched to "single buffering" to avoid intermediate frame buffer and instead draw frames directly to the display. The mode also allowed for asynchronous reprojection, whereby frames were slightly transformed to account for positional changes in the user's head that occurred during the 16 milliseconds that each frame was rendered and sent to the display. VR Mode also performance tuned the motion sensor pathways to result in quicker input from the device's accelerometer and gyroscope. The mode assisted developers in optimizing apps to a device's thermal profile. Overall, the performance improvements of VR Mode resulted in motion-to-photon latency decreasing on the Nexus 6P phone from 100 milliseconds on Android Marshmallow to less than 20 milliseconds on Android Nougat.
+Daydream also included a new head tracking algorithm that combined the input from various device sensors, as well as integration of system notifications into the VR user interface.
+Daydream allows users to interact with VR-enabled apps, including YouTube, Google Maps Street View, Google Play Movies & TV, and Google Photos in an immersive view. Google recruited media companies like Netflix and Ubisoft for entertainment apps.
+
+
+== Headsets ==
+
+
+=== First-generation Daydream View ===
+
+The first-generation Google Daydream View was announced on October 4, 2016. Daydream-ready smartphones can be placed in the front compartment of the Daydream View and then viewed in VR through the headset's two lenses. The View distinguished itself from previous VR head mounts by being constructed out of a light-weight cloth material, as well as featuring capacitive nubs and an NFC chip to simplify the process of setting up virtual reality viewing. The Daydream View was released on November 10, 2016, initially in a "Slate" color option. Two new color choices, "Crimson" and "Snow", became available on December 8.
+In a review of the Google Daydream View, Adi Robertson of The Verge wrote that the headset was the "best mobile headset" she'd ever used, complimenting its "squishy foam-and-fabric body" being "significantly smaller, lighter, and more portable than the Samsung Gear VR", and that its design "keeps the lenses relatively protected during travel". She also liked the device's weight distribution, writing that it "rests more weight on your forehead than your cheeks, an option I've found more comfortable" and that allows her to "wear it easily for hours at a time". She also praised the material, particularly its plastic sliders rather than velcro patches on the head strap, writing that it allows "a wider range of sizes and avoids gathering lint", and that the View's overall design "could almost pass for an airplane sleep mask", meaning that it "avoids looking ostentatiously high-tech or intimidating".
+Google Daydream headsets are packaged with a wireless controller. This controller can be used for interacting with the virtual world through button presses or through waving the device. On-board sensors are used to track the orientation of the controller and approximate the position of the user's hand. The Daydream View's controller can be stored inside the headset while not in use. The controller has a touch pad, two circular buttons (one functioning as a home button and one functioning as an app-specific button), and two volume buttons, along with a status light. The controller is rechargeable and charges via USB-C. On its support pages, Google noted that the Daydream View "doesn't include a charger or cables" and instead directs users to purchase those from the Google Store.
+
+
+=== Second-generation Daydream View 2017 ===
+ 
+The second-generation Daydream View was unveiled during the Made by Google 2017 event. It was released in a different set of colors, namely: "Charcoal", "Fog", and "Coral". It is largely similar to the first-generation model, with a few improvements, including a slightly altered design and improved lenses for a wider field of view. It was released on October 19, 2017, with a launch price of US$99.
+
+
+=== Lenovo Mirage Solo ===
+Lenovo's Mirage Solo headset, announced at CES 2018, is the first standalone headset running on Google's Daydream platform. It is powered by Qualcomm's Snapdragon 835 system-on-chip, has 4 GB of RAM and 64 GB of internal storage expandable by microSD, dual mics, a 3.5mm headphone jack, a 2560 × 1440 LCD screen and a 4,000 mAh battery. Its highlight feature is support for Google "WorldSense", an improved position tracking technology.
+The headset is designed to be coupled with the Mirage Camera, which is a point-and shoot 180-degree 3D VR camera with two lenses that can capture in 4K.
+Lenovo released the device in May 2018 at a price of $399.
+
+
+== Compatibility ==
+Daydream will only work on certain older phones with specific components. Google announced at the Google I/O conference in May 2016 that eight hardware partners would make Daydream-ready phones: Samsung, HTC, LG, Xiaomi, Huawei, ZTE, Asus and Alcatel. Google CEO Sundar Pichai expected 11 Android smartphones supporting Daydream VR to be on sale by the end of 2017.
+
+
+== Discontinuation ==
+
+In 2019, HBO discontinued its Daydream apps, while Hulu dropped support for the platform from its app.
+On October 15, 2019, Google announced that it would no longer sell the Daydream View headset, and that their new flagship phones, the Pixel 4 and Pixel 4 XL, would not be certified for Daydream. No phones released in 2019 were compatible with Daydream, and the company confirmed that no additional devices would be certified for the platform. A spokesperson said, "There hasn't been the broad consumer or developer adoption we had hoped, and we've seen decreasing usage over time of the Daydream View headset." The representative said that the company recognized the potential in smartphone VR but: "we noticed some clear limitations constraining smartphone VR from being a viable long-term solution. Most notably, asking people to put their phone in a headset and lose access to the apps they use throughout the day causes immense friction." Google confirmed that the Daydream app and app store would remain available.
+In October 2020, the company announced that it had ended support for the Daydream software, and that Android 11 would drop support for the platform entirely.
+
+
+== References ==
+
+
+== External links ==
+
+Official website

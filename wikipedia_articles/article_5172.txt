@@ -1,0 +1,36 @@
+Kompetitive allele specific PCR (KASP) is a homogenous, fluorescence-based genotyping variant of polymerase chain reaction. It is based on allele-specific oligo extension and fluorescence resonance energy transfer for signal generation.
+A single-nucleotide polymorphism (SNP) occurs when a single nucleotide in a DNA sequence differs between members of the same species or a paired chromosome. SNPs work as molecular markers that help locate genes associated with disease and are used for genotype sequencing.
+Genotyping by next generation sequencing using SNPs is expensive, time-consuming, and has some missing data. There are many other SNP techniques that can be used depending on the purpose of the research considering throughput, data turnaround time, ease of use, performance (sensitivity, reliability, reproducibility, accuracy) flexibility, requirements, and cost. For the highest throughput for large scale studies, it is best to choose multiplexed chip-based technology. Multiplex technologies generate anywhere from 100 to over a million SNPs per run but are not economical to use for small to moderate numbers of SNPs. For a smaller number of SNPs, a uniplex assay like KASP can be used.
+
+
+== Methodology ==
+There are three components that are critical to the KASP assay: 1) a purified DNA sample, 2) two allele-specific forward primers, and 3) a common reverse primer. A minimum of 5-10 ng of the extracted DNA sample is required for the method to function properly.  The DNA sample is purified by adding a mixture of chemicals to the buffer solution.  In the first round of PCR, a KASP primer mix that contains the two allele-specific forward primers and the single reverse primer is added to the mixture.  The specific nature of the forward primers allows for the primer to bind solely at the SNP of interest, allowing DNA polymerase to lay down the rest of the complementary nucleotides.  During this time, the common reverse primer begins to lay down complementary nucleotides on the opposite strand of DNA.  This ends the first round of PCR.
+In the second round of PCR, the complementary strand to the allele-specific forward primer is generated when the common reverse primer binds to the amplicon formed in the first round of PCR.  Finally, the thermocycling of the PCR reaction continues, starting the third portion of the KASP method.  A fluorescently labeled primer is present in the master mix where it is quenched due to hybridization with its complementary part that has a quencher at the end. The fluorescent-labelled primer complements the tail sequence of the allele-specific forward primer, allowing for elongation to occur.  This occurs multiple times throughout the thermocycling settings and the fluorescent signalling becomes stronger as more fluorescent primers are used in the amplification process. Fluorescent tags normally used are FAM and HEX 
+
+
+== Advantages and disadvantages ==
+The KASP method is more cost-effective than multiplex methods--$15 per assay versus $50 per assay.  There is also a much shorter turn around time to receive the results with the KASP method than other multiplex methods—24 hours versus a week.  Additionally, there is a lower genotyping error rate of 0.7-1.6%.  The KASP method is more flexible than other methods in that it can be used when there are many SNPs in a few samples or when there are few SNPs in many samples.  However, the multiplex methods are currently the most high-throughput platforms for SNP genotyping.
+
+
+== Applications ==
+This technology has many applications in quality control (QC) genotyping, quantitative trait locus (QTL) mapping, marker-assisted selection (MAS), and allele mining.  For example, the KASP platform has been used in qualitative control analyses for maize.  In maize, homogeneity is important in cultivating the crops that the grower had selected.  Slight variations in allelic frequencies may have large impacts on the crop's quality and can occur in a variety of ways including through cross-contamination of pollen and/or seeds and in seed regeneration.  QC analysis can be used at the various events in which changes in allelic frequency can be expected so long as samples are taken from the parental and the F1 crop generations. This ensures that the allele frequencies haven't changed much between the two generations and ensures the purity of the line based on the set SNPs for the maize.  For maize there have been between 50 and 100 SNPs identified that can be used to conduct this type of analysis.
+Quality analysis (QC analysis) is used to maintain the purity of the inbred line. QC genotype protocol uses 50-100 SNPs to determine non-homogeneity within a sample and establish genetic identity. QC can be used at any time during the breeding.
+If QC is to be used for mapping population non-parental alleles are discarded and alleles for which more than 90% of SNPs are polymorphic between the parents are kept.
+
+
+=== QTL mapping ===
+QTL mapping identifies a subset of markers that are significantly associated with one or more QTLs influencing the expression of the trait of interest.  
+
+Select or develop a biparental mapping population.
+Phenotype the population for a trait under greenhouse or field conditions.
+Choose a molecular marking system – genotype parents of the mapping population and F1s with large numbers of markers, then select 200-400 markers exhibiting polymorphism between the parents.
+Choose a genotyping approach, then generate molecular data for polymorphic markers
+Identify the molecular markers associated with major QTLs by using statistical programs.
+For QTL mapping in maize: 
+
+use KASP to genotype parents and F1s with 1250 SNPs
+Identify the polymorphic SNPs
+Genotype the entire population with polymorphic SNPs
+
+
+== References ==

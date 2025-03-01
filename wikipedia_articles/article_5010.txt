@@ -1,0 +1,49 @@
+The VAX 6000 is a discontinued family of minicomputers developed and manufactured by Digital Equipment Corporation (DEC) using processors implementing the VAX instruction set architecture (ISA). Originally, the VAX 6000 was intended to be a mid-range VAX product line complementing the VAX 8000, but with the introduction of the VAX 6000 Model 400 series, the older VAX 8000 was discontinued in favor of the VAX 6000, which offered slightly higher performance for half the cost. The VAX 6000 family supports Digital's VMS and ULTRIX operating systems.
+
+
+== Cabinet ==
+
+The VAX 6000 was housed in a cabinet which contained three card cages in the upper portion: a 14-slot XMI card cage on the right for CPU and memory modules, and optional VAXBI Bus hardware on the left. The VAXBI hardware distinguished two versions of the VAX 6000 platform, XMI-1 and XMI-2. XMI-1 differed from XMI-2 by requiring a DWMBA adapter and the presence of two 6-slot VAXBI channels, whereas in the XMI-2 platform, VAXBI was an optional feature and, if required, it was provided as a single 12-slot channel. In both versions, VAXBI was provided by two 6-slot VAXBI card cages.
+Below the card cages was the cooling system, which took up most of the volume in the cabinet. The bottom of the cabinet contained a provision for an optional battery backup unit and two RA90 or RA92 hard disk drives. The battery backup unit could provide power to the system for one second in the event of a power failure, after which the system ceased to operate, but continued to preserve the data in the cache and memory for ten minutes.
+The cabinet was 154 centimetres (60.5 in) high, 77 centimetres (30.5 in) wide and deep; and weighed 341 kilograms (752 lb).
+
+
+== VAX 6000 Model 2x0 ==
+(Previously known as the VAX 62x0)
+Code named "Calypso"
+Introduced on 19 April 1988
+One to four 12.5 MHz (80 ns cycle time) CVAX chip set(s), each with an external 256 KB of secondary cache built from 160 ns SRAM
+(The number of chip sets present determined the value of "x").
+Maximum of 256 MB of ECC memory
+
+
+== VAX 6000 Model 3x0 ==
+(Previously known as the VAX 63x0)
+Code named "Hyperion"
+Introduced on 24 January 1989
+One to six KA62B CPU modules, each containing a 16.67 MHz (60 ns cycle time) CVAX+ chip set with 256 KB of external secondary cache clocked at 8.33 MHz (120 ns cycle time)
+(The number of CPU modules present determined the value of "x").
+Maximum of 256 MB of ECC memory
+
+
+== VAX 6333 ==
+The VAX 6333 was a prepackaged VAXcluster of three VAX 6330 (VAX 6000 Model 330) systems. Bundled with the SA650 Storage Array, the VAX 6333 cost US$2.8 million.
+
+
+== VAX 6000 Model 4x0 ==
+The VAX 6000 Model 4x0, code-named "Calypso/XRP", was introduced on 11 July 1989. It used the KA64A CPU module and could be configured with one to six such modules for one to six processors. The KA64A contained a 35.71 MHz (28 ns cycle time) Rigel chip set with an external 128 KB B-cache (L2 cache). The B-cache was direct-mapped and used a 64-byte cache line size with a 16-byte sub-block size. It was constructed from twenty-four 64 KB (4-bit by 16,384-word) 15 ns SRAMs. The module also contained a REXMI chip set, whose purpose was to interface the Rigel chip set's DAL (data and address line) bus to the XCI ASIC, the user side of the XMI corner interface. The REXMI chip set was composed of the XCA controller/address chip and two XCP data path chips. The XCA and XCP were ASICs developed using a standard-cell methodology and fabricated in Digital's CMOS-2 process. The Rigel chip set's DAL (data and address line) bus was interfaced to the XMI corner (a section of a XMI module containing XMI bus logic) and then to the XMI bus by the REXMI interface. A maximum of 256 MB of ECC memory was supported.
+
+
+== VAX 6000 Model 5x0 ==
+Code named "Calypso/XMP"
+Introduced on 25 October 1990
+One to six KA65A CPU modules, each containing a 62.5 MHz (16 ns cycle time) Mariah chip set with 512 KB of external secondary cache
+(The number of CPU modules present determines the value of "x").
+Maximum of 512 MB of ECC memory
+
+
+== VAX 6000 Model 6x0 ==
+Code-named "Neptune", it was introduced on 30 November 1991. The Model 600 used the KA66A CPU module, which contained an 83.33 MHz (12 ns cycle time) NVAX microprocessor accompanied by an external 2 MB B-cache (L2 cache) and may have one to six such modules. The NVAX was connected to the NEXMI ASIC via the NDAL bus, a 64-bit address data multiplexed system bus clocked at 27.78 MHz (36 ns cycle time). The NEXMI ASIC interfaced the NVAX to the XMI2 bus, by providing functions such as the translation of NDAL bus commands to XMI bus commands. It also implemented the ROMBUS used by supporting devices on the CPU module such as the console. The NEXMI was a semi-custom ASIC fabricated in Digital's CMOS-3 CMOS process. It contained 0.25 million transistors on a 0.595 by 0.586 inch die packaged in a custom 339-pin ceramic pin grid array (CPGA). The system supported a maximum of 1 GB of memory.
+
+
+== References ==

@@ -1,0 +1,30 @@
+The Traffic Service Position System (TSPS) was developed by Bell Labs in Columbus, Ohio to replace traditional cord switchboards.  The first TSPS was deployed in Morristown, New Jersey in 1969 and used the Stored Program Control-1A CPU, "Piggyback" twistor memory (a proprietary technology developed by Bell Labs similar to core memory) and Insulated Gate Field Effect Transistor solid state memory devices similar to dynamic random access memory.
+
+
+== Features ==
+The TSPS system utilized special analog trunks that originated at Class 5 end office circuit switch systems and Class 4 toll access circuit switch systems that were connected to Class 3 primary toll circuit switch systems such as the 4A-ETS/PBC and 4ESS switch systems.  The TSPS system did not perform switching between the originating end office switch and the toll switch for the subscriber voice path.
+The TSPS system included the "Remote Trunking Arrangement" (RTA) feature that consolidated the trunk connection at the originating switch and provided a switched connection to a telephone operator only as required for a short duration at the beginning of a call to obtain billing information or at the end of a call in which the caller requested "time and charges".
+The TSPS system provided a temporary switched connection to a toll operator who helped facilitate calls requiring human assistance such as person-to-person, collect, third-party-billed, and hotel billing.  The TSPS system supported up to seven "Chief Operator Groups" (COGs) with each COG supporting up to 31 operator consoles.  Operator consoles initially used nixie tube displays that were quickly replaced by light-emitting diode displays due to reliability issues.
+The TSPS system was replaced by the Operator Service Position System (OSPS) feature package developed for the 5ESS switching system. During the era of TSPS systems, calls to mobile and marine radiotelephone customers were initially handled by operators at a Special Operator Service Treatment cord switchboard.  Operator assisted calls to international destinations were handled by "Code 10" and "Code 11" operators generally co-located at special gateway international switching systems.
+
+
+== Hotel Billing Information System ==
+The TSPS system included the Hotel Billing Information System (HoBIS) special feature to provide automated billing of long-distance calls from hotel front desks so guests could be charged for calls made almost immediately prior to their departure.  Private Teletype data links were provisioned to large hotels that subscribed to this service.
+
+
+== Automated Coin Toll System ==
+Debuted in Phoenix, Arizona in 1977, the Automated Coin Toll System (ACTS) was an addition to TSPS which provided an automated way to perform charge advisory and toll collection of coin paid calls, reducing the need for operator involvement.  The ACTS sub-system handled the automated voice announcements, e.g. "Please deposit five cents for the next three minutes" (initially voiced by Jane Barbe, and later  Pat Fleet), and worked with TSPS for coin deposit (start of call) and coin collection/coin return (at end of call).
+
+
+== References ==
+
+
+== External links ==
+AT&T Archives - TSPS Operator Recruiting Film
+1977 Bell System commercial ending with TSPS operator From YouTube.
+ATIS definition
+Telephone World - AT&T Automated Coin Toll System
+TSPS definition 47CFR part 67  Appendix
+US Patent #3,731,000 for "Equipment for Switching Calls from Remote Trunk Groups to Distant Centralized Operator Service Center", Amos E. Joel, Jr., Bell Laboratories, Murray Hill, NJ
+US Patent #4,145,578 for "Position Access Preference Method", Richard Orriss, Bell Laboratories Columbus, OH
+US Patent #4,197,430 for "Operator Service Position System", Douglas C. Dowden, Bell Laboratories, Columbus, OH

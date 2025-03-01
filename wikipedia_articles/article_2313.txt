@@ -1,0 +1,294 @@
+In category theory, a strong monad is a monad on a monoidal category with an additional natural transformation, called the strength, which governs how the monad interacts with the monoidal product.
+Strong monads play an important role in theoretical computer science where they are used to model computation with side effects.
+
+
+== Definition ==
+A (left) strong monad is a monad (T, η, μ) over a monoidal category (C, ⊗, I) together with a natural transformation tA,B : A ⊗ TB → T(A ⊗ B), called (tensorial) left strength, such that the diagrams
+
+, ,
+, and 
+commute for every object A, B and C.
+
+
+== Commutative strong monads ==
+For every strong monad T on a symmetric monoidal category, a right strength natural transformation can be defined by
+
+  
+    
+      
+        
+          t
+          
+            A
+            ,
+            B
+          
+          ′
+        
+        =
+        T
+        (
+        
+          γ
+          
+            B
+            ,
+            A
+          
+        
+        )
+        ∘
+        
+          t
+          
+            B
+            ,
+            A
+          
+        
+        ∘
+        
+          γ
+          
+            T
+            A
+            ,
+            B
+          
+        
+        :
+        T
+        A
+        ⊗
+        B
+        →
+        T
+        (
+        A
+        ⊗
+        B
+        )
+        .
+      
+    
+    {\displaystyle t'_{A,B}=T(\gamma _{B,A})\circ t_{B,A}\circ \gamma _{TA,B}:TA\otimes B\to T(A\otimes B).}
+  
+
+A strong monad T is said to be commutative when the diagram
+
+commutes for all objects 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+.
+
+
+== Properties ==
+The Kleisli category of a commutative monad is symmetric monoidal in a canonical way, see corollary 7 in Guitart and corollary 4.3 in Power & Robison. When a monad is strong but not necessarily commutative, its Kleisli category is a premonoidal category.
+One interesting fact about commutative strong monads is that they are "the same as" symmetric monoidal monads. More explicitly,
+
+a commutative strong monad 
+  
+    
+      
+        (
+        T
+        ,
+        η
+        ,
+        μ
+        ,
+        t
+        )
+      
+    
+    {\displaystyle (T,\eta ,\mu ,t)}
+  
+ defines a symmetric monoidal monad 
+  
+    
+      
+        (
+        T
+        ,
+        η
+        ,
+        μ
+        ,
+        m
+        )
+      
+    
+    {\displaystyle (T,\eta ,\mu ,m)}
+  
+ by
+  
+    
+      
+        
+          m
+          
+            A
+            ,
+            B
+          
+        
+        =
+        
+          μ
+          
+            A
+            ⊗
+            B
+          
+        
+        ∘
+        T
+        
+          t
+          
+            A
+            ,
+            B
+          
+          ′
+        
+        ∘
+        
+          t
+          
+            T
+            A
+            ,
+            B
+          
+        
+        :
+        T
+        A
+        ⊗
+        T
+        B
+        →
+        T
+        (
+        A
+        ⊗
+        B
+        )
+      
+    
+    {\displaystyle m_{A,B}=\mu _{A\otimes B}\circ Tt'_{A,B}\circ t_{TA,B}:TA\otimes TB\to T(A\otimes B)}
+  
+
+and conversely a symmetric monoidal monad 
+  
+    
+      
+        (
+        T
+        ,
+        η
+        ,
+        μ
+        ,
+        m
+        )
+      
+    
+    {\displaystyle (T,\eta ,\mu ,m)}
+  
+ defines a commutative strong monad 
+  
+    
+      
+        (
+        T
+        ,
+        η
+        ,
+        μ
+        ,
+        t
+        )
+      
+    
+    {\displaystyle (T,\eta ,\mu ,t)}
+  
+ by
+  
+    
+      
+        
+          t
+          
+            A
+            ,
+            B
+          
+        
+        =
+        
+          m
+          
+            A
+            ,
+            B
+          
+        
+        ∘
+        (
+        
+          η
+          
+            A
+          
+        
+        ⊗
+        
+          1
+          
+            T
+            B
+          
+        
+        )
+        :
+        A
+        ⊗
+        T
+        B
+        →
+        T
+        (
+        A
+        ⊗
+        B
+        )
+      
+    
+    {\displaystyle t_{A,B}=m_{A,B}\circ (\eta _{A}\otimes 1_{TB}):A\otimes TB\to T(A\otimes B)}
+  
+
+and the conversion between one and the other presentation is bijective.
+
+
+== References ==
+
+
+== External links ==
+Strong monad at the nLab

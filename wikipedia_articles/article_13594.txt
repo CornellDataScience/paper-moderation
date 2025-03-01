@@ -1,0 +1,693 @@
+In statistics, Hájek projection of a random variable 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ on a set of independent random vectors 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+      
+    
+    {\displaystyle X_{1},\dots ,X_{n}}
+  
+ is a particular measurable function of 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+      
+    
+    {\displaystyle X_{1},\dots ,X_{n}}
+  
+ that, loosely speaking, captures the variation of 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ in an optimal way. It is named after the Czech statistician Jaroslav Hájek .
+
+
+== Definition ==
+Given a random variable 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ and a set of independent random vectors 
+  
+    
+      
+        
+          X
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+      
+    
+    {\displaystyle X_{1},\dots ,X_{n}}
+  
+, the Hájek projection 
+  
+    
+      
+        
+          
+            
+              T
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {T}}}
+  
+ of 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ onto 
+  
+    
+      
+        {
+        
+          X
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{X_{1},\dots ,X_{n}\}}
+  
+ is given by
+
+  
+    
+      
+        
+          
+            
+              T
+              ^
+            
+          
+        
+        =
+        E
+        ⁡
+        (
+        T
+        )
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          [
+          
+            E
+            ⁡
+            (
+            T
+            ∣
+            
+              X
+              
+                i
+              
+            
+            )
+            −
+            E
+            ⁡
+            (
+            T
+            )
+          
+          ]
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        E
+        ⁡
+        (
+        T
+        ∣
+        
+          X
+          
+            i
+          
+        
+        )
+        −
+        (
+        n
+        −
+        1
+        )
+        E
+        ⁡
+        (
+        T
+        )
+      
+    
+    {\displaystyle {\hat {T}}=\operatorname {E} (T)+\sum _{i=1}^{n}\left[\operatorname {E} (T\mid X_{i})-\operatorname {E} (T)\right]=\sum _{i=1}^{n}\operatorname {E} (T\mid X_{i})-(n-1)\operatorname {E} (T)}
+  
+
+
+== Properties ==
+Hájek projection 
+  
+    
+      
+        
+          
+            
+              T
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {T}}}
+  
+ is an 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+projection of 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ onto a linear subspace of all random variables of the form 
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          g
+          
+            i
+          
+        
+        (
+        
+          X
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle \sum _{i=1}^{n}g_{i}(X_{i})}
+  
+, where 
+  
+    
+      
+        
+          g
+          
+            i
+          
+        
+        :
+        
+          
+            R
+          
+          
+            d
+          
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle g_{i}:\mathbb {R} ^{d}\to \mathbb {R} }
+  
+ are arbitrary measurable functions such that 
+  
+    
+      
+        E
+        ⁡
+        (
+        
+          g
+          
+            i
+          
+          
+            2
+          
+        
+        (
+        
+          X
+          
+            i
+          
+        
+        )
+        )
+        <
+        ∞
+      
+    
+    {\displaystyle \operatorname {E} (g_{i}^{2}(X_{i}))<\infty }
+  
+ for all 
+  
+    
+      
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+      
+    
+    {\displaystyle i=1,\dots ,n}
+  
+
+  
+    
+      
+        E
+        ⁡
+        (
+        
+          
+            
+              T
+              ^
+            
+          
+        
+        ∣
+        
+          X
+          
+            i
+          
+        
+        )
+        =
+        E
+        ⁡
+        (
+        T
+        ∣
+        
+          X
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle \operatorname {E} ({\hat {T}}\mid X_{i})=\operatorname {E} (T\mid X_{i})}
+  
+ and hence 
+  
+    
+      
+        E
+        ⁡
+        (
+        
+          
+            
+              T
+              ^
+            
+          
+        
+        )
+        =
+        E
+        ⁡
+        (
+        T
+        )
+      
+    
+    {\displaystyle \operatorname {E} ({\hat {T}})=\operatorname {E} (T)}
+  
+
+Under some conditions, asymptotic distributions of the sequence of statistics 
+  
+    
+      
+        
+          T
+          
+            n
+          
+        
+        =
+        
+          T
+          
+            n
+          
+        
+        (
+        
+          X
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle T_{n}=T_{n}(X_{1},\dots ,X_{n})}
+  
+ and the sequence of its Hájek projections 
+  
+    
+      
+        
+          
+            
+              
+                T
+                ^
+              
+            
+          
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                T
+                ^
+              
+            
+          
+          
+            n
+          
+        
+        (
+        
+          X
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle {\hat {T}}_{n}={\hat {T}}_{n}(X_{1},\dots ,X_{n})}
+  
+ coincide, namely, if 
+  
+    
+      
+        Var
+        ⁡
+        (
+        
+          T
+          
+            n
+          
+        
+        )
+        
+          /
+        
+        Var
+        ⁡
+        (
+        
+          
+            
+              
+                T
+                ^
+              
+            
+          
+          
+            n
+          
+        
+        )
+        →
+        1
+      
+    
+    {\displaystyle \operatorname {Var} (T_{n})/\operatorname {Var} ({\hat {T}}_{n})\to 1}
+  
+, then 
+  
+    
+      
+        
+          
+            
+              
+                T
+                
+                  n
+                
+              
+              −
+              E
+              ⁡
+              (
+              
+                T
+                
+                  n
+                
+              
+              )
+            
+            
+              Var
+              ⁡
+              (
+              
+                T
+                
+                  n
+                
+              
+              )
+            
+          
+        
+        −
+        
+          
+            
+              
+                
+                  
+                    
+                      T
+                      ^
+                    
+                  
+                
+                
+                  n
+                
+              
+              −
+              E
+              ⁡
+              (
+              
+                
+                  
+                    
+                      T
+                      ^
+                    
+                  
+                
+                
+                  n
+                
+              
+              )
+            
+            
+              Var
+              ⁡
+              (
+              
+                
+                  
+                    
+                      T
+                      ^
+                    
+                  
+                
+                
+                  n
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {T_{n}-\operatorname {E} (T_{n})}{\sqrt {\operatorname {Var} (T_{n})}}}-{\frac {{\hat {T}}_{n}-\operatorname {E} ({\hat {T}}_{n})}{\sqrt {\operatorname {Var} ({\hat {T}}_{n})}}}}
+  
+ converges to zero in probability.
+
+
+== References ==

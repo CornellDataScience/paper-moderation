@@ -1,0 +1,31 @@
+The United States Air Force Stability and Control DATCOM is a collection, correlation, codification, and recording of best knowledge, opinion, and judgment in the area of aerodynamic stability and control prediction methods. It presents substantiated techniques for use (1) early in the design or concept study phase, (2) to evaluate changes resulting from proposed engineering fixes, and (3) as a training on crosstraining aid. It bridges the gap between theory and practice by including a combination of pertinent discussion and proven practical methods. For any given configuration and flight condition, a complete set of stability and control derivatives can be determined without resort to outside information.
+A spectrum of methods is presented, ranging from very simple and easily applied techniques to quite accurate and thorough procedures. Comparatively simple methods are presented in complete form, while the more complex methods are often handled by reference to separate treatments. Tables which compare calculated results with test data provide indications of method accuracy. Extensive references to related material are also included.
+The report was compiled from September 1975 to September 1977 by the McDonnell Douglas Corporation in conjunction with the engineers at the Flight Dynamics Laboratory at Wright-Patterson Air Force Base.
+
+
+== Methodology ==
+Fundamentally, the purpose of the DATCOM (Data Compendium), is to provide a systematic summary of methods for estimating basic stability and control derivatives. The DATCOM is organized in such a way that it is self-sufficient. For any given flight condition and configuration the complete set of derivatives can be determined without resort to outside information. The book is intended to be used for preliminary design purposes before the acquisition of test data. The use of reliable test data in lieu of the DATCOM is always recommended. However, there are many cases where the DATCOM can be used to advantage in conjunction with test data.
+For instance, if the lift-curve slope of a wing-body combination is desired, the DATCOM recommends that the lift-curve slopes of the isolated wing and body, respectively, be estimated by methods presented and that appropriate wing-body interference factors (also presented) be applied. If wing-alone test data are available, it is obvious that these test data should be substituted in place of the estimated wing-alone characteristics in determining the lift-curve slope of the combination. Also, if test data are available on a configuration similar to a given configuration, the characteristics of the similar configuration can be corrected to those for the given configuration by judiciously using the DATCOM material.
+
+
+== Sections ==
+The DATCOM Manual is divided into 9 sections:
+
+Guide to DATCOM and Methods Summary
+General Information
+Effects of External Stores
+Characteristics at Angle of Attack
+Characteristics in Sideslip
+Characteristics of High-Lift and Control Devices
+Dynamic Derivatives
+Mass and Inertia
+Characteristics of VTOL-STOL Aircraft
+
+
+== Implementation ==
+Many textbooks utilized in universities implement the DATCOM method of stability and control. Shortly before compilation of the DATCOM was completed, a computerized version called Digital DATCOM was created. The USAF S&C Digital DATCOM implements the DATCOM methods in an easy to use manner.
+
+
+== References ==
+
+Hoak, D. E., et al., "The USAF Stability and Control DATCOM," Air Force Wright Aeronautical Laboratories, TR-83-3048, Oct. 1960 (Revised 1978).

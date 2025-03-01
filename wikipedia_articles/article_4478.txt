@@ -1,0 +1,271 @@
+The low-temperature distillation (LTD) technology is the first implementation of the direct spray distillation (DSD) process. The first large-scale units are now in operation for desalination. The process was first developed by scientists at the University of Applied Sciences in Switzerland, focusing on low-temperature distillation in vacuum conditions, from 2000 to 2005. 
+Direct spray distillation is a water treatment process applied in seawater desalination and industrial wastewater treatment, brine and concentrate treatment as well as zero liquid discharge systems. It is a physical water separation process driven by thermal energy. Direct spray distillation involves evaporation and condensation on water droplets that are sprayed into a chamber that is evacuated of non-condensable permanent gases like air and carbon dioxide. Compared to other vaporization systems, no phase change happens on solid surfaces such as shell and tube heat exchangers.
+
+
+== Applications ==
+Currently, the only implementation of DSD technology is low-temperature distillation (LTD). The LTD process runs under partial pressure in the evaporator and condenser chambers, and with process temperatures of below 100 °C. The first large-scale LTD systems for industrial water treatment are now in operation.
+
+
+== History ==
+The DSD process was invented in the late 1990 by Mark Lehmann with the first successful demonstration of the process in a factory hall of the Obrecht AG, Doettingen, Switzerland. The results of the experiments were evaluated and double-checked by Prof. Dr. Kurt Heiniger (University of applied Sciences and Arts, Northwestern Switzerland) and Dr. Franco Blanggetti (Alstom, Co-author of the VDI Wärmeatlas). During the next years, the process has been further researched in the framework of many thesis supervised by Heiniger and Lehmann. The objective has been the examination of the influence of non-condensable gases in lowered pressure environments on the heat transfer during the condensation process on cooled droplets. It has been found that the droplet size and distribution as well as the geometry of the condensation reactor has the most significant influence on the heat transfer. Due to the absence of common tube bundle heat exchangers, the achievable efficiency gains result from the minimized heat resistance during the condensation process.
+
+
+== Technology description ==
+
+Low temperature distillation (LTD) is a thermal distillation process in several stages, powered by temperature differences between heat and cooling sources of at least 5 K per stage. Two separate volume flows, a hot evaporator flow and a cool condenser flow, with different temperatures and vapor pressures, are sprayed in a combined pressure chamber, where non-condensable gases are continuously removed. As the vapor moves to a partial pressure equilibrium, part of the water from the hot stream evaporates. Several serial arranged chambers in counter flow of the hot evaporator and cold condenser stream allow a high internal heat recovery by the application of multiple stages. The process excels in a high specific heat conversion rate caused by the reduction of heat transfer losses, which results in a high thermal efficiency and low heat transfer resistance. The LTD process is tolerant to high salinity, other impurities, and fluctuating feed water qualities. The precipitation of solids is technically intended to allow for zero-liquid-discharge operation (complete ZLD). It is possible to combine the low-temperature distillation process with existing desalination technologies serving as downstream process to increase the water output and reduce the brine generation.
+
+
+== Physical principle ==
+The following figures show and explain the thermodynamic principle on which the LTD technology is built. Considering Fig. 1, there are two cylinders given with open buttons and filled with water in two basins with two different temperatures (assumption: hot at 50°C and cold at 20°C). The temperature related vapor pressure of the water is 123 mbar for 50°C and 23 mbar for 20°C. It is assumed that the two cylinders are 10 meters long and allow to be pulled out the same distance.
+
+The pulled-out cylinders in Fig. 2 show now a different situation regarding the level of the water column. Due to the higher vapor pressure at 50°C, in the hot water column the Atmospheric pressure is capable to elevate the hot water column about 877 cm. In the remaining space, the water starts to evaporate at a pressure of 123 mbar. The cold water column at 20°C, the atmospheric pressure (1000 mbar) is 977 cm high in equilibrium with the according vapor pressure of 23 mbar. If no heat exchange takes place, this situation remains unchanged and is thermodynamically in equilibrium.
+Now, the two tops of both columns are connected with a vapor channel in Fig. 3. If they are connected, the two vapor chambers (123 mbar and 23 mbar) spontaneously equalize their pressure to an average pressure. As a result, the two water columns tend to have the same level on both sides. However, this connection causes an energetical imbalance of the physical conditions of the water surface on top of the columns. On the 50°C hot column, the vapor pressure of the media is higher than the average pressure. On the 20°C cold side, the average pressure is higher than the vapor pressure of the water. This situation leads to a spontaneous boiling on the hot side and a vapor condensation on the cooler side on the water surface. This process continuous until the temperature on both sides has been balanced out in both columns. After the temperature adaption, both pressures and levels in the chambers are equal.
+
+As a consequence of this, it can be assumed that as long as a temperature difference in both columns is maintained, a spontaneous evaporation and condensation of the surface water takes place in order to achieve equilibrium temperature and pressure. To make this technically possible, an additional external circulation in Fig. 4 can supply heat 
+  
+    
+      
+        
+          
+            E
+            
+              i
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle E_{in}}
+  
+ on the evaporation side and extract heat 
+  
+    
+      
+        
+          
+            E
+            
+              o
+              u
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle E_{out}}
+  
+ on the condenser side. As the reaction velocity is strongly depending on the available water surface, a specially designed spraying system creates millions of small droplets. This huge internal water surface results in very high internal heat transfer rates between evaporator and condenser. 
+This principle also works if the useless bottom of the open water column is cut off and replaced by a lid as shown in Fig. 5. Experiments on the demonstration plant have shown that a pressure differential of only a few millibar (1 mbar corresponds to 1 cm water column) is sufficient to run this distillation process. It corresponds with very small temperature differentials of a few Kelvin.
+
+If the temperature spread between the heat source and condenser is large enough, the condenser can act as a heater for the following stage. This has the advantage that the condensation heat is re-used multiple times at different temperature/pressures increasing the energetic efficiency with each additional stage. Depending on the available temperature difference, it can be multiplied several times resulting in an increase of the distillation capacity with the same amount of available heat. The result is the creation of the multi-cascaded direct spray distillation, visualized in Fig. 6. 
+
+
+== Plant design ==
+
+The low temperature distillation process needs reactors for evaporation and condensation equipped with the spaying system to generate the droplets, and three standard plate heat exchangers (heating, cooling, thermal recovery). The feedwater and distillate are pumped in two large circulation streams through the reactors. The thermal recovery is realized in a heat exchanger preheating the feedwater by the distillate after condensation. Saturated brine and distillate are removed from the process by valve locks. The process and media flows are visualized in Fig. 7 in a general process scheme.
+The thermal energy (1) is supplied at the main heat exchanger (HEX 1) by any available media heating up the intake water up to 95°C. 
+In the evaporator cycle (green), the hot water is sprayed and evaporated in pressure reduced chambers (2) and flows by gravity to the subsequent chambers with lowered temperature and pressure environment. The generated vapor (3) flows from the evaporator to the condenser in every stage where it condenses on the cooled droplets of the sprayed distillate.
+The heat exchanger for cooling (HEX 3) reduces the temperature of the distillate (4) before it is pumped to the condenser cycle. In the condenser cycle (5), the cooled distillate is pumped and sprayed into the pressure chambers to allow for vapor condensation from the evaporators on cooled droplets. During this process, the temperature and pressure increases from stage to stage. After the last condenser, the increased heat of the distillate is recovered in the heat exchanger for thermal recovery (HEX 2) preheating the evaporator cycle. After the condensation in the first reactor, the distillate is hotter compared to the brine of the last evaporator. This condensation heat is recovered in HEX 2 and is used for heating the evaporator cycle (6). It is beneficial for the energetic efficiency to design this heat exchanger as large as possible.
+In order to run the process, a vacuum system (7) extracts non-condensable gases (like 
+  
+    
+      
+        
+          C
+          
+            O
+            
+              2
+            
+          
+          ,
+          
+            N
+            
+              2
+            
+          
+          ,
+          
+            O
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle CO_{2},N_{2},O_{2}}
+  
+), in the chambers. In the connection duct to the vacuum pump, an optional heat exchanger (HEX 5) cools down the vapor to condense as much water as possible (8). The gained distillate is transferred after an optional heat recovery (9) out of the process. A post-treatment system can treat the distillate according to the desired requirements (remineralization). The brine is extracted at the evaporator cycle after the last evaporator stage (10). The over-saturation and precipitation of salts for zero-liquid discharge (ZLD) application requires an additional evaporator acting as crystallizer which is not shown in Fig. 7.
+
+
+=== Plant layout ===
+The main components to fow temperature distillation plants are the pressure vessels and the spraying facilities. Further important components are an adapted instrumentation and controlling system as well as a vacuum system. A low temperature distillation plant has no membranes and no tube bundles, and consists of the following main elements:
+
+Pressure vessels with unique pressure control system
+Piping in PP-plastics or fibre reinforced plastics (FRP)
+External heat exchanger (standard component)
+Water circulation pumps (standard component)
+Process control system (control panel)
+
+
+=== Plant components ===
+Evaporator and condenser vessels are constructed for vacuum pressure conditions up to 20 
+  
+    
+      
+        
+          m
+          b
+          a
+          
+            r
+            
+              a
+              b
+              s
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle mbar_{abs}}
+  
+ and include the spraying installations for the evaporation/condensation reactors. 
+For the energy supply of the process itself, only standard plate heat exchangers are installed. A low temperature distillation plant consists of one heat exchanger for the heat transfer from heat source into water and one for the heat transfer from distillate to the re-cooling media. A plant with several cascades has one additional heat exchanger for internal heat recovery (HEX 2) increasing the thermal efficiency of the plant. Due to the flexibility of the low temperature distillation process, various arrangements are possible to adapt each plant to the given application. If only a small overall temperature spread or a limited heat source is available, internal flows can be adjusted for maximised internal heat recovery. Additional low-temperature heat sources such as solar collector systems can also be integrated.
+The media supply is mostly realized with standard centrifugal pumps. The process conditions favor a low NPSH construction in order to facilitate hot media leaving the system from vacuum conditions. Due to the lowered volume flows in small scale plants, the application of displacer pumps is recommended.
+
+
+== Comparison with other thermal desalination technologies ==
+Low temperature distillation operates at low temperature and low pressure, similar to Multi-effect distillation (MED) and Multi-stage flash distillation (MSF). While the process flow is similar to a MSF plant, the temperature and pressure dynamics are more comparable to a MED system. It is designed use low grade or waste heat from other industrial processes or renewable sources, like solar thermal collectors. The most significant difference compared to MED and MSF technologies is that there are no tube bundles heat exchangers within the pressure chambers. This permits   enhancements  of the thermal distillation process:
+
+Treatment of high saline or heavily polluted waste water, even with precipitation of solids
+Optimized heat transfer and overall high thermal efficiency of the plant
+No phase changes on solid surfaces, danger of scaling, fouling or clogging is prohibited
+Reduced internal installations (mainly in the evaporator), resulting in lower material consumption
+Tolerant to part load operation or fluctuating process conditions (power supply with renewable energy possible)
+
+Due to the relative high energy demand of thermal distillation processes for water treatment, low temperature distillation is  most economically applicable for high saline feed waters. Fig. 8 compares the relative energy and plant costs in comparison with membrane-based desalination processes like reverse osmosis (RO) from sea water desalination. The possible feed waters may contain a wide range of impurities like brines from desalination plants, radioactive ground water, produced water from oil production, hydrocarbon polluted water, and high salinities up to 33% NaCl. The plant operates even under high concentrations up to the precipitation of anorganic compounds. Also, the effluent of existing sea water desalination plants can be treated further in a low temperature distillation to maximise the dewatering capacity of a desalination system.
+Low temperature distillation can accommodate variations in the plant load, running efficiently from 50 – 100% of plant design capacity depending on the available heat supply. The spraying process is self-adjusting, and the amount of water produced is proportional to the amount of heat provided.
+
+
+=== High saline feed water ===
+The LTD process is most suitable for high saline feedwaters starting from typical concentrations of sea water to concentrated wastewater solutions from various industrial processes. One possible application is the capacity duplication of RO based desalination systems by further treatment of the evolving effluents to the precipitation of salts. Brackish water desalination is principally also possible, but other desalination processes tend to be more economical due to low osmotic pressure and resulting low specific energy consumption.
+
+
+=== Scaling and fouling ===
+Low temperature distillation plants are not prone to scaling or clogging even with very high TDS in the feed water. There are no installations within the pressure vessels that could scale. Phase changes (evaporation and condensation) only take place on the surface of the water droplets, never on solid surfaces. The following design features ensure the minimal risk of scaling within the plant:
+
+The LTD pressure vessels (evaporators and condensers) droplets are in free fall. The evaporation and condensation happen directly on the surface of the droplets during the residence time inside the reactor (less than one second).
+The plant controls avoid that the concentration of dissolved solids in the evaporator cycle never reaches the point of precipitation. In a specially designed high saline loop (crystallizer), the brine from the evaporator cycle is further concentrated until solids are precipitating. All sedimentations of solids are continuously extracted from this loop.
+There is no phase change in the standard plate heat exchangers. Within the main heat exchanger all thermal energy is transferred to the internal water streams. Therefore, there never is an operational risk on the heat supply side.
+Low temperature distillation plants are able to treat feed waters such as:
+
+High saline brine from any other desalination plant, e.g. from inland desalination via BWRO plants, that would otherwise not receive a permission of operation because of the lack of a brine disposal solution
+Produced/fracking water from oil or gas fields with salinities of up to 300.000 
+  
+    
+      
+        
+          p
+          p
+          m
+          T
+          D
+          S
+        
+      
+    
+    {\displaystyle \textstyle ppmTDS}
+  
+
+Industrial waste waters from textile production and drying
+
+
+=== Desalinated water and brine ===
+The desalinated water quality from the low temperature distillation process is almost demineralized water with a remaining salinity of 10 ppm. Residual contaminants result from demister losses and depend on the treated feedwater as well as vapor velocities between evaporator and condenser. The brine  concentration in the LTD process can be adjusted to the site conditions and disposal options. Current research focuses on selective crystallization to recover various salt species beyond NaCl.
+
+
+== Specific data and information ==
+Specific energy consumption (energy/m³ output), electricity: 0.8 to 2.5 
+  
+    
+      
+        
+          k
+          W
+          
+            h
+            
+              e
+              l
+            
+          
+          
+            /
+          
+          
+            m
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle kWh_{el}/m^{3}}
+  
+ for internal pumping and continuous non-condensable gas removal   
+Specific energy consumption (energy/m³ output), thermal: 80 to 200 
+  
+    
+      
+        
+          k
+          W
+          
+            h
+            
+              t
+              h
+            
+          
+          
+            /
+          
+          
+            m
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle kWh_{th}/m^{3}}
+  
+, depending on the number of stages and the temperature of the heat source. The use of low grade heat at 45 – 95°C is possible.   
+Recovery rate, concentration factor: LTD converts up and into precipitation for liquid brine discharge or into precipitation for ZLD (wet), where water and solids are completely separated. For seawater (4% salinity), this results in a water extraction from feed (96% water and 4% NaCl) of 98.95% for ZLD (wet), and for liquid brine disposal a water extraction of 91.6%.
+Chemical additive consumption: No chemical additives are required for common seawater, as well as brine from desalination processes like RO/MSF/MED.
+Personnel intensity: LTD is automated. Periodic checks and maintenance are according to industrial practice.
+Replacements (e.g. membrane replacements): There are no membranes or filters to replace. Low pressure pumps, valves, and gaskets need to be maintained according to industry practice.
+
+
+=== Preferred use ===
+The application of the LTD process becomes economically feasible starting with salinities more than 4%. LTD can be useful for normal seawater desalination if high recovery rates or further treatment of the RO brine are required. High saline effluents from industrial processes such as the oil and gas industry, the textile industry, and the chemical industry are more advantageous. In general, pretreatment for zero-liquid discharge systems with LTD is the most economical option. The treatment of brackish water is possible in principle, but the energy consumption required for evaporation is higher compared to conventional reverse osmosis.
+
+
+=== Environmental impact ===
+Due to the reduction of the brine volume, the environmental impacts are significantly lowered compared to standard seawater RO units. The recovery of NaCl in high purity is possible and can be used e.g. as regenerative salt for ion exchangers or water softeners.
+The LTD process has a stable part-load behaviour which facilitates the use of renewable energy sources. Thermal energy can be supplied by solar collectors like flat plate or evacuated tube, solar ponds, concentrating solar collectors, or in co-generation with solar power plants.   
+
+
+== Further developments ==
+Opportunities for improvement  focus mainly on integration in an appropriate operating environment with heat management. The combination of LTD plants with thermal power plants as heat sources seems advantageous. Combinations with other desalination processes, like thermal or mechanical vapor compression (MVC) are also possible. Under certain process conditions, such systems can compensate for fluctuating heat supply by substituting electric power in an integrated MVC unit. 
+Current research focuses on the reduction of the heat and electricity consumption of auxiliary systems. The selective crystallization of the brine and recovery of salts are also being researched (in cooperation with TU Berlin, Germany). Further development potential lies in the integration of adsorption and absorption technologies for integrated cooling and desalination.
+
+
+== References ==

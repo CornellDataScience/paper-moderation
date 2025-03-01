@@ -1,0 +1,1258 @@
+The fast wavelet transform is a mathematical algorithm designed to turn a waveform or signal in the time domain into a sequence of coefficients based on an orthogonal basis of small finite waves, or wavelets. The transform can be easily extended to multidimensional signals, such as images, where the time domain is replaced with the space domain. This algorithm was introduced in 1989 by Stéphane Mallat.
+It has as theoretical foundation the device of a finitely generated, orthogonal multiresolution analysis (MRA). In the terms given there, one selects a sampling scale J with sampling rate of 2J per unit interval, and projects the given signal f onto the space 
+  
+    
+      
+        
+          V
+          
+            J
+          
+        
+      
+    
+    {\displaystyle V_{J}}
+  
+; in theory by computing the scalar products 
+
+  
+    
+      
+        
+          s
+          
+            n
+          
+          
+            (
+            J
+            )
+          
+        
+        :=
+        
+          2
+          
+            J
+          
+        
+        ⟨
+        f
+        (
+        t
+        )
+        ,
+        φ
+        (
+        
+          2
+          
+            J
+          
+        
+        t
+        −
+        n
+        )
+        ⟩
+        ,
+      
+    
+    {\displaystyle s_{n}^{(J)}:=2^{J}\langle f(t),\varphi (2^{J}t-n)\rangle ,}
+  
+
+where 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ is the scaling function of the chosen wavelet transform; in practice by any suitable sampling procedure under the condition that the signal is highly oversampled, so
+
+  
+    
+      
+        
+          P
+          
+            J
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        :=
+        
+          ∑
+          
+            n
+            ∈
+            
+              Z
+            
+          
+        
+        
+          s
+          
+            n
+          
+          
+            (
+            J
+            )
+          
+        
+        
+        φ
+        (
+        
+          2
+          
+            J
+          
+        
+        x
+        −
+        n
+        )
+      
+    
+    {\displaystyle P_{J}[f](x):=\sum _{n\in \mathbb {Z} }s_{n}^{(J)}\,\varphi (2^{J}x-n)}
+  
+
+is the orthogonal projection or at least some good approximation of the original signal in 
+  
+    
+      
+        
+          V
+          
+            J
+          
+        
+      
+    
+    {\displaystyle V_{J}}
+  
+. 
+The MRA is characterised by its scaling sequence
+
+  
+    
+      
+        a
+        =
+        (
+        
+          a
+          
+            −
+            N
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            N
+          
+        
+        )
+      
+    
+    {\displaystyle a=(a_{-N},\dots ,a_{0},\dots ,a_{N})}
+  
+ or, as Z-transform, 
+  
+    
+      
+        a
+        (
+        z
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          a
+          
+            n
+          
+        
+        
+          z
+          
+            −
+            n
+          
+        
+      
+    
+    {\displaystyle a(z)=\sum _{n=-N}^{N}a_{n}z^{-n}}
+  
+
+and its wavelet sequence 
+
+  
+    
+      
+        b
+        =
+        (
+        
+          b
+          
+            −
+            N
+          
+        
+        ,
+        …
+        ,
+        
+          b
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          b
+          
+            N
+          
+        
+        )
+      
+    
+    {\displaystyle b=(b_{-N},\dots ,b_{0},\dots ,b_{N})}
+  
+ or 
+  
+    
+      
+        b
+        (
+        z
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          b
+          
+            n
+          
+        
+        
+          z
+          
+            −
+            n
+          
+        
+      
+    
+    {\displaystyle b(z)=\sum _{n=-N}^{N}b_{n}z^{-n}}
+  
+
+(some coefficients might be zero). Those allow to compute the wavelet coefficients 
+  
+    
+      
+        
+          d
+          
+            n
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle d_{n}^{(k)}}
+  
+, at least some range k=M,...,J-1, without having to approximate the integrals in the corresponding scalar products. Instead, one can directly, with the help of convolution and decimation operators, compute those coefficients from the first approximation 
+  
+    
+      
+        
+          s
+          
+            (
+            J
+            )
+          
+        
+      
+    
+    {\displaystyle s^{(J)}}
+  
+.
+
+
+== Forward DWT ==
+For the discrete wavelet transform (DWT), 
+one computes recursively, starting with the coefficient sequence 
+  
+    
+      
+        
+          s
+          
+            (
+            J
+            )
+          
+        
+      
+    
+    {\displaystyle s^{(J)}}
+  
+ and counting down from k = J - 1 to some M < J,
+
+  
+    
+      
+        
+          s
+          
+            n
+          
+          
+            (
+            k
+            )
+          
+        
+        :=
+        
+          
+            1
+            2
+          
+        
+        
+          ∑
+          
+            m
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          a
+          
+            m
+          
+        
+        
+          s
+          
+            2
+            n
+            +
+            m
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle s_{n}^{(k)}:={\frac {1}{2}}\sum _{m=-N}^{N}a_{m}s_{2n+m}^{(k+1)}}
+  
+ or 
+  
+    
+      
+        
+          s
+          
+            (
+            k
+            )
+          
+        
+        (
+        z
+        )
+        :=
+        (
+        ↓
+        2
+        )
+        (
+        
+          a
+          
+            ∗
+          
+        
+        (
+        z
+        )
+        ⋅
+        
+          s
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        (
+        z
+        )
+        )
+      
+    
+    {\displaystyle s^{(k)}(z):=(\downarrow 2)(a^{*}(z)\cdot s^{(k+1)}(z))}
+  
+
+and 
+
+  
+    
+      
+        
+          d
+          
+            n
+          
+          
+            (
+            k
+            )
+          
+        
+        :=
+        
+          
+            1
+            2
+          
+        
+        
+          ∑
+          
+            m
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          b
+          
+            m
+          
+        
+        
+          s
+          
+            2
+            n
+            +
+            m
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle d_{n}^{(k)}:={\frac {1}{2}}\sum _{m=-N}^{N}b_{m}s_{2n+m}^{(k+1)}}
+  
+ or 
+  
+    
+      
+        
+          d
+          
+            (
+            k
+            )
+          
+        
+        (
+        z
+        )
+        :=
+        (
+        ↓
+        2
+        )
+        (
+        
+          b
+          
+            ∗
+          
+        
+        (
+        z
+        )
+        ⋅
+        
+          s
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        (
+        z
+        )
+        )
+      
+    
+    {\displaystyle d^{(k)}(z):=(\downarrow 2)(b^{*}(z)\cdot s^{(k+1)}(z))}
+  
+,
+for k=J-1,J-2,...,M and all 
+  
+    
+      
+        n
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle n\in \mathbb {Z} }
+  
+. In the Z-transform notation:
+
+The downsampling operator 
+  
+    
+      
+        (
+        ↓
+        2
+        )
+      
+    
+    {\displaystyle (\downarrow 2)}
+  
+ reduces an infinite sequence, given by its Z-transform, which is simply a Laurent series, to the sequence of the coefficients with even indices, 
+  
+    
+      
+        (
+        ↓
+        2
+        )
+        (
+        c
+        (
+        z
+        )
+        )
+        =
+        
+          ∑
+          
+            k
+            ∈
+            
+              Z
+            
+          
+        
+        
+          c
+          
+            2
+            k
+          
+        
+        
+          z
+          
+            −
+            k
+          
+        
+      
+    
+    {\displaystyle (\downarrow 2)(c(z))=\sum _{k\in \mathbb {Z} }c_{2k}z^{-k}}
+  
+.
+The starred Laurent-polynomial 
+  
+    
+      
+        
+          a
+          
+            ∗
+          
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle a^{*}(z)}
+  
+ denotes the adjoint filter, it has time-reversed adjoint coefficients, 
+  
+    
+      
+        
+          a
+          
+            ∗
+          
+        
+        (
+        z
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          a
+          
+            −
+            n
+          
+          
+            ∗
+          
+        
+        
+          z
+          
+            −
+            n
+          
+        
+      
+    
+    {\displaystyle a^{*}(z)=\sum _{n=-N}^{N}a_{-n}^{*}z^{-n}}
+  
+. (The adjoint of a real number being the number itself, of a complex number its conjugate, of a real matrix the transposed matrix, of a complex matrix its hermitian adjoint).
+Multiplication is polynomial multiplication, which is equivalent to the convolution of the coefficient sequences.
+It follows that
+
+  
+    
+      
+        
+          P
+          
+            k
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        :=
+        
+          ∑
+          
+            n
+            ∈
+            
+              Z
+            
+          
+        
+        
+          s
+          
+            n
+          
+          
+            (
+            k
+            )
+          
+        
+        
+        φ
+        (
+        
+          2
+          
+            k
+          
+        
+        x
+        −
+        n
+        )
+      
+    
+    {\displaystyle P_{k}[f](x):=\sum _{n\in \mathbb {Z} }s_{n}^{(k)}\,\varphi (2^{k}x-n)}
+  
+
+is the orthogonal projection of the original signal f or at least of the first approximation 
+  
+    
+      
+        
+          P
+          
+            J
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+      
+    
+    {\displaystyle P_{J}[f](x)}
+  
+ onto the subspace 
+  
+    
+      
+        
+          V
+          
+            k
+          
+        
+      
+    
+    {\displaystyle V_{k}}
+  
+, that is, with sampling rate of 2k per unit interval. The difference to the first approximation is given by
+
+  
+    
+      
+        
+          P
+          
+            J
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        =
+        
+          P
+          
+            k
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        +
+        
+          D
+          
+            k
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        +
+        ⋯
+        +
+        
+          D
+          
+            J
+            −
+            1
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        ,
+      
+    
+    {\displaystyle P_{J}[f](x)=P_{k}[f](x)+D_{k}[f](x)+\dots +D_{J-1}[f](x),}
+  
+
+where the difference or detail signals are computed from the detail coefficients as
+
+  
+    
+      
+        
+          D
+          
+            k
+          
+        
+        [
+        f
+        ]
+        (
+        x
+        )
+        :=
+        
+          ∑
+          
+            n
+            ∈
+            
+              Z
+            
+          
+        
+        
+          d
+          
+            n
+          
+          
+            (
+            k
+            )
+          
+        
+        
+        ψ
+        (
+        
+          2
+          
+            k
+          
+        
+        x
+        −
+        n
+        )
+        ,
+      
+    
+    {\displaystyle D_{k}[f](x):=\sum _{n\in \mathbb {Z} }d_{n}^{(k)}\,\psi (2^{k}x-n),}
+  
+
+with 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ denoting the mother wavelet of the wavelet transform.
+
+
+== Inverse DWT ==
+Given the coefficient sequence 
+  
+    
+      
+        
+          s
+          
+            (
+            M
+            )
+          
+        
+      
+    
+    {\displaystyle s^{(M)}}
+  
+ for some M < J and all the difference sequences 
+  
+    
+      
+        
+          d
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle d^{(k)}}
+  
+, k = M,...,J − 1, one computes recursively
+
+  
+    
+      
+        
+          s
+          
+            n
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        :=
+        
+          ∑
+          
+            k
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          a
+          
+            k
+          
+        
+        
+          s
+          
+            2
+            n
+            −
+            k
+          
+          
+            (
+            k
+            )
+          
+        
+        +
+        
+          ∑
+          
+            k
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          b
+          
+            k
+          
+        
+        
+          d
+          
+            2
+            n
+            −
+            k
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle s_{n}^{(k+1)}:=\sum _{k=-N}^{N}a_{k}s_{2n-k}^{(k)}+\sum _{k=-N}^{N}b_{k}d_{2n-k}^{(k)}}
+  
+ or 
+  
+    
+      
+        
+          s
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        (
+        z
+        )
+        =
+        a
+        (
+        z
+        )
+        ⋅
+        (
+        ↑
+        2
+        )
+        (
+        
+          s
+          
+            (
+            k
+            )
+          
+        
+        (
+        z
+        )
+        )
+        +
+        b
+        (
+        z
+        )
+        ⋅
+        (
+        ↑
+        2
+        )
+        (
+        
+          d
+          
+            (
+            k
+            )
+          
+        
+        (
+        z
+        )
+        )
+      
+    
+    {\displaystyle s^{(k+1)}(z)=a(z)\cdot (\uparrow 2)(s^{(k)}(z))+b(z)\cdot (\uparrow 2)(d^{(k)}(z))}
+  
+
+for k = J − 1,J − 2,...,M and all 
+  
+    
+      
+        n
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle n\in \mathbb {Z} }
+  
+. In the Z-transform notation:
+
+The upsampling operator 
+  
+    
+      
+        (
+        ↑
+        2
+        )
+      
+    
+    {\displaystyle (\uparrow 2)}
+  
+ creates zero-filled holes inside a given sequence. That is, every second element of the resulting sequence is an element of the given sequence, every other second element is zero or 
+  
+    
+      
+        (
+        ↑
+        2
+        )
+        (
+        c
+        (
+        z
+        )
+        )
+        :=
+        
+          ∑
+          
+            n
+            ∈
+            
+              Z
+            
+          
+        
+        
+          c
+          
+            n
+          
+        
+        
+          z
+          
+            −
+            2
+            n
+          
+        
+      
+    
+    {\displaystyle (\uparrow 2)(c(z)):=\sum _{n\in \mathbb {Z} }c_{n}z^{-2n}}
+  
+. This linear operator is, in the Hilbert space 
+  
+    
+      
+        
+          ℓ
+          
+            2
+          
+        
+        (
+        
+          Z
+        
+        ,
+        
+          R
+        
+        )
+      
+    
+    {\displaystyle \ell ^{2}(\mathbb {Z} ,\mathbb {R} )}
+  
+, the adjoint to the downsampling operator 
+  
+    
+      
+        (
+        ↓
+        2
+        )
+      
+    
+    {\displaystyle (\downarrow 2)}
+  
+.
+
+
+== See also ==
+Lifting scheme
+Fast Fourier transform
+
+
+== References ==
+
+S.G. Mallat "A Theory for Multiresolution Signal Decomposition: The Wavelet Representation" IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 2, no. 7. July 1989.
+I. Daubechies, Ten Lectures on Wavelets. SIAM, 1992.
+A.N. Akansu Multiplierless Suboptimal PR-QMF Design Proc. SPIE 1818, Visual Communications and Image Processing, p. 723, November, 1992
+A.N. Akansu Multiplierless 2-band Perfect Reconstruction Quadrature Mirror Filter (PR-QMF) Banks US Patent 5,420,891, 1995
+A.N. Akansu Multiplierless PR Quadrature Mirror Filters for Subband Image Coding IEEE Trans. Image Processing, p. 1359, September 1996
+M.J. Mohlenkamp, M.C. Pereyra Wavelets, Their Friends, and What They Can Do for You (2008 EMS) p. 38
+B.B. Hubbard The World According to Wavelets: The Story of a Mathematical Technique in the Making (1998 Peters) p. 184
+S.G. Mallat A Wavelet Tour of Signal Processing (1999 Academic Press) p. 255
+A. Teolis Computational Signal Processing with Wavelets (1998 Birkhäuser) p. 116
+Y. Nievergelt Wavelets Made Easy (1999 Springer) p. 95
+
+
+== Further reading ==
+G. Beylkin, R. Coifman, V. Rokhlin, "Fast wavelet transforms and numerical algorithms"  Comm. Pure Appl. Math., 44 (1991) pp. 141–183 doi:10.1002/cpa.3160440202 (This article has been cited over 2400 times.)

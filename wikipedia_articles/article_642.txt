@@ -1,0 +1,2125 @@
+Lexicographic max-min optimization (also called lexmaxmin or leximin or leximax or lexicographic max-ordering optimization) is a kind of multi-objective optimization. In general, multi-objective optimization deals with optimization problems with two or more objective functions to be optimized simultaneously. Lexmaxmin optimization presumes that the decision-maker would like the smallest objective value to be as high as possible; subject to this, the second-smallest objective should be as high as possible; and so on. In other words, the decision-maker ranks the possible solutions according to a leximin order of their objective function values.
+As an example, consider egalitarian social planners, who want to decide on a policy such that the utility of the poorest person will be as high as possible; subject to this, they want to maximize the utility of the second-poorest person; and so on. This planner solves a lexmaxmin problem, where the objective function number i is the utility of agent number i.
+Algorithms for lexmaxmin optimization (not using this name) were developed for computing the nucleolus of a cooperative game. An early application of lexmaxmin was presented by Melvin Dresher in his book on game theory, in the context of taking maximum advantage of the opponent's mistakes in a zero-sum game. Behringer cites many other examples in game theory as well as decision theory.
+
+
+== Notation ==
+A lexmaxmin problem may be written as:
+  
+    
+      
+        
+          
+            
+              
+                lex
+                ⁡
+                max
+                min
+              
+              
+              
+                
+                  f
+                  
+                    1
+                  
+                
+                (
+                x
+                )
+                ,
+                
+                  f
+                  
+                    2
+                  
+                
+                (
+                x
+                )
+                ,
+                …
+                ,
+                
+                  f
+                  
+                    n
+                  
+                
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+              
+              
+              
+                x
+                ∈
+                X
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\operatorname {lex} \max \min &&f_{1}(x),f_{2}(x),\ldots ,f_{n}(x)\\{\text{subject to}}&&x\in X\end{aligned}}}
+  
+where 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          f
+          
+            n
+          
+        
+      
+    
+    {\displaystyle f_{1},\ldots ,f_{n}}
+  
+ are the functions to maximize;  
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ is the vector of decision variables; and 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is the feasible set - the set of possible values of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+.
+
+
+== Comparison with lexicographic optimization ==
+Lexmaxmin optimization is closely related to lexicographic optimization. However, in lexicographic optimization, there is a fixed order on the functions, such that 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+      
+    
+    {\displaystyle f_{1}}
+  
+ is the most important, 
+  
+    
+      
+        
+          f
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f_{2}}
+  
+ is the next-most important, and so on. In contrast, in lexmaxmin, all the objectives are equally important. To present lexmaxmin as a special case of lexicographic optimization, denote by 
+  
+    
+      
+        
+          f
+          
+            [
+            1
+            ]
+          
+        
+        (
+        x
+        )
+        :=
+        min
+        (
+        
+          f
+          
+            1
+          
+        
+        (
+        x
+        )
+        ,
+        …
+        ,
+        
+          f
+          
+            n
+          
+        
+        (
+        x
+        )
+        )
+        =
+      
+    
+    {\displaystyle f_{[1]}(x):=\min(f_{1}(x),\ldots ,f_{n}(x))=}
+  
+ the smallest objective value in x. Similarly, denote by 
+  
+    
+      
+        
+          f
+          
+            [
+            2
+            ]
+          
+        
+        (
+        x
+        )
+        :=
+      
+    
+    {\displaystyle f_{[2]}(x):=}
+  
+ the second-smallest objective value in x, and so on, so that 
+  
+    
+      
+        
+          f
+          
+            [
+            1
+            ]
+          
+        
+        (
+        x
+        )
+        ≤
+        
+          f
+          
+            [
+            2
+            ]
+          
+        
+        (
+        x
+        )
+        ≤
+        ⋯
+        ≤
+        
+          f
+          
+            [
+            n
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{[1]}(x)\leq f_{[2]}(x)\leq \cdots \leq f_{[n]}(x)}
+  
+. Then, the lexmaxmin optimization problem can be written as the following lexicographic maximization problem:
+  
+    
+      
+        
+          
+            
+              
+                lex
+                ⁡
+                max
+              
+              
+              
+                
+                  f
+                  
+                    [
+                    1
+                    ]
+                  
+                
+                (
+                x
+                )
+                ,
+                …
+                ,
+                
+                  f
+                  
+                    [
+                    n
+                    ]
+                  
+                
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+              
+              
+              
+                x
+                ∈
+                X
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\operatorname {lex} \max &&f_{[1]}(x),\ldots ,f_{[n]}(x)\\{\text{subject to}}&&x\in X\end{aligned}}}
+  
+
+
+== Uniqueness ==
+In general, a lexmaxmin optimization problem may have more than one optimal solution. If 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x^{1}}
+  
+ and 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x^{2}}
+  
+ are two optimal solutions, then their ordered value vector must be the same, that is, 
+  
+    
+      
+        
+          f
+          
+            [
+            i
+            ]
+          
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+        =
+        
+          f
+          
+            [
+            i
+            ]
+          
+        
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle f_{[i]}(x^{1})=f_{[i]}(x^{2})}
+  
+ for all 
+  
+    
+      
+        i
+        ∈
+        [
+        n
+        ]
+      
+    
+    {\displaystyle i\in [n]}
+  
+,: Thm.2  that is, the smallest value is the same, the second-smallest value is the same, and so on. However, the unsorted value vectors may be different. For example, (1,2,3) and (2,1,3) may both be optimal solutions to the same problem.
+However, if the feasible domain is a convex set, and the objectives are concave functions, then the value vectors in all optimal solutions must be the same, since if there were two different optimal solutions, their mean would be another feasible solution in which the objective functions attain a higher value - contradicting the optimality of the original solutions.: Thm.6 
+
+
+== Algorithms for continuous variables ==
+
+
+=== Saturation Algorithm for convex problems ===
+The Saturation Algorithm works when the feasible set is a convex set, and the objectives are concave functions. Variants of these algorithm appear in many papers. The earliest appearance is attributed to Alexander Kopelowitz by Elkind and Pasechnik. Other variants appear in.: 20–27 : Alg.2 
+The algorithm keeps a set of objectives that are considered saturated (also called: blocking). This means that their value cannot be improved without harming lower-valued objectives. The other objectives are called free. Initially, all objectives are free. In general, the algorithm works as follows:
+
+While some objective is free:
+(P1) Solve the following single-objective problem, where 
+  
+    
+      
+        
+          z
+          
+            k
+          
+        
+      
+    
+    {\displaystyle z_{k}}
+  
+ is the saturation value of objective 
+  
+    
+      
+        
+          f
+          
+            k
+          
+        
+      
+    
+    {\displaystyle f_{k}}
+  
+:
+  
+    
+      
+        
+          
+            
+              
+                max
+                 
+                 
+                 
+                z
+              
+            
+            
+              
+                
+                  subject to
+                
+                 
+                 
+                 
+              
+              
+                x
+                ∈
+                X
+                ,
+              
+            
+            
+              
+              
+                
+                  f
+                  
+                    k
+                  
+                
+                (
+                x
+                )
+                =
+                
+                  z
+                  
+                    k
+                  
+                
+                
+                   for all saturated objectives 
+                
+                k
+                ,
+              
+            
+            
+              
+              
+                
+                  f
+                  
+                    k
+                  
+                
+                (
+                x
+                )
+                ≥
+                z
+                
+                   for all free objectives 
+                
+                k
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\max ~~~z\\{\text{subject to}}~~~&x\in X,\\&f_{k}(x)=z_{k}{\text{ for all saturated objectives }}k,\\&f_{k}(x)\geq z{\text{ for all free objectives }}k\end{aligned}}}
+  
+
+If the problem is infeasible or unbounded, stop and declare that there is no solution.
+Otherwise, let 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+ be the maximum value of the first problem.
+Look for free objectives whose value cannot increase above 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+ without decreasing some other objective below 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+. In any lexmaxmin solution, the value of any such objective must be exactly 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+. Add all such objectives to the set of saturated objectives, set their saturation value to 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+, and go back to (P1).
+It remains to explain how we can find new saturated objectives in each iteration.
+Method 1: interior optimizers. An interior optimizer of a linear program is an optimal solution in which the smallest possible number of constraints are tight. In other words, it is a solution in the interior of the optimal face. An interior optimizer of (P1) can be found by solving (P1) using the ellipsoid method or interior point methods.
+The set of tight constraints in an interior optimizer is unique. Proof: Suppose by contradiction that there are two interior-optimizers, x1 and x2, with different sets of tight constraints. Since the feasible set is convex, the average solution x3 = (x1+x2)/2 is also an optimizer. Every constraint that is not tight in either x1 or x2, is not tight in x3. Therefore, the number of tight constraints in x3 is smaller than in x1 and x2, contradicting the definition of an interior optimizer.
+Therefore, the set of tight constraints in the interior optimizer corresponds to the set of free objectives that become saturated. Using this method, the leximin solution can be computed using at most n iterations.
+Method 2: iterating over all objectives. It is possible to find at least one saturated objective using the following algorithm. 
+
+For every free objective 
+  
+    
+      
+        
+          f
+          
+            j
+          
+        
+      
+    
+    {\displaystyle f_{j}}
+  
+:
+(P2) Solve the following single-objective problem:
+  
+    
+      
+        
+          
+            
+              
+                max
+                 
+                 
+                 
+                
+                  f
+                  
+                    j
+                  
+                
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+                 
+                 
+                 
+              
+              
+                x
+                ∈
+                X
+                ,
+              
+            
+            
+              
+              
+                
+                  f
+                  
+                    k
+                  
+                
+                (
+                x
+                )
+                ≥
+                
+                  z
+                  
+                    k
+                  
+                
+                
+                   for all saturated objectives 
+                
+                k
+                ,
+              
+            
+            
+              
+              
+                
+                  f
+                  
+                    k
+                  
+                
+                (
+                x
+                )
+                ≥
+                
+                  z
+                  
+                    max
+                  
+                
+                
+                   for all free objectives 
+                
+                k
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\max ~~~f_{j}(x)\\{\text{subject to}}~~~&x\in X,\\&f_{k}(x)\geq z_{k}{\text{ for all saturated objectives }}k,\\&f_{k}(x)\geq z_{\max }{\text{ for all free objectives }}k\end{aligned}}}
+  
+
+If the optimal value equals 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+, then objective j becomes saturated from now on.
+Otherwise, the optimal value must be larger than 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+; objective j remains free for now.
+End for
+At each step, at least one free objective must become saturated. This is because, if no objective were saturated, then the mean of all optimal solutions to (P2) would be a feasible solution in which all objective values are larger than 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+ - contradicting the optimality of solution to (P1). For example, suppose 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle z_{\max }=1}
+  
+, objective 1 is not saturated because there is a solution with value-vector (3,1), and objective 2 is not saturated because there exists a solution with value-vector and (1,3). Then, there exists a solution with value-vector at least (2,2), but 
+  
+    
+      
+        
+          z
+          
+            max
+          
+        
+      
+    
+    {\displaystyle z_{\max }}
+  
+ should have been at least 2.
+Therefore, after at most n iterations, all variables are saturated and a leximin-optimal solution is found. In each iteration t, the algorithm solves at most n-t+1 linear programs; therefore, the run-time of the algorithm is at most 
+  
+    
+      
+        (
+        n
+        +
+        2
+        )
+        (
+        n
+        +
+        1
+        )
+        
+          /
+        
+        2
+        ∈
+        O
+        (
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle (n+2)(n+1)/2\in O(n^{2})}
+  
+ times the run-time of the LP solver.
+In some cases, the run-time of the saturation algorithm can be improved. Instead of finding all saturated objectives, we can break out of the inner loop after finding one saturated objective; the algorithm still stops after at most n iterations, and may reduce the number of linear programs (P2) we need to solve.: Alg.3 
+Furthermore, instead of looping over all objectives to find a saturated one, the algorithm can find a saturated objective using the dual problem of (P1). In some cases, the dual variables are given as a byproduct of solving (P1), for example, when the objectives and constraints are linear and the solver is the simplex algorithm. In this case, (P2) is not needed at all, and the run-time of the algorithm is at most 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ times the run-time of the solver of (P1).: Alg.4 
+All these variants work only for convex problems. For non-convex problems, there might be no saturated objective, so the algorithm might not stop.
+
+
+=== Ordered Outcomes Algorithm for general problems ===
+The Ordered Outcomes Algorithm works in arbitrary domains (not necessarily convex). It was developed by Ogryczak and Śliwiński and also presented in the context of telecommunication networks by Ogryczak, Pioro and Tomaszewski, and in the context of location problems by Ogryczak. The algorithm reduces lexmaxmin optimization to the easier problem of lexicographic optimization. Lexicographic optimization can be done with a simple sequential algorithm, which solves at most n linear programs. The reduction starts with the following presentation of lexmaxmin:
+  
+    
+      
+        
+          
+            
+              
+                (
+                L
+                1
+                )
+              
+            
+            
+              
+                lex
+                ⁡
+                max
+              
+              
+              
+                
+                  f
+                  
+                    [
+                    1
+                    ]
+                  
+                
+                (
+                x
+                )
+                ,
+                …
+                ,
+                
+                  f
+                  
+                    [
+                    n
+                    ]
+                  
+                
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+              
+              
+              
+                x
+                ∈
+                X
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(L1)\\\operatorname {lex} \max &&f_{[1]}(x),\ldots ,f_{[n]}(x)\\{\text{subject to}}&&x\in X\end{aligned}}}
+  
+
+This problem cannot be solved as-is, because 
+  
+    
+      
+        
+          f
+          
+            [
+            t
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{[t]}(x)}
+  
+ (the t-th smallest value in 
+  
+    
+      
+        
+          f
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle \mathbf {f} (x)}
+  
+) is not a simple function of x. The problem (L1) is equivalent to the following problem, where 
+  
+    
+      
+        
+          f
+          
+            [
+            1..
+            t
+            ]
+          
+        
+        (
+        x
+        )
+        :=
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            t
+          
+        
+        
+          f
+          
+            [
+            i
+            ]
+          
+        
+        (
+        x
+        )
+        =
+      
+    
+    {\displaystyle f_{[1..t]}(x):=\sum _{i=1}^{t}f_{[i]}(x)=}
+  
+ the sum of the t smallest values in 
+  
+    
+      
+        
+          f
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle \mathbf {f} (x)}
+  
+:
+  
+    
+      
+        
+          
+            
+              
+                (
+                L
+                2
+                )
+              
+            
+            
+              
+                lex
+                ⁡
+                max
+              
+              
+              
+                
+                  f
+                  
+                    [
+                    1..1
+                    ]
+                  
+                
+                (
+                x
+                )
+                ,
+                
+                  f
+                  
+                    [
+                    1..2
+                    ]
+                  
+                
+                (
+                x
+                )
+                ,
+                …
+                ,
+                
+                  f
+                  
+                    [
+                    1..
+                    n
+                    ]
+                  
+                
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+              
+              
+              
+                x
+                ∈
+                X
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(L2)\\\operatorname {lex} \max &&f_{[1..1]}(x),f_{[1..2]}(x),\ldots ,f_{[1..n]}(x)\\{\text{subject to}}&&x\in X\end{aligned}}}
+  
+
+This problem can be solved iteratively using lexicographic optimization, but the number of constraints in each iteration t is C(n,t) -- the number of subsets of size t. This grows exponentially with n. It is possible to reduce the problem to a different problem, in which the number of constraints is polynomial in n.
+For every t, the sum 
+  
+    
+      
+        
+          f
+          
+            [
+            1..
+            t
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{[1..t]}(x)}
+  
+ can be computed as the optimal value to the following problem, with n+1 auxiliary variables (an unbounded variable 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle r_{t}}
+  
+, and non-negative variables 
+  
+    
+      
+        
+          d
+          
+            t
+            ,
+            j
+          
+        
+      
+    
+    {\displaystyle d_{t,j}}
+  
+ for all j in 1,...,n), and n additional constraints:: Thm.8 
+  
+    
+      
+        
+          
+            
+              
+                (
+                L
+                3
+                )
+              
+            
+            
+              
+                max
+                (
+                t
+                ⋅
+                
+                  r
+                  
+                    t
+                  
+                
+                −
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  d
+                  
+                    t
+                    ,
+                    j
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+                 
+                 
+                 
+              
+              
+                x
+                ∈
+                X
+                ,
+              
+            
+            
+              
+              
+                
+                  r
+                  
+                    t
+                  
+                
+                −
+                
+                  f
+                  
+                    j
+                  
+                
+                (
+                x
+                )
+                ≤
+                
+                  d
+                  
+                    t
+                    ,
+                    j
+                  
+                
+                
+                   for all 
+                
+                j
+                ∈
+                [
+                n
+                ]
+                ,
+              
+            
+            
+              
+              
+                
+                  d
+                  
+                    t
+                    ,
+                    j
+                  
+                
+                ≥
+                0
+                
+                   for all 
+                
+                j
+                ∈
+                [
+                n
+                ]
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(L3)\\\max(t\cdot r_{t}-\sum _{j=1}^{n}d_{t,j})\\{\text{subject to}}~~~&x\in X,\\&r_{t}-f_{j}(x)\leq d_{t,j}{\text{ for all }}j\in [n],\\&d_{t,j}\geq 0{\text{ for all }}j\in [n].\end{aligned}}}
+  
+Proof. Let us compute the values of the auxiliary variables in the optimal solution.
+
+For all j,  
+  
+    
+      
+        
+          d
+          
+            t
+            ,
+            j
+          
+        
+      
+    
+    {\displaystyle d_{t,j}}
+  
+ should be at least as large as both 0 and 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+        −
+        
+          f
+          
+            j
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle r_{t}-f_{j}(x)}
+  
+, and subject to this, it should be minimized, since it appears in the objective with a minus sign. Therefore, 
+  
+    
+      
+        
+          d
+          
+            t
+            ,
+            j
+          
+        
+        =
+        max
+        (
+        0
+        ,
+        
+          r
+          
+            t
+          
+        
+        −
+        
+          f
+          
+            j
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle d_{t,j}=\max(0,r_{t}-f_{j}(x))}
+  
+. So the objective can be written as:  
+  
+    
+      
+        t
+        ⋅
+        
+          r
+          
+            t
+          
+        
+        −
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            n
+          
+        
+        max
+        (
+        0
+        ,
+        
+          r
+          
+            t
+          
+        
+        −
+        
+          f
+          
+            j
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle t\cdot r_{t}-\sum _{j=1}^{n}\max(0,r_{t}-f_{j}(x))}
+  
+.
+For any k between 0 and n, if 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle r_{t}}
+  
+ is larger than the smallest k objective values (that is, 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+        ≥
+        
+          f
+          
+            [
+            k
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle r_{t}\geq f_{[k]}(x)}
+  
+), then the sum at the right-hand side contains exactly k positive elements: 
+  
+    
+      
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            k
+          
+        
+        (
+        
+          r
+          
+            t
+          
+        
+        −
+        
+          f
+          
+            [
+            j
+            ]
+          
+        
+        (
+        x
+        )
+        )
+        =
+        k
+        ⋅
+        
+          r
+          
+            t
+          
+        
+        −
+        
+          f
+          
+            [
+            1..
+            k
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle \sum _{j=1}^{k}(r_{t}-f_{[j]}(x))=k\cdot r_{t}-f_{[1..k]}(x)}
+  
+. In that case, the objective can be written as:  
+  
+    
+      
+        (
+        t
+        −
+        k
+        )
+        ⋅
+        
+          r
+          
+            t
+          
+        
+        +
+        
+          f
+          
+            [
+            1..
+            k
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle (t-k)\cdot r_{t}+f_{[1..k]}(x)}
+  
+. Note that 
+  
+    
+      
+        (
+        t
+        −
+        k
+        )
+        ⋅
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle (t-k)\cdot r_{t}}
+  
+ is increasing with 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle r_{t}}
+  
+ when k<t, and decreasing with 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle r_{t}}
+  
+ when k>t.  Therefore, the maximum value is attained when k=t, that is, 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle r_{t}}
+  
+ is larger than the smallest t objective values; in that case, the objective exactly equals 
+  
+    
+      
+        
+          f
+          
+            [
+            1..
+            t
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{[1..t]}(x)}
+  
+, as claimed.
+Therefore, the problem (L2) is equivalent to the following lexicographic maximization problem:: (32) 
+  
+    
+      
+        
+          
+            
+              
+                (
+                L
+                4
+                )
+              
+            
+            
+              
+                lex
+                ⁡
+                max
+                (
+                t
+                ⋅
+                
+                  r
+                  
+                    t
+                  
+                
+                −
+                
+                  ∑
+                  
+                    j
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  d
+                  
+                    t
+                    ,
+                    j
+                  
+                
+                
+                  )
+                  
+                    t
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+              
+            
+            
+              
+                
+                  subject to
+                
+                 
+                 
+                 
+              
+              
+                x
+                ∈
+                X
+                ,
+              
+            
+            
+              
+              
+                
+                  r
+                  
+                    t
+                  
+                
+                −
+                
+                  f
+                  
+                    j
+                  
+                
+                (
+                x
+                )
+                ≤
+                
+                  d
+                  
+                    t
+                    ,
+                    j
+                  
+                
+                
+                   for all 
+                
+                j
+                ∈
+                [
+                n
+                ]
+                ,
+              
+            
+            
+              
+              
+                
+                  d
+                  
+                    t
+                    ,
+                    j
+                  
+                
+                ≥
+                0
+                
+                   for all 
+                
+                j
+                ∈
+                [
+                n
+                ]
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(L4)\\\operatorname {lex} \max(t\cdot r_{t}-\sum _{j=1}^{n}d_{t,j})_{t=1}^{n}\\{\text{subject to}}~~~&x\in X,\\&r_{t}-f_{j}(x)\leq d_{t,j}{\text{ for all }}j\in [n],\\&d_{t,j}\geq 0{\text{ for all }}j\in [n].\end{aligned}}}
+  
+
+This problem (L4) has 
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+        +
+        n
+      
+    
+    {\displaystyle n^{2}+n}
+  
+ additional variables, and 
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n^{2}}
+  
+ additional constraints. It can be solved by every algorithm for solving lexicographic maximization, for example: the sequential algorithm using n linear programs, or the lexicographic simplex algorithm (if the objectives and constraints are linear).
+
+
+==== Approximate leximin solutions ====
+One advantage of the Ordered Outcomes Algorithm is that it can be used even when the single-problem solver is inaccurate, and returns only approximate solutions. Specifically, if the single-problem solver approximates the optimal single-problem solution with multiplicative factor α ∈ (0,1] and additive factor ϵ ≥ 0, then the algorithm returns a solution that approximates the leximin-optimal solution with multiplicative factor α2/(1 − α + α2) and additive factor ϵ/(1 − α + α2).
+
+
+=== Ordered Values Algorithm for general problems ===
+The Ordered Values Algorithm works in any domain in which the set of possible values of the objective functions is finite. It was developed by Ogryczak and Śliwiński.  Let 
+  
+    
+      
+        V
+        =
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          v
+          
+            r
+          
+        
+        }
+      
+    
+    {\displaystyle V=\{v_{1},\ldots ,v_{r}\}}
+  
+ be the set of all values that can be returned by the functions 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          f
+          
+            n
+          
+        
+      
+    
+    {\displaystyle f_{1},\ldots ,f_{n}}
+  
+, such that 
+  
+    
+      
+        
+          v
+          
+            1
+          
+        
+        <
+        ⋯
+        <
+        
+          v
+          
+            r
+          
+        
+      
+    
+    {\displaystyle v_{1}<\cdots <v_{r}}
+  
+. Given a solution x, and an integer k in {1,..,r}, define 
+  
+    
+      
+        
+          h
+          
+            k
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle h_{k}(x)}
+  
+ as the number of occurrences of the value vr in the vector  
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        (
+        x
+        )
+        ,
+        …
+        ,
+        
+          f
+          
+            n
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{1}(x),\ldots ,f_{n}(x)}
+  
+.   Then, the lexmaxmin problem can be stated as the following lexicographic minimization problem:
+  
+    
+      
+        
+          
+            
+              
+                (
+                H
+                1
+                )
+              
+            
+            
+              
+                lex
+                ⁡
+                min
+              
+              
+              
+                
+                  h
+                  
+                    1
+                  
+                
+                (
+                x
+                )
+                ,
+                …
+                ,
+                
+                  h
+                  
+                    r
+                    −
+                    1
+                  
+                
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  subject to
+                
+              
+              
+              
+                x
+                ∈
+                X
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(H1)\\\operatorname {lex} \min &&h_{1}(x),\ldots ,h_{r-1}(x)\\{\text{subject to}}&&x\in X\end{aligned}}}
+  
+since we want to have as few as possible functions attaining the smallest value; subject to this, as few as possible functions attaining the next-smallest value; and so on. Ogryczak and Śliwiński show how to transform this non-linear program into a linear program with auxiliary variables. In their computational experiments, the Ordered Values algorithm runs much faster than the Saturation algorithm and the Ordered Outcomes algorithm.
+
+
+=== Behringer's algorithm for quasiconcave functions ===
+Behringer presented a sequential algorithm for lexmaxmin optimization when the objectives are quasiconvex functions, and the feasible set X is a convex set.
+
+
+=== Weighted average ===
+Yager presented a way to represent the leximin ordering analytically using the Ordered weighted averaging aggregation operator. He assumes that all objective values are real numbers between 0 and 1, and the smallest difference between any two possible values is some constant d < 1 (so that values with difference smaller than d are considered equal). The weight 
+  
+    
+      
+        
+          w
+          
+            t
+          
+        
+      
+    
+    {\displaystyle w_{t}}
+  
+ of 
+  
+    
+      
+        
+          f
+          
+            [
+            t
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{[t]}(x)}
+  
+ is set to approximately 
+  
+    
+      
+        
+          d
+          
+            t
+          
+        
+      
+    
+    {\displaystyle d^{t}}
+  
+. This guarantees that maximizing the weighted sum 
+  
+    
+      
+        
+          ∑
+          
+            t
+          
+        
+        
+          w
+          
+            t
+          
+        
+        
+          f
+          
+            [
+            t
+            ]
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle \sum _{t}w_{t}f_{[t]}(x)}
+  
+ is equivalent to lexmaxmin.
+
+
+== Algorithms for discrete variables ==
+If the set of vectors is discrete, and the domain is sufficiently small, then it is possible to use one of the functions representing the leximin order, and maximize it subject to the constraints, using a solver for constraint-satisfaction problems.
+But if the domain is large, the above approach becomes unfeasible due to the large number of possible values that this function can have: 
+  
+    
+      
+        
+          
+            
+              (
+            
+            
+              
+                m
+                +
+                n
+                −
+                1
+              
+              n
+            
+            
+              )
+            
+          
+        
+      
+    
+    {\displaystyle {m+n-1 \choose n}}
+  
+, where m is the number of different values in the domain, and n is the number of variables.
+Bouveret and Lemaître present five different algorithms for finding leximin-optimal solutions to discrete constraint-satisfaction problems:
+
+Branch and bound based on the LEXIMIN constraint - a constraint on two vectors x and y, saying that y is leximin-larger than x.
+Branching on saturated subsets - finding subsets of variables that must be fixed at the minimum value, and finding the maximum-minimum value for the other variables.
+Using the SORT constraint - a constraint on two vectors x and y, saying that y contains the same elements as x sorted in ascending order. This constraint can be computed efficiently by several algorithms.
+Using the ATLEAST constraint.
+Using max-min transformations.
+In their experiments, the best-performing approach was 4 (ATLEAST), followed by 3 (SORT) followed by 1 (LEXIMIN).
+Dall'aglio presents an algorithm for computing a leximin-optimal resource allocation.
+
+
+== References ==

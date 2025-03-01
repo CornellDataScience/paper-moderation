@@ -1,0 +1,61 @@
+The moving particle semi-implicit (MPS) method is a computational method for the simulation of incompressible free surface flows. It is a macroscopic, deterministic particle method (Lagrangian mesh-free method) developed by Koshizuka and Oka (1996).
+
+
+== Method ==
+
+The MPS method is used to solve the Navier-Stokes equations in a Lagrangian framework. A fractional step method is applied which consists of splitting each time step in two steps of prediction and correction. The fluid is represented with particles, and the motion of each particle is calculated based on the interactions with the neighboring particles by means of a kernel function. The MPS method is similar to the SPH (smoothed-particle hydrodynamics) method (Gingold and Monaghan, 1977; Lucy, 1977) in that both methods provide approximations to the strong form of the partial differential equations (PDEs) on the basis of integral interpolants. However, the MPS method applies simplified differential operator models solely based on a local weighted averaging process without taking the gradient of a kernel function. In addition, the solution process of MPS method differs to that of the original SPH method as the solutions to the PDEs are obtained through a semi-implicit prediction-correction process rather than the fully explicit one in original SPH method.
+
+
+== Applications ==
+Through the past years, the MPS method has been applied in a wide range of engineering applications including Nuclear Engineering (e.g. Koshizuka et al., 1999; Koshizuka and Oka, 2001; Xie et al., 2005), Coastal Engineering (e.g. Gotoh et al., 2005; Gotoh and Sakai, 2006), Environmental Hydraulics (e.g. Shakibaeina and Jin, 2009; Nabian and Farhadi, 2016), Ocean Engineering (Shibata and Koshizuka, 2007; Sueyoshi et al., 2008; Zuo et al. 2022), Structural Engineering (e.g. Chikazawa et al., 2001), Mechanical Engineering (e.g. Heo et al., 2002; Sun et al., 2009), Bioengineering (e.g. Tsubota et al., 2006) and Chemical Engineering (e.g. Sun et al., 2009; Xu and Jin, 2018).
+
+
+== Improvements ==
+Improved versions of MPS method have been proposed for enhancement of numerical stability (e.g. Koshizuka et al., 1998; Zhang et al., 2005; Ataie-Ashtiani and Farhadi, 2006;Shakibaeina and Jin, 2009; Jandaghian and Shakibaeinia, 2020; Cheng et al. 2021), momentum conservation (e.g. Hamiltonian MPS by Suzuki et al., 2007; Corrected MPS by Khayyer and Gotoh, 2008; Enhanced MPS by Jandaghian and Shakibaeinia, 2020), mechanical energy conservation (e.g. Hamiltonian MPS by Suzuki et al., 2007), pressure calculation (e.g. Khayyer and Gotoh, 2009, Kondo and Koshizuka, 2010, Khayyer and Gotoh, 2010, Xu and Jin, 2019), and for simulation of multiphase and granular flows (Nabian and Farhadi 2016; Xu and Jin, 2021; Xu and Li, 2022).
+
+
+== References ==
+R.A. Gingold and J.J. Monaghan, "Smoothed particle hydrodynamics: theory and application to non-spherical stars," Mon. Not. R. Astron. Soc., Vol 181, pp. 375–89, 1977.
+L.B. Lucy, "A numerical approach to the testing of the fission hypothesis," Astron. J., Vol 82, pp. 1013–1024, 1977.
+S. Koshizuka and Y. Oka, "Moving particle semi-implicit method for fragmentation of incompressible fluid," Nuclear Science and Engineering, Vol 123, pp. 421–434, 1996.
+S. Koshizuka, A. Nobe and Y. Oka, "Numerical Analysis of Breaking Waves Using the Moving Particle Semi-implicit Method," Int. J. Numer. Meth. Fluid, Vol 26, pp. 751–769, 1998.
+S. Koshizuka, H. Ikeda and Y. Oka, "Numerical analysis of fragmentation mechanisms in vapor explosions," Nuclear Engineering and Design, Vol 189, pp. 423–433, 1999.
+Y. Chikazawa, S. Koshizuka, and Y. Oka, "A particle method for elastic and visco-plastic structures and fluid-structure interactions," Comput. Mech. 27, pp. 97–106, 2001.
+S. Koshizuka, S. and Y. Oka, "Application of Moving Particle Semi-implicit Method to Nuclear Reactor Safety," Comput. Fluid Dyn. J., Vol 9, pp. 366–375, 2001.
+S. Heo, S. Koshizuka and Y. Oka, "Numerical analysis of boiling on high heat-flux and high subcooling condition using MPS-MAFL," International Journal of Heat and Mass Transfer, Vol 45, pp. 2633–2642, 2002.
+H. Gotoh, H. Ikari, T. Memita and T. Sakai, "Lagrangian particle method for simulation of wave overtopping on a vertical seawall," Coast. Eng. J., Vol 47, No 2–3, pp. 157–181, 2005.
+H. Xie, S. Koshizuka and Y. Oka, "Simulation of drop deposition process in annular mist flow using three-dimensional particle method," Nuclear Engineering and Design, Vol 235, pp. 1687–1697, 2005.
+S. Zhang, K. Morita, K. Fukuda and N. Shirakawa, "An improved MPS method for numerical simulations of convective heat transfer problems," Int. J. Numer. Meth. Fluid, 51, 31–47, 2005.
+B. Ataie-Ashtiani and L. Farhadi, "A stable moving particle semi-implicit method for free surface flows," Fluid Dynamics Research 38, pp. 241–256, 2006.
+H. Gotoh and T. Sakai, "Key issues in the particle method for computation of wave breaking," Coastal Engineering, Vol 53, No 2–3, pp. 171–179, 2006.
+K. Tsubota, S. Wada, H. Kamada, Y. Kitagawa, R. Lima and T. Yamaguchi, "A Particle Method for Blood Flow Simulation – Application to Flowing Red Blood Cells and Platelets–," Journal of the Earth Simulator, Vol 5, pp. 2–7, 2006.
+K. Shibata and S. Koshizuka, "Numerical analysis of shipping water impact on a deck using a particle method," Ocean Engineering, Vol 34, pp. 585–593, 2007.
+Y. Suzuki, S. Koshizuka, Y. Oka, "Hamiltonian moving-particle semi-implicit (HMPS) method for incompressible fluid flows," Computer Methods in Applied Mechanics and Engineering, Vol 196, pp. 2876-2894, 2007.
+A. Khayyer and H. Gotoh, "Development of CMPS method for accurate water-surface tracking in breaking waves," Coast. Eng. J., Vol 50, No 2, pp. 179–207, 2008.
+M. Sueyoshi, M. Kashiwagi and S. Naito, "Numerical simulation of wave-induced nonlinear motions of a two-dimensional floating body by the moving particle semi-implicit method," Journal of Marine Science and Technology, Vol 13, pp. 85–94, 2008.
+A. Khayyer and H. Gotoh, "Modified Moving Particle Semi-implicit methods for the prediction of 2D wave impact pressure," Coastal Engineering, Vol 56, pp. 419–440, 2009.
+A. Shakibaeinia and Y.C. Jin "A weakly compressible MPS method for simulation open-boundary free-surface flow." Int. J. Numer. Methods Fluids, 63 (10):1208–1232 (Published Online: 7 Aug 2009 doi:10.1002/fld.2132).
+A. Shakibaeinia and Y.C. Jin "Lagrangian Modeling of flow over spillways using moving particle semi-implicit method." Proc. 33rd IAHR Congress, Vancouver, Canada, 2009, 1809–1816.
+Z. Sun, G. Xi and X. Chen, "A numerical study of stir mixing of liquids with particle method," Chemical Engineering Science, Vol 64, pp. 341–350, 2009.
+Z. Sun, G. Xi and X. Chen, "Mechanism study of deformation and mass transfer for binary droplet collisions with particle method," Phys. Fluids, Vol 21, 032106, 2009.
+A. Khayyer and H. Gotoh, "A higher order Laplacian model for enhancement and stabilization of pressure calculation by the MPS method," Applied Ocean Research, Vol 32, pp. 124-131, 2010.
+A. Shakibaeinia and Y.C. Jin "A mesh-free particle model for simulation of mobile-bed dam break." Advances in Water Resources, 34 (6):794–807 doi:10.1016/j.advwatres.2011.04.011.
+A. Shakibaeinia and Y.C. Jin "A MPS Based Mesh-free Particle Method for Open Channel flow." Journal of Hydraulic Engineering ASCE. 137(11): 1375–1384. 2011.
+M. Kondo and S. Koshizuka, "Improvement of stability in moving particle semi-implicit method", Int. J. Numer. Meth. Fluid, Vol. 65, pp. 638-654, 2011.
+A. Shakibaeinia and Y.C. Jin "MPS Mesh-Free Particle Method for Multiphase Flows." Computer methods in Applied Mechanics and Engineering. 229–232: 13–26. 2012.
+K.S. Kim, M.H. Kim and J.C. Park, "Development of MPS (Moving Particle Simulation) method for Multi-liquid-layer Sloshing," Journal of Mathematical Problems in Engineering, Vol 2014, doi:10.1155/2014/350165
+M.A. Nabian and L. Farhadi, "Multiphase Mesh-Free Particle Method for Simulating Granular Flows and Sediment Transport," Journal of Hydraulic Engineering, 2016.
+T. Xu, Y. C. Jin, Simulation the convective mixing of CO2 in geological formations with a meshless model. Chemical Engineering Science, 192, 187-198, 2018.
+T. Xu, Y. C. Jin, Improvement of a projection-based particle method in free-surface flows by improved Laplacian model and stabilization techniques. Computers & Fluids, 191, 104235, 2019.
+M. Jandaghian and A. Shakibaeinia "An enhanced weakly-compressible MPS method for free-surface flows," Computer Methods in Applied Mechanics and Engineering, vol. 360, p. 112771, 2020/03/01/ 2020, doi: https://doi.org/10.1016/j.cma.2019.112771.
+L. Y. Cheng, R. A. Amaro Jr., E. H. Favero, "Improving stability of moving particle semi-implicit method by source terms based on time-scale correction of particle-level impulses," Engineering Analysis with Boundary Elements, Vol. 131, pp. 118-145, 2021.
+T. Xu, Y. C. Jin, Two-dimensional continuum modelling granular column collapse by non-local peridynamics in a mesh-free method with rheology. Journal of Fluid Mechanics, 917, A51, 2021.
+T. Xu, S. S. Li, Development of a non-local partial Peridynamic explicit mesh-free incompressible method and its validation for simulating dry dense granular flows. Acta Geotechnica, 1-20, 2022.
+J. Zuo, T. Xu, D. Z. Zhu, H. Gu, Impact pressure of dam-break waves on a vertical wall with various downstream conditions by an explicit mesh-free method. Ocean Engineering, 256, 111569, 2022.
+Specific
+
+
+== External links ==
+Laboratory of Professor Seiichi Koshizuka at the University of Tokyo, Japan
+Laboratory of Professor Hitoshi Gotoh at Kyoto University, Japan
+MPS-RYUJIN by Fuji Technical Research

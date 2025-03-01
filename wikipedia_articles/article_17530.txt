@@ -1,0 +1,27 @@
+TRANUS is an integrated land use and transport modeling system. It is used to simulate and provide analysis in guiding public policies directed towards transportation, urban, and regional planning. TRANUS has been applied to a large number of cities and regions throughout the world, seeing use within Latin America, the United States, Europe and Asia. The modeling system is developed and maintained by Modelistica, a Venezuelan group. Development of the system began in 1982, with the first practical applications starting in 1985. TRANUS is free software under the Creative Commons BY-SA 2.0 license. The theory supporting the model is described in Tomas de la Barra's book Integrated Land Use and Transport Modelling: Decision Chains and Hierarchies. 
+
+
+== Features ==
+TRANUS is a computer program designed to simulate activity location, land use, the real estate market, and the transportation system. It is used for the analysis of alternative policies or projects at an urban or regional scale. It is a fully integrated system, although the transport model may be used as stand-alone.
+The system purports to be applicable at any scale, from condensed urban centers, large metropolitan regions, states or provinces, and to entire countries. TRANUS is flexible with regard to transportation systems and can be used to represent the movements of both passengers and freight. The model operates on a multimodal network and performs elastic trip generation and a combined modal split and assignment process. It is the only free transport model available today.
+Models in the system use discrete logistic regressions. This includes activity-location, land-choice, and most notably, multi-modal path choice and assignment. TRANUS is claimed to be superior to conventional transport models based on equilibrium assignment and user discretion in analysis of separate private/public modes. The software includes a graphical user interface with geographical coordinates, an object-oriented database, and explicit representation of scenarios. Network editing tools are also included, while data may be imported or exported among other similar databases and models.
+Economic and environmental evaluation are embedded in the software and are consistent with the models.
+
+
+== Availability ==
+The programs is designed to run on any version of the Windows operating system. Recent versions of the model programs are compiled with GNU Fortran and have been tested to run on Ubuntu Linux. The GUI (TUS) has been tested to run on Linux using recent versions of Wine.
+TRANUS is open-source software under a Creative Commons Attribution-ShareAlike 2.0 license, and the software and its source code may be downloaded freely from its Google Code project page. In-depth documentation and tutorials are available at the TRANUS web site, along with sample applications in English and Spanish. There is also a public online forum where users share their experiences and expertise with TRANUS.
+
+
+== Applications and research ==
+Below is a list of applications and research that have used TRANUS.
+
+Using TRANUS to Construct a Land Use-Transportation-Emissions Model of Charlotte, North Carolina
+"Evaluation System of Policy Measure Alternatives for a Metropolis Based on TRANUS from the Viewpoint of Sustainability."
+
+
+== References ==
+
+
+== External links ==
+Unknown

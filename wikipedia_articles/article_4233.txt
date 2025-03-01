@@ -1,0 +1,8522 @@
+In optics, a Fabry–Pérot interferometer (FPI) or etalon is an optical cavity made from two parallel reflecting surfaces (i.e.: thin mirrors). Optical waves can pass through the optical cavity only when they are in resonance with it. It is named after Charles Fabry and Alfred Perot, who developed the instrument in 1899. Etalon is from the French étalon, meaning "measuring gauge" or "standard".
+Etalons are widely used in telecommunications, lasers and spectroscopy to control and measure the wavelengths of light. Recent advances in fabrication technique allow the creation of very precise tunable Fabry–Pérot interferometers. The device is technically an interferometer when the distance between the two surfaces (and with it the resonance length) can be changed, and an etalon when the distance is fixed (however, the two terms are often used interchangeably).
+
+
+== Basic description ==
+
+The heart of the Fabry–Pérot interferometer is a pair of partially reflective glass optical flats spaced micrometers to centimeters apart, with the reflective surfaces facing each other. (Alternatively, a Fabry–Pérot etalon uses a single plate with two parallel reflecting surfaces.) The flats in an interferometer are often made in a wedge shape to prevent the rear surfaces from producing interference fringes; the rear surfaces often also have an anti-reflective coating.
+In a typical system, illumination is provided by a diffuse source set at the focal plane of a collimating lens. A focusing lens after the pair of flats would produce an inverted image of the source if the flats were not present; all light emitted from a point on the source is focused to a single point in the system's image plane. In the accompanying illustration, only one ray emitted from point A on the source is traced. As the ray passes through the paired flats, it is repeatedly reflected to produce multiple transmitted rays which are collected by the focusing lens and brought to point A' on the screen. The complete interference pattern takes the appearance of a set of concentric rings. The sharpness of the rings depends on the reflectivity of the flats. If the reflectivity is high, resulting in a high Q factor, monochromatic light produces a set of narrow bright rings against a dark background. A Fabry–Pérot interferometer with high Q is said to have high finesse.
+
+
+== Applications ==
+
+
+=== Telecommunications ===
+Telecommunications networks employing wavelength division multiplexing have add-drop multiplexers with banks of miniature tuned fused silica or diamond etalons. These are small iridescent cubes about 2 mm on a side, mounted in small high-precision racks. The materials are chosen to maintain stable mirror-to-mirror distances, and to keep stable frequencies even when the temperature varies. Diamond is preferred because it has greater heat conduction and still has a low coefficient of expansion. In 2005, some telecommunications equipment companies began using solid etalons that are themselves optical fibers. This eliminates most mounting, alignment and cooling difficulties.
+
+
+=== Optical Instruments ===
+Dichroic filters are made by depositing a series of etalonic layers on an optical surface by vapor deposition. These optical filters usually have more exact reflective and pass bands than absorptive filters. When properly designed, they run cooler than absorptive filters because they reflect unwanted wavelengths rather than absorbing them. Dichroic filters are widely used in optical equipment such as light sources, cameras, astronomical equipment, and laser systems.
+Optical wavemeters and some optical spectrum analyzers use Fabry–Pérot interferometers with different free spectral ranges to determine the wavelength of light with great precision.
+Laser resonators are often described as Fabry–Pérot resonators, although for many types of laser the reflectivity of one mirror is close to 100%, making it more similar to a Gires–Tournois interferometer. Semiconductor diode lasers sometimes use a true Fabry–Pérot geometry, due to the difficulty of coating the end facets of the chip. Quantum cascade lasers often employ Fabry–Pérot cavities to sustain lasing without the need for any facet coatings, due to the high gain of the active region.
+Etalons are often placed inside the laser resonator when constructing single-mode lasers. Without an etalon, a laser will generally produce light over a wavelength range corresponding to a number of cavity modes, which are similar to Fabry–Pérot modes. Inserting an etalon into the laser cavity, with well-chosen finesse and free-spectral range, can suppress all cavity modes except for one, thus changing the operation of the laser from multi-mode to single-mode.
+Stable Fabry–Pérot interferometers are often used to stabilize the frequency of light emitted by a laser (which often fluctuate due to mechanical vibrations or temperature changes) by means of locking it to a mode of the cavity. Many techniques exist to produce an error signal, such as the widely-used Pound–Drever–Hall technique.
+
+
+=== Spectroscopy ===
+Fabry–Pérot etalons can be used to prolong the interaction length in laser absorption spectrometry, particularly cavity ring-down, techniques. An etalon of increasing thickness can be used as a linear variable optical filter to achieve spectroscopy. It can be made incredibly small using thin films of nanometer thicknesses.
+A Fabry–Pérot etalon can be used to make a spectrometer capable of observing the Zeeman effect, where the spectral lines are far too close together to distinguish with a normal spectrometer.
+
+
+=== Astronomy ===
+In astronomy an etalon is used to select a single atomic transition for imaging. The most common is the H-alpha line of the sun. The Ca-K line from the sun is also commonly imaged using etalons.
+The methane sensor for Mars (MSM) aboard India's Mangalyaan is an example of a Fabry–Pérot instrument. It was the first Fabry–Pérot instrument in space when Mangalyaan launched. As it did not distinguish radiation absorbed by methane from radiation absorbed by carbon dioxide and other gases, it was later called an albedo mapper.
+In gravitational wave detection, a Fabry–Pérot cavity is used to store photons for almost a millisecond while they bounce up and down between the mirrors. This increases the time a gravitational wave can interact with the light, which results in a better sensitivity at low frequencies. This principle is used by detectors such as LIGO and Virgo, which consist of a Michelson interferometer with a Fabry–Pérot cavity with a length of several kilometers in both arms. Smaller cavities, usually called mode cleaners, are used for spatial filtering and frequency stabilization of the main laser.
+
+
+== Theory ==
+
+
+=== Resonator losses and outcoupled light ===
+The spectral response of a Fabry–Pérot resonator is based on interference between the light launched into it and the light circulating in the resonator. Constructive interference occurs if the two beams are in phase, leading to resonant enhancement of light inside the resonator. If the two beams are out of phase, only a small portion of the launched light is stored inside the resonator. The stored, transmitted, and reflected light is spectrally modified compared to the incident light.
+Assume a two-mirror Fabry–Pérot resonator of geometrical length 
+  
+    
+      
+        ℓ
+      
+    
+    {\displaystyle \ell }
+  
+, homogeneously filled with a medium of refractive index 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+. Light is launched into the resonator under normal incidence. The round-trip time 
+  
+    
+      
+        
+          t
+          
+            
+              R
+              T
+            
+          
+        
+      
+    
+    {\displaystyle t_{\rm {RT}}}
+  
+ of light travelling in the resonator with speed 
+  
+    
+      
+        c
+        =
+        
+          c
+          
+            0
+          
+        
+        
+          /
+        
+        n
+      
+    
+    {\displaystyle c=c_{0}/n}
+  
+, where 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+      
+    
+    {\displaystyle c_{0}}
+  
+ is the speed of light in vacuum, and the free spectral range 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {FSR}}}
+  
+ are given by
+
+  
+    
+      
+        
+          t
+          
+            
+              R
+              T
+            
+          
+        
+        =
+        
+          
+            1
+            
+              Δ
+              
+                ν
+                
+                  
+                    F
+                    S
+                    R
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              2
+              ℓ
+            
+            c
+          
+        
+        .
+      
+    
+    {\displaystyle t_{\rm {RT}}={\frac {1}{\Delta \nu _{\rm {FSR}}}}={\frac {2\ell }{c}}.}
+  
+
+The electric-field and intensity reflectivities 
+  
+    
+      
+        
+          r
+          
+            i
+          
+        
+      
+    
+    {\displaystyle r_{i}}
+  
+ and 
+  
+    
+      
+        
+          R
+          
+            i
+          
+        
+      
+    
+    {\displaystyle R_{i}}
+  
+, respectively, at mirror 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ are
+
+  
+    
+      
+        
+          |
+        
+        
+          r
+          
+            i
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          R
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle |r_{i}|^{2}=R_{i}.}
+  
+
+If there are no other resonator losses, the decay of light intensity per round trip is quantified by the outcoupling decay-rate constant 
+  
+    
+      
+        1
+        
+          /
+        
+        
+          τ
+          
+            
+              o
+              u
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle 1/\tau _{\rm {out}},}
+  
+
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+        
+          R
+          
+            2
+          
+        
+        =
+        
+          e
+          
+            −
+            
+              t
+              
+                
+                  R
+                  T
+                
+              
+            
+            
+              /
+            
+            
+              τ
+              
+                
+                  o
+                  u
+                  t
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle R_{1}R_{2}=e^{-t_{\rm {RT}}/\tau _{\rm {out}}},}
+  
+
+and the photon-decay time 
+  
+    
+      
+        
+          τ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \tau _{c}}
+  
+ of the resonator is then given by
+
+  
+    
+      
+        
+          
+            1
+            
+              τ
+              
+                c
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              τ
+              
+                
+                  o
+                  u
+                  t
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              −
+              ln
+              ⁡
+              
+                (
+                
+                  R
+                  
+                    1
+                  
+                
+                
+                  R
+                  
+                    2
+                  
+                
+                )
+              
+            
+            
+              t
+              
+                
+                  R
+                  T
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{\tau _{c}}}={\frac {1}{\tau _{\rm {out}}}}={\frac {-\ln {(R_{1}R_{2})}}{t_{\rm {RT}}}}.}
+  
+
+
+=== Resonance frequencies and spectral line shapes ===
+With 
+  
+    
+      
+        ϕ
+        (
+        ν
+        )
+      
+    
+    {\displaystyle \phi (\nu )}
+  
+ quantifying the single-pass phase shift that light exhibits when propagating from one mirror to the other, the round-trip phase shift at frequency 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ accumulates to
+
+  
+    
+      
+        2
+        ϕ
+        (
+        ν
+        )
+        =
+        2
+        π
+        ν
+        
+          t
+          
+            
+              R
+              T
+            
+          
+        
+        .
+      
+    
+    {\displaystyle 2\phi (\nu )=2\pi \nu t_{\rm {RT}}.}
+  
+
+Resonances occur at frequencies at which light exhibits constructive interference after one round trip. Each resonator mode with its mode index 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+, where 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ is an integer in the interval 
+  
+    
+      
+        [
+        −
+        ∞
+        ,
+        ∞
+        ]
+      
+    
+    {\displaystyle [-\infty ,\infty ]}
+  
+, is associated with a resonance frequency 
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \nu _{q}}
+  
+ and wavenumber 
+  
+    
+      
+        
+          k
+          
+            q
+          
+        
+      
+    
+    {\displaystyle k_{q}}
+  
+,
+
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+        =
+        q
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+        ⇒
+        
+          k
+          
+            q
+          
+        
+        =
+        
+          
+            
+              2
+              π
+              q
+              Δ
+              
+                ν
+                
+                  
+                    F
+                    S
+                    R
+                  
+                
+              
+            
+            c
+          
+        
+        .
+      
+    
+    {\displaystyle \nu _{q}=q\Delta \nu _{\rm {FSR}}\Rightarrow k_{q}={\frac {2\pi q\Delta \nu _{\rm {FSR}}}{c}}.}
+  
+
+Two modes with opposite values 
+  
+    
+      
+        ±
+        q
+      
+    
+    {\displaystyle \pm q}
+  
+ and 
+  
+    
+      
+        ±
+        k
+      
+    
+    {\displaystyle \pm k}
+  
+ of modal index and wavenumber, respectively, physically representing opposite propagation directions, occur at the same absolute value 
+  
+    
+      
+        
+          |
+          
+            ν
+            
+              q
+            
+          
+          |
+        
+      
+    
+    {\displaystyle \left|\nu _{q}\right|}
+  
+ of frequency.
+The decaying electric field at frequency 
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \nu _{q}}
+  
+ is represented by a damped harmonic oscillation with an initial amplitude of 
+  
+    
+      
+        
+          E
+          
+            q
+            ,
+            s
+          
+        
+      
+    
+    {\displaystyle E_{q,s}}
+  
+ and a decay-time constant of 
+  
+    
+      
+        2
+        
+          τ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle 2\tau _{c}}
+  
+. In phasor notation, it can be expressed as
+
+  
+    
+      
+        
+          E
+          
+            q
+          
+        
+        (
+        t
+        )
+        =
+        
+          E
+          
+            q
+            ,
+            s
+          
+        
+        
+          e
+          
+            i
+            2
+            π
+            
+              ν
+              
+                q
+              
+            
+            t
+          
+        
+        
+          e
+          
+            −
+            
+              
+                t
+                
+                  2
+                  
+                    τ
+                    
+                      c
+                    
+                  
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle E_{q}(t)=E_{q,s}e^{i2\pi \nu _{q}t}e^{-{\frac {t}{2\tau _{c}}}}.}
+  
+
+Fourier transformation of the electric field in time provides the electric field per unit frequency interval,
+
+  
+    
+      
+        
+          
+            
+              
+                E
+                ~
+              
+            
+          
+          
+            q
+          
+        
+        (
+        ν
+        )
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            +
+            ∞
+          
+        
+        
+          E
+          
+            q
+          
+        
+        (
+        t
+        )
+        
+          e
+          
+            −
+            i
+            2
+            π
+            ν
+            t
+          
+        
+        
+        d
+        t
+        =
+        
+          E
+          
+            q
+            ,
+            s
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              
+                τ
+                
+                  c
+                
+              
+              
+                )
+                
+                  −
+                  1
+                
+              
+              +
+              i
+              2
+              π
+              (
+              ν
+              −
+              
+                ν
+                
+                  q
+                
+              
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\tilde {E}}_{q}(\nu )=\int _{-\infty }^{+\infty }E_{q}(t)e^{-i2\pi \nu t}\,dt=E_{q,s}{\frac {1}{(2\tau _{c})^{-1}+i2\pi (\nu -\nu _{q})}}.}
+  
+
+Each mode has a normalized spectral line shape per unit frequency interval given by
+
+  
+    
+      
+        
+          
+            
+              
+                γ
+                ~
+              
+            
+          
+          
+            q
+          
+        
+        (
+        ν
+        )
+        =
+        
+          
+            1
+            
+              τ
+              
+                c
+              
+            
+          
+        
+        
+          
+            |
+            
+              
+                
+                  
+                    
+                      
+                        
+                          E
+                          ~
+                        
+                      
+                    
+                    
+                      q
+                    
+                  
+                  (
+                  ν
+                  )
+                
+                
+                  E
+                  
+                    q
+                    ,
+                    s
+                  
+                
+              
+            
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          
+            1
+            
+              τ
+              
+                c
+              
+            
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              
+                τ
+                
+                  c
+                
+              
+              
+                )
+                
+                  −
+                  2
+                
+              
+              +
+              4
+              
+                π
+                
+                  2
+                
+              
+              (
+              ν
+              −
+              
+                ν
+                
+                  q
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\tilde {\gamma }}_{q}(\nu )={\frac {1}{\tau _{c}}}\left|{\frac {{\tilde {E}}_{q}(\nu )}{E_{q,s}}}\right|^{2}={\frac {1}{\tau _{c}}}{\frac {1}{(2\tau _{c})^{-2}+4\pi ^{2}(\nu -\nu _{q})^{2}}},}
+  
+
+whose frequency integral is unity. Introducing the full width at half maximum (FWHM) linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{c}}
+  
+ of the Lorentzian spectral line shape, we obtain
+
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              π
+              
+                τ
+                
+                  c
+                
+              
+            
+          
+        
+        ⇒
+        
+          
+            
+              
+                γ
+                ~
+              
+            
+          
+          
+            q
+          
+        
+        (
+        ν
+        )
+        =
+        
+          
+            1
+            π
+          
+        
+        
+          
+            
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                /
+              
+              2
+            
+            
+              (
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                /
+              
+              2
+              
+                )
+                
+                  2
+                
+              
+              +
+              (
+              ν
+              −
+              
+                ν
+                
+                  q
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            2
+            π
+          
+        
+        
+          
+            
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+            
+            
+              (
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                )
+                
+                  2
+                
+              
+              +
+              4
+              (
+              ν
+              −
+              
+                ν
+                
+                  q
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \Delta \nu _{c}={\frac {1}{2\pi \tau _{c}}}\Rightarrow {\tilde {\gamma }}_{q}(\nu )={\frac {1}{\pi }}{\frac {\Delta \nu _{c}/2}{(\Delta \nu _{c}/2)^{2}+(\nu -\nu _{q})^{2}}}={\frac {2}{\pi }}{\frac {\Delta \nu _{c}}{(\Delta \nu _{c})^{2}+4(\nu -\nu _{q})^{2}}},}
+  
+
+expressed in terms of either the half-width-at-half-maximum (HWHM) linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \Delta \nu _{c}/2}
+  
+ or the FWHM linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{c}}
+  
+. Calibrated to a peak height of unity, we obtain the Lorentzian lines:
+
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            L
+          
+        
+        (
+        ν
+        )
+        =
+        
+          
+            π
+            2
+          
+        
+        Δ
+        
+          ν
+          
+            c
+          
+        
+        
+          
+            
+              
+                γ
+                ~
+              
+            
+          
+          
+            q
+          
+        
+        (
+        ν
+        )
+        =
+        
+          
+            
+              (
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                /
+              
+              2
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              (
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                /
+              
+              2
+              
+                )
+                
+                  2
+                
+              
+              +
+              (
+              ν
+              −
+              
+                ν
+                
+                  q
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              (
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              (
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+              
+                )
+                
+                  2
+                
+              
+              +
+              4
+              (
+              ν
+              −
+              
+                ν
+                
+                  q
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \gamma _{q,L}(\nu )={\frac {\pi }{2}}\Delta \nu _{c}{\tilde {\gamma }}_{q}(\nu )={\frac {(\Delta \nu _{c}/2)^{2}}{(\Delta \nu _{c}/2)^{2}+(\nu -\nu _{q})^{2}}}={\frac {(\Delta \nu _{c})^{2}}{(\Delta \nu _{c})^{2}+4(\nu -\nu _{q})^{2}}}.}
+  
+
+When repeating the above Fourier transformation for all the modes with mode index 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ in the resonator, one obtains the full mode spectrum of the resonator.
+Since the linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{c}}
+  
+ and the free spectral range 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {FSR}}}
+  
+ are independent of frequency, whereas in wavelength space the linewidth cannot be properly defined and the free spectral range depends on wavelength, and since the resonance frequencies 
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \nu _{q}}
+  
+ scale proportional to frequency, the spectral response of a Fabry–Pérot resonator is naturally analyzed and displayed in frequency space.
+
+
+=== Generic Airy distribution: The internal resonance enhancement factor ===
+
+The response of the Fabry–Pérot resonator to an electric field incident upon mirror 1 is described by several Airy distributions (named after the mathematician and astronomer George Biddell Airy) that quantify the light intensity in forward or backward propagation direction at different positions inside or outside the resonator with respect to either the launched or incident light intensity. The response of the Fabry–Pérot resonator is most easily derived by use of the circulating-field approach. This approach assumes a steady state and relates the various electric fields to each other (see figure "Electric fields in a Fabry–Pérot resonator").
+The field 
+  
+    
+      
+        
+          E
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+      
+    
+    {\displaystyle E_{\rm {circ}}}
+  
+ can be related to the field 
+  
+    
+      
+        
+          E
+          
+            
+              l
+              a
+              u
+              n
+            
+          
+        
+      
+    
+    {\displaystyle E_{\rm {laun}}}
+  
+ that is launched into the resonator by
+
+  
+    
+      
+        
+          E
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        =
+        
+          E
+          
+            
+              l
+              a
+              u
+              n
+            
+          
+        
+        +
+        
+          E
+          
+            
+              R
+              T
+            
+          
+        
+        =
+        
+          E
+          
+            
+              l
+              a
+              u
+              n
+            
+          
+        
+        +
+        
+          r
+          
+            1
+          
+        
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            −
+            i
+            2
+            ϕ
+          
+        
+        
+          E
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        ⇒
+        
+          
+            
+              E
+              
+                
+                  c
+                  i
+                  r
+                  c
+                
+              
+            
+            
+              E
+              
+                
+                  l
+                  a
+                  u
+                  n
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                r
+                
+                  1
+                
+              
+              
+                r
+                
+                  2
+                
+              
+              
+                e
+                
+                  −
+                  i
+                  2
+                  ϕ
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle E_{\rm {circ}}=E_{\rm {laun}}+E_{\rm {RT}}=E_{\rm {laun}}+r_{1}r_{2}e^{-i2\phi }E_{\rm {circ}}\Rightarrow {\frac {E_{\rm {circ}}}{E_{\rm {laun}}}}={\frac {1}{1-r_{1}r_{2}e^{-i2\phi }}}.}
+  
+
+The generic Airy distribution, which considers solely the physical processes exhibited by light inside the resonator, then derives as the intensity circulating in the resonator relative to the intensity launched,
+
+  
+    
+      
+        
+          A
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        =
+        
+          
+            
+              I
+              
+                
+                  c
+                  i
+                  r
+                  c
+                
+              
+            
+            
+              I
+              
+                
+                  l
+                  a
+                  u
+                  n
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                |
+                
+                  E
+                  
+                    
+                      c
+                      i
+                      r
+                      c
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+            
+              
+                |
+                
+                  E
+                  
+                    
+                      l
+                      a
+                      u
+                      n
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              
+                |
+                
+                  1
+                  −
+                  
+                    r
+                    
+                      1
+                    
+                  
+                  
+                    r
+                    
+                      2
+                    
+                  
+                  
+                    e
+                    
+                      −
+                      i
+                      2
+                      ϕ
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\rm {circ}}={\frac {I_{\rm {circ}}}{I_{\rm {laun}}}}={\frac {\left|E_{\rm {circ}}\right|^{2}}{\left|E_{\rm {laun}}\right|^{2}}}={\frac {1}{\left|1-r_{1}r_{2}e^{-i2\phi }\right|^{2}}}={\frac {1}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}}.}
+  
+
+  
+    
+      
+        
+          A
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+      
+    
+    {\displaystyle A_{\rm {circ}}}
+  
+ represents the spectrally dependent internal resonance enhancement which the resonator provides to the light launched into it (see figure "Resonance enhancement in a Fabry–Pérot resonator"). At the resonance frequencies 
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \nu _{q}}
+  
+, where 
+  
+    
+      
+        sin
+        ⁡
+        (
+        ϕ
+        )
+      
+    
+    {\displaystyle \sin(\phi )}
+  
+ equals zero, the internal resonance enhancement factor is
+
+  
+    
+      
+        
+          A
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        (
+        
+          ν
+          
+            q
+          
+        
+        )
+        =
+        
+          
+            1
+            
+              
+                (
+                
+                  1
+                  −
+                  
+                    
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\rm {circ}}(\nu _{q})={\frac {1}{\left(1-{\sqrt {R_{1}R_{2}}}\right)^{2}}}.}
+  
+
+
+=== Other Airy distributions ===
+
+Once the internal resonance enhancement, the generic Airy distribution, is established, all other Airy distributions can be deduced by simple scaling factors. Since the intensity launched into the resonator equals the transmitted fraction of the intensity incident upon mirror 1,
+
+  
+    
+      
+        
+          I
+          
+            laun
+          
+        
+        =
+        
+          (
+          
+            1
+            −
+            
+              R
+              
+                1
+              
+            
+          
+          )
+        
+        
+          I
+          
+            inc
+          
+        
+        ,
+      
+    
+    {\displaystyle I_{\text{laun}}=\left(1-R_{1}\right)I_{\text{inc}},}
+  
+
+and the intensities transmitted through mirror 2, reflected at mirror 2, and transmitted through mirror 1 are the transmitted and reflected/transmitted fractions of the intensity circulating inside the resonator,
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  I
+                  
+                    trans
+                  
+                
+              
+              
+                
+                =
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                
+                  I
+                  
+                    circ
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  I
+                  
+                    b-circ
+                  
+                
+              
+              
+                
+                =
+                
+                  R
+                  
+                    2
+                  
+                
+                
+                  I
+                  
+                    circ
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  I
+                  
+                    back
+                  
+                
+              
+              
+                
+                =
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      R
+                      
+                        1
+                      
+                    
+                  
+                  )
+                
+                
+                  I
+                  
+                    b-circ
+                  
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}I_{\text{trans}}&=\left(1-R_{2}\right)I_{\text{circ}},\\I_{\text{b-circ}}&=R_{2}I_{\text{circ}},\\I_{\text{back}}&=\left(1-R_{1}\right)I_{\text{b-circ}},\end{aligned}}}
+  
+
+respectively, the other Airy distributions 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ with respect to launched intensity 
+  
+    
+      
+        
+          I
+          
+            laun
+          
+        
+      
+    
+    {\displaystyle I_{\text{laun}}}
+  
+ and 
+  
+    
+      
+        
+          A
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A^{\prime }}
+  
+ with respect to incident intensity 
+  
+    
+      
+        
+          I
+          
+            inc
+          
+        
+      
+    
+    {\displaystyle I_{\text{inc}}}
+  
+ are
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  A
+                  
+                    circ
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    b-circ
+                  
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    RT
+                  
+                
+                =
+                
+                  
+                    1
+                    
+                      1
+                      −
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    trans
+                  
+                
+                =
+                
+                  
+                    1
+                    
+                      (
+                      1
+                      −
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      )
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    back
+                  
+                
+                =
+                
+                  
+                    1
+                    
+                      1
+                      −
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    emit
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  A
+                  
+                    circ
+                  
+                  ′
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    b-circ
+                  
+                  ′
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    RT
+                  
+                  ′
+                
+                =
+                
+                  
+                    1
+                    
+                      1
+                      −
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    trans
+                  
+                  ′
+                
+                =
+                
+                  
+                    1
+                    
+                      (
+                      1
+                      −
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      )
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    back
+                  
+                  ′
+                
+                =
+                
+                  
+                    1
+                    
+                      1
+                      −
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  A
+                  
+                    emit
+                  
+                  ′
+                
+                ,
+              
+            
+            
+              
+                
+                  A
+                  
+                    circ
+                  
+                  ′
+                
+              
+              
+                
+                =
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      R
+                      
+                        1
+                      
+                    
+                  
+                  )
+                
+                
+                  A
+                  
+                    circ
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}A_{\text{circ}}&={\frac {1}{R_{2}}}A_{\text{b-circ}}={\frac {1}{R_{1}R_{2}}}A_{\text{RT}}={\frac {1}{1-R_{2}}}A_{\text{trans}}={\frac {1}{(1-R_{1})R_{2}}}A_{\text{back}}={\frac {1}{1-R_{1}R_{2}}}A_{\text{emit}},\\A_{\text{circ}}'&={\frac {1}{R_{2}}}A_{\text{b-circ}}'={\frac {1}{R_{1}R_{2}}}A_{\text{RT}}'={\frac {1}{1-R_{2}}}A_{\text{trans}}'={\frac {1}{(1-R_{1})R_{2}}}A_{\text{back}}'={\frac {1}{1-R_{1}R_{2}}}A_{\text{emit}}',\\A_{\text{circ}}'&=\left(1-R_{1}\right)A_{\text{circ}}.\end{aligned}}}
+  
+
+The index "emit" denotes Airy distributions that consider the sum of intensities emitted on both sides of the resonator.
+The back-transmitted intensity 
+  
+    
+      
+        
+          I
+          
+            back
+          
+        
+      
+    
+    {\displaystyle I_{\text{back}}}
+  
+ cannot be measured, because also the initially back-reflected light adds to the backward-propagating signal. The measurable case of the intensity resulting from the interference of both backward-propagating electric fields results in the Airy distribution
+
+  
+    
+      
+        
+          A
+          
+            refl
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            
+              I
+              
+                refl
+              
+            
+            
+              I
+              
+                inc
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                |
+                
+                  E
+                  
+                    refl
+                  
+                
+                |
+              
+              
+                2
+              
+            
+            
+              
+                |
+                
+                  E
+                  
+                    inc
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                      
+                    
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{refl}}^{\prime }={\frac {I_{\text{refl}}}{I_{\text{inc}}}}={\frac {\left|E_{\text{refl}}\right|^{2}}{\left|E_{\text{inc}}\right|^{2}}}={\frac {\left({{\sqrt {R_{1}}}-{\sqrt {R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}}.}
+  
+
+It can be easily shown that in a Fabry–Pérot resonator, despite the occurrence of constructive and destructive interference, energy is conserved at all frequencies:
+
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+        +
+        
+          A
+          
+            refl
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            
+              
+                I
+                
+                  trans
+                
+              
+              +
+              
+                I
+                
+                  refl
+                
+              
+            
+            
+              I
+              
+                inc
+              
+            
+          
+        
+        =
+        1.
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }+A_{\text{refl}}^{\prime }={\frac {I_{\text{trans}}+I_{\text{refl}}}{I_{\text{inc}}}}=1.}
+  
+
+The external resonance enhancement factor (see figure "Resonance enhancement in a Fabry–Pérot resonator") is
+
+  
+    
+      
+        
+          A
+          
+            circ
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            
+              I
+              
+                circ
+              
+            
+            
+              I
+              
+                inc
+              
+            
+          
+        
+        =
+        (
+        1
+        −
+        
+          R
+          
+            1
+          
+        
+        )
+        
+          A
+          
+            circ
+          
+        
+        =
+        
+          
+            
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+            
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{circ}}^{\prime }={\frac {I_{\text{circ}}}{I_{\text{inc}}}}=(1-R_{1})A_{\text{circ}}={\frac {1-R_{1}}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}}.}
+  
+
+At the resonance frequencies 
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \nu _{q}}
+  
+, where 
+  
+    
+      
+        sin
+        ⁡
+        (
+        ϕ
+        )
+      
+    
+    {\displaystyle \sin(\phi )}
+  
+ equals zero, the external resonance enhancement factor is
+
+  
+    
+      
+        
+          A
+          
+            circ
+          
+          
+            ′
+          
+        
+        (
+        
+          ν
+          
+            q
+          
+        
+        )
+        =
+        
+          
+            
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+            
+            
+              
+                (
+                
+                  1
+                  −
+                  
+                    
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{circ}}^{\prime }(\nu _{q})={\frac {1-R_{1}}{\left(1-{\sqrt {R_{1}R_{2}}}\right)^{2}}}.}
+  
+
+Usually light is transmitted through a Fabry–Pérot resonator. Therefore, an often applied Airy distribution is
+
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            
+              I
+              
+                trans
+              
+            
+            
+              I
+              
+                inc
+              
+            
+          
+        
+        =
+        (
+        1
+        −
+        
+          R
+          
+            1
+          
+        
+        )
+        (
+        1
+        −
+        
+          R
+          
+            2
+          
+        
+        )
+        
+          A
+          
+            circ
+          
+        
+        =
+        
+          
+            
+              (
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              )
+              (
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+              )
+            
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }={\frac {I_{\text{trans}}}{I_{\text{inc}}}}=(1-R_{1})(1-R_{2})A_{\text{circ}}={\frac {(1-R_{1})(1-R_{2})}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}}.}
+  
+
+It describes the fraction 
+  
+    
+      
+        
+          I
+          
+            trans
+          
+        
+      
+    
+    {\displaystyle I_{\text{trans}}}
+  
+ of the intensity 
+  
+    
+      
+        
+          I
+          
+            inc
+          
+        
+      
+    
+    {\displaystyle I_{\text{inc}}}
+  
+ of a light source incident upon mirror 1 that is transmitted through mirror 2 (see figure "Airy distribution 
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }}
+  
+"). Its peak value at the resonance frequencies 
+  
+    
+      
+        
+          ν
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \nu _{q}}
+  
+ is
+
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+        (
+        
+          ν
+          
+            q
+          
+        
+        )
+        =
+        
+          
+            
+              (
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              )
+              (
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+              )
+            
+            
+              
+                (
+                
+                  1
+                  −
+                  
+                    
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }(\nu _{q})={\frac {(1-R_{1})(1-R_{2})}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}}}.}
+  
+
+For 
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+        =
+        
+          R
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R_{1}=R_{2}}
+  
+ the peak value equals unity; i.e., all light incident upon the resonator is transmitted. Consequently, no light is reflected, 
+  
+    
+      
+        
+          A
+          
+            refl
+          
+          
+            ′
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle A_{\text{refl}}^{\prime }=0}
+  
+, as a result of destructive interference between the fields 
+  
+    
+      
+        
+          E
+          
+            
+              refl
+            
+            ,
+            1
+          
+        
+      
+    
+    {\displaystyle E_{{\text{refl}},1}}
+  
+ and 
+  
+    
+      
+        
+          E
+          
+            back
+          
+        
+      
+    
+    {\displaystyle E_{\text{back}}}
+  
+.
+
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }}
+  
+ has been derived in the circulating-field approach by considering an additional phase shift of 
+  
+    
+      
+        
+          e
+          
+            i
+            π
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\displaystyle e^{i\pi /2}}
+  
+ during each transmission through a mirror,
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  E
+                  
+                    circ
+                  
+                
+                =
+                i
+                
+                  t
+                  
+                    1
+                  
+                
+                
+                  E
+                  
+                    inc
+                  
+                
+                +
+                
+                  r
+                  
+                    1
+                  
+                
+                
+                  r
+                  
+                    2
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    2
+                    ϕ
+                  
+                
+                
+                  E
+                  
+                    circ
+                  
+                
+              
+              
+                
+                ⇒
+                
+                  
+                    
+                      E
+                      
+                        circ
+                      
+                    
+                    
+                      E
+                      
+                        inc
+                      
+                    
+                  
+                
+                =
+                
+                  
+                    
+                      i
+                      
+                        t
+                        
+                          1
+                        
+                      
+                    
+                    
+                      1
+                      −
+                      
+                        r
+                        
+                          1
+                        
+                      
+                      
+                        r
+                        
+                          2
+                        
+                      
+                      
+                        e
+                        
+                          −
+                          i
+                          2
+                          ϕ
+                        
+                      
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  E
+                  
+                    trans
+                  
+                
+                =
+                i
+                
+                  t
+                  
+                    2
+                  
+                
+                
+                  E
+                  
+                    circ
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    ϕ
+                  
+                
+              
+              
+                
+                ⇒
+                
+                  
+                    
+                      E
+                      
+                        trans
+                      
+                    
+                    
+                      E
+                      
+                        inc
+                      
+                    
+                  
+                
+                =
+                
+                  
+                    
+                      −
+                      
+                        t
+                        
+                          1
+                        
+                      
+                      
+                        t
+                        
+                          2
+                        
+                      
+                      
+                        e
+                        
+                          −
+                          i
+                          ϕ
+                        
+                      
+                    
+                    
+                      1
+                      −
+                      
+                        r
+                        
+                          1
+                        
+                      
+                      
+                        r
+                        
+                          2
+                        
+                      
+                      
+                        e
+                        
+                          −
+                          i
+                          2
+                          ϕ
+                        
+                      
+                    
+                  
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}E_{\text{circ}}=it_{1}E_{\text{inc}}+r_{1}r_{2}e^{-i2\phi }E_{\text{circ}}&\Rightarrow {\frac {E_{\text{circ}}}{E_{\text{inc}}}}={\frac {it_{1}}{1-r_{1}r_{2}e^{-i2\phi }}},\\E_{\text{trans}}=it_{2}E_{\text{circ}}e^{-i\phi }&\Rightarrow {\frac {E_{\text{trans}}}{E_{\text{inc}}}}={\frac {-t_{1}t_{2}e^{-i\phi }}{1-r_{1}r_{2}e^{-i2\phi }}},\end{aligned}}}
+  
+
+resulting in
+
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            
+              I
+              
+                trans
+              
+            
+            
+              I
+              
+                inc
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                |
+                
+                  E
+                  
+                    trans
+                  
+                
+                |
+              
+              
+                2
+              
+            
+            
+              
+                |
+                
+                  E
+                  
+                    inc
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                |
+                
+                  −
+                  
+                    t
+                    
+                      1
+                    
+                  
+                  
+                    t
+                    
+                      2
+                    
+                  
+                  
+                    e
+                    
+                      −
+                      i
+                      ϕ
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+            
+              
+                |
+                
+                  1
+                  −
+                  
+                    r
+                    
+                      1
+                    
+                  
+                  
+                    r
+                    
+                      2
+                    
+                  
+                  
+                    e
+                    
+                      −
+                      i
+                      2
+                      ϕ
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              (
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              )
+              (
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+              )
+            
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }={\frac {I_{\text{trans}}}{I_{\text{inc}}}}={\frac {\left|E_{\text{trans}}\right|^{2}}{\left|E_{\text{inc}}\right|^{2}}}={\frac {\left|-t_{1}t_{2}e^{-i\phi }\right|^{2}}{\left|1-r_{1}r_{2}e^{-i2\phi }\right|^{2}}}={\frac {(1-R_{1})(1-R_{2})}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}}.}
+  
+
+Alternatively, 
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }}
+  
+ can be obtained via the round-trip-decay approach by tracing the infinite number of round trips that the incident electric field 
+  
+    
+      
+        
+          E
+          
+            inc
+          
+        
+      
+    
+    {\displaystyle E_{\text{inc}}}
+  
+ exhibits after entering the resonator and accumulating the electric field 
+  
+    
+      
+        
+          E
+          
+            trans
+          
+        
+      
+    
+    {\displaystyle E_{\text{trans}}}
+  
+ transmitted in all round trips. The field transmitted after the first propagation and the smaller and smaller fields transmitted after each consecutive propagation through the resonator are
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  E
+                  
+                    trans,1
+                  
+                
+              
+              
+                
+                =
+                
+                  E
+                  
+                    inc
+                  
+                
+                i
+                
+                  t
+                  
+                    1
+                  
+                
+                i
+                
+                  t
+                  
+                    2
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    ϕ
+                  
+                
+                =
+                −
+                
+                  E
+                  
+                    inc
+                  
+                
+                
+                  t
+                  
+                    1
+                  
+                
+                
+                  t
+                  
+                    2
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    ϕ
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  E
+                  
+                    
+                      trans
+                    
+                    ,
+                    m
+                    +
+                    1
+                  
+                
+              
+              
+                
+                =
+                
+                  E
+                  
+                    
+                      trans
+                    
+                    ,
+                    m
+                  
+                
+                
+                  r
+                  
+                    1
+                  
+                
+                
+                  r
+                  
+                    2
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    2
+                    ϕ
+                  
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}E_{\text{trans,1}}&=E_{\text{inc}}it_{1}it_{2}e^{-i\phi }=-E_{\text{inc}}t_{1}t_{2}e^{-i\phi },\\E_{{\text{trans}},m+1}&=E_{{\text{trans}},m}r_{1}r_{2}e^{-i2\phi },\end{aligned}}}
+  
+
+respectively. Exploiting
+
+  
+    
+      
+        
+          ∑
+          
+            m
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          x
+          
+            m
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              x
+            
+          
+        
+        ⇒
+        
+          E
+          
+            trans
+          
+        
+        =
+        
+          ∑
+          
+            m
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          E
+          
+            
+              trans
+            
+            ,
+            m
+          
+        
+        =
+        
+          E
+          
+            inc
+          
+        
+        
+          
+            
+              −
+              
+                t
+                
+                  1
+                
+              
+              
+                t
+                
+                  2
+                
+              
+              
+                e
+                
+                  −
+                  i
+                  ϕ
+                
+              
+            
+            
+              1
+              −
+              
+                r
+                
+                  1
+                
+              
+              
+                r
+                
+                  2
+                
+              
+              
+                e
+                
+                  −
+                  i
+                  2
+                  ϕ
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{m=0}^{\infty }x^{m}={\frac {1}{1-x}}\Rightarrow E_{\text{trans}}=\sum _{m=1}^{\infty }E_{{\text{trans}},m}=E_{\text{inc}}{\frac {-t_{1}t_{2}e^{-i\phi }}{1-r_{1}r_{2}e^{-i2\phi }}}}
+  
+
+results in the same 
+  
+    
+      
+        
+          E
+          
+            trans
+          
+        
+        
+          /
+        
+        
+          E
+          
+            inc
+          
+        
+      
+    
+    {\displaystyle E_{\text{trans}}/E_{\text{inc}}}
+  
+ as above, therefore the same Airy distribution 
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }}
+  
+ derives. However, this approach is physically misleading, because it assumes that interference takes place between the outcoupled beams after mirror 2, outside the resonator, rather than the launched and circulating beams after mirror 1, inside the resonator. Since it is interference that modifies the spectral contents, the spectral intensity distribution inside the resonator would be the same as the incident spectral intensity distribution, and no resonance enhancement would occur inside the resonator.
+
+
+=== Airy distribution as a sum of mode profiles ===
+Physically, the Airy distribution is the sum of mode profiles of the longitudinal resonator modes. Starting from the electric field 
+  
+    
+      
+        
+          E
+          
+            c
+            i
+            r
+            c
+          
+        
+      
+    
+    {\displaystyle E_{circ}}
+  
+ circulating inside the resonator, one considers the exponential decay in time of this field through both mirrors of the resonator, Fourier transforms it to frequency space to obtain the normalized spectral line shapes 
+  
+    
+      
+        
+          
+            
+              
+                γ
+                ~
+              
+            
+          
+          
+            q
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle {\tilde {\gamma }}_{q}(\nu )}
+  
+, divides it by the round-trip time 
+  
+    
+      
+        
+          t
+          
+            
+              R
+              T
+            
+          
+        
+      
+    
+    {\displaystyle t_{\rm {RT}}}
+  
+ to account for how the total circulating electric-field intensity is longitudinally distributed in the resonator and coupled out per unit time, resulting in the emitted mode profiles,
+
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            
+              
+                e
+                m
+                i
+                t
+              
+            
+          
+        
+        (
+        ν
+        )
+        =
+        
+          
+            1
+            
+              t
+              
+                
+                  R
+                  T
+                
+              
+            
+          
+        
+        
+          
+            
+              
+                γ
+                ~
+              
+            
+          
+          
+            q
+          
+        
+        (
+        ν
+        )
+        ,
+      
+    
+    {\displaystyle \gamma _{q,{\rm {emit}}}(\nu )={\frac {1}{t_{\rm {RT}}}}{\tilde {\gamma }}_{q}(\nu ),}
+  
+
+and then sums over the emitted mode profiles of all longitudinal modes
+
+  
+    
+      
+        
+          ∑
+          
+            q
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                e
+                m
+                i
+                t
+              
+            
+          
+        
+        (
+        ν
+        )
+        =
+        
+          
+            
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        =
+        
+          A
+          
+            
+              e
+              m
+              i
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \sum _{q=-\infty }^{\infty }\gamma _{q,{\rm {emit}}}(\nu )={\frac {1-R_{1}R_{2}}{\left({1-{\sqrt {R_{1}R_{2}}}}\right)^{2}+4{\sqrt {R_{1}R_{2}}}\sin ^{2}(\phi )}}=A_{\rm {emit}},}
+  
+
+thus equaling the Airy distribution 
+  
+    
+      
+        
+          A
+          
+            
+              e
+              m
+              i
+              t
+            
+          
+        
+      
+    
+    {\displaystyle A_{\rm {emit}}}
+  
+.
+The same simple scaling factors that provide the relations between the individual Airy distributions also provide the relations among 
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            
+              
+                e
+                m
+                i
+                t
+              
+            
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle \gamma _{q,{\rm {emit}}}(\nu )}
+  
+ and the other mode profiles:
+
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            
+              
+                c
+                i
+                r
+                c
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              R
+              
+                2
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              b-circ
+            
+          
+        
+        =
+        
+          
+            1
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                R
+                T
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                t
+                r
+                a
+                n
+                s
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              (
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              )
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                b
+                a
+                c
+                k
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                e
+                m
+                i
+                t
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \gamma _{q,{\rm {circ}}}={\frac {1}{R_{2}}}\gamma _{q,{\text{b-circ}}}={\frac {1}{R_{1}R_{2}}}\gamma _{q,{\rm {RT}}}={\frac {1}{1-R_{2}}}\gamma _{q,{\rm {trans}}}={\frac {1}{(1-R_{1})R_{2}}}\gamma _{q,{\rm {back}}}={\frac {1}{1-R_{1}R_{2}}}\gamma _{q,{\rm {emit}}},}
+  
+
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            
+              
+                c
+                i
+                r
+                c
+              
+            
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            1
+            
+              R
+              
+                2
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              b-circ
+            
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            1
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                R
+                T
+              
+            
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                t
+                r
+                a
+                n
+                s
+              
+            
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            1
+            
+              (
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              )
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                b
+                a
+                c
+                k
+              
+            
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          γ
+          
+            q
+            ,
+            
+              
+                e
+                m
+                i
+                t
+              
+            
+          
+          
+            ′
+          
+        
+        ,
+      
+    
+    {\displaystyle \gamma _{q,{\rm {circ}}}^{\prime }={\frac {1}{R_{2}}}\gamma _{q,{\text{b-circ}}}^{\prime }={\frac {1}{R_{1}R_{2}}}\gamma _{q,{\rm {RT}}}^{\prime }={\frac {1}{1-R_{2}}}\gamma _{q,{\rm {trans}}}^{\prime }={\frac {1}{(1-R_{1})R_{2}}}\gamma _{q,{\rm {back}}}^{\prime }={\frac {1}{1-R_{1}R_{2}}}\gamma _{q,{\rm {emit}}}^{\prime },}
+  
+
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            
+              
+                c
+                i
+                r
+                c
+              
+            
+          
+          
+            ′
+          
+        
+        =
+        (
+        1
+        −
+        
+          R
+          
+            1
+          
+        
+        )
+        
+          γ
+          
+            q
+            ,
+            
+              
+                c
+                i
+                r
+                c
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \gamma _{q,{\rm {circ}}}^{\prime }=(1-R_{1})\gamma _{q,{\rm {circ}}}.}
+  
+
+
+=== Characterizing the Fabry–Pérot resonator: Lorentzian linewidth and finesse ===
+The Taylor criterion of spectral resolution proposes that two spectral lines can be resolved if the individual lines cross at half intensity. When launching light into the Fabry–Pérot resonator, by measuring the Airy distribution, one can derive the total loss of the Fabry–Pérot resonator via recalculating the Lorentzian linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{c}}
+  
+, displayed (blue line) relative to the free spectral range in the figure "Lorentzian linewidth and finesse versus Airy linewidth and finesse of a Fabry–Pérot resonator".
+
+The underlying Lorentzian lines can be resolved as long as the Taylor criterion is obeyed (see figure "The physical meaning of the Lorentzian finesse"). Consequently, one can define the Lorentzian finesse of a Fabry–Pérot resonator:
+
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            c
+          
+        
+        =
+        
+          
+            
+              Δ
+              
+                ν
+                
+                  
+                    F
+                    S
+                    R
+                  
+                
+              
+            
+            
+              Δ
+              
+                ν
+                
+                  c
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              2
+              π
+            
+            
+              −
+              ln
+              ⁡
+              (
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}_{c}={\frac {\Delta \nu _{\rm {FSR}}}{\Delta \nu _{c}}}={\frac {2\pi }{-\ln(R_{1}R_{2})}}.}
+  
+
+It is displayed as the blue line in the figure "The physical meaning of the Lorentzian finesse". The Lorentzian finesse 
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            c
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}_{c}}
+  
+ has a fundamental physical meaning: it describes how well the Lorentzian lines underlying the Airy distribution can be resolved when measuring the Airy distribution. At the point where
+
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+        =
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+        ⇒
+        
+          R
+          
+            1
+          
+        
+        
+          R
+          
+            2
+          
+        
+        =
+        
+          e
+          
+            −
+            2
+            π
+          
+        
+        ≈
+        0.001867
+        ,
+      
+    
+    {\displaystyle \Delta \nu _{c}=\Delta \nu _{\rm {FSR}}\Rightarrow R_{1}R_{2}=e^{-2\pi }\approx 0.001867,}
+  
+
+equivalent to 
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            c
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\mathcal {F}}_{c}=1}
+  
+, the Taylor criterion for the spectral resolution of a single Airy distribution is reached. Under this point, 
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            c
+          
+        
+        <
+        1
+      
+    
+    {\displaystyle {\mathcal {F}}_{c}<1}
+  
+, two spectral lines cannot be distinguished. For equal mirror reflectivities, this point occurs when 
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+        =
+        
+          R
+          
+            2
+          
+        
+        ≈
+        4.32
+        %
+      
+    
+    {\displaystyle R_{1}=R_{2}\approx 4.32\%}
+  
+. Therefore, the linewidth of the Lorentzian lines underlying the Airy distribution of a Fabry–Pérot resonator can be resolved by measuring the Airy distribution, hence its resonator losses can be spectroscopically determined, until this point.
+
+
+=== Scanning the Fabry–Pérot resonator: Airy linewidth and finesse ===
+ 
+
+When the Fabry–Pérot resonator is used as a scanning interferometer, i.e., at varying resonator length (or angle of incidence), one can spectroscopically distinguish spectral lines at different frequencies within one free spectral range. Several Airy distributions 
+  
+    
+      
+        
+          A
+          
+            
+              t
+              r
+              a
+              n
+              s
+            
+          
+          
+            ′
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle A_{\rm {trans}}^{\prime }(\nu )}
+  
+, each one created by an individual spectral line, must be resolved. Therefore, the Airy distribution becomes the underlying fundamental function and the measurement delivers a sum of Airy distributions. The parameters that properly quantify this situation are the Airy linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}}
+  
+ and the Airy finesse 
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}_{\rm {Airy}}}
+  
+. The FWHM linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}}
+  
+ of the Airy distribution 
+  
+    
+      
+        
+          A
+          
+            
+              t
+              r
+              a
+              n
+              s
+            
+          
+          
+            ′
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle A_{\rm {trans}}^{\prime }(\nu )}
+  
+ is
+
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+        
+          
+            2
+            π
+          
+        
+        arcsin
+        ⁡
+        
+          (
+          
+            
+              
+                1
+                −
+                
+                  
+                    
+                      R
+                      
+                        1
+                      
+                    
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              
+                2
+                
+                  
+                    
+                      
+                        R
+                        
+                          1
+                        
+                      
+                      
+                        R
+                        
+                          2
+                        
+                      
+                    
+                    
+                      4
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}=\Delta \nu _{\rm {FSR}}{\frac {2}{\pi }}\arcsin \left({\frac {1-{\sqrt {R_{1}R_{2}}}}{2{\sqrt[{4}]{R_{1}R_{2}}}}}\right).}
+  
+
+The Airy linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}}
+  
+ is displayed as the green curve in the figure "Lorentzian linewidth and finesse versus Airy linewidth and finesse of a Fabry–Pérot resonator".
+The concept of defining the linewidth of the Airy peaks as FWHM breaks down at 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}=\Delta \nu _{\rm {FSR}}}
+  
+ (solid red line in the figure "Airy distribution 
+  
+    
+      
+        
+          A
+          
+            
+              t
+              r
+              a
+              n
+              s
+            
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\rm {trans}}^{\prime }}
+  
+"), because at this point the Airy linewidth instantaneously jumps to an infinite value for 
+  
+    
+      
+        arcsin
+      
+    
+    {\displaystyle \arcsin }
+  
+ function. For lower reflectivity values of 
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+        
+          R
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R_{1}R_{2}}
+  
+, the FWHM linewidth of the Airy peaks is undefined. The limiting case occurs at
+
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+        ⇒
+        
+          
+            
+              1
+              −
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+            
+            
+              2
+              
+                
+                  
+                    
+                      R
+                      
+                        1
+                      
+                    
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                  
+                    4
+                  
+                
+              
+            
+          
+        
+        =
+        1
+        ⇒
+        
+          R
+          
+            1
+          
+        
+        
+          R
+          
+            2
+          
+        
+        ≈
+        0.02944.
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}=\Delta \nu _{\rm {FSR}}\Rightarrow {\frac {1-{\sqrt {R_{1}R_{2}}}}{2{\sqrt[{4}]{R_{1}R_{2}}}}}=1\Rightarrow R_{1}R_{2}\approx 0.02944.}
+  
+
+For equal mirror reflectivities, this point is reached when 
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+        =
+        
+          R
+          
+            2
+          
+        
+        ≈
+        17.2
+        %
+      
+    
+    {\displaystyle R_{1}=R_{2}\approx 17.2\%}
+  
+ (solid red line in the figure "Airy distribution 
+  
+    
+      
+        
+          A
+          
+            
+              t
+              r
+              a
+              n
+              s
+            
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\rm {trans}}^{\prime }}
+  
+").
+The finesse of the Airy distribution of a Fabry–Pérot resonator, which is displayed as the green curve in the figure "Lorentzian linewidth and finesse versus Airy linewidth and finesse of a Fabry–Pérot resonator" in direct comparison with the Lorentzian finesse 
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            c
+          
+        
+      
+    
+    {\displaystyle {\mathcal {F}}_{c}}
+  
+, is defined as
+
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        
+          
+            
+              Δ
+              
+                ν
+                
+                  
+                    F
+                    S
+                    R
+                  
+                
+              
+            
+            
+              Δ
+              
+                ν
+                
+                  
+                    A
+                    i
+                    r
+                    y
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            π
+            2
+          
+        
+        
+          
+            [
+            
+              arcsin
+              ⁡
+              
+                (
+                
+                  
+                    
+                      1
+                      −
+                      
+                        
+                          
+                            R
+                            
+                              1
+                            
+                          
+                          
+                            R
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                    
+                      2
+                      
+                        
+                          
+                            
+                              R
+                              
+                                1
+                              
+                            
+                            
+                              R
+                              
+                                2
+                              
+                            
+                          
+                          
+                            4
+                          
+                        
+                      
+                    
+                  
+                
+                )
+              
+            
+            ]
+          
+          
+            −
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}_{\rm {Airy}}={\frac {\Delta \nu _{\rm {FSR}}}{\Delta \nu _{\rm {Airy}}}}={\frac {\pi }{2}}\left[\arcsin \left({\frac {1-{\sqrt {R_{1}R_{2}}}}{2{\sqrt[{4}]{R_{1}R_{2}}}}}\right)\right]^{-1}.}
+  
+
+When scanning the length of the Fabry–Pérot resonator (or the angle of incident light), the Airy finesse quantifies the maximum number of Airy distributions created by light at individual frequencies 
+  
+    
+      
+        
+          ν
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \nu _{m}}
+  
+ within the free spectral range of the Fabry–Pérot resonator, whose adjacent peaks can be unambiguously distinguished spectroscopically, i.e., they do not overlap at their FWHM (see figure "The physical meaning of the Airy finesse"). This definition of the Airy finesse is consistent with the Taylor criterion of the resolution of a spectrometer. Since the concept of the FWHM linewidth breaks down at 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}=\Delta \nu _{\rm {FSR}}}
+  
+, consequently the Airy finesse is defined only until 
+  
+    
+      
+        
+          
+            
+              F
+            
+          
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\mathcal {F}}_{\rm {Airy}}=1}
+  
+, see the figure "Lorentzian linewidth and finesse versus Airy linewidth and finesse of a Fabry–Pérot resonator".
+Often the unnecessary approximation 
+  
+    
+      
+        sin
+        ⁡
+        
+          (
+          ϕ
+          )
+        
+        ≈
+        ϕ
+      
+    
+    {\displaystyle \sin {(\phi )}\approx \phi }
+  
+ is made when deriving from 
+  
+    
+      
+        
+          A
+          
+            
+              t
+              r
+              a
+              n
+              s
+            
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\rm {trans}}^{\prime }}
+  
+ the Airy linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}}
+  
+. In contrast to the exact solution above, it leads to
+
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        ≈
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+        
+          
+            1
+            π
+          
+        
+        
+          
+            
+              1
+              −
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  R
+                  
+                    1
+                  
+                
+                
+                  R
+                  
+                    2
+                  
+                
+              
+              
+                4
+              
+            
+          
+        
+        ⇒
+        
+          
+            
+              F
+            
+          
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        =
+        
+          
+            
+              Δ
+              
+                ν
+                
+                  
+                    F
+                    S
+                    R
+                  
+                
+              
+            
+            
+              Δ
+              
+                ν
+                
+                  
+                    A
+                    i
+                    r
+                    y
+                  
+                
+              
+            
+          
+        
+        ≈
+        π
+        
+          
+            
+              
+                
+                  R
+                  
+                    1
+                  
+                
+                
+                  R
+                  
+                    2
+                  
+                
+              
+              
+                4
+              
+            
+            
+              1
+              −
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}\approx \Delta \nu _{\rm {FSR}}{\frac {1}{\pi }}{\frac {1-{\sqrt {R_{1}R_{2}}}}{\sqrt[{4}]{R_{1}R_{2}}}}\Rightarrow {\mathcal {F}}_{\rm {Airy}}={\frac {\Delta \nu _{\rm {FSR}}}{\Delta \nu _{\rm {Airy}}}}\approx \pi {\frac {\sqrt[{4}]{R_{1}R_{2}}}{1-{\sqrt {R_{1}R_{2}}}}}.}
+  
+
+This approximation of the Airy linewidth, displayed as the red curve in the figure "Lorentzian linewidth and finesse versus Airy linewidth and finesse of a Fabry–Pérot resonator", deviates from the correct curve at low reflectivities and incorrectly does not break down when 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            
+              A
+              i
+              r
+              y
+            
+          
+        
+        >
+        Δ
+        
+          ν
+          
+            
+              F
+              S
+              R
+            
+          
+        
+      
+    
+    {\displaystyle \Delta \nu _{\rm {Airy}}>\Delta \nu _{\rm {FSR}}}
+  
+. This approximation is then typically also used to calculate the Airy finesse.
+
+
+=== Frequency-dependent mirror reflectivities ===
+The more general case of a Fabry–Pérot resonator with frequency-dependent mirror reflectivities can be treated with the same equations as above, except that the photon decay time 
+  
+    
+      
+        
+          τ
+          
+            c
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle \tau _{c}(\nu )}
+  
+ and linewidth 
+  
+    
+      
+        Δ
+        
+          ν
+          
+            c
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle \Delta \nu _{c}(\nu )}
+  
+ now become local functions of frequency. Whereas the photon decay time is still a well-defined quantity, the linewidth loses its meaning, because it resembles a spectral bandwidth, whose value now changes within that very bandwidth. Also in this case each Airy distribution is the sum of all underlying mode profiles which can be strongly distorted. An example of the Airy distribution 
+  
+    
+      
+        
+          A
+          
+            
+              t
+              r
+              a
+              n
+              s
+            
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle A_{\rm {trans}}^{\prime }}
+  
+ and a few of the underlying mode profiles 
+  
+    
+      
+        
+          γ
+          
+            q
+            ,
+            
+              
+                t
+                r
+                a
+                n
+                s
+              
+            
+          
+          
+            ′
+          
+        
+        (
+        ν
+        )
+      
+    
+    {\displaystyle \gamma _{q,{\rm {trans}}}^{\prime }(\nu )}
+  
+ is given in the figure "Example of a Fabry–Pérot resonator with frequency-dependent mirror reflectivity".
+
+
+=== Fabry–Pérot resonator with intrinsic optical losses ===
+Intrinsic propagation losses inside the resonator can be quantified by an intensity-loss coefficient 
+  
+    
+      
+        
+          α
+          
+            
+              l
+              o
+              s
+              s
+            
+          
+        
+      
+    
+    {\displaystyle \alpha _{\rm {loss}}}
+  
+ per unit length or, equivalently, by the intrinsic round-trip loss 
+
+  
+    
+      
+        
+          L
+          
+            
+              R
+              T
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle L_{\rm {RT}},}
+  
+ such that
+
+  
+    
+      
+        1
+        −
+        
+          L
+          
+            
+              R
+              T
+            
+          
+        
+        =
+        
+          e
+          
+            −
+            
+              α
+              
+                
+                  l
+                  o
+                  s
+                  s
+                
+              
+            
+            2
+            ℓ
+          
+        
+        =
+        
+          e
+          
+            −
+            
+              t
+              
+                
+                  R
+                  T
+                
+              
+            
+            
+              /
+            
+            
+              τ
+              
+                
+                  l
+                  o
+                  s
+                  s
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle 1-L_{\rm {RT}}=e^{-\alpha _{\rm {loss}}2\ell }=e^{-t_{\rm {RT}}/\tau _{\rm {loss}}}.}
+  
+
+The additional loss shortens the photon-decay time 
+  
+    
+      
+        
+          τ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \tau _{c}}
+  
+ of the resonator:
+
+  
+    
+      
+        
+          
+            1
+            
+              τ
+              
+                c
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              τ
+              
+                
+                  o
+                  u
+                  t
+                
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              τ
+              
+                
+                  l
+                  o
+                  s
+                  s
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              −
+              ln
+              ⁡
+              
+                [
+                
+                  R
+                  
+                    1
+                  
+                
+                
+                  R
+                  
+                    2
+                  
+                
+                (
+                1
+                −
+                
+                  L
+                  
+                    
+                      R
+                      T
+                    
+                  
+                
+                )
+                ]
+              
+            
+            
+              t
+              
+                
+                  R
+                  T
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              −
+              ln
+              ⁡
+              
+                [
+                
+                  R
+                  
+                    1
+                  
+                
+                
+                  R
+                  
+                    2
+                  
+                
+                ]
+              
+            
+            
+              t
+              
+                
+                  R
+                  T
+                
+              
+            
+          
+        
+        +
+        c
+        
+          α
+          
+            
+              l
+              o
+              s
+              s
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{\tau _{c}}}={\frac {1}{\tau _{\rm {out}}}}+{\frac {1}{\tau _{\rm {loss}}}}={\frac {-\ln {[R_{1}R_{2}(1-L_{\rm {RT}})]}}{t_{\rm {RT}}}}={\frac {-\ln {[R_{1}R_{2}]}}{t_{\rm {RT}}}}+c\alpha _{\rm {loss}}.}
+  
+
+where 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ is the light speed in cavity. The generic Airy distribution or internal resonance enhancement factor 
+  
+    
+      
+        
+          A
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+      
+    
+    {\displaystyle A_{\rm {circ}}}
+  
+ is then derived as above by including the propagation losses via the amplitude-loss coefficient 
+  
+    
+      
+        
+          α
+          
+            
+              l
+              o
+              s
+              s
+            
+          
+        
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \alpha _{\rm {loss}}/2}
+  
+:
+
+  
+    
+      
+        
+          E
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        =
+        
+          E
+          
+            
+              l
+              a
+              u
+              n
+            
+          
+        
+        +
+        
+          E
+          
+            
+              R
+              T
+            
+          
+        
+        =
+        
+          E
+          
+            
+              l
+              a
+              u
+              n
+            
+          
+        
+        +
+        
+          r
+          
+            1
+          
+        
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            −
+            (
+            
+              α
+              
+                
+                  l
+                  o
+                  s
+                  s
+                
+              
+            
+            
+              /
+            
+            2
+            )
+            2
+            ℓ
+          
+        
+        
+          e
+          
+            −
+            i
+            2
+            ϕ
+          
+        
+        
+          E
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        ⇒
+        
+          
+            
+              E
+              
+                
+                  c
+                  i
+                  r
+                  c
+                
+              
+            
+            
+              E
+              
+                
+                  l
+                  a
+                  u
+                  n
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                r
+                
+                  1
+                
+              
+              
+                r
+                
+                  2
+                
+              
+              
+                e
+                
+                  −
+                  
+                    α
+                    
+                      
+                        l
+                        o
+                        s
+                        s
+                      
+                    
+                  
+                  ℓ
+                
+              
+              
+                e
+                
+                  −
+                  i
+                  2
+                  ϕ
+                
+              
+            
+          
+        
+        ⇒
+      
+    
+    {\displaystyle E_{\rm {circ}}=E_{\rm {laun}}+E_{\rm {RT}}=E_{\rm {laun}}+r_{1}r_{2}e^{-(\alpha _{\rm {loss}}/2)2\ell }e^{-i2\phi }E_{\rm {circ}}\Rightarrow {\frac {E_{\rm {circ}}}{E_{\rm {laun}}}}={\frac {1}{1-r_{1}r_{2}e^{-\alpha _{\rm {loss}}\ell }e^{-i2\phi }}}\Rightarrow }
+  
+
+  
+    
+      
+        
+          A
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        =
+        
+          
+            
+              I
+              
+                
+                  c
+                  i
+                  r
+                  c
+                
+              
+            
+            
+              I
+              
+                
+                  l
+                  a
+                  u
+                  n
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                |
+                
+                  E
+                  
+                    
+                      c
+                      i
+                      r
+                      c
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+            
+              
+                |
+                
+                  E
+                  
+                    
+                      l
+                      a
+                      u
+                      n
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              
+                |
+                
+                  1
+                  −
+                  
+                    r
+                    
+                      1
+                    
+                  
+                  
+                    r
+                    
+                      2
+                    
+                  
+                  
+                    e
+                    
+                      −
+                      
+                        α
+                        
+                          
+                            l
+                            o
+                            s
+                            s
+                          
+                        
+                      
+                      ℓ
+                    
+                  
+                  
+                    e
+                    
+                      −
+                      i
+                      2
+                      ϕ
+                    
+                  
+                
+                |
+              
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                    
+                      e
+                      
+                        −
+                        
+                          α
+                          
+                            
+                              l
+                              o
+                              s
+                              s
+                            
+                          
+                        
+                        ℓ
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                e
+                
+                  −
+                  
+                    α
+                    
+                      
+                        l
+                        o
+                        s
+                        s
+                      
+                    
+                  
+                  ℓ
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\rm {circ}}={\frac {I_{\rm {circ}}}{I_{\rm {laun}}}}={\frac {\left|E_{\rm {circ}}\right|^{2}}{\left|E_{\rm {laun}}\right|^{2}}}={\frac {1}{\left|1-r_{1}r_{2}e^{-\alpha _{\rm {loss}}\ell }e^{-i2\phi }\right|^{2}}}={\frac {1}{\left({1-{\sqrt {R_{1}R_{2}}}e^{-\alpha _{\rm {loss}}\ell }}\right)^{2}+4{\sqrt {R_{1}R_{2}}}e^{-\alpha _{\rm {loss}}\ell }\sin ^{2}(\phi )}}.}
+  
+
+The other Airy distributions can then be derived as above by additionally taking into account the propagation losses. Particularly, the transfer function with loss becomes
+
+  
+    
+      
+        
+          A
+          
+            trans
+          
+          
+            ′
+          
+        
+        =
+        
+          
+            
+              I
+              
+                
+                  t
+                  r
+                  a
+                  n
+                  s
+                
+              
+            
+            
+              I
+              
+                
+                  i
+                  n
+                  c
+                
+              
+            
+          
+        
+        =
+        (
+        1
+        −
+        
+          R
+          
+            1
+          
+        
+        )
+        (
+        1
+        −
+        
+          R
+          
+            2
+          
+        
+        )
+        
+          e
+          
+            −
+            
+              α
+              
+                
+                  l
+                  o
+                  s
+                  s
+                
+              
+            
+            ℓ
+          
+        
+        
+          A
+          
+            
+              c
+              i
+              r
+              c
+            
+          
+        
+        =
+        
+          
+            
+              (
+              1
+              −
+              
+                R
+                
+                  1
+                
+              
+              )
+              (
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+              )
+              
+                e
+                
+                  −
+                  
+                    α
+                    
+                      
+                        l
+                        o
+                        s
+                        s
+                      
+                    
+                  
+                  ℓ
+                
+              
+            
+            
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        
+                          R
+                          
+                            1
+                          
+                        
+                        
+                          R
+                          
+                            2
+                          
+                        
+                      
+                    
+                    
+                      e
+                      
+                        −
+                        
+                          α
+                          
+                            
+                              l
+                              o
+                              s
+                              s
+                            
+                          
+                        
+                        ℓ
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+              +
+              4
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                e
+                
+                  −
+                  
+                    α
+                    
+                      
+                        l
+                        o
+                        s
+                        s
+                      
+                    
+                  
+                  ℓ
+                
+              
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              (
+              ϕ
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{\text{trans}}^{\prime }={\frac {I_{\rm {trans}}}{I_{\rm {inc}}}}=(1-R_{1})(1-R_{2})e^{-\alpha _{\rm {loss}}\ell }A_{\rm {circ}}={\frac {(1-R_{1})(1-R_{2})e^{-\alpha _{\rm {loss}}\ell }}{\left({1-{\sqrt {R_{1}R_{2}}}e^{-\alpha _{\rm {loss}}\ell }}\right)^{2}+4{\sqrt {R_{1}R_{2}}}e^{-\alpha _{\rm {loss}}\ell }\sin ^{2}(\phi )}}.}
+  
+
+
+=== Description of the Fabry–Pérot resonator in wavelength space ===
+
+The varying transmission function of an etalon is caused by interference between the multiple reflections of light between the two reflecting surfaces. Constructive interference occurs if the transmitted beams are in phase, and this corresponds to a high-transmission peak of the etalon. If the transmitted beams are out-of-phase, destructive interference occurs and this corresponds to a transmission minimum. Whether the multiply reflected beams are in phase or not depends on the wavelength (λ) of the light (in vacuum), the angle the light travels through the etalon (θ), the thickness of the etalon (ℓ) and the refractive index of the material between the reflecting surfaces (n).
+The phase difference between each successive transmitted pair (i.e. T2 and T1 in the diagram) is given by
+
+  
+    
+      
+        δ
+        =
+        
+          (
+          
+            
+              
+                2
+                π
+              
+              λ
+            
+          
+          )
+        
+        2
+        n
+        ℓ
+        cos
+        ⁡
+        θ
+        .
+      
+    
+    {\displaystyle \delta =\left({\frac {2\pi }{\lambda }}\right)2n\ell \cos \theta .}
+  
+
+If both surfaces have a reflectance R, the transmittance function of the etalon is given by
+
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        =
+        
+          
+            
+              (
+              1
+              −
+              R
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              1
+              −
+              2
+              R
+              cos
+              ⁡
+              δ
+              +
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              +
+              F
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              
+                (
+                
+                  
+                    δ
+                    2
+                  
+                
+                )
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle T_{e}={\frac {(1-R)^{2}}{1-2R\cos \delta +R^{2}}}={\frac {1}{1+F\sin ^{2}\left({\frac {\delta }{2}}\right)}},}
+  
+
+where
+
+  
+    
+      
+        F
+        =
+        
+          
+            
+              4
+              R
+            
+            
+              (
+              1
+              −
+              R
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle F={\frac {4R}{(1-R)^{2}}}}
+  
+
+is the coefficient of finesse.
+Maximum transmission (
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle T_{e}=1}
+  
+) occurs when the optical path length difference (
+  
+    
+      
+        2
+        n
+        l
+        cos
+        ⁡
+        θ
+      
+    
+    {\displaystyle 2nl\cos \theta }
+  
+) between each transmitted beam is an integer multiple of the wavelength. In the absence of absorption, the reflectance of the etalon Re is the complement of the transmittance, such that 
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        +
+        
+          R
+          
+            e
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle T_{e}+R_{e}=1}
+  
+. The maximum reflectivity is given by
+
+  
+    
+      
+        
+          R
+          
+            max
+          
+        
+        =
+        1
+        −
+        
+          
+            1
+            
+              1
+              +
+              F
+            
+          
+        
+        =
+        
+          
+            
+              4
+              R
+            
+            
+              (
+              1
+              +
+              R
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle R_{\max }=1-{\frac {1}{1+F}}={\frac {4R}{(1+R)^{2}}},}
+  
+
+and this occurs when the path-length difference is equal to half an odd multiple of the wavelength.
+The wavelength separation between adjacent transmission peaks is called the free spectral range (FSR) of the etalon, Δλ, and is given by:
+
+  
+    
+      
+        Δ
+        λ
+        =
+        
+          
+            
+              λ
+              
+                0
+              
+              
+                2
+              
+            
+            
+              2
+              
+                n
+                
+                  
+                    g
+                  
+                
+              
+              ℓ
+              cos
+              ⁡
+              θ
+              +
+              
+                λ
+                
+                  0
+                
+              
+            
+          
+        
+        ≈
+        
+          
+            
+              λ
+              
+                0
+              
+              
+                2
+              
+            
+            
+              2
+              
+                n
+                
+                  
+                    g
+                  
+                
+              
+              ℓ
+              cos
+              ⁡
+              θ
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \Delta \lambda ={\frac {\lambda _{0}^{2}}{2n_{\mathrm {g} }\ell \cos \theta +\lambda _{0}}}\approx {\frac {\lambda _{0}^{2}}{2n_{\mathrm {g} }\ell \cos \theta }},}
+  
+
+where λ0 is the central wavelength of the nearest transmission peak and 
+  
+    
+      
+        
+          n
+          
+            
+              g
+            
+          
+        
+      
+    
+    {\displaystyle n_{\mathrm {g} }}
+  
+ is the group refractive index. The FSR is related to the full-width half-maximum, δλ, of any one transmission band by a quantity known as the finesse:
+
+  
+    
+      
+        
+          
+            F
+          
+        
+        =
+        
+          
+            
+              Δ
+              λ
+            
+            
+              δ
+              λ
+            
+          
+        
+        =
+        
+          
+            π
+            
+              2
+              arcsin
+              ⁡
+              
+                (
+                
+                  
+                    1
+                    
+                      F
+                    
+                  
+                
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}={\frac {\Delta \lambda }{\delta \lambda }}={\frac {\pi }{2\arcsin \left({\frac {1}{\sqrt {F}}}\right)}}.}
+  
+
+This is commonly approximated (for R > 0.5) by
+
+  
+    
+      
+        
+          
+            F
+          
+        
+        ≈
+        
+          
+            
+              π
+              
+                
+                  F
+                
+              
+            
+            2
+          
+        
+        =
+        
+          
+            
+              π
+              
+                R
+                
+                  
+                    1
+                    2
+                  
+                
+              
+            
+            
+              1
+              −
+              R
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}\approx {\frac {\pi {\sqrt {F}}}{2}}={\frac {\pi R^{\frac {1}{2}}}{1-R}}.}
+  
+
+If the two mirrors are not equal, the finesse becomes
+
+  
+    
+      
+        
+          
+            F
+          
+        
+        ≈
+        
+          
+            
+              π
+              
+                
+                  (
+                  
+                    
+                      R
+                      
+                        1
+                      
+                    
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    1
+                    4
+                  
+                
+              
+            
+            
+              1
+              −
+              
+                
+                  (
+                  
+                    
+                      R
+                      
+                        1
+                      
+                    
+                    
+                      R
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    1
+                    2
+                  
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\mathcal {F}}\approx {\frac {\pi \left(R_{1}R_{2}\right)^{\frac {1}{4}}}{1-\left(R_{1}R_{2}\right)^{\frac {1}{2}}}}.}
+  
+
+Etalons with high finesse show sharper transmission peaks with lower minimum transmission coefficients. In the oblique incidence case, the finesse will depend on the polarization state of the beam, since the value of R, given by the Fresnel equations, is generally different for p and s polarizations.
+Two beams are shown in the diagram at the right, one of which (T0) is transmitted through the etalon, and the other of which (T1) is reflected twice before being transmitted. At each reflection, the amplitude is reduced by 
+  
+    
+      
+        
+          
+            R
+          
+        
+      
+    
+    {\displaystyle {\sqrt {R}}}
+  
+, while at each transmission through an interface the amplitude is reduced by 
+  
+    
+      
+        
+          
+            T
+          
+        
+      
+    
+    {\displaystyle {\sqrt {T}}}
+  
+. Assuming no absorption, conservation of energy requires T + R = 1. In the derivation below, n is the index of refraction inside the etalon, and n0 is that outside the etalon. It is presumed that n > n0. The incident amplitude at point a is taken to be one, and phasors are used to represent the amplitude of the radiation. The transmitted amplitude at point b will then be
+
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+        =
+        T
+        
+        
+          e
+          
+            i
+            k
+            ℓ
+            
+              /
+            
+            cos
+            ⁡
+            θ
+          
+        
+        ,
+      
+    
+    {\displaystyle t_{0}=T\,e^{ik\ell /\cos \theta },}
+  
+
+where 
+  
+    
+      
+        k
+        =
+        2
+        π
+        n
+        
+          /
+        
+        λ
+      
+    
+    {\displaystyle k=2\pi n/\lambda }
+  
+ is the wavenumber inside the etalon, and λ is the vacuum wavelength. At point c the transmitted amplitude will be
+
+  
+    
+      
+        
+          t
+          
+            1
+          
+          ′
+        
+        =
+        T
+        R
+        
+        
+          e
+          
+            3
+            i
+            k
+            ℓ
+            
+              /
+            
+            cos
+            ⁡
+            θ
+          
+        
+        .
+      
+    
+    {\displaystyle t'_{1}=TR\,e^{3ik\ell /\cos \theta }.}
+  
+
+The total amplitude of both beams will be the sum of the amplitudes of the two beams measured along a line perpendicular to the direction of the beam. The amplitude t0 at point b can therefore be added to t'1 retarded in phase by an amount 
+  
+    
+      
+        
+          k
+          
+            0
+          
+        
+        
+          ℓ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle k_{0}\ell _{0}}
+  
+, where 
+  
+    
+      
+        
+          k
+          
+            0
+          
+        
+        =
+        2
+        π
+        
+          n
+          
+            0
+          
+        
+        
+          /
+        
+        λ
+      
+    
+    {\displaystyle k_{0}=2\pi n_{0}/\lambda }
+  
+ is the wavenumber outside of the etalon. Thus
+
+  
+    
+      
+        
+          t
+          
+            1
+          
+        
+        =
+        T
+        R
+        
+        
+          e
+          
+            
+              (
+              
+                3
+                i
+                k
+                ℓ
+                
+                  /
+                
+                cos
+                ⁡
+                θ
+              
+              )
+            
+            −
+            i
+            
+              k
+              
+                0
+              
+            
+            
+              ℓ
+              
+                0
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle t_{1}=TR\,e^{\left(3ik\ell /\cos \theta \right)-ik_{0}\ell _{0}},}
+  
+
+where ℓ0 is
+
+  
+    
+      
+        
+          ℓ
+          
+            0
+          
+        
+        =
+        2
+        ℓ
+        tan
+        ⁡
+        θ
+        sin
+        ⁡
+        
+          θ
+          
+            0
+          
+        
+        .
+      
+    
+    {\displaystyle \ell _{0}=2\ell \tan \theta \sin \theta _{0}.}
+  
+
+The phase difference between the two beams is
+
+  
+    
+      
+        δ
+        =
+        
+          
+            
+              2
+              k
+              ℓ
+            
+            
+              cos
+              ⁡
+              θ
+            
+          
+        
+        −
+        
+          k
+          
+            0
+          
+        
+        
+          ℓ
+          
+            0
+          
+        
+        .
+      
+    
+    {\displaystyle \delta ={2k\ell  \over \cos \theta }-k_{0}\ell _{0}.}
+  
+
+The relationship between θ and θ0 is given by Snell's law:
+
+  
+    
+      
+        n
+        sin
+        ⁡
+        θ
+        =
+        
+          n
+          
+            0
+          
+        
+        sin
+        ⁡
+        
+          θ
+          
+            0
+          
+        
+        ,
+      
+    
+    {\displaystyle n\sin \theta =n_{0}\sin \theta _{0},}
+  
+
+so that the phase difference may be written as
+
+  
+    
+      
+        δ
+        =
+        2
+        k
+        ℓ
+        
+        cos
+        ⁡
+        θ
+        .
+      
+    
+    {\displaystyle \delta =2k\ell \,\cos \theta .}
+  
+
+To within a constant multiplicative phase factor, the amplitude of the mth transmitted beam can be written as
+
+  
+    
+      
+        
+          t
+          
+            m
+          
+        
+        =
+        T
+        
+          R
+          
+            m
+          
+        
+        
+          e
+          
+            i
+            m
+            δ
+          
+        
+        .
+      
+    
+    {\displaystyle t_{m}=TR^{m}e^{im\delta }.}
+  
+
+The total transmitted amplitude is the sum of all individual beams' amplitudes:
+
+  
+    
+      
+        t
+        =
+        
+          ∑
+          
+            m
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          t
+          
+            m
+          
+        
+        =
+        T
+        
+          ∑
+          
+            m
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          R
+          
+            m
+          
+        
+        
+        
+          e
+          
+            i
+            m
+            δ
+          
+        
+        .
+      
+    
+    {\displaystyle t=\sum _{m=0}^{\infty }t_{m}=T\sum _{m=0}^{\infty }R^{m}\,e^{im\delta }.}
+  
+
+The series is a geometric series, whose sum can be expressed analytically. The amplitude can be rewritten as
+
+  
+    
+      
+        t
+        =
+        
+          
+            T
+            
+              1
+              −
+              R
+              
+                e
+                
+                  i
+                  δ
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle t={\frac {T}{1-Re^{i\delta }}}.}
+  
+
+The intensity of the beam will be just t times its complex conjugate. Since the incident beam was assumed to have an intensity of one, this will also give the transmission function:
+
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        =
+        t
+        
+          t
+          
+            ∗
+          
+        
+        =
+        
+          
+            
+              T
+              
+                2
+              
+            
+            
+              1
+              +
+              
+                R
+                
+                  2
+                
+              
+              −
+              2
+              R
+              cos
+              ⁡
+              δ
+            
+          
+        
+        .
+      
+    
+    {\displaystyle T_{e}=tt^{*}={\frac {T^{2}}{1+R^{2}-2R\cos \delta }}.}
+  
+
+For an asymmetrical cavity, that is, one with two different mirrors, the general form of the transmission function is
+
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        =
+        
+          
+            
+              
+                T
+                
+                  1
+                
+              
+              
+                T
+                
+                  2
+                
+              
+            
+            
+              1
+              +
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+              −
+              2
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              cos
+              ⁡
+              δ
+            
+          
+        
+        .
+      
+    
+    {\displaystyle T_{e}={\frac {T_{1}T_{2}}{1+R_{1}R_{2}-2{\sqrt {R_{1}R_{2}}}\cos \delta }}.}
+  
+
+A Fabry–Pérot interferometer differs from a Fabry–Pérot etalon in the fact that the distance ℓ between the plates can be tuned in order to change the wavelengths at which transmission peaks occur in the interferometer. Due to the angle dependence of the transmission, the peaks can also be shifted by rotating the etalon with respect to the beam.
+Another expression for the transmission function was already derived in the description in frequency space as the infinite sum of all longitudinal mode profiles. Defining 
+  
+    
+      
+        γ
+        =
+        ln
+        ⁡
+        
+          (
+          
+            
+              1
+              R
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \gamma =\ln \left({\frac {1}{R}}\right)}
+  
+ the above expression may be written as
+
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        =
+        
+          
+            
+              T
+              
+                2
+              
+            
+            
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                sinh
+                ⁡
+                γ
+              
+              
+                cosh
+                ⁡
+                γ
+                −
+                cos
+                ⁡
+                δ
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle T_{e}={\frac {T^{2}}{1-R^{2}}}\left({\frac {\sinh \gamma }{\cosh \gamma -\cos \delta }}\right).}
+  
+
+The second term is proportional to a wrapped Lorentzian distribution so that the transmission function may be written as a series of Lorentzian functions:
+
+  
+    
+      
+        
+          T
+          
+            e
+          
+        
+        =
+        
+          
+            
+              2
+              π
+              
+              
+                T
+                
+                  2
+                
+              
+            
+            
+              1
+              −
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        
+        
+          ∑
+          
+            ℓ
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        L
+        (
+        δ
+        −
+        2
+        π
+        ℓ
+        ;
+        γ
+        )
+        ,
+      
+    
+    {\displaystyle T_{e}={\frac {2\pi \,T^{2}}{1-R^{2}}}\,\sum _{\ell =-\infty }^{\infty }L(\delta -2\pi \ell ;\gamma ),}
+  
+
+where
+
+  
+    
+      
+        L
+        (
+        x
+        ;
+        γ
+        )
+        =
+        
+          
+            γ
+            
+              π
+              
+                (
+                
+                  
+                    x
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    γ
+                    
+                      2
+                    
+                  
+                
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle L(x;\gamma )={\frac {\gamma }{\pi \left(x^{2}+\gamma ^{2}\right)}}.}
+  
+
+
+== See also ==
+Lummer–Gehrcke interferometer
+Gires–Tournois etalon
+Atomic line filter
+ARROW waveguide
+Distributed Bragg reflector
+Fiber Bragg grating
+Optical microcavity
+Thin-film interference
+Laser linewidth
+
+
+== Notes ==
+
+
+== References ==
+Hernandez, G. (1986). Fabry–Perot Interferometers. Cambridge: Cambridge University Press. ISBN 0-521-32238-3.
+
+
+== External links ==
+Advanced Design of Etalons- by Precision Photonics Corporation

@@ -1,0 +1,1621 @@
+In classical and quantum mechanics, geometric phase is a phase difference acquired over the course of a cycle, when a system is subjected to cyclic adiabatic processes, which results from the geometrical properties of the parameter space of the Hamiltonian. The phenomenon was independently discovered by S. Pancharatnam (1956), in classical optics and by H. C. Longuet-Higgins (1958)  in molecular physics; it was generalized by Michael Berry in (1984). 
+It is also known as the Pancharatnam–Berry phase, Pancharatnam phase, or Berry phase.
+It can be seen in the conical intersection of potential energy surfaces and in the Aharonov–Bohm effect. Geometric phase around the conical intersection involving the ground electronic state of the C6H3F3+ molecular ion is discussed on pages 385–386 of the textbook by Bunker and Jensen. In the case of the Aharonov–Bohm effect, the adiabatic parameter is the magnetic field enclosed by two interference paths, and it is cyclic in the sense that these two paths form a loop. In the case of the conical intersection, the adiabatic parameters are the molecular coordinates. Apart from quantum mechanics, it arises in a variety of other wave systems, such as classical optics. As a rule of thumb, it can occur whenever there are at least two parameters characterizing a wave in the vicinity of some sort of singularity or hole in the topology; two parameters are required because either the set of nonsingular states will not be simply connected, or there will be nonzero holonomy.
+Waves are characterized by amplitude and phase, and may vary as a function of those parameters. The geometric phase occurs when both parameters are changed simultaneously but very slowly (adiabatically), and eventually brought back to the initial configuration. In quantum mechanics, this could involve rotations but also translations of particles, which are apparently undone at the end. One might expect that the waves in the system return to the initial state, as characterized by the amplitudes and phases (and accounting for the passage of time). However, if the parameter excursions correspond to a loop instead of a self-retracing back-and-forth variation, then it is possible that the initial and final states differ in their phases. This phase difference is the geometric phase, and its occurrence typically indicates that the system's parameter dependence is singular (its state is undefined) for some combination of parameters.
+To measure the geometric phase in a wave system, an interference experiment is required. The Foucault pendulum is an example from classical mechanics that is sometimes used to illustrate the geometric phase. This mechanics analogue of the geometric phase is known as the Hannay angle.
+
+
+== Berry phase in quantum mechanics ==
+In a quantum system at the n-th eigenstate, an adiabatic evolution of the Hamiltonian sees the system remain in the n-th eigenstate of the Hamiltonian, while also obtaining a phase factor.  The phase obtained has a contribution from the state's time evolution and another from the variation of the eigenstate with the changing Hamiltonian. The second term corresponds to the Berry phase, and for non-cyclical variations of the Hamiltonian it can be made to vanish by a different choice of the phase associated with the eigenstates of the Hamiltonian at each point in the evolution.
+However, if the variation is cyclical, the Berry phase cannot be cancelled; it is invariant and becomes an observable property of the system. By reviewing the proof of the adiabatic theorem given by Max Born and Vladimir Fock, in Zeitschrift für Physik 51, 165 (1928), we could characterize the whole change of the adiabatic process into a phase term. Under the adiabatic approximation, the coefficient of the n-th eigenstate under adiabatic process is given by
+
+  
+    
+      
+        
+          C
+          
+            n
+          
+        
+        (
+        t
+        )
+        =
+        
+          C
+          
+            n
+          
+        
+        (
+        0
+        )
+        exp
+        ⁡
+        
+          [
+          
+            −
+            
+              ∫
+              
+                0
+              
+              
+                t
+              
+            
+            ⟨
+            
+              ψ
+              
+                n
+              
+            
+            (
+            
+              t
+              ′
+            
+            )
+            
+              |
+            
+            
+              
+                
+                  
+                    ψ
+                    ˙
+                  
+                
+              
+              
+                n
+              
+            
+            (
+            
+              t
+              ′
+            
+            )
+            ⟩
+            
+            d
+            
+              t
+              ′
+            
+          
+          ]
+        
+        =
+        
+          C
+          
+            n
+          
+        
+        (
+        0
+        )
+        
+          e
+          
+            i
+            
+              γ
+              
+                n
+              
+            
+            (
+            t
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle C_{n}(t)=C_{n}(0)\exp \left[-\int _{0}^{t}\langle \psi _{n}(t')|{\dot {\psi }}_{n}(t')\rangle \,dt'\right]=C_{n}(0)e^{i\gamma _{n}(t)},}
+  
+
+where 
+  
+    
+      
+        
+          γ
+          
+            n
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle \gamma _{n}(t)}
+  
+ is the Berry's phase with respect to parameter t. Changing the variable t into generalized parameters, we could rewrite the Berry's phase into
+
+  
+    
+      
+        
+          γ
+          
+            n
+          
+        
+        [
+        C
+        ]
+        =
+        i
+        
+          ∮
+          
+            C
+          
+        
+        ⟨
+        n
+        ,
+        t
+        
+          |
+        
+        
+          
+            (
+          
+        
+        
+          ∇
+          
+            R
+          
+        
+        
+          |
+        
+        n
+        ,
+        t
+        ⟩
+        
+          
+            )
+          
+        
+        
+        d
+        R
+        ,
+      
+    
+    {\displaystyle \gamma _{n}[C]=i\oint _{C}\langle n,t|{\big (}\nabla _{R}|n,t\rangle {\big )}\,dR,}
+  
+
+where 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ parametrizes the cyclic adiabatic process. Note that the normalization of 
+  
+    
+      
+        
+          |
+        
+        n
+        ,
+        t
+        ⟩
+      
+    
+    {\displaystyle |n,t\rangle }
+  
+ implies that the integrand is imaginary, so that 
+  
+    
+      
+        
+          γ
+          
+            n
+          
+        
+        [
+        C
+        ]
+      
+    
+    {\displaystyle \gamma _{n}[C]}
+  
+ is real. It follows a closed path 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ in the appropriate parameter space. Geometric phase along the closed path 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ can also be calculated by integrating the Berry curvature over surface enclosed by 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+.
+
+
+== Examples of geometric phases ==
+
+
+=== Foucault pendulum ===
+One of the easiest examples is the Foucault pendulum. An easy explanation in terms of geometric phases is given by Wilczek and Shapere: 
+
+How does the pendulum precess when it is taken around a general path C? For transport along the equator, the pendulum will not precess. [...] Now if C is made up of geodesic segments, the precession will all come from the angles where the segments of the geodesics meet; the total precession is equal to the net deficit angle which in turn equals the solid angle enclosed by C modulo 2π. Finally, we can approximate any loop by a sequence of geodesic segments, so the most general result (on or off the surface of the sphere) is that the net precession is equal to the enclosed solid angle.
+To put it in different words, there are no inertial forces that could make the pendulum precess, so the precession (relative to the direction of motion of the path along which the pendulum is carried) is entirely due to the turning of this path. Thus the orientation of the pendulum undergoes parallel transport. For the original Foucault pendulum, the path is a circle of latitude, and by the Gauss–Bonnet theorem, the phase shift is given by the enclosed solid angle.
+
+
+==== Derivation ====
+
+In a near-inertial frame moving in tandem with the Earth, but not sharing the rotation of the Earth about its own axis, the suspension point of the pendulum traces out a circular path during one sidereal day.
+At the latitude of Paris, 48 degrees 51 minutes north, a full precession cycle takes just under 32 hours, so after one sidereal day, when the Earth is back in the same orientation as one sidereal day before, the oscillation plane has turned by just over 270 degrees. If the plane of swing was north–south at the outset, it is east–west one sidereal day later.
+This also implies that there has been exchange of momentum; the Earth and the pendulum bob have exchanged momentum. The Earth is so much more massive than the pendulum bob that the Earth's change of momentum is unnoticeable. Nonetheless, since the pendulum bob's plane of swing has shifted, the conservation laws imply that an exchange must have occurred.
+Rather than tracking the change of momentum, the precession of the oscillation plane can efficiently be described as a case of parallel transport. For that, it can be demonstrated, by composing the infinitesimal rotations, that the precession rate is proportional to the projection of the angular velocity of Earth onto the normal direction to Earth, which implies that the trace of the plane of oscillation will undergo parallel transport. After 24 hours, the difference between initial and final orientations of the trace in the Earth frame is α = −2π sin φ, which corresponds to the value given by the Gauss–Bonnet theorem. α is also called the holonomy or geometric phase of the pendulum. When analyzing earthbound motions, the Earth frame is not an inertial frame, but rotates about the local vertical at an effective rate of 2π sin φ  radians per day. A simple method employing parallel transport within cones tangent to the Earth's surface can be used to describe the rotation angle of the swing plane of Foucault's pendulum.
+From the perspective of an Earth-bound coordinate system (the measuring circle and spectator are Earth-bounded, also if terrain reaction to Coriolis force is not perceived by spectator when he moves), using a rectangular coordinate system with its x-axis pointing east and its y-axis pointing north, the precession of the pendulum is due to the Coriolis force (other fictitious forces as gravity and centrifugal force have not direct precession component, Euler's force is low because Earth's rotation speed is nearly constant). Consider a planar pendulum with constant natural frequency ω in the small angle approximation. There are two forces acting on the pendulum bob: the restoring force provided by gravity and the wire, and the Coriolis force (the centrifugal force, opposed to the gravitational restoring force, can be neglected). The Coriolis force at latitude φ is horizontal in the small angle approximation and is given by
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  F
+                  
+                    c
+                    ,
+                    x
+                  
+                
+              
+              
+                
+                =
+                2
+                m
+                Ω
+                
+                  
+                    
+                      
+                        d
+                        y
+                      
+                      
+                        d
+                        t
+                      
+                    
+                  
+                
+                sin
+                ⁡
+                φ
+              
+            
+            
+              
+                
+                  F
+                  
+                    c
+                    ,
+                    y
+                  
+                
+              
+              
+                
+                =
+                −
+                2
+                m
+                Ω
+                
+                  
+                    
+                      
+                        d
+                        x
+                      
+                      
+                        d
+                        t
+                      
+                    
+                  
+                
+                sin
+                ⁡
+                φ
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}F_{c,x}&=2m\Omega {\dfrac {dy}{dt}}\sin \varphi \\F_{c,y}&=-2m\Omega {\dfrac {dx}{dt}}\sin \varphi \end{aligned}}}
+  
+
+where Ω is the rotational frequency of Earth, Fc,x is the component of the Coriolis force in the x-direction and Fc,y is the component of the Coriolis force in the y-direction.
+The restoring force, in the small-angle approximation and neglecting centrifugal force, is given by
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  F
+                  
+                    g
+                    ,
+                    x
+                  
+                
+              
+              
+                
+                =
+                −
+                m
+                
+                  ω
+                  
+                    2
+                  
+                
+                x
+              
+            
+            
+              
+                
+                  F
+                  
+                    g
+                    ,
+                    y
+                  
+                
+              
+              
+                
+                =
+                −
+                m
+                
+                  ω
+                  
+                    2
+                  
+                
+                y
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}F_{g,x}&=-m\omega ^{2}x\\F_{g,y}&=-m\omega ^{2}y.\end{aligned}}}
+  
+
+Using Newton's laws of motion this leads to the system of equations
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          d
+                          
+                            2
+                          
+                        
+                        x
+                      
+                      
+                        d
+                        
+                          t
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                =
+                −
+                
+                  ω
+                  
+                    2
+                  
+                
+                x
+                +
+                2
+                Ω
+                
+                  
+                    
+                      
+                        d
+                        y
+                      
+                      
+                        d
+                        t
+                      
+                    
+                  
+                
+                sin
+                ⁡
+                φ
+              
+            
+            
+              
+                
+                  
+                    
+                      
+                        
+                          d
+                          
+                            2
+                          
+                        
+                        y
+                      
+                      
+                        d
+                        
+                          t
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                =
+                −
+                
+                  ω
+                  
+                    2
+                  
+                
+                y
+                −
+                2
+                Ω
+                
+                  
+                    
+                      
+                        d
+                        x
+                      
+                      
+                        d
+                        t
+                      
+                    
+                  
+                
+                sin
+                ⁡
+                φ
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\dfrac {d^{2}x}{dt^{2}}}&=-\omega ^{2}x+2\Omega {\dfrac {dy}{dt}}\sin \varphi \\{\dfrac {d^{2}y}{dt^{2}}}&=-\omega ^{2}y-2\Omega {\dfrac {dx}{dt}}\sin \varphi .\end{aligned}}}
+  
+
+Switching to complex coordinates z = x + iy, the equations read
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              z
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        2
+        i
+        Ω
+        
+          
+            
+              d
+              z
+            
+            
+              d
+              t
+            
+          
+        
+        sin
+        ⁡
+        φ
+        +
+        
+          ω
+          
+            2
+          
+        
+        z
+        =
+        0
+        
+        .
+      
+    
+    {\displaystyle {\frac {d^{2}z}{dt^{2}}}+2i\Omega {\frac {dz}{dt}}\sin \varphi +\omega ^{2}z=0\,.}
+  
+
+To first order in ⁠Ω/ω⁠ this equation has the solution
+
+  
+    
+      
+        z
+        =
+        
+          e
+          
+            −
+            i
+            Ω
+            sin
+            ⁡
+            φ
+            t
+          
+        
+        
+          (
+          
+            
+              c
+              
+                1
+              
+            
+            
+              e
+              
+                i
+                ω
+                t
+              
+            
+            +
+            
+              c
+              
+                2
+              
+            
+            
+              e
+              
+                −
+                i
+                ω
+                t
+              
+            
+          
+          )
+        
+        
+        .
+      
+    
+    {\displaystyle z=e^{-i\Omega \sin \varphi t}\left(c_{1}e^{i\omega t}+c_{2}e^{-i\omega t}\right)\,.}
+  
+
+If time is measured in days, then Ω = 2π and the pendulum rotates by an angle of −2π sin φ during one day.
+
+
+=== Polarized light in an optical fiber ===
+
+A second example is linearly polarized light entering a single-mode optical fiber. Suppose the fiber traces out some path in space, and the light exits the fiber in the same direction as it entered. Then compare the initial and final polarizations. In semiclassical approximation the fiber functions as a waveguide, and the momentum of the light is at all times tangent to the fiber. The polarization can be thought of as an orientation perpendicular to the momentum. As the fiber traces out its path, the momentum vector of the light traces out a path on the sphere in momentum space. The path is closed, since initial and final directions of the light coincide, and the polarization is a vector tangent to the sphere. Going to momentum space is equivalent to taking the Gauss map. There are no forces that could make the polarization turn, just the constraint to remain tangent to the sphere. Thus the polarization undergoes parallel transport, and the phase shift is given by the enclosed solid angle (times the spin, which in case of light is 1).
+
+
+=== Stochastic pump effect ===
+A stochastic pump is a classical stochastic system that responds with nonzero, on average, currents to periodic changes of parameters.
+The stochastic pump effect can be interpreted in terms of a geometric phase in evolution of the moment generating function of stochastic currents. 
+
+
+=== Spin 1⁄2 ===
+The geometric phase can be evaluated exactly for a spin-1⁄2 particle in a magnetic field.
+
+
+=== Geometric phase defined on attractors ===
+While Berry's formulation was originally defined for linear Hamiltonian systems, it was soon realized by Ning and Haken that similar geometric phase can be defined for entirely different systems such as nonlinear dissipative systems that possess certain cyclic attractors. They showed that such cyclic attractors exist in a class of nonlinear dissipative systems with certain symmetries. There are several important aspects of this generalization of Berry's phase: 1) Instead of the parameter space for the original Berry phase, this Ning-Haken generalization is defined in phase space; 2) Instead of the adiabatic evolution in quantum mechanical system, the evolution of the system in phase space needs not to be adiabatic. There is no restriction on the time scale of the temporal evolution; 3) Instead of a Hermitian system or non-hermitian system with linear damping, systems can be generally nonlinear and non-hermitian.
+
+
+=== Exposure in molecular adiabatic potential surface intersections ===
+There are several ways to compute the geometric phase in molecules within the Born–Oppenheimer framework. One way is through the "non-adiabatic coupling 
+  
+    
+      
+        M
+        ×
+        M
+      
+    
+    {\displaystyle M\times M}
+  
+ matrix" defined by
+
+  
+    
+      
+        
+          τ
+          
+            i
+            j
+          
+          
+            μ
+          
+        
+        =
+        ⟨
+        
+          ψ
+          
+            i
+          
+        
+        
+          |
+        
+        
+          ∂
+          
+            μ
+          
+        
+        
+          ψ
+          
+            j
+          
+        
+        ⟩
+        ,
+      
+    
+    {\displaystyle \tau _{ij}^{\mu }=\langle \psi _{i}|\partial ^{\mu }\psi _{j}\rangle ,}
+  
+
+where 
+  
+    
+      
+        
+          ψ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \psi _{i}}
+  
+ is the adiabatic electronic wave function, depending on the nuclear parameters 
+  
+    
+      
+        
+          R
+          
+            μ
+          
+        
+      
+    
+    {\displaystyle R_{\mu }}
+  
+. The nonadiabatic coupling can be used to define a loop integral, analogous to a Wilson loop (1974) in field theory, developed independently for molecular framework by M. Baer (1975, 1980, 2000). Given a closed loop 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  
+, parameterized by  
+  
+    
+      
+        
+          R
+          
+            μ
+          
+        
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle R_{\mu }(t),}
+  
+ where 
+  
+    
+      
+        t
+        ∈
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle t\in [0,1]}
+  
+ is a parameter, and 
+  
+    
+      
+        
+          R
+          
+            μ
+          
+        
+        (
+        t
+        +
+        1
+        )
+        =
+        
+          R
+          
+            μ
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle R_{\mu }(t+1)=R_{\mu }(t)}
+  
+. The D-matrix is given by
+
+  
+    
+      
+        D
+        [
+        Γ
+        ]
+        =
+        
+          
+            
+              P
+              ^
+            
+          
+        
+        
+          e
+          
+            
+              ∮
+              
+                Γ
+              
+            
+            
+              τ
+              
+                μ
+              
+            
+            
+            d
+            
+              R
+              
+                μ
+              
+            
+          
+        
+      
+    
+    {\displaystyle D[\Gamma ]={\hat {P}}e^{\oint _{\Gamma }\tau ^{\mu }\,dR_{\mu }}}
+  
+
+(here 
+  
+    
+      
+        
+          
+            
+              P
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {P}}}
+  
+ is a path-ordering symbol). It can be shown that once 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is large enough (i.e. a sufficient number of electronic states is considered), this matrix is diagonal, with the diagonal elements equal to 
+  
+    
+      
+        
+          e
+          
+            i
+            
+              β
+              
+                j
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle e^{i\beta _{j}},}
+  
+ where 
+  
+    
+      
+        
+          β
+          
+            j
+          
+        
+      
+    
+    {\displaystyle \beta _{j}}
+  
+ are the geometric phases associated with the loop for the 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+  
+-th adiabatic electronic state.
+For time-reversal symmetrical electronic Hamiltonians the geometric phase reflects the number of conical intersections encircled by the loop. More accurately,
+
+  
+    
+      
+        
+          e
+          
+            i
+            
+              β
+              
+                j
+              
+            
+          
+        
+        =
+        (
+        −
+        1
+        
+          )
+          
+            
+              N
+              
+                j
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle e^{i\beta _{j}}=(-1)^{N_{j}},}
+  
+
+where 
+  
+    
+      
+        
+          N
+          
+            j
+          
+        
+      
+    
+    {\displaystyle N_{j}}
+  
+ is the number of conical intersections involving the adiabatic state 
+  
+    
+      
+        
+          ψ
+          
+            j
+          
+        
+      
+    
+    {\displaystyle \psi _{j}}
+  
+ encircled by the loop 
+  
+    
+      
+        Γ
+        .
+      
+    
+    {\displaystyle \Gamma .}
+  
+
+An alternative to the D-matrix approach would be a direct calculation of the Pancharatnam phase. This is especially useful if one is interested only in the geometric phases of a single adiabatic state. In this approach, one takes a  number 
+  
+    
+      
+        N
+        +
+        1
+      
+    
+    {\displaystyle N+1}
+  
+ of points 
+  
+    
+      
+        (
+        n
+        =
+        0
+        ,
+        …
+        ,
+        N
+        )
+      
+    
+    {\displaystyle (n=0,\dots ,N)}
+  
+ along the loop 
+  
+    
+      
+        R
+        (
+        
+          t
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle R(t_{n})}
+  
+ with 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle t_{0}=0}
+  
+ and 
+  
+    
+      
+        
+          t
+          
+            N
+          
+        
+        =
+        1
+        ,
+      
+    
+    {\displaystyle t_{N}=1,}
+  
+ then using only the j-th adiabatic states 
+  
+    
+      
+        
+          ψ
+          
+            j
+          
+        
+        [
+        R
+        (
+        
+          t
+          
+            n
+          
+        
+        )
+        ]
+      
+    
+    {\displaystyle \psi _{j}[R(t_{n})]}
+  
+ computes the Pancharatnam product of overlaps:
+
+  
+    
+      
+        
+          I
+          
+            j
+          
+        
+        (
+        Γ
+        ,
+        N
+        )
+        =
+        
+          ∏
+          
+            n
+            =
+            0
+          
+          
+            N
+            −
+            1
+          
+        
+        ⟨
+        
+          ψ
+          
+            j
+          
+        
+        [
+        R
+        (
+        
+          t
+          
+            n
+          
+        
+        )
+        ]
+        
+          |
+        
+        
+          ψ
+          
+            j
+          
+        
+        [
+        R
+        (
+        
+          t
+          
+            n
+            +
+            1
+          
+        
+        )
+        ]
+        ⟩
+        .
+      
+    
+    {\displaystyle I_{j}(\Gamma ,N)=\prod \limits _{n=0}^{N-1}\langle \psi _{j}[R(t_{n})]|\psi _{j}[R(t_{n+1})]\rangle .}
+  
+
+In the limit 
+  
+    
+      
+        N
+        →
+        ∞
+      
+    
+    {\displaystyle N\to \infty }
+  
+ one has (see Ryb & Baer 2004 for explanation and some applications)
+
+  
+    
+      
+        
+          I
+          
+            j
+          
+        
+        (
+        Γ
+        ,
+        N
+        )
+        →
+        
+          e
+          
+            i
+            
+              β
+              
+                j
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle I_{j}(\Gamma ,N)\to e^{i\beta _{j}}.}
+  
+
+
+=== Geometric phase and quantization of cyclotron motion ===
+An electron subjected to magnetic field 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ moves on a circular (cyclotron) orbit.[2] Classically, any cyclotron radius 
+  
+    
+      
+        
+          R
+          
+            c
+          
+        
+      
+    
+    {\displaystyle R_{c}}
+  
+ is acceptable. Quantum-mechanically, only discrete energy levels (Landau levels) are allowed, and since 
+  
+    
+      
+        
+          R
+          
+            c
+          
+        
+      
+    
+    {\displaystyle R_{c}}
+  
+ is related to electron's energy, this corresponds to quantized values of 
+  
+    
+      
+        
+          R
+          
+            c
+          
+        
+      
+    
+    {\displaystyle R_{c}}
+  
+. The energy quantization condition obtained by solving Schrödinger's equation reads, for example, 
+  
+    
+      
+        E
+        =
+        (
+        n
+        +
+        α
+        )
+        ℏ
+        
+          ω
+          
+            c
+          
+        
+        ,
+      
+    
+    {\displaystyle E=(n+\alpha )\hbar \omega _{c},}
+  
+ 
+  
+    
+      
+        α
+        =
+        1
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \alpha =1/2}
+  
+ for free electrons (in vacuum) or 
+  
+    
+      
+        E
+        =
+        v
+        
+          
+            2
+            (
+            n
+            +
+            α
+            )
+            e
+            B
+            ℏ
+          
+        
+        ,
+        
+        α
+        =
+        0
+      
+    
+    {\textstyle E=v{\sqrt {2(n+\alpha )eB\hbar }},\quad \alpha =0}
+  
+ for electrons in graphene, where 
+  
+    
+      
+        n
+        =
+        0
+        ,
+        1
+        ,
+        2
+        ,
+        …
+      
+    
+    {\displaystyle n=0,1,2,\ldots }
+  
+.[3] Although the derivation of these results is not difficult, there is an alternative way of deriving them, which offers in some respect better physical insight into the Landau level quantization. This alternative way is based on the semiclassical Bohr–Sommerfeld quantization condition
+
+  
+    
+      
+        ℏ
+        ∮
+        d
+        
+          r
+        
+        ⋅
+        
+          k
+        
+        −
+        e
+        ∮
+        d
+        
+          r
+        
+        ⋅
+        
+          A
+        
+        +
+        ℏ
+        γ
+        =
+        2
+        π
+        ℏ
+        (
+        n
+        +
+        1
+        
+          /
+        
+        2
+        )
+        ,
+      
+    
+    {\displaystyle \hbar \oint d\mathbf {r} \cdot \mathbf {k} -e\oint d\mathbf {r} \cdot \mathbf {A} +\hbar \gamma =2\pi \hbar (n+1/2),}
+  
+
+which includes the geometric phase 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ picked up by the electron while it executes its (real-space) motion along the closed loop of the cyclotron orbit. For free electrons, 
+  
+    
+      
+        γ
+        =
+        0
+        ,
+      
+    
+    {\displaystyle \gamma =0,}
+  
+ while 
+  
+    
+      
+        γ
+        =
+        π
+      
+    
+    {\displaystyle \gamma =\pi }
+  
+ for electrons in graphene. It turns out that the geometric phase is directly linked to 
+  
+    
+      
+        α
+        =
+        1
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \alpha =1/2}
+  
+ of free electrons and 
+  
+    
+      
+        α
+        =
+        0
+      
+    
+    {\displaystyle \alpha =0}
+  
+ of electrons in graphene.
+
+
+== See also ==
+Riemann curvature tensor – for the connection to mathematics
+Berry connection and curvature
+Chern class
+Optical rotation
+Winding number
+
+
+== Notes ==
+^  For simplicity, we consider electrons confined to a plane, such as 2DEG and magnetic field perpendicular to the plane.
+^  
+  
+    
+      
+        
+          ω
+          
+            c
+          
+        
+        =
+        e
+        B
+        
+          /
+        
+        m
+      
+    
+    {\displaystyle \omega _{c}=eB/m}
+  
+ is the cyclotron frequency (for free electrons) and 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ is the Fermi velocity (of electrons in graphene).
+
+
+== Footnotes ==
+
+
+== Sources ==
+Jeeva Anandan; Joy Christian; Kazimir Wanelik (1997). "Resource Letter GPP-1: Geometric Phases in Physics". Am. J. Phys. 65 (3): 180. arXiv:quant-ph/9702011. Bibcode:1997AmJPh..65..180A. doi:10.1119/1.18570. S2CID 119080820.
+Cantoni, V.; Mistrangioli, L. (1992). "Three-point phase, symplectic measure, and Berry phase". International Journal of Theoretical Physics. 31 (6): 937. Bibcode:1992IJTP...31..937C. doi:10.1007/BF00675086. S2CID 121235416.
+Richard Montgomery (8 August 2006). A Tour of Subriemannian Geometries, Their Geodesics and Applications. American Mathematical Soc. pp. 11–. ISBN 978-0-8218-4165-5. (See chapter 13 for a mathematical treatment)
+Connections to other physical phenomena (such as the Jahn–Teller effect) are discussed here: Berry's geometric phase: a review
+Paper by Prof. Galvez at Colgate University, describing Geometric Phase in Optics: Applications of Geometric Phase in Optics Archived 2007-08-24 at the Wayback Machine
+Surya Ganguli, Fibre Bundles and Gauge Theories in Classical Physics: A Unified Description of Falling Cats, Magnetic Monopoles and Berry's Phase
+Robert Batterman, Falling Cats, Parallel Parking, and Polarized Light 
+Baer, M. (1975). "Adiabatic and diabatic representations for atom-molecule collisions: Treatment of the collinear arrangement". Chemical Physics Letters. 35 (1): 112–118. Bibcode:1975CPL....35..112B. doi:10.1016/0009-2614(75)85599-0.
+M. Baer, Electronic non-adiabatic transitions: Derivation of the general adiabatic-diabatic transformation matrix, Mol. Phys. 40, 1011 (1980);
+M. Baer, Existence of diabetic potentials and the quantization of the nonadiabatic matrix, J. Phys. Chem. A 104, 3181–3184 (2000).
+Ryb, I; Baer, R (2004). "Combinatorial invariants and covariants as tools for conical intersections". The Journal of Chemical Physics. 121 (21): 10370–5. Bibcode:2004JChPh.12110370R. doi:10.1063/1.1808695. PMID 15549915.
+Wilczek, Frank; Shapere, A. (1989). Geometric Phases in Physics. World Scientific. ISBN 978-9971-5-0621-6.
+Jerrold E. Marsden; Richard Montgomery; Tudor S. Ratiu (1990). Reduction, Symmetry, and Phases in Mechanics. AMS Bookstore. p. 69. ISBN 978-0-8218-2498-6.
+C. Pisani (1994). Quantum-mechanical Ab-initio Calculation of the Properties of Crystalline Materials (Proceedings of the IV School of Computational Chemistry of the Italian Chemical Society ed.). Springer. p. 282. ISBN 978-3-540-61645-0.
+L. Mangiarotti, Gennadiĭ Aleksandrovich Sardanashvili (1998). Gauge Mechanics. World Scientific. p. 281. ISBN 978-981-02-3603-8.
+Karin M Rabe; Jean-Marc Triscone; Charles H Ahn (2007). Physics of Ferroelectrics a Modern Perspective. Springer. p. 43. ISBN 978-3-540-34590-9.
+Michael Baer (2006). Beyond Born Oppenheimer. Wiley. ISBN 978-0-471-77891-2.
+C. Z. Ning, H. Haken (1992). "Geometrical phase and amplitude accumulations in dissipative systems with cyclic attractors". Phys. Rev. Lett. 68 (14): 2109–2122. Bibcode:1992PhRvL..68.2109N. doi:10.1103/PhysRevLett.68.2109. PMID 10045311.
+C. Z. Ning, H. Haken (1992). "The geometric phase in nonlinear dissipative systems". Mod. Phys. Lett. B. 6 (25): 1541–1568. Bibcode:1992MPLB....6.1541N. doi:10.1142/S0217984992001265.
+
+
+== Further reading ==
+Michael V. Berry, The geometric phase, Scientific American 259 (6) (1988), 26–34.
+
+
+== External links ==
+ Quotations related to Geometric phase at Wikiquote
+"Geometric phases and the separation of the world by Michael Berry". YouTube. International Centre for Theoretical Sciences. February 10, 2020.

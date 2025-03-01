@@ -1,0 +1,45 @@
+Simantics System Dynamics is a ready-to-use system dynamics modelling and simulation software application for understanding different organizations, markets, and other complex systems and their dynamic behavior.
+Simantics System Dynamics is used for modelling and simulating large hierarchical models with multidimensional variables. The models are created in a traditional way with stock and flow diagrams and causal loop diagrams. Simulation results and the model structure can be analyzed with different visual tools.
+Simantics System Dynamics is developed on the Simantics Platform and is released under Eclipse Public License and provided as open-source software.
+
+
+== History ==
+The development was initiated by a group of active system dynamics modellers who had needs and ideas for an open toolset. The new needs for features like hierarchical modules, module libraries, collaborative model development and efficient model communication in system dynamics together with the development of open source modelling framework Simantics and simulation environment OpenModelica drove the developers to start developing an open source modelling and simulation software for system dynamics.
+
+
+== Features ==
+Simantics System Dynamics has several key features
+
+Spreadsheets
+An easy way for importing and managing parameter values are spreadsheets. They can also be used for storing and maintaining values in familiar format.
+Experiments
+Experiments are the way to simulate the model in Simantics System Dynamics. Experiments can exist with different configurations meaning e.g. different initial values for some parameters.
+Modules
+Modules enable structural modeling. They are defined just like the basic model configuration but the module component hides the actual configuration.
+Functions
+Simantics System Dynamics contains built-in functions and also user-definable functions. Functions can be exchanged via exporting and importing.
+Charts
+Charts are user-defined displays of simulation result data. Charts can be used in various places. There are four types of custom charts
+Line chart
+Sensitivity chart
+Bar chart
+Pie chart
+
+
+== Interface and usability ==
+
+Simantics System Dynamics (as any other Simantics based product) is built on top of Eclipse and therefore the User interface logic follows closely the one introduced in Eclipse.
+Simantics System Dynamics workbench window contains one or more perspective and perspectives contain different views and editors. Views are used to represent data in different ways. Editors are used for the actual modeling.
+
+
+== Simantics Platform ==
+Simantics is an open source software platform especially for modelling and numerical simulation. It is a grounding to build a modelling and simulation software or to integrate different software tools.
+Simantics platform utilizes heavily semantic data driven technique. All the data in the Simantics platform database is described using semantic data models and ontologies. In addition to the database, Simantics platform contains many features and user interface elements that are common to most simulation and modelling tools like diagram editor, symbol library and different kind of experiment and state management.
+
+
+== References ==
+
+
+== External links ==
+Simantics System Dynamics home page
+Simantics home page

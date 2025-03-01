@@ -1,0 +1,75 @@
+Moisture analysis covers a variety of methods for measuring the moisture content in solids, liquids, or gases. For example, moisture (usually measured as a percentage) is a common specification in commercial food production. There are many applications where trace moisture measurements are necessary for manufacturing and process quality assurance.  Trace moisture in solids must be known in processes involving plastics, pharmaceuticals and heat treatment.  Fields that require moisture measurement in gasses or liquids include hydrocarbon processing, pure semiconductor gases, bulk pure or mixed gases, dielectric gases such as those in transformers and power plants, and natural gas pipeline transport. Moisture content measurements can be reported in multiple units, such as: parts per million, pounds of water per million standard cubic feet of gas, mass of water vapor per unit volume or mass of water vapor per unit mass of dry gas.
+
+
+== Moisture content vs. moisture dew point ==
+Moisture dew point is the temperature at which moisture condenses out of a gas. This parameter is inherently related to the moisture content, which defines the amount of water molecules as a fraction of the total. Both can be used as a measure of the amount of moisture in a gas and one can be calculated from the other fairly accurately.
+While both terms are sometimes used interchangeably, these two parameters, though related, are different measurements.
+
+
+== Loss on drying ==
+The classic laboratory method of measuring high-level moisture in solid or semi-solid materials is loss on drying. In this technique, a sample of material is weighed, heated in an oven for an appropriate period, cooled in the dry atmosphere of a desiccator, and then reweighed. If the volatile content of the solid is primarily water, the loss on drying technique gives a good measure of moisture content.  Because the manual laboratory method is relatively slow, automated moisture analysers have been developed that can reduce the time necessary for a test from a couple of hours to just a few minutes.  These analysers incorporate an electronic balance with a sample tray and surrounding heating element.  Under microprocessor control, the sample can be heated rapidly. The moisture loss rate is measured throughout the process and then plotted in the form of a drying curve.
+
+
+== Karl Fischer titration ==
+An accurate method for determining the amount of water is the Karl Fischer titration, developed in 1935 by the German chemist, whose name it bears. This method detects only water, contrary to loss on drying, which detects any volatile substances.
+
+
+== Techniques used for natural gas ==
+Natural gas poses a unique problem in terms of moisture content analysis because it can contain very high levels of solid and liquid contaminants, as well as corrosives in varying concentrations.
+Measurements of moisture in natural gas are typically performed with one of the following techniques:
+
+color indicator tubes
+chilled mirrors
+chilled mirror combined with spectroscopy
+electrolytic
+piezoelectric sorption, also known as quartz crystal microbalance
+aluminum oxide and silicon oxide
+spectroscopy.
+Other moisture measurement techniques exist but are not used in natural gas applications for various reasons. For example, the gravimetric hygrometer and the “two-pressure” system used by the National Bureau of Standards are precise, but are not suitable for use in industrial applications.
+
+
+=== Color indicator tubes ===
+A color indicator tube (also referred to as a gas detector tube) is a device that natural gas pipelines use for a quick and rough measurement of moisture. Each tube contains chemicals that react to a specific compound to form a stain or color when passed through the gas. The tubes are used once and then discarded. A manufacturer calibrates the tubes, but since the measurement is directly related to exposure time, the flow rate, and the extractive technique, it is susceptible to error. In practice, the error can reach up to 25 percent. The color indicator tubes are well suited for infrequent, rough estimations of moisture in natural gas.
+
+
+=== Chilled mirrors ===
+This type of device is considered the most popular when it comes to measuring the dew point of water in gaseous media. In this type of device, when gas flows across a reflective cooling surface, the eponymous chilled mirror. When the surface is cold enough, the available moisture will start to condense onto it in tiny droplets. The exact temperature at which this condensation first occurs is registered, and the mirror is slowly heated until the condensed water begins to evaporate. This temperature is also registered and the average of the condensation and evaporation temperatures is reported as the dew point. All chilled-mirror devices, both manual and automatic, are based on this same basic method. It is necessary to measure temperatures of both the condensation and evaporation, because the dew point is the equilibrium temperature at which water both condense and evaporate at the same rate. When cooling the mirror, the temperature keeps dropping after it has reached the dew point thus, the condensation temperature measurement is lower than the actual dew point temperature before water starts to condense. Therefore, the temperature of the mirror is slowly increased until evaporation is observed to occur and the dew point is reported as the average of these two temperatures. By obtaining an accurate dew point temperature, one can calculate moisture content in the gas. The mirror temperature can be regulated by either the flow of a refrigerant over the mirror or by a thermoelectric cooler also known as a Peltier element.
+The formation behavior of condensation on the mirror's surface can be registered by either optical or visual means. In both cases, a light source is directed onto the mirror and changes in the reflection of this light due to the formation of condensation are detected by a sensor or the human eye, respectively. The exact point at which condensation begins to occur is not discernible to the unaided eye, so modern manually operated instruments use a microscope to enhance the accuracy of measurements taken using this method.
+Chilled mirror analyzers are subject to the confounding effects of some contaminants, however, at levels similar to other analyzers. With proper filtration and gas analysis preparation systems, other condensable liquids such as heavy hydrocarbons, alcohol, and glycol will not distort the results provided by these devices. It is also worth noting that in the case of natural gas, in which the aforementioned contaminants are an issue, on-line analyzers routinely measure the water dew point at line pressure, which reduces the likelihood that any heavy hydrocarbons, for example, will condense before water.
+On the other hand, chilled-mirror devices are not subject to drift, and are not influenced by fluctuations in gas composition or changes in moisture content.
+
+
+=== Chilled mirror combined with spectroscopy ===
+This method of analysis combines some of the benefits of a chilled-mirror measurement with spectroscopy.  In this method, a transparent inert material is cooled as an infrared (IR) beam is directed through it at an angle to the exterior surface. When it encounters this surface, the IR beam is reflected back through the material. A gaseous media is passed across the surface of the material at the point corresponding to the location where the IR beam is reflected. When a condensate forms on the surface of the cooling material, an analysis of the reflected IR beam will show absorption in the wavelengths that correspond to the molecular structure of the condensation formed.  In this way, the device is able to distinguish between water condensation and other types of condensates, such as, for example, hydrocarbons when the gaseous media is natural gas. One advantage of this method is its relative immunity to contaminants thanks to the inert nature of the transparent material. Similar to a true chilled-mirror device, this type of analyzer can accurately measure the condensation temperature of potential liquids in a gaseous medium, but is not capable of measuring the actual water dew point as this requires the accurate measurement of the evaporation temperature as well.
+
+
+=== Electrolytic ===
+The electrolytic sensor uses two closely spaced, parallel windings coated with a thin film of phosphorus pentoxide (P2O5). As this coating absorbs incoming water vapor, an electrical potential is applied to the windings that electrolyze the water to hydrogen and oxygen. The current consumed by the electrolysis determines the mass of water vapor entering the sensor. The flow rate and pressure of the incoming sample must be controlled precisely to maintain a standard sample mass flow rate into the sensor.
+The method is fairly inexpensive and can be used effectively in pure gas streams where response rates are not critical. Contamination from oils, liquids or glycols on the windings will cause drift in the readings and damage to the sensor. The sensor cannot react to sudden changes in moisture, i.e., the reaction on the windings’ surfaces takes some time to stabilize. Large amounts of water in the pipeline (called slugs) will wet the surface and require tens of minutes or hours to “dry-down.” Effective sample conditioning and removal of liquids are essential when using an electrolytic sensor.
+
+
+=== Piezoelectric sorption ===
+The piezoelectric sorption instrument compares the changes in the frequency of hygroscopic coated quartz oscillators. As the mass of the crystal changes due to the adsorption of water vapor, the frequency of the oscillator changes. The sensor is a relative measurement, so an integrated calibration system with desiccant dryers, permeations tubes and sample line switching is used frequently to correlate the system.
+The system has succeeded in many applications, including natural gas.  It is possible to have interference from glycol, methanol, and damage from the hydrogen sulfide, which can result in erratic readings. The sensor itself is relatively inexpensive and very precise. The required calibration system is not as precise and adds to the cost and mechanical complexity of the system. The labor for frequent replacement of desiccant dryers, permeation components, and sensor heads greatly increases the operational costs. Additionally, slugs of water render the system non-functional for the long periods of time as the sensor head has to “dry-down.”
+
+
+=== Aluminum oxide and silicon oxide ===
+The oxide sensor is made up of an inert substrate material and two dielectric layers, one of which is sensitive to humidity. The moisture molecules pass through the pores on the surface and cause a change to the physical property of the layer beneath it.
+An aluminum oxide sensor has two metal layers that form the electrodes of a capacitor. The number of water molecules adsorbed will cause a change in the dielectric constant of the sensor. The sensor impedance correlates to the water concentration. A silicon oxide sensor can be an optical device that changes its refractive index as water is absorbed into the sensitive layer or a different impedance type in which silicon replaces the aluminum.
+In the first type (optical) when light is reflected through the substrate, a wavelength shift can be detected on the output, which can be precisely correlated to the moisture concentration. A Fiber optic connector can be used to separate the sensor head and the electronics.
+This type of sensor is not extremely expensive and can be installed at pipeline pressure (in-situ). Water molecules do take time to enter and exit the pores, so some wet-up and dry down delays will be observed, especially after a slug. Contaminants and corrosives may damage and clog the pores, causing a “drift” in the calibration, but the sensor heads can be refurbished or replaced and will perform better in very clean gas streams. As with the piezoelectric and electrolytic sensors, the sensor is susceptible to interference from glycol and methanol, the calibration will drift as the sensor's surface becomes inactive due to damage or blockage, so the calibration is reliable only at the beginning of the sensor's life.
+In the second type (silicon oxide sensor), the device is often temperature controlled for improved stability and is considered being chemically more stable than aluminium oxide types and far faster responding due to the fact they hold less water in equilibrium at an elevated operating temperature.
+Whilst most absorption type devices can be installed at pipe line pressures (up to 130 Barg) traceability to International Standards is compromised. Operation at near atmospheric pressure do provide traceability and offer other significant benefits, such as enabling the direct validation against known moisture content.
+
+
+=== Spectroscopy ===
+Absorption spectroscopy is a relatively simple method of passing light through a gas sample and measuring the amount of light absorbed at a specific wavelength. Traditional spectroscopic techniques have not been successful at doing this in natural gas because methane absorbs light in the same wavelength regions as water. But if one uses a very high resolution spectrometer, it is possible to find some water peaks that are not overlapped by other gas peaks.
+The tunable laser provides a narrow, tunable wavelength light source that can be used to analyze these small spectral features. According to the Beer-Lambert law, the amount of light absorbed by the gas is proportional to the amount of the gas present in the light's path; therefore, this technique is a direct measurement of moisture. In order to achieve a long enough path length of light, a mirror is used in the instrument. The mirror may become partially blocked by liquid and solid contaminations, but since the measurement is a ratio of absorbed light over the total light detected, the calibration is unaffected by the partially blocked mirror (if the mirror is totally blocked, it must be cleaned).
+A TDLAS analyzer has a higher upfront cost compared to most of the analyzers above. However, tunable diode laser absorption spectroscopy is superior when it comes to the following: the necessity for an analyzer that will not suffer from interference or damage from corrosive gases, liquids or solids, or an analyzer that will react very quickly to drastic moisture changes or an analyzer that will remain calibrated for very long periods of time, assuming the gas composition does not change.
+
+
+== See also ==
+Karl Fischer titration
+
+
+== References ==

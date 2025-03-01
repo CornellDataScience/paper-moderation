@@ -1,0 +1,56 @@
+A reference designator unambiguously identifies the location of a component within an electrical schematic or on a printed circuit board. The reference designator usually consists of one or two letters followed by a number, e.g. C3, D1, R4, U15. The number is sometimes followed by a letter, indicating that components are grouped or matched with each other, e.g. R17A, R17B. The IEEE 315 standard contains a list of Class Designation Letters to use for electrical and electronic assemblies. For example, the letter R is a reference prefix for the resistors of an assembly, C for capacitors, K for relays.
+Industrial electrical installations often use reference designators according to IEC 81346.
+
+
+== History ==
+IEEE 200-1975 or "Standard Reference Designations for Electrical and Electronics Parts and Equipments" is a standard that was used to define referencing naming systems for collections of electronic equipment. IEEE 200 was ratified in 1975. The IEEE renewed the standard in the 1990s, but withdrew it from active support shortly thereafter. This document also has an ANSI document number, ANSI Y32.16-1975.
+This standard codified information from, among other sources, a United States military standard MIL-STD-16 which dates back to at least the 1950s in American industry.
+To replace IEEE 200-1975, ASME, a standards body for mechanical engineers, initiated the new standard ASME Y14.44-2008. This standard, along with IEEE 315-1975, provide the electrical designer with guidance on how to properly reference and annotate everything from a single circuit board to a collection of complete enclosures.
+
+
+== Definition ==
+ASME Y14.44-2008 and IEEE 315-1975 define how to reference and annotate components of electronic devices.
+It breaks down a system into units, and then any number of sub-assemblies.  The unit is the highest level of demarcation in a system and is always a numeral.  Subsequent demarcation are called assemblies and always have the Class Letter "A" as a prefix following by a sequential number starting with 1.  Any number of sub-assemblies may be defined until finally reaching the component. Note that IEEE 315-1975 defines separate class designation letters for separable assemblies (class designation 'A') and inseparable assemblies (class designation 'U'). Inseparable assemblies—i.e., "items which are ordinarily replaced as a single item of supply"—are typically treated as components in this referencing scheme.
+Examples:
+
+1A12A2R3 - Unit 1, Assembly 12, Sub-assembly 2, Resistor 3
+1A12A2U3 - Unit 1, Assembly 12, Sub-assembly 2, Inseparable Assembly 3
+Especially valuable is the method of referencing and annotating cables plus their connectors within and outside assemblies.
+Examples:
+
+1A1A44J5 - Unit 1, Assembly 1, Sub-Assembly 44, Jack 5 (J5 is a connector on a box referenced as A44)
+1A1A45J333 - Unit 1, Assembly 1, Sub-Assembly 45, Jack 333 (J333 is a connector on a box referenced as A45)
+A cable connecting these two might be:
+
+1A1W35 - In the assembly A1 is a cable called W35.
+Connectors on this cable would be designated:
+
+1A1W35P1
+1A1W35P2
+ASME Y14.44-2008 continues the convention of Plug P and Jack J when assigning references for electrical connectors in assemblies where a J (or jack) is the more fixed and P (or plug) is the less fixed of a connector pair, without regard to the gender of the connector contacts.
+The construction of reference designators is covered by IEEE 200-1975/ANSI Y32.16-1975 (replaced by ASME Y14.44-2008) and IEEE 315-1975.
+
+
+== Designators ==
+The table below lists designators commonly used, and does not necessarily comply with standards. For modern use, designators are often simplified towards shorter designators, because it requires less space on silkscreens.
+
+
+== Other designators ==
+
+
+== See also ==
+
+Circuit diagram
+Electronic symbol
+
+
+== References ==
+
+
+== Further reading ==
+"Item Designations; or "Why are relays called 'K' in schematics? Why are circuit breakers called 'Q'?"". Engineering. penwatch.net. 2018-07-01. Archived from the original on 2024-07-17. Retrieved 2024-07-17.
+AS 1103.2-1982 - "Diagrams charts and tables for electrotechnology, Part 2: Item Designation" (Superseded by AS 3702-1989.)
+AS 3702-1989 - "Item designation in electrotechnology". (Equivalent to IEC 60750 Edition 1.0, 1983.)
+IEC 113 (Superseded by IEC 750, i.e. IEC 60750.)
+IEC 750-1983 (AS 3702 is equivalent, but provides extra information.)
+IEEE 315-1975 / ANSI Standard Y32.2. Annex F: "Cross reference list of Class Designation Letters" compares IEC 113-2:1971 to the IEEE/ANSI standard. * AS 1102 and IEC 60617 for "Graphical Symbols for Electrotechnology".

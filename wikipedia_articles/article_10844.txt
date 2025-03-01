@@ -1,0 +1,1098 @@
+In real analysis, a branch of mathematics, Cousin's theorem states that:
+
+If for every point of a closed region (in modern terms, "closed and bounded") there is a circle of finite radius (in modern term, a "neighborhood"), then the region can be divided into a finite number of subregions such that each subregion is interior to a circle of a given set having its center in the subregion.
+This result was originally proved by Pierre Cousin, a student of Henri Poincaré, in 1895, and it extends the original Heine–Borel theorem on compactness for arbitrary covers of compact subsets of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+. However, Pierre Cousin did not receive any credit. Cousin's theorem was generally attributed to Henri Lebesgue as the Borel–Lebesgue theorem. Lebesgue was aware of this result in 1898, and proved it in his 1903 dissertation.
+In modern terms, it is stated as:
+
+Let 
+  
+    
+      
+        
+          
+            C
+          
+        
+      
+    
+    {\displaystyle {\mathcal {C}}}
+  
+ be a full cover of [a, b], that is, a collection of closed subintervals of [a, b] with the property that for every x ∈ [a, b], there exists a δ>0 so that 
+  
+    
+      
+        
+          
+            C
+          
+        
+      
+    
+    {\displaystyle {\mathcal {C}}}
+  
+ contains all subintervals of [a, b] which contains x and length smaller than δ. Then there exists a partition 
+  
+    
+      
+        
+          
+            I
+            
+              1
+            
+          
+          ,
+          
+            I
+            
+              2
+            
+          
+          ,
+          ⋯
+          ,
+          
+            I
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle {I_{1},I_{2},\cdots ,I_{n}}}
+  
+ of non-overlapping intervals for [a, b], where 
+  
+    
+      
+        
+          I
+          
+            i
+          
+        
+        =
+        [
+        
+          x
+          
+            i
+            −
+            1
+          
+        
+        ,
+        
+          x
+          
+            i
+          
+        
+        ]
+        ∈
+        
+          
+            C
+          
+        
+      
+    
+    {\displaystyle I_{i}=[x_{i-1},x_{i}]\in {\mathcal {C}}}
+  
+ and a=x0 < x1 < ⋯ < xn=b for all 1≤i≤n.
+Cousin's lemma is studied in reverse mathematics where it is one of the first third-order theorems that is hard to prove in terms of the comprehension axioms needed.
+
+
+== In Henstock–Kurzweil integration ==
+Cousin's theorem is instrumental in the study of Henstock–Kurzweil integration, and in this context, it is known as Cousin's lemma or the fineness theorem.
+A gauge on 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ is a strictly positive real-valued function 
+  
+    
+      
+        δ
+        :
+        [
+        a
+        ,
+        b
+        ]
+        →
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \delta :[a,b]\to \mathbb {R} ^{+}}
+  
+, while a tagged partition of 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ is a finite sequence
+
+  
+    
+      
+        P
+        =
+        ⟨
+        a
+        =
+        
+          x
+          
+            0
+          
+        
+        <
+        
+          t
+          
+            1
+          
+        
+        <
+        
+          x
+          
+            1
+          
+        
+        <
+        
+          t
+          
+            2
+          
+        
+        <
+        ⋯
+        <
+        
+          x
+          
+            ℓ
+            −
+            1
+          
+        
+        <
+        
+          t
+          
+            ℓ
+          
+        
+        <
+        
+          x
+          
+            ℓ
+          
+        
+        =
+        b
+        ⟩
+      
+    
+    {\displaystyle P=\langle a=x_{0}<t_{1}<x_{1}<t_{2}<\cdots <x_{\ell -1}<t_{\ell }<x_{\ell }=b\rangle }
+  
+
+Given a gauge 
+  
+    
+      
+        δ
+        :
+        [
+        a
+        ,
+        b
+        ]
+        →
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \delta :[a,b]\to \mathbb {R} ^{+}}
+  
+ and a tagged partition 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ of 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+, we say 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ is 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+-fine if for all 
+  
+    
+      
+        1
+        ≤
+        j
+        ≤
+        ℓ
+      
+    
+    {\displaystyle 1\leq j\leq \ell }
+  
+, we have 
+  
+    
+      
+        (
+        
+          x
+          
+            j
+            −
+            1
+          
+        
+        ,
+        
+          x
+          
+            j
+          
+        
+        )
+        ⊆
+        B
+        
+          
+            (
+          
+        
+        
+          t
+          
+            j
+          
+        
+        ,
+        δ
+        (
+        
+          t
+          
+            j
+          
+        
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle (x_{j-1},x_{j})\subseteq B{\big (}t_{j},\delta (t_{j}){\big )}}
+  
+, where 
+  
+    
+      
+        B
+        (
+        x
+        ,
+        r
+        )
+      
+    
+    {\displaystyle B(x,r)}
+  
+ denotes the open ball of radius 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ centred at 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+. Cousin's lemma is now stated as:
+
+If 
+  
+    
+      
+        a
+        <
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a<b\in \mathbb {R} }
+  
+, then every gauge 
+  
+    
+      
+        δ
+        :
+        [
+        a
+        ,
+        b
+        ]
+        →
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \delta :[a,b]\to \mathbb {R} ^{+}}
+  
+ has a 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+-fine partition.
+
+
+== Proof of the theorem ==
+Cousin's theorem has an intuitionistic proof using the open induction principle, which reads as follows:
+An open subset 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ of a closed real interval 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ is said to be inductive if it satisfies that 
+  
+    
+      
+        [
+        a
+        ,
+        r
+        )
+        ⊂
+        S
+      
+    
+    {\displaystyle [a,r)\subset S}
+  
+ implies 
+  
+    
+      
+        [
+        a
+        ,
+        r
+        ]
+        ⊂
+        S
+      
+    
+    {\displaystyle [a,r]\subset S}
+  
+. The open induction principle states that any inductive subset 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ of 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ must be the entire set. 
+
+
+=== Proof using open induction ===
+Let 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ be the set of points 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ such that there exists a 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+-fine tagged partition on 
+  
+    
+      
+        [
+        a
+        ,
+        s
+        ]
+      
+    
+    {\displaystyle [a,s]}
+  
+ for some 
+  
+    
+      
+        s
+        ≥
+        r
+      
+    
+    {\displaystyle s\geq r}
+  
+. 
+The set 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is open, since it is downwards closed and any point in it is included in the open ray 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+        ∩
+        [
+        a
+        ,
+        
+          t
+          
+            n
+          
+        
+        +
+        δ
+        (
+        
+          t
+          
+            n
+          
+        
+        )
+        )
+        ⊂
+        S
+      
+    
+    {\displaystyle [a,b]\cap [a,t_{n}+\delta (t_{n}))\subset S}
+  
+ for any associated partition.
+Furthermore, it is inductive. For any 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+, suppose 
+  
+    
+      
+        [
+        a
+        ,
+        r
+        )
+        ⊂
+        S
+      
+    
+    {\displaystyle [a,r)\subset S}
+  
+. By that assumption (and using that either 
+  
+    
+      
+        r
+        >
+        a
+      
+    
+    {\displaystyle r>a}
+  
+ or 
+  
+    
+      
+        r
+        ∈
+        [
+        a
+        ,
+        a
+        +
+        δ
+        (
+        a
+        )
+        )
+        ⊂
+        S
+      
+    
+    {\displaystyle r\in [a,a+\delta (a))\subset S}
+  
+ to handle the base case) we have a partition of length 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ with 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        >
+        
+          m
+          a
+          x
+        
+        (
+        a
+        ,
+        r
+        −
+        
+          
+            
+              1
+              2
+            
+          
+        
+        δ
+        (
+        r
+        )
+        )
+      
+    
+    {\displaystyle x_{n}>\mathrm {max} (a,r-{\tfrac {1}{2}}\delta (r))}
+  
+. Then either 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        >
+        b
+        −
+        (
+        
+          t
+          
+            n
+          
+        
+        +
+        δ
+        (
+        
+          t
+          
+            n
+          
+        
+        )
+        −
+        
+          x
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle x_{n}>b-(t_{n}+\delta (t_{n})-x_{n})}
+  
+ or 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        <
+        b
+      
+    
+    {\displaystyle x_{n}<b}
+  
+. In the first case 
+  
+    
+      
+        b
+        <
+        
+          t
+          
+            n
+          
+        
+        +
+        δ
+        (
+        
+          t
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle b<t_{n}+\delta (t_{n})}
+  
+, so we can just replace 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x_{n}}
+  
+ with 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ and get a partition of 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ that includes 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+. 
+If 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        <
+        b
+      
+    
+    {\displaystyle x_{n}<b}
+  
+, we may form a partition of length 
+  
+    
+      
+        n
+        +
+        1
+      
+    
+    {\displaystyle n+1}
+  
+ that includes 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+. To show this, we split into the cases 
+  
+    
+      
+        r
+        >
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle r>x_{n}}
+  
+ or 
+  
+    
+      
+        r
+        <
+        
+          x
+          
+            n
+          
+        
+        +
+        δ
+        (
+        
+          x
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle r<x_{n}+\delta (x_{n})}
+  
+. In the first case, we set 
+  
+    
+      
+        
+          t
+          
+            n
+            +
+            1
+          
+        
+        =
+        r
+      
+    
+    {\displaystyle t_{n+1}=r}
+  
+, in the second we set 
+  
+    
+      
+        
+          t
+          
+            n
+            +
+            1
+          
+        
+        =
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle t_{n+1}=x_{n}}
+  
+. In both cases, we can set 
+  
+    
+      
+        
+          x
+          
+            n
+            +
+            1
+          
+        
+        =
+        
+          m
+          i
+          n
+        
+        (
+        b
+        ,
+        
+          t
+          
+            n
+            +
+            1
+          
+        
+        +
+        
+          
+            
+              1
+              2
+            
+          
+        
+        δ
+        (
+        
+          t
+          
+            n
+            +
+            1
+          
+        
+        )
+        )
+        >
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x_{n+1}=\mathrm {min} (b,t_{n+1}+{\tfrac {1}{2}}\delta (t_{n+1}))>x_{n}}
+  
+ and obtain a valid partition. So 
+  
+    
+      
+        [
+        a
+        ,
+        r
+        ]
+        ⊂
+        S
+      
+    
+    {\displaystyle [a,r]\subset S}
+  
+ in all cases, and 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is inductive.
+By open induction, 
+  
+    
+      
+        S
+        =
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle S=[a,b]}
+  
+.
+
+
+== Notes ==
+
+
+== References ==

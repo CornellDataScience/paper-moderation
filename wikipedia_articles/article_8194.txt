@@ -1,0 +1,475 @@
+Instead of having a single inventor, the Internet was developed by many people over many years. The following people are Internet pioneers who have been recognized for their contribution to its early and ongoing development. These contributions include theoretical foundations, building early networks, specifying protocols, and expansion beyond a research tool to wide deployment. 
+This list includes people who were: 
+
+acknowledged by Vint Cerf and Bob Kahn in their seminal 1974 paper on internetworking, A Protocol for Packet Network Intercommunication; or
+received the IEEE Internet Award; or have been
+inducted into the Internet Hall of Fame; or are
+included on the Stanford University "Birth of the Internet" plaque.
+Among the pioneers, along with Cerf and Kahn, Bob Metcalfe, Donald Davies, Louis Pouzin, Steve Crocker and Ray Tomlinson meet three out of the four criteria above; as well as Jon Postel, considering the 2003 IEEE Internet award on which he is cited. Davies and Kahn are featured in the 1972 documentary film Computer Networks: The Heralds of Resource Sharing along with several early pioneers.
+Other Internet pioneers, who have made notable contributions to the development of the Internet but do not meet any of the four criteria above, are listed in the final section of the article. 
+This article is in chronological order mirroring the development process for the Internet.
+
+
+== J. C. R. Licklider ==
+
+Joseph Carl Robnett Licklider (1915–1990) was a faculty member of Massachusetts Institute of Technology (MIT), and researcher at Bolt, Beranek and Newman. He developed the idea of a universal computer network at the Information Processing Techniques Office (IPTO) of the United States Department of Defense Advanced Research Projects Agency (ARPA). He headed the IPTO from 1962 to 1963, and again from 1974 to 1975. His 1960 paper "Man-Computer Symbiosis" envisions that mutually-interdependent, "living together", tightly coupled human brains and computing machines would prove to complement each other's strengths.
+In 2013, Licklider was inducted into the Internet Hall of Fame "pioneers" award by the Internet Society.
+
+
+== Paul Baran ==
+
+Paul Baran (1926–2011) developed the field of redundant distributed networks while conducting research at RAND Corporation starting in 1960 when Baran began investigating the development of large-scale survivable communication networks. This led to a series of papers titled "On Distributed Communications" that in 1964 described a detailed architecture for distributed adaptive message block switching. The proposal was composed of three key ideas: use of a decentralized network with multiple paths between any two points; dividing user messages into message blocks; and delivery of these messages by store and forward switching. Baran's network design was never built; it was intended for voice communication using low-cost electronics and did not feature software switches.
+He provided input to the ARPANET project on distributed communications and dynamic routing.
+Baran received the inaugural SIGCOMM Award in 1989, the inaugural IEEE Internet Award in 2000 and the inaugural Internet Hall of Fame "pioneers" award from the Internet Society in 2012. 
+
+
+== Donald Davies ==
+
+Donald Davies (1924–2000) independently invented and named the concept of packet switching for data communications in 1965 at the United Kingdom's National Physical Laboratory (NPL). In the same year, he proposed a national commercial data network in the UK employing high-speed switching nodes. He refined his ideas in a paper written in 1966, which included the first description of an "interface computer" to act as a router. Later that year, he established a team which produced a design for a local-area network to serve the needs of NPL and prove the feasibility of packet switching while developing a more formal design proposal for a national network based on a high-level network connected to local networks. 
+Davies gave the first public presentation on packet switching in 1968. He built the local-area NPL network, the first implementation of packet switching in early 1969 and the first to use high-speed links. His work influenced the ARPANET and research in Europe and Japan. He carried out simulation work on datagram networks on a scale to provide data communication to much of the United Kingdom and designed an adaptive method of congestion control, which he called isarithmic.
+In the 1970s, Davies worked on internetworking and secure communication. He was acknowledged by Vint Cerf and Bob Kahn in their seminal 1974 paper on internetworking, A Protocol for Packet Network Intercommunication. 
+Davies received the inaugural IEEE Internet Award in 2000 and the inaugural Internet Hall of Fame "pioneers" award from the Internet Society in 2012.
+
+
+== Roger Scantlebury ==
+
+Roger Scantlebury (born 1936) led the pioneering work to implement packet switching and associated communication protocols at the NPL in the late 1960s. Scantlebury and his colleague Keith Bartlett were the first to describe the term protocol in a modern data-communications context in an April 1967 memorandum entitled A Protocol for Use in the NPL Data Communications Network. He proposed the use of packet switching in the ARPANET at the inaugural Symposium on Operating Systems Principles in October 1967 and convinced Larry Roberts the economics were favorable to message switching.
+During the 1970s, he was a major figure in the International Network Working Group (INWG) through which he was an early contributor to concepts used in the Transmission Control Program which became part of the Internet protocol suite. He was acknowledged by Cerf and Kahn in their seminal 1974 paper on internetworking.
+
+
+== Bob Taylor ==
+
+Robert W. Taylor (1932–2017) was director of ARPA's Information Processing Techniques Office (IPTO) from 1966 through 1969, where he convinced ARPA to fund a computer network. The 1968 paper, "The Computer as a Communication Device", that he wrote together with J.C.R. Licklider starts out: "In a few years, men will be able to communicate more effectively through a machine than face to face." And while their vision would take more than "a few years", the paper lays out the future of what the Internet would eventually become. 
+From 1970 to 1983, he managed the Computer Science Laboratory of the Xerox Palo Alto Research Center (PARC), where technologies such as Ethernet and the Xerox Alto were developed. He was the founder and manager of Digital Equipment Corporation's Systems Research Center until 1996.
+
+
+== Larry Roberts ==
+
+Lawrence G. "Larry" Roberts (1937–2018) was an American computer scientist. After earning his PhD in electrical engineering from MIT in 1963, Roberts continued to work at MIT's Lincoln Laboratory where in 1965 he connected Lincoln Lab's TX-2 computer to the SDC Q-32 computer in Santa Monica. 
+In 1967, he became a program manager in the ARPA Information Processing Techniques Office (IPTO), where he managed the development of the ARPANET, the first wide area packet switching network. Roberts applied Donald Davies' concepts of packet switching in the ARPANET, and sought input from Paul Baran and other researchers on network design. After Robert Taylor left ARPA in 1969, Roberts became director of the IPTO. 
+In 1973, he left ARPA to commercialize the nascent technology in the form of Telenet, which became one of the first public data networks in the world, and served as its CEO from 1973 to 1980. 
+In 2012, Roberts was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Leonard Kleinrock ==
+
+Leonard Kleinrock (born 1934) became involved in the ARPANET project in early 1967. He had studied the optimization of message delays in communication networks using queueing theory in his Ph.D. thesis, Message Delay in Communication Nets with Storage, at MIT in 1962. 
+After this, he moved to UCLA. In 1969, under his supervision, a team at UCLA connected a computer to an Interface Message Processor (IMP), becoming the first node on the ARPANET. Building on his earlier work on queueing theory, during the 1970s, Kleinrock carried out theoretical work to measure and mathematically model the performance of the ARPANET, which underpinned the development of the network and the Transmission Control Program. His theoretical work on hierarchical routing in the late 1970s with student Farouk Kamoun remains critical to the operation of the Internet today. 
+In 2012, Kleinrock was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Frank Heart ==
+
+Frank Heart (1929–2018) worked for Bolt, Beranek and Newman (BBN) from 1966 to 1994, during which time he managed the team that designed and implemented the Interface Message Processors (IMPs), the routing computers for the ARPANET.
+
+
+== Bob Kahn ==
+
+Robert E. "Bob" Kahn (born 1938) is an American engineer and computer scientist. After earning a Ph.D. degree from Princeton University in 1964, he worked for AT&T Bell Laboratories, as an assistant professor at MIT. He moved to Bolt Beranek & Newman (BBN) where he was the principal designer of the IMP subnetwork and the IMP-Host protocol for the ARPANET.
+In 1972, he joined the IPTO within ARPA, where he worked on both satellite packet networks (which led to SATNET) and ground-based radio packet networks (which led to PRNET), and recognized the value of being able to communicate across heterogenous networks. Along with Vint Cerf, he authored the seminal paper on internetworking, A Protocol for Packet Network Intercommunication, in 1974.
+Kahn left ARPA in 1986 to found the Corporation for National Research Initiatives (CNRI), a nonprofit organization providing leadership and funding for research and development of the National Information Infrastructure.
+
+
+== David Walden ==
+
+David Walden (1942–2022) worked for BBN where he implemented the packet switching and routing software for the Interface Message Processor (IMP) of the ARPANET. He proposed what became known as the Walden message switching protocol, and was acknowledged by Cerf and Kahn in their seminal 1974 paper on internetworking.
+
+
+== Ray Tomlinson ==
+
+Ray Tomlinson (1941–2016) worked for BBN. He carried out the first experimental message transfer between separate computer systems on the ARPANET in 1971. His message was sent from one Digital Equipment Corporation PDP-10 computer to another PDP-10, placed next to each other. Tomlinson initiated the use of the "@" sign to separate the names of the user and the user's machine. Tomlinson's idea for "network mail" was adopted on the ARPANET, which significantly increased network traffic. As a result, he has been called "the inventor of modern email". 
+The use of the File Transfer Protocol (FTP) for network mail on the ARPANET was proposed in RFC 469 in March 1973. Through RFC 561, RFC 680, RFC 724, and finally RFC 733 in November 1977, a standardized framework was developed for "electronic mail" using FTP mail servers on the ARPANET. Tomlinson discussed a network mail protocol among the International Network Working Group in INWG Protocol note 2, in September 1974, although it was never adopted.
+Furthermore, he participated in the initial design of TCP during 1973-74, was acknowledged in the specification of TCP version 2 in March 1977, and version 3 in January 1978, which says that many of the changes introduced in that version were first described by Tomlinson the previous year when he put forward a "Proposal for TCP 3".
+Tomlinson received the IEEE Internet Award in 2004, with David H. Crocker, for networked email. 
+
+
+== Steve Crocker ==
+
+Steve Crocker (born 1944) has worked in the ARPANET and Internet communities since their inception. As a UCLA graduate student in the 1960s, he led the creation of the ARPANET host-to-host protocol, the Network Control Protocol. He also created the Request for Comments (RFC) series, authoring the very first RFC and many more. He was instrumental in creating the ARPA Network Working Group, the forerunner of the modern Internet Engineering Task Force. 
+In 1972, Crocker moved to the Advanced Research Projects Agency (ARPA) to become a program manager. He formed the International Network Working Group (INWG), then his research interests shifted to artificial intelligence. He was acknowledged by Cerf and Kahn in their seminal 1974 paper on internetworking. 
+He was a senior researcher at USC's Information Sciences Institute (ISI) where he contributed to discussions on the Transmission Control Program in August 1977. He was a founder and director of the Computer Science Laboratory at The Aerospace Corporation and a vice president at Trusted Information Systems. In 1994, Crocker was one of the founders and chief technology officer of CyberCash, Inc. He has also been an IETF security area director, a member of the Internet Architecture Board, chair of the Internet Corporation for Assigned Names and Numbers (ICANN) Security and Stability Advisory Committee, a board member of the Internet Society and numerous other Internet-related volunteer positions. Crocker is chair of the board of ICANN.
+For this work, Crocker was awarded the 2002 IEEE Internet Award "for leadership in creation of key elements in open evolution of Internet protocols". In 2012, Crocker was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Jon Postel ==
+
+Jon Postel (1943–1998) was a researcher at the University of Southern California's (USC's) Information Sciences Institute (ISI). He was editor of much of the early the RFC series as well as versions 3 and 4 of TCP/IP in January 1978 and February 1979, and the final version of TCP and Internet Protocol, which were published in January 1980 by DARPA on behalf of the Defense Communication Agency. He was the creator of the Simple Mail Transfer Protocol (SMTP) and the co-creator and longtime administrator of the Internet Assigned Numbers Authority (IANA). His beard and sandals made him "the most recognizable archetype of an Internet pioneer".
+The International Network Working Group (INWG) discussed protocols for electronic mail in 1979, which was referenced by Postel in his early work on Internet email. Postel first proposed an Internet Message Protocol in 1979 as part of the Internet Experiment Note (IEN) series. In September 1980, Postel and Suzanne Sluizer published RFC 772 which proposed the Mail Transfer Protocol to enable servers to transmit "computer mail" on the ARPANET as a replacement for FTP. RFC 780 of May 1981 removed all references to FTP. In November 1981, Postel published RFC 788 describing the Simple Mail Transfer Protocol (SMTP) protocol, which was updated by RFC 821 in August 1982. Addresses were extended to username@host.domain by RFC 805 in February 1982. RFC 822, written by David H. Crocker, defined the format for messages.
+The Internet Society's Postel Award is named in his honor, as is the Postel Center at the Information Sciences Institute. His obituary was written by Vint Cerf and published as RFC 2468 in remembrance of Postel and his work. In 2012, Postel was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Vint Cerf ==
+
+Vinton G. "Vint" Cerf (born 1943) is an American computer scientist. He is recognized as one of "the fathers of the Internet", sharing this title with Bob Kahn.
+He earned his Ph.D. from UCLA in 1972. At UCLA he worked in Professor Leonard Kleinrock's networking group that connected the first two nodes of the ARPANET and contributed to the ARPANET host-to-host protocol, the Network Control Program. Cerf was an assistant professor at Stanford University from 1972 to 1976, where he conducted research on packet network interconnection protocols and co-designed the DoD TCP/IP protocol suite. He authored the seminal paper on internetworking, A Protocol for Packet Network Intercommunication, in May 1974 with Bob Kahn; the first specification of TCP with Yogen Dalal and Carl Sunshine in December that year; and edited the second version of TCP in March 1977. He was a program manager for the Advanced Research Projects Agency (ARPA) from 1976 to 1982 overseeing the first internetworking experiments with SATNET and PRNET. Cerf was instrumental in the formation of both the Internet Society and Internet Corporation for Assigned Names and Numbers (ICANN), serving as founding president of the Internet Society from 1992 to 1995 and in 1999 as chairman of the board and as ICANN Chairman from 2000 to 2007. 
+His many awards include the National Medal of Technology, the Turing Award, the Presidential Medal of Freedom, and membership in the National Academy of Engineering and the Internet Society's Internet Hall of Fame.
+
+
+== Douglas Engelbart ==
+
+Douglas Engelbart (1925–2013) was an early researcher at the Stanford Research Institute. His Augmentation Research Center laboratory became the second node on the ARPANET in October 1969, and SRI became the early Network Information Center, which evolved into the domain name registry.
+Engelbart was a committed, vocal proponent of the development and use of computers and computer networks to help cope with the world's increasingly urgent and complex problems. He is best known for his work on the challenges of human–computer interaction, resulting in the invention of the computer mouse, and the development of hypertext, networked computers, and precursors to graphical user interfaces.
+
+
+== John Klensin ==
+
+John Klensin's involvement with Internet began in 1969, when he worked on the File Transfer Protocol. 
+Klensin was involved in the early procedural and definitional work for DNS administration and top-level domain definitions and was part of the committee that worked out the transition of DNS-related responsibilities between USC-ISI and what became ICANN.
+His career includes 30 years as a principal research scientist at MIT, a stint as INFOODS Project Coordinator for the United Nations University, Distinguished Engineering Fellow at MCI WorldCom, and Internet Architecture Vice President at AT&T; he is now an independent consultant. In 1992 Randy Bush and John Klensin created the Network Startup Resource Center, helping dozens of countries to establish connections with FidoNet, UseNet, and when possible the Internet.
+In 2003, he received an International Committee for Information Technology Standards Merit Award.
+In 2007, he was inducted as a Fellow of the Association for Computing Machinery for contributions to networking standards and Internet applications. In 2012, Klensin was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Elizabeth Feinler ==
+
+Elizabeth J. "Jake" Feinler (born 1931) was a staff member of Doug Engelbart's Augmentation Research Center (ARC) at SRI and PI for the Network Information Center (NIC) for the ARPANET and the Defense Data Network (DDN) from 1972 until 1989. In 2012, Feinler was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Louis Pouzin ==
+
+Louis Pouzin (born 1931) is a French computer scientist. He built the first implementation of a wide-area datagram packet-communications network, CYCLADES, that demonstrated the feasibility of internetworking, which he called a "catenet". Concepts from his work were reflected in the development of TCP/IP. He was acknowledged by Vint Cerf and Bob Kahn in their seminal 1974 paper on internetworking.
+In 1997, Pouzin received the ACM SIGCOMM Award for "pioneering work on connectionless packet communication". He was named a Chevalier of the Legion of Honor by the French government on 19 March 2003. In 2012, Pouzin was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Hubert Zimmermann ==
+
+Hubert Zimmerman (1941–2012) was a French software engineer who pioneered internetworking with Louis Pouzin. He contributed to early discussions on the Transmission Control Program, and was acknowledged by Cerf and Kahn in their seminal 1974 paper on internetworking.
+
+
+== Gérard Le Lann ==
+
+Gérard Le Lann proposed the sliding window scheme for achieving reliable error and flow control on end-to-end connections. He joined Vint Cerf's research team at Stanford University during 1973-4 and Cerf incorporated his sliding window scheme into the research work for the Transmission Control Program (TCP). 
+Le Lann is included on the Stanford University "Birth of the Internet" plaque and mentioned in the Stanford TCP project completion report.
+
+
+== Bob Metcalfe ==
+Bob Metcalfe (born 1946) produced a design for Ethernet and the PARC Universal Packet for internetworking while studying for his PhD at Harvard University and working at Xerox Parc. He contributed to early discussions on the Transmission Control Program in June 1973, and participated in the initial design of TCP, worked out at Stanford during 1973-74. He was acknowledged by Cerf and Kahn in their seminal 1974 paper on internetworking. In addition, along with Yogen Dalal, he contributed to discussions leading up to the splitting of TCP into TCP/IP.
+
+
+== John Shoch ==
+
+John Shoch worked on internetworking at Xerox Parc. He contributed to early discussions on the Transmission Control Program in June 1973, August 1977, and was acknowledged in an early version of TCP version v4 in September 1978. He published several Internet Experiment Notes in the late 1970s and 1980, and his work was referenced in the final IP version 4 that would be standardized in RFC 760 (1980) and RFC 791 (1981).
+
+
+== Yogen Dalal ==
+Yogen K. Dalal, also known as Yogin Dalal, is an Indian electrical engineer and computer scientist. He was an ARPANET pioneer, and a key contributor to the development of internetworking protocols. 
+Dalal co-authored the first Transmission Control Program specification, with Vint Cerf and Carl Sunshine between 1973 and 1974. It was published as RFC 675 (Specification of Internet Transmission Control Program) in December 1974. It first used the term internet as a shorthand for internetworking, and later RFCs repeated this use. Dalal later proposed splitting Transmission Control Program into Transmission Control Protocol and Internet Protocol between 1976 and 1977, leading to the development of TCP/IP. He also worked at Xerox PARC, where he contributed to the development of the Ethernet, the Xerox Network Systems (XNS), and the Xerox Star.
+After receiving a B.Tech in Electrical Engineering at the Indian Institute of Technology Bombay, he went to the United States to study for a master's degree at Stanford University in 1972 and then a PhD in 1973. His interest in data communication as a graduate student led him to working with new professor Vint Cerf as a teaching assistant in 1972, and then as a research assistant while studying for his PhD. In Summer 1973, while Cerf and Bob Kahn were attempting to formulate an internetworking protocol, Dalal joined their research team to assist them on developing what eventually became Transmission Control Program. After co-authoring the first internet protocol with Cerf and Sunshine in 1974, Dalal received his PhD in Electrical Engineering and Computer Science, and remained active in the development of TCP/IP at Stanford for several years. Between 1976 and 1977, Dalal proposed separating Transmission Control Program's routing and transmission control functions into two discrete layers, which led to the splitting of Transmission Control Program into the Transmission Control Protocol and Internet Protocol.
+Due to his experience in communication protocols, several key researchers were greatly interested in recruiting him, including Bob Kahn's ARPANET team at DARPA, Ray Tomlinson at BBN, Bob Taylor's team at Xerox PARC, and Steve Crocker at the Information Sciences Institute (ISI). In early 1977, Dalal joined Robert Metcalfe's team at Xerox PARC, where he worked on the development of the Xerox Network Systems. He also worked on the 10 Mbps Ethernet Specification at Xerox PARC, along with DEC and Intel, leading to the IEEE 802.3 LAN standard.
+He later left Xerox, and became a founding member of the startup tech companies Claris and Metaphor Computer Systems in the early 1980s. He later became a managing partner of Mayfield, and joined the Board of Directors at several tech companies including Narus and Nuance. In 2005, he was recognized by Stanford as one of the pioneers of the Internet.
+
+
+== Carl Sunshine ==
+Carl Sunshine completed his PhD under Vint Cerf at the Digital Systems Laboratory, Stanford University. He worked on the first full TCP specification in December 1974 with Cerf and Yogen Dalal. He later worked for RAND and The Aerospace Corporation. Sunshine published a notable paper on internetworking in 1977, among many papers on networking. During the 1980s, he chaired the International Network Working Group, and edited two books on communication protocols.
+
+
+== Peter Kirstein ==
+
+Peter T. Kirstein (1933–2020) was a British computer scientist and a leader in the international development of the Internet. In 1973, he established one of the first two international nodes of the ARPANET. In 1978 he co-authored "Issues in packet-network interconnection" with Vint Cerf, one of the early technical papers on the internet concept. His research group at University College London adopted TCP/IP in 1982, ahead of ARPANET, and played a significant role in the very earliest experimental Internet work. Starting in 1983 he chaired the International Collaboration Board, which involved six NATO countries, served on the Networking Panel of the NATO Science Committee (serving as chair in 2001), and on Advisory Committees for the Australian Research Council, the Canadian Department of Communications, the German GMD, and the Indian Education and Research Network (ERNET) Project. He leads the Silk Project, which provides satellite-based Internet access to the Newly Independent States in the Southern Caucasus and Central Asia. In 2012, Kirstein was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Adrian Stokes ==
+
+Adrian Stokes (1945–2020) was a researcher at UCL's Institute of Computer Science working for Peter Kirstein in 1973. He worked on the first implementation of email in the United Kingdom in 1974 as well as the early monitoring software for the interconnection of the ARPANET with British academic networks, the first international heterogenous computer network.
+He contributed to a number of books on communication protocols and computer networking from the late 1970s to the early 1990s.
+
+
+== Judith Estrin ==
+
+Judith Estrin worked with Vinton Cerf on the Transmission Control Protocol project at Stanford University in the 1970s. Her role within the research team was to help with the initial implementation tests of TCP with University College London.
+
+
+== Danny Cohen ==
+
+Danny Cohen (1937–2019) led several projects on real-time interactive applications over the ARPANet and the Internet starting in 1973. After serving on the computer science faculty at Harvard University (1969–1973) and Caltech (1976), he joined the Information Sciences Institute (ISI) at University of Southern California (USC). At ISI (1973–1993) he started many network related projects including, one to allow interactive, real-time speech over the ARPANet, packet-voice, packet-video, and Internet Concepts. He was acknowledged in the specification of TCP version 3 in January 1978.
+In 1981 he adapted his visual flight simulator to run over the ARPANet, the first application of packet switching networks to real-time applications. In 1993, he worked on Distributed Interactive Simulation through several projects funded by United States Department of Defense. He is probably best known for his 1980 paper "On Holy Wars and a Plea for Peace" which adopted the terminology of endianness for computing.
+Cohen was elected to the National Academy of Engineering in 2006 for contributions to the advanced design, graphics, and real-time network protocols of computer systems and as an IEEE Fellow in 2010 for contributions to protocols for packet switching in real-time applications. In 1993 he received a United States Air Force Meritorious Civilian Service Award. And in 2012, Cohen was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== David J. Farber ==
+
+Starting in the 1980s Dave Farber (born 1934) helped conceive and organize the major American research networks CSNET, NSFNET, and the National Research and Education Network (NREN). He helped create the NSF/DARPA-funded Gigabit Network Test bed Initiative and served as the chairman of the Gigabit Test bed Coordinating Committee. He also served as chief technologist at the US Federal Communications Commission (2000–2001) and is a founding editor of ICANNWatch.
+Farber is an IEEE Fellow, ACM Fellow, recipient of the 1995 SIGCOMM Award for vision and breadth of contributions to and inspiration of others in computer networks, distributed computing, and network infrastructure development, and the 1996 John Scott Award for seminal contributions to the field of computer networks and distributed computer systems. He served on the board of directors of the Electronic Frontier Foundation, the Electronic Privacy Information Center advisory board, the board of trustees of the Internet Society, and as a member of the Presidential Advisory Committee on High Performance Computing and Communications, Information Technology and Next Generation Internet.
+On 3 August 2013, Farber was inducted into the Pioneers Circle of the Internet Hall of Fame for his key role in many systems that converged into today's Internet.
+
+
+== Paul Mockapetris ==
+
+Paul V. Mockapetris (born 1948), while working with Jon Postel at the Information Sciences Institute (ISI) in 1983, proposed the Domain Name System (DNS) architecture. He was IETF chair from 1994 to 1996.
+Mockapetris received the 1997 John C. Dvorak Telecommunications Excellence Award "Personal Achievement - Network Engineering" for DNS design and implementation, the 2003 IEEE Internet Award for his contributions to DNS, and the Distinguished Alumnus award from the University of California, Irvine. In May 2005, he received the ACM Sigcomm lifetime award. In 2012, Mockapetris was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== David Clark ==
+
+David D. Clark (born 1944) is an American computer scientist. He was acknowledged in the specification of TCP version 4 in September 1978.
+During the period of tremendous growth and expansion of the Internet from 1981 to 1989, he acted as chief protocol architect in the development of the Internet, and chaired the Internet Activities Board, which later became the Internet Architecture Board. He is currently a senior research scientist at the MIT Computer Science and Artificial Intelligence Laboratory.
+In 1990 Clark was awarded the ACM SIGCOMM Award "in recognition of his major contributions to Internet protocol and architecture." In 1998 he received the IEEE Richard W. Hamming Medal "for leadership and major contributions to the architecture of the Internet as a universal information medium". In 2001 he was inducted as a Fellow of the Association for Computing Machinery for "his preeminent role in the development of computer communication and the Internet, including architecture, protocols, security, and telecommunications policy". In 2001, he was awarded the Telluride Tech Festival Award of Technology in Telluride, Colorado, and in 2011 the Lifetime Achievement Award from the Oxford Internet Institute, University of Oxford "in recognition of his intellectual and institutional contributions to the advance of the Internet."
+
+
+== Dave Crocker ==
+
+The younger brother of Steve was awarded the IEEE Internet Award in 2004, together with Ray Tomlinson for their work on network messaging – the invention of email.  Dave started networking with Arpanet and is still active in development.
+
+
+== Susan Estrada ==
+
+Susan Estrada founded CERFnet, one of the original regional IP networks, in 1988. Through her leadership and collaboration with PSINet and UUnet, Estrada helped form the interconnection enabling the first commercial Internet traffic via the Commercial Internet Exchange. She wrote Connecting to the Internet in 1993 and she was inducted to the Internet Hall of Fame in 2014. She is on the board of trustees of the Internet Society.
+
+
+== Dave Mills ==
+
+David L. Mills (1938–2024) was an American computer engineer. Mills earned his PhD in Computer and Communication Sciences from the University of Michigan in 1971. While at Michigan he worked on the ARPA sponsored Conversational Use of Computers (CONCOMP) project and developed DEC PDP-8 based hardware and software to allow terminals to be connected over phone lines to an IBM System/360 mainframe computer.
+Mills was the chairman of the Gateway Algorithms and Data Structures Task Force (GADS) and the first chairman of the Internet Architecture Task Force. He invented the Network Time Protocol (1981), the DEC LSI-11 based fuzzball router that was used for the 56 kbit/s NSFNET (1985), the Exterior Gateway Protocol (1984), and inspired the author of ping (1983). He was an emeritus professor at the University of Delaware following his retirement in 2008 after 22 years of teaching for the university.
+In 1999 he was inducted as a Fellow of the Association for Computing Machinery, and in 2002, as a Fellow of the Institute of Electrical and Electronics Engineers (IEEE). In 2008, Mills was elected to the National Academy of Engineering (NAE). In 2013 he received the IEEE Internet Award "For significant leadership and sustained contributions in the research, development, standardization, and deployment of quality time synchronization capabilities for the Internet."
+
+
+== Radia Perlman ==
+
+Radia Joy Perlman (born 1951) is the software designer and network engineer who developed the spanning-tree protocol which is fundamental to the operation of network bridges. She also played an important role in the development of link-state routing protocols such as IS-IS (which had a significant influence on OSPF). In 2010 she received the ACM SIGCOMM Award "for her fundamental contributions to the Internet routing and bridging protocols that we all use and take for granted every day."
+
+
+== Dennis M. Jennings ==
+
+Dennis M. Jennings is an Irish physicist, academic, Internet pioneer, and venture capitalist. In 1984, the National Science Foundation (NSF) began construction of several regional supercomputing centers to provide very high-speed computing resources for the US research community. In 1985 NSF hired Jennings to lead the establishment of the National Science Foundation Network (NSFNET) to link five of the super-computing centers to enable sharing of resources and information. Jennings made three critical decisions that shaped the subsequent development of NSFNET: 
+
+that it would be a general-purpose research network, not limited to connection of the supercomputers;
+it would act as the backbone for connection of regional networks at each supercomputing site; and
+it would use the ARPANET's TCP/IP protocols.
+Jennings was also actively involved in the start-up of research networks in Europe (European Academic Research Network, EARN - President; EBONE - Board member) and Ireland (HEAnet - initial proposal and later board member). He chaired the Board and General Assembly of the Council of European National Top Level Domain Registries (CENTR) from 1999 to early 2001 and was actively involved in the start-up of the Internet Corporation for Assigned Names and Numbers (ICANN). He was a member of the ICANN Board from 2007 to 2010, serving as vice-chair in 2009–2010. In April 2014 Jennings was inducted into the Internet Hall of Fame.
+
+
+== Steve Wolff ==
+
+Stephen "Steve" Wolff participated in the development of ARPANET while working for the U.S. Army. In 1986 he became Division Director for Networking and Communications Research and Infrastructure at the National Science Foundation (NSF) where he managed the development of NSFNET. He also conceived the Gigabit Testbed, a joint NSF-DARPA project to prove the feasibility of IP networking at gigabit speeds. His work at NSF transformed the fledgling internet from a narrowly focused U.S. government project into the modern Internet with scholarly and commercial interest for the entire world. In 1994 he left NSF to join Cisco as a technical manager in Corporate Consulting Engineering. In 2011 he became the CTO at Internet2.
+In 2002 the Internet Society recognized Wolff with its Postel Award. When presenting the award, Internet Society (ISOC) President and CEO Lynn St. Amour said "…Steve helped transform the Internet from an activity that served the specific goals of the research community to a worldwide enterprise which has energized scholarship and commerce throughout the world." The Internet Society also recognized Wolff in 1994 for his courage and leadership in advancing the Internet.
+
+
+== Sally Floyd ==
+
+Sally Floyd (1950–2019) was an American engineer recognized for her extensive contributions to Internet architecture and her work in identifying practical ways to control and stabilize Internet congestion. She invented the random early detection active queue management scheme, which has been implemented in nearly all commercially available routers, and devised the now-common method of adding delay jitter to message timers to avoid synchronization collisions. Floyd, with Vern Paxson, in 1997 identified the lack of knowledge of network topology as the major obstacle in understanding how the Internet works. This paper, "Why We Don't Know How to Simulate the Internet", was re-published as "Difficulties in Simulating the Internet" in 2001 and won the IEEE Communication Society's William R. Bennett Prize Paper Award.
+Floyd was also a co-author on the standard for TCP Selective acknowledgement (SACK), Explicit Congestion Notification (ECN), the Datagram Congestion Control Protocol (DCCP) and TCP Friendly Rate Control (TFRC).
+She received the IEEE Internet Award in 2005 and the ACM SIGCOMM Award in 2007 for her contributions to congestion control. She has been involved in the Internet Advisory Board, and, as of 2007, was one of the top-ten most cited researchers in computer science.
+
+
+== Van Jacobson ==
+
+Van Jacobson is an American computer scientist, best known for his work on TCP/IP network performance and scaling. His work redesigning TCP/IP's flow control algorithms (Jacobson's algorithm) to better handle congestion is said to have saved the Internet from collapsing in the late 1980s and early 1990s. He is also known for the TCP/IP Header Compression protocol described in RFC 1144: Compressing TCP/IP Headers for Low-Speed Serial Links, popularly known as Van Jacobson TCP/IP Header Compression. He is co-author of several widely used network diagnostic tools, including traceroute, tcpdump, and pathchar. He was a leader in the development of the multicast backbone (MBone) and the multimedia tools vic, vat, and wb.
+For his work, Jacobson received the 2001 ACM SIGCOMM Award for Lifetime Achievement, the 2003 IEEE Koji Kobayashi Computers and Communications Award, and was elected to the National Academy of Engineering in 2006. In 2012, Jacobson was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Tim Berners-Lee ==
+
+Timothy John "Tim" Berners-Lee (born 1955) is a British physicist and computer scientist. In 1980, while working at CERN, he proposed a project using hypertext to facilitate sharing and updating information among researchers. While there, he built a prototype system named ENQUIRE. Back at CERN in 1989 he conceived of and, in 1990, together with Robert Cailliau, created the first client and server implementations for what became the World Wide Web. Berners-Lee is the director of the World Wide Web Consortium (W3C), a standards organization which oversees and encourages the Web's continued development, co-director of the Web Science Trust, and founder of the World Wide Web Foundation.
+In 1994, Berners-Lee became one of only six members of the World Wide Web Hall of Fame. In 2004, Berners-Lee was knighted by Queen Elizabeth II for his pioneering work. In April 2009, he was elected a foreign associate of the United States National Academy of Sciences, based in Washington, D.C. In 2012, Berners-Lee was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Robert Cailliau ==
+
+Robert Cailliau (French: [kaˈjo], born 1947), is a Belgian informatics engineer and computer scientist who, working with Tim Berners-Lee and Nicola Pellow at CERN, developed the World Wide Web. In 2012 he was inducted into the Internet Hall of Fame by the Internet Society.
+
+
+== Simon S. Lam ==
+
+Simon S. Lam (born 1947) is an American computer scientist. He was inducted into the Internet Hall of Fame (2023) by the Internet Society for “inventing secure sockets in 1991 and implementing the first secure sockets layer, named SNP, in 1993.”
+In 1990, while a professor at University of Texas at Austin, he was inspired after writing a paper on formal semantics of upper and lower interfaces of a protocol layer  and he conceived the idea of a new security sublayer in the Internet protocol stack. The new sublayer, at the bottom of the Application layer, would make use of transport layer sockets for data transfer and offer corresponding secure sockets to application processes. This way, application programmers do not need to know much about implementation details for security. Also, the upper interface of the sublayer would enable implementation changes in the future.
+Lam’s idea of a sublayer which offers a “secure sockets interface” to applications was novel and a radical departure from contemporary security research for Internet applications (e.g., MIT’s Kerberos, 1988-1992). Lam wrote a proposal to the NSA University Research Program, which was funded for two years. By early 1993, Lam, with the help of 3 graduate students (Woo, Bindignavle, and Su), designed and implemented the first secure sockets layer, named Secure Network Programming (SNP).
+They demonstrated SNP to their NSA program manager when he visited UT-Austin in June 1993. They also published and presented SNP in the USENIX Summer Technical Conference on June 8, 1994, including its architecture, system design, and performance evaluation results to demonstrate its efficiency and practicality 
+SNP was created for Internet applications in general, concurrently and independently of the invention and development of WWW, which had only dozens of servers worldwide in early 1993. Subsequent secure sockets layers, SSL and TLS, developed years later, follow the same architecture and key ideas of SNP. Today’s TLS 1.3 is used for all e-commerce applications (banking, shopping, etc.), for email, and many other Internet applications.
+Lam and his students won the 2004 ACM Software System Award for SNP. He received the 2004 ACM SIGCOMM Award for lifetime contribution to the field of communication networks. He was inducted into the National Academy of Engineering in 2007.
+
+
+== Marc Andreessen ==
+
+Marc L. Andreessen (born 1971) is an American software engineer, entrepreneur, and investor. Working with Eric Bina while at NCSA, he co-authored Mosaic, the first widely used web browser. He is also co-founder of Netscape Communications Corporation.
+
+
+== Eric Bina ==
+
+Eric J. Bina (born 1964) is an American computer programmer. In 1993, together with Marc Andreessen, he authored the first version of Mosaic while working at NCSA at the University of Illinois at Urbana–Champaign. Mosaic is famed as the first killer application that popularized the Internet. He is also a co-founder of Netscape Communications Corporation.
+
+
+== Noel Chiappa ==
+
+
+== Stephen Kent ==
+
+
+== David Reed ==
+
+
+== Yngvar Lundh ==
+
+
+== Pål Spilling ==
+
+
+== Bob Braden ==
+
+
+== Scott Shenker ==
+
+Scott Shenker received the IEEE Internet Award in 2006 for contributions to the study of resource sharing.
+
+
+== Lixia Zhang ==
+
+Lixia Zhang received the IEEE Internet Award in 2009 for Internet architecture and modeling.
+
+
+== Stephen Deering ==
+
+Stephen Deering received the IEEE Internet Award in 2010 for IP multicasting and IPv6.
+
+
+== Jun Murai ==
+
+Jun Murai is a professor at Keio University. He is the founder of JUNET and the WIDE Project. Murai received the IEEE Internet Award in 2011 for leadership in the development of the global Internet, especially in Asia. He was inducated into the Internet Hall of Fame in 2013, recognizing his administrative and co-ordination efforts in establishing Internet connectivity in Japan, and serving as President of Japan Network Information Center.
+
+
+== Mark Handley ==
+
+Mark Handley is Professor of Networked Systems in the Department of Computer Science of University College London, where he leads the Networks Research Group. He received the IEEE Internet Award in 2012 for exceptional contributions to the advancement of Internet technology for network architecture, mobility, and/or end-use applications.
+
+
+== David Mills ==
+
+David L. Mills is professor emeritus at the University of Delaware. He received the IEEE Internet Award in 2013 for significant leadership and sustained contributions in the research, development, standardization, and deployment of quality time synchronization capabilities for the Internet.
+
+
+== Jon Crowcroft ==
+
+Jon Crowcroft is the Marconi Professor of Communications Systems in the Department of Computer Science and Technology, University of Cambridge. He received the IEEE Internet Award in 2014 for contributions to research in and teaching of Internet protocols, including multicast, transport, quality of service, security, mobility, and opportunistic networking.
+
+
+== KC Claffy ==
+
+KC Claffy s director of the Center for Applied Internet Data Analysis at the University of California, San Diego. She received the IEEE Internet Award in 2015 for seminal contributions to the field of Internet measurement, including security and network data analysis, and for distinguished leadership in and service to the Internet community by providing open-access data and tools. In 2017 she was awarded the Jonathan B. Postel Service Award and inducted into the Internet Hall of Fame in 2019.
+
+
+== Vern Paxson ==
+
+Vern Paxson is a Professor of Computer Science at the University of California, Berkeley. He is an active member of the Internet Engineering Task Force (IETF) community and served as the chair of the IRTF from 2001 until 2005. From 1998 to 1999 he served on the IESG as Transport Area Director for the IETF.
+In 2006 Paxson was inducted as a Fellow of the Association for Computing Machinery (ACM).  The ACM's Special Interest Group on Data Communications (SIGCOMM) gave Paxson its 2011 award, "for his seminal contributions to the fields of Internet measurement and Internet security, and for distinguished leadership and service to the Internet community."  The annual SIGCOMM Award recognizes lifetime contribution to the field of communication networks. He received the IEEE Internet Award in 2015 for seminal contributions to the field of Internet measurement, including security and network data analysis, and for distinguished leadership in and service to the Internet community by providing open-access data and tools.
+
+
+== Henning Schulzrinne ==
+
+Henning Schulzrinne received the IEEE Internet Award in 2016.
+
+
+== Deborah Estrin ==
+
+Deborah Estrin received the IEEE Internet Award in  2017.
+
+
+== Ramesh Govindan ==
+
+Ramesh Govindan received the IEEE Internet Award in 2018.
+
+
+== Jennifer Rexford ==
+
+Jennifer Rexford received the IEEE Internet Award in 2019.
+
+
+== Eve Schooler ==
+
+Eve Schooler and Stephen Casner received the IEEE Internet Award in 2020 for contributions to Internet multimedia standards and protocols.
+
+
+== Ian Foster ==
+
+Ian Foster received the IEEE Internet Award in 2023.
+
+
+== Carl Kesselman ==
+
+Carl Kesselman received the IEEE Internet Award in 2023.
+
+
+== Birth of the Internet plaque ==
+A plaque commemorating the "Birth of the Internet" was dedicated at a conference on the history and future of the internet on 28 July 2005 and is displayed at the Gates Computer Science Building, Stanford University. The text printed and embossed in black into the brushed bronze surface of the plaque reads:
+
+
+== Other Internet pioneers ==
+Some other people, who have made notable contributions to the development of Internet but do not meet the criteria defined at the top of the article, include the following. 
+
+
+=== Wesley Clark ===
+
+Wesley Clark (1927–2016) had a key insight in the planning for the ARPANET. In April 1967, he suggested to Bob Taylor and Larry Roberts the idea of using separate small computers (later named Interface Message Processors) as a way of forming a message switching network and reducing load on the local computers.
+
+
+=== Severo Ornstein ===
+
+Severo Ornstein (born 1930) was part of the Bolt, Beranek and Newman (BBN) team that wrote the winning proposal submitted in 1968 to ARPA for the ARPANET. He was responsible for the design of the communication interfaces and other special hardware for the Interface Message Processor (IMP).
+
+
+=== William Crowther ===
+
+William Crowther (born 1936) was part of the original BBN IMP team. He implemented a distributed distance vector routing system for the ARPAnet.
+
+
+=== David Boggs ===
+
+David Boggs (1950–2022) worked on internetworking at XEROX PARC. He participated in the initial design of TCP during 1973-74.
+
+
+=== Sylvia Wilbur ===
+
+Sylvia B. Wilbur (born 1938) was a British computer scientist at University College London who programed the local node for the ARPANET connection to British academic networks, was one of the first to exchange email in Britain in 1974, and became a leading researcher on computer-supported cooperative work.
+
+
+=== Joyce K. Reynolds ===
+
+Joyce K. Reynolds (1952–2015) was an American computer scientist and served as part of the editorial team of the RFC series from 1987 to 2006. She performed the IANA function with Jon Postel until this was transferred to ICANN, then worked with ICANN in this role until 2001, while remaining an employee of ISI.
+As Area Director of the User Services area, she was a member of the Internet Engineering Steering Group of the IETF from 1990 to March 1998.
+Together with Bob Braden, she received the 2006 Postel Award in recognition of her services to the Internet. She is mentioned, along with a brief biography, in RFC 1336, Who's Who in the Internet (1992).
+
+
+=== Mark P. McCahill ===
+
+Mark P. McCahill (born 1956) is an American programmer and systems architect. While working at the University of Minnesota he led the development of the Gopher protocol (1991), the effective predecessor of the World Wide Web, and contributed to the development and popularization of a number of other Internet technologies from the 1980s.
+
+
+=== Nicola Pellow ===
+
+Nicola Pellow, one of the nineteen members of the WWW Project at CERN working with Tim Berners-Lee, is recognized for developing the first cross-platform internet browser, Line Mode Browser, that displayed web-pages on dumb terminals and was released in May 1991. She joined the project in November 1990, while an undergraduate math student enrolled in a sandwich course at Leicester Polytechnic (now De Montfort University). She left CERN at the end of August 1991, but returned after graduating in 1992, and worked with Robert Cailliau on MacWWW, the first web browser for the classic Mac OS.
+
+
+== See also ==
+
+History of the Internet
+History of email
+History of hypertext
+History of the World Wide Web
+Protocol Wars
+
+
+== Notes ==
+
+
+== References ==
+
+
+== Sources ==
+Hafner, Katie; Lyon, Matthew (1996). Where wizards stay up late: the origins of the Internet. New York : Simon & Schuster. ISBN 978-0-684-81201-4.
+
+
+== External links ==
+Internet Hall of Fame, established by the Internet Society in April 2012.
+G. Malkin (May 1992). Who's Who in the Internet - Biographies of IAB, IESG and IRSG Members. Network Working Group. doi:10.17487/RFC1336. FYI 9. RFC 1336. Informational.  Obsoletes RFC 1251.
+"Past IESG Members and IETF Chairs", IETF web site
+"A Brief History of the Internet Advisory / Activities / Architecture Board" from the IAB web site includes historical lists of IAB Members, IAB Chairs, IAB Ex-Officio and Liaison Members (IETF Chairs), IRTF Chairs, RFC Editors, and much more historical information.
+"Internet Pioneers", web pages at ibiblio.org, a collaboration of the School of Information and Library Science and the School of Journalism and Mass Communication at the University of North Carolina at Chapel Hill.
+"Pioneers Gallery" Archived 14 November 2017 at the Wayback Machine, from the Who Is Who in the Internet World (WiWiW) web site.
+"The Greatest Internet Pioneers You Never Heard Of: The Story of Erwise and Four Finns Who Showed the Way to the Web Browser", Juha-Pekka Tikka, 3 March 2009, Xconomy web page.
+
+
+=== Oral histories ===
+Kahn, Robert E. (24 April 1990). "Oral history interview with Robert E. Kahn" (Interview). Interviewed by Judy O'Neill. Minneapolis: Charles Babbage Institute. Retrieved 15 May 2008. Focuses on Kahn's role in the development of computer networking from 1967 through the early 1980s. Beginning with his work at Bolt Beranek and Newman (BBN), Kahn discusses his involvement as the ARPANET proposal was being written and then implemented, and his role in the public demonstration of the ARPANET. The interview continues into Kahn's involvement with networking when he moves to IPTO in 1972, where he was responsible for the administrative and technical evolution of the ARPANET, including programs in packet radio, the development of a new network protocol (TCP/IP), and the switch to TCP/IP to connect multiple networks.
+Cerf, Vinton G. (24 April 1990). "Oral history interview with Vinton Cerf" (Interview). Interviewed by Judy O'Neill. Minneapolis: Charles Babbage Institute. Retrieved 1 July 2008. Cerf describes his involvement with the ARPA network, and his relationships with Bolt Beranek and Newman, Robert Kahn, Lawrence Roberts, and the Network Working Group.
+Baran, Paul (5 March 1990). "Oral history interview with Paul Baran" (Interview). Interviewed by Judy O'Neill. Minneapolis: Charles Babbage Institute. Retrieved 1 July 2008. Baran describes his work at RAND, and discusses his interaction with the group at ARPA who were responsible for the later development of the ARPANET.
+Kleinrock, Leonard (3 April 1990). "Oral history interview with Leonard Kleinrock" (Interview). Interviewed by Judy O'Neill. Minneapolis: Charles Babbage Institute. Retrieved 1 July 2008. Kleinrock discusses his work on the ARPANET.
+Roberts, Lawrence G. (4 April 1989). "Oral history interview with Larry Roberts" (Interview). Interviewed by Arthur L. Norberg. Minneapolis: Charles Babbage Institute. Retrieved 1 July 2008. The interview focuses on Robert's work at the Information Processing Techniques Office (IPTO) at ARPA including discussion of ARPA and IPTO support of research in computer science, computer networks, and artificial intelligence, the ARPANET, the involvement of universities with ARPA and IPTO, J. C. R. Licklider, Ivan Sutherland, Steve Lukasik, Wesley Clark, as well as the development of computing at the Massachusetts Institute of Technology and Lincoln Laboratory.
+McCahill, Mark P. (13 September 2001). "Oral history interview with Mark P. McCahill" (Interview). Interviewed by Philip L. Frana. Minneapolis: Charles Babbage Institute. Retrieved 24 July 2013. Focuses on McCahill's work at the University of Minnesota where he led the team that created Gopher, the popular client/server software for organizing and sharing information on the Internet as well as his work on development of Pop Mail, Gopher VR, Forms Nirvana, the Electronic Grants Management System, and the University of Minnesota Portal.

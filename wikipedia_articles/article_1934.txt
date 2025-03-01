@@ -1,0 +1,141 @@
+Decibel relative to Z, or dBZ, is a logarithmic dimensionless technical unit used in radar.It is mostly used in weather radar, to compare the equivalent reflectivity factor (Z) of a remote object (in mm6 per m3) to the return of a droplet of rain with a diameter of 1 mm (1 mm6 per m3). It is proportional to the number of drops per unit volume and the sixth power of drops' diameter and is thus used to estimate the rain or snow intensity. With other variables analyzed from the radar returns it helps to determine the type of precipitation. Both the radar reflectivity factor and its logarithmic version are commonly referred to as reflectivity when the context is clear. In short, the higher the dBZ value, the more likely it is for severe weather to occur in the form of precipitation.
+Values above 20 dBZ usually indicate falling precipitation.
+
+
+== Principle ==
+The radar reflectivity factor (Z) of precipitation is dependent on the number (N0) and size (D) of reflectors (hydrometeors), which includes rain, snow, graupel, and hail. Very sensitive radars can also measure the reflectivity of cloud drops and ice. For an exponential distribution of reflectors, Z is expressed by:
+
+  
+    
+      
+        Z
+        =
+        
+          ∫
+          
+            0
+          
+          
+            D
+            m
+            a
+            x
+          
+        
+        
+          N
+          
+            0
+          
+        
+        
+          e
+          
+            −
+            Λ
+            D
+          
+        
+        
+          D
+          
+            6
+          
+        
+        
+          d
+        
+        D
+      
+    
+    {\displaystyle Z=\int _{0}^{Dmax}N_{0}e^{-\Lambda D}D^{6}\mathrm {d} D}
+  
+
+As rain droplets have a diameter on the order of 1 millimetre, Z is in mm6m−3 (μm3). By dividing Z with the equivalent return of a 1 mm drop in a volume of a meter cube (Z0) and using the logarithm of the result (because the values vary greatly from drizzle to hail), one obtains the logarithmic reflectivity LZ, in dBZ:
+
+  
+    
+      
+        
+          L
+          
+            Z
+          
+        
+        =
+        10
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        
+          
+            Z
+            
+              Z
+              
+                0
+              
+            
+          
+        
+      
+    
+    {\displaystyle L_{Z}=10\log _{10}{\frac {Z}{Z_{0}}}}
+  
+
+dBZ values can be converted to rainfall rates (R) in millimetres per hour using the Marshall-Palmer formula:
+
+  
+    
+      
+        
+          R
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  10
+                  
+                    (
+                    d
+                    B
+                    Z
+                    
+                      /
+                    
+                    10
+                    )
+                  
+                
+                200
+              
+            
+            )
+          
+          
+            
+              5
+              8
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {R} =\left({\frac {10^{(dBZ/10)}}{200}}\right)^{5 \over 8}}
+  
+
+
+== Other quantities ==
+The definition of Z above shows that a large number of small hydrometeors will reflect as one large hydrometeor. The signal returned to the radar will be equivalent in both situations, so a group of small hydrometeors is virtually indistinguishable from one large hydrometeor on the resulting radar image. The reflectivity image is just one type of image produced by a radar. Using it alone, a meteorologist could not tell with certainty the type of precipitation and distinguish any artifacts affecting the radar return.
+In combination with other information gathered by the radar during the same scan (dual polarization products and phase shifting due to the Doppler effect), meteorologists can distinguish between hail, rain, snow, biologicals (birds, insects), and other atmospheric phenomena.
+
+
+== References ==

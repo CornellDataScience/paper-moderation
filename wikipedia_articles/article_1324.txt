@@ -1,0 +1,646 @@
+The Durbin–Wu–Hausman test (also called Hausman specification test) is a statistical hypothesis test in econometrics named after James Durbin, De-Min Wu, and Jerry A. Hausman. The test evaluates the consistency of an estimator when compared to an alternative, less efficient estimator which is already known to be consistent. It helps one evaluate if a statistical model corresponds to the data.
+
+
+== Details ==
+Consider the linear model y = Xb + e, where y is the dependent variable and X is vector of regressors, b is a vector of coefficients and e is the error term. We have two estimators for b: b0 and b1. Under the null hypothesis, both of these estimators are consistent, but b1 is efficient (has the smallest asymptotic variance), at least in the class of estimators  containing b0. Under the alternative hypothesis, b0 is consistent, whereas b1 isn't.
+Then the Wu–Hausman statistic is:
+
+  
+    
+      
+        H
+        =
+        (
+        
+          b
+          
+            1
+          
+        
+        −
+        
+          b
+          
+            0
+          
+        
+        
+          )
+          ′
+        
+        
+          
+            (
+          
+        
+        Var
+        ⁡
+        (
+        
+          b
+          
+            0
+          
+        
+        )
+        −
+        Var
+        ⁡
+        (
+        
+          b
+          
+            1
+          
+        
+        )
+        
+          
+            
+              )
+            
+          
+          
+            †
+          
+        
+        (
+        
+          b
+          
+            1
+          
+        
+        −
+        
+          b
+          
+            0
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle H=(b_{1}-b_{0})'{\big (}\operatorname {Var} (b_{0})-\operatorname {Var} (b_{1}){\big )}^{\dagger }(b_{1}-b_{0}),}
+  
+
+where † denotes the Moore–Penrose pseudoinverse. Under the null hypothesis, this statistic has asymptotically the chi-squared distribution with the number of degrees of freedom equal to the rank of matrix Var(b0) − Var(b1).
+If we reject the null hypothesis, it means that b1 is inconsistent. This test can be used to check for the endogeneity of a variable (by comparing instrumental variable (IV) estimates to ordinary least squares (OLS) estimates). It can also be used to check the validity of extra instruments by comparing IV estimates using a full set of instruments Z to IV estimates that use a proper subset of Z. Note that in order for the test to work in the latter case, we must be certain of the validity of the subset of Z and that subset must have enough instruments to identify the parameters of the equation.
+Hausman also showed that the covariance between an efficient estimator and the difference of an efficient and inefficient estimator is zero.
+
+
+== Derivation ==
+
+Assuming joint normality of the estimators.
+
+  
+    
+      
+        
+          
+            N
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    b
+                    
+                      1
+                    
+                  
+                  −
+                  b
+                
+              
+              
+                
+                  
+                    b
+                    
+                      0
+                    
+                  
+                  −
+                  b
+                
+              
+            
+            ]
+          
+        
+        
+          
+            →
+            
+              d
+            
+          
+        
+        
+          
+            N
+          
+        
+        
+          (
+          
+            
+              
+                [
+                
+                  
+                    
+                      0
+                    
+                  
+                  
+                    
+                      0
+                    
+                  
+                
+                ]
+              
+            
+            ,
+            
+              
+                [
+                
+                  
+                    
+                      Var
+                      ⁡
+                      (
+                      
+                        b
+                        
+                          1
+                        
+                      
+                      )
+                    
+                    
+                      Cov
+                      ⁡
+                      (
+                      
+                        b
+                        
+                          1
+                        
+                      
+                      ,
+                      
+                        b
+                        
+                          0
+                        
+                      
+                      )
+                    
+                  
+                  
+                    
+                      Cov
+                      ⁡
+                      (
+                      
+                        b
+                        
+                          1
+                        
+                      
+                      ,
+                      
+                        b
+                        
+                          0
+                        
+                      
+                      )
+                    
+                    
+                      Var
+                      ⁡
+                      (
+                      
+                        b
+                        
+                          0
+                        
+                      
+                      )
+                    
+                  
+                
+                ]
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\sqrt {N}}{\begin{bmatrix}b_{1}-b\\b_{0}-b\end{bmatrix}}{\xrightarrow {d}}{\mathcal {N}}\left({\begin{bmatrix}0\\0\end{bmatrix}},{\begin{bmatrix}\operatorname {Var} (b_{1})&\operatorname {Cov} (b_{1},b_{0})\\\operatorname {Cov} (b_{1},b_{0})&\operatorname {Var} (b_{0})\end{bmatrix}}\right)}
+  
+
+Consider the function : 
+  
+    
+      
+        q
+        =
+        
+          b
+          
+            0
+          
+        
+        −
+        
+          b
+          
+            1
+          
+        
+        ⇒
+        plim
+        ⁡
+        q
+        =
+        0
+      
+    
+    {\displaystyle q=b_{0}-b_{1}\Rightarrow \operatorname {plim} q=0}
+  
+
+By the delta method
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  
+                    N
+                  
+                
+                (
+                q
+                −
+                0
+                )
+                
+                  
+                    →
+                    
+                      d
+                    
+                  
+                
+                
+                  
+                    N
+                  
+                
+                
+                  (
+                  
+                    0
+                    ,
+                    
+                      
+                        [
+                        
+                          
+                            
+                              1
+                            
+                            
+                              −
+                              1
+                            
+                          
+                        
+                        ]
+                      
+                    
+                    
+                      
+                        [
+                        
+                          
+                            
+                              Var
+                              ⁡
+                              (
+                              
+                                b
+                                
+                                  1
+                                
+                              
+                              )
+                            
+                            
+                              Cov
+                              ⁡
+                              (
+                              
+                                b
+                                
+                                  1
+                                
+                              
+                              ,
+                              
+                                b
+                                
+                                  0
+                                
+                              
+                              )
+                            
+                          
+                          
+                            
+                              Cov
+                              ⁡
+                              (
+                              
+                                b
+                                
+                                  1
+                                
+                              
+                              ,
+                              
+                                b
+                                
+                                  0
+                                
+                              
+                              )
+                            
+                            
+                              Var
+                              ⁡
+                              (
+                              
+                                b
+                                
+                                  0
+                                
+                              
+                              )
+                            
+                          
+                        
+                        ]
+                      
+                    
+                    
+                      
+                        [
+                        
+                          
+                            
+                              1
+                            
+                          
+                          
+                            
+                              −
+                              1
+                            
+                          
+                        
+                        ]
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                Var
+                ⁡
+                (
+                q
+                )
+                =
+                Var
+                ⁡
+                (
+                
+                  b
+                  
+                    1
+                  
+                
+                )
+                +
+                Var
+                ⁡
+                (
+                
+                  b
+                  
+                    0
+                  
+                
+                )
+                −
+                2
+                Cov
+                ⁡
+                (
+                
+                  b
+                  
+                    1
+                  
+                
+                ,
+                
+                  b
+                  
+                    0
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&{\sqrt {N}}(q-0){\xrightarrow {d}}{\mathcal {N}}\left(0,{\begin{bmatrix}1&-1\end{bmatrix}}{\begin{bmatrix}\operatorname {Var} (b_{1})&\operatorname {Cov} (b_{1},b_{0})\\\operatorname {Cov} (b_{1},b_{0})&\operatorname {Var} (b_{0})\end{bmatrix}}{\begin{bmatrix}1\\-1\end{bmatrix}}\right)\\[6pt]&\operatorname {Var} (q)=\operatorname {Var} (b_{1})+\operatorname {Var} (b_{0})-2\operatorname {Cov} (b_{1},b_{0})\end{aligned}}}
+  
+
+Using the commonly used result, showed by Hausman, that the covariance of an efficient estimator with its difference from an inefficient estimator is zero yields 
+
+  
+    
+      
+        Var
+        ⁡
+        (
+        q
+        )
+        =
+        Var
+        ⁡
+        (
+        
+          b
+          
+            0
+          
+        
+        )
+        −
+        Var
+        ⁡
+        (
+        
+          b
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle \operatorname {Var} (q)=\operatorname {Var} (b_{0})-\operatorname {Var} (b_{1})}
+  
+
+The chi-squared test is based on the Wald criterion
+
+  
+    
+      
+        H
+        =
+        
+          χ
+          
+            2
+          
+        
+        [
+        K
+        −
+        1
+        ]
+        =
+        (
+        
+          b
+          
+            1
+          
+        
+        −
+        
+          b
+          
+            0
+          
+        
+        
+          )
+          ′
+        
+        
+          
+            (
+          
+        
+        Var
+        ⁡
+        (
+        
+          b
+          
+            0
+          
+        
+        )
+        −
+        Var
+        ⁡
+        (
+        
+          b
+          
+            1
+          
+        
+        )
+        
+          
+            
+              )
+            
+          
+          
+            †
+          
+        
+        (
+        
+          b
+          
+            1
+          
+        
+        −
+        
+          b
+          
+            0
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle H=\chi ^{2}[K-1]=(b_{1}-b_{0})'{\big (}\operatorname {Var} (b_{0})-\operatorname {Var} (b_{1}){\big )}^{\dagger }(b_{1}-b_{0}),}
+  
+
+where † denotes the Moore–Penrose pseudoinverse and K denotes the dimension of vector b.
+
+
+== Panel data ==
+The Hausman test can be used to differentiate between fixed effects model and random effects model in panel analysis. In this case, Random effects (RE) is preferred under the null hypothesis due to higher efficiency, while under the alternative Fixed effects (FE) is at least as consistent and thus preferred.
+
+
+== See also ==
+Regression model validation
+Statistical model specification
+
+
+== References ==
+
+
+== Further reading ==
+Baltagi, Badi H. (1999). Econometrics (Second ed.). Berlin: Springer. pp. 290–294. ISBN 3-540-63617-X.
+Bierens, Herman J. (1994). Topics in Advanced Econometrics. New York: Cambridge University Press. pp. 89–109. ISBN 0-521-41900-X.
+Davidson, Russell; MacKinnon, James G. (1993). Estimation and Inference in Econometrics. New York: Oxford University Press. pp. 237–242, 389–395. ISBN 0-19-506011-3.
+Florens, Jean-Pierre; Marimoutou, Velayoudom; Peguin-Feissolle, Anne (2007). Econometric Modeling and Inference. Cambridge University Press. pp. 78–82. ISBN 978-0-521-70006-1.
+Ruud, Paul A. (2000). An Introduction to Classical Econometric Theory. New York: Oxford University Press. pp. 578–585. ISBN 0-19-511164-8.

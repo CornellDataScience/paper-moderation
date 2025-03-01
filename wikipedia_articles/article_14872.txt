@@ -1,0 +1,84 @@
+Music Player Daemon (MPD) is a free and open source music player server. It plays audio files, organizes playlists and maintains a music database. In order to interact with it, a client program is needed. The MPD distribution includes mpc, a simple command line client.
+MPD is used in proprietary audio hardware. The MPD project maintains a list of vendors, some of which infringe the GPL.
+
+
+== Design ==
+MPD simply runs in the background playing music from its playlist. Client programs communicate with MPD to manipulate playback, the playlist, and the database. It is not a full-featured music player program such as Amarok, but its clients can serve such role.
+MPD uses a flat file database to maintain the basic music file information when it is not running. Once the daemon has been started, the database is kept completely in-memory and no hard disk access is necessary to look up or search for local audio files. Generally, music files must be located in a sub-directory of the music directory and are only added to the database when the update command is sent to the server. Playback of arbitrary files is allowed but only for local clients which are connected to the server via a Unix Domain Socket. MPD does not provide a built-in tag editor; this functionality is handled by clients or external programs, though 3rd party patches do exist to add this functionality to the server.
+The client–server model provides several advantages over all-inclusive music players. Clients may communicate with the server remotely over an intranet or over the Internet. The server can be a headless computer located anywhere on the network. Music playback can continue seamlessly when not using X or restarting X. Different clients can be used for different purposes – a lightweight client left open all the time for controlling playback with a more fully featured client used for intensive database searches. Several clients can use the same database, running simultaneously, remotely or under different user accounts.
+
+
+== Features ==
+Plays Ogg Vorbis, FLAC, Opus, WavPack, MP2, MP3, MP4/AAC, MOD, Musepack, wave files and any other files supported by FFmpeg.
+Remotely control MPD over a network (IPv4 and IPv6 supported).
+Plays FLAC, OggFLAC, MP3 and Ogg Vorbis HTTP streams.
+Reads and caches metadata information (ID3: ID3v1 and ID3v2), Vorbis Comments, and MP4 Metadata.
+Metadata information can be searched.
+Buffer support for playback (prevents skipping due to high load or network latency).
+Gapless playback.
+Crossfading support.
+Seeking support.
+Save, load, and manage playlists (in M3U format).
+Native Zeroconf support.
+libsamplerate and native sample rate conversion.
+Support for ALSA, PulseAudio, PipeWire, OSS, MVP, JACK, Windows, and macOS.
+Can be used as a source for an Icecast stream, in Ogg Vorbis and MP3. Other formats can be converted to Ogg/MP3 on the fly before output to the stream server.
+Built-in HTTP streaming server, capable of producing Ogg Vorbis and MP3 streams of a chosen quality on-the-fly.
+Independent of a GUI. Music will continue playing whether a front-end is open or not, and will continue playing even if the X server is killed.
+Plays music files inside compressed .zip archives.
+
+
+== Clients ==
+
+MPD has a variety of front-ends which communicate with the server using a custom protocol over a TCP connection. Clients usually implement different types of interfaces.
+
+
+=== Console ===
+mpc (part of the MPD project) is a simple command line interface to most of the server's functions.
+ncmpc (part of the MPD project) is a more fully featured ncurses client similar in concept to MOC.
+ncmpcpp is another ncurses client that clones ncmpc's functionality, but includes new features, such as a tag editor.
+Practical Music Search is another ncurses client with a Vim-like interface.
+fmui is a terminal user interface created with fzf and mpc.
+
+
+=== Web Clients ===
+Bragi-MPD full featured, mobile friendly, fully client side, HTML5 web-client capable of controlling multiple instances and multiple outputs per MPD instance. Its non-UI functionality is maintained in a separate project MPD.js allowing easy creation of new clients.
+netjukebox is a web-based media jukebox for MPD, VideoLAN and Winamp/httpQ.
+O!MPD is a responsive, rich client based on PHP and MySQL
+
+
+=== Graphical ===
+Ario is GTK+-based and uses tabs in its interface.
+Cantata runs on Windows, macOS and Linux, and uses Qt 5 to manage the library or playlists, with extras like tags editor, lyrics and cover fetching from Internet, and support for mass storage devices. Cantata gained some traction from being made the standard audio player of Linux distribution Kubuntu in October 2017 at the expense of audio player Amarok.
+Gimmix provides a simple interface with a very small memory footprint.
+gmpc is the oldest maintained gtk+-2 (gtk+-3 development version) client, it provides many different ways of exploring the music collection and rich metadata like lyrics, covers, artist/album information, artist/album/backdrop images, similar artists and more. The client aims to be rich in features, but still lightweight enough to have constantly running on low end hardware.
+Intelligent Music Player Client (IMPC) uses GTK+ 3.0 and supports loading related information (articles, covers, images) with actually playing song and it learns to classify related content.
+mpdlirc interfaces MPD via an infrared remote control.
+Qmobilempd provides a Qt4 client especially for mobile devices like Symbian.
+Qmpdplasmoid provides a client directly embedded into the KDE desktop.
+Sonata uses GTK+ to provide a GUI for playing files and managing playlists.
+
+
+=== Mobile ===
+MPDPilot is modern, friendly MPD client for iOS. 
+M.A.L.P. is a fast and easy to use MPD client for Android. 
+MAFA is a feature rich MPD client for Android (paid app). 
+
+
+=== More ===
+For a more complete list, see the Clients MPD Wiki.
+Simple clients can script the mpc program to issue commands to the server. Some clients provide an HTML or AJAX user interface and can be located on the same computer as the server, requiring only a browser be installed on the client machine. There is a client implemented as a Firefox add-on, one as a Xfce panel plugin, and one as a Wii application, and one as a Windows Store application for Windows 8/Windows RT.
+Libraries exist to interface with MPD from many programming languages, including C, Python, Ruby, Perl, Lua and Haskell. libmpdee is an Emacs Lisp library allowing MPD to be controlled from Emacs.
+
+
+== See also ==
+XMMS2
+MusikCube
+Music on Console
+
+
+== References ==
+
+
+== External links ==
+Official website

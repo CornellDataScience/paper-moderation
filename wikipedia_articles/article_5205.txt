@@ -1,0 +1,82 @@
+A voltage-controlled resistor (VCR) is a three-terminal active device with one input port and two output ports. The input-port voltage controls the value of the resistor between the output ports. VCRs are most often built with field-effect transistors (FETs). Two types of FETs are often used: the JFET and the MOSFET. There are both floating voltage-controlled resistors and grounded voltage-controlled resistors. Floating VCRs can be placed between two passive or active components. Grounded VCRs, the more common and less complicated design, require that one port of the voltage-controlled resistor be grounded.
+
+
+== Usages ==
+Voltage-controlled resistors are one of the most commonly used analog design blocks: adaptive analog filters, automatic gain-control circuits, clock generators, compressors, electrometers, energy harvesters, expanders, hearing aids, light dimmers, modulators (mixers), artificial neural networks,  programmable-gain amplifiers, phased arrays, phase-locked loops, phase-controlled dimming circuits, phase-delay and -advance circuits, tunable filters, variable attenuators, voltage-controlled oscillators, voltage-controlled multivibrators, as well as waveform generators, all include voltage-controlled resistors.
+The JFET is one of the more common active devices used for the design of voltage-controlled resistors. So much so, that JFET devices are packaged and sold as voltage-controlled resistors. Typically, JFETs when they are packaged as VCRs often have high pinch-off voltages, which result in a greater dynamic resistance range. JFETs for VCRs are often packaged in pairs, which allows VCR designs that require matched transistor parameters.
+For VCR applications that involve sensor signal amplification or audio, discrete JFETs are often used. One reason is that JFETs and circuit topologies built with JFETs feature low-noise (specifically low 1/f flicker noise and low burst noise). In these applications, low-noise JFETs allow more reliable and accurate measurements and heightened levels of sound purity.
+Another reason discrete JFETs are used is that JFETs are better suited for rugged environments. JFETs can withstand electrical, electromagnetic interference (EMI) and other high radiation shocks better than MOSFET circuits. JFETs can even serve as an input surge-protection device. JFETs are also less susceptible to electrostatic discharge than MOSFETs.
+
+
+== Voltage-controlled resistor design ==
+Two of the more common and most cost-effective designs for JFET VCR are the non-linearized and linearized VCR design. The non-linearized design only requires one JFET, The linearized design also uses one JFET, but has two linearization resistors. The linearized designs are used for VCR applications that require high input-signal voltage levels. The non-linearized designs are used in low input signal level and cost-driven DC applications.
+
+
+== Non-linearized VCR design ==
+
+In the circuit on the figure, a non-linearized VCR design, the voltage-controlled resistor, the LSK489C JFET, is used as a programmable voltage divider. The VGS supply sets the level of the output resistance of the JFET. The drain-to-source resistance of the JFET (RDS) and the drain resistor (R1) form the voltage-divider network. The output voltage can be determined from the equation
+
+Vout = VDC · RDS / (R1 + RDS).
+An LTSpice simulation of the non-linearized VCR design verifies that the JFET resistance changes with a change in gate-to-source voltage (VGS). In the simulation (below), a constant input voltage is applied (the VDC supply is set to 4 volts), and the gate-to-source voltage is reduced in steps, which increases the JFET drain-to-source resistance. The resistance between the drain to source terminals of the JFET increases as the gate-to-source voltage becomes more negative and decreases as the gate-to-source voltage approaches 0 volts. The simulation below bears this out. The output voltage is about 2.5 volts with a gate-to-source voltage of −1 volt. Conversely, the output voltage drops to about 1.6 volts when the gate-to-source voltage is 0 volts.
+With a 4-volt input signal and R1 of 300 ohms, the range of resistance for the JFET VCR can be calculated from the simulation results as VGS varies between −1 volt and 0 volts using the equation
+
+RDS = V0 · R1 / (VDS − V0).
+Using the above equation, at VGS = −1 V, the VCR resistance is about 500 ohms, and at VGD = 0 V, the VCR resistance is about 200 ohms.
+
+Applying a ramp voltage to the input of a similar VCR circuit (the load resistor has been changed to 3000 ohms) allows one to determine the exact value of the resistance of the JFET as the input voltage is varied.
+
+The ramp simulation, below, reveals that the drain-to-source resistance of the JFET is fairly constant (about 280 ohms) up until the input sweep voltage, Vsweep (Vsignal), reaches about 2 V. At this point the drain-to-source resistance starts to rise slowly until the input voltage reaches 8 V. At around 8 V, for this bias condition (VGS = 0 V and R = 3 kΩ), the JFET drain current (ID(J1)) saturates, and the resistance is no longer constant and changes with an increase in input voltage. The ramp simulation also indicates that even below 2 V, the VCR's resistance is not completely independent of the input voltage level. That is, the VCR resistance does not represent a perfectly linear resistor.
+Because the resistance is not constant above 2 V, this non-linearized VCR design is most often used when the input voltage signal is below 1 V, such as in sensor applications or in applications where distortion is not a concern at higher input voltage levels. Or in other cases, when a constant resistor value is not required (for example, in LED dimmer applications and musical pedal-effect circuits).
+
+
+== Linearized VCR design ==
+To increase the dynamic range of the input voltage, maintain a constant resistance over the input signal range, and to improve the signal-to-noise ratio and total harmonic distortion specifications, linearization resistors are used.
+A fundamental limitation of voltage-controlled resistors is that input signal must be kept below the linearization voltage (approximately the point when the JFET enters saturation). If the linearization voltage is exceeded, the voltage control resistor value will change both with the level of the input voltage signal and the gate-to-source voltage.
+For the evaluation of this design's ability to handle larger input signals, a ramp is applied to the VCR input. From the results of the ramp simulation, how closely the VCR emulates a real resistor and over what range of input voltages the VCR behaves as a resistor is determined.
+
+The linearized VCR ramp simulation, below, indicates that the VCR resistance is constant at approximately 260 ohms for an input signal range from about −6 V to 6 V (the V(Vout)/I(R1) curve). The sweep also indicates that the VCR resistance starts to dramatically increase, as does in the non-linearized design, once the JFET enters its saturation region.
+Because of the linearized VCR's wider constant resistance region, much larger input signals than the non-linearized designs can be applied to the VCR without distortion. However, it is also important to consider that the drain resistor value will slightly affect the range of drain-to-source voltages that the VCR resistance is constant.
+
+Because of the increased linearization range, the linearized circuit is able to handle AC signals that are in the order of 8 V peak-to-peak before visual levels of distortion set in. The simulation below, which uses a 3000-ohm drain resistor, illustrates that the VCR can be successfully used at fairly high input voltage input signals. For this design, the 8 V peak-to-peak input voltage signal can be attenuated from 2.2 volts peak to 0.5 volts peak when the control voltage is varied from −2.5 volts to 0.5 volts.
+
+What is important to note about the linearized VCR design, as opposed to the non-linearized design, is that the output signal does not have any significant offset. It stays centered at 0 V as the control voltage is changed. Simulations of the non-linearized design indicate a significant offset voltage at the output. Another important characteristic of the linearized VCR design is that it has a higher output current than the non-linearized design. The effect of the linearization resistors is to effectively increase the transconductance gain of the VCR.
+
+
+== Resistance range selection ==
+Different JFETs can be used to obtain different VCR resistance ranges. Typically, the higher the IDSS value for a JFET, the lower the resistance value obtained. Similarly, JFETs with lower values of IDSS have higher values of resistance. With a bank of JFETs, with different IDSS values (and hence, RDS values), banks of programmable automatic gain-control circuits can be constructed that offer a wide range of resistance ranges. For example, the LSK489A and LSK489C, graded IDSS JFETS, show a 3:1 resistance variation.
+
+
+== Distortion considerations ==
+Distortion is a major concern with voltage-controlled resistors. When an AC or non-DC input signal is applied that results in the VCR resistor moving out of the linear triode region (or operated in a less than perfectly linear triode region), uneven amplification of the input signal results (as a direct result of a non-linear increase in resistance). This results in distortion of the output signal.
+In order to overcome this problem, non-linearized VCRs are simply operated at fairly low signal levels. Linearized VCR designs, on the other hand, will have significantly less distortion at much higher input voltage signal levels and allow an improvement in total harmonic distortion specification.
+For example, the simulation below shows a significant amount of visual distortion when the input signal of 5 V peak-to-peak is applied to a non-linearized VCR design.
+
+On the other hand, a simulation of a linearized VCR design shows very little distortion when a 8 V peak-to-peak input signal is applied (Figure 7).
+
+
+== Other VCR topologies and designs ==
+Besides these more basic VCR designs, there are numerous more sophisticated designs. These designs often include a differential difference conveyor current (DDCC) circuit, a differential amplifier, two or more matched JFET transistors or one or two operational amplifiers. These designs offer improvements in dynamic range, distortion, signal-to-noise ratio and sensitivity to temperature variations.
+
+
+== Design theory – IV analysis ==
+The current–voltage (IV) transfer characteristics determine how the JFET VCR will perform. Specifically, the linear regions of the IV curves determine the input signal range where the VCR will behave as a resistor. The curves of a specific JFET also dictate the range of resistor values that the VCR can be programmed to.
+The mathematical function that defines a JFET IV curve is not linear. However, there are regions of these curves that are very linear. These include the triode region (also known as the ohmic or linear region) and the saturation region (also known as the active region or constant-current-source region). In the triode region, the JFET acts like a resistor, however, in the saturation region it behaves like a constant-current source. The point that separates the triode region and the saturation region is roughly the point where VDS is equal to VGS on each of the IV curves.
+In the triode region, changes in the drain-to-source voltage will not change (or change very little) the resistance between the JFET's drain and source terminals. In the saturation region, or more appropriately the constant-current region, changes in the drain-to-source voltage will require the drain-to-source resistance to change such that the current remains at a constant value for different drain-to-source voltage levels.
+
+For values of VGS near zero, the drain-to-source voltage linearization voltage or triode breakpoint is much higher than when VGS levels are near the pinch-off voltage. This means in order to maintain constant resistor behavior for different values of VGS, the maximal linearization value would be set according to the highest value of VGS used.
+The linear triode region actually includes negative values of VGS. The figure below, shows an LTSPICE (LTSPICE) simulation of the IV curves in the triode region. As can be seen, a non-linearized LSK489 is approximately linear from about −0.1 V to 0.1 V. For VGS levels near 0 V, the triode linear range extends from about −0.2 V to 0.2 V. As the value of VGS is increased, the linear triode region is significantly reduced.
+
+Conversely, when linearization resistors are used, a similar IV curve swept simulation indicates that the linear triode region is significantly extended. From the IV curves, one can see that the linearization region for the linearized design extends easily from −6 V to 6 V (the IDS versus VDS versus Vin curves). Far above the approximately 200 mV range the non-linearized design produces.
+Of further interest is that the linearization results in linearization of the gate-to-source voltage even though the input voltage (Vin) is held at a constant DC level during each of the sweeps. This is because as the input voltage changes, the value of the VGS voltage changes such that VGS is always equal to one-half VDS. The change in VGS for changes in VDS is such that the JFET behaves as a resistor up until the point where the JFET saturates.
+
+
+== The mathematics of linearization ==
+The mathematics behind linearization resistors is directly related to the cancellation of the second degree VDS term in the JFET triode equation. This equation relates the drain current to VGS and VDS. Kleinfeld applies Kirchhoff's current law to prove that the VDS non-linear term cancels with linearization resistors. The linearization resistors, in order to effect cancellation of the second-degree (quadratic) term must be equal. Equal valued linearization resistors divide the drain-to-source voltage by 2, effectively cancelling out the non-linear VDS term in the JFET triode equation.
+
+
+== The future of voltage-controlled resistors ==
+Everyday and high-performance VCRs are essential to the successful design of many analog electronic circuit designs and will continue to be so. VCR designs are expected to play a central role in the advancement of artificial intelligence (neural) based sensor networks. The VCR, basically the heart of the synaptic cells in a neural network, is necessary to enable high-speed analog data processing and control of information that microcontrollers, digital-to-analog converters and analog-to-digital converters presently do.
+Low-noise JFETs because of their low-signal sensitivity, electromagnetic and radiation resilience, and their ability to be configured both as a VCR in a synaptic cell and as a low-noise high-performance sensor preamplifier, offer a solution to the implementation of artificial-intelligent-based sensor nodes. This is a natural extension of the fact that low-noise JFETs and low-noise JFET circuit topologies are extensively used in the design of low-noise VCRs and low-noise preamplifiers in sensor measurement applications.
+
+
+== References ==

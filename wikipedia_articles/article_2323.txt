@@ -1,0 +1,19 @@
+The Information Technology Security Evaluation Criteria (ITSEC) is a structured set of criteria for evaluating computer security within products and systems. The ITSEC was first published in May 1990 in France, Germany, the Netherlands, and the United Kingdom based on existing work in their respective countries. Following extensive international review, Version 1.2 was subsequently published in June 1991 by the Commission of the European Communities for operational use within evaluation and certification schemes.
+Since the launch of the ITSEC in 1990, a number of other European countries have agreed to recognize the validity of ITSEC evaluations.
+The ITSEC has been largely replaced by Common Criteria, which provides similarly defined evaluation levels and implements the target of evaluation concept and the Security Target document.
+
+
+== Concepts ==
+The product or system being evaluated, called the target of evaluation, is subjected to a detailed examination of its security features culminating in comprehensive and informed functional and penetration testing. The degree of examination depends upon the level of confidence desired in the target. To provide different levels of confidence, the ITSEC defines evaluation levels, denoted E0 through E6. Higher evaluation levels involve more extensive examination and testing of the target.
+Unlike earlier criteria, notably the TCSEC developed by the US defense establishment, the ITSEC did not require evaluated targets to contain specific technical features in order to achieve a particular assurance level. For example, an ITSEC target might provide authentication or integrity features without providing confidentiality or availability. A given target's security features were documented in a Security Target document, whose contents had to be evaluated and approved before the target itself was evaluated. Each ITSEC evaluation was based exclusively on verifying the security features identified in the Security Target.
+
+
+== Use ==
+The formal Z notation was used to prove security properties about the Mondex smart card electronic cash system, allowing it to achieve ITSEC level E6, the highest granted security-level classification.
+
+
+== References ==
+
+
+== Bibliography ==
+ITSEC (June 1991). "Information Technology Security Evaluation Criteria (ITSEC): Preliminary Harmonised Criteria" (PDF). Document COM(90) 314, Version 1.2. Commission of the European Communities. Archived from the original (PDF) on 2006-05-23. Retrieved 2006-06-02.

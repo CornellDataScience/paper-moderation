@@ -1,0 +1,692 @@
+Arc routing problems (ARP) are a category of general routing problems (GRP), which also includes node routing problems (NRP). The objective in ARPs and NRPs is to traverse the edges and nodes of a graph, respectively. The objective of arc routing problems involves minimizing the total distance and time, which often involves minimizing deadheading time, the time it takes to reach a destination. Arc routing problems can be applied to garbage collection, school bus route planning, package and newspaper delivery, deicing and snow removal with winter service vehicles that sprinkle salt on the road, mail delivery, network maintenance, street sweeping, police and security guard patrolling, and snow ploughing. Arc routings problems are NP hard, as opposed to route inspection problems that can be solved in polynomial-time.
+For a real-world example of arc routing problem solving, Cristina R. Delgado Serna & Joaquín Pacheco Bonrostro applied approximation algorithms to find the best school bus routes in the Spanish province of Burgos secondary school system. The researchers minimized the number of routes that took longer than 60 minutes to traverse first. They also minimized the duration of the longest route with a fixed maximum number of vehicles.
+There are generalizations of arc routing problems that introduce multiple mailmen, for example the k Chinese Postman Problem (KCPP).
+
+
+== Background ==
+The efficient scheduling and routing of vehicles can save industry and government millions of dollars every year. Arc routing problems have applications in school bus planning, garbage and waste and refuse collection in cities, mail and package delivery by mailmen and postal services, winter gritting and laying down salt to keep roads safe in the winter, snow plowing and removal, meter reading including remote radio frequency identification meter reading technology, street maintenance and sweeping, police patrol car route planning, and more.
+
+
+== Basis ==
+The basic routing problem is: given a set of nodes and/or arcs to be serviced by a fleet of vehicles, find routes for each vehicle starting and ending at a depot. A vehicle route is a sequence of points or nodes, which the vehicle must traverse in order, starting and ending at a depot.
+
+
+== Chinese postman problem ==
+The Chinese Postman Problem (CPP) is aimed at finding the minimum length cycle for a single postman. The CPP requires all edges be traversed once, the rural postman problem (RPP) requires a subset of the edges to be traversed with the minimum length cycle.
+
+
+== Vehicle routing problems/VRP ==
+Arc routing problems impact strategic, tactical, and operational planning decisions. The strategic role of where a depot is placed depends on the most efficient arc route available. The decision of the vehicle fleet size and vehicle types with varying specifications relate to the tactical aspect of arc routing problems in operations research. Routing and scheduling decisions are operational planning decisions in arc routing problems. The operational planning decisions also includes the time that the vehicles are used by workers with staff decisions. Vehicle routing decisions for the location of a depot depend on the cost of transporting materials over a geographical region. Bodin et. al applied vehicle routing to the dial a ride problem.
+
+
+== Rural postman problem ==
+In some situations, the set of edges that are required is different from the edges in the graph. This is modeled by the Rural Postman Problem (RPP), where the required edges are a subset of the system of edges.
+
+
+== Algorithms ==
+Finding an efficient solution with large amounts data to the Chinese Postman Problem (CPP), the Windy Postman Problem (WPP), the Rural Postman Problem (RPP), the k-Chinese postman problem (KCPP), the mixed Chinese postman problem (MCPP), the Directed Chinese Postman Problem (DCPP), the Downhill Plowing Problem (DPP), the Plowing with Precedence Problem (PPP), the Windy Rural Postman Problem (WRPP) and the Windy General Routing Problem (WGRP) requires using thoughtful mathematical concepts, including heuristic optimization methods, branch-and-bound methods, integer linear programming, and applications of traveling salesman problem algorithms such as the Held–Karp algorithm makes an improvement from 
+  
+    
+      
+        O
+        (
+        n
+        !
+        )
+      
+    
+    {\displaystyle O(n!)}
+  
+ to 
+  
+    
+      
+        O
+        (
+        
+          2
+          
+            n
+          
+        
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle O(2^{n}n^{2})}
+  
+. In addition to these algorithms, these classes of problems can also be solved with the cutting plane algorithm, convex optimization, convex hulls, Lagrange multipliers and other dynamic programming methods. In cases where it is not feasible to run the Held–Karp algorithm because of its high computational complexity, algorithms like this can be used to approximate the solution in a reasonable amount of time.
+
+
+== Eulerian circuits ==
+The earliest documented reference to the area of arc routing problems is the classic bridges of Königsberg challenge, which Euler proved to be impossible. The resident of Konigsberg, now part of Kaliningrad, wanted to find a way to cross all seven bridges over the river Pregel without backtracking or retracing their steps, that is crossing each bridge once and only once. In 1736, Euler reduced the problem to a question of nodes and edges and showed that the problem was impossible. In 1873, Hierholzer did more work on the question of closed circuits.
+The work on the Eulerian circuits was popularized with Scientific American on July 1, 1953. This work was extended by Meigu Guan, also known as Kwan Mei-Ko at Shangtun Normal College. Meigu Guan was interested in a different question instead of determining a closed circuit. Guan worked to find out a minimum length walk that traversed every edge of the graph at least once. Guan described his goal in 1962: "A mailman has to cover his assigned segment before returning to the post office. The problem is to find the shortest walking distance for the mailman."
+
+
+== Problem types ==
+Arc routing problems (ARPs) differ in their goal and heuristics. However, all of them are known to be NP-hard.
+
+
+=== Undirected rural postman problem ===
+This problem is named after the postman and his challenge to deliver mail in any order he may choose, but minimizing his costs such as time or travel distance. It is also sometimes called the undirected chinese postman problem. The undirected rural postman problem (URPP) aims to minimize the total cost of a route that maps the entire network, or in more specific cases, a route that maps every edge that requires a service. If the whole network must be mapped, the route that maps the entire network is called a covering tour. In the case where only certain edges need to be mapped, the problem aims to solve the route that optimizes the demands, crossing over into non-required routes a minimal number of times.
+
+
+=== Undirected capacitated arc routing problem ===
+The undirected capacitated arc routing problem consists of demands placed on the edges, and each edge must meet the demand. An example is garbage collection, where each route might require both a garbage collection and a recyclable collection. Problems in real life applications might arise if there are timing issues, such as the case in which certain routes cannot be serviced due to timing or scheduling conflicts, or constraints, such as a limited period of time. The heuristics described in this article ignore any such problems that arise due to application constraints.
+
+
+== History ==
+The URPP was first introduced in 1974 and was proven to be an NP-hard problem by Lenstra and Kan. The UCARP can be derived from the URPP, and thus is NP-hard as well. In 1981, another pair of computer scientists, Golden and Wong, managed to prove that even deriving a .5 approximation to the URPP was NP-hard. In 2000, Dror published a book describing different arc routing problems.
+
+
+== Windy postman problem and variants ==
+The windy postman problem proposed by Minieka is a variant of the route inspection problem in which the input is an undirected graph, but where each edge may have a different cost for traversing it in one direction than for traversing it in the other direction. In contrast to the solutions for directed and undirected graphs, it is NP-complete. The cost of traveling in one direction is greater when the wind is blowing in your face than when the wind is at your back, and this is the origin of the name Windy Postman problem. The work that it takes to traverse the street in one direction is different than the work it takes to traverse the street in another direction on a windy day.
+The windy postman problem is an arc routing problem (ARP) that contains the Mixed Chinese Postman Problem MCPP as a special case.
+The problem can be defined in the following manner: "Given an undirected and connected graph G=(V,E) with two non-negative costs 
+  
+    
+      
+        
+          c
+          
+            i
+            ,
+            j
+          
+        
+      
+    
+    {\displaystyle c_{i,j}}
+  
+ and 
+  
+    
+      
+        
+          c
+          
+            j
+            ,
+            i
+          
+        
+      
+    
+    {\displaystyle c_{j,i}}
+  
+ associated with each edge 
+  
+    
+      
+        {
+        i
+        ,
+        j
+        }
+        ∈
+        E
+      
+    
+    {\displaystyle \{i,j\}\in E}
+  
+ corresponding to the cost of traversing it from i to j and from j to i, respectively, the WPP is to find a minimum cost tour on G traversing each edge at least once." This problem was introduced by Minieka. The WPP is NP-complete in general and can be solved in polynomial time if G is Eulerian, if the cost of two opposite orientations of every cycle in G in same or if G is a series-parallel graph. The Windy Rural Postman Problem (WRPP)  is a generalization of the WPP in which not all the edges in the graph have to be traversed but only those in a given subset of required edges. For example, some rural roads are not required for the postman to cross and some roads on steep hills take longer to go up than down.
+The Windy Rural Postman Problem (WRPP)  is a generalization of the WPP in which not all the edges in the graph have to be traversed but only those in a given subset of required edges. For example, some rural roads are not required for the postman to cross and some roads on steep hills take longer to go up than down. Consider an undirected graph 
+  
+    
+      
+        G
+        =
+        {
+        E
+        ,
+        V
+        }
+      
+    
+    {\displaystyle G=\{E,V\}}
+  
+ with two costs 
+  
+    
+      
+        
+          c
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle c_{ij}}
+  
+ and 
+  
+    
+      
+        
+          c
+          
+            j
+            i
+          
+        
+      
+    
+    {\displaystyle c_{ji}}
+  
+ associated with the cost to traverse the edge 
+  
+    
+      
+        (
+        i
+        ,
+        j
+        )
+      
+    
+    {\displaystyle (i,j)}
+  
+ starting from i and j, respectively. G is the windy graph and we are interested in the subset of edges, or in mathematical symbols, 
+  
+    
+      
+        
+          E
+          
+            R
+          
+        
+        ⊆
+        E
+      
+    
+    {\displaystyle E_{R}\subseteq E}
+  
+.
+If the WRPP includes the additional constraint that a certain set of vertices must be visited—
+  
+    
+      
+        
+          V
+          
+            R
+          
+        
+        ⊆
+        V
+      
+    
+    {\displaystyle V_{R}\subseteq V}
+  
+, the problem turns into the Windy General Routing Problem (WGRP). Benavent proposed an integer linear programming formulation and different heuristics and lower bounds for the WRPP. 
+Benavent et al published an evaluation of several heuristic methods used for solving the WRPP in a few seconds with a deviation no greater than 1% from the lower bound on medium sized graphs. They improved on this with a Scatter Search algorithm that reduced the difference to 0.5%. Scatter Search found solutions that deviated by less than 2% when implemented on networks with hundreds of nodes and thousands of edges.
+In real world applications, there are multiple vehicles that can move, which leads to the generalization named the Min-Max K-vehicles Windy Rural Postman Problem (MM K-WRPP). The min–max K-vehicles Windy Rural Postman Problem (MM K-WRPP) is defined as follows: Given a windy graph 
+  
+    
+      
+        G
+        =
+        {
+        V
+        ,
+        E
+        }
+      
+    
+    {\displaystyle G=\{V,E\}}
+  
+, a distinguished vertex, 
+  
+    
+      
+        1
+        ∈
+        V
+      
+    
+    {\displaystyle 1\in V}
+  
+, representing the depot, a subset of required edges  
+  
+    
+      
+        
+          E
+          
+            R
+          
+        
+        ⊆
+        E
+      
+    
+    {\displaystyle E_{R}\subseteq E}
+  
+, and a fixed number K of vehicles, the MM K-WRPP consists of finding a set of K tours for the vehicles in such a way that each tour starts and ends at the depot and each required edge is serviced by exactly one vehicle. The objective is to minimize the length of the longest tour in order to find a set of balanced routes for the vehicles. Some real-life applications of routing problems with min–max objectives are school bus routing (Delgado and Pacheco 2001), the delivery of newspapers to customers (Applegate et al. 2002) and waste collection (Lacomme et al. 2004).
+The best MM K_WRPP algorithm was very close to the minimum solution with 2 and 3 vehicles, less than 0.4% on average. The gap increases to about 1.00% and 1.60% at 4 and 5 vehicles.
+According to Dussault et al and  Benavent et al, a metaheuristics multi-objective simulating annealing algorithm (MOSA) can solve the different contraints imposed on the WRPP. The WRPP is an important Arc Routing Problem which generalizes many of the single-vehicles Arc Routing problems. In real applications of math, a solution that minimizes the total costs of all vehicles route and the length of the longest tour is preferable. It's hard to be in a location where your package is always hours late.  We should start with the assumption that several vehicles with a specific measurable capacity to serve customers is more realistic than one vehicle with unmeasurable infinite capacity. Rabbani et. al measured the performance of MOSA algorithms and models using a multi-objective development of Cuckoo search—developed by Yang et al, also referred to as Multi-objective Cuckoo Search and abbreviated by MOCS. They concluded that MOSA methods were more efficient than MOCS methods. In the future comparisons with other meta-heuristic methods could be researched, including Non-dominated Sorting Genetic Algorithm (NSGA- ), multi-objective particle swarm optimization algorithm (MOPSO) and multi-objective Imperialist Competitive Algorithm.
+In the Windy Postman Problem (WPP) model, the cost of going in one direction is different than the cost it takes to go in the other direction. For example, if the wind is blowing down the street it takes more time and energy to go against the wind than with the wind. Another example of the WPP is the cost of plowing uphill is greater than the cost of plowing downhill. This is modeled by a variant studied by Dussault et al, the Downhill Plowing Problem (DPP). 
+A branch and cut algorithm was published by Angel Corberan for the windy postman problem. The algorithm is based on heuristic and exact methods for manipulating odd-cut inequality violations.
+
+
+== Applications ==
+Various combinatorial problems have been reduced to the Chinese Postman Problem, including finding a maximum cut in a planar graph and a minimum-mean length circuit in an undirected graph.
+
+
+=== Snow plows ===
+In winter a common question is what set of routes has the smallest (minimum) maximum route length? Typically, this is assessed as an arc routing problem with a graph. The time it takes to travel a street, known as deadhead time, is faster than the time it takes to plow the snow from the streets (or deliver mail or drop off packages). Another aspect that must be considered when applying arc routing to snow plowing is the fact that on steep streets it is either difficult or impossible to plow uphill. The objective is a route that avoids plowing uphill on steep streets that completes the job faster by maximizing the deadhead time to get the location. This was modeled with a heuristic algorithm that approximates a lower bound by Dussault, Golden and Wasil. This is the Downhill Plow Problem (DPP). Snow teams prefer to plow downhill and deadhill uphill. This problem assumes that the conditions are severe enough that the streets are closed and there is no traffic.
+The Downhill Plowing Problem ignores the Plowing with Precedence Problem (PPP), which is built on the reasonable assumption that if the snow is too deep the snow plow cannot deadhead an unplowed street. The DPP makes the assumption that the snow level is low enough that the streets that are not plowed can be deadheaded, but that the snow is deep enough that there is no traffic. If there is traffic on the roads, the assumption that it is impossible to plow uphill can no longer be held. The simulation for the DPP deadheaded unplowed street about 5% of the time, which is a topic for future graph theory and arc routing research.
+Considering an undirected graph 
+  
+    
+      
+        G
+        =
+        {
+        V
+        ,
+        A
+        }
+      
+    
+    {\displaystyle G=\{V,A\}}
+  
+ where 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ is the set of vertices and nodes and 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ is the set of arcs. Each arc represented by 
+  
+    
+      
+        (
+        
+          v
+          
+            i
+          
+        
+        ,
+        
+          v
+          
+            j
+          
+        
+        )
+      
+    
+    {\displaystyle (v_{i},v_{j})}
+  
+ has four costs: 
+  
+    
+      
+        
+          c
+          
+            i
+            j
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle c_{ij}^{+}}
+  
+, defined as the cost of plowing from 
+  
+    
+      
+        
+          v
+          
+            i
+          
+        
+      
+    
+    {\displaystyle v_{i}}
+  
+ to 
+  
+    
+      
+        
+          v
+          
+            j
+          
+        
+      
+    
+    {\displaystyle v_{j}}
+  
+, 
+  
+    
+      
+        
+          c
+          
+            j
+            i
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle c_{ji}^{+}}
+  
+, the cost of plowing from 
+  
+    
+      
+        
+          v
+          
+            j
+          
+        
+      
+    
+    {\displaystyle v_{j}}
+  
+ to 
+  
+    
+      
+        
+          v
+          
+            i
+          
+        
+      
+    
+    {\displaystyle v_{i}}
+  
+, 
+  
+    
+      
+        
+          c
+          
+            i
+            j
+          
+          
+            −
+          
+        
+      
+    
+    {\displaystyle c_{ij}^{-}}
+  
+, the cost of deadheading from 
+  
+    
+      
+        
+          v
+          
+            i
+          
+        
+      
+    
+    {\displaystyle v_{i}}
+  
+ to 
+  
+    
+      
+        
+          v
+          
+            j
+          
+        
+      
+    
+    {\displaystyle v_{j}}
+  
+, and 
+  
+    
+      
+        
+          c
+          
+            j
+            i
+          
+          
+            −
+          
+        
+      
+    
+    {\displaystyle c_{ji}^{-}}
+  
+, the cost of deadheading from 
+  
+    
+      
+        
+          v
+          
+            j
+          
+        
+      
+    
+    {\displaystyle v_{j}}
+  
+ to 
+  
+    
+      
+        
+          v
+          
+            i
+          
+        
+      
+    
+    {\displaystyle v_{i}}
+  
+. The setup assumes that 
+  
+    
+      
+        
+          v
+          
+            j
+          
+        
+      
+    
+    {\displaystyle v_{j}}
+  
+ has a higher elevation 
+  
+    
+      
+        
+          v
+          
+            i
+          
+        
+      
+    
+    {\displaystyle v_{i}}
+  
+, which leads to the statement: 
+  
+    
+      
+        
+          c
+          
+            i
+            j
+          
+          
+            +
+          
+        
+        ≫
+        
+          c
+          
+            j
+            i
+          
+          
+            +
+          
+        
+        ≫
+        
+          c
+          
+            i
+            j
+          
+          
+            −
+          
+        
+        ≥
+        
+          c
+          
+            j
+            i
+          
+          
+            −
+          
+        
+      
+    
+    {\displaystyle c_{ij}^{+}\gg c_{ji}^{+}\gg c_{ij}^{-}\geq c_{ji}^{-}}
+  
+. In practice, downhill plowing time is two times as efficient as uphill plowing and deadheading is twice as efficient as plowing. The algorithm finds 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ routes will each begin and  end at the depot 
+  
+    
+      
+        
+          v
+          
+            0
+          
+        
+      
+    
+    {\displaystyle v_{0}}
+  
+, plow the arc two times because the left side and right side of the street take two passes to plow.
+The best solution will minimize the maximum route length. Dussault, Golden, and Wasil found an algorithm that did not exceed the lower bound by 5.5% in over 80 test runs. The deviation increased as the complexity of the model increased because there are more unoptimized approximations than optimized approximation as the model grows. An improvement on Dussault et. al's DPP algorithm might have penalties for making U-turns and left hand turns, or going straight across an intersection, which take additional time and pushes snow into the middle of the intersection, respectively. (see The Directed Rural Postman Problem with Turn Penalties problem, often referred to as the DRPP-TP below).
+
+
+== k-Chinese postman problem (k-CPP) ==
+The k-Chinese Postman can be stated as follows: "given a connected edge-weighted graph G and integers p and k, decide whether there are at least k closed walks such that every edge of G is contained in at least one of them and the total weight of the edges in the walks is at most p?" The process of obtaining the solution to the k-CPP is NP complete. Gutin, Muciaccia, and Yeo proved in 2013 that the k-CPP is  fixed-parameter tractable. The authors prove the k-CPP admits a kernel with 
+  
+    
+      
+        O
+        (
+        
+          k
+          
+            2
+          
+        
+        log
+        ⁡
+        (
+        k
+        )
+        )
+      
+    
+    {\displaystyle O(k^{2}\log(k))}
+  
+ vertices and the directed version of the k-CPP is NP complete.
+
+
+== Rural postman problem (RPP) and generalizations ==
+The rural postman problem (RPP) makes some routes mandatory and absolute but the person traversing the graph does not have to go in one particular direction. The RPP is NP hard and complete, in the same way that the kCPP, the DPP, the PPP, are NP hard. Benevant studied a generalization of this named Directed Rural Postman Problem with Turn Penalties (DRPP-TP). Benevant's algorithm approximated the solution by transforming the DRPP-TP into an asymmetrical traveling salesman problem (ATSP). 
+
+
+== Heuristics and algorithms ==
+Most algorithms require a pre-processing of the graph, which simplifies the initial graph by removing all edges that are not in the shortest path between two required edges. Another simplification that the pre-processing adds is that it transforms the shortest path between 2 required edges into a single, non-required edge, regardless of the number of edges in the path, provided that there were no required edges in the path.
+Once the pre-processing is done, the problem can be generalized into a convex hull problem, with the edges being the points of the hull. The convex hull problem can be solved through linear programming or through convex hull algorithms, but the process of finding the convex hull is an exponential problem.
+Methods of solving the URPP after the pre-processing is done consist of the cutting plane algorithm and the branch & cut methodology.
+
+
+== Complexity ==
+This is a list of computational complexities for different arc routing problems.
+
+
+== List of arc routing variants ==
+
+
+== External links ==
+Arc Routing Problems Search page at Lancaster University
+Trends in Arc Routing
+
+
+== See also ==
+Chinese postman problem
+Vehicle routing problem
+Travelling salesman problem
+Eulerian path
+Capacitated arc routing problem
+List of graph theory problems
+Snow plow routing problem
+Chinese Postman Problem Complexity List
+
+
+== References ==

@@ -1,0 +1,24 @@
+A net settlement is a payment system used for inter-bank transactions. It is the process by which banks calculate the collective total of all transactions through designated times each day.
+In an inter-bank payment system using net settlement, debits and credits are recorded and only the difference between the debits and the credits (the net position) is actually paid between the parties. In most payment systems this netting will take place on the clearing house books between the designated settlement times with final settlement of the net positions occurring when funds are debited or credited on its reserve account at a central bank.
+For example, if two parties (A and B) are exchanging transactions bilaterally in a net settlement scheme, and A pays B $200 and B pays A $150, the net obligation to be settled is $50 from A to B. The rest is effectively 'cancelled out'.
+Multilateral net settlement occurs when there are three or more parties involved. In this example, A pays B $200, B pays C $150, and C pays A $175. The net obligations in the multilateral model are for A and C to each pay $25 into the settlement 'pot', and for B to receive $50.
+Net settlement is used because it reduces the amount of money that has to be held in the settlement medium compared to gross settlement, which requires immediate payment of each individual transaction. It also reduces inter-bank risks. Net settlement is a multilateral transaction, usually with the central bank for the currency being used.  All transactions included in a multilateral net settlement cycle are settled in one movement of funds representing the overall net position. Examples of net settlement systems are CHIPS in the US, BACS in the UK and BOJ-NET (until 2000) in Japan.
+Net settlement can introduce its own particular risks. If the application of transactions to the netting is not legally binding, in the event of the insolvency of a participant, the other participants may end up legally owing their gross obligations to the failed participant, and not be due any settlement from the failed participant in return. Furthermore, if one of the participants in a net settlement system is unable to settle its obligations at the end of the settlement cycle, it prevents the settlement from completing for all parties: this may require unwinding all the transactions that have been placed into that settlement cycle.
+A special form of net settlement is used in the settlement of securities obligations, known as delivery versus payment.
+
+
+== References ==
+
+
+== Bibliography ==
+David B. Humphrey, Payment Systems: Principles, Practice, and Improvements, World Bank Publications, 1995 ISBN 0821331116.
+Kei Imakubo: Yutaka Soejima, "The microstructure of Japan’s interbank money market: simulating contagion of intraday flow of funds using BOJ-NET payment data", Monetary and Economic Studies, November 2010.
+Akinari Horii, Bruce J. Summers, "Large-value transfer systems", ch. 6 in, Bruce J. Summers (ed), The Payment System: Design, Management, and Supervision, International Monetary Fund, 1994 ISBN 1557753865.
+Setsuya Sato, David B. Humphrey, Transforming Payment Systems: Meeting the Needs of Emerging Market Economies, World Bank Publications, 1995 ISBN 0821333550.
+Bruce J. Summers (ed) The Payment Systems: Design, Management and Supervision 1994
+Paul Van den Bergh, "Operational and financial structure of the payment system", ch. 3 in, Bruce J. Summers (ed), The Payment System: Design, Management, and Supervision, International Monetary Fund, 1994 ISBN 1557753865.
+
+
+== External links ==
+"Transforming Payment Systems" (PDF). World Bank.
+"The Payment System, Design Management and Supervision" (PDF). International Monetary Fund.

@@ -1,0 +1,1302 @@
+An algebraic number is a number that is a root of a non-zero polynomial in one variable with integer (or, equivalently, rational) coefficients.  For example, the golden ratio, 
+  
+    
+      
+        (
+        1
+        +
+        
+          
+            5
+          
+        
+        )
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle (1+{\sqrt {5}})/2}
+  
+, is an algebraic number, because it is a root of the polynomial x2 − x − 1. That is, it is a value for x for which the polynomial evaluates to zero.  As another example, the complex number 
+  
+    
+      
+        1
+        +
+        i
+      
+    
+    {\displaystyle 1+i}
+  
+ is algebraic because it is a root of x4 + 4.
+All integers and rational numbers are algebraic, as are all roots of integers. Real and complex numbers that are not algebraic, such as π and e, are called transcendental numbers.
+The set  of algebraic (complex) numbers is countably infinite and has measure zero in the Lebesgue measure as a subset of the uncountable complex numbers. In that sense, almost all complex numbers are transcendental. Similarly, the set of algebraic (real) numbers is countably infinite and has Lebesgue measure zero as a subset of the real numbers, and in that sense almost all real numbers are transcendental.
+
+
+== Examples ==
+All rational numbers are algebraic. Any rational number, expressed as the quotient of an integer a and a (non-zero) natural number b, satisfies the above definition, because x = ⁠a/b⁠ is the root of a non-zero polynomial, namely bx − a.
+Quadratic irrational numbers, irrational solutions of a quadratic polynomial ax2 + bx + c with integer coefficients a, b, and c, are algebraic numbers. If the quadratic polynomial is monic (a = 1), the roots are further qualified as quadratic integers.
+Gaussian integers, complex numbers a + bi for which both a and b are integers, are also quadratic integers. This is because a + bi and a − bi are the two roots of the quadratic x2 − 2ax + a2 + b2.
+A constructible number can be constructed from a given unit length using a straightedge and compass. It includes all quadratic irrational roots, all rational numbers, and all numbers that can be formed from these using the basic arithmetic operations and the extraction of square roots. (By designating cardinal directions for +1, −1, +i, and −i, complex numbers such as 
+  
+    
+      
+        3
+        +
+        i
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 3+i{\sqrt {2}}}
+  
+ are considered constructible.)
+Any expression formed from algebraic numbers using any combination of the basic arithmetic operations and extraction of nth roots gives another algebraic number.
+Polynomial roots that cannot be expressed in terms of the basic arithmetic operations and extraction of nth roots (such as the roots of x5 − x + 1). That happens with many but not all polynomials of degree 5 or higher.
+Values of trigonometric functions of rational multiples of π (except when undefined): for example, cos ⁠π/7⁠, cos ⁠3π/7⁠, and cos ⁠5π/7⁠ satisfy 8x3 − 4x2 − 4x + 1 = 0. This polynomial is irreducible over the rationals and so the three cosines are conjugate algebraic numbers. Likewise, tan ⁠3π/16⁠, tan ⁠7π/16⁠, tan ⁠11π/16⁠, and tan ⁠15π/16⁠ satisfy the irreducible polynomial x4 − 4x3 − 6x2 + 4x + 1 = 0, and so are conjugate algebraic integers. This is the equivalent of angles which, when measured in degrees, have rational numbers.
+Some but not all irrational numbers are algebraic:
+The numbers 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              3
+              
+                3
+              
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {\sqrt[{3}]{3}}{2}}}
+  
+ are algebraic since they are roots of polynomials x2 − 2 and 8x3 − 3, respectively.
+The golden ratio φ is algebraic since it is a root of the polynomial x2 − x − 1.
+The numbers π and e are not algebraic numbers (see the Lindemann–Weierstrass theorem).
+
+
+== Properties ==
+
+If a polynomial with rational coefficients is multiplied through by the least common denominator, the resulting polynomial with integer coefficients has the same roots.  This shows that an algebraic number can be equivalently defined as a root of a polynomial with either integer or rational coefficients.
+Given an algebraic number, there is a unique monic polynomial with rational coefficients of least degree that has the number as a root. This polynomial is called its minimal polynomial. If its minimal polynomial has degree n, then the algebraic number is said to be of degree n. For example, all rational numbers have degree 1, and an algebraic number of degree 2 is a quadratic irrational.
+The algebraic numbers are dense in the reals.  This follows from the fact they contain the rational numbers, which are dense in the reals themselves.
+The set of algebraic numbers is countable (enumerable), and therefore its Lebesgue measure as a subset of the complex numbers is 0 (essentially, the algebraic numbers take up no space in the complex numbers). That is to say, "almost all" real and complex numbers are transcendental.
+All algebraic numbers are computable and therefore definable and arithmetical.
+For real numbers a and b, the complex number a + bi is algebraic if and only if both a and b are algebraic.
+
+
+=== Degree of simple extensions of the rationals as a criterion to algebraicity ===
+For any α, the simple extension of the rationals by α, denoted by 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+        ≡
+        {
+        
+          ∑
+          
+            i
+            =
+            −
+            
+              
+                n
+                
+                  1
+                
+              
+            
+          
+          
+            
+              n
+              
+                2
+              
+            
+          
+        
+        
+          α
+          
+            i
+          
+        
+        
+          q
+          
+            i
+          
+        
+        
+          |
+        
+        
+          q
+          
+            i
+          
+        
+        ∈
+        
+          Q
+        
+        ,
+        
+          n
+          
+            1
+          
+        
+        ,
+        
+          n
+          
+            2
+          
+        
+        ∈
+        
+          N
+        
+        }
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )\equiv \{\sum _{i=-{n_{1}}}^{n_{2}}\alpha ^{i}q_{i}|q_{i}\in \mathbb {Q} ,n_{1},n_{2}\in \mathbb {N} \}}
+  
+, is of finite degree if and only if α is an algebraic number.
+The condition of finite degree means that there is a finite set 
+  
+    
+      
+        {
+        
+          a
+          
+            i
+          
+        
+        
+          |
+        
+        1
+        ≤
+        i
+        ≤
+        k
+        }
+      
+    
+    {\displaystyle \{a_{i}|1\leq i\leq k\}}
+  
+ in 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )}
+  
+ such that 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            k
+          
+        
+        
+          a
+          
+            i
+          
+        
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )=\sum _{i=1}^{k}a_{i}\mathbb {Q} }
+  
+; that is, every member in 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )}
+  
+ can be written as 
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            k
+          
+        
+        
+          a
+          
+            i
+          
+        
+        
+          q
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \sum _{i=1}^{k}a_{i}q_{i}}
+  
+ for some rational numbers 
+  
+    
+      
+        {
+        
+          q
+          
+            i
+          
+        
+        
+          |
+        
+        1
+        ≤
+        i
+        ≤
+        k
+        }
+      
+    
+    {\displaystyle \{q_{i}|1\leq i\leq k\}}
+  
+ (note that the set 
+  
+    
+      
+        {
+        
+          a
+          
+            i
+          
+        
+        }
+      
+    
+    {\displaystyle \{a_{i}\}}
+  
+ is fixed).
+Indeed, since the 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+        −
+        s
+      
+    
+    {\displaystyle a_{i}-s}
+  
+ are themselves members of 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )}
+  
+, each can be expressed as sums of products of rational numbers and powers of α, and therefore this condition is equivalent to the requirement that for some finite 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+        =
+        {
+        
+          ∑
+          
+            i
+            =
+            −
+            n
+          
+          
+            n
+          
+        
+        
+          α
+          
+            i
+          
+        
+        
+          q
+          
+            i
+          
+        
+        
+          |
+        
+        
+          q
+          
+            i
+          
+        
+        ∈
+        
+          Q
+        
+        }
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )=\{\sum _{i=-n}^{n}\alpha ^{i}q_{i}|q_{i}\in \mathbb {Q} \}}
+  
+.
+The latter condition is equivalent to 
+  
+    
+      
+        
+          α
+          
+            n
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle \alpha ^{n+1}}
+  
+, itself a member of 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha )}
+  
+, being expressible as 
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            −
+            n
+          
+          
+            n
+          
+        
+        
+          α
+          
+            i
+          
+        
+        
+          q
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \sum _{i=-n}^{n}\alpha ^{i}q_{i}}
+  
+ for some rationals 
+  
+    
+      
+        {
+        
+          q
+          
+            i
+          
+        
+        }
+      
+    
+    {\displaystyle \{q_{i}\}}
+  
+, so 
+  
+    
+      
+        
+          α
+          
+            2
+            n
+            +
+            1
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            2
+            n
+          
+        
+        
+          α
+          
+            i
+          
+        
+        
+          q
+          
+            i
+            −
+            n
+          
+        
+      
+    
+    {\displaystyle \alpha ^{2n+1}=\sum _{i=0}^{2n}\alpha ^{i}q_{i-n}}
+  
+ or, equivalently, α is a root of 
+  
+    
+      
+        
+          x
+          
+            2
+            n
+            +
+            1
+          
+        
+        −
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            2
+            n
+          
+        
+        
+          x
+          
+            i
+          
+        
+        
+          q
+          
+            i
+            −
+            n
+          
+        
+      
+    
+    {\displaystyle x^{2n+1}-\sum _{i=0}^{2n}x^{i}q_{i-n}}
+  
+; that is, an algebraic number with a minimal polynomial of degree not larger than 
+  
+    
+      
+        2
+        n
+        +
+        1
+      
+    
+    {\displaystyle 2n+1}
+  
+.
+It can similarly be proven that for any finite set of algebraic numbers 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \alpha _{1}}
+  
+, 
+  
+    
+      
+        
+          α
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \alpha _{2}}
+  
+... 
+  
+    
+      
+        
+          α
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \alpha _{n}}
+  
+, the field extension 
+  
+    
+      
+        
+          Q
+        
+        (
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        
+          α
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha _{1},\alpha _{2},...\alpha _{n})}
+  
+ has a finite degree.
+
+
+== Field ==
+
+The sum, difference, product, and quotient (if the denominator is nonzero) of two algebraic numbers is again algebraic:
+For any two algebraic numbers α, β, this follows directly from the fact that the simple extension 
+  
+    
+      
+        
+          Q
+        
+        (
+        γ
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\gamma )}
+  
+, for 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ being either 
+  
+    
+      
+        α
+        +
+        β
+      
+    
+    {\displaystyle \alpha +\beta }
+  
+, 
+  
+    
+      
+        α
+        −
+        β
+      
+    
+    {\displaystyle \alpha -\beta }
+  
+, 
+  
+    
+      
+        α
+        β
+      
+    
+    {\displaystyle \alpha \beta }
+  
+ or (for 
+  
+    
+      
+        β
+        ≠
+        0
+      
+    
+    {\displaystyle \beta \neq 0}
+  
+) 
+  
+    
+      
+        α
+        
+          /
+        
+        β
+      
+    
+    {\displaystyle \alpha /\beta }
+  
+, is a linear subspace of the finite-degree field extension 
+  
+    
+      
+        
+          Q
+        
+        (
+        α
+        ,
+        β
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\alpha ,\beta )}
+  
+, and therefore has a finite degree itself, from which it follows (as shown above) that 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ is algebraic.
+An alternative way of showing this is constructively, by using the resultant.
+Algebraic numbers thus form a field 
+  
+    
+      
+        
+          
+            
+              Q
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {\mathbb {Q} }}}
+  
+ (sometimes denoted by 
+  
+    
+      
+        
+          A
+        
+      
+    
+    {\displaystyle \mathbb {A} }
+  
+, but that usually denotes the adele ring).
+
+
+=== Algebraic closure ===
+Every root of a polynomial equation whose coefficients are algebraic numbers is again algebraic. That can be rephrased by saying that the field of algebraic numbers is algebraically closed. In fact, it is the smallest algebraically closed field containing the rationals and so it is called the algebraic closure of the rationals.
+That the field of algebraic numbers is algebraically closed can be proven as follows: Let β be a root of a polynomial 
+  
+    
+      
+        
+          α
+          
+            0
+          
+        
+        +
+        
+          α
+          
+            1
+          
+        
+        x
+        +
+        
+          α
+          
+            2
+          
+        
+        
+          x
+          
+            2
+          
+        
+        .
+        .
+        .
+        +
+        
+          α
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \alpha _{0}+\alpha _{1}x+\alpha _{2}x^{2}...+\alpha _{n}x^{n}}
+  
+ with coefficients that are algebraic numbers 
+  
+    
+      
+        
+          α
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \alpha _{0}}
+  
+, 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \alpha _{1}}
+  
+, 
+  
+    
+      
+        
+          α
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \alpha _{2}}
+  
+... 
+  
+    
+      
+        
+          α
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \alpha _{n}}
+  
+. The field extension 
+  
+    
+      
+        
+          
+            Q
+          
+          
+            ′
+          
+        
+        ≡
+        
+          Q
+        
+        (
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        
+          α
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \mathbb {Q} ^{\prime }\equiv \mathbb {Q} (\alpha _{1},\alpha _{2},...\alpha _{n})}
+  
+ then has a finite degree with respect to 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+. The simple extension 
+  
+    
+      
+        
+          
+            Q
+          
+          
+            ′
+          
+        
+        (
+        β
+        )
+      
+    
+    {\displaystyle \mathbb {Q} ^{\prime }(\beta )}
+  
+ then has a finite degree with respect to 
+  
+    
+      
+        
+          
+            Q
+          
+          
+            ′
+          
+        
+      
+    
+    {\displaystyle \mathbb {Q} ^{\prime }}
+  
+ (since all powers of β can be expressed by powers of up to 
+  
+    
+      
+        
+          β
+          
+            n
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle \beta ^{n-1}}
+  
+). Therefore, 
+  
+    
+      
+        
+          
+            Q
+          
+          
+            ′
+          
+        
+        (
+        β
+        )
+        =
+        
+          Q
+        
+        (
+        β
+        ,
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        
+          α
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \mathbb {Q} ^{\prime }(\beta )=\mathbb {Q} (\beta ,\alpha _{1},\alpha _{2},...\alpha _{n})}
+  
+ also has a finite degree with respect to 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+. Since 
+  
+    
+      
+        
+          Q
+        
+        (
+        β
+        )
+      
+    
+    {\displaystyle \mathbb {Q} (\beta )}
+  
+ is a linear subspace of 
+  
+    
+      
+        
+          
+            Q
+          
+          
+            ′
+          
+        
+        (
+        β
+        )
+      
+    
+    {\displaystyle \mathbb {Q} ^{\prime }(\beta )}
+  
+, it must also have a finite degree with respect to 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+, so β must be an algebraic number.
+
+
+== Related fields ==
+
+
+=== Numbers defined by radicals ===
+Any number that can be obtained from the integers using a finite number of additions, subtractions, multiplications, divisions, and taking (possibly complex) nth roots where n is a positive integer are algebraic. The converse, however, is not true: there are algebraic numbers that cannot be obtained in this manner. These numbers are roots of polynomials of degree 5 or higher, a result of Galois theory (see Quintic equations and the Abel–Ruffini theorem). For example, the equation:
+
+  
+    
+      
+        
+          x
+          
+            5
+          
+        
+        −
+        x
+        −
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{5}-x-1=0}
+  
+
+has a unique real root that cannot be expressed in terms of only radicals and arithmetic operations.
+
+
+=== Closed-form number ===
+
+Algebraic numbers are all numbers that can be defined explicitly or implicitly in terms of polynomials, starting from the rational numbers. One may generalize this to "closed-form numbers", which may be defined in various ways. Most broadly, all numbers that can be defined explicitly or implicitly in terms of polynomials, exponentials, and logarithms are called "elementary numbers", and these include the algebraic numbers, plus some transcendental numbers. Most narrowly, one may consider numbers explicitly defined in terms of polynomials, exponentials, and logarithms – this does not include all algebraic numbers, but does include some simple transcendental numbers such as e or ln 2.
+
+
+== Algebraic integers ==
+
+An algebraic integer is an algebraic number that is a root of  a polynomial with integer coefficients with leading coefficient 1 (a monic polynomial). Examples of algebraic integers are 
+  
+    
+      
+        5
+        +
+        13
+        
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle 5+13{\sqrt {2}},}
+  
+ 
+  
+    
+      
+        2
+        −
+        6
+        i
+        ,
+      
+    
+    {\displaystyle 2-6i,}
+  
+ and 
+  
+    
+      
+        
+          
+            1
+            2
+          
+        
+        (
+        1
+        +
+        i
+        
+          
+            3
+          
+        
+        )
+        .
+      
+    
+    {\textstyle {\frac {1}{2}}(1+i{\sqrt {3}}).}
+  
+ Therefore, the algebraic integers constitute a proper superset of the integers, as the latter are the roots of monic polynomials x − k for all 
+  
+    
+      
+        k
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle k\in \mathbb {Z} }
+  
+. In this sense, algebraic integers are to algebraic numbers what integers are to rational numbers.
+The sum, difference and product of algebraic integers are again algebraic integers, which means that the algebraic integers form a ring. The name algebraic integer comes from the fact that the only rational numbers that are algebraic integers are the integers, and because the algebraic integers in any number field are in many ways analogous to the integers. If K is a number field, its ring of integers is the subring of algebraic integers in K, and is frequently denoted as OK. These are the prototypical examples of Dedekind domains.
+
+
+== Special classes ==
+Algebraic solution
+Gaussian integer
+Eisenstein integer
+Quadratic irrational number
+Fundamental unit
+Root of unity
+Gaussian period
+Pisot–Vijayaraghavan number
+Salem number
+
+
+== Notes ==
+
+
+== References ==
+Artin, Michael (1991), Algebra, Prentice Hall, ISBN 0-13-004763-5, MR 1129886
+Garibaldi, Skip (June 2008), "Somewhat more than governors need to know about trigonometry", Mathematics Magazine, 81 (3): 191–200, doi:10.1080/0025570x.2008.11953548, JSTOR 27643106
+Hardy, Godfrey Harold; Wright, Edward M. (1972), An introduction to the theory of numbers (5th ed.), Oxford: Clarendon, ISBN 0-19-853171-0
+Ireland, Kenneth; Rosen, Michael (1990) [1st ed. 1982], A Classical Introduction to Modern Number Theory (2nd ed.), Berlin: Springer, doi:10.1007/978-1-4757-2103-4, ISBN 0-387-97329-X, MR 1070716
+Lang, Serge (2002) [1st ed. 1965], Algebra (3rd ed.), New York: Springer, ISBN 978-0-387-95385-4, MR 1878556
+Niven, Ivan M. (1956), Irrational Numbers, Mathematical Association of America
+Ore, Øystein (1948), Number Theory and Its History, New York: McGraw-Hill

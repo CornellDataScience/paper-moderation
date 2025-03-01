@@ -1,0 +1,1398 @@
+In quantum mechanics, the Hopfield dielectric is a model of dielectric consisting of quantum harmonic oscillators interacting with the modes of the quantum electromagnetic field. The collective interaction of the charge polarization modes  with the vacuum excitations, photons
+leads to the perturbation of both the linear dispersion relation of photons and constant dispersion of  charge waves  by the avoided crossing between the two dispersion lines of polaritons. 
+Similar to the acoustic and the optical phonons and far from the resonance one branch is photon-like while the other charge is wave-like. The model was developed by John Hopfield in 1958.
+Mathematically the Hopfield dielectric for the one mode of excitation is equivalent to the Trojan wave packet in the harmonic
+approximation. The Hopfield model of the dielectric predicts the existence of eternal trapped frozen photons similar to the Hawking radiation inside the matter with the density proportional to the strength of the matter-field coupling.
+
+
+== Theory ==
+The Hamiltonian of the quantized Lorentz dielectric consisting of 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ harmonic oscillators interacting with the 
+quantum electromagnetic field can be written in the dipole approximation as:
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            A
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          
+            
+              
+                
+                  p
+                  
+                    A
+                  
+                
+              
+              
+                2
+              
+            
+            
+              2
+              m
+            
+          
+        
+        +
+        
+          
+            
+              m
+              
+                
+                  ω
+                
+                
+                  2
+                
+              
+            
+            2
+          
+        
+        
+          
+            
+              x
+              
+                A
+              
+            
+          
+          
+            2
+          
+        
+        −
+        e
+        
+          
+            x
+            
+              A
+            
+          
+        
+        ⋅
+        E
+        (
+        
+          r
+          
+            A
+          
+        
+        )
+        +
+        
+          ∑
+          
+            λ
+            =
+            1
+          
+          
+            2
+          
+        
+        ∫
+        
+          d
+          
+            3
+          
+        
+        k
+        
+          a
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+        
+        ℏ
+        c
+        k
+      
+    
+    {\displaystyle H=\sum \limits _{A=1}^{N}{{p_{A}}^{2} \over 2m}+{{m{\omega }^{2}} \over 2}{x_{A}}^{2}-e{x_{A}}\cdot E(r_{A})+\sum \limits _{\lambda =1}^{2}\int d^{3}ka_{\lambda k}^{+}a_{\lambda k}\hbar ck}
+  
+
+where 
+
+  
+    
+      
+        E
+        (
+        
+          r
+          
+            A
+          
+        
+        )
+        =
+        
+          
+            i
+            
+              L
+              
+                3
+              
+            
+          
+        
+        
+          ∑
+          
+            λ
+            =
+            1
+          
+          
+            2
+          
+        
+        ∫
+        
+          d
+          
+            3
+          
+        
+        k
+        [
+        
+          
+            
+              c
+              k
+            
+            
+              2
+              
+                ϵ
+                
+                  0
+                
+              
+            
+          
+        
+        
+          ]
+          
+            
+              1
+              2
+            
+          
+        
+        [
+        
+          e
+          
+            λ
+          
+        
+        (
+        k
+        )
+        
+          a
+          
+            λ
+          
+        
+        (
+        k
+        )
+        exp
+        ⁡
+        (
+        i
+        k
+        
+          r
+          
+            A
+          
+        
+        )
+        −
+        H
+        .
+        C
+        .
+        ]
+      
+    
+    {\displaystyle E(r_{A})={i \over L^{3}}\sum \limits _{\lambda =1}^{2}\int d^{3}k[{{ck} \over {2\epsilon _{0}}}]^{1 \over 2}[e_{\lambda }(k)a_{\lambda }(k)\exp(ikr_{A})-H.C.]}
+  
+
+is the electric field operator acting at the position 
+  
+    
+      
+        
+          r
+          
+            A
+          
+        
+      
+    
+    {\displaystyle r_{A}}
+  
+.
+Expressing it in terms of the creation and annihilation operators for the harmonic oscillators we get
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            A
+            =
+            1
+          
+          
+            N
+          
+        
+        (
+        
+          a
+          
+            A
+          
+          
+            +
+          
+        
+        ⋅
+        
+          a
+          
+            A
+          
+        
+        )
+        ℏ
+        ω
+        −
+        
+          
+            e
+            
+              
+                
+                  2
+                
+              
+              β
+            
+          
+        
+        (
+        
+          a
+          
+            A
+          
+        
+        +
+        
+          
+            
+              a
+              
+                A
+              
+            
+          
+          
+            +
+          
+        
+        )
+        ⋅
+        E
+        (
+        
+          r
+          
+            A
+          
+        
+        )
+        +
+        
+          ∑
+          
+            λ
+          
+        
+        
+          ∑
+          
+            k
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+        
+        ℏ
+        c
+        k
+      
+    
+    {\displaystyle H=\sum \limits _{A=1}^{N}(a_{A}^{+}\cdot a_{A})\hbar \omega -{e \over {{\sqrt {2}}\beta }}(a_{A}+{a_{A}}^{+})\cdot E(r_{A})+\sum _{\lambda }\sum _{k}a_{\lambda k}^{+}a_{\lambda k}\hbar ck}
+  
+
+Assuming oscillators to be on some kind of the regular solid lattice and applying the polaritonic Fourier transform
+
+  
+    
+      
+        
+          B
+          
+            k
+          
+          
+            +
+          
+        
+        =
+        
+          
+            1
+            
+              
+                N
+              
+            
+          
+        
+        
+          ∑
+          
+            A
+            =
+            1
+          
+          
+            N
+          
+        
+        exp
+        ⁡
+        (
+        i
+        k
+        
+          r
+          
+            A
+          
+        
+        )
+        
+          a
+          
+            A
+          
+          
+            +
+          
+        
+        ,
+      
+    
+    {\displaystyle B_{k}^{+}={1 \over {\sqrt {N}}}\sum \limits _{A=1}^{N}\exp(ikr_{A})a_{A}^{+},}
+  
+
+  
+    
+      
+        
+          B
+          
+            k
+          
+        
+        =
+        
+          
+            1
+            
+              
+                N
+              
+            
+          
+        
+        
+          ∑
+          
+            A
+            =
+            1
+          
+          
+            N
+          
+        
+        exp
+        ⁡
+        (
+        −
+        i
+        k
+        
+          r
+          
+            A
+          
+        
+        )
+        
+          a
+          
+            A
+          
+        
+      
+    
+    {\displaystyle B_{k}={1 \over {\sqrt {N}}}\sum \limits _{A=1}^{N}\exp(-ikr_{A})a_{A}}
+  
+
+and defining projections of oscillator charge waves onto the electromagnetic field
+polarization directions
+
+  
+    
+      
+        
+          B
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        =
+        
+          e
+          
+            λ
+          
+        
+        (
+        k
+        )
+        ⋅
+        
+          B
+          
+            k
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle B_{\lambda k}^{+}=e_{\lambda }(k)\cdot B_{k}^{+}}
+  
+
+  
+    
+      
+        
+          B
+          
+            λ
+            k
+          
+        
+        =
+        
+          e
+          
+            λ
+          
+        
+        (
+        k
+        )
+        ⋅
+        
+          B
+          
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle B_{\lambda k}=e_{\lambda }(k)\cdot B_{k},}
+  
+
+after dropping the longitudinal contributions not interacting with the electromagnetic field  one may obtain the Hopfield Hamiltonian 
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            λ
+          
+        
+        
+          ∑
+          
+            k
+          
+        
+        (
+        
+          B
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          B
+          
+            λ
+            k
+          
+        
+        +
+        
+          
+            1
+            2
+          
+        
+        )
+        ℏ
+        ω
+        +
+        ℏ
+        c
+        k
+        
+          a
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+        
+        +
+        
+          
+            
+              i
+              e
+              ℏ
+            
+            
+              
+                
+                  ϵ
+                  
+                    0
+                  
+                
+                m
+                ω
+              
+            
+          
+        
+        
+          
+            
+              N
+              V
+            
+          
+        
+        
+          
+            c
+            k
+          
+        
+        [
+        
+          B
+          
+            λ
+            k
+          
+        
+        
+          a
+          
+            λ
+            −
+            k
+          
+        
+        +
+        
+          B
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+        
+        −
+        
+          B
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          a
+          
+            λ
+            −
+            k
+          
+          
+            +
+          
+        
+        −
+        
+          B
+          
+            λ
+            k
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        ]
+      
+    
+    {\displaystyle H=\sum _{\lambda }\sum _{k}(B_{\lambda k}^{+}B_{\lambda k}+{1 \over 2})\hbar \omega +\hbar cka_{\lambda k}^{+}a_{\lambda k}+{ie\hbar  \over {\sqrt {\epsilon _{0}m\omega }}}{\sqrt {N \over V}}{\sqrt {ck}}[B_{\lambda k}a_{\lambda -k}+B_{\lambda k}^{+}a_{\lambda k}-B_{\lambda k}^{+}a_{\lambda -k}^{+}-B_{\lambda k}a_{\lambda k}^{+}]}
+  
+
+Because the interaction is not
+mixing polarizations this can be transformed to the normal form with the eigen-frequencies of two polaritonic branches:
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            λ
+          
+        
+        
+          ∑
+          
+            k
+          
+        
+        
+          [
+          
+            
+              Ω
+              
+                +
+              
+            
+            (
+            k
+            )
+            
+              C
+              
+                λ
+                +
+                k
+              
+              
+                +
+              
+            
+            
+              C
+              
+                λ
+                +
+                k
+              
+            
+            +
+            
+              Ω
+              
+                −
+              
+            
+            (
+            k
+            )
+            
+              C
+              
+                λ
+                −
+                k
+              
+              
+                +
+              
+            
+            
+              C
+              
+                λ
+                −
+                k
+              
+            
+          
+          ]
+        
+        +
+        c
+        o
+        n
+        s
+        t
+      
+    
+    {\displaystyle H=\sum _{\lambda }\sum _{k}\left[\Omega _{+}(k)C_{\lambda +k}^{+}C_{\lambda +k}+\Omega _{-}(k)C_{\lambda -k}^{+}C_{\lambda -k}\right]+const}
+  
+
+with the eigenvalue equation
+
+  
+    
+      
+        [
+        
+          C
+          
+            λ
+            ±
+            k
+          
+        
+        ,
+        H
+        ]
+        =
+        
+          Ω
+          
+            ±
+          
+        
+        (
+        k
+        )
+        
+          C
+          
+            λ
+            ±
+            k
+          
+        
+      
+    
+    {\displaystyle [C_{\lambda \pm k},H]=\Omega _{\pm }(k)C_{\lambda \pm k}}
+  
+
+  
+    
+      
+        
+          C
+          
+            λ
+            ±
+            k
+          
+        
+        =
+        
+          c
+          
+            1
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+        
+        +
+        
+          c
+          
+            2
+          
+        
+        
+          a
+          
+            λ
+            −
+            k
+          
+        
+        +
+        
+          c
+          
+            3
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        +
+        
+          c
+          
+            4
+          
+        
+        
+          a
+          
+            λ
+            −
+            k
+          
+          
+            +
+          
+        
+        +
+        
+          c
+          
+            5
+          
+        
+        
+          B
+          
+            λ
+            k
+          
+        
+        +
+        
+          c
+          
+            6
+          
+        
+        
+          B
+          
+            λ
+            −
+            k
+          
+        
+        +
+        
+          c
+          
+            7
+          
+        
+        
+          B
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        +
+        
+          c
+          
+            8
+          
+        
+        
+          B
+          
+            λ
+            −
+            k
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle C_{\lambda \pm k}=c_{1}a_{\lambda k}+c_{2}a_{\lambda -k}+c_{3}a_{\lambda k}^{+}+c_{4}a_{\lambda -k}^{+}+c_{5}B_{\lambda k}+c_{6}B_{\lambda -k}+c_{7}B_{\lambda k}^{+}+c_{8}B_{\lambda -k}^{+}}
+  
+
+where
+
+  
+    
+      
+        
+          Ω
+          
+            −
+          
+        
+        (
+        k
+        
+          )
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                ω
+                
+                  2
+                
+              
+              +
+              
+                Ω
+                
+                  2
+                
+              
+              −
+              
+                
+                  
+                    
+                      (
+                      
+                        ω
+                        
+                          2
+                        
+                      
+                      −
+                      
+                        Ω
+                        
+                          2
+                        
+                      
+                      )
+                    
+                    
+                      2
+                    
+                  
+                  +
+                  4
+                  
+                    g
+                  
+                  
+                    ω
+                    
+                      2
+                    
+                  
+                  
+                    Ω
+                    
+                      2
+                    
+                  
+                
+              
+            
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle \Omega _{-}(k)^{2}={\omega ^{2}+\Omega ^{2}-{\sqrt {{(\omega ^{2}-\Omega ^{2})}^{2}+4{g}\omega ^{2}\Omega ^{2}}} \over 2},}
+  
+
+  
+    
+      
+        
+          Ω
+          
+            +
+          
+        
+        (
+        k
+        
+          )
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                ω
+                
+                  2
+                
+              
+              +
+              
+                Ω
+                
+                  2
+                
+              
+              +
+              
+                
+                  
+                    
+                      (
+                      
+                        ω
+                        
+                          2
+                        
+                      
+                      −
+                      
+                        Ω
+                        
+                          2
+                        
+                      
+                      )
+                    
+                    
+                      2
+                    
+                  
+                  +
+                  4
+                  
+                    g
+                  
+                  
+                    ω
+                    
+                      2
+                    
+                  
+                  
+                    Ω
+                    
+                      2
+                    
+                  
+                
+              
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \Omega _{+}(k)^{2}={\omega ^{2}+\Omega ^{2}+{\sqrt {{(\omega ^{2}-\Omega ^{2})}^{2}+4{g}\omega ^{2}\Omega ^{2}}} \over 2}}
+  
+,
+with
+
+  
+    
+      
+        Ω
+        (
+        k
+        )
+        =
+        c
+        k
+        ,
+      
+    
+    {\displaystyle \Omega (k)=ck,}
+  
+
+(vacuum photon dispersion) and
+
+  
+    
+      
+        g
+        =
+        
+          
+            
+              N
+              
+                e
+                
+                  2
+                
+              
+            
+            
+              V
+              m
+              
+                ϵ
+                
+                  0
+                
+              
+              
+                ω
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle g={{Ne^{2}} \over {Vm\epsilon _{0}\omega ^{2}}}}
+  
+
+is the dimensionless coupling constant proportional to the density 
+  
+    
+      
+        N
+        
+          /
+        
+        V
+      
+    
+    {\displaystyle N/V}
+  
+ of the dielectric with
+the Lorentz frequency 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ (tight-binding charge wave dispersion).
+One may notice that unlike in the vacuum of the electromagnetic field without matter the expectation
+value of the average photon number 
+  
+    
+      
+        ⟨
+        
+          a
+          
+            λ
+            k
+          
+          
+            +
+          
+        
+        
+          a
+          
+            λ
+            k
+          
+        
+        ⟩
+      
+    
+    {\displaystyle \langle a_{\lambda k}^{+}a_{\lambda k}\rangle }
+  
+ is non zero in the ground state of the polaritonic Hamiltonian
+
+  
+    
+      
+        
+          C
+          
+            k
+            ±
+          
+        
+        
+          |
+        
+        
+          0
+        
+        >=
+        0
+      
+    
+    {\displaystyle C_{k\pm }|\mathbf {0} >=0}
+  
+ similarly to the Hawking radiation in the neighbourhood of the black hole because of the Unruh–Davies effect. One may readily notice that the lower eigenfrequency 
+  
+    
+      
+        
+          Ω
+          
+            −
+          
+        
+      
+    
+    {\displaystyle \Omega _{-}}
+  
+ becomes imaginary when the coupling constant becomes critical at 
+  
+    
+      
+        g
+        >
+        1
+      
+    
+    {\displaystyle g>1}
+  
+ which suggests that Hopfield dielectric will undergo the superradiant phase transition.
+
+
+== References ==

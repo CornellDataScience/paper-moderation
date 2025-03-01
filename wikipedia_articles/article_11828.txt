@@ -1,0 +1,522 @@
+In mathematics, Bring's curve (also called Bring's surface and, by analogy with the Klein quartic, the Bring sextic) is the curve in the projective space 
+  
+    
+      
+        
+          
+            P
+          
+          
+            4
+          
+        
+      
+    
+    {\displaystyle \mathbb {P} ^{4}}
+  
+ cut out by the homogeneous equations
+
+  
+    
+      
+        v
+        +
+        w
+        +
+        x
+        +
+        y
+        +
+        z
+        =
+        
+          v
+          
+            2
+          
+        
+        +
+        
+          w
+          
+            2
+          
+        
+        +
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        +
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          v
+          
+            3
+          
+        
+        +
+        
+          w
+          
+            3
+          
+        
+        +
+        
+          x
+          
+            3
+          
+        
+        +
+        
+          y
+          
+            3
+          
+        
+        +
+        
+          z
+          
+            3
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle v+w+x+y+z=v^{2}+w^{2}+x^{2}+y^{2}+z^{2}=v^{3}+w^{3}+x^{3}+y^{3}+z^{3}=0.}
+  
+
+It was named by Klein (2003, p.157) after Erland Samuel Bring who studied a similar construction in 1786 in a Promotionschrift submitted to the University of Lund. Note that the roots xi of the Bring quintic 
+  
+    
+      
+        
+          x
+          
+            5
+          
+        
+        +
+        a
+        x
+        +
+        b
+        =
+        0
+      
+    
+    {\displaystyle x^{5}+ax+b=0}
+  
+ satisfies Bring's curve since 
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            5
+          
+        
+        
+          x
+          
+            i
+          
+          
+            k
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \sum _{i=1}^{5}x_{i}^{k}=0}
+  
+ for 
+  
+    
+      
+        k
+        =
+        1
+        ,
+        2
+        ,
+        3.
+      
+    
+    {\displaystyle k=1,2,3.}
+  
+   
+The automorphism group of the curve is the symmetric group S5 of order 120, given by permutations of the 5 coordinates. This is the largest possible automorphism group of a genus 4 complex curve.
+The curve can be realized as a triple cover of the sphere branched in 12 points, and is the Riemann surface associated to the small stellated dodecahedron. It has genus 4. The full group of symmetries (including reflections) is the direct product 
+  
+    
+      
+        
+          S
+          
+            5
+          
+        
+        ×
+        
+          
+            Z
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{5}\times \mathbb {Z} _{2}}
+  
+, which has order 240.
+
+
+== Fundamental domain and systole ==
+Bring's curve can be obtained as a Riemann surface by associating sides of a hyperbolic icosagon (see fundamental polygon). The identification pattern is given in the adjoining diagram. The icosagon (of area 
+  
+    
+      
+        12
+        π
+      
+    
+    {\displaystyle 12\pi }
+  
+, by the Gauss-Bonnet theorem) can be tessellated by 240 (2,4,5) triangles. The actions that transport one of these triangles to another give the full group of automorphisms of the surface (including reflections). Discounting reflections, we get the 120 automorphisms mentioned in the introduction. Note that 120 is less than 252, the maximum number of orientation preserving automorphisms allowed for a genus 4 surface, by Hurwitz's automorphism theorem. Therefore, Bring's surface is not a Hurwitz surface. This also tells us that there does not exist a Hurwitz surface of genus 4. 
+The full group of symmetries has the following presentation:
+
+  
+    
+      
+        ⟨
+        r
+        ,
+        
+        s
+        ,
+        
+        t
+        
+        
+          |
+        
+        
+        
+          r
+          
+            5
+          
+        
+        =
+        
+          s
+          
+            2
+          
+        
+        =
+        
+          t
+          
+            2
+          
+        
+        =
+        r
+        t
+        r
+        t
+        =
+        s
+        t
+        s
+        t
+        =
+        (
+        r
+        s
+        
+          )
+          
+            4
+          
+        
+        =
+        (
+        s
+        
+          r
+          
+            3
+          
+        
+        s
+        
+          r
+          
+            2
+          
+        
+        
+          )
+          
+            2
+          
+        
+        =
+        e
+        ⟩
+      
+    
+    {\displaystyle \langle r,\,s,\,t\,|\,r^{5}=s^{2}=t^{2}=rtrt=stst=(rs)^{4}=(sr^{3}sr^{2})^{2}=e\rangle }
+  
+,
+where 
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+ is the identity action, 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ is a rotation of order 5 about the centre of the fundamental polygon, 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ is a rotation of order 2 at the vertex where 4 (2,4,5) triangles meet in the tessellation, and 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ is reflection in the real line. From this presentation, information about the linear representation theory of the symmetry group of Bring's surface can be computed using GAP. In particular, the group has four 1 dimensional, four 4 dimensional, four 5 dimensional, and two 6 dimensional irreducible representations, and we have
+
+  
+    
+      
+        4
+        (
+        
+          1
+          
+            2
+          
+        
+        )
+        +
+        4
+        (
+        
+          4
+          
+            2
+          
+        
+        )
+        +
+        4
+        (
+        
+          5
+          
+            2
+          
+        
+        )
+        +
+        2
+        (
+        
+          6
+          
+            2
+          
+        
+        )
+        =
+        4
+        +
+        64
+        +
+        100
+        +
+        72
+        =
+        240
+      
+    
+    {\displaystyle 4(1^{2})+4(4^{2})+4(5^{2})+2(6^{2})=4+64+100+72=240}
+  
+
+as expected.
+The systole of the surface has length
+
+  
+    
+      
+        12
+        
+          sinh
+          
+            −
+            1
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  1
+                  2
+                
+              
+            
+            
+              
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                (
+                
+                  
+                    5
+                  
+                
+                −
+                1
+                )
+              
+            
+          
+          )
+        
+        ≈
+        4.60318
+      
+    
+    {\displaystyle 12\sinh ^{-1}\left({\tfrac {1}{2}}{\sqrt {{\tfrac {1}{2}}({\sqrt {5}}-1)}}\right)\approx 4.60318}
+  
+
+and multiplicity 20, a geodesic loop of that length consisting of the concatenated altitudes of twelve of the 240 (2,4,5) triangles.
+Similarly to the Klein quartic, Bring's surface does not maximize the systole length among compact Riemann surfaces in its topological category (that is, surfaces having the same genus) despite maximizing the size of the automorphism group. The systole is presumably maximized by the surface referred to a M4 in (Schmutz 1993). The systole length of M4 is
+
+  
+    
+      
+        2
+        
+          cosh
+          
+            −
+            1
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  1
+                  2
+                
+              
+            
+            (
+            5
+            +
+            3
+            
+              
+                3
+              
+            
+            )
+          
+          )
+        
+        ≈
+        4.6245
+        ,
+      
+    
+    {\displaystyle 2\cosh ^{-1}\left({\tfrac {1}{2}}(5+3{\sqrt {3}})\right)\approx 4.6245,}
+  
+
+and has multiplicity 36.
+
+
+== Spectral theory ==
+Little is known about the spectral theory of Bring's surface, however, it could potentially be of interest in this field. The Bolza surface and Klein quartic have the largest symmetry groups among compact Riemann surfaces of constant negative curvature in genera 2 and 3 respectively, and thus it has been conjectured that they maximize the first positive eigenvalue in the Laplace spectrum. There is strong numerical evidence to support this hypothesis, particularly in the case of the Bolza surface, although providing a rigorous proof is still an open problem. Following this pattern, one may reasonably conjecture that Bring's surface maximizes the first positive eigenvalue of the Laplacian (among surfaces in its topological class).
+
+
+== See also ==
+Bolza surface
+Klein quartic
+Macbeath surface
+First Hurwitz triplet
+
+
+== References ==
+
+Bring, Erland Samuel; Sommelius, Sven Gustaf (1786), Meletemata quædam mathematica circa transformationem æquationem algebraicarum, Promotionschrift, University of Lund
+Edge, W. L. (1978), "Bring's curve", Journal of the London Mathematical Society, 18 (3): 539–545, doi:10.1112/jlms/s2-18.3.539, ISSN 0024-6107, MR 0518240
+Klein, Felix (2003) [1884], Lectures on the icosahedron and the solution of equations of the fifth degree, Dover Phoenix Editions, New York: Dover Publications, ISBN 978-0-486-49528-6, MR 0080930
+Riera, G.; Rodriguez, R. (1992), "The period matrices of Bring's curve" (PDF), Pacific J. Math., 154 (1): 179–200, doi:10.2140/pjm.1992.154.179, MR 1154738
+Schmutz, P. (1993), "Riemann surfaces with shortest geodesic of maximal length", GAFA, 3 (6): 564–631, doi:10.1007/BF01896258
+Weber, Matthias (2005), "Kepler's small stellated dodecahedron as a Riemann surface", Pacific J. Math., 220: 167–182, doi:10.2140/pjm.2005.220.167

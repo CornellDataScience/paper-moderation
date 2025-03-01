@@ -1,0 +1,81 @@
+In computer programming, a virtual thread is a thread that is managed by a runtime library or virtual machine (VM) and made to resemble "real" operating system thread to code executing on it, while requiring substantially fewer resources than the latter.
+Virtual threads allows for tens of millions of preemptive tasks and events on a 2021 consumer-grade computer, compared to low thousands of operating system threads. Preemptive execution is important to performance gains through parallelism and fast preemptive response times for tens of millions of events.
+Earlier constructs that are not or not always preemptive, such as coroutines, green threads or the largely single-threaded Node.js, introduce delays in responding to asynchronous events such as every incoming request in a server application.
+
+
+== Definition ==
+
+Virtual threads were commercialized with Google's Chrome browser in 2008 where virtual threads may hop physical threads. Virtual threads are truly virtual, created in user-space software.
+
+Virtual threads are preemptive
+This is important for response performance, that the virtual thread can react to events without programmer intervention or before concluding a current task
+Preemption requires knowledge of multi-threaded programming to avoid torn writes, data races, and invisible writes by other threads
+Virtual threads can hop over the execution units of all processors and cores
+This allows utilisation of all available hardware, a 10x increase on today's computers
+In the go1.18 implementation, there are virtual thread queues per execution unit. There are additional virtual threads not allocated to an execution unit and an execution unit can steal virtual threads from another execution unit
+Virtual threads require no yield or similar interventions by the programmer
+Virtual threads appear to execute continuously until they return or stop at a synchronization lock
+Unlike coroutines, if a virtual thread is in an infinite loop, it does not block the program. Execution continues at a higher cpu load, even if there are more looping threads than available execution units
+Virtual threads can number in the tens of millions by featuring small often managed stacks
+This allows for several magnitudes more threads than from using OS threads
+Go 1.18 can launch 15 million virtual threads on a 2021 consumer-grade computer, i.e. about 350,000 per gigabyte of main memory. This is enabled by goroutines having a resizable, less than 3 KiB stack
+A consumer grade computer typically supports 3,000 OS threads and through system configuration can offer maybe 15,000
+Virtual threads can be allocated quickly, similar to the rate of memory allocations
+Because allocation of a virtual thread is akin to allocating memory structures, they can be allocated very quickly, perhaps 600,000 per second. This is not possible for OS threads that would crash the host far below this rate
+The quicker ramp-up lessens the need for thread-pools of pre-launched threads to cater for sudden increases in traffic
+In Go, a virtual thread is allocated using a function call preceded by the keyword "go". The function call provides a closure of variable values guaranteed to be visible to the new goroutine. goroutines have no return value, so a goroutine that returns just disappears
+Virtual threads share memory map like OS threads
+Like OS threads, virtual threads share the memory across the process and can therefore freely share and access memory objects subject to synchronization
+Some single-threaded architectures, such as the V8 ECMAScript engine used by Node.js, do not readily accept data that the particular thread did not allocate, requiring special zero-copy data types to be used when sharing data between threads
+Virtual threads offer parallelism like OS threads
+Parallelism means that multiple instructions are executed truly at the same time which typically leads to a magnitude of faster performance
+This is different from the simpler concurrency, in which a single execution unit executes multiple threads shared in small time increments. The time-slicing makes each thread appear to be continuously executing. While concurrency is easier to implement and program, it does not offer any gains in performance
+
+
+== Underlying reasons ==
+Java servers have featured extensive and memory consuming software constructs allowing dozens of pooled operating system threads to preemptively execute thousands of requests per second without the use of virtual threads. Key to performance here is to reduce the initial latency in thread processing and minimize the time operating system threads are blocked.
+Virtual threads increase possible concurrency by many orders of magnitudes while the actual parallelism achieved is limited by available execution units and pipelining offered by present processors and processor cores. In 2021, a consumer grade computers typically offer a parallelism of tens of concurrent execution units. For increased performance through parallelism, the language runtime need to use all present hardware, not be single-threaded or feature global synchronization such as global interpreter lock.
+The many magnitudes of increase in possible preemptive items offered by virtual threads is achieved by the language runtime managing resizable thread stacks. Those stacks are smaller in size than those of operating system threads. The maximum number of threads possible without swapping is proportional to the amount of main memory.
+In order to support virtual threads efficiently, the language runtime has to be largely rewritten to prevent blocking calls from holding up an operating system thread assigned to execute a virtual thread and to manage thread stacks. An example of a retrofit of virtual threads is Java Loom. An example of a new language designed for virtual threads is Go.
+
+
+== Complexity ==
+Because virtual threads offer parallelism, the programmer needs to be skilled in multi-threaded programming and synchronization.
+Because a blocked virtual thread would block the OS thread it occupies at the moment, much effort must be taken in the runtime to handle blocking system calls. Typically, a thread from a pool of spare OS threads is used to execute the blocking call for the virtual thread so that the initially executing OS thread is not blocked.
+Management of the virtual thread stack requires care in the linker and short predictions of additional stack space requirements.
+
+
+== Implementations ==
+
+
+=== Google Chrome Browser ===
+Virtual threads are used to serialize singleton input/output activities. When a virtual thread is executing, it can hop on different OS thread. The Chrome browser first appeared in 2008. Chrome's virtual threads are available to developers extending the browser.
+
+
+=== Go ===
+Go's goroutines became preemptive with Go 1.4 in 2014 and are a prominent application of virtual threads.
+
+
+=== Java ===
+Java introduced virtual threads in 2023 with JDK 21, with the limitation that any code running on a virtual thread which uses synchronised blocks or native calls will become pinned to its carrier OS thread.
+
+
+== Other uses of the term ==
+Intel in 2007 referred to an Intel compiler specific optimization technique as virtual threads.
+
+
+== See also ==
+Async/await
+Light-weight process
+Coroutine
+Global interpreter lock
+Fiber (computer science)
+GNU Portable Threads
+Protothreads
+
+
+== References ==
+
+
+== External links ==
+massivevirtualparallelism Go program testing limits on virtual threads

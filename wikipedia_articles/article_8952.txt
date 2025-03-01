@@ -1,0 +1,25 @@
+Mellon optical memory was an early form of computer memory invented at the Mellon Institute (today part of Carnegie Mellon University) in 1951. The device used a combination of photoemissive and phosphorescent materials to produce a "light loop" between two surfaces. The presence or lack of light, detected by a photocell, represented a one or zero. Although promising, the system was rendered obsolete with the introduction of magnetic-core memory in the early 1950s. It appears that the system was never used in production.
+
+
+== Description ==
+The main memory element of the Mellon device consisted of a very large (television sized) square vacuum tube consisting of two slightly separated flat glass plates. The inner side of one of the plates was coated with a photoemissive material that released electrons when struck by light. The inside of the other plate was coated with a phosphorescent material, that would release light when struck by electrons.
+The tube was charged with a high electrical voltage. When an external source of light struck the photoemissive layer, it would release a shower of electrons. The electrons would be pulled toward the positive charge on the phosphorescent layer, traveling through the vacuum. When they struck the phosphorescent layer, they would release a shower of photons (light) travelling in all directions. Some of these photons would travel back to the photoemissive layer, where they would cause a second shower of electrons to be released. To ensure that the light did not activate nearby areas of the photoemissive material, a baffle was used inside the tube, dividing the device up into a grid of cells.
+The process of electron emission causing photoemission in turn causing electron emission is what provided the memory action. This process would continue for a short time; the light emitted by the phosphorescent layer was much smaller than the amount of energy absorbed by it from the electrons, so the total amount of light in the cell faded away at a rate determined by the characteristics of the phosphorescent material.
+Overall the system was similar to the better-known Williams tube. The Williams tube used the phosphorescent front of a single CRT to create small spots of static electricity on a plate arranged in front of the tube. However, the stability of these dots proved difficult to maintain in the presence of external electrical signals, which were common in computer settings. The Mellon system replaced the static charges with light, which was much more resistant to external influence.
+
+
+=== Writing ===
+Writing to the cell was accomplished by an external cathode ray tube (CRT) arranged in front of the photoemissive side of the grid. Cells were activated by using the deflection coils in the CRT to pull the beam into position in front of the cell, lighting up the front of the tube in that location. This initial pulse of light, focussed through a lens, would set the cell to the "on" state. Due to the way the photoemissive layer worked, focusing light on it again when it was already "lit up" would overload the material, stopping electrons from flowing out the other side into the interior of the cell. When the external light was then removed, the cell was dark, turning it off.
+
+
+=== Reading ===
+Reading the cells was accomplished by a grid of photocells arranged behind the phosphorescent layer, which emitted photons omnidirectionally. This allowed the cells to be read from the back of the device, as long as the phosphorescent layer was thin enough.
+
+
+=== Refreshing ===
+To form a complete memory the system was arranged to be regenerative, with the output of the photocells being amplified and sent back into the CRT to refresh the cells periodically.
+
+
+== References ==
+
+Echert Jr., J.P., "A Survey of Digital Computer Memory Systems", Proceedings of the IRE, October 1953. Reprinted in IEEE Annals of the History of Computing, Vol.20, No.4, 1998

@@ -1,0 +1,78 @@
+The Power Mac G4 is a series of personal computers designed, manufactured, and sold by Apple Computer from 1999 to 2004 as part of the Power Macintosh line.  Built around the PowerPC G4 series of microprocessors, the Power Mac G4 was marketed by Apple as the first "personal supercomputers", reaching speeds of 4 to 20 gigaFLOPS. This was the first existing Macintosh product to be officially shortened as "Mac" (with the exception of the iMac), and is the last Mac able to boot into classic Mac OS with the introduction of MacOS X.
+The enclosure style introduced with the Power Macintosh G3 (Blue and White) was retained through the entire five-year production run of the Power Mac G4, albeit with significant changes to match Apple's evolving industrial design and to accommodate increasing cooling needs.  The G4 and its enclosure were retired with the introduction of the Power Mac G5.
+
+
+== Overview ==
+
+The Power Mac G4 is a line of personal computers. The tower form factor case is adapted from that of the Power Macintosh G3 (Blue and White), and features a latch on the side which can be used to open the side of the machine for easy access to the internals.
+The machine is designed around PowerPC G4 processors, which feature faster processor speeds, larger caches and cache speed boosts from their G3 predecessors. The Power Mac G4 used chips that included a subprocessor called the Velocity Engine that performs functions such as video decoding that would otherwise be formed by slower, separate chips. Software must be written to specifically address the Velocity Engine.
+External connectivity is provided by Universal Serial Bus and FireWire ports. Early models have options for adding AirPort wireless networking via an expansion card; this later came standard.
+
+
+== Development ==
+After releasing the iMac, Apple adopted the translucent plastic computer's visual style to its line of professional desktop computers with the "Blue and White" PowerPC G3-powered Power Macintosh G3. These machines featured a colorful design with curved handles for portability and a motherboard mounted on the side of computer for ease of access. They also began a migration away from legacy connectivity, such as SCSI, floppy disk drives, and Apple Desktop Bus to Universal Serial Bus and FireWire. While it was not as popular as the iMac, the Power Macintosh G3 sold well and kept Apple's foothold in the more lucrative business market.
+For the Power Mac G4, Apple kept the same design as the G3 it replaced, but came in a series of more sober case styling that presaged Apple's use of aluminum that would become Apple's trademark. The front panel switched from a blueberry color to gray (initially in a shade Apple called "graphite"), the formerly frosted white side panels became opaque silver, and the white handles became clear.
+
+
+== Release ==
+
+
+=== 1st generation ===
+
+The original Power Mac G4 was introduced at the Seybold conference in San Francisco on August 31, 1999. While marketed as a single, unified product line, there were two variants of the machine. The first, cheaper configuration, the Power Macintosh G4 (PCI Graphics), served as an intermediate step between the Power Mac G3s and the G4 processors, used a G4 processor on a modified version of the Blue-and-white G3's logic board, making them very similar to their predecessors. The higher-end configuration, Power Mac G4 (AGP Graphics), featured a new logic board and faster memory bandwidth, and swapped the PCI graphics-card slot for a faster Advanced Graphics Port slot.
+Apple originally planned to ship the 500 MHz configuration in October 1999, but they were forced to postpone this because of poor yield of the CPUs. In response, Apple reduced the clock speed of the processor in each configuration by 50 MHz (making the options 350 MHz, 400 MHz and 450 MHz), which caused some controversy because they did not lower the original prices accordingly.
+The early 400 MHz (later 350 MHz) PCI-based version used a motherboard identical to the one used in Power Macintosh G3 (Blue and White) computers including the use of Zero Insertion Force (ZIF) processors sockets (minus the ADB port), in a "graphite" colored case and with the new Motorola PowerPC 7400 (G4) CPU. The higher-speed models, code name "Sawtooth", used a greatly modified motherboard design with AGP 2x graphics (replacing the 66 MHz PCI slot).
+The PCI variant was discontinued at the end of 1999.
+The machines featured DVD-ROM drives as standard. The 400 and 450 MHz versions had 100 MB Zip drives as standard equipment, and as an option on the 350 MHz Sawtooth. This series had a 100 MHz system bus and four PC100 SDRAM slots for up to 2 GB of RAM (1.5 GB under Mac OS 9). The AGP Power Macs were the first to include an AirPort slot and DVI video port. The computers could house a total of three hard drives, two 128 GB ATA hard drives and up to a single 20 GB SCSI hard drive, with the installation of a SCSI card.
+The 500 MHz version was reintroduced on February 16, 2000, accompanied by 400 and 450 MHz models. DVD-RAM and Zip drives featured on these later 450 MHz and 500 MHz versions and were an option on the 400 MHz.
+The Power Mac G4 (Gigabit Ethernet) model was introduced at Macworld Expo New York on July 19, 2000; the new revision included dual-processor 450 MHz and 500 MHz versions, and a low-end single CPU 400 MHz model. It was also the first personal computer to include gigabit Ethernet as standard. Most people saw this revision as a stopgap release, because higher clocked G4s were not available; the G4's Motorola XPC107 "Grackle" PCI/Memory controller prevented the G4 from hitting speeds higher than 500 MHz. The dual 500 MHz models featured DVD-RAM optical drives. Zip drives were optional on all models. These models also introduced Apple's proprietary Apple Display Connector video port.
+
+
+=== 2nd generation: Digital Audio/QuickSilver ===
+
+A new line with a revamped motherboard but retaining the familiar "Graphite" case debuted on January 9, 2001, known officially as the Power Mac G4 (Digital Audio). Motorola had added a seventh pipeline stage in the new PowerPC G4 design to achieve faster clock frequencies. New features included a fourth PCI slot, a 133 MHz system bus, an improved 4X AGP slot, and a new "digital audio" Tripath Class T amplifier sound system. The models were offered in 466 MHz, 533 MHz, dual 533 MHz, 667 MHz and 733 MHz configurations, the latter two using a newer PowerPC 7450 processor. The number of RAM slots was reduced to three, accommodating up to 1.5 Gigabytes of PC133 SDRAM.
+The 733 MHz model was the first Macintosh to include a built-in DVD-R or Apple-branded SuperDrive, the rest of the line became the first Macs to ship with CD-RW drives.
+At Macworld Expo New York on July 18, 2001, a new line debuted featuring a cosmetically redesigned case known as QuickSilver, and various upgrades to the specifications. It was available in 733, 867 and dual 800 MHz configurations. The 733 MHz model was notable for not having a level three cache. The SuperDrive was offered on the mid-range 867 MHz model, and UltraATA/100 hard drives were offered on all models. The internal speaker received an upgrade, using a Harman/Kardon speaker.
+The QuickSilver line received criticism in MacWorld's review for removing the "eject" button and the manual eject pinhole, as well as the pass-through monitor power plug, and for the base specification of 128 MB RAM as being insufficient for running Mac OS X.
+The Quicksilver case went through shifts in hardware features and design up until production was due to start, resulting in a mismatch between the color of the plastic on the machine's front doors and the rest of the case. Designer Doug Satzger recalled Steve Jobs was adamant that the issue be fixed before it shipped, despite pushback. Ive wanted special polished stainless steel screws in the handle of the case, which Jon Rubinstein vetoed as too expensive and delaying. Ive went around Rubenstein and got Jobs to approve the screws, though it created a widening rift between Ive and Rubinstein as Ive refused to compromise on his design vision.
+Updated QuickSilver machines, officially named Power Mac G4 (QuickSilver 2002), were introduced on January 28, 2002, with 800 MHz, 933 MHz and dual 1 GHz configurations. This was the first Mac to reach 1 GHz. Again, the low-end 800 MHz model did not include any level three cache. The graphics in Updated QuickSilver machines were provided by an Nvidia GeForce4 Ti/MX or ATI Radeon 7500 graphics card. Some of these models have ATA controllers with 48-bit LBA to accommodate hard drives larger than 128 GB.
+
+
+=== 3rd generation: Mirrored Drive Doors/FireWire 800 ===
+
+Another generation of Apple Power Mac G4s, officially named "Mirrored Drive Doors" (MDD), was introduced on August 13, 2002, featuring both a new Xserve-derived DDR motherboard architecture and a new case design. All models were available in dual processor configurations running at 867 MHz, 1 GHz or 1.25 GHz. As with the Xserves, the PowerPC 7455 CPU used does not have a DDR frontside bus, meaning the CPU of the 133 MHz frontside bus models could use at most only 50% of the new system's theoretical memory bandwidth, providing no improvement over previous models. The rest was available to the graphics card and I/O systems.
+The early dual processor models generated more heat, and required more fans and larger heat sinks; the power supply fans were criticized for the increased noise, with third parties producing noise-reduction cases to dampen the sound in audio-sensitive environments. Apple released a firmware update to reduce fan noise and offered a fan and power supply exchange program.
+The last real update to the Power Mac G4 line came on January 28, 2003, offering dual 1.42 GHz PowerPC 7455 processors, with features not seen in previous DDR models: a built-in FireWire 800 connector, optional integrated Bluetooth, and optional integrated AirPort Extreme. These were also the first Power Macs that could not boot into Mac OS 9.
+With the launch of the Power Mac G5 on June 23, 2003, Apple re-introduced the August 2002 Power Mac G4 because of perceived demand for Mac OS 9 machines. Between that, its low price-tag, and the delayed availability of Power Mac G5s, it proved a strong seller, albeit for a relatively short time. Production stopped on June 27, 2004, and the remaining inventory was liquidated, its discontinuation ending the 20-year legacy of Classic Mac OS support.
+
+
+== Technical specifications ==
+
+
+=== First generation ===
+
+
+=== 2nd generation ===
+
+
+=== 3rd generation ===
+
+
+== Supported operating systems ==
+
+
+== Timeline ==
+
+
+== See also ==
+
+Power Mac G4 Cube
+
+
+== References ==
+
+
+=== Sources ===
+Bates, Allyson (March 1999). "iMac Envy". Macworld. pp. 67–72. ISSN 0741-8647.
+Gore, Andrew (November 1999). "Fantastic Four". Macworld. The Vision Thing. pp. 88–91. ISSN 0741-8647.
+Kahney, Leander (2013). Jony Ive: the genius behind Apple's greatest products. Penguin Group. ISBN 978-1-5918-4617-8.

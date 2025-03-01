@@ -1,0 +1,22 @@
+Cocaine (Configurable Omnipotent Custom Applications Integrated Network Engine) was an open-source PaaS system for creating custom cloud hosting apps that are similar to Bluemix, Google App Engine, or Heroku. Several services have already been implemented this way, including a service for detecting a user's region or language, a service for accessing MongoDB storage, and a URL fetcher.
+
+
+== History ==
+Andrey Sibiryov, the original developer of Cocaine, got the idea from Heroku, another cloud PaaS. At that time, Heroku only supported applications developed in Ruby. Using Heroku, the developer could create a Ruby app and push it to the cloud, while Heroku handled infrastructure and load balancing issues. Sibiryov was not satisfied with the documentation for Heroku and decided to create his own PaaS system.
+Initially, Cocaine was a personal project for Sibiryov. This changed, however, when Yandex discovered an internal need for a scalable platform that could cope with millions of requests-per-second (RPS). Cocaine was, for a period of time, used in the Yandex infrastructure.
+
+
+== Architecture ==
+The cloud is made up of one or more independent machines that have the Cocaine server (Cocained) installed. Users know nothing about the location of the services they are accessing—only the address of the load balancer and the app name are available to them. User requests are sent to the load balancer, which passes them to the cloud. In the cloud, the optimal machine is selected for each request, and then the request is executed. The infrastructure details and the app's environment settings are hidden from the developer, as well. The developer only needs to send the code to the cloud and write a special manifest for executing the code. It is not necessary to set up anything else, such as databases, key-value stores, or HTTP clients. There are services that do this, which from the programmer's point of view are native modules for the programming language the code is written in. For example, the Storage service lets users access Elliptics storage, and the Uatraits service uses data about a client's user agent and its HTTP headers to determine the characteristics of the device that sent the request.
+
+
+== Applying the technology ==
+In the cloud, apps can be written in various programming languages (C, C++, Go, JavaScript, Python, Ruby, and others) and frameworks (Node.js). Cocaine bound to a web server provides an automatically scalable deployment environment for web apps. The cloud manages large data volumes through a streamlined interface. Cocaine ensures reliable, high-performance message transmission with fault tolerance. Its load balancer enables responsive user-centric systems. Cloud apps run independently, supporting multiple versions and smooth user transitions to updated versions. Additionally, apps are tested in isolated cloud environments, preventing errors from affecting the physical system or other applications.
+
+
+== References ==
+
+Cocaine PaaS (official site, archived), archived from the original on 2015-02-14
+"Search Engine Giant Yandex Launches Cocaine", TechCrunch, 2013-10-16
+"Russian Google Yandex Free Cloud Service Cocaine", The Guardian, 2013-10-17
+"Free Cocaine giveaway from Russian Search Engine Yandex", The Register, 2013-10-17

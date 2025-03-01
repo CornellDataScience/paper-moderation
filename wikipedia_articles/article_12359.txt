@@ -1,0 +1,285 @@
+In mathematics, a generic polynomial refers usually to a polynomial whose coefficients are indeterminates. For example, if a, b, and c are indeterminates, the generic polynomial of degree two in x is 
+  
+    
+      
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        .
+      
+    
+    {\displaystyle ax^{2}+bx+c.}
+  
+
+However in Galois theory, a branch of algebra, and in this article, the term generic polynomial has a different, although related, meaning: a generic polynomial for a finite group G and a field F is a monic polynomial P with coefficients in the field of rational functions L = F(t1, ..., tn) in n indeterminates over F, such that the splitting field M of P has Galois group G over L, and such that every extension K/F with Galois group G can be obtained as the splitting field of a polynomial which is the specialization of P resulting from setting the n indeterminates to n elements of F. This is sometimes called F-generic or relative to the field F; a Q-generic polynomial, which is generic relative to the rational numbers is called simply generic.
+The existence, and especially the construction, of a generic polynomial for a given Galois group provides a complete solution to the inverse Galois problem for that group. However, not all Galois groups have generic polynomials, a counterexample being the cyclic group of order eight.
+
+
+== Groups with generic polynomials ==
+The symmetric group Sn. This is trivial, as
+
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        +
+        
+          t
+          
+            1
+          
+        
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          t
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x^{n}+t_{1}x^{n-1}+\cdots +t_{n}}
+  
+
+is a generic polynomial for Sn.
+Cyclic groups Cn, where n is not divisible by eight. Lenstra showed that a cyclic group does not have a generic polynomial if n is divisible by eight, and G. W. Smith explicitly constructs such a polynomial in case n is not divisible by eight.
+The cyclic group construction leads to other classes of generic polynomials; in particular the dihedral group Dn has a generic polynomial if and only if n is not divisible by eight.
+The quaternion group Q8.
+Heisenberg groups 
+  
+    
+      
+        
+          H
+          
+            
+              p
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle H_{p^{3}}}
+  
+ for any odd prime p.
+The alternating group A4.
+The alternating group A5.
+Reflection groups defined over Q, including in particular groups of the root systems for E6, E7, and E8.
+Any group which is a direct product of two groups both of which have generic polynomials.
+Any group which is a wreath product of two groups both of which have generic polynomials.
+
+
+== Examples of generic polynomials ==
+
+Generic polynomials are known for all transitive groups of degree 5 or less.
+
+
+== Generic dimension ==
+The generic dimension for a finite group G over a field F, denoted 
+  
+    
+      
+        g
+        
+          d
+          
+            F
+          
+        
+        G
+      
+    
+    {\displaystyle gd_{F}G}
+  
+, is defined as the minimal number of parameters in a generic polynomial for G over F, or 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+ if no generic polynomial exists.
+Examples:
+
+  
+    
+      
+        g
+        
+          d
+          
+            
+              Q
+            
+          
+        
+        
+          A
+          
+            3
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle gd_{\mathbb {Q} }A_{3}=1}
+  
+
+  
+    
+      
+        g
+        
+          d
+          
+            
+              Q
+            
+          
+        
+        
+          S
+          
+            3
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle gd_{\mathbb {Q} }S_{3}=1}
+  
+
+  
+    
+      
+        g
+        
+          d
+          
+            
+              Q
+            
+          
+        
+        
+          D
+          
+            4
+          
+        
+        =
+        2
+      
+    
+    {\displaystyle gd_{\mathbb {Q} }D_{4}=2}
+  
+
+  
+    
+      
+        g
+        
+          d
+          
+            
+              Q
+            
+          
+        
+        
+          S
+          
+            4
+          
+        
+        =
+        2
+      
+    
+    {\displaystyle gd_{\mathbb {Q} }S_{4}=2}
+  
+
+  
+    
+      
+        g
+        
+          d
+          
+            
+              Q
+            
+          
+        
+        
+          D
+          
+            5
+          
+        
+        =
+        2
+      
+    
+    {\displaystyle gd_{\mathbb {Q} }D_{5}=2}
+  
+
+  
+    
+      
+        g
+        
+          d
+          
+            
+              Q
+            
+          
+        
+        
+          S
+          
+            5
+          
+        
+        =
+        2
+      
+    
+    {\displaystyle gd_{\mathbb {Q} }S_{5}=2}
+  
+
+
+== Publications ==
+Jensen, Christian U., Ledet, Arne, and Yui, Noriko, Generic Polynomials, Cambridge University Press, 2002

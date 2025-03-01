@@ -1,0 +1,219 @@
+The Schwinger effect is a predicted physical phenomenon whereby matter is created by a strong electric field. It is also referred to as the Sauter–Schwinger effect, Schwinger mechanism, or Schwinger pair production. It is a prediction of quantum electrodynamics (QED) in which electron–positron pairs are spontaneously created in the presence of an electric field, thereby causing the decay of the electric field. The effect was originally proposed by Fritz Sauter in 1931 and further important work was carried out by Werner Heisenberg and Hans Heinrich Euler in 1936, though it was not until 1951 that Julian Schwinger gave a complete theoretical description.
+The Schwinger effect can be thought of as vacuum decay in the presence of an electric field. Although the notion of vacuum decay suggests that something is created out of nothing, physical conservation laws are nevertheless obeyed. To understand this, note that electrons and positrons are each other's antiparticles, with identical properties except opposite electric charge.
+To conserve energy, the electric field loses energy when an electron–positron pair is created, by an amount equal to 
+  
+    
+      
+        2
+        
+          m
+          
+            e
+          
+        
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2m_{\text{e}}c^{2}}
+  
+, where 
+  
+    
+      
+        
+          m
+          
+            e
+          
+        
+      
+    
+    {\displaystyle m_{\text{e}}}
+  
+ is the electron rest mass and 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ is the speed of light. Electric charge is conserved because an electron–positron pair is charge neutral. Linear and angular momentum are conserved because, in each pair, the electron and positron are created with opposite velocities and spins. In fact, the electron and positron are expected to be created at (close to) rest, and then subsequently accelerated away from each other by the electric field.
+
+
+== Mathematical description ==
+Schwinger pair production in a constant electric field takes place at a constant rate per unit volume, commonly referred to as 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  
+. The rate was first calculated by Schwinger and at leading (one-loop) order is equal to
+
+  
+    
+      
+        Γ
+        =
+        
+          
+            
+              (
+              e
+              E
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              4
+              
+                π
+                
+                  3
+                
+              
+              
+                ℏ
+                
+                  2
+                
+              
+              c
+            
+          
+        
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              n
+              
+                2
+              
+            
+          
+        
+        exp
+        ⁡
+        
+          {
+          
+            −
+            
+              
+                
+                  π
+                  
+                    m
+                    
+                      2
+                    
+                  
+                  
+                    c
+                    
+                      3
+                    
+                  
+                  n
+                
+                
+                  ℏ
+                  e
+                  E
+                
+              
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \Gamma ={\frac {(eE)^{2}}{4\pi ^{3}\hbar ^{2}c}}\sum _{n=1}^{\infty }{\frac {1}{n^{2}}}\exp \left\{-{\frac {\pi m^{2}c^{3}n}{\hbar eE}}\right\}}
+  
+
+where 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ is the mass of an electron, 
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+ is the elementary charge, and 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ is the electric field strength. This formula cannot be expanded in a Taylor series in 
+  
+    
+      
+        
+          e
+          
+            2
+          
+        
+      
+    
+    {\displaystyle e^{2}}
+  
+, showing the nonperturbative nature of this effect. In terms of Feynman diagrams, one can derive the rate of Schwinger pair production by summing the infinite set of diagrams shown below, containing one electron loop and any number of external photon legs, each with zero energy.
+
+
+== Experimental prospects ==
+The original Schwinger effect of quantum electrodynamics has never been observed due to the extremely strong electric-field strengths required. Pair production takes place exponentially slowly when the electric field strength is much below the Schwinger limit, corresponding to approximately 1018 V/m. With current and planned laser facilities, this is an unfeasibly strong electric-field strength, so various mechanisms have been proposed to speed up the process and thereby reduce the electric-field strength required for its observation.
+The rate of pair production may be significantly increased in time-dependent electric fields, and as such is being pursued by high-intensity laser experiments such as the Extreme Light Infrastructure. Another possibility is to include a highly charged nucleus which itself produces a strong electric field.
+By electromagnetic duality, the same mechanism in a magnetic field should produce magnetic monopoles, if they exist.
+A search conducted by the MoEDAL experiment using the Large Hadron Collider failed to detect monopoles, and analysis indicated a lower bound on monopole mass of 75 GeV/c2 at the 95% confidence level.
+In January 2022, researchers at the National Graphene Institute led by Andre Geim and a number of other collaborators reported the observation of an analog process between electrons and holes at the Dirac point of a superlattice of graphene on hexagonal boron nitride (G/hBN) and another one of twisted bilayer graphene (TBG). An interpretation as Zener–Klein tunneling (a mix between Zener tunneling and Klein tunneling) is also utilized. In June 2023, researchers at the  Ecole Normale Supérieure in Paris and their collaborators reported the quantitative measurement of the Schwinger-pair production rate in doped graphene transistors in a 1D geometry.
+
+
+== See also ==
+Schwinger limit
+Vacuum polarization
+Uehling potential
+Euler–Heisenberg Lagrangian
+MoEDAL experiment
+
+
+== References ==

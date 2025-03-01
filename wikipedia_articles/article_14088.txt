@@ -1,0 +1,782 @@
+In the theory of relativity, four-acceleration is a four-vector (vector in four-dimensional spacetime) that is analogous to classical acceleration (a three-dimensional vector, see three-acceleration in special relativity).  Four-acceleration has applications in areas such as the annihilation of antiprotons, resonance of strange particles and radiation of an accelerated charge.
+
+
+== Four-acceleration in inertial coordinates ==
+In inertial coordinates in special relativity, four-acceleration 
+  
+    
+      
+        
+          A
+        
+      
+    
+    {\displaystyle \mathbf {A} }
+  
+ is defined as the rate of change in four-velocity 
+  
+    
+      
+        
+          U
+        
+      
+    
+    {\displaystyle \mathbf {U} }
+  
+ with respect to the particle's proper time along its worldline.  We can say:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  A
+                
+                =
+                
+                  
+                    
+                      d
+                      
+                        U
+                      
+                    
+                    
+                      d
+                      τ
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  (
+                  
+                    
+                      γ
+                      
+                        u
+                      
+                    
+                    
+                      
+                        
+                          
+                            γ
+                            ˙
+                          
+                        
+                      
+                      
+                        u
+                      
+                    
+                    c
+                    ,
+                    
+                    
+                      γ
+                      
+                        u
+                      
+                      
+                        2
+                      
+                    
+                    
+                      a
+                    
+                    +
+                    
+                      γ
+                      
+                        u
+                      
+                    
+                    
+                      
+                        
+                          
+                            γ
+                            ˙
+                          
+                        
+                      
+                      
+                        u
+                      
+                    
+                    
+                      u
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  (
+                  
+                    
+                      γ
+                      
+                        u
+                      
+                      
+                        4
+                      
+                    
+                    
+                      
+                        
+                          
+                            a
+                          
+                          ⋅
+                          
+                            u
+                          
+                        
+                        c
+                      
+                    
+                    ,
+                    
+                    
+                      γ
+                      
+                        u
+                      
+                      
+                        2
+                      
+                    
+                    
+                      a
+                    
+                    +
+                    
+                      γ
+                      
+                        u
+                      
+                      
+                        4
+                      
+                    
+                    
+                      
+                        
+                          
+                            a
+                          
+                          ⋅
+                          
+                            u
+                          
+                        
+                        
+                          c
+                          
+                            2
+                          
+                        
+                      
+                    
+                    
+                      u
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  (
+                  
+                    
+                      γ
+                      
+                        u
+                      
+                      
+                        4
+                      
+                    
+                    
+                      
+                        
+                          
+                            a
+                          
+                          ⋅
+                          
+                            u
+                          
+                        
+                        c
+                      
+                    
+                    ,
+                    
+                    
+                      γ
+                      
+                        u
+                      
+                      
+                        4
+                      
+                    
+                    
+                      (
+                      
+                        
+                          a
+                        
+                        +
+                        
+                          
+                            
+                              
+                                u
+                              
+                              ×
+                              
+                                (
+                                
+                                  
+                                    u
+                                  
+                                  ×
+                                  
+                                    a
+                                  
+                                
+                                )
+                              
+                            
+                            
+                              c
+                              
+                                2
+                              
+                            
+                          
+                        
+                      
+                      )
+                    
+                  
+                  )
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\mathbf {A} ={\frac {d\mathbf {U} }{d\tau }}&=\left(\gamma _{u}{\dot {\gamma }}_{u}c,\,\gamma _{u}^{2}\mathbf {a} +\gamma _{u}{\dot {\gamma }}_{u}\mathbf {u} \right)\\&=\left(\gamma _{u}^{4}{\frac {\mathbf {a} \cdot \mathbf {u} }{c}},\,\gamma _{u}^{2}\mathbf {a} +\gamma _{u}^{4}{\frac {\mathbf {a} \cdot \mathbf {u} }{c^{2}}}\mathbf {u} \right)\\&=\left(\gamma _{u}^{4}{\frac {\mathbf {a} \cdot \mathbf {u} }{c}},\,\gamma _{u}^{4}\left(\mathbf {a} +{\frac {\mathbf {u} \times \left(\mathbf {u} \times \mathbf {a} \right)}{c^{2}}}\right)\right),\end{aligned}}}
+  
+
+where
+
+  
+    
+      
+        
+          a
+        
+        =
+        
+          
+            
+              d
+              
+                u
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a} ={\frac {d\mathbf {u} }{dt}}}
+  
+ , with 
+  
+    
+      
+        
+          a
+        
+      
+    
+    {\displaystyle \mathbf {a} }
+  
+ the three-acceleration and 
+  
+    
+      
+        
+          u
+        
+      
+    
+    {\displaystyle \mathbf {u} }
+  
+ the three-velocity, and
+
+  
+    
+      
+        
+          
+            
+              
+                γ
+                ˙
+              
+            
+          
+          
+            u
+          
+        
+        =
+        
+          
+            
+              
+                a
+              
+              ⋅
+              
+                u
+              
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        
+          γ
+          
+            u
+          
+          
+            3
+          
+        
+        =
+        
+          
+            
+              
+                a
+              
+              ⋅
+              
+                u
+              
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        
+          
+            1
+            
+              
+                (
+                
+                  1
+                  −
+                  
+                    
+                      
+                        u
+                        
+                          2
+                        
+                      
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                )
+              
+              
+                3
+                
+                  /
+                
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\dot {\gamma }}_{u}={\frac {\mathbf {a} \cdot \mathbf {u} }{c^{2}}}\gamma _{u}^{3}={\frac {\mathbf {a} \cdot \mathbf {u} }{c^{2}}}{\frac {1}{\left(1-{\frac {u^{2}}{c^{2}}}\right)^{3/2}}},}
+  
+ and
+
+  
+    
+      
+        
+          γ
+          
+            u
+          
+        
+      
+    
+    {\displaystyle \gamma _{u}}
+  
+ is the Lorentz factor for the speed 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ (with 
+  
+    
+      
+        
+          |
+        
+        
+          u
+        
+        
+          |
+        
+        =
+        u
+      
+    
+    {\displaystyle |\mathbf {u} |=u}
+  
+).  A dot above a variable indicates a derivative with respect to the coordinate time in a given reference frame, not the proper time 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+ (in other terms, 
+  
+    
+      
+        
+          
+            
+              
+                γ
+                ˙
+              
+            
+          
+          
+            u
+          
+        
+        =
+        
+          
+            
+              d
+              
+                γ
+                
+                  u
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\textstyle {\dot {\gamma }}_{u}={\frac {d\gamma _{u}}{dt}}}
+  
+).
+In an instantaneously co-moving inertial reference frame 
+  
+    
+      
+        
+          u
+        
+        =
+        0
+      
+    
+    {\displaystyle \mathbf {u} =0}
+  
+, 
+  
+    
+      
+        
+          γ
+          
+            u
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle \gamma _{u}=1}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              
+                γ
+                ˙
+              
+            
+          
+          
+            u
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\dot {\gamma }}_{u}=0}
+  
+, i.e. in such a reference frame 
+
+  
+    
+      
+        
+          A
+        
+        =
+        
+          (
+          
+            0
+            ,
+            
+              a
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \mathbf {A} =\left(0,\mathbf {a} \right).}
+  
+
+Geometrically, four-acceleration is a curvature vector of a worldline.
+Therefore, the magnitude of the four-acceleration (which is an invariant scalar) is equal to the proper acceleration that a moving particle "feels" moving along a worldline. A worldline having constant four-acceleration is a Minkowski-circle i.e. hyperbola (see hyperbolic motion)
+The scalar product of a particle's four-velocity and its four-acceleration is always 0.
+Even at relativistic speeds four-acceleration is related to the four-force: 
+  
+    
+      
+        
+          F
+          
+            μ
+          
+        
+        =
+        m
+        
+          A
+          
+            μ
+          
+        
+        ,
+      
+    
+    {\displaystyle F^{\mu }=mA^{\mu },}
+  
+ where m is the invariant mass of a particle.
+When the four-force is zero, only gravitation affects the trajectory of a particle, and the four-vector equivalent of Newton's second law above reduces to the geodesic equation. The four-acceleration of a particle executing geodesic motion is zero.  This corresponds to gravity not being a force.  Four-acceleration is different from what we understand by acceleration as defined in Newtonian physics, where gravity is treated as a force.
+
+
+== Four-acceleration in non-inertial coordinates ==
+In non-inertial coordinates, which include accelerated coordinates in special relativity and all coordinates in general relativity, the acceleration four-vector is related to the four-velocity through an absolute derivative with respect to proper time.
+
+  
+    
+      
+        
+          A
+          
+            λ
+          
+        
+        :=
+        
+          
+            
+              D
+              
+                U
+                
+                  λ
+                
+              
+            
+            
+              d
+              τ
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                U
+                
+                  λ
+                
+              
+            
+            
+              d
+              τ
+            
+          
+        
+        +
+        
+          Γ
+          
+            λ
+          
+        
+        
+          
+
+          
+          
+            μ
+            ν
+          
+        
+        
+          U
+          
+            μ
+          
+        
+        
+          U
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle A^{\lambda }:={\frac {DU^{\lambda }}{d\tau }}={\frac {dU^{\lambda }}{d\tau }}+\Gamma ^{\lambda }{}_{\mu \nu }U^{\mu }U^{\nu }}
+  
+
+In inertial coordinates the Christoffel symbols 
+  
+    
+      
+        
+          Γ
+          
+            λ
+          
+        
+        
+          
+
+          
+          
+            μ
+            ν
+          
+        
+      
+    
+    {\displaystyle \Gamma ^{\lambda }{}_{\mu \nu }}
+  
+ are all zero, so this formula is compatible with the formula given earlier.
+In special relativity the coordinates are those of a rectilinear inertial frame, so the Christoffel symbols term vanishes, but sometimes when authors use curved coordinates in order to describe an accelerated frame, the frame of reference isn't inertial, they will still describe the physics as special relativistic because the metric is just a frame transformation of the Minkowski space metric. In that case this is the expression that must be used because the Christoffel symbols are no longer all zero.
+
+
+== See also ==
+Four-vector
+Four-velocity
+Four-momentum
+Four-force
+Four-gradient
+Proper acceleration
+
+
+== References ==
+
+Papapetrou A. (1974). Lectures on General Relativity. D. Reidel Publishing Company. ISBN 90-277-0514-3.
+Rindler, Wolfgang (1991). Introduction to Special Relativity (2nd). Oxford: Oxford University Press. ISBN 0-19-853952-5.
+
+
+== External links ==
+Curvature vector on Britannica

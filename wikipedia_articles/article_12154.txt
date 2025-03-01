@@ -1,0 +1,110 @@
+In mathematics, more specifically abstract algebra, a finite ring is a ring that has a finite number of elements.
+Every finite field is an example of a finite ring, and the additive part of every finite ring is an example of an abelian finite group, but the concept of finite rings in their own right has a more recent history.
+Although rings have more structure than groups do, the theory of finite rings is simpler than that of finite groups.  For instance, the classification of finite simple groups was one of the major breakthroughs of 20th century mathematics, its proof spanning thousands of journal pages.  On the other hand, it has been known since 1907 that any finite simple ring is isomorphic to the ring 
+  
+    
+      
+        
+          
+            M
+          
+          
+            n
+          
+        
+        (
+        
+          
+            F
+          
+          
+            q
+          
+        
+        )
+      
+    
+    {\displaystyle \mathrm {M} _{n}(\mathbb {F} _{q})}
+  
+ – the n-by-n matrices over a finite field of order q (as a consequence of Wedderburn's theorems, described below).
+The number of rings with m elements, for m a natural number, is listed under OEIS: A027623 in the On-Line Encyclopedia of Integer Sequences.
+
+
+== Finite field ==
+
+The theory of finite fields is perhaps the most important aspect of finite ring theory due to its intimate connections with algebraic geometry, Galois theory and number theory. An important, but fairly old aspect of the theory is the classification of finite fields:
+
+The order or number of elements of a finite field equals pn, where p is a prime number called the characteristic of the field, and n is a positive integer.
+For every prime number p and positive integer n, there exists a finite field with pn elements.
+Any two finite fields with the same order are isomorphic.
+Despite the classification, finite fields are still an active area of research, including recent results on the Kakeya conjecture and open problems regarding the size of smallest primitive roots (in number theory).
+A finite field F may be used to build a vector space of n-dimensions over F. The matrix ring A of n × n matrices with elements from F is used in Galois geometry, with the projective linear group serving as the multiplicative group of A.
+
+
+== Wedderburn's theorems ==
+
+Wedderburn's little theorem asserts that any finite division ring is necessarily commutative:
+
+If every nonzero element r of a finite ring R has a multiplicative inverse, then R is commutative (and therefore a finite field).
+Nathan Jacobson later discovered yet another condition which guarantees commutativity of a ring: if for every element r of R there exists an integer n > 1 such that r n = r, then R is commutative. More general conditions that imply commutativity of a ring are also known.
+Yet another theorem by Wedderburn has, as its consequence, a result demonstrating that the theory of finite simple rings is relatively straightforward in nature. More specifically, any finite simple ring is isomorphic to the ring 
+  
+    
+      
+        
+          
+            M
+          
+          
+            n
+          
+        
+        (
+        
+          
+            F
+          
+          
+            q
+          
+        
+        )
+      
+    
+    {\displaystyle \mathrm {M} _{n}(\mathbb {F} _{q})}
+  
+, the n-by-n matrices over a finite field of order q.  This follows from two theorems of Joseph Wedderburn established in 1905 and 1907 (one of which is Wedderburn's little theorem).
+
+
+== Enumeration ==
+(Warning: the enumerations in this section include rings that do not necessarily have a multiplicative identity, sometimes called rngs.) In 1964 David Singmaster proposed the following problem in the American Mathematical Monthly: "(1) What is the order of the smallest non-trivial ring with identity which is not a field?  Find two such rings with this minimal order.  Are there more?  (2) How many rings of order four are there?"
+One can find the solution by D.M. Bloom in a two-page proof that there are eleven rings of order 4, four of which have a multiplicative identity. Indeed, four-element rings introduce the complexity of the subject. There are three rings over the cyclic group C4 and eight rings over the Klein four-group. There is an interesting display of the discriminatory tools (nilpotents, zero-divisors, idempotents, and left- and right-identities) in Gregory Dresden's lecture notes.
+The occurrence of non-commutativity in finite rings was described in (Eldridge 1968) in two theorems: If the order m of a finite ring with 1 has a cube-free factorization, then it is commutative. And if a non-commutative finite ring with 1 has the order of a prime cubed, then the ring is isomorphic to the upper triangular 2 × 2 matrix ring over the Galois field of the prime.
+The study of rings of order the cube of a prime was further developed in (Raghavendran 1969) and (Gilmer & Mott 1973). Next Flor and Wessenbauer (1975) made improvements on the cube-of-a-prime case. Definitive work on the isomorphism classes came with (Antipkin & Elizarov 1982) proving that for p > 2, the number of classes is 3p + 50.
+There are earlier references in the topic of finite rings, such as Robert Ballieu and Scorza.
+These are a few of the facts that are known about the number of finite rings (not necessarily with unity) of a given order (suppose p and q represent distinct prime numbers):
+
+There are two finite rings of order p.
+There are four finite rings of order pq.
+There are eleven finite rings of order p2.
+There are twenty-two finite rings of order p2q.
+There are fifty-two finite rings of order eight.
+There are 3p + 50 finite rings of order p3,  p > 2.
+The number of rings with n elements are (with a(0) = 1)
+
+1, 1, 2, 2, 11, 2, 4, 2, 52, 11, 4, 2, 22, 2, 4, 4, 390, 2, 22, 2, 22, 4, 4, 2, 104, 11, 4, 59, 22, 2, 8, 2, >18590, 4, 4, 4, 121, 2, 4, 4, 104, 2, 8, 2, 22, 22, 4, 2, 780, 11, 22, ... (sequence A027623 in the OEIS)
+
+
+== See also ==
+Galois ring, finite commutative rings that generalize Z/pnZ and finite fields
+Projective line over a ring § Over discrete rings
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Classification of finite commutative rings

@@ -1,0 +1,102 @@
+Hiroshi Fujita (Japanese: 藤田 宏, Hepburn: Fujita Hiroshi) (born 7 December 1928 in Osaka) is a retired Japanese mathematician who worked in partial differential equations. He obtained his Ph.D. at the University of Tokyo, under the supervision of Tosio Kato.
+
+
+== Mathematical contributions ==
+His most widely cited paper, published in 1966, studied the partial differential equation 
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  1
+                
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  n
+                
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          u
+          
+            p
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}={\frac {\partial ^{2}u}{\partial x_{1}^{2}}}+\cdots +{\frac {\partial ^{2}u}{\partial x_{n}^{2}}}+u^{p},}
+  
+
+and showed that there is a "threshold" value p0 > 1 for which p > p0 implies the existence of nonconstant solutions which exist for all positive t and all real values of the x variables. By contrast, if p is between 1 and p0 then such solutions cannot exist. This paper initiated the study of similar and analogous phenomena for various parabolic and hyperbolic partial differential equations. The impact of Fujita's paper is described by the well-known survey articles of Levine (1990) and Deng & Levine (2000).
+In collaboration with Kato, Fujita applied the semigroup approach in evolutionary partial differential equations to the Navier–Stokes equations of fluid mechanics. They found the existence of unique locally defined strong solutions under certain fractional derivative-based assumptions on the initial velocity. Their approach has been adopted by other influential works, such as Giga & Miyakawa (1985), to allow for different assumptions on the initial velocity. The full understanding of the smoothness and maximal extension of such solutions is currently considered as a major problem of partial differential equations and mathematical physics.
+
+
+== Selected publications ==
+Tosio Kato and Hiroshi Fujita. On the nonstationary Navier-Stokes system. Rend. Sem. Mat. Univ. Padova 32 (1962), 243–260.
+Hiroshi Fujita and Tosio Kato. On the Navier-Stokes initial value problem. I. Arch. Rational Mech. Anal. 16 (1964), 269–315.
+Hiroshi Fujita. On the blowing up of solutions of the Cauchy problem for ut = Δu + u1+α. J. Fac. Sci. Univ. Tokyo Sect. I 13 (1966), 109–124.
+Mathematical theory of sedimentation analysis (book)
+Functional-Analytic Methods for Partial Differential Equations (1990, Springer), Proceedings of a Conference and a Symposium held in Tokyo, Japan, July 3–9, 1989. Edited by Hiroshi Fujita, Teruo Ikebe and Shige T. Kuroda.
+Proceedings of the Ninth International Congress on Mathematical Education, Edited by Hiroshi Fujita et al.
+
+
+== References ==

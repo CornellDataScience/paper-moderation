@@ -1,0 +1,65 @@
+A rev limiter is a device fitted in modern vehicles that have internal combustion engines. They are intended to protect an engine by restricting its maximum rotational speed, measured in revolutions per minute (RPM).
+Rev limiters are pre-set by the engine manufacturer. There are also aftermarket units where a separate controller is installed using a custom RPM setting. A limiter prevents a vehicle's engine from being pushed beyond the manufacturer's limit, known as the redline (literally the red line marked on the tachometer). At some point beyond the redline, engine damage may occur.
+
+
+== Operation ==
+
+Limiters usually work by shutting off a component necessary for the combustion processes to occur, whether it be fuel, air or spark. Compression-ignition engines use mechanical governors or limiters to shut off electronic fuel injectors. A spark-ignition engine may also shut off fuel or stop the spark ignition and some just reduce the engine's power by changing the spark timing.
+In the case of an automatic transmission in "drive" mode, the engine RPM stays safely within the range that the transmission chooses. Only when over revving the engine in  "park", "neutral" or "manual" modes is there any need for a rev limiter. These vehicles often did not include a tachometer until the turn of the millennium. Without this gauge, the redline cannot be seen but there is so little risk of excessive engine speed with fully automatic transmissions that engine RPM is not a concern.
+However, with a manual transmission engine RPM can redline in "neutral", or by shifting to a higher gear too late, or by shifting to a lower gear too early. In the case of "neutral" or shifting up too late, a rev limiter can easily keep engine RPM below the redline.
+If a manual transmission is shifted down too early, the speed of the vehicle will drive the engine over the redline. In this case, a rev limiter will cut engine power but it cannot prevent the engine's RPM from going beyond the redline.
+Perhaps the worst situation occurs when a shift is "missed". In the diagram shown,  it is possible to be at high RPM and "miss" shifting from 2nd to 3rd and get 1st gear instead. This will result in exceeding the redline and there is nothing to prevent an engine from being severely damaged due to valvetrain failure or connecting rod failure. Using the clutch as quickly as possible may avoid engine damage.
+Most small engines, such as on lawn mowers have a speed governor. As the RPM of the engine increases, the throttle plate in the carburetor is gradually closed, reducing the amount of fuel and air admitted to the engine, until the engine RPM is stable. If RPM drops below the desired value, the throttle plate will automatically open, admitting more fuel/air mix to the engine. Adjusting the throttle generally adjusts spring tension on the governor, which in turn allows the engine to run faster or slower, as desired. While the redline cannot be seen on most small engines, due to their lack of a tachometer, the risk of excessive engine speed is not generally a concern.
+
+
+=== Types of control ===
+
+
+==== Fuel control ====
+Fuel-cutting rev limiters are the most common in road cars because they wear less on exhaust components, particularly the catalytic converter. These systems usually lean out the engine's overspeed by shutting off the fuel injectors, and are the only practical system on diesel engines. This is less popular in high performance or racing engines due to high temperatures in lean operation and the lack of a catalytic converter.
+
+
+==== Spark control ====
+Ignition control rev limiting systems work by shutting off the spark
+plugs once the engine overspeeds.
+This is less common in production vehicles because the system still injects fuel into the cylinder and consequently releases unburned fuel which may ignite at a turbo charger or in the exhaust pipe. This can affect the temperatures in the exhaust, causing premature wear on the catalytic converter.
+
+
+==== Throttle control ====
+Vehicles equipped with drive-by-wire systems allow the ECU to modulate throttle position to keep engine RPMs in a safe range. This is by far the safest method of limiting engine speed and is used on most modern production cars, as they don’t use a throttle cable. 
+
+
+=== Hard-cut vs. soft-cut limiters ===
+
+
+==== Hard-cut limiters ====
+Hard-cut limiters completely cut fuel or spark to the engine. These types of limiters activate at the set RPM and "bounce" off of it if throttle is applied. This phenomenon is referred to as hysteresis. The "bouncing" occurs because the limiter will cut off fuel or spark at the set RPM, which causes the RPM to drop. If the engine is in a state of open throttle when the RPM drops, the RPM will then raise back to the limit. This causes the engine to cycle its power on and off. A longer hysteresis period will facilitate a more significant drop in RPMs before fuel/spark is re-engaged, and a shorter hysteresis period can help decrease that drop in RPMs. In racing applications, extremely short hysteresis is desired so you won't lose all engine power suddenly if/when you hit the rev limiter. 
+
+
+==== Soft-cut limiters ====
+Soft-cut limiters are a type of rev limiter that partially cuts off fuel to the engine. These limiters may also retard the ignition timing. If using a soft-cut rev limiter, the engine will start to cut fuel or retard ignition timing before the set RPM until it slowly reaches it and remains there. If the engine over-revs anyway, a soft-cut limiter may progressively shut off each cylinder one by one until engine RPMs drop to safe levels. These types of rev limiters are often conflated with "soft limiters", which are a separate, lower RPM limit for when a vehicle is not in gear.
+
+
+== Physical limiters ==
+The maximum RPM of an engine is limited to the airflow through the engine, the displacement
+of the engine, the mass and balance of the rotating parts, along with the bore and stroke of the pistons. Formula
+One engines can rev up to 15,000 rpm as per Formula One rules because of their smaller displacement, low mass, and short stroke.
+Engines with hydraulic tappets (such as the Buick/Rover V8) often have in effect a rev limiter by virtue of their design. The tappet clearances are maintained by the flow of the engine's lubricating oil. At high engine speeds, the oil pressure rises to such an extent that the tappets 'pump up', causing valve float. This sharply reduces engine power, causing speed to drop.
+
+
+== Racing uses ==
+The RPM level that results with the spark timing being arrested can be a constant level, or, with the proper ignition control modules, variable. Variable rate ignition modules can be adjusted quickly and easily to achieve the appropriate RPM limit for different situations, such as street racing, drag racing, road course racing and highway driving.
+Multiple stage ignition modules offer greater RPM limit control. The first stage can be used to limit RPM levels when launching a vehicle from a stationary position, providing maximum power and traction. The second stage is activated after launch to set a higher RPM limit for wide-open-throttle acceleration.
+
+
+== Engine damage beyond the redline ==
+
+There is considerable variation between manufactures on where to have the redline for their engines: from 100 to 12,000 RPM. If an engine goes overspeed, commonly called "over-revving", damage to the piston and valvetrain may occur when a valve stays open longer than usual. Valve float can possibly result in loss of compression, misfire, or a valve and piston colliding with each other. It's also possible the engine will throw a connecting rod between the crankshaft and piston. The engine will then need to be repaired or replaced entirely.
+
+
+== See also ==
+Redline
+Overspeed
+
+
+== References ==

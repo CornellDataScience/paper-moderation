@@ -1,0 +1,46 @@
+In mathematics, a fixed-point theorem is a result saying that a function F will have at least one fixed point (a point x for which F(x) = x), under some conditions on F that can be stated in general terms.
+
+
+== In mathematical analysis ==
+The Banach fixed-point theorem (1922) gives a general criterion guaranteeing that, if it is satisfied, the procedure of iterating a function yields a fixed point.
+By contrast, the Brouwer fixed-point theorem (1911) is a non-constructive result: it says that any continuous function from the closed unit ball in n-dimensional Euclidean space to itself must have a fixed point, but it doesn't describe how to find the fixed point (see also Sperner's lemma).
+For example, the cosine function is continuous in [−1, 1] and maps it into [−1, 1], and thus must have a fixed point. This is clear when examining a sketched graph of the cosine function; the fixed point occurs where the cosine curve y = cos(x) intersects the line y = x. Numerically, the fixed point (known as the Dottie number) is approximately x = 0.73908513321516 (thus x = cos(x) for this value of x).
+The Lefschetz fixed-point theorem (and the Nielsen fixed-point theorem) from algebraic topology is notable because it gives, in some sense, a way to count fixed points.
+There are a number of generalisations to Banach fixed-point theorem and further; these are applied in PDE theory. See fixed-point theorems in infinite-dimensional spaces.
+The collage theorem in fractal compression proves that, for many images, there exists a relatively small description of a function that, when iteratively applied to any starting image, rapidly converges on the desired image.
+
+
+== In algebra and discrete mathematics ==
+The Knaster–Tarski theorem states that any order-preserving function on a complete lattice has a fixed point, and indeed a smallest fixed point. See also Bourbaki–Witt theorem.
+The theorem has applications in abstract interpretation, a form of static program analysis.
+A common theme in lambda calculus is to find fixed points of given lambda expressions. Every lambda expression has a fixed point, and a fixed-point combinator is a "function" which takes as input a lambda expression and produces as output a fixed point of that expression. An important fixed-point combinator is the Y combinator used to give recursive definitions.
+In denotational semantics of programming languages, a special case of the Knaster–Tarski theorem is used to establish the semantics of recursive definitions. While the fixed-point theorem is applied to the "same" function (from a logical point of view), the development of the theory is quite different.
+The same definition of recursive function can be given, in computability theory, by applying Kleene's recursion theorem. These results are not equivalent theorems; the Knaster–Tarski theorem is a much stronger result than what is used in denotational semantics. However, in light of the Church–Turing thesis their intuitive meaning is the same: a recursive function can be described as the least fixed point of a certain functional, mapping functions to functions.
+The above technique of iterating a function to find a fixed point can also be used in set theory; the fixed-point lemma for normal functions states that any continuous strictly increasing function from ordinals to ordinals has one (and indeed many) fixed points.
+Every closure operator on a poset has many fixed points; these are the "closed elements" with respect to the closure operator, and they are the main reason the closure operator was defined in the first place.
+Every involution on a finite set with an odd number of elements has a fixed point; more generally, for every involution on a finite set of elements, the number of elements and the number of fixed points have the same parity. Don Zagier used these observations to give a one-sentence proof of Fermat's theorem on sums of two squares, by describing two involutions on the same set of triples of integers, one of which can easily be shown to have only one fixed point and the other of which has a fixed point for each representation of a given prime (congruent to 1 mod 4) as a sum of two squares. Since the first involution has an odd number of fixed points, so does the second, and therefore there always exists a representation of the desired form.
+
+
+== List of fixed-point theorems ==
+
+
+== See also ==
+Trace formula
+
+
+== Footnotes ==
+
+
+== References ==
+Agarwal, Ravi P.; Meehan, Maria; O'Regan, Donal (2001). Fixed Point Theory and Applications. Cambridge University Press. ISBN 0-521-80250-4.
+Aksoy, Asuman; Khamsi, Mohamed A. (1990). Nonstandard Methods in fixed point theory. Springer Verlag. ISBN 0-387-97364-8.
+Berinde, Vasile (2005). Iterative Approximation of Fixed Point. Springer Verlag. ISBN 978-3-540-72233-5.
+Border, Kim C. (1989). Fixed Point Theorems with Applications to Economics and Game Theory. Cambridge University Press. ISBN 0-521-38808-2.
+Kirk, William A.; Goebel, Kazimierz (1990). Topics in Metric Fixed Point Theory. Cambridge University Press. ISBN 0-521-38289-0.
+Kirk, William A.; Khamsi, Mohamed A. (2001). An Introduction to Metric Spaces and Fixed Point Theory. John Wiley, New York. ISBN 978-0-471-41825-2.
+Kirk, William A.; Sims, Brailey (2001). Handbook of Metric Fixed Point Theory. Springer-Verlag. ISBN 0-7923-7073-2.
+Šaškin, Jurij A; Minachin, Viktor; Mackey, George W. (1991). Fixed Points. American Mathematical Society. ISBN 0-8218-9000-X.
+
+
+== External links ==
+Fixed Point Method

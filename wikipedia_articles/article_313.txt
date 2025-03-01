@@ -1,0 +1,2843 @@
+Minimal logic, or minimal calculus, is a symbolic logic system originally developed by Ingebrigt Johansson. It is an intuitionistic and paraconsistent logic, that rejects both the law of the excluded middle as well as the principle of explosion (ex falso quodlibet), and therefore holding neither of the following two derivations as valid:
+
+  
+    
+      
+        ⊢
+        (
+        B
+        ∨
+        ¬
+        B
+        )
+      
+    
+    {\displaystyle \vdash (B\lor \neg B)}
+  
+
+  
+    
+      
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+        ⊢
+      
+    
+    {\displaystyle (A\land \neg A)\vdash }
+  
+
+where 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ are any propositions. Most constructive logics only reject the former, the law of excluded middle. In classical logic, the ex falso laws 
+
+  
+    
+      
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+        →
+        B
+        ,
+      
+    
+    {\displaystyle (A\land \neg A)\to B,}
+  
+
+  
+    
+      
+        ¬
+        (
+        A
+        ∨
+        ¬
+        A
+        )
+        →
+        B
+        ,
+      
+    
+    {\displaystyle \neg (A\lor \neg A)\to B,}
+  
+
+  
+    
+      
+        ¬
+        A
+        →
+        (
+        A
+        →
+        B
+        )
+        ,
+      
+    
+    {\displaystyle \neg A\to (A\to B),}
+  
+
+as well as their variants with 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        ¬
+        A
+      
+    
+    {\displaystyle \neg A}
+  
+ switched, are equivalent to each other and valid. Minimal logic also rejects those principles.
+Note that the name has sometimes also been used to denote logic systems with a restricted number of connectives.
+
+
+== Axiomatization ==
+Minimal logic is axiomatized over the positive fragment of intuitionistic logic. Both of these logics may be formulated in the language using the same axioms for 
+implication 
+  
+    
+      
+        →
+      
+    
+    {\displaystyle \to }
+  
+, 
+conjunction 
+  
+    
+      
+        ∧
+      
+    
+    {\displaystyle \land }
+  
+ and 
+disjunction 
+  
+    
+      
+        ∨
+      
+    
+    {\displaystyle \lor }
+  
+ as the basic connectives, but minimal logic conventionally adds 
+falsum or absurdity 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ as part of the language.
+Other formulations are possible, of course all avoiding explosion.
+Direct axioms for negation are given below. A desideratum is always the negation introduction law, discussed next.
+
+
+== Theorems ==
+
+
+=== Negation introduction ===
+A quick analysis of the valid rules for negation gives a good preview of what this logic, lacking full explosion, can and cannot prove.
+A natural statement in a language with negation, such as minimal logic, is, for example, the principle of negation introduction, whereby the negation of a statement is proven by assuming the statement and deriving a contradiction. Over minimal logic, the principle is equivalent to
+
+  
+    
+      
+        (
+        B
+        →
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+        )
+        →
+        ¬
+        B
+      
+    
+    {\displaystyle (B\to (A\land \neg A))\to \neg B}
+  
+,
+for any two propositions. For 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ taken as the contradiction 
+  
+    
+      
+        A
+        ∧
+        ¬
+        A
+      
+    
+    {\displaystyle A\land \neg A}
+  
+ itself, this establishes the law of non-contradiction
+
+  
+    
+      
+        ¬
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+      
+    
+    {\displaystyle \neg (A\land \neg A)}
+  
+.
+Assuming any 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+, the introduction rule of the material conditional gives 
+  
+    
+      
+        B
+        →
+        C
+      
+    
+    {\displaystyle B\to C}
+  
+, also when 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ and 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ are not relevantly related. With this and implication elimination, the above introduction principle implies
+
+  
+    
+      
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+        →
+        ¬
+        B
+      
+    
+    {\displaystyle (A\land \neg A)\to \neg B}
+  
+,
+i.e. assuming any contradiction, every proposition can be negated. Negation introduction is possible in minimal logic, so here any contradiction moreover proves any double negation, 
+  
+    
+      
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle \neg \neg B}
+  
+. Explosion would permit to remove the latter double negation, but this principle is not adopted.
+
+
+=== Axiomatization via absurdity ===
+One possible scheme of extending the positive calculus to minimal logic is to treat 
+  
+    
+      
+        ¬
+        B
+      
+    
+    {\displaystyle \neg B}
+  
+ as an implication, in which case the theorems from the constructive implication calculus of a logic carry over to negation statements. To this end, 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ is introduced as a proposition, not provable unless the system is inconsistent, and negation 
+  
+    
+      
+        ¬
+        B
+      
+    
+    {\displaystyle \neg B}
+  
+ is then treated as an abbreviation for 
+  
+    
+      
+        B
+        →
+        ⊥
+      
+    
+    {\displaystyle B\to \bot }
+  
+.
+Constructively, 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ represents a proposition for which there can be no reason to believe it.
+What follows are quick arguments showing which theorems still do hold in this logical theory, often making implicit use of the valid currying rule and the deduction theorem.
+
+
+==== Implications ====
+By implication introduction, 
+  
+    
+      
+        C
+        →
+        (
+        B
+        →
+        C
+        )
+      
+    
+    {\displaystyle C\to (B\to C)}
+  
+, and this also already implies 
+  
+    
+      
+        ⊥
+        →
+        (
+        B
+        →
+        ⊥
+        )
+      
+    
+    {\displaystyle \bot \to (B\to \bot )}
+  
+ showing directly how assuming 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ in minimal logic proves all negations. It may be expressed as
+
+  
+    
+      
+        ⊥
+        →
+        ¬
+        B
+        .
+      
+    
+    {\displaystyle \bot \to \neg B.}
+  
+
+If absurdity is primitive, full explosion principle could likewise also be stated as 
+  
+    
+      
+        ⊥
+        →
+        B
+      
+    
+    {\displaystyle \bot \to B}
+  
+.
+As for the adopted principles in the implication calculus, which do not involve negations, the page on Hilbert system presents it through propositional forms of the axioms of law of identity, implication introduction and a variant of modus ponens. Note the equivalence 
+  
+    
+      
+        
+          
+            (
+          
+        
+        A
+        →
+        (
+        B
+        →
+        C
+        )
+        
+          
+            )
+          
+        
+        ↔
+        
+          
+            (
+          
+        
+        B
+        →
+        (
+        A
+        →
+        C
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}A\to (B\to C){\big )}\leftrightarrow {\big (}B\to (A\to C){\big )}}
+  
+ proven there. For a first derivation, setting 
+  
+    
+      
+        C
+        =
+        ⊥
+      
+    
+    {\displaystyle C=\bot }
+  
+ here at once results in the schema
+
+  
+    
+      
+        
+          
+            (
+          
+        
+        A
+        →
+        ¬
+        B
+        
+          
+            )
+          
+        
+        ↔
+        
+          
+            (
+          
+        
+        B
+        →
+        ¬
+        A
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}A\to \neg B{\big )}\leftrightarrow {\big (}B\to \neg A{\big )}}
+  
+.
+In the intuitionistic Hilbert system, when not introducing 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ as a constant, this can be taken as the second negation-characterizing axiom. (The other being explosion.)
+Now,  firstly, with 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ taken as 
+  
+    
+      
+        ¬
+        B
+      
+    
+    {\displaystyle \neg B}
+  
+, the above shows that
+
+  
+    
+      
+        B
+        →
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle B\to \neg \neg B}
+  
+.
+But, secondly, this short implication may also more directly be derived from modus ponens in the propositional form 
+  
+    
+      
+        B
+        →
+        (
+        (
+        B
+        →
+        C
+        )
+        →
+        C
+        )
+      
+    
+    {\displaystyle B\to ((B\to C)\to C)}
+  
+ by considering 
+  
+    
+      
+        C
+        =
+        ⊥
+      
+    
+    {\displaystyle C=\bot }
+  
+.
+Thirdly, it follows from the valid weak form of consequentia mirabilis: 
+  
+    
+      
+        (
+        ¬
+        B
+        →
+        ¬
+        ¬
+        B
+        )
+        ↔
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle (\neg B\to \neg \neg B)\leftrightarrow \neg \neg B}
+  
+. In words, this theorem states that a statement cannot be rejected exactly when the negation of the statement implies that it cannot be rejected. In particular, one may prove 
+  
+    
+      
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle \neg \neg B}
+  
+ e.g. by proving 
+  
+    
+      
+        ¬
+        B
+        →
+        B
+      
+    
+    {\displaystyle \neg B\to B}
+  
+.
+Fourthly, the double-negation implication above also follows from
+
+  
+    
+      
+        
+          
+            (
+          
+        
+        ¬
+        ¬
+        (
+        A
+        →
+        B
+        )
+        
+          
+            )
+          
+        
+        →
+        
+          
+            (
+          
+        
+        A
+        →
+        ¬
+        ¬
+        B
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}\neg \neg (A\to B){\big )}\to {\big (}A\to \neg \neg B{\big )}}
+  
+
+which is related to the double-negation principle. This theorem may be established from 
+  
+    
+      
+        A
+        →
+        
+          
+            (
+          
+        
+        B
+        ↔
+        (
+        A
+        →
+        B
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle A\to {\big (}B\leftrightarrow (A\to B){\big )}}
+  
+, by again reasoning with another variable 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ very similar to the above, proving 
+  
+    
+      
+        A
+        →
+        
+          
+            (
+          
+        
+        (
+        ¬
+        B
+        )
+        ↔
+        ¬
+        (
+        A
+        →
+        B
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle A\to {\big (}(\neg B)\leftrightarrow \neg (A\to B){\big )}}
+  
+, and so on.
+Contraposition of 
+  
+    
+      
+        B
+        →
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle B\to \neg \neg B}
+  
+ gives
+
+  
+    
+      
+        ¬
+        ¬
+        ¬
+        B
+        ↔
+        ¬
+        B
+      
+    
+    {\displaystyle \neg \neg \neg B\leftrightarrow \neg B}
+  
+.
+Coming back to one of the earlier theorem, this can further also be seen as a special case of 
+  
+    
+      
+        
+          
+            (
+          
+        
+        A
+        →
+        ¬
+        B
+        
+          
+            )
+          
+        
+        ↔
+        
+          
+            (
+          
+        
+        ¬
+        ¬
+        A
+        →
+        ¬
+        B
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}A\to \neg B{\big )}\leftrightarrow {\big (}\neg \neg A\to \neg B{\big )}}
+  
+ with, again, 
+  
+    
+      
+        A
+        =
+        ¬
+        B
+      
+    
+    {\displaystyle A=\neg B}
+  
+. Indeed, the general 
+  
+    
+      
+        
+          
+            (
+          
+        
+        [
+        (
+        B
+        →
+        C
+        )
+        →
+        C
+        ]
+        →
+        C
+        
+          
+            )
+          
+        
+        ↔
+        (
+        B
+        →
+        C
+        )
+      
+    
+    {\displaystyle {\big (}[(B\to C)\to C]\to C{\big )}\leftrightarrow (B\to C)}
+  
+ can be derived from the general 
+  
+    
+      
+        
+          
+            (
+          
+        
+        A
+        →
+        (
+        B
+        →
+        C
+        )
+        
+          
+            )
+          
+        
+        ↔
+        
+          
+            (
+          
+        
+        (
+        [
+        A
+        →
+        C
+        ]
+        →
+        C
+        )
+        →
+        (
+        B
+        →
+        C
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}A\to (B\to C){\big )}\leftrightarrow {\big (}([A\to C]\to C)\to (B\to C){\big )}}
+  
+. Alternatively, the same follows from 
+  
+    
+      
+        
+          
+            (
+          
+        
+        [
+        (
+        B
+        →
+        C
+        )
+        →
+        C
+        ]
+        →
+        D
+        
+          
+            )
+          
+        
+        →
+        (
+        B
+        →
+        D
+        )
+      
+    
+    {\displaystyle {\big (}[(B\to C)\to C]\to D{\big )}\to (B\to D)}
+  
+, all derivable from what has been pointed out above. Under the Curry-Howard correspondence, the last theorem here may also be justified by the lambda expression 
+  
+    
+      
+        λ
+        
+          f
+          
+            (
+            (
+            B
+            →
+            C
+            )
+            →
+            C
+            )
+            →
+            D
+          
+        
+        .
+         
+        λ
+        
+          b
+          
+            B
+          
+        
+        .
+         
+        f
+        (
+        λ
+        
+          g
+          
+            B
+            →
+            C
+          
+        
+        .
+        g
+        (
+        b
+        )
+        )
+      
+    
+    {\displaystyle \lambda f^{((B\to C)\to C)\to D}.\ \lambda b^{B}.\ f(\lambda g^{B\to C}.g(b))}
+  
+, just to name one example.
+
+
+==== Conjunctions ====
+Going beyond statements solely in terms of implications, the principles discussed previously can now also be established as theorems: 
+With the definition of negation through 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+, the modus ponens statement in the form 
+  
+    
+      
+        (
+        A
+        ∧
+        (
+        A
+        →
+        C
+        )
+        )
+        →
+        C
+      
+    
+    {\displaystyle (A\land (A\to C))\to C}
+  
+ itself specializes to the non-contradiction principle, when considering 
+  
+    
+      
+        C
+        =
+        ⊥
+      
+    
+    {\displaystyle C=\bot }
+  
+. When negation is an implication, then the curried form of non-contradiction is again 
+  
+    
+      
+        A
+        →
+        ¬
+        ¬
+        A
+      
+    
+    {\displaystyle A\to \neg \neg A}
+  
+.
+Further, negation introduction in the form with a conjunction, spelled out in the previous section, is implied as the mere special case of 
+  
+    
+      
+        
+          
+            (
+          
+        
+        B
+        →
+        (
+        A
+        ∧
+        (
+        A
+        →
+        C
+        )
+        )
+        
+          
+            )
+          
+        
+        →
+        (
+        B
+        →
+        C
+        )
+      
+    
+    {\displaystyle {\big (}B\to (A\land (A\to C)){\big )}\to (B\to C)}
+  
+
+In this way, minimal logic can be characterized as a constructive logic just without negation elimination (a.k.a. explosion).
+With this, most of the common intuitionistic implications involving conjunctions of two propositions can be obtained, including the currying equivalence.
+
+
+==== Disjunctions ====
+It is worth emphasizing the important equivalence
+
+  
+    
+      
+        
+          
+            (
+          
+        
+        (
+        A
+        ∨
+        B
+        )
+        →
+        C
+        
+          
+            )
+          
+        
+        ↔
+        
+          
+            (
+          
+        
+        (
+        A
+        →
+        C
+        )
+        ∧
+        (
+        B
+        →
+        C
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}(A\lor B)\to C{\big )}\leftrightarrow {\big (}(A\to C)\land (B\to C){\big )}}
+  
+,
+expressing that those are two equivalent ways of the saying that both 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ imply 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+. From it, two of the familiar De Morgan's laws are obtained, 
+
+  
+    
+      
+        ¬
+        (
+        A
+        ∨
+        B
+        )
+        ↔
+        (
+        ¬
+        A
+        ∧
+        ¬
+        B
+        )
+      
+    
+    {\displaystyle \neg (A\lor B)\leftrightarrow (\neg A\land \neg B)}
+  
+.
+The third valid De Morgan's law may also be derived.
+The negation of an excluded middle statement implies its own validity. With reference to the weak variant of consequentia mirabilis above, it thus follows that
+
+  
+    
+      
+        ¬
+        ¬
+        (
+        B
+        ∨
+        ¬
+        B
+        )
+      
+    
+    {\displaystyle \neg \neg (B\lor \neg B)}
+  
+
+This result may also be seen as a special case of 
+  
+    
+      
+        
+          
+            (
+          
+        
+        (
+        B
+        ∨
+        (
+        B
+        →
+        C
+        )
+        )
+        →
+        C
+        
+          
+            )
+          
+        
+        →
+        C
+      
+    
+    {\displaystyle {\big (}(B\lor (B\to C))\to C{\big )}\to C}
+  
+, which follows from 
+  
+    
+      
+        (
+        (
+        A
+        ∨
+        B
+        )
+        →
+        C
+        )
+        →
+        (
+        B
+        →
+        C
+        )
+      
+    
+    {\displaystyle ((A\lor B)\to C)\to (B\to C)}
+  
+ when considering 
+  
+    
+      
+        B
+        →
+        C
+      
+    
+    {\displaystyle B\to C}
+  
+ for 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+Finally, case analysis shows
+
+  
+    
+      
+        
+          
+            (
+          
+        
+        (
+        B
+        ∨
+        ¬
+        A
+        )
+        ∧
+        ¬
+        ¬
+        A
+        
+          
+            )
+          
+        
+        →
+        
+          
+            (
+          
+        
+        (
+        B
+        ∨
+        ¬
+        B
+        )
+        ∧
+        ¬
+        ¬
+        B
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle {\big (}(B\lor \neg A)\land \neg \neg A{\big )}\to {\big (}(B\lor \neg B)\land \neg \neg B){\big )}}
+  
+
+This implication is to be compared with the full disjunctive syllogism, discussed in detail below.
+
+
+=== Axiomatization via alternative principles ===
+Another theorem only involving implications shall be noted: Related to the negation introduction principle, from
+
+  
+    
+      
+        (
+        B
+        →
+        A
+        )
+        →
+        (
+        (
+        A
+        →
+        C
+        )
+        →
+        (
+        B
+        →
+        C
+        )
+        )
+      
+    
+    {\displaystyle (B\to A)\to ((A\to C)\to (B\to C))}
+  
+.
+minimal logic proves the contraposition
+
+  
+    
+      
+        (
+        B
+        →
+        A
+        )
+        →
+        (
+        ¬
+        A
+        →
+        ¬
+        B
+        )
+      
+    
+    {\displaystyle (B\to A)\to (\neg A\to \neg B)}
+  
+,
+which like negation introduction again proves 
+  
+    
+      
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+        →
+        ¬
+        B
+      
+    
+    {\displaystyle (A\land \neg A)\to \neg B}
+  
+.
+All the above principles can be obtained using theorems from the positive calculus in combination with the constant 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+. 
+Instead of the formulation with that constant, one may adopt as axioms the contraposition principle just stated, together with the double negation principle 
+  
+    
+      
+        B
+        →
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle B\to \neg \neg B}
+  
+. This gives an alternative axiomatization of minimal logic over the positive fragment of intuitionistic logic.
+
+
+== Relation to classical logic ==
+The tactic of generalizing 
+  
+    
+      
+        ¬
+        A
+      
+    
+    {\displaystyle \neg A}
+  
+ to 
+  
+    
+      
+        A
+        →
+        C
+      
+    
+    {\displaystyle A\to C}
+  
+ does not work to prove all classically valid statements involving double negations. In particular, unsurprisingly, the naive generalization of the double negation elimination 
+  
+    
+      
+        ¬
+        ¬
+        B
+        →
+        B
+      
+    
+    {\displaystyle \neg \neg B\to B}
+  
+ cannot be provable in this way. Indeed whatever 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ looks like, any schema of the syntactic form 
+  
+    
+      
+        (
+        A
+        →
+        C
+        )
+        →
+        B
+      
+    
+    {\displaystyle (A\to C)\to B}
+  
+ would be too strong: Considering any true proposition for 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ makes this equivalent to just 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+.
+The proposition 
+  
+    
+      
+        ¬
+        ¬
+        (
+        B
+        ∨
+        ¬
+        B
+        )
+      
+    
+    {\displaystyle \neg \neg (B\lor \neg B)}
+  
+ is a theorem of minimal logic, as is 
+  
+    
+      
+        (
+        A
+        ∧
+        ¬
+        A
+        )
+        →
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle (A\land \neg A)\to \neg \neg B}
+  
+. Therefore, adopting the full double negation principle 
+  
+    
+      
+        ¬
+        ¬
+        B
+        →
+        B
+      
+    
+    {\displaystyle \neg \neg B\to B}
+  
+ in minimal logic actually also proves explosion, and so brings the calculus back to classical logic, also skipping all intermediate logics.
+As seen above, the double negated excluded middle for any proposition is already provable in minimal logic. However, it is worth emphasizing that in the predicate calculus, not even the laws of the strictly stronger intuitionistic logic enable a proof of the double negation of an infinite conjunction of excluded middle statements. Indeed, 
+
+  
+    
+      
+        ⊬
+        ¬
+        ¬
+        ∀
+        (
+        n
+        ∈
+        
+          
+            N
+          
+        
+        )
+        .
+        Q
+        (
+        n
+        )
+        ∨
+        ¬
+        Q
+        (
+        n
+        )
+      
+    
+    {\displaystyle \nvdash \neg \neg \forall (n\in {\mathbb {N} }).Q(n)\lor \neg Q(n)}
+  
+
+In turn, the double negation shift schema (DNS) is not valid either, that is
+
+  
+    
+      
+        ⊬
+        
+          
+            (
+          
+        
+        ∀
+        (
+        n
+        ∈
+        
+          
+            N
+          
+        
+        )
+        .
+        ¬
+        ¬
+        P
+        (
+        n
+        )
+        
+          
+            )
+          
+        
+        →
+        ¬
+        ¬
+        ∀
+        (
+        n
+        ∈
+        
+          
+            N
+          
+        
+        )
+        .
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle \nvdash {\big (}\forall (n\in {\mathbb {N} }).\neg \neg P(n){\big )}\to \neg \neg \forall (n\in {\mathbb {N} }).P(n)}
+  
+
+Beyond arithmetic, this unprovability allows for the axiomatization of non-classical theories.
+
+
+== Relation to paraconsistent logic ==
+Minimal logic proves weaker variants of consequentia mirabilis, as demonstrated in that article. The full principle is, however, equivalent to excluded middle. 
+
+
+== Relation to intuitionistic logic ==
+Any formula using only 
+  
+    
+      
+        ∧
+        ,
+        ∨
+        ,
+        →
+      
+    
+    {\displaystyle \land ,\lor ,\to }
+  
+ is provable in minimal logic if and only if it is provable in intuitionistic logic.
+But there are also propositional logic statements that are unprovable in minimal logic, but do hold intuitionistically.
+The principle of explosion is valid in intuitionistic logic and expresses that to derive any and all propositions, one may do this by deriving any absurdity. In minimal logic, this principle does not axiomatically hold for arbitrary propositions. As minimal logic represents only the positive fragment of intuitionistic logic, it is a subsystem of intuitionistic logic and is strictly weaker. 
+With explosion for negated statements, full explosion is equivalent to its special case 
+  
+    
+      
+        (
+        (
+        ¬
+        B
+        )
+        ∧
+        ¬
+        (
+        ¬
+        B
+        )
+        )
+        →
+        B
+      
+    
+    {\displaystyle ((\neg B)\land \neg (\neg B))\to B}
+  
+. The latter can be phrased as double negation elimination for rejected propositions, 
+  
+    
+      
+        ¬
+        B
+        →
+        (
+        ¬
+        ¬
+        B
+        →
+        B
+        )
+      
+    
+    {\displaystyle \neg B\to (\neg \neg B\to B)}
+  
+. Formulated concisely, explosion in intuitionistic logic exactly grants particular cases of the double negation elimination principle that minimal logic does not have.
+This principle also immediately proves the full disjunctive syllogism.
+
+
+=== Disjunctive syllogism ===
+Practically, in the intuitionistic context, the principle of explosion enables the disjunctive syllogism: 
+
+  
+    
+      
+        (
+        (
+        A
+        ∨
+        B
+        )
+        ∧
+        ¬
+        A
+        )
+        →
+        B
+        .
+      
+    
+    {\displaystyle ((A\lor B)\land \neg A)\to B.}
+  
+
+This can be read as follows: Given a constructive proof of 
+  
+    
+      
+        A
+        ∨
+        B
+      
+    
+    {\displaystyle A\lor B}
+  
+ and constructive rejection of 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, one unconditionally allows for the positive case choice of 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+. 
+In this way, the syllogism is an unpacking principle for the disjunction. It can be seen as a formal consequence of explosion and it also implies it. This is because if 
+  
+    
+      
+        A
+        ∨
+        B
+      
+    
+    {\displaystyle A\lor B}
+  
+ was proven by proving 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ then 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ is already proven, while if 
+  
+    
+      
+        A
+        ∨
+        B
+      
+    
+    {\displaystyle A\lor B}
+  
+ was proven by proving 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, then 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ also follows, as the intuitionistic system allows for explosion.
+For example, given a constructive argument that a coin flip resulted in either heads or tails (
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ or 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+), together with a constructive argument that the outcome was in fact not heads, the syllogism expresses that then this already constitutes an argument that tails occurred. 
+If the intuitionistic logic system  is metalogically assumed consistent, the syllogism may be read as saying that a constructive demonstration of 
+  
+    
+      
+        A
+        ∨
+        B
+      
+    
+    {\displaystyle A\lor B}
+  
+ and 
+  
+    
+      
+        ¬
+        A
+      
+    
+    {\displaystyle \neg A}
+  
+, in the absence of other non-logical axioms demonstrating 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+, actually contains a demonstration of 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+.
+In minimal logic, one cannot obtain a proof of 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ in this way. However, the same premise implies the double-negation of 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+, i.e. 
+  
+    
+      
+        ¬
+        ¬
+        B
+      
+    
+    {\displaystyle \neg \neg B}
+  
+. 
+If the minimal logic system is metalogically assumed consistent, then that implication formula can be expressed by saying that 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ merely cannot be rejected. 
+Weak forms of explosion prove the disjunctive syllogism and in the other direction, the instance of the syllogism with 
+  
+    
+      
+        A
+        =
+        ¬
+        B
+      
+    
+    {\displaystyle A=\neg B}
+  
+ reads 
+  
+    
+      
+        
+          
+            (
+          
+        
+        (
+        B
+        ∨
+        ¬
+        B
+        )
+        ∧
+        ¬
+        ¬
+        B
+        
+          
+            )
+          
+        
+        →
+        B
+      
+    
+    {\displaystyle {\big (}(B\lor \neg B)\land \neg \neg B{\big )}\to B}
+  
+ and is equivalent to the double negation elimination for propositions for which excluded middle holds
+
+  
+    
+      
+        (
+        B
+        ∨
+        ¬
+        B
+        )
+        →
+        (
+        ¬
+        ¬
+        B
+        →
+        B
+        )
+      
+    
+    {\displaystyle (B\lor \neg B)\to (\neg \neg B\to B)}
+  
+.
+As the material conditional grants double-negation elimination for proven propositions, this is again equivalent to double negation elimination for rejected propositions.
+
+
+=== Intuitionist example of use in a theory ===
+The following Heyting arithmetic theorem allows for proofs of existence claims that cannot be proven, by means of this general result, without the explosion principle. The result is essentially a family of simple double negation elimination claims, 
+  
+    
+      
+        ∃
+      
+    
+    {\displaystyle \exists }
+  
+-sentences binding a computable predicate. 
+Let 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ be any quantifier-free predicate, and thus decidable for all numbers 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, so that excluded middle holds,
+
+  
+    
+      
+        P
+        (
+        n
+        )
+        ∨
+        ¬
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)\lor \neg P(n)}
+  
+.
+Then by induction in 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+, 
+
+  
+    
+      
+        ∀
+        m
+        .
+         
+        ¬
+        
+          
+            (
+          
+        
+        ∀
+        (
+        n
+        <
+        m
+        )
+        .
+        ¬
+        P
+        (
+        n
+        )
+        
+          
+            )
+          
+        
+        →
+        ∃
+        (
+        b
+        <
+        m
+        )
+        .
+        P
+        (
+        b
+        )
+      
+    
+    {\displaystyle \forall m.\ \neg {\big (}\forall (n<m).\neg P(n){\big )}\to \exists (b<m).P(b)}
+  
+
+In words: For the numbers 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ within a finite range up to 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+, if it can be ruled out that no case is validating, i.e. if it can be ruled out that for every number, say 
+  
+    
+      
+        n
+        =
+        a
+      
+    
+    {\displaystyle n=a}
+  
+, the corresponding proposition 
+  
+    
+      
+        P
+        (
+        a
+        )
+      
+    
+    {\displaystyle P(a)}
+  
+ will always be disprovable, then this implies that there is some 
+  
+    
+      
+        n
+        =
+        b
+      
+    
+    {\displaystyle n=b}
+  
+ among those 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+'s for which 
+  
+    
+      
+        P
+        (
+        b
+        )
+      
+    
+    {\displaystyle P(b)}
+  
+ is provable.
+As with examples discussed previously, a proof of this requires explosion on the antecedent side to obtain propositions without negations. 
+If the proposition is formulated as starting at 
+  
+    
+      
+        m
+        =
+        0
+      
+    
+    {\displaystyle m=0}
+  
+, then this initial case already gives a form of explosion from a vacuous clause 
+
+  
+    
+      
+        ⊥
+        →
+        ∃
+        (
+        b
+        <
+        0
+        )
+        .
+        P
+        (
+        b
+        )
+      
+    
+    {\displaystyle \bot \to \exists (b<0).P(b)}
+  
+.
+The next case 
+  
+    
+      
+        m
+        =
+        1
+      
+    
+    {\displaystyle m=1}
+  
+ states the double negation elimination for a decidable predicate,
+
+  
+    
+      
+        ¬
+        ¬
+        P
+        (
+        0
+        )
+        →
+        P
+        (
+        0
+        )
+      
+    
+    {\displaystyle \neg \neg P(0)\to P(0)}
+  
+.
+The 
+  
+    
+      
+        m
+        =
+        2
+      
+    
+    {\displaystyle m=2}
+  
+ case reads
+
+  
+    
+      
+        ¬
+        
+          
+            (
+          
+        
+        ¬
+        P
+        (
+        0
+        )
+        ∧
+        ¬
+        P
+        (
+        1
+        )
+        
+          
+            )
+          
+        
+        →
+        
+          
+            (
+          
+        
+        P
+        (
+        0
+        )
+        ∨
+        P
+        (
+        1
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle \neg {\big (}\neg P(0)\land \neg P(1){\big )}\to {\big (}P(0)\lor P(1){\big )}}
+  
+,
+which, as already noted, is equivalent to
+
+  
+    
+      
+        ¬
+        ¬
+        
+          
+            (
+          
+        
+        P
+        (
+        0
+        )
+        ∨
+        P
+        (
+        1
+        )
+        
+          
+            )
+          
+        
+        →
+        
+          
+            (
+          
+        
+        P
+        (
+        0
+        )
+        ∨
+        P
+        (
+        1
+        )
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle \neg \neg {\big (}P(0)\lor P(1){\big )}\to {\big (}P(0)\lor P(1){\big )}}
+  
+.
+Both 
+  
+    
+      
+        m
+        =
+        0
+      
+    
+    {\displaystyle m=0}
+  
+ and 
+  
+    
+      
+        m
+        =
+        1
+      
+    
+    {\displaystyle m=1}
+  
+ are again cases of double negation elimination for a decidable predicate.
+Of course, a statement 
+  
+    
+      
+        ∃
+        (
+        b
+        <
+        m
+        )
+        .
+        P
+        (
+        b
+        )
+      
+    
+    {\displaystyle \exists (b<m).P(b)}
+  
+ for fixed 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ and 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ may be provable by other means, using principles of minimal logic.
+As an aside, the unbounded schema for general decidable predicates is not even intuitionistically provable, see Markov's principle.
+
+
+== Relation to type theory ==
+
+
+=== Use of negation ===
+Absurdity 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ is used not only in natural deduction, but also in type theoretical formulations under the Curry–Howard correspondence. 
+In type systems, 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ is often also introduced as the empty type. 
+In many contexts, 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ need not be a separate constant in the logic but its role can be replaced with any rejected proposition. For example, it can be defined as 
+  
+    
+      
+        a
+        =
+        b
+      
+    
+    {\displaystyle a=b}
+  
+ where 
+  
+    
+      
+        a
+        ,
+        b
+      
+    
+    {\displaystyle a,b}
+  
+ ought to be distinct. The claim of non-existence of a proof for that proposition is then a claim of consistency. 
+An example characterization for 
+  
+    
+      
+        ⊥
+      
+    
+    {\displaystyle \bot }
+  
+ is 
+  
+    
+      
+        0
+        =
+        1
+      
+    
+    {\displaystyle 0=1}
+  
+ in a theory involving natural numbers. This may also be adopted for in plain constructive logic.
+With this, proving 
+  
+    
+      
+        
+          3
+          
+            4
+          
+        
+        =
+        8
+      
+    
+    {\displaystyle 3^{4}=8}
+  
+ to be false, i.e. 
+  
+    
+      
+        ¬
+        (
+        
+          3
+          
+            4
+          
+        
+        =
+        8
+        )
+      
+    
+    {\displaystyle \neg (3^{4}=8)}
+  
+, just means to prove 
+  
+    
+      
+        (
+        
+          3
+          
+            4
+          
+        
+        =
+        8
+        )
+        →
+        (
+        0
+        =
+        1
+        )
+      
+    
+    {\displaystyle (3^{4}=8)\to (0=1)}
+  
+. We may introduce the notation 
+  
+    
+      
+        
+          3
+          
+            4
+          
+        
+        ≠
+        8
+      
+    
+    {\displaystyle 3^{4}\neq 8}
+  
+ to capture the claim as well.
+And indeed, using arithmetic, 
+  
+    
+      
+        
+          
+            
+              
+                
+                  3
+                  
+                    4
+                  
+                
+                −
+                8
+              
+              73
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\tfrac {3^{4}-8}{73}}=1}
+  
+ holds, but 
+  
+    
+      
+        (
+        
+          3
+          
+            4
+          
+        
+        =
+        8
+        )
+      
+    
+    {\displaystyle (3^{4}=8)}
+  
+ also implies 
+  
+    
+      
+        
+          
+            
+              
+                
+                  3
+                  
+                    4
+                  
+                
+                −
+                8
+              
+              73
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\tfrac {3^{4}-8}{73}}=0}
+  
+. So this would imply 
+  
+    
+      
+        1
+        =
+        0
+      
+    
+    {\displaystyle 1=0}
+  
+ and hence we obtain 
+  
+    
+      
+        ¬
+        (
+        
+          3
+          
+            4
+          
+        
+        =
+        8
+        )
+      
+    
+    {\displaystyle \neg (3^{4}=8)}
+  
+. QED.
+
+
+=== Simple types ===
+Functional programming calculi already foremostly depend on the implication connective, see e.g. the calculus of constructions for a predicate logic framework.
+In this section we mention the system obtained by restricting minimal logic to implication only, and describe it formally.
+It can be defined by the following sequent rules:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                Γ
+                ∪
+                {
+                A
+                }
+                ⊢
+                A
+              
+            
+          
+        
+        
+          
+             axiom
+          
+        
+      
+    
+    {\displaystyle {\dfrac {}{\Gamma \cup \{A\}\vdash A}}{\mbox{ axiom}}}
+  
+            
+  
+    
+      
+        
+          
+            
+              
+                Γ
+                ∪
+                {
+                A
+                }
+                ⊢
+                B
+              
+              
+                Γ
+                ⊢
+                A
+                →
+                B
+              
+            
+          
+        
+        
+          
+             intro
+          
+        
+      
+    
+    {\displaystyle {\dfrac {\Gamma \cup \{A\}\vdash B}{\Gamma \vdash A\to B}}{\mbox{ intro}}}
+  
+            
+  
+    
+      
+        
+          
+            
+              
+                Γ
+                ⊢
+                A
+                →
+                B
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                Δ
+                ⊢
+                A
+              
+              
+                Γ
+                ∪
+                Δ
+                ⊢
+                B
+              
+            
+          
+        
+        
+          
+             elim.
+          
+        
+      
+    
+    {\displaystyle {\dfrac {\Gamma \vdash A\to B~~~~~~~~~~\Delta \vdash A}{\Gamma \cup \Delta \vdash B}}{\mbox{ elim.}}}
+  
+
+Each formula of this restricted minimal logic corresponds to a type in the simply typed lambda calculus, see Curry–Howard correspondence. In that context, the phrase minimal logic is sometimes used to mean this restriction of minimal logic. This implicational fragment of minimal logic is the same as the positive, implicational fragment of intuitionistic logic since minimal Logic is already simply the positive fragment of intuitionistic logic.
+
+
+== Semantics ==
+There are semantics of minimal logic that mirror the frame-semantics of intuitionistic logic, see the discussion of semantics in paraconsistent logic. Here the valuation functions assigning truth and falsity to propositions can be subject to fewer constraints.
+
+
+== See also ==
+Intuitionistic logic
+Paraconsistent logic
+Implicational propositional calculus
+List of logic systems
+
+
+== Notes ==
+
+
+== References ==
+Colacito, Almudena (2016). Minimal and Subminimal Logic of Negation (PDF). MSc Thesis (Afstudeerscriptie). Institute for Logic, Language and Computation.
+Huet, Gérard (May 1986). Formal Structures for Computation and Deduction. International Summer School on Logic of Programming and Calculi of Discrete Design. Archived from the original on 2014-07-14.
+Johansson, Ingebrigt (1937). "Der Minimalkalkül, ein reduzierter intuitionistischer Formalismus". Compositio Mathematica (in German). 4: 119–136.
+Sørensen, Morten Heine B.; Urzyczyn, Paweł [in Polish] (May 1998). "Lectures on the Curry-Howard Isomorphism" (PDF).
+Troelstra, Anne Sjerp; Schwichtenberg, Helmut (2003) [1996]. Basic Proof Theory (2 ed.). Cambridge University Press. pp. XII, 417. ISBN 9780521779111.
+Weber, Matthias; Simons, Martin; Lafontaine, Christine (1993). The Generic Development Language Deva: Presentation and Case Studies. Lecture Notes in Computer Science (LNCS). Vol. 738. Springer. p. 246. ISBN 3-540-57335-6.

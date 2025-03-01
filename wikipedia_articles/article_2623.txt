@@ -1,0 +1,349 @@
+Earnings growth is the annual compound annual growth rate (CAGR) of earnings from investments.
+
+
+== Overview ==
+
+When the dividend payout ratio is the same, the dividend growth rate is equal to the earnings growth rate.
+Earnings growth rate is a key value that is needed when the Discounted cash flow model, or the Gordon's model is used for stock valuation.
+The present value is given by:
+
+  
+    
+      
+        P
+        =
+        D
+        ⋅
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            (
+            
+              
+                
+                  1
+                  +
+                  
+                    g
+                    
+                      i
+                    
+                  
+                
+                
+                  1
+                  +
+                  k
+                
+              
+            
+            )
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle P=D\cdot \sum _{i=1}^{\infty }\left({\frac {1+g_{i}}{1+k}}\right)^{i}}
+  
+ .
+where P = the present value, k = discount rate, D = current dividend and 
+  
+    
+      
+        
+          g
+          
+            i
+          
+        
+      
+    
+    {\displaystyle g_{i}}
+  
+ is the revenue growth rate for period i.
+If the growth rate is constant for 
+  
+    
+      
+        i
+        =
+        n
+        +
+        1
+      
+    
+    {\displaystyle i=n+1}
+  
+ to 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+, then,
+
+  
+    
+      
+        P
+        =
+        D
+        ⋅
+        
+          
+            
+              1
+              +
+              
+                g
+                
+                  1
+                
+              
+            
+            
+              1
+              +
+              k
+            
+          
+        
+        +
+        D
+        ⋅
+        (
+        
+          
+            
+              1
+              +
+              
+                g
+                
+                  2
+                
+              
+            
+            
+              1
+              +
+              k
+            
+          
+        
+        
+          )
+          
+            2
+          
+        
+        +
+        .
+        .
+        .
+        +
+        D
+        ⋅
+        (
+        
+          
+            
+              1
+              +
+              
+                g
+                
+                  n
+                
+              
+            
+            
+              1
+              +
+              k
+            
+          
+        
+        
+          )
+          
+            n
+          
+        
+        +
+        D
+        ⋅
+        
+          ∑
+          
+            i
+            =
+            n
+            +
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            (
+            
+              
+                
+                  1
+                  +
+                  
+                    g
+                    
+                      ∞
+                    
+                  
+                
+                
+                  1
+                  +
+                  k
+                
+              
+            
+            )
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle P=D\cdot {\frac {1+g_{1}}{1+k}}+D\cdot ({\frac {1+g_{2}}{1+k}})^{2}+...+D\cdot ({\frac {1+g_{n}}{1+k}})^{n}+D\cdot \sum _{i=n+1}^{\infty }\left({\frac {1+g_{\infty }}{1+k}}\right)^{i}}
+  
+
+The last term corresponds to the terminal case.
+When the growth rate is always the same for perpetuity, Gordon's model results:
+
+  
+    
+      
+        P
+        =
+        D
+        ×
+        
+          
+            
+              1
+              +
+              g
+            
+            
+              k
+              −
+              g
+            
+          
+        
+      
+    
+    {\displaystyle P=D\times {\frac {1+g}{k-g}}}
+  
+.
+As Gordon's model suggests, the valuation is very sensitive to the value of g used.
+Part of the earnings is paid out as dividends and part of it is retained to fund growth, as given by the payout ratio and the plowback ratio. Thus the growth rate is given by
+
+  
+    
+      
+        g
+        =
+        
+          P
+          l
+          o
+          w
+          b
+          a
+          c
+          k
+           
+          r
+          a
+          t
+          i
+          o
+        
+        ×
+        
+          r
+          e
+          t
+          u
+          r
+          n
+           
+          o
+          n
+           
+          e
+          q
+          u
+          i
+          t
+          y
+        
+      
+    
+    {\displaystyle g={Plowback\ ratio}\times {return\ on\ equity}}
+  
+.
+For the S&P 500 Index, the return on equity has ranged between 10 and 15% during the 20th century, the plowback ratio has ranged from 10 to 67% (see payout ratio).
+
+
+== Other related measures ==
+It is sometimes recommended that revenue growth should be checked to ensure that earnings growth is not coming from special situations like sale of assets.
+When the earnings acceleration (rate of change of earnings growth) is positive, it ensures that earnings growth is likely to continue.
+
+
+== Historical growth rates ==
+According to economist Robert J. Shiller, real earnings per share grew at a 3.5% annualized rate over 150 years. Since 1980, the most bullish period in U.S. stock market history, real earnings growth according to Shiller, has been 2.6%.
+The table below gives recent values of earnings growth for S&P 500.
+
+The Federal Reserve responded to decline in earnings growth by cutting the target Federal funds rate (from 6.00 to 1.75% in 2001) and raising them when the growth rates are high (from 3.25 to 5.50 in 1994, 2.50 to 4.25 in 2005).
+
+
+== P/E ratio and growth rate ==
+
+Growth stocks generally command a higher P/E ratio because their future earnings are expected to be greater. In Stocks for the Long Run, Jeremy Siegel examines the P/E ratios of growth and technology stocks. He examined Nifty Fifty stocks for the duration December 1972 to Nov  2001. He found that
+
+This suggests that the significantly high P/E ratio for the Nifty Fifty as a group in 1972 was actually justified by the returns during the next three decades. However, he found that some individual stocks within the Nifty Fifty were overvalued while others were undervalued.
+
+
+== Sustainability of high growth rates ==
+High growth rates cannot be sustained indefinitely. Ben McClure suggests that period for which such rates can be sustained can be estimated using the following:
+
+
+== Relationship with GDP growth ==
+It has been suggested that the earnings growth depends on the nominal GDP, since the earnings form a part of the GDP. It has been argued that the earnings growth must grow slower than GDP by approximately 2%.
+See Sustainable growth rate#From a financial perspective.
+
+
+== See also ==
+Discounted cash flow model
+
+
+== References ==

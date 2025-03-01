@@ -1,0 +1,740 @@
+In mathematics, a circle bundle is a fiber bundle where the fiber is the circle 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S^{1}}
+  
+.
+Oriented circle bundles are also known as principal U(1)-bundles, or equivalently, as principal SO(2)-bundles. In physics, circle bundles are the natural geometric setting for electromagnetism. A circle bundle is a special case of a sphere bundle.
+
+
+== As 3-manifolds ==
+Circle bundles over surfaces are an important example of 3-manifolds.  A more general class of 3-manifolds is Seifert fiber spaces, which may be viewed as a kind of "singular" circle bundle, or as a circle bundle over a two-dimensional orbifold.
+
+
+== Relationship to electrodynamics ==
+The Maxwell equations correspond to an electromagnetic field represented by a 2-form F, with 
+  
+    
+      
+        
+          π
+          
+            
+            ∗
+          
+        
+        F
+      
+    
+    {\displaystyle \pi ^{\!*}F}
+  
+ being cohomologous to zero, i.e. exact. In particular, there always exists a 1-form A, the electromagnetic four-potential, (equivalently, the affine connection) such that
+
+  
+    
+      
+        
+          π
+          
+            ∗
+          
+        
+        F
+        =
+        d
+        A
+        .
+      
+    
+    {\displaystyle \pi ^{*}F=dA.}
+  
+
+Given a circle bundle P over M and its projection
+
+  
+    
+      
+        π
+        :
+        P
+        →
+        M
+      
+    
+    {\displaystyle \pi :P\to M}
+  
+
+one has the homomorphism
+
+  
+    
+      
+        
+          π
+          
+            ∗
+          
+        
+        :
+        
+          H
+          
+            2
+          
+        
+        (
+        M
+        ,
+        
+          Z
+        
+        )
+        →
+        
+          H
+          
+            2
+          
+        
+        (
+        P
+        ,
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle \pi ^{*}:H^{2}(M,\mathbb {Z} )\to H^{2}(P,\mathbb {Z} )}
+  
+
+where 
+  
+    
+      
+        
+          π
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \pi ^{*}}
+  
+ is the pullback. Each homomorphism corresponds to a Dirac monopole; the integer cohomology groups correspond to the quantization of the electric charge.  The Aharonov–Bohm effect can be understood as the holonomy of the connection on the associated line bundle describing the electron wave-function. In essence, the Aharonov–Bohm effect is not a quantum-mechanical effect (contrary to popular belief), as no quantization is involved or required in the construction of the fiber bundles or connections.
+
+
+== Examples ==
+The Hopf fibration is an example of a non-trivial circle bundle.
+The unit tangent bundle of a surface is another example of a circle bundle.
+The unit tangent bundle of a non-orientable surface is a circle bundle that is not a principal 
+  
+    
+      
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle U(1)}
+  
+ bundle.  Only orientable surfaces have principal unit tangent bundles.
+Another method for constructing circle bundles is using a complex line bundle 
+  
+    
+      
+        L
+        →
+        X
+      
+    
+    {\displaystyle L\to X}
+  
+ and taking the associated sphere (circle in this case) bundle. Since this bundle has an orientation induced from 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ we have that it is a principal 
+  
+    
+      
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle U(1)}
+  
+-bundle. Moreover, the characteristic classes from Chern-Weil theory of the 
+  
+    
+      
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle U(1)}
+  
+-bundle agree with the characteristic classes of 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+.
+For example, consider the analytification 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ a complex plane curve 
+  
+    
+      
+        
+          Proj
+        
+        
+          (
+          
+            
+              
+                
+                  C
+                
+                [
+                x
+                ,
+                y
+                ,
+                z
+                ]
+              
+              
+                
+                  x
+                  
+                    n
+                  
+                
+                +
+                
+                  y
+                  
+                    n
+                  
+                
+                +
+                
+                  z
+                  
+                    n
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\text{Proj}}\left({\frac {\mathbb {C} [x,y,z]}{x^{n}+y^{n}+z^{n}}}\right)}
+  
+. Since 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        (
+        X
+        )
+        =
+        
+          Z
+        
+        =
+        
+          H
+          
+            2
+          
+        
+        (
+        
+          
+            C
+            P
+          
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle H^{2}(X)=\mathbb {Z} =H^{2}(\mathbb {CP} ^{2})}
+  
+ and the characteristic classes pull back non-trivially, we have that the line bundle associated to the sheaf 
+  
+    
+      
+        
+          
+            
+              O
+            
+          
+          
+            X
+          
+        
+        (
+        a
+        )
+        =
+        
+          
+            
+              O
+            
+          
+          
+            
+              
+                P
+              
+              
+                2
+              
+            
+          
+        
+        (
+        a
+        )
+        ⊗
+        
+          
+            
+              O
+            
+          
+          
+            X
+          
+        
+      
+    
+    {\displaystyle {\mathcal {O}}_{X}(a)={\mathcal {O}}_{\mathbb {P} ^{2}}(a)\otimes {\mathcal {O}}_{X}}
+  
+ has Chern class 
+  
+    
+      
+        
+          c
+          
+            1
+          
+        
+        =
+        a
+        ∈
+        
+          H
+          
+            2
+          
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle c_{1}=a\in H^{2}(X)}
+  
+.
+
+
+== Classification ==
+The isomorphism classes of principal 
+  
+    
+      
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle U(1)}
+  
+-bundles over a manifold M are in one-to-one correspondence with the homotopy classes of maps 
+  
+    
+      
+        M
+        →
+        B
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle M\to BU(1)}
+  
+, where 
+  
+    
+      
+        B
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle BU(1)}
+  
+ is called the classifying space for U(1). Note that 
+  
+    
+      
+        B
+        U
+        (
+        1
+        )
+        =
+        
+          C
+        
+        
+          P
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle BU(1)=\mathbb {C} P^{\infty }}
+  
+ is the infinite-dimensional complex projective space, and that it is an example of the Eilenberg–Maclane space 
+  
+    
+      
+        K
+        (
+        
+          Z
+        
+        ,
+        2
+        )
+        .
+      
+    
+    {\displaystyle K(\mathbb {Z} ,2).}
+  
+ Such bundles are classified by an element of the second integral cohomology group 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        (
+        M
+        ,
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle H^{2}(M,\mathbb {Z} )}
+  
+ of M, since 
+
+  
+    
+      
+        [
+        M
+        ,
+        B
+        U
+        (
+        1
+        )
+        ]
+        ≡
+        [
+        M
+        ,
+        
+          C
+        
+        
+          P
+          
+            ∞
+          
+        
+        ]
+        ≡
+        
+          H
+          
+            2
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle [M,BU(1)]\equiv [M,\mathbb {C} P^{\infty }]\equiv H^{2}(M)}
+  
+.
+This isomorphism is realized by the Euler class; equivalently, it is the first Chern class of a smooth complex line bundle (essentially because a circle is homotopically equivalent to 
+  
+    
+      
+        
+          
+            C
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} ^{*}}
+  
+, the complex plane with the origin removed; and so a complex line bundle with the zero section removed is homotopically equivalent to a circle bundle.)
+A circle bundle is a principal 
+  
+    
+      
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle U(1)}
+  
+ bundle if and only if the associated map 
+  
+    
+      
+        M
+        →
+        B
+        
+          
+            Z
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle M\to B\mathbb {Z} _{2}}
+  
+ is null-homotopic, which is true if and only if the bundle is fibrewise orientable. Thus, for the more general case, where the circle bundle over M might not be orientable, the isomorphism classes are in one-to-one correspondence with the homotopy classes of maps 
+  
+    
+      
+        M
+        →
+        B
+        
+          O
+          
+            2
+          
+        
+      
+    
+    {\displaystyle M\to BO_{2}}
+  
+. This follows from the extension of groups, 
+  
+    
+      
+        S
+        
+          O
+          
+            2
+          
+        
+        →
+        
+          O
+          
+            2
+          
+        
+        →
+        
+          
+            Z
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle SO_{2}\to O_{2}\to \mathbb {Z} _{2}}
+  
+, where 
+  
+    
+      
+        S
+        
+          O
+          
+            2
+          
+        
+        ≡
+        U
+        (
+        1
+        )
+      
+    
+    {\displaystyle SO_{2}\equiv U(1)}
+  
+.
+
+
+=== Deligne complexes ===
+
+The above classification only applies to circle bundles in general; the corresponding classification for smooth circle bundles, or, say, the circle bundles with an affine connection requires a more complex cohomology theory. Results include that the smooth circle bundles are classified by the second Deligne cohomology 
+  
+    
+      
+        
+          H
+          
+            D
+          
+          
+            2
+          
+        
+        (
+        M
+        ,
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle H_{D}^{2}(M,\mathbb {Z} )}
+  
+; circle bundles with an affine connection are classified by 
+  
+    
+      
+        
+          H
+          
+            D
+          
+          
+            2
+          
+        
+        (
+        M
+        ,
+        
+          Z
+        
+        (
+        2
+        )
+        )
+      
+    
+    {\displaystyle H_{D}^{2}(M,\mathbb {Z} (2))}
+  
+ while 
+  
+    
+      
+        
+          H
+          
+            D
+          
+          
+            3
+          
+        
+        (
+        M
+        ,
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle H_{D}^{3}(M,\mathbb {Z} )}
+  
+ classifies line bundle gerbes.
+
+
+== See also ==
+Wang sequence
+
+
+== References ==
+
+Chern, Shiing-shen (1977), "Circle bundles", Lecture Notes in Mathematics, vol. 597/1977, Springer Berlin/Heidelberg, pp. 114–131, doi:10.1007/BFb0085351, ISBN 978-3-540-08345-0.

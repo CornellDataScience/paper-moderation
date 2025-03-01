@@ -1,0 +1,258 @@
+The Penalized Present Value (PPV) is a method of capital budgeting under risk, where the value of the investment is "penalized" as a function of its risk.
+It was developed by Fernando Gómez-Bezares in the 1980s.
+
+
+== Method ==
+PPV is best understood by comparison to two other approaches where a penalty is applied for risk:
+
+The risk-adjusted rate of return applies a risk-penalty by increasing the discount rate when calculating the Net Present Value (NPV);
+The certainty equivalent approach does this by adjusting the cash-flow numerators of the NPV formula.
+Contrasting to both, PPV calculates the average NPV (μ) at the risk-free rate, penalizing it afterwards by subtracting "t" standard deviations of the NPV (tσ):
+
+  
+    
+      
+        P
+        P
+        V
+        =
+        μ
+        −
+        t
+        σ
+      
+    
+    {\displaystyle PPV=\mu -t\sigma }
+  
+
+The PPV has many versions, a particularly pragmatic one can be reached by assuming that: 
+(i) we know, b, the maximum or most optimistic NPV; (ii) the minimum or most pessimistic value, a; (iii) these NPVs are approximately normally distributed, and can be calculated using the risk-free rate. 
+Then, we can approximate: 
+  
+    
+      
+        μ
+         
+        =
+        
+          
+            
+              a
+              +
+              b
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \mu \ ={\frac {a+b}{2}}}
+  
+  and  
+  
+    
+      
+        σ
+         
+        =
+        
+          
+            
+              b
+              −
+              a
+            
+            6
+          
+        
+      
+    
+    {\displaystyle \sigma \ ={\frac {b-a}{6}}}
+  
+. 
+Assuming a reasonable t of 1.5: 
+  
+    
+      
+        P
+        P
+        V
+        =
+        
+          
+            
+              a
+              +
+              b
+            
+            2
+          
+        
+        −
+        1.5
+        
+          
+            
+              b
+              −
+              a
+            
+            6
+          
+        
+        =
+        0.25
+        b
+        +
+        0.75
+        a
+      
+    
+    {\displaystyle PPV={\frac {a+b}{2}}-1.5{\frac {b-a}{6}}=0.25b+0.75a}
+  
+
+Therefore, given that we are risk-averse, we weight more the worst case than the most favorable one; other weights could be applied.
+According to this criterion, the decision maker will look for investments with positive PPVs, and if a choice is needed, he or she will choose the investment with the highest PPV.
+
+
+== Derivation ==
+A reasonable derivation of the PPV is the PIRR (Penalized Internal Rate of Return), which can be useful, among other things, to measure the performance of an investment fund or an investment portfolio. Assuming that μIRR and σIRR are, respectively, the mean and the standard deviation of the Internal Rate of Return (IRR), and following the reasoning above we will have:
+
+  
+    
+      
+        P
+        I
+        R
+        R
+        =
+        
+          μ
+          
+            I
+            R
+            R
+          
+        
+        −
+        t
+        
+          σ
+          
+            I
+            R
+            R
+          
+        
+      
+    
+    {\displaystyle PIRR=\mu _{IRR}-t\sigma _{IRR}}
+  
+
+Now calling r0 the risk-free rate, μ* the average return of the market portfolio and σ* its standard deviation, we can do:
+
+  
+    
+      
+        t
+        =
+        
+          
+            
+              
+                μ
+                
+                  ∗
+                
+              
+              −
+              
+                r
+                
+                  0
+                
+              
+            
+            
+              σ
+              
+                ∗
+              
+            
+          
+        
+      
+    
+    {\displaystyle t={\frac {\mu ^{*}-r_{0}}{\sigma ^{*}}}}
+  
+
+which is the value of the Sharpe ratio of the market portfolio (premium per unit of risk σ asked by the market). So we can do:
+
+  
+    
+      
+        P
+        I
+        R
+        R
+        =
+        
+          μ
+          
+            I
+            R
+            R
+          
+        
+        −
+        
+          (
+          
+            
+              
+                
+                  μ
+                  
+                    ∗
+                  
+                
+                −
+                
+                  r
+                  
+                    0
+                  
+                
+              
+              
+                σ
+                
+                  ∗
+                
+              
+            
+          
+          )
+        
+        
+          σ
+          
+            I
+            R
+            R
+          
+        
+      
+    
+    {\displaystyle PIRR=\mu _{IRR}-\left({\frac {\mu ^{*}-r_{0}}{\sigma ^{*}}}\right)\sigma _{IRR}}
+  
+
+This would be the linear version of the well-known Sharpe ratio.
+
+
+== References ==
+Gómez-Bezares, F. (1993): "Penalized present value: net present value penalization with normal and beta distributions", in Aggarwal, ed., Capital budgeting under uncertainty, Prentice-Hall, Englewood Cliffs, New Jersey, pages 91–102.
+Gómez-Bezares, F. and F.R. Gómez-Bezares (2015): “Don’t use quotients to calculate performance”, Cogent Economics and Finance, 3: 1065584, vol. 3, no. 1, pages 1–14. Open access: http://www.tandfonline.com/doi/full/10.1080/23322039.2015.1065584
+Gómez-Bezares, F. and F.R. Gómez-Bezares (2022): “An analysis of risk treatment in the field of finance”, in C.-F. Lee & A.C. Lee, eds., Encyclopedia of finance, Springer, Suiza, 3rd ed., pages 1397-1409.
+Gómez-Bezares, F., J.A. Madariaga and J. Santibáñez (2023): “Linear risk penalization in finance: Penalized Present Value (PPV) and Penalized Internal Rate of Return (PIRR)”, Publicaciones de la Universidad de Deusto, Bilbao. Open access: http://www.deusto-publicaciones.es/index.php/main/libro/1311
+More information

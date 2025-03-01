@@ -1,0 +1,809 @@
+In mathematics, infinitary combinatorics, or combinatorial set theory, is an extension of ideas in combinatorics to infinite sets.
+Some of the things studied include continuous graphs and trees, extensions of Ramsey's theorem, and Martin's axiom.
+Recent developments concern combinatorics of the continuum and combinatorics on successors of singular cardinals.
+
+
+== Ramsey theory for infinite sets ==
+Write 
+  
+    
+      
+        κ
+        ,
+        λ
+      
+    
+    {\displaystyle \kappa ,\lambda }
+  
+ for ordinals,  
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ for a cardinal number (finite or infinite) and 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ for a natural number. Erdős & Rado (1956) introduced the notation
+
+as a shorthand way of saying that every partition of the set 
+  
+    
+      
+        [
+        κ
+        
+          ]
+          
+            n
+          
+        
+      
+    
+    {\displaystyle [\kappa ]^{n}}
+  
+ of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-element subsets of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ into 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ pieces has a homogeneous set of order type 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+. A homogeneous set is in this case a subset of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ such that every 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-element subset is in the same element of the partition. When 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ is 2 it is often omitted. Such statements are known as partition relations.
+Assuming the axiom of choice, there are no ordinals 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ with 
+  
+    
+      
+        κ
+        →
+        (
+        ω
+        
+          )
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle \kappa \rightarrow (\omega )^{\omega }}
+  
+, so 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is usually taken to be finite. An extension where 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is almost allowed to be infinite is the notation
+
+which is a shorthand way of saying that every partition of the set of finite subsets of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ into 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ pieces has a subset of order type 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ such that for any finite 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, all subsets of size 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ are in the same element of the partition. When 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ is 2 it is often omitted.
+Another variation is the notation
+
+which is a shorthand way of saying that every coloring of the set 
+  
+    
+      
+        [
+        κ
+        
+          ]
+          
+            n
+          
+        
+      
+    
+    {\displaystyle [\kappa ]^{n}}
+  
+ of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-element subsets of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ with 2 colors has a subset  of order type 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ such that  all elements of 
+  
+    
+      
+        [
+        λ
+        
+          ]
+          
+            n
+          
+        
+      
+    
+    {\displaystyle [\lambda ]^{n}}
+  
+ have the first color, or a subset  of order type 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ such that  all elements of 
+  
+    
+      
+        [
+        μ
+        
+          ]
+          
+            n
+          
+        
+      
+    
+    {\displaystyle [\mu ]^{n}}
+  
+ have the second color.
+Some properties of this include: (in what follows 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ is a cardinal)
+
+In choiceless universes, partition properties with infinite exponents may hold, and some of them are obtained as consequences of the axiom of determinacy (AD). For example, Donald A. Martin proved that AD implies  
+
+
+== Strong colorings ==
+Wacław Sierpiński showed that the Ramsey theorem does not extend to sets of size 
+  
+    
+      
+        
+          ℵ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \aleph _{1}}
+  
+by showing that 
+  
+    
+      
+        
+          2
+          
+            
+              ℵ
+              
+                0
+              
+            
+          
+        
+        ↛
+        (
+        
+          ℵ
+          
+            1
+          
+        
+        
+          )
+          
+            2
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2^{\aleph _{0}}\nrightarrow (\aleph _{1})_{2}^{2}}
+  
+. That is, Sierpiński constructed a coloring of pairs of real numbers into two colors such that for every uncountable subset of real numbers 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, 
+  
+    
+      
+        [
+        X
+        
+          ]
+          
+            2
+          
+        
+      
+    
+    {\displaystyle [X]^{2}}
+  
+ takes both colors. Taking any set of real numbers of size 
+  
+    
+      
+        
+          ℵ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \aleph _{1}}
+  
+ and applying the coloring of Sierpiński to it, we get that 
+  
+    
+      
+        
+          ℵ
+          
+            1
+          
+        
+        ↛
+        (
+        
+          ℵ
+          
+            1
+          
+        
+        
+          )
+          
+            2
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \aleph _{1}\not \rightarrow (\aleph _{1})_{2}^{2}}
+  
+. Colorings such as this are known as strong colorings and studied in set theory. Erdős, Hajnal & Rado (1965) introduced a similar notation as above for this.
+Write 
+  
+    
+      
+        κ
+        ,
+        λ
+      
+    
+    {\displaystyle \kappa ,\lambda }
+  
+ for ordinals,  
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ for a cardinal number (finite or infinite) and 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ for a natural number. Then
+
+is a shorthand way of saying that there exists a coloring of the set 
+  
+    
+      
+        [
+        κ
+        
+          ]
+          
+            n
+          
+        
+      
+    
+    {\displaystyle [\kappa ]^{n}}
+  
+ of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-element subsets of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ into 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ pieces such that every set of order type 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is a rainbow set. A rainbow set is in this case a subset 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ such that 
+  
+    
+      
+        [
+        A
+        
+          ]
+          
+            n
+          
+        
+      
+    
+    {\displaystyle [A]^{n}}
+  
+ takes all 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ colors. When 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ is 2 it is often omitted. Such statements are known as negative square bracket partition relations.
+Another variation is the notation
+
+  
+    
+      
+        κ
+        ↛
+        [
+        λ
+        ;
+        μ
+        
+          ]
+          
+            m
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \kappa \nrightarrow [\lambda ;\mu ]_{m}^{2}}
+  
+
+which is a shorthand way of saying that there exists a coloring of the set 
+  
+    
+      
+        [
+        κ
+        
+          ]
+          
+            2
+          
+        
+      
+    
+    {\displaystyle [\kappa ]^{2}}
+  
+ of 2-element subsets of 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ with 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ colors such that for every subset 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ of order type 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ and every subset 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ of order type 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+, the set 
+  
+    
+      
+        A
+        ×
+        B
+      
+    
+    {\displaystyle A\times B}
+  
+ takes all 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ colors.
+Some properties of this include: (in what follows 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ is a cardinal)
+
+
+== Large cardinals ==
+Several large cardinal properties can be defined using this notation. In particular:
+
+Weakly compact cardinals 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ are those that satisfy 
+  
+    
+      
+        κ
+        →
+        (
+        κ
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \kappa \rightarrow (\kappa )^{2}}
+  
+
+α-Erdős cardinals 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ are the smallest that satisfy 
+  
+    
+      
+        κ
+        →
+        (
+        α
+        
+          )
+          
+            <
+            
+            ω
+          
+        
+      
+    
+    {\displaystyle \kappa \rightarrow (\alpha )^{<\,\omega }}
+  
+
+Ramsey cardinals 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ are those that satisfy 
+  
+    
+      
+        κ
+        →
+        (
+        κ
+        
+          )
+          
+            <
+            
+            ω
+          
+        
+      
+    
+    {\displaystyle \kappa \rightarrow (\kappa )^{<\,\omega }}
+  
+
+
+== Notes ==
+
+
+== References ==
+Dushnik, Ben; Miller, E. W. (1941), "Partially ordered sets", American Journal of Mathematics, 63 (3): 600–610, doi:10.2307/2371374, hdl:10338.dmlcz/100377, ISSN 0002-9327, JSTOR 2371374, MR 0004862
+Erdős, Paul; Hajnal, András; Rado, Richard (1965), "Partition relations for cardinal numbers", Acta Math. Acad. Sci. Hung., 16 (1–2): 93–196, doi:10.1007/BF01886396, MR 0202613
+Erdős, Paul; Hajnal, András (1971), "Unsolved problems in set theory", Axiomatic Set Theory ( Univ. California, Los Angeles, Calif., 1967), Proc. Sympos. Pure Math, vol. XIII Part I, Providence, R.I.: Amer. Math. Soc., pp. 17–48, MR 0280381
+Erdős, Paul; Hajnal, András; Máté, Attila; Rado, Richard (1984), Combinatorial set theory: partition relations for cardinals, Studies in Logic and the Foundations of Mathematics, vol. 106, Amsterdam: North-Holland Publishing Co., ISBN 0-444-86157-2, MR 0795592
+Erdős, P.; Rado, R. (1956), "A partition calculus in set theory" (PDF), Bull. Amer. Math. Soc., 62 (5): 427–489, doi:10.1090/S0002-9904-1956-10036-0, MR 0081864
+Kanamori, Akihiro (2000), The Higher Infinite (second ed.), Springer, ISBN 3-540-00384-3
+Kunen, Kenneth (1980), Set Theory: An Introduction to Independence Proofs, Amsterdam: North-Holland, ISBN 978-0-444-85401-8

@@ -1,0 +1,1339 @@
+In mathematics, a Banach manifold is a manifold modeled on Banach spaces. Thus it is a topological space in which each point has a neighbourhood homeomorphic to an open set in a Banach space (a more involved and formal definition is given below). Banach manifolds are one possibility of extending manifolds to infinite dimensions.
+A further generalisation is to Fréchet manifolds, replacing Banach spaces by Fréchet spaces. On the other hand, a Hilbert manifold is a special case of a Banach manifold in which the manifold is locally modeled on Hilbert spaces.
+
+
+== Definition ==
+Let 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ be a set. An atlas of class 
+  
+    
+      
+        
+          C
+          
+            r
+          
+        
+        ,
+      
+    
+    {\displaystyle C^{r},}
+  
+ 
+  
+    
+      
+        r
+        ≥
+        0
+        ,
+      
+    
+    {\displaystyle r\geq 0,}
+  
+ on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is a collection of pairs (called charts) 
+  
+    
+      
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ,
+            
+              φ
+              
+                i
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \left(U_{i},\varphi _{i}\right),}
+  
+ 
+  
+    
+      
+        i
+        ∈
+        I
+        ,
+      
+    
+    {\displaystyle i\in I,}
+  
+ such that
+
+each 
+  
+    
+      
+        
+          U
+          
+            i
+          
+        
+      
+    
+    {\displaystyle U_{i}}
+  
+ is a subset of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ and the union of the 
+  
+    
+      
+        
+          U
+          
+            i
+          
+        
+      
+    
+    {\displaystyle U_{i}}
+  
+ is the whole of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+;
+each 
+  
+    
+      
+        
+          φ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \varphi _{i}}
+  
+ is a bijection from 
+  
+    
+      
+        
+          U
+          
+            i
+          
+        
+      
+    
+    {\displaystyle U_{i}}
+  
+ onto an open subset 
+  
+    
+      
+        
+          φ
+          
+            i
+          
+        
+        
+          (
+          
+            U
+            
+              i
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi _{i}\left(U_{i}\right)}
+  
+ of some Banach space 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+        ,
+      
+    
+    {\displaystyle E_{i},}
+  
+ and for any indices 
+  
+    
+      
+        i
+        
+           and 
+        
+        j
+        ,
+      
+    
+    {\displaystyle i{\text{ and }}j,}
+  
+ 
+  
+    
+      
+        
+          φ
+          
+            i
+          
+        
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ∩
+            
+              U
+              
+                j
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi _{i}\left(U_{i}\cap U_{j}\right)}
+  
+ is open in 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+        ;
+      
+    
+    {\displaystyle E_{i};}
+  
+
+the crossover map 
+  
+    
+      
+        
+          φ
+          
+            j
+          
+        
+        ∘
+        
+          φ
+          
+            i
+          
+          
+            −
+            1
+          
+        
+        :
+        
+          φ
+          
+            i
+          
+        
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ∩
+            
+              U
+              
+                j
+              
+            
+          
+          )
+        
+        →
+        
+          φ
+          
+            j
+          
+        
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ∩
+            
+              U
+              
+                j
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi _{j}\circ \varphi _{i}^{-1}:\varphi _{i}\left(U_{i}\cap U_{j}\right)\to \varphi _{j}\left(U_{i}\cap U_{j}\right)}
+  
+ is an 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+-times continuously differentiable function for every 
+  
+    
+      
+        i
+        ,
+        j
+        ∈
+        I
+        ;
+      
+    
+    {\displaystyle i,j\in I;}
+  
+ that is, the 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+th Fréchet derivative 
+  
+    
+      
+        
+          
+            d
+          
+          
+            r
+          
+        
+        
+          (
+          
+            
+              φ
+              
+                j
+              
+            
+            ∘
+            
+              φ
+              
+                i
+              
+              
+                −
+                1
+              
+            
+          
+          )
+        
+        :
+        
+          φ
+          
+            i
+          
+        
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ∩
+            
+              U
+              
+                j
+              
+            
+          
+          )
+        
+        →
+        
+          L
+          i
+          n
+        
+        
+          (
+          
+            
+              E
+              
+                i
+              
+              
+                r
+              
+            
+            ;
+            
+              E
+              
+                j
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \mathrm {d} ^{r}\left(\varphi _{j}\circ \varphi _{i}^{-1}\right):\varphi _{i}\left(U_{i}\cap U_{j}\right)\to \mathrm {Lin} \left(E_{i}^{r};E_{j}\right)}
+  
+ exists and is a continuous function with respect to the 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+-norm topology on subsets of 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+ and the operator norm topology on 
+  
+    
+      
+        Lin
+        ⁡
+        
+          (
+          
+            
+              E
+              
+                i
+              
+              
+                r
+              
+            
+            ;
+            
+              E
+              
+                j
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \operatorname {Lin} \left(E_{i}^{r};E_{j}\right).}
+  
+
+One can then show that there is a unique topology on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ such that each 
+  
+    
+      
+        
+          U
+          
+            i
+          
+        
+      
+    
+    {\displaystyle U_{i}}
+  
+ is open and each 
+  
+    
+      
+        
+          φ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \varphi _{i}}
+  
+ is a homeomorphism. Very often, this topological space is assumed to be a Hausdorff space, but this is not necessary from the point of view of the formal definition.
+If all the Banach spaces 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+ are equal to the same space 
+  
+    
+      
+        E
+        ,
+      
+    
+    {\displaystyle E,}
+  
+ the atlas is called an 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+-atlas. However, it is not a priori necessary that the Banach spaces 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+ be the same space, or even isomorphic as topological vector spaces. However, if two charts 
+  
+    
+      
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ,
+            
+              φ
+              
+                i
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left(U_{i},\varphi _{i}\right)}
+  
+ and 
+  
+    
+      
+        
+          (
+          
+            
+              U
+              
+                j
+              
+            
+            ,
+            
+              φ
+              
+                j
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left(U_{j},\varphi _{j}\right)}
+  
+ are such that 
+  
+    
+      
+        
+          U
+          
+            i
+          
+        
+      
+    
+    {\displaystyle U_{i}}
+  
+ and 
+  
+    
+      
+        
+          U
+          
+            j
+          
+        
+      
+    
+    {\displaystyle U_{j}}
+  
+ have a non-empty intersection, a quick examination of the derivative of the crossover map
+
+  
+    
+      
+        
+          φ
+          
+            j
+          
+        
+        ∘
+        
+          φ
+          
+            i
+          
+          
+            −
+            1
+          
+        
+        :
+        
+          φ
+          
+            i
+          
+        
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ∩
+            
+              U
+              
+                j
+              
+            
+          
+          )
+        
+        →
+        
+          φ
+          
+            j
+          
+        
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ∩
+            
+              U
+              
+                j
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi _{j}\circ \varphi _{i}^{-1}:\varphi _{i}\left(U_{i}\cap U_{j}\right)\to \varphi _{j}\left(U_{i}\cap U_{j}\right)}
+  
+
+shows that 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+ and 
+  
+    
+      
+        
+          E
+          
+            j
+          
+        
+      
+    
+    {\displaystyle E_{j}}
+  
+ must indeed be isomorphic as topological vector spaces. Furthermore, the set of points 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ for which there is a chart 
+  
+    
+      
+        
+          (
+          
+            
+              U
+              
+                i
+              
+            
+            ,
+            
+              φ
+              
+                i
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left(U_{i},\varphi _{i}\right)}
+  
+ with 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ in 
+  
+    
+      
+        
+          U
+          
+            i
+          
+        
+      
+    
+    {\displaystyle U_{i}}
+  
+ and 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+ isomorphic to a given Banach space 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ is both open and closed. Hence, one can without loss of generality assume that, on each connected component of 
+  
+    
+      
+        X
+        ,
+      
+    
+    {\displaystyle X,}
+  
+ the atlas is an 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+-atlas for some fixed 
+  
+    
+      
+        E
+        .
+      
+    
+    {\displaystyle E.}
+  
+
+A new chart 
+  
+    
+      
+        (
+        U
+        ,
+        φ
+        )
+      
+    
+    {\displaystyle (U,\varphi )}
+  
+ is called compatible with a given atlas 
+  
+    
+      
+        
+          {
+          
+            
+              (
+              
+                
+                  U
+                  
+                    i
+                  
+                
+                ,
+                
+                  φ
+                  
+                    i
+                  
+                
+              
+              )
+            
+            :
+            i
+            ∈
+            I
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{\left(U_{i},\varphi _{i}\right):i\in I\right\}}
+  
+ if the crossover map
+
+  
+    
+      
+        
+          φ
+          
+            i
+          
+        
+        ∘
+        
+          φ
+          
+            −
+            1
+          
+        
+        :
+        φ
+        
+          (
+          
+            U
+            ∩
+            
+              U
+              
+                i
+              
+            
+          
+          )
+        
+        →
+        
+          φ
+          
+            i
+          
+        
+        
+          (
+          
+            U
+            ∩
+            
+              U
+              
+                i
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi _{i}\circ \varphi ^{-1}:\varphi \left(U\cap U_{i}\right)\to \varphi _{i}\left(U\cap U_{i}\right)}
+  
+
+is an 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+-times continuously differentiable function for every 
+  
+    
+      
+        i
+        ∈
+        I
+        .
+      
+    
+    {\displaystyle i\in I.}
+  
+ Two atlases are called compatible if every chart in one is compatible with the other atlas. Compatibility defines an equivalence relation on the class of all possible atlases on 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+
+A 
+  
+    
+      
+        
+          C
+          
+            r
+          
+        
+      
+    
+    {\displaystyle C^{r}}
+  
+-manifold structure on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is then defined to be a choice of equivalence class of atlases on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ of class 
+  
+    
+      
+        
+          C
+          
+            r
+          
+        
+        .
+      
+    
+    {\displaystyle C^{r}.}
+  
+ If all the Banach spaces 
+  
+    
+      
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E_{i}}
+  
+ are isomorphic as topological vector spaces (which is guaranteed to be the case if 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is connected), then an equivalent atlas can be found for which they are all equal to some Banach space 
+  
+    
+      
+        E
+        .
+      
+    
+    {\displaystyle E.}
+  
+ 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is then called an 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+-manifold, or one says that 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is modeled on 
+  
+    
+      
+        E
+        .
+      
+    
+    {\displaystyle E.}
+  
+
+
+== Examples ==
+Every Banach space can be canonically identified as a Banach manifold. If 
+  
+    
+      
+        (
+        X
+        ,
+        ‖
+        
+        ⋅
+        
+        ‖
+        )
+      
+    
+    {\displaystyle (X,\|\,\cdot \,\|)}
+  
+ is a Banach space, then 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is a Banach manifold with an atlas containing a single, globally-defined chart (the identity map). 
+Similarly, if 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ is an open subset of some Banach space then 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ is a Banach manifold.  (See the classification theorem below.)
+
+
+== Classification up to homeomorphism ==
+It is by no means true that a finite-dimensional manifold of dimension 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is globally homeomorphic to 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ^{n},}
+  
+ or even an open subset of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbb {R} ^{n}.}
+  
+ However, in an infinite-dimensional setting, it is possible to classify "well-behaved" Banach manifolds up to homeomorphism quite nicely. A 1969 theorem of David Henderson states that every infinite-dimensional, separable, metric Banach manifold 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ can be embedded as an open subset of the infinite-dimensional, separable Hilbert space, 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ (up to linear isomorphism, there is only one such space, usually identified with 
+  
+    
+      
+        
+          ℓ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \ell ^{2}}
+  
+). In fact, Henderson's result is stronger: the same conclusion holds for any metric manifold modeled on a separable infinite-dimensional Fréchet space.
+The embedding homeomorphism can be used as a global chart for 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ Thus, in the infinite-dimensional, separable, metric case, the "only" Banach manifolds are the open subsets of Hilbert space.
+
+
+== See also ==
+Banach bundle – vector bundle whose fibres form Banach spacesPages displaying wikidata descriptions as a fallback
+Differentiation in Fréchet spaces
+Finsler manifold – Generalization of Riemannian manifolds
+Fréchet manifold – topological space modeled on a Fréchet space in much the same way as a manifold is modeled on a Euclidean spacePages displaying wikidata descriptions as a fallback
+Global analysis – which uses Banach manifolds and other kinds of infinite-dimensional manifolds
+Hilbert manifold – Manifold modelled on Hilbert spaces
+
+
+== References ==
+
+Abraham, Ralph; Marsden, J. E.; Ratiu, Tudor (1988). Manifolds, Tensor Analysis, and Applications. New York: Springer. ISBN 0-387-96790-7.
+Anderson, R. D. (1969). "Strongly negligible sets in Fréchet manifolds" (PDF). Bulletin of the American Mathematical Society. 75 (1). American Mathematical Society (AMS): 64–67. doi:10.1090/s0002-9904-1969-12146-4. ISSN 0273-0979. S2CID 34049979.
+Anderson, R. D.; Schori, R. (1969). "Factors of infinite-dimensional manifolds" (PDF). Transactions of the American Mathematical Society. 142. American Mathematical Society (AMS): 315–330. doi:10.1090/s0002-9947-1969-0246327-5. ISSN 0002-9947.
+Henderson, David W. (1969). "Infinite-dimensional manifolds are open subsets of Hilbert space". Bull. Amer. Math. Soc. 75 (4): 759–762. doi:10.1090/S0002-9904-1969-12276-7. MR 0247634.
+Lang, Serge (1972). Differential manifolds. Reading, Mass.–London–Don Mills, Ont.: Addison-Wesley Publishing Co., Inc.
+Zeidler, Eberhard (1997). Nonlinear functional analysis and its Applications. Vol.4. Springer-Verlag New York Inc.

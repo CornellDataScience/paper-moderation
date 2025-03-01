@@ -1,0 +1,822 @@
+In coding theory, the Gilbert–Varshamov bound (due to Edgar Gilbert and independently Rom Varshamov) is a bound on the size of a (not necessarily linear) code. It is occasionally known as the Gilbert–Shannon–Varshamov bound (or the GSV bound), but the name "Gilbert–Varshamov bound" is by far the most popular. Varshamov proved this bound by using the probabilistic method for linear codes. For more about that proof, see Gilbert–Varshamov bound for linear codes.
+
+
+== Statement of the bound ==
+Recall that a code has a minimum distance 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ if any two elements in the code are at least a distance 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ apart. Let
+
+  
+    
+      
+        
+          A
+          
+            q
+          
+        
+        (
+        n
+        ,
+        d
+        )
+      
+    
+    {\displaystyle A_{q}(n,d)}
+  
+
+denote the maximum possible size of a q-ary code 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ with length n and minimum Hamming distance d (a q-ary code is a code over the field 
+  
+    
+      
+        
+          
+            F
+          
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \mathbb {F} _{q}}
+  
+ of q elements).
+Then:
+
+  
+    
+      
+        
+          A
+          
+            q
+          
+        
+        (
+        n
+        ,
+        d
+        )
+        ⩾
+        
+          
+            
+              q
+              
+                n
+              
+            
+            
+              
+                ∑
+                
+                  j
+                  =
+                  0
+                
+                
+                  d
+                  −
+                  1
+                
+              
+              
+                
+                  
+                    (
+                  
+                  
+                    n
+                    j
+                  
+                  
+                    )
+                  
+                
+              
+              (
+              q
+              −
+              1
+              
+                )
+                
+                  j
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{q}(n,d)\geqslant {\frac {q^{n}}{\sum _{j=0}^{d-1}{\binom {n}{j}}(q-1)^{j}}}.}
+  
+
+
+== Proof ==
+Let 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ be a code of length 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ and minimum Hamming distance 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ having maximal size:
+
+  
+    
+      
+        
+          |
+        
+        C
+        
+          |
+        
+        =
+        
+          A
+          
+            q
+          
+        
+        (
+        n
+        ,
+        d
+        )
+        .
+      
+    
+    {\displaystyle |C|=A_{q}(n,d).}
+  
+
+Then for all 
+  
+    
+      
+        x
+        ∈
+        
+          
+            F
+          
+          
+            q
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x\in \mathbb {F} _{q}^{n}}
+  
+ , there exists at least one codeword 
+  
+    
+      
+        
+          c
+          
+            x
+          
+        
+        ∈
+        C
+      
+    
+    {\displaystyle c_{x}\in C}
+  
+ such that the Hamming distance 
+  
+    
+      
+        d
+        (
+        x
+        ,
+        
+          c
+          
+            x
+          
+        
+        )
+      
+    
+    {\displaystyle d(x,c_{x})}
+  
+ between 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        
+          c
+          
+            x
+          
+        
+      
+    
+    {\displaystyle c_{x}}
+  
+ satisfies
+
+  
+    
+      
+        d
+        (
+        x
+        ,
+        
+          c
+          
+            x
+          
+        
+        )
+        ⩽
+        d
+        −
+        1
+      
+    
+    {\displaystyle d(x,c_{x})\leqslant d-1}
+  
+
+since otherwise we could add x to the code whilst maintaining the code's minimum Hamming distance 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ – a contradiction on the maximality of 
+  
+    
+      
+        
+          |
+        
+        C
+        
+          |
+        
+      
+    
+    {\displaystyle |C|}
+  
+.
+Hence the whole of 
+  
+    
+      
+        
+          
+            F
+          
+          
+            q
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {F} _{q}^{n}}
+  
+ is contained in the union of all balls of radius 
+  
+    
+      
+        d
+        −
+        1
+      
+    
+    {\displaystyle d-1}
+  
+ having their centre at some 
+  
+    
+      
+        c
+        ∈
+        C
+      
+    
+    {\displaystyle c\in C}
+  
+ :
+
+  
+    
+      
+        
+          
+            F
+          
+          
+            q
+          
+          
+            n
+          
+        
+        =
+        
+          ⋃
+          
+            c
+            ∈
+            C
+          
+        
+        B
+        (
+        c
+        ,
+        d
+        −
+        1
+        )
+        .
+      
+    
+    {\displaystyle \mathbb {F} _{q}^{n}=\bigcup _{c\in C}B(c,d-1).}
+  
+
+Now each ball has size
+
+  
+    
+      
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            d
+            −
+            1
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              j
+            
+            
+              )
+            
+          
+        
+        (
+        q
+        −
+        1
+        
+          )
+          
+            j
+          
+        
+      
+    
+    {\displaystyle \sum _{j=0}^{d-1}{\binom {n}{j}}(q-1)^{j}}
+  
+
+since we may allow (or choose) up to 
+  
+    
+      
+        d
+        −
+        1
+      
+    
+    {\displaystyle d-1}
+  
+ of the 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ components of a codeword to deviate (from the value of the corresponding component of the ball's centre) to one of 
+  
+    
+      
+        (
+        q
+        −
+        1
+        )
+      
+    
+    {\displaystyle (q-1)}
+  
+ possible other values (recall: the code is q-ary: it takes values in 
+  
+    
+      
+        
+          
+            F
+          
+          
+            q
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {F} _{q}^{n}}
+  
+). Hence we deduce
+
+  
+    
+      
+        
+          q
+          
+            n
+          
+        
+        =
+        
+          |
+          
+            
+              F
+            
+            
+              q
+            
+            
+              n
+            
+          
+          |
+        
+        =
+        
+          |
+          
+            
+              ⋃
+              
+                c
+                ∈
+                C
+              
+            
+            B
+            (
+            c
+            ,
+            d
+            −
+            1
+            )
+          
+          |
+        
+        ⩽
+        
+          ∑
+          
+            c
+            ∈
+            C
+          
+        
+        
+          |
+        
+        B
+        (
+        c
+        ,
+        d
+        −
+        1
+        )
+        
+          |
+        
+        =
+        
+          |
+        
+        C
+        
+          |
+        
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            d
+            −
+            1
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              j
+            
+            
+              )
+            
+          
+        
+        (
+        q
+        −
+        1
+        
+          )
+          
+            j
+          
+        
+      
+    
+    {\displaystyle q^{n}=\left|\mathbb {F} _{q}^{n}\right|=\left|\bigcup _{c\in C}B(c,d-1)\right|\leqslant \sum _{c\in C}|B(c,d-1)|=|C|\sum _{j=0}^{d-1}{\binom {n}{j}}(q-1)^{j}}
+  
+
+That is:
+
+  
+    
+      
+        
+          A
+          
+            q
+          
+        
+        (
+        n
+        ,
+        d
+        )
+        =
+        
+          |
+        
+        C
+        
+          |
+        
+        ⩾
+        
+          
+            
+              q
+              
+                n
+              
+            
+            
+              
+                ∑
+                
+                  j
+                  =
+                  0
+                
+                
+                  d
+                  −
+                  1
+                
+              
+              
+                
+                  
+                    (
+                  
+                  
+                    n
+                    j
+                  
+                  
+                    )
+                  
+                
+              
+              (
+              q
+              −
+              1
+              
+                )
+                
+                  j
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle A_{q}(n,d)=|C|\geqslant {\frac {q^{n}}{\sum _{j=0}^{d-1}{\binom {n}{j}}(q-1)^{j}}}.}
+  
+
+
+== An improvement in the prime power case ==
+For q a prime power, one can improve the bound to 
+  
+    
+      
+        
+          A
+          
+            q
+          
+        
+        (
+        n
+        ,
+        d
+        )
+        ≥
+        
+          q
+          
+            k
+          
+        
+      
+    
+    {\displaystyle A_{q}(n,d)\geq q^{k}}
+  
+ where k is the greatest integer for which
+
+  
+    
+      
+        
+          q
+          
+            k
+          
+        
+        <
+        
+          
+            
+              q
+              
+                n
+              
+            
+            
+              
+                ∑
+                
+                  j
+                  =
+                  0
+                
+                
+                  d
+                  −
+                  2
+                
+              
+              
+                
+                  
+                    (
+                  
+                  
+                    
+                      n
+                      −
+                      1
+                    
+                    j
+                  
+                  
+                    )
+                  
+                
+              
+              (
+              q
+              −
+              1
+              
+                )
+                
+                  j
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle q^{k}<{\frac {q^{n}}{\sum _{j=0}^{d-2}{\binom {n-1}{j}}(q-1)^{j}}}.}
+  
+
+
+== See also ==
+Elias-Bassalygo bound
+Gilbert–Varshamov bound for linear codes
+Griesmer bound
+Hamming bound
+Johnson bound
+Plotkin bound
+Singleton bound
+
+
+== References ==

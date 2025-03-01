@@ -1,0 +1,142 @@
+Beginning with its 1964 System/360 announcement, IBM's mainframes initially accessed count key data (CKD) subsystems via a channel connected to separate Storage Control Units (SCUs) with attached Direct Access Storage Devices (DASD), typically a hard disk drive.  This practice continued in IBM's larger mainframes thru IBM Z; however low end systems generally used lower cost integrated attachments where the function of the SCU was combined with that of the channel, typically called an Integrated File Adapter.
+The System/360 selector channel was followed by the System/370 block multiplexor channel which could operate as a selector channel to allow attachment of legacy subsystems.
+The SCU evolved into a Director and Controller, the latter typically labelled an "A-unit" (or A-Box") with the controller and at least one DASD physically in an A-unit.  An Integrated Storage Control (ISC) is a Director within the cabinet of an IBM System.  A Director could attach from one to four A-units.  One or more conventional DASD, now labeled a "B-unit" could attach to an A-unit
+The following sections list in order of announcement IBM mainframe CKD storage controls, categorized as conventional storage controls, director type storage controls and integrated controls attaching an A-unit.
+
+
+== Chronological summary ==
+
+
+== Conventional storage controls ==
+A storage control, frequently called a Storage Control Unit, attaches to a System/360 (or System/370) channel one or more logically separate devices.  The control unit and the device each comporting to System/360 and/or System/370 Input/Output architecture. Since the control unit and attached devices are logically distinct either or both can be busy when an I/O is initiated and either can present ending status when it becomes free.
+Conventional DASD storage controls listed in this section have different interfaces to the attached DASD, unique to a DASD or DASD family.  In 1972, IBM introduced a standard DASD to control interface used with Director type storage controls.
+
+
+=== 2820 ===
+The IBM 2820 Storage Control Unit (SCU) connects to one or two selector channels and can attach from one to four 2301 Drum Storage units.  This unit is similar in concept to an IBM 2841 but with parallel recording channels.  However, it does not attach any of the devices that the IBM 2841 attaches.
+
+
+=== 2841 ===
+The IBM 2841 Storage Control Unit was a Direct Access Storage Device (DASD) control unit introduced with System/360, first shipped in 1965 and offered until at least 1975.
+The 2841 was a microprogrammed control unit "intended for use in controlling access to a disk or strip file or a slow-speed drum storage unit." It connected to one or two standard System/360 channels, or could also be attached to an IBM 1130 or IBM 1800 Data Acquisition and Control System to add support for 2311 disks.
+The IBM 2841 Storage Control Unit was initially capable of attaching combinations of up to eight of following DASD:
+
+IBM 2302 Disk Storage, Models 3 and 4, four Model 3 or two Model 4 units maximum.
+IBM 2311 Disk Storage, Model 1, eight units maximum.
+IBM 2321 Data Cell, eight units maximum.
+IBM 7320 Drum Storage, eight units maximum; it was withdrawn in 1965.
+IBM 2303 Drum Storage, two units maximum.
+The standard offering was a 2841 SCU with a number of 2311 DASD up to eight.  With less than eight units of a single type other units can be intermixed, for example a 2841 with two 2303 Drum Storages supported up to six additional 2321 Data Cells.
+Features of the 2841 included two-channel switch, file scan, and record overflow special features.
+DASD devices introduced after the 2841 used different storage controls as discussed in the following sections.
+
+
+=== 2314 family ===
+
+In IBM 2314 family of SCUs and DASDs, the SCUs connect to one or two selector channels and can attach from one to nine drives, at most eight online plus one optional service drive which is accessible from the SCU for maintenance purposes.  The model numbers reflect packaging differences but otherwise all versions of the 2314 family are functionally the same.  The models are:
+
+2314 Direct Access Storage Facility - Model l:  A bundle of an SCU and nine drives, two four drive modules and one one drive module.
+2314 Storage Control Unit Model A1 - This SCU was announced initially as a part of an A Series DASF and shortly thereafter unbundled. The unbundled DASD models were the one drive 2312 Disk Storage, the four drive 2313 Disk Storage and the two drive 2318 Disk Storage.  One to nine drives could be attached as in the Model A1 DASF.
+2314 Storage Control Unit Model B1 - Part of the B series, this SCU attaches a three drive 2319-B1 Disk Storage and optionally one or two additional, three drive 2319-B2 Disk Storages.
+2844 Auxiliary Storage Control - This SCU is a second 2314 SCU attached to one set of 2314 DASD allowing simultaneous access to any two of the attached DASD.
+
+
+=== 2835 ===
+The 2835 storage Control connects to one or two block multiplexer channels and attaches one or two 2305 Fixed Head storage Modules.
+
+
+=== 3830 Model 1 ===
+The 3830 Model 1 Storage Control Unit connects to one, two or four channels and can attach one to eight 3330 DASD spindles.
+
+
+=== 3380 Model CJ2 ===
+The 3380 Model CJ2 provides both the storage functions of one 3380 DASD (two devices) and the storage control functions of a 3990 model I (two paths to A-units) in a single unit. It connects to two, four or eight block multiplexor channels.  Up to three 3380 'B' units (models BJ4 or BK4 only) can be attached to the 3380 Model CJ2; providing the head-of-storage-facility function for up to 14 devices.
+
+
+== Director type storage controls ==
+The IBM Storage Control Unit evolved into a Director and Controller, the latter typically packaged and labelled as an "A-unit" (or "A-Box") with the controller and at least one DASD physically in an A-unit. A DASD unit without controller then became known as a "B-unit" (or "B-Box").
+The terms "A-unit" (or "A-Box") and "B-unit" (or "B-Box") were not initially used, instead units containing the controller and DASDs were given product type numbers, specifically 3333 for the A-unit containing 3330 DASD and 3333-11 for the A-unit containing two double capacity 3330-11 DASDs.  The use of the suffixes "A" and "B" in the model number to designate an A-unit and B-units began with the 3340 DASD with the 3340 Model A2 and 3340 B2, respectively.  This practice of using the digits of a suffix to a DASD Model number to represent the type of unit and the number of DASD in the unit continued for all subsequent CKD DASD, for example, the 3380 Model A4 has one controller and four access mechanisms in one unit, the 3380 Model AA4 has two controllers and four access mechanisms in one unit while the 3380 Model B4 has four access mechanisms.
+The combination of an A-unit with one or more optional B-units is a "string."  "String switch" is an optional feature on most A-units that allows the controller in the A-unit to be switched between two directors, thereby providing additional paths into a string of DASD.
+The 3830 Model 2 storage control and associated Integrated Storage Controls announced in August 1972
+were the first instance of a storage control as a director for A-Units.
+
+
+=== 3830 Model 2 and 3 ===
+The 3830-2 connects to one, two or four block multiplexer channels and can attach any combination of up to four A-units, i.e., any combination of 3333s, 3340-A2s, or 3350-A2/A2Fs up to a maximum of 32 physical drives (up to 6 additional drives attached to each A-unit).
+The Integrated Storage Control for the System/370 Models 158 and 168 functions identically to the 3830-2.
+The 3830-3 only attaches up to four 3333s and 3350-A2/A2F/C2/C2Fs but has additional functions to support the 3850 Mass Storage System. The 3350 drives cannot be used as staging drives when in native mode.
+The Integrated Storage Controller with Staging Adapter functions identically to the 3830-3.
+
+
+=== 3880 family ===
+
+
+==== Conventional directors ====
+The IBM 3880 Storage Control Models 1, 2 and 3 have two directors per cabinet. Each director can attach to one, two, four or eight block multiplexor channels.  The Model 4 has one director and only attaches 3370 (FBA) and 3375 (CKD) strings.
+Each storage director is limited to specific devices.: 1-2–1-3  Through use of diskettes, each storage director can be initialized to attach exclusively one of the supported types of strings. The first box on a string must be an A-unit, and the remaining boxes must be compatible B-units, or for the last 3350 in a 3350 string, a 3350-C2. IBM allowed field upgrades among Models 1. 2 and 3.  Directors can attach up to four intermixed 3330 or 3350 A-units or four 3340 A-units or two 3380 A-units 
+
+
+==== Caching directors ====
+Each 3380 Storage Control, Model 11, Model 13, Model 21 and Model 23 has two directors; each director can attach to one, two or four block multiplexor channels.
+Large semiconductor buffers, called subsystem storage were added to the 3380 Storage Controls in the Models 13 and 23 for caching and the Models 11 and 21 for paging.
+Caching in semiconductor buffers was first introduced in DASD CKD subsystems by Memorex (1978) and StorageTek (1981).
+The 3880 Model 13 has two caching storage directors that access subsystem storage; a larger portion of subsystem storage is the cache which is used to store active data for quick access; a smaller portion of the storage is the directory which is used to locate the data stored in the cache.  The cache storage director attaches only one or two 3380 A-units each of which can in turn attach up to three 3380 B-units for a total of 16 devices.  Because each 3380 DASD has two actuators the 3880 Model 13 can have up to 32 device addresses.  The Model 23 increased the cache size and somewhat improved performance but otherwise performed the same functions.
+Paging is well established in computer with dedicated CKD paging devices going back to the drums included in the S/360 announcement.  The 1978 StorageTek 4305 was the first CKD device using semiconductor memory for paging.
+The 3880 Model 11 has two storage directors, director 1 can access subsystem storage for paging and director 2 is for nonpaging.  Director 1 attaches one string of up to eight 3350 DASDs.  Director 2 attaches any combination of from one to four 3330 A-units or 3350 A-units, each A-unit attaching up to three additional B-units for up to 32 DASDs.
+
+
+=== 3990 family ===
+All 3990's are dual directors and each director can attach to four or eight block multiplexor channels. Other characteristics of specific models include:
+
+Multiple A-unit paths: Prior to the 3390 all directors had a single path to associated A-units; each director in the 3390 Models 2, 3 and 6 has dual paths to A-units.
+Attached DASD A-units: The 3990 Model 1 can attach up to four 3380 A-units.  The 3390 Models 2, 3 and 6 can intermix up to four 3380 and 3390 A-units
+Cache: In the Models 3 and 6 one director has a cache and one director has nonvolatile storage
+The Model 1 can be field upgraded to a Model 2 or 3.  The Model 6 has improved reliability, availability and serviceability but is otherwise functionally the same as the Model 3.
+
+
+== System/360 Model 25 integrated attachment ==
+On January 4, 1968, IBM announced the System/360 Model 25 which included the "Disk Attachment Control" (DAC) attaching up to four 2311 DASD.  This integrated attachment simulates both a channel and a storage control unit between the CPU and attached 2311 units.  By merging the functions the DAC eliminates the need for a channel and a separate storage control.  There are no differences between a 2311 connected to a 2841 SCU and one connected to the DAC.
+
+
+== 2319A integrated attachment ==
+On September 23, 1970, IBM announced as part of its System/370 Model 145 a new "Integrated File Adapter" along with a new 2319-A1 DASD. On March 8, 1981, support of the 2319-A1 was announced with an Integrated File Adapter as part of the announcement of the System/370 Model 135.
+The 2319-A1 contained three 2314 class disk drives plus a piece of the storage control from the system unit.  Conventional 2314 type DASD, e.g., 2312, 2313 and/or 2318, could be attached to the 2319-A1.
+Since it could not connect to director type storage control the 2319-A1 was not an "A-unit" as that term came to be used by IBM.
+
+
+== Integrated controls attaching A-units ==
+
+
+=== Direct disk attachments ===
+
+
+==== S/370 125-0 and -2 ====
+Direct attachment of the 3333/3330 DASD subsystem or the 3340 Direct Access Storage Facility or the 3340/3344 Direct Access Storage (3125-2 only) is provided. Depending on model and features up to 16 spindles can be attached.  In a 3340 subsystem the 3340 model A2 and its attached 3340 drives can be shared with another S/370, except 3115-0 or 3125-0, via the String Switch
+capability (#9315).
+
+
+==== S/370 115-0 ====
+Direct attachment of the 3340 DASF Subsystem or the 3340/3344 DAS Subsystem (3115-2 only) is provided.  Depending on the Model and feature up to eight drives can be attached.  In a 3340 DASF Subsystem, via the string switch feature (#9315), the 3340 Model A2 can be shared with another S/370, except 3115-0 and 3125-0.
+
+
+=== S/370 138 Integrated File Adapter ===
+One or two 3330 or 3340 A-units can be attached to the Integrated File Adapter of the S/370 Model 138.  Up to three appropriate B-units may be attached to each A-unit.  If 3344 B-units are installed, they may only installed in the first of the two possible strings with up to three 3340 and/or 3344 B-units in any combination.
+
+
+=== 4321/4331 DASD Adapter for 3340/3344 ===
+One or two DASD adapters are available (depending upon model) for attachment of one 3340 A-unit and with up to three additional 3340  or 3344 B-units providing up to eight devices.  String Switch feature in the 3340 A-unit allows sharing of 3340/3344 DASD with another IBM processor  or director that supports the A-units and string switching.
+
+
+=== 4361 DASD Adapter for 3340/3344 ===
+Up to four 3340 A-units can be attached to an optional DASD Adapter; to each 3340 A-unit can be attached from one to three 3340 B-units or 3344 B-units for a total of 32 DASD in four strings of eight.  String Switch feature in the 3340 A-unit allows sharing of 3340/3344 DASD with another IBM processor  or director that supports the A-units and string switching.
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+IBM System/360 Input/Output Configurator, Third Ed. A22-6823-2
+IBM System/370 Input/Output Systems Configurator, GA22-7002-27

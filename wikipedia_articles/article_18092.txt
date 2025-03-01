@@ -1,0 +1,66 @@
+Structured Product Labeling (SPL) is a Health Level Seven International (HL7) standard which defines the content of human prescription drug labeling  in an XML format.  The "drug labeling" includes all published material accompanying a drug, such as the Prescribing Information which contains a great deal of detailed information about the drug.  As of Release 4 of the SPL standard, 22,000 FDA informational product inserts have been encoded according to the standard.
+SPL documents contain both the content of labeling (all text, tables and figures) for a product along with additional machine readable information (drug listing data elements). Drug listing data elements include information about the product (proprietary and nonproprietary names, ingredients, ingredient strengths, dosage forms, routes of administration, appearance, DEA schedule) and the packaging (package quantity and type).
+
+
+== Background ==
+Since October 31, 2005, labeling submissions to the FDA's Center for Drug Evaluation and Research (CDER) must be in SPL format. In addition, annual report submissions must contain content of labeling in SPL format.
+In January 2006, the FDA unveiled a major change to the format of the Prescribing Information (PI), commonly referred to as the Physician Labeling Rule (PLR) format. The new format requires three sections.  (1) The Highlights of Prescribing Information section contains selected information from the FPI that health care practitioners most commonly reference and consider most important. The Highlights of Prescribing Information includes a toll-free number and URL for reporting suspected adverse events and a Revision Date that identifies the month and year of the last change to the PI. (2) The Table of Contents lists the sections and subsections of the Full Prescribing Information (FPI). (3) The FPI contains the detailed prescribing information necessary for safe and effective use of the drug including indications, limitations of use, recommended dosage, contraindications, warnings and precautions, adverse reactions, clinically significant drug interactions, information about use in specific populations (pregnancy, lactation, females and males of reproductive potential, pediatric use, geriatric use), drug abuse and dependence, overdosage, and other information about the prescription drug. 
+Starting June 1, 2009, the FDA required all OTC companies and Veterinary Medicines (Vet Med) manufacturers to submit their product labeling in compliance with the SPL standards. Additionally, all companies that produce Pharmaceutical (Rx), Over-the-Counter (OTC), Biologics products, Veterinary medicines, and distributors must provide FDA with all registration listing and drug listings in the SPL electronic format.
+FDA-approved SPLs can be viewed and downloaded from "DailyMed" on the National Library of Medicine web site. DailyMed provides free access to consumers and health information providers to comprehensive, up-to-date labeling as found in Prescribing Information.
+In 2008 the FDA released the Guidance for Industry: Indexing Structured Product Labeling which started the FDA's product information indexing initiative with the goal of enhancing access to the electronic product information provided by the companies. Indexing refers to the creation by FDA of one or more SPL files with machine-readable annotations that can be linked to the product SPL provided by the company. These machine-readable tags in SPL format allow the information to be easily incorporated, based on assigned codes, into electronic health records, e-prescribing systems and clinical decision support systems for rapid searching, sorting and access of relevant product information needed to make critical health care decisions and enhance patient care. Current indexing files include: Pharmacologic Class Indexing, Billing Unit Indexing, Substance Indexing, Product Concept Indexing, Biosimilar Drug Substance Indexing, Warning Letter Indexing, and REMS Shared System Indexing.
+In 2009 the FDA and National Institutes of Health (NIH) entered into an interagency agreement to develop an SPL Image standard called the SPLIMAGE.  SPLIMAGE is for image files of oral solid dosage forms that are submitted to the Food and Drug Administration (FDA) with SPL documents. As part of an inter-agency collaboration with the FDA, the National Library of Medicine (NLM) studied the imaging of a broad range of oral solid dosage forms for pharmaceutical products. This study allowed the NLM to make the following technical recommendations for a SPLIMAGE file composition and format.  The SPLIMAGE standard can be found on DailyMed.  The SPLIMAGE database produced by the FDA and NIH interagency collaboration remains the most definitive collection of publicly available images produced for pharmaceutical products marketed in the United States of America.
+
+
+== SPL Working Group ==
+The SPL Standard was initially developed by a small group within the HL7 Regulated Clinical Research Information Management Technical Committee. HL7 is an independent and international provider of healthcare standards. PhRMA HL7 Task Group formed the SPL Working Group in January 2004 to further the work of the initial development team.
+
+
+=== Composition of the SPL Working Group ===
+The group has grown significantly since its inception in 2004. Participants come from:
+Industry sponsors of human and veterinary (pharmaceuticals, generic pharmaceuticals, biologics, devices, over-the-counter) products submitted to the FDA.
+FDA representatives
+Vendors
+Health Level Seven International
+The SPL Working Group has a Technical Team and a Process Communications Forum. Additionally, a variety of subteams address specific topical and subject issues. Current subteams include: Biologics, VetMeds, Devices, Generics, Establishment Registration Lifecycle, Labeling Content Lifecycle, and Over-the-Counter (OTC) Products. These teams meet regularly, and meeting information and minutes of past meetings are available on the SPL Working Group All Sub-Groups wiki page.
+
+
+=== Current Objectives of the SPL Working Group ===
+Raise industry awareness concerning SPL (on-going)
+Sponsor industry webcasts and meetings, as appropriate
+Provide forum for discussion of issues, best practices, and FDA documentation of SPL
+Review changes to HL7 SPL model
+Review changes to XSL Stylesheet
+Produce revisions to Implementation Guide in line with schema releases
+Determine future direction of SPL Standard
+
+
+== SPL specification outline ==
+
+
+== Format ==
+
+
+== Examples ==
+
+
+== Use of LOINC, UNII,  SNOMED-CT, UCUM, and other controlled terminologies ==
+
+
+== Misc ==
+
+
+== SPL Solutions ==
+Various approaches exist for creating and managing content and data in SPL format. Solutions fall under three basic categories.
+
+Installed Software
+Software-as-a-Service (SaaS)
+Outsourcing
+
+
+== References ==
+
+
+== External links ==
+FDA SPL Resources 
+Guidance for Industry: Providing Regulatory Submissions in Electronic Format – Drug Establishment Registration and Drug Listing (Final)
+SPL Working Group

@@ -1,0 +1,31 @@
+The QRA locator, also called QTH locator in some publications, is an obsolete geographic coordinate system used by amateur radio operators in Europe before the introduction of the Maidenhead Locator System. As a radio transmitter or receiver location system the QRA locator is considered defunct, but may be found in many older documents.
+
+
+== History ==
+The QRA locator system in the 4-character format was introduced at a meeting of the VHF Working Group in The Hague in October 1959. The QRA locator was further developed with the addition of the fifth character at the Region 1 Conference in Malmö (1963).
+The QRA locator was officially adopted by IARU Region 1 in 1966 and was renamed "QTH-locator" a year later.
+
+
+== Description ==
+QRA locator references consist of a string of two capital letters, two numerical digits and one lower case letter, e.g. FG32c.
+
+The two capital letters mark an area, or square, of two degrees longitude by one degree latitude, like the squares of Maidenhead Locator. The bottom left corner of square AA was at 40.0° N - 0.0° E. Therefore, square "AA" of the QRA locator corresponds to square "JN00" of Maidenhead locator. Maidenhead locator square "IO91", which covers part of Greater London, belongs to QRA locator square "ZL".
+The main squares are subdivided to 80 smaller squares, each one covering 12' by 7'30", and which are numbered from 01 to 80. The small squares are numbered from North to South and West to East. The northwest corner of the main square is indicated with "01" and the southeastern corner with 80.
+
+Each small square is further subdivided into nine squares, each one covering 4' by 2'30", indicated by the letters 'a' to 'j' (excluding 'i'), in a spiral pattern.
+
+With this system, a location at 52° 26' 12" N - 0° 13' 6"E would have a QRA locator reference AM52g.
+
+
+== Disadvantages ==
+The QRA locator system has two disadvantages, which led to its replacement by the current Maidenhead system:
+
+The main disadvantage of the QRA Locator system is that it covers only an area with a Longitude of 52° and a Latitude of 26° so within Europe this does not present a problem, but the coverage cannot not be extended to cover other regions without location ambiguity.
+Conversion from longitude and latitude to locator reference and vice versa is somewhat complicated.
+
+
+== References ==
+
+
+== See also ==
+World Geographic Reference System or GEOREF

@@ -1,0 +1,47 @@
+Rossmann is a supercomputer at Purdue University that went into production September 1, 2010. The high-performance computing cluster is operated by Information Technology at Purdue (ITaP), the university's central information technology organization. ITaP also operates clusters named Steele built in 2008, Coates built in 2009, Hansen built in the summer of 2011 and Carter built in the fall of 2012 in partnership with Intel. Rossmann ranked 126 on the November 2010 TOP500 list.
+
+
+== Hardware ==
+The Rossmann cluster consists of HP ProLiant DL165 G7 compute nodes with 64-bit, dual 12-core AMD Opteron 6172 processors (24 cores per node), either 48 gigbytes or 96 GB of memory and 250 GB of local disk for system software and scratch storage. Nodes with 192 GB of memory and either 1 terabyte or 2 TB of local scratch disk also are available. Rossmann consists of five logical sub-clusters, each with a different memory and storage configuration. All nodes have 10 Gigabit Ethernet interconnects.
+
+
+== Software ==
+Rossmann nodes run Red Hat Enterprise Linux 5.5 (RHEL5) and use portable batch system Professional 10 (PBSPro 10) for resource and job management. The Rossmann cluster also has compilers and scientific programming libraries installed.
+
+
+== Funding ==
+The Rossmann supercomputer and Purdue's other clusters are part of the Purdue Community Cluster Program, a partnership between ITaP and Purdue faculty. In Purdue's program, a "community" cluster is funded by hardware money from grants, faculty startup packages, institutional funds and other sources. ITaP's Rosen Center for Advanced Computing administers the community clusters and provides user support. Each faculty partner always has ready access to the capacity he or she purchases and potentially to more computing power when the nodes of other investors are idle. Unused, or opportunistic, cycles from Rossmann are made available to the National Science Foundation's Extreme Science and Engineering Discovery Environment (XSEDE) system and the Open Science Grid.
+
+
+== Users ==
+The Purdue departments and schools by which Rossmann and Purdue's clusters are used vary broadly, including Aeronautics and Astronautics, Agriculture, Agronomy, Biology, Chemical Engineering, Chemistry, Civil Engineering, Communications, Computer and Information Technology, Computer Science, Earth, Atmospheric and Planetary Sciences, Electrical Engineering, Electrical and Computer Engineering, Electrical and Computer Engineering Technology, Industrial Engineering, Materials Engineering, Mathematics, Mechanical Engineering, Medicinal Chemistry and Molecular Pharmacology, Physics, the Purdue Terrestrial Observatory and Statistics, among others.
+
+
+== DiaGrid ==
+Unused, or opportunistic, cycles from Rossmann are made available to XSEDE and the Open Science Grid using Condor software. Coates is part of Purdue's distributed computing Condor flock, which is the largest publicly disclosed distributed computing system in the world and the center of DiaGrid, a nearly 43,000-processor Condor-powered distributed computing network for research involving Purdue and partners at nine other campuses.
+
+
+== Naming ==
+The Rossmann cluster is named for Michael Rossmann, Purdue's Hanley Distinguished Professor of Biological Sciences, who is a pioneer in employing high-performance computing in research to reveal the structure of viruses and their component protein molecules. Rossmann gained worldwide attention in 1985 by determining the structure of human rhinovirus serotype14, HRV-14, one of about 100 known cold virus strains. The Rossmann cluster continues ITaP's practice of naming new supercomputers after notable figures in Purdue's computing history.
+
+
+== See also ==
+Steele (supercomputer), another Purdue supercomputer
+
+
+== References ==
+
+
+== Bibliography ==
+"Purdue announces new supercomputer". Northwest Indiana Business Quarterly. November 19, 2010.
+"Rossmann supercomputer makes list of world's most powerful systems". R&D Magazine. November 17, 2010.
+"Purdue computing resources rank near top nationally". Purdue University.
+"Purdue receives funds to upgrade datacenter". Purdue University.
+"Purdue's partnership for building research supercomputers wins international award". Purdue University. Archived from the original on 2012-08-25.
+"Michael Rossmann". Purdue University.
+"Information Technology at Purdue". Purdue University.
+"Rosen Center for Advanced Computing". Purdue University.
+
+
+== External links ==
+"Rossmann". Purdue University.

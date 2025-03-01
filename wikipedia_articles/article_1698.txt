@@ -1,0 +1,30 @@
+People Finder Interchange Format (PFIF) is a widely used open data standard for information about missing or displaced people. PFIF was designed to enable information sharing among governments, relief organizations, and other survivor registries to help people find and contact their family and friends after a disaster.
+
+
+== Overview ==
+PFIF is extended from XML. It consists of person records, which contain identifying information about a person, and note records, which contain comments and updates on the status and location of a person. Each note is attached to one person. PFIF defines the set of fields in these records and an XML-based format to store or transfer them. PFIF XML records can be embedded in Atom feeds or RSS feeds.
+PFIF allows different repositories of missing person data to exchange and aggregate their records. Every record has a unique identifier, which indicates the domain name of the original repository where the record was created. The unique record identifier is preserved as the record is copied from one repository to another. For example, any repository that receives a copy of a given person can publish a note attached to that person, and even as the note and person are copied to other repositories, they remain traceable to their respective original sources.
+
+
+== History ==
+Within three days after the 2001 September 11 attacks, people were using over 25 different online forums and survivor registries to report and check on their family and friends.
+One of the first and largest of these was the survivor registry at safe.millennium.berkeley.edu, which was created by graduate students Ka-Ping Yee and Miriam Walker and hosted on the Millennium computer cluster at UC Berkeley. To reduce the confusion caused by the proliferation of different websites, the Berkeley survivor registry began collecting data from several of the other major sites into one searchable database. Because the information was formatted differently from site to site, each site required manual effort and custom programming to download and incorporate its data.
+After Hurricane Katrina displaced hundreds of thousands of people in 2005, online survivor registries again appeared on many different websites. A large volunteer effort called the Katrina PeopleFinder Project worked to gather and manually re-enter this information into one searchable database provided by Salesforce.com. An organizer of the project, David Geilhufe, put out a call for technical help to create a data standard that would enable survivor registries to aggregate and share information with each other via automated means. Working with Katrina volunteers Kieran Lal and Jonathan Plax and the CiviCRM team, Yee drafted the first specification for People Finder Interchange Format, which was released on September 4, 2005 as PFIF 1.0.
+PFIF 1.1, with some small corrections, was released on September 5. The Salesforce.com database added support for PFIF; Yahoo! and Google also launched searchable databases of Katrina survivors that exchanged information using PFIF.
+The next major use of PFIF occurred after the 2010 Haiti earthquake when Google launched Google Person Finder, which used a data model based on PFIF and exchanged data with CNN, the New York Times, the National Library of Medicine, and other survivor registries using PFIF. However, PFIF 1.1 had made US-specific assumptions that were not applicable to Haiti. Released on January 26, 2010, PFIF 1.2 added fields for a person's home country and international postal code, and fields for sex, age, date of birth, status, and links between duplicate records for the same person.
+PFIF 1.3, released in March 2011, addressed the privacy of personal information by adding a field to specify an expiry date on each person record and setting out requirements for data deletion. PFIF 1.3 also moved away from the US-specific assumption of a first and last name by adding one field for a person's full name.
+PFIF 1.4, released in May 2012, renamed the name fields to "given_name" and "last_name", added a field for alternate names, added a field for linking to personal profiles on other websites, and added support for multiple photos per person.
+
+
+== Implementations ==
+The following websites and software projects implement PFIF:
+
+Google Person Finder
+Sahana Eden
+National Library of Medicine People Locator
+Ushahidi
+PFIF .NET Library
+XML::PFIF Perl module
+
+
+== References ==

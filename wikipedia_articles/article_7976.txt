@@ -1,0 +1,343 @@
+A confidence band is used in statistical analysis to represent the uncertainty in an estimate of a curve or function based on limited or noisy data. Similarly, a prediction band is used to represent the uncertainty about the value of a new data-point on the curve, but subject to noise. Confidence and prediction bands are often used as part of the graphical presentation of results of a regression analysis.
+Confidence bands are closely related to confidence intervals, which represent the uncertainty in an estimate of a single numerical value. "As confidence intervals, by construction, only refer to a single point, they are narrower (at this point) than a confidence band which is supposed to hold simultaneously at many points."
+
+
+== Pointwise and simultaneous confidence bands ==
+Suppose our aim is to estimate a function f(x).  For example, f(x) might be the proportion of people of a particular age x who support a given candidate in an election.  If x is measured at the precision of a single year, we can construct a separate 95% confidence interval for each age.  Each of these confidence intervals covers the corresponding true value f(x) with confidence 0.95.  Taken together, these confidence intervals constitute a 95% pointwise confidence band for f(x).
+In mathematical terms, a pointwise confidence band 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        ±
+        w
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\hat {f}}(x)\pm w(x)}
+  
+ with coverage probability 1 − α satisfies the following condition separately for each value of x:
+
+  
+    
+      
+        Pr
+        
+          
+            (
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        −
+        w
+        (
+        x
+        )
+        ≤
+        f
+        (
+        x
+        )
+        ≤
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        +
+        w
+        (
+        x
+        )
+        
+          
+            )
+          
+        
+        =
+        1
+        −
+        α
+        ,
+      
+    
+    {\displaystyle \Pr {\Big (}{\hat {f}}(x)-w(x)\leq f(x)\leq {\hat {f}}(x)+w(x){\Big )}=1-\alpha ,}
+  
+
+where 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\hat {f}}(x)}
+  
+ is the point estimate of f(x).
+The simultaneous coverage probability of a collection of confidence intervals is the probability that all of them cover their corresponding true values simultaneously.  In the example above, the simultaneous coverage probability is the probability that the intervals for x = 18,19,... all cover their true values (assuming that 18 is the youngest age at which a person can vote).  If each interval individually has coverage probability 0.95, the simultaneous coverage probability is generally less than 0.95.  A 95% simultaneous confidence band is a collection of confidence intervals for all values x in the domain of f(x) that is constructed to have simultaneous coverage probability 0.95.
+In mathematical terms, a simultaneous confidence band 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        ±
+        w
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\hat {f}}(x)\pm w(x)}
+  
+ with coverage probability 1 − α satisfies the following condition:
+
+  
+    
+      
+        Pr
+        
+          
+            (
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        −
+        w
+        (
+        x
+        )
+        ≤
+        f
+        (
+        x
+        )
+        ≤
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        +
+        w
+        (
+        x
+        )
+        
+        
+        
+           for all 
+        
+        x
+        
+          
+            )
+          
+        
+        =
+        1
+        −
+        α
+        .
+      
+    
+    {\displaystyle \Pr {\Big (}{\hat {f}}(x)-w(x)\leq f(x)\leq {\hat {f}}(x)+w(x)\;\;{\text{ for all }}x{\Big )}=1-\alpha .}
+  
+
+In nearly all cases, a simultaneous confidence band will be wider than a pointwise confidence band with the same coverage probability. In the definition of a pointwise confidence band, that universal quantifier moves outside the probability function. 
+
+
+== Confidence bands in regression analysis ==
+Confidence bands commonly arise in regression analysis.  In the case of a simple regression involving a single independent variable, results can be presented in the form of a plot showing the estimated regression line along with either point-wise or simultaneous confidence bands.  Commonly used methods for constructing simultaneous confidence bands in regression are the Bonferroni and Scheffé methods; see Family-wise error rate controlling procedures for more.
+
+
+== Confidence bands for probability distributions ==
+
+Confidence bands can be constructed around estimates of the empirical distribution function. Simple theory allows the construction of point-wise confidence intervals, but it is also possible to construct a simultaneous confidence band for the cumulative distribution function as a whole by inverting the Kolmogorov-Smirnov test, or by using non-parametric likelihood methods.
+
+
+== Other applications of confidence bands ==
+Confidence bands arise whenever a statistical analysis focuses on estimating a function.
+Confidence bands have also been devised for estimates of density functions, spectral density functions, quantile functions, scatterplot smooths, survival functions, and characteristic functions.
+
+
+== Prediction bands ==
+
+Prediction bands are related to prediction intervals in the same way that confidence bands are related to confidence intervals.  Prediction bands commonly arise in regression analysis.  The goal of a prediction band is to cover with a prescribed probability the values of one or more future observations from the same population from which a given data set was sampled.  Just as prediction intervals are wider than confidence intervals, prediction bands will be wider than confidence bands.
+
+In mathematical terms, a prediction band 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        ±
+        w
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\hat {f}}(x)\pm w(x)}
+  
+ with coverage probability 1 − α satisfies the following condition for each value of x:
+
+  
+    
+      
+        Pr
+        
+          
+            (
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        −
+        w
+        (
+        x
+        )
+        ≤
+        
+          y
+          
+            ∗
+          
+        
+        ≤
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+        +
+        w
+        (
+        x
+        )
+        
+          
+            )
+          
+        
+        =
+        1
+        −
+        α
+        ,
+      
+    
+    {\displaystyle \Pr {\Big (}{\hat {f}}(x)-w(x)\leq y^{*}\leq {\hat {f}}(x)+w(x){\Big )}=1-\alpha ,}
+  
+
+where y* is an observation taken from the data-generating process at the given point x that is independent of the data used to construct the point estimate 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\hat {f}}(x)}
+  
+ and the confidence interval w(x).  This is a pointwise prediction interval. It would be possible to construct a simultaneous interval for a finite number of independent observations using, for example, the Bonferroni method to widen the interval by an appropriate amount.
+
+
+== References ==

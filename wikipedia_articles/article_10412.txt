@@ -1,0 +1,88 @@
+The history of string theory spans several decades of intense research including two superstring revolutions. Through the combined efforts of many researchers, string theory has developed into a broad and varied subject with connections to quantum gravity, particle and condensed matter physics, cosmology, and pure mathematics.
+
+
+== 1943–1959: S-matrix theory ==
+String theory represents an outgrowth of S-matrix theory, a research program begun by Werner Heisenberg in 1943 following John Archibald Wheeler's 1937 introduction of the S-matrix. Many prominent theorists picked up and advocated S-matrix theory, starting in the late 1950s and throughout the 1960s. The field became marginalized and discarded in the mid-1970s and disappeared in the 1980s. Physicists neglected it because some of its mathematical methods were alien, and because quantum chromodynamics supplanted it as an experimentally better-qualified approach to the strong interactions.
+The theory presented a radical rethinking of the foundations of physical laws. By the 1940s it had become clear that the proton and the neutron were not pointlike particles like the electron. Their magnetic moment differed greatly from that of a pointlike spin-½ charged particle, too much to attribute the difference to a small perturbation. Their interactions were so strong that they scattered like a small sphere, not like a point. Heisenberg proposed that the strongly interacting particles were in fact extended objects, and because there are difficulties of principle with extended relativistic particles, he proposed that the notion of a space-time point broke down at nuclear scales.
+Without space and time, it becomes difficult to formulate a physical theory. Heisenberg proposed a solution to this problem: focusing on the observable quantities—those things measurable by experiments. An experiment only sees a microscopic quantity if it can be transferred by a series of events to the classical devices that surround the experimental chamber. The objects that fly to infinity are stable particles, in quantum superpositions of different momentum states.
+Heisenberg proposed that even when space and time are unreliable, the notion of momentum state, which is defined far away from the experimental chamber, still works. The physical quantity he proposed as fundamental is the quantum mechanical amplitude for a group of incoming particles to turn into a group of outgoing particles, and he did not admit that there were any steps in between.
+The S-matrix is the quantity that describes how a collection of incoming particles turn into outgoing ones. Heisenberg proposed to study the S-matrix directly, without any assumptions about space-time structure. But when transitions from the far-past to the far-future occur in one step with no intermediate steps, it becomes difficult to calculate anything. In quantum field theory, the intermediate steps are the fluctuations of fields or equivalently the fluctuations of virtual particles. In this proposed S-matrix theory, there are no local quantities at all.
+Heisenberg proposed to use unitarity to determine the S-matrix. In all conceivable situations, the sum of the squares of the amplitudes must equal 1. This property can determine the amplitude in a quantum field theory order by order in a perturbation series once the basic interactions are given, and in many quantum field theories the amplitudes grow too fast at high energies to make a unitary S-matrix. But without extra assumptions on the high-energy behavior, unitarity is not enough to determine the scattering, and the proposal was ignored for many years.
+Heisenberg's proposal was revived in 1956 when Murray Gell-Mann recognized that dispersion relations—like those discovered by Hendrik Kramers and Ralph Kronig in the 1920s (see Kramers–Kronig relations)—allow the formulation of a notion of causality, a notion that events in the future would not influence events in the past, even when the microscopic notion of past and future are not clearly defined. He also recognized that these relations might be useful in computing observables for the case of strong interaction physics. The dispersion relations were analytic properties of the S-matrix, and they imposed more stringent conditions than those that follow from unitarity alone. This development in S-matrix theory stemmed from Murray Gell-Mann and Marvin Leonard Goldberger's (1954) discovery of crossing symmetry, another condition that the S-matrix had to fulfil.
+Prominent advocates of the new "dispersion relations" approach included Stanley Mandelstam and Geoffrey Chew, both at UC Berkeley at the time. Mandelstam discovered the double dispersion relations, a new and powerful analytic form, in 1958, and believed that it would provide the key to progress in the intractable strong interactions.
+
+
+== 1959–1968: Regge theory and bootstrap models ==
+
+By the late 1950s, many strongly interacting particles of ever higher spins had been discovered, and it became clear that they were not all fundamental. While Japanese physicist Shoichi Sakata proposed that the particles could be understood as bound states of just three of them (the proton, the neutron and the Lambda; see Sakata model), Geoffrey Chew believed that none of these particles are fundamental (for details, see Bootstrap model). Sakata's approach was reworked in the 1960s into the quark model by Murray Gell-Mann and George Zweig by making the charges of the hypothetical constituents fractional and rejecting the idea that they were observed particles. At the time, Chew's approach was considered more mainstream because it did not introduce fractional charge values and because it focused on experimentally measurable S-matrix elements, not on hypothetical pointlike constituents.
+
+In 1959, Tullio Regge, a young theorist in Italy, discovered that bound states in quantum mechanics can be organized into families known as Regge trajectories, each family having distinctive angular momenta. This idea was generalized to relativistic quantum mechanics by Stanley Mandelstam, Vladimir Gribov and Marcel Froissart, using a mathematical method (the Sommerfeld–Watson representation) discovered decades earlier by Arnold Sommerfeld and Kenneth M. Watson: the result was dubbed the Froissart–Gribov formula.
+In 1961, Geoffrey Chew and Steven Frautschi recognized that mesons had straight line Regge trajectories (in their scheme, spin is plotted against mass squared on a so-called Chew–Frautschi plot), which implied that the scattering of these particles would have very strange behavior—it should fall off exponentially quickly at large angles. With this realization, theorists hoped to construct a theory of composite particles on Regge trajectories, whose scattering amplitudes had the asymptotic form demanded by Regge theory.
+In 1967, a notable step forward in the bootstrap approach was the principle of DHS duality introduced by Richard Dolen, David Horn, and Christoph Schmid in 1967, at Caltech (the original term for it was "average duality" or "finite energy sum rule (FESR) duality"). The three researchers noticed that Regge pole exchange (at high energy) and resonance (at low energy) descriptions offer multiple representations/approximations of one and the same physically observable process.
+
+
+== 1968–1974: Dual resonance model ==
+The first model in which hadronic particles essentially follow the Regge trajectories was the dual resonance model that was constructed by Gabriele Veneziano in 1968, who noted that the Euler beta function could be used to describe 4-particle scattering amplitude data for such particles. The Veneziano scattering amplitude (or Veneziano model) was quickly generalized to an N-particle amplitude by Ziro Koba and Holger Bech Nielsen (their approach was dubbed the Koba–Nielsen formalism), and to what are now recognized as closed strings by Miguel Virasoro and Joel A. Shapiro (their approach was dubbed the Shapiro–Virasoro model).
+In 1969, the Chan–Paton rules (proposed by Jack E. Paton and Hong-Mo Chan) enabled isospin factors to be added to the Veneziano model.
+In 1969–70, Yoichiro Nambu, Holger Bech Nielsen, and Leonard Susskind presented a physical interpretation of the Veneziano amplitude by representing nuclear forces as vibrating, one-dimensional strings. However, this string-based description of the strong force made many predictions that directly contradicted experimental findings.
+In 1971, Pierre Ramond and, independently, John H. Schwarz and André Neveu attempted to implement fermions into the dual model. This led to the concept of "spinning strings", and pointed the way to a method for removing the problematic tachyon (see RNS formalism).
+Dual resonance models for strong interactions were a relatively popular subject of study between 1968 and 1973. The scientific community lost interest in string theory as a theory of strong interactions in 1973 when quantum chromodynamics became the main focus of theoretical research (mainly due to the theoretical appeal of its asymptotic freedom).
+
+
+== 1974–1984: Bosonic string theory and superstring theory ==
+In 1974, John H. Schwarz and Joël Scherk, and independently Tamiaki Yoneya, studied the boson-like patterns of string vibration and found that their properties exactly matched those of the graviton, the gravitational force's hypothetical messenger particle. Schwarz and Scherk argued that string theory had failed to catch on because physicists had underestimated its scope. This led to the development of bosonic string theory.
+String theory is formulated in terms of the Polyakov action, which describes how strings move through space and time. Like springs, the strings tend to contract to minimize their potential energy, but conservation of energy prevents them from disappearing, and instead they oscillate. By applying the ideas of quantum mechanics to strings it is possible to deduce the different vibrational modes of strings, and that each vibrational state appears to be a different particle. The mass of each particle, and the fashion with which it can interact, are determined by the way the string vibrates—in essence, by the "note" the string "sounds." The scale of notes, each corresponding to a different kind of particle, is termed the "spectrum" of the theory.
+Early models included both open strings, which have two distinct endpoints, and closed strings, where the endpoints are joined to make a complete loop.  The two types of string behave in slightly different ways, yielding two spectra.  Not all modern string theories use both types; some incorporate only the closed variety.
+The earliest string model has several problems: it has a critical dimension D = 26, a feature that was originally discovered by Claud Lovelace in 1971; the theory has a fundamental instability, the presence of tachyons (see tachyon condensation); additionally, the spectrum of particles contains only bosons, particles like the photon that obey particular rules of behavior.  While bosons are a critical ingredient of the Universe, they are not its only constituents.  Investigating how a string theory may include fermions in its spectrum led to the invention of supersymmetry (in the West) in 1971, a mathematical transformation between bosons and fermions. String theories that include fermionic vibrations are now known as superstring theories.
+In 1977, the GSO projection (named after Ferdinando Gliozzi, Joël Scherk, and David I. Olive) led to a family of tachyon-free unitary free string theories, the first consistent superstring theories (see below).
+
+
+== 1984–1994: First superstring revolution ==
+The first superstring revolution is a period of important discoveries that began in 1984. It was realized that string theory was capable of describing all elementary particles as well as the interactions between them. Hundreds of physicists started to work on string theory as the most promising idea to unify physical theories. The revolution was started by a discovery of anomaly cancellation in type I string theory via the Green–Schwarz mechanism (named after Michael Green and John H. Schwarz) in 1984. The ground-breaking discovery of the heterotic string was made by David Gross, Jeffrey Harvey, Emil Martinec, and Ryan Rohm in 1985. It was also realized by Philip Candelas, Gary Horowitz, Andrew Strominger, and Edward Witten in 1985 that to obtain 
+  
+    
+      
+        N
+        =
+        1
+      
+    
+    {\displaystyle N=1}
+  
+ supersymmetry, the six small extra dimensions (the D = 10 critical dimension of superstring theory had been originally discovered by John H. Schwarz in 1972) need to be compactified on a Calabi–Yau manifold. (In string theory, compactification is a generalization of Kaluza–Klein theory, which was first proposed in the 1920s.)
+By 1985, five separate superstring theories had been described: type I, type II (IIA and IIB), and heterotic (SO(32) and E8×E8).
+Discover magazine in the November 1986 issue (vol. 7, #11) featured a cover story written by Gary Taubes, "Everything's Now Tied to Strings", which explained string theory for a popular audience.
+In 1987, Eric Bergshoeff, Ergin Sezgin and Paul Townsend showed that there are no superstrings in eleven dimensions (the largest number of dimensions consistent with a single graviton in supergravity theories), but supermembranes.
+
+
+== 1994–2003: Second superstring revolution ==
+In the early 1990s, Edward Witten and others found strong evidence that the different superstring theories were different limits of an 11-dimensional theory that became known as M-theory (for details, see Introduction to M-theory). These discoveries sparked the second superstring revolution that took place approximately between 1994 and 1995.
+The different versions of superstring theory were unified, as long hoped, by new equivalences. These are known as S-duality, T-duality, U-duality, mirror symmetry, and conifold transitions. The different theories of strings were also related to M-theory.
+In 1995, Joseph Polchinski discovered that the theory requires the inclusion of higher-dimensional objects, called D-branes: these are the sources of electric and magnetic Ramond–Ramond fields that are required by string duality. D-branes added additional rich mathematical structure to the theory, and opened possibilities for constructing realistic cosmological models in the theory (for details, see Brane cosmology).
+In 1997–98, Juan Maldacena conjectured a relationship between type IIB string theory and N = 4 supersymmetric Yang–Mills theory, a gauge theory. This conjecture, called the AdS/CFT correspondence, has generated a great deal of interest in high energy physics. It is a realization of the holographic principle, which has far-reaching implications: the AdS/CFT correspondence has helped elucidate the mysteries of black holes suggested by Stephen Hawking's work and is believed to provide a resolution of the black hole information paradox.
+
+
+== 2003–present ==
+
+In 2003, Michael R. Douglas's discovery of the string theory landscape, which suggests that string theory has a large number of inequivalent false vacua, led to much discussion of what string theory might eventually be expected to predict, and how cosmology can be incorporated into the theory.
+A possible mechanism of string theory vacuum stabilization (the KKLT mechanism) was proposed in 2003 by Shamit Kachru, Renata Kallosh, Andrei Linde, and Sandip Trivedi.
+Much of the present-day research is focused on characterizing the "swampland" of theories incompatible with quantum gravity.
+
+
+== See also ==
+History of quantum field theory
+History of loop quantum gravity
+
+
+== Notes ==
+
+
+== References ==
+Rickles, Dean (2014). A Brief History of String Theory: From Dual Models to M-Theory. Springer. ISBN 978-3-642-45128-7.
+
+
+== Further reading ==
+Paul Frampton (1974). Dual Resonance Models. Frontiers in Physics, W. A. Benjamin. ISBN 978-0-8053-2581-2.
+Joel A. Shapiro (2007). "Reminiscence on the Birth of String Theory". arXiv:0711.3448 [hep-th].
+John H. Schwarz (2012). "The Early History of String Theory and Supersymmetry". arXiv:1201.0981 [physics.hist-ph].
+Andrea Cappelli; Elena Castellani; Filippo Colomo; Paolo Di Vecchia (2012). The Birth of String Theory. Cambridge University Press. ISBN 978-0-521-19790-8.

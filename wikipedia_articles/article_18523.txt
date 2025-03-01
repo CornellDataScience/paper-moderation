@@ -1,0 +1,462 @@
+Imaginary time is a mathematical representation of time that appears in some approaches to special relativity and quantum mechanics. It finds uses in certain cosmological theories.
+Mathematically, imaginary time is real time which has undergone a Wick rotation so that its coordinates are multiplied by the imaginary unit i. Imaginary time is not imaginary in the sense that it is unreal or made-up; it is simply expressed in terms of imaginary numbers.
+
+
+== Origins ==
+In mathematics, the imaginary unit 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ is the square root of 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+, such that 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+      
+    
+    {\displaystyle i^{2}}
+  
+ is defined to be 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+. A number which is a direct multiple of 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ is known as an imaginary number.: Chp 4 
+In certain physical theories, periods of time are multiplied by 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ in this way. Mathematically, an imaginary time period 
+  
+    
+      
+        τ
+      
+    
+    {\textstyle \tau }
+  
+ may be obtained from real time 
+  
+    
+      
+        t
+      
+    
+    {\textstyle t}
+  
+ via a Wick rotation by 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\textstyle \pi /2}
+  
+ in the complex plane: 
+  
+    
+      
+        τ
+        =
+        i
+        t
+      
+    
+    {\textstyle \tau =it}
+  
+.: 769 
+Stephen Hawking popularized the concept of imaginary time in his book The Universe in a Nutshell.
+
+"One might think this means that imaginary numbers are just a mathematical game having nothing to do with the real world. From the viewpoint of positivist philosophy, however, one cannot determine what is real. All one can do is find which mathematical models describe the universe we live in. It turns out that a mathematical model involving imaginary time predicts not only effects we have already observed but also effects we have not been able to measure yet nevertheless believe in for other reasons. So what is real and what is imaginary? Is the distinction just in our minds?"
+In fact, the terms "real" and "imaginary" for numbers are just a historical accident, much like the terms "rational" and "irrational":
+
+"...the words real and imaginary are picturesque relics of an age when the nature of complex numbers was not properly understood."
+
+
+== In cosmology ==
+
+
+=== Derivation ===
+In the Minkowski spacetime model adopted by the theory of relativity, spacetime is represented as a four-dimensional surface or manifold. Its four-dimensional equivalent of a distance in three-dimensional space is called an interval. Assuming that a specific time period is represented as a real number in the same way as a distance in space, an interval 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ in relativistic spacetime is given by the usual formula but with time negated:
+
+  
+    
+      
+        
+          d
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        +
+        
+          z
+          
+            2
+          
+        
+        −
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle d^{2}=x^{2}+y^{2}+z^{2}-t^{2}}
+  
+
+where 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ and 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ are distances along each spatial axis and 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ is a period of time or "distance" along the time axis (Strictly, the time coordinate is 
+  
+    
+      
+        (
+        c
+        t
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (ct)^{2}}
+  
+ where 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ is the speed of light, however we conventionally choose units such that 
+  
+    
+      
+        c
+        =
+        1
+      
+    
+    {\displaystyle c=1}
+  
+).
+Mathematically this is equivalent to writing
+
+  
+    
+      
+        
+          d
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        +
+        
+          z
+          
+            2
+          
+        
+        +
+        (
+        i
+        t
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle d^{2}=x^{2}+y^{2}+z^{2}+(it)^{2}}
+  
+
+In this context, 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ may be either accepted as a feature of the relationship between space and real time, as above, or it may alternatively be incorporated into time itself, such that the value of time is itself an imaginary number, denoted by 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+. The equation may then be rewritten in normalised form: 
+  
+    
+      
+        
+          d
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        +
+        
+          z
+          
+            2
+          
+        
+        +
+        
+          τ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle d^{2}=x^{2}+y^{2}+z^{2}+\tau ^{2}}
+  
+
+Similarly its four vector may then be written as 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{0},x_{1},x_{2},x_{3})}
+  
+ where distances are represented as 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x_{n}}
+  
+, and 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        =
+        i
+        c
+        t
+      
+    
+    {\displaystyle x_{0}=ict}
+  
+ where 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ is the speed of light and time is imaginary.
+
+
+=== Application to cosmology ===
+Hawking noted the utility of rotating time intervals into an imaginary metric in certain situations, in 1971.
+In physical cosmology, imaginary time may be incorporated into certain models of the universe which are solutions to the equations of general relativity. In particular, imaginary time can help to smooth out gravitational singularities, where known physical laws break down, to remove the singularity and avoid such breakdowns (see Hartle–Hawking state). The Big Bang, for example, appears as a singularity in ordinary time but, when modelled with imaginary time, the singularity can be removed and the Big Bang functions like any other point in four-dimensional spacetime. Any boundary to spacetime is a form of singularity, where the smooth nature of spacetime breaks down.: 769–772  With all such singularities removed from the Universe, it thus can have no boundary and Stephen Hawking speculated that "the boundary condition to the Universe is that it has no boundary".: 85 
+However, the unproven nature of the relationship between actual physical time and imaginary time incorporated into such models has raised criticisms. Roger Penrose has noted that there needs to be a transition from the Riemannian metric (often referred to as "Euclidean" in this context) with imaginary time at the Big Bang to a Lorentzian metric with real time for the evolving Universe. Also, modern observations suggest that the Universe is open and will never shrink back to a Big Crunch. If this proves true, then the end-of-time boundary still remains.: 769–772 
+
+
+== See also ==
+Euclidean quantum gravity
+Multiple time dimensions
+
+
+== References ==
+
+
+== Further reading ==
+Hawking, Stephen W. (1998). A Brief History of Time (Tenth Anniversary Commemorative ed.). Bantam Books. p. 157. ISBN 978-0-553-10953-5.
+Gerald D. Mahan. Many-Particle Physics, Chapter 3
+A. Zee Quantum field theory in a nutshell, Chapter V.2
+
+
+== External links ==
+The Beginning of Time — Lecture by Stephen Hawking which discusses imaginary time.
+Stephen Hawking's Universe: Strange Stuff Explained Archived 2016-03-03 at the Wayback Machine — PBS site on imaginary time.

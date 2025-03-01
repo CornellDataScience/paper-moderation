@@ -1,0 +1,51 @@
+NL5 is a mixed-signal electronic circuit simulator with ideal and piecewise-linear components. 
+
+
+== History ==
+The first generation of NL (non-linear) analog simulator was developed in the late 1980s for different types of computers and operating systems. In early 1990s, NL migrated to MS-DOS and Windows based personal computers. For many years it was a proprietary tool of a few research labs and small companies, used to design control systems, measurement equipment, and power supplies. The first publicly available version of NL5 (the fifth generation of NL) was released on January 1, 2009.
+
+
+== Components ==
+NL5 uses simple analog components and models, including ideal components:
+
+Ideal switch with zero/infinite resistance and instantaneous switching
+Ideal diode with constant voltage drop when closed, and zero current when open
+Ideal amplifier with zero output resistance, infinite gain, and infinite bandwidth
+Non-linear components are represented as piecewise-linear, or as a function (simulated with one step delay). For mixed-signal systems, system-level, and behavioral modeling NL5 uses simple basic digital, function, C-code, and DLL components. Practically all parameters of NL5 components can be set to positive, negative, zero, or infinity value. NL5 schematic may have arbitrary, even unrealizable topology, with floating nodes, "voltage loops", etc. 
+
+
+== Analysis ==
+NL5 performs transient simulation using modified nodal analysis and trapezoidal integration. A special algorithm is in place to handle simulation with ideal components (e.g. zero/infinite resistance and instantaneous switching).
+NL5 performs 3 types of AC analysis: 
+
+Small signal, for linear and linearized non-linear circuits
+Sweep AC source (variable-frequency sinusoidal source), for non-linear and switching circuits
+z-transform, for constant frequency switching circuits
+
+
+== Modules and features ==
+Transient tools: FFT, XY plot, eye diagram, amplitude histogram, and more
+AC tools: Smith chart, Nyquist plot, Nichols plot
+Post-processing: performs various mathematical operations on transient and AC results
+Command line, script (C-language)
+HTTP interface: built-in HTTP server
+Interface to some oscilloscope models through VISA interface
+Encrypted components and schematic files
+Co-simulation with digital simulators. NL5 DLL is an NL5 transient simulation engine with an API in the form of a Windows DLL. It can be used as an analog simulation engine for co-simulation with System Verilog digital simulators (e.g. Xilinx Vivado). Also, NL5 DLL functions can be called from C/C++ applications, MATLAB, Python, etc., and perform co-simulation with user's tool of choice.
+
+
+== Applications ==
+Industry. Dialog Semiconductor, developer of power-management integrated circuits for consumer electronics, has adopted NL5 as a mixed-signal simulation tool, and provides NL5 models of their digital power controllers to customers. Simulation results obtained with NL5 are used by electronics companies in application notes and conference proceedings. Due to piecewise-linear nature, NL5 is listed among preferred simulators for switching circuits.
+Science/Research. NL5 is used in research labs to design control systems and electronics for scientific applications. It is used for scholar articles published in IEEE journals, and presented at conferences and workshops
+Academia. Since 2009, NL5 is a simulation tool of preference for power electronics laboratory course at Colorado State University. It is used by students all over the world for theses in different electronics-related fields. NL5 has been mentioned in reviews of educational software tools. NL5 is also being used as a demonstration and teaching tool of basics of physics and electronics.
+
+
+== Licensing ==
+Without a license, NL5 works in a demo mode, with full functionality and limited number of circuit components. Free licenses are available for educational institutions and students (1 year license). Different types of temporary and permanent licenses are available for individuals and companies.
+
+
+== References ==
+
+
+== External links ==
+Official website

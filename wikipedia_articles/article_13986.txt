@@ -1,0 +1,301 @@
+In geometry, the Beckman–Quarles theorem states that if a transformation of the Euclidean plane or a higher-dimensional Euclidean space preserves unit distances, then it preserves all Euclidean distances. Equivalently, every homomorphism from the unit distance graph of the plane to itself must be an isometry of the plane. The theorem is named after Frank S. Beckman and Donald A. Quarles Jr., who published this result in 1953; it was later rediscovered by other authors and re-proved in multiple ways. Analogous theorems for rational subsets of Euclidean spaces, or for non-Euclidean geometry, are also known.
+
+
+== Statement and proof idea ==
+Formally, the result is as follows. Let 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ be a function or multivalued function from a 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+-dimensional Euclidean space to itself, and suppose that, for every pair of points 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ and 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ that are at unit distance from each other, every pair of images 
+  
+    
+      
+        f
+        (
+        p
+        )
+      
+    
+    {\displaystyle f(p)}
+  
+ and 
+  
+    
+      
+        f
+        (
+        q
+        )
+      
+    
+    {\displaystyle f(q)}
+  
+ are also at unit distance from each other. Then 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ must be an isometry: it is a one-to-one function that preserves distances between all pairs of points.
+One way of rephrasing the Beckman–Quarles theorem involves graph homomorphisms, mappings between undirected graphs that take vertices to vertices and edges to edges. For the unit distance graph whose vertices are all of the points in the plane, with an edge between any two points at unit distance, a homomorphism from this graph to itself is the same thing as a unit-distance-preserving transformation of the plane. Thus, the Beckman–Quarles theorem states that the only homomorphisms from this graph to itself are the obvious ones coming from isometries of the plane. For this graph, all homomorphisms are symmetries of the graph, the defining property of a class of graphs called cores.
+As well as the original proofs of Beckman and Quarles of the theorem, and the proofs in later papers rediscovering the result, several alternative proofs have been published. If 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ is the set of distances preserved by a mapping 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, then it follows from the triangle inequality that certain comparisons of other distances with members of 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ are preserved by 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+. Therefore, if 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ can be shown to be a dense set, then all distances must be preserved. The main idea of several proofs of the Beckman–Quarles theorem is to use the structural rigidity of certain unit distance graphs, such as the graph of a regular simplex, to show that a mapping that preserves unit distances must preserve enough other distances to form a dense set.
+
+
+== Counterexamples for other spaces ==
+Beckman and Quarles observe that the theorem is not true for the real line (one-dimensional Euclidean space). As an example, consider the function 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ that returns 
+  
+    
+      
+        x
+        +
+        1
+      
+    
+    {\displaystyle x+1}
+  
+ if 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ is an integer and returns 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ otherwise. This function obeys the preconditions of the theorem: it preserves unit distances. However, it does not preserve the distances between integers and non-integers.
+Beckman and Quarles provide another counterexample showing that their theorem cannot be generalized to an infinite-dimensional space, the Hilbert space of square-summable sequences of real numbers. "Square-summable" means that the sum of the squares of the values in a sequence from this space must be finite. The distance between any two such sequences can be defined in the same way as the Euclidean distance for finite-dimensional spaces, by summing the squares of the differences of coordinates and then taking the square root. To construct a function that preserves unit distances but not other distances, Beckman and Quarles compose two discontinuous functions:
+
+The first function maps every point of the Hilbert space onto a nearby point in a countable dense subspace. For instance the dense subspace could be chosen as the subspace of sequences of rational numbers. As long as this transformation moves each point by a distance less than 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{2}}}
+  
+, it will map points at unit distance from each other to distinct images.
+The second function maps this dense set onto a countable unit simplex, an infinite set of points all at unit distance from each other. One example of a countable simplex in this space consists of the sequences of real numbers that take the value 
+  
+    
+      
+        1
+        
+          /
+        
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 1/{\sqrt {2}}}
+  
+ in a single position and are zero everywhere else. There are infinitely many sequences of this form, and the distance between any two such sequences is one. This second function must be one-to-one but can otherwise be chosen arbitrarily.
+When these two transformations are combined, they map any two points at unit distance from each other to two different points in the dense subspace, and from there map them to two different points of the simplex, which are necessarily at unit distance apart. Therefore, their composition preserves unit distances. However, it is not an isometry, because it maps every pair of points, no matter their original distance, either to the same point or to a unit distance.
+
+
+== Related results ==
+
+Every Euclidean space can be mapped to a space of sufficiently higher dimension in a way that preserves unit distances but is not an isometry. To do so, following known results on the Hadwiger–Nelson problem, color the points of the given space with a finite number of colors so that no two points at unit distance have the same color. Then, map each color to a vertex of a higher-dimensional regular simplex with unit edge lengths. For instance, the Euclidean plane can be colored with seven colors, using a tiling by hexagons of slightly less than unit diameter, so that no two points of the same color are a unit distance apart. Then the points of the plane can be mapped by their colors to the seven vertices of a six-dimensional regular simplex. It is not known whether six is the smallest dimension for which this is possible, and improved results on the Hadwiger–Nelson problem could improve this bound.
+For transformations of the points with rational number coordinates, the situation is more complicated than for the full Euclidean plane. There exist unit-distance-preserving maps of rational points to rational points that do not preserve other distances for dimensions up to four, but none for dimensions five and above. Similar results hold also for mappings of the rational points that preserve other distances, such as the square root of two, in addition to the unit distances. For pairs of points whose distance is an algebraic number 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, there is a finite version of this theorem: Maehara showed that, for every algebraic number 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, there is a finite rigid unit distance graph 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ in which some two vertices 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ and 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ must be at distance 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ from each other. It follows from this that any transformation of the plane that preserves the unit distances in 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ must also preserve the distance between 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ and 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+.
+A. D. Alexandrov asked which metric spaces have the same property, that unit-distance-preserving mappings are isometries, and following this question several authors have studied analogous results for other types of geometries. This is known as the Aleksandrov–Rassias problem. For instance, it is possible to replace Euclidean distance by the value of a quadratic form. Beckman–Quarles theorems have been proven for non-Euclidean spaces such as Minkowski space, inversive distance in the Möbius plane, finite Desarguesian planes, and spaces defined over fields with nonzero characteristic. Additionally, theorems of this type have been used to characterize transformations other than the isometries, such as Lorentz transformations.
+
+
+== History ==
+The Beckman–Quarles theorem was first published by Frank S. Beckman and Donald A. Quarles Jr. in 1953. It was already named as "a theorem of Beckman and Quarles" as early as 1960, by Victor Klee. It was later rediscovered by other authors, through the 1960s and 1970s.
+Quarles was the son of communications engineer and defense executive Donald A. Quarles. He was educated at the Phillips Academy, Yale University, and the United States Naval Academy. He served as a meteorologist in the US Navy during World War II, and became an engineer for IBM. His work there included projects for tracking Sputnik, the development of a supercomputer, inkjet printing, and magnetic resonance imaging; he completed a Ph.D. in 1964 at the Courant Institute of Mathematical Sciences on the computer simulation of shock waves, jointly supervised by Robert D. Richtmyer and Peter Lax.
+Beckman studied at the City College of New York and served in the US Army during the war. Like Quarles, he worked for IBM, beginning in 1951. He earned a Ph.D. in 1965, under the supervision of Louis Nirenberg at Columbia University, on partial differential equations. In 1971, he left IBM to become the founding chair of the Computer and Information Science Department at Brooklyn College, and he later directed the graduate program in computer science at the Graduate Center, CUNY.
+
+
+== References ==

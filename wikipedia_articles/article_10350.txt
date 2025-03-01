@@ -1,0 +1,107 @@
+Plain Old Documentation (pod) is a lightweight markup language used to document the Perl programming language as well as Perl modules and programs.
+
+
+== Design ==
+Pod is designed to be a simple, clean language with just enough syntax to be useful.  It purposefully does not include mechanisms for fonts, images, colors or tables.  Some of its goals are:
+
+Easy to parse
+Easy to convert to other formats, such as XML, TeX or Markdown
+Easy to incorporate sample code
+Easy to read without a pod formatter (i.e. in its source-code form)
+Easy to write in
+An extended version of pod that supports tables and footnotes called PseudoPOD has been used by O'Reilly & Associates to produce several Perl books, most notably Programming Perl by Larry Wall, Tom Christiansen, and Jon Orwant.
+Pod makes it easy to write manual pages, which are well suited to user-oriented documents. In contrast, other documentation systems, such as Python's Docstring or Java's Javadoc, though they can be used for user documentation, are designed to facilitate generating developer-oriented documentation about the source code for a software project.
+
+
+== Use ==
+Pod is the language used for most documentation in the Perl world. This includes Perl itself, nearly all publicly released modules, many scripts, most design documents, many articles on Perl.com and other Perl-related web sites,
+and the Parrot virtual machine.
+Pod is rarely read in the raw, although it is designed to be readable without the assistance of a formatting tool.  Instead, it is read with the perldoc tool, or converted into Unix man pages or Web-standard HTML pages.
+It is also possible to use pod in other contexts than Perl. For example, to add simple documentation to bash scripts, which can then be easily converted to man pages. Such uses rely on language-specific hacks to hide the pod part(s), such as (in bash) prefixing the POD section with the line :<<=cut which works by calling bash's no-op : command, with the whole block of Pod as a here document as input to it.
+Pure pod files usually have the extension .pod, but pod is mostly used directly in Perl
+code, which typically uses the .pl and .pm extensions.  (The Perl
+interpreter's parser is designed to ignore pod in Perl code.) In source code files, the documentation is generally placed after the __END__ marker (which also helps syntax highlighting in some editors to display it as comments).
+Pod can easily be converted to other formats, for example some of the various Wiki formats like: WikiWikiWeb, Kwiki, TWiki, UseModWiki, TiddlyWiki, Textile, MediaWiki, MoinMoin or Confluence using Pod::Simple::Wiki.
+
+
+== Example ==
+This document is syntactically correct pod, which attempts to follow the major conventions on section naming as well.
+
+=head1 NAME
+
+My::Module - An example module
+
+=head1 SYNOPSIS
+
+    use My::Module;
+    my $object = My::Module->new();
+    print $object->as_string;
+
+=head1 DESCRIPTION
+
+This module does not really exist, it
+was made for the sole purpose of
+demonstrating how POD works.
+
+=head2 Methods
+
+=over 12
+
+=item C<new>
+
+Returns a new My::Module object.
+
+=item C<as_string>
+
+Returns a stringified representation of
+the object. This is mainly for debugging
+purposes.
+
+=back
+
+=head1 LICENSE
+
+This is released under the Artistic License. 
+See L<perlartistic>.
+
+=head1 AUTHOR
+
+Juerd - L<http://juerd.nl/>
+
+=head1 SEE ALSO
+
+L<perlpod>, L<perlpodspec>
+
+=cut
+
+
+== Formatting details ==
+Pod files are written in an ASCII-compatible encoding, such as Latin-1 or UTF-8. A pod parser always assumes that the file it is parsing doesn't start with pod; it ignores all lines
+until it sees a pod directive.  pod directives must come at the beginning of a line, and all begin with an equal sign.  The pod parser will then assume that all following lines are pod, until it encounters a line consisting of the "=cut" directive.  Any content following that is ignored until the parser encounters another pod directive.  Thus, pod can be intermixed with executable source code if the language's parser knows how to recognize and ignore pod.
+Pod content is divided into paragraphs by empty lines.  Paragraphs that begin with whitespace characters—tabs or spaces—are considered to be "verbatim paragraphs", and are left completely unformatted; these are used for sample code, ASCII art, etc.  Paragraphs that begin with an equal sign are "command paragraphs"; the sequence of alphanumeric characters immediately following the equal sign is treated as a pod directive, and the rest of the paragraph is formatted according to that directive.  Some directives also affect the following paragraphs.  If a paragraph starts with something besides an equal sign or whitespace, it's considered an "ordinary paragraph".
+Both ordinary paragraphs and the contents of command paragraphs are parsed for formatting codes. Formatting in pod is very plain; it's mainly limited to bold, italic, underlined, monospaced, and a few other formats.  There is also a code for linking between pod documents or to another section within the same document.  Formatting codes consist of either:
+
+A single uppercase letter, followed by a less-than sign (<), the content to be formatted, and a greater-than sign (>), e.g. B<bolded text>, or
+A single uppercase letter, two or more less-than signs (<<), a space, the content to be formatted, another space, and the same number of greater-than signs as were used before, e.g. B<< bolded text >>.  This form is often used for code snippets containing a greater-than sign, which would otherwise end the formatting code.
+Commands in pod include four levels of headings, bulleted and numbered lists, and commands to mark sections as being in another language.  The latter feature allows for special formatting to be given to parsers that support it.
+
+
+== See also ==
+Comparison of documentation generators
+
+
+== References ==
+Wall, Larry; Christiansen, Tom; & Orwant, Jon (2000). Programming Perl (3rd ed.). Sebastopol: O'Reilly & Associates. ISBN 0-596-00027-8.
+Chapter 15, "Working with Pod", in foy, brian d (2007). Mastering Perl. Sebastopol: O'Reilly Media. ISBN 0-596-52724-1.
+Section 5.2, "Embedding Documentation in Shell Scripts", in Albing, Carl; Vossen, JP; & Cameron Newham. (2007). bash Cookbook: Solutions and Examples for bash Users; O'Reilly & Associates. ISBN 0-596-52678-4.
+
+
+== External links ==
+perlpod (documentation on pod for people writing documents in it)
+perlpodspec (documentation on pod for people writing parsers for it)
+The Perl manpages in raw pod format
+(PseudoPOD)
+The directory contains many modules with embedded pod formatting
+The Getopt::Euclid module parses input to a Perl script automatically based on pod tags
+The Pod::Simple::Wiki converts pod into various Wiki formats
+The Pod::Markdown converts pod into Markdown

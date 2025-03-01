@@ -1,0 +1,476 @@
+An optimal decision is a decision that leads to at least as good a known or expected outcome as all other available decision options. It is an important concept in decision theory. In order to compare the different decision outcomes, one commonly assigns a utility value to each of them.
+If there is uncertainty as to what the outcome will be but one has knowledge about the distribution of the uncertainty, then under the von Neumann–Morgenstern axioms the optimal decision maximizes the expected utility (a probability–weighted average of utility over all possible outcomes of a decision). Sometimes, the equivalent problem of minimizing the expected value of loss is considered, where loss is (–1) times utility. Another equivalent problem is minimizing expected regret.
+"Utility" is only an arbitrary term for quantifying the desirability of a particular decision outcome and not necessarily related to "usefulness." For example, it may well be the optimal decision for someone to buy a sports car rather than a station wagon, if the outcome in terms of another criterion (e.g., effect on personal image) is more desirable, even given the higher cost and lack of versatility of the sports car.
+The problem of finding the optimal decision is a mathematical optimization problem. In practice, few people verify that their decisions are optimal, but instead use heuristics and rules of thumb to make decisions that are "good enough"—that is, they engage in satisficing.
+A more formal approach may be used when the decision is important enough to motivate the time it takes to analyze it, or when it is too complex to solve with more simple intuitive approaches, such as many available decision options and a complex decision–outcome relationship.
+
+
+== Formal mathematical description ==
+Each decision 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ in a set 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ of available decision options will lead to an outcome 
+  
+    
+      
+        o
+        =
+        f
+        (
+        d
+        )
+      
+    
+    {\displaystyle o=f(d)}
+  
+. All possible outcomes form the set 
+  
+    
+      
+        O
+      
+    
+    {\displaystyle O}
+  
+. 
+Assigning a utility 
+  
+    
+      
+        
+          U
+          
+            O
+          
+        
+        (
+        o
+        )
+      
+    
+    {\displaystyle U_{O}(o)}
+  
+ to every outcome, we can define the utility of a particular decision 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ as
+
+  
+    
+      
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+         
+        =
+         
+        
+          U
+          
+            O
+          
+        
+        (
+        f
+        (
+        d
+        )
+        )
+        .
+        
+      
+    
+    {\displaystyle U_{D}(d)\ =\ U_{O}(f(d)).\,}
+  
+
+We can then define an optimal decision 
+  
+    
+      
+        
+          d
+          
+            
+              o
+              p
+              t
+            
+          
+        
+      
+    
+    {\displaystyle d_{\mathrm {opt} }}
+  
+ as one that maximizes 
+  
+    
+      
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+      
+    
+    {\displaystyle U_{D}(d)}
+  
+ :
+
+  
+    
+      
+        
+          d
+          
+            
+              o
+              p
+              t
+            
+          
+        
+        =
+        arg
+        ⁡
+        
+          max
+          
+            d
+            ∈
+            D
+          
+        
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+        .
+        
+      
+    
+    {\displaystyle d_{\mathrm {opt} }=\arg \max \limits _{d\in D}U_{D}(d).\,}
+  
+
+Solving the problem can thus be divided into three steps:
+
+predicting the outcome 
+  
+    
+      
+        o
+      
+    
+    {\displaystyle o}
+  
+ for every decision 
+  
+    
+      
+        d
+        ;
+      
+    
+    {\displaystyle d;}
+  
+
+assigning a utility 
+  
+    
+      
+        
+          U
+          
+            O
+          
+        
+        (
+        o
+        )
+      
+    
+    {\displaystyle U_{O}(o)}
+  
+ to every outcome 
+  
+    
+      
+        o
+        ;
+      
+    
+    {\displaystyle o;}
+  
+
+finding the decision 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ that maximizes 
+  
+    
+      
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+        .
+      
+    
+    {\displaystyle U_{D}(d).}
+  
+
+
+== Under uncertainty in outcome ==
+In case it is not possible to predict with certainty what will be the outcome of a particular decision, a probabilistic approach is necessary. In its most general form, it can be expressed as follows:
+Given a decision 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+, we know the probability distribution for the possible outcomes described by the conditional probability density 
+  
+    
+      
+        p
+        (
+        o
+        
+          |
+        
+        d
+        )
+      
+    
+    {\displaystyle p(o|d)}
+  
+. Considering 
+  
+    
+      
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+      
+    
+    {\displaystyle U_{D}(d)}
+  
+ as a random variable (conditional on 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+), we can calculate the expected utility of decision 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ as
+
+  
+    
+      
+        
+          E
+        
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+        =
+        ∫
+        
+          p
+          (
+          o
+          
+            |
+          
+          d
+          )
+          U
+          (
+          o
+          )
+          d
+          o
+        
+        
+      
+    
+    {\displaystyle {\text{E}}U_{D}(d)=\int {p(o|d)U(o)do}\,}
+  
+  ,
+where the integral is taken over the whole set 
+  
+    
+      
+        O
+      
+    
+    {\displaystyle O}
+  
+ (DeGroot, pp 121).
+An optimal decision 
+  
+    
+      
+        
+          d
+          
+            
+              o
+              p
+              t
+            
+          
+        
+      
+    
+    {\displaystyle d_{\mathrm {opt} }}
+  
+ is then one that maximizes 
+  
+    
+      
+        
+          E
+        
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+      
+    
+    {\displaystyle {\text{E}}U_{D}(d)}
+  
+, just as above:
+
+  
+    
+      
+        
+          d
+          
+            
+              o
+              p
+              t
+            
+          
+        
+        =
+        arg
+        ⁡
+        
+          max
+          
+            d
+            ∈
+            D
+          
+        
+        
+          E
+        
+        
+          U
+          
+            D
+          
+        
+        (
+        d
+        )
+        .
+        
+      
+    
+    {\displaystyle d_{\mathrm {opt} }=\arg \max \limits _{d\in D}{\text{E}}U_{D}(d).\,}
+  
+
+An example is the Monty Hall problem.
+
+
+== See also ==
+Decision-making
+Decision-making software
+Two-alternative forced choice
+
+
+== References ==
+Morris DeGroot Optimal Statistical Decisions.  McGraw-Hill. New York. 1970. ISBN 0-07-016242-5.
+James O. Berger Statistical Decision Theory and Bayesian Analysis. Second Edition. 1980. Springer Series in Statistics. ISBN 0-387-96098-8.

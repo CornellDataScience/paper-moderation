@@ -1,0 +1,479 @@
+The von Neumann cardinal assignment is a cardinal assignment that uses ordinal numbers. For a well-orderable set U, we define its cardinal number to be the smallest ordinal number equinumerous to U, using the von Neumann definition of an ordinal number. More precisely:
+
+  
+    
+      
+        
+          |
+        
+        U
+        
+          |
+        
+        =
+        
+          c
+          a
+          r
+          d
+        
+        (
+        U
+        )
+        =
+        inf
+        {
+        α
+        ∈
+        
+          O
+          N
+        
+         
+        
+          |
+        
+         
+        α
+        
+          =
+          
+            c
+          
+        
+        U
+        }
+        ,
+      
+    
+    {\displaystyle |U|=\mathrm {card} (U)=\inf\{\alpha \in \mathrm {ON} \ |\ \alpha =_{c}U\},}
+  
+
+where ON is the class of ordinals.  This ordinal is also called the initial ordinal of the cardinal.
+That such an ordinal exists and is unique is guaranteed by the fact that U is well-orderable and that the class of ordinals is well-ordered, using the axiom of replacement. With the full axiom of choice, every set is well-orderable, so every set has a cardinal; we order the cardinals using the inherited ordering from the ordinal numbers. This is readily found to coincide with the ordering via ≤c. This is a well-ordering of cardinal numbers.
+
+
+== Initial ordinal of a cardinal ==
+Each ordinal has an associated cardinal, its cardinality, obtained by simply forgetting the order.  Any well-ordered set having that ordinal as its order type has the same cardinality.  The smallest ordinal having a given cardinal as its cardinality is called the initial ordinal of that cardinal.  Every finite ordinal (natural number) is initial, but most infinite ordinals are not initial.  The axiom of choice is equivalent to the statement that every set can be well-ordered, i.e. that every cardinal has an initial ordinal.  In this case, it is traditional to identify the cardinal number with its initial ordinal, and we say that the initial ordinal is a cardinal.
+The 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+-th infinite initial ordinal is written 
+  
+    
+      
+        
+          ω
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \omega _{\alpha }}
+  
+.  Its cardinality is written 
+  
+    
+      
+        
+          ℵ
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \aleph _{\alpha }}
+  
+ (the 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+-th aleph number). For example, the cardinality of 
+  
+    
+      
+        
+          ω
+          
+            0
+          
+        
+        =
+        ω
+      
+    
+    {\displaystyle \omega _{0}=\omega }
+  
+ is 
+  
+    
+      
+        
+          ℵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \aleph _{0}}
+  
+, which is also the cardinality of 
+  
+    
+      
+        
+          ω
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \omega ^{2}}
+  
+, 
+  
+    
+      
+        
+          ω
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle \omega ^{\omega }}
+  
+, and 
+  
+    
+      
+        
+          ϵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \epsilon _{0}}
+  
+ (all are countable ordinals).  So we identify 
+  
+    
+      
+        
+          ω
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \omega _{\alpha }}
+  
+ with 
+  
+    
+      
+        
+          ℵ
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \aleph _{\alpha }}
+  
+, except that the notation 
+  
+    
+      
+        
+          ℵ
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \aleph _{\alpha }}
+  
+ is used for writing cardinals, and 
+  
+    
+      
+        
+          ω
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \omega _{\alpha }}
+  
+ for writing ordinals. This is important because arithmetic on cardinals is different from arithmetic on ordinals, for example 
+  
+    
+      
+        
+          ℵ
+          
+            α
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \aleph _{\alpha }^{2}}
+  
+ = 
+  
+    
+      
+        
+          ℵ
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \aleph _{\alpha }}
+  
+ whereas 
+  
+    
+      
+        
+          ω
+          
+            α
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \omega _{\alpha }^{2}}
+  
+ > 
+  
+    
+      
+        
+          ω
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \omega _{\alpha }}
+  
+. Also, 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega _{1}}
+  
+ is the smallest uncountable ordinal (to see that it exists, consider the set of equivalence classes of well-orderings of the natural numbers; each such well-ordering defines a countable ordinal, and 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega _{1}}
+  
+ is the order type of that set), 
+  
+    
+      
+        
+          ω
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \omega _{2}}
+  
+ is the smallest ordinal whose cardinality is greater than 
+  
+    
+      
+        
+          ℵ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \aleph _{1}}
+  
+, and so on, and 
+  
+    
+      
+        
+          ω
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle \omega _{\omega }}
+  
+ is the limit of 
+  
+    
+      
+        
+          ω
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \omega _{n}}
+  
+ for natural numbers 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ (any limit of cardinals is a cardinal, so this limit is indeed the first cardinal after all the 
+  
+    
+      
+        
+          ω
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \omega _{n}}
+  
+).
+Infinite initial ordinals are limit ordinals. Using ordinal arithmetic, 
+  
+    
+      
+        α
+        <
+        
+          ω
+          
+            β
+          
+        
+      
+    
+    {\displaystyle \alpha <\omega _{\beta }}
+  
+ implies 
+  
+    
+      
+        α
+        +
+        
+          ω
+          
+            β
+          
+        
+        =
+        
+          ω
+          
+            β
+          
+        
+      
+    
+    {\displaystyle \alpha +\omega _{\beta }=\omega _{\beta }}
+  
+, and 1 ≤ α < ωβ implies α · ωβ = ωβ, and 2 ≤ α < ωβ implies αωβ = ωβ. Using the Veblen hierarchy, β ≠ 0 and α < ωβ imply 
+  
+    
+      
+        
+          φ
+          
+            α
+          
+        
+        (
+        
+          ω
+          
+            β
+          
+        
+        )
+        =
+        
+          ω
+          
+            β
+          
+        
+        
+      
+    
+    {\displaystyle \varphi _{\alpha }(\omega _{\beta })=\omega _{\beta }\,}
+  
+ and Γωβ = ωβ. Indeed, one can go far beyond this. So as an ordinal, an infinite initial ordinal is an extremely strong kind of limit.
+
+
+== See also ==
+Aleph number
+
+
+== References ==
+Y.N. Moschovakis Notes on Set Theory (1994 Springer) p. 198

@@ -1,0 +1,30 @@
+JavaOS is a discontinued operating system based on a Java virtual machine. It was originally developed by Sun Microsystems. Unlike Windows, macOS, Unix, or Unix-like systems which are primarily written in the C programming language, JavaOS is primarily written in Java. It is now considered a legacy system.
+
+
+== History ==
+The Java programming language was introduced by Sun in May 1995. Jim Mitchell and Peter Madany at JavaSoft designed a new operating system, codenamed Kona, written completely in Java. In March 1996, Tom Saulpaugh joined the now seven-person Kona team to design an input/output (I/O) architecture, having come from Apple as Macintosh system software engineer since June 1985 and co-architect of Copland.: XI–XIII 
+JavaOS was first announced in a Byte article. In 1996, JavaSoft's official product announcement described the compact OS designed to run "in anything from net computers to pagers". In early 1997, JavaSoft transferred JavaOS to SunSoft. In late 1997, Bob Rodriguez led the team to collaborate with IBM who then marketed the platform, accelerated development, and made significant key architectural contributions to the next release of JavaOS, eventually renamed JavaOS for Business.: XI–XIII  IBM indicated its focus was more on network computer thin clients, specifically to replace traditional IBM 3270 "green screen" and Unix X terminals, and to implement single application clients.
+Chorus, a distributed real-time operating system, was used for its microkernel technology.: XIII  This began with Chorus Systèmes SA, a French company, licensing JavaOS from Sun and replacing the earlier JavaOS hardware abstraction layer with the Chorus microkernel, thereby creating the Chorus/Jazz product, which was intended to allow Java applications to run in a distributed, real-time embedded system environment. Then in September 1997, it was announced that Sun Microsystems was acquiring Chorus Systèmes SA.
+In 1999, Sun and IBM announced the discontinuation of the JavaOS product. As early as 2003, Sun materials referred to JavaOS as a "legacy technology", recommending migration to Java ME, leaving the choice of specific OS and Java environment to the implementer.
+
+
+== Design ==
+JavaOS is based on a hardware architecture native microkernel, running on platforms including ARM, PowerPC, SPARC, StrongARM, and IA-32 (x86). The Java virtual machine runs on the microkernel. All device drivers are written in Java and executed by the virtual machine. A graphics and windowing system implementing the Abstract Window Toolkit (AWT) application programming interface (API) is also written in Java.
+JavaOS was designed to run on embedded systems and has applications in devices such as set-top boxes, computer networking infrastructure, and automated teller machines (ATMs). It comes with the JavaStation.
+
+
+== Licensing ==
+JavaSoft granted licenses to more than 25 manufacturers, including Oracle, Acer, Xerox, Toshiba, and Nokia. IBM and Sun announced the cooperation for JavaOS for Business at the end of March 1998.
+
+
+== See also ==
+
+Android (operating system)
+Java Desktop System
+JX (operating system)
+Inferno (operating system)
+SavaJe
+Vino (operating system)
+
+
+== References ==

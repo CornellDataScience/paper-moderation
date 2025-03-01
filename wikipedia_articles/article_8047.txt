@@ -1,0 +1,16 @@
+In block storage devices such as hard disk drives, interleaving is a technique used to improve slow system performance by putting data accessed sequentially into non-sequential blocks, typically sectors. The number of physical sectors between consecutive logical sectors is called the interleave skip factor or skip factor.
+
+Historically, interleaving was used in 
+
+Minimizing missed rotations between instructions on computers storing instructions on a drum memory
+Ordering block storage on storage devices such as drums, floppy disk drives and hard disk drives. The purpose of interleaving was to adjust the time difference between when the program was ready to transfer data, and when those data were actually arriving at the drive head to be read. Interleaving was common prior to the 1990s, but faded from use as processing speeds increased. Modern disk storage is not interleaved. Modern operating systems do not use interleaving for, e.g., paging files.
+Interleaving was used to arrange the sectors most efficiently, so that after reading a sector, time is allowed for processing, and then the next sector in sequence is ready to be read just as the computer is ready to do so. Matching the sector interleave to the processing speed therefore accelerates the data transfer, but an incorrect interleave can make the system perform markedly slower.
+Information is typically stored on disks in small pieces referred to as sectors or blocks. These are arranged in concentric rings called tracks, across the surface of each disk. While it may be simplest to order the blocks directly on each track as 1 2 3 4 5 6 7 8 9, for early computing devices serial ordering was not practical.
+Data to be written or read is saved to a special region of reusable memory referred to as a buffer. When data needed to be written, it was moved into the buffer, and then written from the buffer to the disk. When data was read, the reverse process transferred data first into the buffer and then to system RAM. Most early computers were not fast enough to read a sector, move the data from the buffer to system RAM, and be ready to read the next sector by the time that next sector was appearing under the read head.
+If sectors were arranged in direct order, after the first sector was read, the computer might, for example, have sectors 2, 3 and 4 pass under the read head before it was ready to receive data again. The computer doesn't need sectors 5, 6, 7, 8, 9, or 1, and must wait for them to pass by, before reading sector 2. This wait for the disk to spin around to the next sector slows the data transfer rate.
+To correct for the processing delays, the ideal interleave for this system would be 1:4, ordering the sectors like this: 1 8 6 4 2 9 7 5 3. It reads sector 1, then processes it while the three sectors 8 6 and 4 pass by, and when the microprocessor becomes ready again, sector two is arriving just as it is needed.
+A 1:1 interleave (skip factor of 0) places the sectors sequentially—1 2 3 4 5 6 ... .
+Modern block storage devices do not require interleaving. Data is now commonly stored as clusters (groups of sectors), and the data buffer is sufficiently large to allow all sectors in a block to be read at once without any delay between sectors.
+
+
+== References ==

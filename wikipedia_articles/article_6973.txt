@@ -1,0 +1,1103 @@
+In two-body, Keplerian orbital mechanics, the equation of the center is the angular difference between the actual position of a body in its elliptical orbit and the position it would occupy if its motion were uniform, in a circular orbit of the same period. It is defined as the difference true anomaly, ν, minus mean anomaly, M, and is typically expressed a function of mean anomaly, M, and orbital eccentricity, e.
+
+
+== Discussion ==
+Since antiquity, the problem of predicting the motions of the heavenly bodies has been simplified by reducing it to one of a single body in orbit about another. In calculating the position of the body around its orbit, it is often convenient to begin by assuming circular motion. This first approximation is then simply a constant angular rate multiplied by an amount of time. However, the actual solution, assuming Newtonian physics, is an elliptical orbit (a Keplerian orbit). For these, it is easy to find the mean anomaly (and hence the time) for a given true anomaly (the angular position of the planet around the sun), by converting true anomaly 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ to "eccentric anomaly":
+
+  
+    
+      
+        E
+        =
+        atan2
+        ⁡
+        
+          (
+          
+             
+            
+              
+                1
+                −
+                
+                  e
+                  
+                    2
+                  
+                
+              
+            
+            sin
+            ⁡
+            f
+            ,
+             
+            e
+            +
+            cos
+            ⁡
+            f
+          
+          )
+        
+      
+    
+    {\displaystyle E=\operatorname {atan2} \left(\ {\sqrt {1-e^{2}}}\sin f,\ e+\cos f\right)}
+  
+
+where atan2(y, x) is the angle from the x-axis of the ray from (0, 0) to (x, y), having the same sign as y (note that the arguments are often reversed in spreadsheets), and then using Kepler's equation to find the mean anomaly:
+
+  
+    
+      
+        M
+        =
+        E
+        −
+        e
+        sin
+        ⁡
+        E
+      
+    
+    {\displaystyle M=E-e\sin E}
+  
+
+If 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is known and we wish to find 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ and 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ then Kepler's equation can be solved by numerical methods, but there are also series solutions involving sine of 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+.
+In cases of small eccentricity, the position given by a truncated series solution may be quite accurate. Many orbits of interest, such as those of bodies in the Solar System or of artificial Earth satellites, have these nearly-circular orbits. As eccentricity becomes greater, and orbits more elliptical, the accuracy of a given truncation of the series declines. If the series is taken as a power series in eccentricity then it fails to converge at high eccentricities.
+The series in its modern form can be truncated at any point, and even when limited to just the most important terms it can produce an easily calculated approximation of the true position when full accuracy is not important. Such approximations can be used, for instance, as starting values for iterative solutions of Kepler's equation, or in calculating rise or set times, which due to atmospheric effects cannot be predicted with much precision.
+The ancient Greeks, in particular Hipparchus, knew the equation of the center as prosthaphaeresis, although their understanding of the geometry of the planets' motion was not the same. The word equation (Latin, aequatio, -onis) in the present sense comes from astronomy. It was specified and used by Kepler, as that variable quantity determined by calculation which must be added or subtracted from the mean motion to obtain the true motion. In astronomy, the term equation of time has a similar meaning. The equation of the center in modern form was developed as part of perturbation analysis, that is, the study of the effects of a third body on two-body motion.
+
+
+== Series expansion ==
+
+In Keplerian motion, the coordinates of the body retrace the same values with each orbit, which is the definition of a periodic function. Such functions can be expressed as periodic series of any continuously increasing angular variable, and the variable of most interest is the mean anomaly, M. Because it increases uniformly with time, expressing any other variable as a series in mean anomaly is essentially the same as expressing it in terms of time. Although the true anomaly is an analytic function of M, it is not an entire function so a power series in  M will have a limited range of convergence. But as a periodic function, a Fourier series will converge everywhere. The coefficients of the series are built from Bessel functions depending on the eccentricity e. Note that while these series can be presented in truncated form, they represent a sum of an infinite number of terms.
+The series for ν, the true anomaly can be expressed most conveniently in terms of M, e and Bessel functions of the first kind,
+
+  
+    
+      
+        ν
+        =
+        M
+        +
+        2
+        
+          ∑
+          
+            s
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            s
+          
+        
+        
+          {
+          
+            
+              J
+              
+                s
+              
+            
+            (
+            s
+            e
+            )
+            +
+            
+              ∑
+              
+                p
+                =
+                1
+              
+              
+                ∞
+              
+            
+            
+              β
+              
+                p
+              
+            
+            
+              [
+              
+                
+                  J
+                  
+                    s
+                    −
+                    p
+                  
+                
+                (
+                s
+                e
+                )
+                +
+                
+                  J
+                  
+                    s
+                    +
+                    p
+                  
+                
+                (
+                s
+                e
+                )
+              
+              ]
+            
+          
+          }
+        
+        sin
+        ⁡
+        s
+        M
+        ,
+      
+    
+    {\displaystyle \nu =M+2\sum _{s=1}^{\infty }{\frac {1}{s}}\left\{J_{s}(se)+\sum _{p=1}^{\infty }\beta ^{p}\left[J_{s-p}(se)+J_{s+p}(se)\right]\right\}\sin sM,}
+  
+
+where
+
+  
+    
+      
+        
+          J
+          
+            n
+          
+        
+        (
+        s
+        e
+        )
+      
+    
+    {\displaystyle J_{n}(se)}
+  
+ are the Bessel functions and
+
+  
+    
+      
+        β
+        =
+        
+          
+            1
+            e
+          
+        
+        
+          (
+          
+            1
+            −
+            
+              
+                1
+                −
+                
+                  e
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \beta ={\frac {1}{e}}\left(1-{\sqrt {1-e^{2}}}\right).}
+  
+
+The result is in radians.
+The Bessel functions can be expanded in powers of x by,
+
+  
+    
+      
+        
+          J
+          
+            n
+          
+        
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              n
+              !
+            
+          
+        
+        
+          
+            (
+            
+              
+                x
+                2
+              
+            
+            )
+          
+          
+            n
+          
+        
+        
+          ∑
+          
+            m
+            =
+            0
+          
+          
+            ∞
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            m
+          
+        
+        
+          
+            
+              
+                (
+                
+                  
+                    x
+                    2
+                  
+                
+                )
+              
+              
+                2
+                m
+              
+            
+            
+              m
+              !
+              
+                ∏
+                
+                  k
+                  =
+                  1
+                
+                
+                  m
+                
+              
+              (
+              n
+              +
+              k
+              )
+            
+          
+        
+      
+    
+    {\displaystyle J_{n}(x)={\frac {1}{n!}}\left({\frac {x}{2}}\right)^{n}\sum _{m=0}^{\infty }(-1)^{m}{\frac {\left({\frac {x}{2}}\right)^{2m}}{m!\prod _{k=1}^{m}(n+k)}}}
+  
+
+and βm by,
+
+  
+    
+      
+        
+          β
+          
+            m
+          
+        
+        =
+        
+          
+            (
+            
+              
+                e
+                2
+              
+            
+            )
+          
+          
+            m
+          
+        
+        
+          [
+          
+            1
+            +
+            m
+            
+              ∑
+              
+                n
+                =
+                1
+              
+              
+                ∞
+              
+            
+            
+              
+                
+                  (
+                  2
+                  n
+                  +
+                  m
+                  −
+                  1
+                  )
+                  !
+                
+                
+                  n
+                  !
+                  (
+                  n
+                  +
+                  m
+                  )
+                  !
+                
+              
+            
+            
+              
+                (
+                
+                  
+                    e
+                    2
+                  
+                
+                )
+              
+              
+                2
+                n
+              
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle \beta ^{m}=\left({\frac {e}{2}}\right)^{m}\left[1+m\sum _{n=1}^{\infty }{\frac {(2n+m-1)!}{n!(n+m)!}}\left({\frac {e}{2}}\right)^{2n}\right].}
+  
+
+Substituting and reducing, the equation for ν becomes (truncated at order e7),
+
+  
+    
+      
+        
+          
+            
+              
+                ν
+                ≈
+                M
+              
+              
+                
+                +
+                
+                  (
+                  
+                    2
+                    e
+                    −
+                    
+                      
+                        1
+                        4
+                      
+                    
+                    
+                      e
+                      
+                        3
+                      
+                    
+                    +
+                    
+                      
+                        5
+                        96
+                      
+                    
+                    
+                      e
+                      
+                        5
+                      
+                    
+                    +
+                    
+                      
+                        107
+                        4608
+                      
+                    
+                    
+                      e
+                      
+                        7
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                M
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  (
+                  
+                    
+                      
+                        5
+                        4
+                      
+                    
+                    
+                      e
+                      
+                        2
+                      
+                    
+                    −
+                    
+                      
+                        11
+                        24
+                      
+                    
+                    
+                      e
+                      
+                        4
+                      
+                    
+                    +
+                    
+                      
+                        17
+                        192
+                      
+                    
+                    
+                      e
+                      
+                        6
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                2
+                M
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  (
+                  
+                    
+                      
+                        13
+                        12
+                      
+                    
+                    
+                      e
+                      
+                        3
+                      
+                    
+                    −
+                    
+                      
+                        43
+                        64
+                      
+                    
+                    
+                      e
+                      
+                        5
+                      
+                    
+                    +
+                    
+                      
+                        95
+                        512
+                      
+                    
+                    
+                      e
+                      
+                        7
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                3
+                M
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  (
+                  
+                    
+                      
+                        103
+                        96
+                      
+                    
+                    
+                      e
+                      
+                        4
+                      
+                    
+                    −
+                    
+                      
+                        451
+                        480
+                      
+                    
+                    
+                      e
+                      
+                        6
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                4
+                M
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  (
+                  
+                    
+                      
+                        1097
+                        960
+                      
+                    
+                    
+                      e
+                      
+                        5
+                      
+                    
+                    −
+                    
+                      
+                        5957
+                        4608
+                      
+                    
+                    
+                      e
+                      
+                        7
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                5
+                M
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  
+                    1223
+                    960
+                  
+                
+                
+                  e
+                  
+                    6
+                  
+                
+                sin
+                ⁡
+                6
+                M
+                +
+                
+                  
+                    47273
+                    32256
+                  
+                
+                
+                  e
+                  
+                    7
+                  
+                
+                sin
+                ⁡
+                7
+                M
+                +
+                ⋯
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\nu \approx M&+\left(2e-{\frac {1}{4}}e^{3}+{\frac {5}{96}}e^{5}+{\frac {107}{4608}}e^{7}\right)\sin M\\&{}+\left({\frac {5}{4}}e^{2}-{\frac {11}{24}}e^{4}+{\frac {17}{192}}e^{6}\right)\sin 2M\\&{}+\left({\frac {13}{12}}e^{3}-{\frac {43}{64}}e^{5}+{\frac {95}{512}}e^{7}\right)\sin 3M\\&{}+\left({\frac {103}{96}}e^{4}-{\frac {451}{480}}e^{6}\right)\sin 4M\\&{}+\left({\frac {1097}{960}}e^{5}-{\frac {5957}{4608}}e^{7}\right)\sin 5M\\&{}+{\frac {1223}{960}}e^{6}\sin 6M+{\frac {47273}{32256}}e^{7}\sin 7M+\cdots \end{aligned}}}
+  
+
+and by the definition, moving M to the left-hand side,
+
+gives an approximation for the equation of the center. However, it is not a good approximation when e is high (see graph). If the coefficients are calculated from the Bessel functions then the approximation is much better when going up to the same frequency (such as 
+  
+    
+      
+        sin
+        ⁡
+        7
+        M
+      
+    
+    {\displaystyle \sin 7M}
+  
+).
+This formula is sometimes presented in terms of powers of e with coefficients in functions of sin M (here truncated at order e6),
+
+  
+    
+      
+        
+          
+            
+              
+                ν
+                =
+                M
+              
+              
+                
+                
+
+                
+                +
+                2
+                e
+                sin
+                ⁡
+                M
+                +
+                
+                  
+                    5
+                    4
+                  
+                
+                
+                  e
+                  
+                    2
+                  
+                
+                sin
+                ⁡
+                2
+                M
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  
+                    
+                      e
+                      
+                        3
+                      
+                    
+                    12
+                  
+                
+                (
+                13
+                sin
+                ⁡
+                3
+                M
+                −
+                3
+                sin
+                ⁡
+                M
+                )
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  
+                    
+                      e
+                      
+                        4
+                      
+                    
+                    96
+                  
+                
+                (
+                103
+                sin
+                ⁡
+                4
+                M
+                −
+                44
+                sin
+                ⁡
+                2
+                M
+                )
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  
+                    
+                      e
+                      
+                        5
+                      
+                    
+                    960
+                  
+                
+                (
+                1097
+                sin
+                ⁡
+                5
+                M
+                −
+                645
+                sin
+                ⁡
+                3
+                M
+                +
+                50
+                sin
+                ⁡
+                M
+                )
+              
+            
+            
+              
+              
+                
+                
+
+                
+                +
+                
+                  
+                    
+                      e
+                      
+                        6
+                      
+                    
+                    960
+                  
+                
+                (
+                1223
+                sin
+                ⁡
+                6
+                M
+                −
+                902
+                sin
+                ⁡
+                4
+                M
+                +
+                85
+                sin
+                ⁡
+                2
+                M
+                )
+                +
+                ⋯
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\nu =M&{}+2e\sin M+{\frac {5}{4}}e^{2}\sin 2M\\&{}+{\frac {e^{3}}{12}}(13\sin 3M-3\sin M)\\&{}+{\frac {e^{4}}{96}}(103\sin 4M-44\sin 2M)\\&{}+{\frac {e^{5}}{960}}(1097\sin 5M-645\sin 3M+50\sin M)\\&{}+{\frac {e^{6}}{960}}(1223\sin 6M-902\sin 4M+85\sin 2M)+\cdots \end{aligned}}}
+  
+
+which is similar to the above form.
+This presentation, when not truncated, contains the same infinite set of terms, but implies a different order of adding them up.
+Because of this, for small e, the series converges rapidly but if e exceeds the "Laplace limit" of 0.6627... then it diverges for all values of M (other than multiples of π), a fact discovered by Francesco Carlini and Pierre-Simon Laplace.
+
+
+== Examples ==
+The equation of the center attains its maximum when the eccentric anomaly is 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+        ,
+      
+    
+    {\displaystyle \pi /2,}
+  
+ the true anomaly is 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+        +
+        arcsin
+        ⁡
+        e
+        ,
+      
+    
+    {\displaystyle \pi /2+\operatorname {arcsin} e,}
+  
+ the mean anomaly is 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+        −
+        e
+        ,
+      
+    
+    {\displaystyle \pi /2-e,}
+  
+ and the equation of the center is 
+  
+    
+      
+        e
+        +
+        arcsin
+        ⁡
+        e
+        .
+      
+    
+    {\displaystyle e+\operatorname {arcsin} e.}
+  
+ Here are some examples:
+
+
+== See also ==
+Celestial mechanics
+Gravitational two-body problem
+Kepler orbit
+Kepler problem
+Two-body problem
+
+
+== References ==
+
+
+== Further reading ==
+Marth, A. (1890). On the computation of the equation of the centre in elliptical orbits of moderate eccentricities. Monthly Notices of the Royal Astronomical Society, Vol. 50, p. 502. Gives the equation of the center to order e10.
+Morrison, J. (1883). On the computation of the eccentric anomaly, equation of the centre and radius vector of a planet, in terms of the mean anomaly and eccentricity. Monthly Notices of the Royal Astronomical Society, Vol. 43, p. 345. Gives the equation of the center to order e12.
+Morrison, J. (1883). Errata. Monthly Notices of the Royal Astronomical Society, Vol. 43, p. 494.

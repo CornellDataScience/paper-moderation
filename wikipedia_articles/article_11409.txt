@@ -1,0 +1,477 @@
+In mathematics, more specifically in group theory, a group is said to be perfect if it equals its own commutator subgroup, or equivalently, if the group has no non-trivial abelian quotients (equivalently, its abelianization, which is the universal abelian quotient, is trivial). In symbols, a perfect group is one such that G(1) = G (the commutator subgroup equals the group), or equivalently one such that Gab = {1} (its abelianization is trivial).
+
+
+== Examples ==
+The smallest (non-trivial) perfect group is the alternating group A5. More generally, any non-abelian simple group is perfect since the commutator subgroup is a normal subgroup with abelian quotient. However, a perfect group need not be simple; for example, the special linear group over the field with 5 elements, SL(2,5) (or the binary icosahedral group, which is isomorphic to it) is perfect but not simple (it has a non-trivial center containing 
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  
+                    −
+                    1
+                  
+                  
+                    0
+                  
+                
+                
+                  
+                    0
+                  
+                  
+                    −
+                    1
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  
+                    4
+                  
+                  
+                    0
+                  
+                
+                
+                  
+                    0
+                  
+                  
+                    4
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{smallmatrix}-1&0\\0&-1\end{smallmatrix}}\right)=\left({\begin{smallmatrix}4&0\\0&4\end{smallmatrix}}\right)}
+  
+).
+The direct product of any two simple non-abelian groups is perfect but not simple; the commutator of two elements is [(a,b),(c,d)] = ([a,c],[b,d]). Since commutators in each simple group form a generating set, pairs of commutators form a generating set of the direct product.
+The fundamental group of 
+  
+    
+      
+        S
+        O
+        (
+        3
+        )
+        
+          /
+        
+        
+          I
+          
+            60
+          
+        
+      
+    
+    {\displaystyle SO(3)/I_{60}}
+  
+ is a perfect group of order 120.
+More generally, a quasisimple group (a perfect central extension of a simple group) that is a non-trivial extension (and therefore not a simple group itself) is perfect but not simple; this includes all the insoluble non-simple finite special linear groups SL(n,q) as extensions of the projective special linear group PSL(n,q) (SL(2,5) is an extension of PSL(2,5), which is isomorphic to A5). Similarly, the special linear group over the real and complex numbers is perfect, but the general linear group GL is never perfect (except when trivial or over 
+  
+    
+      
+        
+          
+            F
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {F} _{2}}
+  
+, where it equals the special linear group), as the determinant gives a non-trivial abelianization and indeed the commutator subgroup is SL.
+A non-trivial perfect group, however, is necessarily not solvable; and 4 divides its order (if finite), moreover, if 8 does not divide the order, then 3 does.
+Every acyclic group is perfect, but the converse is not true: A5 is perfect but not acyclic (in fact, not even superperfect), see (Berrick & Hillman 2003). In fact, for 
+  
+    
+      
+        n
+        ≥
+        5
+      
+    
+    {\displaystyle n\geq 5}
+  
+ the alternating group 
+  
+    
+      
+        
+          A
+          
+            n
+          
+        
+      
+    
+    {\displaystyle A_{n}}
+  
+ is perfect but not superperfect, with 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        (
+        
+          A
+          
+            n
+          
+        
+        ,
+        
+          Z
+        
+        )
+        =
+        
+          Z
+        
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle H_{2}(A_{n},\mathbb {Z} )=\mathbb {Z} /2}
+  
+ for 
+  
+    
+      
+        n
+        ≥
+        8
+      
+    
+    {\displaystyle n\geq 8}
+  
+.
+Any quotient of a perfect group is perfect. A non-trivial finite perfect group that is not simple must then be an extension of at least one smaller simple non-abelian group. But it can be the extension of more than one simple group. In fact, the direct product of perfect groups is also perfect.
+Every perfect group G determines another perfect group E (its universal central extension) together with a surjection f: E → G whose kernel is in the center of E,
+such that f is universal with this property. The kernel of f is called the Schur multiplier of G because it was first studied by Issai Schur in 1904; it is isomorphic to the homology group 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle H_{2}(G)}
+  
+.
+In the plus construction of algebraic K-theory, if we consider the group 
+  
+    
+      
+        GL
+        ⁡
+        (
+        A
+        )
+        =
+        
+          colim
+        
+        
+          GL
+          
+            n
+          
+        
+        ⁡
+        (
+        A
+        )
+      
+    
+    {\displaystyle \operatorname {GL} (A)={\text{colim}}\operatorname {GL} _{n}(A)}
+  
+ for a commutative ring 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, then the subgroup of elementary matrices 
+  
+    
+      
+        E
+        (
+        R
+        )
+      
+    
+    {\displaystyle E(R)}
+  
+ forms a perfect subgroup.
+
+
+== Ore's conjecture ==
+As the commutator subgroup is generated by commutators, a perfect group may contain elements that are products of commutators but not themselves commutators. Øystein Ore proved in 1951 that the alternating groups on five or more elements contained only commutators, and conjectured that this was so for all the finite non-abelian simple groups. Ore's conjecture was finally proven in 2008. The proof relies on the classification theorem.
+
+
+== Grün's lemma ==
+A basic fact about perfect groups is Otto Grün's proposition of Grün's lemma (Grün 1935, Satz 4, p. 3): the quotient of a perfect group by its center is centerless (has trivial center).
+
+Proof: If G is a perfect group, let Z1 and Z2 denote the first two terms of the upper central series of G (i.e., Z1 is the center of G, and Z2/Z1 is the center of G/Z1). If H and K are subgroups of G, denote the commutator of H and K by [H, K] and note that [Z1, G] = 1 and [Z2, G] ⊆ Z1, and consequently (the convention that [X, Y, Z] = [[X, Y], Z] is followed):
+
+  
+    
+      
+        [
+        
+          Z
+          
+            2
+          
+        
+        ,
+        G
+        ,
+        G
+        ]
+        =
+        [
+        [
+        
+          Z
+          
+            2
+          
+        
+        ,
+        G
+        ]
+        ,
+        G
+        ]
+        ⊆
+        [
+        
+          Z
+          
+            1
+          
+        
+        ,
+        G
+        ]
+        =
+        1
+      
+    
+    {\displaystyle [Z_{2},G,G]=[[Z_{2},G],G]\subseteq [Z_{1},G]=1}
+  
+
+  
+    
+      
+        [
+        G
+        ,
+        
+          Z
+          
+            2
+          
+        
+        ,
+        G
+        ]
+        =
+        [
+        [
+        G
+        ,
+        
+          Z
+          
+            2
+          
+        
+        ]
+        ,
+        G
+        ]
+        =
+        [
+        [
+        
+          Z
+          
+            2
+          
+        
+        ,
+        G
+        ]
+        ,
+        G
+        ]
+        ⊆
+        [
+        
+          Z
+          
+            1
+          
+        
+        ,
+        G
+        ]
+        =
+        1.
+      
+    
+    {\displaystyle [G,Z_{2},G]=[[G,Z_{2}],G]=[[Z_{2},G],G]\subseteq [Z_{1},G]=1.}
+  
+
+By the three subgroups lemma (or equivalently, by the Hall-Witt identity), it follows that [G, Z2] = [[G, G], Z2] = [G, G, Z2] = {1}. Therefore, Z2 ⊆ Z1 = Z(G), and the center of the quotient group G / Z(G) is the trivial group.
+As a consequence, all higher centers (that is, higher terms in the upper central series) of a perfect group equal the center.
+
+
+== Group homology ==
+In terms of group homology, a perfect group is precisely one whose first homology group vanishes: H1(G, Z) = 0, as the first homology group of a group is exactly the abelianization of the group, and perfect means trivial abelianization. An advantage of this definition is that it admits strengthening:
+
+A superperfect group is one whose first two homology groups vanish: 
+  
+    
+      
+        
+          H
+          
+            1
+          
+        
+        (
+        G
+        ,
+        
+          Z
+        
+        )
+        =
+        
+          H
+          
+            2
+          
+        
+        (
+        G
+        ,
+        
+          Z
+        
+        )
+        =
+        0
+      
+    
+    {\displaystyle H_{1}(G,\mathbb {Z} )=H_{2}(G,\mathbb {Z} )=0}
+  
+.
+An acyclic group is one all of whose (reduced) homology groups vanish 
+  
+    
+      
+        
+          
+            
+              
+                H
+                ~
+              
+            
+          
+          
+            i
+          
+        
+        (
+        G
+        ;
+        
+          Z
+        
+        )
+        =
+        0.
+      
+    
+    {\displaystyle {\tilde {H}}_{i}(G;\mathbb {Z} )=0.}
+  
+ (This is equivalent to all homology groups other than 
+  
+    
+      
+        
+          H
+          
+            0
+          
+        
+      
+    
+    {\displaystyle H_{0}}
+  
+ vanishing.)
+
+
+== Quasi-perfect group ==
+Especially in the field of algebraic K-theory, a group is said to be quasi-perfect if its commutator subgroup is perfect; in symbols, a quasi-perfect group is one such that G(1) = G(2) (the commutator of the commutator subgroup is the commutator subgroup), while a perfect group is one such that G(1) = G (the commutator subgroup is the whole group). See (Karoubi 1973, pp. 301–411) and (Inassaridze 1995, p. 76).
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Weisstein, Eric W. "Perfect Group". MathWorld.
+Weisstein, Eric W. "Grün's lemma". MathWorld.

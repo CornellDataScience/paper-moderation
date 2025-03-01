@@ -1,0 +1,28 @@
+Microscopy with UV Surface Excitation (MUSE) is a novel microscopy method that utilizes the shallow penetration of UV photons (230–300 nm) excitation. Compared to conventional microscopes, which usually require sectioning to exclude blurred signals from outside of the focal plane, MUSE's low penetration depth limits the excitation volume to a thin layer, and removes the tissue sectioning requirement. The entire signal collected is the desired light, and all photons collected contribute to the image formation.
+
+
+== Mechanism ==
+
+The microscope setup is based on an inverted microscope design. An automated stage is used to record larger areas by mosaicing a series of single adjacent frames. The LED light is focused using a ball lens with a short focal length onto the sample surface in an oblique-angle cis-illumination scheme since standard microscopy optics do not transmit UV light efficiently. No dichroic mirror or filter is required as microscope objectives are opaque to UV excitation light. The emitted fluorescence light is collected using a long-working-distance objective and focused via a tube lens onto a CCD camera.
+Specimens are submerged in exogenous dye for 10 seconds and then briefly washed in water or phosphate-buffered saline (PBS). The resulting stained specimens generate bright enough signals for direct and interpretable visualization through microscope eyepiece.
+
+
+== Contrast enhancement ==
+Previous work from MUSE includes the detection of endogenous fluorescent molecules in intact clinical and human tissues for functional and structural characterization, which is limited by the relatively dim autofluorescence found in tissue. However, the use of bright exogenous dyes can provide substantially more remitted light than the autofluorescence approach.
+Several dyes have been studied for MUSE's application, including eosin, rhodamine, DAPI, Hoechst, acridine orange, propidium iodide, and proflavine. Eosin and rhodamine stain the cytoplasm and the extracellular matrix, making the bulk of the tissue visible. Hoechst and DAPI fluoresce brightly when bound to DNA, allowing them to serve as excellent nuclear stains.
+
+
+== Innovation and significance ==
+Microscope-based diagnostics are widely performed and served as a gold standard in histological analysis. However this procedure generally requires a series time-consuming lab-based procedures including fixation, paraffin embedment, sectioning, and staining to produce microscope slides with optically thin tissue slides (4–6 μm). While in developed regions histology is commonly used, people who live in areas with limited resources can hardly access it and consequently are in need for a low-cost, more efficient way to access pathological diagnosis. The main significance of MUSE system comes from its capacity to produce high-resolution microscopic image with subcellular features in a time-efficient manner with less costs and less lab-expertises requirements.
+With 280 nm deep UV excitation and simple but robust hardware design, MUSE system can collect fluorescence signals without the need for fluorescence filtering techniques or complex mathematical image reconstruction. It has potential for generate high quality images containing more information than microscope slides in terms of its 2.5 dimensional features. MUSE images have been validated with diagnostic values. The system is capable to produce images from various tissue type in different sizes, either fresh or fixed.
+
+
+== Use ==
+MUSE system mainly serves as a low-cost alternative to traditional histological analysis for cancer diagnostics with simpler and less time-consuming techniques. By integrating microscopy and fresh tissue fluorescence staining into an automated optical system, the overall acquiring time needed for getting digital images with diagnostic values can be much shortened into the scale of minutes comparing with conventional pathology, where general procedure can take from hours to days. The color-mapping techniques that correlated fluorescence staining to traditional H&E staining provide the same visual representation to pathologists based on existing knowledge with no need for additional training on image recognition.
+Additionally, this system also has great potential to be used for intraoperative consultation, a method performed in pathologists lab that examine the microscopic features of tissue during oncological surgery usually for rapid cancer lesion and margin detection. It also can play an important role in biological and medical research, which might require examination on cellular features of tissue samples. In the future, the system can be further optimized to include more features including staining protocol, LEDs wavelength for more research usages and applications.  
+
+
+== Advantages and disadvantages ==
+
+
+== References ==

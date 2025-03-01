@@ -1,0 +1,36 @@
+Ethernet Advanced Physical Layer (Ethernet-APL) describes a physical layer for the Ethernet communication technology which is especially developed for the requirements of the process industries. The development of Ethernet-APL was determined by the need for communication at high speeds and over long distances, the supply of power and communications signals via common single, twisted-pair (2-wire) cable as well as protective measures for the safe use within explosion hazardous areas. 
+Because it was created specifically for demanding industrial applications, Ethernet-APL, as a subset of the widely adopted Ethernet standard, offers a high level of robustness for extremely reliable operation. 
+Ethernet has long become the standard communication solution in the information technology field, while Industrial Ethernet is the common description of the variant of this standard for the manufacturing and process industries. Ethernet-APL provides the missing link, extending unified Ethernet communication all the way down to field instrumentation.
+
+
+== Structure ==
+Being a physical layer, Ethernet-APL is independent of any protocol or communications stack and designed for wide adoption and application in process automation.
+
+
+== Ethernet as basis for APL ==
+Ethernet-APL is a specific, single-pair Ethernet based on 10BASE-T1L as defined in IEEE 802.3cg, with additional provisions for process industries. The Ethernet-APL communication is thus part of and fully compatible with the IEEE 802.3 Ethernet specification. 
+Ethernet-APL communication relies on 10 Mbit/s full duplex communication transported via one twisted pair cable. It supports all major network topologies including the well known trunk & spur topology which is widely utilized in process industries. The maximum trunk length is 1000 meters into Zone 1, Div 2. The maximum spur length is specified as 200 m into Zone 0, Div. 1.
+Ethernet-APL incorporates a number of enhancements especially tailored to the demanding requirements of process and other industries like Intrinsic safety and adds port profiles for optional power supply and hazardous area protection.
+
+
+== Intrinsic safety ==
+Intrinsic safety is a vital requirement especially by the worldwide process industries which demand an easy to implement solution to control and power field instruments in explosion hazardous areas. For this reason, optional intrinsic safety is fully integrated into the definitions of the Ethernet-APL communication standard. 
+In the technical specification 2-WISE  the 2-wire intrinsically safe Ethernet is defined.
+The intrinsic safety barrier is an electronic circuit at each output or input of a switch or instrument. It prevents ignitable electric energy from reaching the connector. The intrinsic safety barrier is separate from the communications circuit (PHY). This design principle ensures: 
+
+Chip manufacturers can build commercially available PHY in quantities also available for applications not requiring intrinsic safety
+Device vendors can easily build intrinsically safe devices
+Ethernet-APL is designed to support easy planning, validation, installation, documentation and implementation of the intrinsically safe operation of field instruments in hazardous areas. This includes among other aspects live work on cables and instruments without a hot work permit. All suitable products carry an approval by a notified body.
+
+
+== Port profile specifications ==
+Part of the standards for Ethernet-APL include the definition of port profiles for interoperability in various application scenarios. This includes aspects such as segment type, differentiating a trunk-to-trunk port from a spur-to-spur port. Other specifications refer to the power characteristics, differentiating between source-to-load and unpowered-to-unpowered ports. Another provision is the definition of power classes. This includes the limitation of the maximum supply voltage and supply current for intrinsically safe power supply. 
+Further topics that are specified in the port profile specification are wiring rules, pin assignments for terminals and connectors as well as shielding and grounding rules.
+
+
+== References ==
+
+
+== Further reading ==
+Spielmann, Benedikt (2020-03-04). "Ethernet to the Field of Process Plants / Sites". www.odva.org. Endress+Hauser Digital Solutions. Retrieved 2021-01-27.
+Larson, Keith (2020-06-12). "Advanced physical layer standard to make field-level Ethernet a reality". www.controlglobal.com. Control Global Magazin. Retrieved 2021-05-03.

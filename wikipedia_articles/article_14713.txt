@@ -1,0 +1,85 @@
+Ecological Orbits: How Planets Move and Populations Grow is a book on population ecology by ecologist Lev R. Ginzburg and philosopher of science Mark Colyvan that argues for an inertial model of population dynamics.
+
+
+== Summary ==
+The book is divided into eight chapters, each of which advances Ginzburg and Colyvan's argument for an inertial model of population dynamics. It begins with an explanation of planetary orbits and population growth, and argues that an analogy between the two might be fruitful for theoretical ecology. Chapter 2 engages in the debate over whether or not ecology can have laws of nature akin to those of physics by comparing ecological allometries such as Kleiber's law with Kepler's laws of planetary motion. Ginzburg and Colyvan argue that ecological allomotries cannot be discounted as laws of nature they are not always exceptionless, predictive, falsifiable, or distinguishable from accidental regularities as such concerns would also rule out physical laws. For example, they argue that physical laws are not always exceptionless because many are only valid under ideal conditions and they are never perfectly falsifiable because supplementary adjustments can always be made to prevent a complete rejection of the law.
+In chapter 3, Ginzburg and Colyvan outline how their view of population dynamics differs from conventional accounts which assume exponential growth or decline. While traditional accounts are based on rules governing rates of birth and death, Ginzburg and Colyvan's model starts by considering the energy consumption of individuals which underlies their ability to survive and reproduce and therefore determines population birth and death rates. This leads to a theory that is different in mathematical form to the conventional account, being a second-order differential equation rather than a first-order equation predicting exponential population growth or decline. According to this theory, population decline should exhibit accelerated death and population dynamics more generally should only be able to be predicted if both the growth rate and acceleration are known, analogously to classical mechanics which requires the speed and acceleration of an object to be known to predict its subsequent motion. Ginzburg and Colyvan present results from experiments by Larry Slobodkin on the starvation of hydras which showed parabolic population decline as evidence for their theory.
+Chapter 4 details what Ginzburg and Colyvan call the maternal effect hypothesis which provides the mechanism for the inertial aspect of their theory of population dynamics. According to this hypothesis, healthier mothers produce offspring who are themselves healthier and better provided for than less healthy mothers, making the offspring better able to survive and reproduce. As a result, the growth rate of a population depends not just on its current circumstances but also the circumstances of the parent generation. This means that in general populations should respond to changes in circumstances with a time lag; the health of previous generations can for a time help to counteract the effect of worsening conditions. Ginzburg and Colyvan explain how the maternal effect produces second-order changes in population growth which can account for population cycles. Population cycles are generally explained by predator-prey models but Ginzburg and Colyvan argue in chapter 5 that such models are overfitted and cannot explain what they call the case of missing periods without ad hoc assumptions. The case of missing periods is the absence of observed population cycles with periods between 2 and 6 generations, a fact that is predicted by the maternal effect hypothesis alongside population age structuring and cohort effects. They also argue that the maternal effect hypothesis can be tested directly via laboratory experiments using model species. Specifically, they argue that ratio-dependent predation in which there is joint exponential growth of predator and prey populations is possible under their model but not traditional models.
+In chapter 6, Ginzburg and Colyvan further develop the ideas of accelerated death and maternal effects into a general theory of inertial population dynamics. They suggest an equation for the time derivative of the growth rate (i.e. the acceleration in population change) which depends on just three parameters α, β, and rmax:
+
+  
+    
+      
+        
+          
+            
+              d
+              r
+            
+            
+              d
+              t
+            
+          
+        
+        ≈
+        
+          (
+          
+            1
+            −
+            
+              
+                r
+                
+                  r
+                  
+                    m
+                    a
+                    x
+                  
+                
+              
+            
+          
+          )
+        
+        (
+        −
+        α
+        (
+        n
+        −
+        
+          n
+          
+            ∗
+          
+        
+        )
+        +
+        β
+        r
+        )
+      
+    
+    {\displaystyle {\frac {dr}{dt}}\approx \left(1-{\frac {r}{r_{max}}}\right)(-\alpha (n-n^{*})+\beta r)}
+  
+
+where r is the growth rate, t is time, n is the natural logarithm of the population size and n* is the equilibrium value of n. They show that this equation can account for a range of population dynamics, including exponential growth, monotonic approach to equilibrium, overshooting equilibrium, damped oscillations, oscillations with constant or increasing amplitudes, and asymmetric cycles.
+Chapter 7 explores some of the practical consequences of Ginzburg and Colyvan's model, including for the management of fisheries and conservation of endangered species. For example, they argue that their inertial model predicts that relatively small increases in the number of fish caught by fisheries can result in a rapid decline in fish population and even extinction. They think that current difficulties in environmental management can be traced back to the fact that currently used tools do not take into account inertial effects. Chapter 8 details the problems involved in scientific theory choice and argues that such problems support the inertial model over traditional models of population dynamics. They argue that the inertial model is relatively simple whilst successfully accommodating the empirical data. The chapter also summarises the arguments and positions presented throughout the book.
+
+
+== Reception ==
+Günter Wagner reviewed the book in Science, describing it as "an exciting read on many levels" due to Ginzburg and Colyvan's explanations throughout the book. He said that the book placing individual energy consumption at the centre of its theory was "novel" and that if Ginzburg and Colyvan were right about the practical consequences of their theory, "Ecological Orbits ought to become an instant classic, one to be read by every professional and aspiring ecologist and environmental biologist." He also said that it was possible that "Ecological Orbits may well turn out to mark such a transition from what was considered unthinkable—namely a rigorous and nontrivial theory of population dynamics akin to a law of nature—to a real scientific achievement." In The Quarterly Review of Biology, Charles J. Krebs said that the book "explores the analogy between planetary motion and population growth in a novel way that provides some exciting insights into the fundamental structure of theoretical population biology." He described Ginzburg and Colyvan's argument as "persuasive" and says his "only complaint" is that the term "maternal effects" was "used too loosely to mean all delayed effects by which one generation affects the biology of the following generations, rather than being restricted to the biological mechanisms".
+In a review of the book published in the International Society for Behavioral Ecology Newsletter, Scott M. Ramsay questioned how novel the idea of time lags and maternal effects were in population ecology, saying that time lags are often included in ecology textbooks and that the maternal effect has been known about since the 1950s. He said that he was left wondering whether "it [is] fair that this book be criticized for being merely derivative, or should the authors be applauded for bringing attention to ideas that have resisted incorporation in population modeling?" He also felt that the analogy between population dynamics and classical mechanics was less strong than Ginzburg and Colyvan argue, saying that the data they present may be able to be explained by non-inertial models. Nonetheless, he thought the writing style "was generally quite good" and that the book "should be of obvious interest to theoretical ecologists" whilst also being accessible to graduate students and advanced undergraduates.
+In Ecology, Robert P. Freckleton criticised the book for presenting a completely deterministic model of population dynamics that ignores stochastic effects such as the effects of weather, saying that their model "must be regarded to be incomplete" as a result. Freckleton says that this is an important omission because stochasticity can provide an alternative mechanism for accelerated deaths in populations. Freckleton also argues that the book has a zoological bias, focusing on the population dynamics of animals to the exclusion of the population dynamics of plants. He says that deterministic models have been successfully applied to plant populations but that population cycles are generally not observed contrary to what the maternal effect hypothesis predicts. He also felt that the argument in the book may have been more suited to a more succinct presentation in a journal article. He concluded by saying "[h]aving said all this, I enjoyed reading the book and I got food for thought."
+John M. Drake reviewed the book in The American Midland Naturalist. He said that it presents "a fresh and stimulating perspective" that "challenges one to take seriously the problem that the conceptual foundations of our discipline are still to be questioned, interpreted, challenged and modified or approved." He thought that it was "a pleasure to read" and had a tone that was "disarming and engaging", making it accessible for undergraduates and interested non-scientists. However, he felt that the philosophical portion of the book focusing on whether ecology has laws was engaging in a "misguided" dispute and was "a bit tiresome". Serge Luryi reviewed the book in Physics Today, saying "I recommend it highly as a true pleasure to read." He described Ginzburg "an eager and capable revolutionary" for his work in ecology and says that the philosophy in the book "should not scare away the prospective reader as it is presented in a very lighthearted way."
+John Matthewson reviewed the book in the Australasian Journal of Philosophy, describing it as brief but dense and deep in its exposition of scientific and philosophical issues. Nonetheless, he thought that it could have been made longer so that some of the mathematical points could be explained more accessibly for lay readers. He also thought that this would allow some of the philosophical arguments, which he thought some readers may find "unsatisfying", to be developed in more depth. For example, he argues that the book's argument that laws of nature in physics and ecology are equally open to question could lead us to conclude that neither have genuine laws rather than that both do as Ginzburg and Colyvan argue. Furthermore, he says that there are differences between ecological and physical laws not considered in the book, such as physical laws being universal. Overall, he characterises these problems as "minor points given all that there is to enjoy in this book" and says that Ecological Orbits is "a fantastic example of what can result when scientists and philosophers collaborate."
+
+
+== References ==
+
+
+== External links ==
+Ecological Orbits at Oxford Scholarship Online

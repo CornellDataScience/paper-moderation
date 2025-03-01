@@ -1,0 +1,584 @@
+An anomalous cancellation or accidental cancellation is a particular kind of arithmetic procedural error that gives a numerically correct answer. An attempt is made to reduce a fraction by cancelling individual digits in the numerator and denominator. This is not a legitimate operation, and does not in general give a correct answer, but in some rare cases the result is numerically the same as if a correct procedure had been applied. The trivial cases of cancelling trailing zeros or where all of the digits are equal are ignored.
+Examples of anomalous cancellations which still produce the correct result include (these and their inverses are all the cases in base 10 with the fraction different from 1 and with two digits):
+
+The article by Boas analyzes two-digit cases in bases other than base 10, e.g., ⁠32/13⁠ = ⁠2/1⁠ and its inverse are the only solutions in base 4 with two digits.
+An example of anomalous cancellation with more than two digits is ⁠165/462⁠ = ⁠15/42⁠, and an example with different numbers of digits is ⁠98/392⁠=⁠8/32⁠.
+
+
+== Elementary properties ==
+When the base is prime, no two-digit solutions exist.  This can be proven by contradiction: suppose a solution exists.  Without loss of generality, we can say that this solution is
+
+  
+    
+      
+        
+          
+            
+              a
+              
+                |
+              
+              
+                |
+              
+              b
+            
+            
+              c
+              
+                |
+              
+              
+                |
+              
+              a
+            
+          
+        
+        =
+        
+          
+            b
+            c
+          
+        
+        ,
+         
+        
+          
+            b
+            a
+            s
+            e
+          
+        
+         
+        p
+        ,
+      
+    
+    {\displaystyle {\frac {a||b}{c||a}}={\frac {b}{c}},\ {\rm {base}}\ p,}
+  
+
+where the double vertical line indicates digit concatenation.  Thus, we have
+
+  
+    
+      
+        
+          
+            
+              a
+              p
+              +
+              b
+            
+            
+              c
+              p
+              +
+              a
+            
+          
+        
+        =
+        
+          
+            b
+            c
+          
+        
+        
+        ⟹
+        
+        (
+        a
+        −
+        b
+        )
+        c
+        p
+        =
+        b
+        (
+        a
+        −
+        c
+        )
+      
+    
+    {\displaystyle {\frac {ap+b}{cp+a}}={\frac {b}{c}}\implies (a-b)cp=b(a-c)}
+  
+
+But 
+  
+    
+      
+        p
+        >
+        a
+        ,
+        b
+        ,
+        a
+        −
+        c
+      
+    
+    {\displaystyle p>a,b,a-c}
+  
+, as they are digits in base 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+; yet 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ divides 
+  
+    
+      
+        b
+        (
+        a
+        −
+        c
+        )
+      
+    
+    {\displaystyle b(a-c)}
+  
+, which means that 
+  
+    
+      
+        a
+        =
+        c
+      
+    
+    {\displaystyle a=c}
+  
+.  Therefore. the right hand side is zero, which means the left hand side must also be zero, i.e., 
+  
+    
+      
+        a
+        =
+        b
+      
+    
+    {\displaystyle a=b}
+  
+, a contradiction by the definition of the problem.  (If 
+  
+    
+      
+        a
+        =
+        b
+      
+    
+    {\displaystyle a=b}
+  
+, the calculation becomes 
+  
+    
+      
+        
+          
+            
+              a
+              
+                |
+              
+              
+                |
+              
+              a
+            
+            
+              c
+              
+                |
+              
+              
+                |
+              
+              a
+            
+          
+        
+        =
+        
+          
+            a
+            c
+          
+        
+        
+        ⟹
+        
+        
+          
+            
+              a
+              
+                |
+              
+              
+                |
+              
+              a
+            
+            
+              a
+              
+                |
+              
+              
+                |
+              
+              a
+            
+          
+        
+        =
+        
+          
+            a
+            a
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\frac {a||a}{c||a}}={\frac {a}{c}}\implies {\frac {a||a}{a||a}}={\frac {a}{a}}=1}
+  
+, which is one of the excluded trivial cases.)
+Another property is that the numbers of solutions in a base 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is odd if and only if 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is an even square.  This can be proven similarly to the above: suppose that we have a solution
+
+  
+    
+      
+        
+          
+            
+              a
+              
+                |
+              
+              
+                |
+              
+              b
+            
+            
+              c
+              
+                |
+              
+              
+                |
+              
+              a
+            
+          
+        
+        =
+        
+          
+            b
+            c
+          
+        
+      
+    
+    {\displaystyle {\frac {a||b}{c||a}}={\frac {b}{c}}}
+  
+
+Then, doing the same manipulation, we get
+
+  
+    
+      
+        
+          
+            
+              a
+              n
+              +
+              b
+            
+            
+              c
+              n
+              +
+              a
+            
+          
+        
+        =
+        
+          
+            b
+            c
+          
+        
+        
+        ⟹
+        
+        (
+        a
+        −
+        b
+        )
+        c
+        n
+        =
+        b
+        (
+        a
+        −
+        c
+        )
+      
+    
+    {\displaystyle {\frac {an+b}{cn+a}}={\frac {b}{c}}\implies (a-b)cn=b(a-c)}
+  
+
+Suppose that 
+  
+    
+      
+        a
+        >
+        b
+        ,
+        c
+      
+    
+    {\displaystyle a>b,c}
+  
+.  Then note that 
+  
+    
+      
+        a
+        ,
+        b
+        ,
+        c
+        →
+        a
+        ,
+        a
+        −
+        c
+        ,
+        a
+        −
+        b
+      
+    
+    {\displaystyle a,b,c\to a,a-c,a-b}
+  
+ is also a solution to the equation.  This almost sets up an involution from the set of solutions to itself.  But we can also substitute in to get 
+  
+    
+      
+        (
+        a
+        −
+        b
+        
+          )
+          
+            2
+          
+        
+        n
+        =
+        
+          b
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (a-b)^{2}n=b^{2}}
+  
+, which only has solutions when 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is a square.  Let 
+  
+    
+      
+        n
+        =
+        
+          k
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n=k^{2}}
+  
+.  Taking square roots and rearranging yields 
+  
+    
+      
+        a
+        k
+        =
+        (
+        k
+        +
+        1
+        )
+        b
+      
+    
+    {\displaystyle ak=(k+1)b}
+  
+.  Since the greatest common divisor of 
+  
+    
+      
+        k
+        ,
+        (
+        k
+        +
+        1
+        )
+      
+    
+    {\displaystyle k,(k+1)}
+  
+ is one, we know that 
+  
+    
+      
+        a
+        =
+        (
+        k
+        +
+        1
+        )
+        x
+        ,
+        b
+        =
+        k
+        x
+      
+    
+    {\displaystyle a=(k+1)x,b=kx}
+  
+.  Noting that 
+  
+    
+      
+        a
+        ,
+        b
+        <
+        
+          k
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a,b<k^{2}}
+  
+, this has precisely the solutions 
+  
+    
+      
+        x
+        =
+        1
+        ,
+        2
+        ,
+        3
+        ,
+        …
+        ,
+        k
+        −
+        1
+      
+    
+    {\displaystyle x=1,2,3,\ldots ,k-1}
+  
+: i.e., it has an odd number of solutions when 
+  
+    
+      
+        n
+        =
+        
+          k
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n=k^{2}}
+  
+ is an even square.  The converse of the statement may be proven by noting that these solutions all satisfy the initial requirements.
+The question in a bit more generality was studied by Satvik Saha, Sohom Gupta, Sayan Dutta and Sourin Chatterjee. The number of solutions in different bases are listed in OEIS A366412.
+
+
+== See also ==
+Howler (mathematics)
+Mathematical joke
+
+
+== References ==

@@ -1,0 +1,16 @@
+A downgrade attack, also called a bidding-down attack, or version rollback attack, is a form of cryptographic attack on a computer system or communications protocol that makes it abandon a high-quality mode of operation (e.g. an encrypted connection) in favor of an older, lower-quality mode of operation (e.g. cleartext) that is typically provided for backward compatibility with older systems. An example of such a flaw was found in OpenSSL that allowed the attacker to negotiate the use of a lower version of TLS between the client and server. This is one of the most common types of downgrade attacks. Opportunistic encryption protocols such as STARTTLS are generally vulnerable to downgrade attacks, as they, by design, fall back to unencrypted communication.  Websites which rely on redirects from unencrypted HTTP to encrypted HTTPS can also be vulnerable to downgrade attacks (e.g., sslstrip), as the initial redirect is not protected by encryption.
+
+
+== Attack ==
+Downgrade attacks are often implemented as part of a Man-in-the-middle (MITM) attack, and may be used as a way of enabling a cryptographic attack that might not be possible otherwise.  Downgrade attacks have been a consistent problem with the SSL/TLS family of protocols; examples of such attacks include the POODLE attack.
+Downgrade attacks in the TLS protocol take many forms. Researchers have classified downgrade attacks with respect to four different vectors, which represents a framework to reason about downgrade attacks as follows: 
+
+There are some recent proposals that exploit the concept of prior knowledge to enable TLS clients (e.g. web browsers) to protect sensitive domain names against certain types of downgrade attacks that exploit the clients' support for legacy versions or non-recommended ciphersuites (e.g. those that do not support forward secrecy or authenticated encryption) such as the POODLE, ClientHello fragmentation, and a variant of the DROWN (aka "the special drown") downgrade attacks. 
+Removing backward compatibility is often the only way to prevent downgrade attacks. However, sometimes the client and server can recognize each other as up-to-date in a manner that prevents them. For example, if a Web server and user agent both implement HTTP Strict Transport Security and the user agent knows this of the server (either by having previously accessed it over HTTPS, or because it is on an "HSTS preload list"), then the user agent will refuse to access the site over vanilla HTTP, even if a malicious router represents it and the server to each other as not being HTTPS-capable.
+
+
+== See also ==
+Side-channel attack
+
+
+== References ==

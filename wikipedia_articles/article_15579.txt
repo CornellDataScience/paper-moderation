@@ -1,0 +1,188 @@
+I/O Controller Hub (ICH) is a family of Intel southbridge microchips used to manage data communications between a CPU and a motherboard, specifically Intel chipsets based on the Intel Hub Architecture. It is designed to be paired with a second support chip known as a northbridge. As with any other southbridge, the ICH is used to connect and control peripheral devices.
+As CPU speeds increased data transmission between the CPU and support chipset, the support chipset eventually emerged as a bottleneck between the processor and the motherboard. Accordingly, starting with the 2008 Intel 5 Series, a new architecture was used that incorporated some functions of the traditional north and south bridge chips onto the CPU itself, with the remaining functions being consolidated into a single Platform Controller Hub (PCH) and therefore replacing the traditional two chip setup.
+
+
+== ICH ==
+
+The first version of the ICH was released in June 1999 along with the Intel 810 northbridge. While its predecessor, the PIIX, was connected to the northbridge through an internal PCI bus with a bandwidth of 133 MB/s, the ICH used a proprietary interface (called by Intel Hub Interface) that linked it to the northbridge through an 8-bit wide, 266 MB/s bus.
+The Hub Interface was a point-to-point connection between different components on the motherboard. Another design decision was to substitute the rigid North-South axis on the motherboard with a star structure.
+Note that, along with the ICH, Intel evolved other uses of the "Hub" terminology. Thus, the northbridge became the Memory Controller Hub (MCH) or if it had integrated graphics (e.g., Intel 810), the Graphics and Memory Controller Hub (GMCH).
+Other ICH features include: 
+
+PCI Rev 2.2 compliant with support for 33 MHz PCI operations.
+Advanced Configuration and Power Interface (ACPI) Support
+Integrated IDE controller for Ultra ATA support
+Integrated I/O APIC supporting 24 interrupt sources
+System Management Bus (SMBus) with support for I²C devices
+AC'97 2.1 Compliant Link
+Low Pin Count (LPC) interface
+The ICH came in two flavors:
+
+82801AA (ICH) - Ultra ATA/66 support, 6 PCI slots, Alert on LAN support
+82801AB (ICH0) - Ultra ATA/33 support, 4 PCI slots, no Alert on LAN
+
+
+== ICH2 ==
+
+In early 2000 Intel had suffered a significant setback with the i820 northbridge. Customers were not willing to pay the high prices for RDRAM and either bought i810 or i440BX motherboards or changed to the competition. The hastily developed 82815 northbridge, which supported PC-133 SDRAM, became Intel's method to recover in the middle range segment.
+The ICH1 or the new ICH2 (360 pins) could be placed to the side of the 82815. An ICH2 could also be used with Intel's 82850 chipset, which, like the 82820 before it, required the use of RDRAM and supported the Pentium 4 CPU. For the first time a Fast Ethernet chip (82559) was integrated into the southbridge, depending upon an external PHY chip.
+The PATA interface was accelerated to ATA/100 and the number of USB connections was doubled to four. The integrated AC'97 sound controller gained support for up to six channel sound.
+There was also a mobile variant called the ICH2-M.
+The following variants existed:
+
+82801BA (ICH2)
+82801BAM (ICH2-M) Mobile
+
+
+== ICH3 ==
+
+In 2001, Intel delivered ICH3, which was available in two versions: the server version, ICH3-S, running with the E7501 Northbridge, and the mobile version, ICH3-M, which worked with the i830 and i845 northbridges. There is no version for desktop motherboards.
+In comparison with the ICH2, the changes were limited: "Native Mode" support in the PATA Controller; up to six USB-1.1 devices; SMBus 2.0; and the newest SpeedStep version, which allowed power-saving devices to be switched off during operation. The chip had 421 pins.
+This has the following variants:
+
+82801CA (ICH3-S) Server
+82801CAM (ICH3-M) Mobile
+
+
+== ICH4 ==
+
+The ICH4 was Intel's southbridge for the year 2002. The most important innovation was the support of USB 2.0 on all six ports. Sound support was improved and corresponded the newest AC'97 specification, version 2.3. Like the preceding generation, the ICH4 had 421 pins.
+This has the following variants:
+
+82801DB (ICH4) Base
+82801DBM (ICH4-M) Base Mobile
+
+
+== ICH5 ==
+
+In 2003, and in conjunction with the i865 and i875 northbridges, the ICH5 was created. A SATA host controller was integrated. The ICH5R variant additionally supported RAID 0 on SATA ports. Eight USB-2.0 ports were available. The chip had full support for ACPI 2.0. It had 460 pins.
+Since 1999 the 266 MB/s hub interface was assumed to be a bottleneck. In the new chip generation, Intel therefore offered an optional port for a Gigabit Ethernet Controller directly attached to the MCH.
+The goal of this CSA technology was to reduce the latencies for Gigabit LAN by direct memory access and to free up bandwidth on the Hub interface between ICH and MCH for non removable disk and PCI data traffic.
+Since mid-2004, the large motherboard manufacturers noticed an increased complaint ratio with motherboards equipped with ICH5. A cause was the insufficient ESD tolerance of certain ICH5 steppings.
+In particular, when connecting USB devices via front panels, the chips died by discharges of static electricity. Intel reacted to the problem by shipping ICH5 with increased ESD tolerance. Effective ESD preventive measures on USB ports are difficult and costly, since they can impair the quality of the USB-2.0 high-speed signals. Many motherboard manufacturers had omitted the necessary high-quality safety devices for front panel connectors for cost reasons.
+This has the following variants:
+
+82801E (C-ICH) Communications
+82801EB (ICH5) Base
+82801ER (ICH5R) RAID
+82801EBM (ICH5-M) Base Mobile
+6300ESB (ESB) Enterprise Southbridge
+
+
+== ICH6 ==
+
+ICH6 was Intel's first PCI Express southbridge, to pair with the i910 and i915 MCH. It made four PCI Express ×1 ports available. Faster ×16-Ports were accommodated in the MCH. The bottleneck Hub interface was replaced by a new Direct Media Interface (in reality a PCI Express ×4 link) with 1 GB/s of bandwidth per direction. Support for Intel High Definition Audio was included. In addition, AC'97 and the classical PCI 2.3 were still supported.
+Two additional SATA ports were added, and one PATA channel was removed. The ICH6R variant supported RAID modes 0, 1, 0+1 and the Intel specific "Matrix RAID".
+ICH6R and ICH6-M implemented AHCI SATA controllers for the first time. The chips had 652 pins. Originally Intel had planned to bring two further variants under the names ICH6W and ICH6RW to the market, which should contain a software Access Point for a Wireless LAN. These chips are published.
+This has the following variants:
+
+82801FB (ICH6) Base
+82801FR (ICH6R) RAID
+82801FBM (ICH6M) Base Mobile
+6311ESB (ESB2) Enterprise Southbridge
+6321ESB (ESB2) Enterprise Southbridge with integrated LAN for embedded
+
+
+== ICH7 ==
+
+The ICH7 started to ship in mid-2005 together with Intel's new high-end MCH, the i955X. Two additional PCI express ×1-Ports, a SATA 2.0 Controller for up to 300 MB/s data transmission rate (the mobile version has this capability disabled), as well as support for Intel's "Active Management Technology" were added. Only the ICH7DH, ICH7R, ICH7-M, ICH7-M DH chip have AHCI support. The ICH7 (Base) and ICH7-U (Ultra-mobile) chip do not support AHCI.
+The ICH7R additionally supports RAID 5.
+This has the following variants:
+
+82801GB (ICH7) Base
+82801GR (ICH7R) RAID
+82801GDH (ICH7DH) Digital Home
+82801GBM (ICH7M) Mobile
+82801GHM (ICH7M DH) Mobile Digital Home
+PC82801GU (ICH7-U) Ultra-mobile
+
+
+== ICH8 ==
+
+ICH8 is offered in several different versions and is the complement to the 965 class MCH chips. The non-mobile ICH8 does not have a traditional PATA interface, and just one AC'97. In practice, most baseboard manufacturers still offered PATA appropriate connection types using additional chips from manufacturers such as JMicron or Marvell.
+The ICH8 was the first ICH model to control  eSATA and Gigabit Ethernet, which were previously accommodated in the MCH. The base version only includes four SATA 2.0 ports.
+The ICH8R (RAID) and above chips support six SATA devices. Additionally the ICH8DH (Digital Home) has Quick Resume and can be used together with the P965 and/or G965 in Intel Viiv-certified systems.
+The counterpart to the ICH8DO (Digital Office) is the Q965 MCH, which together provide Intel vPro compatibility.
+This has the following variants:
+
+82801HB (ICH8) Base
+82801HR (ICH8R) RAID
+82801HH (ICH8DH) Digital Home
+82801HO (ICH8DO) Digital Office
+82801HM (ICH8M) Mobile
+82801HBM (ICH8BM) Base Mobile
+82801HEM (ICH8EM) Enhanced Mobile
+
+
+== ICH9 ==
+
+The ICH9 came out in May 2007 in the P35 (Bearlake) chipset. It removes all PATA support. In practice, many motherboard manufacturers continue providing PATA support using third-party chips. Officially only the ICH9R, ICH9DH, ICH9DO chip have AHCI support.
+This part has the following variants:
+
+82801IB (ICH9) Base officially has neither AHCI or RAID support, but with a simple BIOS mod can add support for AHCI. 
+82801IR (ICH9R) RAID with AHCI and RAID Support
+82801IH (ICH9DH) Digital Home with AHCI and no RAID Support
+82801IO (ICH9DO) Digital Office with AHCI and RAID Support
+82801IBM (ICH9M) Base Mobile
+82801IEM (ICH9EM) Enhanced Mobile
+82801IUX (ICH9M-SFF) Ultra Mobile
+
+
+== ICH10 ==
+Intel launched the ICH10 southbridge in June 2008 with the P45 and P43 (Eaglelake) chipset.
+ICH10 implements the 1 GB/s bidirectional DMI interface to the "northbridge" device. It supports various interfaces to "low-speed" peripherals, and it supports a suite of housekeeping functions.
+ICH10 also offers reduced load on CPU and decreased power consumption.
+ICH10 does not offer direct PATA or LPT support. Notably there is support of 'hot-swap' functionality.
+The RAID variant also supports a new technology called “Turbo Memory”. This allows the use of flash memory on a motherboard for fast caching.
+Peripheral support includes:
+
+Six PCIe version 1.1 ports, which can be configured as either 2 + (4 ×1) or 2 + (1 ×4).
+PCI bus
+Six SATA 3 Gbit/s ports in either legacy IDE or AHCI mode. Can support external eSATA
+Intel High Definition Audio
+Integrated gigabit LAN
+AHCI support
+Two EHCI host controllers (which support up to twelve USB 2.0 connections) with companion UHCI controllers to handle low-speed and full-speed USB devices
+This part has the following variants:
+
+82801JB (ICH10) Base
+82801JR (ICH10R) RAID
+82801JH (ICH10D) Digital Home
+82801JO (ICH10DO) Digital Office
+
+
+== PCH architecture ==
+
+As CPU speeds increased, a bottleneck eventually emerged between the processor and the motherboard, due to limitations caused by data transmission between the CPU and southbridge. Accordingly, starting with the Intel 5 Series, a new architecture was used where some functions of the north and south bridge chips were moved to the CPU, and others were consolidated into a Platform Controller Hub (PCH).
+
+Some northbridge functions, including the memory controller, the integrated GPU (Intel HD Graphics), the graphics card interface (PCIe x16), were integrated into the CPU, while the PCH took over the remaining functions in addition to the traditional roles of the southbridge. The northbridge was therefore eliminated.
+Other northbridge functions and all southbridge functions were migrated to a new Platform Controller Hub. These included clocking (the system clock), Flexible Display Interface (FDI) and Direct Media Interface (DMI). The FDI is only used when the chipset requires supporting a CPU with integrated graphics.
+
+
+== See also ==
+List of Intel chipsets
+Platform Controller Hub (PCH)
+System Controller Hub (SCH)
+PCI IDE ISA Xcelerator (PIIX)
+Northbridge (computing)
+Southbridge (computing)
+
+
+== References ==
+
+Intel 82801AA (ICH) and Intel 82801AB (ICH0) I/O Controller Hub
+Intel 82801BA I/O Controller Hub 2 (ICH2) and Intel 82801BAM I/O Controller Hub 2 Mobile (ICH2-M) Datasheet
+Intel 82801CA I/O Controller Hub 3 (ICH3-S) Datasheet
+Intel 82801CAM I/O Controller Hub 3 (ICH3-M) Datasheet
+Intel 82801DB I/O Controller Hub 4 (ICH4) Datasheet
+Intel 82801DBM I/O Controller Hub 4 Mobile (ICH4-M) Datasheet
+Intel 82801E Communications I/O Controller Hub (C-ICH) Datasheet
+Intel 82801EB I/O Controller Hub 5 (ICH5) and Intel 82801ER I/O Controller Hub 5 R (ICH5R) Datasheet
+Intel 6300ESB I/O Controller Datasheet
+Intel I/O Controller Hub 6 (ICH6) Family Datasheet
+Intel 631xESB/632xESB I/O Controller Hub Datasheet
+Intel I/O Controller Hub 7 (ICH7) Family Datasheet
+Intel I/O Controller Hub 8 (ICH8) Family Datasheet
+Intel I/O Controller Hub 9 (ICH9) Family Datasheet
+Intel I/O Controller Hub 10 (ICH10) Family Datasheet
+Intel I/O Controller Hub 10 (ICH10) Family Specification Update

@@ -1,0 +1,63 @@
+Jaql (pronounced "jackal") is a functional data processing and query language most commonly used for JSON query processing on big data.
+It started as an open source project at Google but the latest release was on 2010-07-12. IBM took it over as primary data processing language for their Hadoop software package BigInsights.
+Although having been developed for JSON it supports a variety of other data sources like CSV, TSV, XML.
+A comparison to other BigData query languages like PIG Latin and Hive QL illustrates performance and usability aspects of these technologies.
+Jaql supports lazy evaluation, so expressions are only materialized when needed.
+
+
+== Syntax ==
+The basic concept of Jaql is
+
+where a sink can be a source for a downstream operator. So typically a Jaql program has to following structure, expressing a data processing graph:
+
+Most commonly for readability reasons Jaql programs are linebreaked after the arrow, as is also a common idiom in Twitter Scalding:
+
+
+=== Core operators ===
+Source:
+
+
+==== Expand ====
+Use the EXPAND expression to flatten nested arrays. This expression takes as input an array of nested arrays [ [ T ] ] and produces an output array [ T ], by promoting the elements of each nested array to the top-level output array.
+
+
+==== Filter ====
+Use the FILTER operator to filter away elements from the specified input array. This operator takes as input an array of elements of type T and outputs an array of the same type, retaining those elements for which a predicate evaluates to true. It is the Jaql equivalent of the SQL WHERE clause.
+Example:
+
+
+==== Group ====
+Use the GROUP expression to group one or more input arrays on a grouping key and applies an aggregate function per group.
+
+
+==== Join ====
+Use the JOIN operator to express a join between two or more input arrays. This operator supports multiple types of joins, including natural, left-outer, right-outer, and outer joins.
+
+
+==== Sort ====
+Use the SORT operator to sort an input by one or more fields.
+
+
+==== Top ====
+The TOP expression selects the first k elements of its input. If a comparator is provided, the output is semantically equivalent to sorting the input, then selecting the first k elements.
+
+
+==== Transform ====
+Use the TRANSFORM operator to realize a projection or to apply a function to all items of an output.
+
+
+== See also ==
+jq
+JSONiq
+XPath
+XQuery
+
+
+== References ==
+
+
+== External links ==
+Definition of the JAQL language
+JAQL Introduction
+Comparison against HIVE and PIG
+Adaptive Processing of User-Defined Aggregates in Jaql

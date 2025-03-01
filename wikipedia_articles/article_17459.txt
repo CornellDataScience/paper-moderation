@@ -1,0 +1,1071 @@
+Conjunctive grammars are a class of formal grammars
+studied in formal language theory.
+They extend the basic type of grammars,
+the context-free grammars,
+with a conjunction operation.
+Besides explicit conjunction,
+conjunctive grammars allow implicit disjunction
+represented by multiple rules for a single nonterminal symbol,
+which is the only logical connective expressible in context-free grammars.
+Conjunction can be used, in particular,
+to specify intersection of languages.
+A further extension of conjunctive grammars
+known as Boolean grammars
+additionally allows explicit negation.
+The rules of a conjunctive grammar are of the form
+
+  
+    
+      
+        A
+        →
+        
+          α
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          α
+          
+            m
+          
+        
+      
+    
+    {\displaystyle A\to \alpha _{1}\And \ldots \And \alpha _{m}}
+  
+
+where 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ is a nonterminal and
+
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \alpha _{1}}
+  
+, ..., 
+  
+    
+      
+        
+          α
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \alpha _{m}}
+  
+
+are strings formed of symbols in 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ and 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ (finite sets of terminal and nonterminal symbols respectively).
+Informally, such a rule asserts that 
+every string 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ over 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+
+that satisfies each of the syntactical conditions represented
+by 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \alpha _{1}}
+  
+, ..., 
+  
+    
+      
+        
+          α
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \alpha _{m}}
+  
+
+therefore satisfies the condition defined by 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+
+
+== Formal definition ==
+A conjunctive grammar 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ is defined by the 4-tuple 
+  
+    
+      
+        G
+        =
+        (
+        V
+        ,
+        Σ
+        ,
+        R
+        ,
+        S
+        )
+      
+    
+    {\displaystyle G=(V,\Sigma ,R,S)}
+  
+ where
+
+V is a finite set; each element 
+  
+    
+      
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle v\in V}
+  
+ is called a nonterminal symbol or a variable. Each variable represents a different type of phrase or clause in the sentence. Variables are also sometimes called syntactic categories.
+Σ is a finite set of terminals, disjoint from V, which make up the actual content of the sentence. The set of terminals is the alphabet of the language defined by the grammar G.
+R is a finite set of productions, each of the form 
+  
+    
+      
+        A
+        →
+        
+          α
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          α
+          
+            m
+          
+        
+      
+    
+    {\displaystyle A\rightarrow \alpha _{1}\&\ldots \&\alpha _{m}}
+  
+ for some 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ in 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ and 
+  
+    
+      
+        
+          α
+          
+            i
+          
+        
+        ∈
+        (
+        V
+        ∪
+        Σ
+        
+          )
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \alpha _{i}\in (V\cup \Sigma )^{*}}
+  
+. The members of R are called the rules or productions of the grammar.
+S is the start variable (or start symbol), used to represent the whole sentence (or program). It must be an element of V.
+It is common to list all right-hand sides for the same left-hand side on the same line, using | (the pipe symbol) to separate them. Rules 
+  
+    
+      
+        A
+        →
+        
+          α
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          α
+          
+            m
+          
+        
+      
+    
+    {\displaystyle A\rightarrow \alpha _{1}\&\ldots \&\alpha _{m}}
+  
+ and 
+  
+    
+      
+        A
+        →
+        
+          β
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          β
+          
+            n
+          
+        
+      
+    
+    {\displaystyle A\rightarrow \beta _{1}\&\ldots \&\beta _{n}}
+  
+ can hence be written as 
+  
+    
+      
+        A
+        →
+        
+          α
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          α
+          
+            m
+          
+        
+         
+        
+          |
+        
+         
+        
+          β
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          β
+          
+            n
+          
+        
+      
+    
+    {\displaystyle A\rightarrow \alpha _{1}\&\ldots \&\alpha _{m}\ |\ \beta _{1}\&\ldots \&\beta _{n}}
+  
+.
+Two equivalent formal definitions
+of the language specified by a conjunctive grammar exist.
+One definition is based upon representing the grammar
+as a system of language equations with union, intersection and concatenation
+and considering its least solution.
+The other definition generalizes
+Chomsky's generative definition of the context-free grammars
+using rewriting of terms over conjunction and concatenation.
+
+
+=== Definition by derivation ===
+For any strings 
+  
+    
+      
+        u
+        ,
+        v
+        ∈
+        (
+        V
+        ∪
+        Σ
+        ∪
+        {
+        
+          “(”
+        
+        ,
+        
+          “
+        
+        &
+        
+          ”
+        
+        ,
+        
+          “)”
+        
+        }
+        
+          )
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle u,v\in (V\cup \Sigma \cup \{{\text{“(”}},{\text{“}}\&{\text{”}},{\text{“)”}}\})^{*}}
+  
+, we say u directly yields v, written as 
+  
+    
+      
+        u
+        ⇒
+        v
+        
+      
+    
+    {\displaystyle u\Rightarrow v\,}
+  
+, if 
+
+either there is a rule 
+  
+    
+      
+        A
+        →
+        
+          α
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          α
+          
+            m
+          
+        
+        ∈
+        R
+      
+    
+    {\displaystyle A\rightarrow \alpha _{1}\&\ldots \&\alpha _{m}\in R}
+  
+ such that 
+  
+    
+      
+        u
+        
+        =
+        
+          u
+          
+            1
+          
+        
+        A
+        
+          u
+          
+            2
+          
+        
+      
+    
+    {\displaystyle u\,=u_{1}Au_{2}}
+  
+ and 
+  
+    
+      
+        v
+        
+        =
+        
+          u
+          
+            1
+          
+        
+        (
+        
+          α
+          
+            1
+          
+        
+        &
+        …
+        &
+        
+          α
+          
+            m
+          
+        
+        )
+        
+          u
+          
+            2
+          
+        
+      
+    
+    {\displaystyle v\,=u_{1}(\alpha _{1}\&\ldots \&\alpha _{m})u_{2}}
+  
+,
+or there exists a string 
+  
+    
+      
+        w
+        ∈
+        (
+        V
+        ∪
+        Σ
+        
+          )
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle w\in (V\cup \Sigma )^{*}}
+  
+ such that 
+  
+    
+      
+        u
+        
+        =
+        
+          u
+          
+            1
+          
+        
+        (
+        w
+        &
+        …
+        &
+        w
+        )
+        
+          u
+          
+            2
+          
+        
+      
+    
+    {\displaystyle u\,=u_{1}(w\&\ldots \&w)u_{2}}
+  
+ and 
+  
+    
+      
+        v
+        
+        =
+        
+          u
+          
+            1
+          
+        
+        w
+        
+          u
+          
+            2
+          
+        
+      
+    
+    {\displaystyle v\,=u_{1}wu_{2}}
+  
+.
+For any string 
+  
+    
+      
+        w
+        ∈
+        
+          Σ
+          
+            ∗
+          
+        
+        ,
+      
+    
+    {\displaystyle w\in \Sigma ^{*},}
+  
+ we say G generates w, written as 
+  
+    
+      
+        S
+         
+        
+          
+            
+              
+                ⇒
+              
+              
+                ∗
+              
+            
+          
+        
+         
+        w
+      
+    
+    {\displaystyle S\ {\stackrel {*}{\Rightarrow }}\ w}
+  
+, if 
+  
+    
+      
+        ∃
+        k
+        ≥
+        1
+        
+        ∃
+        
+        
+          u
+          
+            1
+          
+        
+        ,
+        ⋯
+        ,
+        
+          u
+          
+            k
+          
+        
+        ∈
+        (
+        V
+        ∪
+        Σ
+        ∪
+        {
+        
+          “(”
+        
+        ,
+        
+          “
+        
+        &
+        
+          ”
+        
+        ,
+        
+          “)”
+        
+        }
+        
+          )
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \exists k\geq 1\,\exists \,u_{1},\cdots ,u_{k}\in (V\cup \Sigma \cup \{{\text{“(”}},{\text{“}}\&{\text{”}},{\text{“)”}}\})^{*}}
+  
+ such that 
+  
+    
+      
+        S
+        =
+        
+        
+          u
+          
+            1
+          
+        
+        ⇒
+        
+          u
+          
+            2
+          
+        
+        ⇒
+        ⋯
+        ⇒
+        
+          u
+          
+            k
+          
+        
+        
+        =
+        w
+      
+    
+    {\displaystyle S=\,u_{1}\Rightarrow u_{2}\Rightarrow \cdots \Rightarrow u_{k}\,=w}
+  
+.
+The language of a grammar 
+  
+    
+      
+        G
+        =
+        (
+        V
+        ,
+        Σ
+        ,
+        R
+        ,
+        S
+        )
+      
+    
+    {\displaystyle G=(V,\Sigma ,R,S)}
+  
+ is the set of all strings it generates.
+
+
+=== Example ===
+The grammar 
+  
+    
+      
+        G
+        =
+        (
+        {
+        S
+        ,
+        A
+        ,
+        B
+        ,
+        C
+        ,
+        D
+        }
+        ,
+        {
+        a
+        ,
+        b
+        ,
+        c
+        }
+        ,
+        R
+        ,
+        S
+        )
+      
+    
+    {\displaystyle G=(\{S,A,B,C,D\},\{a,b,c\},R,S)}
+  
+, with productions
+
+  
+    
+      
+        S
+        →
+        A
+        B
+        &
+        D
+        C
+      
+    
+    {\displaystyle S\rightarrow AB\&DC}
+  
+,
+
+  
+    
+      
+        A
+        →
+        a
+        A
+         
+        
+          |
+        
+         
+        ϵ
+      
+    
+    {\displaystyle A\rightarrow aA\ |\ \epsilon }
+  
+,
+
+  
+    
+      
+        B
+        →
+        b
+        B
+        c
+         
+        
+          |
+        
+         
+        ϵ
+      
+    
+    {\displaystyle B\rightarrow bBc\ |\ \epsilon }
+  
+,
+
+  
+    
+      
+        C
+        →
+        c
+        C
+         
+        
+          |
+        
+         
+        ϵ
+      
+    
+    {\displaystyle C\rightarrow cC\ |\ \epsilon }
+  
+,
+
+  
+    
+      
+        D
+        →
+        a
+        D
+        b
+         
+        
+          |
+        
+         
+        ϵ
+      
+    
+    {\displaystyle D\rightarrow aDb\ |\ \epsilon }
+  
+,
+is conjunctive. A typical derivation is 
+
+  
+    
+      
+        S
+        ⇒
+        (
+        A
+        B
+        &
+        D
+        C
+        )
+        ⇒
+        (
+        a
+        A
+        B
+        &
+        D
+        C
+        )
+        ⇒
+        (
+        a
+        B
+        &
+        D
+        C
+        )
+        ⇒
+        (
+        a
+        b
+        B
+        c
+        &
+        D
+        C
+        )
+        ⇒
+        (
+        a
+        b
+        c
+        &
+        D
+        C
+        )
+        ⇒
+        (
+        a
+        b
+        c
+        &
+        a
+        D
+        b
+        C
+        )
+        ⇒
+        (
+        a
+        b
+        c
+        &
+        a
+        b
+        C
+        )
+        ⇒
+        (
+        a
+        b
+        c
+        &
+        a
+        b
+        c
+        C
+        )
+        ⇒
+        (
+        a
+        b
+        c
+        &
+        a
+        b
+        c
+        )
+        ⇒
+        a
+        b
+        c
+      
+    
+    {\displaystyle S\Rightarrow (AB\&DC)\Rightarrow (aAB\&DC)\Rightarrow (aB\&DC)\Rightarrow (abBc\&DC)\Rightarrow (abc\&DC)\Rightarrow (abc\&aDbC)\Rightarrow (abc\&abC)\Rightarrow (abc\&abcC)\Rightarrow (abc\&abc)\Rightarrow abc}
+  
+
+It can be shown that 
+  
+    
+      
+        L
+        (
+        G
+        )
+        =
+        {
+        
+          a
+          
+            n
+          
+        
+        
+          b
+          
+            n
+          
+        
+        
+          c
+          
+            n
+          
+        
+        :
+        n
+        ≥
+        0
+        }
+      
+    
+    {\displaystyle L(G)=\{a^{n}b^{n}c^{n}:n\geq 0\}}
+  
+. The language is not context-free, proved by the pumping lemma for context-free languages.
+
+
+== Parsing algorithms ==
+Though the expressive power of conjunctive grammars
+is greater than those of context-free grammars,
+conjunctive grammars retain some of the latter.
+Most importantly, there are generalizations of the main context-free parsing algorithms,
+including the linear-time recursive descent,
+the cubic-time generalized LR,
+the cubic-time Cocke-Kasami-Younger,
+as well as Valiant's algorithm running as fast as matrix multiplication.
+
+
+== Theoretical properties ==
+A property that is undecidable already for context-free languages or finite intersections of them, must be undecidable also for conjunctive grammars; these include: 
+emptiness, finiteness, regularity, context-freeness, inclusion and equivalence.
+The family of conjunctive languages is closed under union, intersection, concatenation and Kleene star, but not under string homomorphism, prefix, suffix, and substring.
+Closure under complement and under ε-free string homomorphism are still open problems (as of 2001).: 533 
+The expressive power of grammars over a one-letter alphabet has been researched.
+This work provided a basis
+for the study of language equations of a more general form.
+
+
+== Synchronized alternating pushdown automata ==
+Aizikowitz and Kaminski introduced a new class of pushdown automata (PDA) called synchronized alternating pushdown automata (SAPDA). They proved it to be equivalent to conjunctive grammars in the same way as nondeterministic PDAs are equivalent to context-free grammars.
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Artur Jeż (2007). "Conjunctive grammars generate non-regular unary languages" (PDF) (Slides of talk held at the International Conference on Developments in Language Theory). Retrieved 5 November 2019.
+"Alexander Okhotin's page on conjunctive grammars". 9 October 2011. Retrieved 5 November 2019.
+Alexander Okhotin (2007). "Nine open problems for conjunctive and Boolean grammars". Bulletin of the EATCS. Archived from the original on 2007-09-29.
+Alexander Okhotin (2013). "Conjunctive and Boolean grammars: The true general case of the context-free grammars". Computer Science Review. 9: 27–59. doi:10.1016/j.cosrev.2013.06.001. This paper supersedes the earlier surveys, "An overview of conjunctive grammars" (Bulletin of the EATCS, 2004) and "Nine open problems for conjunctive and Boolean grammars"
+Jeż, Artur (2008). "Conjunctive grammars generate non-regular unary languages". International Journal of Foundations of Computer Science. 19 (3): 597–615. doi:10.1142/S012905410800584X. Technical report version (pdf)

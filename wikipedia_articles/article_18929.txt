@@ -1,0 +1,3645 @@
+In the fields of computer vision and image analysis, the Harris affine region detector belongs to the category of feature detection. Feature detection is a preprocessing step of several algorithms that rely on identifying characteristic points or interest points so to make correspondences between images, recognize textures, categorize objects or build panoramas.
+
+
+== Overview ==
+The Harris affine detector can identify similar regions between images that are related through affine transformations and have different illuminations. These affine-invariant detectors should be capable of identifying similar regions in images taken from different viewpoints that are related by a simple geometric transformation: scaling, rotation and shearing. These detected regions have been called both invariant and covariant. On one hand, the regions are detected invariant of the image transformation but the regions covariantly change with image transformation. Do not dwell too much on these two naming conventions; the important thing to understand is that the design of these interest points will make them compatible across images taken from several viewpoints. Other detectors that are affine-invariant include Hessian affine region detector, maximally stable extremal regions, Kadir–Brady saliency detector, edge-based regions (EBR) and intensity-extrema-based regions (IBR).
+Mikolajczyk and Schmid (2002) first described the Harris affine detector as it is used today in An Affine Invariant Interest Point Detector. Earlier works in this direction include use of affine shape adaptation by Lindeberg and Garding for computing affine invariant image descriptors and in this way reducing the influence of perspective image deformations, the use affine adapted feature points for wide baseline matching by Baumberg and the first use of scale invariant feature points by Lindeberg; for an overview of the theoretical background. The Harris affine detector relies on the combination of corner points detected through Harris corner detection, multi-scale analysis through Gaussian scale space and affine normalization using an iterative affine shape adaptation algorithm. The recursive and iterative algorithm follows an iterative approach to detecting these regions:
+
+Identify initial region points using scale-invariant Harris–Laplace detector.
+For each initial point, normalize the region to be affine invariant using affine shape adaptation.
+Iteratively estimate the affine region: selection of proper integration scale, differentiation scale and spatially localize interest points.
+Update the affine region using these scales and spatial localizations.
+Repeat step 3 if the stopping criterion is not met.
+
+
+== Algorithm description ==
+
+
+=== Harris–Laplace detector (initial region points) ===
+The Harris affine detector relies heavily on both the Harris measure and a Gaussian scale space representation. Therefore, a brief examination of both follow. For a more exhaustive derivations see corner detection and Gaussian scale space or their associated papers.
+
+
+==== Harris corner measure ====
+The Harris corner detector algorithm relies on a central principle: at a corner, the image intensity will change largely in multiple directions. This can alternatively be formulated by examining the changes of intensity due to shifts in a local window. Around a corner point, the image intensity will change greatly when the window is shifted in an arbitrary direction. Following this intuition and through a clever decomposition, the Harris detector uses the second moment matrix as the basis of its corner decisions.  (See corner detection for a more complete derivation). The matrix 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, has also been called the autocorrelation matrix and has values closely related to the derivatives of image intensity.
+
+  
+    
+      
+        A
+        (
+        
+          x
+        
+        )
+        =
+        
+          ∑
+          
+            p
+            ,
+            q
+          
+        
+        w
+        (
+        p
+        ,
+        q
+        )
+        
+          
+            [
+            
+              
+                
+                  
+                    I
+                    
+                      x
+                    
+                    
+                      2
+                    
+                  
+                  (
+                  p
+                  ,
+                  q
+                  )
+                
+                
+                  
+                    I
+                    
+                      x
+                    
+                  
+                  
+                    I
+                    
+                      y
+                    
+                  
+                  (
+                  p
+                  ,
+                  q
+                  )
+                
+              
+              
+                
+                  
+                    I
+                    
+                      x
+                    
+                  
+                  
+                    I
+                    
+                      y
+                    
+                  
+                  (
+                  p
+                  ,
+                  q
+                  )
+                
+                
+                  
+                    I
+                    
+                      y
+                    
+                    
+                      2
+                    
+                  
+                  (
+                  p
+                  ,
+                  q
+                  )
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle A(\mathbf {x} )=\sum _{p,q}w(p,q){\begin{bmatrix}I_{x}^{2}(p,q)&I_{x}I_{y}(p,q)\\I_{x}I_{y}(p,q)&I_{y}^{2}(p,q)\\\end{bmatrix}}}
+  
+
+where 
+  
+    
+      
+        
+          I
+          
+            x
+          
+        
+      
+    
+    {\displaystyle I_{x}}
+  
+ and 
+  
+    
+      
+        
+          I
+          
+            y
+          
+        
+      
+    
+    {\displaystyle I_{y}}
+  
+ are the respective derivatives (of pixel intensity) in the 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ direction at point (
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+,
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+); 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ and 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ are the position parameters of the weighting function w. The off-diagonal entries are the product of 
+  
+    
+      
+        
+          I
+          
+            x
+          
+        
+      
+    
+    {\displaystyle I_{x}}
+  
+ and 
+  
+    
+      
+        
+          I
+          
+            y
+          
+        
+      
+    
+    {\displaystyle I_{y}}
+  
+, while the diagonal entries are squares of the respective derivatives. The weighting function 
+  
+    
+      
+        w
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle w(x,y)}
+  
+ can be uniform, but is more typically an isotropic, circular Gaussian,
+
+  
+    
+      
+        w
+        (
+        x
+        ,
+        y
+        )
+        =
+        g
+        (
+        x
+        ,
+        y
+        ,
+        σ
+        )
+        =
+        
+          
+            1
+            
+              2
+              π
+              
+                σ
+                
+                  2
+                
+              
+            
+          
+        
+        
+          e
+          
+            
+              (
+              
+                −
+                
+                  
+                    
+                      
+                        x
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        y
+                        
+                          2
+                        
+                      
+                    
+                    
+                      2
+                      
+                        σ
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle w(x,y)=g(x,y,\sigma )={\frac {1}{2\pi \sigma ^{2}}}e^{\left(-{\frac {x^{2}+y^{2}}{2\sigma ^{2}}}\right)}}
+  
+
+that acts to average in a local region while weighting those values near the center more heavily.
+As it turns out, this 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ matrix describes the shape of the autocorrelation measure as due to shifts in window location. Thus, if we let 
+  
+    
+      
+        
+          λ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \lambda _{1}}
+  
+ and 
+  
+    
+      
+        
+          λ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \lambda _{2}}
+  
+ be the eigenvalues of 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, then these values will provide a quantitative description of how the autocorrelation measure changes in space: its principal curvatures. As Harris and Stephens (1988) point out, the 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ matrix centered on corner points will have two large, positive eigenvalues. Rather than extracting these eigenvalues using methods like singular value decomposition, the Harris measure based on the trace and determinant is used:
+
+  
+    
+      
+        R
+        =
+        det
+        (
+        A
+        )
+        −
+        α
+        
+          trace
+          
+            2
+          
+        
+        ⁡
+        (
+        A
+        )
+        =
+        
+          λ
+          
+            1
+          
+        
+        
+          λ
+          
+            2
+          
+        
+        −
+        α
+        (
+        
+          λ
+          
+            1
+          
+        
+        +
+        
+          λ
+          
+            2
+          
+        
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R=\det(A)-\alpha \operatorname {trace} ^{2}(A)=\lambda _{1}\lambda _{2}-\alpha (\lambda _{1}+\lambda _{2})^{2}}
+  
+
+where 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ is a constant. Corner points have large, positive eigenvalues and would thus have a large Harris measure. Thus, corner points are identified as local maxima of the Harris measure that are above a specified threshold.
+
+  
+    
+      
+        
+          
+            
+              
+                {
+                
+                  x
+                  
+                    c
+                  
+                
+                }
+                =
+                
+                  
+                    {
+                  
+                
+                
+                  x
+                  
+                    c
+                  
+                
+                ∣
+                R
+                (
+                
+                  x
+                  
+                    c
+                  
+                
+                )
+                >
+                R
+                (
+                
+                  x
+                  
+                    i
+                  
+                
+                )
+                ,
+                ∀
+                
+                  x
+                  
+                    i
+                  
+                
+                ∈
+                W
+                (
+                
+                  x
+                  
+                    c
+                  
+                
+                )
+                
+                  
+                    }
+                  
+                
+                ,
+              
+            
+            
+              
+                R
+                (
+                
+                  x
+                  
+                    c
+                  
+                
+                )
+                >
+                
+                  t
+                  
+                    threshold
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\{x_{c}\}={\big \{}x_{c}\mid R(x_{c})>R(x_{i}),\forall x_{i}\in W(x_{c}){\big \}},\\R(x_{c})>t_{\text{threshold}}\end{aligned}}}
+  
+
+where 
+  
+    
+      
+        {
+        
+          x
+          
+            c
+          
+        
+        }
+      
+    
+    {\displaystyle \{x_{c}\}}
+  
+ are the set of all corner points, 
+  
+    
+      
+        R
+        (
+        x
+        )
+      
+    
+    {\displaystyle R(x)}
+  
+ is the Harris measure calculated at 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, 
+  
+    
+      
+        W
+        (
+        
+          x
+          
+            c
+          
+        
+        )
+      
+    
+    {\displaystyle W(x_{c})}
+  
+ is an 8-neighbor set centered on 
+  
+    
+      
+        
+          x
+          
+            c
+          
+        
+      
+    
+    {\displaystyle x_{c}}
+  
+ and 
+  
+    
+      
+        
+          t
+          
+            threshold
+          
+        
+      
+    
+    {\displaystyle t_{\text{threshold}}}
+  
+ is a specified threshold.
+
+
+==== Gaussian scale-space ====
+A Gaussian scale space representation of an image is the set of images that result from convolving a Gaussian kernel of various sizes with the original image. In general, the representation can be formulated as:
+
+  
+    
+      
+        L
+        (
+        
+          x
+        
+        ,
+        s
+        )
+        =
+        G
+        (
+        s
+        )
+        ⊗
+        I
+        (
+        
+          x
+        
+        )
+      
+    
+    {\displaystyle L(\mathbf {x} ,s)=G(s)\otimes I(\mathbf {x} )}
+  
+
+where 
+  
+    
+      
+        G
+        (
+        s
+        )
+      
+    
+    {\displaystyle G(s)}
+  
+ is an isotropic, circular Gaussian kernel as defined above. The convolution with a Gaussian kernel smooths the image using a window the size of the kernel. A larger scale, 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, corresponds to a smoother resultant image. Mikolajczyk and Schmid (2001) point out that derivatives and other measurements must be normalized across scales. A derivative of order 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+, 
+  
+    
+      
+        
+          D
+          
+            
+              i
+              
+                1
+              
+            
+            ,
+            .
+            .
+            .
+            
+              i
+              
+                m
+              
+            
+          
+        
+      
+    
+    {\displaystyle D_{i_{1},...i_{m}}}
+  
+, must be normalized by a factor 
+  
+    
+      
+        
+          s
+          
+            m
+          
+        
+      
+    
+    {\displaystyle s^{m}}
+  
+ in the following manner:
+
+  
+    
+      
+        
+          D
+          
+            
+              i
+              
+                1
+              
+            
+            ,
+            …
+            ,
+            
+              i
+              
+                m
+              
+            
+          
+        
+        (
+        
+          x
+        
+        ,
+        s
+        )
+        =
+        
+          s
+          
+            m
+          
+        
+        
+          L
+          
+            
+              i
+              
+                1
+              
+            
+            ,
+            …
+            ,
+            
+              i
+              
+                m
+              
+            
+          
+        
+        (
+        
+          x
+        
+        ,
+        s
+        )
+      
+    
+    {\displaystyle D_{i_{1},\dots ,i_{m}}(\mathbf {x} ,s)=s^{m}L_{i_{1},\dots ,i_{m}}(\mathbf {x} ,s)}
+  
+
+These derivatives, or any arbitrary measure, can be adapted to a scale space representation by calculating this measure using a set of scales recursively where the 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+th scale is 
+  
+    
+      
+        
+          s
+          
+            n
+          
+        
+        =
+        
+          k
+          
+            n
+          
+        
+        
+          s
+          
+            0
+          
+        
+      
+    
+    {\displaystyle s_{n}=k^{n}s_{0}}
+  
+. See scale space for a more complete description.
+
+
+==== Combining Harris detector across Gaussian scale-space ====
+The Harris–Laplace detector combines the traditional 2D Harris corner detector with the idea of a Gaussian scale space representation in order to create a scale-invariant detector. Harris-corner points are good starting points because they have been shown to have good rotational and illumination invariance in addition to identifying the interesting points of the image. However, the points are not scale invariant and thus the second-moment matrix must be modified to reflect a scale-invariant property. Let us denote, 
+  
+    
+      
+        M
+        =
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            
+              I
+            
+          
+        
+        ,
+        
+          σ
+          
+            
+              D
+            
+          
+        
+        )
+      
+    
+    {\displaystyle M=\mu (\mathbf {x} ,\sigma _{\mathit {I}},\sigma _{\mathit {D}})}
+  
+ as the scale adapted second-moment matrix used in the Harris–Laplace detector.
+
+  
+    
+      
+        M
+        =
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            
+              I
+            
+          
+        
+        ,
+        
+          σ
+          
+            
+              D
+            
+          
+        
+        )
+        =
+        
+          σ
+          
+            D
+          
+          
+            2
+          
+        
+        g
+        (
+        
+          σ
+          
+            I
+          
+        
+        )
+        ⊗
+        
+          
+            [
+            
+              
+                
+                  
+                    L
+                    
+                      x
+                    
+                    
+                      2
+                    
+                  
+                  (
+                  
+                    x
+                  
+                  ,
+                  
+                    σ
+                    
+                      D
+                    
+                  
+                  )
+                
+                
+                  
+                    L
+                    
+                      x
+                    
+                  
+                  
+                    L
+                    
+                      y
+                    
+                  
+                  (
+                  
+                    x
+                  
+                  ,
+                  
+                    σ
+                    
+                      D
+                    
+                  
+                  )
+                
+              
+              
+                
+                  
+                    L
+                    
+                      x
+                    
+                  
+                  
+                    L
+                    
+                      y
+                    
+                  
+                  (
+                  
+                    x
+                  
+                  ,
+                  
+                    σ
+                    
+                      D
+                    
+                  
+                  )
+                
+                
+                  
+                    L
+                    
+                      y
+                    
+                    
+                      2
+                    
+                  
+                  (
+                  
+                    x
+                  
+                  ,
+                  
+                    σ
+                    
+                      D
+                    
+                  
+                  )
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle M=\mu (\mathbf {x} ,\sigma _{\mathit {I}},\sigma _{\mathit {D}})=\sigma _{D}^{2}g(\sigma _{I})\otimes {\begin{bmatrix}L_{x}^{2}(\mathbf {x} ,\sigma _{D})&L_{x}L_{y}(\mathbf {x} ,\sigma _{D})\\L_{x}L_{y}(\mathbf {x} ,\sigma _{D})&L_{y}^{2}(\mathbf {x} ,\sigma _{D})\end{bmatrix}}}
+  
+
+where 
+  
+    
+      
+        g
+        (
+        
+          σ
+          
+            I
+          
+        
+        )
+      
+    
+    {\displaystyle g(\sigma _{I})}
+  
+ is the Gaussian kernel of scale 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+ and 
+  
+    
+      
+        
+          x
+        
+        =
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle \mathbf {x} =(x,y)}
+  
+. Similar to the Gaussian-scale space, 
+  
+    
+      
+        L
+        (
+        
+          x
+        
+        )
+      
+    
+    {\displaystyle L(\mathbf {x} )}
+  
+ is the Gaussian-smoothed image. The 
+  
+    
+      
+        
+          ⊗
+        
+      
+    
+    {\displaystyle \mathbf {\otimes } }
+  
+ operator denotes convolution.  
+  
+    
+      
+        
+          L
+          
+            x
+          
+        
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            D
+          
+        
+        )
+      
+    
+    {\displaystyle L_{x}(\mathbf {x} ,\sigma _{D})}
+  
+ and 
+  
+    
+      
+        
+          L
+          
+            y
+          
+        
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            D
+          
+        
+        )
+      
+    
+    {\displaystyle L_{y}(\mathbf {x} ,\sigma _{D})}
+  
+ are the derivatives in their respective direction applied to the smoothed image and calculated using a Gaussian kernel with scale 
+  
+    
+      
+        
+          σ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \sigma _{D}}
+  
+. In terms of our Gaussian scale-space framework, the 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+ parameter determines the current scale at which the Harris corner points are detected.
+Building upon this scale-adapted second-moment matrix, the Harris–Laplace detector is a twofold process: applying the Harris corner detector at multiple scales and automatically choosing the characteristic scale.
+
+
+==== Multi-scale Harris corner points ====
+The algorithm searches over a fixed number of predefined scales. This set of scales is defined as:
+
+  
+    
+      
+        
+          
+            σ
+            
+              1
+            
+          
+          …
+          
+            σ
+            
+              n
+            
+          
+        
+        =
+        
+          
+            k
+            
+              1
+            
+          
+          
+            σ
+            
+              0
+            
+          
+          …
+          
+            k
+            
+              n
+            
+          
+          
+            σ
+            
+              0
+            
+          
+        
+      
+    
+    {\displaystyle {\sigma _{1}\dots \sigma _{n}}={k^{1}\sigma _{0}\dots k^{n}\sigma _{0}}}
+  
+
+Mikolajczyk and Schmid (2004) use 
+  
+    
+      
+        k
+        =
+        1.4
+      
+    
+    {\displaystyle k=1.4}
+  
+. For each integration scale, 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+, chosen from this set, the appropriate differentiation scale is chosen to be a constant factor of the integration scale: 
+  
+    
+      
+        
+          σ
+          
+            D
+          
+        
+        =
+        s
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{D}=s\sigma _{I}}
+  
+. Mikolajczyk and Schmid (2004) used 
+  
+    
+      
+        s
+        =
+        0.7
+      
+    
+    {\displaystyle s=0.7}
+  
+. Using these scales, the interest points are detected using a Harris measure on the 
+  
+    
+      
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            
+              I
+            
+          
+        
+        ,
+        
+          σ
+          
+            
+              D
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \mu (\mathbf {x} ,\sigma _{\mathit {I}},\sigma _{\mathit {D}})}
+  
+ matrix. The cornerness, like the typical Harris measure, is defined as:
+
+  
+    
+      
+        
+          
+            c
+            o
+            r
+            n
+            e
+            r
+            n
+            e
+            s
+            s
+          
+        
+        =
+        det
+        (
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            
+              I
+            
+          
+        
+        ,
+        
+          σ
+          
+            
+              D
+            
+          
+        
+        )
+        )
+        −
+        α
+        
+          trace
+          
+            2
+          
+        
+        ⁡
+        (
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            
+              I
+            
+          
+        
+        ,
+        
+          σ
+          
+            
+              D
+            
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle {\mathit {cornerness}}=\det(\mu (\mathbf {x} ,\sigma _{\mathit {I}},\sigma _{\mathit {D}}))-\alpha \operatorname {trace} ^{2}(\mu (\mathbf {x} ,\sigma _{\mathit {I}},\sigma _{\mathit {D}}))}
+  
+
+Like the traditional Harris detector, corner points are those local (8 point neighborhood) maxima of the cornerness that are above a specified threshold.
+
+
+==== Characteristic scale identification ====
+An iterative algorithm based on Lindeberg (1998) both spatially localizes the corner points and selects the characteristic scale. The iterative search has three key steps, that are carried for each point 
+  
+    
+      
+        
+          x
+        
+      
+    
+    {\displaystyle \mathbf {x} }
+  
+ that were initially detected at scale 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+ by the multi-scale Harris detector (
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ indicates the 
+  
+    
+      
+        k
+        t
+        h
+      
+    
+    {\displaystyle kth}
+  
+ iteration):
+
+Choose the scale 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}^{(k+1)}}
+  
+ that maximizes the Laplacian-of-Gaussians (LoG) over a predefined range of neighboring scales. The neighboring scales are typically chosen from a range that is within a two scale-space neighborhood. That is, if the original points were detected using a scaling factor of 
+  
+    
+      
+        1.4
+      
+    
+    {\displaystyle 1.4}
+  
+ between successive scales, a two scale-space neighborhood is the range 
+  
+    
+      
+        t
+        ∈
+        [
+        0.7
+        ,
+        …
+        ,
+        1.4
+        ]
+      
+    
+    {\displaystyle t\in [0.7,\dots ,1.4]}
+  
+. Thus the Gaussian scales examined are: 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        =
+        t
+        
+          σ
+          
+            I
+          
+          
+            k
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}^{(k+1)}=t\sigma _{I}^{k}}
+  
+. The LoG measurement is defined as:
+
+  
+    
+      
+        
+          |
+        
+        LoG
+        ⁡
+        (
+        
+          x
+        
+        ,
+        
+          σ
+          
+            I
+          
+        
+        )
+        
+          |
+        
+        =
+        
+          σ
+          
+            I
+          
+          
+            2
+          
+        
+        
+          |
+          
+            
+              L
+              
+                x
+                x
+              
+            
+            (
+            
+              x
+            
+            ,
+            
+              σ
+              
+                I
+              
+            
+            )
+            +
+            
+              L
+              
+                y
+                y
+              
+            
+            (
+            
+              x
+            
+            ,
+            
+              σ
+              
+                I
+              
+            
+            )
+          
+          |
+        
+      
+    
+    {\displaystyle |\operatorname {LoG} (\mathbf {x} ,\sigma _{I})|=\sigma _{I}^{2}\left|L_{xx}(\mathbf {x} ,\sigma _{I})+L_{yy}(\mathbf {x} ,\sigma _{I})\right|}
+  
+
+where 
+  
+    
+      
+        
+          L
+          
+            x
+            x
+          
+        
+      
+    
+    {\displaystyle L_{xx}}
+  
+ and 
+  
+    
+      
+        
+          L
+          
+            y
+            y
+          
+        
+      
+    
+    {\displaystyle L_{yy}}
+  
+ are the second derivatives in their respective directions. The 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}^{2}}
+  
+ factor (as discussed above in Gaussian scale-space) is used to normalize the LoG across scales and make these measures comparable, thus making a maximum relevant. Mikolajczyk and Schmid (2001) demonstrate that the LoG measure attains the highest percentage of correctly detected corner points in comparison to other scale-selection measures. The scale which maximizes this LoG measure in the two scale-space neighborhood is deemed the characteristic scale, 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}^{(k+1)}}
+  
+, and used in subsequent iterations. If no extrema, or maxima of the LoG is found, this point is discarded from future searches.
+Using the characteristic scale, the points are spatially localized. That is to say, the point 
+  
+    
+      
+        
+          
+            x
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} ^{(k+1)}}
+  
+ is chosen such that it maximizes the Harris corner measure (cornerness as defined above) within an 8×8 local neighborhood.
+Stopping criterion: 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        ==
+        
+          σ
+          
+            I
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}^{(k+1)}==\sigma _{I}^{(k)}}
+  
+ and 
+  
+    
+      
+        
+          
+            x
+          
+          
+            (
+            k
+            +
+            1
+            )
+          
+        
+        ==
+        
+          
+            x
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} ^{(k+1)}==\mathbf {x} ^{(k)}}
+  
+.
+If the stopping criterion is not met, then the algorithm repeats from step 1 using the new 
+  
+    
+      
+        k
+        +
+        1
+      
+    
+    {\displaystyle k+1}
+  
+ points and scale. When the stopping criterion is met, the found points represent those that maximize the LoG across scales (scale selection) and maximize the Harris corner measure in a local neighborhood (spatial selection).
+
+
+=== Affine-invariant points ===
+
+
+==== Mathematical theory ====
+The Harris–Laplace detected points are scale invariant and work well for isotropic regions that are viewed from the same viewing angle. In order to be invariant to arbitrary affine transformations (and viewpoints), the mathematical framework must be revisited. The second-moment matrix 
+  
+    
+      
+        
+          μ
+        
+      
+    
+    {\displaystyle \mathbf {\mu } }
+  
+ is defined more generally for anisotropic regions:
+
+  
+    
+      
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          Σ
+          
+            I
+          
+        
+        ,
+        
+          Σ
+          
+            D
+          
+        
+        )
+        =
+        det
+        (
+        
+          Σ
+          
+            D
+          
+        
+        )
+        g
+        (
+        
+          Σ
+          
+            I
+          
+        
+        )
+        ∗
+        (
+        ∇
+        L
+        (
+        
+          x
+        
+        ,
+        
+          Σ
+          
+            D
+          
+        
+        )
+        ∇
+        L
+        (
+        
+          x
+        
+        ,
+        
+          Σ
+          
+            D
+          
+        
+        
+          )
+          
+            T
+          
+        
+        )
+      
+    
+    {\displaystyle \mu (\mathbf {x} ,\Sigma _{I},\Sigma _{D})=\det(\Sigma _{D})g(\Sigma _{I})*(\nabla L(\mathbf {x} ,\Sigma _{D})\nabla L(\mathbf {x} ,\Sigma _{D})^{T})}
+  
+
+where 
+  
+    
+      
+        
+          Σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \Sigma _{I}}
+  
+ and 
+  
+    
+      
+        
+          Σ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \Sigma _{D}}
+  
+ are covariance matrices defining the differentiation and the integration Gaussian kernel scales. Although this may look significantly different from the second-moment matrix in the Harris–Laplace detector; it is in fact, identical. The earlier 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ matrix was the 2D-isotropic version in which the covariance matrices 
+  
+    
+      
+        
+          Σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \Sigma _{I}}
+  
+ and 
+  
+    
+      
+        
+          Σ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \Sigma _{D}}
+  
+ were 2x2 identity matrices multiplied by factors 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+ and 
+  
+    
+      
+        
+          σ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \sigma _{D}}
+  
+, respectively. In the new formulation, one can think of Gaussian kernels as a multivariate Gaussian distributions as opposed to a uniform Gaussian kernel. A uniform Gaussian kernel can be thought of as an isotropic, circular region. Similarly, a more general Gaussian kernel defines an ellipsoid.  In fact, the eigenvectors and eigenvalues of the covariance matrix define the rotation and size of the ellipsoid. Thus we can easily see that this representation allows us to completely define an arbitrary elliptical affine region over which we want to integrate or differentiate.
+The goal of the affine invariant detector is to identify regions in images that are related through affine transformations. We thus consider a point 
+  
+    
+      
+        
+          
+            x
+          
+          
+            L
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} _{L}}
+  
+ and the transformed point 
+  
+    
+      
+        
+          
+            x
+          
+          
+            R
+          
+        
+        =
+        A
+        
+          
+            x
+          
+          
+            L
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} _{R}=A\mathbf {x} _{L}}
+  
+, where A is an affine transformation. In the case of images, both 
+  
+    
+      
+        
+          
+            x
+          
+          
+            R
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} _{R}}
+  
+ and 
+  
+    
+      
+        
+          
+            x
+          
+          
+            L
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} _{L}}
+  
+ live in 
+  
+    
+      
+        
+          R
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R^{2}}
+  
+ space. The second-moment matrices are related in the following manner:
+
+  
+    
+      
+        
+          
+            
+              
+                μ
+                (
+                
+                  
+                    x
+                  
+                  
+                    L
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    I
+                    ,
+                    L
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    D
+                    ,
+                    L
+                  
+                
+                )
+              
+              
+                
+                
+
+                
+                =
+                
+                  A
+                  
+                    T
+                  
+                
+                μ
+                (
+                
+                  
+                    x
+                  
+                  
+                    R
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    I
+                    ,
+                    R
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    D
+                    ,
+                    R
+                  
+                
+                )
+                A
+              
+            
+            
+              
+                
+                  M
+                  
+                    L
+                  
+                
+              
+              
+                
+                
+
+                
+                =
+                μ
+                (
+                
+                  
+                    x
+                  
+                  
+                    L
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    I
+                    ,
+                    L
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    D
+                    ,
+                    L
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  M
+                  
+                    R
+                  
+                
+              
+              
+                
+                
+
+                
+                =
+                μ
+                (
+                
+                  
+                    x
+                  
+                  
+                    R
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    I
+                    ,
+                    R
+                  
+                
+                ,
+                
+                  Σ
+                  
+                    D
+                    ,
+                    R
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  M
+                  
+                    L
+                  
+                
+              
+              
+                
+                
+
+                
+                =
+                
+                  A
+                  
+                    T
+                  
+                
+                
+                  M
+                  
+                    R
+                  
+                
+                A
+              
+            
+            
+              
+                
+                  Σ
+                  
+                    I
+                    ,
+                    R
+                  
+                
+              
+              
+                
+                
+
+                
+                =
+                A
+                
+                  Σ
+                  
+                    I
+                    ,
+                    L
+                  
+                
+                
+                  A
+                  
+                    T
+                  
+                
+                
+                   and 
+                
+                
+                  Σ
+                  
+                    D
+                    ,
+                    R
+                  
+                
+                =
+                A
+                
+                  Σ
+                  
+                    D
+                    ,
+                    L
+                  
+                
+                
+                  A
+                  
+                    T
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\mu (\mathbf {x} _{L},\Sigma _{I,L},\Sigma _{D,L})&{}=A^{T}\mu (\mathbf {x} _{R},\Sigma _{I,R},\Sigma _{D,R})A\\M_{L}&{}=\mu (\mathbf {x} _{L},\Sigma _{I,L},\Sigma _{D,L})\\M_{R}&{}=\mu (\mathbf {x} _{R},\Sigma _{I,R},\Sigma _{D,R})\\M_{L}&{}=A^{T}M_{R}A\\\Sigma _{I,R}&{}=A\Sigma _{I,L}A^{T}{\text{ and }}\Sigma _{D,R}=A\Sigma _{D,L}A^{T}\end{aligned}}}
+  
+
+where 
+  
+    
+      
+        
+          Σ
+          
+            I
+            ,
+            b
+          
+        
+      
+    
+    {\displaystyle \Sigma _{I,b}}
+  
+ and 
+  
+    
+      
+        
+          Σ
+          
+            D
+            ,
+            b
+          
+        
+      
+    
+    {\displaystyle \Sigma _{D,b}}
+  
+ are the covariance matrices for the 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ reference frame. If we continue with this formulation and enforce that
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  Σ
+                  
+                    I
+                    ,
+                    L
+                  
+                
+                =
+                
+                  σ
+                  
+                    I
+                  
+                
+                
+                  M
+                  
+                    L
+                  
+                  
+                    −
+                    1
+                  
+                
+              
+            
+            
+              
+                
+                  Σ
+                  
+                    D
+                    ,
+                    L
+                  
+                
+                =
+                
+                  σ
+                  
+                    D
+                  
+                
+                
+                  M
+                  
+                    L
+                  
+                  
+                    −
+                    1
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\Sigma _{I,L}=\sigma _{I}M_{L}^{-1}\\\Sigma _{D,L}=\sigma _{D}M_{L}^{-1}\end{aligned}}}
+  
+
+where 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+ and 
+  
+    
+      
+        
+          σ
+          
+            D
+          
+        
+      
+    
+    {\displaystyle \sigma _{D}}
+  
+ are scalar factors, one can show that the covariance matrices for the related point are similarly related:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  Σ
+                  
+                    I
+                    ,
+                    R
+                  
+                
+                =
+                
+                  σ
+                  
+                    I
+                  
+                
+                
+                  M
+                  
+                    R
+                  
+                  
+                    −
+                    1
+                  
+                
+              
+            
+            
+              
+                
+                  Σ
+                  
+                    D
+                    ,
+                    R
+                  
+                
+                =
+                
+                  σ
+                  
+                    D
+                  
+                
+                
+                  M
+                  
+                    R
+                  
+                  
+                    −
+                    1
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\Sigma _{I,R}=\sigma _{I}M_{R}^{-1}\\\Sigma _{D,R}=\sigma _{D}M_{R}^{-1}\end{aligned}}}
+  
+
+By requiring the covariance matrices to satisfy these conditions, several nice properties arise. One of these properties is that the square root of the second-moment matrix, 
+  
+    
+      
+        
+          M
+          
+            
+              
+                1
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle M^{\tfrac {1}{2}}}
+  
+ will transform the original anisotropic region into isotropic regions that are related simply through a pure rotation matrix 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+. These new isotropic regions can be thought of as a normalized reference frame. The following equations formulate the relation between the normalized points 
+  
+    
+      
+        
+          x
+          
+            R
+          
+          
+            
+              
+              ′
+            
+          
+        
+      
+    
+    {\displaystyle x_{R}^{'}}
+  
+ and 
+  
+    
+      
+        
+          x
+          
+            L
+          
+          
+            
+              
+              ′
+            
+          
+        
+      
+    
+    {\displaystyle x_{L}^{'}}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              
+                A
+                =
+                
+                  M
+                  
+                    R
+                  
+                  
+                    −
+                    
+                      
+                        
+                          1
+                          2
+                        
+                      
+                    
+                  
+                
+                R
+                
+                  M
+                  
+                    L
+                  
+                  
+                    
+                      
+                        1
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  x
+                  
+                    R
+                  
+                  
+                    
+                      
+                      ′
+                    
+                  
+                
+                =
+                
+                  M
+                  
+                    R
+                  
+                  
+                    
+                      
+                        1
+                        2
+                      
+                    
+                  
+                
+                
+                  x
+                  
+                    R
+                  
+                
+              
+            
+            
+              
+                
+                  x
+                  
+                    L
+                  
+                  
+                    
+                      
+                      ′
+                    
+                  
+                
+                =
+                
+                  M
+                  
+                    L
+                  
+                  
+                    
+                      
+                        1
+                        2
+                      
+                    
+                  
+                
+                
+                  x
+                  
+                    L
+                  
+                
+              
+            
+            
+              
+                
+                  x
+                  
+                    L
+                  
+                  
+                    
+                      
+                      ′
+                    
+                  
+                
+                =
+                R
+                
+                  x
+                  
+                    R
+                  
+                  
+                    
+                      
+                      ′
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}A=M_{R}^{-{\tfrac {1}{2}}}RM_{L}^{\tfrac {1}{2}}\\x_{R}^{'}=M_{R}^{\tfrac {1}{2}}x_{R}\\x_{L}^{'}=M_{L}^{\tfrac {1}{2}}x_{L}\\x_{L}^{'}=Rx_{R}^{'}\\\end{aligned}}}
+  
+
+The rotation matrix can be recovered using gradient methods likes those in the SIFT descriptor. As discussed with the Harris detector, the eigenvalues and eigenvectors of the second-moment matrix, 
+  
+    
+      
+        M
+        =
+        μ
+        (
+        
+          x
+        
+        ,
+        
+          Σ
+          
+            I
+          
+        
+        ,
+        
+          Σ
+          
+            D
+          
+        
+        )
+      
+    
+    {\displaystyle M=\mu (\mathbf {x} ,\Sigma _{I},\Sigma _{D})}
+  
+ characterize the curvature and shape of the pixel intensities. That is, the eigenvector associated with the largest eigenvalue indicates the direction of largest change and the eigenvector associated with the smallest eigenvalue defines the direction of least change. In the 2D case, the eigenvectors and eigenvalues define an ellipse. For an isotropic region, the region should be circular in shape and not elliptical. This is the case when the eigenvalues have the same magnitude. Thus a measure of the isotropy around a local region is defined as the following:
+
+  
+    
+      
+        
+          
+            Q
+          
+        
+        =
+        
+          
+            
+              
+                λ
+                
+                  min
+                
+              
+              (
+              M
+              )
+            
+            
+              
+                λ
+                
+                  max
+                
+              
+              (
+              M
+              )
+            
+          
+        
+      
+    
+    {\displaystyle {\mathcal {Q}}={\frac {\lambda _{\min }(M)}{\lambda _{\max }(M)}}}
+  
+
+where 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ denote eigenvalues. This measure has the range 
+  
+    
+      
+        [
+        0
+        …
+        1
+        ]
+      
+    
+    {\displaystyle [0\dots 1]}
+  
+. A value of 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ corresponds to perfect isotropy.
+
+
+==== Iterative algorithm ====
+Using this mathematical framework, the Harris affine detector algorithm iteratively discovers the second-moment matrix that transforms the anisotropic region into a normalized region in which the isotropic measure is sufficiently close to one. The algorithm uses this shape adaptation matrix, 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+, to transform the image into a normalized reference frame. In this normalized space, the interest points' parameters (spatial location, integration scale and differentiation scale) are refined using methods similar to the Harris–Laplace detector. The second-moment matrix is computed in this normalized reference frame and should have an isotropic measure close to one at the final iteration. At every 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+th iteration, each interest region is defined by several parameters that the algorithm must discover: the 
+  
+    
+      
+        
+          U
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle U^{(k)}}
+  
+ matrix, position 
+  
+    
+      
+        
+          
+            x
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} ^{(k)}}
+  
+, integration scale 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}^{(k)}}
+  
+ and differentiation scale 
+  
+    
+      
+        
+          σ
+          
+            D
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle \sigma _{D}^{(k)}}
+  
+. Because the detector computes the second-moment matrix in the transformed domain, it's convenient to denote this transformed position as 
+  
+    
+      
+        
+          
+            x
+          
+          
+            w
+          
+          
+            (
+            k
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} _{w}^{(k)}}
+  
+ where 
+  
+    
+      
+        
+          U
+          
+            (
+            k
+            )
+          
+        
+        
+          
+            x
+          
+          
+            w
+          
+          
+            (
+            k
+            )
+          
+        
+        =
+        
+          
+            x
+            
+              (
+              k
+              )
+            
+          
+        
+      
+    
+    {\displaystyle U^{(k)}\mathbf {x} _{w}^{(k)}=\mathbf {x^{(k)}} }
+  
+.
+
+
+== Computation and implementation ==
+The computational complexity of the Harris-affine detector is broken into two parts: initial point detection and affine region normalization. The initial point detection algorithm, Harris–Laplace, has complexity 
+  
+    
+      
+        
+          
+            O
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\mathcal {O}}(n)}
+  
+ where 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ is the number of pixels in the image. The affine region normalization algorithm automatically detects the scale and estimates the shape adaptation matrix, 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+. This process has complexity 
+  
+    
+      
+        
+          
+            O
+          
+        
+        (
+        (
+        m
+        +
+        k
+        )
+        p
+        )
+      
+    
+    {\displaystyle {\mathcal {O}}((m+k)p)}
+  
+, where 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ is the number of initial points, 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+  is the size of the search space for the automatic scale selection and 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ is the number of iterations required to compute the 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ matrix.
+Some methods exist to reduce the complexity of the algorithm at the expense of accuracy. One method is to eliminate the search in the differentiation scale step. Rather than choose a factor 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ from a set of factors, the sped-up algorithm chooses the scale to be constant across iterations and points: 
+  
+    
+      
+        
+          σ
+          
+            D
+          
+        
+        =
+        s
+        
+          σ
+          
+            I
+          
+        
+        ,
+        
+        s
+        =
+        c
+        o
+        n
+        s
+        t
+        a
+        n
+        t
+      
+    
+    {\displaystyle \sigma _{D}=s\sigma _{I},\;s=constant}
+  
+.   Although this reduction in search space might decrease the complexity, this change can severely effect the convergence of the 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ matrix.
+
+
+== Analysis ==
+
+
+=== Convergence ===
+One can imagine that this algorithm might identify duplicate interest points at multiple scales. Because the Harris affine algorithm looks at each initial point given by the Harris–Laplace detector independently, there is no discrimination between identical points. In practice, it has been shown that these points will ultimately all converge to the same interest point. After finishing identifying all interest points, the algorithm accounts for duplicates by comparing the spatial coordinates (
+  
+    
+      
+        
+          x
+        
+      
+    
+    {\displaystyle \mathbf {x} }
+  
+), the integration scale 
+  
+    
+      
+        
+          σ
+          
+            I
+          
+        
+      
+    
+    {\displaystyle \sigma _{I}}
+  
+, the isotropic measure 
+  
+    
+      
+        
+          
+            
+              
+                
+                  λ
+                  
+                    min
+                  
+                
+                (
+                U
+                )
+              
+              
+                
+                  λ
+                  
+                    max
+                  
+                
+                (
+                U
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {\lambda _{\min }(U)}{\lambda _{\max }(U)}}}
+  
+ and skew. If these interest point parameters are similar within a specified threshold, then they are labeled duplicates. The algorithm discards all these duplicate points except for the interest point that's closest to the average of the duplicates. Typically 30% of the Harris affine points are distinct and dissimilar enough to not be discarded.
+Mikolajczyk and Schmid (2004) showed that often the initial points (40%) do not converge. The algorithm detects this divergence by stopping the iterative algorithm if the inverse of the isotropic measure is larger than a specified threshold: 
+  
+    
+      
+        
+          
+            
+              
+                
+                  λ
+                  
+                    max
+                  
+                
+                (
+                U
+                )
+              
+              
+                
+                  λ
+                  
+                    min
+                  
+                
+                (
+                U
+                )
+              
+            
+          
+        
+        >
+        
+          t
+          
+            diverge
+          
+        
+      
+    
+    {\displaystyle {\tfrac {\lambda _{\max }(U)}{\lambda _{\min }(U)}}>t_{\text{diverge}}}
+  
+. Mikolajczyk and Schmid (2004) use 
+  
+    
+      
+        
+          t
+          
+            d
+            i
+            v
+            e
+            r
+            g
+            e
+          
+        
+        =
+        6
+      
+    
+    {\displaystyle t_{diverge}=6}
+  
+. Of those that did converge, the typical number of required iterations was 10.
+
+
+=== Quantitative measure ===
+Quantitative analysis of affine region detectors take into account both the accuracy of point locations and the overlap of regions across two images. Mioklajcyzk and Schmid (2004) extend the repeatability measure of Schmid et al. (1998) as the ratio of point correspondences to minimum detected points of the two images.
+
+  
+    
+      
+        
+          R
+          
+            score
+          
+        
+        =
+        
+          
+            
+              C
+              (
+              A
+              ,
+              B
+              )
+            
+            
+              min
+              (
+              
+                n
+                
+                  A
+                
+              
+              ,
+              
+                n
+                
+                  B
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle R_{\text{score}}={\frac {C(A,B)}{\min(n_{A},n_{B})}}}
+  
+
+where 
+  
+    
+      
+        C
+        (
+        A
+        ,
+        B
+        )
+      
+    
+    {\displaystyle C(A,B)}
+  
+ are the number of corresponding points in images 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+. 
+  
+    
+      
+        
+          n
+          
+            B
+          
+        
+      
+    
+    {\displaystyle n_{B}}
+  
+ and 
+  
+    
+      
+        
+          n
+          
+            A
+          
+        
+      
+    
+    {\displaystyle n_{A}}
+  
+ are the number of detected points in the respective images. Because each image represents 3D space, it might be the case that the one image contains objects that are not in the second image and thus whose interest points have no chance of corresponding. In order to make the repeatability measure valid, one remove these points and must only consider points that lie in both images; 
+  
+    
+      
+        
+          n
+          
+            A
+          
+        
+      
+    
+    {\displaystyle n_{A}}
+  
+ and 
+  
+    
+      
+        
+          n
+          
+            B
+          
+        
+      
+    
+    {\displaystyle n_{B}}
+  
+ only count those points such that 
+  
+    
+      
+        
+          x
+          
+            A
+          
+        
+        =
+        H
+        ⋅
+        
+          x
+          
+            B
+          
+        
+      
+    
+    {\displaystyle x_{A}=H\cdot x_{B}}
+  
+. For a pair of two images related through a homography matrix 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+, two points, 
+  
+    
+      
+        
+          
+            x
+            
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {x_{a}} }
+  
+ and 
+  
+    
+      
+        
+          
+            x
+            
+              b
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {x_{b}} }
+  
+ are said to correspond if:
+
+
+=== Robustness to affine and other transformations ===
+Mikolajczyk et al. (2005) have done a thorough analysis of several state-of-the-art affine region detectors: Harris affine, Hessian affine, MSER, IBR & EBR and salient detectors. Mikolajczyk et al. analyzed both structured images and textured images in their evaluation. Linux binaries of the detectors and their test images are freely available at their webpage. A brief summary of the results of Mikolajczyk et al. (2005) follow; see A comparison of affine region detectors for a more quantitative analysis.
+
+Viewpoint Angle Change: The Harris affine detector has reasonable (average) robustness to these types of changes. The detector maintains a repeatability score of above 50% up until a viewpoint angle of above 40 degrees. The detector tends to detect a high number of repeatable and matchable regions even under a large viewpoint change.
+Scale Change: The Harris affine detector remains very consistent under scale changes. Although the number of points declines considerably at large scale changes (above 2.8), the repeatability (50–60%) and matching scores (25–30%) remain very constant especially with textured images. This is consistent with the high-performance of the automatic scale selection iterative algorithm.
+Blurred Images: The Harris affine detector remains very stable under image blurring. Because the detector does not rely on image segmentation or region boundaries, the repeatability and matching scores remain constant.
+JPEG Artifacts: The Harris affine detector degrades similar to other affine detectors: repeatability and matching scores drop significantly above 80% compression.
+Illumination Changes: The Harris affine detector, like other affine detectors, is very robust to illumination changes: repeatability and matching scores remain constant under decreasing light. This should be expected because the detectors rely heavily on relative intensities (derivatives) and not absolute intensities.
+
+
+=== General trends ===
+Harris affine region points tend to be small and numerous. Both the Harris-affine detector and Hessian-affine consistently identify double the number repeatable points as other affine detectors: ~1000 regions for an 800x640 image. Small regions are less likely to be occluded but have a smaller chance of overlapping neighboring regions.
+The Harris affine detector responds well to textured scenes in which there are a lot of corner-like parts. However, for some structured scenes, like buildings, the Harris-affine detector performs very well. This is complementary to MSER that tends to do better with well structured (segmentable) scenes.
+Overall the Harris affine detector performs very well, but still behind MSER and Hessian-affine in all cases but blurred images.
+Harris-affine and Hessian-affine detectors are less accurate than others: their repeatability score increases as the overlap threshold is increased.
+The detected affine-invariant regions may still differ in their rotation and illumination. Any descriptor that uses these regions must account for the invariance when using the regions for matching or other comparisons.
+
+
+== Applications ==
+Content-based image retrieval
+Model-based recognition
+Object retrieval in video
+Visual data mining: identifying important objects, characters and scenes in videos
+Object recognition and categorization
+Remotely sensed image analysis: Object detection from remotely sensed images
+
+
+== Software packages ==
+Affine Covariant Features: K. Mikolajczyk maintains a web page that contains Linux binaries of the Harris-affine detector in addition to other detectors and descriptors. Matlab code is also available that can be used to illustrate and compute the repeatability of various detectors. Code and images are also available to duplicate the results found in the Mikolajczyk et al. (2005) paper.
+lip-vireo – binary code for Linux, Windows and SunOS from VIREO research group. See more from the homepage Archived 2017-05-11 at the Wayback Machine
+
+
+== External links ==
+
+[1] – Presentation slides from Mikolajczyk et al. on their 2005 paper.
+[2] Archived 2023-07-26 at the Wayback Machine – Cordelia Schmid's Computer Vision Lab
+[3] – Code, test Images, bibliography of Affine Covariant Features maintained by Krystian Mikolajczyk and the Visual Geometry Group from the Robotics group at the University of Oxford.
+[4] – Bibliography of feature (and blob) detectors maintained by USC Institute for Robotics and Intelligent Systems
+[5] – Digital implementation of Laplacian of Gaussian
+
+
+== See also ==
+Hessian-affine
+MSER
+Kadir–Brady saliency detector
+Scale space
+Isotropy
+Corner detection
+Interest point detection
+Affine shape adaptation
+Image derivative
+Computer vision
+ASIFT -> Affine-Sift (A fully affine invariant image matching algorithm)
+
+
+== References ==

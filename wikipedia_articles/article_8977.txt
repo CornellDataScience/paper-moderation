@@ -1,0 +1,72 @@
+PeaZip is a free and open-source file manager and file archiver for Microsoft Windows, ReactOS, Linux,  MacOS and BSD by Giorgio Tani. It supports its native PEA archive format (supporting compression, multi-volume split, and flexible authenticated encryption and integrity check schemes) and other mainstream formats, with special focus on handling open formats. Version 9.4.0 supported 234 file extensions.
+PeaZip is mainly written in Free Pascal, using Lazarus. PeaZip is released under the terms of the GNU Lesser General Public License.
+
+
+== Features ==
+The program has an archive browser interface with search and history features for intuitive navigation of an archive's content, and allows the application of fine-grained multiple exclusion and inclusion filter rules to the archive; an alternative flat archive browsing mode is available.
+PeaZip allows users to run extracting and archiving operations automatically if invoked from the command line; the GUI front-end can export the command. It can also create, edit and restore an archive's layout for speeding up archiving or backup operation's definition.
+The program also supports archive conversion, file splitting and joining, secure file deletion, bytewise file comparison, archive encryption, checksum/hash files, find duplicate files, batch renaming, system benchmarking, random passwords/keyfiles generation, view image thumbnails (multi-threaded on the fly thumbnails generation without saving image cache to the host machine), and integration into the Windows Explorer context menu. The user interface (including icons and color scheme) can be customized.
+Versions older than 2.6.1 were vulnerable to an improper input validation weakness corrected in following versions.
+From version 6.9.2, PeaZip supports editing files inside archives (e.g. open, edit, and save a text file without extracting it), and adding files to the root folder or subfolders of an existing archive.
+PeaZip is available for IA-32 and x86-64 as a standalone portable application and as an installable package for Microsoft Windows, Linux (DEB, RPM and TGZ, compiled both for GTK2 and Qt widgetset), and BSD (GTK2). It is available also as a PortableApps package (.paf.exe) and for Microsoft's winget Windows Package Manager
+In addition to more popular and general-purpose archive formats including 7z, Tar, Zip, PeaZip supports the ZPAQ, PAQ, and LPAQ formats. Although not suitable for general use due to high memory usage and low speed, these formats provide better compression ratios for most data structures.
+PeaZip supports encryption with AES 256-bit cipher in 7z and ZIP archive formats. In PeaZip's native PEA format, and in FreeArc's ARC format, supported ciphers are AES 256-bit, Blowfish, Twofish 256 and Serpent 256 (in PEA format, all ciphers are used in EAX authenticated encryption mode).
+
+
+=== Native archive format ===
+PEA, an acronym for Pack Encrypt Authenticate, is an archive file format. It is a general purpose archiving format supporting compression and multiple volume output. The intention is to offer a flexible security model through Authenticated Encryption providing both privacy and authentication of data, and redundant integrity checks ranging from checksums to cryptographically strong hashes, defining three different levels of communication to control: streams, objects, and volumes.
+It was developed in conjunction with the PeaZip file archiver. PeaZip and Universal Extractor support the PEA archive format.
+
+
+=== Third-party technologies ===
+PeaZip acts as a graphical front-end for numerous third-party open source or royalty-free utilities, including:
+
+Igor Pavlov 7z executable and Myspace's p7zip, POSIX port of 7z under Linux
+Google Brotli
+Bulat Ziganshin FreeArc, not to be confused with SEA's ARC
+Matt Mahoney at al PAQ8, ZPAQ and LPAQ
+Ilia Muraviev QUAD, BALZ, and BCM compressors
+GNU strip and UPX
+Facebook Zstandard
+
+
+==== Separate plugin (optional) ====
+Marcel Lemke UNACEV2.DLL 2.6.0.0 and UNACE for Linux (royalty-free license from ACE Compression Software); being released under a non-OSI compliant license it is available as separate (free of charge) package on PeaZip Add-ons page, as PeaZip UNACE Plugin.
+Eugene Roshal unrar (royalty-free license from RarLab/Win.Rar GmbH, source available but subject to restrictions to prevent creating a rar compressor); being released under a non-OSI compliant license it is available as a separate free-of-charge) package on PeaZip Add-ons page, as PeaZip UNRAR5 Plugin. This optional plugin provides an alternative unrar engine; however standard PeaZip can extract RAR and RAR5 formats with unrar from 7zip.
+Most of these utilities can run both in console mode or through a graphical wrapper that allows more user-friendly handling of output information.
+
+
+== Supported formats ==
+
+
+=== Full archiving and extraction support ===
+
+
+=== Browse/test/extract support ===
+
+
+=== Repair ===
+FreeArc's ARC
+
+
+== Adware ==
+Prior to release 5.3, PeaZip installers for Windows and Win64 (but nor Portable or Linux) were bundled with an OpenCandy advertising module which during installation offered optional installation of third-party software; the official download page provided alternative installers without this module, named 'plain'. Later releases do not have an ad-supported bundle.
+
+
+== See also ==
+
+Comparison of file archivers
+Comparison of archive formats
+List of archive formats
+List of portable software
+
+
+== References ==
+
+
+== External links ==
+Official website
+PEA archiving utility and file format specifications
+FAQ
+PeaZip on SourceForge
+Peazip on GitHub

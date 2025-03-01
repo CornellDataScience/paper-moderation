@@ -1,0 +1,870 @@
+Thermohaline staircases are patterns that form in oceans and other bodies of salt water, characterised by step-like structures observed in vertical temperature and salinity profiles; the patterns are formed and maintained by double diffusion of heat and salt. The ocean phenomenon consists of well-mixed layers of ocean water stacked on top of each other. The well-mixed layers are separated by high-gradient interfaces, which can be several meters thick. The total thickness of staircases ranges typically from tens to hundreds of meters.
+Two types of staircases are distinguished. Salt-fingering staircases can be found at locations where relatively warm, salty water overlies relatively colder, fresher water. Here, large-scale temperature and salinity both increase upward, making the mixing process of salt fingering possible. Locations where you can find these type of staircases are for example beneath the Mediterranean outflow, in the Tyrrhenian Sea, and northeast Caribbean. Diffusive staircases can be found at locations where both temperature and salinity increase downward, for example in the Arctic Ocean and in the Weddell Sea.  An important feature of thermohaline staircases is their extreme stability in space and time. They can persist several years or more and can extend for hundreds of kilometers. The interest in thermohaline staircases is partly due to the fact that the staircases represent mixing hot spots in the main thermocline.
+
+
+== Extensive definition and detection ==
+To determine the presence of thermohaline staircases, the following steps can be taken according to the algorithm designed by Van der Boog.
+The first step of the algorithm is to identify the mixed layers by locating weak vertical density gradients in conservative temperature and absolute salinity. To do so, the threshold gradient method is used with a threshold of 
+  
+    
+      
+        ∂
+        
+          σ
+          
+            1
+          
+        
+        
+          /
+        
+        ∂
+        
+          p
+          
+            m
+            a
+            x
+          
+        
+        =
+        0.0005
+        
+        
+          
+            kg m
+          
+          
+            −
+            3
+          
+        
+        
+          
+            pbar
+          
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle \partial \sigma _{1}/\partial p_{max}=0.0005\,{\text{kg m}}^{-3}{\text{pbar}}^{-1}}
+  
+, with 
+  
+    
+      
+        p
+      
+    
+    {\textstyle p}
+  
+ the pressure and 
+  
+    
+      
+        
+          σ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \sigma _{1}}
+  
+ 
+  
+    
+      
+        (
+        =
+        1000
+        
+        
+          dbar
+        
+        )
+      
+    
+    {\displaystyle (=1000\,{\text{dbar}})}
+  
+ the reference pressure. The vertical conservative temperature, absolute salinity, and potential density gradients are all below the threshold value by meeting these three conditions: 
+
+  
+    
+      
+        
+          |
+          
+            α
+            
+              ρ
+              
+                0
+              
+            
+            
+              
+                
+                  ∂
+                  T
+                
+                
+                  ∂
+                  p
+                
+              
+            
+          
+          |
+        
+        
+        ≤
+        0.0005
+        
+        
+          
+            kg m
+          
+          
+            −
+            3
+          
+        
+        
+          
+            dbar
+          
+          
+            −
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle \left|\alpha \rho _{0}{\frac {\partial T}{\partial p}}\right|\,\leq 0.0005\,{\text{kg m}}^{-3}{\text{dbar}}^{-1},}
+  
+ 
+
+  
+    
+      
+        
+          |
+          
+            β
+            
+              ρ
+              
+                0
+              
+            
+            
+              
+                
+                  ∂
+                  S
+                
+                
+                  ∂
+                  p
+                
+              
+            
+          
+          |
+        
+        
+        ≤
+        0.0005
+        
+        
+          
+            kg m
+          
+          
+            −
+            3
+          
+        
+        
+          
+            dbar
+          
+          
+            −
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle \left|\beta \rho _{0}{\frac {\partial S}{\partial p}}\right|\,\leq 0.0005\,{\text{kg m}}^{-3}{\text{dbar}}^{-1},}
+  
+ 
+
+  
+    
+      
+        
+          |
+          
+            
+              
+                ∂
+                
+                  σ
+                  
+                    1
+                  
+                
+              
+              
+                ∂
+                p
+              
+            
+          
+          |
+        
+        
+        ≤
+        0.0005
+        
+        
+          
+            kg m
+          
+          
+            −
+            3
+          
+        
+        
+          
+            dbar
+          
+          
+            −
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle \left|{\frac {\partial \sigma _{1}}{\partial p}}\right|\,\leq 0.0005\,{\text{kg m}}^{-3}{\text{dbar}}^{-1},}
+  
+ 
+with 
+  
+    
+      
+        α
+      
+    
+    {\textstyle \alpha }
+  
+ the thermal expansion coefficient, 
+  
+    
+      
+        β
+      
+    
+    {\textstyle \beta }
+  
+ the haline contraction coefficient, 
+  
+    
+      
+        
+          ρ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \rho _{0}}
+  
+ the reference density, 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ the conservative temperature, and 
+  
+    
+      
+        S
+      
+    
+    {\textstyle S}
+  
+ the salinity.  
+The second step is to define the interface, which is the part of the water column in the middle of two mixed layers. It is required that the conservative temperature, absolute salinity, and potential density variations in the interface 
+  
+    
+      
+        (
+        Δ
+        
+          T
+          
+            I
+            F
+          
+        
+        ,
+        Δ
+        
+          S
+          
+            I
+            F
+          
+        
+        ,
+        Δ
+        
+          σ
+          
+            I
+            F
+          
+        
+        )
+      
+    
+    {\displaystyle (\Delta T_{IF},\Delta S_{IF},\Delta \sigma _{IF})}
+  
+  should be larger than the variations within each mixed layer 
+  
+    
+      
+        (
+        Δ
+        
+          T
+          
+            M
+            L
+          
+        
+        ,
+        Δ
+        
+          S
+          
+            M
+            L
+          
+        
+        ,
+        Δ
+        
+          σ
+          
+            M
+            L
+          
+        
+        )
+      
+    
+    {\displaystyle (\Delta T_{ML},\Delta S_{ML},\Delta \sigma _{ML})}
+  
+ to ensure a stepped structure. Therefore the following conditions should be met:  
+
+  
+    
+      
+        
+          max
+        
+        
+          (
+          
+            |
+            
+              Δ
+              
+                T
+                
+                  M
+                  L
+                  ,
+                  1
+                
+              
+              
+                |
+              
+              ,
+              
+                |
+              
+              Δ
+              
+                T
+                
+                  M
+                  L
+                  ,
+                  2
+                
+              
+            
+            |
+          
+          )
+        
+        <
+        
+          |
+        
+        Δ
+        
+          T
+          
+            I
+            F
+          
+        
+        
+          |
+        
+        ,
+      
+    
+    {\displaystyle {\text{max}}\left(\left|\Delta T_{ML,1}|,|\Delta T_{ML,2}\right|\right)<|\Delta T_{IF}|,}
+  
+  
+
+  
+    
+      
+        
+          max
+        
+        
+          (
+          
+            |
+            
+              Δ
+              
+                S
+                
+                  M
+                  L
+                  ,
+                  1
+                
+              
+              
+                |
+              
+              ,
+              
+                |
+              
+              Δ
+              
+                S
+                
+                  M
+                  L
+                  ,
+                  2
+                
+              
+            
+            |
+          
+          )
+        
+        <
+        
+          |
+        
+        Δ
+        
+          S
+          
+            I
+            F
+          
+        
+        
+          |
+        
+        ,
+      
+    
+    {\displaystyle {\text{max}}\left(\left|\Delta S_{ML,1}|,|\Delta S_{ML,2}\right|\right)<|\Delta S_{IF}|,}
+  
+  
+
+  
+    
+      
+        
+          max
+        
+        
+          (
+          
+            
+              |
+            
+            Δ
+            
+              σ
+              
+                
+                  1
+                  
+                    M
+                    L
+                    ,
+                    1
+                  
+                
+              
+            
+            
+              |
+            
+            ,
+            
+              |
+            
+            Δ
+            
+              σ
+              
+                
+                  1
+                  
+                    M
+                    L
+                    ,
+                    2
+                  
+                
+              
+            
+            
+              |
+            
+          
+          )
+        
+        <
+        
+          |
+        
+        Δ
+        
+          σ
+          
+            
+              1
+              
+                I
+                F
+              
+            
+          
+        
+        
+          |
+        
+        ,
+      
+    
+    {\displaystyle {\text{max}}\left(|\Delta \sigma _{1_{ML,1}}|,|\Delta \sigma _{1_{ML,2}}|\right)<|\Delta \sigma _{1_{IF}}|,}
+  
+  
+where subscript 1 corresponds to the mixed layer above the interface and subscript 2 corresponds to the mixed layer below the interface.  
+The third step is to limit the interface height 
+  
+    
+      
+        (
+        
+          h
+          
+            I
+            F
+          
+        
+        )
+      
+    
+    {\displaystyle (h_{IF})}
+  
+. The interface height should be smaller than the height of the mixed layers directly above and below the interface 
+  
+    
+      
+        (
+        
+          h
+          
+            M
+            L
+            ,
+            1
+          
+        
+        ,
+        
+          h
+          
+            M
+            L
+            ,
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle (h_{ML,1},h_{ML,2})}
+  
+. This condition has to be met in order to ensure that the interface is relatively thin compared to the mixed layers surrounding it. Furthermore, the algorithm removes all interfaces with conservative temperature or absolute salinity inversions to make sure that it only detects step-like structures that are associated with the presence of thermohaline staircases.
+The fourth step is to determine the double-diffusive regime (salt-fingering or diffusive) of each interface. When both conservative temperature and absolute salinity of the mixed layers above and below the interface increase downward, the interface belongs to the diffusive regime. When both conservative temperature and absolute salinity of the mixed layers above and below the interface both increase upward, the interface is classified as the salt-fingering regime. 
+Finally, only vertical sequences of at least two interfaces in the same double-diffusive regime are selected, where the interfaces should be separated from each other by only one mixed layer. This way, most thermohaline intrusions are removed, as these are characterised by alternating mixed layers in the diffusive and salt-finger regimes. Furthermore, the algorithm removes salt-fingering interfaces and diffusive-convective interfaces outside their favourable Turner angle 
+  
+    
+      
+        (
+        T
+        u
+        )
+      
+    
+    {\displaystyle (Tu)}
+  
+, a parameter used to describe the local stability of an inviscid water column. Interfaces with salt-fingering characteristics should correspond to Turner angles of 
+  
+    
+      
+        
+          45
+          
+            ∘
+          
+        
+        <
+        T
+        u
+        <
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle 45^{\circ }<Tu<90^{\circ }}
+  
+ and interfaces with diffusive-convective characteristics should correspond to Turner angles of 
+  
+    
+      
+        −
+        
+          90
+          
+            ∘
+          
+        
+        <
+        T
+        u
+        <
+        −
+        
+          45
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle -90^{\circ }<Tu<-45^{\circ }}
+  
+.
+
+
+== Staircase origin ==
+The origin of thermohaline staircases relies on double diffusive convection, and specifically on the fact that heated water diffuses more readily than salty water. However, there is still much debate on which specific mechanism of layering plays a role. Six possible mechanisms are described below.
+
+
+=== Collective instability mechanism ===
+This mechanism, involving collective instability, relies on the idea that after a period of active internal wave motion, layers appear. This hypothesis was motivated by laboratory experiments in which staircases formed from the initially uniform temperature and salinity gradients. Growing waves might overturn and generate the stepped structure of thermohaline staircases.
+
+
+=== Thermohaline intrusion mechanism ===
+This hypothesis states that staircases represent the final stage in the evolution of thermohaline intrusions. Intrusions can evolve either to a state consisting of alternating salt-finger and diffusive interfaces separated by convecting layers, which is common at high density ratio 
+  
+    
+      
+        (
+        
+          R
+          
+            ρ
+          
+        
+        )
+      
+    
+    {\displaystyle (R_{\rho })}
+  
+, or to a series of salt-finger interfaces when the density ratio is low 
+  
+    
+      
+        (
+        
+          R
+          
+            ρ
+          
+        
+        <
+        1.6
+        )
+      
+    
+    {\displaystyle (R_{\rho }<1.6)}
+  
+. This proposition relies on the presence of lateral property gradients to drive interleaving. This mechanism, where thermohaline intrusions are transformed into staircases, are likely to exist in strong temperature-salinity fronts. 
+
+
+=== Metastable equilibria mechanism ===
+A different theory states that staircases represent distinct metastable equilibria. It is suggested that finite amplitude perturbations to the gradient state force the system into a layered regime where it can remain for long periods of time. Large initial perturbations to the gradient state make the transition to the staircase more likely and accelerate the process. Once the staircase is created, the system becomes resilient to further structural changes. 
+
+
+=== Applied flux mechanism ===
+The applied flux mechanism was mainly tested in laboratory experiments, and is most likely at work in cases when layering is caused by geothermal heating. When a stable salinity gradient is heated from below, top-heavy convection will take place in the lower part of the water column. The well-mixed convecting layer is bounded from above by a thin high-gradient interface. By a combination of molecular diffusion and entrainment across the interface, heat is transferred upward from the convecting layer. The molecular transfer of heat exceeds that of salt, resulting in a supply of buoyancy to the region immediately above the interface. This leads to the formation of a second convecting layer. The process can repeat itself over and over, which results in a sequence of mixed layers separated by sharp interfaces, a thermohaline staircase.  
+
+
+=== Negative density diffusion ===
+In salt-fingering staircases, vertical temperature and salinity fluxes are downgradient, while the vertical density flux is upgradient. This is explained by the fact that the potential energy released in transporting salt downward must exceed that expended in transporting heat upward, resulting in a net downward transport of mass. This negative diffusion sharpens the fluctuations and therefore suggests a means for generating and maintaining staircases. 
+
+
+=== Instability of flux-gradient laws ===
+This mechanism is based on negative density diffusion as well. However, instead of combining temperature and salinity into a single density term, it treats both density components individually. In a publication by Radko, it is shown that formation of steps in numerical models is caused by the parametric variation of the flux ratio as a function of the density ratio 
+  
+    
+      
+        (
+        
+          R
+          
+            ρ
+          
+        
+        )
+      
+    
+    {\displaystyle (R_{\rho })}
+  
+, leading to an instability of equilibrium with uniform stratification. These unstable perturbations continuously grow in time until well-defined layers are formed.
+
+
+== Observations ==
+
+Two types of staircases exist: salt-fingering staircases, where both temperature and salinity of the mixed layers decrease with pressure (and therefore with depth); and diffusive staircases, where both temperature and salinity of the mixed layers increase with pressure (so with depth).
+
+
+=== Salt-fingering staircases ===
+Most observations of salt-fingering staircases have come from three locations: the western Tropical Atlantic, the Tyrrhenian Sea, and the Mediterranean outflow. In these regions the density ratio 
+  
+    
+      
+        (
+        
+          R
+          
+            ρ
+          
+        
+        )
+      
+    
+    {\displaystyle (R_{\rho })}
+  
+ has a very low value, which appears to be a condition for sufficient staircase formation. No staircases have been reported for 
+  
+    
+      
+        
+          R
+          
+            ρ
+          
+        
+      
+    
+    {\displaystyle R_{\rho }}
+  
+ values below 2. For values below 1.7, the step-like structures in vertical temperature and salinity profiles becomes apparent. Moreover, the spatial pattern of staircases is very sensitive to 
+  
+    
+      
+        
+          R
+          
+            ρ
+          
+        
+      
+    
+    {\displaystyle R_{\rho }}
+  
+. With decreasing 
+  
+    
+      
+        
+          R
+          
+            ρ
+          
+        
+      
+    
+    {\displaystyle R_{\rho }}
+  
+, the height of steps sharply increases and the staircases become more pronounced. The importance of the density ratio for the formation is a sign that staircases are a product of double diffusive convection.
+
+In the Tyrrhenian Sea, thermohaline staircases due to salt fingers are observed. The step-like shape is visible in the vertical temperature and salinity profiles. Staircases in the Tyrrhenian Sea show a very high stability in space and time. The weak deep circulation in this area might be an explanation for this stability.
+
+
+=== Diffusive staircases ===
+Diffusive staircases are found at higher latitudes. In the Arctic Ocean, warm and salty water from the Atlantic enters the Arctic basin and subducts beneath the colder and fresher waters of the upper Arctic. In some regions, also Pacific waters sit below the mixed layer and above the Atlantic layer. A thermocline is found at the top of the Atlantic Water layer. In that region, temperature and salinity increases with depth and step-like patterns are observed in vertical temperature and salinity profiles. These staircases mediate the heat transport from the warm water of Atlantic origin to the Arctic halocline and therefore serve as an important process in determining the heat flux from the Atlantic Water upward to the sea ice. Staircases in the Arctic are characterised by much smaller steps than in salt-fingering staircases.  
+On a much smaller scale, diffusive staircases have also been observed in low- and mid-latitudes. For example, Lake Kivu and Lake Nyos show characteristic staircase patterns. In these salt-water lakes, geothermal springs supply heat at the bottom resulting in the diffusive background stratification.
+
+
+== See also ==
+Salt fingering
+Double diffusive convection
+Oceans portal
+
+
+== References ==

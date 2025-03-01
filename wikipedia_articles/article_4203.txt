@@ -1,0 +1,203 @@
+A group-contribution method in chemistry is a technique to estimate and predict thermodynamic and other properties from molecular structures.
+
+
+== Introduction ==
+In today's chemical processes hundreds of thousands of components are used. The Chemical Abstracts Service registry lists 56 million substances, but many of these are only of scientific interest.
+Process designers need to know some basic chemical properties of the components and their mixtures. Experimental measurement is often too expensive.
+Predictive methods can replace measurements if they provide sufficiently good estimations. The estimated properties cannot be as precise as well-made measurements, but for many purposes the quality of estimated properties is sufficient. Predictive methods can also be used to check the results of experimental work.
+
+
+== Principles ==
+
+A group-contribution method uses the principle that some simple aspects of the structures of chemical components are always the same in many different molecules. The smallest common constituents are the atoms and the bonds. The vast majority of organic components, for example, are built of carbon, hydrogen, oxygen, nitrogen, halogens (not including astatine), and maybe sulfur or phosphorus. Together with a single, a double, and a triple bond there are only ten atom types  and three bond types to build thousands of components. The next slightly more complex building blocks of components are functional groups, which are themselves built from few atoms and bonds.
+A group-contribution method is used to predict properties of pure components and mixtures by using group or atom properties. This reduces the number of needed data dramatically. Instead of needing to know the properties of thousands or millions of compounds, only data for a few dozens or hundreds of groups have to be known.
+
+
+=== Additive group-contribution method ===
+The simplest form of a group-contribution method is the determination of a component property by summing up the group contributions 
+  
+    
+      
+        
+          G
+          
+            i
+          
+        
+      
+    
+    {\displaystyle G_{i}}
+  
+:
+
+  
+    
+      
+        
+          T
+          
+            b
+          
+        
+        [
+        
+          K
+        
+        ]
+        =
+        198.2022567824111
+        +
+        ∑
+        
+          G
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle T_{\text{b}}[{\text{K}}]=198.2022567824111+\sum G_{i}.}
+  
+
+This simple form assumes that the property (normal boiling point in the example) is strictly linearly dependent on the number of groups, and additionally no interaction between groups and molecules are assumed. This simple approach is used, for example, in the Joback method for some properties, and it works well in a limited range of components and property ranges, but leads to quite large errors if used outside the applicable ranges.
+
+
+=== Additive group contributions and correlations ===
+This technique uses the purely additive group contributions to correlate the wanted property with an easy accessible property. This is often done for the critical temperature, where the Guldberg rule implies that Tc is 3/2 of the normal boiling point, and the group contributions are used to give a more precise value:
+
+  
+    
+      
+        
+          T
+          
+            c
+          
+        
+        =
+        
+          T
+          
+            b
+          
+        
+        
+          
+            [
+            
+              0.584
+              +
+              0.965
+              ∑
+              
+                G
+                
+                  i
+                
+              
+              −
+              
+                
+                  (
+                  
+                    ∑
+                    
+                      G
+                      
+                        i
+                      
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+            
+            ]
+          
+          
+            −
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle T_{\text{c}}=T_{\text{b}}\left[0.584+0.965\sum G_{i}-\left(\sum G_{i}\right)^{2}\right]^{-1}.}
+  
+
+This approach often gives better results than pure additive equations because the relation with a known property introduces some knowledge about the molecule. Commonly used additional properties are the molecular weight, the number of atoms, chain length, and ring sizes and counts.
+
+
+=== Group interactions ===
+For the prediction of mixture properties it is in most cases not sufficient to use a purely additive method. Instead the property is determined from group-interaction parameters:
+
+  
+    
+      
+        P
+        =
+        f
+        (
+        
+          G
+          
+            i
+            j
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle P=f(G_{ij}),}
+  
+
+where P stands for property, and Gij for group-interaction value.
+A typical group-contribution method using group-interaction values is the UNIFAC method, which estimates activity coefficients. A big disadvantage of the group-interaction model is the need for many more model parameters. Where a simple additive model only needs 10 parameters for 10 groups, a group-interaction model needs already 45 parameters. Therefore, a group-interaction model has normally not parameter for all possible combinations.
+
+
+=== Group contributions of higher orders ===
+Some newer methods introduce second-order groups. These can be super-groups containing several first-order (standard) groups. This allows the introduction of new parameters for the position of groups. Another possibility is to modify first-order group contributions if specific other groups are also present.
+If the majority of group-contribution methods give results in gas phase, recently, a new such method was created for estimating the standard Gibbs free energy of formation (ΔfG′°) and reaction (ΔrG′°) in biochemical systems: aqueous solution, temperature of 25 °C and pH = 7 (biochemical conditions). This new aqueous-system method is based on the group-contribution method of Mavrovouniotis.
+A free-access tool of this new method in aqueous condition is available on the web.
+
+
+== Determination of group contributions ==
+
+Group contributions are obtained from known experimental data of well defined pure components and mixtures. Common sources are thermophysical data banks like the Dortmund Data Bank, Beilstein database, or the DIPPR data bank (from AIChE). The given pure component and mixture properties are then assigned to the groups by statistical correlations like e. g. (multi-)linear regression.
+Important steps during the development of a new method are:
+
+Evaluation of the quality of available experimental data, elimination of wrong data, finding of outliers.
+Construction of groups.
+Searching additional simple and easily accessible properties that can be used to correlate the sum of group contributions with the examined property.
+Finding a good but simple mathematical equation for the relation of the group contribution sum with the wanted property. The critical pressures, for example, is often determined as Pc = f(ΣGi2).
+Fitting the group contribution.
+The reliability of a method mainly relies on a comprehensive data bank where sufficient source data have been available for all groups. A small data base may lead to a precise reproduction of the used data but will lead to significant errors when the model is used for the prediction of other systems.
+
+
+== Group contribution methods ==
+
+
+=== Joback method ===
+The Joback method was published in 1984 by Kevin G. Joback. It can be used to estimate critical temperature, critical pressure, critical volume, standard ideal gas enthalpy of formation, standard ideal gas Gibbs energy of formation, ideal gas heat capacity, enthalpy of vaporization, enthalpy of fusion, normal boiling point, freezing point, and liquid viscosity. The Joback method is a first-order method, and does not account for molecular interactions.
+
+
+=== Ambrose method ===
+The Ambrose method was published by Douglas Ambrose in 1978 and 1979. It can be used to estimate critical temperature, critical pressure, and critical volume. In addition to the molecular structure, it requires normal boiling point for estimating critical temperature and molecular weight for estimating critical pressure.
+
+
+=== Nannoolal method ===
+The Nannoolal method was published by Yash Nannoolal et al in 2004. It can be used to estimate the normal boiling point. It includes first-order and second-order contributions.
+
+
+== See also ==
+UNIFAC
+Benson group increment theory
+Activity coefficient
+
+
+== References ==

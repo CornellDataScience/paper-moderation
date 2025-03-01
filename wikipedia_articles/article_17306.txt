@@ -1,0 +1,1671 @@
+In quantum information theory, superdense coding (also referred to as dense coding) is a quantum communication protocol to communicate a number of classical bits of information by only transmitting a smaller number of qubits, under the assumption of sender and receiver pre-sharing an entangled resource. In its simplest form, the protocol involves two parties, often referred to as Alice and Bob in this context, which share a pair of maximally entangled qubits, and allows Alice to transmit two bits (i.e., one of 00, 01, 10 or 11) to Bob by sending only one qubit. This protocol was first proposed by Charles H. Bennett and Stephen Wiesner in 1970 (though not published by them until 1992) and experimentally actualized in 1996 by Klaus Mattle, Harald Weinfurter, Paul G. Kwiat and Anton Zeilinger using entangled photon pairs. Superdense coding can be thought of as the opposite of quantum teleportation, in which one transfers one qubit from Alice to Bob by communicating two classical bits, as long as Alice and Bob have a pre-shared Bell pair.
+The transmission of two bits via a single qubit is made possible by the fact that Alice can choose among four quantum gate operations to perform on her share of the entangled state. Alice determines which operation to perform accordingly to the pair of bits she wants to transmit. She then sends Bob the qubit state evolved through the chosen gate. Said qubit thus encodes information about the two bits Alice used to select the operation, and this information can be retrieved by Bob thanks to pre-shared entanglement between them. After receiving Alice's qubit, operating on the pair and measuring both, Bob obtains two classical bits of information. It is worth stressing that if Alice and Bob do not pre-share entanglement, then the superdense protocol is impossible, as this would violate Holevo's theorem.
+Superdense coding is the underlying principle of secure quantum secret coding. The necessity of having both qubits to decode the information being sent eliminates the risk of eavesdroppers intercepting messages.
+
+
+== Overview ==
+
+Suppose Alice wants to send two classical bits of information (00, 01, 10, or 11) to Bob using qubits (instead of classical bits). To do this, an entangled state (e.g. a Bell state) is prepared using a Bell circuit or gate by Charlie, a third person. Charlie then sends one of these qubits (in the Bell state) to Alice and the other to Bob. Once Alice obtains her qubit in the entangled state, she applies a certain quantum gate to her qubit depending on which two-bit message (00, 01, 10 or 11) she wants to send to Bob. Her entangled qubit is then sent to Bob who, after applying the appropriate quantum gate and making a measurement, can retrieve the classical two-bit message. Observe that Alice does not need to communicate to Bob which gate to apply in order to obtain the correct classical bits from his projective measurement.
+
+
+== The protocol ==
+The protocol can be split into five different steps: preparation, sharing, encoding, sending, and decoding. 
+
+
+=== Preparation ===
+The protocol starts with the preparation of an entangled state, which is later shared between Alice and Bob. For example, the following Bell state
+
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        (
+        
+          |
+        
+        0
+        
+          ⟩
+          
+            A
+          
+        
+        ⊗
+        
+          |
+        
+        0
+        
+          ⟩
+          
+            B
+          
+        
+        +
+        
+          |
+        
+        1
+        
+          ⟩
+          
+            A
+          
+        
+        ⊗
+        
+          |
+        
+        1
+        
+          ⟩
+          
+            B
+          
+        
+        )
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle ={\frac {1}{\sqrt {2}}}(|0\rangle _{A}\otimes |0\rangle _{B}+|1\rangle _{A}\otimes |1\rangle _{B})}
+  
+
+is prepared, where 
+  
+    
+      
+        ⊗
+      
+    
+    {\displaystyle \otimes }
+  
+ denotes the tensor product. In common usage the tensor product symbol 
+  
+    
+      
+        ⊗
+      
+    
+    {\displaystyle \otimes }
+  
+ may be omitted:
+
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        (
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          0
+          
+            B
+          
+        
+        ⟩
+        +
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle ={\frac {1}{\sqrt {2}}}(|0_{A}0_{B}\rangle +|1_{A}1_{B}\rangle )}
+  
+.
+
+
+=== Sharing ===
+After the preparation of the Bell state 
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle }
+  
+, the qubit denoted by subscript A is sent to Alice and the qubit denoted by subscript B is sent to Bob.  Alice and Bob may be in different locations, an unlimited distance from each other.
+There may be an arbitrary period between the preparation and sharing of the entangled state 
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle }
+  
+ and the rest of the steps in the procedure.
+
+
+=== Encoding ===
+By applying a quantum gate to her qubit locally, Alice can transform the entangled state 
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle }
+  
+ into any of the four Bell states (including, of course, 
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle }
+  
+). Note that this process cannot "break" the entanglement between the two qubits.
+Let's now describe which operations Alice needs to perform on her entangled qubit, depending on which classical two-bit message she wants to send to Bob. We'll later see why these specific operations are performed. There are four cases, which correspond to the four possible two-bit strings that Alice may want to send.
+1. If Alice wants to send the classical two-bit string 00 to Bob, then she applies the identity quantum gate, 
+  
+    
+      
+        
+          I
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle \mathbb {I} ={\begin{bmatrix}1&0\\0&1\end{bmatrix}}}
+  
+, to her qubit, so that it remains unchanged. The resultant entangled state is then
+
+  
+    
+      
+        
+          |
+        
+        
+          B
+          
+            00
+          
+        
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        (
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          0
+          
+            B
+          
+        
+        ⟩
+        +
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle |B_{00}\rangle ={\frac {1}{\sqrt {2}}}(|0_{A}0_{B}\rangle +|1_{A}1_{B}\rangle )}
+  
+
+In other words, the entangled state shared between Alice and Bob has not changed, i.e. it is still 
+  
+    
+      
+        
+          |
+        
+        
+          Φ
+          
+            +
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\Phi ^{+}\rangle }
+  
+. The notation 
+  
+    
+      
+        
+          |
+        
+        
+          B
+          
+            00
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |B_{00}\rangle }
+  
+ indicates that Alice wants to send the two-bit string 00.
+2. If Alice wants to send the classical two-bit string 01 to Bob, then she applies the quantum NOT (or bit-flip) gate, 
+  
+    
+      
+        X
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle X={\begin{bmatrix}0&1\\1&0\end{bmatrix}}}
+  
+, to her qubit, so that the resultant entangled quantum state becomes
+
+  
+    
+      
+        
+          |
+        
+        
+          B
+          
+            01
+          
+        
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        (
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          0
+          
+            B
+          
+        
+        ⟩
+        +
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle |B_{01}\rangle ={\frac {1}{\sqrt {2}}}(|1_{A}0_{B}\rangle +|0_{A}1_{B}\rangle )}
+  
+
+3. If Alice wants to send the classical two-bit string 10 to Bob, then she applies the quantum phase-flip gate 
+  
+    
+      
+        Z
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle Z={\begin{bmatrix}1&0\\0&-1\end{bmatrix}}}
+  
+ to her qubit, so the resultant entangled state becomes
+
+  
+    
+      
+        
+          |
+        
+        
+          B
+          
+            10
+          
+        
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        (
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          0
+          
+            B
+          
+        
+        ⟩
+        −
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle |B_{10}\rangle ={\frac {1}{\sqrt {2}}}(|0_{A}0_{B}\rangle -|1_{A}1_{B}\rangle )}
+  
+
+4. If, instead, Alice wants to send the classical two-bit string 11 to Bob, then she applies the quantum gate 
+  
+    
+      
+        Z
+        ∗
+        X
+        =
+        i
+        Y
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  −
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle Z*X=iY={\begin{bmatrix}0&1\\-1&0\end{bmatrix}}}
+  
+ to her qubit, so that the resultant entangled state becomes
+
+  
+    
+      
+        
+          |
+        
+        
+          B
+          
+            11
+          
+        
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        (
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        −
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          0
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle |B_{11}\rangle ={\frac {1}{\sqrt {2}}}(|0_{A}1_{B}\rangle -|1_{A}0_{B}\rangle )}
+  
+
+The matrices 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+, and 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ are known as Pauli matrices.
+
+
+=== Sending ===
+After having performed one of the operations described above, Alice can send her entangled qubit to Bob using a quantum network through some conventional physical medium.
+
+
+=== Decoding ===
+In order for Bob to find out which classical bits Alice sent he will perform the CNOT unitary operation, with A as control qubit and B as target qubit. Then, he will perform 
+  
+    
+      
+        H
+        ⊗
+        I
+      
+    
+    {\displaystyle H\otimes I}
+  
+ unitary operation on the entangled qubit A. In other words, the Hadamard quantum gate H is only applied to A (see the figure above).
+
+If the resultant entangled state was 
+  
+    
+      
+        
+          B
+          
+            00
+          
+        
+      
+    
+    {\displaystyle B_{00}}
+  
+ then after the application of the above unitary operations the entangled state will become 
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+      
+    
+    {\displaystyle |00\rangle }
+  
+
+If the resultant entangled state was 
+  
+    
+      
+        
+          B
+          
+            01
+          
+        
+      
+    
+    {\displaystyle B_{01}}
+  
+ then after the application of the above unitary operations the entangled state will become 
+  
+    
+      
+        
+          |
+        
+        01
+        ⟩
+      
+    
+    {\displaystyle |01\rangle }
+  
+
+If the resultant entangled state was 
+  
+    
+      
+        
+          B
+          
+            10
+          
+        
+      
+    
+    {\displaystyle B_{10}}
+  
+ then after the application of the above unitary operations the entangled state will become 
+  
+    
+      
+        
+          |
+        
+        10
+        ⟩
+      
+    
+    {\displaystyle |10\rangle }
+  
+
+If the resultant entangled state was 
+  
+    
+      
+        
+          B
+          
+            11
+          
+        
+      
+    
+    {\displaystyle B_{11}}
+  
+ then after the application of the above unitary operations the entangled state will become 
+  
+    
+      
+        
+          |
+        
+        11
+        ⟩
+      
+    
+    {\displaystyle |11\rangle }
+  
+
+These operations performed by Bob can be seen as a measurement which projects the entangled state onto one of the four two-qubit basis vectors 
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+        ,
+        
+          |
+        
+        01
+        ⟩
+        ,
+        
+          |
+        
+        10
+        ⟩
+      
+    
+    {\displaystyle |00\rangle ,|01\rangle ,|10\rangle }
+  
+ or 
+  
+    
+      
+        
+          |
+        
+        11
+        ⟩
+      
+    
+    {\displaystyle |11\rangle }
+  
+ (as you can see from the outcomes and the example below).
+
+
+==== Example ====
+For example, if the resultant entangled state (after the operations performed by Alice) was 
+  
+    
+      
+        
+          B
+          
+            01
+          
+        
+        =
+        
+          
+            
+              1
+              
+                2
+              
+            
+          
+        
+        (
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          0
+          
+            B
+          
+        
+        ⟩
+        +
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle B_{01}={\tfrac {1}{\sqrt {2}}}(|1_{A}0_{B}\rangle +|0_{A}1_{B}\rangle )}
+  
+, then a CNOT with A as control bit and B as target bit will change 
+  
+    
+      
+        
+          B
+          
+            01
+          
+        
+      
+    
+    {\displaystyle B_{01}}
+  
+ to become 
+  
+    
+      
+        
+          B
+          
+            01
+          
+          ′
+        
+        =
+        
+          
+            
+              1
+              
+                2
+              
+            
+          
+        
+        (
+        
+          |
+        
+        
+          1
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        +
+        
+          |
+        
+        
+          0
+          
+            A
+          
+        
+        
+          1
+          
+            B
+          
+        
+        ⟩
+        )
+      
+    
+    {\displaystyle B_{01}'={\tfrac {1}{\sqrt {2}}}(|1_{A}1_{B}\rangle +|0_{A}1_{B}\rangle )}
+  
+. Now, the Hadamard gate is applied only to A, to obtain
+
+  
+    
+      
+        
+          B
+          
+            01
+          
+          ″
+        
+        =
+        
+          
+            
+              1
+              
+                2
+              
+            
+          
+        
+        
+          [
+          
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        
+                          1
+                          
+                            2
+                          
+                        
+                      
+                    
+                    (
+                    
+                      |
+                    
+                    0
+                    ⟩
+                    −
+                    
+                      |
+                    
+                    1
+                    ⟩
+                    )
+                  
+                  )
+                
+              
+              
+                A
+              
+            
+            ⊗
+            
+              |
+            
+            
+              1
+              
+                B
+              
+            
+            ⟩
+            +
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        
+                          1
+                          
+                            2
+                          
+                        
+                      
+                    
+                    (
+                    
+                      |
+                    
+                    0
+                    ⟩
+                    +
+                    
+                      |
+                    
+                    1
+                    ⟩
+                    )
+                  
+                  )
+                
+              
+              
+                A
+              
+            
+            ⊗
+            
+              |
+            
+            
+              1
+              
+                B
+              
+            
+            ⟩
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle B_{01}''={\tfrac {1}{\sqrt {2}}}\left[{\left({\tfrac {1}{\sqrt {2}}}(|0\rangle -|1\rangle )\right)}_{A}\otimes |1_{B}\rangle +{\left({\tfrac {1}{\sqrt {2}}}(|0\rangle +|1\rangle )\right)}_{A}\otimes |1_{B}\rangle \right].}
+  
+
+For simplicity, subscripts may be removed:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  B
+                  
+                    01
+                  
+                  ″
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      1
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        
+                          1
+                          
+                            2
+                          
+                        
+                      
+                    
+                    (
+                    
+                      |
+                    
+                    0
+                    ⟩
+                    −
+                    
+                      |
+                    
+                    1
+                    ⟩
+                    )
+                    ⊗
+                    
+                      |
+                    
+                    1
+                    ⟩
+                    +
+                    
+                      
+                        
+                          1
+                          
+                            2
+                          
+                        
+                      
+                    
+                    (
+                    
+                      |
+                    
+                    0
+                    ⟩
+                    +
+                    
+                      |
+                    
+                    1
+                    ⟩
+                    )
+                    ⊗
+                    
+                      |
+                    
+                    1
+                    ⟩
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    
+                      1
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      
+                        
+                          1
+                          
+                            2
+                          
+                        
+                      
+                    
+                    (
+                    
+                      |
+                    
+                    01
+                    ⟩
+                    −
+                    
+                      |
+                    
+                    11
+                    ⟩
+                    )
+                    +
+                    
+                      
+                        
+                          1
+                          
+                            2
+                          
+                        
+                      
+                    
+                    (
+                    
+                      |
+                    
+                    01
+                    ⟩
+                    +
+                    
+                      |
+                    
+                    11
+                    ⟩
+                    )
+                  
+                  )
+                
+                =
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  |
+                
+                01
+                ⟩
+                −
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  |
+                
+                11
+                ⟩
+                +
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  |
+                
+                01
+                ⟩
+                +
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  |
+                
+                11
+                ⟩
+                =
+                
+                  |
+                
+                01
+                ⟩
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}B_{01}''&={\tfrac {1}{\sqrt {2}}}\left({\tfrac {1}{\sqrt {2}}}(|0\rangle -|1\rangle )\otimes |1\rangle +{\tfrac {1}{\sqrt {2}}}(|0\rangle +|1\rangle )\otimes |1\rangle \right)\\&={\tfrac {1}{\sqrt {2}}}\left({\tfrac {1}{\sqrt {2}}}(|01\rangle -|11\rangle )+{\tfrac {1}{\sqrt {2}}}(|01\rangle +|11\rangle )\right)={\tfrac {1}{2}}|01\rangle -{\tfrac {1}{2}}|11\rangle +{\tfrac {1}{2}}|01\rangle +{\tfrac {1}{2}}|11\rangle =|01\rangle .\end{aligned}}}
+  
+
+Now, Bob has the basis state 
+  
+    
+      
+        
+          |
+        
+        01
+        ⟩
+      
+    
+    {\displaystyle |01\rangle }
+  
+, so he knows that Alice wanted to send the two-bit string 01.
+
+
+== Security ==
+Superdense coding is a form of secure quantum communication. If an eavesdropper, commonly called Eve, intercepts Alice's qubit en route to Bob, all that is obtained by Eve is part of an entangled state. Without access to Bob's qubit, Eve is unable to get any information from Alice's qubit. A third party is unable to eavesdrop on information being communicated through superdense coding and an attempt to measure either qubit would collapse the state of that qubit and alert Bob and Alice.
+
+
+== General dense coding scheme ==
+General dense coding schemes can be formulated in the language used to describe quantum channels. Alice and Bob share a maximally entangled state ω. Let the subsystems initially possessed by Alice and Bob be labeled 1 and 2, respectively. To transmit the message x, Alice applies an appropriate channel
+
+  
+    
+      
+        
+        
+          Φ
+          
+            x
+          
+        
+      
+    
+    {\displaystyle \;\Phi _{x}}
+  
+
+on subsystem 1. On the combined system, this is effected by
+
+  
+    
+      
+        ω
+        →
+        (
+        
+          Φ
+          
+            x
+          
+        
+        ⊗
+        I
+        )
+        (
+        ω
+        )
+      
+    
+    {\displaystyle \omega \rightarrow (\Phi _{x}\otimes I)(\omega )}
+  
+
+where I denotes the identity map on subsystem 2. Alice then sends her subsystem to Bob, who performs a measurement on the combined system to recover the message. Let Bob's measurement be modelled by a POVM 
+  
+    
+      
+        {
+        
+          F
+          
+            y
+          
+        
+        
+          }
+          
+            y
+          
+        
+      
+    
+    {\displaystyle \{F_{y}\}_{y}}
+  
+, with 
+  
+    
+      
+        
+          F
+          
+            y
+          
+        
+      
+    
+    {\displaystyle F_{y}}
+  
+ positive semidefinite operators such that 
+  
+    
+      
+        
+          ∑
+          
+            y
+          
+        
+        
+          F
+          
+            y
+          
+        
+        =
+        I
+      
+    
+    {\textstyle \sum _{y}F_{y}=I}
+  
+. The probability that Bob's measuring apparatus registers the message 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ is thus
+
+  
+    
+      
+        p
+        (
+        y
+        
+          |
+        
+        x
+        )
+        =
+        ⟨
+        
+          F
+          
+            y
+          
+        
+        ,
+        (
+        
+          Φ
+          
+            x
+          
+        
+        ⊗
+        I
+        )
+        (
+        ω
+        )
+        ⟩
+        ≡
+        Tr
+        ⁡
+        [
+        
+          F
+          
+            y
+          
+        
+        (
+        
+          Φ
+          
+            x
+          
+        
+        ⊗
+        I
+        )
+        (
+        ω
+        )
+        ]
+        .
+      
+    
+    {\displaystyle p(y|x)=\langle F_{y},(\Phi _{x}\otimes I)(\omega )\rangle \equiv \operatorname {Tr} [F_{y}(\Phi _{x}\otimes I)(\omega )].}
+  
+
+Therefore, to achieve the desired transmission, we require that
+
+  
+    
+      
+        p
+        (
+        y
+        
+          |
+        
+        x
+        )
+        =
+        Tr
+        ⁡
+        [
+        
+          F
+          
+            y
+          
+        
+        (
+        
+          Φ
+          
+            x
+          
+        
+        ⊗
+        I
+        )
+        (
+        ω
+        )
+        ]
+        =
+        
+          δ
+          
+            x
+            y
+          
+        
+        ,
+      
+    
+    {\displaystyle p(y|x)=\operatorname {Tr} [F_{y}(\Phi _{x}\otimes I)(\omega )]=\delta _{xy},}
+  
+
+where 
+  
+    
+      
+        
+          δ
+          
+            x
+            y
+          
+        
+      
+    
+    {\displaystyle \delta _{xy}}
+  
+ is the Kronecker delta.
+
+
+== Experimental ==
+The protocol of superdense coding has been actualized in several experiments using different systems to varying levels of channel capacity and fidelities. In 2004, trapped beryllium-9 ions were used in a maximally entangled state to achieve a channel capacity of 1.16 with a fidelity of 0.85. In 2017, a channel capacity of 1.665 was achieved with a fidelity of 0.87 through optical fibers. High-dimensional ququarts (states formed in photon pairs by non-degenerate spontaneous parametric down-conversion) were used to reach a channel capacity of 2.09 (with a limit of 2.32) with a fidelity of 0.98. Nuclear magnetic resonance (NMR) has also been used to share among three parties.
+
+
+== References ==
+
+Wilde, Mark M., 2017,  Quantum Information Theory, Cambridge University Press, Also available at eprint arXiv:1106.1145
+
+
+== External links ==
+Qubits, Quantum Mechanics and Computers Course Notes
+ Superdense coding: how to send two bits using one qubit on YouTube by Michael Nielsen

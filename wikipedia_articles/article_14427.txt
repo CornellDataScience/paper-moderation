@@ -1,0 +1,20 @@
+Capacitance sensors (or Dielectric sensors) use capacitance to measure the dielectric permittivity of a surrounding medium. 
+The configuration is like the neutron probe where an access tube made of PVC is installed in the soil; probes can also be modular (comb-like) and connected to a logger. The sensing head consists of an oscillator circuit, the frequency is determined by an annular electrode, fringe-effect capacitor, and the dielectric constant of the soil. 
+Each capacitor sensor consists of two metal rings mounted on the circuit board at some distance from the top of the access tube. These rings are a pair of electrodes, which form the plates of the capacitor with the soil acting as the dielectric in between. The plates are connected to an oscillator, consisting of an inductor and a capacitor. The oscillating electrical field is generated between the two rings and extends into the soil medium through the wall of the access tube. The capacitor and the oscillator form a circuit, and changes in dielectric constant of surrounding media are detected by changes in the operating frequency. The capacitance sensors are designed to oscillate in excess of 100 MHz inside the access tube in free air. The output of the sensor is the frequency response of the soil’s capacitance due to its soil moisture level.
+
+
+== Applications ==
+One application for such a device is measuring the water content of soil, where the volume of water in the total volume of soil most heavily influences the dielectric permittivity of the soil because the dielectric of water (80) is much greater than the other constituents of the soil (mineral soil: 4, organic matter: 4, air: 1). When the amount of water changes in the soil, a probe will measure a change in capacitance due to the change in dielectric permittivity that can be directly correlated with a change in water content.  Capacitance sensors are now widely used in irrigation scheduling in agriculture around the world.
+Cure monitoring of Composite materials: Dielectric or capacitance sensors are used to measure the electrical response of thermoset resins and matrices of composite materials at specified depth over the sensor surface. The key model involved in the use of these sensors is the electric field model. The correspondence between electrical properties of the material within the field and the measurement (i.e. capacitance) is fundamental in interpreting the readings from the dielectric sensor.
+Tip clearance measurement in turbomachinery testing.
+The capacitance-sensors also can be used for the measuring of level of some solid materials in structures such as hoppers or silos.
+
+
+== See also ==
+Frequency domain sensor
+
+
+== References ==
+
+Dane J.H., Topp G.C, co-editors 2002. "Methods of Soil Analysis Part 4-Physical Methods." Soil Science Society of America, Inc. Madison, Wisconsin.
+Czarnomski N.M., Moore G.W., Pypker T.G., Licata J. 2005. "Precision and accuracy of three alternative instruments for measuring soil water content in two forest soils of the Pacific Northwest". Canadian Journal of Forest Research 35, 8, pg. 1867.

@@ -1,0 +1,23 @@
+A USB killer is a device that is designed to be portable and sends high-voltage power surges repeatedly into the data lines of the device it is connected to, which will damage hardware components on unprotected devices. Companies selling the device state it is designed to test components for protection from power surges and electrostatic discharge.
+
+
+== Mechanism ==
+The device typically contains several capacitors and charge and discharge circuitry. When the device is connected to a USB port, the capacitors are charged from the USB port's 5 volt supply.  When they are fully charged, the device discharges them through step-up circuitry, which delivers a high voltage back into the USB port. Versions of the device have been reported to deliver a pulse of around negative 200 V. This greatly exceeds the normal voltage the USB host adapter is designed to accept; the intention is that the device will destroy it (and perhaps the southbridge which it often forms part of). In many cases, this will render the computer inoperable.
+This device has been compared to the Etherkiller, part of a family of cables that feed mains electricity into low-voltage sockets such as RJ45.
+
+
+== Models ==
+There are different models of the device, the latest being USB Killer v4. Earlier generations, including USB Killer v2, were developed by a Russian computer researcher with the alias Dark Purple.
+Similar homemade devices have been constructed from camera flash parts, both of which already feature high-voltage circuitry.
+A more recent version uses the piezo inverter transformer from a CCFL driver with a simple two-transistor resonant Royer oscillator, one-shot timer and a spark gap as a lightweight way to generate an 1800 V sharp pulse more closely simulating a low-power electrostatic discharge for mitigation and circuit testing purposes. The prototype has a countdown timer and ascending bleep warning to reduce the chances of accidental or malicious use.
+
+
+== Malicious use ==
+In April 2019, a student at College of Saint Rose in Albany, New York pleaded guilty to destroying 66 computers in his college using a USB killer. He also destroyed seven computer monitors and computer-enhanced podiums. He was sentenced to 12 months in prison, followed by a year of supervised release. He was ordered to pay $58,471 in restitution.
+
+
+== Mouse version ==
+There are also computer mice with built-in USB killers. The proof-of-concept was invented at the Silesian University of Technology in Poland, which patented it.
+
+
+== References ==

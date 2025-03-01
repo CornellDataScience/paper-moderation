@@ -1,0 +1,175 @@
+A symmetric Turing machine is a Turing machine which has a configuration graph that is undirected (that is, configuration i yields configuration j if and only if j yields 
+i). 
+
+
+== Definition of symmetric Turing machines ==
+Formally, we define a variant of Turing machines with a set of transitions of the form ⁠
+  
+    
+      
+        (
+        p
+        ,
+        a
+        b
+        ,
+        D
+        ,
+        c
+        d
+        ,
+        q
+        )
+      
+    
+    {\displaystyle (p,ab,D,cd,q)}
+  
+⁠, where p,q are states, ab,cd are pairs of symbols and D is a direction. If D is left, then the head of a machine in state p above a tape symbol b preceded by a symbol a can be transitioned by moving the head left, changing the state to q and replacing the symbols a,b by c,d. The opposite transition ⁠
+  
+    
+      
+        (
+        q
+        ,
+        c
+        d
+        ,
+        −
+        D
+        ,
+        a
+        b
+        ,
+        p
+        )
+      
+    
+    {\displaystyle (q,cd,-D,ab,p)}
+  
+⁠ can always be applied. If D is right the transition is analogous. The ability to peek at two symbols and change both at a time is non-essential, but makes the definition easier.
+Such machines were first defined in 1982 by Harry R. Lewis and Christos Papadimitriou, who were looking for a class in which to place USTCON, the problem asking whether there is a path between two given vertices s,t in an undirected graph. Until this time, it could be placed only in NL, despite seeming not to require nondeterminism (the asymmetric variant STCON was known to be complete for NL). Symmetric Turing machines are a kind of Turing machine with limited nondeterministic power, and were shown to be at least as powerful as deterministic Turing machines, giving an interesting case in between.
+⁠
+  
+    
+      
+        
+          
+            S
+            T
+            I
+            M
+            E
+          
+        
+        (
+        T
+        (
+        n
+        )
+        )
+      
+    
+    {\displaystyle {\mathsf {STIME}}(T(n))}
+  
+⁠ is the class of the languages accepted by a symmetric Turing machine running in time ⁠
+  
+    
+      
+        O
+        (
+        T
+        (
+        n
+        )
+        )
+      
+    
+    {\displaystyle O(T(n))}
+  
+⁠. It can easily be proved that ⁠
+  
+    
+      
+        
+          
+            S
+            T
+            I
+            M
+            E
+          
+        
+        (
+        T
+        )
+        =
+        
+          
+            N
+            T
+            I
+            M
+            E
+          
+        
+        (
+        T
+        )
+      
+    
+    {\displaystyle {\mathsf {STIME}}(T)={\mathsf {NTIME}}(T)}
+  
+⁠ by limiting the nondeterminism of any machine in ⁠
+  
+    
+      
+        
+          
+            N
+            T
+            I
+            M
+            E
+          
+        
+        (
+        T
+        )
+      
+    
+    {\displaystyle {\mathsf {NTIME}}(T)}
+  
+⁠ to an initial stage where a string of symbols is nondeterministically written, followed by deterministic computations.
+
+
+== SL=L ==
+
+SSPACE(S(n)) is the class of the languages accepted by a symmetric Turing machine running in space ⁠
+  
+    
+      
+        O
+        (
+        S
+        (
+        n
+        )
+        )
+      
+    
+    {\displaystyle O(S(n))}
+  
+⁠ and SL=SSPACE(log(n)).
+SL can equivalently be defined as the class of problems logspace reducible to USTCON. Lewis and Papadimitriou by their definition showed this by constructing a nondeterministic machine for USTCON with properties that they showed are sufficient to make a construction of an equivalent symmetric Turing machine possible. Then, they observed that any language in SL is logspace reducible to USTCON as from the properties of the symmetric computation we can view the 
+special configuration as the undirected edges of the graph.
+In 2004, Omer Reingold proved that SL=L by showing a deterministic algorithm for USTCON running in logarithmic space, for which he received the 2005 Grace Murray Hopper Award and (together with Avi Wigderson and Salil Vadhan) the 2009 Gödel Prize. The proof uses the zig-zag product to efficiently construct expander graphs.
+
+
+== Notes ==
+
+
+== References ==
+Lecture Notes :CS369E: Expanders in Computer Science By Cynthia Dwork & Prahladh Harsha
+Lecture Notes
+Sharon Bruckner Lecture Notes
+Deterministic Space Bounded Graph connectivity Algorithms Jesper Janson

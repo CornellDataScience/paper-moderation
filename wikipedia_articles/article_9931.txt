@@ -1,0 +1,469 @@
+In mathematics, the compact-open topology is a topology defined on the set of continuous maps between two topological spaces. The compact-open topology is one of the commonly used topologies on function spaces, and is applied in homotopy theory and functional analysis.  It was introduced by Ralph Fox in 1945.
+If the codomain of the functions under consideration has a uniform structure or a metric structure then the compact-open topology is the "topology of uniform convergence on compact sets." That is to say, a sequence of functions converges in the compact-open topology precisely when it converges uniformly on every compact subset of the domain.
+
+
+== Definition ==
+Let X and Y be two topological spaces, and let C(X, Y) denote the set of all continuous maps between X and Y. Given a compact subset K of X and an open subset U of Y, let V(K, U) denote the set of all functions  f  ∈ C(X, Y) such that  f (K) ⊆ U. In other words, 
+  
+    
+      
+        V
+        (
+        K
+        ,
+        U
+        )
+        =
+        C
+        (
+        K
+        ,
+        U
+        )
+        
+          ×
+          
+            C
+            (
+            K
+            ,
+            Y
+            )
+          
+        
+        C
+        (
+        X
+        ,
+        Y
+        )
+      
+    
+    {\displaystyle V(K,U)=C(K,U)\times _{C(K,Y)}C(X,Y)}
+  
+. Then the collection of all such V(K, U) is a subbase for the compact-open topology on C(X, Y). (This collection does not always form a base for a topology on C(X, Y).)
+When working in the category of compactly generated spaces, it is common to modify this definition by restricting to the subbase formed from those K that are the image of a compact Hausdorff space. Of course, if X is compactly generated and Hausdorff, this definition coincides with the previous one. However, the modified definition is crucial if one wants the convenient category of compactly generated weak Hausdorff spaces to be Cartesian closed, among other useful properties. The confusion between this definition and the one above is caused by differing usage of the word compact.
+If X is locally compact, then 
+  
+    
+      
+        X
+        ×
+        −
+      
+    
+    {\displaystyle X\times -}
+  
+ from the category of topological spaces always has a right adjoint 
+  
+    
+      
+        H
+        o
+        m
+        (
+        X
+        ,
+        −
+        )
+      
+    
+    {\displaystyle Hom(X,-)}
+  
+. This adjoint coincides with the compact-open topology and may be used to uniquely define it. The modification of the definition for compactly generated spaces may be viewed as taking the adjoint of the product in the category of compactly generated spaces instead of the category of topological spaces, which ensures that the right adjoint always exists.
+
+
+== Properties ==
+If * is a one-point space then one can identify C(*, Y) with Y, and under this identification the compact-open topology agrees with the topology on Y. More generally, if X is a discrete space, then C(X, Y) can be identified with the cartesian product of |X| copies of Y and the compact-open topology agrees with the product topology.
+If Y is T0, T1, Hausdorff, regular, or Tychonoff, then the compact-open topology has the corresponding separation axiom.
+If X is Hausdorff and S is a subbase for Y, then the collection {V(K, U) : U ∈ S, K compact} is a subbase for the compact-open topology on C(X, Y).
+If Y is a metric space (or more generally, a uniform space), then the compact-open topology is equal to the topology of compact convergence. In other words, if Y is a metric space, then a sequence { fn } converges to  f  in the compact-open topology if and only if for every compact subset K of X, { fn } converges uniformly to  f  on K. If X is compact and Y is a uniform space, then the compact-open topology is equal to the topology of uniform convergence.
+If X, Y and Z are topological spaces, with Y locally compact Hausdorff (or even just locally compact preregular), then the composition map C(Y, Z) × C(X, Y) → C(X, Z), given by ( f , g) ↦  f ∘ g, is continuous (here all the function spaces are given the compact-open topology and C(Y, Z) × C(X, Y) is given the product topology).
+If X is a locally compact Hausdorff (or preregular) space, then the evaluation map e : C(X, Y) × X → Y, defined by e( f , x) =  f (x), is continuous. This can be seen as a special case of the above where X is a one-point space.
+If X is compact, and Y is a metric space with metric d, then the compact-open topology on C(X, Y) is metrizable, and a metric for it is given by e( f , g) = sup{d( f (x), g(x)) : x in X}, for  f , g in C(X, Y). More generally, if X is hemicompact, and Y metric, the compact-open topology is metrizable by the construction linked here.
+
+
+=== Applications ===
+The compact open topology can be used to topologize the following sets:
+
+  
+    
+      
+        Ω
+        (
+        X
+        ,
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        {
+        f
+        :
+        I
+        →
+        X
+        :
+        f
+        (
+        0
+        )
+        =
+        f
+        (
+        1
+        )
+        =
+        
+          x
+          
+            0
+          
+        
+        }
+      
+    
+    {\displaystyle \Omega (X,x_{0})=\{f:I\to X:f(0)=f(1)=x_{0}\}}
+  
+, the loop space of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ at 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+,
+
+  
+    
+      
+        E
+        (
+        X
+        ,
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          x
+          
+            1
+          
+        
+        )
+        =
+        {
+        f
+        :
+        I
+        →
+        X
+        :
+        f
+        (
+        0
+        )
+        =
+        
+          x
+          
+            0
+          
+        
+        
+           and 
+        
+        f
+        (
+        1
+        )
+        =
+        
+          x
+          
+            1
+          
+        
+        }
+      
+    
+    {\displaystyle E(X,x_{0},x_{1})=\{f:I\to X:f(0)=x_{0}{\text{ and }}f(1)=x_{1}\}}
+  
+,
+
+  
+    
+      
+        E
+        (
+        X
+        ,
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        {
+        f
+        :
+        I
+        →
+        X
+        :
+        f
+        (
+        0
+        )
+        =
+        
+          x
+          
+            0
+          
+        
+        }
+      
+    
+    {\displaystyle E(X,x_{0})=\{f:I\to X:f(0)=x_{0}\}}
+  
+.
+In addition, there is a homotopy equivalence between the spaces 
+  
+    
+      
+        C
+        (
+        Σ
+        X
+        ,
+        Y
+        )
+        ≅
+        C
+        (
+        X
+        ,
+        Ω
+        Y
+        )
+      
+    
+    {\displaystyle C(\Sigma X,Y)\cong C(X,\Omega Y)}
+  
+. These topological spaces, 
+  
+    
+      
+        C
+        (
+        X
+        ,
+        Y
+        )
+      
+    
+    {\displaystyle C(X,Y)}
+  
+  are useful in homotopy theory because it can be used to form a topological space and a model for the homotopy type of the set of homotopy classes of maps
+
+  
+    
+      
+        π
+        (
+        X
+        ,
+        Y
+        )
+        =
+        {
+        [
+        f
+        ]
+        :
+        X
+        →
+        Y
+        
+          |
+        
+        f
+        
+           is a homotopy class
+        
+        }
+        .
+      
+    
+    {\displaystyle \pi (X,Y)=\{[f]:X\to Y|f{\text{ is a homotopy class}}\}.}
+  
+
+This is because 
+  
+    
+      
+        π
+        (
+        X
+        ,
+        Y
+        )
+      
+    
+    {\displaystyle \pi (X,Y)}
+  
+ is the set of path components in 
+  
+    
+      
+        C
+        (
+        X
+        ,
+        Y
+        )
+      
+    
+    {\displaystyle C(X,Y)}
+  
+, that is, there is an isomorphism of sets
+
+  
+    
+      
+        π
+        (
+        X
+        ,
+        Y
+        )
+        →
+        C
+        (
+        I
+        ,
+        C
+        (
+        X
+        ,
+        Y
+        )
+        )
+        
+          /
+        
+        ∼
+      
+    
+    {\displaystyle \pi (X,Y)\to C(I,C(X,Y))/\sim }
+  
+
+where 
+  
+    
+      
+        ∼
+      
+    
+    {\displaystyle \sim }
+  
+ is the homotopy equivalence.
+
+
+== Fréchet differentiable functions ==
+Let X and Y be two Banach spaces defined over the same field, and let C m(U, Y) denote the set of all m-continuously Fréchet-differentiable functions from the open subset U ⊆ X to Y. The compact-open topology is the initial topology induced by the seminorms
+
+  
+    
+      
+        
+          p
+          
+            K
+          
+        
+        (
+        f
+        )
+        =
+        sup
+        
+          {
+          
+            
+              ‖
+              
+                
+                  D
+                  
+                    j
+                  
+                
+                f
+                (
+                x
+                )
+              
+              ‖
+            
+             
+            :
+             
+            x
+            ∈
+            K
+            ,
+            0
+            ≤
+            j
+            ≤
+            m
+          
+          }
+        
+      
+    
+    {\displaystyle p_{K}(f)=\sup \left\{\left\|D^{j}f(x)\right\|\ :\ x\in K,0\leq j\leq m\right\}}
+  
+
+where D0 f (x) =  f (x), for each compact subset K ⊆ U.
+
+
+== See also ==
+Topology of uniform convergence
+Uniform convergence – Mode of convergence of a function sequence
+
+
+== References ==
+
+Dugundji, J. (1966). Topology. Allyn and Becon. ASIN B000KWE22K.
+O.Ya. Viro, O.A. Ivanov, V.M. Kharlamov and N.Yu. Netsvetaev (2007) Textbook in Problems on Elementary Topology.
+"Compact-open topology". PlanetMath.
+Topology and Groupoids Section 5.9  Ronald Brown, 2006

@@ -1,0 +1,156 @@
+This is a list of links to articles on software used to manage Portable Document Format (PDF) documents. The distinction between the various functions is not entirely clear-cut; for example, some viewers allow adding of annotations, signatures, etc. Some software allows redaction, removing content irreversibly for security. Extracting embedded text is a common feature, but other applications perform optical character recognition (OCR) to convert imaged text to machine-readable form, sometimes by using an external OCR module.
+
+
+== Terminology ==
+Creators – to allow users to convert other file formats to PDF.
+Viewers – to allow users to open, read and print PDF files.
+Editors – to allow users to edit or otherwise modify PDF files.
+Converters – to allow users to convert PDF files to other formats.
+
+
+== Multi-platform ==
+
+
+=== Development libraries ===
+These are used by software developers to add and create PDF features.
+
+
+=== Creators ===
+These create files in their native formats, but then allow users to export them to PDF formats.
+
+
+=== Viewers ===
+
+These allow users to view (not edit or modify) any existing PDF file.
+
+
+== AmigaOS ==
+
+
+=== Converters ===
+Antiword: A free Microsoft Office Word reader for various operating systems; converts binary files from Word 2, 6, 7, 97, 2000, 2002 and 2003 to plain text or PostScript; available for AmigaOS 4, MorphOS, AROS x86
+dvipdfm: a DVI to PDF translator with zlib support
+
+
+=== Viewers ===
+Xpdf: a multi-platform viewer for PDF files, Amiga version uses X11 engine Cygnix.
+
+
+== Linux and Unix ==
+
+
+=== Converters ===
+Collabora Online can be used as a web application, a command line tool, or a Java/Python library. Supported formats include OpenDocument, PDF, HTML, Microsoft Office formats (DOC/DOCX/RTF, XLS/XLSX, PPT/PPTX) and others.
+
+
+=== Creators, editors and viewers ===
+
+
+== macOS ==
+
+
+=== Converters ===
+deskUNPDF for Mac: proprietary application from Docudesk to convert PDF files to Microsoft Office, LibreOffice, image, and data file formats
+
+
+=== Creators ===
+macOS: Creates PDF documents natively via print dialog
+
+
+=== Editors ===
+Adobe Acrobat: Proprietary PDF authoring suite
+PDF Expert: Proprietary PDF viewer and editor.
+PDF Studio: Proprietary software to view and edit PDF documents.
+PDF Signer: Proprietary; fills forms and embeds image signatures in PDF documents
+
+
+=== Viewers ===
+Safari: This bundled web browser has built-in support for reading PDF documents.
+Firefox: Includes a PDF viewer
+Google Chrome: Includes a PDF viewer
+Preview: macOS's default PDF viewer; in Mac OS X v10.5 and later, it also can rotate, reorder, annotate, insert, and delete pages. It can also merge files, create new files from existing files, and move pages between files
+Adobe Reader: Adobe Systems's reader which is also available for Macintosh; Safari plug-in available
+Skim, an open-source (BSD licence) PDF reader and note-taker for macOS
+Foxit Reader: Proprietary, freeware.  Allows users to add elements to PDFs (e.g. arrowed comment boxes, text boxes, links, bookmarks, and images)
+
+
+== Microsoft Windows ==
+
+
+=== Converters ===
+Adobe Acrobat: Can convert files into PDF or convert PDF files into other formats
+ABBYY FineReader: Commercial PDF converter which converts PDF into Word (.doc), Excel (.xls), PowerPoint (ppt), and more
+deskUNPDF: PDF converter to convert PDFs to Word (.doc, docx), Excel (.xls), (.csv), (.txt), more
+GSview: File:Convert menu item converts any sequence of PDF pages to a sequence of images in many formats from bit to tiffpack with resolutions from 72 to 204 × 98 (open source software)
+Google Chrome: convert HTML to PDF using Print > Save as PDF.
+gDoc Fusion: Proprietary, shareware; PDF views, edits, converts documents into PDF, XPS or Microsoft Word document; after 30 days a watermark is placed on documents in shareware version
+OmniPage: Converts to and from PDF and other formats with many options.
+Nitro PDF Reader: (Freeware) Extracts Images in original resolution.
+PDF-XChange: PDF Tools and PDF-XChange print driver allow conversion from many formats to PDF. A "lite" version of the print driver is free for non-commercial (home and academic) but places a watermark on documents
+Qiqqa: Converts Microsoft Word document and Web Pages to PDF.
+SWFTools: 'pdf2swf component converts PDF to SWF – command line with GUI wrapper
+poppler-utils a collection of tools builds on poppler to convert PDF contents to everything
+GraphicsMagick: Can convert PDF to PNG or other formats.
+
+
+=== Creators ===
+
+
+=== Editors ===
+
+
+=== Viewers ===
+ABBYY FineReader PDF Viewer
+Adobe Reader: Adobe's PDF reader is free for personal use.
+Evince: a free (GPL), open source PDF reader. Part of the GNOME desktop environment. A Windows port was available from version 2.28 to version 2.32.
+Foxit Reader: Proprietary/freeware PDF reader, supports FDF import/export, saving filled forms; other extended functionality available via purchasable plugins.
+gDoc Fusion: Proprietary/shareware to view PDF, XPS, Microsoft Word document, Microsoft Excel spreadsheet, Microsoft PowerPoint presentation or image files, included in the evaluation version of the product. Shareware version places a watermark on documents after 30-day eval.
+Google Chrome: Includes a PDF viewer.
+GSview: Open source software and Ghostscript's viewer for Windows.
+Microsoft Edge: Includes a PDF viewer.
+Microsoft Reader: A discontinued PDF viewer in Windows 8.1.
+Mozilla Firefox: Includes a PDF viewer.
+MuPDF: Free lightweight document viewer.
+Nitro PDF Reader: Freeware (though proprietary) PDF reader and creator. Supports three methods (specifying the file within the reader's interface, or dragging-'n-dropping a file onto the reader's Windows desktop icon, or "printing" to a virtual printer driver) of PDF creation (Ghostscript not additionally needed), saving filled forms (AcroForms), text typewriter, markup/collaboration, and stamp signature (document signing).
+PDF-XChange Viewer: Freeware viewer with free OCR, supports FDF/XFDF import/export, saving filled forms, extended markup and export to image capabilities.
+Qiqqa: Freeware PDF reader, indexer, tagger and annotator. Supports OCR and export of PDF text and images.
+Sumatra PDF: A free (GPL), open source PDF reader based on MuPDF. It also supports DjVu, XPS, CHM, Comic Book (CBR, CBT, CBZ and CB7Z) and eBook (EPUB, FB2, FB2Z, PBD, MOBI, PBR, TCR & ZFB2), TXT and image file formats (.tga, .gif, .jpg, .j2k, .png, .webp, .tiff). Supports automatic .pdfsync & .synctex reloading of PDF files so is well favoured as a LaTeX / pdfTeX viewer with forward - inverse synchronization. Using Ghost script it supports PostScript (.ps, .eps) files.
+STDU Viewer: A freeware for non-commercial usage PDF reader. It also supports DjVu, Comic Book Archive (CBR or CBZ), XPS, TIFF, TXT and image file formats.
+
+
+== Mobile ==
+
+
+== Web-based ==
+
+
+=== Creators ===
+Collabora Online
+
+
+=== Converters ===
+Collabora Online supported formats include OpenDocument, PDF, HTML, Microsoft Office formats (DOC/DOCX/RTF, XLS/XLSX, PPT/PPTX) and others.
+Zamzar: Online file converter
+Smallpdf: Offers free (trial) online PDF conversion (PDF to other formats and vice versa)
+
+
+=== Editors ===
+PDFescape: an advertising and fee supported web service to view, create forms, fill out forms, and edit PDF documents from a web browser (requires JavaScript to be enabled)
+PDFVue: a free web application that allows the user to view PDFs, comment and fill PDF forms from a web browser. Generates a watermark.
+Smallpdf: Free (trial) web-based PDF software for editing, signing, compressing, merging, splitting, rotating, unlocking and protecting PDF files.
+
+
+=== Viewers ===
+A.nnotate: a web service which views PDF documents as HTML in the browser, with annotation features.
+Docstoc: a web service which allows viewing PDF documents online.
+Issuu: a web service which allows viewing PDF documents online.
+Google Docs: a web service which views PDF documents as PNG images in the browser.
+Scribd: a web service which renders PDF documents as HTML5 in the browser.
+PDF.js: A Javascript-based library, with viewer, and browser extension.
+PDFTron Systems: WebViewer. A free JavaScript viewer and annotator for self-hosting of web optimized PDFs.
+
+
+== References ==
+
+
+== External links ==

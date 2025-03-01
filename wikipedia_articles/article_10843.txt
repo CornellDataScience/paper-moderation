@@ -1,0 +1,18 @@
+Y.3181 is an ITU-T Recommendation specifying an Architectural framework for Machine Learning Sandbox in future networks (e.g. 5G, IMT-2020). 
+The standard describes the requirements and architecture for a machine learning sandbox (computer security) a in future networks including IMT-2020.
+
+
+== ML in 5G difficulties ==
+The integration of AI/ML has been identified as one of the key features of future networks. However, network operators have the challenge of maintaining the operational performance and associated key performance indicators during or after this integration. In addition, the introduction of Machine Learning (ML) techniques to fifth-generation (5G) networks may raise concerns regarding transparency, reliability, and availability of ML methods, techniques and data. Often, ML methods are seen as black boxes (especially for deep learning, the internal operation of the model is unknown because it is too complex or even hidden) that can learn complex patterns from training datasets.
+
+
+== Supervised and unsupervised learning ==
+However, such datasets may be limited and/or too complex, thus questions arise regarding the accuracy of the output of the ML mechanism. In particular, reducing the generalization error is the main concern in applying any kind of Supervised Learning (SL) approach, which can be high even if the test error is kept low (this phenomenon is commonly known as overfitting). Apart from SL methods, other branches of ML such as Unsupervised Learning (UL) and Reinforcement Learning (RL) deal with uncertainty in one way or another. Such uncertainty may entail the application of changes in the network leading to unacceptable performance.
+On the one hand, unsupervised learning aims to find patterns from data without any guidance (unlabelled data) and hence lacks validation. On the other hand, RL is based on the learning-by-experience paradigm. RL has been shown to be of great utility for single-agent approaches in controlled scenarios, however notable adverse effects can appear as a result of the competition raised by multiple systems sharing the same resources (e.g., while providing heterogeneous services using common network resources). Moreover, when multiple systems are competing for the same market of users, exploration may hurt a system's reputation in the near term, with adverse competitive effects.
+
+
+== External links ==
+ITU Focus Group on Autonomous Networks (FG-AN)
+
+
+== References ==

@@ -1,0 +1,627 @@
+Mutation–selection balance is an equilibrium in the number of deleterious alleles in a population that occurs when the rate at which deleterious alleles are created by mutation equals the rate at which deleterious alleles are eliminated by selection. The majority of genetic mutations are neutral or deleterious; beneficial mutations are relatively rare. The resulting influx of deleterious mutations into a population over time is counteracted by negative selection, which acts to purge deleterious mutations. Setting aside other factors (e.g., balancing selection, and genetic drift), the equilibrium number of deleterious alleles is then determined by a balance between the deleterious mutation rate and the rate at which selection purges those mutations.
+Mutation–selection balance was originally proposed to explain how genetic variation is maintained in populations, although several other ways for deleterious mutations to persist are now recognized, notably balancing selection. Nevertheless, the concept is still widely used in evolutionary genetics, e.g. to explain the persistence of deleterious alleles as in the case of spinal muscular atrophy, or, in theoretical models, mutation-selection balance can appear in a variety of ways and has even been applied to beneficial mutations (i.e. balance between selective loss of variation and creation of variation by beneficial mutations).
+
+
+== Haploid population ==
+As a simple example of mutation-selection balance, consider a single locus in a haploid population with two possible alleles: a normal allele A with frequency 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+, and a mutated deleterious allele B with frequency 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+, which has a small relative fitness disadvantage of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+. Suppose that deleterious mutations from A to B occur at rate 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+, and the reverse beneficial mutation from B to A occurs rarely enough to be negligible (e.g. because the mutation rate is so low that 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ is small). Then, each generation selection eliminates deleterious mutants reducing 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ by an amount 
+  
+    
+      
+        s
+        p
+        q
+      
+    
+    {\displaystyle spq}
+  
+, while mutation creates more deleterious alleles increasing 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ by an amount 
+  
+    
+      
+        μ
+        p
+      
+    
+    {\displaystyle \mu p}
+  
+. Mutation–selection balance occurs when these forces cancel and 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ is constant from generation to generation, implying 
+  
+    
+      
+        q
+        =
+        μ
+        
+          /
+        
+        s
+      
+    
+    {\displaystyle q=\mu /s}
+  
+. Thus, provided that the mutant allele is not weakly deleterious (very small 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+) and the mutation rate is not very high, the equilibrium frequency of the deleterious allele will be small.
+
+
+== Diploid population ==
+In a diploid population, a deleterious allele B may have different effects on individual fitness in heterozygotes AB and homozygotes BB depending on the degree of dominance of the normal allele A. To represent this mathematically, let the relative fitness of deleterious homozygotes and heterozygotes be smaller than that of normal homozygotes AA by factors of 
+  
+    
+      
+        1
+        −
+        h
+        s
+      
+    
+    {\displaystyle 1-hs}
+  
+ and 
+  
+    
+      
+        1
+        −
+        s
+      
+    
+    {\displaystyle 1-s}
+  
+ respectively, where 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ is a number between 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+ and 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ measuring the degree of dominance (
+  
+    
+      
+        h
+        =
+        0
+      
+    
+    {\displaystyle h=0}
+  
+ indicates that A is completely dominant while 
+  
+    
+      
+        h
+        =
+        1
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle h=1/2}
+  
+ indicates no dominance). For simplicity, suppose that mating is random.
+The degree of dominance affects the relative importance of selection on heterozygotes versus homozygotes. If A is not completely dominant (i.e. 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ is not close to zero), then deleterious mutations are primarily removed by selection on heterozygotes because heterozygotes contain the vast majority of deleterious B alleles (assuming that the deleterious mutation rate 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ is not very large). This case is approximately equivalent to the preceding haploid case, where mutation converts normal homozygotes to heterozygotes at rate 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ and selection acts on heterozygotes with selection coefficient 
+  
+    
+      
+        h
+        s
+      
+    
+    {\displaystyle hs}
+  
+; thus 
+  
+    
+      
+        q
+        ≈
+        μ
+        
+          /
+        
+        h
+        s
+      
+    
+    {\displaystyle q\approx \mu /hs}
+  
+.
+In the case of complete dominance (
+  
+    
+      
+        h
+        =
+        0
+      
+    
+    {\displaystyle h=0}
+  
+), deleterious alleles are only removed by selection on BB homozygotes. Let 
+  
+    
+      
+        
+          p
+          
+            A
+            A
+          
+        
+      
+    
+    {\displaystyle p_{AA}}
+  
+, 
+  
+    
+      
+        2
+        
+          p
+          
+            A
+            B
+          
+        
+      
+    
+    {\displaystyle 2p_{AB}}
+  
+ and 
+  
+    
+      
+        
+          p
+          
+            B
+            B
+          
+        
+      
+    
+    {\displaystyle p_{BB}}
+  
+ be the frequencies of the corresponding genotypes. The frequency 
+  
+    
+      
+        p
+        =
+        
+          p
+          
+            A
+            A
+          
+        
+        +
+        
+          p
+          
+            A
+            B
+          
+        
+      
+    
+    {\displaystyle p=p_{AA}+p_{AB}}
+  
+ of normal alleles A increases at rate 
+  
+    
+      
+        1
+        
+          /
+        
+        (
+        1
+        −
+        s
+        
+          p
+          
+            B
+            B
+          
+        
+        )
+      
+    
+    {\displaystyle 1/(1-sp_{BB})}
+  
+ due to the selective elimination of recessive homozygotes, while mutation causes 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ to decrease at rate 
+  
+    
+      
+        1
+        −
+        μ
+      
+    
+    {\displaystyle 1-\mu }
+  
+ (ignoring back mutations). Mutation–selection balance then gives 
+  
+    
+      
+        
+          p
+          
+            B
+            B
+          
+        
+        =
+        μ
+        
+          /
+        
+        s
+      
+    
+    {\displaystyle p_{BB}=\mu /s}
+  
+, and so the frequency of deleterious alleles is 
+  
+    
+      
+        q
+        =
+        
+          
+            μ
+            
+              /
+            
+            s
+          
+        
+      
+    
+    {\displaystyle q={\sqrt {\mu /s}}}
+  
+. This equilibrium frequency is potentially substantially larger than for the case of partial dominance, because a large number of mutant alleles are carried in heterozygotes and are shielded from selection.
+Many properties of a non random mating population can be explained by a random mating population whose effective population size is adjusted. However, in non-steady state population dynamics there can be a lower prevalence for recessive disorders in a random mating population during and after a growth phase.
+
+
+== Example ==
+The first paper on the subject was (Haldane, 1935), which used the prevalence and fertility ratio of haemophilia in males to estimate mutation rate in human genes.
+The prevalence of hemophilia among males is 
+  
+    
+      
+        p
+        ∈
+        [
+        4
+        ,
+        17
+        ]
+        ×
+        
+          10
+          
+            −
+            5
+          
+        
+      
+    
+    {\displaystyle p\in [4,17]\times 10^{-5}}
+  
+. The fertility ratio of males with hemophilia to males without hemophilia is 
+  
+    
+      
+        f
+        ∈
+        [
+        0.1
+        ,
+        0.25
+        ]
+      
+    
+    {\displaystyle f\in [0.1,0.25]}
+  
+, where 
+  
+    
+      
+        f
+        =
+        
+          
+            
+              #
+              (
+              
+                offsprings of abnormal allele)
+              
+            
+            
+              #
+              (
+              
+                offsprings of normal allele)
+              
+            
+          
+        
+      
+    
+    {\displaystyle f={\frac {\#({\text{offsprings of abnormal allele)}}}{\#({\text{offsprings of normal allele)}}}}}
+  
+.
+Assuming hemophilia is purely due to mutations on the X chromosome, the mutation rate can be estimated as follows.
+At mutation-selection balance, the rate of new hemophilia cases due to mutations should be equal to the rate of hemophilia cases lost due to the lower fitness of hemophilia patients. Since every male has one X chromosome, the rate of new hemophilia cases due to mutations is 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+. On the other hand, the relative fitness of hemophilia patients is 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, so 
+  
+    
+      
+        (
+        1
+        −
+        f
+        )
+      
+    
+    {\displaystyle (1-f)}
+  
+ times the existing hemophilia cases are lost every generation due to selection. The mutation-selection balance thus gives 
+
+  
+    
+      
+        μ
+        =
+        (
+        1
+        −
+        f
+        )
+        p
+        .
+      
+    
+    {\displaystyle \mu =(1-f)p.}
+  
+
+However, since females have two X chromosomes, only about 1/3 of the new mutations would appear in males (assuming an equal sex ratio at birth). Thus, the equation 
+
+  
+    
+      
+        μ
+        ≈
+        (
+        1
+        −
+        f
+        )
+        p
+        
+          /
+        
+        3
+        ∈
+        [
+        1
+        ,
+        5
+        ]
+        ×
+        
+          10
+          
+            −
+            5
+          
+        
+        ,
+      
+    
+    {\displaystyle \mu \approx (1-f)p/3\in [1,5]\times 10^{-5},}
+  
+
+is obtained, where the numerical range was obtained by plugging in the ranges for 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ and 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+. Subsequent research using different methods showed that the mutation rate in many genes is indeed on the order of 
+  
+    
+      
+        
+          10
+          
+            −
+            5
+          
+        
+      
+    
+    {\displaystyle 10^{-5}}
+  
+ per generation.
+
+
+== See also ==
+Negative selection
+Dysgenics
+Viral quasispecies
+
+
+== References ==

@@ -1,0 +1,77 @@
+Lowell Observatory Near-Earth-Object Search (LONEOS) was a project designed to discover asteroids and comets that orbit near the Earth. The project, funded by NASA, was directed by astronomer Ted Bowell of Lowell Observatory in Flagstaff, Arizona. The LONEOS project began in 1993 and ran until the end of February 2008.
+
+
+== Hardware ==
+LONEOS, in its final configuration, used a 0.6-meter f/1.8 Schmidt telescope, acquired from Ohio Wesleyan University in 1990, and a Lowell-built 16 megapixel CCD detector. This combination of instruments provided a field of view of 2.88 by 2.88 degrees (8.3 square degrees). It had a maximum nightly scan area of about 1,000 square degrees (covered four times). The instrument could cover the entire accessible dark sky in about a month. The CCD has detected asteroids as faint as visual magnitude 19.8 but its typical limiting visual magnitude was 19.3. The instrument is located at Lowell Observatory's dark sky site, Anderson Mesa Station, near Flagstaff, Arizona, US.
+Four computers were used. Two were used for frame reductions, one for telescope pointing control and one for camera control. The camera control software had scripting capability and could control all the other computers.
+
+
+== Technique ==
+Asteroids were found by obtaining four pictures (frames) of the same region of sky, each frame temporally separated by 15 to 30 minutes. The set of four frames were then submitted to reduction software which located all star-like sources on the frame and identified sources that moved with asteroid-like motion. The observer visually examined all asteroid detections that had motion different from a typical main-belt asteroid. Human examination was required because most putative NEO detections were not real but some kind of imaging artifact.
+All asteroid positions were converted to equatorial coordinates. Various USNO star catalogs were used for this conversion until 2007. Then the Sloan Digital Sky Survey catalog was used, along with supplemental information from the Carlsberg Catalog and the 2MASS catalog. Asteroid brightness was converted to standard visual magnitude. These data, along with the time of the observations, were sent to the Minor Planet Center (MPC) from which they were distributed to the scientific community. Potential near-Earth objects were handled expeditiously so that other observers could locate the asteroid on the same night and make further observations.
+Telescope operation was automated to the extent that the survey could be run all night without observer intervention. However, the telescope was seldom operated in the automatic mode because an observer was required to reduce data promptly and to correct any malfunctions that might have occurred.
+
+
+== Discoveries ==
+
+As of 2017, LONEOS is credited by the Minor Planet Center with the discovery of 22,077 minor planets between 1998 and 2008. The discoveries include main-belt asteroids, near-Earth Objects (NEO) and Mars-crossers. During the period of LONEOS operation, several other NASA funded NEO searches were underway (number of discoveries in parentheses):
+
+LINEAR (148,287)
+Spacewatch (135,705)
+Mount Lemmon Survey (54,542)
+Near Earth Asteroid Tracking (41,092)
+and Catalina Sky Survey (26,294)
+Amateur observers made a significant contribution during this time with independent NEO discoveries and by performing follow-up observations of recent discoveries made by the NASA sponsored surveys.
+
+
+=== NEO-discovery statistics ===
+The table below lists the number of discoveries made by LONEOS each year of operation. Asteroids thought to be larger than one kilometer in diameter were used as benchmarks in assessing survey completeness. Hence, some table elements have two numbers separated by a slash. The second number represents the number of discoveries larger than one kilometer. The column labeled "Asteroid Observations" is the number of observations sent to the Minor Planet Center. Each asteroid was typically observed four times (once per frame) each night.
+
+A complete list of LONEOS NEO observations can be found at the NeoDys web site.
+
+
+== Other science ==
+The LONEOS frame archive provides a data set with wide spatial and temporal sky coverage. Other investigators have used these characteristics to produce the following research papers and presentations.
+
+Investigating the Distinct Components of the Galactic Stellar Halo RR Lyrae from the LONEOS-I Survey, American Astronomical Society, AAS Meeting #211, #163.02, Huber, Mark; Miceli, A.; Cook, K. H.; Rest, A.; Narayan, G.; Stubbs, C. W.
+Evidence for Distinct Components of the Galactic Stellar Halo from 838 RR Lyrae Stars Discovered in the LONEOS-I Survey, eprint arXiv:0706.1583,Miceli, A.; Rest, A.; Stubbs, C. W.; Hawley, S. L.; Cook, K. H.; Magnier, J.Johal, E. A.; Krisciunas, K.; Bowell, E.; Koehn, B.
+Detecting variable objects with the LONEOS photometric database: 15000 square degrees of variability measurements down to 19th magnitude in R, American Astronomical Society, 199th AAS Meeting, #101.10; Bulletin of the American Astronomical Society, Vol. 33, p. 1463, Rest, A.; Miceli, A.; Miknaitis, G.; Covarrubias, R.; Stubbs, C.; Magnier, E.; Koehn, B.; Bowell, T.; Cook, K.; Krisciunas, K.
+
+
+== Highlights ==
+1999 April 12, Shawn Hermann discovers an Aten, 1999 HF1, more than three kilometers in diameter.
+1999 May, the 1999 JD6 peanut-shaped asteroid (a contact binary) was first discovered.
+1999 December 2, Bruce Koehn discovers the first Earth-crossing Damocloid asteroid, 1999 XS35, (later identified as a comet).
+2001 August 14, Mike Van Ness discovers the second Earth-crossing Damocloid, C/2001 OG108 (LONEOS).
+2001 November 20, discovers Near-Earth object (153814) 2001 WN5 that will pass 0.00166 AU (248,000 km; 154,000 mi) from the Earth on 2028 June 26.
+2003 September 27, Bob Cash finds the (then) closest Earth-crossing asteroid, 2003 SQ222.
+2003 October 15, Brian A. Skiff recovers 1937 UB (Hermes), a lost asteroid for 66 years.
+2004 May 20, Brian Skiff finds an asteroid, (434326) 2004 JG6, with the (then) smallest orbit. It is the second asteroid found that has an orbit entirely within Earth's orbit.
+
+
+== LONEOS staff ==
+Lowell staff:
+
+Principal investigator: Dr. Edward Bowell
+Computer programming: Dr. Bruce Koehn
+Professional observers: Brian Skiff, Bill Ferris, Mike Van Ness, Shawn Hermann, Jason Sanborn
+Volunteer observers: Christopher Onken, Jennifer Palguta, Wendy Kelly, Thomas Grimstad, Lori Levy, Robert Cash, Bliss Bliss, James Ashley
+Collaborators:
+
+CCD performance modeling: Dr. Steve Howell, WIYN/NOAO:
+Asteroid detection modeling: Dr. Karri Muinonen, University of Helsinki
+
+
+== See also ==
+List of minor planet discoverers § Discovering dedicated institutions
+Pan-STARRS
+Planetary Data System (PDS)
+Spaceguard
+
+
+== References ==
+
+
+== External links ==
+LONEOS
+Planetary Data System (PDS)

@@ -1,0 +1,43 @@
+Asynchronous Serial Interface, or ASI, is a method of carrying an MPEG Transport Stream (MPEG-TS) over 75-ohm copper coaxial cable or optical fiber. It is popular in the television industry as a means of transporting broadcast programs from the studio to the final transmission equipment before it reaches viewers sitting at home.
+
+
+== Standard ==
+The ASI standard is maintained by CENELEC, the European Committee for Electrotechnical Standardization, and is part of the  collection of standards known as Digital Video Broadcast, or DVB.
+
+
+== Technical specification ==
+ASI carries MPEG data serially as a continuous stream with a constant rate at or less than 270 megabits per second, depending on the application. It cannot run faster than this, which is the same rate as SDI
+and also the rate of a DS4 telecommunications circuit which is typically used to transport the stream over commercial telephone/telecommunications digital circuits (Telco).
+The MPEG data bits are encoded using a technique called 8B/10B which stands for 8-bit bytes mapped to 10-bit character codes. Encoding maintains DC balance and makes it possible for the receiving end to stay synchronized. 
+When on 75-ohm coaxial cable, ASI is terminated with BNC male connectors on each end. Electrically, the coaxial standard specifies an output voltage of 800 millivolts peak-to-peak, while the receiver must be able to operate from a voltage anywhere from 200 mV to 880 mV. ASI is electrically identical to and has the same bit rate as standard definition SDI.
+When ASI is on optical fiber, it is multimode fiber.
+There are two data transmission packet sizes commonly seen by the ASI interface and the cable carrying it: the 188 byte packet  and the 204 byte packet, the fundamental building blocks of the MPEG Transport Stream.
+The 188 byte format is by far the most common packet size, used by the vast majority of transmissions. When optional Reed–Solomon error correction data are included, a format primarily developed by Cable Television industry, the packet grows an extra 16 bytes to 204 bytes total. 
+
+
+== Use ==
+ASI has one purpose only: the transmission of an MPEG Transport Stream (MPEG-TS),
+ and MPEG-TS is the only standard protocol universally used for real-time transport of broadcast audio and video media today. Even when tunneled over IP, MPEG-TS is the lowest-common-denominator of all long-distance audio and video transport. In the US, it can be broadcast to homes as the ATSC Transport Stream; in Europe, it is broadcast to homes as the DVB-T Transport Stream. All broadcast satellite transmissions see it as the DVB-S Transport Stream. 
+It is usually made up of one or more television channels with accompanying audio, sometimes with additional audio-only or data transmission channels. When that composite data transmission path, asynchronous but formatted data, travels through space as RF, it is usually called DVB-S, DVB-T, or ATSC. But when carried on coaxial cable, unmodulated, it is called an ASI signal.
+It is a one-way transmission, similar to RS-232 asynchronous data—a stream of raw but formatted zeros and ones—designed to primarily travel through coaxial cable at speeds that range from 6-200 megabits per second. Though 270 megabits per second is the rate of the underlying available bandwidth, Transport Streams, and therefore ASI transmissions, usually top out at around 200 megabits per second.
+A Transport Stream, and thereby ASI when over coax, can carry one or multiple SD, HD or audio programs that are already compressed, as opposed to an uncompressed SD-SDI (270 Mbit/s) or HD-SDI (1.485 Gbit/s). An ASI signal can be at varying transmission speeds and is completely dependent on the user's engineering requirements. For example, an ATSC (US digital standard for broadcasting) has a specific bit rate of 19.392658 Mbit/s. Null characters, represented by the ASCII comma, are used to pad the transmission to that rate should the media itself not require the entire bitstream.
+Generally, the ASI signal is the final product of video and audio compression for distant delivery, internal distribution, or broadcast to the public, as is today's digital television and cable.. Though it is codec agnostic and can carry any kind or data, It most often carries MPEG2 (H.262 video with MPEG-1 Layer II audio) or MPEG4 (H.264 video with  MPEG-4 Part 14 audio), ready for transmission to a  television or radio broadcast transmitter, microwave system or other device. Sometimes it is also converted to fiber, RF or the "SMPTE 310" format: (a synchronous version of ASI developed by Harris specifically for the 19+ megabit per second ATSC-transmitter input feed).
+
+
+== Terminology ==
+By far, in the television industry the term ASI refers to its use on coaxial cable, not optical fiber, and even though the standard itself also maintains its use on fiber, whenever ASI is mentioned the meaning is almost always coaxial cable. 
+ASI is also sometimes referred to as DVB-ASI or TS-ASI.
+
+
+== See also ==
+Asynchronous communication
+Asynchronous serial communication
+Serial communication
+Universal asynchronous receiver/transmitter
+Modems
+
+
+== Notes ==
+
+
+== References ==

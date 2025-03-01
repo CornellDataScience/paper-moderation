@@ -1,0 +1,55 @@
+Zend, formerly Zend Technologies, is a Minneapolis, Minnesota-based software company. The company's products, which include Zend Studio, assist software developers with developing, deploying, and managing PHP-based web applications.
+The company was founded in 1999, and it was acquired in 2019 as part of Perforce's acquisition of Zend's parent, Rogue Wave Software.
+
+
+== History ==
+Zend Technologies was founded by Andi Gutmans and Zeev Suraski who, along with other Israeli graduates of the Technion, the Israel Institute of technology, further developed PHP after its initial creation by Rasmus Lerdorf. The name Zend is a combination of Suraski's and Gutmans' forenames, Zeev and Andi.
+In 1997, Gutmans and Suraski rewrote the parser of PHP-FI, originally written by Lerdorf, resulting in PHP 3. In 1998 they redesigned that parser completely and named it the Zend Engine. PHP 4 is based on the first version of the Zend Engine.
+In 1999, their company Zend Technologies was formally established and received initial funding from the Israeli venture capital funds Platinum Neurone Ventures and Walden Israel. Business executive Doron Gerstel was recruited to head the company as CEO.
+In August 2006 Zend raised $20 million in a Series D funding.
+In February 2009, Zend's co-founder Andi Gutmans was appointed as CEO, after serving as the company's VP of research and development. Zend also recruited Mark Burton, who had served as EVP of worldwide sales at MySQL, as executive chairman.
+In October 2015, Louisville, Colorado-based software developer Rogue Wave Software acquired Zend.
+Shortly after being acquired, co-founder Andi Gutmans left the company in February 2016.
+In January 2019, Rogue Wave Software was acquired by Minneapolis, Minnesota-based application software developer Perforce. In April, Perforce's Zend Framework was spun off as a separate project to the Linux Foundation, and was renamed Laminas.
+
+
+== Products ==
+Zend branded products are designed to help PHP developers create applications. Products include Zend Server, Zend Studio and Zend Guard, as well as related PHP certification testing.
+
+
+=== Zend Server ===
+Zend Server is a web application server for running and managing PHP applications. Zend Server comes with built-in application monitoring, application problem diagnostics, caching and optimization capabilities and a Web-based administrator console. Zend Server's installers are native to the OS (RPM/DEB/MSI) and include a tested PHP distribution, Zend Framework, out-of-the-box connectivity to all common databases, Java connectivity and a scalable and PHP-integrated download server (for Linux only).
+Zend Server includes Z-Ray, a PHP debugging and productivity tool.
+The company also develops a Zend Server Community Edition, supporting Linux, Windows, iSeries i5/OS, and Mac OS X, and available as a paid upgrade.
+
+
+=== Zend Studio ===
+Zend Studio is a commercial, proprietary integrated development environment (IDE) for PHP.
+
+
+=== Zend Guard ===
+Zend Guard was a tool to protect PHP 4 and 5 source code from being viewed, copied or modified. Development ended in 2016 without support for PHP 7 being added.
+
+
+=== Zend Certification Test ===
+Zend also provides a PHP Certification Test and certifies people succeeding on the exam as Zend Certified PHP Engineers (ZCE). The company publishes a directory of certified engineers for those passing the test.
+
+
+== Sponsored projects ==
+Zend Technologies sponsors various projects to help PHP developers.
+
+
+=== Zend Engine ===
+Zend Engine is the heart of PHP, originally written by Andi Gutmans and Zeev Suraski. The first version of Zend Engine was shipped with PHP4. Zend sponsors some developers to actively contribute to the engine, while the main development of Zend Engine today comes from contributors to the PHP project.
+
+
+=== Laminas ===
+
+Laminas, formerly Zend Framework, is an open-source, object-oriented web application framework written in PHP5 and licensed under the BSD license. It was spun off as a separate project to the Linux Foundation in April 2019. Apigility was Zend's API Builder, designed to simplify the creation and maintenance of APIs. It was spun off along with Zend Framework, and was renamed Laminas API Tools.
+
+
+== References ==
+
+
+== External links ==
+Official Website

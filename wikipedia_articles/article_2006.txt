@@ -1,0 +1,595 @@
+In environmental chemistry, the chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. It is commonly expressed in mass of oxygen consumed over volume of solution, which in SI units is milligrams per liter (mg/L). A COD test can be used to quickly quantify the amount of organics in water. The most common application of COD is in quantifying the amount of oxidizable pollutants found in surface water (e.g. lakes and rivers) or wastewater. COD is useful in terms of water quality by providing a metric to determine the effect an effluent will have on the receiving body, much like biochemical oxygen demand (BOD).
+
+
+== Overview ==
+The basis for the COD test is that nearly all organic compounds can be fully oxidized to carbon dioxide with a strong oxidizing agent under acidic conditions. The amount of oxygen required to oxidize an organic compound to carbon dioxide, ammonia, and water is given by:
+
+  
+    
+      
+        
+          
+            
+              C
+            
+          
+          
+            n
+          
+        
+        
+          
+            
+              H
+            
+          
+          
+            a
+          
+        
+        
+          
+            
+              O
+            
+          
+          
+            b
+          
+        
+        
+          
+            
+              N
+            
+          
+          
+            c
+          
+        
+        +
+        
+          (
+          
+            n
+            +
+            
+              
+                a
+                4
+              
+            
+            −
+            
+              
+                b
+                2
+              
+            
+            −
+            
+              
+                3
+                4
+              
+            
+            c
+          
+          )
+        
+        
+          
+            
+              O
+            
+          
+          
+            2
+          
+        
+        →
+        n
+        
+          
+            
+              CO
+            
+          
+          
+            2
+          
+        
+        +
+        
+          (
+          
+            
+              
+                a
+                2
+              
+            
+            −
+            
+              
+                3
+                2
+              
+            
+            c
+          
+          )
+        
+        
+          
+            
+              H
+            
+          
+          
+            2
+          
+        
+        
+          
+            O
+          
+        
+        +
+        c
+        
+          
+            
+              NH
+            
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle {\mbox{C}}_{n}{\mbox{H}}_{a}{\mbox{O}}_{b}{\mbox{N}}_{c}+\left(n+{\frac {a}{4}}-{\frac {b}{2}}-{\frac {3}{4}}c\right){\mbox{O}}_{2}\rightarrow n{\mbox{CO}}_{2}+\left({\frac {a}{2}}-{\frac {3}{2}}c\right){\mbox{H}}_{2}{\mbox{O}}+c{\mbox{NH}}_{3}}
+  
+
+This expression does not include the oxygen demand caused by nitrification, the oxidation of ammonia into nitrate:
+
+  
+    
+      
+        
+          
+            N
+          
+        
+        
+          
+            
+              H
+            
+          
+          
+            3
+          
+        
+        +
+        2
+        
+          
+            
+              O
+            
+          
+          
+            2
+          
+        
+        →
+        
+          
+            N
+          
+        
+        
+          
+            
+              O
+            
+          
+          
+            3
+          
+          
+            −
+          
+        
+        +
+        
+          
+            
+              H
+            
+          
+          
+            3
+          
+        
+        
+          
+            
+              O
+            
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle {\mbox{N}}{\mbox{H}}_{3}+2{\mbox{O}}_{2}\rightarrow {\mbox{N}}{\mbox{O}}_{3}^{-}+{\mbox{H}}_{3}{\mbox{O}}^{+}}
+  
+
+Dichromate, the oxidizing agent for COD determination, does not oxidize ammonia into nitrate, so nitrification is not included in the standard COD test.
+The International Organization for Standardization describes a standard method for measuring chemical oxygen demand in ISO 6060 [1]. However, this ISO standard was withdrawn in 2024.
+
+
+== Using potassium dichromate ==
+Potassium dichromate is a strong oxidizing agent under acidic conditions. Acidity is usually achieved by the addition of sulfuric acid. The reaction of potassium dichromate with organic compounds is given by:
+
+  
+    
+      
+        
+          
+            C
+          
+          
+            n
+          
+        
+        
+          
+            H
+          
+          
+            a
+          
+        
+        
+          
+            O
+          
+          
+            b
+          
+        
+        
+          
+            N
+          
+          
+            c
+          
+        
+         
+        +
+         
+        d
+        
+          
+            Cr
+            
+              2
+            
+            
+              
+            
+          
+          
+            O
+            
+              7
+            
+            
+              2
+              −
+            
+          
+        
+         
+        +
+         
+        (
+        8
+        d
+         
+        +
+         
+        c
+        )
+        
+          
+            H
+            
+              +
+            
+          
+          ⟶
+        
+        n
+        
+          
+            CO
+            
+              2
+            
+            
+              
+            
+          
+        
+         
+        +
+         
+        
+          
+            
+              a
+              +
+              8
+              d
+              −
+              3
+              c
+            
+            2
+          
+        
+        
+          
+            H
+            
+              2
+            
+            
+              
+            
+          
+          O
+        
+         
+        +
+         
+        c
+        
+          
+            NH
+            
+              4
+            
+            
+              +
+            
+          
+        
+         
+        +
+        2
+        d
+        
+          
+            Cr
+            
+              3
+              +
+            
+          
+        
+      
+    
+    {\displaystyle {\ce {C}}_{n}{\ce {H}}_{a}{\ce {O}}_{b}{\ce {N}}_{c}\ +\ d{\ce {Cr2O7^2-}}\ +\ (8d\ +\ c){\ce {H+ ->}}n{\ce {CO2}}\ +\ {\frac {a+8d-3c}{2}}{\ce {H2O}}\ +\ c{\ce {NH4+}}\ +2d{\ce {Cr^3+}}}
+  
+
+where 
+  
+    
+      
+        d
+        =
+        2
+        n
+        
+          /
+        
+        3
+        +
+        a
+        
+          /
+        
+        6
+        −
+        b
+        
+          /
+        
+        3
+        −
+        c
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle d=2n/3+a/6-b/3-c/2}
+  
+. Most commonly, a 0.25 N solution of potassium dichromate is used for COD determination, although for samples with COD below 50 mg/L, a lower concentration of potassium dichromate is preferred.
+In the process of oxidizing the organic substances found in the water sample, potassium dichromate is reduced (since in all redox reactions, one reagent is oxidized and the other is reduced), forming Cr3+. The amount of Cr3+ is determined after oxidization is complete and is used as an indirect measure of the organic contents of the water sample.
+
+
+=== Measurement of excess ===
+An excess amount of potassium dichromate (or any oxidizing agent) must be present for all organic matter to be completely oxidized. Once oxidation is complete, the amount of excess potassium dichromate must be measured to ensure that the amount of Cr3+ can be accurately determined. To do so, the excess potassium dichromate is titrated with ferrous ammonium sulfate (FAS) until all of the excess oxidizing agent has been reduced to Cr3+. Typically, the oxidation-reduction indicator ferroin is added during this titration step. Once all the excess dichromate has been reduced, the ferroin indicator changes from blue-green to a reddish brown. The amount of ferrous ammonium sulfate added is equivalent to excess potassium dichromate added to the original sample. Note: Ferroin indicator is bright red from commercially prepared sources, but it exhibits a green hue when added to a digested sample containing potassium dichromate. During the titration, the color of the indicator changes from a green hue to a bright blue hue and then to a reddish brown upon reaching the endpoint. Ferroin indicator changes from red to pale blue when oxidized. Another indicator that can be used is diphenylamine . It is prepared by dissolving 0.1g in 100ml concentrated sulfuric acid . The color change is from dark blue to light blue .
+
+
+== Preparation of ferroin indicator reagent ==
+A solution of 1.485 g 1,10-phenanthroline monohydrate is added to a solution of 695 mg FeSO4·7H2O in distilled water, and the resulting red solution is diluted to 100 mL.
+
+
+=== Calculations ===
+The following formula is used to calculate COD:
+
+  
+    
+      
+        
+          C
+          O
+          D
+        
+        =
+        
+          
+            
+              8000
+              (
+              b
+              −
+              s
+              )
+              n
+            
+            sample volume
+          
+        
+      
+    
+    {\displaystyle \mathrm {COD} ={\frac {8000(b-s)n}{\text{sample volume}}}}
+  
+
+where b is the volume of FAS used in the blank sample, s is the volume of FAS in the original sample, and n is the normality of FAS. If milliliters are used consistently for volume measurements, the result of the COD calculation is given in mg/L.
+The COD can also be estimated from the concentration of oxidizable compound in the sample, based on its stoichiometric reaction with oxygen to yield CO2 (assume all C goes to CO2), H2O (assume all H goes to H2O), and NH3 (assume all N goes to NH3), using the following formula:
+
+COD = (C/FW)·(RMO)·32
+Where 
+
+C = Concentration of oxidizable compound in the sample,
+FW = Formula weight of the oxidizable compound in the sample,
+RMO = Ratio of the # of moles of oxygen to # of moles of oxidizable compound in their reaction to CO2, water, and ammonia
+For example, if a sample has 500 Wppm (Weight Parts per Million) of phenol:
+
+C6H5OH + 7O2 → 6CO2 + 3H2O
+COD = (500/94)·7·16*2 = 1192 Wppm
+
+
+== Inorganic interference ==
+Some samples of water contain high levels of oxidizable inorganic materials which may interfere with the determination of COD. Because of its high concentration in most wastewater, chloride is often the most serious source of interference. Its reaction with potassium dichromate follows the equation:
+
+  
+    
+      
+        
+          6
+          C
+          
+            l
+            
+              −
+            
+          
+          +
+          C
+          
+            r
+            
+              2
+            
+          
+          
+            O
+            
+              7
+            
+            
+              2
+              −
+            
+          
+          +
+          14
+          
+            H
+            
+              +
+            
+          
+          →
+          3
+          C
+          
+            l
+            
+              2
+            
+          
+          +
+          2
+          C
+          
+            r
+            
+              3
+              +
+            
+          
+          +
+          7
+          
+            H
+            
+              2
+            
+          
+          O
+        
+      
+    
+    {\displaystyle \mathrm {6Cl^{-}+Cr_{2}O_{7}^{2-}+14H^{+}\rightarrow 3Cl_{2}+2Cr^{3+}+7H_{2}O} }
+  
+
+To eliminate chloride interference, mercuric sulfate can be added to the sample prior to the addition of other reagents.
+The following table lists several other inorganic substances that may cause interference. It also lists chemicals that may be used to eliminate such interference and the compounds formed when the inorganic molecule is eliminated.
+
+
+== Government regulation ==
+Many governments impose strict regulations regarding the maximum chemical oxygen demand allowed in wastewater before it can be returned to the environment. For example, in Switzerland, a maximum oxygen demand between 200 and 1000 mg/L must be reached before wastewater or industrial water can be returned to the environment [2].
+
+
+== History ==
+For many years, the strong oxidizing agent potassium permanganate (KMnO4) was used for measuring chemical oxygen demand. Measurements were called oxygen consumed from permanganate rather than organic substances' oxygen demand. Potassium permanganate's effectiveness at oxidizing organic compounds varied widely, and in many cases, biochemical oxygen demand (BOD) measurements were often much greater than results from COD measurements. This indicated that potassium permanganate could not effectively oxidize all organic compounds in water, rendering it a relatively poor oxidizing agent for determining COD.
+Since then, other oxidizing agents such as ceric sulphate, potassium iodate, and potassium dichromate have been used to determine COD. Of these, potassium dichromate (K2Cr2O7) is the most effective: it is relatively cheap, easy to purify, and can nearly completely oxidize almost all organic compounds.
+In these methods, a fixed volume with a known excess amount of the oxidant is added to a sample of the solution being analyzed. After a refluxing digestion step, the initial concentration of organic substances in the sample is calculated from a titrimetric or spectrophotometric determination of the oxidant remaining in the sample. As with all colorimetric methods, blanks are used to control for contamination by outside material.
+
+
+== Preparation of standards for COD ==
+Potassium hydrogen phtalate (KHP) is the most used substance for preparation of standards for COD. The theoretical oxygen demand for KHP is 1.175 mg O2 per mg KHP , therefore solution which contains 851 mg KHP in 1L water has COD 1000 mgO2/L. This solution has two disadvantages. Because water always contains dissolved oxygen , it reacts with KHP during the storage and lowers the COD. Second, if the solution is not sterile a microorganisms develop and this affects to COD . This disadvantages are most pronounced at lower concentrations of KHP. That is why а standards for COD are always prepared at high concentrations and diluted at low concentrations immеdiately before use. And need refrigeration to store. A method developed in Bulgarian company ,, ОГИ-КЕМ ,, allows to avoid this problems. It consist of passing nitrogen gas through the solution of KHP for 30 min. and sterilization in thermostat for 24 h. at 70 C . Solutions prepared in this way are stable for several months even at COD 10 mgO2/l .
+
+
+== See also ==
+Biochemical oxygen demand – Oxygen needed to remove organics from water
+Carbonaceous biochemical oxygen demand – Oxygen needed to remove organics from waterPages displaying short descriptions of redirect targets
+Theoretical oxygen demand – calculated amount of oxygen required to oxidize a compound to its final oxidation productsPages displaying wikidata descriptions as a fallback
+Wastewater quality indicators – Ways to test the suitability of wastewater discusses both BOD and COD as measures of water quality.
+
+
+== References ==
+
+
+=== Citations ===
+
+
+=== Sources ===
+
+
+== External links ==
+ISO 6060: Water quality - Determination of the chemical oxygen demand

@@ -1,0 +1,35 @@
+IEEE 802.3bz, NBASE-T and MGBASE-T are standards released in 2016 for Ethernet over twisted pair at speeds of 2.5 and 5 Gbit/s. These use the same cabling as the ubiquitous Gigabit Ethernet, yet offer higher speeds. The resulting standards are named 2.5GBASE-T and 5GBASE-T.
+NBASE-T refers to Ethernet equipment that supports speeds of at least 2.5 Gbit/s and sometimes 5 or 10 Gbit/s, and that can automatically use training to operate at the best speed supported by the cable quality. Usually it also supports additional link speeds (10, 100 or 1000 Mbit/s) in connection with autonegotiation, depending on the capabilities of the equipment at the other end of the cable.
+
+
+== Technology ==
+These standards are specified in Clauses 125 and 126 of the IEEE 802.3 standard. The physical (PHY) layer transmission technology of IEEE 802.3bz is based on 10GBASE-T, but operates at a lower signaling rate. By reducing the original signal rate to 1⁄4 or 1⁄2, the link speed drops to 2.5 or 5 Gbit/s, respectively. The spectral bandwidth of the signal is reduced accordingly, lowering the requirements on the cabling, so that 2.5GBASE-T and 5GBASE-T can be deployed at a cable length of up to 100 m on Cat 5e or better cables.
+The NBASE-T effort also standardized how its switches can implement power over Ethernet according to the IEEE 802.3at and successor standards. This allows a single cable to provide both power and data for high-bandwidth wireless access points such as those that implement the 802.11ac and 802.11ax standards.
+Prior to the release of 2.5GBASE-T and 5GBASE-T, manufacturers of wireless access points that wanted to support multi-gigabit uplink speed using standard gigabit Ethernet ports had to include multiple Ethernet ports on their access points. By bonding the connections from multiple Ethernet ports via IEEE 802.3ad link aggregation or similar, manufacturers were able to achieve speeds close to 2 Gbit/s by using two ports that support gigabit speeds. This would require the wireless access point to be connected to the rest of the network with 2 Ethernet cables and require both the wireless access point and network hardware to support and be configured for link aggregation. Wireless access points that support 2.5GBASE-T or 5GBASE-T eliminate this complexity.
+
+
+== History ==
+In 2013 with the release of IEEE 802.11ac (WiFi 5), wireless access points for the first time could reach speeds of 2 Gbit/s or 4 Gbit/s, exceeding the 1 Gbit/s IEEE 802.3ab 1000BASE-T wired Ethernet uplink. While 10GBASE-T had already been standardized since 2006, this standard used a higher signaling frequency that would have substantially limited the maximum distance of Cat5e cable runs. Therefore, there was demand for an intermediate standard that could uplink the 2 Gbit/s and 4 Gbit/s speeds from wireless access points over existing Cat5e cable. The development of the 2.5GBASE-T and 5GBASE-T standards enabled wireless access points to reach their maximum speeds without being limited by the Ethernet uplink speeds over a single existing Cat5e cable, while also being compatible with newer Cat6 and Cat6a cabling.
+The 2.5GBASE-T and 5GBASE-T standards also serve as an interim solution for achieving lower-cost and lower power consumption multi-gigabit network speeds. As of Dec 2022, 10GBASE-T network equipment is still substantially more expensive than 1GBASE-T, 2.5GBASE-T, and 5GBASE-T network equipment.
+IEEE 802.3bz also supports power over Ethernet, which had previously not been available with IEEE 802.3an 10GBASE-T.
+As early as 2013, the Intel Avoton server processors integrated 2.5 Gbit/s Ethernet ports.
+Whilst Broadcom had announced a series of 2.5 Gbit/s transceiver ICs, 2.5 Gbit/s switch hardware was not widely commercially available at that point. Many early 10GBASE-T switches, particularly those with SFP+ interfaces, do not support the intermediate speeds.
+In October 2014, the NBASE-T Alliance was founded, initially comprising Cisco, Aquantia, Freescale, and Xilinx. By December 2015, it contained more than 45 companies, and aimed to have its specification compatible with 802.3bz. The competing MGBASE-T Alliance, stating the same faster Gigabit Ethernet objectives, was founded in December 2014. In contrast to NBASE-T, the MGBASE-T said that their specifications would be open source. IEEE 802.3's "2.5G/5GBASE-T Task Force" started working on the 2.5GBASE-T and 5GBASE-T standards in March 2015. The two NBASE-T and MGBASE-T Alliances ended up collaborating. with the forming of the IEEE 802.3bz Task Force under the patronage of the Ethernet Alliance in June 2015.
+On September 23, 2016, the IEEE-SA Standards Board approved IEEE Std 802.3bz-2016.
+
+
+== Automotive Ethernet standards ==
+The IEEE 802.3ch-2020 2.5GBASE-T1, 5GBASE-T1, and 10GBASE-T1 standards are derived from the IEEE 802.3bp-2016 1000BASE-T1 Ethernet over single twisted pair standard, and share very little in common with the similarly named 2.5GBASE-T and 5GBASE-T standards at the PHY layer. 2.5GBASE-T1, 5GBASE-T1, and 10GBASE-T1 can run over a single twisted pair up to 15 meters in length, use PAM8 modulation (compared to PAM3 modulation in 1000BASE-T1 or PAM-16 + 128DSQ in 2.5GBASE-T/5GBASE-T), and are standardized in 802.3ch-2020. Their primary use is in embedded automotive applications, and are commonly referred to as part of the Automotive Ethernet family of standards, along with 100BASE-T1 and 1000BASE-T1.
+
+
+== See also ==
+Industrial Ethernet
+
+
+== References ==
+
+
+== External links ==
+IEEE P802.3bz 2.5G/5GBASE-T Task Force
+NBASE-T Alliance
+MGBASE-T Alliance at the Wayback Machine (archived 2017-11-05)

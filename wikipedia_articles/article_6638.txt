@@ -1,0 +1,151 @@
+Gasoline direct injection (GDI), also known as petrol direct injection (PDI), is a mixture formation system for internal combustion engines that run on gasoline (petrol), where fuel is injected into the combustion chamber. This is distinct from manifold injection systems, which inject fuel into the intake manifold (inlet manifold).
+The use of GDI can help increase engine efficiency and specific power output as well as reduce exhaust emissions.
+The first GDI engine to reach production was introduced in 1925 for a low-compression truck engine. Several German cars used a Bosch mechanical GDI system in the 1950s, however usage of the technology remained rare until an electronic GDI system was introduced in 1996 by Mitsubishi for mass-produced cars. GDI has seen rapid adoption by the automotive industry in recent years, increasing in the United States from 2.3% of production for model year 2008 vehicles to approximately 50% for model year 2016.
+
+
+== Operating principle ==
+
+
+=== Charge modes ===
+The 'charge mode' of a direct-injected engine refers to how the fuel is distributed throughout the combustion chamber:
+
+'Homogeneous charge mode' has the fuel mixed evenly with the air throughout the combustion chamber, as per manifold injection.
+Stratified charge mode has a zone with a higher density of fuel around the spark plug, and a leaner mixture (lower density of fuel) further away from the spark plug.
+
+
+==== Homogeneous charge mode ====
+In the homogeneous charge mode, the engine operates on a homogeneous air/fuel mixture (
+  
+    
+      
+        λ
+        =
+        1
+      
+    
+    {\displaystyle \lambda =1}
+  
+), meaning, that there is an (almost) perfect mixture of fuel and air in the cylinder. The fuel is injected at the very beginning of the intake stroke in order to give injected fuel the most time to mix with the air, so that a homogeneous air/fuel mixture is formed. This mode allows using a conventional three-way catalyst for exhaust gas treatment.
+Compared with manifold injection, the fuel efficiency is only very slightly increased, but the specific power output is better, which is why the homogeneous mode is useful for so-called engine downsizing. Most direct-injected passenger car petrol engines use the homogeneous charge mode.
+
+
+==== Stratified charge mode ====
+The stratified charge mode creates a small zone of fuel/air mixture around the spark plug, which is surrounded by air in the rest of the cylinder. This results in less fuel being injected into the cylinder, leading to very high overall air-fuel ratios of 
+  
+    
+      
+        λ
+        >
+        8
+      
+    
+    {\displaystyle \lambda >8}
+  
+, with mean air-fuel ratios of 
+  
+    
+      
+        λ
+        =
+        3...5
+      
+    
+    {\displaystyle \lambda =3...5}
+  
+ at medium load, and 
+  
+    
+      
+        λ
+        =
+        1
+      
+    
+    {\displaystyle \lambda =1}
+  
+ at full load. Ideally, the throttle valve remains open as much as possible to avoid throttling losses. The torque is then set solely by means of quality torque controlling, meaning that only the amount of injected fuel, but not the amount of intake air is manipulated in order to set the engine's torque. Stratified charge mode also keeps the flame away from the cylinder walls, reducing the thermal losses.
+Since mixtures too lean cannot be ignited with a spark-plug (due to a lack of fuel), the charge needs to be stratified (e. g. a small zone of fuel/air mixture around the spark plug needs to be created).  To achieve such a charge, a stratified charge engine injects the fuel during the latter stages of the compression stroke. A "swirl cavity" in the top of the piston is often used to direct the fuel into the zone surrounding the spark plug. This technique enables the use of ultra-lean mixtures that would be impossible with carburetors or conventional manifold fuel injection.
+The stratified charge mode (also called "ultra lean-burn" mode) is used at low loads, in order to reduce fuel consumption and exhaust emissions. However, the stratified charge mode is disabled for higher loads, with the engine switching to the homogeneous mode with a stoichiometric air-fuel ratio of 
+  
+    
+      
+        λ
+        =
+        1
+      
+    
+    {\displaystyle \lambda =1}
+  
+ for moderate loads and a richer air-fuel ratio at higher loads.
+In theory, a stratified charge mode can further improve fuel efficiency and reduce exhaust emissions, however, in practice, the stratified charge concept has not proved to have significant efficiency advantages over a conventional homogeneous charge concept, but due to its inherent lean burn, more nitrogen oxides are formed, which sometimes require a NOx adsorber in the exhaust system to meet emissions regulations. The use of NOx adsorbers can require low sulphur fuels, since sulphur prevents NOx adsorbers from functioning properly. GDI engines with stratified fuel injection can also produce higher quantities of particulate matter than manifold injected engines, sometimes requiring particulate filters in the exhaust (similar to a diesel particulate filter) in order to meet vehicle emissions regulations. Therefore several European car manufacturers have abandoned the stratified charge concept or never used it in the first place, such as the 2000 Renault 2.0 IDE petrol engine (F5R), which never came with a stratified charge mode, or the 2009 BMW N55 and 2017 Mercedes-Benz M256 engines dropping the stratified charge mode used by their predecessors. The Volkswagen Group had used fuel stratified injection in naturally aspirated engines labelled FSI, however, these engines have received an engine control unit update to disable the stratified charge mode. Turbocharged Volkswagen engines labelled TFSI and TSI have always used the homogeneous mode. Like the latter VW engines, newer direct injected petrol engines (from 2017 onwards) usually also use the more conventional homogeneous charge mode, in conjunction with variable valve timing, to obtain good efficiency. Stratified charge concepts have mostly been abandoned.
+
+
+=== Injection modes ===
+Common techniques for creating the desired distribution of fuel throughout the combustion chamber are either spray-guided, air-guided, or wall-guided injection. The trend in recent years is towards spray-guided injection, since it currently results in a higher fuel efficiency.
+
+
+==== Wall-guided direct injection ====
+
+In engines with wall-guided injection, the distance between spark plug and injection nozzle is relatively high. In order to get the fuel close to the spark plug, it is sprayed against a swirl cavity on top of the piston (as seen in the picture of the Ford EcoBoost engine on the right), which guides the fuel towards the spark plug. Special swirl or tumble air intake ports aid this process. The injection timing depends upon the piston speed, therefore, at higher piston speeds, the injection timing, and ignition timing need to be advanced very precisely. At low engine temperatures, some parts of the fuel on the relatively cold piston cool down so much, that they cannot combust properly. When switching from low engine load to medium engine load (and thus advancing the injection timing), some parts of the fuel can end up getting injected behind the swirl cavity, also resulting in incomplete combustion. Engines with wall-guided direct injection can therefore suffer from high hydrocarbon emissions.
+
+
+==== Air-guided direct injection ====
+Like in engines with wall-guided injection, in engines with air-guided injection, the distance between spark plug and injection nozzle is relatively high. However, unlike in wall-guided injection engines, the fuel does not get in contact with (relatively) cold engine parts such as cylinder wall and piston. Instead of spraying the fuel against a swirl cavity, in air-guided injection engines the fuel is guided towards the spark plug solely by the intake air. The intake air must therefore have a special swirl or tumble movement in order to direct the fuel towards the spark plug. This swirl or tumble movement must be retained for a relatively long period of time, so that all of the fuel is getting pushed towards the spark plug. This however reduces the engine's charging efficiency and thus power output. In practice, a combination of air-guided and wall-guided injection is used. There exists only one engine that only relies on air-guided injection.
+
+
+==== Spray-guided direct injection ====
+In engines with spray-guided direct injection, the distance between spark plug and injection nozzle is relatively low. Both the injection nozzle and spark plug are located in between the cylinder's valves. The fuel is injected during the latter stages of the compression stroke, causing very quick (and inhomogeneous) mixture formation. This results in large fuel stratification gradients, meaning that there is a cloud of fuel with a very low air ratio in its centre, and a very high air ratio at its edges. The fuel can only be ignited in between these two "zones". Ignition takes place almost immediately after injection to increase engine efficiency. The spark plug must be placed in such a way, that it is exactly in the zone where the mixture is ignitable. This means that the production tolerances need to be very low, because only very little misalignment can result in drastic combustion decline. Also, the fuel cools down the spark plug, immediately before it is exposed to combustion heat. Thus, the spark plug needs to be able to withstand thermal shocks very well. At low piston (and engine) speeds, the relative air/fuel velocity is low, which can cause fuel to not vaporise properly, resulting in a very rich mixture. Rich mixtures do not combust properly, and cause carbon build-up. At high piston speeds, fuel gets spread further within the cylinder, which can force the ignitable parts of the mixture so far away from the spark plug, that it cannot ignite the air/fuel mixture anymore.
+
+
+=== Companion technologies ===
+Other devices which are used to complement GDI in creating a stratified charge include variable valve timing, variable valve lift, and variable length intake manifold. Also, exhaust gas recirculation can be used to reduce the high nitrogen oxide (NOx) emissions that can result from the ultra lean combustion.
+
+
+=== Disadvantages ===
+Gasoline direct injection does not have the valve cleaning action that is provided when fuel is introduced to the engine upstream of the cylinder. In non-GDI engines, the gasoline traveling through the intake port acts as a cleaning agent for contamination, such as atomized oil. The lack of a cleaning action can cause increased carbon deposits in GDI engines. Third party manufacturers sell oil catch tanks which are supposed to prevent or reduce those carbon deposits.
+The ability to produce peak power at high engine speeds (RPM) is more limited for GDI, since there is a shorter period of time available to inject the required quantity of fuel. In manifold injection (as well as carburetors and throttle-body fuel injection), fuel can be added to the intake air mixture at any time. However a GDI engine is limited to injecting fuel during the intake and compression phases. This becomes a restriction at high engine speeds (RPM), when the duration of each combustion cycle is shorter. To overcome this limitation, some GDI engines (such as the Toyota 2GR-FSE V6 and Volkswagen EA888 I4 engines) also have a set of manifold fuel injectors to provide additional fuel at high RPM. These manifold fuel injectors also assist in cleaning carbon deposits from the intake system.
+Gasoline does not provide the same level of lubrication for the injector components as diesel, which sometimes becomes a limiting factor in the injection pressures used by GDI engines. The injection pressure of a GDI engine is typically limited to approximately 20 MPa (2.9 ksi), to prevent excessive wear on the injectors.
+
+
+=== Adverse climate and health impacts ===
+While this technology is credited with boosting fuel efficiency and reducing CO2 emissions, GDI engines produce more black carbon aerosols than traditional port fuel injection engines. A strong absorber of solar radiation, black carbon possesses significant climate-warming properties.
+In a study published in January 2020 in the journal Environmental Science and Technology, a team of researchers at the University of Georgia (USA) predicted that the increase in black carbon emissions from GDI-powered vehicles will increase climate warming in urban areas of the U.S. by an amount that significantly exceeds the cooling associated with a reduction in CO2. The researchers also believe the shift from traditional port fuel injection (PFI) engines to the use of GDI technology will nearly double the premature mortality rate associated with vehicle emissions, from 855 deaths annually in the United States to 1,599. They estimate the annual social cost of these premature deaths at $5.95 billion.
+
+
+== History ==
+
+
+=== 1911–1912 ===
+One of the early inventors trying gasoline direct injection was Dr Archibald Low who gave his engine the misleading title of Forced Induction Engine whereas it was only the admission of the fuel that was forced. He revealed details of his prototype engine early in 1912, and the design was further developed by the large scale engine builder F. E. Baker Ltd during 1912 and the results displayed on their stand at the Olympia Motor Cycle show in November 1912. The engine was a high compression four-stroke motorcycle engine, with the gasoline fuel separately pressurised to 1000psi and admitted into the cylinder 'at the moment of highest compression' by a small rotary valve, with simultaneous ignition by a spark plug and trembler coil allowing sparking to continue throughout the combustion phase. The fuel being injected was described as being in vapour phase having been heated by the engine cylinder. The pressure of the fuel was regulated at the fuel pump, and the amount of fuel admitted was controlled by mechanical means at the rotary admission valve. It seems this radical design wasn't taken further by F. E. Baker.
+
+
+=== 1916–1938 ===
+Although direct injection has only become commonly used in gasoline engines since 2000, diesel engines have used fuel directly injected into the combustion chamber (or a pre-combustion chamber) since the first successful prototype in 1894.
+An early prototype of a GDI engine was built in Germany in 1916 for the Junkers airplane. The engine was initially designed as a diesel engine, however it switched to being designed for gasoline when the German ministry of war decreed that aircraft engines must run on either gasoline or benzene. Being a crankcase-compression two-stroke design, a misfire could destroy the engine, therefore Junkers developed a GDI system to prevent this issue. A demonstration of this prototype engine to aviation officials was performed shortly before development ceased due to the end of World War I.
+The Hesselman engine is a hybrid engine design which was in production by various manufacturers from 1925 to 1951. In a Hesselman engine fuel is not injected during the suction stroke along with the air, as would be the case in a conventional Otto cycle engine, but is instead injected during the compression stroke a little in advance of the spark. Hesselman engines could use a wide variety of fuels, including gasoline, but generally ran on conventional diesel fuels.
+
+
+=== 1939–1995 ===
+During World War II, most of the German aircraft engines used GDI, such as the BMW 801 radial engine, the German inverted V12 Daimler-Benz DB 601, DB 603 and DB 605 engines, and the similar-layout Junkers Jumo 210G, Jumo 211 and Jumo 213 inverted V12 engines. Allied aircraft engines that used GDI fuel injection systems were the Soviet Union Shvetsov ASh-82FNV radial engine and the American 54.9 litre displacement Wright R-3350 Duplex Cyclone 18-cylinder radial engine.
+The German company Bosch had been developing a mechanical GDI system for cars since the 1930s and in 1952 it was introduced on the two-stroke engines in the Goliath GP700 and Gutbrod Superior. This system was basically a high-pressure diesel direct-injection pump with an intake throttle valve set up. These engines gave good performance and had up to 30% less fuel consumption over the carburetor version, primarily under low engine loads. An added benefit of the system was having a separate tank for the engine oil which was automatically added to the fuel mixture, obviating the need for owners to mix their own two-stroke fuel blend. The 1955 Mercedes-Benz 300SL also used an early Bosch mechanical GDI system, therefore becoming the first four-stroke engine to use GDI. Up until the mid-2010s, most fuel-injected cars used manifold injection, making it quite unusual that these early cars used an arguably more advanced GDI system.
+During the 1970s, the United States manufacturers American Motors Corporation and Ford developed prototype mechanical GDI systems called Straticharge and Programmed Combustion (PROCO) respectively. Neither of these systems reached production.
+
+
+=== 1997–present ===
+The 1996 Japanese-market Mitsubishi Galant was the first mass-produced car to use a GDI engine, when a GDI version of the Mitsubishi 4G93 inline-four engine was introduced. It was subsequently brought to Europe in 1997 in the Carisma. It also developed the first six-cylinder GDI engine, the Mitsubishi 6G74 V6 engine, in 1997. Mitsubishi applied this technology widely, producing over one million GDI engines in four families by 2001. Although in use for many years, on 11 September 2001 MMC claimed a trademark for the acronym 'GDI'. Several other Japanese and European manufacturers introduced GDI engines in the following years. The Mitsubishi GDI technology was also licensed by Peugeot, Citroën, Hyundai, Volvo and Volkswagen.
+The 2005 Toyota 2GR-FSE V6 engine was the first to combine both direct and indirect injection. The system (called "D-4S") uses two fuel injectors per cylinder: a traditional manifold fuel injector (low pressure) and a direct fuel injector (high-pressure) and is used in most Toyota engines.
+In Formula One racing, direct injection was made compulsory for the 2014 season, with regulation 5.10.2 stating: "There may only be one direct injector per cylinder and no injectors are permitted upstream of the intake valves or downstream of the exhaust valves."
+
+
+== In two-stroke engines ==
+There are additional benefits of GDI for two-stroke engines, relating to scavenging of the exhaust gases and lubrication of the crankcase.
+The scavenging aspect is that most two-stroke engines have both the intake and exhaust ports open during the exhaust stroke, in order to improve the flushing of exhaust gases from the cylinder. This results in some of the fuel/air mixture entering the cylinder and then exiting the cylinder, unburned, through the exhaust port. With direct injection, only air (and usually some oil) comes from the crankcase, and fuel is not injected until the piston rises and all ports are closed.
+Crankcase lubrication is achieved in two-stroke GDI engines by injecting oil into the crankcase, resulting in a lower oil consumption than the older method of injecting oil mixed with fuel into the crankcase.
+Two types of GDI are used in two-strokes: low-pressure air-assisted, and high-pressure. The low-pressure systems—as used on the 1992 Aprilia SR50 motor scooter—uses a crankshaft-driven air compressor to inject air into the cylinder head. A low-pressure injector then sprays fuel into the combustion chamber, where it vaporizes as it mixes with the compressed air. A high-pressure GDI system was developed by German company Ficht GmbH in the 1990s and introduced for marine engines by Outboard Marine Corporation (OMC) in 1997, in order to meet stricter emissions regulations. However, the engines had reliability problems and OMC declared bankruptcy in December 2000. The Evinrude E-Tec is an improved version of the Ficht system, which was released in 2003 and won an EPA Clean Air Excellence Award in 2004.
+Envirofit International, an American non-profit organisation, has developed direct injection retrofit kits for two-stroke motorcycles (using technology developed by Orbital Corporation Limited) in a project to reduce air pollution in Southeast Asia. The 100-million two-stroke taxis and motorcycles in Southeast Asia are a major cause of pollution for the region.
+
+
+== See also ==
+
+
+== References ==

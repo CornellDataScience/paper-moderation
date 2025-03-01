@@ -1,0 +1,66 @@
+Multiphoton lithography (also known as direct laser lithography or direct laser writing) is similar to standard photolithography techniques; structuring is accomplished by illuminating negative-tone or positive-tone photoresists via light of a well-defined wavelength. The main difference is the avoidance of photomasks. Instead, two-photon absorption is utilized to induce a change in the solubility of the resist for appropriate developers.
+
+Hence, multiphoton lithography is a technique for creating small features in a photosensitive material, without the use of excimer lasers or photomasks. This method relies on a multi-photon absorption process in a material that is transparent at the wavelength of the laser used for creating the pattern. By scanning and properly modulating the laser, a chemical change (usually polymerization) occurs at the focal spot of the laser and can be controlled to create an arbitrary three-dimensional pattern. This method has been used for rapid prototyping of structures with fine features.
+
+Two-photon absorption (TPA) is a third-order with respect to the third-order optical susceptibility 
+  
+    
+      
+        
+          χ
+          
+            (
+            3
+            )
+          
+        
+      
+    
+    {\displaystyle \chi ^{(3)}}
+  
+ and a second-order process with respect to light intensity. For this reason it is a non-linear process several orders of magnitude weaker than linear absorption, thus very high light intensities are required to increase the number of such rare events. For example, tightly-focused laser beams provide the needed intensities. Here, pulsed laser sources, with pulse widths of around 100 fs, are preferred as they deliver high-intensity pulses while depositing a relatively low average energy. To enable 3D structuring, the light source must be adequately adapted to the liquid photoresin in that single-photon absorption is highly suppressed. TPA is thus essential for creating complex geometries with high resolution and shape accuracy. For best results, the photoresins should be transparent to the excitation wavelength λ, which is between 500-1000 nm and, simultaneously, absorbing in the range of λ/2. As a result, a given sample relative to the focused laser beam can be scanned while changing the resist's solubility only in a confined volume. The geometry of the latter mainly depends on the iso-intensity surfaces of the focus. Concretely, those regions of the laser beam which exceed a given exposure threshold of the photosensitive medium define the basic building block, the so-called voxel. Voxels are thus the smallest, single volumes of cured photopolymer. They represent the basic building blocks of 3D-printed objects. Other parameters which influence the actual shape of the voxel are the laser mode and the refractive-index mismatch between the resist and the immersion system leading to spherical aberration.
+It was found that polarization effects in laser 3D nanolithography can be employed to fine-tune the feature sizes (and corresponding aspect ratio) in the structuring of photoresists. This proves polarization to be a variable parameter next to laser power (intensity), scanning speed (exposure duration), accumulated dose, etc.
+In addition, a plant-derived renewable pure bioresins without additional photosensitization can be employed for the optical rapid prototyping.
+
+
+== Materials for multiphoton polymerization ==
+The materials employed in multiphoton lithography are those normally used in conventional photolithography techniques. They can be found in liquid-viscous, gel or solid state, in relation to the fabrication need. Liquid resins imply more complex sample fixing processes, during the fabrication step, while the preparation of the resins themselves may be easier and faster. In contrast, solid resists can be handled in an easier way, but they require complex and time-consuming processes. The resin always include a prepolymer (the monomer) and, considering the final application, a photoinitiator. In addition, we can find such polymerization inhibitors (useful to stabilize resins both reducing the obtained voxel), solvents (which may simplify casting procedures), thickens (so called "fillers") and other additives (as pigments and so on) which aim to functionalize the photopolymer.
+
+
+=== Acrylates ===
+The acrylates are the most diffused resin components. They can be found in many traditional photolithography processes which imply a radical reaction. They are largely diffused and commercially available in a wide range of products, having different properties and composition. The main advantages of this kind of liquid resins are found in the excellent mechanical properties and in the high reactivity. Acrylates exhibit slightly more shrinkage compared to epoxies, but their rapid iteration capability allows for close alignment with the design. Moreover, Acrylates offer enhanced usability as they eliminate the need for spin coating or baking steps during processing. Finally the polymerization steps are faster than other kind of photopolymers. Methacrylates are largely diffused due to their biocompatibility. The majority of materials for Two-Photon Polymerization are supplied by companies that also provide printers. Nevertheless, there are third-party resins available like ORMOCER, alongside numerous self-made resins.  
+
+
+=== Epoxy resins ===
+These are the most employed resins into the MEMS and microfluidic fields. They exploit cationic polymerization. One of the best known epoxy resin is SU-8, which allows thin film deposition (up to 500 μm) and polymerization of structures with a high aspect ratio. We can find many others epoxy resins such as: SCR-701, largely employed in micro moving objects, and the SCR-500.
+
+
+=== Inorganic glass/ceramics ===
+Inorganic glass and ceramics have better thermal and chemical stabilities than photopolymers do, and they also offer improved durability due to their high resistance to corrosion, degradation, and wear. Therefore, there has been continuous interest in the development of resins and techniques that allow using multiphoton lithography for 3D printing of glasses and ceramics in recent years. It has been demonstrated that using hybrid inorganic-organic resins and high-temperature thermal treatments, one can achieve 3D printing of glass-ceramics with sub-micrometer resolution. Recently, multiphoton lithography of an entirely inorganic resin for 3D printing of glasses without involving thermal treatments has also been shown, enabling 3D printing of glass micro-optics on the tips of optical fibers without causing damage to the optical fiber.
+
+
+== Applications ==
+Nowadays there are several application fields for microstructured devices, made by multiphoton polymerization, such as: regenerative medicine, biomedical engineering, micromechanic, microfluidic, atomic force microscopy, optics and telecommunication science.
+
+
+=== Regenerative medicine and biomedical engineering ===
+By the arrival of biocompatible photopolymers (as SZ2080 and OMOCERs) many scaffolds have been realized by multiphoton lithography, to date. They vary in key parameters as geometry, porosity and dimension to control and condition, in a mechanical and chemical fashion, fundamental cues in in vitro cell cultures: migration, adhesion, proliferation and differentiation. The capability to fabricate structures having a feature size smaller than the cells' one, have dramatically improved the mechanobiology field, giving the possibility to combine mechanical cues directly into cells microenvironment. Their final application range from stemness maintenance in adult mesenchymal stem cells, such as into the NICHOID scaffold which mimics in vitro a physiological niche, to the generation of migration engineered scaffolds.
+
+
+=== Micromechanic and microfluidic ===
+The multiphoton polymerization can be suitable to realize microsized active (as pumps) or passive (as filters) devices that can be combined with Lab-on-a-chip. These devices can be widely used coupled to microchannels with the advantage to polymerize in pre-sealed channels. Considering filters, they can be used to separate the plasma from the red blood cells, to separate cell populations (in relation to the single cell dimension) or basically to filter solutions from impurity and debris. A porous 3D filter, which can only be fabricated by 2PP technology, offers two key advantages compared to filters based on 2D pillars. First, the 3D filter has increased mechanical resistance to shear stresses, enabling a higher void ratio and hence more efficient operation. Second, the 3D porous filter can efficiently filter disk-shaped elements without reducing the pore size to the minimum dimension of the cell.  Considering the integrated micropumps, they can be polymerized as two-lobed independent rotors, confined into the channel by their own shaft, to avoid unwanted rotations. Such systems are simply activated by using focalized CW laser system.
+
+
+=== Atomic force microscopy ===
+To date, atomic force microscopy microtips are realized with standard photolithographic techniques on hard materials, such as gold, silicon, and its derivatives. Nonetheless, the mechanical properties of such materials require time-consuming and expensive production processes to create or bend the tips. Multiphoton lithography can be used to prototype and modify, thus avoiding the complex fabrication protocol.
+
+
+=== Optics ===
+With the ability to create 3D planar structures, multiphoton polymerization can build optical components for optical waveguides, resonators, photonic crystals, and lens.
+
+
+== References ==
+
+
+== External links ==
+Nano sculptures, the first nano-scale human form. Sculpture made by artist Jonty Hurwitz using multiphoton lithography, November 2014.

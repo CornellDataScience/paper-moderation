@@ -1,0 +1,446 @@
+A ‘T’-antenna, ‘T’-aerial, or flat-top antenna is a monopole radio antenna consisting of one or more horizontal wires suspended between two supporting radio masts or buildings and insulated from them at the ends. A vertical wire is connected to the center of the horizontal wires and hangs down close to the ground, connected to the transmitter or receiver. The shape of the antenna resembles the letter "T", hence the name. The  transmitter power is applied, or the receiver is connected, between the bottom of the vertical wire and a ground connection.
+A closely related antenna is the inverted-L antenna. This is similar to the T-antenna except that the vertical feeder wire, instead of being attached to the center of the horizontal topload wires, is attached at one end. The name comes from its resemblance to an inverted letter "L" (Γ). The T-antenna is an omnidirectional antenna, radiating equal radio power in all azimuthal directions, while the inverted-L is a weakly directional antenna, with maximum radio power radiated in the direction of the top load wire, off the end with the feeder attached.
+
+'T'- and inverted-L antennas are typically used in the VLF, LF, MF, and shortwave bands,: 578–579  and are widely used as transmitting antennas for amateur radio stations,
+and long wave and medium wave AM broadcasting stations. They can also be used as receiving antennas for shortwave listening. They function as monopole antennas with capacitive top-loading; other antennas in this category include the umbrella, and triatic antennas. They were invented during the first decades of radio, in the wireless telegraphy era, before 1920.
+
+
+== How it works ==
+
+The 'T'-type antenna is most easily understood as having three functional parts:
+
+Top load
+The horizontal wire top section (sometimes called the capacitance hat) acts like a plate of a capacitor.
+Radiator
+The vertical wire that carries current from the feedpoint at the base to the top; unbalanced current in the vertical segment generates the emitted radio waves.
+Ground system
+Either wires buried in the ground under the antenna or sometimes wires suspended a few feet above ground (a counterpoise) acts like the other plate of the capacitor.
+The wires of the top load are often arranged symmetrically; currents flowing in the oppositely directed symmetrical wires of the top hat cancel each others' fields and so produce no net radiation, with the same cancellation happening in the same way in the ground system.
+In principle, the capacitance hat (top hat) and its counterpart ground system (counterpoise) could be built to be mirror images of each other. However the ease of just laying wires on the ground or raised a few feet above the soil, as opposed to the practical challenge of supporting top hat's horizontal wires up high, at the apex of the vertical section, typically means that the top hat is usually not built as large as the counterpoise. Further, any electric fields that reach the ground before they are intercepted by the counterpoise will waste energy warming the soil, whereas stray electric fields high in the air will merely spread out a bit more into loss-free open air, before they eventually reach the wires of the top hat.
+
+The top and ground sections effectively function as oppositely charged reservoirs for augmented storage of excess or deficit electrons, more than what could be stored along the top end of the same height bare headed vertical wire. A greater stored charge causes greater current to flow through the vertical segment between the top and base, and that current in the vertical segment produces the radiation emitted by the T-antenna.
+
+
+=== Capacitance 'hat' ===
+
+The left and right sections of horizontal wire across the top of the 'T' carry equal but oppositely-directed currents. Therefore, far from the antenna, the radio waves radiated by each wire are 180° out of phase with the waves from the other wire, and tend to cancel. There is a similar cancellation of radio waves reflected from the ground. Thus the horizontal wires radiate (almost) no radio power.: 554 
+Instead of radiating, the horizontal wires increase the capacitance at the top of the antenna. More current is required in the vertical wire to charge and discharge this added capacitance during the RF oscillation cycle.: 554 
+The increased currents in the vertical wire (see drawing at right) effectively increase the antenna's radiation resistance and thus the RF power radiated.
+The top-load capacitance increases as more wires are added, so several parallel horizontal wires are often used, connected together at the center where the vertical wire attaches. Because each wire's electric field impinges on those of adjacent wires, the additional capacitance from each added wire diminishes.
+
+
+=== Efficiency of capacitive top loading ===
+The horizontal top load wire can increase radiated power by 2 to 4 times (3 to 6 dB) for a given base current. Consequently the 'T'-antenna can radiate more power than a simple vertical monopole of the same height. Similarly, a receiving T-antenna can intercept more power from the same incoming radio wave signal strength than the same height vertical antenna can. 
+In antennas built for frequencies near or below 600 kHz,
+the length of an antenna's wire segments is usually shorter than a quarter wavelength
+[ ⁠ 1 /4⁠ λ ≈ 125 m (410 feet) at 600 kHz], the shortest length of unloaded straight wire that achieves resonance.
+In this circumstance, a ‘T’-antenna is a capacitively top-loaded, electrically short,  vertical monopole.: 578–579 
+Despite its improvements over a short vertical, the typical ‘T’-antenna is still not as efficient as a full-height ⁠ 1 /4⁠ λ vertical monopole, and has a higher Q and thus a narrower bandwidth. 'T'-antennas are typically used at low frequencies where building a full-size quarter-wave high vertical antenna is not practical,
+and the vertical radiating wire is often very electrically short: Only a small fraction of a wavelength long, ⁠1/10⁠λ or less. An electrically short antenna has a base reactance that is capacitive, and although capacitive loading at the top does reduce capacitive reactance at the base, usually some residual capacitive reactance remains. For transmitting antennas that must be tuned-out by added inductive reactance from a loading coil, so the antenna can be efficiently fed power.
+
+
+== Radiation pattern ==
+Since the vertical wire is the actual radiating element, the antenna radiates vertically polarized radio waves in an omnidirectional radiation pattern, with equal power in all azimuthal directions.
+The axis of the horizontal wire makes little difference. The power is maximum in a horizontal direction or at a shallow elevation angle, decreasing to zero at the zenith. This makes it a good antenna at LF or MF frequencies, which propagate as ground waves with vertical polarization, but it also radiates enough power at higher elevation angles to be useful for sky wave ("skip") communication. The effect of poor ground conductivity is generally to tilt the pattern up, with the maximum signal strength at a higher elevation angle.
+
+
+== Transmitting antennas ==
+In the longer wavelength ranges where 'T'-antennas are typically used, the electrical characteristics of antennas are generally not critical for modern radio receivers; reception is limited by natural noise, rather than by the signal power gathered by the receiving antenna.
+Transmitting antennas are different, and feedpoint impedance
+is critical:
+The combination of reactance and resistance at the antenna feedpoint must be matched to the impedance of the feedline, and beyond it, the transmitter's output stage. If mismatched, current sent from the transmitter to the antenna will reflect back down the feedline from the antenna, creating a condition called standing waves on the line. This reduces the power radiated by the antenna, and at worst may damage the transmitter.
+
+
+=== Reactance ===
+Any monopole antenna that is shorter than ⁠ 1 / 4 ⁠ wave has a capacitive reactance; the shorter it is, the higher that reactance, and the greater the proportion of the feed current that will be reflected back towards the transmitter.
+To efficiently drive current into a short transmitting antenna it must be made resonant (reactance-free), if the top section has not already done so. The capacitance is usually canceled out by an added loading coil or its equivalent; the loading coil is conventionally placed at the base of the antenna for accessibility, connected between the antenna and its feedline.
+
+The horizontal top section of a 'T'-antenna can also reduce the capacitive reactance at the feedpoint, substituting for a vertical section whose height would be about ⁠ 2 / 3 ⁠ its length;
+if it is long enough, it completely eliminates reactance and obviates any need for a loading coil at the feedpoint.
+At medium and low frequencies, the high antenna capacitance and the high inductance of the loading coil, compared to the short antenna’s low radiation resistance, makes the loaded antenna behave like a high Q tuned circuit, with a narrow bandwidth over which it will remain well matched to the transmission line, when compared to a ⁠ 1 / 4 ⁠ λ monopole.
+To operate over a large frequency range the loading coil often must be adjustable and adjusted when the frequency is changed to limit the power reflected back towards the transmitter. The high Q also causes a high voltage on the antenna, which is maximum at the current nodes at the ends of the horizontal wire, roughly Q times the driving-point voltage. The insulators at the ends must be designed to withstand these voltages. In high power transmitters the output power is often limited by the onset of corona discharge from the wires.
+
+
+=== Resistance ===
+Radiation resistance is the equivalent resistance of an antenna due to its radiation of radio waves; for a full-length quarter-wave monopole the radiation resistance is around 25 ohms. Any antenna that is short compared to the operating wavelength has a lower radiation resistance than a longer antenna; sometimes catastrophically so, far beyond the maximum performance improvement provided by a T-antenna. So at low frequencies, even a 'T'-antenna can have very low radiation resistance, often less than 1 ohm,
+so the efficiency is limited by other resistances in the antenna and the ground system. The input power is divided between the radiation resistance and the 'ohmic' resistances of the antenna+ground circuit, chiefly the coil and the ground. The resistance in the coil and particularly the ground system must be kept very low to minimize the power dissipated in them.
+It can be seen that at low frequencies the design of the loading coil can be challenging: it must have high inductance but very low losses at the transmitting frequency (high Q), must carry high currents, withstand high voltages at its ungrounded end, and be adjustable. It is often made of litz wire.
+At low frequencies the antenna requires a good low resistance ground to be efficient. The RF ground is typically constructed as a star of many radial copper cables buried about 30 cm (1 foot) in the earth, extending out from the base of the vertical wire, and connected together at the center. The radials should ideally be long enough to extend beyond the displacement current region near the antenna. At VLF frequencies the resistance of the soil becomes a problem, and the radial ground system is usually raised and mounted a few feet above ground, insulated from it, to form a counterpoise.
+
+
+== Equivalent circuit ==
+
+The power radiated (or received) by any electrically short vertical antenna, like the 'T'-antenna, is proportional to the square of the effective height of the antenna, so the antenna should be made as high as possible. Without the horizontal wire, the RF current distribution in the vertical wire would decrease very nearly linearly to zero at the top (see drawing "a" above), giving an effective height of half the physical height of the antenna. With an ideal "infinite capacitance" top load wire, the current in the vertical would be constant along its length, giving an effective height equal to the physical height, therefore increasing the radiated power fourfold for the same feed voltage. So the power radiated (or received) by a 'T'-antenna lies between a vertical monopole of the same height and up to four times that.
+The radiation resistance of an ideal T-antenna with very large top load capacitance is
+
+  
+    
+      
+        
+          R
+          
+            
+              R
+            
+          
+        
+        ≈
+        5
+        
+          
+            (
+            
+              
+                
+                  
+                  4
+                  π
+                  
+                  h
+                  
+                
+                λ
+              
+            
+            )
+          
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle R_{\mathsf {R}}\approx 5\left({\frac {\,4\pi \,h\,}{\lambda }}\right)^{2}\,}
+  
+
+so the radiated power is
+
+  
+    
+      
+        P
+        =
+        
+          R
+          
+            
+              R
+            
+          
+        
+        
+          I
+          
+            0
+          
+          
+            2
+          
+        
+        ≈
+        5
+        
+          
+            (
+            
+              
+                
+                  
+                  4
+                  π
+                  
+                  h
+                  
+                  
+                    I
+                    
+                      0
+                    
+                  
+                  
+                
+                λ
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle P=R_{\mathsf {R}}I_{0}^{2}\approx 5\left({\frac {\,4\pi \,h\,I_{0}\,}{\lambda }}\right)^{2}}
+  
+
+where
+
+h  is the height of the antenna,
+λ  is the wavelength, and
+I0  is the RMS input current in amperes.
+This formula shows that the radiated power depends on the product of the base current and the effective height, and is used to determine how many metre-amps are required to achieve a given amount of radiated power.
+The equivalent circuit of the antenna (including loading coil) is the series combination of the capacitive reactance of the antenna, the inductive reactance of the loading coil, and the radiation resistance and the other resistances of the antenna-ground circuit. So the input impedance is
+
+  
+    
+      
+        Z
+        =
+        
+          R
+          
+            
+              C
+            
+          
+        
+        +
+        
+          R
+          
+            
+              D
+            
+          
+        
+        +
+        
+          R
+          
+            
+              ℓ
+              .
+              c
+              .
+            
+          
+        
+        +
+        
+          R
+          
+            
+              G
+            
+          
+        
+        +
+        
+          R
+          
+            
+              R
+            
+          
+        
+        +
+        j
+        ω
+        
+          L
+          
+            
+              ℓ
+              .
+              c
+              .
+            
+          
+        
+        −
+        
+          
+            1
+            
+              
+              j
+              ω
+              
+                C
+                
+                  
+                    a
+                    n
+                    t
+                    .
+                  
+                
+              
+              
+            
+          
+        
+         
+        ,
+      
+    
+    {\displaystyle Z=R_{\mathsf {C}}+R_{\mathsf {D}}+R_{\mathsf {\ell .c.}}+R_{\mathsf {G}}+R_{\mathsf {R}}+j\omega L_{\mathsf {\ell .c.}}-{\frac {1}{\,j\omega C_{\mathsf {ant.}}\,}}~,}
+  
+
+where
+
+RC is the Ohmic resistance of the antenna conductors (copper losses)
+RD is the equivalent series dielectric losses
+Rℓ.c. is the series resistance of the loading coil
+RG is the resistance of the ground system
+RR is the radiation resistance
+Cant. is the apparent capacitance of the antenna at the input terminals
+Lℓ.c. is the inductance of the loading coil.
+At resonance the capacitive reactance of the antenna is cancelled by the loading coil so the input impedance at resonance Z0 is just the sum of the resistances in the antenna circuit
+
+  
+    
+      
+        
+          Z
+          
+            0
+          
+        
+        =
+        
+          R
+          
+            
+              C
+            
+          
+        
+        +
+        
+          R
+          
+            
+              D
+            
+          
+        
+        +
+        
+          R
+          
+            
+              ℓ
+              .
+              c
+              .
+            
+          
+        
+        +
+        
+          R
+          
+            
+              G
+            
+          
+        
+        +
+        
+          R
+          
+            
+              R
+            
+          
+        
+        
+      
+    
+    {\displaystyle Z_{0}=R_{\mathsf {C}}+R_{\mathsf {D}}+R_{\mathsf {\ell .c.}}+R_{\mathsf {G}}+R_{\mathsf {R}}\,}
+  
+
+The efficiency of the antenna at resonance, η, is the ratio of radiated power to input power from the feedline. Since power dissipated as radiation or as heat is proportional to resistance, the efficiency is given by
+
+  
+    
+      
+        η
+        =
+        
+          
+            
+              R
+              
+                
+                  R
+                
+              
+            
+            
+              
+              
+                R
+                
+                  
+                    C
+                  
+                
+              
+              +
+              
+                R
+                
+                  
+                    D
+                  
+                
+              
+              +
+              
+                R
+                
+                  
+                    ℓ
+                    .
+                    c
+                    .
+                  
+                
+              
+              +
+              
+                R
+                
+                  
+                    G
+                  
+                
+              
+              +
+              
+                R
+                
+                  
+                    R
+                  
+                
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle \eta ={\frac {R_{\mathsf {R}}}{\,R_{\mathsf {C}}+R_{\mathsf {D}}+R_{\mathsf {\ell .c.}}+R_{\mathsf {G}}+R_{\mathsf {R}}\,}}}
+  
+
+It can be seen that, since the radiation resistance is usually very low, the major design problem is to keep the other resistances in the antenna-ground system low to obtain the highest efficiency.
+
+
+== Multiple-tuned antenna ==
+The multiple-tuned flattop antenna is a variant of the 'T'-antenna used in high-power low-frequency transmitters to reduce ground power losses. It consists of a long capacitive top-load consisting of multiple parallel wires supported by a line of transmission towers, sometimes several miles long. Several vertical radiator wires hang down from the top load, each attached to its own ground through a loading coil. The antenna is driven either at one of the radiator wires or more often at one end of the top load, by bringing the wires of the top load diagonally down to the transmitter.
+Although the vertical wires are separated, the distance between them is small compared to the length of the LF waves, so the currents in them are in phase and they can be considered as one radiator. Since the antenna current flows into the ground through N parallel loading coils and grounds rather than one, the equivalent loading coil and ground resistance, and therefore the power dissipated in the loading coil and ground, is reduced to ⁠1/ N ⁠ that of a simple 'T'antenna. The antenna was used in the powerful radio stations of the wireless telegraphy era but has fallen out of favor due to the expense of multiple loading coils.
+
+
+== See also ==
+Dipole antenna
+Mast radiator
+
+
+== Footnotes ==
+
+
+== References ==

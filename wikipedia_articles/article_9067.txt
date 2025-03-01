@@ -1,0 +1,1303 @@
+In applied mathematics, the central differencing scheme is a finite difference method that optimizes the approximation for the differential operator in the central node of the considered patch and provides numerical solutions to differential equations. It is one of the schemes used to solve the integrated convection–diffusion equation and to calculate the transported property Φ at the e and w faces, where e and w are short for east and west (compass directions being customarily used to indicate directions on computational grids). The method's advantages are that it is easy to understand and implement, at least for simple material relations; and that its convergence rate is faster than some other finite differencing methods, such as forward and backward differencing. The right side of the convection-diffusion equation, which basically highlights the diffusion terms, can be represented using central difference approximation. To simplify the solution and analysis, linear interpolation can be used logically to compute the cell face values for the left side of this equation, which is nothing but the convective terms. Therefore, cell face values of property for a uniform grid can be written as:
+
+  
+    
+      
+        
+          Φ
+          
+            e
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        (
+        
+          Φ
+          
+            P
+          
+        
+        +
+        
+          Φ
+          
+            E
+          
+        
+        )
+      
+    
+    {\displaystyle \Phi _{e}={\tfrac {1}{2}}(\Phi _{P}+\Phi _{E})}
+  
+
+  
+    
+      
+        
+          Φ
+          
+            w
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        (
+        
+          Φ
+          
+            W
+          
+        
+        +
+        
+          Φ
+          
+            P
+          
+        
+        )
+      
+    
+    {\displaystyle \Phi _{w}={\tfrac {1}{2}}(\Phi _{W}+\Phi _{P})}
+  
+
+
+== Steady-state convection diffusion equation ==
+The convection–diffusion equation is a collective representation of diffusion and convection equations, and describes or explains every physical phenomenon involving convection and diffusion in the transference of particles, energy and other physical quantities inside a physical system:
+
+  
+    
+      
+        div
+        ⁡
+        (
+        ρ
+        u
+        φ
+        )
+        =
+        div
+        ⁡
+        (
+        Γ
+        ∇
+        φ
+        )
+        +
+        
+          S
+          
+            φ
+          
+        
+        ;
+        
+      
+    
+    {\displaystyle \operatorname {div} (\rho u\varphi )=\operatorname {div} (\Gamma \nabla \varphi )+S_{\varphi };\,}
+  
+
+where Г is diffusion coefficient and Φ is the property.
+
+
+== Formulation of steady-state convection diffusion equation ==
+Formal integration of steady-state convection–diffusion equation over a control volume gives
+
+This equation represents flux balance in a control volume. The left side gives the net convective flux, and the right side contains the net diffusive flux and the generation or destruction of the property within the control volume.
+In the absence of source term equation, one becomes
+
+Continuity equation:
+
+Assuming a control volume and integrating equation 2 over control volume gives:
+
+Integration of equation 3 yields:
+
+It is convenient to define two variables to represent the convective mass flux per unit area and diffusion conductance at cell faces, for example:
+
+  
+    
+      
+        F
+        =
+        ρ
+        u
+      
+    
+    {\displaystyle F=\rho u}
+  
+
+  
+    
+      
+        D
+        =
+        Γ
+        
+          /
+        
+        δ
+        x
+      
+    
+    {\displaystyle D=\Gamma /\delta x}
+  
+
+Assuming 
+  
+    
+      
+        
+          A
+          
+            e
+          
+        
+        =
+        
+          A
+          
+            w
+          
+        
+      
+    
+    {\displaystyle A_{e}=A_{w}}
+  
+, we can write integrated convection–diffusion equation as:
+
+  
+    
+      
+        
+          F
+          
+            e
+          
+        
+        
+          φ
+          
+            e
+          
+        
+        −
+        
+          F
+          
+            w
+          
+        
+        
+          φ
+          
+            w
+          
+        
+        =
+        
+          D
+          
+            e
+          
+        
+        (
+        
+          φ
+          
+            E
+          
+        
+        −
+        
+          φ
+          
+            P
+          
+        
+        )
+        −
+        
+          D
+          
+            w
+          
+        
+        (
+        
+          φ
+          
+            P
+          
+        
+        −
+        
+          φ
+          
+            W
+          
+        
+        )
+      
+    
+    {\displaystyle F_{e}\varphi _{e}-F_{w}\varphi _{w}=D_{e}(\varphi _{E}-\varphi _{P})-D_{w}(\varphi _{P}-\varphi _{W})}
+  
+
+And integrated continuity equation as:
+
+  
+    
+      
+        
+          F
+          
+            e
+          
+        
+        −
+        
+          F
+          
+            w
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle F_{e}-F_{w}=0}
+  
+
+In a central differencing scheme, we try linear interpolation to compute cell face values for convection terms.
+For a uniform grid, we can write cell face values of property Φ as
+
+  
+    
+      
+        
+          φ
+          
+            e
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        (
+        
+          φ
+          
+            E
+          
+        
+        +
+        
+          φ
+          
+            P
+          
+        
+        )
+        ,
+        
+        
+          φ
+          
+            w
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        (
+        
+          φ
+          
+            P
+          
+        
+        +
+        
+          φ
+          
+            W
+          
+        
+        )
+      
+    
+    {\displaystyle \varphi _{e}={\tfrac {1}{2}}(\varphi _{E}+\varphi _{P}),\quad \varphi _{w}={\tfrac {1}{2}}(\varphi _{P}+\varphi _{W})}
+  
+
+On substituting this into integrated convection-diffusion equation, we obtain:
+
+  
+    
+      
+        
+          F
+          
+            e
+          
+        
+        
+          
+            
+              
+                φ
+                
+                  E
+                
+              
+              +
+              
+                φ
+                
+                  P
+                
+              
+            
+            2
+          
+        
+        −
+        
+          F
+          
+            w
+          
+        
+        
+          
+            
+              
+                φ
+                
+                  W
+                
+              
+              +
+              
+                φ
+                
+                  P
+                
+              
+            
+            2
+          
+        
+        =
+        
+          D
+          
+            e
+          
+        
+        (
+        
+          φ
+          
+            E
+          
+        
+        −
+        
+          φ
+          
+            P
+          
+        
+        )
+        −
+        
+          D
+          
+            w
+          
+        
+        (
+        
+          φ
+          
+            P
+          
+        
+        −
+        
+          φ
+          
+            W
+          
+        
+        )
+      
+    
+    {\displaystyle F_{e}{\frac {\varphi _{E}+\varphi _{P}}{2}}-F_{w}{\frac {\varphi _{W}+\varphi _{P}}{2}}=D_{e}(\varphi _{E}-\varphi _{P})-D_{w}(\varphi _{P}-\varphi _{W})}
+  
+
+And on rearranging:
+
+  
+    
+      
+        
+          [
+          
+            
+              (
+              
+                
+                  D
+                  
+                    w
+                  
+                
+                +
+                
+                  
+                    
+                      F
+                      
+                        w
+                      
+                    
+                    2
+                  
+                
+              
+              )
+            
+            +
+            
+              (
+              
+                
+                  D
+                  
+                    e
+                  
+                
+                −
+                
+                  
+                    
+                      F
+                      
+                        e
+                      
+                    
+                    2
+                  
+                
+              
+              )
+            
+            +
+            (
+            
+              F
+              
+                e
+              
+            
+            −
+            
+              F
+              
+                w
+              
+            
+            )
+          
+          ]
+        
+        
+          φ
+          
+            P
+          
+        
+        =
+        
+          (
+          
+            
+              D
+              
+                w
+              
+            
+            +
+            
+              
+                
+                  F
+                  
+                    w
+                  
+                
+                2
+              
+            
+          
+          )
+        
+        
+          φ
+          
+            W
+          
+        
+        +
+        
+          (
+          
+            
+              D
+              
+                e
+              
+            
+            −
+            
+              
+                
+                  F
+                  
+                    e
+                  
+                
+                2
+              
+            
+          
+          )
+        
+        
+          φ
+          
+            E
+          
+        
+      
+    
+    {\displaystyle \left[\left(D_{w}+{\frac {F_{w}}{2}}\right)+\left(D_{e}-{\frac {F_{e}}{2}}\right)+(F_{e}-F_{w})\right]\varphi _{P}=\left(D_{w}+{\frac {F_{w}}{2}}\right)\varphi _{W}+\left(D_{e}-{\frac {F_{e}}{2}}\right)\varphi _{E}}
+  
+
+  
+    
+      
+        
+          a
+          
+            P
+          
+        
+        
+          φ
+          
+            P
+          
+        
+        =
+        
+          a
+          
+            W
+          
+        
+        
+          φ
+          
+            W
+          
+        
+        +
+        
+          a
+          
+            E
+          
+        
+        
+          φ
+          
+            E
+          
+        
+      
+    
+    {\displaystyle a_{P}\varphi _{P}=a_{W}\varphi _{W}+a_{E}\varphi _{E}}
+  
+
+
+== Different aspects of central differencing scheme ==
+
+
+=== Conservativeness ===
+Conservation is ensured in central differencing scheme since overall flux balance is obtained by summing the net flux through each control volume taking into account the boundary fluxes for the control volumes around nodes 1 and 4.
+
+Boundary flux for control volume around node 1 and 4
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  [
+                  
+                    
+                      
+                        
+                          
+                            Γ
+                            
+                              
+                                e
+                                
+                                  1
+                                
+                              
+                            
+                          
+                          (
+                          
+                            φ
+                            
+                              2
+                            
+                          
+                          −
+                          
+                            φ
+                            
+                              1
+                            
+                          
+                          )
+                        
+                        
+                          δ
+                          x
+                        
+                      
+                    
+                    −
+                    
+                      q
+                      
+                        A
+                      
+                    
+                  
+                  ]
+                
+                +
+                
+                  [
+                  
+                    
+                      
+                        
+                          
+                            Γ
+                            
+                              
+                                e
+                                
+                                  2
+                                
+                              
+                            
+                          
+                          (
+                          
+                            φ
+                            
+                              3
+                            
+                          
+                          −
+                          
+                            φ
+                            
+                              2
+                            
+                          
+                          )
+                        
+                        
+                          δ
+                          x
+                        
+                      
+                    
+                    −
+                    
+                      
+                        
+                          
+                            Γ
+                            
+                              
+                                w
+                                
+                                  2
+                                
+                              
+                            
+                          
+                          (
+                          
+                            φ
+                            
+                              2
+                            
+                          
+                          −
+                          
+                            φ
+                            
+                              1
+                            
+                          
+                          )
+                        
+                        
+                          δ
+                          x
+                        
+                      
+                    
+                  
+                  ]
+                
+              
+            
+            
+              
+                +
+                
+
+                
+              
+              
+                
+                  [
+                  
+                    
+                      
+                        
+                          
+                            Γ
+                            
+                              
+                                e
+                                
+                                  3
+                                
+                              
+                            
+                          
+                          (
+                          
+                            φ
+                            
+                              4
+                            
+                          
+                          −
+                          
+                            φ
+                            
+                              3
+                            
+                          
+                          )
+                        
+                        
+                          δ
+                          x
+                        
+                      
+                    
+                    −
+                    
+                      
+                        
+                          
+                            Γ
+                            
+                              
+                                w
+                                
+                                  3
+                                
+                              
+                            
+                          
+                          (
+                          
+                            φ
+                            
+                              3
+                            
+                          
+                          −
+                          
+                            φ
+                            
+                              2
+                            
+                          
+                          )
+                        
+                        
+                          δ
+                          x
+                        
+                      
+                    
+                  
+                  ]
+                
+                +
+                
+                  [
+                  
+                    
+                      q
+                      
+                        B
+                      
+                    
+                    −
+                    
+                      
+                        
+                          
+                            Γ
+                            
+                              
+                                w
+                                
+                                  4
+                                
+                              
+                            
+                          
+                          (
+                          
+                            φ
+                            
+                              4
+                            
+                          
+                          −
+                          
+                            φ
+                            
+                              3
+                            
+                          
+                          )
+                        
+                        
+                          δ
+                          x
+                        
+                      
+                    
+                  
+                  ]
+                
+                =
+                
+                  q
+                  
+                    B
+                  
+                
+                −
+                
+                  q
+                  
+                    A
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&\left[{\frac {\Gamma _{e_{1}}(\varphi _{2}-\varphi _{1})}{\delta x}}-q_{A}\right]+\left[{\frac {\Gamma _{e_{2}}(\varphi _{3}-\varphi _{2})}{\delta x}}-{\frac {\Gamma _{w_{2}}(\varphi _{2}-\varphi _{1})}{\delta x}}\right]\\[10pt]+{}&\left[{\frac {\Gamma _{e_{3}}(\varphi _{4}-\varphi _{3})}{\delta x}}-{\frac {\Gamma _{w_{3}}(\varphi _{3}-\varphi _{2})}{\delta x}}\right]+\left[q_{B}-{\frac {\Gamma _{w_{4}}(\varphi _{4}-\varphi _{3})}{\delta x}}\right]=q_{B}-q_{A}\end{aligned}}}
+  
+
+because 
+  
+    
+      
+        
+          Γ
+          
+            
+              e
+              
+                1
+              
+            
+          
+        
+        =
+        
+          Γ
+          
+            
+              w
+              
+                2
+              
+            
+          
+        
+        ,
+        
+          Γ
+          
+            
+              e
+              
+                2
+              
+            
+          
+        
+        =
+        
+          Γ
+          
+            
+              w
+              
+                3
+              
+            
+          
+        
+        ,
+        
+          Γ
+          
+            
+              e
+              
+                3
+              
+            
+          
+        
+        =
+        
+          Γ
+          
+            
+              w
+              
+                4
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Gamma _{e_{1}}=\Gamma _{w_{2}},\Gamma _{e_{2}}=\Gamma _{w_{3}},\Gamma _{e_{3}}=\Gamma _{w_{4}}}
+  
+
+
+=== Boundedness ===
+Central differencing scheme satisfies first condition of boundedness.
+Since 
+  
+    
+      
+        
+          F
+          
+            e
+          
+        
+        −
+        
+          F
+          
+            w
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle F_{e}-F_{w}=0}
+  
+ from continuity equation, therefore; 
+  
+    
+      
+        
+          a
+          
+            P
+          
+        
+        
+          φ
+          
+            P
+          
+        
+        =
+        
+          a
+          
+            W
+          
+        
+        
+          φ
+          
+            W
+          
+        
+        +
+        
+          a
+          
+            E
+          
+        
+        
+          φ
+          
+            E
+          
+        
+      
+    
+    {\displaystyle a_{P}\varphi _{P}=a_{W}\varphi _{W}+a_{E}\varphi _{E}}
+  
+
+Another essential requirement for boundedness is that all coefficients of the discretised equations should have the same sign (usually all positive). But this is only satisfied when (peclet number) 
+  
+    
+      
+        
+          F
+          
+            e
+          
+        
+        
+          /
+        
+        
+          D
+          
+            e
+          
+        
+        <
+        2
+      
+    
+    {\displaystyle F_{e}/D_{e}<2}
+  
+ because for a unidirectional flow (
+  
+    
+      
+        
+          F
+          
+            e
+          
+        
+        >
+        0
+        ,
+        
+          F
+          
+            w
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle F_{e}>0,F_{w}>0}
+  
+) 
+  
+    
+      
+        
+          a
+          
+            E
+          
+        
+        =
+        (
+        
+          D
+          
+            e
+          
+        
+        −
+        
+          F
+          
+            e
+          
+        
+        
+          /
+        
+        2
+        )
+      
+    
+    {\displaystyle a_{E}=(D_{e}-F_{e}/2)}
+  
+ is always positive if 
+  
+    
+      
+        
+          D
+          
+            e
+          
+        
+        >
+        
+          F
+          
+            e
+          
+        
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle D_{e}>F_{e}/2}
+  
+
+
+=== Transportiveness ===
+It requires that transportiveness changes according to magnitude of peclet number i.e. when pe is zero 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ is spread in all directions equally and as Pe increases (convection > diffusion) 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ at a point largely depends on upstream value and less on downstream value. But central differencing scheme does not possess transportiveness at higher pe since Φ at a point is average of neighbouring nodes for all Pe.
+
+
+=== Accuracy ===
+The Taylor series truncation error of the central differencing scheme is second order.
+Central differencing scheme will be accurate only if Pe < 2.
+Owing to this limitation, central differencing is not a suitable discretisation practice for general purpose flow calculations.
+
+
+== Applications of central differencing schemes ==
+They are currently used on a regular basis in the solution of the Euler equations and Navier–Stokes equations.
+Results using central differencing approximation have shown noticeable improvements in accuracy in smooth regions.
+Shock wave representation and boundary-layer definition can be improved on coarse meshes.
+
+
+== Advantages ==
+Simpler to program, requires less computer time per step, and works well with multigrid acceleration techniques
+Has a free parameter in conjunction with the fourth-difference dissipation, which is needed to approach a steady state.
+More accurate than the first-order upwind scheme if the Peclet number is less than 2.
+
+
+== Disadvantages ==
+Somewhat more dissipative
+Leads to oscillations in the solution or divergence if the local Peclet number is larger than 2.
+
+
+== See also ==
+Finite difference method
+Finite difference
+Taylor series
+Taylor theorem
+Convection–diffusion equation
+Diffusion
+Convection
+Peclet number
+Linear interpolation
+Symmetric derivative
+Upwind differencing scheme for convection
+
+
+== References ==
+
+
+== Further reading ==
+Computational Fluid Dynamics: The Basics with Applications – John D. Anderson, ISBN 0-07-001685-2
+Computational Fluid Dynamics volume 1 – Klaus A. Hoffmann, Steve T. Chiang, ISBN 0-9623731-0-9
+
+
+== External links ==
+One-Dimensional_Steady-State_Convection_and_Diffusion#Central_Difference_Scheme
+Finite Differences
+Central Difference Methods Archived 5 November 2013 at the Wayback Machine
+A Conservative Finite Difference Scheme for Poisson–Nernst–Planck Equations

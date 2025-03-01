@@ -1,0 +1,55 @@
+H3S10P is an epigenetic modification to the DNA packaging protein histone H3. It is a mark that indicates the phosphorylation the 10th serine residue of the histone H3 protein.
+Depending on the environment in which it happens, the same phosphorylated residue might have drastically different consequences on chromatin structure. H3S10 and H3S28 phosphorylation is an excellent illustration of this duality: both phosphorylated residues are involved in chromatin compaction during mitosis and meiosis, as well as chromatin relaxation after transcription activation. Because of the diverse roles that these phosphorylation events play, individual residue phosphorylation can't be examined in isolation. The impact is determined by the cellular environment and interplay with other cis or trans changes.
+The S10 phosphorylation is involved in mitosis, transcription, chromatin condensation, and UVB response. H3S10p causes chromosome condensation and segregation during cell mitosis. H3S10p temporarily increases during mitosis while H3K9me3 decreases and H3K9me3 recovers upon mitotic exit.
+R loops are linked to H3S10P and chromatin condensation.
+
+
+== Nomenclature ==
+The name of this modification indicates the protein phosphorylation of serine 10 on histone H3 protein subunit:
+
+
+=== Serine/threonine/tyrosine phosphorylation ===
+
+The addition of a negatively charged phosphate group can lead to major changes in protein structure, leading to the well-characterized role of phosphorylation in controlling protein function. It is not clear what structural implications histone phosphorylation has, but histone phosphorylation has clear functions as a post-translational modification.
+
+
+== Histone modifications ==
+The genomic DNA of eukaryotic cells is wrapped around special protein molecules known as histones. The complexes formed by the looping of the DNA are known as chromatin.
+Post-translational modification of histones such as histone phosphorylation has been shown to modify the chromatin structure by changing protein:DNA or protein:protein interactions. Histone post-translational modifications modify the chromatin structure. The most commonly associated histone phosphorylation occurs during cellular responses to DNA damage, when phosphorylated histone H2A separates large chromatin domains around the site of DNA breakage. Researchers investigated whether modifications of histones directly impact RNA polymerase II directed transcription. Researchers choose proteins that are known to modify histones to test their effects on transcription, and found that the  stress-induced kinase, MSK1, inhibits RNA synthesis. Inhibition of transcription by MSK1 was most sensitive when the template was in chromatin, since DNA templates not in chromatin were resistant to the effects of MSK1. It was shown that MSK1 phosphorylated histone H2A on serine 1, and mutation of serine 1 to alanine blocked the inhibition of transcription by MSK1. Thus results suggested that the acetylation of histones can stimulate transcription by suppressing an inhibitory phosphorylation by a kinase as MSK1.
+
+
+== Mechanism and function of modification ==
+Phosphorylation introduces a charged and hydrophilic group in the side chain of amino acids, possibly changing a protein's structure by altering interactions with nearby amino acids. Some proteins such as p53 contain multiple phosphorylation sites, facilitating complex, multi-level regulation. Because of the ease with which proteins can be phosphorylated and dephosphorylated, this type of modification is a flexible mechanism for cells to respond to external signals and environmental conditions.
+Kinases phosphorylate proteins and phosphatases dephosphorylate proteins. Many enzymes and receptors are switched "on" or "off" by phosphorylation and dephosphorylation. Reversible phosphorylation results in a conformational change in the structure in many enzymes and receptors, causing them to become activated or deactivated. Phosphorylation usually occurs on serine, threonine, tyrosine and histidine residues in eukaryotic proteins. Histidine phosphorylation of eukaryotic proteins appears to be much more frequent than tyrosine phosphorylation. In prokaryotic proteins phosphorylation occurs on the serine, threonine, tyrosine, histidine or arginine or lysine residues. The addition of a phosphate (PO43-) molecule to a non-polar R group of an amino acid residue can turn a hydrophobic portion of a protein into a polar and extremely hydrophilic portion of a molecule. In this way protein dynamics can induce a conformational change in the structure of the protein via long-range allostery with other hydrophobic and hydrophilic residues in the protein.
+
+
+=== Specific kinases for modification ===
+The kinases Ipl1 (Sc) / AuroraB (Hs), RSK2, MSK1, ERK1, p38, Fyn, Chk1, PRK1 are involved in the S10 phosphorylation.
+
+
+== Epigenetic implications ==
+The post-translational modification of histone tails by either histone-modifying complexes or chromatin remodeling complexes is interpreted by the cell and leads to complex, combinatorial transcriptional output. It is thought that a histone code dictates the expression of genes by a complex interaction between the histones in a particular region. The current understanding and interpretation of histones comes from two large scale projects: ENCODE and the Epigenomic roadmap. The purpose of the epigenomic study was to investigate epigenetic changes across the entire genome. This led to chromatin states, which define genomic regions by grouping different proteins and/or histone modifications together.
+Chromatin states were investigated in Drosophila cells by looking at the binding location of proteins in the genome. Use of ChIP-sequencing revealed regions in the genome characterized by different banding. Different developmental stages were profiled in Drosophila as well, an emphasis was placed on histone modification relevance. A look in to the data obtained led to the definition of chromatin states based on histone modifications. Certain modifications were mapped and enrichment was seen to localize in certain genomic regions.
+The human genome is annotated with chromatin states. These annotated states can be used as new ways to annotate a genome independently of the underlying genome sequence. This independence from the DNA sequence enforces the epigenetic nature of histone modifications. Chromatin states are also useful in identifying regulatory elements that have no defined sequence, such as enhancers. This additional level of annotation allows for a deeper understanding of cell specific gene regulation.
+
+
+== Effect of modification ==
+A substantial number of phosphorylated histone residues are associated with gene expression. Interestingly, these are often related to regulation of proliferative genes. Phosphorylation of serines 10 and 28 of H3 and serine 32 of H2B has been associated with regulation of epidermal growth factor (EGF)-responsive gene transcription. H3S10ph and H2BS32ph have been linked to the expression of proto-oncogenes such as c-fos, c-jun and c-myc.50-52 Furthermore, targeting H3S28 phosphorylation to promoters of genes such as c-fos and α-globin was shown to control their activation.53 Notably, phosphorylation of H3S10 and H3S28 is not exclusive to EGF stimulation, but it also increases upon UVB radiation. Phosphorylation of H3 on T11 and T6 has also been implicated in transcription regulation in response to androgen stimulation,54,55 and to DNA-damage in mouse cells.56
+Phosphorylation of H3S10, T11 and S28 has been clearly associated with H3 acetylation, strongly implicating these modifications in transcription activation. Independent studies show that these phosphorylation events are mechanistically linked to Gcn5-dependent H3 acetylation (Fig. 1).57-59 Indeed, in EGF-stimulated cells, phosphorylation of H3S10 is tightly coupled to H3 K9ac and K14ac, both marks of transcriptional activation.51,60,61 It has been shown that phosphorylation of H3S10 promotes acetylation of H3K14 by the Gcn5 acetyltransferase in vitro and allows Gcn5-regulated gene transcription in vivo.57 A similar link has been described in yeast where H3S10 phosphorylated by Snf1 acts in concert with Gcn5-dependent H3K14 acetylation to enhance transcription.62 This functional link between H3S10ph and Gcn5 is likely mediated by the direct interaction of the acetyltransferase with the phosphorylated H3S10 residue, which has been observed in vitro.57,60 However, analysis of the c-jun promoter activation showed that K14ac appears before S10ph and that inhibition of S10 phosphorylation has no effect on K14ac, suggesting that these two events can be uncoupled.61,63 Interestingly, phosphorylation of the H3 tail on T11 in addition to S10 was shown to enhance its interaction with Gcn5 at promoters of Gcn5-dependent genes such as the cell-cycle regulators cyclin B and cdk1, leading to increased H3K9 and K14 acetylation and stimulation of transcription.54,56,58 Likewise, phosphorylation of H3S28 was found to promote K9 acetylation.59 Altogether, these data suggest complex crosstalk between phosphorylation of H3S10, T11 and S28 in the control of Gcn5-dependent H3 acetylation, gene expression, and cell proliferation.
+
+
+== Clinical significance ==
+
+
+== Methods ==
+The histone mark can be detected in a variety of ways:
+1. Chromatin Immunoprecipitation Sequencing (ChIP-sequencing) measures the amount of DNA enrichment once bound to a targeted protein and immunoprecipitated. It results in good optimization and is used in vivo to reveal DNA-protein binding occurring in cells. ChIP-Seq can be used to identify and quantify various DNA fragments for different histone modifications along a genomic region.
+2. Micrococcal Nuclease sequencing (MNase-seq) is used to investigate regions that are bound by well-positioned nucleosomes. Use of the micrococcal nuclease enzyme is employed to identify nucleosome positioning. Well-positioned nucleosomes are seen to have enrichment of sequences.
+3. Assay for transposase accessible chromatin sequencing  (ATAC-seq) is used to look in to regions that are nucleosome free (open chromatin). It uses hyperactive Tn5 transposon to highlight nucleosome localisation.
+
+
+== See also ==
+H3S28P
+
+
+== References ==

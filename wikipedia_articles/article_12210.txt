@@ -1,0 +1,3495 @@
+In topology and related areas of mathematics, the quotient space of a topological space under a given equivalence relation is a new topological space constructed by endowing the quotient set of the original topological space with the quotient topology, that is, with the finest topology that makes continuous the canonical projection map (the function that maps points to their equivalence classes). In other words, a subset of a quotient space is open if and only if its preimage under the canonical projection map is open in the original topological space.
+Intuitively speaking, the points of each equivalence class are identified or "glued together" for forming a new topological space. For example, identifying the points of a sphere that belong to the same diameter produces the projective plane as a quotient space.
+
+
+== Definition ==
+Let 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ be a topological space, and let 
+  
+    
+      
+        ∼
+      
+    
+    {\displaystyle \sim }
+  
+ be an equivalence relation on 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ The quotient set 
+  
+    
+      
+        Y
+        =
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle Y=X/{\sim }}
+  
+ is the set of equivalence classes of elements of 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ The equivalence class of 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ is denoted 
+  
+    
+      
+        [
+        x
+        ]
+        .
+      
+    
+    {\displaystyle [x].}
+  
+   
+The construction of 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ defines a canonical surjection 
+  
+    
+      
+        q
+        :
+        X
+        ∋
+        x
+        ↦
+        [
+        x
+        ]
+        ∈
+        Y
+        .
+      
+    
+    {\textstyle q:X\ni x\mapsto [x]\in Y.}
+  
+  As discussed below, 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ is a quotient mapping, commonly called the canonical quotient map, or canonical projection map, associated to 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+        .
+      
+    
+    {\displaystyle X/{\sim }.}
+  
+
+The quotient space under 
+  
+    
+      
+        ∼
+      
+    
+    {\displaystyle \sim }
+  
+ is the set 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ equipped with the quotient topology, whose open sets are those subsets 
+  
+    
+      
+        U
+        ⊆
+        Y
+      
+    
+    {\textstyle U\subseteq Y}
+  
+ whose preimage 
+  
+    
+      
+        
+          q
+          
+            −
+            1
+          
+        
+        (
+        U
+        )
+      
+    
+    {\displaystyle q^{-1}(U)}
+  
+ is open.  In other words, 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ is open in the quotient topology on 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ if and only if 
+  
+    
+      
+        {
+        x
+        ∈
+        X
+        :
+        [
+        x
+        ]
+        ∈
+        U
+        }
+      
+    
+    {\textstyle \{x\in X:[x]\in U\}}
+  
+ is open in 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+  Similarly, a subset 
+  
+    
+      
+        S
+        ⊆
+        Y
+      
+    
+    {\displaystyle S\subseteq Y}
+  
+ is closed if and only if 
+  
+    
+      
+        {
+        x
+        ∈
+        X
+        :
+        [
+        x
+        ]
+        ∈
+        S
+        }
+      
+    
+    {\displaystyle \{x\in X:[x]\in S\}}
+  
+ is closed in 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+
+The quotient topology is the final topology on the quotient set, with respect to the map 
+  
+    
+      
+        x
+        ↦
+        [
+        x
+        ]
+        .
+      
+    
+    {\displaystyle x\mapsto [x].}
+  
+
+
+== Quotient map ==
+A map 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ is a quotient map (sometimes called an identification map) if it is surjective and 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ is equipped with the final topology induced by 
+  
+    
+      
+        f
+        .
+      
+    
+    {\displaystyle f.}
+  
+  The latter condition admits two more-elementary formulations: a subset 
+  
+    
+      
+        V
+        ⊆
+        Y
+      
+    
+    {\displaystyle V\subseteq Y}
+  
+ is open (closed) if and only if 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        V
+        )
+      
+    
+    {\displaystyle f^{-1}(V)}
+  
+ is open (resp. closed).  Every quotient map is continuous but not every continuous map is a quotient map. 
+Saturated sets
+A subset 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is called saturated (with respect to 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+) if it is of the form 
+  
+    
+      
+        S
+        =
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        T
+        )
+      
+    
+    {\displaystyle S=f^{-1}(T)}
+  
+ for some set 
+  
+    
+      
+        T
+        ,
+      
+    
+    {\displaystyle T,}
+  
+ which is true if and only if 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        f
+        (
+        S
+        )
+        )
+        =
+        S
+        .
+      
+    
+    {\displaystyle f^{-1}(f(S))=S.}
+  
+
+The assignment 
+  
+    
+      
+        T
+        ↦
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        T
+        )
+      
+    
+    {\displaystyle T\mapsto f^{-1}(T)}
+  
+ establishes a one-to-one correspondence (whose inverse is 
+  
+    
+      
+        S
+        ↦
+        f
+        (
+        S
+        )
+      
+    
+    {\displaystyle S\mapsto f(S)}
+  
+) between subsets 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ of 
+  
+    
+      
+        Y
+        =
+        f
+        (
+        X
+        )
+      
+    
+    {\displaystyle Y=f(X)}
+  
+ and saturated subsets of 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ 
+With this terminology, a surjection 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ is a quotient map if and only if for every saturated subset 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ of 
+  
+    
+      
+        X
+        ,
+      
+    
+    {\displaystyle X,}
+  
+ 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is open in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ if and only if 
+  
+    
+      
+        f
+        (
+        S
+        )
+      
+    
+    {\displaystyle f(S)}
+  
+ is open in 
+  
+    
+      
+        Y
+        .
+      
+    
+    {\displaystyle Y.}
+  
+ 
+In particular, open subsets of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ that are not saturated have no impact on whether the function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ is a quotient map (or, indeed, continuous: a function 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ is continuous if and only if, for every saturated 
+  
+    
+      
+        S
+        ⊆
+        X
+      
+    
+    {\textstyle S\subseteq X}
+  
+ such that 
+  
+    
+      
+        f
+        (
+        S
+        )
+      
+    
+    {\displaystyle f(S)}
+  
+ is open in 
+  
+    
+      
+        f
+        (
+        X
+        )
+      
+    
+    {\textstyle f(X)}
+  
+, the set 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ is open in 
+  
+    
+      
+        X
+      
+    
+    {\textstyle X}
+  
+).  
+Indeed, if 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+ is a topology on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ and 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ is any map, then the set 
+  
+    
+      
+        
+          τ
+          
+            f
+          
+        
+      
+    
+    {\displaystyle \tau _{f}}
+  
+ of all 
+  
+    
+      
+        U
+        ∈
+        τ
+      
+    
+    {\displaystyle U\in \tau }
+  
+ that are saturated subsets of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ forms a topology on 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ If 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ is also a topological space then 
+  
+    
+      
+        f
+        :
+        (
+        X
+        ,
+        τ
+        )
+        →
+        Y
+      
+    
+    {\displaystyle f:(X,\tau )\to Y}
+  
+ is a quotient map (respectively, continuous) if and only if the same is true of 
+  
+    
+      
+        f
+        :
+        
+          (
+          
+            X
+            ,
+            
+              τ
+              
+                f
+              
+            
+          
+          )
+        
+        →
+        Y
+        .
+      
+    
+    {\displaystyle f:\left(X,\tau _{f}\right)\to Y.}
+  
+
+Quotient space of fibers characterization
+Given an equivalence relation 
+  
+    
+      
+        
+        ∼
+        
+      
+    
+    {\displaystyle \,\sim \,}
+  
+ on 
+  
+    
+      
+        X
+        ,
+      
+    
+    {\displaystyle X,}
+  
+ denote the equivalence class of a point 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ by 
+  
+    
+      
+        [
+        x
+        ]
+        :=
+        {
+        z
+        ∈
+        X
+        :
+        z
+        ∼
+        x
+        }
+      
+    
+    {\displaystyle [x]:=\{z\in X:z\sim x\}}
+  
+ and let 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+        :=
+        {
+        [
+        x
+        ]
+        :
+        x
+        ∈
+        X
+        }
+      
+    
+    {\displaystyle X/{\sim }:=\{[x]:x\in X\}}
+  
+ denote the set of equivalence classes. The map 
+  
+    
+      
+        q
+        :
+        X
+        →
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle q:X\to X/{\sim }}
+  
+ that sends points to their equivalence classes (that is, it is defined by 
+  
+    
+      
+        q
+        (
+        x
+        )
+        :=
+        [
+        x
+        ]
+      
+    
+    {\displaystyle q(x):=[x]}
+  
+ for every 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+) is called the canonical map. It is a surjective map and for all 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        X
+        ,
+      
+    
+    {\displaystyle a,b\in X,}
+  
+ 
+  
+    
+      
+        a
+        
+        ∼
+        
+        b
+      
+    
+    {\displaystyle a\,\sim \,b}
+  
+ if and only if 
+  
+    
+      
+        q
+        (
+        a
+        )
+        =
+        q
+        (
+        b
+        )
+        ;
+      
+    
+    {\displaystyle q(a)=q(b);}
+  
+ consequently, 
+  
+    
+      
+        q
+        (
+        x
+        )
+        =
+        
+          q
+          
+            −
+            1
+          
+        
+        (
+        q
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle q(x)=q^{-1}(q(x))}
+  
+ for all 
+  
+    
+      
+        x
+        ∈
+        X
+        .
+      
+    
+    {\displaystyle x\in X.}
+  
+ In particular, this shows that the set of equivalence class 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ is exactly the set of fibers of the canonical map 
+  
+    
+      
+        q
+        .
+      
+    
+    {\displaystyle q.}
+  
+
+If 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is a topological space then giving 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ the quotient topology induced by 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ will make it into a quotient space and make 
+  
+    
+      
+        q
+        :
+        X
+        →
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle q:X\to X/{\sim }}
+  
+ into a quotient map. 
+Up to a homeomorphism, this construction is representative of all quotient spaces; the precise meaning of this is now explained. 
+Let 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ be a surjection between topological spaces (not yet assumed to be continuous or a quotient map) and declare for all 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        X
+      
+    
+    {\displaystyle a,b\in X}
+  
+ that 
+  
+    
+      
+        a
+        
+        ∼
+        
+        b
+      
+    
+    {\displaystyle a\,\sim \,b}
+  
+ if and only if 
+  
+    
+      
+        f
+        (
+        a
+        )
+        =
+        f
+        (
+        b
+        )
+        .
+      
+    
+    {\displaystyle f(a)=f(b).}
+  
+ Then 
+  
+    
+      
+        
+        ∼
+        
+      
+    
+    {\displaystyle \,\sim \,}
+  
+ is an equivalence relation on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ such that for every 
+  
+    
+      
+        x
+        ∈
+        X
+        ,
+      
+    
+    {\displaystyle x\in X,}
+  
+ 
+  
+    
+      
+        [
+        x
+        ]
+        =
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        f
+        (
+        x
+        )
+        )
+        ,
+      
+    
+    {\displaystyle [x]=f^{-1}(f(x)),}
+  
+ which implies that 
+  
+    
+      
+        f
+        (
+        [
+        x
+        ]
+        )
+      
+    
+    {\displaystyle f([x])}
+  
+ (defined by 
+  
+    
+      
+        f
+        (
+        [
+        x
+        ]
+        )
+        =
+        {
+        
+        f
+        (
+        z
+        )
+        
+        :
+        z
+        ∈
+        [
+        x
+        ]
+        }
+      
+    
+    {\displaystyle f([x])=\{\,f(z)\,:z\in [x]\}}
+  
+) is a singleton set; denote the unique element in 
+  
+    
+      
+        f
+        (
+        [
+        x
+        ]
+        )
+      
+    
+    {\displaystyle f([x])}
+  
+ by 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        [
+        x
+        ]
+        )
+      
+    
+    {\displaystyle {\hat {f}}([x])}
+  
+ (so by definition, 
+  
+    
+      
+        f
+        (
+        [
+        x
+        ]
+        )
+        =
+        {
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        [
+        x
+        ]
+        )
+        
+        }
+      
+    
+    {\displaystyle f([x])=\{\,{\hat {f}}([x])\,\}}
+  
+). 
+The assignment 
+  
+    
+      
+        [
+        x
+        ]
+        ↦
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        [
+        x
+        ]
+        )
+      
+    
+    {\displaystyle [x]\mapsto {\hat {f}}([x])}
+  
+ defines a bijection 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        :
+        X
+        
+          /
+        
+        
+          ∼
+        
+        
+        →
+        
+        Y
+      
+    
+    {\displaystyle {\hat {f}}:X/{\sim }\;\to \;Y}
+  
+ between the fibers of 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ and points in 
+  
+    
+      
+        Y
+        .
+      
+    
+    {\displaystyle Y.}
+  
+ 
+Define the map 
+  
+    
+      
+        q
+        :
+        X
+        →
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle q:X\to X/{\sim }}
+  
+ as above (by 
+  
+    
+      
+        q
+        (
+        x
+        )
+        :=
+        [
+        x
+        ]
+      
+    
+    {\displaystyle q(x):=[x]}
+  
+) and give 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ the quotient topology induced by 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ (which makes 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ a quotient map). These maps are related by: 
+  
+    
+      
+        f
+        =
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        ∘
+        q
+        
+        
+           and 
+        
+        
+        q
+        =
+        
+          
+            
+              
+                f
+                ^
+              
+            
+          
+          
+            −
+            1
+          
+        
+        ∘
+        f
+        .
+      
+    
+    {\displaystyle f={\hat {f}}\circ q\quad {\text{ and }}\quad q={\hat {f}}^{-1}\circ f.}
+  
+ 
+From this and the fact that 
+  
+    
+      
+        q
+        :
+        X
+        →
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle q:X\to X/{\sim }}
+  
+ is a quotient map, it follows that 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ is continuous if and only if this is true of 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        :
+        X
+        
+          /
+        
+        
+          ∼
+        
+        
+        →
+        
+        Y
+        .
+      
+    
+    {\displaystyle {\hat {f}}:X/{\sim }\;\to \;Y.}
+  
+ Furthermore, 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ is a quotient map if and only if 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        :
+        X
+        
+          /
+        
+        
+          ∼
+        
+        
+        →
+        
+        Y
+      
+    
+    {\displaystyle {\hat {f}}:X/{\sim }\;\to \;Y}
+  
+ is a homeomorphism (or equivalently, if and only if both 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {f}}}
+  
+ and its inverse are continuous). 
+
+
+=== Related definitions ===
+A hereditarily quotient map is a surjective map 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f:X\to Y}
+  
+ with the property that for every subset 
+  
+    
+      
+        T
+        ⊆
+        Y
+        ,
+      
+    
+    {\displaystyle T\subseteq Y,}
+  
+ the restriction 
+  
+    
+      
+        f
+        
+          
+            
+              |
+            
+          
+          
+            
+              f
+              
+                −
+                1
+              
+            
+            (
+            T
+            )
+          
+        
+         
+        :
+         
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        T
+        )
+        →
+        T
+      
+    
+    {\displaystyle f{\big \vert }_{f^{-1}(T)}~:~f^{-1}(T)\to T}
+  
+ is also a quotient map. 
+There exist quotient maps that are not hereditarily quotient.
+
+
+== Examples ==
+Gluing.  Topologists talk of gluing points together.  If 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is a topological space, gluing the points 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ means considering the quotient space obtained from the equivalence relation 
+  
+    
+      
+        a
+        ∼
+        b
+      
+    
+    {\displaystyle a\sim b}
+  
+ if and only if 
+  
+    
+      
+        a
+        =
+        b
+      
+    
+    {\displaystyle a=b}
+  
+ or 
+  
+    
+      
+        a
+        =
+        x
+        ,
+        b
+        =
+        y
+      
+    
+    {\displaystyle a=x,b=y}
+  
+ (or 
+  
+    
+      
+        a
+        =
+        y
+        ,
+        b
+        =
+        x
+      
+    
+    {\displaystyle a=y,b=x}
+  
+).
+Consider the unit square 
+  
+    
+      
+        
+          I
+          
+            2
+          
+        
+        =
+        [
+        0
+        ,
+        1
+        ]
+        ×
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle I^{2}=[0,1]\times [0,1]}
+  
+ and the equivalence relation ~ generated by the requirement that all boundary points be equivalent, thus identifying all boundary points to a single equivalence class. Then 
+  
+    
+      
+        
+          I
+          
+            2
+          
+        
+        
+          /
+        
+        ∼
+      
+    
+    {\displaystyle I^{2}/\sim }
+  
+ is homeomorphic to the sphere 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle S^{2}.}
+  
+
+Adjunction space. More generally, suppose 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ is a space and 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ is a subspace of 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ One can identify all points in 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ to a single equivalence class and leave points outside of 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ equivalent only to themselves. The resulting quotient space is denoted 
+  
+    
+      
+        X
+        
+          /
+        
+        A
+        .
+      
+    
+    {\displaystyle X/A.}
+  
+ The 2-sphere is then homeomorphic to a closed disc with its boundary identified to a single point: 
+  
+    
+      
+        
+          D
+          
+            2
+          
+        
+        
+          /
+        
+        ∂
+        
+          
+            D
+            
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle D^{2}/\partial {D^{2}}.}
+  
+
+Consider the set 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ of real numbers with the ordinary topology, and write 
+  
+    
+      
+        x
+        ∼
+        y
+      
+    
+    {\displaystyle x\sim y}
+  
+ if and only if 
+  
+    
+      
+        x
+        −
+        y
+      
+    
+    {\displaystyle x-y}
+  
+ is an integer. Then the quotient space 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ is homeomorphic to the unit circle 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S^{1}}
+  
+ via the homeomorphism which sends the equivalence class of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ to 
+  
+    
+      
+        exp
+        ⁡
+        (
+        2
+        π
+        i
+        x
+        )
+        .
+      
+    
+    {\displaystyle \exp(2\pi ix).}
+  
+
+A generalization of the previous example is the following: Suppose a topological group 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ acts continuously on a space 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ One can form an equivalence relation on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ by saying points are equivalent if and only if they lie in the same orbit. The quotient space under this relation is called the orbit space, denoted 
+  
+    
+      
+        X
+        
+          /
+        
+        G
+        .
+      
+    
+    {\displaystyle X/G.}
+  
+ In the previous example 
+  
+    
+      
+        G
+        =
+        
+          Z
+        
+      
+    
+    {\displaystyle G=\mathbb {Z} }
+  
+ acts on 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ by translation. The orbit space 
+  
+    
+      
+        
+          R
+        
+        
+          /
+        
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {R} /\mathbb {Z} }
+  
+ is homeomorphic to 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S^{1}.}
+  
+
+Note: The notation 
+  
+    
+      
+        
+          R
+        
+        
+          /
+        
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {R} /\mathbb {Z} }
+  
+ is somewhat ambiguous. If 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ is understood to be a group acting on 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ via addition, then the quotient is the circle. However, if 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ is thought of as a topological subspace of 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ (that is identified as a single point) then the quotient 
+  
+    
+      
+        {
+        
+          Z
+        
+        }
+        ∪
+        {
+        
+        {
+        r
+        }
+        :
+        r
+        ∈
+        
+          R
+        
+        ∖
+        
+          Z
+        
+        }
+      
+    
+    {\displaystyle \{\mathbb {Z} \}\cup \{\,\{r\}:r\in \mathbb {R} \setminus \mathbb {Z} \}}
+  
+ (which is identifiable with the set 
+  
+    
+      
+        {
+        
+          Z
+        
+        }
+        ∪
+        (
+        
+          R
+        
+        ∖
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle \{\mathbb {Z} \}\cup (\mathbb {R} \setminus \mathbb {Z} )}
+  
+) is a countably infinite bouquet of circles joined at a single point 
+  
+    
+      
+        
+          Z
+        
+        .
+      
+    
+    {\displaystyle \mathbb {Z} .}
+  
+
+This next example shows that it is in general not true that if 
+  
+    
+      
+        q
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle q:X\to Y}
+  
+ is a quotient map then every convergent sequence (respectively, every convergent net) in 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ has a lift (by 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+) to a convergent sequence (or convergent net) in 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+ Let 
+  
+    
+      
+        X
+        =
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle X=[0,1]}
+  
+ and 
+  
+    
+      
+        
+        ∼
+         
+        =
+         
+        {
+        
+        {
+        0
+        ,
+        1
+        }
+        
+        }
+         
+        ∪
+         
+        
+          {
+          
+            {
+            x
+            }
+            :
+            x
+            ∈
+            (
+            0
+            ,
+            1
+            )
+            
+          
+          }
+        
+        .
+      
+    
+    {\displaystyle \,\sim ~=~\{\,\{0,1\}\,\}~\cup ~\left\{\{x\}:x\in (0,1)\,\right\}.}
+  
+ Let 
+  
+    
+      
+        Y
+        :=
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle Y:=X/{\sim }}
+  
+ and let 
+  
+    
+      
+        q
+        :
+        X
+        →
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle q:X\to X/{\sim }}
+  
+ be the quotient map 
+  
+    
+      
+        q
+        (
+        x
+        )
+        :=
+        [
+        x
+        ]
+        ,
+      
+    
+    {\displaystyle q(x):=[x],}
+  
+ so that 
+  
+    
+      
+        q
+        (
+        0
+        )
+        =
+        q
+        (
+        1
+        )
+        =
+        {
+        0
+        ,
+        1
+        }
+      
+    
+    {\displaystyle q(0)=q(1)=\{0,1\}}
+  
+ and 
+  
+    
+      
+        q
+        (
+        x
+        )
+        =
+        {
+        x
+        }
+      
+    
+    {\displaystyle q(x)=\{x\}}
+  
+ for every 
+  
+    
+      
+        x
+        ∈
+        (
+        0
+        ,
+        1
+        )
+        .
+      
+    
+    {\displaystyle x\in (0,1).}
+  
+ The map 
+  
+    
+      
+        h
+        :
+        X
+        
+          /
+        
+        
+          ∼
+        
+        →
+        
+          S
+          
+            1
+          
+        
+        ⊆
+        
+          C
+        
+      
+    
+    {\displaystyle h:X/{\sim }\to S^{1}\subseteq \mathbb {C} }
+  
+ defined by 
+  
+    
+      
+        h
+        (
+        [
+        x
+        ]
+        )
+        :=
+        
+          e
+          
+            2
+            π
+            i
+            x
+          
+        
+      
+    
+    {\displaystyle h([x]):=e^{2\pi ix}}
+  
+ is well-defined (because 
+  
+    
+      
+        
+          e
+          
+            2
+            π
+            i
+            (
+            0
+            )
+          
+        
+        =
+        1
+        =
+        
+          e
+          
+            2
+            π
+            i
+            (
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle e^{2\pi i(0)}=1=e^{2\pi i(1)}}
+  
+) and a homeomorphism. Let 
+  
+    
+      
+        I
+        =
+        
+          N
+        
+      
+    
+    {\displaystyle I=\mathbb {N} }
+  
+ and let 
+  
+    
+      
+        
+          a
+          
+            ∙
+          
+        
+        :=
+        
+          
+            (
+            
+              a
+              
+                i
+              
+            
+            )
+          
+          
+            i
+            ∈
+            I
+          
+        
+        
+           and 
+        
+        
+          b
+          
+            ∙
+          
+        
+        :=
+        
+          
+            (
+            
+              b
+              
+                i
+              
+            
+            )
+          
+          
+            i
+            ∈
+            I
+          
+        
+      
+    
+    {\displaystyle a_{\bullet }:=\left(a_{i}\right)_{i\in I}{\text{ and }}b_{\bullet }:=\left(b_{i}\right)_{i\in I}}
+  
+ be any sequences (or more generally, any nets) valued in 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    {\displaystyle (0,1)}
+  
+ such that 
+  
+    
+      
+        
+          a
+          
+            ∙
+          
+        
+        →
+        0
+        
+           and 
+        
+        
+          b
+          
+            ∙
+          
+        
+        →
+        1
+      
+    
+    {\displaystyle a_{\bullet }\to 0{\text{ and }}b_{\bullet }\to 1}
+  
+ in 
+  
+    
+      
+        X
+        =
+        [
+        0
+        ,
+        1
+        ]
+        .
+      
+    
+    {\displaystyle X=[0,1].}
+  
+ Then the sequence 
+  
+    
+      
+        
+          y
+          
+            1
+          
+        
+        :=
+        q
+        
+          (
+          
+            a
+            
+              1
+            
+          
+          )
+        
+        ,
+        
+          y
+          
+            2
+          
+        
+        :=
+        q
+        
+          (
+          
+            b
+            
+              1
+            
+          
+          )
+        
+        ,
+        
+          y
+          
+            3
+          
+        
+        :=
+        q
+        
+          (
+          
+            a
+            
+              2
+            
+          
+          )
+        
+        ,
+        
+          y
+          
+            4
+          
+        
+        :=
+        q
+        
+          (
+          
+            b
+            
+              2
+            
+          
+          )
+        
+        ,
+        …
+      
+    
+    {\displaystyle y_{1}:=q\left(a_{1}\right),y_{2}:=q\left(b_{1}\right),y_{3}:=q\left(a_{2}\right),y_{4}:=q\left(b_{2}\right),\ldots }
+  
+ converges to 
+  
+    
+      
+        [
+        0
+        ]
+        =
+        [
+        1
+        ]
+      
+    
+    {\displaystyle [0]=[1]}
+  
+ in 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ but there does not exist any convergent lift of this sequence by the quotient map 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ (that is, there is no sequence 
+  
+    
+      
+        
+          s
+          
+            ∙
+          
+        
+        =
+        
+          
+            (
+            
+              s
+              
+                i
+              
+            
+            )
+          
+          
+            i
+            ∈
+            I
+          
+        
+      
+    
+    {\displaystyle s_{\bullet }=\left(s_{i}\right)_{i\in I}}
+  
+ in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ that both converges to some 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ and satisfies 
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+        =
+        q
+        
+          (
+          
+            s
+            
+              i
+            
+          
+          )
+        
+      
+    
+    {\displaystyle y_{i}=q\left(s_{i}\right)}
+  
+ for every 
+  
+    
+      
+        i
+        ∈
+        I
+      
+    
+    {\displaystyle i\in I}
+  
+). This counterexample can be generalized to nets by letting 
+  
+    
+      
+        (
+        A
+        ,
+        ≤
+        )
+      
+    
+    {\displaystyle (A,\leq )}
+  
+ be any directed set, and making 
+  
+    
+      
+        I
+        :=
+        A
+        ×
+        {
+        1
+        ,
+        2
+        }
+      
+    
+    {\displaystyle I:=A\times \{1,2\}}
+  
+ into a net by declaring that for any 
+  
+    
+      
+        (
+        a
+        ,
+        m
+        )
+        ,
+        (
+        b
+        ,
+        n
+        )
+        ∈
+        I
+        ,
+      
+    
+    {\displaystyle (a,m),(b,n)\in I,}
+  
+ 
+  
+    
+      
+        (
+        m
+        ,
+        a
+        )
+        
+        ≤
+        
+        (
+        n
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (m,a)\;\leq \;(n,b)}
+  
+ holds if and only if both (1) 
+  
+    
+      
+        a
+        ≤
+        b
+        ,
+      
+    
+    {\displaystyle a\leq b,}
+  
+ and (2) if 
+  
+    
+      
+        a
+        =
+        b
+        
+           then 
+        
+        m
+        ≤
+        n
+        ;
+      
+    
+    {\displaystyle a=b{\text{ then }}m\leq n;}
+  
+ then the 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-indexed net defined by letting 
+  
+    
+      
+        
+          y
+          
+            (
+            a
+            ,
+            m
+            )
+          
+        
+      
+    
+    {\displaystyle y_{(a,m)}}
+  
+ equal 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+        
+           if 
+        
+        m
+        =
+        1
+      
+    
+    {\displaystyle a_{i}{\text{ if }}m=1}
+  
+ and equal to 
+  
+    
+      
+        
+          b
+          
+            i
+          
+        
+        
+           if 
+        
+        m
+        =
+        2
+      
+    
+    {\displaystyle b_{i}{\text{ if }}m=2}
+  
+ has no lift (by 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+) to a convergent 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-indexed net in 
+  
+    
+      
+        X
+        =
+        [
+        0
+        ,
+        1
+        ]
+        .
+      
+    
+    {\displaystyle X=[0,1].}
+  
+
+
+== Properties ==
+Quotient maps 
+  
+    
+      
+        q
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle q:X\to Y}
+  
+ are characterized among surjective maps by the following property: if 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+ is any topological space and 
+  
+    
+      
+        f
+        :
+        Y
+        →
+        Z
+      
+    
+    {\displaystyle f:Y\to Z}
+  
+ is any function, then 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ is continuous if and only if 
+  
+    
+      
+        f
+        ∘
+        q
+      
+    
+    {\displaystyle f\circ q}
+  
+ is continuous.
+
+The quotient space 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ together with the quotient map 
+  
+    
+      
+        q
+        :
+        X
+        →
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle q:X\to X/{\sim }}
+  
+ is characterized by the following universal property: if 
+  
+    
+      
+        g
+        :
+        X
+        →
+        Z
+      
+    
+    {\displaystyle g:X\to Z}
+  
+ is a continuous map such that 
+  
+    
+      
+        a
+        ∼
+        b
+      
+    
+    {\displaystyle a\sim b}
+  
+ implies 
+  
+    
+      
+        g
+        (
+        a
+        )
+        =
+        g
+        (
+        b
+        )
+      
+    
+    {\displaystyle g(a)=g(b)}
+  
+ for all 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        X
+        ,
+      
+    
+    {\displaystyle a,b\in X,}
+  
+ then there exists a unique continuous map 
+  
+    
+      
+        f
+        :
+        X
+        
+          /
+        
+        
+          ∼
+        
+        →
+        Z
+      
+    
+    {\displaystyle f:X/{\sim }\to Z}
+  
+ such that 
+  
+    
+      
+        g
+        =
+        f
+        ∘
+        q
+        .
+      
+    
+    {\displaystyle g=f\circ q.}
+  
+ In other words, the following diagram commutes:
+
+One says that 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ descends to the quotient for expressing this, that is that it factorizes through the quotient space. The continuous maps defined on 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ are, therefore, precisely those maps which arise from continuous maps defined on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ that respect the equivalence relation (in the sense that they send equivalent elements to the same image). This criterion is copiously used when studying quotient spaces.
+Given a continuous surjection 
+  
+    
+      
+        q
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle q:X\to Y}
+  
+ it is useful to have criteria by which one can determine if 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ is a quotient map. Two sufficient criteria are that 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ be open or closed. Note that these conditions are only sufficient, not necessary. It is easy to construct examples of quotient maps that are neither open nor closed. For topological groups, the quotient map is open.
+
+
+== Compatibility with other topological notions ==
+Separation
+
+In general, quotient spaces are ill-behaved with respect to separation axioms. The separation properties of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ need not be inherited by 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ and 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ may have separation properties not shared by 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ is a T1 space if and only if every equivalence class of 
+  
+    
+      
+        
+        ∼
+        
+      
+    
+    {\displaystyle \,\sim \,}
+  
+ is closed in 
+  
+    
+      
+        X
+        .
+      
+    
+    {\displaystyle X.}
+  
+
+If the quotient map is open, then 
+  
+    
+      
+        X
+        
+          /
+        
+        
+          ∼
+        
+      
+    
+    {\displaystyle X/{\sim }}
+  
+ is a Hausdorff space if and only if ~ is a closed subset of the product space 
+  
+    
+      
+        X
+        ×
+        X
+        .
+      
+    
+    {\displaystyle X\times X.}
+  
+
+Connectedness
+
+If a space is connected or path connected, then so are all its quotient spaces.
+A quotient space of a simply connected or contractible space need not share those properties.
+Compactness
+
+If a space is compact, then so are all its quotient spaces.
+A quotient space of a locally compact space need not be locally compact.
+Dimension
+
+The topological dimension of a quotient space can be more (as well as less) than the dimension of the original space; space-filling curves provide such examples.
+
+
+== See also ==
+Topology
+
+Covering space – Type of continuous map in topology
+Disjoint union (topology) – space formed by equipping the disjoint union of the underlying sets with a natural topology called the disjoint union topologyPages displaying wikidata descriptions as a fallback
+Final topology – Finest topology making some functions continuous
+Mapping cone (topology) – topological constructionPages displaying wikidata descriptions as a fallback
+Product space – Topology on Cartesian products of topological spacesPages displaying short descriptions of redirect targets
+Subspace (topology) – Inherited topologyPages displaying short descriptions of redirect targets
+Topological space – Mathematical space with a notion of closeness
+Algebra
+
+Quotient category
+Quotient group – Group obtained by aggregating similar elements of a larger group
+Quotient space (linear algebra) – Vector space consisting of affine subsets
+Mapping cone (homological algebra) – Tool in homological algebra
+
+
+== Notes ==
+
+
+== References ==
+Bourbaki, Nicolas (1989) [1966]. General Topology: Chapters 1–4 [Topologie Générale]. Éléments de mathématique. Berlin New York: Springer Science & Business Media. ISBN 978-3-540-64241-1. OCLC 18588129.
+Bourbaki, Nicolas (1989) [1967]. General Topology 2: Chapters 5–10 [Topologie Générale]. Éléments de mathématique. Vol. 4. Berlin New York: Springer Science & Business Media. ISBN 978-3-540-64563-4. OCLC 246032063.
+Brown, Ronald (2006), Topology and Groupoids, Booksurge, ISBN 1-4196-2722-8
+Dixmier, Jacques (1984). General Topology. Undergraduate Texts in Mathematics. Translated by Berberian, S. K. New York: Springer-Verlag. ISBN 978-0-387-90972-1. OCLC 10277303.
+Dugundji, James (1966). Topology. Boston: Allyn and Bacon. ISBN 978-0-697-06889-7. OCLC 395340485.
+Kelley, John L. (1975) [1955]. General Topology. Graduate Texts in Mathematics. Vol. 27 (2nd ed.). New York: Springer-Verlag. ISBN 978-0-387-90125-1. OCLC 1365153.
+Munkres, James R. (2000). Topology (2nd ed.). Upper Saddle River, NJ: Prentice Hall, Inc. ISBN 978-0-13-181629-9. OCLC 42683260.
+Willard, Stephen (2004) [1970]. General Topology. Mineola, N.Y.: Dover Publications. ISBN 978-0-486-43479-7. OCLC 115240.
+Willard, Stephen (1970). General Topology. Reading, MA: Addison-Wesley. ISBN 0-486-43479-6.

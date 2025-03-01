@@ -1,0 +1,1842 @@
+The rectangular function (also known as the rectangle function, rect function, Pi function, Heaviside Pi function, gate function, unit pulse, or the normalized boxcar function) is defined as
+
+  
+    
+      
+        rect
+        ⁡
+        
+          (
+          
+            
+              t
+              a
+            
+          
+          )
+        
+        =
+        Π
+        
+          (
+          
+            
+              t
+              a
+            
+          
+          )
+        
+        =
+        
+          {
+          
+            
+              
+                
+                  0
+                  ,
+                
+                
+                  
+                    if 
+                  
+                  
+                    |
+                  
+                  t
+                  
+                    |
+                  
+                  >
+                  
+                    
+                      a
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  ,
+                
+                
+                  
+                    if 
+                  
+                  
+                    |
+                  
+                  t
+                  
+                    |
+                  
+                  =
+                  
+                    
+                      a
+                      2
+                    
+                  
+                
+              
+              
+                
+                  1
+                  ,
+                
+                
+                  
+                    if 
+                  
+                  
+                    |
+                  
+                  t
+                  
+                    |
+                  
+                  <
+                  
+                    
+                      a
+                      2
+                    
+                  
+                  .
+                
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle \operatorname {rect} \left({\frac {t}{a}}\right)=\Pi \left({\frac {t}{a}}\right)=\left\{{\begin{array}{rl}0,&{\text{if }}|t|>{\frac {a}{2}}\\{\frac {1}{2}},&{\text{if }}|t|={\frac {a}{2}}\\1,&{\text{if }}|t|<{\frac {a}{2}}.\end{array}}\right.}
+  
+
+Alternative definitions of the function define 
+  
+    
+      
+        rect
+        ⁡
+        
+          (
+          
+            ±
+            
+              
+                1
+                2
+              
+            
+          
+          )
+        
+      
+    
+    {\textstyle \operatorname {rect} \left(\pm {\frac {1}{2}}\right)}
+  
+ to be 0, 1, or undefined.
+Its periodic version is called a rectangular wave.
+
+
+== History ==
+The rect function has been introduced by Woodward in  as an ideal cutout operator, together with the sinc function as an ideal interpolation operator, and their counter operations which are sampling (comb operator) and replicating (rep operator), respectively.
+
+
+== Relation to the boxcar function ==
+The rectangular function is a special case of the more general boxcar function:
+
+  
+    
+      
+        rect
+        ⁡
+        
+          (
+          
+            
+              
+                t
+                −
+                X
+              
+              Y
+            
+          
+          )
+        
+        =
+        H
+        (
+        t
+        −
+        (
+        X
+        −
+        Y
+        
+          /
+        
+        2
+        )
+        )
+        −
+        H
+        (
+        t
+        −
+        (
+        X
+        +
+        Y
+        
+          /
+        
+        2
+        )
+        )
+        =
+        H
+        (
+        t
+        −
+        X
+        +
+        Y
+        
+          /
+        
+        2
+        )
+        −
+        H
+        (
+        t
+        −
+        X
+        −
+        Y
+        
+          /
+        
+        2
+        )
+      
+    
+    {\displaystyle \operatorname {rect} \left({\frac {t-X}{Y}}\right)=H(t-(X-Y/2))-H(t-(X+Y/2))=H(t-X+Y/2)-H(t-X-Y/2)}
+  
+
+where 
+  
+    
+      
+        H
+        (
+        x
+        )
+      
+    
+    {\displaystyle H(x)}
+  
+ is the Heaviside step function; the function is centered at 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ and has duration 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+, from 
+  
+    
+      
+        X
+        −
+        Y
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle X-Y/2}
+  
+ to 
+  
+    
+      
+        X
+        +
+        Y
+        
+          /
+        
+        2.
+      
+    
+    {\displaystyle X+Y/2.}
+  
+
+
+== Fourier transform of the rectangular function ==
+
+The unitary Fourier transforms of the rectangular function are
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        rect
+        ⁡
+        (
+        t
+        )
+        ⋅
+        
+          e
+          
+            −
+            i
+            2
+            π
+            f
+            t
+          
+        
+        
+        d
+        t
+        =
+        
+          
+            
+              sin
+              ⁡
+              (
+              π
+              f
+              )
+            
+            
+              π
+              f
+            
+          
+        
+        =
+        
+          sinc
+          
+            π
+          
+        
+        ⁡
+        (
+        f
+        )
+        ,
+      
+    
+    {\displaystyle \int _{-\infty }^{\infty }\operatorname {rect} (t)\cdot e^{-i2\pi ft}\,dt={\frac {\sin(\pi f)}{\pi f}}=\operatorname {sinc} _{\pi }(f),}
+  
+
+using ordinary frequency f, where 
+  
+    
+      
+        
+          sinc
+          
+            π
+          
+        
+      
+    
+    {\displaystyle \operatorname {sinc} _{\pi }}
+  
+ is the normalized form of the sinc function and
+
+  
+    
+      
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        rect
+        ⁡
+        (
+        t
+        )
+        ⋅
+        
+          e
+          
+            −
+            i
+            ω
+            t
+          
+        
+        
+        d
+        t
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        ⋅
+        
+          
+            
+              sin
+              ⁡
+              
+                (
+                
+                  ω
+                  
+                    /
+                  
+                  2
+                
+                )
+              
+            
+            
+              ω
+              
+                /
+              
+              2
+            
+          
+        
+        =
+        
+          
+            
+              2
+              π
+            
+          
+        
+        sinc
+        ⁡
+        
+          (
+          
+            ω
+            
+              /
+            
+            2
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle {\frac {1}{\sqrt {2\pi }}}\int _{-\infty }^{\infty }\operatorname {rect} (t)\cdot e^{-i\omega t}\,dt={\frac {1}{\sqrt {2\pi }}}\cdot {\frac {\sin \left(\omega /2\right)}{\omega /2}}={\sqrt {\frac {2}{\pi }}}\operatorname {sinc} \left(\omega /2\right),}
+  
+
+using angular frequency 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+, where 
+  
+    
+      
+        sinc
+      
+    
+    {\displaystyle \operatorname {sinc} }
+  
+ is the unnormalized form of the sinc function.
+For 
+  
+    
+      
+        rect
+        ⁡
+        (
+        x
+        
+          /
+        
+        a
+        )
+      
+    
+    {\displaystyle \operatorname {rect} (x/a)}
+  
+, its Fourier transform is
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        rect
+        ⁡
+        
+          (
+          
+            
+              t
+              a
+            
+          
+          )
+        
+        ⋅
+        
+          e
+          
+            −
+            i
+            2
+            π
+            f
+            t
+          
+        
+        
+        d
+        t
+        =
+        a
+        
+          
+            
+              sin
+              ⁡
+              (
+              π
+              a
+              f
+              )
+            
+            
+              π
+              a
+              f
+            
+          
+        
+        =
+        a
+         
+        
+          sinc
+          
+            π
+          
+        
+        ⁡
+        
+          (
+          a
+          f
+          )
+        
+        .
+      
+    
+    {\displaystyle \int _{-\infty }^{\infty }\operatorname {rect} \left({\frac {t}{a}}\right)\cdot e^{-i2\pi ft}\,dt=a{\frac {\sin(\pi af)}{\pi af}}=a\ \operatorname {sinc} _{\pi }{(af)}.}
+  
+Note that as long as the definition of the pulse function is only motivated by its behavior in the time-domain experience, there is no reason to believe that the oscillatory interpretation (i.e. the Fourier transform function) should be intuitive, or directly understood by humans. However, some aspects of the theoretical result may be understood intuitively, as finiteness in time domain corresponds to an infinite frequency response. (Vice versa, a finite Fourier transform will correspond to infinite time domain response.)
+
+
+== Relation to the triangular function ==
+We can define the triangular function as the convolution of two rectangular functions:
+
+  
+    
+      
+        tri
+        =
+        rect
+        ∗
+        rect
+        .
+        
+      
+    
+    {\displaystyle \operatorname {tri} =\operatorname {rect} *\operatorname {rect} .\,}
+  
+
+
+== Use in probability ==
+
+Viewing the rectangular function as a probability density function, it is a special case of the continuous uniform distribution with 
+  
+    
+      
+        a
+        =
+        −
+        1
+        
+          /
+        
+        2
+        ,
+        b
+        =
+        1
+        
+          /
+        
+        2.
+      
+    
+    {\displaystyle a=-1/2,b=1/2.}
+  
+ The characteristic function is
+
+  
+    
+      
+        φ
+        (
+        k
+        )
+        =
+        
+          
+            
+              sin
+              ⁡
+              (
+              k
+              
+                /
+              
+              2
+              )
+            
+            
+              k
+              
+                /
+              
+              2
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \varphi (k)={\frac {\sin(k/2)}{k/2}},}
+  
+
+and its moment-generating function is
+
+  
+    
+      
+        M
+        (
+        k
+        )
+        =
+        
+          
+            
+              sinh
+              ⁡
+              (
+              k
+              
+                /
+              
+              2
+              )
+            
+            
+              k
+              
+                /
+              
+              2
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle M(k)={\frac {\sinh(k/2)}{k/2}},}
+  
+
+where 
+  
+    
+      
+        sinh
+        ⁡
+        (
+        t
+        )
+      
+    
+    {\displaystyle \sinh(t)}
+  
+ is the hyperbolic sine function.
+
+
+== Rational approximation ==
+The pulse function may also be expressed as a limit of a rational function:
+
+  
+    
+      
+        Π
+        (
+        t
+        )
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+            ,
+            n
+            ∈
+            
+              (
+            
+            Z
+            )
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              t
+              
+                )
+                
+                  2
+                  n
+                
+              
+              +
+              1
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \Pi (t)=\lim _{n\rightarrow \infty ,n\in \mathbb {(} Z)}{\frac {1}{(2t)^{2n}+1}}.}
+  
+
+
+=== Demonstration of validity ===
+First, we consider the case where 
+  
+    
+      
+        
+          |
+        
+        t
+        
+          |
+        
+        <
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\textstyle |t|<{\frac {1}{2}}.}
+  
+ Notice that the term 
+  
+    
+      
+        (
+        2
+        t
+        
+          )
+          
+            2
+            n
+          
+        
+      
+    
+    {\textstyle (2t)^{2n}}
+  
+ is always positive for integer 
+  
+    
+      
+        n
+        .
+      
+    
+    {\displaystyle n.}
+  
+ However, 
+  
+    
+      
+        2
+        t
+        <
+        1
+      
+    
+    {\displaystyle 2t<1}
+  
+ and hence 
+  
+    
+      
+        (
+        2
+        t
+        
+          )
+          
+            2
+            n
+          
+        
+      
+    
+    {\textstyle (2t)^{2n}}
+  
+ approaches zero for large 
+  
+    
+      
+        n
+        .
+      
+    
+    {\displaystyle n.}
+  
+
+It follows that:
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+            ,
+            n
+            ∈
+            
+              (
+            
+            Z
+            )
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              t
+              
+                )
+                
+                  2
+                  n
+                
+              
+              +
+              1
+            
+          
+        
+        =
+        
+          
+            1
+            
+              0
+              +
+              1
+            
+          
+        
+        =
+        1
+        ,
+        
+          |
+        
+        t
+        
+          |
+        
+        <
+        
+          
+            
+              1
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \lim _{n\rightarrow \infty ,n\in \mathbb {(} Z)}{\frac {1}{(2t)^{2n}+1}}={\frac {1}{0+1}}=1,|t|<{\tfrac {1}{2}}.}
+  
+
+Second, we consider the case where 
+  
+    
+      
+        
+          |
+        
+        t
+        
+          |
+        
+        >
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\textstyle |t|>{\frac {1}{2}}.}
+  
+ Notice that the term 
+  
+    
+      
+        (
+        2
+        t
+        
+          )
+          
+            2
+            n
+          
+        
+      
+    
+    {\textstyle (2t)^{2n}}
+  
+ is always positive for integer 
+  
+    
+      
+        n
+        .
+      
+    
+    {\displaystyle n.}
+  
+ However, 
+  
+    
+      
+        2
+        t
+        >
+        1
+      
+    
+    {\displaystyle 2t>1}
+  
+ and hence 
+  
+    
+      
+        (
+        2
+        t
+        
+          )
+          
+            2
+            n
+          
+        
+      
+    
+    {\textstyle (2t)^{2n}}
+  
+ grows very large for large 
+  
+    
+      
+        n
+        .
+      
+    
+    {\displaystyle n.}
+  
+
+It follows that:
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+            ,
+            n
+            ∈
+            
+              (
+            
+            Z
+            )
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              t
+              
+                )
+                
+                  2
+                  n
+                
+              
+              +
+              1
+            
+          
+        
+        =
+        
+          
+            1
+            
+              +
+              ∞
+              +
+              1
+            
+          
+        
+        =
+        0
+        ,
+        
+          |
+        
+        t
+        
+          |
+        
+        >
+        
+          
+            
+              1
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \lim _{n\rightarrow \infty ,n\in \mathbb {(} Z)}{\frac {1}{(2t)^{2n}+1}}={\frac {1}{+\infty +1}}=0,|t|>{\tfrac {1}{2}}.}
+  
+
+Third, we consider the case where 
+  
+    
+      
+        
+          |
+        
+        t
+        
+          |
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\textstyle |t|={\frac {1}{2}}.}
+  
+ We may simply substitute in our equation:
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+            ,
+            n
+            ∈
+            
+              (
+            
+            Z
+            )
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              t
+              
+                )
+                
+                  2
+                  n
+                
+              
+              +
+              1
+            
+          
+        
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+            ,
+            n
+            ∈
+            
+              (
+            
+            Z
+            )
+          
+        
+        
+          
+            1
+            
+              
+                1
+                
+                  2
+                  n
+                
+              
+              +
+              1
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              +
+              1
+            
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \lim _{n\rightarrow \infty ,n\in \mathbb {(} Z)}{\frac {1}{(2t)^{2n}+1}}=\lim _{n\rightarrow \infty ,n\in \mathbb {(} Z)}{\frac {1}{1^{2n}+1}}={\frac {1}{1+1}}={\tfrac {1}{2}}.}
+  
+
+We see that it satisfies the definition of the pulse function. Therefore,
+
+  
+    
+      
+        rect
+        ⁡
+        (
+        t
+        )
+        =
+        Π
+        (
+        t
+        )
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+            ,
+            n
+            ∈
+            
+              (
+            
+            Z
+            )
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              t
+              
+                )
+                
+                  2
+                  n
+                
+              
+              +
+              1
+            
+          
+        
+        =
+        
+          
+            {
+            
+              
+                
+                  0
+                
+                
+                  
+                    
+                      if 
+                    
+                  
+                  
+                    |
+                  
+                  t
+                  
+                    |
+                  
+                  >
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  
+                    
+                      if 
+                    
+                  
+                  
+                    |
+                  
+                  t
+                  
+                    |
+                  
+                  =
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+              
+              
+                
+                  1
+                
+                
+                  
+                    
+                      if 
+                    
+                  
+                  
+                    |
+                  
+                  t
+                  
+                    |
+                  
+                  <
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  .
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {rect} (t)=\Pi (t)=\lim _{n\rightarrow \infty ,n\in \mathbb {(} Z)}{\frac {1}{(2t)^{2n}+1}}={\begin{cases}0&{\mbox{if }}|t|>{\frac {1}{2}}\\{\frac {1}{2}}&{\mbox{if }}|t|={\frac {1}{2}}\\1&{\mbox{if }}|t|<{\frac {1}{2}}.\\\end{cases}}}
+  
+
+
+== Dirac delta function ==
+The rectangle function can be used to represent the Dirac delta function 
+  
+    
+      
+        δ
+        (
+        x
+        )
+      
+    
+    {\displaystyle \delta (x)}
+  
+. Specifically,
+  
+    
+      
+        δ
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            a
+            →
+            0
+          
+        
+        
+          
+            1
+            a
+          
+        
+        rect
+        ⁡
+        
+          (
+          
+            
+              x
+              a
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \delta (x)=\lim _{a\to 0}{\frac {1}{a}}\operatorname {rect} \left({\frac {x}{a}}\right).}
+  
+For a function 
+  
+    
+      
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle g(x)}
+  
+, its average over the width 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ around 0 in the function domain is calculated as,
+
+  
+    
+      
+        
+          g
+          
+            a
+            v
+            g
+          
+        
+        (
+        0
+        )
+        =
+        
+          
+            1
+            a
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        d
+        x
+         
+        g
+        (
+        x
+        )
+        rect
+        ⁡
+        
+          (
+          
+            
+              x
+              a
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle g_{avg}(0)={\frac {1}{a}}\int \limits _{-\infty }^{\infty }dx\ g(x)\operatorname {rect} \left({\frac {x}{a}}\right).}
+  
+
+To obtain 
+  
+    
+      
+        g
+        (
+        0
+        )
+      
+    
+    {\displaystyle g(0)}
+  
+, the following limit is applied,
+
+  
+    
+      
+        g
+        (
+        0
+        )
+        =
+        
+          lim
+          
+            a
+            →
+            0
+          
+        
+        
+          
+            1
+            a
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        d
+        x
+         
+        g
+        (
+        x
+        )
+        rect
+        ⁡
+        
+          (
+          
+            
+              x
+              a
+            
+          
+          )
+        
+      
+    
+    {\displaystyle g(0)=\lim _{a\to 0}{\frac {1}{a}}\int \limits _{-\infty }^{\infty }dx\ g(x)\operatorname {rect} \left({\frac {x}{a}}\right)}
+  
+
+and this can be written in terms of the Dirac delta function as,
+
+  
+    
+      
+        g
+        (
+        0
+        )
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        d
+        x
+         
+        g
+        (
+        x
+        )
+        δ
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle g(0)=\int \limits _{-\infty }^{\infty }dx\ g(x)\delta (x).}
+  
+The Fourier transform of the Dirac delta function 
+  
+    
+      
+        δ
+        (
+        t
+        )
+      
+    
+    {\displaystyle \delta (t)}
+  
+ is
+
+  
+    
+      
+        δ
+        (
+        f
+        )
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        δ
+        (
+        t
+        )
+        ⋅
+        
+          e
+          
+            −
+            i
+            2
+            π
+            f
+            t
+          
+        
+        
+        d
+        t
+        =
+        
+          lim
+          
+            a
+            →
+            0
+          
+        
+        
+          
+            1
+            a
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        rect
+        ⁡
+        
+          (
+          
+            
+              t
+              a
+            
+          
+          )
+        
+        ⋅
+        
+          e
+          
+            −
+            i
+            2
+            π
+            f
+            t
+          
+        
+        
+        d
+        t
+        =
+        
+          lim
+          
+            a
+            →
+            0
+          
+        
+        sinc
+        ⁡
+        
+          (
+          a
+          f
+          )
+        
+        .
+      
+    
+    {\displaystyle \delta (f)=\int _{-\infty }^{\infty }\delta (t)\cdot e^{-i2\pi ft}\,dt=\lim _{a\to 0}{\frac {1}{a}}\int _{-\infty }^{\infty }\operatorname {rect} \left({\frac {t}{a}}\right)\cdot e^{-i2\pi ft}\,dt=\lim _{a\to 0}\operatorname {sinc} {(af)}.}
+  
+
+where the sinc function here is the normalized sinc function. Because the first zero of the sinc function is at 
+  
+    
+      
+        f
+        =
+        1
+        
+          /
+        
+        a
+      
+    
+    {\displaystyle f=1/a}
+  
+ and 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ goes to infinity, the Fourier transform of 
+  
+    
+      
+        δ
+        (
+        t
+        )
+      
+    
+    {\displaystyle \delta (t)}
+  
+ is
+
+  
+    
+      
+        δ
+        (
+        f
+        )
+        =
+        1
+        ,
+      
+    
+    {\displaystyle \delta (f)=1,}
+  
+
+means that the frequency spectrum of the Dirac delta function is infinitely broad. As a pulse is shorten in time, it is larger in spectrum.
+
+
+== See also ==
+Fourier transform
+Square wave
+Step function
+Top-hat filter
+Boxcar function
+
+
+== References ==

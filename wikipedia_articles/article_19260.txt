@@ -1,0 +1,699 @@
+In mathematics, Pépin's test is a primality test, which can be used to determine whether a Fermat number is prime. It is a variant of Proth's test. The test is named after a French mathematician, Théophile Pépin.
+
+
+== Description of the test ==
+Let 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+        =
+        
+          2
+          
+            
+              2
+              
+                n
+              
+            
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle F_{n}=2^{2^{n}}+1}
+  
+ be the nth Fermat number. Pépin's test states that for n > 0,
+
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+ is prime if and only if 
+  
+    
+      
+        
+          3
+          
+            (
+            
+              F
+              
+                n
+              
+            
+            −
+            1
+            )
+            
+              /
+            
+            2
+          
+        
+        ≡
+        −
+        1
+        
+          
+          (
+          mod
+          
+          
+            F
+            
+              n
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle 3^{(F_{n}-1)/2}\equiv -1{\pmod {F_{n}}}.}
+  
+
+The expression 
+  
+    
+      
+        
+          3
+          
+            (
+            
+              F
+              
+                n
+              
+            
+            −
+            1
+            )
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\displaystyle 3^{(F_{n}-1)/2}}
+  
+ can be evaluated modulo 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+ by repeated squaring. This makes the test a fast polynomial-time algorithm. However, Fermat numbers grow so rapidly that only a handful of Fermat numbers can be tested in a reasonable amount of time and space.
+Other bases may be used in place of 3. These bases are:
+
+3, 5, 6, 7, 10, 12, 14, 20, 24, 27, 28, 39, 40, 41, 45, 48, 51, 54, 56, 63, 65, 75, 78, 80, 82, 85, 90, 91, 96, 102, 105, 108, 112, 119, 125, 126, 130, 147, 150, 156, 160, ... (sequence A129802 in the OEIS).
+The primes in the above sequence are called Elite primes, they are:
+
+3, 5, 7, 41, 15361, 23041, 26881, 61441, 87041, 163841, 544001, 604801, 6684673, 14172161, 159318017, 446960641, 1151139841, 3208642561, 38126223361, 108905103361, 171727482881, 318093312001, 443069456129, 912680550401, ... (sequence A102742 in the OEIS)
+For integer b > 1, base b may be used if and only if only a finite number of Fermat numbers Fn satisfies that 
+  
+    
+      
+        
+          (
+          
+            
+              b
+              
+                F
+                
+                  n
+                
+              
+            
+          
+          )
+        
+        =
+        1
+      
+    
+    {\displaystyle \left({\frac {b}{F_{n}}}\right)=1}
+  
+, where 
+  
+    
+      
+        
+          (
+          
+            
+              b
+              
+                F
+                
+                  n
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\frac {b}{F_{n}}}\right)}
+  
+ is the Jacobi symbol.
+In fact, Pépin's test is the same as the Euler-Jacobi test for Fermat numbers, since the Jacobi symbol 
+  
+    
+      
+        
+          (
+          
+            
+              b
+              
+                F
+                
+                  n
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\frac {b}{F_{n}}}\right)}
+  
+ is −1, i.e. there are no Fermat numbers which are Euler-Jacobi pseudoprimes to these bases listed above.
+
+
+== Proof of correctness ==
+Sufficiency: assume that the congruence
+
+  
+    
+      
+        
+          3
+          
+            (
+            
+              F
+              
+                n
+              
+            
+            −
+            1
+            )
+            
+              /
+            
+            2
+          
+        
+        ≡
+        −
+        1
+        
+          
+          (
+          mod
+          
+          
+            F
+            
+              n
+            
+          
+          )
+        
+      
+    
+    {\displaystyle 3^{(F_{n}-1)/2}\equiv -1{\pmod {F_{n}}}}
+  
+
+holds. Then 
+  
+    
+      
+        
+          3
+          
+            
+              F
+              
+                n
+              
+            
+            −
+            1
+          
+        
+        ≡
+        1
+        
+          
+          (
+          mod
+          
+          
+            F
+            
+              n
+            
+          
+          )
+        
+      
+    
+    {\displaystyle 3^{F_{n}-1}\equiv 1{\pmod {F_{n}}}}
+  
+, thus the multiplicative order of 3 modulo 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+ divides 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+        −
+        1
+        =
+        
+          2
+          
+            
+              2
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle F_{n}-1=2^{2^{n}}}
+  
+, which is a power of two. On the other hand, the order does not divide 
+  
+    
+      
+        (
+        
+          F
+          
+            n
+          
+        
+        −
+        1
+        )
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle (F_{n}-1)/2}
+  
+, and therefore it must be equal to 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+        −
+        1
+      
+    
+    {\displaystyle F_{n}-1}
+  
+. In particular, there are at least 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+        −
+        1
+      
+    
+    {\displaystyle F_{n}-1}
+  
+ numbers below 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+ coprime to 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+, and this can happen only if 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+ is prime.
+Necessity: assume that 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F_{n}}
+  
+ is prime. By Euler's criterion,
+
+  
+    
+      
+        
+          3
+          
+            (
+            
+              F
+              
+                n
+              
+            
+            −
+            1
+            )
+            
+              /
+            
+            2
+          
+        
+        ≡
+        
+          (
+          
+            
+              3
+              
+                F
+                
+                  n
+                
+              
+            
+          
+          )
+        
+        
+          
+          (
+          mod
+          
+          
+            F
+            
+              n
+            
+          
+          )
+        
+      
+    
+    {\displaystyle 3^{(F_{n}-1)/2}\equiv \left({\frac {3}{F_{n}}}\right){\pmod {F_{n}}}}
+  
+,
+where 
+  
+    
+      
+        
+          (
+          
+            
+              3
+              
+                F
+                
+                  n
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\frac {3}{F_{n}}}\right)}
+  
+ is the Legendre symbol. By repeated squaring, we find that 
+  
+    
+      
+        
+          2
+          
+            
+              2
+              
+                n
+              
+            
+          
+        
+        ≡
+        1
+        
+          
+          (
+          mod
+          
+          3
+          )
+        
+      
+    
+    {\displaystyle 2^{2^{n}}\equiv 1{\pmod {3}}}
+  
+, thus 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+        ≡
+        2
+        
+          
+          (
+          mod
+          
+          3
+          )
+        
+      
+    
+    {\displaystyle F_{n}\equiv 2{\pmod {3}}}
+  
+, and 
+  
+    
+      
+        
+          (
+          
+            
+              
+                F
+                
+                  n
+                
+              
+              3
+            
+          
+          )
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle \left({\frac {F_{n}}{3}}\right)=-1}
+  
+.
+As 
+  
+    
+      
+        
+          F
+          
+            n
+          
+        
+        ≡
+        1
+        
+          
+          (
+          mod
+          
+          4
+          )
+        
+      
+    
+    {\displaystyle F_{n}\equiv 1{\pmod {4}}}
+  
+, we conclude 
+  
+    
+      
+        
+          (
+          
+            
+              3
+              
+                F
+                
+                  n
+                
+              
+            
+          
+          )
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle \left({\frac {3}{F_{n}}}\right)=-1}
+  
+ from the law of quadratic reciprocity.
+
+
+== Historical Pépin tests ==
+Because of the sparsity of the Fermat numbers, the Pépin test has only been run eight times (on Fermat numbers whose primality statuses were not already known).
+Mayer, Papadopoulos and Crandall speculate that in fact, because of the size of the still undetermined Fermat numbers, it will take considerable advances in technology before any more Pépin tests can be run in a reasonable amount of time.
+
+
+== Notes ==
+
+
+== References ==
+P. Pépin, Sur la formule 
+  
+    
+      
+        
+          2
+          
+            
+              2
+              
+                n
+              
+            
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle 2^{2^{n}}+1}
+  
+, Comptes rendus de l'Académie des Sciences de Paris 85 (1877), pp. 329–333.
+
+
+== External links ==
+The Prime Glossary: Pepin's test

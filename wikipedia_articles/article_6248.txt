@@ -1,0 +1,120 @@
+Methyl methacrylate (MMA) is an organic compound with the formula CH2=C(CH3)COOCH3.  This colorless liquid, the methyl ester of methacrylic acid (MAA), is a monomer produced on a large scale for the production of poly(methyl methacrylate) (PMMA).
+
+
+== History ==
+MMA was discovered by Bernhard Tollens and his student W. A. Caspary in 1873, who noticed and described its tendency to change into a clear, hard, transparent substance especially in sunlight. Studies on acrylic esters slowly developed until the Staudinger's theory of macromolecules and his research into the nature of polyacrylates allowed control over polymerization. Company Rohm and Haas founded by German chemist Otto Röhm, who investigated the topic for three decades, was finally able to start its industrial production in 1931.
+
+
+== Production and properties ==
+Given the scale of production, many methods have been developed starting from diverse two- to four-carbon precursors. Two principal routes appear to be commonly practiced.
+
+
+=== Cyanohydrin route ===
+The principal route begins with the condensation of acetone and hydrogen cyanide:  
+
+(CH3)2CO + HCN  →  (CH3)2C(OH)CN
+Sulfuric acid then hydrolyzes acetone cyanohydrin (ACH) to a sulfate ester-adduct, which is cracked to the ester:
+
+(CH3)2C(OH)CN + 2H2SO4  →  ((CH3)2C(OSO3H)C(O)NH2·H2SO4  →  (CH3)2C(OSO3H)C(O)NH2 + H2SO4
+Methanolysis gives ammonium bisulfate and MMA:
+
+(CH3)2C(OSO3H)C(O)NH2 + CH3OH  →  CH2=C(CH3)C(O)OCH3 + NH4HSO4
+Laboratory scale procedures are available for some of these steps. 
+This technology affords more than 3 billion kilograms per year, and the economics have been optimized. Nevertheless, the ACH route coproduces substantial amounts of ammonium sulfate: roughly 1.1 kg/(kg MMA).  The ammonium sulfate can be converted to diammonium sulfate, which is a common fertilizer.  Also it can be combusted to give sulfuric acid.
+
+
+=== Methyl propionate routes ===
+The first stage involves carboalkoxylation of ethylene to produce methyl propionate (MeP):
+
+C2H4 + CO + CH3OH  →  CH3CH2CO2CH3
+The MeP synthesis is conducted in a continuous-stirred tank reactor at moderate temperature and pressure using proprietary agitation and gas-liquid mixing arrangement.
+In a second set of reactions, MeP is condensed with formaldehyde in a single heterogeneous reaction step to form MMA:
+
+CH3CH2CO2CH3 + CH2O  →  CH3(CH2)CCO2CH3 + H2O
+The reaction of MeP and formaldehyde takes place over a fixed bed of catalyst. This catalyst, caesium oxide on silica, achieves good selectivity to MMA from MeP. The formation of a small amount of heavy, relatively involatile compounds poisons the catalyst. The coke is easily removed and catalyst activity and selectivity restored by controlled, in-situ regeneration. The reactor product stream is separated in a primary distillation so that a crude MMA product stream, free from water, MeP and formaldehyde, is produced. Unreacted MeP and water are recycled via the formaldehyde dehydration process. MMA (>99.9%) is purified by vacuum distillations. The separated streams are returned to the process; there being only a small heavy ester purge stream, which is disposed of in a thermal oxidizer with heat recovered for use in the process.
+In 2008, Lucite International commissioned an Alpha MMA plant on Jurong Island in Singapore. This process plant was cheaper to build and run than conventional systems, produces virtually no waste and the feedstocks can even be made from biomass.
+
+
+=== Other routes to MMA ===
+
+
+==== Via propionaldehyde ====
+Ethylene is first hydroformylated to give propanal, which is then condensed with formaldehyde to produce methacrolein,  The condensation is catalyzed by a secondary amine. Air oxidation of methacrolein to methacrylic acid completes the synthesis of the acid:
+
+CH3CH2CHO + HCHO  →  CH2=C(CH3)CHO + H2O
+CH2=C(CH3)CHO + ½ O2  →  CH2=C(CH3)CO2H
+
+
+==== From isobutyric acid ====
+As developed by Atochem and Röhm, isobutyric acid is produced by hydrocarboxylation of propene, using HF as a catalyst:
+
+CH2=CHCH3 + CO + H2O  →  (CH3)2CHCO2H
+Oxidative dehydrogenation of the isobutyric acid yields methacrylic acid. Metal oxides catalyse this process:
+
+(CH3)2CHCO2H + O  →  CH2=C(CH3)CO2H + H2O
+
+
+==== Methyl acetylene (propyne) process ====
+Using Reppe chemistry, methyl acetylene is converted to MMA. As developed by Shell, this process produces MMA in one step reaction with 99% yield with a catalyst derived from palladium acetate, phosphine ligands, and Bronsted acids as catalyst:
+
+CH≡CCH3 + CO + CH3OH  →  CH2=C(CH3)CO2CH3
+
+
+==== Isobutylene routes ====
+The reactions by the direct oxidation method consist of two-step oxidation of isobutylene or TBA with air to produce methacrylic acid and esterification by methanol to produce MMA.
+
+CH2=C(CH3)2
+or (CH3)3C−OH + O2  →  CH2=C(CH3)−CHO + H2O
+CH2=C(CH3)CHO + ½ O2  →  CH2=C(CH3)CO2H
+CH2=C(CH3)CO2H + CH3OH  →  CH2=C(CH3)CO2CH3 + H2O
+A process using isobutylene as a raw material has been commercialized by Escambia Co. Isobutylene is oxidized to provide α-hydroxy isobutyric acid.  The conversion uses N2O4 and nitric acid at 5–10 °C in the liquid phase. After esterification and dehydration MMA is obtained. Challenges with this route, aside from yield, involve the handling of large amounts of nitric acid and NOx. This method was discontinued in 1965 after an explosion at an operation plant.
+
+
+==== Methacrylonitrile (MAN) process ====
+MAN can be produced by ammoxidation from isobutylene:
+
+(CH3)2C=CH2 + NH3 + 3/2 O2  →  CH2=C(CH3)CN + 3 H2O
+This step is analogous to the industrial route to acrylonitrile, a related commodity chemical.  MAN can be hydrated by sulfuric acid to methacrylamide:
+
+CH2=C(CH3)CN + H2SO4 + H2O  →  CH2=C(CH3)−CONH2·H2SO4
+CH2=C(CH3)−CONH2·H2SO4 + CH3OH  →  CH2=C(CH3)COOCH3 + NH4HSO4
+Mitsubishi Gas Chemicals proposed that MAN can be hydrated to methacrylamide without using sulfuric acid and is then esterified to obtain MMA by methylformate.
+
+CH2=C(CH3)CN + H2O  →    CH2=C(CH3)−CONH2
+CH2=C(CH3)−CONH2 + HCOOCH3  →  CH2=C(CH3)COOCH3 + HCONH2
+HCONH2  →  NH3 + CO
+
+
+==== Esterification of methacrolein ====
+Asahi Chemical developed a process based on direct oxidative esterification of methacrolein, which does not produce by-products such as ammonium bisulfate. The raw material is tert-butanol, as in the direct oxidation method. In the first step, methacrolein is produced in the same way as in the direct oxidation process by gas phase catalytic oxidation, is simultaneously oxidized and is esterified in liquid methanol to get MMA directly. 
+
+CH2=C(CH3)−CHO + CH3OH + ½ O2  →  CH2=C(CH3)−COOCH3 + H2O
+
+
+== Uses ==
+
+The principal application, consuming approximately 75% of the MMA, is the manufacture of polymethyl methacrylate acrylic plastics (PMMA). Methyl methacrylate is also used for the production of the co-polymer methyl methacrylate-butadiene-styrene (MBS), used as a modifier for PVC. Another application is as cement used in total hip replacements as well as total knee replacements. Used as the "grout" by orthopedic surgeons to make the bone inserts fix into bone, it greatly reduces post-operative pain from the insertions but has a finite lifespan. Typically the lifespan of methylmethacrylate as bone cement is 20 years before revision surgery is required. Cemented implants are usually only done in elderly populations that require more immediate short term replacements. In younger populations, cementless implants are used because their lifespan is considerably longer.  Also used in fracture repair in small exotic animal species using internal fixation.
+MMA is a raw material for the manufacture of other methacrylates. These derivatives include ethyl methacrylate (EMA), butyl methacrylate (BMA) and 2-ethyl hexyl methacrylate (2-EHMA). Methacrylic acid (MAA) is used as a chemical intermediate as well as in the manufacture of coating polymers, construction chemicals and textile applications.
+Wood can be impregnated with MMA and polymerized in situ to produce stabilized wood.
+
+
+== Environmental issues and health hazards ==
+In terms of the acute toxicity of methyl methacrylate, the LD50 is 7–10 g/kg (oral, rat). It is an irritant to the eyes and can cause redness and pain. Irritation of the skin, eye, and nasal cavity has been observed in rodents and rabbits exposed to relatively high concentrations of methyl methacrylate. Methyl methacrylate is a mild skin irritant in humans and has the potential to induce skin sensitization in susceptible individuals.
+
+
+== See also ==
+Acrylate
+Methacrylates
+PMMA
+
+
+== References ==
+
+
+== External links ==
+Chemical data on Chemicalland
+US Environmental Protection Agency, 1994 data
+Intox Cheminfo data
+Methacrylate Producers Association (MPA)
+National Pollutant Inventory – Methyl methacrylate fact sheet
+CDC – NIOSH Pocket Guide to Chemical Hazards

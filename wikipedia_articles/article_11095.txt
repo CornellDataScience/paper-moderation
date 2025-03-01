@@ -1,0 +1,130 @@
+Phosphor thermometry is an optical method for surface temperature measurement. The method exploits luminescence emitted by phosphor material. Phosphors are fine white or pastel-colored inorganic powders which may be stimulated by any of a variety of means to luminesce, i.e. emit light. Certain characteristics of the emitted light change with temperature, including brightness, color, and afterglow duration. The latter is most commonly used for temperature measurement.
+
+
+== History ==
+The first mention of temperature measurement utilizing a phosphor is in two patents originally filed in 1932 by Paul Neubert.
+
+
+== Time dependence of luminescence ==
+
+Typically a short duration ultraviolet lamp or laser source illuminates the phosphor coating which in turn luminesces visibly. When the illuminating source ceases, the luminescence will persist for a characteristic time, steadily decreasing. The time required for the brightness to decrease to 1/e of its original value is known as the decay time or lifetime and signified as 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+. It is a function of temperature, T.
+The intensity, I of the luminescence commonly decays exponentially as:
+
+  
+    
+      
+        
+        
+        I
+        =
+        
+          I
+          
+            o
+          
+        
+        
+          e
+          
+            
+              
+                −
+                t
+              
+              τ
+            
+          
+        
+      
+    
+    {\displaystyle \!\,I=I_{o}e^{\frac {-t}{\tau }}}
+  
+
+Where I0 is the initial intensity (or amplitude). The 't' is the time and 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+ is parameter which can be temperature dependent. 
+A temperature sensor based on direct decay time measurement has been shown to reach a temperature from 1000 to as high as 1,600 °C. In that work, a doped YAG phosphor was grown onto an undoped YAG fiber to form a monolithic structure for the probe, and a laser was used as the excitation source. Subsequently, other versions using LEDs as the excitation source were realized. These devices can measure temperature up to 1,000 °C, and are used in microwave and plasma processing applications.
+If the excitation source is periodic rather than pulsed, then the time response of the luminescence is correspondingly different. For instance, there is a phase difference between a sinusoidally varying light-emitting diode (LED) signal of frequency f and the fluorescence that results (see figure). The phase difference varies with decay time and hence temperature as:
+
+  
+    
+      
+        
+        
+        ϕ
+        =
+        t
+        a
+        n
+        (
+        2
+        
+          π
+        
+        f
+        
+          τ
+        
+        )
+      
+    
+    {\displaystyle \!\,\phi =tan(2{\pi }f{\tau })}
+  
+
+
+== Temperature dependence of emission lines: intensity ratio ==
+The second method of temperature detection is based on intensity ratios of two separate emission lines; the change in coating temperature is reflected by the change of the phosphorescence spectrum. This method enables surface temperature distributions to be measured. The intensity ratio method has the advantage that polluted optics has little effect on the measurement as it compares ratios between emission lines. The emission lines are equally affected by 'dirty' surfaces or optics.
+
+
+== Temperature dependence ==
+Several observations are pertinent to the figure on the right: 
+
+Oxysulfide materials exhibit several different emission lines, each having a different temperature dependence. Substituting one rare-earth for another, in this instance changing La to Gd, shifts the temperature dependence.
+The YAG:Cr material (Y3Al5O12:Cr3+) shows less sensitivity but covers a wider temperature range than the more sensitive materials.
+Sometime decay times are constant over a wide range before becoming temperature dependent at some threshold value. This is illustrated for the YVO4:Dy curve; it also holds for several other materials (not shown in the figure). Manufacturers sometimes add a second rare earth as a sensitizer. This may enhance the emission and alter the nature of the temperature dependence. Also, gallium is sometimes substituted for some of the aluminium in YAG, also altering the temperature dependence.
+The emission decay of dysprosium (Dy) phosphors is sometimes non-exponential with time. Consequently, the value assigned to decay time will depend on the analysis method chosen. This non-exponential character often becomes more pronounced as the dopant concentration increases.
+In the high-temperature part, the two lutetium phosphate samples are single crystals rather than powders. This has minor effect on decay time and its temperature dependence though. However, the decay time of a given phosphor depends on the particle size, especially below one micrometer.
+There are further parameters influencing the luminescence of thermographic phosphors, e.g. the excitation energy, the dopant concentration or the composition or the absolute pressure of the surrounding gas phase. Therefore, care has to be taken in order to keep constant these parameters for all measurements.
+
+
+== Thermographic phosphor application in a thermal barrier coating ==
+A thermal barrier coating (TBC) allows gas turbine components to survive higher temperatures in the hot section of engines, while having acceptable life times. These coatings are thin ceramic coatings (several hundred micrometers) usually based on oxide materials.
+Early works considered the integration of luminescent materials as erosion sensors in TBCs. The notion of a "thermal barrier sensor coating" (sensor TBC) for temperature detection was introduced in 1998. Instead of applying a phosphor layer on the surface where the temperature needs to be measured, it was proposed to locally modify the composition of the TBC so that it acts as a thermographic phosphor as well as a protective thermal barrier. This dual functional material enables surface temperature measurement but also could provide a means to measure temperature within the TBC and at the metal/topcoat interface, hence enabling the manufacturing of an integrated heat flux gauge. First results on yttria-stabilized zirconia co-doped with europia (YSZ:Eu) powders were published in 2000. They also demonstrated sub-surface measurements looking through a 50 μm undoped YSZ layer and detecting the phosphorescence of a thin (10 μm) YSZ:Eu layer (bi-layer system) underneath using the ESAVD technique to produce the coating. The first results on electron beam physical vapour deposition of TBCs were published in 2001. The coating tested was a monolayer coating of standard YSZ co-doped with dysprosia (YSZ:Dy). First work on industrial atmospheric plasma sprayed (APS) sensor coating systems commenced around 2002 and was published in 2005. They demonstrated the capabilities of APS sensor coatings for in-situ two-dimensional temperature measurements in burner rigs using a high speed camera system. Further, temperature measurement capabilities of APS sensor coatings were demonstrated beyond 1400 °C. Results on multilayer sensing TBCs, enabling simultaneous temperature measurements below and on the surface of the coating, were reported. Such a multilayer coating could also be used as a heat flux gauge in order to monitor the thermal gradient and also to determine the heat flux through the thickness of the TBC under realistic service conditions.
+
+
+== Applications for thermographic phosphors in TBCs ==
+While the previously mentioned methods are focusing on the temperature detection, the inclusion of phosphorescent materials into the thermal barrier coating can also work as a micro probe to detect the aging mechanisms or changes to other physical parameters that affect the local atomic surroundings of the optical active ion. Detection was demonstrated of hot corrosion processes in YSZ due to vanadium attack.
+
+
+== See also ==
+
+
+== References ==
+
+
+== Further reading ==
+K. T. V. Grattan; Z. Y. Zhang (1995). Fiber optic fluorescence thermometry. Springer. ISBN 0-412-62470-2.
+S. W. Allison & G. T. Gillies (1997). "Remote thermometry with thermographic phosphors: instrumentation and applications". Review of Scientific Instruments. 68 (7): 2615–2650. Bibcode:1997RScI...68.2615A. doi:10.1063/1.1148174.
+A. H. Khalid & K. Kontis (2008). "Thermographic phosphors for high temperature measurements: Principles, current state of the art and recent applications". Sensors. 68 (8): 5673–5744. Bibcode:2008Senso...8.5673K. doi:10.3390/s8095673. PMC 3705526. PMID 27873836.
+M. D. Chambers & D. R. Clarke (2009). "Doped Oxides for High-Temperature Luminescence and Lifetime Thermometry". Annual Review of Materials Research. 39 (7): 325–359. Bibcode:2009AnRMS..39..325C. doi:10.1146/annurev-matsci-112408-125237.
+M. Aldén; A. Omrane; M. Richter & G. Sarner (2011). "Thermographic phosphors for thermometry: A survey of combustion applications". Progress in Energy and Combustion Science. 37 (4): 422–461. doi:10.1016/j.pecs.2010.07.001.
+J. Brübach; C. Pflitsch; A. Dreizler & B. Atakan (2011). "On Surface Temperature Measurements with Thermographic Phosphors: A Review". Progress in Energy and Combustion Science. 39: 37–60. doi:10.1016/j.pecs.2012.06.001.
+Brites, C. D. S.; Millan, A.; Carlos, L. D. (2016). "Chapter 281: Lanthanides in Luminescent Thermometry". In Bünzli, Jean-Claude; Pecharsky, Vitalij K. (eds.). Handbook on the Physics and Chemistry of Rare Earths. Elsevier. pp. 339–427. doi:10.1016/bs.hpcre.2016.03.005. ISBN 978-0-444-63699-7.
+Dramićanin, Miroslav (2018). Luminescence Thermometry: Methods, Materials, and Applications (1st ed.). Elsevier Science. ISBN 978-0-08-102029-6. Retrieved November 20, 2019.
+S. W. Allison (2019). "A brief history of phosphor thermometry". Measurement Science and Technology. 30 (7): 072001. Bibcode:2019MeScT..30g2001A. doi:10.1088/1361-6501/ab1d02. S2CID 150322424.

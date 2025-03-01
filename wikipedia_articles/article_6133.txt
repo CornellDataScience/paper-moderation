@@ -1,0 +1,1094 @@
+In control system theory, and various branches of engineering, a transfer function matrix, or just transfer matrix is a generalisation of the transfer functions of single-input single-output (SISO) systems to multiple-input and multiple-output (MIMO) systems.  The matrix relates the outputs of the system to its inputs.  It is a particularly useful construction for linear time-invariant (LTI) systems because it can be expressed in terms of the s-plane.
+In some systems, especially ones consisting entirely of passive components, it can be ambiguous which variables are inputs and which are outputs.  In electrical engineering, a common scheme is to gather all the voltage variables on one side and all the current variables on the other regardless of which are inputs or outputs.  This results in all the elements of the transfer matrix being in units of impedance.  The concept of impedance (and hence impedance matrices) has been borrowed into other energy domains by analogy, especially mechanics and acoustics.
+Many control systems span several different energy domains.  This requires transfer matrices with elements in mixed units.  This is needed both to describe transducers that make connections between domains and to describe the system as a whole.  If the matrix is to properly model energy flows in the system, compatible variables must be chosen to allow this.
+
+
+== General ==
+
+A MIMO system with m outputs and n inputs is represented by a m × n matrix.  Each entry in the matrix is in the form of a transfer function relating an output to an input.  For example, for a three-input, two-output system, one might write,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    y
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    g
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    g
+                    
+                      12
+                    
+                  
+                
+                
+                  
+                    g
+                    
+                      13
+                    
+                  
+                
+              
+              
+                
+                  
+                    g
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    g
+                    
+                      22
+                    
+                  
+                
+                
+                  
+                    g
+                    
+                      23
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    u
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    u
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    u
+                    
+                      3
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}y_{1}\\y_{2}\end{bmatrix}}={\begin{bmatrix}g_{11}&g_{12}&g_{13}\\g_{21}&g_{22}&g_{23}\end{bmatrix}}{\begin{bmatrix}u_{1}\\u_{2}\\u_{3}\end{bmatrix}}}
+  
+
+where the un are the inputs, the ym are the outputs, and the gmn are the transfer functions.  This may be written more succinctly in matrix operator notation as,
+
+  
+    
+      
+        
+          Y
+        
+        =
+        
+          G
+        
+        
+          U
+        
+      
+    
+    {\displaystyle \mathbf {Y} =\mathbf {G} \mathbf {U} }
+  
+
+where Y is a column vector of the outputs, G is a matrix of the transfer functions, and U is a column vector of the inputs.
+In many cases, the system under consideration is a linear time-invariant (LTI) system.  In such cases, it is convenient to express the transfer matrix in terms of the Laplace transform (in the case of continuous time variables) or the z-transform (in the case of discrete time variables) of the variables.  This may be indicated by writing, for instance,
+
+  
+    
+      
+        
+          Y
+        
+        (
+        s
+        )
+        =
+        
+          G
+        
+        (
+        s
+        )
+        
+          U
+        
+        (
+        s
+        )
+      
+    
+    {\displaystyle \mathbf {Y} (s)=\mathbf {G} (s)\mathbf {U} (s)}
+  
+
+which indicates that the variables and matrix are in terms of s, the complex frequency variable of the s-plane arising from Laplace transforms, rather than time.  The examples in this article are all assumed to be in this form, although that is not explicitly indicated for brevity.  For discrete time systems s is replaced by z from the z-transform, but this makes no difference to subsequent analysis.  The matrix is particularly useful when it is a proper rational matrix, that is, all its elements are proper rational functions.  In this case the state-space representation can be applied.
+In systems engineering, the overall system transfer matrix G (s) is decomposed into two parts: H (s) representing the system being controlled, and C(s) representing the control system.  C (s) takes as its inputs the inputs of G (s) and the outputs of H (s).  The outputs of C (s) form the inputs for H (s).
+
+
+== Electrical systems ==
+In electrical systems it is often the case that the distinction between input and output variables is ambiguous.  They can be either, depending on circumstance and point of view.  In such cases the concept of port (a place where energy is transferred from one system to another) can be more useful than input and output.  It is customary to define two variables for each port (p): the voltage across it (Vp) and the current entering it (Ip).  For instance, the transfer matrix of a two-port network can be defined as follows,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    V
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    V
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    z
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      12
+                    
+                  
+                
+              
+              
+                
+                  
+                    z
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      22
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    I
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    I
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}V_{1}\\V_{2}\end{bmatrix}}={\begin{bmatrix}z_{11}&z_{12}\\z_{21}&z_{22}\\\end{bmatrix}}{\begin{bmatrix}I_{1}\\I_{2}\end{bmatrix}}}
+  
+
+where the zmn are called the impedance parameters, or z-parameters.  They are so called because they are in units of impedance and relate port currents to a port voltage.  The z-parameters are not the only way that transfer matrices are defined for two-port networks.  There are six basic matrices that relate voltages and currents each with advantages for particular system network topologies.  However, only two of these can be extended beyond two ports to an arbitrary number of ports.  These two are the z-parameters and their inverse, the admittance parameters or y-parameters.
+
+To understand the relationship between port voltages and currents and inputs and outputs, consider the simple voltage divider circuit.  If we only wish to consider the output voltage (V2) resulting from applying the input voltage (V1) then the transfer function can be expressed as,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    V
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    
+                      
+                        
+                          R
+                          
+                            2
+                          
+                        
+                        
+                          
+                            R
+                            
+                              1
+                            
+                          
+                          +
+                          
+                            R
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    V
+                    
+                      1
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}V_{2}\end{bmatrix}}={\begin{bmatrix}{\dfrac {R_{2}}{R_{1}+R_{2}}}\end{bmatrix}}{\begin{bmatrix}V_{1}\end{bmatrix}}}
+  
+
+which can be considered the trivial case of a 1×1 transfer matrix.  The expression correctly predicts the output voltage if there is no current leaving port 2, but is increasingly inaccurate as the load increases.  If, however, we attempt to use the circuit in reverse, driving it with a voltage at port 2 and calculate the resulting voltage at port 1 the expression gives completely the wrong result even with no load on port 1.  It predicts a greater voltage at port 1 than was applied at port 2, an impossibility with a purely resistive circuit like this one.  To correctly predict the behaviour of the circuit, the currents entering or leaving the ports must also be taken into account, which is what the transfer matrix does.  The impedance matrix for the voltage divider circuit is,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    V
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    V
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    R
+                    
+                      1
+                    
+                  
+                  +
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    R
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    I
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    I
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}V_{1}\\V_{2}\end{bmatrix}}={\begin{bmatrix}R_{1}+R_{2}&R_{2}\\R_{2}&R_{2}\end{bmatrix}}{\begin{bmatrix}I_{1}\\I_{2}\end{bmatrix}}}
+  
+
+which fully describes its behaviour under all input and output conditions.
+At microwave frequencies, none of the transfer matrices based on port voltages and currents are convenient to use in practice.  Voltage is difficult to measure directly, current next to impossible, and the open circuits and short circuits required by the measurement technique cannot be achieved with any accuracy.  For waveguide implementations, circuit voltage and current are entirely meaningless.  Transfer matrices using different sorts of variables are used instead.  These are the powers transmitted into, and reflected from a port which are readily measured in the transmission line technology used in distributed-element circuits in the microwave band.  The most well known and widely used of these sorts of parameters is the scattering parameters, or s-parameters.
+
+
+== Mechanical and other systems ==
+
+The concept of impedance can be extended into the mechanical, and other domains through a mechanical-electrical analogy, hence the impedance parameters, and other forms of 2-port network parameters, can be extended to the mechanical domain also.  To do this an effort variable and a flow variable are made analogues of voltage and current respectively.  For mechanical systems under translation these variables are force and velocity respectively.
+Expressing the behaviour of a mechanical component as a two-port or multi-port with a transfer matrix is a useful thing to do because, like electrical circuits, the component can often be operated in reverse and its behaviour is dependent on the loads at the inputs and outputs.  For instance, a gear train is often characterised simply by its gear ratio, a SISO transfer function.  However, the gearbox output shaft can be driven round to turn the input shaft requiring a MIMO analysis.  In this example the effort and flow variables are torque T and angular velocity ω respectively.  The transfer matrix in terms of z-parameters will look like,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    T
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    T
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    z
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      12
+                    
+                  
+                
+              
+              
+                
+                  
+                    z
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      22
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    ω
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    ω
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}T_{1}\\T_{2}\end{bmatrix}}={\begin{bmatrix}z_{11}&z_{12}\\z_{21}&z_{22}\end{bmatrix}}{\begin{bmatrix}\omega _{1}\\\omega _{2}\end{bmatrix}}}
+  
+
+However, the z-parameters are not necessarily the most convenient for characterising gear trains.  A gear train is the analogue of an electrical transformer and the h-parameters (hybrid parameters) better describe transformers because they directly include the turns ratios (the analogue of gear ratios).  The gearbox transfer matrix in h-parameter format is,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    T
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    ω
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    h
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    h
+                    
+                      12
+                    
+                  
+                
+              
+              
+                
+                  
+                    h
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    h
+                    
+                      22
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    ω
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    T
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}T_{1}\\\omega _{2}\end{bmatrix}}={\begin{bmatrix}h_{11}&h_{12}\\h_{21}&h_{22}\end{bmatrix}}{\begin{bmatrix}\omega _{1}\\T_{2}\end{bmatrix}}}
+  
+
+where
+h21 is the velocity ratio of the gear train with no load on the output,
+h12 is the reverse direction torque ratio of the gear train with input shaft clamped, equal to the forward velocity ratio for an ideal gearbox,
+h11 is the input rotational mechanical impedance with no load on the output shaft, zero for an ideal gearbox, and,
+h22 is the output rotational mechanical admittance with the input shaft clamped.
+For an ideal gear train with no losses (friction, distortion etc), this simplifies to,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    T
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    ω
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  N
+                
+              
+              
+                
+                  N
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    ω
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    T
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}T_{1}\\\omega _{2}\end{bmatrix}}={\begin{bmatrix}0&N\\N&0\end{bmatrix}}{\begin{bmatrix}\omega _{1}\\T_{2}\end{bmatrix}}}
+  
+
+where N is the gear ratio.
+
+
+== Transducers and actuators ==
+
+In a system that consists of multiple energy domains, transfer matrices are required that can handle components with ports in different domains.  In robotics and mechatronics, actuators are required.  These usually consist of a transducer converting, for instance, signals from the control system in the electrical domain into motion in the mechanical domain.  The control system also requires sensors that detect the motion and convert it back into the electrical domain through another transducer so that the motion can be properly controlled through a feedback loop. Other sensors in the system may be transducers converting yet other energy domains into electrical signals, such as optical, audio, thermal, fluid flow and chemical.  Another application is the field of mechanical filters which require transducers between the electrical and mechanical domains in both directions.
+A simple example is an electromagnetic electromechanical actuator driven by an electronic controller.  This requires a transducer with an input port in the electrical domain and an output port in the mechanical domain.  This might be represented simplistically by a SISO transfer function, but for similar reasons to those already stated, a more accurate representation is achieved with a two-input, two-output MIMO transfer matrix.  In the z-parameters, this takes the form,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  V
+                
+              
+              
+                
+                  F
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    z
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      12
+                    
+                  
+                
+              
+              
+                
+                  
+                    z
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    z
+                    
+                      22
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  I
+                
+              
+              
+                
+                  v
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}V\\F\end{bmatrix}}={\begin{bmatrix}z_{11}&z_{12}\\z_{21}&z_{22}\end{bmatrix}}{\begin{bmatrix}I\\v\end{bmatrix}}}
+  
+
+where F is the force applied to the actuator and v is the resulting velocity of the actuator.  The impedance parameters here are a mixture of units; z11 is an electrical impedance, z22 is a mechanical impedance and the other two are transimpedances in a hybrid mix of units.
+
+
+== Acoustic systems ==
+Acoustic systems are a subset of fluid dynamics, and in both fields the primary input and output variables are pressure, P, and volumetric flow rate, Q, except in the case of sound travelling through solid components.  In the latter case, the primary variables of mechanics, force and velocity, are more appropriate.  An example of a two-port acoustic component is a filter such as a muffler on an exhaust system.  A transfer matrix representation of it may look like,
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    P
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    Q
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    T
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    T
+                    
+                      12
+                    
+                  
+                
+              
+              
+                
+                  
+                    T
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    T
+                    
+                      22
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    P
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    Q
+                    
+                      1
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}P_{2}\\Q_{2}\end{bmatrix}}={\begin{bmatrix}T_{11}&T_{12}\\T_{21}&T_{22}\end{bmatrix}}{\begin{bmatrix}P_{1}\\Q_{1}\end{bmatrix}}}
+  
+
+Here, the Tmn are the transmission parameters, also known as ABCD-parameters.  The component can be just as easily described by the z-parameters, but transmission parameters have a mathematical advantage when dealing with a system of two-ports that are connected in a cascade of the output of one into the input port of another.  In such cases the overall transmission parameters are found simply by the matrix multiplication of the transmission parameter matrices of the constituent components.
+
+
+== Compatible variables ==
+  
+When working with mixed variables from different energy domains consideration needs to be given on which variables to consider analogous.  The choice depends on what the analysis is intended to achieve.  If it is desired to correctly model energy flows throughout the entire system then a pair of variables whose product is power (power conjugate variables) in one energy domain must map to power conjugate variables in other domains.  Power conjugate variables are not unique so care needs to be taken to use the same mapping of variables throughout the system.
+A common mapping (used in some of the examples in this article) maps the effort variables (ones that initiate an action) from each domain together and maps the flow variables (ones that are a property of an action) from each domain together.  Each pair of effort and flow variables is power conjugate.  This system is known as the impedance analogy because a ratio of the effort to the flow variable in each domain is analogous to electrical impedance.
+There are two other power conjugate systems on the same variables that are in use.  The mobility analogy maps mechanical force to electric current instead of voltage.  This analogy is widely used by mechanical filter designers and frequently in audio electronics also.  The mapping has the advantage of preserving network topologies across domains but does not maintain the mapping of impedances.  The Trent analogy classes the power conjugate variables as either across variables, or through variables depending on whether they act across an element of a system or through it.  This largely ends up the same as the mobility analogy except in the case of the fluid flow domain (including the acoustics domain).  Here pressure is made analogous to voltage (as in the impedance analogy) instead of current (as in the mobility analogy).  However, force in the mechanical domain is analogous to current because force acts through an object.
+There are some commonly used analogies that do not use power conjugate pairs.  For sensors, correctly modelling energy flows may not be so important.  Sensors often extract only tiny amounts of energy into the system.  Choosing variables that are convenient to measure, particularly ones that the sensor is sensing, may be more useful.  For instance, in the thermal resistance analogy, thermal resistance is considered analogous to electrical resistance, resulting in temperature difference and thermal power mapping to voltage and current respectively.  The power conjugate of temperature difference is not thermal power, but rather entropy flow rate, something that cannot be directly measured.  Another analogy of the same sort occurs in the magnetic domain.  This maps magnetic reluctance to electrical resistance, resulting in magnetic flux mapping to current instead of magnetic flux rate of change as required for compatible variables.
+
+
+== History ==
+The matrix representation of linear algebraic equations has been known for some time.  Poincaré in 1907 was the first to describe a transducer as a pair of such equations relating electrical variables (voltage and current) to mechanical variables (force and velocity).  Wegel, in 1921, was the first to express these equations in terms of mechanical impedance as well as electrical impedance.
+The first use of transfer matrices to represent a MIMO control system was by Boksenbom and Hood in 1950, but only for the particular case of the gas turbine engines they were studying for the National Advisory Committee for Aeronautics.  Cruickshank provided a firmer basis in 1955 but without complete generality.  Kavanagh in 1956 gave the first completely general treatment, establishing the matrix relationship between system and control and providing criteria for realisability of a control system that could deliver a prescribed behaviour of the system under control.
+
+
+== See also ==
+Transfer-matrix method (optics)
+
+
+== References ==
+
+
+== Bibliography ==
+Bessai, Horst, MIMO Signals and Systems, Springer, 2006 ISBN 038727457X.
+Bakshi, A.V.; Bakshi, U.A., Network Theory, Technical Publications, 2008 ISBN 8184314027.
+Boksenbom, Aaron S.; Hood, Richard, "General algebraic method applied to control analysis of complex engine types", NACA Report 980, 1950.
+Busch-Vishniac, Ilene J., Electromechanical Sensors and Actuators, Springer, 1999 ISBN 038798495X.
+Chen, Wai Kai, The Electrical Engineering Handbook, Academic Press, 2004 ISBN 0080477488.
+Choma, John, Electrical Networks: Theory and Analysis, Wiley, 1985 ISBN 0471085286.
+Cruickshank, A. J. O., "Matrix formulation of control system equations", The Matrix and Tensor Quarterly, vol. 5, no. 3, p. 76, 1955.
+Iyer, T. S. K. V., Circuit Theory, Tata McGraw-Hill Education, 1985 ISBN 0074516817.
+Kavanagh, R. J., "The application of matrix methods to multi-variable control systems", Journal of the Franklin Institute, vol. 262, iss. 5, pp. 349–367, November 1956.
+Koenig, Herman Edward; Blackwell, William A., Electromechanical System Theory, McGraw-Hill, 1961 OCLC 564134
+Levine, William S.,  The Control Handbook, CRC Press, 1996 ISBN 0849385709.
+Nguyen, Cam, Radio-Frequency Integrated-Circuit Engineering, Wiley, 2015 ISBN 1118936485.
+Olsen A., "Characterization of Transformers by h-Paraameters", IEEE Transactions on Circuit Theory, vol. 13, iss. 2, pp. 239–240, June 1966.
+Pierce, Allan D. Acoustics: an Introduction to its Physical Principles and Applications, Acoustical Society of America, 1989 ISBN 0883186128.
+Poincaré, H., "Etude du récepteur téléphonique", Eclairage Electrique, vol. 50, pp. 221–372, 1907.
+Wegel, R. L., "Theory of magneto-mechanical systems as applied to telephone receivers and similar structures", Journal of the American Institute of Electrical Engineers, vol. 40, pp. 791–802, 1921.
+Yang, Won Y.; Lee, Seung C., Circuit Systems with MATLAB and PSpice, Wiley 2008, ISBN 0470822406.

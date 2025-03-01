@@ -1,0 +1,24 @@
+Starships are a type of eukaryotic class 2 transposable element (TE). They are mobilized by a site-specific recombinase termed the "captain". They are strictly found within fungi of the subphylum Pezizomycotina, where they appear to be widespread. They are characterized by a number of features that separate them from typical TEs. Given Starship elements are generally found in only a single copy in a genome, whereas other TEs are almost universally multicopy. In addition to the captain, Starships are observe to carry a large diversity of additional genes termed cargo. These genes largely appear to be acquired from fungal genomes, but the mechanism of capture is unknown. Cargo genes can have important impacts of host phenotypes, including plant pathogenicity, heavy metal resistance, and cheese production. Due to the inclusion of additional genes, Starships are considerably larger than typical DNA transposons, with a current distribution between 25 kb and 700 kb.
+
+
+== History ==
+Starships were discovered and named in a 2022 publication, however many other genomic regions were retroactively determined to be Starships. These include: the region containing the ToxA plant effector gene from Pyrenophora tritici-repentis, Wallaby and CheesyTer from species of Penicillium used in cheese production, and segmental duplications in the human fungal pathogen Aspergillus fumigatus.
+
+
+== Structure ==
+Starships lack the large structural features that comprise other TEs, such as terminal inverted repeats (TIRs) and do not create target site duplications (TSDs) when they transpose, as the recombinase activity does not generate sticky ends. Instead, their boundaries are defined by short direct repeats (DRs). Some Starships possess short asymmetric TIRs, which are often imperfect, but it is unclear if these are an absolute requirement for delineating the element's boundaries. Being site-specific, Starships insert themselves at specific target sites in the genome. These sites may be highly specific, such as targeting the 5S ribosomal RNA gene, or AT-rich sequence.
+
+
+== Genome-wide identification ==
+The low copy number of Starships makes their identification and annotation difficult as typical software for repeat annotation relies on identifying repetitive sequences. To remedy this, a pipeline called starfish has been developed. It operates by first generating gene models for all putative captain sequences within a genome. Then, large insertions that contain captain genes are identified based on alignments to closely related genomes. The software attempts to look for DRs and TIRs to define element boundaries. Lastly, flanking genes are identified through orthogroup assignment to locate the genomic position of each Starship. Large-scale genome mining using the software has identified hundreds of Starships across fungal genomes.   
+
+
+== Horizontal transfer ==
+Horizontal gene transfer (HGT) refers to the movement of genetic information between individuals, and contrasts to the vertical inheritance that occurs when genes are passed from parent to offspring. A striking feature of Starships is that given elements are repeatedly observed in individuals of different taxa. For example, Hephaestus is nearly identical across over 80 kb of sequences between Paecilomyces variotii and Penicillium chermesium. The use of whole genome comparisons indicates that the reason for the high similarity is that Starships are frequently transferred horizontally between individuals. As these Starships often harbour fungal genes with impacts on host phenotype, these transfers are likely beneficial to the host.    
+
+
+== Evolutionary implication ==
+The Starships represent a unique mechanism among eukaryotes through which fungi can adapt. The transfer of genes with adaptive functions via mobile genetic elements is well established in prokaryotes, where it is important for phenomena such as antimicrobial resistance. The discovery of a parallel system in fungi implies that HGT should be regarded as a recurrent mode of evolution in these fungi, not as a rare chance occurrence.  
+
+
+== References ==

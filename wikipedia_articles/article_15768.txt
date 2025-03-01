@@ -1,0 +1,41 @@
+In the context of computer networking, a tunnel broker is a service which provides a network tunnel. These tunnels can provide encapsulated connectivity over existing infrastructure to another infrastructure.
+There are a variety of tunnel brokers, including IPv4 tunnel brokers, though most commonly the term is used to refer to an IPv6 tunnel broker as defined in RFC 3053.
+IPv6 tunnel brokers typically provide IPv6  to sites or end users over IPv4. In general, IPv6 tunnel brokers offer so called 'protocol 41' or proto-41 tunnels. These are tunnels where IPv6 is tunneled directly inside IPv4 packets by having the protocol field set to '41' (IPv6) in the IPv4 packet. In the case of IPv4 tunnel brokers IPv4 tunnels are provided to users by encapsulating IPv4 inside IPv6 as defined in RFC 2473.
+
+
+== Automated configuration ==
+Configuration of IPv6 tunnels is usually done using the Tunnel Setup Protocol (TSP), or using Tunnel Information Control protocol (TIC). A client capable of this is AICCU (Automatic IPv6 Connectivity Client Utility). In addition to IPv6 tunnels TSP can also be used to set up IPv4 tunnels.
+
+
+== NAT issues ==
+Proto-41 tunnels (direct IPv6 in IPv4) may not operate well situated behind NATs. One way around this is to configure the actual endpoint of the tunnel to be the DMZ on the NAT-utilizing equipment. Another method is to either use AYIYA or TSP, both of which send IPv6 inside UDP packets, which is able to cross most NAT setups and even firewalls.
+A problem that still might occur is that of the timing-out of the state in the NAT machine. As a NAT remembers that a packet went outside to the Internet it allows another packet to come back in from the Internet that is related to the initial proto-41 packet. When this state expires, no other packets from the Internet will be accepted. This therefore breaks the connectivity of the tunnel until the user's host again sends out a packet to the tunnel broker.
+
+
+== Dynamic endpoints ==
+When the endpoint isn't a static IP address, the user, or a program, has to instruct the tunnel broker to update the endpoint address. This can be done using the tunnel broker's web site or using an automated protocol like TSP or Heartbeat, as used by AICCU. In the case of a tunnel broker using TSP, the client automatically restarting the tunnel will cause the endpoint address and port to be updated.
+
+
+== Implementations ==
+The first implementation of an IPv6 Tunnel Broker was at the Italian  CSELT S.p.A. by Ivano Guardini, the author of RFC 3053
+There are a variety of tunnel brokers that provide their own custom implementations based on different goals. Listed here are the common implementations as used by the listed IPv6 tunnel brokers.
+
+
+=== Gogo6 gogoSERVER ===
+gogoSERVER (formerly Gateway6) is used by the Freenet6 service, which is the second IPv6 tunnel broker service, going into production in 1999. It was started as a project of Viagenie and then Hexago was spun off as a commercial company selling Gateway6, which powered Freenet6, as their flagship product.  In June 2009, Hexago became gogo6 through a management buyout and the Freenet6 service became part of gogoNET, a social network for IPv6 professionals. On 23 March 2016 all services of Freenet6/Gogo6 were halted.
+
+
+=== SixXS sixxsd ===
+SixXS's sixxsd is what powers all the SixXS PoPs. It is custom built software for the purpose of tunneling at high performance with low latency. Development of sixxsd started in 2002 and has evolved into the current v4 version of the software. The software is made available for ISPs who provide and run SixXS PoPs.
+Originally, in 2000, SixXS used shell bash scripts. Due to scalability issues and other problems sixxsd was designed and developed. After 17 years, the SixXS tunnel sunset on 2017-06-06.
+
+
+=== CITC ddtb ===
+CITC Tunnel Broker, run by the Saudi Arabia IPv6 Task Force, uses their own implementation of the TSP RFC named 'ddtb'.
+
+
+== See also ==
+6in4
+
+
+== References ==

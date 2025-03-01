@@ -1,0 +1,2743 @@
+In mathematics, Riemann–Hilbert problems, named after Bernhard Riemann and David Hilbert, are a class of problems that arise in the study of differential equations in the complex plane. Several existence theorems for Riemann–Hilbert problems have been produced by Mark Krein, Israel Gohberg and others.
+
+
+== The Riemann problem ==
+Suppose that 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ is a smooth, simple, closed contour in the complex 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ plane. Divide the plane into two parts denoted by 
+  
+    
+      
+        
+          Σ
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \Sigma _{+}}
+  
+ (the inside) and 
+  
+    
+      
+        
+          Σ
+          
+            −
+          
+        
+      
+    
+    {\displaystyle \Sigma _{-}}
+  
+ (the outside), determined by the index of the contour with respect to a point. The classical problem, considered in Riemann's PhD dissertation, was that of finding a function
+
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        t
+        )
+        =
+        u
+        (
+        t
+        )
+        +
+        i
+        v
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle M_{+}(t)=u(t)+iv(t),}
+  
+
+analytic inside 
+  
+    
+      
+        
+          Σ
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \Sigma _{+}}
+  
+, such that the boundary values of 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+      
+    
+    {\displaystyle M_{+}}
+  
+ along 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ satisfy the equation
+
+  
+    
+      
+        a
+        (
+        t
+        )
+        u
+        (
+        t
+        )
+        −
+        b
+        (
+        t
+        )
+        v
+        (
+        t
+        )
+        =
+        c
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle a(t)u(t)-b(t)v(t)=c(t),}
+  
+
+for 
+  
+    
+      
+        t
+        ∈
+        Σ
+      
+    
+    {\displaystyle t\in \Sigma }
+  
+, where 
+  
+    
+      
+        a
+        (
+        t
+        )
+      
+    
+    {\displaystyle a(t)}
+  
+, 
+  
+    
+      
+        b
+        (
+        t
+        )
+      
+    
+    {\displaystyle b(t)}
+  
+ and 
+  
+    
+      
+        c
+        (
+        t
+        )
+      
+    
+    {\displaystyle c(t)}
+  
+ are given real-valued functions. For example, in the special case where 
+  
+    
+      
+        a
+        =
+        1
+        ,
+        b
+        =
+        0
+      
+    
+    {\displaystyle a=1,b=0}
+  
+ and 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ is a circle, the problem reduces to deriving the Poisson formula. 
+By the Riemann mapping theorem, it suffices to consider the case when 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ is the circle group 
+  
+    
+      
+        
+          T
+        
+        =
+        {
+        z
+        ∈
+        
+          C
+        
+        :
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        1
+        }
+      
+    
+    {\textstyle \mathbb {T} =\{z\in \mathbb {C} :|z|=1\}}
+  
+. In this case, one may seek 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle M_{+}(z)}
+  
+ along with its Schwarz reflection
+
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+        (
+        z
+        )
+        =
+        
+          
+            
+              
+                M
+                
+                  +
+                
+              
+              
+                (
+                
+                  
+                    
+                      
+                        z
+                        ¯
+                      
+                    
+                  
+                  
+                    −
+                    1
+                  
+                
+                )
+              
+            
+            ¯
+          
+        
+        .
+      
+    
+    {\displaystyle M_{-}(z)={\overline {M_{+}\left({\bar {z}}^{-1}\right)}}.}
+  
+
+For 
+  
+    
+      
+        z
+        ∈
+        
+          T
+        
+      
+    
+    {\displaystyle z\in \mathbb {T} }
+  
+, one has 
+  
+    
+      
+        z
+        =
+        1
+        
+          /
+        
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle z=1/{\bar {z}}}
+  
+ and so
+
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+        (
+        z
+        )
+        =
+        
+          
+            
+              
+                M
+                
+                  +
+                
+              
+              (
+              z
+              )
+            
+            ¯
+          
+        
+        .
+      
+    
+    {\displaystyle M_{-}(z)={\overline {M_{+}(z)}}.}
+  
+
+Hence the problem reduces to finding a pair of analytic functions 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle M_{+}(z)}
+  
+ and 
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle M_{-}(z)}
+  
+ on the inside and outside, respectively, of the unit disk, so that on the unit circle
+
+  
+    
+      
+        
+          
+            
+              a
+              (
+              z
+              )
+              +
+              i
+              b
+              (
+              z
+              )
+            
+            2
+          
+        
+        
+          M
+          
+            +
+          
+        
+        (
+        z
+        )
+        +
+        
+          
+            
+              a
+              (
+              z
+              )
+              −
+              i
+              b
+              (
+              z
+              )
+            
+            2
+          
+        
+        
+          M
+          
+            −
+          
+        
+        (
+        z
+        )
+        =
+        c
+        (
+        z
+        )
+        ,
+      
+    
+    {\displaystyle {\frac {a(z)+ib(z)}{2}}M_{+}(z)+{\frac {a(z)-ib(z)}{2}}M_{-}(z)=c(z),}
+  
+
+and, moreover, so that the condition at infinity holds:
+
+  
+    
+      
+        
+          lim
+          
+            z
+            →
+            ∞
+          
+        
+        
+          M
+          
+            −
+          
+        
+        (
+        z
+        )
+        =
+        
+          
+            
+              
+                
+                  M
+                
+                
+                  +
+                
+              
+              (
+              0
+              )
+            
+            ¯
+          
+        
+        .
+      
+    
+    {\displaystyle \lim _{z\to \infty }M_{-}(z)={\overline {{M}_{+}(0)}}.}
+  
+
+
+== The Hilbert problem ==
+
+Hilbert's generalization of the problem attempted to find a pair of analytic functions 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle M_{+}(t)}
+  
+ and 
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle M_{-}(t)}
+  
+ on the inside and outside, respectively, of the curve 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+, such that for 
+  
+    
+      
+        t
+        ∈
+        Σ
+      
+    
+    {\displaystyle t\in \Sigma }
+  
+ one has
+
+  
+    
+      
+        α
+        (
+        t
+        )
+        
+          M
+          
+            +
+          
+        
+        (
+        t
+        )
+        +
+        β
+        (
+        t
+        )
+        
+          M
+          
+            −
+          
+        
+        (
+        t
+        )
+        =
+        γ
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle \alpha (t)M_{+}(t)+\beta (t)M_{-}(t)=\gamma (t),}
+  
+
+where 
+  
+    
+      
+        α
+        (
+        t
+        )
+      
+    
+    {\displaystyle \alpha (t)}
+  
+, 
+  
+    
+      
+        β
+        (
+        t
+        )
+      
+    
+    {\displaystyle \beta (t)}
+  
+ and 
+  
+    
+      
+        γ
+        (
+        t
+        )
+      
+    
+    {\displaystyle \gamma (t)}
+  
+ are given complex-valued functions (no longer just complex conjugates).
+
+
+== Riemann–Hilbert problems ==
+In the Riemann problem as well as Hilbert's generalization, the contour 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ was simple. A full Riemann–Hilbert problem allows that the contour may be composed of a union of several oriented smooth curves, with no intersections. The "+" and "−" sides of the "contour" may then be determined according to the index of a point with respect to 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+. The Riemann–Hilbert problem is to find  a pair of analytic functions 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle M_{+}(t)}
+  
+ and 
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle M_{-}(t)}
+  
+ on the "+" and "−" side of 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+, respectively, such that for 
+  
+    
+      
+        t
+        ∈
+        Σ
+      
+    
+    {\displaystyle t\in \Sigma }
+  
+ one has
+
+  
+    
+      
+        α
+        (
+        t
+        )
+        
+          M
+          
+            +
+          
+        
+        (
+        t
+        )
+        +
+        β
+        (
+        t
+        )
+        
+          M
+          
+            −
+          
+        
+        (
+        t
+        )
+        =
+        γ
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle \alpha (t)M_{+}(t)+\beta (t)M_{-}(t)=\gamma (t),}
+  
+
+where 
+  
+    
+      
+        α
+        (
+        t
+        )
+      
+    
+    {\displaystyle \alpha (t)}
+  
+, 
+  
+    
+      
+        β
+        (
+        t
+        )
+      
+    
+    {\displaystyle \beta (t)}
+  
+ and 
+  
+    
+      
+        γ
+        (
+        t
+        )
+      
+    
+    {\displaystyle \gamma (t)}
+  
+ are given complex-valued functions.
+
+
+== Matrix Riemann–Hilbert problems ==
+Given an oriented contour 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+ (technically: an oriented union of smooth curves without points of infinite self-intersection in the complex plane), a Riemann–Hilbert factorization problem is the following.
+Given a matrix function 
+  
+    
+      
+        G
+        (
+        t
+        )
+      
+    
+    {\displaystyle G(t)}
+  
+ defined on the contour 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+, find a holomorphic matrix function 
+  
+    
+      
+        M
+        (
+        z
+        )
+      
+    
+    {\displaystyle M(z)}
+  
+ defined on the complement of 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+, such that the following two conditions are satisfied
+
+If 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+      
+    
+    {\displaystyle M_{+}}
+  
+ and 
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+      
+    
+    {\displaystyle M_{-}}
+  
+ denote the non-tangential limits of 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ as we approach 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+, then 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        t
+        )
+        =
+        G
+        (
+        t
+        )
+        
+          M
+          
+            −
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle M_{+}(t)=G(t)M_{-}(t)}
+  
+, at all points of non-intersection in 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+.
+
+  
+    
+      
+        M
+        (
+        z
+        )
+      
+    
+    {\displaystyle M(z)}
+  
+ tends to the identity matrix 
+  
+    
+      
+        
+          I
+          
+            N
+          
+        
+      
+    
+    {\displaystyle I_{N}}
+  
+ as 
+  
+    
+      
+        z
+        →
+        ∞
+      
+    
+    {\displaystyle z\to \infty }
+  
+ along any direction outside 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+.
+In the simplest case 
+  
+    
+      
+        G
+        (
+        t
+        )
+      
+    
+    {\displaystyle G(t)}
+  
+ is smooth and integrable. In more complicated cases it could have singularities. The limits 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+      
+    
+    {\displaystyle M_{+}}
+  
+ and 
+  
+    
+      
+        
+          M
+          
+            −
+          
+        
+      
+    
+    {\displaystyle M_{-}}
+  
+ could be classical and continuous or they could be taken in the 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+  
+-sense.
+At end-points or intersection points of the contour 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+, the jump condition is not defined; constraints on the growth of 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ near those points have to be posed to ensure uniqueness (see the scalar problem below).
+
+
+=== Example: Scalar Riemann–Hilbert factorization problem ===
+Suppose 
+  
+    
+      
+        G
+        =
+        2
+      
+    
+    {\displaystyle G=2}
+  
+ and 
+  
+    
+      
+        Σ
+        =
+        [
+        −
+        1
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle \Sigma =[-1,1]}
+  
+. Assuming 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is bounded, what is the solution 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+?
+To solve this, let's take the logarithm of equation 
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        =
+        G
+        
+          M
+          
+            −
+          
+        
+      
+    
+    {\displaystyle M_{+}=GM_{-}}
+  
+.
+
+  
+    
+      
+        log
+        ⁡
+        
+          M
+          
+            +
+          
+        
+        (
+        z
+        )
+        =
+        log
+        ⁡
+        
+          M
+          
+            −
+          
+        
+        (
+        z
+        )
+        +
+        log
+        ⁡
+        2.
+      
+    
+    {\displaystyle \log M_{+}(z)=\log M_{-}(z)+\log 2.}
+  
+
+Since 
+  
+    
+      
+        M
+        (
+        z
+        )
+      
+    
+    {\displaystyle M(z)}
+  
+ tends to 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+, 
+  
+    
+      
+        log
+        ⁡
+        M
+        →
+        0
+      
+    
+    {\displaystyle \log M\to 0}
+  
+ as 
+  
+    
+      
+        z
+        →
+        ∞
+      
+    
+    {\displaystyle z\to \infty }
+  
+.
+A standard fact about the Cauchy transform is that 
+  
+    
+      
+        
+          C
+          
+            +
+          
+        
+        −
+        
+          C
+          
+            −
+          
+        
+        =
+        I
+      
+    
+    {\displaystyle C_{+}-C_{-}=I}
+  
+ where 
+  
+    
+      
+        
+          C
+          
+            +
+          
+        
+      
+    
+    {\displaystyle C_{+}}
+  
+ and 
+  
+    
+      
+        
+          C
+          
+            −
+          
+        
+      
+    
+    {\displaystyle C_{-}}
+  
+ are the limits of the Cauchy transform from above and below 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+; therefore, we get
+
+  
+    
+      
+        
+          
+            1
+            
+              2
+              π
+              i
+            
+          
+        
+        
+          ∫
+          
+            
+              Σ
+              
+                +
+              
+            
+          
+        
+        
+          
+            
+              log
+              ⁡
+              2
+            
+            
+              ζ
+              −
+              z
+            
+          
+        
+        
+        d
+        ζ
+        −
+        
+          
+            1
+            
+              2
+              π
+              i
+            
+          
+        
+        
+          ∫
+          
+            
+              Σ
+              
+                −
+              
+            
+          
+        
+        
+          
+            
+              log
+              ⁡
+              
+                2
+              
+            
+            
+              ζ
+              −
+              z
+            
+          
+        
+        
+        d
+        ζ
+        =
+        log
+        ⁡
+        2
+      
+    
+    {\displaystyle {\frac {1}{2\pi i}}\int _{\Sigma _{+}}{\frac {\log 2}{\zeta -z}}\,d\zeta -{\frac {1}{2\pi i}}\int _{\Sigma _{-}}{\frac {\log {2}}{\zeta -z}}\,d\zeta =\log 2}
+  
+
+when 
+  
+    
+      
+        z
+        ∈
+        Σ
+      
+    
+    {\displaystyle z\in \Sigma }
+  
+. Because the solution of a Riemann–Hilbert factorization problem is unique (an easy application of Liouville's theorem (complex analysis)), the Sokhotski–Plemelj theorem gives the solution. We get
+
+  
+    
+      
+        log
+        ⁡
+        M
+        =
+        
+          
+            1
+            
+              2
+              π
+              i
+            
+          
+        
+        
+          ∫
+          
+            Σ
+          
+        
+        
+          
+            
+              log
+              ⁡
+              
+                2
+              
+            
+            
+              ζ
+              −
+              z
+            
+          
+        
+        d
+        ζ
+        =
+        
+          
+            
+              log
+              ⁡
+              2
+            
+            
+              2
+              π
+              i
+            
+          
+        
+        
+          ∫
+          
+            −
+            1
+            −
+            z
+          
+          
+            1
+            −
+            z
+          
+        
+        
+          
+            1
+            ζ
+          
+        
+        d
+        ζ
+        =
+        
+          
+            
+              log
+              ⁡
+              2
+            
+            
+              2
+              π
+              i
+            
+          
+        
+        log
+        ⁡
+        
+          
+            
+              z
+              −
+              1
+            
+            
+              z
+              +
+              1
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \log M={\frac {1}{2\pi i}}\int _{\Sigma }{\frac {\log {2}}{\zeta -z}}d\zeta ={\frac {\log 2}{2\pi i}}\int _{-1-z}^{1-z}{\frac {1}{\zeta }}d\zeta ={\frac {\log 2}{2\pi i}}\log {\frac {z-1}{z+1}},}
+  
+
+and therefore
+
+  
+    
+      
+        M
+        (
+        z
+        )
+        =
+        
+          
+            (
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            
+              
+                log
+                ⁡
+                
+                  2
+                
+              
+              
+                2
+                π
+                i
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle M(z)=\left({\frac {z-1}{z+1}}\right)^{\frac {\log {2}}{2\pi i}},}
+  
+
+which has a branch cut at contour 
+  
+    
+      
+        Σ
+      
+    
+    {\displaystyle \Sigma }
+  
+.
+Check:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  M
+                  
+                    +
+                  
+                
+                (
+                0
+                )
+              
+              
+                
+                =
+                (
+                
+                  e
+                  
+                    i
+                    π
+                  
+                
+                
+                  )
+                  
+                    
+                      
+                        log
+                        ⁡
+                        2
+                      
+                      
+                        2
+                        π
+                        i
+                      
+                    
+                  
+                
+                =
+                
+                  e
+                  
+                    
+                      
+                        log
+                        ⁡
+                        2
+                      
+                      2
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  M
+                  
+                    −
+                  
+                
+                (
+                0
+                )
+              
+              
+                
+                =
+                (
+                
+                  e
+                  
+                    −
+                    i
+                    π
+                  
+                
+                
+                  )
+                  
+                    
+                      
+                        log
+                        ⁡
+                        2
+                      
+                      
+                        2
+                        π
+                        i
+                      
+                    
+                  
+                
+                =
+                
+                  e
+                  
+                    −
+                    
+                      
+                        
+                          log
+                          ⁡
+                          2
+                        
+                        2
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}M_{+}(0)&=(e^{i\pi })^{\frac {\log 2}{2\pi i}}=e^{\frac {\log 2}{2}}\\M_{-}(0)&=(e^{-i\pi })^{\frac {\log 2}{2\pi i}}=e^{-{\frac {\log 2}{2}}}\end{aligned}}}
+  
+
+therefore,
+
+  
+    
+      
+        
+          M
+          
+            +
+          
+        
+        (
+        0
+        )
+        =
+        
+          M
+          
+            −
+          
+        
+        (
+        0
+        )
+        
+          e
+          
+            log
+            ⁡
+            
+              2
+            
+          
+        
+        =
+        
+          M
+          
+            −
+          
+        
+        (
+        0
+        )
+        2.
+      
+    
+    {\displaystyle M_{+}(0)=M_{-}(0)e^{\log {2}}=M_{-}(0)2.}
+  
+
+CAVEAT 1: If the problem is not scalar one cannot easily take logarithms. In general explicit solutions are very rare.
+CAVEAT 2: The boundedness (or at least a constraint on the blow-up) of 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ near the special points 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ and 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+ is crucial. Otherwise any function of the form
+
+  
+    
+      
+        M
+        (
+        z
+        )
+        =
+        
+          
+            (
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            
+              
+                log
+                ⁡
+                
+                  2
+                
+              
+              
+                2
+                π
+                i
+              
+            
+          
+        
+        +
+        
+          
+            a
+            
+              z
+              −
+              1
+            
+          
+        
+        +
+        
+          
+            b
+            
+              z
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle M(z)=\left({\frac {z-1}{z+1}}\right)^{\frac {\log {2}}{2\pi i}}+{\frac {a}{z-1}}+{\frac {b}{z+1}}}
+  
+
+is also a solution. In general, conditions on growth are necessary at special points (the end-points of the jump contour or intersection point) to ensure that the problem is well-posed.
+
+
+== Generalizations ==
+
+
+=== DBAR problem ===
+
+Suppose 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is some simply connected domain of the complex 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ plane. Then the scalar equation
+
+  
+    
+      
+        
+          
+            
+              ∂
+              M
+              (
+              z
+              ,
+              
+                
+                  
+                    z
+                    ¯
+                  
+                
+              
+              )
+            
+            
+              ∂
+              
+                
+                  
+                    z
+                    ¯
+                  
+                
+              
+            
+          
+        
+        =
+        f
+        (
+        z
+        ,
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+        ,
+        
+        z
+        ∈
+        D
+        ,
+      
+    
+    {\displaystyle {\frac {\partial M(z,{\bar {z}})}{\partial {\bar {z}}}}=f(z,{\bar {z}}),\quad z\in D,}
+  
+
+is a generalization of a Riemann-Hilbert problem, called the DBAR problem (or 
+  
+    
+      
+        
+          
+            ∂
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {\partial }}}
+  
+ problem). It is the complex form of the nonhomogeneous Cauchy-Riemann equations. To show this, let
+
+  
+    
+      
+        M
+        =
+        u
+        +
+        i
+        v
+        ,
+        
+        f
+        =
+        
+          
+            
+              g
+              +
+              i
+              h
+            
+            2
+          
+        
+        ,
+        
+        z
+        =
+        x
+        +
+        i
+        y
+        ,
+      
+    
+    {\displaystyle M=u+iv,\quad f={\frac {g+ih}{2}},\quad z=x+iy,}
+  
+
+with 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle u(x,y)}
+  
+, 
+  
+    
+      
+        v
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle v(x,y)}
+  
+, 
+  
+    
+      
+        g
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle g(x,y)}
+  
+ and 
+  
+    
+      
+        h
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle h(x,y)}
+  
+ all real-valued functions of real variables 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+. Then, using
+
+  
+    
+      
+        
+          
+            ∂
+            
+              ∂
+              
+                
+                  
+                    z
+                    ¯
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          (
+          
+            
+              
+                ∂
+                
+                  ∂
+                  x
+                
+              
+            
+            +
+            i
+            
+              
+                ∂
+                
+                  ∂
+                  y
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle {\frac {\partial }{\partial {\bar {z}}}}={\frac {1}{2}}\left({\frac {\partial }{\partial x}}+i{\frac {\partial }{\partial y}}\right),}
+  
+
+the DBAR problem yields
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        −
+        
+          
+            
+              ∂
+              v
+            
+            
+              ∂
+              y
+            
+          
+        
+        =
+        g
+        (
+        x
+        ,
+        y
+        )
+        ,
+        
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              y
+            
+          
+        
+        +
+        
+          
+            
+              ∂
+              v
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        h
+        (
+        x
+        ,
+        y
+        )
+        .
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial x}}-{\frac {\partial v}{\partial y}}=g(x,y),\quad {\frac {\partial u}{\partial y}}+{\frac {\partial v}{\partial x}}=h(x,y).}
+  
+
+As such, if 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is holomorphic for 
+  
+    
+      
+        z
+        ∈
+        D
+      
+    
+    {\displaystyle z\in D}
+  
+, then the Cauchy-Riemann equations must be satisfied.
+In case 
+  
+    
+      
+        M
+        →
+        1
+      
+    
+    {\displaystyle M\to 1}
+  
+ as 
+  
+    
+      
+        z
+        →
+        ∞
+      
+    
+    {\displaystyle z\to \infty }
+  
+ and 
+  
+    
+      
+        D
+        :=
+        
+          C
+        
+      
+    
+    {\displaystyle D:=\mathbb {C} }
+  
+, the solution of the DBAR problem is
+
+  
+    
+      
+        M
+        (
+        z
+        ,
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+        =
+        1
+        +
+        
+          
+            1
+            
+              2
+              π
+              i
+            
+          
+        
+        
+          ∬
+          
+            
+              
+                R
+              
+              
+                2
+              
+            
+          
+        
+        
+          
+            
+              f
+              (
+              ζ
+              ,
+              
+                
+                  
+                    ζ
+                    ¯
+                  
+                
+              
+              )
+            
+            
+              ζ
+              −
+              z
+            
+          
+        
+        
+        d
+        ζ
+        ∧
+        d
+        
+          
+            
+              ζ
+              ¯
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle M(z,{\bar {z}})=1+{\frac {1}{2\pi i}}\iint _{\mathbb {R} ^{2}}{\frac {f(\zeta ,{\bar {\zeta }})}{\zeta -z}}\,d\zeta \wedge d{\bar {\zeta }},}
+  
+
+integrated over the entire complex plane; denoted by 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+, and where the wedge product is defined as
+
+  
+    
+      
+        d
+        ζ
+        ∧
+        d
+        
+          
+            
+              ζ
+              ¯
+            
+          
+        
+        =
+        (
+        d
+        ξ
+        +
+        i
+        d
+        η
+        )
+        ∧
+        (
+        d
+        ξ
+        −
+        i
+        d
+        η
+        )
+        =
+        −
+        2
+        i
+        d
+        ξ
+        d
+        η
+        .
+      
+    
+    {\displaystyle d\zeta \wedge d{\bar {\zeta }}=(d\xi +id\eta )\wedge (d\xi -id\eta )=-2id\xi d\eta .}
+  
+
+
+=== Generalized analytic functions ===
+If a function 
+  
+    
+      
+        M
+        (
+        z
+        )
+      
+    
+    {\displaystyle M(z)}
+  
+ is holomorphic in some complex region 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+, then 
+
+  
+    
+      
+        
+          
+            
+              ∂
+              M
+            
+            
+              ∂
+              
+                
+                  
+                    z
+                    ¯
+                  
+                
+              
+            
+          
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle {\frac {\partial M}{\partial {\bar {z}}}}=0,}
+  
+
+in 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+. For generalized analytic functions, this equation is replaced by 
+
+  
+    
+      
+        
+          
+            
+              ∂
+              M
+            
+            
+              ∂
+              
+                
+                  
+                    z
+                    ¯
+                  
+                
+              
+            
+          
+        
+        =
+        A
+        (
+        z
+        ,
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+        M
+        +
+        B
+        (
+        z
+        ,
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+        
+          
+            M
+            ¯
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {\partial M}{\partial {\bar {z}}}}=A(z,{\bar {z}})M+B(z,{\bar {z}}){\overline {M}},}
+  
+
+in a region 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+, where 
+  
+    
+      
+        
+          
+            M
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {M}}}
+  
+ is the complex conjugate of 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ and 
+  
+    
+      
+        A
+        (
+        z
+        ,
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+      
+    
+    {\displaystyle A(z,{\bar {z}})}
+  
+ and 
+  
+    
+      
+        B
+        (
+        z
+        ,
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+      
+    
+    {\displaystyle B(z,{\bar {z}})}
+  
+ are functions of 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+.
+
+Generalized analytic functions have applications in differential geometry, in solving certain type of multidimensional nonlinear partial differential equations and multidimensional inverse scattering.
+
+
+== Applications to integrability theory ==
+Riemann–Hilbert problems have applications to several related classes of problems.
+
+A. Integrable models
+The inverse scattering or inverse spectral problem associated to the Cauchy problems for 1+1 dimensional partial differential equations on the line, or to periodic problems, or even to initial-boundary value problems (Fokas (2002)), can be stated as a Riemann–Hilbert problem. Likewise the inverse monodromy problem for Painlevé equations can be stated as a Riemann–Hilbert problem.
+B. Orthogonal polynomials, Random matrices
+Given a weight on a contour, the corresponding orthogonal polynomials can be computed via the solution of a Riemann–Hilbert factorization problem (Fokas, Its & Kitaev (1992)). Furthermore, the distribution of eigenvalues of random matrices in several classical ensembles is reduced to computations involving orthogonal polynomials (see e.g. Deift (2000)).
+C. Combinatorial probability
+The most celebrated example is the theorem of Baik, Deift & Johansson (1999) on the distribution of the length of the longest increasing subsequence of a random permutation. Together with the study of B above, it is one of the original rigorous investigations of so-called "integrable probability". But the connection between the theory of integrability and various classical ensembles of random matrices goes back to the work of Dyson (see e.g. Dyson (1976)).
+D. Connection to Donaldson-Thomas theory
+The work of Bridgeland Bridgeland (2019) studies a class of Riemann-Hilbert problems coming from Donaldson-Thomas theory and makes connections with Gromov-Witten theory and exact WKB.
+The numerical analysis of Riemann–Hilbert problems can provide an effective way for numerically solving integrable PDEs (see e.g. Trogdon & Olver (2016)).
+
+
+=== Use for asymptotics ===
+In particular, Riemann–Hilbert factorization problems are used to extract asymptotic values for the three problems above (say, as time goes to infinity, or as the dispersion coefficient goes to zero, or as the polynomial degree goes to infinity, or as the size of the permutation goes to infinity). There exists a method for extracting the asymptotic behavior of solutions of Riemann–Hilbert problems, analogous to the method of stationary phase and the method of steepest descent applicable to exponential integrals.
+By analogy with the classical asymptotic methods, one "deforms" Riemann–Hilbert problems which are not explicitly solvable to problems that are. The so-called "nonlinear" method of stationary phase is due to Deift & Zhou (1993), expanding on a previous idea by Its (1982) and Manakov (1974) and using technical background results from Beals & Coifman (1984) and Zhou (1989). A crucial ingredient of the Deift–Zhou analysis is the asymptotic analysis of singular integrals on contours. The relevant kernel is the standard Cauchy kernel (see Gakhov (2001); also cf. the scalar example below).
+An essential extension of the nonlinear method of stationary phase has been the introduction of the so-called finite gap g-function transformation by Deift, Venakides & Zhou (1997), which has been crucial in most applications. This was inspired by work of Lax, Levermore and Venakides, who reduced the analysis of the small dispersion limit of the KdV equation to the analysis of a maximization problem for a logarithmic potential under some external field: a variational problem of "electrostatic" type (see Lax & Levermore (1983)). The g-function is the logarithmic transform of the maximizing "equilibrium" measure. The analysis of the small dispersion limit of KdV equation has in fact provided the basis for the analysis of most of the work concerning "real" orthogonal polynomials (i.e. with the orthogonality condition defined on the real line) and Hermitian random matrices.
+Perhaps the most sophisticated extension of the theory so far is the one applied to the "non self-adjoint" case, i.e. when the underlying Lax operator (the first component of the Lax pair) is not self-adjoint, by Kamvissis, McLaughlin & Miller (2003). In that case, actual "steepest descent contours" are defined and computed. The corresponding variational problem is a max-min problem: one looks for a contour that minimizes the "equilibrium" measure. The study of the variational problem and the proof of existence of a regular solution, under some conditions on the external field, was done in Kamvissis & Rakhmanov (2005); the contour arising is an "S-curve", as defined and studied in the 1980s by Herbert R. Stahl, Andrei A. Gonchar and Evguenii A Rakhmanov.
+An alternative asymptotic analysis of Riemann–Hilbert factorization problems is provided in McLaughlin & Miller (2006), especially convenient when jump matrices do not have analytic extensions. Their method is based on the analysis of d-bar problems, rather than the asymptotic analysis of singular integrals on contours. An alternative way of dealing with jump matrices with no analytic extensions was introduced in Varzugin (1996).
+Another extension of the theory appears in Kamvissis & Teschl (2012) where the underlying space of the Riemann–Hilbert problem is a compact hyperelliptic Riemann surface. The correct factorization problem is no more holomorphic, but rather meromorphic, by reason of the Riemann–Roch theorem.  The related singular kernel is not the usual Cauchy kernel, but rather a more general kernel involving meromorphic differentials defined naturally on the surface (see e.g. the appendix in Kamvissis & Teschl (2012)). The Riemann–Hilbert problem deformation theory is applied to the problem of stability of the infinite periodic Toda lattice under a "short range" perturbation (for example a perturbation of a finite number of particles).
+Most Riemann–Hilbert factorization problems studied in the literature are 2-dimensional, i.e., the unknown matrices are of dimension 2. Higher-dimensional problems have been studied by Arno Kuijlaars and collaborators, see e.g. Kuijlaars & López (2015).
+
+
+== See also ==
+Riemann–Hilbert correspondence
+Wiener-Hopf method
+
+
+== Notes ==
+
+
+== References ==
+Ablowitz, Mark J.; Fokas, A. S. (2003). Complex Variables. Cambridge: Cambridge University Press. ISBN 978-0-521-53429-1.
+Baik, J.; Deift, P.; Johansson, K. (1999), "On the distribution of the length of the longest increasing subsequence of random permutations", Journal of the American Mathematical Society, 12 (4): 1119–1178, doi:10.1090/S0894-0347-99-00307-0.
+Beals, R.; Coifman, R.R. (1984), "Scattering and inverse scattering for first order systems", Communications on Pure and Applied Mathematics, 37: 39–90, doi:10.1002/cpa.3160370105.
+Bitsadze, A.V. (2001) [1994], "Boundary value problems of analytic function theory", Encyclopedia of Mathematics, EMS Press
+Bridgeland, T. (2019), "Riemann–Hilbert problems from Donaldson–Thomas theory", Inventiones Mathematicae, 216 (1): 69–124, arXiv:1611.03697, Bibcode:2019InMat.216...69B, doi:10.1007/s00222-018-0843-8.
+Clancey, K.; Gohberg, I. (1981), Factorization of matrix functions and singular integral operators, Oper. Theory: Advances and Appl., vol. 3, Basel-Boston-Stuttgart: Birkhäuser Verlag.
+Deift, Percy A. (2000), Orthogonal Polynomials and Random Matrices, American Mathematical Society, ISBN 978-0-8218-2695-9.
+Deift, Percy; Venakides, S.; Zhou, X. (1997), New Results in Small Dispersion KdV by an Extension of the Steepest Descent Method for Riemann–Hilbert Problems, International Mathematical Research Notices, pp. 286–299.
+Deift, Percy; Zhou, X. (1993), "A Steepest Descent Method for Oscillatory Riemann–Hilbert Problems; Asymptotics for the MKdV Equation", Annals of Mathematics, Second Series, 137 (2): 295–368, arXiv:math/9201261, doi:10.2307/2946540, JSTOR 2946540, S2CID 12699956.
+Dyson, Freeman (1976), "Fredholm Determinants and Inverse Scattering Problems", Communications in Mathematical Physics, 47 (3): 171–183, Bibcode:1976CMaPh..47..171D, doi:10.1007/BF01608375, S2CID 122511904.
+Fokas, A.S. (2002), "Integrable nonlinear evolution equations on the half-line", Communications in Mathematical Physics, 230 (1): 1–39, Bibcode:2002CMaPh.230....1F, doi:10.1007/s00220-002-0681-8, S2CID 118630271.
+Fokas, A.S.; Its, A.R.; Kitaev, A.V. (1992), "The isomonodromy approach to matrix models in 2D quantum gravity", Communications in Mathematical Physics, 147 (2): 395–430, Bibcode:1992CMaPh.147..395F, doi:10.1007/BF02096594, S2CID 118343085.
+Gakhov, F.D. (2001) [1994], "Riemann–Hilbert problem", Encyclopedia of Mathematics, EMS Press
+Khimshiashvili, G. (2001) [1994], "Birkhoff factorization", Encyclopedia of Mathematics, EMS Press.
+Its, A.R. (1982), "Asymptotics of Solutions of the Nonlinear Schrödinger Equation and Isomonodromic Deformations of Systems of Linear Differential Equations", Soviet Mathematics - Doklady, 24 (3): 14–18.
+Its, A.R. (2003), "The Riemann–Hilbert Problem and Integrable Systems" (PDF), Notices of the AMS, 50 (11): 1389–1400.
+Kamvissis, S.; McLaughlin, K.; Miller, P. (2003), Semiclassical Soliton Ensembles for the Focusing Nonlinear Schrödinger Equation, Annals of Mathematics Study, vol. 154, Princeton: Princeton University Press.
+Kamvissis, S.; Rakhmanov, E.A. (2005), "Existence and Regularity for an Energy Maximization Problem in Two Dimensions", Journal of Mathematical Physics, 46 (8): 083505, arXiv:0907.5571, Bibcode:2005JMP....46h3505K, doi:10.1063/1.1985069, S2CID 17284652.
+Kamvissis, S.; Teschl, G. (2012), "Long-time asymptotics of the periodic Toda lattice under short-range perturbations", J. Math. Phys., 53 (7): 073706, arXiv:0705.0346, Bibcode:2012JMP....53g3706K, doi:10.1063/1.4731768, S2CID 2579238.
+Kuijlaars, Arno; López, Abey (2015), "A vector equilibrium problem for the normal matrix model, and multiple orthogonal polynomials on a star", Nonlinearity, 28 (2): 347–406, arXiv:1401.2419, Bibcode:2015Nonli..28..347K, doi:10.1088/0951-7715/28/2/347, S2CID 119171871.
+Lax, Peter D.; Levermore, C.D. (1983), "The Zero Dispersion Limit for the KdV Equation I-III", Communications on Pure and Applied Mathematics, 36 (3): 253–290, 571–593, 809–829, doi:10.1002/cpa.3160360302.
+Manakov, S.V. (1974), "Nonlinear Fraunnhofer diffraction", Sov. Phys. JETP, 38: 693–696, Bibcode:1974JETP...38..693M.
+McLaughlin, K.; Miller, P. (2006), "The d-bar steepest descent method and the asymptotic behavior of polynomials orthogonal on the unit circle with fixed and exponentially varying nonanalytic weights", IMRP: 1–77.
+Noble, Ben (1958). Methods Based on the Wiener-Hopf Technique for the Solution of Partial Differential Equations. New York, N.Y: Taylor & Francis US. ISBN 978-0-8284-0332-0.
+Pandey, J.N. (1996), The Hilbert transform of Schwartz distributions and applications, Wiley-Interscience.
+Varzugin, G.G. (1996), "Asymptotics of oscillatory Riemann-Hilbert problems", Journal of Mathematical Physics, 37 (11): 5869–5892, Bibcode:1996JMP....37.5869V, doi:10.1063/1.531706
+Vekua, I. N. (2014). Generalized Analytic Functions. Martino. ISBN 978-1-61427-611-1.
+Trogdon, Thomas; Olver, Sheehan (2016), Riemann–Hilbert Problems, Their Numerical Solution, and the Computation of Nonlinear Special Functions, SIAM.
+Zhou, Xin (1989), "The Riemann–Hilbert problem and inverse scattering", SIAM J. Math. Anal., 20 (4): 966–986, doi:10.1137/0520065.

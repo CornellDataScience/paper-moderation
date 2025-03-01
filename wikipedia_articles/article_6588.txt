@@ -1,0 +1,53 @@
+Probabilistic logic programming is a programming paradigm that combines logic programming with probabilities. 
+Most approaches to probabilistic logic programming are based on the distribution semantics, which splits a program into a set of probabilistic facts and a logic program. It defines a probability distribution on interpretations of the Herbrand universe of the program.
+
+
+== Languages ==
+Most approaches to probabilistic logic programming are based on the distribution semantics, which underlies many languages such as Probabilistic Horn Abduction, PRISM, Independent Choice Logic , probabilistic Datalog, Logic Programs with Annotated Disjunctions, ProbLog, P-log, and CP-logic. While the number of languages is large, many share a common approach so that there are transformations with linear complexity that can translate one language into another.
+
+
+== Semantics ==
+Under the distribution semantics, a probabilistic logic program is interpreted as a set of independent probabilistic facts (ground atomic formulas annotated with a probability) and a logic program which can use the probabilistic facts in the bodies of its clauses. The probability of any assignment of truth values to the groundings of the formulas associated with probabilistic facts is given by the product of their probabilities; this is equivalent to assuming the choices of probabilistic facts to be independent random variables.  
+
+
+=== Stratified programs ===
+If for any choice of truth values for the probabilistic facts, the resulting logic program is stratified, it has a unique minimal Herbrand model which can be seen as the unique interpretation associated with that choice of truth values.
+Important subclasses of stratified programs are positive programs, which do not use negation, but may be recursive, and acyclic programs, which may use negation but have no recursive dependencies.  
+
+
+=== Answer set programs ===
+The stable model semantics underlying answer set programming gives meaning to unstratified programs by allocating potentially more than one answer set to every truth value assignment of the probabilistic facts. This raises the question of how to distribute the probability mass across the answer sets.
+The probabilistic logic programming language P-Log resolves this by dividing the probability mass equally between the answer sets, following the principle of indifference. 
+Alternatively, probabilistic answer set programming under the credal semantics allocates a credal set to every query.  Its lower probability bound is defined by only considering those truth value assignments of the probabilistic facts for which the query is true in every answer set of the resulting program (cautious reasoning); its upper probability bound is defined by considering those assignments for which the query is true in some answer set (brave reasoning). 
+
+
+== Inference ==
+Under the distribution semantics, a probabilistic logic program defines a probability distribution over interpretations of its predicates on its Herbrand universe. The probability of a ground query is then obtained from the joint distribution of the query and the worlds: it is the sum of the probability of the worlds where the query is true.
+The problem of computing the probability of queries is called (marginal) inference.  Solving it by computing all the worlds and then identifying those that entail the query is impractical as the number of possible worlds is exponential in the number of ground probabilistic facts. In fact, already for acyclic programs and atomic queries, computing the conditional probability of a query given a conjunction of atoms as evidence is #P-complete. 
+
+
+=== Exact inference ===
+Usually, exact inference is performed by resorting to knowledge compilation: according to this, a propositional theory and a query are compiled into a “target language”, which is then used to answer queries in polynomial time. The compilation becomes the main computational bottleneck, but considerable effort has been devoted to the development of efficient compilers. The compilation methods differ in the compactness of the target language and the class of queries and transformations that they support in polynomial time. 
+
+
+=== Approximate inference ===
+Since the cost of inference may be very high, approximate algorithms have been developed. They either compute subsets of possibly incomplete explanations or use random sampling. In the first approach, a subset of the explanations provides a lower bound and the set of partially expanded explanations provides an upper bound. In the second approach, the truth of the query is repeatedly checked in an ordinary logic program sampled from the probabilistic program. The probability of the query is then given by the fraction of the successes. 
+
+
+== Learning ==
+
+Probabilistic inductive logic programming aims to learn probabilistic logic programs from data. This includes parameter learning, which estimates the probability annotations of a program while the clauses themselves are given by the user, and structure learning, in which the clauses themselves are induced by the probabilistic inductive logic programming system.
+Common approaches to parameter learning are based on expectation–maximization or gradient descent, while structure learning can be performed by searching the space of possible clauses under a variety of heuristics.
+
+
+== See also ==
+Inductive logic programming
+Probabilistic database
+Probabilistic programming
+ProbLog
+Statistical relational learning
+
+
+== References ==
+
+As of 3 February 2024, this article is derived in whole or in part from Riguzzi, Fabrizio; Bellodi, Elena; Zese, Riccardo (2014). "A History of Probabilistic Inductive Logic Programming". Frontiers in Robotics and AI. 1. doi:10.3389/frobt.2014.00006. The copyright holder has licensed the content in a manner that permits reuse under CC BY-SA 3.0 and GFDL. All relevant terms must be followed.

@@ -1,0 +1,186 @@
+In proof complexity, a Frege system is a propositional proof system whose proofs are sequences of formulas derived using a finite set of sound and implicationally complete inference rules. Frege systems (more often known as Hilbert systems in general proof theory) are named after Gottlob Frege.
+The name "Frege system" was first defined by Stephen Cook and Robert Reckhow, and was intended to capture the properties of the most common propositional proof systems.
+
+
+== Formal definition ==
+Cook and Reckhow gave the first formal definition of a Frege system, to which the one below, based on Krajicek, is equivalent.
+Let K be a finite functionally complete set of Boolean connectives, and consider propositional formulas built from variables p0, p1, p2, ... using K-connectives. A Frege rule is an inference rule of the form
+
+  
+    
+      
+        r
+        =
+        
+          
+            
+              
+                B
+                
+                  1
+                
+              
+              ,
+              …
+              ,
+              
+                B
+                
+                  n
+                
+              
+            
+            B
+          
+        
+        ,
+      
+    
+    {\displaystyle r={\frac {B_{1},\dots ,B_{n}}{B}},}
+  
+
+where B1, ..., Bn, B are formulas. If R is a finite set of Frege rules, then F = (K,R) defines a derivation system in the following way. If X is a set of formulas, and A is a formula, then an F-derivation of A from axioms X is a sequence of formulas A1, ..., Am such that Am = A, and every Ak is a member of X, or it is derived from some of the formulas Ai, i < k, by a substitution instance of a rule from R. An F-proof of a formula A is an F-derivation of A from the empty set of axioms (X=∅). F is called a Frege system if
+
+F is sound: every F-provable formula is a tautology.
+F is implicationally complete: for every formula A and a set of formulas X, if X entails A, then there is an F-derivation of A from X.
+The length (number of lines) in a proof A1, ..., Am is m. The size of the proof is the total number of symbols.
+A derivation system F as above is refutationally complete, if for every inconsistent set of formulas X, there is an F-derivation of a fixed contradiction from X.
+
+
+== Examples ==
+Frege's propositional calculus is not a Frege system, since it used axioms instead of axiom schemes, although it can be modified to be a Frege system.
+There are many examples of sound Frege rules on the Propositional calculus page.
+Resolution is not a Frege system because it only operates on clauses, not on formulas built in an arbitrary way by a functionally complete set of connectives. Moreover, it is not implicationally complete, i.e. we cannot conclude 
+  
+    
+      
+        A
+        ∨
+        B
+      
+    
+    {\displaystyle A\lor B}
+  
+ from 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+. However, adding the weakening rule: 
+  
+    
+      
+        
+          
+            A
+            
+              A
+              ∨
+              B
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {A}{A\lor B}}}
+  
+ makes it implicationally complete .  Resolution is also refutationally complete.
+
+
+== Properties ==
+Reckhow's 1979 theorem states that all Frege systems are p-equivalent.
+Natural deduction and sequent calculus (Gentzen system with cut) are also p-equivalent to Frege systems.
+There are polynomial-size Frege proofs of the pigeonhole principle.
+Frege systems are considered to be fairly strong systems. Unlike, say, resolution, there are no known superlinear lower bounds on the number of lines in Frege proofs, and the best known lower bounds on the size of the proofs are quadratic.
+The minimal number of rounds in the prover-adversary game needed to prove a tautology 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ is proportional to the logarithm of the minimal number of steps in a Frege proof of 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+.
+
+		
+			
+			
+		
+
+
+== Extended Frege system ==
+Cook and Reckhow also defined an extension of a Frege system, called Extended Frege, which takes a Frege system F and adds an extra derivation rule which allows one to derive a formula 
+  
+    
+      
+        p
+        ↔
+        D
+      
+    
+    {\displaystyle p\leftrightarrow D}
+  
+, where 
+  
+    
+      
+        ↔
+      
+    
+    {\displaystyle \leftrightarrow }
+  
+ abbreviates its definition in the language of the particular F and the atom 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ does not occur in previously derived formulas including axioms and in the formula 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+. 
+The purpose of the new derivation rule is to introduce 'names' or shortcuts for arbitrary formulas. It allows one to interpret proofs in Extended Frege as Frege proofs operating with circuits instead of formulas.
+Cook's correspondence allows one to interpret Extended Frege as a nonuniform equivalent of Cook's theory PV and Buss's theory 
+  
+    
+      
+        
+          S
+          
+            2
+          
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{2}^{1}}
+  
+ formalizing feasible (polynomial-time) reasoning.
+
+
+== References ==

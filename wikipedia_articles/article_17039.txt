@@ -1,0 +1,2628 @@
+In mathematics, a Laguerre plane is one of the three types of Benz plane, which are the Möbius plane, Laguerre plane and Minkowski plane.  Laguerre planes are named after the French mathematician  Edmond Nicolas Laguerre.
+
+The classical Laguerre plane is an incidence structure that describes the incidence behaviour of the curves 
+  
+    
+      
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+      
+    
+    {\displaystyle y=ax^{2}+bx+c}
+  
+ , i.e. parabolas and lines, in the real affine plane. In order to simplify the structure, to any curve  
+  
+    
+      
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+      
+    
+    {\displaystyle y=ax^{2}+bx+c}
+  
+ the point 
+  
+    
+      
+        (
+        ∞
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (\infty ,a)}
+  
+ is added. A further advantage of this completion is that the plane geometry of the completed parabolas/lines is isomorphic to the geometry of the plane sections of a cylinder (see below).
+
+
+== The classical real Laguerre plane ==
+Originally the classical Laguerre plane was defined as the geometry of the oriented lines and circles in the real Euclidean plane (see ). Here we prefer the parabola model of the classical Laguerre plane.
+We define:
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        :=
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ∪
+        (
+        {
+        ∞
+        }
+        ×
+        
+          R
+        
+        )
+        ,
+         
+        ∞
+        ∉
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle {\mathcal {P}}:=\mathbb {R} ^{2}\cup (\{\infty \}\times \mathbb {R} ),\ \infty \notin \mathbb {R} ,}
+  
+ the set of points,
+
+  
+    
+      
+        
+          
+            Z
+          
+        
+        :=
+        {
+        {
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ∣
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        }
+        ∪
+        {
+        (
+        ∞
+        ,
+        a
+        )
+        }
+        ∣
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        
+          R
+        
+        }
+      
+    
+    {\displaystyle {\mathcal {Z}}:=\{\{(x,y)\in \mathbb {R} ^{2}\mid y=ax^{2}+bx+c\}\cup \{(\infty ,a)\}\mid a,b,c\in \mathbb {R} \}}
+  
+ the set of cycles.
+The incidence structure 
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ is called classical Laguerre plane.
+The point set is 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+ plus a copy of 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ (see figure). Any parabola/line 
+  
+    
+      
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+      
+    
+    {\displaystyle y=ax^{2}+bx+c}
+  
+ gets the additional point  
+  
+    
+      
+        (
+        ∞
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (\infty ,a)}
+  
+.
+Points with the same x-coordinate cannot be connected by curves 
+  
+    
+      
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+      
+    
+    {\displaystyle y=ax^{2}+bx+c}
+  
+. Hence we define:
+Two points 
+  
+    
+      
+        A
+        ,
+        B
+      
+    
+    {\displaystyle A,B}
+  
+ are parallel (
+  
+    
+      
+        A
+        ∥
+        B
+      
+    
+    {\displaystyle A\parallel B}
+  
+)
+if 
+  
+    
+      
+        A
+        =
+        B
+      
+    
+    {\displaystyle A=B}
+  
+ or there is no cycle containing 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+.
+For the description of the classical real Laguerre plane above two points 
+  
+    
+      
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+        )
+        ,
+        (
+        
+          b
+          
+            1
+          
+        
+        ,
+        
+          b
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle (a_{1},a_{2}),(b_{1},b_{2})}
+  
+ are parallel if and only if 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        =
+        
+          b
+          
+            1
+          
+        
+      
+    
+    {\displaystyle a_{1}=b_{1}}
+  
+. 
+  
+    
+      
+        ∥
+      
+    
+    {\displaystyle \parallel }
+  
+ is an equivalence relation, similar to the parallelity of lines.
+The incidence structure 
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ has the following properties:
+Lemma:
+
+For any three points 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+      
+    
+    {\displaystyle A,B,C}
+  
+, pairwise not parallel, there is exactly one cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ containing 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+      
+    
+    {\displaystyle A,B,C}
+  
+.
+For any point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ and any cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ there is exactly one point 
+  
+    
+      
+        
+          P
+          ′
+        
+        ∈
+        z
+      
+    
+    {\displaystyle P'\in z}
+  
+ such that 
+  
+    
+      
+        P
+        ∥
+        
+          P
+          ′
+        
+      
+    
+    {\displaystyle P\parallel P'}
+  
+.
+For any cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+, any point 
+  
+    
+      
+        P
+        ∈
+        z
+      
+    
+    {\displaystyle P\in z}
+  
+ and any point 
+  
+    
+      
+        Q
+        ∉
+        z
+      
+    
+    {\displaystyle Q\notin z}
+  
+ that is not parallel to 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ there is exactly one cycle 
+  
+    
+      
+        
+          z
+          ′
+        
+      
+    
+    {\displaystyle z'}
+  
+ through 
+  
+    
+      
+        P
+        ,
+        Q
+      
+    
+    {\displaystyle P,Q}
+  
+ with 
+  
+    
+      
+        z
+        ∩
+        
+          z
+          ′
+        
+        =
+        {
+        P
+        }
+      
+    
+    {\displaystyle z\cap z'=\{P\}}
+  
+, i.e. 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ and 
+  
+    
+      
+        
+          z
+          ′
+        
+      
+    
+    {\displaystyle z'}
+  
+ touch each other at 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+.
+
+Similar to the sphere model of the classical Moebius plane there is a cylinder model for the classical Laguerre plane:
+
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ is isomorphic to the geometry of plane sections of a circular cylinder in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{3}}
+  
+ .
+The following mapping 
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+ is a projection with center 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,1,0)}
+  
+ that maps the x-z-plane onto the cylinder with the equation 
+  
+    
+      
+        
+          u
+          
+            2
+          
+        
+        +
+        
+          v
+          
+            2
+          
+        
+        −
+        v
+        =
+        0
+      
+    
+    {\displaystyle u^{2}+v^{2}-v=0}
+  
+, axis 
+  
+    
+      
+        (
+        0
+        ,
+        
+          
+            
+              1
+              2
+            
+          
+        
+        ,
+        .
+        .
+        )
+      
+    
+    {\displaystyle (0,{\tfrac {1}{2}},..)}
+  
+ and radius 
+  
+    
+      
+        r
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+         
+        :
+      
+    
+    {\displaystyle r={\tfrac {1}{2}}\ :}
+  
+
+  
+    
+      
+        Φ
+        :
+         
+        (
+        x
+        ,
+        z
+        )
+        →
+        (
+        
+          
+            x
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+        
+          
+            
+              x
+              
+                2
+              
+            
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+        
+          
+            z
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        )
+        =
+        (
+        u
+        ,
+        v
+        ,
+        w
+        )
+         
+        .
+      
+    
+    {\displaystyle \Phi :\ (x,z)\rightarrow ({\frac {x}{1+x^{2}}},{\frac {x^{2}}{1+x^{2}}},{\frac {z}{1+x^{2}}})=(u,v,w)\ .}
+  
+
+The points 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (0,1,a)}
+  
+ (line on the cylinder through the center) appear not as images.
+
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+ projects the  parabola/line with equation 
+  
+    
+      
+        z
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+      
+    
+    {\displaystyle z=ax^{2}+bx+c}
+  
+ into the plane 
+  
+    
+      
+        w
+        −
+        a
+        =
+        b
+        u
+        +
+        (
+        a
+        −
+        c
+        )
+        (
+        v
+        −
+        1
+        )
+      
+    
+    {\displaystyle w-a=bu+(a-c)(v-1)}
+  
+. So, the image of the parabola/line is the plane section of the cylinder with a non perpendicular plane and hence a circle/ellipse without point 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (0,1,a)}
+  
+. The parabolas/line 
+  
+    
+      
+        z
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        a
+      
+    
+    {\displaystyle z=ax^{2}+a}
+  
+ are mapped onto (horizontal) circles.
+A line(a=0) is mapped onto a circle/Ellipse through center 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,1,0)}
+  
+ and a parabola ( 
+  
+    
+      
+        a
+        ≠
+        0
+      
+    
+    {\displaystyle a\neq 0}
+  
+) onto a circle/ellipse that do not contain 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,1,0)}
+  
+.
+
+
+== The axioms of a Laguerre plane ==
+The Lemma above gives rise to the following definition:
+Let 
+  
+    
+      
+        
+          
+            L
+          
+        
+        :=
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}:=({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+  be an incidence structure with point set 
+  
+    
+      
+        
+          
+            P
+          
+        
+      
+    
+    {\displaystyle {\mathcal {P}}}
+  
+ and set of cycles 
+  
+    
+      
+        
+          
+            Z
+          
+        
+      
+    
+    {\displaystyle {\mathcal {Z}}}
+  
+. 
+Two points 
+  
+    
+      
+        A
+        ,
+        B
+      
+    
+    {\displaystyle A,B}
+  
+ are parallel (
+  
+    
+      
+        A
+        ∥
+        B
+      
+    
+    {\displaystyle A\parallel B}
+  
+) if 
+  
+    
+      
+        A
+        =
+        B
+      
+    
+    {\displaystyle A=B}
+  
+ or there is no cycle containing 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+.
+
+  
+    
+      
+        
+          
+            L
+          
+        
+      
+    
+    {\displaystyle {\mathcal {L}}}
+  
+ is called Laguerre plane if the following axioms hold:
+
+B1: For any three points 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+      
+    
+    {\displaystyle A,B,C}
+  
+, pairwise not parallel, there is exactly one cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ that contains 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+      
+    
+    {\displaystyle A,B,C}
+  
+.
+B2: For any point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ and any cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ there is exactly one point 
+  
+    
+      
+        
+          P
+          ′
+        
+        ∈
+        z
+      
+    
+    {\displaystyle P'\in z}
+  
+ such that 
+  
+    
+      
+        P
+        ∥
+        
+          P
+          ′
+        
+      
+    
+    {\displaystyle P\parallel P'}
+  
+.
+B3: For any cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+, any point 
+  
+    
+      
+        P
+        ∈
+        z
+      
+    
+    {\displaystyle P\in z}
+  
+ and any point 
+  
+    
+      
+        Q
+        ∉
+        z
+      
+    
+    {\displaystyle Q\notin z}
+  
+ that is not parallel to 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ there is exactly one cycle 
+  
+    
+      
+        
+          z
+          ′
+        
+      
+    
+    {\displaystyle z'}
+  
+ through 
+  
+    
+      
+        P
+        ,
+        Q
+      
+    
+    {\displaystyle P,Q}
+  
+ with 
+  
+    
+      
+        z
+        ∩
+        
+          z
+          ′
+        
+        =
+        {
+        P
+        }
+      
+    
+    {\displaystyle z\cap z'=\{P\}}
+  
+,
+i.e. 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ and 
+  
+    
+      
+        
+          z
+          ′
+        
+      
+    
+    {\displaystyle z'}
+  
+ touch each other at 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+.
+B4: Any cycle contains at least three points. There is at least one cycle. There are at least four points not on a cycle.
+Four points 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+        ,
+        D
+      
+    
+    {\displaystyle A,B,C,D}
+  
+ are concyclic if there is a cycle 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ with 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+        ,
+        D
+        ∈
+        z
+      
+    
+    {\displaystyle A,B,C,D\in z}
+  
+.
+From the definition of relation 
+  
+    
+      
+        ∥
+      
+    
+    {\displaystyle \parallel }
+  
+ and axiom B2 we get
+Lemma:
+Relation 
+  
+    
+      
+        ∥
+      
+    
+    {\displaystyle \parallel }
+  
+ is an equivalence relation.
+Following the cylinder model of the classical Laguerre-plane we introduce the denotation:
+a) For 
+  
+    
+      
+        P
+        ∈
+        
+          
+            P
+          
+        
+      
+    
+    {\displaystyle P\in {\mathcal {P}}}
+  
+ we set 
+  
+    
+      
+        
+          
+            P
+            ¯
+          
+        
+        :=
+        {
+        Q
+        ∈
+        
+          
+            P
+          
+        
+         
+        
+          |
+        
+         
+        P
+        ∥
+        Q
+        }
+      
+    
+    {\displaystyle {\overline {P}}:=\{Q\in {\mathcal {P}}\ |\ P\parallel Q\}}
+  
+.
+b) An equivalence class 
+  
+    
+      
+        
+          
+            P
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {P}}}
+  
+ is called generator.
+For the classical Laguerre plane a generator is a line parallel to the y-axis (plane model) or a line on the cylinder (space model).
+The connection to linear geometry is given by the following definition:
+For a Laguerre plane   
+  
+    
+      
+        
+          
+            L
+          
+        
+        :=
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}:=({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ we define the local structure
+
+  
+    
+      
+        
+          
+            
+              A
+            
+          
+          
+            P
+          
+        
+        :=
+        (
+        
+          
+            P
+          
+        
+        ∖
+        {
+        
+          
+            P
+            ¯
+          
+        
+        }
+        ,
+        {
+        z
+        ∖
+        {
+        
+          
+            P
+            ¯
+          
+        
+        }
+         
+        
+          |
+        
+         
+        P
+        ∈
+        z
+        ∈
+        
+          
+            Z
+          
+        
+        }
+        ∪
+        {
+        
+          
+            Q
+            ¯
+          
+        
+         
+        
+          |
+        
+         
+        Q
+        ∈
+        
+          
+            P
+          
+        
+        ∖
+        {
+        
+          
+            P
+            ¯
+          
+        
+        }
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {A}}_{P}:=({\mathcal {P}}\setminus \{{\overline {P}}\},\{z\setminus \{{\overline {P}}\}\ |\ P\in z\in {\mathcal {Z}}\}\cup \{{\overline {Q}}\ |\ Q\in {\mathcal {P}}\setminus \{{\overline {P}}\},\in )}
+  
+
+and call it the  residue at point P.
+In the plane model of the classical Laguerre plane  
+  
+    
+      
+        
+          
+            
+              A
+            
+          
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle {\mathcal {A}}_{\infty }}
+  
+ is the real affine plane  
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+.
+In general we get
+Theorem: Any residue of a Laguerre plane is an affine plane.
+And the equivalent definition of a Laguerre plane:
+Theorem:
+An incidence structure together with an equivalence relation 
+  
+    
+      
+        ∥
+      
+    
+    {\displaystyle \parallel }
+  
+ on 
+  
+    
+      
+        
+          
+            P
+          
+        
+      
+    
+    {\displaystyle {\mathcal {P}}}
+  
+ is a
+Laguerre plane if and only if for any point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ the residue 
+  
+    
+      
+        
+          
+            
+              A
+            
+          
+          
+            P
+          
+        
+      
+    
+    {\displaystyle {\mathcal {A}}_{P}}
+  
+ is an affine plane.
+
+
+== Finite Laguerre planes ==
+
+The following incidence structure is a "minimal model" of a Laguerre plane:
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        :=
+        {
+        
+          A
+          
+            1
+          
+        
+        ,
+        
+          A
+          
+            2
+          
+        
+        ,
+        
+          B
+          
+            1
+          
+        
+        ,
+        
+          B
+          
+            2
+          
+        
+        ,
+        
+          C
+          
+            1
+          
+        
+        ,
+        
+          C
+          
+            2
+          
+        
+        }
+         
+        ,
+      
+    
+    {\displaystyle {\mathcal {P}}:=\{A_{1},A_{2},B_{1},B_{2},C_{1},C_{2}\}\ ,}
+  
+
+  
+    
+      
+        
+          
+            Z
+          
+        
+        :=
+        {
+        {
+        
+          A
+          
+            i
+          
+        
+        ,
+        
+          B
+          
+            j
+          
+        
+        ,
+        
+          C
+          
+            k
+          
+        
+        }
+         
+        
+          |
+        
+         
+        i
+        ,
+        j
+        ,
+        k
+        =
+        1
+        ,
+        2
+        }
+         
+        ,
+      
+    
+    {\displaystyle {\mathcal {Z}}:=\{\{A_{i},B_{j},C_{k}\}\ |\ i,j,k=1,2\}\ ,}
+  
+
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+        ∥
+        
+          A
+          
+            2
+          
+        
+        ,
+         
+        
+          B
+          
+            1
+          
+        
+        ∥
+        
+          B
+          
+            2
+          
+        
+        ,
+         
+        
+          C
+          
+            1
+          
+        
+        ∥
+        
+          C
+          
+            2
+          
+        
+         
+        .
+      
+    
+    {\displaystyle A_{1}\parallel A_{2},\ B_{1}\parallel B_{2},\ C_{1}\parallel C_{2}\ .}
+  
+
+Hence 
+  
+    
+      
+        
+          |
+        
+        
+          
+            P
+          
+        
+        
+          |
+        
+        =
+        6
+      
+    
+    {\displaystyle |{\mathcal {P}}|=6}
+  
+ and 
+  
+    
+      
+        
+          |
+        
+        
+          
+            Z
+          
+        
+        
+          |
+        
+        =
+        8
+         
+        .
+      
+    
+    {\displaystyle |{\mathcal {Z}}|=8\ .}
+  
+
+For finite Laguerre planes, i.e. 
+  
+    
+      
+        
+          |
+        
+        
+          
+            P
+          
+        
+        
+          |
+        
+        <
+        ∞
+      
+    
+    {\displaystyle |{\mathcal {P}}|<\infty }
+  
+, we get:
+Lemma:
+For any cycles 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ,
+        
+          z
+          
+            2
+          
+        
+      
+    
+    {\displaystyle z_{1},z_{2}}
+  
+ and any generator 
+  
+    
+      
+        
+          
+            P
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {P}}}
+  
+ of a finite Laguerre plane
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        :=
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}:=({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ we have:
+
+  
+    
+      
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        =
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        =
+        
+          |
+        
+        
+          
+            P
+            ¯
+          
+        
+        
+          |
+        
+        +
+        1
+      
+    
+    {\displaystyle |z_{1}|=|z_{2}|=|{\overline {P}}|+1}
+  
+.
+For a finite Laguerre plane 
+  
+    
+      
+        
+          
+            L
+          
+        
+        :=
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}:=({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ and a cycle 
+  
+    
+      
+        z
+        ∈
+        
+          
+            Z
+          
+        
+      
+    
+    {\displaystyle z\in {\mathcal {Z}}}
+  
+ the integer 
+  
+    
+      
+        n
+        :=
+        
+          |
+        
+        z
+        
+          |
+        
+        −
+        1
+      
+    
+    {\displaystyle n:=|z|-1}
+  
+ is called order of 
+  
+    
+      
+        
+          
+            L
+          
+        
+      
+    
+    {\displaystyle {\mathcal {L}}}
+  
+.
+From combinatorics we get
+Lemma:
+Let 
+  
+    
+      
+        
+          
+            L
+          
+        
+        :=
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}:=({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ be a Laguerre—plane of order 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+. Then
+
+a) any residue 
+  
+    
+      
+        
+          
+            
+              A
+            
+          
+          
+            P
+          
+        
+      
+    
+    {\displaystyle {\mathcal {A}}_{P}}
+  
+ is an affine plane of order 
+  
+    
+      
+        n
+        ,
+        
+      
+    
+    {\displaystyle n,\quad }
+  
+
+b) 
+  
+    
+      
+        
+          |
+        
+        
+          
+            P
+          
+        
+        
+          |
+        
+        =
+        
+          n
+          
+            2
+          
+        
+        +
+        n
+        ,
+      
+    
+    {\displaystyle |{\mathcal {P}}|=n^{2}+n,}
+  
+
+c) 
+  
+    
+      
+        
+          |
+        
+        
+          
+            Z
+          
+        
+        
+          |
+        
+        =
+        
+          n
+          
+            3
+          
+        
+        .
+      
+    
+    {\displaystyle |{\mathcal {Z}}|=n^{3}.}
+  
+
+
+== Miquelian Laguerre planes ==
+Unlike Moebius planes the formal generalization of the classical model of a Laguerre plane, i.e. replacing 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ by an arbitrary field 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+, always leads to an example of a Laguerre plane.
+Theorem:
+For a field 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+  and
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        :=
+        
+          K
+          
+            2
+          
+        
+        ∪
+      
+    
+    {\displaystyle {\mathcal {P}}:=K^{2}\cup }
+  
+ 
+  
+    
+      
+        (
+        {
+        ∞
+        }
+        ×
+        K
+        )
+        ,
+         
+        ∞
+        ∉
+        K
+      
+    
+    {\displaystyle (\{\infty \}\times K),\ \infty \notin K}
+  
+,
+
+  
+    
+      
+        
+          
+            Z
+          
+        
+        :=
+        {
+        {
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        
+          K
+          
+            2
+          
+        
+         
+        
+          |
+        
+         
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        }
+        ∪
+        {
+        (
+        ∞
+        ,
+        a
+        )
+        }
+         
+        
+          |
+        
+         
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        K
+        }
+      
+    
+    {\displaystyle {\mathcal {Z}}:=\{\{(x,y)\in K^{2}\ |\ y=ax^{2}+bx+c\}\cup \{(\infty ,a)\}\ |\ a,b,c\in K\}}
+  
+ the incidence structure
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        K
+        )
+        :=
+        (
+        
+          
+            P
+          
+        
+        ,
+        
+          
+            Z
+          
+        
+        ,
+        ∈
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(K):=({\mathcal {P}},{\mathcal {Z}},\in )}
+  
+ is a Laguerre plane with the following parallel relation: 
+  
+    
+      
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+        )
+        ∥
+        (
+        
+          b
+          
+            1
+          
+        
+        ,
+        
+          b
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle (a_{1},a_{2})\parallel (b_{1},b_{2})}
+  
+ if and only if 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        =
+        
+          b
+          
+            1
+          
+        
+      
+    
+    {\displaystyle a_{1}=b_{1}}
+  
+.
+Similarly to a Möbius plane the Laguerre version of the Theorem of Miquel holds:
+
+Theorem of Miquel:
+For the Laguerre plane 
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        K
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(K)}
+  
+ the following is true:
+
+If for any 8 pairwise not parallel points 
+  
+    
+      
+        
+          P
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          P
+          
+            8
+          
+        
+      
+    
+    {\displaystyle P_{1},\ldots ,P_{8}}
+  
+ that can be assigned to the vertices of a cube such that the points in 5 faces correspond to concyclical quadruples then the sixth quadruple of points is concyclical, too.
+(For a better overview in the figure there are circles drawn instead of parabolas)
+The importance of the Theorem of Miquel shows in the following theorem, which is due to v. d. Waerden, Smid and Chen:
+Theorem: Only a Laguerre plane 
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        K
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(K)}
+  
+ satisfies the theorem of Miquel.
+Because of the last theorem 
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        K
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(K)}
+  
+ is called a "Miquelian Laguerre plane".
+The minimal model of a Laguerre plane is miquelian. It is isomorphic to the Laguerre plane 
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        K
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(K)}
+  
+ with 
+  
+    
+      
+        K
+        =
+        G
+        F
+        (
+        2
+        )
+      
+    
+    {\displaystyle K=GF(2)}
+  
+ (field 
+  
+    
+      
+        {
+        0
+        ,
+        1
+        }
+      
+    
+    {\displaystyle \{0,1\}}
+  
+).
+A suitable stereographic projection shows that 
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        K
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(K)}
+  
+ is isomorphic to the geometry of the plane sections on a quadric cylinder over field 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+.
+
+
+== Ovoidal Laguerre planes ==
+There are many Laguerre planes that are not miquelian (see weblink below). The class that is most similar to miquelian Laguerre planes is the ovoidal Laguerre planes. An ovoidal Laguerre plane is the geometry of the plane sections of a cylinder that is constructed by using an oval instead of a non degenerate conic. An oval is a quadratic set and bears the same geometric properties as a non degenerate conic in a projective plane: 1) a line intersects an oval in zero, one, or two points and 2) at any point there is a unique tangent. A simple oval in the real plane can be constructed by glueing together two suitable halves of different ellipses, such that the result is not a conic. Even in the finite case there exist ovals (see quadratic set).
+
+
+== See also ==
+Laguerre transformations
+
+
+== References ==
+
+
+== External links ==
+Benz plane in the Encyclopedia of Mathematics
+Lecture Note Planar Circle Geometries, an Introduction to Moebius-, Laguerre- and Minkowski Planes, pp. 67

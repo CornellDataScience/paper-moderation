@@ -1,0 +1,66 @@
+Avantix Mobile ("AVB") is a portable railway ticket issuing system used across the British railway network from 2001 to 2017.
+
+
+== Development ==
+Development started in 2000 by Sema Group plc, as an IT services company which was acquired by Schlumberger Ltd in 2001 and became SchlumbergerSema. The company has since been acquired by France-based IT group Atos, SA.  Atos now continues to develop and maintain the system.  The first machines were bought and put into use by train operating companies (TOCs) in 2002.  By late 2005, market penetration had reached 80%, and as of 2007 SPORTIS has been superseded completely.
+The Avantix Mobile system was designed for the Sema Group plc by Printer Systems Limited this included the technique of printing and encoding the magnetic stripe at the same time, the Z-fold ticket pack and the electronic control system with interface to a Casio PDA. The Avantix Mobile housing was designed, developed and engineered by Hyphen Design Ltd, of London. Particular design and engineering challenges were a tamper-resistant PDA retention and ejection mechanism, and a secure loading door latch, to prevent the device spilling ticket stock or batteries if dropped. Hyphen design Design also developed a cartridge design for holding Z-fold or fan-fold ticket stock. With the horizontally mounted cartridge, a stack of 3 or more of the fan-fold stock could easily be drawn into the print head and jam it. The solution was a pad of fine silicone rubber fingers, stuck to the top and bottom internal surfaces of the cartridge, to provide just enough grip on the uneven ticket stack, without putting too much load on the print head.
+Avantix Mobile was the successor to the SPORTIS system which had been developed in the mid-1980s for British Rail. SPORTIS was the first fully computerized portable ticketing system for use by on-train staff and Revenue Protection Inspectors, and in other situations, where mobile ticket-issuing facilities are required.  However, by 2002, the machines themselves were up to 15 years old, with their underlying technology being several years older, and they lacked the storage capacity for the increasing variety of fares and promotions available on the post-privatisation British railway system.
+Avantix Mobile machines were first adopted by TOCs owned at the time by National Express; however, they are now in use across all National Rail-controlled TOCs with the exception of Merseyrail who continued to issue paper tickets until TVMs had been installed at the last few stations on the Wirral line, which did not have any ticket issuing facilities.
+Arriva Trains Wales announced in January 2016, that their Avantix machines will be withdrawn after March 2016. The replacement machines will produce paper tickets with no magnetic stripe; instead they will carry a bar code which can be read by some National Rail ticket barriers. As they are not compatible with barriers on the London Underground they will not be accepted for cross-London services on the Underground even if this would normally be included in the fare. A pilot scheme will operate on Cardiff local services from mid-January, however, the tickets issued will not be valid on services operated by other companies, including other Arriva franchises.
+
+
+== Ticket stock ==
+Whereas the former SPORTIS system was only able to print non-magnetically-encoded tickets on flimsy paper rolls, Avantix Mobile could produce tickets both in this format and with magnetic stripe encoding on card tickets with a magnetic stripe.  Paper tickets are provided in rolls of 450; card stock comes in "fan-fold" packs of 250 (however, roll-stock is no longer used as magnetically encoded card stock has become the Rail Settlement Plan standard).
+Magnetically encoded tickets have the advantage of being able to operate the automatic ticket gates which are used at a large number of National Rail stations throughout Britain, as well as at the majority of London Underground stations.
+Paper roll tickets carry the Rail Settlement Plan form number RSP 3594: the same as on post-privatization SPORTIS tickets, as SPORTIS used the same blank stock. Gatwick Express has frequently used dedicated stock, RSP 3594/GA, with a red colour scheme and security background (RSP 3594 is orange with a pale green background).  Three types of card stock have been used: two versions with the form number RSP 3599, and one (used most often as of 2007) numbered RSP 9299.  On the first version of RSP 3599, each ticket had diagonally cut-off corners, but this later changed to rounded corners as is standard on most other ticket issuing systems.  Both of these types had pre-printed headings such as "Class" and "Ticket Type".  With the move to "Common Stock" ticketing, where all information is printed by the machine, RSP 9299 stock with no pre-printed headings was introduced.  These tickets have always had rounded corners.
+
+
+== System description ==
+
+The machine consists of a specialized PDA device, upon which all fare, timetable and other data is stored, a small ticket printer and its batteries, the blank ticket stock, and a ticket cradle which holds the tickets when they have been printed.  The printer and ticket stock are housed within a plastic case into which the PDA slides.
+Including the plastic casing, an Avantix Mobile machine is 262mm tall, 126mm wide and has a depth of 175mm.  Total weight including batteries, a full set of ticket stock, and the padded shoulder strap is 2.03kg.  Thermal printing is used, with a magnetically encoded ticket typically taking 3+1⁄2 seconds to print.  The printer uses two lithium-ion batteries, similar to those used in many standard consumer electronics products.  These are charged in standard charging trays as used in camcorders, for example.
+AVB issues tickets on magnetically encoded common ticket stock. The thermally printed tickets emerge from the top of the printer.
+There are three options for credit-card acceptance
+
+a Gemalto Magic 1100 Chip & PIN reader can be plugged into the printer
+a VeriFone Xplorer terminal can be used with Bluetooth connectivity to the IT-10 PDA
+a Thyron MPT600 terminal can be used with Bluetooth connectivity to the IT-10 PDA
+For passengers who do not have a Chip and PIN or Chip and Signature payment card, credit card payments are processed by a swipe slot in the Avantix casing which reads the magnetic stripe of the card and requires the buyer to sign a card receipt. This magnetic read head can also be used to swipe suitable magnetic tickets and will tell the user if the ticket has been through a ticket barrier.
+The PDA works as a touch screen instrument using either a stylus or finger.
+The fares and timetable information on the PDA is stored on a memory card. Updates are downloaded when the PDA is in a docking station.
+All fares are on AVB although advance purchase tickets can't be sold as generally these require seat reservations. Only weekly season tickets can be sold. Monthly and annual prices can be looked up by going to the season enquiry menu. All types of Railcard discounts, local council discount schemes and other concessions are loaded on to an AVB. Plusbus tickets and rover tickets can also be sold along with certain ferry and bus through ticketing. AVB can handle both CRS station short codes and National Location Codes (NLCs); but if the user does not know either code, typing in the station name will bring the fares up.
+Timetable information can also be accessed by using the timetable enquiry facility. Whilst using the timetable enquiry screen, highlighting the start and end of one leg of the train journey and choosing select will then show where that train started and every planned stop, with the times right through to the journey's end.
+Multiple ticket issues can be done using the shopping basket facility. So if a buyer wishes to purchase numerous tickets they can all be grouped together in the shopping basket and sold as one transaction.
+The user can also issue group tickets on to just one ticket rather than printing off multiple tickets.
+The last 16 issues facility shows last 16 tickets issued, which is handy for repeat fare transactions.
+AVB also comes loaded with a popular products function where a code is entered a screen with the most popular fares for a route will be displayed. This saves the user typing in the origin, destination and ticket type as popular products enable the user to just hit one button on one screen rather than going through 3-4 screens.
+Cash, Rail Travel Vouchers, Rail Warrants (traders' and armed forces), cheques (in some cases), National Transport Tokens, and Visa, Mastercard and American Express credit/debit cards are all accepted payments for AVB users. Visa Electron and International Maestro cards are not accepted on any portable equipment due to the need for online authorization. (They are accepted at many train operating companies' ticket counters.) Cards that are programmed to always require on-line authorization may also not be accepted.
+Incident enquiry screen shows printer and PDA battery life as well as any non-issued tickets.
+AVB can be secured by the user setting a code word to prevent misuse.
+
+
+== Users ==
+Abellio Greater Anglia (including Stansted Express)
+Abellio ScotRail
+Arriva Trains Wales
+c2c
+Chiltern Railways
+CrossCountry
+East Midlands Trains
+Grand Central
+Great Northern
+Great Western Railway
+Hull Trains
+London Midland
+London Overground
+Northern
+Southern (including Gatwick Express)
+Southeastern
+South West Trains (including Island Line Trains)
+Thameslink
+TransPennine Express
+Virgin Trains
+Virgin Trains East Coast
+
+
+== References ==

@@ -1,0 +1,90 @@
+GEO600 is a gravitational wave detector located near Sarstedt, a town 20 kilometres (12 mi) to the south of Hanover, Germany. It is designed and operated by scientists from the Max Planck Institute for Gravitational Physics, Max Planck Institute of Quantum Optics and the Leibniz Universität Hannover, along with University of Glasgow, University of Birmingham and Cardiff University in the United Kingdom, and is funded by the Max Planck Society and the Science and Technology Facilities Council (STFC).
+GEO600 is capable of detecting gravitational waves in the frequency range 50 Hz to 1.5 kHz, and is part of a worldwide network of gravitational wave detectors.  This instrument, and its sister interferometric detectors, when operational, are some of the most sensitive gravitational wave detectors ever designed. They are designed to detect relative changes in distance of the order of 10−21, about the size of a single atom compared to the distance from the Sun to the Earth. Construction on the project began in 1995.
+In March 2020 the COVID-19 pandemic forced the suspension of operation of other gravitational wave observatories such as LIGO and Virgo (and in April 2020, KAGRA), but GEO600 continued operations.
+As of 2023, GEO600 is active in its gravitational wave observation operations.
+
+
+== History ==
+In the 1970s, two groups in Europe, one led by Heinz Billing in Germany and one led by Ronald Drever in UK, initiated investigations into laser-interferometric gravitational wave detection. In 1975 the Max Planck Institute for Astrophysics in Munich started with a prototype of 3-metre (9.8 ft) armlength, which led to a prototype with 30-metre (98 ft) armlength at the Max Planck Institute of Quantum Optics (MPQ) in Garching in 1983. In 1977 the Department of Physics and Astronomy of the University of Glasgow began similar investigations, and in 1980 started operation of a 10-metre (33 ft) prototype.
+In 1985 the Garching group proposed the construction of a large detector with 3-kilometre (2 mi) armlength, the British group an equivalent project in 1986. The two groups combined their efforts in 1989 – the project GEO was born, with the Harz mountains in northern Germany considered an ideal site. The project was, however, not funded, because of financial problems. Thus in 1994 a smaller detector was proposed: GEO600, to be built in the lowlands near Hannover, with arms of 600 metres (2,000 ft) in length. The construction of this British-German gravitational wave detector started in September 1995.
+In 2001 the Max Planck Institute for Gravitational Physics (Albert Einstein Institute, AEI) in Potsdam took over the Hannover branch of the MPQ, and since 2002 the detector is operated by a joint Center of Gravitational Physics of AEI and Leibniz Universität Hannover, together with the universities of Glasgow and Cardiff. Since 2002 GEO600 participated in several data runs in coincidence with the LIGO detectors. In 2006, GEO600 has reached the design sensitivity, but up to now no signal has been detected. The next aim is to reduce the remaining noise by another factor of about 10, until 2016.
+
+
+== Hardware ==
+GEO600 is a Michelson interferometer. It consists of two 600-metre-long (2,000 ft) arms, which the laser beam passes twice, so that the effective optical arm length is 1,200 metres (3,900 ft). The major optical components are located in an ultra-high vacuum system, with a pressure of less than 10−8 mbar.
+
+
+=== Suspensions and seismic isolation ===
+For precise measurements, the optics must be isolated from ground motion and other influences from the environment. For this reason, all ground-based interferometric gravitational wave detectors suspend their mirrors as multi-stage pendulums. For frequencies above the pendulum resonance frequency, pendulums provide a good isolation against vibrations.
+All the main optics of GEO600 are suspended as triple pendulums, to isolate the mirrors from vibrations in the horizontal plane. The uppermost and the intermediate mass are hung from cantilever springs, which provide isolation against vertical movement. 
+On the uppermost mass are six coil-magnet actuators that are used to actively dampen the pendulums.
+Furthermore, the whole suspension cage sits on piezo crystals. The crystals are used for an 'active seismic isolation system'. It moves the whole suspension in the opposite direction of the ground motion, so that ground motion is cancelled.
+
+
+=== Optics ===
+The main mirrors of GEO600 are cylinders of fused silica with a diameter of 18 centimetres (7.1 in) and a height of 10 centimetres (3.9 in).
+The beam splitter, with dimensions of 26 centimetres (10 in) diameter and 8 centimetres (3.1 in) thickness, is the only transmissive piece of optics in the high power path, therefore it was made from special grade fused silica. Its absorption has been measured to be smaller than 0.25 ppm per 1 centimetre (0.39 in).
+
+
+=== Advanced ===
+GEO600 uses many advanced techniques and hardware that are planned to be used in the next generation of ground based gravitational wave detectors:
+
+Monolithic suspensions: The mirrors are suspended as pendulums. While steel wires are used for secondary mirrors, GEO's main mirrors are hanging from so-called 'monolithic' suspensions. This means that the wires are made from the same material as the mirror: fused silica. The reason is that fused silica has less mechanical losses, and losses lead to noise.
+Electrostatic drives: Actuators are needed to keep the mirrors in their position and to align them. Secondary mirrors of GEO600 have magnets glued to them for this purpose. They can then be moved by coils. Since gluing magnets to mirrors will increase mechanical losses, the main mirrors of GEO600 use electrostatic drives (ESDs). The ESDs are a comb-like structure of electrodes at the back side of the mirror. If a voltage is applied to the electrodes, they produce an inhomogeneous electric field. The mirror will feel a force in this field.
+Thermal mirror actuation system: A system of heaters is sitting at the far east mirror. When heated, a thermal gradient will appear in the mirror, and the radius of curvature of the mirror changes due to thermal expansion. The heaters allow thermal tuning of the mirror's radius of curvature.
+Signal recycling: An additional mirror at the output of the interferometer forms a resonant cavity together with the end mirrors and thus increases a potential signal.
+Homodyne detection (also called 'DC readout') 
+Output Mode Cleaner (OMC): An additional cavity at the output of the interferometer in front of the photodiode. Its purpose is to filter out light that does not potentially carry a gravitational wave signal.
+Squeezing: Squeezed vacuum is injected into the dark port of the beam splitter. The use of squeezing can improve the sensitivity of GEO600 above 700 Hz by a factor of 1.5.
+A further difference to other projects is that GEO600 has no arm cavities.
+
+
+== Sensitivity and measurements ==
+The sensitivity for gravitational wave strain is usually measured in amplitude spectral density (ASD). The peak sensitivity of GEO600 in this unit is 2×10−22 1/√Hz at 600 Hz. At high frequencies the sensitivity is limited by the available laser power. At the low frequency end, the sensitivity of GEO600 is limited by seismic ground motion.
+
+
+== Joint science run with LIGO ==
+In November 2005, it was announced that the LIGO and GEO instruments began an extended joint science run. The three instruments (LIGO's instruments are located near Livingston, Louisiana and on the Hanford Site, Washington in the US) collected data for more than a year, with breaks for tuning and updates. This was the fifth science run of GEO600.  No signals were detected on previous runs.
+The first observation of gravitational waves on 14 September 2015 was announced by the LIGO and Virgo interferometer collaborations on 11 February 2016. However, the Virgo interferometer in Italy was not operating at the time, and the GEO600 was in engineering mode and is not sensitive enough, and so could not confirm the signal. The GEO600 began taking data simultaneously with Advanced LIGO on 18 September 2015.
+
+
+== Claims on holographic properties of spacetime ==
+On 15 January 2009 it was reported in New Scientist that some yet unidentified noise that was present in the GEO600 detector measurements might be because the instrument is sensitive to extremely small quantum fluctuations of space-time affecting the positions of parts of the detector. This claim was made by Craig Hogan, a scientist from Fermilab, on the basis of his own theory of how such fluctuations should occur motivated by the holographic principle.
+The New Scientist story states that Hogan sent his prediction of "holographic noise" to the GEO600 collaboration in June 2008, and subsequently received a plot of the excess noise which "looked exactly the same as my prediction". However, Hogan knew before that time that the experiment was finding excess noise. Hogan's article published in Physical Review D in May 2008 states:
+
+the approximate agreement of predicted holographic noise with otherwise unexplained noise in GEO600 motivates further study.
+Hogan cites a 2007 talk from the GEO600 collaboration which already mentions "mid-band 'mystery' noise", and where the noise spectra are plotted. A similar remark was made in a GEO600 paper submitted in October 2007 and published in May 2008:
+
+in the region between 100 Hz and 500 Hz a discrepancy between the uncorrelated sum of all noise projections and the actual observed sensitivity is found.
+It is a very common occurrence for gravitational wave detectors to find excess noise that is subsequently eliminated. According to Karsten Danzmann, the GEO600 principal investigator,
+
+the daily business of improving the sensitivity of these experiments always throws up some excess noise [...]. We work to identify its cause, get rid of it and tackle the next source of excess noise.
+Additionally, some new estimates of the level of holographic noise in interferometry show that it must be much smaller in magnitude than was claimed by Hogan.
+
+
+== Data and Einstein@home ==
+Not only the output of the main photodiode is registered, but also the output of a number of secondary sensors, for example photodiodes that measure auxiliary laser beams, microphones, seismometers, accelerometers, magnetometers and the performance of all the control circuits. These secondary sensors are important for diagnosis and to detect environmental influences on the interferometer output. 
+The data stream is partly analyzed by the distributed computing project 'Einstein@home', software that volunteers can run on their computers.
+From September 2011, both VIRGO and the LIGO detectors were shut down for upgrades, leaving GEO600 as the only operating large scale laser interferometer searching for gravitational waves.  Subsequently, in September 2015, the advanced LIGO detectors came online and were used in the first Observing Run 'O1' at a sensitivity roughly 4 times greater than Initial LIGO for some classes of sources (e.g., neutron-star binaries), and a much greater sensitivity for larger systems with their peak radiation at lower audio frequencies.  These advanced LIGO detectors were developed under the LIGO Scientific Collaboration with Gabriela González as the spokesperson. By 2019, the sensitivity of the new advanced LIGO detectors should be at least 10 times greater than the original LIGO detectors.
+
+
+== See also ==
+Gravitational radiation
+Gravitational wave astronomy and first observation of gravitational waves: GW150914, GW151226, GW170104
+Fermilab Holometer
+INDIGO, a planned gravitational interferometric detector in India
+eLISA, the space-based ESA gravitational wave detector
+VIRGO, the European gravitational interferometric detector
+TAMA 300, the Japanese gravitational interferometric detector
+Taiji Program in Space, a space-based Chinese gravitational wave detector
+
+
+== References ==
+
+
+== External links ==
+
+GEO600 home page, the official website of the GEO600 project.
+Cardiff Gravity Group Archived 2013-05-01 at the Wayback Machine, a page describing research at Cardiff University in Wales, including collaboration in the GEO 600 project, includes an excellent list of tutorials on gravitational wave radiation.
+Amos, Jonathan.  Science to ride gravitational waves.  November 8, 2005.  BBC News.
+LIGO Magazine is published twice a year by the LIGO Scientific Collaboration and details the latest research, news and personalities across the diverse group of members. It is available in pdf format as a free download from this website.

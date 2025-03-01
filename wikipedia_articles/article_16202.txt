@@ -1,0 +1,137 @@
+This list compares various amounts of computing power in instructions per second organized by order of magnitude in FLOPS.
+
+
+== Milliscale computing (10−3) ==
+2×10−3: average human multiplication of two 10-digit numbers using pen and paper without aids
+
+
+== Deciscale computing (10−1) ==
+1×10−1: multiplication of two 10-digit numbers by a 1940s electromechanical desk calculator
+3×10−1: multiplication on Zuse Z3 and Z4, first programmable digital computers, 1941 and 1945 respectively
+5×10−1: computing power of the average human mental calculation for multiplication using pen and paper
+
+
+== Scale computing (100) ==
+1.2 OP/S: addition on Z3, 1941, and multiplication on Bell Model V, 1946
+2.4 OP/S: addition on Z4, 1945
+
+
+== Decascale computing (101) ==
+1.8×101: ENIAC, first programmable electronic digital computer, 1945
+5×101: upper end of serialized human perception computation (light bulbs do not flicker to the human observer)
+7×101: Whirlwind I 1951 vacuum tube computer and IBM 1620 1959 transistorized scientific minicomputer
+
+
+== Hectoscale computing (102) ==
+1.3×102: PDP-4 commercial minicomputer, 1962
+2×102: IBM 602 electromechanical calculator (then called computer), 1946
+6×102: Manchester Mark 1 electronic general-purpose stored-program digital computer, 1949
+
+
+== Kiloscale computing (103) ==
+2×103: UNIVAC I, first American commercially available electronic general-purpose stored program digital computer, 1951
+3×103: PDP-1 commercial minicomputer, 1959
+15×103: IBM Naval Ordnance Research Calculator, 1954
+24×103: AN/FSQ-7 Combat Direction Central, 1957
+30×103: IBM 1130 commercial minicomputer, 1965
+40×103: multiplication on Hewlett-Packard 9100A early desktop electronic calculator, 1968
+53×103: Lincoln TX-2 transistor-based computer, 1958
+92×103: Intel 4004, first commercially available full function CPU on a chip, released in 1971
+500×103: Colossus computer vacuum tube cryptanalytic supercomputer, 1943
+
+
+== Megascale computing (106) ==
+1×106: computing power of the Motorola 68000 commercial computer introduced in 1979.
+1.2×106: IBM 7030 "Stretch" transistorized supercomputer, 1961
+5×106: CDC 6600, first commercially successful supercomputer, 1964
+11×106: Intel i386 microprocessor at 33 MHz, 1985
+14×106: CDC 7600 supercomputer, 1967
+40×106: i486 microprocessor at 50 MHz, 1989
+86×106: Cray 1 supercomputer, 1978
+100×106: Pentium (i586) microprocessor, 1993
+400×106: Cray X-MP, 1982
+
+
+== Gigascale computing (109) ==
+1×109: ILLIAC IV 1972 supercomputer does first computational fluid dynamics problems
+1.4×109: Intel Pentium III microprocessor, 1999
+1.6×109: PowerVR MBX Lite 3D GPU on iPhone 1, 2007
+8×109: PowerVR SGX535 GPU on iPad 1, 2010
+136×109: PowerVR GXA6450 GPU on iPhone 6 and iPhone SE, 2014
+148×109: Intel Core i7-980X Extreme Edition commercial computing 2010
+
+
+== Terascale computing (1012) ==
+1.34×1012: Intel ASCI Red 1997 supercomputer
+1.344×1012 GeForce GTX 480 in 2010 from Nvidia at its peak performance
+2.15×1012: iPhone 15 Pro September 2023 A17 Pro processor
+4.64×1012: Radeon HD 5970 in 2009 from AMD (under ATI branding) at its peak performance
+5.152×1012: S2050/S2070 1U GPU Computing System from Nvidia
+11.3×1012: GeForce GTX 1080 Ti in 2017
+13.7×1012: Radeon RX Vega 64 in 2017
+15.0×1012: Nvidia Titan V in 2017
+80×1012: IBM Watson
+170×1012: Nvidia DGX-1 The initial Pascal based DGX-1 delivered 170 teraflops of half precision processing.
+478.2×1012 IBM BlueGene/L 2007 Supercomputer
+960×1012 Nvidia DGX-1 The Volta-based upgrade increased calculation power of Nvidia DGX-1 to 960 teraflops.
+
+
+== Petascale computing (1015) ==
+
+1.026×1015: IBM Roadrunner 2009 Supercomputer
+1.32×1015: Nvidia GeForce 40 series' RTX 4090 consumer graphics card achieves 1.32 petaflops in AI applications, October 2022
+2×1015: Nvidia DGX-2 a 2 Petaflop Machine Learning system (the newer DGX A100 has 5 Petaflop performance)
+11.5×1015: Google TPU pod containing 64 second-generation TPUs, May 2017
+17.17×1015: IBM Sequoia's LINPACK performance, June 2013
+20×1015: roughly the hardware-equivalent of the human brain according to Ray Kurzweil. Published in his 1999 book: The Age of Spiritual Machines: When Computers Exceed Human Intelligence
+33.86×1015: Tianhe-2's LINPACK performance, June 2013
+36.8×1015: 2001 estimate of computational power required to simulate a human brain in real time.
+93.01×1015: Sunway TaihuLight's LINPACK performance, June 2016
+143.5×1015: Summit's LINPACK performance, November 2018
+
+
+== Exascale computing (1018) ==
+
+1×1018: Fugaku 2020 Japanese supercomputer in single precision mode
+1.1x1018: Frontier 2022 U.S. supercomputer
+1.88×1018: U.S. Summit achieves a peak throughput of this many operations per second, whilst analysing genomic data using a mixture of numerical precisions.
+2.43×1018: Folding@home distributed computing system during COVID-19 pandemic response
+1.72×1018: operations per second of El Capitan, the fastest non-distributed supercomputer in the world as of November 2024
+
+
+== Zettascale computing (1021) ==
+
+1×1021: Accurate global weather estimation on the scale of approximately 2 weeks. Assuming Moore's law remains applicable, such systems may be feasible around 2035.
+A zettascale computer system could generate more single floating point data in one second than was stored by any digital means on Earth in the first quarter of 2011.
+
+
+== Beyond zettascale computing (>1021) ==
+1.12×1036: Estimated computational power of a Matrioshka brain, assuming 1.87×1026 watt power produced by solar panels and 6 GFLOPS/watt efficiency.
+4×1048: Estimated computational power of a Matrioshka brain whose power source is the Sun, the outermost layer operates at 10 kelvins, and the constituent parts operate at or near the Landauer limit and draws power at the efficiency of a Carnot engine
+5×1058: Estimated power of a galaxy equivalent in luminosity to the Milky Way converted into Matrioshka brains.
+
+
+== See also ==
+Futures studies – study of possible, probable, and preferable futures, including making projections of future technological advances
+History of computing hardware (1960s–present)
+List of emerging technologies – new fields of technology, typically on the cutting edge. Examples include genetics, robotics, and nanotechnology (GNR)
+Artificial intelligence – computer mental abilities, especially those that previously belonged only to humans, such as speech recognition, natural language generation, etc.
+History of artificial intelligence (AI)
+Strong AI – hypothetical AI as smart as a human
+Quantum computing
+Timeline of quantum computing and communication
+Moore's law – observation (not actually a law) that, over the history of computing hardware, the number of transistors on integrated circuits doubles approximately every two years. The law is named after Intel co-founder Gordon Moore, who described the trend in his 1965 paper.
+Supercomputer
+History of supercomputing
+Superintelligence
+Timeline of computing
+Technological singularity – hypothetical point in the future when computer capacity rivals that of a human brain, enabling the development of strong AI — artificial intelligence at least as smart as a human
+The Singularity Is Near – book by Raymond Kurzweil dealing with the progression and projections of development of computer capabilities, including beyond human levels of performance
+TOP500 – list of the 500 most powerful (non-distributed) computer systems in the world
+
+
+== References ==
+
+
+== External links ==
+Historical and projected growth in supercomputer capacity

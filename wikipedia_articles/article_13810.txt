@@ -1,0 +1,27 @@
+Independent Computing Architecture (ICA) is a proprietary protocol for an application server system, designed by Citrix Systems. The protocol lays down a specification for passing data between servers and clients, but is not bound to any one platform. Citrix's ICA is an alternative to Microsoft's Remote Desktop Protocol (RDP).
+Practical products conforming to ICA are Citrix's WinFrame, Citrix XenApp (formerly called MetaFrame/Presentation Server), and Citrix XenDesktop products. These permit ordinary Windows applications to be run on a suitable Windows server and for any supported client to gain access to those applications. Besides Windows, ICA is also supported on a number of Unix server platforms and can be used to deliver access to applications running on these platforms. The client platforms do not have to run Windows; for instance, there are clients available for Mac, Unix, Linux, and various smartphones. ICA client software is also built into various thin client platforms.
+ICA is broadly similar in purpose to window servers such as the X Window System. It also provides for the feedback of user input from the client to the server, and a variety of means for the server to send graphical output, as well as other media such as audio, from the running application to the client.
+The key challenges in an architecture are network latency and performance—a graphically intensive application (as most are when presented using a GUI) being served over a slow or bandwidth-restricted network connection requires considerable compression and optimization to render the application usable by the client.  The client machine may be on a different platform and may not have the same GUI routines available locally; in this case, the server may need to send the actual bitmap data over the connection.  Depending on the client's capabilities, servers may also off-load part of the graphical processing to the client, e.g. to render multimedia content.  ICA runs natively over TCP port 1494 or may be encapsulated in Common Gateway Protocol (CGP) on TCP 2598.  ICA supports the concept of channels at a session layer to encapsulate rich media redirection or USB extension within ICA.
+
+
+== Client software ==
+
+Citrix ICA Client (DOS, OS/2)
+Citrix Presentation Server Client (Mac, Java)
+Citrix Receiver (Linux, Unix, Windows, Mac OS X, iOS, Android, Chrome)
+Citrix XenApp/XenDesktop Plugin (Windows)
+SAP
+
+
+== See also ==
+Desktop virtualization
+HP RGS
+Remote Desktop Protocol
+
+
+== References ==
+
+
+== External links ==
+A Slashdot discussion giving insights on how ICA works
+A web page contains a description of the ICA file syntax. Archived 2020-10-01 at the Wayback Machine

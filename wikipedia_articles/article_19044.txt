@@ -1,0 +1,37 @@
+Ousterhout's dichotomy is computer scientist John Ousterhout's categorization that high-level programming languages tend to fall into two groups, each with distinct properties and uses: system programming languages and scripting languages – compare programming in the large and programming in the small.
+System programming languages (or applications languages) usually have the following properties:
+
+They are typed statically
+They support creating complex data structures
+Programs in them are compiled into machine code
+Programs in them are meant to operate largely independently of other programs
+System programming languages tend to be used for components and applications with large amounts of internal functionality such as operating systems, database servers, and Web browsers.  These applications typically employ complex algorithms and data structures and require high performance. Prototypical examples of system programming languages include C, OCaml and Modula-2.
+By contrast, scripting languages (or glue languages) tend to have the following properties:
+
+They are typed dynamically
+They have little or no provision for complex data structures
+Programs in them (scripts) are interpreted
+Scripting languages tend to be used for applications where most of the functionality comes from other programs (often implemented in system programming languages); the scripts are used to glue together other programs or add additional layers of functionality on top of existing programs.  Ousterhout claims that scripts tend to be short and are often written by less sophisticated programmers, so execution efficiency is less important than simplicity and ease of interaction with other programs.  Common applications for scripting include Web page generation, report generation, graphical user interfaces, and system administration. Prototypical examples of scripting languages include Python, AppleScript, C shell, DOS batch files, and Tcl.
+Ousterhout's dichotomy underlies the design of his language Tcl.
+
+
+== History ==
+The dichotomy was fully set out in Ousterhout (1998), though Ousterhout had drawn this distinction since at least the design of Tcl (1988), and had stated it publicly at various times. An early episode was "The Tcl War" of late September and October 1994, where Richard Stallman posted an article critical of Tcl, entitled "Why you should not use Tcl", to which Ousterhout replied with an articulation of his dichotomy:
+
+I think that Stallman's objections to Tcl may stem largely from one aspect of Tcl's design that he either doesn't understand or doesn't agree with. This is the proposition that you should use *two* languages for a large software system: one, such as C or C++, for manipulating the complex internal data structures where performance is key, and another, such as Tcl, for writing small-ish scripts that tie together the C pieces and are used for extensions.
+
+
+== Criticism ==
+Critics believe that the dichotomy is highly arbitrary, and refer to it as Ousterhout's fallacy or Ousterhout's false dichotomy. While static-versus-dynamic typing, data structure complexity, and dependent versus stand-alone might be said to be unrelated features, the usual critique of Ousterhout's dichotomy is of its distinction of compiling versus interpreting. Neither semantics nor syntax depend significantly on whether a language implementation compiles into machine language, interprets, tokenizes, or byte-compiles at the start of each run, or any mix of these. In addition, basically no languages in widespread use are purely interpreted without a compiler; this makes compiling versus interpreting a dubious parameter in a taxonomy of programming languages.
+
+
+== References ==
+
+
+== Further reading ==
+Kumar, Deepak (September 2010). "Reflections: language wars and false dichotomies". ACM Inroads. 1 (3): 10–11. doi:10.1145/1835428.1835431. S2CID 34789810.
+Grover, Andy (19 June 2009). "Become a better programmer by bridging Ousterhout's Dichotomy". Open Source Bridge.
+
+
+== External links ==
+Ousterhout's dichotomy at the Tcl wiki

@@ -1,0 +1,64 @@
+Solid Logic Technology (SLT) was IBM's method for hybrid packaging of electronic circuitry introduced in 1964 with the IBM System/360 series of computers. It was also used in the 1130, announced in 1965. IBM chose to design custom hybrid circuits using discrete, flip chip-mounted, glass-encapsulated transistors and diodes, with silk-screened resistors on a ceramic substrate, forming an SLT module. The circuits were either encapsulated in plastic or covered with a metal lid. Several of these SLT modules (20 in the image on the right) were then mounted on a small multi-layer printed circuit board to make an SLT card. Each SLT card had a socket on one edge that plugged into pins on the computer's backplane (the exact reverse of how most other companies' modules were mounted).
+IBM considered monolithic integrated circuit technology too immature at the time. SLT was a revolutionary technology for 1964, with much higher circuit densities and improved reliability over earlier packaging techniques such as the Standard Modular System. It helped propel the IBM System/360 mainframe family to overwhelming success during the 1960s. SLT research produced ball chip assembly, wafer bumping, trimmed thick-film resistors, printed discrete functions, chip capacitors and one of the first volume uses of hybrid thick-film technology.
+SLT replaced the earlier Standard Modular System, although some later SMS cards held SLT modules. SLT had several updates during its life, the last being the Monolithic System Technology (MST) which replaced the single transistors of SLT with small-scale integrated circuits that held four or five transistors. MST was used in the System/370, which began to replace the System/360 in 1970.
+
+
+== Details ==
+SLT used silicon planar glass-encapsulated transistors and diodes.
+SLT uses dual diode chips and individual transistor chips each approximately 0.025 inches (0.64 mm) square.: 15  The chips are mounted on a 0.5 inches (13 mm) square substrate with silk-screened resistors and printed connections. The whole is encapsulated to form a 0.5 inches (13 mm) square module. Up to 36 modules are mounted on each card, though a few card types had just discrete components and no modules. Cards plug into boards which are connected to form gates which form frames.: 15 
+SLT voltage levels, logic low to logic high, varied by circuit speed:: 16 
+
+High speed (5-10 ns) 0.9 to 3.0 V
+Medium speed (30 ns) 0.0 to 3.0 V
+Low speed (700 ns) 0.0 to 12.0 V
+
+
+== Later developments ==
+The same basic packaging technology (both device and module) was also used for the devices that replaced SLT as IBM gradually transitioned to the use of monolithic integrated circuits:
+
+Solid Logic Dense (SLD) increased packaging density and circuit performance by mounting the discrete transistors and diodes on top of the substrate and the resistors on the bottom.: 15  SLD voltages were the same as SLT.
+Unit Logic Device (ULD) use flat-pack ceramic packages, much smaller than SLT's metal cans. Each package contains a ceramic wafer with up to four silicon dies on top, each die implementing one transistor or two diodes; and thick-film resistors underneath. ULDs were used in the Launch Vehicle Digital Computer and Launch Vehicle Data Adapter of the Saturn V rocket.
+Advanced Solid Logic Technology (ASLT) increased packaging density and circuit performance by stacking two substrates in the same package. ASLT is based on the Emitter-follower-coupled-switch used with current-steering logic.: 18  ASLT voltage levels were : > +235 mV is high, < -239 mV is low.: 16 
+
+Monolithic System Technology (MST) increased packaging density and circuit performance by replacing discrete transistors and diodes with one to four monolithic integrated circuits (resistors now external from the package on the module). Each MST chip holds about five circuits and is the approximate equivalent of an SLT card.: 18  Circuits used NPN transistors. MST was first introduced in January 1968 and provided improved cost/performance for IBM's System/370 product line of the 1970s.
+
+
+== Gallery ==
+
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+== See also ==
+Standard Modular System
+
+
+== References ==
+
+
+== External links ==
+
+Davis, E.M.; Harding, W.E.; Schwartz, R.S.; Corning, J.J. (April 1964). "Solid Logic Technology: Versatile, High-Performance Microelectronics". IBM Journal of Research and Development. 8 (2): 102–114. doi:10.1147/rd.82.0102. S2CID 13288023.
+IBM's Solid Logic Technology (SLT) 1964-1968, Vintage Computer Chips, includes video of automated manufacturing process

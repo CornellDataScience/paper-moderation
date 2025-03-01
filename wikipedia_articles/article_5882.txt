@@ -1,0 +1,340 @@
+The pedal circle of the a triangle 
+  
+    
+      
+        A
+        B
+        C
+      
+    
+    {\displaystyle ABC}
+  
+ and a point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ in the plane is a special circle determined by those two entities. More specifically for the three perpendiculars through the point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ onto the three (extended) triangle sides 
+  
+    
+      
+        a
+        ,
+        b
+        ,
+        c
+      
+    
+    {\displaystyle a,b,c}
+  
+ you get three points of intersection 
+  
+    
+      
+        
+          P
+          
+            a
+          
+        
+        ,
+        
+          P
+          
+            b
+          
+        
+        ,
+        
+          P
+          
+            c
+          
+        
+      
+    
+    {\displaystyle P_{a},P_{b},P_{c}}
+  
+ and the circle defined by those three points is the pedal circle. By definition the pedal circle is the circumcircle of the pedal triangle.
+For radius 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ of the pedal circle the following formula holds with 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ being the radius and 
+  
+    
+      
+        O
+      
+    
+    {\displaystyle O}
+  
+ being the center of the circumcircle:
+
+  
+    
+      
+        r
+        =
+        
+          
+            
+              
+                |
+              
+              P
+              A
+              
+                |
+              
+              ⋅
+              
+                |
+              
+              P
+              B
+              
+                |
+              
+              ⋅
+              
+                |
+              
+              P
+              C
+              
+                |
+              
+            
+            
+              2
+              ⋅
+              (
+              
+                R
+                
+                  2
+                
+              
+              −
+              
+                |
+              
+              P
+              O
+              
+                
+                  |
+                
+                
+                  2
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle r={\frac {|PA|\cdot |PB|\cdot |PC|}{2\cdot (R^{2}-|PO|^{2})}}}
+  
+
+Note that the denominator in the formula turns 0 if the point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ lies on the circumcircle. In this case the three points  
+  
+    
+      
+        
+          P
+          
+            a
+          
+        
+        ,
+        
+          P
+          
+            b
+          
+        
+        ,
+        
+          P
+          
+            c
+          
+        
+      
+    
+    {\displaystyle P_{a},P_{b},P_{c}}
+  
+ determine a degenerated circle with an infinite radius, that is a line. This is the Simson line. If 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ is the incenter of the triangle then the pedal circle is the incircle of the triangle and if 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ is the orthocenter of the triangle the pedal circle is the nine-point circle.
+If 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ does not lie on the circumcircle then its isogonal conjugate 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ yields the same pedal circle, that is the six points  
+  
+    
+      
+        
+          P
+          
+            a
+          
+        
+        ,
+        
+          P
+          
+            b
+          
+        
+        ,
+        
+          P
+          
+            c
+          
+        
+      
+    
+    {\displaystyle P_{a},P_{b},P_{c}}
+  
+ and  
+  
+    
+      
+        
+          Q
+          
+            a
+          
+        
+        ,
+        
+          Q
+          
+            b
+          
+        
+        ,
+        
+          Q
+          
+            c
+          
+        
+      
+    
+    {\displaystyle Q_{a},Q_{b},Q_{c}}
+  
+ lie on the same circle. Moreover, the midpoint of the line segment 
+  
+    
+      
+        P
+        Q
+      
+    
+    {\displaystyle PQ}
+  
+ is the center of that pedal circle.
+Griffiths' theorem states that all the pedal circles for a points located on a line through the center of the triangle's circumcircle share a common (fixed) point.
+Consider four points with no three of them being on a common line. Then you can build four different subsets of three points. Take the points of such a subset as the vertices of a triangle 
+  
+    
+      
+        A
+        B
+        C
+      
+    
+    {\displaystyle ABC}
+  
+ and the fourth point as the point 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+, then they define a pedal circle. The four pedal circles you get this way intersect in a common point.
+
+
+== References ==
+
+
+== External links ==
+ Media related to Pedal circle at Wikimedia Commons
+Pedal Circle of Isogonal Conjugates - interactive illustration in GeoGebra
+pedal triangle and pedal circle - interactive illustration

@@ -1,0 +1,20 @@
+Scanning capacitance microscopy (SCM) is a variety of scanning probe microscopy in which a narrow probe electrode is positioned in contact or close proximity of a sample's surface and scanned. SCM characterizes the surface of the sample using information obtained from the change in electrostatic capacitance between the surface and the probe.
+
+
+== History ==
+The name Scanning Capacitance Microscopy was first used to describe a quality control tool for the RCA/CED (Capacitance Electronic Disc), a video disk technology that was a predecessor of the DVD.  It has since been adapted for use in combination with scanned probe microscopes for measuring other systems and materials with semiconductor doping profiling being the most prevalent.
+SCM applied to semiconductors uses an ultra-sharp conducting probe (often Pt/Ir or Co/Cr thin film metal coating applied to an etched silicon probe) to form a metal-insulator-semiconductor (MIS/MOS) capacitor with a semiconductor sample if a native oxide is present. When no oxide is present, a Schottky capacitor is formed. With the probe and surface in contact, a bias applied between the tip and sample will generate capacitance variations between the tip and sample. The capacitance microscopy method developed by Williams et al. used the RCA video disk capacitance sensor connected to the probe to detect the tiny changes in semiconductor surface capacitance (attofarads to femptofarads). The tip is then scanned across the semiconductor's surface in  while the tip's height is controlled by conventional contact force feedback.
+By applying an alternating bias to the metal-coated probe, carriers are alternately accumulated and depleted within the semiconductor's surface layers, changing the tip-sample capacitance. The magnitude of this change in capacitance with the applied voltage gives information about the concentration of carriers (SCM amplitude data), whereas the difference in phase between the capacitance change and the applied, alternating bias carries information about the sign of the charge carriers (SCM phase data). Because SCM functions even through an insulating layer, a finite conductivity is not required to measure the electrical properties.
+
+
+== Resolution ==
+On the conducting surfaces, the resolution limit is estimated as 2 nm. For the high resolution, the quick analysis of capacitance of a capacitor with rough electrode is required. This SCM resolution is an order of magnitude better than that estimated for the atomic nanoscope; however, as other kinds of the probe microscopy, SCM requires careful preparation of the analyzed surface, which is supposed to be almost flat.
+
+
+== Applications ==
+Owing to the high spatial resolution of SCM, it is a useful nanospectroscopy characterization tool. Some applications of the SCM technique involve mapping the dopant profile in a semiconductor device on a 10 nm scale, quantification of the local dielectric properties in hafnium-based high-k dielectric films grown by an atomic layer deposition method and the study of the room temperature resonant electronic structure of individual germanium quantum dot with different shapes.
+The high sensitivity of dynamical scanning capacitance microscopy,
+in which the capacitance signal is modulated periodically by the tip motion of the atomic force microscope (AFM), was used to image compressible and incompressible strips in a two-dimensional electron gas (2DEG) buried 50 nm below an insulating layer in a large magnetic field and at cryogenic temperatures.
+
+
+== References ==

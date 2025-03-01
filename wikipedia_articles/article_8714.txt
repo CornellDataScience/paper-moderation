@@ -1,0 +1,244 @@
+The slave boson method is a technique for dealing with models of strongly correlated systems, providing a method to second-quantize valence fluctuations within a restrictive manifold of states.   
+In the 1960s the physicist John Hubbard introduced an operator,  now named the "Hubbard operator" to describe the creation of an electron within a restrictive manifold of valence configurations. Consider for example, a rare earth or actinide ion in which strong Coulomb interactions restrict the charge fluctuations to two valence states, such as the Ce4+(4f0) and Ce3+ (4f1) configurations of a mixed-valence cerium compound.  The corresponding quantum states of these two states are the singlet 
+  
+    
+      
+        |
+        
+          f
+          
+            0
+          
+        
+        ⟩
+      
+    
+    {\displaystyle \vert f^{0}\rangle }
+  
+ state and the magnetic 
+  
+    
+      
+        |
+        
+          f
+          
+            1
+          
+        
+        :
+        σ
+        ⟩
+      
+    
+    {\displaystyle \vert f^{1}:\sigma \rangle }
+  
+ state,  where 
+  
+    
+      
+        σ
+        =↑
+        ,
+         
+        ↓
+      
+    
+    {\displaystyle \sigma =\uparrow ,\ \downarrow }
+  
+ is the spin.  The fermionic Hubbard operators that link these states are then 
+
+The algebra of operators is closed by introducing the two bosonic operators 
+
+ Together, these operators satisfy the graded Lie algebra
+
+where the 
+  
+    
+      
+        [
+        A
+        ,
+        B
+        
+          ]
+          
+            ±
+          
+        
+        =
+        A
+        B
+        ±
+        B
+        A
+      
+    
+    {\displaystyle [A,B]_{\pm }=AB\pm BA}
+  
+ and the  sign is chosen to be negative, unless both 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ are fermions, in which case it is positive. The Hubbard operators are the generators of the super group SU(2|1). This non-canonical algebra means that these operators do not satisfy a Wick's theorem, which prevents a conventional diagrammatic or field theoretic treatment.
+In 1983 Piers Coleman introduced the slave boson formulation of the Hubbard operators, which enabled valence fluctuations to be treated within a field-theoretic approach.  In this approach, the spinless configuration of the ion is represented by a spinless "slave boson"
+
+  
+    
+      
+        |
+        
+          f
+          
+            0
+          
+        
+        ⟩
+        =
+        
+          b
+          
+            †
+          
+        
+        |
+        0
+        ⟩
+      
+    
+    {\displaystyle \vert f^{0}\rangle =b^{\dagger }\vert 0\rangle }
+  
+, whereas the magnetic configuration  
+  
+    
+      
+        |
+        
+          f
+          
+            1
+          
+        
+        :
+        σ
+        ⟩
+        =
+        
+          f
+          
+            σ
+          
+          
+            †
+          
+        
+        |
+        0
+        ⟩
+      
+    
+    {\displaystyle \vert f^{1}:\sigma \rangle =f_{\sigma }^{\dagger }\vert 0\rangle }
+  
+ is represented by an Abrikosov slave fermion.  From these considerations, it is seen that the Hubbard operators can be written as
+
+and
+
+This factorization of the Hubbard operators faithfully preserves the graded Lie algebra. Moreover, the Hubbard operators so written commute with the conserved quantity 
+
+In Hubbard's original approach, 
+  
+    
+      
+        Q
+        =
+        1
+      
+    
+    {\displaystyle Q=1}
+  
+, but by generalizing this quantity to larger values, higher irreducible representations of SU(2|1) are generated. 
+The slave boson representation can be extended from two component to 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ component fermions, where the spin index 
+  
+    
+      
+        α
+        ∈
+        [
+        1
+        ,
+        N
+        ]
+      
+    
+    {\displaystyle \alpha \in [1,N]}
+  
+ runs over 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ values. By allowing 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ to become large, while maintaining the ratio 
+  
+    
+      
+        Q
+        
+          /
+        
+        N
+      
+    
+    {\displaystyle Q/N}
+  
+, it is possible to develop a controlled large-
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ expansion.
+The slave boson approach has since been widely applied to strongly correlated electron systems, and has proven useful in developing the resonating valence bond theory (RVB) of high temperature superconductivity and the understanding of heavy fermion compounds.
+
+
+== Bibliography ==
+
+Coleman, Piers (15 March 1984). "New approach to the mixed-valence problem". Physical Review B. 29 (6). American Physical Society (APS): 3035–3044. Bibcode:1984PhRvB..29.3035C. doi:10.1103/physrevb.29.3035. ISSN 0163-1829.

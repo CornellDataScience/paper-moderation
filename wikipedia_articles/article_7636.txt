@@ -1,0 +1,1334 @@
+In mathematics, the comparison test, sometimes called the direct comparison test to distinguish it from similar related tests (especially the limit comparison test), provides a way of deducing whether an infinite series or an improper integral converges or diverges by comparing the series or integral to one whose convergence properties are known.
+
+
+== For series ==
+In calculus, the comparison test for series typically consists of a pair of statements about infinite series with non-negative (real-valued) terms:
+
+If the infinite series 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ converges and 
+  
+    
+      
+        0
+        ≤
+        
+          a
+          
+            n
+          
+        
+        ≤
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 0\leq a_{n}\leq b_{n}}
+  
+ for all sufficiently large n (that is, for all 
+  
+    
+      
+        n
+        >
+        N
+      
+    
+    {\displaystyle n>N}
+  
+ for some fixed value N), then the infinite series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ also converges.
+If the infinite series 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ diverges and 
+  
+    
+      
+        0
+        ≤
+        
+          b
+          
+            n
+          
+        
+        ≤
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 0\leq b_{n}\leq a_{n}}
+  
+ for all sufficiently large n, then the infinite series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ also diverges.
+Note that the series having larger terms is sometimes said to dominate (or eventually dominate) the series with smaller terms.
+Alternatively, the test may be stated in terms of absolute convergence, in which case it also applies to series with complex terms:
+
+If the infinite series 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ is absolutely convergent and 
+  
+    
+      
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        ≤
+        
+          |
+        
+        
+          b
+          
+            n
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |a_{n}|\leq |b_{n}|}
+  
+ for all sufficiently large n, then the infinite series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ is also absolutely convergent.
+If the infinite series 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ is not absolutely convergent and 
+  
+    
+      
+        
+          |
+        
+        
+          b
+          
+            n
+          
+        
+        
+          |
+        
+        ≤
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |b_{n}|\leq |a_{n}|}
+  
+ for all sufficiently large n, then the infinite series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ is also not absolutely convergent.
+Note that in this last statement, the series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ could still be conditionally convergent; for real-valued series, this could happen if the an are not all nonnegative.
+The second pair of statements are equivalent to the first in the case of real-valued series because 
+  
+    
+      
+        ∑
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum c_{n}}
+  
+ converges absolutely if and only if 
+  
+    
+      
+        ∑
+        
+          |
+        
+        
+          c
+          
+            n
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle \sum |c_{n}|}
+  
+, a series with nonnegative terms, converges.
+
+
+=== Proof ===
+The proofs of all the statements given above are similar. Here is a proof of the third statement.
+Let 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ and 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ be infinite series such that 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ converges absolutely (thus  
+  
+    
+      
+        ∑
+        
+          |
+        
+        
+          b
+          
+            n
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle \sum |b_{n}|}
+  
+ converges), and without loss of generality assume that 
+  
+    
+      
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        ≤
+        
+          |
+        
+        
+          b
+          
+            n
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |a_{n}|\leq |b_{n}|}
+  
+ for all positive integers n. Consider the partial sums
+
+  
+    
+      
+        
+          S
+          
+            n
+          
+        
+        =
+        
+          |
+        
+        
+          a
+          
+            1
+          
+        
+        
+          |
+        
+        +
+        
+          |
+        
+        
+          a
+          
+            2
+          
+        
+        
+          |
+        
+        +
+        …
+        +
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        ,
+         
+        
+          T
+          
+            n
+          
+        
+        =
+        
+          |
+        
+        
+          b
+          
+            1
+          
+        
+        
+          |
+        
+        +
+        
+          |
+        
+        
+          b
+          
+            2
+          
+        
+        
+          |
+        
+        +
+        …
+        +
+        
+          |
+        
+        
+          b
+          
+            n
+          
+        
+        
+          |
+        
+        .
+      
+    
+    {\displaystyle S_{n}=|a_{1}|+|a_{2}|+\ldots +|a_{n}|,\ T_{n}=|b_{1}|+|b_{2}|+\ldots +|b_{n}|.}
+  
+
+Since 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ converges absolutely, 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          T
+          
+            n
+          
+        
+        =
+        T
+      
+    
+    {\displaystyle \lim _{n\to \infty }T_{n}=T}
+  
+ for some real number T. For all n,
+
+  
+    
+      
+        0
+        ≤
+        
+          S
+          
+            n
+          
+        
+        =
+        
+          |
+        
+        
+          a
+          
+            1
+          
+        
+        
+          |
+        
+        +
+        
+          |
+        
+        
+          a
+          
+            2
+          
+        
+        
+          |
+        
+        +
+        …
+        +
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        ≤
+        
+          |
+        
+        
+          a
+          
+            1
+          
+        
+        
+          |
+        
+        +
+        …
+        +
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        +
+        
+          |
+        
+        
+          b
+          
+            n
+            +
+            1
+          
+        
+        
+          |
+        
+        +
+        …
+        =
+        
+          S
+          
+            n
+          
+        
+        +
+        (
+        T
+        −
+        
+          T
+          
+            n
+          
+        
+        )
+        ≤
+        T
+        .
+      
+    
+    {\displaystyle 0\leq S_{n}=|a_{1}|+|a_{2}|+\ldots +|a_{n}|\leq |a_{1}|+\ldots +|a_{n}|+|b_{n+1}|+\ldots =S_{n}+(T-T_{n})\leq T.}
+  
+
+  
+    
+      
+        
+          S
+          
+            n
+          
+        
+      
+    
+    {\displaystyle S_{n}}
+  
+ is a nondecreasing sequence and 
+  
+    
+      
+        
+          S
+          
+            n
+          
+        
+        +
+        (
+        T
+        −
+        
+          T
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle S_{n}+(T-T_{n})}
+  
+ is nonincreasing.
+Given 
+  
+    
+      
+        m
+        ,
+        n
+        >
+        N
+      
+    
+    {\displaystyle m,n>N}
+  
+ then both 
+  
+    
+      
+        
+          S
+          
+            n
+          
+        
+        ,
+        
+          S
+          
+            m
+          
+        
+      
+    
+    {\displaystyle S_{n},S_{m}}
+  
+ belong to the interval 
+  
+    
+      
+        [
+        
+          S
+          
+            N
+          
+        
+        ,
+        
+          S
+          
+            N
+          
+        
+        +
+        (
+        T
+        −
+        
+          T
+          
+            N
+          
+        
+        )
+        ]
+      
+    
+    {\displaystyle [S_{N},S_{N}+(T-T_{N})]}
+  
+, whose length 
+  
+    
+      
+        T
+        −
+        
+          T
+          
+            N
+          
+        
+      
+    
+    {\displaystyle T-T_{N}}
+  
+ decreases to zero as 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ goes to infinity.
+This shows that 
+  
+    
+      
+        (
+        
+          S
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            =
+            1
+            ,
+            2
+            ,
+            …
+          
+        
+      
+    
+    {\displaystyle (S_{n})_{n=1,2,\ldots }}
+  
+ is a Cauchy sequence, and so must converge to a limit. Therefore, 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ is absolutely convergent.
+
+
+== For integrals ==
+The comparison test for integrals may be stated as follows, assuming continuous real-valued functions f and g on 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle [a,b)}
+  
+ with b either 
+  
+    
+      
+        +
+        ∞
+      
+    
+    {\displaystyle +\infty }
+  
+ or a real number at which f and g each have a vertical asymptote:
+
+If the improper integral 
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        g
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{a}^{b}g(x)\,dx}
+  
+ converges and 
+  
+    
+      
+        0
+        ≤
+        f
+        (
+        x
+        )
+        ≤
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle 0\leq f(x)\leq g(x)}
+  
+ for 
+  
+    
+      
+        a
+        ≤
+        x
+        <
+        b
+      
+    
+    {\displaystyle a\leq x<b}
+  
+, then the improper integral 
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{a}^{b}f(x)\,dx}
+  
+ also converges with 
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+        ≤
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        g
+        (
+        x
+        )
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle \int _{a}^{b}f(x)\,dx\leq \int _{a}^{b}g(x)\,dx.}
+  
+
+If the improper integral 
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        g
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{a}^{b}g(x)\,dx}
+  
+ diverges and 
+  
+    
+      
+        0
+        ≤
+        g
+        (
+        x
+        )
+        ≤
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle 0\leq g(x)\leq f(x)}
+  
+ for 
+  
+    
+      
+        a
+        ≤
+        x
+        <
+        b
+      
+    
+    {\displaystyle a\leq x<b}
+  
+, then the improper integral 
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{a}^{b}f(x)\,dx}
+  
+ also diverges.
+
+
+== Ratio comparison test ==
+Another test for convergence of real-valued series, similar to both the direct comparison test above and the ratio test, is called the ratio comparison test:
+
+If the infinite series 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ converges and 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle a_{n}>0}
+  
+, 
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle b_{n}>0}
+  
+, and 
+  
+    
+      
+        
+          
+            
+              a
+              
+                n
+                +
+                1
+              
+            
+            
+              a
+              
+                n
+              
+            
+          
+        
+        ≤
+        
+          
+            
+              b
+              
+                n
+                +
+                1
+              
+            
+            
+              b
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {a_{n+1}}{a_{n}}}\leq {\frac {b_{n+1}}{b_{n}}}}
+  
+ for all sufficiently large n, then the infinite series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ also converges.
+If the infinite series 
+  
+    
+      
+        ∑
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum b_{n}}
+  
+ diverges and 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle a_{n}>0}
+  
+, 
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle b_{n}>0}
+  
+, and 
+  
+    
+      
+        
+          
+            
+              a
+              
+                n
+                +
+                1
+              
+            
+            
+              a
+              
+                n
+              
+            
+          
+        
+        ≥
+        
+          
+            
+              b
+              
+                n
+                +
+                1
+              
+            
+            
+              b
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {a_{n+1}}{a_{n}}}\geq {\frac {b_{n+1}}{b_{n}}}}
+  
+ for all sufficiently large n, then the infinite series 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+  
+ also diverges.
+
+
+== See also ==
+
+Convergence tests
+Convergence (mathematics)
+Dominated convergence theorem
+Integral test for convergence
+Limit comparison test
+Monotone convergence theorem
+
+
+== Notes ==
+
+
+== References ==
+Ayres, Frank Jr.; Mendelson, Elliott (1999). Schaum's Outline of Calculus (4th ed.). New York: McGraw-Hill. ISBN 0-07-041973-6.
+Buck, R. Creighton (1965). Advanced Calculus (2nd ed.). New York: McGraw-Hill.
+Knopp, Konrad (1956). Infinite Sequences and Series. New York: Dover Publications. § 3.1. ISBN 0-486-60153-6.
+Munem, M. A.; Foulis, D. J. (1984). Calculus with Analytic Geometry (2nd ed.). Worth Publishers. ISBN 0-87901-236-6.
+Silverman, Herb (1975). Complex Variables. Houghton Mifflin Company. ISBN 0-395-18582-3.
+Whittaker, E. T.; Watson, G. N. (1963). A Course in Modern Analysis (4th ed.). Cambridge University Press. § 2.34. ISBN 0-521-58807-3.

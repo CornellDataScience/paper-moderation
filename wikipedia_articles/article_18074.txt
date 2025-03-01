@@ -1,0 +1,106 @@
+The history of Microsoft SQL Server begins with the first Microsoft SQL Server database product – SQL Server v1.0, a 16-bit relational database for the OS/2 operating system, released in 1989.
+
+
+== Versions ==
+
+
+== Detailed history ==
+
+
+=== Genesis ===
+On June 12, 1988, Microsoft joined Ashton-Tate and Sybase to create a variant of Sybase SQL Server for IBM OS/2 (then developed jointly with Microsoft), which was released the following year. This was the first version of Microsoft SQL Server, and served as Microsoft's entry to the enterprise-level database market, competing against Oracle, IBM, Informix, Ingres and later, Sybase. SQL Server 4.2 was shipped in 1992, bundled with OS/2 version 1.3, followed by version 4.21 for Windows NT, released alongside Windows NT 3.1. SQL Server 6.0 was the first version designed for NT, and did not include any direction from Sybase.
+About the time Windows NT was released in July 1993, Sybase and Microsoft parted ways and each pursued its own design and marketing schemes. Microsoft negotiated exclusive rights to all versions of SQL Server written for Microsoft operating systems. (In 1996 Sybase changed the name of its product to Adaptive Server Enterprise to avoid confusion with Microsoft SQL Server.) Until 1994, Microsoft's SQL Server carried three Sybase copyright notices as an indication of its origin.
+
+
+=== SQL Server 7.0 ===
+
+SQL Server 7.0 was a major rewrite (using C++) of the older Sybase engine, which was coded in C. Data pages were enlarged from 2k bytes to 8k bytes. Extents thereby grew from 16k bytes to 64k bytes. User Mode Scheduling (UMS) was introduced to handle SQL Server threads better than Windows preemptive multi-threading, also adding support for fibers (lightweight threads, introduced in NT 4.0, which are used to avoid context switching). SQL Server 7.0 also introduced a multi-dimensional database product called SQL OLAP Services (which became Analysis Services in SQL Server 2000).
+SQL Server 7.0 would be the last version to run on the DEC Alpha platform. Although there were pre-release versions of SQL 2000 (as well as Windows 2000) compiled for Alpha, these were canceled and were never commercially released. Mainstream support ended on December 31, 2005, and extended support ended on January 11, 2011.
+
+
+=== SQL Server 2000 ===
+SQL Server 2000 included more modifications and extensions to the Sybase code base, adding support for the IA-64 architecture (now out of "mainstream" support). By SQL Server 2005 the legacy Sybase code had been completely rewritten.
+Since the release of SQL Server 2000, advances have been made in performance, the client IDE tools, and several complementary systems that are packaged with SQL Server 2005. These include:
+
+an extract-transform-load (ETL) tool (initially called Data Transformation Services or DTS, and later called  SQL Server Integration Services,  or SSIS)
+SQL Server Reporting Services (SSRS), or "Reporting Server"
+an OLAP and data mining server (Analysis Services)
+several messaging technologies, specifically Service Broker and Notification Services
+SQL Server 2000 also introduced many T-SQL language enhancements, such as table variables, user-defined functions, indexed views, INSTEAD OF triggers, cascading referential constraints and some basic XML support.
+With the release of Service Pack 3, Microsoft also released the first 64-bit version of the SQL Server for the Itanium IA-64 platform (not to be confused with the x86-64 platform). Only the SQL Server relational engine and SQL Agent were ported to Itanium at this time. Client tools, such as SQL Server Management Studio, were still 32-bit x86 programs. The first release of SQL IA-64 was version 8.00.760, with a build date of February 6, 2003.
+Mainstream support ended on April 8, 2008, and extended support ended on April 9, 2013.
+
+
+=== SQL Server 2005 ===
+SQL Server 2005 (formerly codenamed "Yukon") was released in November 2005, introducing native support for x64 systems and updates to Reporting Services, Analysis Services & Integration Services.. It included native support for managing XML data, in addition to relational data. For this purpose, it defined an xml data type that could be used either as a data type in database columns or as literals in queries. XML columns can be associated with XSD schemas; XML data being stored is verified against the schema.  XML data is queried using XQuery; SQL Server 2005 added some extensions to the T-SQL language to allow embedding XQuery queries in T-SQL. It also defines a new extension to XQuery, called XML DML, that allows query-based modifications to XML data. SQL Server 2005 also allows a database server to be exposed over web services using Tabular Data Stream (TDS) packets encapsulated within SOAP requests. When the data is accessed over web services, results are returned as XML.
+Common Language Runtime (CLR) integration was introduced with this version, enabling one to write SQL code as Managed Code by the CLR. For relational data, T-SQL has been augmented with error handling features (try/catch) and support for recursive queries with CTEs (Common Table Expressions). SQL Server 2005 has also been enhanced with new indexing algorithms, syntax and better error recovery systems. Data pages are checksummed for better error resiliency, and optimistic concurrency support has been added for better performance. Permissions and access control have been made more granular and the query processor handles concurrent execution of queries in a more efficient way. Partitions on tables and indexes are supported natively, so scaling out a database onto a cluster is easier. SQL CLR was introduced with SQL Server 2005 to let it integrate with the .NET Framework.
+SQL Server 2005 introduced:
+
+Multi-Version Concurrency Control (MVCC); user facing features include new transaction isolation level called SNAPSHOT and a variation of the READ COMMITTED isolation level based on statement-level data snapshots.
+Multiple Active Results Sets (MARS), a method of allowing usage of database connections for multiple purposes.
+DMVs (Dynamic Management Views), specialized views and functions that return server state information that can be used to monitor the health of a server instance, diagnose problems, and tune performance.
+Service Pack 1 (SP1) was released on April 18, 2006, adding Database Mirroring, a high availability option that provides redundancy and failover capabilities at the database level (Database Mirroring was included in the RTM release of SQL Server 2005, but it was  not enabled by default, being supported for evaluation purposes). Failover can be manual or automatic; automatic failover requires a witness partner and an operating mode of synchronous (also known as high-safety or full safety). Service Pack 2 released on February 19, 2007, Service Pack 3 was released on December 15, 2008, and SQL Server 2005 Service Pack 4 released on December 13, 2010.
+Mainstream support for SQL Server 2005 ended on April 12, 2011, and Extended support for SQL Server 2005 ended on April 12, 2016.
+
+
+=== SQL Server 2008 ===
+SQL Server 2008 (formerly codenamed "Katmai") was released on August 6, 2008, announced to the SQL Server Special Interest Group at the ESRI 2008 User's Conference on August 6, 2008, by Ed Katibah (Spatial Program Manager at Microsoft), and aims to make data management self-tuning, self organizing, and self maintaining with the development of SQL Server Always On technologies, to provide near-zero downtime. SQL Server 2008 also includes support for structured and semi-structured data, including digital media formats for pictures, audio, video and other multimedia data. In current versions, such multimedia data can be stored as BLOBs (binary large objects), but they are generic bitstreams. Intrinsic awareness of multimedia data will allow specialized functions to be performed on them. According to Paul Flessner, senior Vice President of Server Applications at Microsoft, SQL Server 2008 can be a data storage backend for different varieties of data: XML, email, time/calendar, file, document, spatial, etc. as well as perform search, query, analysis, sharing, and synchronization across all data types.
+Other new data types include specialized date and time types and a Spatial data type for location-dependent data. Better support for unstructured and semi-structured data is provided using the new FILESTREAM data type, which can be used to reference any file stored on the file system. Structured data and metadata about the file is stored in SQL Server database, whereas the unstructured component is stored in the file system. Such files can be accessed both via Win32 file handling APIs as well as via SQL Server using T-SQL; doing the latter accesses the file data as a BLOB. Backing up and restoring the database backs up or restores the referenced files as well. SQL Server 2008 also natively supports hierarchical data, and includes T-SQL constructs to directly deal with them, without using recursive queries.
+The full-text search functionality has been integrated with the database engine. According to a Microsoft technical article, this simplifies management and improves performance.
+Spatial data will be stored in two types. A "Flat Earth" (GEOMETRY or planar) data type represents geospatial data which has been projected from its native, spherical, coordinate system into a plane. A "Round Earth" data type (GEOGRAPHY) uses an ellipsoidal model in which the Earth is defined as a single continuous entity which does not suffer from the singularities such as the international dateline, poles, or map projection zone "edges". Approximately 70 methods are available to represent spatial operations for the Open Geospatial Consortium Simple Features for SQL, Version 1.1.
+SQL Server includes better compression features, which also helps in improving scalability. It enhanced the indexing algorithms and introduced the notion of filtered indexes. It also includes Resource Governor that allows reserving resources for certain users or workflows. It also includes capabilities for transparent encryption of data (TDE) as well as compression of backups. SQL Server 2008 supports the ADO.NET Entity Framework and the reporting tools, replication, and data definition will be built around the Entity Data Model. SQL Server Reporting Services will gain charting capabilities from the integration of the data visualization products from Dundas Data Visualization, Inc., which was acquired by Microsoft. On the management side, SQL Server 2008 includes the Declarative Management Framework which allows configuring policies and constraints, on the entire database or certain tables, declaratively. The version of SQL Server Management Studio included with SQL Server 2008 supports IntelliSense for SQL queries against a SQL Server 2008 Database Engine. SQL Server 2008 also makes the databases available via Windows PowerShell providers and management functionality available as Cmdlets, so that the server and all the running instances can be managed from Windows PowerShell.
+The final SQL Server 2008 service pack (10.00.6000, Service Pack 4) was released on September 30, 2014.
+SQL Server 2008 had mainstream support until July 8, 2014, and extended support until July 9, 2019. Volume licensed Standard, Web, Enterprise, Workgroup and Datacenter editions of SQL Server 2008 are eligible for the Extended Security Updates program. The first term of yearly installment ended on July 14, 2020, the second term ended on July 13, 2021, and the third term ended on July 12, 2022. Those volume licensed editions rehosted on Microsoft Azure automatically received ESUs until July 11, 2023.
+
+
+=== SQL Server 2008 R2 ===
+SQL Server 2008 R2 (10.50.1600.1, formerly codenamed "Kilimanjaro") was announced at TechEd 2009, and was released to manufacturing on April 21, 2010. SQL Server 2008 R2 introduced several new features and services:
+
+a master data management system branded as Master Data Services, a central management of master data entities and hierarchies;
+a number of services and utilities, collectively known as Application and Multi-Server Management (AMSM), to manage multiple SQL Server database instances; these utilities included a centralized console named Utility Control Point (UC);
+PowerPivot for Excel and SharePoint;
+StreamInsight;
+Report Builder 3.0 and Reporting Services Add-in for SharePoint;
+a Data-tier function in Visual Studio that enables packaging of tiered databases as part of an application.
+Service Pack 1 (10.50.2500) was released on July 11, 2011, Service Pack 2 (10.50.4000) was released on July 26, 2012 and the final service pack, Service Pack 3 (10.50.6000), was released on September 26, 2014.
+SQL Server 2008 R2 is the last version of SQL Server to run on Itanium (IA-64) systems, with extended support for SQL Server on Itanium continuing until 2018. 
+SQL Server 2008 R2 had mainstream support until July 8, 2014, and extended support until July 9, 2019. Volume licensed Standard, Enterprise, Datacenter and Embedded editions of SQL Server 2008 R2 are eligible for the Extended Security Updates program. The first term of yearly installment ended on July 14, 2020, the second term ended on July 13, 2021, and the third term ended on July 12, 2022. Volume-licensed editions rehosted on Microsoft Azure automatically received ESUs until July 11, 2023.
+
+
+=== SQL Server 2012 ===
+At the 2011 Professional Association for SQL Server (PASS) summit on October 11, Microsoft announced another major version of SQL Server, SQL Server 2012 (codenamed "Denali"). The final version was released to manufacturing on March 6, 2012. SQL Server 2012 Service Pack 1 was released to manufacturing on November 7, 2012, Service Pack 2 was released to manufacturing on June 10, 2014, Service Pack 3 was released to manufacturing on December 1, 2015, and Service Pack 4 was released to manufacturing on October 5, 2017.
+It was announced to be the last version to natively support OLE DB and instead to prefer ODBC for native connectivity.
+SQL Server 2012's new features and enhancements include Always On SQL Server Failover Cluster Instances and Availability Groups which provides a set of options to improve database availability, Contained Databases which simplify the moving of databases between instances, new and modified Dynamic Management Views and Functions, programmability enhancements including new spatial features, metadata discovery, sequence objects and the THROW statement, performance enhancements such as ColumnStore Indexes as well as improvements to OnLine and partition level operations and security enhancements including provisioning during setup, new permissions, improved role management, and default schema assignment for groups.
+SQL Server 2012 had mainstream support until July 11, 2017, and extended support until July 12, 2022. All volume licensed editions of SQL Server 2012 are eligible for the Extended Security Updates program. The first term of yearly installment ended on July 11, 2023, the second term ended on, 2024, and the third and final term will end on July 8, 2025. Those volume licensed editions rehosted on Microsoft Azure automatically receive ESUs until July 8, 2025.
+
+
+=== SQL Server 2014 ===
+SQL Server 2014 was released to manufacturing on March 18, 2014, and released to the general public on April 1, 2014, and the build number was 12.0.2000.8 at release. Until November 2013 there were two CTP revisions, CTP1 and CTP2. SQL Server 2014 provides a new in-memory capability for tables that can fit entirely in memory (also known as Hekaton). Whilst small tables may be entirely resident in memory in all versions of SQL Server, they also may reside on disk, so work is involved in reserving RAM, writing evicted pages to disk, loading new pages from disk, locking the pages in RAM while they are being operated on, and many other tasks. By treating a table as guaranteed to be entirely resident in memory much of the 'plumbing' of disk-based databases can be avoided.
+For disk-based SQL Server applications, it also provides the SSD Buffer Pool Extension, which can improve performance by cache between RAM and spinning media.
+SQL Server 2014 also enhances the Always On (HADR) solution by increasing the readable secondaries count and sustaining read operations upon secondary-primary disconnections, and it provides new hybrid disaster recovery and backup solutions with Microsoft Azure, enabling customers to use existing skills with the on-premises version of SQL Server to take advantage of Microsoft's global datacenters. In addition, it takes advantage of new Windows Server 2012 and Windows Server 2012 R2 capabilities for database application scalability in a physical or virtual environment.
+Microsoft provides three versions of SQL Server 2014 for downloading: the one that runs on Microsoft Azure, the SQL Server 2014 CAB, and SQL Server 2014 ISO.
+SQL Server 2014 SP1, consisting primarily of bugfixes, was released on May 15, 2015.
+SQL Server 2014 is the last version available for x86/IA-32 systems and the final version supported on Windows Server 2008 R2.
+SQL Server 2014 had mainstream support until July 9, 2019, and extended support until July 9, 2024. All volume licensed editions of SQL Server 2014 are eligible for the Extended Security Updates program. The first term of yearly installment will end on July 8, 2025, the second term will end on July 14, 2026, and the third and final term will end on July 12, 2027. Those volume licensed editions rehosted on Microsoft Azure automatically receive ESUs until July 12, 2027.
+
+
+=== SQL Server 2016 ===
+The official General Availability (GA) release date for SQL Server 2016 (13.0.1601.5) was June 1, 2016, with SQL Server 2016 being the first version to only support x64 processors and the last to have the Service Packs updating mechanism. Service Pack 1 was released on November 16, 2016, Service Pack 2 (13.2.5026) was released on April 24, 2018 and Service Pack 3 was released on September 15, 2021.
+
+
+=== SQL Server 2017 ===
+Microsoft launched SQL Server 2017 on October 2, 2017, along with support for Linux. This is the final release supporting Windows Server 2012 and 2012 R2.
+
+
+=== SQL Server 2019 ===
+Microsoft launched SQL Server 2019 (15.x) on November 4, 2019. SQL Server 2019 introduces Big Data Clusters for SQL Server. It also provides additional capability and improvements for the SQL Server database engine, SQL Server Analysis Services, SQL Server Machine Learning Services, SQL Server on Linux, and SQL Server Master Data Services.
+
+
+=== SQL Server 2022 ===
+Microsoft launched SQL Server 2022 on November 16, 2022. However, customers purchasing via OEM, and Services Provider License Agreement (SPLA) had to purchase SQL Server 2022 starting January 2023.
+
+
+== Processor support ==
+
+
+== References ==

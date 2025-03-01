@@ -1,0 +1,102 @@
+Advanced Intelligent Tape (AIT) is a discontinued high-speed, high-capacity magnetic tape data storage format developed and controlled by Sony. It was introduced in 1996 to utilise Advanced Metal Evaporated (AME) technology.  It competed mainly against the DLT, LTO, DAT/DDS, and VXA formats.  AIT uses 8mm tape in a cassette similar to Video8.  Super AIT (SAIT) is a higher capacity variant using wider half inch (1/2") tape in a larger, single-spool cartridge.  Both AIT and SAIT use the helical scan method of reading and writing to the tape.
+
+
+== Form factors ==
+AIT technology was available in two form factors.
+
+AIT – 8 mm, dual reel cartridge, similar to Sony's 8 mm videotape products and Exabyte's 8 mm data tape products.
+SAIT – 1/2", single reel cartridge, similar to DLT and LTO.
+In March 2010, Sony announced the discontinuation of the AIT product line, and renewed collaboration with Hewlett-Packard on further development of the DDS tape format,
+
+
+== Compatibility ==
+One of the most compelling features of the AIT format is that many generations are both backwards and forwards compatible. This allows multiple generations of tape drives to both read and write to multiple generations of tape media.
+
+
+== AIT generations ==
+
+
+=== AIT-1 ===
+Original specification's data capacity up to 25 GB native and up to 65 GB compressed, with a data transfer speed of 3 MB/s.
+Extended length tape, introduced in 1999 gave additional capacity, 35 GB.
+Speed increased to 4 MB/s in 2001.
+Turbo variant, introduced in 2004, is 50% faster (6 MB/s) and holds 40 GB.
+A budget version, AIT-E Turbo, was also introduced in 2004 to compete with DDS.
+SATA version of AIT-1 Turbo available in 2006.
+
+
+=== AIT-2 ===
+Doubled capacity and transfer speed
+WORM technology introduced
+Turbo variant is 100% higher capacity, 100% faster (same speed as AIT-3)
+Turbo variant introduced R-MIC technology
+SATA version of AIT-2 Turbo available in 2006
+Higher capacity TAIT2-80N (Turbo) 80Gb native.
+
+
+=== AIT-3 ===
+Doubled capacity and transfer speed
+Ex variant is 50% higher capacity, 50% faster
+
+
+=== AIT-4 ===
+Doubled capacity and transfer speed
+New tape formulation, AME-2
+Not compatible with previous generations
+
+
+=== AIT-5 ===
+Available September 27, 2006
+Announced July 2006, hardware and media expected "in the fall."
+Doubled capacity (via halved tracked pitch to 2.2 μm), maintained transfer speed.
+Backwards compatible with AIT-3, AIT-3Ex, AIT-4
+New tape formulation, AME-3, which uses finer Cobalt particles resulting in SNR gain of 1 dB compared with AIT-4/AME-2.
+A switch to GMR head technology (Flux Guide GMR).
+
+
+== SAIT generations ==
+
+
+=== SAIT-1 ===
+Highest capacity tape cartridge from 2003 to 2006.  Displaced by DLT-S4 (800 GB).
+The AIT format was developed and is controlled by Sony.
+
+
+=== SAIT-2 ===
+Released in 2006 by Sony, available only in libraries, 800 GB native and 45 MB/s sustained transfer rate.
+
+
+== Notes ==
+Data Capacity and Speed figures above are for uncompressed data.  Sony assumes a 2x or 2.6x compression factor in their marketing material.
+According to Sony, "All future products are based on technology projections."
+
+
+== Technical features ==
+
+
+=== AME ===
+Advanced Metal Evaporated is a different formulation of tape media.
+
+
+=== MIC ===
+Memory-in-Cassette
+is a 16-64KB memory chip in the cartridge that keeps relevant information about the data on the tape to allow quicker access. The drive did not have to read the whole tape until it came across the file required like a file index.
+
+
+=== R-MIC ===
+Remote - Memory in Cassette
+Like MIC except it does not require physical contact.
+
+
+=== WORM ===
+Write Once Read Many functionality, useful for archive keeping.
+
+
+== References ==
+
+
+== External links ==
+ECMA 246 Specification of AIT-1. [1]
+ECMA 291 Specification of AIT-1 w/ MIC. [2]
+ECMA 292 Specification of AIT-2 w/ MIC. [3]
+ECMA 329 Specification of AIT-3. [4]

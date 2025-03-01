@@ -1,0 +1,89 @@
+T-box transcription factor T, also known as Brachyury protein, is encoded for in humans and other apes by the TBXT gene. Brachyury functions as a transcription factor within the T-box family of genes.  Brachyury homologs have been found in all bilaterian animals that have been screened, as well as the freshwater cnidarian Hydra.
+
+
+== History ==
+The brachyury mutation was first described in mice by Nadezhda Alexandrovna Dobrovolskaya-Zavadskaya in 1927 as a mutation that affected tail length and sacral vertebrae in heterozygous animals. In homozygous animals, the brachyury mutation is lethal at around embryonic day 10 due to defects in mesoderm formation, notochord differentiation and the absence of structures posterior to the forelimb bud (Dobrovolskaïa-Zavadskaïa, 1927). The name brachyury comes from the Greek brakhus meaning short and oura meaning tail.
+In 2018, HGNC updated the human gene name from T to TBXT, presumably to overcome difficulties associated with searching for a single letter gene symbol. 
+Tbxt was cloned by Bernhard Herrmann and colleagues and proved to encode a 436 amino acid embryonic nuclear transcription factor. Tbxt binds to a specific DNA element, a near palindromic sequence TCACACCT through a region in its N-terminus, called the T-box. Tbxt is the founding member of the T-box family which in mammals currently consists of 18 T-box genes.
+The crystal structure of the human brachyury protein was solved in 2017 by Opher Gileadi and colleagues at the Structural Genomics Consortium in Oxford.
+
+
+== Role in development ==
+The gene brachyury appears to have a conserved role in defining the midline of a bilaterian organism, and thus the establishment of the anterior-posterior axis; this function is apparent in chordates and molluscs.
+Its ancestral role, or at least the role it plays in the Cnidaria, appears to be in defining the blastopore.  It also defines the mesoderm during gastrulation. Tissue-culture based techniques have demonstrated one of its roles may be in controlling the velocity of cells as they leave the primitive streak. It effects transcription of genes required for mesoderm formation and cellular differentiation.
+Brachyury has also been shown to help establish the cervical vertebral blueprint during fetal development. The number of cervical vertebrae is highly conserved among all mammals; however, a spontaneous vertebral and spinal dysplasia (VSD) mutation in this gene has been associated with the development of six or fewer cervical vertebrae instead of the usual seven.
+
+
+=== Expression ===
+In mice, T is expressed in the inner cell mass of the blastocyst stage embryo (but not in the majority of mouse embryonic stem cells) followed by the primitive streak (see image). In later development, expression is localised to the node and notochord.
+In Xenopus laevis, Xbra (the Xenopus T homologue, also recently renamed t) is expressed in the mesodermal marginal zone of the pre-gastrula embryo followed by localisation to the blastopore and notochord at the mid-gastrula stage.
+
+
+=== Orthologs ===
+The Danio rerio ortholog is known as ntl (no tail).
+
+
+== Role in hominid evolution ==
+
+
+=== Tail development ===
+TBXT is a transcription factor observed in vertebrate organisms. As such, it is primarily responsible for the genotype that codes for tail formation due to its observed role in axial development and the construction of posterior mesoderm within the lumbar and sacral regions. ‌TBXT transcribes genes that form notochord cells, which are responsible for the flexibility, length, and balance of the spine, including tail vertebrae. Because of the role that the transcription factor plays in spinal development, it is cited as being the protein that is primarily responsible for tail development in mammals. However, due to being a genetically-induced phenotype, it is possible for tail-encoding material to be effectively silenced by mutation. This is the mechanism by which the ntl ortholog developed in the hominidae taxa.
+
+
+==== Alu elements ====
+In particular, an Alu element in TBXT is responsible for the taillessness (ntl) ortholog. An Alu element is evolved, mobile RNA that is exclusively in primates. These elements are capable of mobilizing around a genome, making Alu elements transposons. The Alu element that is observed to catalyze taillessness in TBXT is AluY. While normally Alu elements are not individually impactful, the presence of another Alu element active in TBXT, AluSx1, is coded such that its nucleotides are the inverse of AluY’s. Because of this, the two elements are paired together in the replication process, leading up to the formation of a stem-loop structure and an alternative splicing event that fundamentally influences transcription. The structure isolates and positions codons held between the two Alu elements in a hairpin-esque loop that consequently cannot be paired or transcribed. The trapped material, most notably, includes the 6th exon that codes in TBXT. In a stem-loop structure, genetic material trapped within the loop is recognized by transcription-coupled nucleotide excision repair (TC NER) proteins as damage due to RNA polymerase being ostensibly stalled at the neck of the loop. This is also how lesions are able to occur at all–the stalled transcription process serves as a beacon for TC NER proteins to ascertain the location of the stem-loop. Once TBXT is cleaved, trapped nucleotides–including exon 6–are excised from the completed transcription process by the TC NER mechanisms. Because of the resulting excision of exon 6, information contained within the exon is, too, removed from transcription. Consequently, it is posited that the material stored in exon 6 is, in part, responsible for full hominid tail growth.
+As a result of the effect on TBXT's tail-encoding material that AluY has alongside AluSx1, isoform TBXT-Δexon6 is created. Isoforms are often a result of mutation, polymorphism, and recombination, and happen to share often highly similar functions to the proteins they derive from. However often they can have some key differences due to either containing added instructions or missing instructions the original protein is known to possess. TBXT-Δexon6 falls into this category, as it is an isoform that lacks the ability to process the code that enables proper tail formation in TBXT-containing organisms. This is because exon 6's material that helps encode for tail formation is excised from the contents of the transcribed RNA. As a result, it is effectively missing in the isoform, and is thus the key factor in determining the isoform's name. Other common examples of influential isoforms include those involved in AMP-induced protein kinase that insert phosphate groups into specific sites of the cell depending on the subunit.
+
+
+==== Speciation ====
+The first insertion of the AluY element occurred approximately 20-25 million years ago, with the earliest hominid ancestor known to exhibit this mutation being the Hominoidea family of apes. Taillessness has become an overwhelmingly dominant phenotype, such that it contributes to speciation. Over time, the mutation occurred more regularly due to the influence of natural selection and fixation to stabilize and expand its presence in the ape gene pool prior to the eventual speciation of homo sapiens. There are several potential reasons for why taillessness has become the standard phenotype in the Hominidae taxa that offset the genetically disadvantageous aspects of tail mitigation, but little is known with certainty. Some experts hypothesize that taillessness contributes to a stronger, more upright stance. The stance observed by primates with a smaller lumbar is seen to be effective. Grounded mobility and maintaining balance in climbing are more feasible given the evenly distributed body weight observed in hominids. The presence of an additional appendage can also mean another appendage for predators to grab, and one that also consumes energy to move and takes up more space.
+
+
+== Role in disease ==
+
+
+=== Cancer ===
+Brachyury is implicated in the initiation and/or progression of a number of tumor types including chordoma, germ cell tumors, hemangioblastoma, GIST, lung cancer, small cell carcinoma of the lung, breast cancer, colon cancer, hepatocellular carcinoma, prostate cancer, and oral squamous carcinoma.
+In breast cancer, brachyury expression is associated with recurrence, metastasis and reduced survival. It is also associated with resistance to tamoxifen and to cytotoxic chemotherapy.
+In lung cancer, brachyury expression is associated with recurrence and decreased survival. It is also associated with resistance to cytotoxic chemotherapy, radiation, and EGFR kinase inhibitors.
+In prostate cancer, brachyury expression is associated with Gleason score, perineural, invasion and capsular invasion.
+In addition to its role in common cancers, brachyury has been identified as a definitive diagnostic marker, key driver and therapeutic target for chordoma, a rare malignant tumor that arises from remnant notochordal cells lodged in the vertebrae. The evidence regarding brachyury's role in chordoma includes:
+
+Brachyury is highly expressed in all chordomas except for the dedifferentiated subtype, which accounts for less than 5% of cases.
+Germ line duplication of the brachyury gene is responsible for familial chordoma.
+A germline SNP in brachyury is present in 97% of chordoma patients.
+Somatic amplifications of brachyury are seen in a subset of sporadic chordomas either by aneuploidy or focal duplication.
+Brachyury is the most selectively essential gene in chordoma relative to other cancer types.
+Brachyury is associated with a large superenhancer in chordoma tumors and cell lines, and is the most highly expressed superenhancer-associated transcription factor.
+Brachyury is an important factor in promoting the epithelial–mesenchymal transition (EMT). Cells that over-express brachyury have down-regulated expression of the adhesion molecule E-cadherin, which allows them to undergo EMT. This process is at least partially mediated by the transcription factors AKT and Snail.
+Overexpression of brachyury has been linked to hepatocellular carcinoma (HCC, also called malignant hepatoma), a common type of liver cancer. While brachyury is promoting EMT, it can also induce metastasis of HCC cells. Brachyury expression is a prognostic biomarker for HCC, and the gene may be a target for cancer treatments in the future.
+
+
+=== Development ===
+Research posits that there are some downsides that are more likely to occur in the embryonic stage due to the tailless mutation of TBXT-Δexon6. Exon 6's excision fundamentally affects the manner in which TBXT-encoded cells divide, distribute information, and form tissue because of how stem-loop sites create genetic instability. As such, it is seen by experts that tail loss has contributed to the existence and frequency of developmental defects in the neural tube and sacral region. Primarily, spina bifida and sacral agenesis are the most likely suspects due to their direct relation to lumbar development. Spina bifida is an error in the build of the spinal neural tube, causing it to not fully close and leaving nerves exposed within the spinal cord. Sacral agenesis, on the other hand, is a series of physical malformations in the hips that result from the omission of sacral matter during the developmental process. Because both of these developmental disorders result in the displacement of organs and other bodily mechanisms, they are both directly related to outright malfunction of the kidney, bladder, and nervous system. This can lead to higher likelihood of diseases related to their functionality or infrastructure, such as neurogenic bladder dysfunction or hydrocephalus.
+
+
+=== Other diseases ===
+Overexpression of brachyury may play a part in EMT associated with benign disease such as renal fibrosis.
+
+
+== Role as a therapeutic target ==
+Because brachyury is expressed in tumors but not in normal adult tissues it has been proposed as a potential drug target with applicability across tumor types. In particular, brachyury-specific peptides are presented on HLA receptors of cells in which it is expressed, representing a tumor specific antigen. Various therapeutic vaccines have been developed which are intended to stimulate an immune response to brachyury expressing cells.
+
+
+== See also ==
+
+
+== References ==
+
+
+== Further reading ==
+
+
+== External links ==
+Protein Atlas entry for Brachyury
+Mouse Genome Informatics entry for Brachyury
+European Bioinformatics Institute InterPro entry for Brachyury
+Information Hyperlinked Over Proteins entry for Brachyury
+Xenbase Gene entry for Brachyury
+Human T genome location and T gene details page  in the UCSC Genome Browser.
