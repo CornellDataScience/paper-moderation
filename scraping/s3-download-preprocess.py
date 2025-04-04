@@ -51,17 +51,21 @@ def download_files_from_s3(bucket_name, prefix, local_dir):
 # 2. Preprocess text files
 def preprocess_text_file(file_path):
     """
-    Preprocess a text file to contain only alphanumeric characters and whitespace
+    Preprocess a text file to contain only ASCII characters (0-127)
     """
     with open(file_path, 'r', encoding='utf-8', errors='replace') as f:
         text = f.read()
     
-    # Keep only alphanumeric characters and whitespace
-    text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-    # Normalize whitespace
-    text = re.sub(r'\s+', ' ', text).strip()
+    # Keep only ASCII characters (characters with ASCII values 0-127)
+    processed_text = ''
+    for char in text:
+        if ord(char) < 128:  # ASCII characters have values 0-127
+            processed_text += char
     
-    return text
+    # Normalize whitespace
+    processed_text = re.sub(r'\s+', ' ', processed_text).strip()
+    
+    return processed_text
 
 # 3. Split data and 4. Create datasets
 def create_datasets(arxiv_dir, vixra_dir, output_dir, sample_dir):
@@ -187,9 +191,9 @@ def main():
             os.makedirs(directory)
     
     # 1. Download files from S3
-    print("Step 1: Downloading files from S3")
-    arxiv_count = download_files_from_s3(bucket_name, "arxiv_papers", raw_arxiv_dir)
-    vixra_count = download_files_from_s3(bucket_name, "vixra_papers", raw_vixra_dir)
+    # print("Step 1: Downloading files from S3")
+    # arxiv_count = download_files_from_s3(bucket_name, "arxiv_papers", raw_arxiv_dir)
+    # vixra_count = download_files_from_s3(bucket_name, "vixra_papers", raw_vixra_dir)
     
     # 2. Preprocess files
     print("\nStep 2: Preprocessing files")
