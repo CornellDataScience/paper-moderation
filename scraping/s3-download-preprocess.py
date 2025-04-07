@@ -48,19 +48,37 @@ def download_files_from_s3(bucket_name, prefix, local_dir):
     
     return len(objects)
 
-# 2. Preprocess text files
 def preprocess_text_file(file_path):
     """
-    Preprocess a text file to contain only ASCII characters (0-127)
+    Preprocess a text file to:
+    1. Remove extra spaces, multiple newlines, and special characters.
+    2. Contain only ASCII characters (0-127)
+    3. Remove web-related terms (http, www) and unwanted phrases (vixra, arxiv)
     """
     with open(file_path, 'r', encoding='utf-8', errors='replace') as f:
         text = f.read()
-    
+
     # Keep only ASCII characters (characters with ASCII values 0-127)
     processed_text = ''
-    for char in text:
+    for char in text:        
         if ord(char) < 128:  # ASCII characters have values 0-127
             processed_text += char
+                
+    delete_words = ['http', 'www', 'vixra', 'arxiv']
+    
+    # Split into words, filter, and rejoin
+    words = processed_text.split()
+    filtered_words = []
+    
+    for word in words:
+        # check if any of the delete_words exist, and don't add if they do
+        if not any(term.lower() in word.lower() for term in delete_words):
+            filtered_words.append(word)
+    
+    # Rejoin the filtered words back into text
+    filtered_text = ' '.join(filtered_words)
+    
+    return filtered_text
     
     # Normalize whitespace
     processed_text = re.sub(r'\s+', ' ', processed_text).strip()
