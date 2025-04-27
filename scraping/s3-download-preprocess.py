@@ -64,7 +64,7 @@ def preprocess_text_file(file_path):
         if ord(char) < 128:  # ASCII characters have values 0-127
             processed_text += char
                 
-    delete_words = ['http', 'www', 'vixra', 'arxiv']
+    delete_words = ['http', 'www', 'vixra', 'arxiv', 'cid', 'dis', 'ik', 'q2', 'q1', 'th', 'rst', 'ed', 'nd','yahoo','com']
     
     # Split into words, filter, and rejoin
     words = processed_text.split()
@@ -209,9 +209,9 @@ def main():
             os.makedirs(directory)
     
     # 1. Download files from S3
-    # print("Step 1: Downloading files from S3")
-    # arxiv_count = download_files_from_s3(bucket_name, "arxiv_papers", raw_arxiv_dir)
-    # vixra_count = download_files_from_s3(bucket_name, "vixra_papers", raw_vixra_dir)
+    print("Step 1: Downloading files from S3")
+    arxiv_count = download_files_from_s3(bucket_name, "arxiv_papers", raw_arxiv_dir)
+    vixra_count = download_files_from_s3(bucket_name, "vixra_papers", raw_vixra_dir)
     
     # 2. Preprocess files
     print("\nStep 2: Preprocessing files")
