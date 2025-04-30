@@ -2,10 +2,11 @@ import os
 import re
 import random
 import boto3
-from datasets import Dataset
+from datasets import Dataset, load_from_disk
 import pandas as pd
 from tqdm import tqdm
 from dotenv import load_dotenv
+from datasets import Dataset, 
 
 # 1. Download files from S3 bucket
 def download_files_from_s3(bucket_name, prefix, local_dir):
@@ -185,6 +186,42 @@ def create_datasets(arxiv_dir, vixra_dir, output_dir, sample_dir):
         dataset.save_to_disk(output_path)
         print(f"Saved {split_name} dataset with {len(dataset)} examples")
 
+    def preprocess_text_arrow(text):
+        """
+        Preprocess a single text string:
+        1. Remove extra spaces, multiple newlines, and special characters.
+        2. Keep only ASCII characters (0-127).
+        3. Remove web-related terms and unwanted phrases.
+        """
+        # Keep only ASCII characters
+        processed_text = ''.join([char for char in text if ord(char) < 128])
+
+        # Define words to delete
+        delete_words = ['http', 'www', 'vixra', 'arxiv', 'cid', 'dis', 'ik', 'q2', 'q1', 'th', 'rst', 'ed', 'nd', 'yahoo', 'com']
+
+        # Split into words, filter out unwanted terms
+        words = processed_text.split()
+        filtered_words = [word for word in words if not any(term.lower() in word.lower() for term in delete_words)]
+
+        # Rejoin the filtered words
+        filtered_text = ' '.join(filtered_words)
+
+        # Normalize whitespace
+        filtered_text = re.sub(r'\s+', ' ', filtered_text).strip() #?? yea sounds good
+
+        return filtered_text
+
+    def preprocess_dataset_arrow(dataset, text_column='text'):
+        """
+        Apply preprocessing to a HuggingFace Dataset.
+        """
+        def preprocess_batch(batch):
+            batch[text_column] = preprocess_text_arrow(batch[text_column])
+            return batch
+
+        processed_dataset = dataset.map(preprocess_batch)
+        return processed_dataset
+
 def main():
     # Load environment variables from .env file
     load_dotenv()
@@ -242,6 +279,31 @@ def main():
     print("\nAll tasks completed successfully!")
     print(f"Samples saved to: {sample_dir}")
     print(f"Datasets saved to: {output_dir}")
+
+    """
+    ARROW PREPROCESS CODE:
+    
+    base_dir = "s3-scraping/merged_arrow"
+    new_dir = "s3-scraping"
+
+    # 1. Download arrow files
+    print("\nStep 1: Downloading files")
+    train_dataset = load_from_disk(base_dir + "/merged_train")
+    val_dataset = load_from_disk(base_dir + "/merged_validation")
+    test_dataset = load_from_disk(base_dir + "/merged_test")
+    
+    # 2. Preprocess files
+    print("\nStep 2: Preprocessing files")
+    train_dataset = preprocess_dataset_arrow(train_dataset)
+    val_dataset = preprocess_dataset_arrow(val_dataset)
+    test_dataset = preprocess_dataset_arrow(test_dataset)
+
+    train_dataset.save_to_disk(new_dir + "/new_train.arrow")
+    val_dataset.save_to_disk(new_dir + "/new_val.arrow")
+    test_dataset.save_to_disk(new_dir + "/new_test.arrow")
+    print(f"Datasets saved to: {new_dir}")
+    
+    """
 
 if __name__ == "__main__":
     main()
